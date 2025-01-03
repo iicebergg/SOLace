@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Quiz</title>
+    <style>
+
+        .correct {
+            background-color: #d4edda;
+            color: #155724;
+        }
+
+        .incorrect {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="quiz-container">
+        <h2>Quiz Question</h2>
+        <p>What is the capital of France?</p>
+        
+        <div class="options">
+            <label class="option">
+                <input type="radio" name="answer" value="london"> London
+            </label>
+            <label class="option">
+                <input type="radio" name="answer" value="paris"> Paris
+            </label>
+            <label class="option">
+                <input type="radio" name="answer" value="berlin"> Berlin
+            </label>
+            <label class="option">
+                <input type="radio" name="answer" value="madrid"> Madrid
+            </label>
+        </div>
+
+        <button onclick="checkAnswer()">Submit Answer</button>
+        <div id="feedback" class="feedback"></div>
+    </div>
+
+    <script>
+        function checkAnswer() {
+            const selectedAnswer = document.querySelector('input[name="answer"]:checked');
+            const feedbackElement = document.getElementById('feedback');
+            
+            if (!selectedAnswer) {
+                alert('Please select an answer');
+                return;
+            }
+
+            const isCorrect = selectedAnswer.value === 'paris';
+            feedbackElement.style.display = 'block';
+            
+            if (isCorrect) {
+                feedbackElement.textContent = 'Correct! Paris is the capital of France.';
+                feedbackElement.className = 'feedback correct';
+            } else {
+                feedbackElement.textContent = 'Incorrect. The correct answer is Paris.';
+                feedbackElement.className = 'feedback incorrect';
+            }
+        }
+    </script>
+</body>
+</html>

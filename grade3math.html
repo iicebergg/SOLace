@@ -6,8 +6,10 @@
 </head>
 <body>
     <div id="settings">
+
         <button id="settingsbutton">Settings</button>
         <button id="contrastbutton">Contrast</button>
+
         <input type="radio" value="Black on White (Default)" id="bw" name="contrast"> 
         <label for="bw">Black on White (Default)</label><br>
         <input type="radio" value= "Black on Cream" id="bc" name="contrast"> 
@@ -22,75 +24,28 @@
         <label for="yb">Yellow on Blue</label><br>
         <input type="radio" value="Gray on Green" id="gg" name="contrast"> 
         <label for="gg">Gray on Green</label><br>
-    </div>
-    <div style="display:block" id="start">
-        <button id="startbutton">Start</button>
-    </div>
-    <div style="display:none" id="q1">
-        <p>SAMPLE A</p>
-        <p>Carlos made this tally chart to record the chores done by 12 of the students in his class.</p>
-        <p>Which chore was done by 5 students?</p>
-        <input type="radio" value="Washing Dishes" id="a1" name="q1"> 
-        <label for="a1">Washing Dishes</label><br>
-        <input type="radio" value= "Walking Dog" id="b1" name="q1"> 
-        <label for="b1">Walking Dog</label><br>
-        <input type="radio" value="Emptying Trash" id="c1" name="q1"> 
-        <label for="c1">Emptying Trash</label><br>
-        <input type="radio" value="Cleaning Room" id="d1" name="q1"> 
-        <label for="d1">Cleaning Room</label><br>
-        <button id="submit1">Submit</button>
-        <p style="color:limegreen; display:none" id="correct1">Correct!</p>
-        <p style="color:red; display:none" id="incorrect1">Sorry, try again.</p>
-        <button style="display:block" id="skip">Skip</button>
-        <button style="display:none" id="next">Next</button>
-        <button style="display:none" id="retry">Retry</button>
-    </div>
-    <div style="display:none" id="q2">
-        <p>Directions: Type your answer in the box.</p>
-        <p>SAMPLE B</p>
-        <p>2&times;5 = <u>?</u></p>
-        <input type="text" id="free2" value="">
-        <button id="submit2">Submit</button>
-        <p style="color:limegreen; display:none" id="correct2">Correct!</p>
-        <p style="color:red; display:none" id="incorrect2">Sorry, try again.</p>
 
     </div>
+
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <div class="question-counter">Question <span id="current-question">1</span> of <span id="total-questions">5</span></div>
+            <div class="score">Score: <span id="score">0</span></div>
+        </div>
+        
+        <div id="question-container"></div>
+        <div id="feedback" class="feedback"></div>
+        
+        <div class="button-container">
+            <button id="submit-btn" onclick="checkAnswer()">Submit Answer</button>
+            <button id="next-btn" onclick="nextQuestion()" disabled>Next Question →</button>
+        </div>
+
+        <div id="final-score" class="final-score" style="display: none;"></div>
+    </div>
+    
     <script>
 
-
-        //submit 1 
-        document.getElementById("submit1").addEventListener("click", showAnswer1);
-
-        function showAnswer1() {
-        if(document.getElementById("b1").checked) {
-            document.getElementById("incorrect1").style.display = "none";
-            document.getElementById("correct1").style.display = "block";
-            document.getElementById("next").style.display = "block";
-        }
-        else {
-            document.getElementById("incorrect1").style.display = "block";
-            document.getElementById("retry").style.display = "block";
-        }
-        }
-
-        //retry
-        document.getElementById("retry").addEventListener("click", retry);
-        
-        //submit 2
-        document.getElementById("submit2").addEventListener("click", showAnswer2);
-
-        function showAnswer2() {
-            var input2 = document.getElementById("free2").value;
-            if(input2 = "5") {
-                document.getElementById("incorrect2").style.display = "none";
-                document.getElementById("correct2").style.display = "block";
-                document.getElementById("next").style.display = "block";
-            }
-            else {
-                document.getElementById("incorrect2").style.display = "block";
-                document.getElementById("retry").style.display = "block";
-            }
-        }
 
 
     </script>

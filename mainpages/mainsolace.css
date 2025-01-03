@@ -1,0 +1,111 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #ffffff; 
+    color: #333333;
+    overflow-x: hidden;
+}
+header {
+    overflow: hidden;
+}
+p {
+    font-family: Roboto;
+    text-align: left;
+}
+button {
+    background-color: #3469cd;
+    color: #ffffff;
+    text-align: center;
+    font-size: 36px;
+    padding: 20px;
+    font-family: Urbanist;
+    border-style: none;
+}
+.maindiv {
+    
+    background-color: #ffffff;
+    border-style: none solid none solid;
+    border-color: #8c8c8c;
+    padding: 20px;
+    margin: 40px;
+}
+
+.headertext {
+    position: relative;
+}
+.homelogo {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+}
+.homescreen {
+    position: relative;
+  }
+
+  .homescreen img {
+    display: block;
+    height: auto;
+    object-fit: cover;
+    max-height: 600px;
+    width: 100%;
+  }
+  
+ .overlay-text {
+    position: absolute;
+    top: 47%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: #ffffff; 
+    font-size: 30px; 
+    font-family: Urbanist;
+    text-align: center;
+  }
+  .overlay-logo {
+    position: absolute;
+    top: 20%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: #ffffff; 
+    font-size: 100px; 
+    font-family: Urbanist;
+    text-align: center;
+  }
+  .overlay-button {
+    position: absolute;
+    top: 70%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: #ffffff; 
+    font-size: 50px; 
+    font-family: Urbanist;
+    text-align: center;
+    padding: 30px;
+    border: 3px solid #ffffff;
+  }
+.navbar {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: #3469cd;
+    padding: 20px;
+    border-bottom: 7px solid #051773;
+}
+
+.navbar li {
+    display: inline;
+    padding: 20px;
+    font-size: 24px;
+    font-family: Urbanist;
+    color: #ffffff;
+    text-align: center;
+}
+
+footer {
+    background-color: #3469cd;
+    border-top: 7px solid #051773;
+    color: #ffffff;
+    padding: 20px 40px 20px 40px;
+}
