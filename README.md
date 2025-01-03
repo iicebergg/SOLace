@@ -1,7 +1,5 @@
-# SOLace
+![SOLace](https://github.com/user-attachments/assets/80394304-06eb-49a6-93aa-9ff2f2db44c1)
 A simple, non-profit web app to help K-12 students in the Commonwealth of Virginia study for VDOE Standards of Learning Assessments.
-
----
 
 ## About 
 
@@ -17,8 +15,6 @@ SOLace has the following primary features that distinguish it from existing soft
 - Allows practice using official released VDOE SOL tests
 - Choose between immediate feedback or feedback given at the end of 
 - Emulates the official testing experience by Pearson offering a similar environment and accessibility features
-
----
 
 ## Copyright Notice
 SOLACE is licensed under the AGPL-3.0 license. It contains adapted content that is copyrighted by the Virginia Department of Education. **All source code is licensed under AGPL-3.0, but the material of the questions themselves is not.** Official VDOE questions are credited with the following acknowledgement:
