@@ -1,4 +1,4 @@
-![SOLace](https://github.com/user-attachments/assets/80394304-06eb-49a6-93aa-9ff2f2db44c1)
+![SOLace-logo](https://github.com/user-attachments/assets/3d2253d4-c56d-4ee9-aace-b5200e7e42b2)
 A simple, non-profit web app to help K-12 students in the Commonwealth of Virginia study for VDOE Standards of Learning Assessments.
 
 ## About 
@@ -11,7 +11,7 @@ My mission with SOLace is to provide a resource for students all across Virginia
 
 ## Features
 SOLace has the following primary features that distinguish it from existing software:
-- All content is completely accessible and no data for emails, etc. is collected
+- All content is completely accessible and no personal data for accounts or marketing is collected
 - Allows practice using official released VDOE SOL tests
 - Choose between immediate feedback or feedback given at the end of 
 - Emulates the official testing experience by Pearson offering a similar environment and accessibility features
