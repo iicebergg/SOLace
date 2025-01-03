@@ -3,18 +3,20 @@ A simple, non-profit web app to help K-12 students in the Commonwealth of Virgin
 
 ## About 
 
-SOLace is designed to be straightforward. There are no log-ins, advertisements, or excessive tracking.
+SOLace is designed to be straightforward. There are no log-ins, advertisements, or excessive tracking. It is secure and accessible for all students of all ages.
 
 My mission with SOLace is to provide a resource for students all across Virginia that can be used for the states' Standards of Learning assessments. When I was an elementary and middle schooler, I was driven insane by the lack of quality resources out there to help me study for my SOLs (this is unfortunately what some children spend their time thinking about). With that, combined with the desperate need to put something cool on my college applications, I devised a plan to create SOLace.
 
 "SOLace" is a portmanteau of the words "SOL," "solace," and "ace--" "SOL" from the Virginia Standards of Learning asssessments, "solace" from the idea that one is taking solace in knowing they'll be prepared for test day, and "ace," because, hopefully, this application will help you ace your test.
 
+My hope is that, someday, SOLace will become the premiere software for primary schoolers' SOL studying across the state. I hope for students I'll never know the names of to see their test scores rise as a result of my work. 
+
 ## Features
 SOLace has the following primary features that distinguish it from existing software:
 - All content is completely accessible and no personal data for accounts or marketing is collected
 - Allows practice using official released VDOE SOL tests
-- Choose between immediate feedback or feedback given at the end of 
-- Emulates the official testing experience by Pearson offering a similar environment and accessibility features
+- Choose between immediate feedback or feedback given at the end of the practice test
+- Emulates the official testing experience by Pearson, offering a similar environment, format, and accessibility features
 
 ## Copyright Notice
 SOLACE is licensed under the AGPL-3.0 license. It contains adapted content that is copyrighted by the Virginia Department of Education. **All source code is licensed under AGPL-3.0, but the material of the questions themselves is not.** Official VDOE questions are credited with the following acknowledgement:
