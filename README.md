@@ -21,7 +21,3 @@ SOLace has the following primary features that distinguish it from existing soft
 ## Copyright Notice
 SOLACE is licensed under the AGPL-3.0 license. It contains adapted content that is copyrighted by the Virginia Department of Education. **All source code is licensed under AGPL-3.0, but the material of the questions themselves is not.** Official VDOE questions are credited with the following acknowledgement:
 > Adapted from “*Source Name*” © Commonwealth of Virginia Department of Education. All rights reserved. Reproduced by permission.
-
----
-
-Dedicated to Prabhas Yerra. Thank you for always believing in me, and I know you're out there making your dreams come true, too.
