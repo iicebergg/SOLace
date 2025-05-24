@@ -11,8 +11,6 @@ const startTestBtn = document.getElementById('start-test');
 const viewResultsBtn = document.getElementById('view-results');
 const submitAnswerBtn = document.getElementById('submit-answer');
 const nextQuestionBtn = document.getElementById('next-question');
-const retakeTestBtn = document.getElementById('retake-test');
-const viewTrendsBtn = document.getElementById('view-trends');
 const saveSettingsBtn = document.getElementById('save-settings');
 
 // Application State
@@ -38,7 +36,7 @@ function initApp() {
  setupEventListeners();
 
  // Load user preferences
- loadUserPreferences();
+ /* loadUserPreferences(); */
 
  // Load questions (in a real app, these would come from the server)
  fetchQuestions();
@@ -60,6 +58,7 @@ function setupEventListeners() {
  navigateTo('test');
  startTest();
  });
+}
 
  viewResultsBtn.addEventListener('click', () => {
  navigateTo('results');
@@ -68,13 +67,6 @@ function setupEventListeners() {
 
  submitAnswerBtn.addEventListener('click', submitAnswer);
  nextQuestionBtn.addEventListener('click', loadNextQuestion);
-
- retakeTestBtn.addEventListener('click', () => {
- navigateTo('test');
- startTest();
- });
-
- viewTrendsBtn.addEventListener('click', showPerformanceTrends);
 
  saveSettingsBtn.addEventListener('click', saveUserPreferences);
 
@@ -108,16 +100,6 @@ function setupEventListeners() {
  currentUser.accessibilityPreferences.reduceMotion = e.target.checked;
  });
 
- document.getElementById('screen-reader-opt').addEventListener('change', (e) => {
- if (e.target.checked) {
- document.body.classList.add('screen-reader-optimized');
- } else {
- document.body.classList.remove('screen-reader-optimized');
- }
- currentUser.accessibilityPreferences.screenReaderOptimized = e.target.checked;
- });
-}
-
 // Navigate to a different page
 function navigateTo(page) {
  // Update active state in navigation
@@ -141,11 +123,8 @@ function navigateTo(page) {
  currentPage = page;
 }
 
-// Fetch questions from the server
 async function fetchQuestions() {
  try {
- // In a real app, this would be a fetch request to your API
- // For now, we'll use the sample questions from questions.js
  questions = sampleQuestions;
  console.log('Questions loaded:', questions.length);
  } catch (error) {
@@ -164,7 +143,7 @@ function startTest() {
  document.getElementById('total-questions').textContent = questions.length;
 
  // Load the first question
- loadQuestion(0);
+ loadQuestion(1);
 }
 
 // Load a specific question
@@ -190,7 +169,7 @@ function loadQuestion(index) {
 
  // Update progress
  document.getElementById('progress-fill').style.width = `${((index + 1) / questions.length) * 100}%`;
- document.getElementById('current-question').textContent = index + 1;
+ document.getElementById('current-question').textContent = index;
 
  // Use the appropriate template based on question type
  let template;
@@ -221,138 +200,233 @@ function loadQuestion(index) {
 
 // Render a multiple-choice question
 function renderMultipleChoiceQuestion(template, question) {
- template.querySelector('.question-text').textContent = question.text;
- const optionsContainer = template.querySelector('.options-container');
-
- question.options.forEach((option, index) => {
- const optionElement = document.createElement('div');
- optionElement.className = 'option';
- optionElement.innerHTML = `
- <input type="radio" id="option-${index}" name="question-option" value="${index}">
- <label for="option-${index}">${option}</label>
- `;
-
- // Add click event for the whole option div
- optionElement.addEventListener('click', () => {
- optionElement.querySelector('input').checked = true;
-
- // Update selected state for all options
- optionsContainer.querySelectorAll('.option').forEach(opt => {
- if (opt === optionElement) {
- opt.classList.add('selected');
- } else {
- opt.classList.remove('selected');
- }
- });
- });
-
- optionsContainer.appendChild(optionElement);
- });
+  template.querySelector('.question-text').textContent = question.text;
+  
+  // Add question image if present
+  renderQuestionImage(template, question);
+  
+  const optionsContainer = template.querySelector('.options-container');
+  
+  question.options.forEach((option, index) => {
+    const optionElement = document.createElement('div');
+    const hasImage = question.optionImages && question.optionImages[index];
+    
+    optionElement.className = hasImage ? 'option option-with-image' : 'option';
+    
+    // Create option content HTML
+    let optionHTML = `<input type="radio" id="option-${index}" name="question-option" value="${index}">`;
+    
+    if (hasImage) {
+      optionHTML += `
+        <div class="option-content">
+          <img src="${question.optionImages[index].url}" 
+               alt="${question.optionImages[index].alt || option}" 
+               class="option-image"
+               onerror="this.style.display='none'">
+          <label for="option-${index}" class="option-text">${option}</label>
+        </div>
+      `;
+    } else {
+      optionHTML += `<label for="option-${index}">${option}</label>`;
+    }
+    
+    optionElement.innerHTML = optionHTML;
+    
+    // Add click event for the whole option div
+    optionElement.addEventListener('click', () => {
+      optionElement.querySelector('input').checked = true;
+      
+      // Update selected state for all options
+      optionsContainer.querySelectorAll('.option').forEach(opt => {
+        if (opt === optionElement) {
+          opt.classList.add('selected');
+        } else {
+          opt.classList.remove('selected');
+        }
+      });
+    });
+    
+    optionsContainer.appendChild(optionElement);
+  });
 }
 
 // Render a multiple-select question
 function renderMultipleSelectQuestion(template, question) {
- template.querySelector('.question-text').textContent = question.text;
- const optionsContainer = template.querySelector('.options-container');
-
- question.options.forEach((option, index) => {
- const optionElement = document.createElement('div');
- optionElement.className = 'option';
- optionElement.innerHTML = `
- <input type="checkbox" id="option-${index}" name="question-option" value="${index}">
- <label for="option-${index}">${option}</label>
- `;
-
- // Add click event for the whole option div
- optionElement.addEventListener('click', () => {
- const checkbox = optionElement.querySelector('input');
- checkbox.checked = !checkbox.checked;
-
- // Update selected state
- if (checkbox.checked) {
- optionElement.classList.add('selected');
- } else {
- optionElement.classList.remove('selected');
- }
- });
-
- optionsContainer.appendChild(optionElement);
- });
+  template.querySelector('.question-text').textContent = question.text;
+  
+  // Add question image if present
+  renderQuestionImage(template, question);
+  
+  const optionsContainer = template.querySelector('.options-container');
+  
+  question.options.forEach((option, index) => {
+    const optionElement = document.createElement('div');
+    const hasImage = question.optionImages && question.optionImages[index];
+    
+    optionElement.className = hasImage ? 'option option-with-image' : 'option';
+    
+    // Create option content HTML
+    let optionHTML = `<input type="checkbox" id="option-${index}" name="question-option" value="${index}">`;
+    
+    if (hasImage) {
+      optionHTML += `
+        <div class="option-content">
+          <img src="${question.optionImages[index].url}" 
+               alt="${question.optionImages[index].alt || option}" 
+               class="option-image"
+               onerror="this.style.display='none'">
+          <label for="option-${index}" class="option-text">${option}</label>
+        </div>
+      `;
+    } else {
+      optionHTML += `<label for="option-${index}">${option}</label>`;
+    }
+    
+    optionElement.innerHTML = optionHTML;
+    
+    // Add click event for the whole option div
+    optionElement.addEventListener('click', () => {
+      const checkbox = optionElement.querySelector('input');
+      checkbox.checked = !checkbox.checked;
+      
+      // Update selected state
+      if (checkbox.checked) {
+        optionElement.classList.add('selected');
+      } else {
+        optionElement.classList.remove('selected');
+      }
+    });
+    
+    optionsContainer.appendChild(optionElement);
+  });
 }
 
 // Render a drag-drop question
 function renderDragDropQuestion(template, question) {
- template.querySelector('.question-text').textContent = question.text;
- const dragItemsContainer = template.querySelector('.drag-items-container');
- const dropZonesContainer = template.querySelector('.drop-zones-container');
-
- // Create drag items
- question.options.forEach((item, index) => {
- const dragItem = document.createElement('div');
- dragItem.className = 'drag-item';
- dragItem.setAttribute('draggable', 'true');
- dragItem.setAttribute('data-index', index);
- dragItem.textContent = item;
-
- // Set up drag events
- dragItem.addEventListener('dragstart', (e) => {
- e.dataTransfer.setData('text/plain', index);
- dragItem.classList.add('dragging');
- });
-
- dragItem.addEventListener('dragend', () => {
- dragItem.classList.remove('dragging');
- });
-
- dragItemsContainer.appendChild(dragItem);
- });
-
- // Create drop zones
- question.dropZones.forEach((zone, index) => {
- const dropZone = document.createElement('div');
- dropZone.className = 'drop-zone';
- dropZone.setAttribute('data-zone-index', index);
-
- const zoneLabel = document.createElement('div');
- zoneLabel.className = 'zone-label';
- zoneLabel.textContent = zone;
-
- dropZone.appendChild(zoneLabel);
-
- // Set up drop events
- dropZone.addEventListener('dragover', (e) => {
- e.preventDefault();
- dropZone.classList.add('highlight');
- });
-
- dropZone.addEventListener('dragleave', () => {
- dropZone.classList.remove('highlight');
- });
-
- dropZone.addEventListener('drop', (e) => {
- e.preventDefault();
- dropZone.classList.remove('highlight');
-
- const dragItemIndex = e.dataTransfer.getData('text/plain');
- const dragItem = document.querySelector(`.drag-item[data-index="${dragItemIndex}"]`);
-
- // Clone the item and add it to the drop zone
- const clonedItem = dragItem.cloneNode(true);
-
- // Clear any previous items in this zone
- const existingItems = dropZone.querySelectorAll('.drag-item');
- existingItems.forEach(item => item.remove());
-
- dropZone.appendChild(clonedItem);
- });
-
- dropZonesContainer.appendChild(dropZone);
- });
+  template.querySelector('.question-text').textContent = question.text;
+  
+  // Add question image if present
+  renderQuestionImage(template, question);
+  
+  const dragItemsContainer = template.querySelector('.drag-items-container');
+  const dropZonesContainer = template.querySelector('.drop-zones-container');
+  
+  // Create drag items
+  question.options.forEach((item, index) => {
+    const dragItem = document.createElement('div');
+    const hasImage = question.optionImages && question.optionImages[index];
+    
+    dragItem.className = hasImage ? 'drag-item drag-item-with-image' : 'drag-item';
+    dragItem.setAttribute('draggable', 'true');
+    dragItem.setAttribute('data-index', index);
+    
+    if (hasImage) {
+      dragItem.innerHTML = `
+        <img src="${question.optionImages[index].url}" 
+             alt="${question.optionImages[index].alt || item}" 
+             class="drag-item-image"
+             onerror="this.style.display='none'">
+        <span class="drag-item-text">${item}</span>
+      `;
+    } else {
+      dragItem.textContent = item;
+    }
+    
+    // Set up drag events
+    dragItem.addEventListener('dragstart', (e) => {
+      e.dataTransfer.setData('text/plain', index);
+      dragItem.classList.add('dragging');
+    });
+    
+    dragItem.addEventListener('dragend', () => {
+      dragItem.classList.remove('dragging');
+    });
+    
+    dragItemsContainer.appendChild(dragItem);
+  });
+  
+  // Create drop zones
+  question.dropZones.forEach((zone, index) => {
+    const dropZone = document.createElement('div');
+    dropZone.className = 'drop-zone';
+    dropZone.setAttribute('data-zone-index', index);
+    
+    const zoneLabel = document.createElement('div');
+    zoneLabel.className = 'zone-label';
+    zoneLabel.textContent = zone;
+    
+    dropZone.appendChild(zoneLabel);
+    
+    // Set up drop events
+    dropZone.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      dropZone.classList.add('highlight');
+    });
+    
+    dropZone.addEventListener('dragleave', () => {
+      dropZone.classList.remove('highlight');
+    });
+    
+    dropZone.addEventListener('drop', (e) => {
+      e.preventDefault();
+      dropZone.classList.remove('highlight');
+      
+      const dragItemIndex = e.dataTransfer.getData('text/plain');
+      const dragItem = document.querySelector(`.drag-item[data-index="${dragItemIndex}"]`);
+      
+      // Clone the item and add it to the drop zone
+      const clonedItem = dragItem.cloneNode(true);
+      
+      // Clear any previous items in this zone
+      const existingItems = dropZone.querySelectorAll('.drag-item');
+      existingItems.forEach(item => item.remove());
+      
+      dropZone.appendChild(clonedItem);
+    });
+    
+    dropZonesContainer.appendChild(dropZone);
+  });
 }
 
 // Render a free-response question
 function renderFreeResponseQuestion(template, question) {
- template.querySelector('.question-text').textContent = question.text;
+  template.querySelector('.question-text').textContent = question.text;
+  
+  // Add question image if present
+  renderQuestionImage(template, question);
+}
+
+// Helper function to render question images
+function renderQuestionImage(template, question) {
+  const imageContainer = template.querySelector('.question-image-container');
+  
+  if (question.image) {
+    const img = document.createElement('img');
+    img.className = 'question-image loading';
+    img.src = question.image.url;
+    img.alt = question.image.alt || 'Question image';
+    
+    // Handle image loading states
+    img.addEventListener('load', () => {
+      img.classList.remove('loading');
+    });
+    
+    img.addEventListener('error', () => {
+      img.classList.remove('loading');
+      img.classList.add('error');
+      img.alt = 'Image failed to load';
+      img.src = 'data:image/svg+xml;base64,' + btoa(`
+        <svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200">
+          <rect width="300" height="200" fill="#f8f9fa" stroke="#dc3545" stroke-width="2" stroke-dasharray="5,5"/>
+          <text x="150" y="100" text-anchor="middle" fill="#dc3545" font-family="Arial" font-size="14">
+            Image failed to load
+          </text>
+        </svg>
+      `);
+    });
+    
+    imageContainer.appendChild(img);
+  }
 }
 
 // Submit the current answer

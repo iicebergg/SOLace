@@ -152,6 +152,100 @@ footer {
   margin-bottom: 1.5rem;
 }
 
+/* Question Images */
+.question-image-container {
+  margin: 1rem 0 1.5rem 0;
+  text-align: center;
+}
+
+.question-image {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  height: auto;
+  max-height: 400px;
+  max-width: 100%;
+  width: auto;
+}
+
+.question-image.loading {
+  background-color: #f5f5f5;
+  min-height: 200px;
+  position: relative;
+}
+
+.question-image.error {
+  background-color: #f8f9fa;
+  border: 2px dashed #dc3545;
+  color: #dc3545;
+  padding: 2rem;
+}
+
+/* Image loading placeholder */
+.image-placeholder {
+  align-items: center;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color: #666;
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  width: 100%;
+}
+
+.image-placeholder::before {
+  content: "Loading image...";
+}
+
+/* Option images */
+.option-image {
+  border-radius: 4px;
+  height: auto;
+  margin-right: 0.75rem;
+  max-height: 60px;
+  max-width: 80px;
+  width: auto;
+}
+
+.option-with-image {
+  align-items: flex-start;
+  padding: 1rem 0.75rem;
+}
+
+.option-content {
+  align-items: center;
+  display: flex;
+  flex: 1;
+}
+
+.option-text {
+  flex: 1;
+}
+
+/* Drag item images */
+.drag-item-image {
+  border-radius: 4px;
+  height: auto;
+  margin-bottom: 0.5rem;
+  max-height: 40px;
+  max-width: 60px;
+  width: auto;
+}
+
+.drag-item-with-image {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-width: 80px;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.drag-item-with-image .drag-item-text {
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
 /* Multiple Choice & Multiple Select */
 .options-container {
   display: flex;
