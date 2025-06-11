@@ -3,153 +3,342 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grade 3 Mathematics (2014) | SOLace</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/accessibility.css">
+  <title>SOLace - Educational Testing Platform</title>
+  <meta name="description" content="SOLace is a comprehensive educational testing platform designed for learners of all ages with full COPPA compliance and accessibility features.">
+  <link rel="stylesheet" href="main-pages.css">
 </head>
 <body class="theme-default">
   <header>
-    <h1>Grade 3 Mathematics (2014)</h1>
-    <img src="SOLace-logo.svg" width="150px">
-    <br>
-      <button id="home-btn" class="nav-btn active">Home</button>
-      <button id="test-btn" class="nav-btn">Take Test</button>
-      <button id="results-btn" class="nav-btn">My Results</button>
-      <button id="settings-btn" class="nav-btn">Settings</button>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <h1>SOLace</h1>
+          <span class="brand-tagline">Educational Testing Platform</span>
+        </div>
+        <div class="nav-links">
+          <a href="#features" class="nav-link">Features</a>
+          <a href="#categories" class="nav-link">Test Categories</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="index.html" class="nav-link-cta">Enter Testing Platform</a>
+        </div>
+        <div class="mobile-menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </nav>
   </header>
 
   <main>
-    <!-- Home Section -->
-    <section id="home" class="page active">
-      <h2>Welcome to SOLace</h2>
-      <p>Practice with our structured question sets and track your progress over time.</p>
-      <div class="action-btns">
-        <button id="start-test" class="primary-btn">Start New Test</button>
-        <button id="view-results" class="secondary-btn">View Previous Results</button>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">Welcome to SOLace</h1>
+            <p class="hero-subtitle">Your comprehensive educational testing platform designed for learners of all ages</p>
+            <p class="hero-description">COPPA compliant, fully accessible, and trusted by thousands of students and educators worldwide.</p>
+            <div class="hero-buttons">
+              <a href="index.html" class="btn btn-primary hero-btn">Start Learning Now</a>
+              <button class="btn btn-secondary hero-btn" onclick="scrollToSection('#categories')">Explore Tests</button>
+            </div>
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <span class="stat-number">1000+</span>
+                <span class="stat-label">Questions</span>
+              </div>
+              <div class="hero-stat">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Categories</span>
+              </div>
+              <div class="hero-stat">
+                <span class="stat-number">10K+</span>
+                <span class="stat-label">Students</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-image">
+            <img src="https://via.placeholder.com/600x400/4a6fa5/ffffff?text=SOLace+Platform" alt="SOLace Educational Platform" class="hero-img">
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- Test Section -->
-    <section id="test" class="page">
-      <div id="test-container">
-        <div id="progress-bar">
-          <div id="progress-fill"></div>
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Why Choose SOLace?</h2>
+          <p class="section-subtitle">Built with students, educators, and accessibility in mind</p>
         </div>
-        <div id="question-counter">Question <span id="current-question">1</span> of <span id="total-questions">10</span></div>
-        <div id="question-container">
-          <!-- Question will be inserted here dynamically -->
+        
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="https://via.placeholder.com/80x80/4a6fa5/ffffff?text=👥" alt="Child-Friendly" class="feature-img">
+            </div>
+            <h3 class="feature-title">Child-Friendly & Safe</h3>
+            <p class="feature-description">COPPA compliant platform designed specifically for young learners with robust privacy protection. No personal information collected from users under 13.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="https://via.placeholder.com/80x80/4a6fa5/ffffff?text=♿" alt="Accessible" class="feature-img">
+            </div>
+            <h3 class="feature-title">Fully Accessible</h3>
+            <p class="feature-description">508 compliant with customizable themes, font sizes, reduced motion options, and full screen reader optimization for all learners.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="https://via.placeholder.com/80x80/4a6fa5/ffffff?text=📊" alt="Progress Tracking" class="feature-img">
+            </div>
+            <h3 class="feature-title">Progress Tracking</h3>
+            <p class="feature-description">Monitor learning progress over time with detailed analytics, performance insights, and personalized feedback for continuous improvement.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="https://via.placeholder.com/80x80/4a6fa5/ffffff?text=🎯" alt="Adaptive Learning" class="feature-img">
+            </div>
+            <h3 class="feature-title">Adaptive Learning</h3>
+            <p class="feature-description">Personalized question sequences that adapt to individual learning pace, style, and areas that need improvement.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="https://via.placeholder.com/80x80/4a6fa5/ffffff?text=🔒" alt="Privacy First" class="feature-img">
+            </div>
+            <h3 class="feature-title">Privacy First</h3>
+            <p class="feature-description">No tracking, no data collection from children, and transparent privacy practices that put student safety and privacy first.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <img src="https://via.placeholder.com/80x80/4a6fa5/ffffff?text=🌐" alt="Cross Platform" class="feature-img">
+            </div>
+            <h3 class="feature-title">Cross-Platform</h3>
+            <p class="feature-description">Works seamlessly on desktops, tablets, and smartphones with responsive design and offline capabilities.</p>
+          </div>
         </div>
-        <div id="controls">
-          <button id="submit-answer" class="primary-btn">Submit Answer</button>
-          <button id="next-question" class="primary-btn" style="display:none;">Next Question</button>
-        </div>
-      </div>
-      <div id="feedback-container" style="display:none;">
-        <div id="feedback-message"></div>
-        <div id="explanation"></div>
       </div>
     </section>
 
-    <!-- Results Section -->
-    <!-- <section id="results" class="page">
-      <h2>Your Test Results</h2>
-      <div id="results-summary">
-        Summary will be inserted here dynamically 
-      </div>
-      <div id="results-details">
-        Detailed results will be inserted here dynamically
-      </div>
-      <div class="action-btns">
-        <button id="retake-test" class="primary-btn">Take Another Test</button>
-        <button id="view-trends" class="secondary-btn">View Performance Trends</button>
-      </div>
-    </section> -->
+    <!-- Test Categories Section -->
+    <section id="categories" class="categories-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Test Categories</h2>
+          <p class="section-subtitle">Choose from our comprehensive range of educational assessments</p>
+        </div>
+        
+        <div class="categories-grid">
+          <div class="category-card" data-category="math">
+            <div class="category-icon">
+              <img src="https://via.placeholder.com/100x100/FF6B6B/ffffff?text=📊" alt="Mathematics" class="category-img">
+            </div>
+            <h3 class="category-title">Mathematics</h3>
+            <p class="category-description">Algebra, Geometry, Calculus, Statistics, and Problem Solving</p>
+            <div class="category-stats">
+              <span class="test-count">12 Tests Available</span>
+              <span class="difficulty">All Skill Levels</span>
+            </div>
+            <a href="index.html?category=math" class="category-btn">Start Math Tests</a>
+          </div>
 
-    <!-- Settings Section -->
-    <section id="settings" class="page">
-      <h2>Accessibility Settings</h2>
-      <div class="settings-group">
-        <h3>Theme</h3>
-        <div class="theme-options">
-          <button class="theme-btn" data-theme="black-on-white">Black on White (Default)</button>
-          <button class="theme-btn" data-theme="black-on-cream">Black on Cream</button>
-          <button class="theme-btn" data-theme="black-on-light-blue">Black on Light Blue</button>
-          <button class="theme-btn" data-theme="black-on-light-magenta">Black on Light Magenta</button>
-          <button class="theme-btn" data-theme="yellow-on-blue">Yellow on Blue</button>
-          <button class="theme-btn" data-theme="gray-on-green">Gray on Green</button>
-          <p><i>***Note - these are the same color options used in TestNav that will be available during your assessment.</i></p>
+          <div class="category-card" data-category="science">
+            <div class="category-icon">
+              <img src="https://via.placeholder.com/100x100/4ECDC4/ffffff?text=🔬" alt="Science" class="category-img">
+            </div>
+            <h3 class="category-title">Science</h3>
+            <p class="category-description">Biology, Chemistry, Physics, Earth Science, and Scientific Method</p>
+            <div class="category-stats">
+              <span class="test-count">15 Tests Available</span>
+              <span class="difficulty">All Skill Levels</span>
+            </div>
+            <a href="index.html?category=science" class="category-btn">Start Science Tests</a>
+          </div>
+
+          <div class="category-card" data-category="language">
+            <div class="category-icon">
+              <img src="https://via.placeholder.com/100x100/45B7D1/ffffff?text=📝" alt="Language Arts" class="category-img">
+            </div>
+            <h3 class="category-title">Language Arts</h3>
+            <p class="category-description">Reading Comprehension, Writing, Grammar, Literature, and Vocabulary</p>
+            <div class="category-stats">
+              <span class="test-count">10 Tests Available</span>
+              <span class="difficulty">All Skill Levels</span>
+            </div>
+            <a href="index.html?category=language" class="category-btn">Start Language Tests</a>
+          </div>
+
+          <div class="category-card" data-category="social">
+            <div class="category-icon">
+              <img src="https://via.placeholder.com/100x100/96CEB4/ffffff?text=🌍" alt="Social Studies" class="category-img">
+            </div>
+            <h3 class="category-title">Social Studies</h3>
+            <p class="category-description">History, Geography, Civics, Economics, and Cultural Studies</p>
+            <div class="category-stats">
+              <span class="test-count">8 Tests Available</span>
+              <span class="difficulty">All Skill Levels</span>
+            </div>
+            <a href="index.html?category=social" class="category-btn">Start Social Studies</a>
+          </div>
+
+          <div class="category-card" data-category="critical">
+            <div class="category-icon">
+              <img src="https://via.placeholder.com/100x100/FFEAA7/333333?text=🧠" alt="Critical Thinking" class="category-img">
+            </div>
+            <h3 class="category-title">Critical Thinking</h3>
+            <p class="category-description">Logic, Problem Solving, Analysis, and Reasoning Skills</p>
+            <div class="category-stats">
+              <span class="test-count">6 Tests Available</span>
+              <span class="difficulty">All Skill Levels</span>
+            </div>
+            <a href="index.html?category=critical" class="category-btn">Start Thinking Tests</a>
+          </div>
+
+          <div class="category-card" data-category="standardized">
+            <div class="category-icon">
+              <img src="https://via.placeholder.com/100x100/DDA0DD/333333?text=📋" alt="Test Preparation" class="category-img">
+            </div>
+            <h3 class="category-title">Test Preparation</h3>
+            <p class="category-description">SAT, ACT, State Assessments, and College Readiness</p>
+            <div class="category-stats">
+              <span class="test-count">20 Tests Available</span>
+              <span class="difficulty">High School+</span>
+            </div>
+            <a href="index.html?category=standardized" class="category-btn">Start Test Prep</a>
+          </div>
         </div>
       </div>
-      <div class="settings-group">
-        <h3>Text Size</h3>
-        <div class="font-size-controls">
-          <button id="decrease-font" class="font-btn">A-</button>
-          <span id="font-size-value">Medium</span>
-          <button id="increase-font" class="font-btn">A+</button>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number">1000+</div>
+            <div class="stat-label">Practice Questions</div>
+            <div class="stat-description">Carefully crafted by education experts</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Test Categories</div>
+            <div class="stat-description">Covering all major subject areas</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">10K+</div>
+            <div class="stat-label">Students Helped</div>
+            <div class="stat-description">Learners of all ages and abilities</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">Satisfaction Rate</div>
+            <div class="stat-description">Based on user feedback and reviews</div>
+          </div>
         </div>
       </div>
-      <div class="settings-group">
-        <h3>Additional Options</h3>
-        <div class="checkbox-option">
-          <input type="checkbox" id="reduce-motion">
-          <label for="reduce-motion">Reduce motion</label>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="about-title">About SOLace</h2>
+            <p class="about-description">SOLace was created with a simple mission: to provide high-quality educational assessments that are accessible to everyone, especially young learners who need safe, privacy-focused platforms.</p>
+            
+            <div class="about-features">
+              <div class="about-feature">
+                <h3>COPPA Compliant</h3>
+                <p>We don't collect any personal information from users under 13, ensuring complete compliance with children's privacy laws.</p>
+              </div>
+              <div class="about-feature">
+                <h3>Educator Approved</h3>
+                <p>Developed in consultation with teachers and education specialists to meet real classroom needs.</p>
+              </div>
+              <div class="about-feature">
+                <h3>Continuously Updated</h3>
+                <p>Regular content updates and new features based on user feedback and educational best practices.</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <img src="https://via.placeholder.com/500x400/e1e7f0/4a6fa5?text=Education+Excellence" alt="Education Excellence" class="about-img">
+          </div>
         </div>
       </div>
-      <button id="save-settings" class="primary-btn">Save Settings</button>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2 class="cta-title">Ready to Start Learning?</h2>
+          <p class="cta-subtitle">Join thousands of students and educators who trust SOLace for their educational assessment needs</p>
+          <div class="cta-buttons">
+            <a href="index.html" class="btn btn-primary cta-btn">Access Testing Platform</a>
+            <button class="btn btn-secondary cta-btn" onclick="scrollToSection('#categories')">Browse Test Categories</button>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 SOLace | Donate</p>
-    <p>Privacy Policy | Terms of Service</p>
-    <p>Adapted from <i>Virginia Standards of Learning Released Test: Grade 3 Mathematics, Released Spring 2014</i> © Commonwealth of Virginia Department of Education. All rights reserved. Reproduced by permission.</p>
+    <div class="footer-content">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <h3>SOLace</h3>
+          <p>Educational testing platform designed for learners of all ages</p>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="index.html">Testing Platform</a></li>
+            <li><a href="#categories">Test Categories</a></li>
+            <li><a href="#features">Features</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>About</h4>
+          <ul>
+            <li><a href="#about">About SOLace</a></li>
+            <li><a href="index.html#privacy-btn">Privacy Policy</a></li>
+            <li><a href="index.html#terms-btn">Terms of Service</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="mailto:support@solace.edu">Contact Support</a></li>
+            <li><a href="#features">Accessibility</a></li>
+            <li><a href="#about">Child Privacy</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 SOLace. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="index.html#privacy-btn" class="footer-link">Privacy Policy</a>
+          <a href="index.html#terms-btn" class="footer-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
   </footer>
 
-  <!-- Templates for different question types -->
-  <template id="multiple-choice-template">
-    <div class="question multiple-choice">
-      <h3 class="question-text"></h3>
-       <div class="question-image-container"></div>
-      <div class="options-container">
-      </div>
-    </div>
-  </template>
+  <!-- Back to top button -->
+  <button id="back-to-top" class="back-to-top" style="display: none;" title="Back to top">
+    ↑
+  </button>
 
-  <template id="multiple-select-template">
-    <div class="question multiple-select">
-      <h3 class="question-text"></h3>
-       <div class="question-image-container"></div>
-      <div class="options-container">
-      </div>
-    </div>
-  </template>
-
-  <template id="drag-drop-template">
-    <div class="question drag-drop">
-      <h3 class="question-text"></h3>
-       <div class="question-image-container"></div>
-      <div class="drag-items-container">
-      </div>
-      <div class="drop-zones-container">
-      </div>
-    </div>
-  </template>
-
-  <template id="free-response-template">
-    <div class="question free-response">
-      <h3 class="question-text"></h3>
-       <div class="question-image-container"></div>
-      <textarea class="response-input" rows="5" placeholder="Type your answer here..."></textarea>
-    </div>
-  </template>
-
-  <script src="js/main.js"></script>
-  <script src="js/mathgrade3-2014.js"></script>
-  <script src="js/accessibility.js"></script>
-  <script>
-    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-  </script>
-  <script defer src="/_vercel/insights/script.js"></script>
+  <script src="js/main-pages.js"></script>
 </body>
 </html>

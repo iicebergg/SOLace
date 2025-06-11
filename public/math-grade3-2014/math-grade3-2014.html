@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade 3 Mathematics (2014) | SOLace</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/accessibility.css">
+</head>
+<body class="theme-default">
+  <header>
+    <h1>Grade 3 Mathematics (2014)</h1>
+    <img src="SOLace-logo.svg" width="150px">
+    <br>
+      <button id="home-btn" class="nav-btn active">Home</button>
+      <button id="test-btn" class="nav-btn">Take Test</button>
+      <button id="results-btn" class="nav-btn">My Results</button>
+      <button id="settings-btn" class="nav-btn">Settings</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="page active">
+      <h2>Welcome to SOLace</h2>
+      <p>Practice with our structured question sets and track your progress over time.</p>
+      <div class="action-btns">
+        <button id="start-test" class="primary-btn">Start New Test</button>
+        <button id="view-results" class="secondary-btn">View Previous Results</button>
+      </div>
+    </section>
+
+    <!-- Test Section -->
+    <section id="test" class="page">
+      <div id="test-container">
+        <div id="progress-bar">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="question-counter">Question <span id="current-question">1</span> of <span id="total-questions">10</span></div>
+        <div id="question-container">
+          <!-- Question will be inserted here dynamically -->
+        </div>
+        <div id="controls">
+          <button id="submit-answer" class="primary-btn">Submit Answer</button>
+          <button id="next-question" class="primary-btn" style="display:none;">Next Question</button>
+        </div>
+      </div>
+      <div id="feedback-container" style="display:none;">
+        <div id="feedback-message"></div>
+        <div id="explanation"></div>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <!-- <section id="results" class="page">
+      <h2>Your Test Results</h2>
+      <div id="results-summary">
+        Summary will be inserted here dynamically 
+      </div>
+      <div id="results-details">
+        Detailed results will be inserted here dynamically
+      </div>
+      <div class="action-btns">
+        <button id="retake-test" class="primary-btn">Take Another Test</button>
+        <button id="view-trends" class="secondary-btn">View Performance Trends</button>
+      </div>
+    </section> -->
+
+    <!-- Settings Section -->
+    <section id="settings" class="page">
+      <h2>Accessibility Settings</h2>
+      <div class="settings-group">
+        <h3>Theme</h3>
+        <div class="theme-options">
+          <button class="theme-btn" data-theme="black-on-white">Black on White (Default)</button>
+          <button class="theme-btn" data-theme="black-on-cream">Black on Cream</button>
+          <button class="theme-btn" data-theme="black-on-light-blue">Black on Light Blue</button>
+          <button class="theme-btn" data-theme="black-on-light-magenta">Black on Light Magenta</button>
+          <button class="theme-btn" data-theme="yellow-on-blue">Yellow on Blue</button>
+          <button class="theme-btn" data-theme="gray-on-green">Gray on Green</button>
+          <p><i>***Note - these are the same color options used in TestNav that will be available during your assessment.</i></p>
+        </div>
+      </div>
+      <div class="settings-group">
+        <h3>Text Size</h3>
+        <div class="font-size-controls">
+          <button id="decrease-font" class="font-btn">A-</button>
+          <span id="font-size-value">Medium</span>
+          <button id="increase-font" class="font-btn">A+</button>
+        </div>
+      </div>
+      <div class="settings-group">
+        <h3>Additional Options</h3>
+        <div class="checkbox-option">
+          <input type="checkbox" id="reduce-motion">
+          <label for="reduce-motion">Reduce motion</label>
+        </div>
+      </div>
+      <button id="save-settings" class="primary-btn">Save Settings</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SOLace | Donate</p>
+    <p>Privacy Policy | Terms of Service</p>
+    <p>Adapted from <i>Virginia Standards of Learning Released Test: Grade 3 Mathematics, Released Spring 2014</i> © Commonwealth of Virginia Department of Education. All rights reserved. Reproduced by permission.</p>
+  </footer>
+
+  <!-- Templates for different question types -->
+  <template id="multiple-choice-template">
+    <div class="question multiple-choice">
+      <h3 class="question-text"></h3>
+       <div class="question-image-container"></div>
+      <div class="options-container">
+      </div>
+    </div>
+  </template>
+
+  <template id="multiple-select-template">
+    <div class="question multiple-select">
+      <h3 class="question-text"></h3>
+       <div class="question-image-container"></div>
+      <div class="options-container">
+      </div>
+    </div>
+  </template>
+
+  <template id="drag-drop-template">
+    <div class="question drag-drop">
+      <h3 class="question-text"></h3>
+       <div class="question-image-container"></div>
+      <div class="drag-items-container">
+      </div>
+      <div class="drop-zones-container">
+      </div>
+    </div>
+  </template>
+
+  <template id="free-response-template">
+    <div class="question free-response">
+      <h3 class="question-text"></h3>
+       <div class="question-image-container"></div>
+      <textarea class="response-input" rows="5" placeholder="Type your answer here..."></textarea>
+    </div>
+  </template>
+
+  <script src="js/main.js"></script>
+  <script src="js/mathgrade3-2014.js"></script>
+  <script src="js/accessibility.js"></script>
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
