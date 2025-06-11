@@ -13,5 +13,5 @@ SOLace has the following primary features that distinguish it from existing soft
 - The website emulates the official testing experience of TestNav by Pearson, offering a similar structure and accessibility features
 
 ## Copyright Notice
-SOLACE is licensed under the AGPL-3.0 license. It contains adapted content that is copyrighted by the Virginia Department of Education. **All source code is licensed under AGPL-3.0, but the material of the questions themselves is not.** Official VDOE questions are credited with the following acknowledgement:
+SOLace is licensed under the AGPL-3.0 license. It contains adapted content that is copyrighted by the Virginia Department of Education. **All source code is licensed under AGPL-3.0, but the material of the questions themselves is not.** Official VDOE questions are credited with the following acknowledgement:
 > Adapted from “*Source Name*” © Commonwealth of Virginia Department of Education. All rights reserved. Reproduced by permission.
