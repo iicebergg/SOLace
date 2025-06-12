@@ -1,4 +1,5 @@
-![SOLace-logo](https://github.com/user-attachments/assets/3d2253d4-c56d-4ee9-aace-b5200e7e42b2)
+![SOLace-logo](https://github.com/user-attachments/assets/7b556c46-9019-431a-ab1e-b9d86c24a7bc)
+
 A simple, non-profit web app to help K-12 students in the Commonwealth of Virginia study for VDOE Standards of Learning Assessments.
 
 ## About 
