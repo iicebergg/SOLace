@@ -87,9 +87,25 @@ header {
   padding: 0 2rem;
 }
 
-.nav-brand h1 {
-  font-size: 1.8rem;
-  margin-bottom: 0.25rem;
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand-logo {
+  flex-shrink: 0;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+  max-width: 120px;
+  transition: opacity 0.3s ease;
+}
+
+.logo-img:hover {
+  opacity: 0.9;
 }
 
 .brand-tagline {
