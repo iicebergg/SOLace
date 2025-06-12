@@ -218,7 +218,7 @@ function handleURLParameters() {
   }
 }
 
-// Lazy loading for images
+/* // Lazy loading for images
 function setupLazyLoading() {
   const images = document.querySelectorAll('img');
   
@@ -241,7 +241,7 @@ function setupLazyLoading() {
   images.forEach(img => {
     imageObserver.observe(img);
   });
-}
+} */
 
 // Header scroll effect
 function setupHeaderScrollEffect() {
