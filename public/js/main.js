@@ -1,5 +1,10 @@
 // Main application logic
 
+// Disable Right Click
+   window.addEventListener('contextmenu', function(event) {
+     event.preventDefault();
+   });
+
 // DOM Elements
 const navButtons = document.querySelectorAll('.nav-btn');
 const pages = document.querySelectorAll('.page');

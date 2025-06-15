@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SOLace</title>
   <meta name="description" content="A simple, non-profit web app to help K-12 students in the Commonwealth of Virginia study for VDOE Standards of Learning assessments.">
-  <link rel="stylesheet" href="main-pages.css">
+  <link rel="stylesheet" href="css/main-pages.css">
 </head>
 
 <body class="theme-default">
@@ -13,7 +13,9 @@
     <nav class="navbar">
       <div class="nav-container">
         <div class="nav-brand brand-logo">
-          <img src="SOLace-logo.svg" alt="SOLace Logo" class="logo-img">
+          <a href="index.html">
+          <img src="images/SOLace-logo.svg" alt="SOLace Logo" class="logo-img">
+          </a>
         </div>
         <div class="nav-links">
           <a href="#features" class="nav-link">Features</a>
@@ -129,7 +131,7 @@
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Tests</h2>
-          <p class="section-subtitle">Practice for any SOL test in the following categories</p>
+          <p class="section-subtitle">Practice for any Standards of Learning test in the following categories</p>
         </div>
         
         <div class="categories-grid">
@@ -143,7 +145,7 @@
               <span class="test-count">X Tests Available</span>
               <span class="difficulty">Grades 3-11</span>
             </div>
-            <a href="index.html?category=math" class="category-btn">Start Math Tests</a>
+            <a href="math-directory.html" class="category-btn">Start Math Tests</a>
           </div>
 
           <div class="category-card" data-category="science">
@@ -156,7 +158,7 @@
               <span class="test-count">X Tests Available</span>
               <span class="difficulty">Grades 5-10</span>
             </div>
-            <a href="index.html?category=science" class="category-btn">Start Science Tests</a>
+            <a href="science-directory.html" class="category-btn">Start Science Tests</a>
           </div>
 
           <div class="category-card" data-category="language">
@@ -169,7 +171,7 @@
               <span class="test-count">X Tests Available</span>
               <span class="difficulty">Grades 3-8</span>
             </div>
-            <a href="index.html?category=language" class="category-btn">Start Reading Tests</a>
+            <a href="reading-directory.html" class="category-btn">Start Reading Tests</a>
           </div>
           <!-- not sure about including social studies
           <div class="category-card" data-category="social">
@@ -291,7 +293,7 @@
     <div class="footer-content">
       <div class="footer-main">
         <div class="footer-brand">
-          <img src="SOLace-logo.svg" alt="SOLace Logo" class="logo-img">
+          <img src="images/SOLace-logo.svg" alt="SOLace Logo" class="logo-img">
           <p>The premiere platform for Virginia Standards of Learning test practice.</p>
         </div>
         

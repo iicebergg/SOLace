@@ -1,5 +1,10 @@
 // SOLace Home Page JavaScript
 
+// Disable Right Click
+   window.addEventListener('contextmenu', function(event) {
+     event.preventDefault();
+   });
+
 // DOM Elements
 const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
 const navLinks = document.querySelector('.nav-links');
