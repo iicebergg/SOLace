@@ -1,9 +1,9 @@
 // Main application logic
 
 // Disable Right Click
-   window.addEventListener('contextmenu', function(event) {
-     event.preventDefault();
-   });
+window.addEventListener('contextmenu', function(event) {
+  event.preventDefault();
+});
 
 // DOM Elements
 const navButtons = document.querySelectorAll('.nav-btn');
@@ -23,222 +23,263 @@ let currentPage = 'home';
 let currentQuestionIndex = 0;
 let questions = [];
 let currentTestAnswers = [];
+let testStartTime = null; // Add time tracking
+let testInitialized = false; // Track if test has been properly initialized
 let currentUser = {
- id: 'user123', // In a real app, this would come from authentication
- username: 'testuser',
- accessibilityPreferences: {
- theme: 'black-on-white',
- fontSize: 'medium',
- reduceMotion: false,
- }
+  accessibilityPreferences: {
+    theme: 'black-on-white',
+    fontSize: 'medium',
+    reduceMotion: false,
+    screenReaderOptimized: false
+  }
 };
 
 // Initialize the application
 function initApp() {
- console.log('Initializing application...');
- 
- // Set up event listeners
- setupNavigation();
- setupEventListeners();
+  console.log('Initializing application...');
+  
+  // Set up event listeners
+  setupNavigation();
+  setupEventListeners();
 
- // Load user preferences
- /* loadUserPreferences(); */
+  // Initially disable the test navigation button
+  disableTestNavButton();
 
- // Load questions (in a real app, these would come from the server)
- fetchQuestions();
- 
- // Check if questions loaded successfully
- setTimeout(() => {
-   if (questions.length === 0) {
-     console.error('No questions loaded! Check sampleQuestions definition.');
-     alert('Error: Questions failed to load. Please refresh the page.');
-   } else {
-     console.log(`Application initialized successfully with ${questions.length} questions`);
-   }
- }, 100);
+  // Load user preferences
+  /* loadUserPreferences(); */
+
+  // Load questions (in a real app, these would come from the server)
+  fetchQuestions();
+  
+  // Check if questions loaded successfully
+  setTimeout(() => {
+    if (questions.length === 0) {
+      console.error('No questions loaded! Check sampleQuestions definition.');
+      alert('Error: Questions failed to load. Please refresh the page.');
+    } else {
+      console.log(`Application initialized successfully with ${questions.length} questions`);
+    }
+  }, 100);
 }
 
 // Set up navigation between pages
 function setupNavigation() {
- navButtons.forEach(button => {
- button.addEventListener('click', () => {
- const targetPage = button.id.split('-')[0];
- navigateTo(targetPage);
- });
- });
+  navButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const targetPage = button.id.split('-')[0];
+      console.log('Navigating to:', targetPage);
+
+            // Prevent navigation to test page if test not initialized
+      if (targetPage === 'test' && !testInitialized) {
+        console.log('Test not initialized - navigation blocked');
+        return;
+      }
+
+      navigateTo(targetPage);
+      
+      // If navigating to results, display them
+      if (targetPage === 'results') {
+        setTimeout(() => {
+          displayResults();
+        }, 100);
+      }
+    });
+  });
 }
 
 // Set up other event listeners
 function setupEventListeners() {
- startTestBtn.addEventListener('click', () => {
- navigateTo('test');
- startTest();
- });
+  if (startTestBtn) {
+    startTestBtn.addEventListener('click', () => {
+      enableTestNavButton();
+      navigateTo('test');
+      startTest();
+    });
+  }
 
- viewResultsBtn.addEventListener('click', () => {
- navigateTo('results');
- loadResults();
- });
+  if (viewResultsBtn) {
+    viewResultsBtn.addEventListener('click', () => {
+      navigateTo('results');
+      setTimeout(() => {
+        displayResults();
+      }, 100);
+    });
+  }
 
- submitAnswerBtn.addEventListener('click', submitAnswer);
- nextQuestionBtn.addEventListener('click', loadNextQuestion);
+  if (submitAnswerBtn) {
+    submitAnswerBtn.addEventListener('click', submitAnswer);
+  }
+  
+  if (nextQuestionBtn) {
+    nextQuestionBtn.addEventListener('click', loadNextQuestion);
+  }
 
- saveSettingsBtn.addEventListener('click', saveUserPreferences);
+  if (saveSettingsBtn) {
+    saveSettingsBtn.addEventListener('click', saveUserPreferences);
+  }
 
- // Remove the duplicate theme and font size handling since accessibility.js handles this
+  // Remove the duplicate theme and font size handling since accessibility.js handles this
 }
 
 // Navigate to a different page
 function navigateTo(page) {
- // Update active state in navigation
- navButtons.forEach(button => {
- if (button.id === `${page}-btn`) {
- button.classList.add('active');
- } else {
- button.classList.remove('active');
- }
- });
+  console.log('Navigating to page:', page);
+  
+  // Update active state in navigation
+  navButtons.forEach(button => {
+    if (button.id === `${page}-btn`) {
+      button.classList.add('active');
+    } else {
+      button.classList.remove('active');
+    }
+  });
 
- // Show the active page
- pages.forEach(pageEl => {
- if (pageEl.id === page) {
- pageEl.classList.add('active');
- } else {
- pageEl.classList.remove('active');
- }
- });
+  // Show the active page
+  pages.forEach(pageEl => {
+    if (pageEl.id === page) {
+      pageEl.classList.add('active');
+    } else {
+      pageEl.classList.remove('active');
+    }
+  });
 
- currentPage = page;
+  currentPage = page;
+  console.log('Current page is now:', currentPage);
 }
 
 async function fetchQuestions() {
- try {
- questions = sampleQuestions;
- console.log('Questions loaded:', questions.length);
- console.log('First question:', questions[0]);
- console.log('Last question:', questions[questions.length - 1]);
- } catch (error) {
- console.error('Error fetching questions:', error);
- questions = []; // Fallback to empty array
- }
+  try {
+    questions = sampleQuestions;
+    console.log('Questions loaded:', questions.length);
+    console.log('First question:', questions[0]);
+    console.log('Last question:', questions[questions.length - 1]);
+  } catch (error) {
+    console.error('Error fetching questions:', error);
+    questions = []; // Fallback to empty array
+  }
 }
 
 // Start a new test
 function startTest() {
- console.log('Starting test...');
- 
- if (questions.length === 0) {
-   console.error('Cannot start test: No questions loaded');
-   alert('Error: No questions available. Please refresh the page and try again.');
-   return;
- }
- 
- currentQuestionIndex = 0;
- currentTestAnswers = [];
+  console.log('Starting test...');
+  
+  if (questions.length === 0) {
+    console.error('Cannot start test: No questions loaded');
+    alert('Error: No questions available. Please refresh the page and try again.');
+    return;
+  }
+  
+  currentQuestionIndex = 0;
+  currentTestAnswers = [];
+  testInitialized = true;
+  
+  // Start time tracking
+  testStartTime = new Date();
+  console.log('Test timer started at:', testStartTime);
 
- // Reset UI elements
- const progressFill = document.getElementById('progress-fill');
- const currentQuestionSpan = document.getElementById('current-question');
- const totalQuestionsSpan = document.getElementById('total-questions');
- 
- if (progressFill) progressFill.style.width = '0%';
- if (currentQuestionSpan) currentQuestionSpan.textContent = '1';
- if (totalQuestionsSpan) totalQuestionsSpan.textContent = questions.length;
+  // Reset UI elements
+  const progressFill = document.getElementById('progress-fill');
+  const currentQuestionSpan = document.getElementById('current-question');
+  const totalQuestionsSpan = document.getElementById('total-questions');
+  
+  if (progressFill) progressFill.style.width = '0%';
+  if (currentQuestionSpan) currentQuestionSpan.textContent = '1';
+  if (totalQuestionsSpan) totalQuestionsSpan.textContent = questions.length;
 
- console.log(`Test started with ${questions.length} questions`);
- 
- // Load the first question (fixed: was loadQuestion(1), should be loadQuestion(0))
- loadQuestion(0);
+  console.log(`Test started with ${questions.length} questions`);
+  
+  // Load the first question (fixed: was loadQuestion(1), should be loadQuestion(0))
+  loadQuestion(0);
 }
 
 // Load a specific question
 function loadQuestion(index) {
- console.log(`Loading question ${index + 1} of ${questions.length}`);
- 
- if (index >= questions.length) {
- // Test is finished
- finishTest();
- return;
- }
+  console.log(`Loading question ${index + 1} of ${questions.length}`);
+  
+  if (index >= questions.length) {
+    // Test is finished
+    finishTest();
+    return;
+  }
 
- const question = questions[index];
- console.log('Question object:', question);
- 
- if (!question) {
- console.error(`Question at index ${index} is undefined`);
- return;
- }
+  const question = questions[index];
+  console.log('Question object:', question);
+  
+  if (!question) {
+    console.error(`Question at index ${index} is undefined`);
+    return;
+  }
 
- const questionContainer = document.getElementById('question-container');
- if (!questionContainer) {
- console.error('Question container not found');
- return;
- }
+  const questionContainer = document.getElementById('question-container');
+  if (!questionContainer) {
+    console.error('Question container not found');
+    return;
+  }
 
- // Clear previous question
- questionContainer.innerHTML = '';
+  // Clear previous question
+  questionContainer.innerHTML = '';
 
- // Hide feedback container
- const feedbackContainer = document.getElementById('feedback-container');
- if (feedbackContainer) {
- feedbackContainer.style.display = 'none';
- }
+  // Hide feedback container
+  const feedbackContainer = document.getElementById('feedback-container');
+  if (feedbackContainer) {
+    feedbackContainer.style.display = 'none';
+  }
 
- // Show submit button, hide next button
- if (submitAnswerBtn) submitAnswerBtn.style.display = 'block';
- if (nextQuestionBtn) nextQuestionBtn.style.display = 'none';
+  // Show submit button, hide next button
+  if (submitAnswerBtn) submitAnswerBtn.style.display = 'block';
+  if (nextQuestionBtn) nextQuestionBtn.style.display = 'none';
 
- // Update progress
- const progressFill = document.getElementById('progress-fill');
- const currentQuestionSpan = document.getElementById('current-question');
- 
- if (progressFill) {
- progressFill.style.width = `${((index + 1) / questions.length) * 100}%`;
- }
- if (currentQuestionSpan) {
- currentQuestionSpan.textContent = index + 1;
- }
+  // Update progress
+  const progressFill = document.getElementById('progress-fill');
+  const currentQuestionSpan = document.getElementById('current-question');
+  
+  if (progressFill) {
+    progressFill.style.width = `${((index + 1) / questions.length) * 100}%`;
+  }
+  if (currentQuestionSpan) {
+    currentQuestionSpan.textContent = index + 1;
+  }
 
- // Use the appropriate template based on question type
- let template;
- const templateId = `${question.type}-template`;
- const templateElement = document.getElementById(templateId);
- 
- if (!templateElement) {
- console.error(`Template not found: ${templateId}`);
- return;
- }
+  // Use the appropriate template based on question type
+  let template;
+  const templateId = `${question.type}-template`;
+  const templateElement = document.getElementById(templateId);
+  
+  if (!templateElement) {
+    console.error(`Template not found: ${templateId}`);
+    return;
+  }
 
- template = templateElement.content.cloneNode(true);
- 
- try {
- switch (question.type) {
- case 'multiple-choice':
- renderMultipleChoiceQuestion(template, question);
- break;
+  template = templateElement.content.cloneNode(true);
+  
+  try {
+    switch (question.type) {
+      case 'multiple-choice':
+        renderMultipleChoiceQuestion(template, question);
+        break;
 
- case 'multiple-select':
- renderMultipleSelectQuestion(template, question);
- break;
+      case 'multiple-select':
+        renderMultipleSelectQuestion(template, question);
+        break;
 
- case 'drag-drop':
- renderDragDropQuestion(template, question);
- break;
+      case 'drag-drop':
+        renderDragDropQuestion(template, question);
+        break;
 
- case 'free-response':
- renderFreeResponseQuestion(template, question);
- break;
- 
- default:
- console.error(`Unknown question type: ${question.type}`);
- return;
- }
+      case 'free-response':
+        renderFreeResponseQuestion(template, question);
+        break;
+      
+      default:
+        console.error(`Unknown question type: ${question.type}`);
+        return;
+    }
 
- questionContainer.appendChild(template);
- console.log(`Question ${index + 1} loaded successfully`);
- } catch (error) {
- console.error(`Error rendering question ${index + 1}:`, error);
- }
+    questionContainer.appendChild(template);
+    console.log(`Question ${index + 1} loaded successfully`);
+  } catch (error) {
+    console.error(`Error rendering question ${index + 1}:`, error);
+  }
 }
 
 // Render a multiple-choice question
@@ -286,7 +327,6 @@ function renderMultipleChoiceQuestion(template, question) {
                alt="${option.alt || `Option ${index + 1}`}" 
                class="option-image"
                onerror="this.style.display='none'">
-          <label for="option-${index}" class="option-text">Option ${index + 1}</label>
         </div>
       `;
     } else if (hasImage) {
@@ -538,271 +578,510 @@ function renderQuestionImage(template, question) {
 
 // Submit the current answer
 function submitAnswer() {
- const question = questions[currentQuestionIndex];
- let isCorrect = false;
- let userAnswer;
+  const question = questions[currentQuestionIndex];
+  let isCorrect = false;
+  let userAnswer;
 
- // Get the user's answer based on question type
- switch (question.type) {
- case 'multiple-choice':
- const selectedOption = document.querySelector('input[name="question-option"]:checked');
- if (selectedOption) {
- userAnswer = parseInt(selectedOption.value);
- isCorrect = userAnswer === question.correctAnswer;
+  // Get the user's answer based on question type
+  switch (question.type) {
+    case 'multiple-choice':
+      const selectedOption = document.querySelector('input[name="question-option"]:checked');
+      if (selectedOption) {
+        userAnswer = parseInt(selectedOption.value);
+        isCorrect = userAnswer === question.correctAnswer;
 
- // Mark the options as correct/incorrect
- document.querySelectorAll('.option').forEach((option, index) => {
- if (index === question.correctAnswer) {
- option.classList.add('correct');
- } else if (index === userAnswer && userAnswer !== question.correctAnswer) {
- option.classList.add('incorrect');
- }
- });
- }
- break;
+        // Mark the options as correct/incorrect
+        document.querySelectorAll('.option').forEach((option, index) => {
+          if (index === question.correctAnswer) {
+            option.classList.add('correct');
+          } else if (index === userAnswer && userAnswer !== question.correctAnswer) {
+            option.classList.add('incorrect');
+          }
+        });
+      }
+      break;
 
- case 'multiple-select':
- const checkedOptions = Array.from(document.querySelectorAll('input[name="question-option"]:checked'))
- .map(input => parseInt(input.value));
- userAnswer = checkedOptions;
+    case 'multiple-select':
+      const checkedOptions = Array.from(document.querySelectorAll('input[name="question-option"]:checked'))
+        .map(input => parseInt(input.value));
+      userAnswer = checkedOptions;
 
- // Check if arrays are equal (same values, regardless of order)
- isCorrect = arraysEqual(checkedOptions.sort(), question.correctAnswer.sort());
+      // Check if arrays are equal (same values, regardless of order)
+      isCorrect = arraysEqual(checkedOptions.sort(), question.correctAnswer.sort());
 
- // Mark the options as correct/incorrect
- document.querySelectorAll('.option').forEach((option, index) => {
- if (question.correctAnswer.includes(index)) {
- option.classList.add('correct');
- } else if (userAnswer.includes(index)) {
- option.classList.add('incorrect');
- }
- });
- break;
+      // Mark the options as correct/incorrect
+      document.querySelectorAll('.option').forEach((option, index) => {
+        if (question.correctAnswer.includes(index)) {
+          option.classList.add('correct');
+        } else if (userAnswer.includes(index)) {
+          option.classList.add('incorrect');
+        }
+      });
+      break;
 
- case 'drag-drop':
- const dropZones = document.querySelectorAll('.drop-zone');
- userAnswer = Array.from(dropZones).map(zone => {
- const item = zone.querySelector('.drag-item');
- return item ? parseInt(item.getAttribute('data-index')) : null;
- });
+    case 'drag-drop':
+      const dropZones = document.querySelectorAll('.drop-zone');
+      userAnswer = Array.from(dropZones).map(zone => {
+        const item = zone.querySelector('.drag-item');
+        return item ? parseInt(item.getAttribute('data-index')) : null;
+      });
 
- isCorrect = arraysEqual(userAnswer, question.correctAnswer);
+      isCorrect = arraysEqual(userAnswer, question.correctAnswer);
 
- // Mark the drop zones as correct/incorrect
- dropZones.forEach((zone, index) => {
- if (userAnswer[index] === question.correctAnswer[index]) {
- zone.classList.add('correct');
- } else {
- zone.classList.add('incorrect');
- }
- });
- break;
+      // Mark the drop zones as correct/incorrect
+      dropZones.forEach((zone, index) => {
+        if (userAnswer[index] === question.correctAnswer[index]) {
+          zone.classList.add('correct');
+        } else {
+          zone.classList.add('incorrect');
+        }
+      });
+      break;
 
- case 'free-response':
- const responseText = document.querySelector('.response-input').value.trim();
- userAnswer = responseText;
+    case 'free-response':
+      const responseText = document.querySelector('.response-input').value.trim();
+      userAnswer = responseText;
 
- // For free response, check if the answer contains the correct keywords
- // This is a simplified approach - real implementations would use more sophisticated methods
- isCorrect = question.correctKeywords.some(keyword =>
- responseText.toLowerCase().includes(keyword.toLowerCase())
- );
+      // For free response, check if the answer contains the correct keywords
+      // This is a simplified approach - real implementations would use more sophisticated methods
+      isCorrect = question.correctKeywords.some(keyword =>
+        responseText.toLowerCase().includes(keyword.toLowerCase())
+      );
 
- break;
- }
+      break;
+  }
 
- // Store the answer
- currentTestAnswers.push({
- questionId: question.id,
- userAnswer: userAnswer,
- correct: isCorrect
- });
+  // Store the answer
+  currentTestAnswers.push({
+    questionId: question.id,
+    userAnswer: userAnswer,
+    correct: isCorrect
+  });
 
- // Show feedback
- displayFeedback(isCorrect, question.explanation);
+  // Show feedback
+  displayFeedback(isCorrect, question.explanation);
 
- // Hide submit button, show next button
- submitAnswerBtn.style.display = 'none';
- nextQuestionBtn.style.display = 'block';
+  // Hide submit button, show next button
+  if (submitAnswerBtn) submitAnswerBtn.style.display = 'none';
+  if (nextQuestionBtn) nextQuestionBtn.style.display = 'block';
 }
 
 // Display feedback for the current question
 function displayFeedback(isCorrect, explanation) {
- const feedbackContainer = document.getElementById('feedback-container');
- const feedbackMessage = document.getElementById('feedback-message');
- const explanationElement = document.getElementById('explanation');
+  const feedbackContainer = document.getElementById('feedback-container');
+  const feedbackMessage = document.getElementById('feedback-message');
+  const explanationElement = document.getElementById('explanation');
 
- feedbackMessage.textContent = isCorrect ? 'Correct!' : 'Incorrect!';
- feedbackMessage.className = isCorrect ? 'correct' : 'incorrect';
+  if (feedbackMessage) {
+    feedbackMessage.textContent = isCorrect ? 'Correct!' : 'Incorrect!';
+    feedbackMessage.className = isCorrect ? 'correct' : 'incorrect';
+  }
 
- explanationElement.textContent = explanation;
+  if (explanationElement) {
+    explanationElement.textContent = explanation;
+  }
 
- feedbackContainer.style.display = 'block';
+  if (feedbackContainer) {
+    feedbackContainer.style.display = 'block';
+  }
 }
 
 // Load the next question
 function loadNextQuestion() {
- currentQuestionIndex++;
+  currentQuestionIndex++;
 
- // Check if we've reached the end of the questions
- if (currentQuestionIndex >= questions.length) {
- finishTest();
- return;
- }
+  // Check if we've reached the end of the questions
+  if (currentQuestionIndex >= questions.length) {
+    finishTest();
+    return;
+  }
 
- loadQuestion(currentQuestionIndex);
+  loadQuestion(currentQuestionIndex);
 }
 
 // Finish the test and calculate results
 function finishTest() {
- // Calculate score
- const correctAnswers = currentTestAnswers.filter(answer => answer.correct).length;
- const score = Math.round((correctAnswers / questions.length) * 100);
+  console.log('Finishing test...');
 
- // Save the test results
- saveTestResults({
- date: new Date(),
- score: score,
- answers: currentTestAnswers
- });
+   // Mark test as no longer active
+  testInitialized = false;
+  disableTestNavButton();
+  
+  // Calculate score
+  const correctAnswers = currentTestAnswers.filter(answer => answer.correct).length;
+  const score = Math.round((correctAnswers / questions.length) * 100);
+  
+  // Calculate time spent
+  const timeSpent = calculateTimeSpent();
+  
+  console.log(`Test completed: ${correctAnswers}/${questions.length} correct (${score}%)`);
+  console.log(`Time spent: ${timeSpent} seconds`);
 
- // Navigate to results page
- navigateTo('results');
+  // Prepare result data for storage
+  const resultData = {
+    score: score,
+    totalQuestions: questions.length,
+    correctAnswers: correctAnswers,
+    timeSpent: timeSpent,
+    answers: currentTestAnswers
+  };
 
- // Display results
- displayResults();
+  // Save results using the results manager
+  if (window.resultsManager) {
+    const savedResult = window.resultsManager.saveTestResult(resultData);
+    
+    if (savedResult) {
+      console.log('Test results saved successfully with ID:', savedResult.id);
+      showResultsSavedMessage();
+    } else {
+      console.error('Failed to save test results');
+      alert('Warning: Your test results could not be saved. Your score is ' + score + '%.');
+    }
+  } else {
+    console.error('Results manager not available - falling back to localStorage');
+    // Fallback to simple localStorage if results manager isn't available
+    const savedResults = JSON.parse(localStorage.getItem('testResults') || '[]');
+    savedResults.push({
+      date: new Date(),
+      score: score,
+      answers: currentTestAnswers,
+      timeSpent: timeSpent
+    });
+    localStorage.setItem('testResults', JSON.stringify(savedResults));
+  }
+
+  // Navigate to results page
+  navigateTo('results');
+
+  // Display results after a short delay
+  setTimeout(() => {
+    displayResults();
+  }, 100);
 }
 
-// Save test results
-function saveTestResults(results) {
- // In a real app, this would send the results to the server
- // For now, we'll just store in localStorage
- const savedResults = JSON.parse(localStorage.getItem('testResults') || '[]');
- savedResults.push(results);
- localStorage.setItem('testResults', JSON.stringify(savedResults));
+// Calculate time spent on test
+function calculateTimeSpent() {
+  if (!testStartTime) return 0;
+  const endTime = new Date();
+  return Math.round((endTime - testStartTime) / 1000); // Return seconds
 }
 
-// Display test results
+// Format time for display
+function formatTimeSpent(seconds) {
+  const minutes = Math.floor(seconds / 60);
+  const remainingSeconds = seconds % 60;
+  return `${minutes}m ${remainingSeconds}s`;
+}
+
+// Show success notification when results are saved
+function showResultsSavedMessage() {
+  const message = document.createElement('div');
+  message.className = 'results-saved-notification';
+  message.innerHTML = `
+    <div class="notification-content">
+      <span class="notification-icon">✓</span>
+      <span class="notification-text">Test results saved successfully!</span>
+    </div>
+  `;
+  
+  // Add styles for the notification
+  message.style.cssText = `
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: var(--success-color, #28a745);
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    animation: slideIn 0.3s ease-out;
+  `;
+  
+  document.body.appendChild(message);
+  
+  // Remove the message after 3 seconds
+  setTimeout(() => {
+    if (message.parentNode) {
+      message.style.animation = 'slideOut 0.3s ease-in';
+      setTimeout(() => {
+        if (message.parentNode) {
+          message.parentNode.removeChild(message);
+        }
+      }, 300);
+    }
+  }, 3000);
+}
+
+// Display test results (enhanced version)
 function displayResults() {
- // Get the latest test results
- const savedResults = JSON.parse(localStorage.getItem('testResults') || '[]');
- const latestResult = savedResults[savedResults.length - 1];
+  console.log('Displaying results...');
+  
+  // Use results manager if available
+  if (window.resultsManager) {
+    console.log('Using enhanced results manager');
+    window.resultsManager.displayResults();
+    return;
+  }
+  
+  // Fallback to simple display if results manager isn't available
+  console.log('Using fallback results display');
+  
+  const savedResults = JSON.parse(localStorage.getItem('testResults') || '[]');
+  const latestResult = savedResults[savedResults.length - 1];
 
- if (!latestResult) {
- return;
- }
+  const resultsSummary = document.getElementById('results-summary');
+  const resultsDetails = document.getElementById('results-details');
+  
+  if (!resultsSummary || !resultsDetails) {
+    console.error('Results page elements not found');
+    return;
+  }
 
- // Update summary
- const resultsSummary = document.getElementById('results-summary');
- resultsSummary.innerHTML = `
- <div class="score-circle">${latestResult.score}%</div>
- <p>You answered ${latestResult.answers.filter(a => a.correct).length} out of ${questions.length} questions correctly.</p>
- <p>Completed on: ${new Date(latestResult.date).toLocaleString()}</p>
- `;
+  if (!latestResult) {
+    resultsSummary.innerHTML = `
+      <div class="no-results">
+        <h3>No Test Results Yet</h3>
+        <p>Take your first test to see results here!</p>
+      </div>
+    `;
+    resultsDetails.innerHTML = '';
+    return;
+  }
 
- // Update details
- const resultsDetails = document.getElementById('results-details');
- resultsDetails.innerHTML = '<h3>Question Details</h3>';
+  // Update summary with latest result
+  resultsSummary.innerHTML = `
+    <div class="score-circle">${latestResult.score}%</div>
+    <div class="result-summary-text">
+      <p>You answered ${latestResult.answers.filter(a => a.correct).length} out of ${questions.length} questions correctly.</p>
+      <p>Completed on: ${new Date(latestResult.date).toLocaleString()}</p>
+      ${latestResult.timeSpent ? `<p>Time spent: ${formatTimeSpent(latestResult.timeSpent)}</p>` : ''}
+      <p>Total tests taken: ${savedResults.length}</p>
+    </div>
+  `;
 
- latestResult.answers.forEach((answer, index) => {
- const question = questions.find(q => q.id === answer.questionId);
+  // Update details with question breakdown
+  resultsDetails.innerHTML = '<h3>Question Details</h3>';
 
- const resultItem = document.createElement('div');
- resultItem.className = 'result-item';
+  latestResult.answers.forEach((answer, index) => {
+    const question = questions.find(q => q.id === answer.questionId);
+    if (!question) return;
 
- let answerText = '';
- switch (question.type) {
- case 'multiple-choice':
- answerText = answer.userAnswer !== undefined ? question.options[answer.userAnswer] : 'No answer';
- break;
+    const resultItem = document.createElement('div');
+    resultItem.className = 'result-item';
 
- case 'multiple-select':
- answerText = answer.userAnswer && answer.userAnswer.length > 0
- ? answer.userAnswer.map(idx => question.options[idx]).join(', ')
- : 'No answer';
- break;
+    let answerText = '';
+    switch (question.type) {
+      case 'multiple-choice':
+        answerText = answer.userAnswer !== undefined ? 
+          (typeof question.options[answer.userAnswer] === 'object' ? 
+            `Option ${answer.userAnswer + 1}` : 
+            question.options[answer.userAnswer]) : 'No answer';
+        break;
 
- case 'drag-drop':
- answerText = answer.userAnswer
- ? answer.userAnswer.map((idx, i) =>
- `${question.dropZones[i]}: ${idx !== null ? question.options[idx] : 'No answer'}`
- ).join('; ')
- : 'No answer';
- break;
+      case 'multiple-select':
+        answerText = answer.userAnswer && answer.userAnswer.length > 0
+          ? answer.userAnswer.map(idx => 
+              typeof question.options[idx] === 'object' ? 
+                `Option ${idx + 1}` : 
+                question.options[idx]
+            ).join(', ')
+          : 'No answer';
+        break;
 
- case 'free-response':
- answerText = answer.userAnswer || 'No answer';
- break;
- }
+      case 'drag-drop':
+        answerText = answer.userAnswer
+          ? answer.userAnswer.map((idx, i) =>
+              `${question.dropZones[i]}: ${idx !== null ? question.options[idx] : 'No answer'}`
+            ).join('; ')
+          : 'No answer';
+        break;
 
- resultItem.innerHTML = `
- <div class="result-question">${index + 1}. ${question.text}</div>
- <div class="result-answer">Your answer: ${answerText}</div>
- <div class="result-status ${answer.correct ? 'correct' : 'incorrect'}">
- ${answer.correct ? 'Correct' : 'Incorrect'}
- </div>
- <div class="result-explanation">${question.explanation}</div>
- `;
+      case 'free-response':
+        answerText = answer.userAnswer || 'No answer';
+        break;
+    }
 
- resultsDetails.appendChild(resultItem);
- });
+    resultItem.innerHTML = `
+      <div class="result-question">${index + 1}. ${question.text}</div>
+      <div class="result-answer">Your answer: ${answerText}</div>
+      <div class="result-status ${answer.correct ? 'correct' : 'incorrect'}">
+        ${answer.correct ? 'Correct' : 'Incorrect'}
+      </div>
+      <div class="result-explanation">${question.explanation}</div>
+    `;
+
+    resultsDetails.appendChild(resultItem);
+  });
 }
 
 // Load and display previous results
 function loadResults() {
- displayResults();
+  console.log('Loading results page...');
+  displayResults();
 }
 
 // Load user preferences
 function loadUserPreferences() {
- // In a real app, this would fetch from the server
- // For now, we'll just apply the default preferences
+  // In a real app, this would fetch from the server
+  // For now, we'll just apply the default preferences
 
- // Apply theme
- document.body.className = `theme-${currentUser.accessibilityPreferences.theme} font-size-${currentUser.accessibilityPreferences.fontSize}`;
+  // Apply theme
+  document.body.className = `theme-${currentUser.accessibilityPreferences.theme} font-size-${currentUser.accessibilityPreferences.fontSize}`;
 
- // Set active theme button
- document.querySelector(`.theme-btn[data-theme="${currentUser.accessibilityPreferences.theme}"]`).classList.add('active');
+  // Set active theme button
+  const themeBtn = document.querySelector(`.theme-btn[data-theme="${currentUser.accessibilityPreferences.theme}"]`);
+  if (themeBtn) themeBtn.classList.add('active');
 
- // Set font size display
- document.getElementById('font-size-value').textContent = capitalize(currentUser.accessibilityPreferences.fontSize);
+  // Set font size display
+  const fontSizeValue = document.getElementById('font-size-value');
+  if (fontSizeValue) fontSizeValue.textContent = capitalize(currentUser.accessibilityPreferences.fontSize);
 
- // Set checkboxes
- document.getElementById('reduce-motion').checked = currentUser.accessibilityPreferences.reduceMotion;
- document.getElementById('screen-reader-opt').checked = currentUser.accessibilityPreferences.screenReaderOptimized;
+  // Set checkboxes
+  const reduceMotionCheckbox = document.getElementById('reduce-motion');
+  const screenReaderOptCheckbox = document.getElementById('screen-reader-opt');
+  
+  if (reduceMotionCheckbox) {
+    reduceMotionCheckbox.checked = currentUser.accessibilityPreferences.reduceMotion;
+  }
+  
+  if (screenReaderOptCheckbox) {
+    screenReaderOptCheckbox.checked = currentUser.accessibilityPreferences.screenReaderOptimized;
+  }
 
- if (currentUser.accessibilityPreferences.reduceMotion) {
- document.body.classList.add('reduce-motion');
- }
+  if (currentUser.accessibilityPreferences.reduceMotion) {
+    document.body.classList.add('reduce-motion');
+  }
 
- if (currentUser.accessibilityPreferences.screenReaderOptimized) {
- document.body.classList.add('screen-reader-optimized');
- }
+  if (currentUser.accessibilityPreferences.screenReaderOptimized) {
+    document.body.classList.add('screen-reader-optimized');
+  }
 }
 
 // Save user preferences
 function saveUserPreferences() {
- // In a real app, this would send to the server
- // For now, we'll just save to localStorage
- localStorage.setItem('userPreferences', JSON.stringify(currentUser.accessibilityPreferences));
- alert('Settings saved successfully!');
+  // In a real app, this would send to the server
+  // For now, we'll just save to localStorage
+  localStorage.setItem('userPreferences', JSON.stringify(currentUser.accessibilityPreferences));
+  alert('Settings saved successfully!');
 }
 
 // Helper function to check if two arrays are equal
 function arraysEqual(arr1, arr2) {
- if (!arr1 || !arr2) return false;
- if (arr1.length !== arr2.length) return false;
+  if (!arr1 || !arr2) return false;
+  if (arr1.length !== arr2.length) return false;
 
- for (let i = 0; i < arr1.length; i++) {
- if (arr1[i] !== arr2[i]) return false;
- }
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1[i] !== arr2[i]) return false;
+  }
 
- return true;
+  return true;
 }
 
 // Helper function to capitalize first letter
 function capitalize(string) {
- return string.charAt(0).toUpperCase() + string.slice(1);
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+// Show performance trends
+function showPerformanceTrends() {
+  if (window.resultsManager) {
+    const stats = window.resultsManager.getPerformanceStats();
+    const recentResults = window.resultsManager.results.slice(0, 10);
+    
+    let trendsHTML = `
+      <div class="performance-trends">
+        <h3>Performance Statistics</h3>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-value">${stats.totalTests}</div>
+            <div class="stat-label">Total Tests</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">${stats.averageScore}%</div>
+            <div class="stat-label">Average Score</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">${stats.bestScore}%</div>
+            <div class="stat-label">Best Score</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">${stats.recentAverage}%</div>
+            <div class="stat-label">Recent Average</div>
+          </div>
+        </div>
+    `;
+    
+    if (stats.improvement !== 0) {
+      const improvementText = stats.improvement > 0 ? 
+        `+${stats.improvement}% improvement` : 
+        `${stats.improvement}% decline`;
+      const improvementClass = stats.improvement > 0 ? 'positive' : 'negative';
+      
+      trendsHTML += `
+        <div class="improvement-indicator ${improvementClass}">
+          <strong>Trend:</strong> ${improvementText} (recent vs. earlier tests)
+        </div>
+      `;
+    }
+    
+    if (recentResults.length > 1) {
+      trendsHTML += `
+        <div class="recent-scores">
+          <h4>Recent Test Scores</h4>
+          <div class="score-timeline">
+      `;
+      
+      recentResults.slice(0, 5).reverse().forEach((result, index) => {
+        trendsHTML += `
+          <div class="score-point">
+            <div class="score-circle-small">${result.score}%</div>
+            <div class="score-date">${result.date}</div>
+          </div>
+        `;
+      });
+      
+      trendsHTML += '</div></div>';
+    }
+    
+    trendsHTML += '</div>';
+    
+    // Show in results details area
+    const resultsDetails = document.getElementById('results-details');
+    if (resultsDetails) {
+      resultsDetails.innerHTML = trendsHTML + `
+        <div class="action-btns">
+          <button class="secondary-btn" onclick="displayResults();">Back to Results</button>
+        </div>
+      `;
+    }
+  } else {
+    alert('Performance trends feature requires the enhanced results system.');
+  }
+}
+
+// Enable the test navigation button
+function enableTestNavButton() {
+  const testNavBtn = document.getElementById('test-btn');
+  if (testNavBtn) {
+    testNavBtn.disabled = false;
+    testNavBtn.classList.remove('disabled');
+    testNavBtn.setAttribute('aria-disabled', 'false');
+    testNavBtn.title = 'Continue or resume test';
+    console.log('Test navigation button enabled');
+  }
+}
+
+// Disable the test navigation button
+function disableTestNavButton() {
+  const testNavBtn = document.getElementById('test-btn');
+  if (testNavBtn) {
+    testNavBtn.disabled = true;
+    testNavBtn.classList.add('disabled');
+    testNavBtn.setAttribute('aria-disabled', 'true');
+    testNavBtn.title = 'Start a new test from the Home page first';
+    console.log('Test navigation button disabled');
+  }
 }
 
 // Initialize the app when the page loads
