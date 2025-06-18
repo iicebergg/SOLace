@@ -30,12 +30,13 @@ let currentUser = {
  theme: 'black-on-white',
  fontSize: 'medium',
  reduceMotion: false,
- screenReaderOptimized: false
  }
 };
 
 // Initialize the application
 function initApp() {
+ console.log('Initializing application...');
+ 
  // Set up event listeners
  setupNavigation();
  setupEventListeners();
@@ -45,6 +46,16 @@ function initApp() {
 
  // Load questions (in a real app, these would come from the server)
  fetchQuestions();
+ 
+ // Check if questions loaded successfully
+ setTimeout(() => {
+   if (questions.length === 0) {
+     console.error('No questions loaded! Check sampleQuestions definition.');
+     alert('Error: Questions failed to load. Please refresh the page.');
+   } else {
+     console.log(`Application initialized successfully with ${questions.length} questions`);
+   }
+ }, 100);
 }
 
 // Set up navigation between pages
@@ -63,7 +74,6 @@ function setupEventListeners() {
  navigateTo('test');
  startTest();
  });
-}
 
  viewResultsBtn.addEventListener('click', () => {
  navigateTo('results');
@@ -75,35 +85,8 @@ function setupEventListeners() {
 
  saveSettingsBtn.addEventListener('click', saveUserPreferences);
 
- // Theme buttons
- document.querySelectorAll('.theme-btn').forEach(button => {
- button.addEventListener('click', () => {
- document.querySelectorAll('.theme-btn').forEach(btn => btn.classList.remove('active'));
- button.classList.add('active');
- const theme = button.getAttribute('data-theme');
- document.body.className = `theme-${theme} font-size-${currentUser.accessibilityPreferences.fontSize}`;
- currentUser.accessibilityPreferences.theme = theme;
- });
- });
-
- // Font size buttons
- document.getElementById('increase-font').addEventListener('click', () => {
- changeFontSize(1);
- });
-
- document.getElementById('decrease-font').addEventListener('click', () => {
- changeFontSize(-1);
- });
-
- // Checkboxes
- document.getElementById('reduce-motion').addEventListener('change', (e) => {
- if (e.target.checked) {
- document.body.classList.add('reduce-motion');
- } else {
- document.body.classList.remove('reduce-motion');
- }
- currentUser.accessibilityPreferences.reduceMotion = e.target.checked;
- });
+ // Remove the duplicate theme and font size handling since accessibility.js handles this
+}
 
 // Navigate to a different page
 function navigateTo(page) {
@@ -132,27 +115,46 @@ async function fetchQuestions() {
  try {
  questions = sampleQuestions;
  console.log('Questions loaded:', questions.length);
+ console.log('First question:', questions[0]);
+ console.log('Last question:', questions[questions.length - 1]);
  } catch (error) {
  console.error('Error fetching questions:', error);
+ questions = []; // Fallback to empty array
  }
 }
 
 // Start a new test
 function startTest() {
+ console.log('Starting test...');
+ 
+ if (questions.length === 0) {
+   console.error('Cannot start test: No questions loaded');
+   alert('Error: No questions available. Please refresh the page and try again.');
+   return;
+ }
+ 
  currentQuestionIndex = 0;
  currentTestAnswers = [];
 
  // Reset UI elements
- document.getElementById('progress-fill').style.width = '0%';
- document.getElementById('current-question').textContent = '1';
- document.getElementById('total-questions').textContent = questions.length;
+ const progressFill = document.getElementById('progress-fill');
+ const currentQuestionSpan = document.getElementById('current-question');
+ const totalQuestionsSpan = document.getElementById('total-questions');
+ 
+ if (progressFill) progressFill.style.width = '0%';
+ if (currentQuestionSpan) currentQuestionSpan.textContent = '1';
+ if (totalQuestionsSpan) totalQuestionsSpan.textContent = questions.length;
 
- // Load the first question
- loadQuestion(1);
+ console.log(`Test started with ${questions.length} questions`);
+ 
+ // Load the first question (fixed: was loadQuestion(1), should be loadQuestion(0))
+ loadQuestion(0);
 }
 
 // Load a specific question
 function loadQuestion(index) {
+ console.log(`Loading question ${index + 1} of ${questions.length}`);
+ 
  if (index >= questions.length) {
  // Test is finished
  finishTest();
@@ -160,68 +162,135 @@ function loadQuestion(index) {
  }
 
  const question = questions[index];
+ console.log('Question object:', question);
+ 
+ if (!question) {
+ console.error(`Question at index ${index} is undefined`);
+ return;
+ }
+
  const questionContainer = document.getElementById('question-container');
+ if (!questionContainer) {
+ console.error('Question container not found');
+ return;
+ }
 
  // Clear previous question
  questionContainer.innerHTML = '';
 
  // Hide feedback container
- document.getElementById('feedback-container').style.display = 'none';
+ const feedbackContainer = document.getElementById('feedback-container');
+ if (feedbackContainer) {
+ feedbackContainer.style.display = 'none';
+ }
 
  // Show submit button, hide next button
- submitAnswerBtn.style.display = 'block';
- nextQuestionBtn.style.display = 'none';
+ if (submitAnswerBtn) submitAnswerBtn.style.display = 'block';
+ if (nextQuestionBtn) nextQuestionBtn.style.display = 'none';
 
  // Update progress
- document.getElementById('progress-fill').style.width = `${((index + 1) / questions.length) * 100}%`;
- document.getElementById('current-question').textContent = index;
+ const progressFill = document.getElementById('progress-fill');
+ const currentQuestionSpan = document.getElementById('current-question');
+ 
+ if (progressFill) {
+ progressFill.style.width = `${((index + 1) / questions.length) * 100}%`;
+ }
+ if (currentQuestionSpan) {
+ currentQuestionSpan.textContent = index + 1;
+ }
 
  // Use the appropriate template based on question type
  let template;
+ const templateId = `${question.type}-template`;
+ const templateElement = document.getElementById(templateId);
+ 
+ if (!templateElement) {
+ console.error(`Template not found: ${templateId}`);
+ return;
+ }
+
+ template = templateElement.content.cloneNode(true);
+ 
+ try {
  switch (question.type) {
  case 'multiple-choice':
- template = document.getElementById('multiple-choice-template').content.cloneNode(true);
  renderMultipleChoiceQuestion(template, question);
  break;
 
  case 'multiple-select':
- template = document.getElementById('multiple-select-template').content.cloneNode(true);
  renderMultipleSelectQuestion(template, question);
  break;
 
  case 'drag-drop':
- template = document.getElementById('drag-drop-template').content.cloneNode(true);
  renderDragDropQuestion(template, question);
  break;
 
  case 'free-response':
- template = document.getElementById('free-response-template').content.cloneNode(true);
  renderFreeResponseQuestion(template, question);
  break;
+ 
+ default:
+ console.error(`Unknown question type: ${question.type}`);
+ return;
  }
 
  questionContainer.appendChild(template);
+ console.log(`Question ${index + 1} loaded successfully`);
+ } catch (error) {
+ console.error(`Error rendering question ${index + 1}:`, error);
+ }
 }
 
 // Render a multiple-choice question
 function renderMultipleChoiceQuestion(template, question) {
-  template.querySelector('.question-text').textContent = question.text;
+  console.log('Rendering multiple choice question:', question.id);
+  
+  const questionTextElement = template.querySelector('.question-text');
+  if (!questionTextElement) {
+    console.error('Question text element not found in template');
+    return;
+  }
+  
+  questionTextElement.textContent = question.text;
   
   // Add question image if present
   renderQuestionImage(template, question);
   
   const optionsContainer = template.querySelector('.options-container');
+  if (!optionsContainer) {
+    console.error('Options container not found in template');
+    return;
+  }
+  
+  console.log('Question options:', question.options);
   
   question.options.forEach((option, index) => {
+    console.log(`Processing option ${index}:`, option);
+    
     const optionElement = document.createElement('div');
+    
+    // Check if this option is an image object or text
+    const isImageOption = typeof option === 'object' && option.url;
     const hasImage = question.optionImages && question.optionImages[index];
     
-    optionElement.className = hasImage ? 'option option-with-image' : 'option';
+    optionElement.className = (hasImage || isImageOption) ? 'option option-with-image' : 'option';
     
     // Create option content HTML
     let optionHTML = `<input type="radio" id="option-${index}" name="question-option" value="${index}">`;
     
-    if (hasImage) {
+    if (isImageOption) {
+      // Handle case where the entire option is an image
+      optionHTML += `
+        <div class="option-content">
+          <img src="${option.url}" 
+               alt="${option.alt || `Option ${index + 1}`}" 
+               class="option-image"
+               onerror="this.style.display='none'">
+          <label for="option-${index}" class="option-text">Option ${index + 1}</label>
+        </div>
+      `;
+    } else if (hasImage) {
+      // Handle case where option has both text and image
       optionHTML += `
         <div class="option-content">
           <img src="${question.optionImages[index].url}" 
@@ -232,6 +301,7 @@ function renderMultipleChoiceQuestion(template, question) {
         </div>
       `;
     } else {
+      // Handle text-only options
       optionHTML += `<label for="option-${index}">${option}</label>`;
     }
     
@@ -239,20 +309,25 @@ function renderMultipleChoiceQuestion(template, question) {
     
     // Add click event for the whole option div
     optionElement.addEventListener('click', () => {
-      optionElement.querySelector('input').checked = true;
-      
-      // Update selected state for all options
-      optionsContainer.querySelectorAll('.option').forEach(opt => {
-        if (opt === optionElement) {
-          opt.classList.add('selected');
-        } else {
-          opt.classList.remove('selected');
-        }
-      });
+      const radioInput = optionElement.querySelector('input');
+      if (radioInput) {
+        radioInput.checked = true;
+        
+        // Update selected state for all options
+        optionsContainer.querySelectorAll('.option').forEach(opt => {
+          if (opt === optionElement) {
+            opt.classList.add('selected');
+          } else {
+            opt.classList.remove('selected');
+          }
+        });
+      }
     });
     
     optionsContainer.appendChild(optionElement);
   });
+  
+  console.log('Multiple choice question rendered successfully');
 }
 
 // Render a multiple-select question
@@ -266,14 +341,29 @@ function renderMultipleSelectQuestion(template, question) {
   
   question.options.forEach((option, index) => {
     const optionElement = document.createElement('div');
+    
+    // Check if this option is an image object or text
+    const isImageOption = typeof option === 'object' && option.url;
     const hasImage = question.optionImages && question.optionImages[index];
     
-    optionElement.className = hasImage ? 'option option-with-image' : 'option';
+    optionElement.className = (hasImage || isImageOption) ? 'option option-with-image' : 'option';
     
     // Create option content HTML
     let optionHTML = `<input type="checkbox" id="option-${index}" name="question-option" value="${index}">`;
     
-    if (hasImage) {
+    if (isImageOption) {
+      // Handle case where the entire option is an image
+      optionHTML += `
+        <div class="option-content">
+          <img src="${option.url}" 
+               alt="${option.alt || `Option ${index + 1}`}" 
+               class="option-image"
+               onerror="this.style.display='none'">
+          <label for="option-${index}" class="option-text">Option ${index + 1}</label>
+        </div>
+      `;
+    } else if (hasImage) {
+      // Handle case where option has both text and image
       optionHTML += `
         <div class="option-content">
           <img src="${question.optionImages[index].url}" 
@@ -284,6 +374,7 @@ function renderMultipleSelectQuestion(template, question) {
         </div>
       `;
     } else {
+      // Handle text-only options
       optionHTML += `<label for="option-${index}">${option}</label>`;
     }
     
@@ -405,7 +496,14 @@ function renderFreeResponseQuestion(template, question) {
 function renderQuestionImage(template, question) {
   const imageContainer = template.querySelector('.question-image-container');
   
+  if (!imageContainer) {
+    console.log('No image container found in template');
+    return;
+  }
+  
   if (question.image) {
+    console.log('Rendering question image:', question.image);
+    
     const img = document.createElement('img');
     img.className = 'question-image loading';
     img.src = question.image.url;
@@ -414,12 +512,14 @@ function renderQuestionImage(template, question) {
     // Handle image loading states
     img.addEventListener('load', () => {
       img.classList.remove('loading');
+      console.log('Question image loaded successfully');
     });
     
     img.addEventListener('error', () => {
       img.classList.remove('loading');
       img.classList.add('error');
       img.alt = 'Image failed to load';
+      console.log('Question image failed to load:', question.image.url);
       img.src = 'data:image/svg+xml;base64,' + btoa(`
         <svg xmlns="http://www.w3.org/2000/svg" width="300" height="200" viewBox="0 0 300 200">
           <rect width="300" height="200" fill="#f8f9fa" stroke="#dc3545" stroke-width="2" stroke-dasharray="5,5"/>
@@ -431,6 +531,8 @@ function renderQuestionImage(template, question) {
     });
     
     imageContainer.appendChild(img);
+  } else {
+    console.log('No image for this question');
   }
 }
 
@@ -645,18 +747,12 @@ function displayResults() {
  resultsDetails.appendChild(resultItem);
  });
 }
-/*
+
 // Load and display previous results
 function loadResults() {
  displayResults();
 }
 
-// Show performance trends
-function showPerformanceTrends() {
- // In a real app, this would generate charts or visualizations
- alert('Performance trends feature is not implemented in this demo.');
-}
-*/
 // Load user preferences
 function loadUserPreferences() {
  // In a real app, this would fetch from the server
@@ -690,27 +786,6 @@ function saveUserPreferences() {
  // For now, we'll just save to localStorage
  localStorage.setItem('userPreferences', JSON.stringify(currentUser.accessibilityPreferences));
  alert('Settings saved successfully!');
-}
-
-// Change font size
-function changeFontSize(direction) {
- const sizes = ['small', 'medium', 'large', 'xlarge'];
- let currentIndex = sizes.indexOf(currentUser.accessibilityPreferences.fontSize);
-
- currentIndex += direction;
-
- // Bounds checking
- if (currentIndex < 0) currentIndex = 0;
- if (currentIndex >= sizes.length) currentIndex = sizes.length - 1;
-
- const newSize = sizes[currentIndex];
- currentUser.accessibilityPreferences.fontSize = newSize;
-
- // Update the display
- document.getElementById('font-size-value').textContent = capitalize(newSize);
-
- // Update body class
- document.body.className = document.body.className.replace(/font-size-\w+/, `font-size-${newSize}`);
 }
 
 // Helper function to check if two arrays are equal

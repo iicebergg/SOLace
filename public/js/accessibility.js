@@ -22,29 +22,35 @@ let currentFontSizeIndex = 1; // Default is medium (index 1)
 // Initialize accessibility settings
 function initAccessibilitySettings() {
  // Load saved preferences if available
- const savedPreferences = JSON.parse(localStorage.getItem('userPreferences'));
+ const savedPreferences = JSON.parse(localStorage.getItem('userPreferences') || '{}');
 
- if (savedPreferences) {
+ // Set defaults if no saved preferences
+ const preferences = {
+   theme: savedPreferences.theme || 'black-on-white',
+   fontSize: savedPreferences.fontSize || 'medium',
+   reduceMotion: savedPreferences.reduceMotion || false,
+   screenReaderOptimized: savedPreferences.screenReaderOptimized || false
+ };
+
  // Apply theme
- setTheme(savedPreferences.theme);
+ setTheme(preferences.theme);
 
  // Apply font size
  const sizeKeys = Object.keys(fontSizes);
- currentFontSizeIndex = sizeKeys.indexOf(savedPreferences.fontSize);
+ currentFontSizeIndex = sizeKeys.indexOf(preferences.fontSize);
  if (currentFontSizeIndex === -1) currentFontSizeIndex = 1; // Default to medium if not found
  setFontSize(sizeKeys[currentFontSizeIndex]);
 
  // Apply motion preferences
- if (savedPreferences.reduceMotion) {
- reduceMotionCheckbox.checked = true;
- document.body.classList.add('reduce-motion');
+ if (preferences.reduceMotion) {
+   reduceMotionCheckbox.checked = true;
+   document.body.classList.add('reduce-motion');
  }
 
  // Apply screen reader optimizations
- if (savedPreferences.screenReaderOptimized) {
- screenReaderOptCheckbox.checked = true;
- document.body.classList.add('screen-reader-optimized');
- }
+ if (preferences.screenReaderOptimized) {
+   screenReaderOptCheckbox.checked = true;
+   document.body.classList.add('screen-reader-optimized');
  }
 
  // Set up event listeners
@@ -55,49 +61,63 @@ function initAccessibilitySettings() {
 function setupAccessibilityEventListeners() {
  // Theme selection
  themeButtons.forEach(button => {
- button.addEventListener('click', () => {
- const theme = button.getAttribute('data-theme');
- setTheme(theme);
- });
+   button.addEventListener('click', () => {
+     const theme = button.getAttribute('data-theme');
+     setTheme(theme);
+   });
  });
 
  // Font size controls
- increaseFontBtn.addEventListener('click', () => {
- changeFontSize(1);
- });
+ if (increaseFontBtn) {
+   increaseFontBtn.addEventListener('click', () => {
+     changeFontSize(1);
+   });
+ }
 
- decreaseFontBtn.addEventListener('click', () => {
- changeFontSize(-1);
- });
+ if (decreaseFontBtn) {
+   decreaseFontBtn.addEventListener('click', () => {
+     changeFontSize(-1);
+   });
+ }
 
  // Motion toggle
- reduceMotionCheckbox.addEventListener('change', () => {
- toggleReduceMotion(reduceMotionCheckbox.checked);
- });
+ if (reduceMotionCheckbox) {
+   reduceMotionCheckbox.addEventListener('change', () => {
+     toggleReduceMotion(reduceMotionCheckbox.checked);
+   });
+ }
 
  // Screen reader optimizations toggle
- screenReaderOptCheckbox.addEventListener('change', () => {
- toggleScreenReaderOpt(screenReaderOptCheckbox.checked);
- });
+ if (screenReaderOptCheckbox) {
+   screenReaderOptCheckbox.addEventListener('change', () => {
+     toggleScreenReaderOpt(screenReaderOptCheckbox.checked);
+   });
+ }
 }
 
 // Set theme
 function setTheme(theme) {
- // Remove all theme classes
- document.body.className = document.body.className
- .replace(/theme-\w+/, '')
- .trim();
+ // Remove all existing theme classes
+ document.body.classList.remove(
+   'theme-black-on-white',
+   'theme-black-on-cream', 
+   'theme-black-on-light-blue',
+   'theme-black-on-light-magenta',
+   'theme-white-on-black',
+   'theme-yellow-on-blue',
+   'theme-gray-on-green'
+ );
 
  // Add the selected theme class
  document.body.classList.add(`theme-${theme}`);
 
  // Update theme buttons state
  themeButtons.forEach(button => {
- if (button.getAttribute('data-theme') === theme) {
- button.classList.add('active');
- } else {
- button.classList.remove('active');
- }
+   if (button.getAttribute('data-theme') === theme) {
+     button.classList.add('active');
+   } else {
+     button.classList.remove('active');
+   }
  });
 
  // Save preference
@@ -117,22 +137,24 @@ function changeFontSize(direction) {
 
  // Only proceed if there's a change
  if (newIndex !== currentFontSizeIndex) {
- currentFontSizeIndex = newIndex;
- const newSize = sizeKeys[currentFontSizeIndex];
- setFontSize(newSize);
+   currentFontSizeIndex = newIndex;
+   const newSize = sizeKeys[currentFontSizeIndex];
+   setFontSize(newSize);
  }
 }
 
 // Set font size
 function setFontSize(sizeKey) {
- // Update body class
- document.body.className = document.body.className
- .replace(/font-size-\w+/, '')
- .trim();
+ // Remove all existing font size classes
+ document.body.classList.remove('font-size-small', 'font-size-medium', 'font-size-large', 'font-size-xlarge');
+ 
+ // Add the new font size class
  document.body.classList.add(`font-size-${sizeKey}`);
 
  // Update display text
- fontSizeValue.textContent = fontSizes[sizeKey].display;
+ if (fontSizeValue) {
+   fontSizeValue.textContent = fontSizes[sizeKey].display;
+ }
 
  // Actually set the root font size
  document.documentElement.style.fontSize = `${fontSizes[sizeKey].size}px`;
@@ -144,9 +166,9 @@ function setFontSize(sizeKey) {
 // Toggle reduce motion
 function toggleReduceMotion(enabled) {
  if (enabled) {
- document.body.classList.add('reduce-motion');
+   document.body.classList.add('reduce-motion');
  } else {
- document.body.classList.remove('reduce-motion');
+   document.body.classList.remove('reduce-motion');
  }
 
  // Save preference
@@ -156,9 +178,9 @@ function toggleReduceMotion(enabled) {
 // Toggle screen reader optimizations
 function toggleScreenReaderOpt(enabled) {
  if (enabled) {
- document.body.classList.add('screen-reader-optimized');
+   document.body.classList.add('screen-reader-optimized');
  } else {
- document.body.classList.remove('screen-reader-optimized');
+   document.body.classList.remove('screen-reader-optimized');
  }
 
  // Save preference
@@ -183,54 +205,59 @@ function enhanceKeyboardNavigation() {
  const interactiveElements = document.querySelectorAll('button, a, input, select, textarea, [role="button"]');
 
  interactiveElements.forEach(element => {
- if (!element.hasAttribute('tabindex')) {
- element.setAttribute('tabindex', '0');
- }
+   if (!element.hasAttribute('tabindex')) {
+     element.setAttribute('tabindex', '0');
+   }
  });
 
  // Add keyboard event listeners for custom components like the quiz options
  document.querySelectorAll('.option').forEach(option => {
- option.addEventListener('keydown', (event) => {
- // Enter or Space activates the option
- if (event.key === 'Enter' || event.key === ' ') {
- event.preventDefault();
+   option.addEventListener('keydown', (event) => {
+     // Enter or Space activates the option
+     if (event.key === 'Enter' || event.key === ' ') {
+       event.preventDefault();
 
- // Simulate a click on the option
- const clickEvent = new MouseEvent('click', {
- bubbles: true,
- cancelable: true,
- view: window
- });
+       // Simulate a click on the option
+       const clickEvent = new MouseEvent('click', {
+         bubbles: true,
+         cancelable: true,
+         view: window
+       });
 
- option.dispatchEvent(clickEvent);
- }
- });
+       option.dispatchEvent(clickEvent);
+     }
+   });
  });
 }
 
 // Add ARIA attributes to improve screen reader experience
 function enhanceAriaAttributes() {
  // Add appropriate ARIA roles to main sections
- document.querySelector('header').setAttribute('role', 'banner');
- document.querySelector('nav').setAttribute('role', 'navigation');
- document.querySelector('main').setAttribute('role', 'main');
- document.querySelector('footer').setAttribute('role', 'contentinfo');
+ const header = document.querySelector('header');
+ const nav = document.querySelector('nav');
+ const main = document.querySelector('main');
+ const footer = document.querySelector('footer');
+ 
+ if (header) header.setAttribute('role', 'banner');
+ if (nav) nav.setAttribute('role', 'navigation');
+ if (main) main.setAttribute('role', 'main');
+ if (footer) footer.setAttribute('role', 'contentinfo');
 
  // Add ARIA labels to navigation buttons
  document.querySelectorAll('.nav-btn').forEach(button => {
- button.setAttribute('aria-label', `Go to ${button.textContent.trim()} page`);
+   button.setAttribute('aria-label', `Go to ${button.textContent.trim()} page`);
  });
 
  // Add ARIA for the test section
  const questionCounter = document.getElementById('question-counter');
  if (questionCounter) {
- questionCounter.setAttribute('aria-live', 'polite');
+   questionCounter.setAttribute('aria-live', 'polite');
  }
 
  // Add ARIA for feedback messages
  const feedbackMessage = document.getElementById('feedback-message');
  if (feedbackMessage) {
- feedbackMessage.setAttribute('aria-live', 'assertive');
+   feedbackMessage.setAttribute('aria-live', 'assertive');
  }
 }
 

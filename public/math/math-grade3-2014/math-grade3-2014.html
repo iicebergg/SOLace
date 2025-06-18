@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Grade 3 Mathematics (2014) | SOLace</title>
-  <link rel="stylesheet" href="../../css/styles.css">
-  <!-- <link rel="stylesheet" href="../../css/accessibility.css"> -->
+  <link rel="stylesheet" href="../../css/test-pages.css">
+  <link rel="stylesheet" href="../../css/accessibility.css">
 </head>
 <body class="theme-default">
   <header>
@@ -13,7 +13,6 @@
     <img src="../../images/SOLace-logo.svg" width="150px">
     <br>
       <button id="home-btn" class="nav-btn active">Home</button>
-      <button id="test-btn" class="nav-btn">Take Test</button>
       <button id="results-btn" class="nav-btn">My Results</button>
       <button id="settings-btn" class="nav-btn">Settings</button>
     </nav>
@@ -24,6 +23,7 @@
     <section id="home" class="page active">
       <h2>Grade 3 Mathematics (2014)</h2>
       <p>To access a PDF of these questions, please visit the <a href="https://www.doe.virginia.gov/home/showpublisheddocument/20909/638043645503730000">official VDOE site</a>.</p>
+      <p><b>Note:</b> SOLace is currently optimized for Google Chrome on laptops, desktops, and Chromebooks. The testing platform should be considered less stable on tablets or mobile devices.</p>
       <p>Adapted from <i>Virginia Standards of Learning Released Test: Grade 3 Mathematics, Released Spring 2014</i> © Commonwealth of Virginia Department of Education. All rights reserved. Reproduced by permission.</p>
       <div class="action-btns">
         <button id="start-test" class="primary-btn">Start New Test</button>
@@ -52,8 +52,8 @@
       </div>
     </section>
 
-    <!-- Results Section -->
-    <!-- <section id="results" class="page">
+    <!-- Results Section 
+    <section id="results" class="page">
       <h2>Your Test Results</h2>
       <div id="results-summary">
         Summary will be inserted here dynamically 
@@ -77,6 +77,7 @@
           <button class="theme-btn" data-theme="black-on-cream">Black on Cream</button>
           <button class="theme-btn" data-theme="black-on-light-blue">Black on Light Blue</button>
           <button class="theme-btn" data-theme="black-on-light-magenta">Black on Light Magenta</button>
+          <button class="theme-btn" data-theme="white-on-black">White on Black</button>
           <button class="theme-btn" data-theme="yellow-on-blue">Yellow on Blue</button>
           <button class="theme-btn" data-theme="gray-on-green">Gray on Green</button>
           <p><i>***Note - these are the same color options used in TestNav that will be available during your assessment.</i></p>
@@ -102,9 +103,50 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 SOLace | Donate</p>
-    <p>Privacy Policy | Terms of Service</p>
-    <p>Adapted from <i>Virginia Standards of Learning Released Test: Grade 3 Mathematics, Released Spring 2014</i> © Commonwealth of Virginia Department of Education. All rights reserved. Reproduced by permission.</p>
+    <div class="footer-content">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <img src="../../images/SOLace-logo.svg" alt="SOLace Logo" class="logo-img">
+          <p>The premiere platform for Virginia Standards of Learning test practice.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="index.html">Testing Platform</a></li>
+            <li><a href="#categories">Test Categories</a></li>
+            <li><a href="#features">Features</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">About SOLace</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="mailto:support@solace.edu">Contact Support</a></li>
+            <li><a href="#features">Accessibility</a></li>
+            <li><a href="https://github.com/iicebergg/SOLace">Docs</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 SOLace</p>
+        <div class="footer-links">
+          <a href="placeholder.html" class="footer-link">Donate</a>
+          <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+          <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <!-- Templates for different question types -->
