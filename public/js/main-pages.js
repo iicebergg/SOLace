@@ -5,6 +5,18 @@
      event.preventDefault();
    });
 
+/* // Navigating to Third Party Warning
+document.body.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  var anchor = evt.target.closest("a")
+  if (anchor && anchor.href && anchor.host !== window.location.host) {
+    document.querySelector(".navigate-away").classList.add("active");
+    window.setTimeout(function () {
+      window.location.href = anchor.href;
+    }, 5000);
+  }
+}); */
+
 // DOM Elements
 const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
 const navLinks = document.querySelector('.nav-links');
