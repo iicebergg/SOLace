@@ -14,7 +14,7 @@ const sampleQuestions = [
  text: 'Two sets of circles are shown. Which of the following correctly compares the fraction of circles shaded in Set S to the fraction of circles shaded in Set T?',
  type: 'multiple-choice',
  image: {url: 'images/question_2.png', alt: 'Image failed to load. Please try again later.'},
- options: ['3/11 > 7/11', '8/11 < 7/11', '3/11 > 4/11', '3/11 < 4/11'],
+ options: ['<math><mfrac><mn>3</mn><mn>11</mn></mfrac></math> > <math><mfrac><mn>7</mn><mn>11</mn></mfrac></math>', '<math><mfrac><mn>8</mn><mn>11</mn></mfrac></math> < <math><mfrac><mn>7</mn><mn>11</mn></mfrac></math>', '<math><mfrac><mn>3</mn><mn>11</mn></mfrac></math> > <math><mfrac><mn>4</mn><mn>11</mn></mfrac></math>', '<math><mfrac><mn>3</mn><mn>11</mn></mfrac></math> < <math><mfrac><mn>4</mn><mn>11</mn></mfrac></math>'],
  correctAnswer: 3, 
  explanation: 'When comparing fractions with the same denominator, compare the numerators. Since 3 < 4, we have 3/11 < 4/11.'
  },
@@ -41,7 +41,7 @@ const sampleQuestions = [
  text: 'Two packages of eggs are shown. Which statement correctly compares the fraction of the number of eggs in Package P to the fraction of the number of eggs in Package Q?',
  type: 'multiple-choice',
  image: {url: 'images/question_5.png', alt: 'Image failed to load. Please try again later.'},
- options: ['4/12 < 3/12', '4/12 > 9/12', '8/12 > 9/12', '8/12 < 9/12'],
+ options: ['<math><mfrac><mn>4</mn><mn>12</mn></mfrac></math> < <math><mfrac><mn>3</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>4</mn><mn>12</mn></mfrac></math> > <math><mfrac><mn>9</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>8</mn><mn>12</mn></mfrac></math> > <math><mfrac><mn>9</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>8</mn><mn>12</mn></mfrac></math> < <math><mfrac><mn>9</mn><mn>12</mn></mfrac></math>'],
  correctAnswer: 3, 
  explanation: 'Compare the fractions by looking at the numerators when denominators are the same.'
  },
@@ -58,7 +58,7 @@ const sampleQuestions = [
  text: 'This model is shaded to represent one whole. Look at the following model. What number do the shaded parts in this model represent?',
  type: 'multiple-choice',
  image: {url: 'images/question_7.png', alt: 'Image failed to load. Please try again later.'},
- options: ['1/12', '11/12', '5 1/2', '10 1/2'],
+ options: ['<math><mfrac><mn>1</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>11</mn><mn>12</mn></mfrac></math>', '5 <math><mfrac><mn>1</mn><mn>12</mn></mfrac></math>', '10 <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>'],
  correctAnswer: 2, 
  explanation: 'Count the whole units and fractional parts shown in the model.'
  },
@@ -105,7 +105,7 @@ const sampleQuestions = [
  text: 'What fraction of the rectangle is shaded?',
  type: 'multiple-choice',
  image: {url: 'images/question_12.png', alt: 'Image failed to load. Please try again later.'},
- options: ['1/14', '1/7', '5/14', '5/7'],
+ options: ['<math><mfrac><mn>1</mn><mn>14</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>7</mn></mfrac></math>', '<math><mfrac><mn>5</mn><mn>14</mn></mfrac></math>', '<math><mfrac><mn>5</mn><mn>7</mn></mfrac></math>'],
  correctAnswer: 3, 
  explanation: 'Count the total parts and the shaded parts to determine the fraction.'
  },
@@ -120,18 +120,18 @@ const sampleQuestions = [
  },
  {
  id: '14',
- text: 'Kiku had a total of 25 plants at her store on Tuesday morning. During the day, she sold 26 of these plants and then received 136 new plants. At the end of the day, exactly how many plants did Kiku have?',
+ text: 'Kiku had a total of 25 plants at her store on Tuesday morning. During the day, she sold 16 of these plants and then received 136 new plants. At the end of the day, exactly how many plants did Kiku have?',
  type: 'multiple-choice',
  options: ['9', '61', '145', '197'],
  correctAnswer: 2, 
- explanation: 'Start with 25, subtract 26 sold, then add 136 new plants: 25 - 26 + 136 = 135. Wait, this seems to have an error in the problem or answer choices.'
+ explanation: 'Start with 25, subtract 16 sold, then add 136 new plants: 25 - 16 + 136 = 145.'
  },
  {
  id: '15',
  text: 'What fraction is represented by the shaded area?',
  type: 'multiple-choice',
  image: {url: 'images/question_15.png', alt: 'Image failed to load. Please try again later.'},
- options: ['2/8', '6/16', '10/16', '6/8'],
+ options: ['<math><mfrac><mn>2</mn><mn>8</mn></mfrac></math>', '<math><mfrac><mn>6</mn><mn>16</mn></mfrac></math>', '<math><mfrac><mn>10</mn><mn>16</mn></mfrac></math>', '<math><mfrac><mn>6</mn><mn>8</mn></mfrac></math>'],
  correctAnswer: 0, 
  explanation: 'Count the total equal parts and the shaded parts to find the fraction.'
  },
@@ -147,9 +147,9 @@ const sampleQuestions = [
  text: 'What is 3/4 + 1/4?',
  type: 'multiple-choice',
  image: {url: 'images/question_17.png', alt: 'Image failed to load. Please try again later.'},
- options: ['1 1/4', '1', '4/8', '2/8'],
+ options: ['1 <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>', '1', '<math><mfrac><mn>4</mn><mn>8</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>8</mn></mfrac></math>'],
  correctAnswer: 1, 
- explanation: 'When adding fractions with the same denominator, add the numerators: 3/4 + 1/4 = 4/4 = 1.'
+ explanation: 'When adding fractions with the same denominator, add the numerators: <math><mfrac><mn>3</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> = <math><mfrac><mn>4</mn><mn>4</mn></mfrac></math> = 1.'
  },
  {
  id: '18',
@@ -173,7 +173,7 @@ const sampleQuestions = [
  text: 'Select each multiplication fact that equals 48.',
  type: 'multiple-select',
  options: ['4 × 8', '6 × 9', '12 × 4', '7 × 6', '8 × 6', '5 × 8'],
- correctAnswer: [0, 4],
+ correctAnswer: [2, 4],
  explanation: 'Check each multiplication: 4×12=48, 6×8=48, 12×4=48, 7×6=42, 8×6=48, 5×8=40.'
  },
  {
@@ -181,7 +181,7 @@ const sampleQuestions = [
  text: 'How many minutes are there from 10:30 A.M. to 1:00 P.M.?',
  type: 'multiple-choice',
  options: ['500 minutes', '300 minutes', '150 minutes', '120 minutes'],
- correctAnswer: 1, 
+ correctAnswer: 2, 
  explanation: 'From 10:30 A.M. to 1:00 P.M. is 2 hours and 30 minutes = 150 minutes.'
  },
  {

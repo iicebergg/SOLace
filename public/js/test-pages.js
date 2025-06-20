@@ -666,6 +666,13 @@ function submitAnswer() {
   if (nextQuestionBtn) nextQuestionBtn.style.display = 'block';
 }
 
+// Change button text for final question
+if (currentQuestionIndex + 1 == questions.length) {
+  nextQuestionBtn.textContent = 'Submit Test';
+} else {
+  nextQuestionBtn.textContent = 'Next Question';
+}
+
 // Display feedback for the current question
 function displayFeedback(isCorrect, explanation) {
   const feedbackContainer = document.getElementById('feedback-container');
