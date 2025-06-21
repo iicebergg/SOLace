@@ -270,6 +270,10 @@ function loadQuestion(index) {
         renderFreeResponseQuestion(template, question);
         break;
       
+      case 'point-select':
+        renderPointSelectQuestion(template, question);
+        break;
+
       default:
         console.error(`Unknown question type: ${question.type}`);
         return;
@@ -576,6 +580,72 @@ function renderQuestionImage(template, question) {
   }
 }
 
+// Render a point-selection question
+function renderPointSelectQuestion(template, question) {
+  console.log('Rendering point select question:', question.id);
+  
+  const questionTextElement = template.querySelector('.question-text');
+  questionTextElement.textContent = question.text;
+  
+  const imageContainer = template.querySelector('.point-select-image-container');
+  
+  if (!question.image) {
+    imageContainer.innerHTML = '<p>Error: This question requires an image.</p>';
+    return;
+  }
+  
+  const interactiveContainer = document.createElement('div');
+  interactiveContainer.className = 'point-select-container';
+  
+  const img = document.createElement('img');
+  img.className = 'point-select-image';
+  img.src = question.image.url;
+  img.alt = question.image.alt || 'Question image for point selection';
+  
+  const overlay = document.createElement('div');
+  overlay.className = 'point-select-overlay';
+  
+  const instructions = document.createElement('div');
+  instructions.className = 'point-select-instructions';
+  instructions.textContent = 'Click on the image to place your point.';
+  
+  let selectedPoint = null;
+  
+  img.addEventListener('load', () => {
+    overlay.addEventListener('click', (e) => {
+      const rect = overlay.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      // Remove existing point
+      const existingPoint = overlay.querySelector('.selected-point');
+      if (existingPoint) existingPoint.remove();
+      
+      // Create new point
+      const point = document.createElement('div');
+      point.className = 'selected-point';
+      point.style.left = `${x}px`;
+      point.style.top = `${y}px`;
+      
+      overlay.appendChild(point);
+      
+      selectedPoint = {
+        x: x / rect.width,
+        y: y / rect.height
+      };
+      
+      instructions.textContent = 'Point placed. Click again to move it.';
+    });
+  });
+  
+  interactiveContainer.appendChild(img);
+  interactiveContainer.appendChild(overlay);
+  imageContainer.appendChild(instructions);
+  imageContainer.appendChild(interactiveContainer);
+  
+  imageContainer.getSelectedPoint = () => selectedPoint;
+}
+
 // Submit the current answer
 function submitAnswer() {
   const question = questions[currentQuestionIndex];
@@ -649,6 +719,44 @@ function submitAnswer() {
       );
 
       break;
+
+      case 'point-select':
+        const imageContainer = document.querySelector('.point-select-image-container');
+        if (imageContainer && imageContainer.getSelectedPoint) {
+        userAnswer = imageContainer.getSelectedPoint();
+    
+    if (userAnswer && question.correctAnswer) {
+      const tolerance = 0.05; // 5% tolerance
+      const deltaX = Math.abs(userAnswer.x - question.correctAnswer.x);
+      const deltaY = Math.abs(userAnswer.y - question.correctAnswer.y);
+      
+      isCorrect = deltaX <= tolerance && deltaY <= tolerance;
+      
+      // Show correct answer
+      const overlay = document.querySelector('.point-select-overlay');
+      if (overlay) {
+        const correctPoint = document.createElement('div');
+        correctPoint.className = 'correct-point';
+        
+        const rect = overlay.getBoundingClientRect();
+        correctPoint.style.left = `${question.correctAnswer.x * rect.width}px`;
+        correctPoint.style.top = `${question.correctAnswer.y * rect.height}px`;
+        
+        overlay.appendChild(correctPoint);
+        
+        const userPoint = overlay.querySelector('.selected-point');
+        if (userPoint) {
+          userPoint.classList.add(isCorrect ? 'correct' : 'incorrect');
+        }
+      }
+    } else {
+      isCorrect = false;
+    }
+  } else {
+    userAnswer = null;
+    isCorrect = false;
+  }
+  break;
   }
 
   // Store the answer

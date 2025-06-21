@@ -232,8 +232,7 @@ const sampleQuestions = [
  text: 'Identify two lines in the figure that appear to be parallel.',
  type: 'point-select',
  image: {url: 'images/question_28.png', alt: 'Image failed to load. Please try again later.'},
- options: ['18 units', '19 units', '22 units', '24 units'],
- correctAnswer: 3, 
+ correctAnswer: { x: 0.5, y: 0.3}, 
  explanation: 'Count the units around the outside edge of the shaded figure to find the perimeter.'
  },
  {
@@ -427,9 +426,8 @@ const sampleQuestions = [
  text: 'Jeremy rolls a fair number cube labeled 1 through 6. Place a point on the number line to represent the probability that he will roll a 2 on the first roll.',
  type: 'point-select',
  image: {url: 'images/question_48.png', alt: 'Image failed to load. Please try again later.'},
- options: ['18 units', '19 units', '22 units', '24 units'],
- correctAnswer: 3, 
- explanation: 'Count the units around the outside edge of the shaded figure to find the perimeter.'
+ correctAnswer: { x: 0.28, y: 0.3 }, 
+ explanation: 'The probability is 1/6'
  },
  {
  id: '49',
