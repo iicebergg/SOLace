@@ -55,7 +55,7 @@ const sampleQuestions = [
  },
  {
  id: '7',
- text: 'This model is shaded to represent one whole. Look at the following model. What number do the shaded parts in this model represent?',
+ text: ' ',
  type: 'multiple-choice',
  image: {url: 'images/question_7.png', alt: 'Image failed to load. Please try again later.'},
  options: ['<math><mfrac><mn>1</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>11</mn><mn>12</mn></mfrac></math>', '5 <math><mfrac><mn>1</mn><mn>12</mn></mfrac></math>', '10 <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>'],
@@ -102,7 +102,7 @@ const sampleQuestions = [
  },
  {
  id: '12',
- text: 'What fraction of the rectangle is shaded?',
+ text: ' ',
  type: 'multiple-choice',
  image: {url: 'images/question_12.png', alt: 'Image failed to load. Please try again later.'},
  options: ['<math><mfrac><mn>1</mn><mn>14</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>7</mn></mfrac></math>', '<math><mfrac><mn>5</mn><mn>14</mn></mfrac></math>', '<math><mfrac><mn>5</mn><mn>7</mn></mfrac></math>'],
@@ -128,7 +128,7 @@ const sampleQuestions = [
  },
  {
  id: '15',
- text: 'What fraction is represented by the shaded area?',
+ text: ' ',
  type: 'multiple-choice',
  image: {url: 'images/question_15.png', alt: 'Image failed to load. Please try again later.'},
  options: ['<math><mfrac><mn>2</mn><mn>8</mn></mfrac></math>', '<math><mfrac><mn>6</mn><mn>16</mn></mfrac></math>', '<math><mfrac><mn>10</mn><mn>16</mn></mfrac></math>', '<math><mfrac><mn>6</mn><mn>8</mn></mfrac></math>'],
@@ -137,7 +137,7 @@ const sampleQuestions = [
  },
  {
  id: '16',
- text: 'A store has 57 packages of gum with 5 pieces of gum in each package. What is the total number of pieces of gum in these packages?',
+ text: 'A store has 57 packages of gum with 5 pieces of gum in each package. What is the total number of pieces of gum in these packages? Write the number only; do not include units.',
  type: 'free-response',
  correctKeywords: ['285'],
  explanation: 'Multiply 57 × 5 = 285 pieces of gum.'
@@ -212,7 +212,7 @@ const sampleQuestions = [
  },
  {
  id: '25',
- text: 'What is the temperature on this thermometer?',
+ text: 'What is the temperature in °F on this thermometer? Write the number only; do not include units.',
  type: 'free-response',
  image: {url: 'images/question_25.png', alt: 'Image failed to load. Please try again later.'},
  correctKeywords: ['84'],
@@ -372,12 +372,11 @@ const sampleQuestions = [
  },
  {
  id: '40',
- text: 'Debi will pick a card from the bag without looking. Place 8 cards in the bag to show the likelihood of Debi picking a card with a star is equally likely as picking a card with a heart.',
- type: 'drag-drop',
+ text: 'Debi will pick a card from the bag without looking. Which combination of 8 cards in the bag show that the likelihood of Debi picking a card with a star is equally likely as picking a card with a heart?',
+ type: 'multiple-choice',
  image: {url: 'images/question_40.png', alt: 'Image failed to load. Please try again later.'},
- options: ['Star card', 'Heart card', 'Circle card', 'Square card'],
- dropZones: ['Card 1', 'Card 2', 'Card 3', 'Card 4', 'Card 5', 'Card 6', 'Card 7', 'Card 8'],
- correctAnswer: [0, 1, 0, 1, 0, 1, 0, 1],
- explanation: 'For equally likely outcomes, place 4 star cards and 4 heart cards in the bag.'
+ options: ['4 star cards, 4 heart cards', '2 star cards, 6 heart cards', '6 star cards, 2 heart cards', '0 star cards, 8 heart cards'],
+ correctAnswer: 0, 
+ explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
  }
 ];
