@@ -15,70 +15,83 @@ body.theme-black-on-white {
 body.theme-black-on-cream {
   --bg-color: #FFFACD;
   --text-color: #000000;
-  --accent-color: #5b8bd0;
+  --accent-color: #4a6fa5;
   --secondary-bg: #FFFACD;
   --border-color: #444444;
-  --input-bg: #333333;
-  --success-color: #5cb85c;
-  --error-color: #d9534f;
+  --input-bg: #FFFACD;
+  --success-color: #28a745;
+  --error-color: #dc3545;
 }
 
 body.theme-black-on-light-blue {
   --bg-color: #ADD8E6;
   --text-color: #000000;
-  --accent-color: #ffff00;
-  --secondary-bg: #121212;
-  --border-color: #ffffff;
-  --input-bg: #000000;
-  --success-color: #00ff00;
-  --error-color: #ff6666;
+  --accent-color: #4a6fa5;
+  --secondary-bg: #ADD8E6;
+  --border-color: #000000;
+  --input-bg: #ADD8E6;
+  --success-color: #28a745;
+  --error-color: #dc3545;
 }
 
 body.theme-black-on-light-magenta {
   --bg-color: #EE82EF;
   --text-color: #000000;
-  --accent-color: #8dadcf;
-  --secondary-bg: #f5e6e8;
-  --border-color: #d8e2dc;
-  --input-bg: #f8f9fa;
-  --success-color: #a9d6a9;
-  --error-color: #f7caca;
+  --accent-color: #4a6fa5;
+  --secondary-bg: #EE82EF;
+  --border-color: #000000;
+  --input-bg: #EE82EF;
+  --success-color: #28a745;
+  --error-color: #dc3545;
+}
+
+body.theme-white-on-black {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --accent-color: #4a6fa5;
+  --secondary-bg: #000000;
+  --border-color: #ffffff;
+  --input-bg: #000000;
+  --success-color: #28a745;
+  --error-color: #dc3545;
 }
 
 body.theme-yellow-on-blue {
-  --bg-color: #F5E728;
-  --text-color: #1800CC;
-  --accent-color: #8dadcf;
-  --secondary-bg: #f5e6e8;
-  --border-color: #d8e2dc;
-  --input-bg: #f8f9fa;
-  --success-color: #a9d6a9;
-  --error-color: #f7caca;
+  --bg-color: #1800CC;
+  --text-color: #F5E728;
+  --accent-color: #4a6fa5;
+  --secondary-bg: #1800CC;
+  --border-color: #F5E728;
+  --input-bg: #1800CC;
+  --success-color: #28a745;
+  --error-color: #dc3545;
 }
 
 body.theme-gray-on-green {
   --bg-color: #A3AE9E;
   --text-color: #6E6E6E;
-  --accent-color: #8dadcf;
-  --secondary-bg: #f5e6e8;
-  --border-color: #d8e2dc;
-  --input-bg: #f8f9fa;
-  --success-color: #a9d6a9;
-  --error-color: #f7caca;
+  --accent-color: #4a6fa5;
+  --secondary-bg: #A3AE9E;
+  --border-color: #6E6E6E;
+  --input-bg: #A3AE9E;
+  --success-color: #28a745;
+  --error-color: #dc3545;
 }
 
-/* Apply theme variables */
+/* Apply theme variables to body */
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  transition: background-color 0.3s, color 0.3s;
 }
 
+/* Apply to major components */
 header, footer {
-  background-color: var(--accent-color);
+  background-color: var(--accent-color) !important;
 }
 
 .primary-btn {
-  background-color: var(--accent-color);
+  background-color: var(--accent-color) !important;
 }
 
 #test-container, 
@@ -86,21 +99,22 @@ header, footer {
 #results-summary, 
 #results-details, 
 .settings-group {
-  background-color: var(--secondary-bg);
-  border-color: var(--border-color);
+  background-color: var(--secondary-bg) !important;
+  border-color: var(--border-color) !important;
 }
 
 .option, .response-input {
-  background-color: var(--input-bg);
-  border-color: var(--border-color);
+  background-color: var(--input-bg) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-color) !important;
 }
 
 .option.correct, .result-status.correct {
-  color: var(--success-color);
+  color: var(--success-color) !important;
 }
 
 .option.incorrect, .result-status.incorrect {
-  color: var(--error-color);
+  color: var(--error-color) !important;
 }
 
 /* Font sizes */
@@ -176,4 +190,42 @@ textarea:focus-visible,
 select:focus-visible {
   outline: 3px solid var(--accent-color);
   outline-offset: 2px;
+}
+
+/* Additional theme-specific overrides for better contrast */
+body.theme-white-on-black .question-text,
+body.theme-white-on-black h1,
+body.theme-white-on-black h2,
+body.theme-white-on-black h3,
+body.theme-white-on-black h4,
+body.theme-white-on-black p {
+  color: var(--text-color) !important;
+}
+
+body.theme-yellow-on-blue .question-text,
+body.theme-yellow-on-blue h1,
+body.theme-yellow-on-blue h2,
+body.theme-yellow-on-blue h3,
+body.theme-yellow-on-blue h4,
+body.theme-yellow-on-blue p {
+  color: var(--text-color) !important;
+}
+
+/* Ensure proper contrast for all themes */
+body[class*="theme-"] .result-summary-text p,
+body[class*="theme-"] .result-question,
+body[class*="theme-"] .result-answer,
+body[class*="theme-"] .result-explanation {
+  color: var(--text-color) !important;
+}
+
+/* Score circle theming */
+body[class*="theme-"] .score-circle {
+  background-color: var(--accent-color) !important;
+  color: white !important;
+}
+
+body[class*="theme-"] .score-circle-small {
+  background-color: var(--accent-color) !important;
+  color: white !important;
 }
