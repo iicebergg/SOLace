@@ -5,7 +5,7 @@ const sampleQuestions = [
  image: {url:'images/question_1.png', alt: 'Image failed to load. Please try again later.'},
  type: 'multiple-choice',
  options: ['an adaptation', 'a relationship', 'an energy requirement', 'a social hierarchy'],
- correctAnswer: 3,
+ correctAnswer: 0,
  explanation: 'Addition and subtraction are inverse operations, so 9 + 6 = 15 helps solve 15 - 9 = 6.'
  },
  {
@@ -13,7 +13,7 @@ const sampleQuestions = [
  text: 'Hurricanes form in tropical waters between 8 and 20 degrees north and south of the equator. Hurricanes rarely form at higher latitudes because the water is too--',
  type: 'multiple-choice',
  options: ['warm', 'deep', 'shallow', 'cold'],
- correctAnswer: 0, 
+ correctAnswer: 3, 
  explanation: 'When comparing fractions with the same denominator, compare the numerators. Since 3 < 4, we have 3/11 < 4/11.'
  },
  {
@@ -22,7 +22,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  image: {url:'images/question_3.png', alt: 'Image failed to load. Please try again later.'},
  options: ['A drop in wolf population and a drop in moose population', 'An increase in wolf population and a drop in moose population', 'A drop in wolf population and an increase in moose population', 'An increase in wolf population and an increase in moose population'],
- correctAnswer: 1, 
+ correctAnswer: 2, 
  explanation: 'Count the place value blocks: thousands, hundreds, tens, and ones to determine the number.'
  },
  {
@@ -30,7 +30,7 @@ const sampleQuestions = [
  text: 'A metal spoon was placed in a dish of ice cream and became cool. Which correctly describes the heat transfer process that resulted in the cooling of the spoon?',
  type: 'multiple-choice',
  options: ['Conduction, because the spoon was in contact with the cold ice cream', 'Convection, because the spoon was in contact with the cold ice cream', 'Conduction, because cold air currents affected the temperature of the spoon', 'Convection, because cold air currents affected the temperature of the spoon'],
- correctAnswer: 2,
+ correctAnswer: 0,
  explanation: 'To round 5,647: to nearest thousand (6,000), nearest hundred (5,600), nearest ten (5,650).'
  },
  {
@@ -39,7 +39,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  image: {url:'images/question_5.png', alt: 'Image failed to load. Please try again later.'},
  options: ['Height of the ramp', 'Height and length of the ramp', 'Roughness of the ramp surface', 'Height of the ramp and roughness of the ramp surface'],
- correctAnswer: 1, 
+ correctAnswer: 2, 
  explanation: 'Count the place value blocks: thousands, hundreds, tens, and ones to determine the number.'
  },
  {
@@ -63,7 +63,7 @@ const sampleQuestions = [
  text: 'Which body of water is often protected naturally from storms by barrier islands and also contains a mixture of fresh water and salt water?',
  type: 'multiple-choice',
  options: ['Estuary', 'Ocean', 'Lake', 'Pond'],
- correctAnswer: 3, 
+ correctAnswer: 0, 
  explanation: 'Multiplication and division are inverse operations, so 3 × 2 = 6 helps solve 6 ÷ 3 = 2.'
  },
  {
@@ -92,7 +92,7 @@ const sampleQuestions = [
     {url: 'images/question_10c.png', alt: 'Image failed to load. Please try again later.'},
     {url: 'images/question_10d.png', alt: 'Image failed to load. Please try again later.'},
  ],
- correctAnswer: 2, 
+ correctAnswer: 3, 
  explanation: '63 ÷ 7 = 9, so the answer is 7.'
  },
  {
@@ -100,356 +100,312 @@ const sampleQuestions = [
  text: 'A student measured the power of a motor operating at different temperatures. The student recorded a total of 11 measurements, one at each 2 degree interval between 10°C and 30°C. Which change in the procedure would most improve the validity of conclusions based on this investigation?',
  type: 'multiple-choice',
  options: ['Increasing the number of variables', 'Decreasing the range of the independent variable', 'Repeating the experiment several times', 'Producing a graph of numerical observations'],
- correctAnswer: 0, 
+ correctAnswer: 2, 
  explanation: '63 ÷ 7 = 9, so the answer is 7.'
  },
  {
  id: '12',
- text: 'Students placed steel wool in beakers of four different liquids in order of the most acidic to neutral. The students recorded their observations in the table. Which is the best conclusion based on the table?',
+ text: 'Which of these has the strongest gravitational field?',
  type: 'multiple-choice',
- image: {url:'images/question_12.png', alt: 'Image failed to load. Please try again later.'},
- options: ['The more acidic the substance, the faster it reacts with steel wool.', 'The more acidic the substance, the faster the steel wool turns to a gas.', 'The less acidic the substance, the faster the steel wool becomes covered with air bubbles.', 'The less acidic the substance, the faster the steel wool changes color.'],
- correctAnswer: 3, 
- explanation: 'Count the total parts and the shaded parts to determine the fraction.'
- },
- {
- id: '13',
- text: 'Which number is a common factor of 15, 18, and 30?',
- type: 'multiple-choice',
- options: ['9', '6', '5', '3'],
- correctAnswer: 3, 
+ options: ['Sun', 'Earth', 'Saturn', 'Jupiter'],
+ correctAnswer: 0, 
  explanation: 'Look at the arrangement to determine the multiplication sentence that represents the groups.'
  },
  {
- id: '14',
- text: 'What digit is in the tenths place in this number? 24.816',
+ id: '13',
+ text: 'Students placed steel wool in beakers of four different liquids in order of the most acidic to neutral. The students recorded their observations in the table. Which is the best conclusion based on the table?',
  type: 'multiple-choice',
- options: ['1', '2', '6', '8'],
- correctAnswer: 3, 
+ image: {url:'images/question_13.png', alt: 'Image failed to load. Please try again later.'},
+ options: ['The more acidic the substance, the faster it reacts with steel wool.', 'The more acidic the substance, the faster the steel wool turns to a gas.', 'The less acidic the substance, the faster the steel wool becomes covered with air bubbles.', 'The less acidic the substance, the faster the steel wool changes color.'],
+ correctAnswer: 0, 
+ explanation: 'Count the total parts and the shaded parts to determine the fraction.'
+ },
+ {
+ id: '14',
+ text: 'Which is the result of using a more powerful motor to run an elevator?',
+ type: 'multiple-choice',
+ options: ['The same amount of work is done in less time.', 'Less work is done in the same amount of time.', 'The same amount of time is needed to move the same distance.', 'A longer time is needed to move a shorter distance.'],
+ correctAnswer: 0, 
  explanation: 'Start with 25, subtract 26 sold, then add 136 new plants: 25 - 26 + 136 = 135. Wait, this seems to have an error in the problem or answer choices.'
  },
  {
  id: '15',
- text: 'Which division statement represents 3/8?',
+ text: 'A major scientific concern over nuclear energy is how to--',
  type: 'multiple-choice',
- options: ['3 divided by 8', '8 divided by 3', '3 divided by 11', '11 divided by 3'],
- correctAnswer: 0, 
+ options: ['deal with the large amounts of fossil fuels required', 'reduce the high levels of carbon dioxide emitted into the air', 'prevent the depletion of the ozone layer', 'store the waste products safely'],
+ correctAnswer: 3, 
  explanation: 'Count the total equal parts and the shaded parts to find the fraction.'
  },
  {
  id: '16',
- text: 'Which fraction is represented by point W shown on the number line?',
- type: 'multiple-choice',
- image: {url: 'images/question_16.png', alt: 'Image failed to load. Please try again later.'},
- options: ['<math><mfrac><mn>10</mn><mn>13</mn></mfrac></math>', '<math><mfrac><mn>9</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>3</mn><mn>8</mn></mfrac></math>', '<math><mfrac><mn>3</mn><mn>12</mn></mfrac></math>'],
- correctAnswer: 1, 
- explanation: 'When adding fractions with the same denominator, add the numerators: 3/4 + 1/4 = 4/4 = 1.'
+ text: 'What are the ordered steps for cloud formation?',
+ type: 'drag-drop',
+ options: ['Water vapor cools', 'Water condenses', 'Liquid water evaporates', 'Warm water vapor rises'],
+ dropZones: ['First ↓', 'Second ↓', 'Third ↓', 'Fourth'],
+ correctAnswer: [2, 3, 0, 1],
+ explanation: 'For equally likely outcomes, place 4 star cards and 4 heart cards in the bag.'
  },
  {
  id: '17',
- text: 'Identify the place value for each digit in the number 304,215.',
- type: 'drag-drop',
- options: ['Millions', 'Hundred thousands', 'Ten thousands', 'Thousands', 'Hundreds', 'Tens', 'Ones'],
- dropZones: ['0', '1', '2', '3', '4', '5'],
- correctAnswer: [2, 5, 4, 1, 3, 6],
+ text: 'Why is water known as the "universal solvent"?',
+ type: 'multiple-choice',
+ options: ['It dissolves all known substances.', 'It dissolves only solid substances.', 'It dissolves the greatest number of substances.', 'It dissolves substances faster than all other solvents.'],
+ correctAnswer: 2,
  explanation: 'For equally likely outcomes, place 4 star cards and 4 heart cards in the bag.'
  },
  {
  id: '18',
- text: 'This table shows the times it took four students to complete a 40-meter race. Which statement about these times is true?',
+ text: 'Which of these has been improved by genetic engineering?',
  type: 'multiple-choice',
- image: {url: 'images/question_18.png', alt: 'Image failed to load. Please try again later.'},
- options: ['13.7 > 13.07', '13.07 > 13.6', '13.6 > 13.7', '13.06 > 13.07'],
- correctAnswer: 0, 
+ options: ['Visibility of insects to predators', 'Growth of insects in cornfields', 'Reduced number of pollinating insects', 'Resistance of corn plants to insects'],
+ correctAnswer: 3, 
  explanation: '3,000 - 285 = 2,715.'
  },
  {
  id: '19',
- text: 'Which statement is true?',
+ text: 'Which action will most reduce the use of nonrenewable energy resources in a school district?',
  type: 'multiple-choice',
- options: ['89,045 < 84,905', '84,950 < 85,049', '8,240,579 < 8,209,745', '8,504,297 < 8,054,972'],
- correctAnswer: 1, 
+ options: ['Installing low-flow faucets and toilets', 'Recycling worksheets and other paper products', 'Limiting the sweeping and mopping of classrooms to once a month', 'Replacing current lighting with more efficient lighting'],
+ correctAnswer: 3, 
  explanation: 'Look at the pattern on the number line to determine which operation it represents.'
  },
  {
  id: '20',
- text: 'How is 2.32 written in words?',
+ text: 'Sound waves are unable to travel through--',
  type: 'multiple-choice',
- options: ['Two hundred thirty-two', 'Two and thirty-two tenths', 'Two and thirty-two hundredths', 'Two and thirty-two thousandths'],
- correctAnswer: 2, 
+ options: ['air', 'a vacuum', 'water', 'a rock'],
+ correctAnswer: 1, 
  explanation: 'Look at the pattern on the number line to determine which operation it represents.'
  },
  {
  id: '21',
- text: 'What is 7,613,542 rounded to the nearest ten thousand?',
+ text: 'The speed of light is about 300,000,000 m/s. Which is the correct expression for the speed of light in scientific notation?',
  type: 'multiple-choice',
- options: ['7,600,000', '7,610,000', '7,614,000', '7,620,000'],
- correctAnswer: 1, 
+ options: ['30.0 x 10⁷ m/s', '30.0 x 10⁸ m/s', '3.0 x 10⁷ m/s', '3.0 x 10⁸ m/s'],
+ correctAnswer: 3, 
  explanation: 'From 10:30 A.M. to 1:00 P.M. is 2 hours and 30 minutes = 150 minutes.'
  },
  {
  id: '22',
- text: ' ',
+ text: 'Which of these properties of an unknown liquid can be found using a beaker, a hot plate, and a temperature probe?',
  type: 'multiple-choice',
- image: {url: 'images/question_22.png', alt: 'Image failed to load. Please try again later.'},
- options: [
-    {url: 'images/question_22a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_22b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_22c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_22d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 0, 
+ options: ['Density', 'Boiling point', 'Oxygen', 'Chemical composition'],
+ correctAnswer: 1, 
  explanation: 'Congruent figures have the same shape and size. Look for the tower that matches exactly.'
  },
  {
  id: '23',
- text: '',
- type: 'multiple-choice',
- image: {url: 'images/question_23.png', alt: 'Image failed to load. Please try again later.'},
- options: ['1.7', '1.3', '0.7', '0.3'],
- correctAnswer: 2, 
- explanation: '6 feet is the most reasonable length for a bed. 6 inches and 6 centimeters are too short, 6 meters is too long.'
- },
- {
- id: '24',
- text: 'Order the fractions from greatest to least.',
+ text: 'Place the terms in the order of the simplest level of organization to the most complex.',
  type: 'drag-drop',
- image: {url: 'images/question_40.png', alt: 'Image failed to load. Please try again later.'},
- options: ['<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>9</mn></mfrac></math>', '<math><mfrac><mn>3</mn><mn>5</mn></mfrac></math>'],
- dropZones: ['Greatest', '↓', 'Least'],
- correctAnswer: [2, 0, 1],
+ options: ['System', 'Cell', 'Organ', 'Tissue'],
+ dropZones: ['Simplest', '↓', '↓', 'Most complex'],
+ correctAnswer: [1, 3, 2, 0],
  explanation: 'For equally likely outcomes, place 4 star cards and 4 heart cards in the bag.'
  },
  {
- id: '25',
- text: 'Which number, when rounded to the nearest hundredth, is equal to 7.59?',
+ id: '24',
+ text: 'A group of campers travels to a cabin which has no electrical power. In order to provide the power for a heater and lights, which device would be appropriate?',
  type: 'multiple-choice',
- options: ['7.595', '7.588', '7.584', '7.594'],
- correctAnswer: 1, 
+ options: ['A resistor', 'An insulator', 'A generator', 'A voltmeter'],
+ correctAnswer: 2, 
+ explanation: 'Add 3 hours to the starting time shown on the clock.'
+ },
+ {
+ id: '25',
+ text: 'Which of the.se i.s most likely the result of weasels and foxes depending on the same food source?',
+ type: 'multiple-choice',
+ options: ['The populations will compete with each other.', 'One of the populations will become herbivores.', 'Birthrates for both populations will increase.', 'New species of prey will evolve in the area.'],
+ correctAnswer: 0, 
  explanation: 'Add 3 hours to the starting time shown on the clock.'
  },
  {
  id: '26',
- text: 'Which figure has less than four angles?',
+ text: 'A farmer wants to plant a crop that grows well in a marshland environment. In order to produce a good harvest, the most important characteristic this plant should have is the ability to--',
  type: 'multiple-choice',
- options: ['Triangle', 'Rhombus', 'Rectangle', 'Parallelogram'],
+ options: ['thrive in wet soil', 'mature quickly', 'survive in dry conditions', 'attract a variety of pollinators'],
  correctAnswer: 0, 
  explanation: 'Add 3 hours to the starting time shown on the clock.'
  },
  {
- id: '28',
- text: 'Identify two lines in the figure that appear to be parallel.',
+ id: '27',
+ text: 'The volume of water in the pot decreases during this investigation. Water droplets form on the mirror when positioned over the pot. In this setup, water--',
  type: 'multiple-choice',
  image: {url: 'images/question_28.png', alt: 'Image failed to load. Please try again later.'},
- options: ['r and m', 'k and p', 'j and m', 'j and r'], 
- correctAnswer: 2,
+ options: ['vaporizes and then freezes', 'vaporizes and then condenses', 'condenses and then vaporizes', 'freezes and then vaporizes'], 
+ correctAnswer: 1,
  explanation: 'Count the units around the outside edge of the shaded figure to find the perimeter.'
  },
  {
- id: '29',
- text: 'Lola\'s puppy weighed 6 pounds. What is the total number of ounces Lola\'s puppy weighed?',
+ id: '28',
+ text: 'Which is an abiotic change in an ecosystem?',
  type: 'multiple-choice',
- options: ['48 ounces', '60 ounces', '72 ounces', '96 ounces'],
+ options: ['Plant photosynthesis rates increase.', 'Fish species populations increase.', 'Aquatic predator survival rates increase.', 'Annual rainfall totals for an area increase.'],
  correctAnswer: 3, 
  explanation: 'Count the value of all the coins and bills shown.'
  },
  {
+ id: '29',
+ text: 'Ca + 2H₂O → Ca(OH)₂ + H₂ <br> How many different elements are involved in the chemical reaction shown?',
+ type: 'free-response',
+ correctKeywords: ['3'],
+ explanation: 'Multiply 57 × 5 = 285 pieces of gum.'
+ },
+ {
  id: '30',
- text: 'Which pair of figures appears to be congruent?',
+ text: 'Physical and chemical weathering processes are responsible for breaking down rocks. Which of these is an example of chemical weathering by water?',
  type: 'multiple-choice',
- options: [
-    {url: 'images/question_30a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_30b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_30c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_30d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 0, 
- explanation: 'A ray has one endpoint and extends infinitely in one direction. A line segment has two endpoints.'
+ options: ['Mineral crystals form as water evaporates from rocks.', 'Limestone reacts with acid rain and dissolves.', 'Water freezes in rock cracks and causes the rock to split.', 'Moss collects and grows on the surface of rocks.'],
+ correctAnswer: 1, 
+ explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
  },
  {
  id: '31',
- text: 'A restaurant has 3 gallons of soup. What is the total number of pints of soup this restaurant has?',
+ text: 'The shaded row in the t.able is called a--',
  type: 'multiple-choice',
- options: ['12 pints', '18 pints', '24 pints', '48 pints'],
- correctAnswer: 2, 
+ image: {url: 'images/question_31.png', alt: 'Image failed to load. Please try again later.'},
+ options: ['column', 'family', 'group', 'period'],
+ correctAnswer: 3, 
  explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
  },
  {
  id: '32',
- text: 'A basketball team left the school at 2:55 P.M. and returned at 5:45 P.M. What was the total amount of time that passed between the time this team left and returned to the school?',
+ text: 'White-footed mice having thicker fur than cactus mice is probably influenced most by the differences in the--',
  type: 'multiple-choice',
- options: ['2 hours 10 minutes', '2 hours 50 minutes', '3 hours 10 minutes', '3 hours 50 minutes'],
- correctAnswer: 1, 
- explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
- },
- {
- id: '33',
- text: 'Which of these objects has a mass closest to 1 kilogram?',
- type: 'multiple-choice',
- options: ['A desk', 'A pencil', 'A dictionary', 'A sheet of paper'],
+ options: ['food that they eat', 'time of day they are active', 'environmental climates where they live', 'amount of predators they encounter'],
  correctAnswer: 2, 
  explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
  },
  {
- id: '34',
- text: 'Which picture shows a single reflection of the figure across line r?',
+ id: '33',
+ text: 'During human fertilization, an egg and a sperm cell unite. Which structures in these cells carry the genes that will be transferred to the offspring?',
  type: 'multiple-choice',
- options: [
-    {url: 'images/question_34a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_34b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_34c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_34d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 1, 
+ options: ['Vacuoles', 'Ribosomes', 'Chromosomes', 'Cell membranes'],
+ correctAnswer: 2, 
+ explanation: 'The correct chart should show data for 14 students total across four food choices.'
+ },
+ {
+ id: '34',
+ text: 'Which facility relies on a nonrenewable source of energy?',
+ type: 'multiple-choice',
+ options: ['A wind farm that uses wind turbines', 'A dam that uses the power of water', 'A power station that burns coal', 'A solar farm that collects sunlight'],
+ correctAnswer: 2, 
  explanation: 'The correct chart should show data for 14 students total across four food choices.'
  },
  {
  id: '35',
- text: 'Which set of figures shows only octagons?',
+ text: 'As the frequency of a wave decreases, the wave\'s--',
  type: 'multiple-choice',
- options: [
-    {url: 'images/question_35a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_35b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_35c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_35d.png', alt: 'Image failed to load. Please try again later.'}
- ],
+ options: ['period decreases', 'amplitude increases', 'speed decreases', 'wavelength increases'],
+ correctAnswer: 3, 
+ explanation: 'The identity property of multiplication states that any number multiplied by 1 equals itself.'
+ },
+ {
+ id: '36',
+ text: 'This picture shows a zebra with two tick birds on its back. The tick birds alert the zebras that predators are near as well as remove and eat ticks found on zebras. What is the primary type of interaction between the tick birds and the zebras?',
+ type: 'multiple-choice',
+ image: {url: 'images/question_36.png', alt: 'Image failed to load. Please try again later.'},
+ options: ['Mutualism', 'Parasitism', 'Competition', 'Commensalism'],
  correctAnswer: 0, 
  explanation: 'The correct chart should show data for 14 students total across four food choices.'
  },
  {
- id: '36',
- text: '2 meters = __ millimeters',
- type: 'multiple-choice',
- options: ['20,000 millimeters', '2,000 millimeters', '200 millimeters', '20 millimeters'],
- correctAnswer: 1, 
- explanation: 'The identity property of multiplication states that any number multiplied by 1 equals itself.'
- },
- {
  id: '37',
- text: 'Which of the followign represents ray KL?',
+ text: 'Which change will most likely increase the strength of a magnetic field produced by an electromagnet?',
  type: 'multiple-choice',
- options: [
-    {url: 'images/question_37a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_37b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_37c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_37d.png', alt: 'Image failed to load. Please try again later.'}
- ],
+ options: ['Reduce the number of turns of the coil', 'Switch the direction in which the battery is connected', 'Remove the iron nail', 'Add a battery'],
  correctAnswer: 3, 
  explanation: 'The correct chart should show data for 14 students total across four food choices.'
  },
  {
  id: '38',
- text: 'Tyrone used 1 pint of liquid to completely fill a container. Which container could be the one Tyrone filled?',
+ text: 'The physical expression of a trait in an organism is known as the--',
  type: 'multiple-choice',
- options: [
-    {url: 'images/question_38a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_38b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_38c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_38d.png', alt: 'Image failed to load. Please try again later.'}
- ],
+ options: ['chromosome', 'genotype', 'phenotype', 'double helix'],
  correctAnswer: 2, 
  explanation: 'The correct chart should show data for 14 students total across four food choices.'
  },
  {
  id: '39',
- text: 'TMandy is making a spinner game. She wants the arrow on the spinner to have an equally likely chance of landing on each of 4 space.s. Each space will have a different shape on it. Which appears to be the spinner Mandy should make?',
+ text: 'Which statement correctly describes a difference between the mesosphere and the stratosphere?',
  type: 'multiple-choice',
- options: [
-    {url: 'images/question_39a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_39b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_39c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_39d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 0, 
- explanation: 'The correct chart should show data for 14 students total across four food choices.'
- },
- {
- id: '40',
- text: 'Which equation is true?',
- type: 'multiple-choice',
- options: ['4 x 7 = 26 + 2', '4 x 8 = 32 + 2', '7 x 6 = 59 - 7', '7 x 8 = 64 - 7'],
- correctAnswer: 0, 
+ image: {url: 'images/question_39.png', alt: 'Image failed to load. Please try again later.'},
+ options: ['The mesosphere has more active weather than the stratosphere.', 'The mesosphere contains fewer oxygen molecules than the stratosphere.', 'Air pressure is lower in the stratosphere than in the mesosphere', 'Temperatures decrease with altitude only in the stratosphere.'],
+ correctAnswer: 1, 
  explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
  },
  {
- id: '42',
- text: ' ',
+ id: '40',
+ text: 'Which organisms are producers in this food web?',
+ type: 'multiple-select',
+ image: {url: 'images/question_40.png', alt: 'Image failed to load. Please try again later.'},
+ options: ['Wolf', 'Snake', 'Shrub', 'Deer', 'Grass', 'Shrew', 'Rabbit', 'Tree', 'Hawk', 'Grasshopper'],
+ correctAnswer: [2, 4, 7], 
+ explanation: 'Add 3 hours to the starting time shown on the clock.'
+ },
+ {
+ id: '41',
+ text: 'Which of these represents the freezing point of water in correct SI units?',
  type: 'multiple-choice',
- image: {url: 'images/question_42.png', alt: 'Image failed to load. Please try again later.'},
- options: ['13', '12', '11', '10'],
+ options: ['0°C', '0°F', '32°F', '-273°C'],
  correctAnswer: 0, 
+ explanation: 'Add 3 hours to the starting time shown on the clock.'
+ },
+ {
+ id: '42',
+ text: 'A girl kicks a soccer ball into the air. Which of these best explains why the soccer ball falls back to Earth?',
+ type: 'multiple-choice',
+ options: ['The acceleration of the ball is unstable.', 'The motion of the ball is changed by external forces.', 'The pressure on the ball changes with altitude.', 'The force exerted on the ball is greater than gravity.'],
+ correctAnswer: 1, 
  explanation: 'Add 3 hours to the starting time shown on the clock.'
  },
  {
  id: '43',
- text: 'Lori has a coin with one side heads and one side tails. Which letter on this number line best represents the probability that this coin flipped one time will land with tails fac.ing up?',
+ text: 'Students measured the amount of an unknown substance that dissolved in water at different temperatures. What was the independent variable in this investigation?',
  type: 'multiple-choice',
  image: {url: 'images/question_43.png', alt: 'Image failed to load. Please try again later.'},
- options: ['Q', 'R', 'S', 'T'],
- correctAnswer: 1, 
+ options: ['Amount of substance dissolved', 'Unknown substance used', 'Water temperature', 'Water volume'],
+ correctAnswer: 2, 
  explanation: 'Add 3 hours to the starting time shown on the clock.'
  },
  {
  id: '44',
- text: ' ',
+ text: 'Which characteristic is common to the four outer planets in our solar system?',
  type: 'multiple-choice',
- image: {url: 'images/question_44.png', alt: 'Image failed to load. Please try again later.'},
- options: ['Sunday', 'Monday', 'Tuesday', 'Wednesday'],
- correctAnswer: 2, 
+ options: ['Low mass', 'High density', 'Fast revolution', 'Gaseous composition'],
+ correctAnswer: 3, 
  explanation: 'Add 3 hours to the starting time shown on the clock.'
  },
  {
  id: '45',
- text: 'Todd has the following folders in his backpack: -2 blue -2 red -2 yellow -2 purple The folders are all the same size and shape, Todd reaches into his backpack and selects one folder without looking. What is the likelihood the folder will be green?',
+ text: 'When comparing a plant cell to an animal cell, only the plant cell will contain--',
  type: 'multiple-choice',
- image: {url: 'images/question_45.png', alt: 'Image failed to load. Please try again later.'},
- options: ['Certain', 'Likely, but not certain', 'Unlikely, but not impossible', 'Impossible'],
- correctAnswer: 3, 
+ options: ['ribosomes', 'chromosomes', 'chloroplasts', 'mitochondria'],
+ correctAnswer: 2, 
  explanation: 'Add 3 hours to the starting time shown on the clock.'
  },
  {
  id: '46',
- text: 'Which number sentence is correct?',
+ text: 'A student measures her heart rate after each of the activities listed. Based on this information, which is a constant in the student\'s investigation?',
  type: 'multiple-choice',
- options: ['3 x 2 x 3 = 2 x 6', '5 x 2 x 5 = 10 x 2', '4 x 2 x 6 = 12 x 4', '8 x 3 x 0 = 12 x 2'],
- correctAnswer: 2, 
- explanation: 'Add 3 hours to the starting time shown on the clock.'
- },
- {
- id: '47',
- text: 'Which equation shows the use of the associative property of multiplication?',
- type: 'multiple-choice',
- options: ['2x(50x1) = 2x50', '2x(50x12)=(2x50)x12', '2x(50x12)=2x(12x50)', '2x(12x50)=(2+12)x(2+50)'],
+ image: {url: 'images/question_46.png', alt: 'Image failed to load. Please try again later.'},
+ options: ['Equipment needed for activity', 'Length of activity time', 'Activity performed', 'Energy expended during activity'],
  correctAnswer: 1, 
  explanation: 'Add 3 hours to the starting time shown on the clock.'
  },
  {
- id: '48',
- text: 'Jeremy rolls a fair number cube labeled 1 through 6. Place a point on the number line to represent the probability that he will roll a 2 on the first roll.',
- type: 'point-select',
- image: {url: 'images/question_48.png', alt: 'Image failed to load. Please try again later.'},
- correctAnswer: { x: 0.28, y: 0.3 }, 
- explanation: 'The probability is 1/6'
- },
- {
- id: '49',
- text: 'An art club has 2 fourth-grade girls, 4 third-grade boys, 10 third-grade girls, and 8 fourth-grade boys. Which table correctly shows this information?',
+ id: '47',
+ text: 'Which of these is the best description of a typical organism in the Plant kingdom?',
  type: 'multiple-choice',
- options: [
-    {url: 'images/question_49a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_49b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_49c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_49d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 3, 
- explanation: 'The correct chart should show data for 14 students total across four food choices.'
- },
- {
- id: '50',
- text: 'In increasing pattern is shown. 5, 14, 23, 32, 41 Which pattern uses the same rule as the pattern above?',
- type: 'multiple-choice',
- options: ['42, 33, 24, 15, 6', '15, 23, 31, 39, 47', '13, 22, 31, 40, 49', '8, 19, 30, 41, 52'],
+ options: ['Is unicellular', 'Lacks a nucleus', 'Makes its own food', 'Lacks a cell wall'],
  correctAnswer: 2, 
+ explanation: 'Add 3 hours to the starting time shown on the clock.'
+ },
+ {
+ id: '48',
+ text: 'Which of these is a way that a person can help improve air quality?',
+ type: 'multiple-choice',
+ options: ['Build a compost pile', 'Carpool with several people', 'Burn leaves in the fall', 'Use a gas-powered lawn mower'],
+ correctAnswer: 1, 
  explanation: 'The correct chart should show data for 14 students total across four food choices.'
  },
 ];
