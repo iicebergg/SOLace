@@ -429,7 +429,6 @@ const scaledScoreMapping = {
 
 // Function to get scaled score based on raw score (number correct)
 function getScaledScore(rawScore) {
-  // Clamp raw score to valid range
   const clampedScore = Math.max(0, Math.min(40, rawScore));
   return scaledScoreMapping[clampedScore] || 0;
 }
@@ -443,95 +442,18 @@ function getPerformanceLevel(scaledScore) {
   return 'Minimal';
 }
 
-// Enhanced Results Manager Extension for Grade 3 Math
-// This extends the existing results system without modifying test-pages.js
-document.addEventListener('DOMContentLoaded', function() {
+// Grade 3 Math Scaled Score Enhancement System
+// This integrates with the existing results system more robustly
+(function() {
+  'use strict';
+  
   console.log('Grade 3 Math scaled score system initializing...');
   
-  // Store reference to the original saveTestResult method
-  if (window.resultsManager && window.resultsManager.saveTestResult) {
-    const originalSaveTestResult = window.resultsManager.saveTestResult.bind(window.resultsManager);
-    
-    // Override the saveTestResult method to include scaled score
-    window.resultsManager.saveTestResult = function(resultData) {
-      // Add scaled score information to result data
-      const rawScore = resultData.correctAnswers;
-      const scaledScore = getScaledScore(rawScore);
-      const performanceLevel = getPerformanceLevel(scaledScore);
-      
-      // Create enhanced result data
-      const enhancedResultData = {
-        ...resultData,
-        scaledScore: scaledScore,
-        performanceLevel: performanceLevel,
-        rawScore: rawScore,
-        testType: 'Grade 3 Mathematics (2014)'
-      };
-      
-      console.log(`Grade 3 Math: Raw score ${rawScore}/40 → Scaled score ${scaledScore} (${performanceLevel})`);
-      
-      // Call the original method with enhanced data
-      return originalSaveTestResult(enhancedResultData);
-    };
-  }
+  // Flag to track if we've enhanced the results
+  let resultsEnhanced = false;
   
-  // Store reference to the original displayResults method  
-  if (window.resultsManager && window.resultsManager.displayResults) {
-    const originalDisplayResults = window.resultsManager.displayResults.bind(window.resultsManager);
-    
-    // Override the displayResults method to show scaled scores
-    window.resultsManager.displayResults = function() {
-      // Call the original display method first
-      originalDisplayResults();
-      
-      // Then enhance the display with scaled score information
-      enhanceResultsDisplay();
-    };
-  }
-  
-  // Function to enhance the results display with scaled score information
-  function enhanceResultsDisplay() {
-    console.log('Enhancing results display with scaled scores...');
-    
-    const resultsSummary = document.getElementById('results-summary');
-    if (!resultsSummary) return;
-    
-    const latestResult = window.resultsManager.getLatestResult();
-    if (!latestResult || !latestResult.scaledScore) return;
-    
-    // Find the existing score circle and result summary text
-    const scoreCircle = resultsSummary.querySelector('.score-circle');
-    const summaryText = resultsSummary.querySelector('.result-summary-text');
-    
-    if (scoreCircle && summaryText) {
-      // Add scaled score information after the existing content
-      const scaledScoreInfo = document.createElement('div');
-      scaledScoreInfo.className = 'scaled-score-info';
-      scaledScoreInfo.innerHTML = `
-        <div class="scaled-score-container">
-          <div class="scaled-score-circle">${latestResult.scaledScore}</div>
-          <div class="scaled-score-details">
-            <p><strong>Scaled Score:</strong> ${latestResult.scaledScore}</p>
-            <p><strong>Performance Level:</strong> <span class="performance-level ${latestResult.performanceLevel.toLowerCase().replace(/\s+/g, '-')}">${latestResult.performanceLevel}</span></p>
-            <p><strong>Raw Score:</strong> ${latestResult.rawScore || latestResult.correctAnswers}/${latestResult.totalQuestions}</p>
-          </div>
-        </div>
-        <div class="score-explanation">
-          <p><em>The scaled score is a converted score that accounts for test difficulty and allows for comparison across different test versions.</em></p>
-        </div>
-      `;
-      
-      // Insert the scaled score info after the summary text
-      summaryText.appendChild(scaledScoreInfo);
-      
-      // Add styling for the scaled score elements
-      addScaledScoreStyles();
-    }
-  }
-  
-  // Function to add CSS styles for scaled score display
+  // Function to add scaled score styles (run once)
   function addScaledScoreStyles() {
-    // Check if styles already added
     if (document.getElementById('scaled-score-styles')) return;
     
     const style = document.createElement('style');
@@ -585,17 +507,22 @@ document.addEventListener('DOMContentLoaded', function() {
         font-size: 0.9rem;
       }
       
-      .performance-level.proficient {
+      .performance-level.perfect-score {
+        background-color: #e7c3ff;
+        color: #6f2c91;
+      }
+      
+      .performance-level.pass-advanced {
         background-color: var(--success-color, #d4edda);
         color: var(--success-color, #155724);
       }
       
-      .performance-level.approaching-proficient {
-        background-color: #fff3cd;
-        color: #856404;
+      .performance-level.pass-proficient {
+        background-color: #d1ecf1;
+        color: #0c5460;
       }
       
-      .performance-level.below-basic {
+      .performance-level.not-passing {
         background-color: #f8d7da;
         color: #721c24;
       }
@@ -635,7 +562,366 @@ document.addEventListener('DOMContentLoaded', function() {
     `;
     
     document.head.appendChild(style);
+    console.log('Scaled score styles added');
   }
   
-  console.log('Grade 3 Math scaled score system initialized successfully');
-});
+  // Function to add CSS styles for historical scaled score display
+  function addHistoricalScaledScoreStyles() {
+    if (document.getElementById('historical-scaled-score-styles')) return;
+    
+    const style = document.createElement('style');
+    style.id = 'historical-scaled-score-styles';
+    style.textContent = `
+      .historical-scaled-score {
+        font-size: 0.85rem;
+        color: var(--text-color, #666);
+        margin-left: 0.5rem;
+      }
+      
+      .mini-performance-level {
+        padding: 0.15rem 0.3rem;
+        border-radius: 3px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        margin-left: 0.25rem;
+      }
+      
+      .mini-performance-level.perfect-score {
+        background-color: #e7c3ff;
+        color: #6f2c91;
+      }
+      
+      .mini-performance-level.pass-advanced {
+        background-color: var(--success-color, #d4edda);
+        color: var(--success-color, #155724);
+      }
+      
+      .mini-performance-level.pass-proficient {
+        background-color: #d1ecf1;
+        color: #0c5460;
+      }
+      
+      .mini-performance-level.not-passing {
+        background-color: #f8d7da;
+        color: #721c24;
+      }
+      
+      .mini-performance-level.minimal {
+        background-color: #f8d7da;
+        color: #721c24;
+      }
+    `;
+    
+    document.head.appendChild(style);
+    console.log('Historical scaled score styles added');
+  }
+  
+  // Function to enhance ALL historical results with scaled scores
+  function enhanceAllHistoricalResults() {
+    console.log('Enhancing all historical results with scaled scores...');
+    
+    // Get all results from localStorage
+    const savedResults = JSON.parse(localStorage.getItem('solace_test_results') || '[]');
+    let updated = false;
+    
+    // Process each result to add scaled scores if missing
+    savedResults.forEach((result, index) => {
+      if (!result.scaledScore && result.correctAnswers !== undefined) {
+        result.scaledScore = getScaledScore(result.correctAnswers);
+        result.performanceLevel = getPerformanceLevel(result.scaledScore);
+        result.rawScore = result.correctAnswers;
+        result.testType = 'Grade 3 Mathematics (2014)';
+        updated = true;
+        console.log(`Enhanced historical result ${index + 1}: ${result.rawScore}/40 → ${result.scaledScore} (${result.performanceLevel})`);
+      }
+    });
+    
+    // Save updated results back to localStorage
+    if (updated) {
+      localStorage.setItem('solace_test_results', JSON.stringify(savedResults));
+      console.log('Updated historical results saved to localStorage');
+    }
+    
+    // Also update the results manager's internal storage if available
+    if (window.resultsManager && window.resultsManager.results) {
+      window.resultsManager.results.forEach((result, index) => {
+        if (!result.scaledScore && result.correctAnswers !== undefined) {
+          result.scaledScore = getScaledScore(result.correctAnswers);
+          result.performanceLevel = getPerformanceLevel(result.scaledScore);
+          result.rawScore = result.correctAnswers;
+          result.testType = 'Grade 3 Mathematics (2014)';
+          console.log(`Enhanced results manager result ${index + 1}: ${result.rawScore}/40 → ${result.scaledScore}`);
+        }
+      });
+    }
+  }
+
+  // Function to enhance results display with scaled score information
+  function enhanceResultsDisplay() {
+    console.log('Attempting to enhance results display...');
+    
+    // First, enhance all historical results
+    enhanceAllHistoricalResults();
+    
+    const resultsSummary = document.getElementById('results-summary');
+    if (!resultsSummary) {
+      console.log('Results summary not found, skipping enhancement');
+      return false;
+    }
+    
+    // Check if we've already enhanced these results
+    if (resultsSummary.querySelector('.scaled-score-info')) {
+      console.log('Latest result already enhanced, but checking history...');
+      enhanceResultsHistory();
+      return true;
+    }
+    
+    // Get the latest result
+    const latestResult = window.resultsManager ? window.resultsManager.getLatestResult() : null;
+    if (!latestResult) {
+      console.log('No latest result found, checking localStorage');
+      
+      // Fallback: try to get from localStorage and calculate scaled score
+      const savedResults = JSON.parse(localStorage.getItem('solace_test_results') || '[]');
+      if (savedResults.length === 0) {
+        console.log('No saved results found');
+        return false;
+      }
+      
+      const lastResult = savedResults[0];
+      
+      // Calculate scaled score if not present
+      if (!lastResult.scaledScore && lastResult.correctAnswers !== undefined) {
+        lastResult.scaledScore = getScaledScore(lastResult.correctAnswers);
+        lastResult.performanceLevel = getPerformanceLevel(lastResult.scaledScore);
+        lastResult.rawScore = lastResult.correctAnswers;
+        console.log(`Calculated scaled score: ${lastResult.scaledScore} for raw score ${lastResult.rawScore}`);
+      }
+      
+      if (!lastResult.scaledScore) {
+        console.log('Could not determine scaled score');
+        return false;
+      }
+      
+      // Use the calculated result
+      addScaledScoreToDisplay(resultsSummary, lastResult);
+      enhanceResultsHistory();
+      return true;
+    }
+    
+    // Calculate scaled score if not present in latest result
+    if (!latestResult.scaledScore && latestResult.correctAnswers !== undefined) {
+      latestResult.scaledScore = getScaledScore(latestResult.correctAnswers);
+      latestResult.performanceLevel = getPerformanceLevel(latestResult.scaledScore);
+      latestResult.rawScore = latestResult.correctAnswers;
+      console.log(`Calculated scaled score: ${latestResult.scaledScore} for raw score ${latestResult.rawScore}`);
+    }
+    
+    if (!latestResult.scaledScore) {
+      console.log('Latest result missing scaled score data');
+      return false;
+    }
+    
+    addScaledScoreToDisplay(resultsSummary, latestResult);
+    enhanceResultsHistory();
+    return true;
+  }
+  
+  // Function to add scaled score display to the results summary
+  function addScaledScoreToDisplay(resultsSummary, result) {
+    console.log('Adding scaled score display to results');
+    
+    const summaryText = resultsSummary.querySelector('.result-summary-text');
+    if (!summaryText) {
+      console.log('Result summary text not found');
+      return;
+    }
+    
+    // Create scaled score info element
+    const scaledScoreInfo = document.createElement('div');
+    scaledScoreInfo.className = 'scaled-score-info';
+    scaledScoreInfo.innerHTML = `
+      <div class="scaled-score-container">
+        <div class="scaled-score-circle">${result.scaledScore}</div>
+        <div class="scaled-score-details">
+          <p><strong>Scaled Score:</strong> ${result.scaledScore}</p>
+          <p><strong>Performance Level:</strong> <span class="performance-level ${result.performanceLevel.toLowerCase().replace(/\s+/g, '-')}">${result.performanceLevel}</span></p>
+          <p><strong>Raw Score:</strong> ${result.rawScore || result.correctAnswers}/${result.totalQuestions}</p>
+        </div>
+      </div>
+      <div class="score-explanation">
+        <p><em>The scaled score is a converted score out of 600 that accounts for test difficulty across the state.</em></p>
+      </div>
+    `;
+    
+    // Add the scaled score info to the summary
+    summaryText.appendChild(scaledScoreInfo);
+    
+    // Add styles
+    addScaledScoreStyles();
+    
+    console.log('Scaled score display added successfully');
+  }
+  
+  // Function to enhance the results history with scaled scores
+  function enhanceResultsHistory() {
+    console.log('Enhancing results history with scaled scores...');
+    
+    const resultsDetails = document.getElementById('results-details');
+    if (!resultsDetails) {
+      console.log('Results details section not found');
+      return;
+    }
+    
+    // Find all result items in the history
+    const resultItems = resultsDetails.querySelectorAll('.result-item');
+    if (resultItems.length === 0) {
+      console.log('No result items found in history');
+      return;
+    }
+    
+    // Get all saved results to match with display items
+    const savedResults = JSON.parse(localStorage.getItem('solace_test_results') || '[]');
+    
+    resultItems.forEach((resultItem, index) => {
+      // Skip if already enhanced
+      if (resultItem.querySelector('.historical-scaled-score')) {
+        return;
+      }
+      
+      // Get the corresponding saved result
+      const savedResult = savedResults[index];
+      if (!savedResult || !savedResult.scaledScore) {
+        console.log(`No scaled score data for result item ${index}`);
+        return;
+      }
+      
+      // Find the result details section
+      const resultDetails = resultItem.querySelector('.result-details');
+      if (!resultDetails) {
+        console.log(`No result details found for item ${index}`);
+        return;
+      }
+      
+      // Create scaled score element for history item
+      const historicalScaledScore = document.createElement('span');
+      historicalScaledScore.className = 'historical-scaled-score';
+      historicalScaledScore.innerHTML = ` • Scaled: ${savedResult.scaledScore} (<span class="mini-performance-level ${savedResult.performanceLevel.toLowerCase().replace(/\s+/g, '-')}">${savedResult.performanceLevel}</span>)`;
+      
+      // Add to the result details
+      resultDetails.appendChild(historicalScaledScore);
+      
+      console.log(`Enhanced historical result ${index + 1} with scaled score ${savedResult.scaledScore}`);
+    });
+    
+    // Add mini styles for historical display
+    addHistoricalScaledScoreStyles();
+  }
+  
+  // Function to periodically check for results and enhance them
+  function checkAndEnhanceResults() {
+    // Only check if we're on the results page
+    const resultsPage = document.getElementById('results');
+    if (!resultsPage || !resultsPage.classList.contains('active')) {
+      return;
+    }
+    
+    if (enhanceResultsDisplay()) {
+      resultsEnhanced = true;
+      
+      // Also enhance historical results after a short delay
+      setTimeout(() => {
+        enhanceResultsHistory();
+      }, 100);
+      
+      return true;
+    }
+    
+    return false;
+  }
+  
+  // Override the finishTest function to include scaled score data
+  function enhanceFinishTest() {
+    if (typeof window.finishTest !== 'function') return;
+    
+    const originalFinishTest = window.finishTest;
+    window.finishTest = function() {
+      console.log('Enhanced finishTest called');
+      
+      // Get the current test results
+      const correctAnswers = window.currentTestAnswers ? 
+        window.currentTestAnswers.filter(answer => answer.correct).length : 0;
+      const totalQuestions = window.questions ? window.questions.length : 40;
+      
+      // Calculate scaled score
+      const scaledScore = getScaledScore(correctAnswers);
+      const performanceLevel = getPerformanceLevel(scaledScore);
+      
+      console.log(`Test finished: ${correctAnswers}/${totalQuestions} correct, scaled score: ${scaledScore} (${performanceLevel})`);
+      
+      // Store scaled score data in a temporary variable for later use
+      window.tempScaledScoreData = {
+        scaledScore,
+        performanceLevel,
+        rawScore: correctAnswers
+      };
+      
+      // Call the original function
+      const result = originalFinishTest.apply(this, arguments);
+      
+      // Set up a timer to enhance results after they're displayed
+      setTimeout(() => {
+        checkAndEnhanceResults();
+      }, 100);
+      
+      return result;
+    };
+  }
+  
+  // Initialize the enhancement system
+  function initialize() {
+    console.log('Initializing Grade 3 Math scaled score system');
+    
+    // Add styles immediately
+    addScaledScoreStyles();
+    
+    // Try to enhance finishTest function
+    enhanceFinishTest();
+    
+    // Set up periodic checking for results
+    const checkInterval = setInterval(() => {
+      if (checkAndEnhanceResults()) {
+        clearInterval(checkInterval);
+      }
+    }, 500);
+    
+    // Clean up the interval after 30 seconds
+    setTimeout(() => {
+      clearInterval(checkInterval);
+    }, 30000);
+    
+    // Listen for navigation to results page
+    document.addEventListener('click', function(e) {
+      if (e.target && (e.target.id === 'results-btn' || e.target.id === 'view-results')) {
+        setTimeout(() => {
+          checkAndEnhanceResults();
+          // Additional check for historical results
+          setTimeout(() => {
+            enhanceResultsHistory();
+          }, 300);
+        }, 200);
+      }
+    });
+    
+    console.log('Grade 3 Math scaled score system initialized');
+  }
+  
+  // Initialize when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initialize);
+  } else {
+    initialize();
+  }
+  
+})();
