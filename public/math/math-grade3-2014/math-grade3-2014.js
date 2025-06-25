@@ -380,3 +380,262 @@ const sampleQuestions = [
  explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
  }
 ];
+
+// Scaled Score Mapping for Grade 3 Mathematics (2014)
+// Maps raw scores (number correct out of 40) to scaled scores
+const scaledScoreMapping = {
+  0: 0,
+  1: 134,
+  2: 174,
+  3: 199,
+  4: 217,
+  5: 232,
+  6: 245,
+  7: 256,
+  8: 266,
+  9: 275,
+  10: 284,
+  11: 292,
+  12: 300,
+  13: 307,
+  14: 314,
+  15: 321,
+  16: 328,
+  17: 335,
+  18: 342,
+  19: 348,
+  20: 355,
+  21: 362,
+  22: 368,
+  23: 375,
+  24: 382,
+  25: 389,
+  26: 396,
+  27: 404,
+  28: 412,
+  29: 420,
+  30: 428,
+  31: 437,
+  32: 447,
+  33: 458,
+  34: 470,
+  35: 484,
+  36: 500,
+  37: 519,
+  38: 546,
+  39: 589,
+  40: 600
+};
+
+// Function to get scaled score based on raw score (number correct)
+function getScaledScore(rawScore) {
+  // Clamp raw score to valid range
+  const clampedScore = Math.max(0, Math.min(40, rawScore));
+  return scaledScoreMapping[clampedScore] || 0;
+}
+
+// Function to get performance level based on scaled score
+function getPerformanceLevel(scaledScore) {
+  if (scaledScore == 600) return 'Perfect Score';
+  if (scaledScore >= 500) return 'Pass Advanced';
+  if (scaledScore >= 400) return 'Pass Proficient';
+  if (scaledScore >= 0) return 'Not Passing';
+  return 'Minimal';
+}
+
+// Enhanced Results Manager Extension for Grade 3 Math
+// This extends the existing results system without modifying test-pages.js
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('Grade 3 Math scaled score system initializing...');
+  
+  // Store reference to the original saveTestResult method
+  if (window.resultsManager && window.resultsManager.saveTestResult) {
+    const originalSaveTestResult = window.resultsManager.saveTestResult.bind(window.resultsManager);
+    
+    // Override the saveTestResult method to include scaled score
+    window.resultsManager.saveTestResult = function(resultData) {
+      // Add scaled score information to result data
+      const rawScore = resultData.correctAnswers;
+      const scaledScore = getScaledScore(rawScore);
+      const performanceLevel = getPerformanceLevel(scaledScore);
+      
+      // Create enhanced result data
+      const enhancedResultData = {
+        ...resultData,
+        scaledScore: scaledScore,
+        performanceLevel: performanceLevel,
+        rawScore: rawScore,
+        testType: 'Grade 3 Mathematics (2014)'
+      };
+      
+      console.log(`Grade 3 Math: Raw score ${rawScore}/40 → Scaled score ${scaledScore} (${performanceLevel})`);
+      
+      // Call the original method with enhanced data
+      return originalSaveTestResult(enhancedResultData);
+    };
+  }
+  
+  // Store reference to the original displayResults method  
+  if (window.resultsManager && window.resultsManager.displayResults) {
+    const originalDisplayResults = window.resultsManager.displayResults.bind(window.resultsManager);
+    
+    // Override the displayResults method to show scaled scores
+    window.resultsManager.displayResults = function() {
+      // Call the original display method first
+      originalDisplayResults();
+      
+      // Then enhance the display with scaled score information
+      enhanceResultsDisplay();
+    };
+  }
+  
+  // Function to enhance the results display with scaled score information
+  function enhanceResultsDisplay() {
+    console.log('Enhancing results display with scaled scores...');
+    
+    const resultsSummary = document.getElementById('results-summary');
+    if (!resultsSummary) return;
+    
+    const latestResult = window.resultsManager.getLatestResult();
+    if (!latestResult || !latestResult.scaledScore) return;
+    
+    // Find the existing score circle and result summary text
+    const scoreCircle = resultsSummary.querySelector('.score-circle');
+    const summaryText = resultsSummary.querySelector('.result-summary-text');
+    
+    if (scoreCircle && summaryText) {
+      // Add scaled score information after the existing content
+      const scaledScoreInfo = document.createElement('div');
+      scaledScoreInfo.className = 'scaled-score-info';
+      scaledScoreInfo.innerHTML = `
+        <div class="scaled-score-container">
+          <div class="scaled-score-circle">${latestResult.scaledScore}</div>
+          <div class="scaled-score-details">
+            <p><strong>Scaled Score:</strong> ${latestResult.scaledScore}</p>
+            <p><strong>Performance Level:</strong> <span class="performance-level ${latestResult.performanceLevel.toLowerCase().replace(/\s+/g, '-')}">${latestResult.performanceLevel}</span></p>
+            <p><strong>Raw Score:</strong> ${latestResult.rawScore || latestResult.correctAnswers}/${latestResult.totalQuestions}</p>
+          </div>
+        </div>
+        <div class="score-explanation">
+          <p><em>The scaled score is a converted score that accounts for test difficulty and allows for comparison across different test versions.</em></p>
+        </div>
+      `;
+      
+      // Insert the scaled score info after the summary text
+      summaryText.appendChild(scaledScoreInfo);
+      
+      // Add styling for the scaled score elements
+      addScaledScoreStyles();
+    }
+  }
+  
+  // Function to add CSS styles for scaled score display
+  function addScaledScoreStyles() {
+    // Check if styles already added
+    if (document.getElementById('scaled-score-styles')) return;
+    
+    const style = document.createElement('style');
+    style.id = 'scaled-score-styles';
+    style.textContent = `
+      .scaled-score-info {
+        margin-top: 1.5rem;
+        padding: 1.5rem;
+        background-color: var(--secondary-bg, #f0f8ff);
+        border: 2px solid var(--accent-color, #4a6fa5);
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      
+      .scaled-score-container {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin-bottom: 1rem;
+      }
+      
+      .scaled-score-circle {
+        background: linear-gradient(135deg, var(--accent-color, #4a6fa5) 0%, #2c4f7a 100%);
+        color: white;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        font-weight: bold;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        flex-shrink: 0;
+      }
+      
+      .scaled-score-details {
+        flex: 1;
+      }
+      
+      .scaled-score-details p {
+        margin: 0.5rem 0;
+        color: var(--text-color, #333);
+      }
+      
+      .performance-level {
+        padding: 0.25rem 0.5rem;
+        border-radius: 4px;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 0.9rem;
+      }
+      
+      .performance-level.proficient {
+        background-color: var(--success-color, #d4edda);
+        color: var(--success-color, #155724);
+      }
+      
+      .performance-level.approaching-proficient {
+        background-color: #fff3cd;
+        color: #856404;
+      }
+      
+      .performance-level.below-basic {
+        background-color: #f8d7da;
+        color: #721c24;
+      }
+      
+      .performance-level.minimal {
+        background-color: #f8d7da;
+        color: #721c24;
+      }
+      
+      .score-explanation {
+        margin-top: 1rem;
+        padding: 1rem;
+        background-color: var(--input-bg, white);
+        border-left: 4px solid var(--accent-color, #4a6fa5);
+        border-radius: 0 4px 4px 0;
+      }
+      
+      .score-explanation p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: var(--text-color, #666);
+        font-style: italic;
+      }
+      
+      @media (max-width: 600px) {
+        .scaled-score-container {
+          flex-direction: column;
+          text-align: center;
+        }
+        
+        .scaled-score-circle {
+          width: 70px;
+          height: 70px;
+          font-size: 1.2rem;
+        }
+      }
+    `;
+    
+    document.head.appendChild(style);
+  }
+  
+  console.log('Grade 3 Math scaled score system initialized successfully');
+});
