@@ -1,21 +1,16 @@
-// SOLace Home Page JavaScript
-
 // Disable Right Click
    window.addEventListener('contextmenu', function(event) {
      event.preventDefault();
    });
 
-/* // Navigating to Third Party Warning
-document.body.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  var anchor = evt.target.closest("a")
-  if (anchor && anchor.href && anchor.host !== window.location.host) {
-    document.querySelector(".navigate-away").classList.add("active");
-    window.setTimeout(function () {
-      window.location.href = anchor.href;
-    }, 5000);
+// Confirm leaving site when external link is clicked
+function confirmExit() {
+  if (confirm("You are about to leave SOLace and go to a third-party website. Third-party websites may not be suitable for children under 13. Do you wish to continue?")) {
+    return true;
+  } else {
+    return false;
   }
-}); */
+}
 
 // DOM Elements
 const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
@@ -234,31 +229,6 @@ function handleURLParameters() {
     window.location.href = `index.html?category=${category}`;
   }
 }
-
-/* // Lazy loading for images
-function setupLazyLoading() {
-  const images = document.querySelectorAll('img');
-  
-  const imageObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const img = entry.target;
-        img.style.opacity = '0';
-        img.style.transition = 'opacity 0.3s ease';
-        
-        img.onload = () => {
-          img.style.opacity = '1';
-        };
-        
-        imageObserver.unobserve(img);
-      }
-    });
-  });
-  
-  images.forEach(img => {
-    imageObserver.observe(img);
-  });
-} */
 
 // Header scroll effect
 function setupHeaderScrollEffect() {
