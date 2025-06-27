@@ -1,7 +1,7 @@
 const sampleQuestions = [
  {
  id: '1',
- text: 'What is the sum of 3/5 and 1/10?',
+ text: 'What is the sum of <math><mfrac><mn>3</mn><mn>5</mn></mfrac></math> and <math><mfrac><mn>1</mn><mn>10</mn></mfrac></math>?',
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>1</mn><mn>5</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>5</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>', '<math><mfrac><mn>7</mn><mn>10</mn></mfrac></math>'],
  correctAnswer: 3,
@@ -56,9 +56,8 @@ const sampleQuestions = [
  },
  {
  id: '8',
- text: ' ',
+ text: 'This model is shaded to represent 1 whole. <br><img src="images/question_8a.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> What is the sum of Model 1 and Model 2 shown below? <br><img src="images/question_8b.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>',
  type: 'multiple-choice',
- image: {url:'images/question_8.png', alt: 'Image failed to load. Please try again later.'},
  options: ['0.379', '0.505', '3.79', '5.05'],
  correctAnswer: 3, 
  explanation: 'Multiplication and division are inverse operations, so 3 × 2 = 6 helps solve 6 ÷ 3 = 2.'
@@ -80,7 +79,7 @@ const sampleQuestions = [
  },
  {
  id: '11',
- text: 'What is the difference between 5/12 and 1/4',
+ text: 'What is the difference between <math><mfrac><mn>5</mn><mn>12</mn></mfrac></math> and <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>',
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>1</mn><mn>6</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>3</mn></mfrac></math>'],
  correctAnswer: 0, 
@@ -104,7 +103,7 @@ const sampleQuestions = [
  },
  {
  id: '14',
- text: 'What digit is in the tenths place in this number? 24.816',
+ text: 'What digit is in the tenths place in this number? <br><center>24.816</center>',
  type: 'multiple-choice',
  options: ['1', '2', '6', '8'],
  correctAnswer: 3, 
@@ -112,7 +111,7 @@ const sampleQuestions = [
  },
  {
  id: '15',
- text: 'Which division statement represents 3/8?',
+ text: 'Which division statement represents <math><mfrac><mn>3</mn><mn>8</mn></mfrac></math>?',
  type: 'multiple-choice',
  options: ['3 divided by 8', '8 divided by 3', '3 divided by 11', '11 divided by 3'],
  correctAnswer: 0, 
@@ -120,9 +119,8 @@ const sampleQuestions = [
  },
  {
  id: '16',
- text: 'Which fraction is represented by point W shown on the number line?',
+ text: 'Which fraction is represented by point W shown on the number line? <br><img src="images/question_16.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>',
  type: 'multiple-choice',
- image: {url: 'images/question_16.png', alt: 'Image failed to load. Please try again later.'},
  options: ['<math><mfrac><mn>10</mn><mn>13</mn></mfrac></math>', '<math><mfrac><mn>9</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>3</mn><mn>8</mn></mfrac></math>', '<math><mfrac><mn>3</mn><mn>12</mn></mfrac></math>'],
  correctAnswer: 1, 
  explanation: 'When adding fractions with the same denominator, add the numerators: 3/4 + 1/4 = 4/4 = 1.'
@@ -138,9 +136,8 @@ const sampleQuestions = [
  },
  {
  id: '18',
- text: 'This table shows the times it took four students to complete a 40-meter race. Which statement about these times is true?',
+ text: 'This table shows the times it took four students to complete a 40-meter race. <br><img src="images/question_18.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which statement about these times is true?',
  type: 'multiple-choice',
- image: {url: 'images/question_18.png', alt: 'Image failed to load. Please try again later.'},
  options: ['13.7 > 13.07', '13.07 > 13.6', '13.6 > 13.7', '13.06 > 13.07'],
  correctAnswer: 0, 
  explanation: '3,000 - 285 = 2,715.'
@@ -171,9 +168,8 @@ const sampleQuestions = [
  },
  {
  id: '22',
- text: ' ',
+ text: 'A fractional part of this group of triangles is shaded. <br><img src="images/question_22.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which group below has an equivalent fraction of the arrows shaded?',
  type: 'multiple-choice',
- image: {url: 'images/question_22.png', alt: 'Image failed to load. Please try again later.'},
  options: [
     {url: 'images/question_22a.png', alt: 'Image failed to load. Please try again later.'},
     {url: 'images/question_22b.png', alt: 'Image failed to load. Please try again later.'},
@@ -185,9 +181,8 @@ const sampleQuestions = [
  },
  {
  id: '23',
- text: '',
+ text: 'Model 1 is shaded to represent one whole. <br><img src="images/question_23a.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Model 2 is shaded to represent a fraction. <br><img src="images/question_23b.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which decimal number is represented in Model 2?',
  type: 'multiple-choice',
- image: {url: 'images/question_23.png', alt: 'Image failed to load. Please try again later.'},
  options: ['1.7', '1.3', '0.7', '0.3'],
  correctAnswer: 2, 
  explanation: '6 feet is the most reasonable length for a bed. 6 inches and 6 centimeters are too short, 6 meters is too long.'
@@ -196,7 +191,6 @@ const sampleQuestions = [
  id: '24',
  text: 'Order the fractions from greatest to least.',
  type: 'drag-drop',
- image: {url: 'images/question_40.png', alt: 'Image failed to load. Please try again later.'},
  options: ['<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>9</mn></mfrac></math>', '<math><mfrac><mn>3</mn><mn>5</mn></mfrac></math>'],
  dropZones: ['Greatest', '↓', 'Least'],
  correctAnswer: [2, 0, 1],
@@ -220,9 +214,8 @@ const sampleQuestions = [
  },
  {
  id: '28',
- text: 'Identify two lines in the figure that appear to be parallel.',
+ text: 'Identify two lines in the figure that appear to be parallel. <br><img src="images/question_28.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>',
  type: 'multiple-choice',
- image: {url: 'images/question_28.png', alt: 'Image failed to load. Please try again later.'},
  options: ['r and m', 'k and p', 'j and m', 'j and r'], 
  correctAnswer: 2,
  explanation: 'Count the units around the outside edge of the shaded figure to find the perimeter.'
@@ -334,7 +327,7 @@ const sampleQuestions = [
  },
  {
  id: '39',
- text: 'TMandy is making a spinner game. She wants the arrow on the spinner to have an equally likely chance of landing on each of 4 space.s. Each space will have a different shape on it. Which appears to be the spinner Mandy should make?',
+ text: 'Mandy is making a spinner game. She wants the arrow on the spinner to have an equally likely chance of landing on each of 4 spaces. Each space will have a different shape on it. Which appears to be the spinner Mandy should make?',
  type: 'multiple-choice',
  options: [
     {url: 'images/question_39a.png', alt: 'Image failed to load. Please try again later.'},
@@ -355,36 +348,32 @@ const sampleQuestions = [
  },
  {
  id: '42',
- text: ' ',
+ text: 'The table shows the total number of players on different numbers of bowling teams in a tournament. <br><img src="images/question_42.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> The pattern continues in the same way. How many bowling teams are needed for a total of 52 players?',
  type: 'multiple-choice',
- image: {url: 'images/question_42.png', alt: 'Image failed to load. Please try again later.'},
  options: ['13', '12', '11', '10'],
  correctAnswer: 0, 
  explanation: 'Add 3 hours to the starting time shown on the clock.'
  },
  {
  id: '43',
- text: 'Lori has a coin with one side heads and one side tails. Which letter on this number line best represents the probability that this coin flipped one time will land with tails fac.ing up?',
+ text: 'Lori has a coin with one side heads and one side tails. Which letter on this number line best represents the probability that this coin flipped one time will land with tails facing up? <br><img src="images/question_43.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>',
  type: 'multiple-choice',
- image: {url: 'images/question_43.png', alt: 'Image failed to load. Please try again later.'},
  options: ['Q', 'R', 'S', 'T'],
  correctAnswer: 1, 
  explanation: 'Add 3 hours to the starting time shown on the clock.'
  },
  {
  id: '44',
- text: ' ',
+ text: 'This graph shows the morning temperature in a city for each of four days. <br><img src="images/question_44.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> The morning temperature on Thursday was 52°F. Based on the data in this graph, which day had a temperature closest to Thursday\'s temperature?',
  type: 'multiple-choice',
- image: {url: 'images/question_44.png', alt: 'Image failed to load. Please try again later.'},
  options: ['Sunday', 'Monday', 'Tuesday', 'Wednesday'],
  correctAnswer: 2, 
  explanation: 'Add 3 hours to the starting time shown on the clock.'
  },
  {
  id: '45',
- text: 'Todd has the following folders in his backpack: -2 blue -2 red -2 yellow -2 purple The folders are all the same size and shape, Todd reaches into his backpack and selects one folder without looking. What is the likelihood the folder will be green?',
+ text: 'Todd has the following folders in his backpack: <center><ul><li>2 blue</li><li>2 red</li><li>2 yellow</li><li>2 purple</li></ul></center> The folders are all the same size and shape, Todd reaches into his backpack and selects one folder without looking. What is the likelihood the folder will be green?',
  type: 'multiple-choice',
- image: {url: 'images/question_45.png', alt: 'Image failed to load. Please try again later.'},
  options: ['Certain', 'Likely, but not certain', 'Unlikely, but not impossible', 'Impossible'],
  correctAnswer: 3, 
  explanation: 'Add 3 hours to the starting time shown on the clock.'
@@ -393,7 +382,7 @@ const sampleQuestions = [
  id: '46',
  text: 'Which number sentence is correct?',
  type: 'multiple-choice',
- options: ['3 x 2 x 3 = 2 x 6', '5 x 2 x 5 = 10 x 2', '4 x 2 x 6 = 12 x 4', '8 x 3 x 0 = 12 x 2'],
+ options: ['3 × 2 × 3 = 2 × 6', '5 × 2 × 5 = 10 × 2', '4 × 2 × 6 = 12 × 4', '8 × 3 × 0 = 12 × 2'],
  correctAnswer: 2, 
  explanation: 'Add 3 hours to the starting time shown on the clock.'
  },
@@ -401,7 +390,7 @@ const sampleQuestions = [
  id: '47',
  text: 'Which equation shows the use of the associative property of multiplication?',
  type: 'multiple-choice',
- options: ['2x(50x1) = 2x50', '2x(50x12)=(2x50)x12', '2x(50x12)=2x(12x50)', '2x(12x50)=(2+12)x(2+50)'],
+ options: ['2×(50×1) = 2×50', '2×(50×12)=(2×50)×12', '2×(50×12)=2×(12×50)', '2×(12×50)=(2+12)×(2+50)'],
  correctAnswer: 1, 
  explanation: 'Add 3 hours to the starting time shown on the clock.'
  },
@@ -410,7 +399,7 @@ const sampleQuestions = [
  text: 'Jeremy rolls a fair number cube labeled 1 through 6. Place a point on the number line to represent the probability that he will roll a 2 on the first roll.',
  type: 'point-select',
  image: {url: 'images/question_48.png', alt: 'Image failed to load. Please try again later.'},
- correctAnswer: { x: 0.28, y: 0.3 }, 
+ correctAnswer: { x: 0.27, y: 0.3 }, 
  explanation: 'The probability is 1/6'
  },
  {
@@ -428,7 +417,7 @@ const sampleQuestions = [
  },
  {
  id: '50',
- text: 'In increasing pattern is shown. 5, 14, 23, 32, 41 Which pattern uses the same rule as the pattern above?',
+ text: 'In increasing pattern is shown. <br><center>5, 14, 23, 32, 41</center> Which pattern uses the same rule as the pattern above?',
  type: 'multiple-choice',
  options: ['42, 33, 24, 15, 6', '15, 23, 31, 39, 47', '13, 22, 31, 40, 49', '8, 19, 30, 41, 52'],
  correctAnswer: 2, 
