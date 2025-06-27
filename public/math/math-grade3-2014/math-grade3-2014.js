@@ -11,18 +11,16 @@ const sampleQuestions = [
  },
  {
  id: '2',
- text: 'Two sets of circles are shown. Which of the following correctly compares the fraction of circles shaded in Set S to the fraction of circles shaded in Set T?',
+ text: 'Two sets of circles are shown. <br><img src="images/question_2.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which of the following correctly compares the fraction of circles shaded in Set S to the fraction of circles shaded in Set T?',
  type: 'multiple-choice',
- image: {url: 'images/question_2.png', alt: 'Image failed to load. Please try again later.'},
  options: ['<math><mfrac><mn>3</mn><mn>11</mn></mfrac></math> > <math><mfrac><mn>7</mn><mn>11</mn></mfrac></math>', '<math><mfrac><mn>8</mn><mn>11</mn></mfrac></math> < <math><mfrac><mn>7</mn><mn>11</mn></mfrac></math>', '<math><mfrac><mn>3</mn><mn>11</mn></mfrac></math> > <math><mfrac><mn>4</mn><mn>11</mn></mfrac></math>', '<math><mfrac><mn>3</mn><mn>11</mn></mfrac></math> < <math><mfrac><mn>4</mn><mn>11</mn></mfrac></math>'],
  correctAnswer: 3, 
  explanation: 'When comparing fractions with the same denominator, compare the numerators. Since 3 < 4, we have 3/11 < 4/11.'
  },
  {
  id: '3',
- text: 'The place value model shown represents a number. What number is represented by this place value model?',
+ text: 'The place value model shown represents a number. <br><img src="images/question_3.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> What number is represented by this place value model?',
  type: 'multiple-choice',
- image: {url: 'images/question_3.png', alt: 'Image failed to load. Please try again later.'},
  options: ['354', '454', '3,154', '4,054'],
  correctAnswer: 2, 
  explanation: 'Count the place value blocks: thousands, hundreds, tens, and ones to determine the number.'
@@ -38,9 +36,8 @@ const sampleQuestions = [
  },
  {
  id: '5',
- text: 'Two packages of eggs are shown. Which statement correctly compares the fraction of the number of eggs in Package P to the fraction of the number of eggs in Package Q?',
+ text: 'Two packages of eggs are shown. <br><img src="images/question_5.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which statement correctly compares the fraction of the number of eggs in Package P to the fraction of the number of eggs in Package Q?',
  type: 'multiple-choice',
- image: {url: 'images/question_5.png', alt: 'Image failed to load. Please try again later.'},
  options: ['<math><mfrac><mn>4</mn><mn>12</mn></mfrac></math> < <math><mfrac><mn>3</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>4</mn><mn>12</mn></mfrac></math> > <math><mfrac><mn>9</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>8</mn><mn>12</mn></mfrac></math> > <math><mfrac><mn>9</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>8</mn><mn>12</mn></mfrac></math> < <math><mfrac><mn>9</mn><mn>12</mn></mfrac></math>'],
  correctAnswer: 3, 
  explanation: 'Compare the fractions by looking at the numerators when denominators are the same.'
@@ -55,9 +52,8 @@ const sampleQuestions = [
  },
  {
  id: '7',
- text: ' ',
+ text: 'This model is shaded to represent one whole. <br><img src="images/question_7a.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Look at the following model. <img src="images/question_7b.png" class="question-image" alt="Image failed to load. Please try again later."></img> What number do the shaded parts in this model represent?',
  type: 'multiple-choice',
- image: {url: 'images/question_7.png', alt: 'Image failed to load. Please try again later.'},
  options: ['<math><mfrac><mn>1</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>11</mn><mn>12</mn></mfrac></math>', '5 <math><mfrac><mn>1</mn><mn>12</mn></mfrac></math>', '10 <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>'],
  correctAnswer: 2, 
  explanation: 'Count the whole units and fractional parts shown in the model.'
@@ -81,7 +77,7 @@ const sampleQuestions = [
  },
  {
  id: '10',
- text: 'In which group are exactly 3/8 of the shapes circles?',
+ text: 'In which group are exactly <math><mfrac><mn>3</mn><mn>8</mn></mfrac></math> of the shapes circles?',
  type: 'multiple-choice',
  options: [
     {url: 'images/question_10a.png', alt: 'Image failed to load. Please try again later.'},
@@ -90,11 +86,11 @@ const sampleQuestions = [
     {url: 'images/question_10d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 3, 
- explanation: 'Count the total shapes and circles in each group to find where exactly 3/8 are circles.'
+ explanation: 'Count the total shapes and circles in each group to find where exactly <math><mfrac><mn>3</mn><mn>8</mn></mfrac></math> are circles.'
  },
  {
  id: '11',
- text: 'What number goes in the box to make this number sentence true? 63 ÷ __ = 9',
+ text: 'What number goes in the box to make this number sentence true? <br> 63 ÷ ☐ = 9',
  type: 'multiple-choice',
  options: ['6', '7', '8', '9'],
  correctAnswer: 1, 
@@ -102,18 +98,16 @@ const sampleQuestions = [
  },
  {
  id: '12',
- text: ' ',
+ text: 'This model is shaded to represent one whole. <br><img src="images/question_12a.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> These two models are each shaded to represent a fraction. <br><img src="images/question_12b.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> What is the sum of these two fractions?',
  type: 'multiple-choice',
- image: {url: 'images/question_12.png', alt: 'Image failed to load. Please try again later.'},
  options: ['<math><mfrac><mn>1</mn><mn>14</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>7</mn></mfrac></math>', '<math><mfrac><mn>5</mn><mn>14</mn></mfrac></math>', '<math><mfrac><mn>5</mn><mn>7</mn></mfrac></math>'],
  correctAnswer: 3, 
  explanation: 'Count the total parts and the shaded parts to determine the fraction.'
  },
  {
  id: '13',
- text: 'Which number sentence best represents this set of flowers?',
+ text: 'Which number sentence best represents this set of flowers? <br><img src="images/question_13.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
- image: {url: 'images/question_13.png', alt: 'Image failed to load. Please try again later.'},
  options: ['32 ÷ 4 = ?', '32 - 8 = ?', '8 × 4 = ?', '8 + 8 = ?'],
  correctAnswer: 0, 
  explanation: 'Look at the arrangement to determine the multiplication sentence that represents the groups.'
@@ -128,9 +122,8 @@ const sampleQuestions = [
  },
  {
  id: '15',
- text: ' ',
+ text: 'This model is shaded to represent one whole. <br><img src="images/question_15a.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> These two models are shaded to represent a fraction. <br><img src="images/question_15b.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> What is the difference between these two fractions?',
  type: 'multiple-choice',
- image: {url: 'images/question_15.png', alt: 'Image failed to load. Please try again later.'},
  options: ['<math><mfrac><mn>2</mn><mn>8</mn></mfrac></math>', '<math><mfrac><mn>6</mn><mn>16</mn></mfrac></math>', '<math><mfrac><mn>10</mn><mn>16</mn></mfrac></math>', '<math><mfrac><mn>6</mn><mn>8</mn></mfrac></math>'],
  correctAnswer: 0, 
  explanation: 'Count the total equal parts and the shaded parts to find the fraction.'
@@ -144,9 +137,8 @@ const sampleQuestions = [
  },
  {
  id: '17',
- text: 'What is 3/4 + 1/4?',
+ text: 'What is <math><mfrac><mn>3</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>? <br><img src="images/question_17.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
- image: {url: 'images/question_17.png', alt: 'Image failed to load. Please try again later.'},
  options: ['1 <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>', '1', '<math><mfrac><mn>4</mn><mn>8</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>8</mn></mfrac></math>'],
  correctAnswer: 1, 
  explanation: 'When adding fractions with the same denominator, add the numerators: <math><mfrac><mn>3</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> = <math><mfrac><mn>4</mn><mn>4</mn></mfrac></math> = 1.'
@@ -161,9 +153,8 @@ const sampleQuestions = [
  },
  {
  id: '19',
- text: 'Which of these is best represented by this number line?',
+ text: 'Which of these is best represented by this number line? <br><img src="images/question_19.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
- image: {url: 'images/question_19.png', alt: 'Image failed to load. Please try again later.'},
  options: ['24 + 4', '24 - 4', '6 × 4', '4 × 6'],
  correctAnswer: 3, 
  explanation: 'Look at the pattern on the number line to determine which operation it represents.'
@@ -186,9 +177,8 @@ const sampleQuestions = [
  },
  {
  id: '22',
- text: 'Harry drew a picture with the figures shown. Which best describes the figures in this picture?',
+ text: 'Harry drew a picture with the figures shown. <br><img src="images/question_22.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which best describes the figures in this picture?',
  type: 'multiple-choice',
- image: {url: 'images/question_22.png', alt: 'Image failed to load. Please try again later.'},
  options: ['Cubes', 'Squares', 'Rectangles', 'Rectangular prisms'],
  correctAnswer: 2, 
  explanation: 'The figures are three-dimensional, so they are rectangular prisms, not flat shapes.'
@@ -203,26 +193,23 @@ const sampleQuestions = [
  },
  {
  id: '24',
- text: 'Which is closest to the time shown on this clock?',
+ text: 'Which is closest to the time shown on this clock? <br><img src="images/question_24.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
- image: {url: 'images/question_24.png', alt: 'Image failed to load. Please try again later.'},
  options: ['4:45', '5:45', '9:05', '9:25'],
  correctAnswer: 0, 
  explanation: 'Read the hour and minute hands to determine the approximate time.'
  },
  {
  id: '25',
- text: 'What is the temperature in °F on this thermometer? Write the number only; do not include units.',
+ text: 'What is the temperature in °F on this thermometer? Write the number only; do not include units. <br><img src="images/question_25.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'free-response',
- image: {url: 'images/question_25.png', alt: 'Image failed to load. Please try again later.'},
  correctKeywords: ['84'],
  explanation: 'Read the temperature scale on the thermometer to find the exact temperature.'
  },
  {
  id: '26',
- text: 'Jack built a tower of blocks as shown. Which tower of blocks appears to be congruent to Jack\'s tower of blocks?',
+ text: 'Jack built a tower of blocks as shown. <br><img src="images/question_26.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which tower of blocks appears to be congruent to Jack\'s tower of blocks?',
  type: 'multiple-choice',
- image: {url: 'images/question_26.png', alt: 'Image failed to load. Please try again later.'},
  options: [
     {url: 'images/question_26a.png', alt: 'Image failed to load. Please try again later.'},
     {url: 'images/question_26b.png', alt: 'Image failed to load. Please try again later.'},
@@ -234,27 +221,24 @@ const sampleQuestions = [
  },
  {
  id: '27',
- text: 'Franklin began selling lumber in the morning at the time shown on the clock. He finished selling lumber three hours later. At what time did Franklin finish selling lumber?',
+ text: 'Franklin began selling lumber in the morning at the time shown on the clock. <br><img src="images/question_27.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> He finished selling lumber three hours later. At what time did Franklin finish selling lumber?',
  type: 'multiple-choice',
- image: {url: 'images/question_27.png', alt: 'Image failed to load. Please try again later.'},
  options: ['8:45 A.M.', '9:45 A.M.', '10:45 A.M.', '11:45 A.M.'],
  correctAnswer: 2, 
  explanation: 'Add 3 hours to the starting time shown on the clock.'
  },
  {
  id: '28',
- text: 'What is the perimeter of the shaded figure on this grid?',
+ text: 'What is the perimeter of the shaded figure on this grid? <br><img src="images/question_28.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
- image: {url: 'images/question_28.png', alt: 'Image failed to load. Please try again later.'},
  options: ['18 units', '19 units', '22 units', '24 units'],
  correctAnswer: 3, 
  explanation: 'Count the units around the outside edge of the shaded figure to find the perimeter.'
  },
  {
  id: '29',
- text: 'Christina has the money shown. Exactly how much money does Christina have?',
+ text: 'Christina has the money shown. <br><img src="images/question_29.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Exactly how much money does Christina have?',
  type: 'multiple-choice',
- image: {url: 'images/question_29.png', alt: 'Image failed to load. Please try again later.'},
  options: ['$3.50', '$3.60', '$3.85', '$4.05'],
  correctAnswer: 1, 
  explanation: 'Count the value of all the coins and bills shown.'
@@ -274,18 +258,16 @@ const sampleQuestions = [
  },
  {
  id: '31',
- text: 'Each side of this figure is the same length. Which measurement is closest to the perimeter of this figure?',
+ text: 'Each side of this figure is the same length. <br><img src="images/question_31.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which measurement is closest to the perimeter of this figure?',
  type: 'multiple-choice',
- image: {url: 'images/question_31.png', alt: 'Image failed to load. Please try again later.'},
  options: ['5 feet', '8 feet', '10 feet', '12 feet'],
  correctAnswer: 2, 
  explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
  },
  {
  id: '32',
- text: 'This chart shows the type of toy and color choices for a reward in a teacher\'s basket. Which shows all the possible outcomes for a reward using one type of toy and one color?',
+ text: 'This chart shows the type of toy and color choices for a reward in a teacher\'s basket. <br><img src="images/question_32.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which shows all the possible outcomes for a reward using one type of toy and one color?',
  type: 'multiple-choice',
- image: {url: 'images/question_32.png', alt: 'Image failed to load. Please try again later.'},
  options: [
     {url: 'images/question_32a.png', alt: 'Image failed to load. Please try again later.'},
     {url: 'images/question_32b.png', alt: 'Image failed to load. Please try again later.'},
@@ -297,9 +279,8 @@ const sampleQuestions = [
  },
  {
  id: '33',
- text: 'This pattern repeats after the first four circles. Joanne removed two circles from this repeating pattern. Which ordered pair of circles did she remove?',
+ text: 'This pattern repeats after the first four circles. Joanne removed two circles from this repeating pattern. <br><img src="images/question_33.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which ordered pair of circles did she remove?',
  type: 'multiple-choice',
- image: {url: 'images/question_33.png', alt: 'Image failed to load. Please try again later.'},
  options: [
     {url: 'images/question_33a.png', alt: 'Image failed to load. Please try again later.'},
     {url: 'images/question_33b.png', alt: 'Image failed to load. Please try again later.'},
@@ -324,18 +305,16 @@ const sampleQuestions = [
  },
  {
  id: '35',
- text: 'This table shows the number of minutes it takes Kendal to run laps around a track. If the pattern in the table continues in the same way, which of the following should be used to determine how many minutes it takes Kendal to run 10 laps?',
+ text: 'This table shows the number of minutes it takes Kendal to run laps around a track. <br><img src="images/question_35.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> If the pattern in the table continues in the same way, which of the following should be used to determine how many minutes it takes Kendal to run 10 laps?',
  type: 'multiple-choice',
- image: {url: 'images/question_35.png', alt: 'Image failed to load. Please try again later.'},
  options: ['10 × 3', '10 + 6', '10 + 24', '10 × 6'],
  correctAnswer: 0, 
  explanation: 'Look at the pattern in the table to determine the relationship between laps and minutes.'
  },
  {
  id: '36',
- text: 'Stephanie recorded the number of inches of rainfall in her city during 4 weeks. The graph below shows the results. Which bar graph shows the same information?',
+ text: 'Stephanie recorded the number of inches of rainfall in her city during 4 weeks. The graph below shows the results. <br><img src="images/question_36.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which bar graph shows the same information?',
  type: 'multiple-choice',
- image: {url: 'images/question_36.png', alt: 'Image failed to load. Please try again later.'},
  options: [
     {url: 'images/question_36a.png', alt: 'Image failed to load. Please try again later.'},
     {url: 'images/question_36b.png', alt: 'Image failed to load. Please try again later.'},
@@ -355,7 +334,7 @@ const sampleQuestions = [
  },
  {
  id: '38',
- text: 'Look at this pattern: 1, 3, 9, 27, 81. Which describes the rule used in this pattern?',
+ text: 'Look at this pattern. <br>1, 3, 9, 27, 81.<br> Which describes the rule used in this pattern?',
  type: 'multiple-choice',
  options: ['Divide by 9', 'Multiply by 3', 'Subtract 2', 'Add 2'],
  correctAnswer: 1, 
@@ -363,9 +342,8 @@ const sampleQuestions = [
  },
  {
  id: '39',
- text: 'This line plot shows the number of points scored by students on a team. What was the total number of points scored by the students?',
+ text: 'This line plot shows the number of points scored by students on a team. <br><img src="images/question_39.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> What was the total number of points scored by the students?',
  type: 'multiple-choice',
- image: {url: 'images/question_39.png', alt: 'Image failed to load. Please try again later.'},
  options: ['20', '19', '56', '8'],
  correctAnswer: 0, 
  explanation: 'Add up all the points shown on the line plot by multiplying each score by the number of students who achieved it.'
@@ -374,7 +352,6 @@ const sampleQuestions = [
  id: '40',
  text: 'Debi will pick a card from the bag without looking. Which combination of 8 cards in the bag show that the likelihood of Debi picking a card with a star is equally likely as picking a card with a heart?',
  type: 'multiple-choice',
- image: {url: 'images/question_40.png', alt: 'Image failed to load. Please try again later.'},
  options: ['4 star cards, 4 heart cards', '2 star cards, 6 heart cards', '6 star cards, 2 heart cards', '0 star cards, 8 heart cards'],
  correctAnswer: 0, 
  explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'

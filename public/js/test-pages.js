@@ -296,7 +296,7 @@ function renderMultipleChoiceQuestion(template, question) {
     return;
   }
   
-  questionTextElement.textContent = question.text;
+  questionTextElement.innerHTML = question.text;
   
   // Add question image if present
   renderQuestionImage(template, question);
@@ -376,7 +376,7 @@ function renderMultipleChoiceQuestion(template, question) {
 
 // Render a multiple-select question
 function renderMultipleSelectQuestion(template, question) {
-  template.querySelector('.question-text').textContent = question.text;
+  template.querySelector('.question-text').innerHTML = question.text;
   
   // Add question image if present
   renderQuestionImage(template, question);
@@ -443,7 +443,7 @@ function renderMultipleSelectQuestion(template, question) {
 
 // Render a drag-drop question
 function renderDragDropQuestion(template, question) {
-  template.querySelector('.question-text').textContent = question.text;
+  template.querySelector('.question-text').innerHTML = question.text;
   
   // Add question image if present
   renderQuestionImage(template, question);
@@ -469,7 +469,7 @@ function renderDragDropQuestion(template, question) {
         <span class="drag-item-text">${item}</span>
       `;
     } else {
-      dragItem.textContent = item;
+      dragItem.innerHTML = item;
     }
     
     // Set up drag events
@@ -530,7 +530,7 @@ function renderDragDropQuestion(template, question) {
 
 // Render a free-response question
 function renderFreeResponseQuestion(template, question) {
-  template.querySelector('.question-text').textContent = question.text;
+  template.querySelector('.question-text').innerHTML = question.text;
   
   // Add question image if present
   renderQuestionImage(template, question);
@@ -585,7 +585,7 @@ function renderPointSelectQuestion(template, question) {
   console.log('Rendering point select question:', question.id);
   
   const questionTextElement = template.querySelector('.question-text');
-  questionTextElement.textContent = question.text;
+  questionTextElement.innerHTML = question.text;
   
   const imageContainer = template.querySelector('.point-select-image-container');
   
