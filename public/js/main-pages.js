@@ -139,7 +139,7 @@ function setupCategoryCards() {
       if (e.target === button) return;
       
       // Navigate to test platform with category parameter
-      window.location.href = `index.html?category=${category}`;
+      window.location.href = `${category}-directory.html`;
     });
   });
 }
