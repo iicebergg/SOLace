@@ -5,7 +5,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['58.691', '57.691', '56.981', '56.810'],
  correctAnswer: 0,
- explanation: 'Addition and subtraction are inverse operations, so 9 + 6 = 15 helps solve 15 - 9 = 6.'
+ explanation: 'To add decimals, align the decimal points: 56.791 + 1.900 = 58.691.'
  },
  {
  id: '2',
@@ -13,7 +13,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['0.30', '0.35', '0.53', '0.60'],
  correctAnswer: 3, 
- explanation: 'When comparing fractions with the same denominator, compare the numerators. Since 3 < 4, we have 3/11 < 4/11.'
+ explanation: 'To convert 3/5 to a decimal, divide: 3 ÷ 5 = 0.6 = 0.60.'
  },
  {
  id: '3',
@@ -21,7 +21,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['98', '168', '932', '1,032'],
  correctAnswer: 3, 
- explanation: 'Count the place value blocks: thousands, hundreds, tens, and ones to determine the number.'
+ explanation: 'Multiply the number of levels by spaces per level: 12 × 86 = 1,032 parking spaces.'
  },
  {
  id: '4',
@@ -29,7 +29,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['18', '30', '33', '72'],
  correctAnswer: 0,
- explanation: 'To round 5,647: to nearest thousand (6,000), nearest hundred (5,600), nearest ten (5,650).'
+ explanation: 'Follow order of operations: 6 + 4(8-5) = 6 + 4(3) = 6 + 12 = 18.'
  },
  {
  id: '5',
@@ -37,7 +37,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>3</mn><mn>12</mn></mfrac></math>, 0.22, <math><mfrac><mn>8</mn><mn>9</mn></mfrac></math>, 0.75', '<math><mfrac><mn>8</mn><mn>9</mn></mfrac></math>, 0.75, <math><mfrac><mn>3</mn><mn>12</mn></mfrac></math>, 0.22', '0.22, <math><mfrac><mn>3</mn><mn>12</mn></mfrac></math>, 0.75, <math><mfrac><mn>8</mn><mn>9</mn></mfrac></math>', '0.22, 0.75, <math><mfrac><mn>3</mn><mn>12</mn></mfrac></math>, <math><mfrac><mn>8</mn><mn>9</mn></mfrac></math>'],
  correctAnswer: 2,
- explanation: 'To round 5,647: to nearest thousand (6,000), nearest hundred (5,600), nearest ten (5,650).'
+ explanation: 'Convert to decimals: 3/12 = 0.25, 8/9 ≈ 0.89. Order: 0.22, 0.25, 0.75, 0.89.'
  },
  {
  id: '6',
@@ -45,14 +45,14 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['8 + 6(7 + 4 × 5)', '16 ÷ 8(7 + 4 × 5)', '16 ÷ 2 + 6(11 × 5)', '16 ÷ 2 + 6(7 + 20)'],
  correctAnswer: 3, 
- explanation: '78,025 is read as seventy-eight thousand, twenty-five.'
+ explanation: 'First multiply inside parentheses: 4 × 5 = 20, so 16 ÷ 2 + 6(7 + 20).'
  },
  {
  id: '7',
  text: 'This table shows the weights of Vincent\'s three dogs. <br><img src="images/question_7.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> What is the difference between the combined weight of Hannah and Dillon and the weight of Wilson?',
  type: 'free-response',
  correctKeywords: ['24.8', '24.80', '24.800'],
- explanation: 'Multiply 57 × 5 = 285 pieces of gum.'
+ explanation: 'Add Hannah and Dillon\'s weights, then subtract Wilson\'s weight to find the difference.'
  },
  {
  id: '8',
@@ -60,7 +60,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['18', '19', '228', '2,592'],
  correctAnswer: 0, 
- explanation: 'Multiplication and division are inverse operations, so 3 × 2 = 6 helps solve 6 ÷ 3 = 2.'
+ explanation: 'Divide total eggs by eggs per carton: 216 ÷ 12 = 18 complete cartons.'
  },
  {
  id: '9',
@@ -68,14 +68,14 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['10.526', '10.626', '1.518', '1.508'],
  correctAnswer: 1, 
- explanation: 'Multiplication and division are inverse operations, so 3 × 2 = 6 helps solve 6 ÷ 3 = 2.'
+ explanation: 'Multiply: 5.06 × 2.1 = 10.626. Count decimal places: 2 + 1 = 3 places in answer.'
  },
  {
  id: '10',
  text: '493.57 ÷ 7 = __',
  type: 'free-response',
  correctKeywords: ['70.51', '70.510'],
- explanation: 'Multiply 57 × 5 = 285 pieces of gum.'
+ explanation: 'Divide: 493.57 ÷ 7 = 70.51.'
  },
  {
  id: '11',
@@ -83,7 +83,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['$16.25', '$19.75', '$72.75', '$87.75'],
  correctAnswer: 3, 
- explanation: '63 ÷ 7 = 9, so the answer is 7.'
+ explanation: 'Cost per person: $5.50 + $1.25 = $6.75. For 13 people: $6.75 × 13 = $87.75.'
  },
  {
  id: '12',
@@ -91,7 +91,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['Jose', 'Lee', 'Judi', 'Sammy'],
  correctAnswer: 3, 
- explanation: 'Count the total parts and the shaded parts to determine the fraction.'
+ explanation: 'Compare fractions: 2/3 = 8/12, 1/4 = 3/12, 1/6 = 2/12, 1/12 = 1/12. Sammy (4 2/3) is tallest.'
  },
  {
  id: '13',
@@ -99,7 +99,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['2<math><mfrac><mn>1</mn><mn>12</mn></mfrac></math> pies', '3<math><mfrac><mn>1</mn><mn>12</mn></mfrac></math> pies', '6<math><mfrac><mn>11</mn><mn>12</mn></mfrac></math> pies', '7<math><mfrac><mn>11</mn><mn>12</mn></mfrac></math> pies'],
  correctAnswer: 0, 
- explanation: 'Look at the arrangement to determine the multiplication sentence that represents the groups.'
+ explanation: 'Subtract the total amount served from 10 pies to find how many pies are left.'
  },
  {
  id: '14',
@@ -107,7 +107,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['29,820 square miles', '30,220 square miles', '30,820 square miles', '49,368 square miles'],
  correctAnswer: 0, 
- explanation: 'Start with 25, subtract 26 sold, then add 136 new plants: 25 - 26 + 136 = 135. Wait, this seems to have an error in the problem or answer choices.'
+ explanation: 'Subtract Maryland\'s area from Virginia\'s area: 39,594 - 9,774 = 29,820 square miles.'
  },
  {
  id: '15',
@@ -115,7 +115,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['3.55 pounds', '3.87 pounds', '3.97 pounds', '4.45 pounds'],
  correctAnswer: 0, 
- explanation: 'Count the total equal parts and the shaded parts to find the fraction.'
+ explanation: 'Subtract the weights of the two known packages from the total weight to find package Y\'s weight.'
  },
  {
  id: '16',
@@ -123,7 +123,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['3<math><mfrac><mn>1</mn><mn>12</mn></mfrac></math> miles', '4<math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> miles', '4<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math> miles', '5<math><mfrac><mn>1</mn><mn>12</mn></mfrac></math> miles'],
  correctAnswer: 3, 
- explanation: 'Look at the arrangement to determine the multiplication sentence that represents the groups.'
+ explanation: 'Add the distances from all three days to find the total miles walked.'
  },
  {
  id: '17',
@@ -131,7 +131,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['11, 33, 44', '15, 41, 55', '21, 35, 52', '34, 42, 50'],
  correctAnswer: 1, 
- explanation: 'Look at the arrangement to determine the multiplication sentence that represents the groups.'
+ explanation: 'Odd numbers end in 1, 3, 5, 7, or 9. Only 15, 41, 55 are all odd numbers.'
  },
  {
  id: '18',
@@ -139,7 +139,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['36, 54', '11, 31', '11, 23, 31', '11, 31, 36, 54'],
  correctAnswer: 2, 
- explanation: '3,000 - 285 = 2,715.'
+ explanation: 'Identify numbers ending in 1, 3, 5, 7, or 9. The odd numbers shown are 11, 23, and 31.'
  },
  {
  id: '19',
@@ -147,14 +147,14 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['0', '1', '3', '5'],
  correctAnswer: 0, 
- explanation: 'Look at the pattern on the number line to determine which operation it represents.'
+ explanation: 'Numbers divisible by 2 are even and end in 0, 2, 4, 6, or 8. Only 0 is listed.'
  },
  {
  id: '20',
  text: 'What is 7,459.82 rounded to the nearest whole number?',
  type: 'free-response',
  correctKeywords: ['7,460', '7460'],
- explanation: 'Multiply 57 × 5 = 285 pieces of gum.'
+ explanation: 'Look at the tenths place (8). Since 8 ≥ 5, round up: 7,459.82 rounds to 7,460.'
  },
  {
  id: '21',
@@ -162,7 +162,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['0.53', '5.3', '53,000', '530,000'],
  correctAnswer: 0, 
- explanation: 'From 10:30 A.M. to 1:00 P.M. is 2 hours and 30 minutes = 150 minutes.'
+ explanation: 'There are 1,000 milliliters in 1 liter, so 530 mL ÷ 1,000 = 0.53 liters.'
  },
  {
  id: '22',
@@ -170,7 +170,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['27°', '33°', '153°', '180°'],
  correctAnswer: 2, 
- explanation: 'From 10:30 A.M. to 1:00 P.M. is 2 hours and 30 minutes = 150 minutes.'
+ explanation: 'Angle T appears to be an obtuse angle (greater than 90°), so 153° is the best estimate.'
  },
  {
  id: '23',
@@ -178,7 +178,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['Triangle', 'Rhombus', 'Rectangle', 'Trapezoid'],
  correctAnswer: 1, 
- explanation: '6 feet is the most reasonable length for a bed. 6 inches and 6 centimeters are too short, 6 meters is too long.'
+ explanation: 'A rhombus has four equal sides, two pairs of parallel sides, and no right angles.'
  },
  {
  id: '24',
@@ -186,7 +186,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['7:55 P.M.', '8:30 P.M.', '9:30 P.M.', '9:55 P.M'],
  correctAnswer: 3,
- explanation: 'For equally likely outcomes, place 4 star cards and 4 heart cards in the bag.'
+ explanation: 'Add 2 hours and 25 minutes to the starting time shown on the clock.'
  },
  {
  id: '25',
@@ -194,7 +194,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['area', 'length', 'volume', 'perimeter'],
  correctAnswer: 2, 
- explanation: 'Add 3 hours to the starting time shown on the clock.'
+ explanation: 'Volume measures the amount of space inside a 3D container, like how much a bag holds.'
  },
  {
  id: '26',
@@ -202,7 +202,7 @@ const sampleQuestions = [
  type: 'multiple-select',
  options: ['Triangle', 'Rhombus', 'Parallelogram', 'Square', 'Trapezoid'],
  correctAnswer: [0, 2, 4],
- explanation: 'Check each multiplication: 4×12=48, 6×8=48, 12×4=48, 7×6=42, 8×6=48, 5×8=40.'
+ explanation: 'When cut along the dashed lines, the figure forms a triangle, parallelogram, and trapezoid.'
  },
  {
  id: '27',
@@ -210,7 +210,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['QR', 'SR', 'QT', 'TR'],
  correctAnswer: 1, 
- explanation: 'Count the value of all the coins and bills shown.'
+ explanation: 'A radius connects the center of a circle to any point on the circle. SR goes from center S to the circle.'
  },
  {
  id: '28',
@@ -218,7 +218,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['94 inches', '94 feet', '94 centimeters', '94 kilometers'],
  correctAnswer: 1, 
- explanation: 'Count the value of all the coins and bills shown.'
+ explanation: 'A basketball court is about 94 feet long. Inches and centimeters are too small, kilometers too large.'
  },
  {
  id: '29',
@@ -231,7 +231,7 @@ const sampleQuestions = [
     {url: 'images/question_29d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 3, 
- explanation: 'The correct chart should show data for 14 students total across four food choices.'
+ explanation: 'A scalene triangle has three sides of different lengths. Look for the triangle with no equal sides.'
  },
  {
  id: '30',
@@ -239,7 +239,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['distance from a ceiling to the floor', 'amount of blacktop on a playground', 'amount of floor space covered by a carpet', 'distance around the edge of a swimming pool'],
  correctAnswer: 3, 
- explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
+ explanation: 'Perimeter measures the distance around the outside edge of a shape or object.'
  },
  {
  id: '31',
@@ -254,7 +254,7 @@ const sampleQuestions = [
     {url: 'images/question_31f.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: [1, 3],
- explanation: 'Check each multiplication: 4×12=48, 6×8=48, 12×4=48, 7×6=42, 8×6=48, 5×8=40.'
+ explanation: 'Acute angles measure less than 90°. Look for angles that appear smaller than a right angle.'
  },
  {
  id: '32',
@@ -262,7 +262,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['12 square feet', '16 square feet', '24 square feet', '32 square feet'],
  correctAnswer: 1, 
- explanation: 'Multiply the length of one side by the number of sides to find the perimeter.',
+ explanation: 'Area of triangle = 1/2 × base × height = 1/2 × 4 × 8 = 16 square feet.',
  },
  {
  id: '33',
@@ -275,7 +275,7 @@ const sampleQuestions = [
     {url: 'images/question_33d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 1, 
- explanation: 'The correct chart should show data for 14 students total across four food choices.'
+ explanation: 'Multiply the number of each type of clothing to find total combinations possible.'
  },
  {
  id: '34',
@@ -283,7 +283,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['median', 'range', 'mean', 'mode'],
  correctAnswer: 2, 
- explanation: 'The identity property of multiplication states that any number multiplied by 1 equals itself.'
+ explanation: 'A fair share means dividing equally, which gives the mean (average) number of fish per aquarium.'
  },
  {
  id: '35',
@@ -291,7 +291,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['The greatest increase in high temperature on the graph occurs between Day 4 and Day 5.', 'The greatest increase in high temperature on the graph occurs between Day 5 and Day 6.', 'The greatest decrease in high temperature on the graph occurs between Day 2 and Day 3.', 'The greatest decrease in high temperature on the graph occurs between Day 3 and Day 4.'],
  correctAnswer: 0, 
- explanation: 'The identity property of multiplication states that any number multiplied by 1 equals itself.'
+ explanation: 'Compare the temperature changes between consecutive days to find the greatest increase.'
  },
  {
  id: '36',
@@ -304,14 +304,14 @@ const sampleQuestions = [
     {url: 'images/question_36d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 1, 
- explanation: 'The correct chart should show data for 14 students total across four food choices.'
+ explanation: 'With 5 blocks in Bag A and 2 blocks in Bag B, there are 5 × 2 = 10 possible combinations.'
  },
  {
  id: '37',
  text: 'A set of data is shown. <center>{ 24, 14, 37, 14, 25, 37, 14, 33, 27 }</center> What is the mode for this set of data?',
  type: 'free-response',
  correctKeywords: ['14'],
- explanation: 'Multiply 57 × 5 = 285 pieces of gum.'
+ explanation: 'The mode is the number that appears most frequently. 14 appears three times, more than any other number.'
  },
  {
  id: '38',
@@ -319,7 +319,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['Add 15', 'Subtract 15', 'Divide by 4', 'Multiply by 4'],
  correctAnswer: 2, 
- explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
+ explanation: 'Look at the pattern between input and output numbers to determine the rule used.'
  },
  {
  id: '39',
@@ -327,7 +327,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['The number of boxes of soup delivered to the store in Week 6 is more than the number of boxes of soup delivered to the store in Week 4.', 'The number of boxes of soup delivered to the store in Week 3 is less than the number of boxes of soup delivered to the store in Week 5.', 'The number of boxes of soup delivered to the store in Week l is about the same as the number of boxes of soup delivered to the store in Week 4.', 'The number of boxes of soup delivered to the store in Week 2 is about the same as the number of boxes of soup delivered to the store in Week 5.'],
  correctAnswer: 2, 
- explanation: 'Add 3 hours to the starting time shown on the clock.'
+ explanation: 'Compare the heights of the bars on the graph to determine which statement is accurate.'
  },
  {
  id: '40',
@@ -340,7 +340,7 @@ const sampleQuestions = [
     {url: 'images/question_40d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 2, 
- explanation: 'Add 3 hours to the starting time shown on the clock.'
+ explanation: 'The model should show 1 plus an unknown amount (n) equaling 6 total units.'
  },
  {
  id: '41',
@@ -348,7 +348,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['Add 7 to 24', 'Add 6 to 24', 'Add 5 to 24', 'Add 3 to 24'],
  correctAnswer: 0, 
- explanation: 'Add 3 hours to the starting time shown on the clock.'
+ explanation: 'The differences are +1, +2, +3, +4, +5, +6, so the next difference is +7. Add 7 to 24.'
  },
  {
  id: '42',
@@ -356,7 +356,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['n = 6 + 21', 'n + 6 = 21', 'n = 6 × 21', 'n - 6 = 21'],
  correctAnswer: 1, 
- explanation: 'Add 3 hours to the starting time shown on the clock.'
+ explanation: 'Miles walked (n) plus 6 more miles equals the goal of 21 miles: n + 6 = 21.'
  },
  {
  id: '43',
@@ -364,7 +364,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['middle number of points she scored', 'number of points she scored most often', 'fair share of the number of points she scored', 'difference between the highest and lowest number of points she scored'],
  correctAnswer: 3, 
- explanation: 'Add 3 hours to the starting time shown on the clock.'
+ explanation: 'Range is the difference between the highest and lowest values in a data set.'
  },
  {
  id: '44',
@@ -372,7 +372,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['The greatest number of pies sold on any day was 30.', 'The greatest number of pies sold on any day was 25.', 'The least number of pies sold on any day was 8.', 'The least number of pies sold on any day was 0.'],
  correctAnswer: 0, 
- explanation: 'Add 3 hours to the starting time shown on the clock.'
+ explanation: 'Read the stem-and-leaf plot to find the highest value shown in the data.'
  },
  {
  id: '45',
@@ -380,14 +380,14 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>2</mn><mn>4</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>6</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>5</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>6</mn></mfrac></math>'],
  correctAnswer: 3, 
- explanation: 'Add 3 hours to the starting time shown on the clock.'
+ explanation: 'There is 1 favorable outcome (Eggs, Juice) out of 6 total possible outcomes, so P = 1/6.'
  },
  {
  id: '46',
  text: 'What is the 7th term in this decreasing pattern? <center>73, 64, 56, 49, 43, ...</center>',
  type: 'free-response',
  correctKeywords: ['34'],
- explanation: 'Multiply 57 × 5 = 285 pieces of gum.'
+ explanation: 'The differences are -9, -8, -7, -6, so next differences are -5, -4. Continue: 43-5=38, 38-4=34.'
  },
  {
  id: '47',
@@ -395,7 +395,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['20', '18', '17', '15'],
  correctAnswer: 0, 
- explanation: 'The correct chart should show data for 14 students total across four food choices.'
+ explanation: 'Range = highest value - lowest value = 30 - 10 = 20.'
  },
  {
  id: '48',
@@ -403,7 +403,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['Stuart is reading a book that has a total of 15 chapters. He reads 5 chapters every day. How many days will it take Stuart to finish this book?', 'Stuart is reading a book that has a total of 15 chapters. He has already read 5 chapters. How many chapters of the book are left for Stuart to read?', 'Stuart is reading a book that has a total of 15 chapters. This book has 5 chapters less than the book Stuart read last week. How many chapters were in the book Stuart read last week?', 'Stuart is reading a book that has a total of 15 chapters. This is 5 times the number of chapters as the book. Stuart read last week. How many chapters were in the book Stuart read last week?'],
  correctAnswer: 1, 
- explanation: 'The correct chart should show data for 14 students total across four food choices.'
+ explanation: 'The equation 15 - 5 = p represents 15 total chapters minus 5 read chapters equals remaining chapters.'
  },
  {
  id: '49',
@@ -411,7 +411,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['256 × 1 = 256', '5 × 9 × 4 = 4 × 9 × 5', '(8 × 6) + (8 × 7) = 8(6 + 7)', '(12 + 19) + 13 = 12 + (19 + 13)'],
  correctAnswer: 2, 
- explanation: 'The correct chart should show data for 14 students total across four food choices.'
+ explanation: 'The distributive property: a(b + c) = ab + ac. The equation (8 × 6) + (8 × 7) = 8(6 + 7) shows this.'
  },
   {
  id: '50',
@@ -419,7 +419,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['The number of friends who will receive candy', 'The number of pieces of candy that Sylvia has', 'The flavor of each piece of candy', 'The color of each piece of candy'],
  correctAnswer: 0, 
- explanation: 'The correct chart should show data for 14 students total across four food choices.'
+ explanation: 'A variable is an unknown quantity that can change. The number of friends is not given and can vary.'
  },
 ];
 
