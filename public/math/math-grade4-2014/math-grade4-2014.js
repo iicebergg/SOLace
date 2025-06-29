@@ -5,7 +5,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>1</mn><mn>5</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>5</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>', '<math><mfrac><mn>7</mn><mn>10</mn></mfrac></math>'],
  correctAnswer: 3,
- explanation: 'Addition and subtraction are inverse operations, so 9 + 6 = 15 helps solve 15 - 9 = 6.'
+ explanation: 'Find common denominator: 3/5 = 6/10. Then add: 6/10 + 1/10 = 7/10.'
  },
  {
  id: '2',
@@ -13,7 +13,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['0.103 liter', '0.878 liter', '1.917 liters', '2.077 liters'],
  correctAnswer: 0, 
- explanation: 'When comparing fractions with the same denominator, compare the numerators. Since 3 < 4, we have 3/11 < 4/11.'
+ explanation: 'Subtract to find the difference: 1.09 - 0.987 = 0.103 liter.'
  },
  {
  id: '3',
@@ -21,7 +21,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['16', '24', '48', '96'],
  correctAnswer: 1, 
- explanation: 'Count the place value blocks: thousands, hundreds, tens, and ones to determine the number.'
+ explanation: 'List multiples: 8: 8, 16, 24, 32... and 12: 12, 24, 36... The smallest common multiple is 24.'
  },
  {
  id: '4',
@@ -29,14 +29,14 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['6,164', '6,274', '6,384', '6,494'],
  correctAnswer: 2,
- explanation: 'To round 5,647: to nearest thousand (6,000), nearest hundred (5,600), nearest ten (5,650).'
+ explanation: 'Multiply: 84 × 76 = 6,384.'
  },
  {
  id: '5',
  text: 'Kristin poured 6 ounces of lemonade into each of 19 glasses. Exactly how many ounces of lemonade did Kristin pour into all of these glasses?',
  type: 'free-response',
  correctKeywords: ['114'],
- explanation: 'Multiply 57 × 5 = 285 pieces of gum.'
+ explanation: 'Multiply ounces per glass by number of glasses: 6 × 19 = 114 ounces.'
  },
  {
  id: '6',
@@ -44,7 +44,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['$100', '$210', '$1,400', '$2,100'],
  correctAnswer: 3, 
- explanation: '78,025 is read as seventy-eight thousand, twenty-five.'
+ explanation: 'Estimate: $28 is close to $30, and 72 is close to 70. So 30 × 70 = $2,100.'
  },
  {
  id: '7',
@@ -52,7 +52,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['$7,425', '$7,385', '$7,285', '$7,225'],
  correctAnswer: 0, 
- explanation: 'Count the whole units and fractional parts shown in the model.'
+ explanation: 'Multiply number of tickets by price per ticket: 825 × $9 = $7,425.'
  },
  {
  id: '8',
@@ -60,14 +60,14 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['0.379', '0.505', '3.79', '5.05'],
  correctAnswer: 3, 
- explanation: 'Multiplication and division are inverse operations, so 3 × 2 = 6 helps solve 6 ÷ 3 = 2.'
+ explanation: 'Count the shaded parts in each model and add the decimal values represented.'
  },
  {
  id: '9',
  text: 'What is the difference between 3,240 and 578?',
  type: 'free-response',
  correctKeywords: ['2,662', '2662'],
- explanation: 'Multiply 57 × 5 = 285 pieces of gum.'
+ explanation: 'Subtract: 3,240 - 578 = 2,662.'
  },
  {
  id: '10',
@@ -75,7 +75,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['20', '30', '50', '60'],
  correctAnswer: 2, 
- explanation: '63 ÷ 7 = 9, so the answer is 7.'
+ explanation: 'Divide total minutes by number of days: 342 ÷ 7 ≈ 49, which is closest to 50.'
  },
  {
  id: '11',
@@ -83,7 +83,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>1</mn><mn>6</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>3</mn></mfrac></math>'],
  correctAnswer: 0, 
- explanation: '63 ÷ 7 = 9, so the answer is 7.'
+ explanation: 'Convert to common denominator: 1/4 = 3/12. Then subtract: 5/12 - 3/12 = 2/12 = 1/6.'
  },
  {
  id: '12',
@@ -91,7 +91,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['35', '75', '495', '525'],
  correctAnswer: 3, 
- explanation: 'Count the total parts and the shaded parts to determine the fraction.'
+ explanation: 'Multiply: 25 sit-ups × 3 times per day × 7 days = 25 × 3 × 7 = 525 sit-ups.'
  },
  {
  id: '13',
@@ -99,7 +99,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['9', '6', '5', '3'],
  correctAnswer: 3, 
- explanation: 'Look at the arrangement to determine the multiplication sentence that represents the groups.'
+ explanation: 'Find factors that divide all three numbers: 3 divides 15, 18, and 30 evenly.'
  },
  {
  id: '14',
@@ -107,7 +107,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['1', '2', '6', '8'],
  correctAnswer: 3, 
- explanation: 'Start with 25, subtract 26 sold, then add 136 new plants: 25 - 26 + 136 = 135. Wait, this seems to have an error in the problem or answer choices.'
+ explanation: 'The tenths place is the first digit after the decimal point. In 24.816, the tenths digit is 8.'
  },
  {
  id: '15',
@@ -115,7 +115,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['3 divided by 8', '8 divided by 3', '3 divided by 11', '11 divided by 3'],
  correctAnswer: 0, 
- explanation: 'Count the total equal parts and the shaded parts to find the fraction.'
+ explanation: 'A fraction shows division: 3/8 means 3 divided by 8.'
  },
  {
  id: '16',
@@ -123,7 +123,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>10</mn><mn>13</mn></mfrac></math>', '<math><mfrac><mn>9</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>3</mn><mn>8</mn></mfrac></math>', '<math><mfrac><mn>3</mn><mn>12</mn></mfrac></math>'],
  correctAnswer: 1, 
- explanation: 'When adding fractions with the same denominator, add the numerators: 3/4 + 1/4 = 4/4 = 1.'
+ explanation: 'Count the equal divisions and locate point W to determine the fraction it represents.'
  },
  {
  id: '17',
@@ -132,7 +132,7 @@ const sampleQuestions = [
  options: ['Millions', 'Hundred thousands', 'Ten thousands', 'Thousands', 'Hundreds', 'Tens', 'Ones'],
  dropZones: ['0', '1', '2', '3', '4', '5'],
  correctAnswer: [2, 5, 4, 1, 3, 6],
- explanation: 'For equally likely outcomes, place 4 star cards and 4 heart cards in the bag.'
+ explanation: 'From left to right: 3-hundred thousands, 0-ten thousands, 4-thousands, 2-hundreds, 1-tens, 5-ones.'
  },
  {
  id: '18',
@@ -140,7 +140,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['13.7 > 13.07', '13.07 > 13.6', '13.6 > 13.7', '13.06 > 13.07'],
  correctAnswer: 0, 
- explanation: '3,000 - 285 = 2,715.'
+ explanation: 'Compare decimals: 13.7 = 13.70, and 13.70 > 13.07, so 13.7 > 13.07 is true.'
  },
  {
  id: '19',
@@ -148,7 +148,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['89,045 < 84,905', '84,950 < 85,049', '8,240,579 < 8,209,745', '8,504,297 < 8,054,972'],
  correctAnswer: 1, 
- explanation: 'Look at the pattern on the number line to determine which operation it represents.'
+ explanation: 'Compare numbers place by place: 84,950 < 85,049 because 84 < 85 in the thousands place.'
  },
  {
  id: '20',
@@ -156,7 +156,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['Two hundred thirty-two', 'Two and thirty-two tenths', 'Two and thirty-two hundredths', 'Two and thirty-two thousandths'],
  correctAnswer: 2, 
- explanation: 'Look at the pattern on the number line to determine which operation it represents.'
+ explanation: '2.32 has two places after the decimal, so it reads "two and thirty-two hundredths."'
  },
  {
  id: '21',
@@ -164,7 +164,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['7,600,000', '7,610,000', '7,614,000', '7,620,000'],
  correctAnswer: 1, 
- explanation: 'From 10:30 A.M. to 1:00 P.M. is 2 hours and 30 minutes = 150 minutes.'
+ explanation: 'Look at the thousands digit (3). Since 3 < 5, round down to 7,610,000.'
  },
  {
  id: '22',
@@ -177,7 +177,7 @@ const sampleQuestions = [
     {url: 'images/question_22d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 0, 
- explanation: 'Congruent figures have the same shape and size. Look for the tower that matches exactly.'
+ explanation: 'Find the group of arrows where the same fraction is shaded as in the triangle group.'
  },
  {
  id: '23',
@@ -185,7 +185,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['1.7', '1.3', '0.7', '0.3'],
  correctAnswer: 2, 
- explanation: '6 feet is the most reasonable length for a bed. 6 inches and 6 centimeters are too short, 6 meters is too long.'
+ explanation: 'Compare Model 2 to Model 1 (one whole) to determine what decimal fraction is shown.'
  },
  {
  id: '24',
@@ -194,7 +194,7 @@ const sampleQuestions = [
  options: ['<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>9</mn></mfrac></math>', '<math><mfrac><mn>3</mn><mn>5</mn></mfrac></math>'],
  dropZones: ['Greatest', '↓', 'Least'],
  correctAnswer: [2, 0, 1],
- explanation: 'For equally likely outcomes, place 4 star cards and 4 heart cards in the bag.'
+ explanation: 'Convert to compare: 3/5 = 0.6, 1/2 = 0.5, 2/9 ≈ 0.22. Order: 3/5, 1/2, 2/9.'
  },
  {
  id: '25',
@@ -202,7 +202,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['7.595', '7.588', '7.584', '7.594'],
  correctAnswer: 1, 
- explanation: 'Add 3 hours to the starting time shown on the clock.'
+ explanation: 'Look at the thousandths place: 7.588 has 8 in thousandths, so rounds up to 7.59.'
  },
  {
  id: '26',
@@ -210,7 +210,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['Triangle', 'Rhombus', 'Rectangle', 'Parallelogram'],
  correctAnswer: 0, 
- explanation: 'Add 3 hours to the starting time shown on the clock.'
+ explanation: 'A triangle has 3 angles, which is less than 4. All other figures have 4 angles.'
  },
  {
  id: '28',
@@ -218,7 +218,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['r and m', 'k and p', 'j and m', 'j and r'], 
  correctAnswer: 2,
- explanation: 'Count the units around the outside edge of the shaded figure to find the perimeter.'
+ explanation: 'Parallel lines never intersect and remain the same distance apart. Lines j and m appear parallel.'
  },
  {
  id: '29',
@@ -226,7 +226,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['48 ounces', '60 ounces', '72 ounces', '96 ounces'],
  correctAnswer: 3, 
- explanation: 'Count the value of all the coins and bills shown.'
+ explanation: 'Convert pounds to ounces: 6 pounds × 16 ounces per pound = 96 ounces.'
  },
  {
  id: '30',
@@ -239,7 +239,7 @@ const sampleQuestions = [
     {url: 'images/question_30d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 0, 
- explanation: 'A ray has one endpoint and extends infinitely in one direction. A line segment has two endpoints.'
+ explanation: 'Congruent figures have the same shape and size. Look for figures that match exactly.'
  },
  {
  id: '31',
@@ -247,7 +247,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['12 pints', '18 pints', '24 pints', '48 pints'],
  correctAnswer: 2, 
- explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
+ explanation: 'Convert gallons to pints: 3 gallons × 8 pints per gallon = 24 pints.'
  },
  {
  id: '32',
@@ -255,7 +255,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['2 hours 10 minutes', '2 hours 50 minutes', '3 hours 10 minutes', '3 hours 50 minutes'],
  correctAnswer: 1, 
- explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
+ explanation: 'Calculate elapsed time: From 2:55 to 5:45 is 2 hours and 50 minutes.'
  },
  {
  id: '33',
@@ -263,7 +263,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['A desk', 'A pencil', 'A dictionary', 'A sheet of paper'],
  correctAnswer: 2, 
- explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
+ explanation: 'A kilogram is about 2.2 pounds. A dictionary weighs closest to this amount.'
  },
  {
  id: '34',
@@ -276,7 +276,7 @@ const sampleQuestions = [
     {url: 'images/question_34d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 1, 
- explanation: 'The correct chart should show data for 14 students total across four food choices.'
+ explanation: 'A reflection flips the figure across the line, creating a mirror image.'
  },
  {
  id: '35',
@@ -289,7 +289,7 @@ const sampleQuestions = [
     {url: 'images/question_35d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 0, 
- explanation: 'The correct chart should show data for 14 students total across four food choices.'
+ explanation: 'An octagon has 8 sides. Look for the set where all figures have exactly 8 sides.'
  },
  {
  id: '36',
@@ -297,7 +297,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['20,000 millimeters', '2,000 millimeters', '200 millimeters', '20 millimeters'],
  correctAnswer: 1, 
- explanation: 'The identity property of multiplication states that any number multiplied by 1 equals itself.'
+ explanation: 'Convert meters to millimeters: 2 meters × 1,000 millimeters per meter = 2,000 millimeters.'
  },
  {
  id: '37',
@@ -310,7 +310,7 @@ const sampleQuestions = [
     {url: 'images/question_37d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 3, 
- explanation: 'The correct chart should show data for 14 students total across four food choices.'
+ explanation: 'Ray KL starts at point K and extends infinitely through point L with an arrow.'
  },
  {
  id: '38',
@@ -323,7 +323,7 @@ const sampleQuestions = [
     {url: 'images/question_38d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 2, 
- explanation: 'The correct chart should show data for 14 students total across four food choices.'
+ explanation: 'A pint is about 2 cups. Look for a container that would hold about this amount.'
  },
  {
  id: '39',
@@ -336,7 +336,7 @@ const sampleQuestions = [
     {url: 'images/question_39d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 0, 
- explanation: 'The correct chart should show data for 14 students total across four food choices.'
+ explanation: 'For equally likely outcomes, all 4 spaces must be the same size.'
  },
  {
  id: '40',
@@ -344,7 +344,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['4 x 7 = 26 + 2', '4 x 8 = 32 + 2', '7 x 6 = 59 - 7', '7 x 8 = 64 - 7'],
  correctAnswer: 0, 
- explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
+ explanation: 'Check each equation: 4 × 7 = 28 and 26 + 2 = 28, so 4 × 7 = 26 + 2 is true.'
  },
  {
  id: '42',
@@ -352,7 +352,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['13', '12', '11', '10'],
  correctAnswer: 0, 
- explanation: 'Add 3 hours to the starting time shown on the clock.'
+ explanation: 'Find the pattern in the table, then determine how many teams give 52 total players.'
  },
  {
  id: '43',
@@ -360,7 +360,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['Q', 'R', 'S', 'T'],
  correctAnswer: 1, 
- explanation: 'Add 3 hours to the starting time shown on the clock.'
+ explanation: 'The probability of tails is 1/2 = 0.5. Find the letter closest to 0.5 on the number line.'
  },
  {
  id: '44',
@@ -368,7 +368,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['Sunday', 'Monday', 'Tuesday', 'Wednesday'],
  correctAnswer: 2, 
- explanation: 'Add 3 hours to the starting time shown on the clock.'
+ explanation: 'Compare the temperatures shown in the graph to find which is closest to 52°F.'
  },
  {
  id: '45',
@@ -376,7 +376,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['Certain', 'Likely, but not certain', 'Unlikely, but not impossible', 'Impossible'],
  correctAnswer: 3, 
- explanation: 'Add 3 hours to the starting time shown on the clock.'
+ explanation: 'There are no green folders in the backpack, so selecting green is impossible.'
  },
  {
  id: '46',
@@ -384,7 +384,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['3 × 2 × 3 = 2 × 6', '5 × 2 × 5 = 10 × 2', '4 × 2 × 6 = 12 × 4', '8 × 3 × 0 = 12 × 2'],
  correctAnswer: 2, 
- explanation: 'Add 3 hours to the starting time shown on the clock.'
+ explanation: 'Check each equation: 4 × 2 × 6 = 48 and 12 × 4 = 48, so this equation is correct.'
  },
  {
  id: '47',
@@ -392,7 +392,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['2×(50×1) = 2×50', '2×(50×12)=(2×50)×12', '2×(50×12)=2×(12×50)', '2×(12×50)=(2+12)×(2+50)'],
  correctAnswer: 1, 
- explanation: 'Add 3 hours to the starting time shown on the clock.'
+ explanation: 'The associative property groups factors differently: 2×(50×12) = (2×50)×12.'
  },
  {
  id: '48',
@@ -400,7 +400,7 @@ const sampleQuestions = [
  type: 'point-select',
  image: {url: 'images/question_48.png', alt: 'Image failed to load. Please try again later.'},
  correctAnswer: { x: 0.27, y: 0.3 }, 
- explanation: 'The probability is 1/6'
+ explanation: 'The probability of rolling a 2 is 1/6 ≈ 0.167. Place the point at approximately 1/6 on the number line.'
  },
  {
  id: '49',
@@ -413,7 +413,7 @@ const sampleQuestions = [
     {url: 'images/question_49d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 3, 
- explanation: 'The correct chart should show data for 14 students total across four food choices.'
+ explanation: 'Find the table that correctly organizes the data: 2 fourth-grade girls, 4 third-grade boys, 10 third-grade girls, 8 fourth-grade boys.'
  },
  {
  id: '50',
@@ -421,7 +421,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['42, 33, 24, 15, 6', '15, 23, 31, 39, 47', '13, 22, 31, 40, 49', '8, 19, 30, 41, 52'],
  correctAnswer: 2, 
- explanation: 'The correct chart should show data for 14 students total across four food choices.'
+ explanation: 'The pattern adds 9 each time (5+9=14, 14+9=23, etc.). Pattern 13, 22, 31, 40, 49 also adds 9.'
  },
 ];
 
