@@ -1,9 +1,16 @@
-// Main application logic
-
 // Disable Right Click
 window.addEventListener('contextmenu', function(event) {
   event.preventDefault();
 });
+
+// Confirm leaving site when external link is clicked
+function confirmExit() {
+  if (confirm("You are about to leave SOLace and go to a third-party website. Third-party websites may not be suitable for children under 13. Do you wish to continue?")) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 // DOM Elements
 const navButtons = document.querySelectorAll('.nav-btn');

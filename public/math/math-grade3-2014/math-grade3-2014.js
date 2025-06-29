@@ -1,5 +1,3 @@
-// Grade 3 Math Questions
-
 const sampleQuestions = [
  {
  id: '1',
