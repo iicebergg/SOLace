@@ -1,3 +1,5 @@
+window.TEST_IDENTIFIER = 'science_grade5_2015';
+
 const sampleQuestions = [
  {
  id: '1',
@@ -331,3 +333,6 @@ const sampleQuestions = [
  explanation: 'The correct chart should show data for 14 students total across four food choices.'
  },
 ];
+
+// Test-specific storage key for this test
+const TEST_STORAGE_KEY = `solace_test_results_${window.TEST_IDENTIFIER}`;
