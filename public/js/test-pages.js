@@ -12,6 +12,15 @@ function confirmExit() {
   }
 }
 
+// Get test-specific identifier (each test file can define this)
+const TEST_IDENTIFIER = window.TEST_IDENTIFIER || 'default';
+
+// Modified storage keys to be test-specific
+const STORAGE_KEYS = {
+  TEST_RESULTS: `solace_test_results_${TEST_IDENTIFIER}`,
+  USER_PREFERENCES: 'solace_user_preferences'
+};
+
 // DOM Elements
 const navButtons = document.querySelectorAll('.nav-btn');
 const pages = document.querySelectorAll('.page');
@@ -795,7 +804,7 @@ function displayFeedback(isCorrect, explanation) {
   const explanationElement = document.getElementById('explanation');
 
   if (feedbackMessage) {
-    feedbackMessage.textContent = isCorrect ? 'Correct!' : 'Incorrect!';
+    feedbackMessage.textContent = isCorrect ? 'Correct!' : 'Incorrect:';
     feedbackMessage.className = isCorrect ? 'correct' : 'incorrect';
   }
 
