@@ -32,7 +32,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['50', '40', '15', '14'],
  correctAnswer: 0,
- explanation: 'This appears to be 7² - 4 + 5. Calculate: 7² = 49, then 49 - 4 + 5 = 50.'
+ explanation: 'Calculate: 7² = 49, then 49 - 4 + 5 = 50.'
  },
  {
  id: '5',
