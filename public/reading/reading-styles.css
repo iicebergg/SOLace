@@ -429,3 +429,193 @@ body.theme-gray-on-green .reading-panel-header h3 {
     transition: none !important;
   }
 }
+
+#feedback-container {
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+  margin-bottom: 0;
+  background-color: var(--secondary-bg, #f9f9f9);
+  border: 1px solid var(--border-color, #dddddd);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 10;
+  /* Ensure it's not hidden behind the panel */
+}
+
+/* Adjust feedback container when reading panel is open */
+.test-container.panel-open #feedback-container {
+  /* Keep it within the available content area */
+  margin-right: 0;
+  max-width: 100%;
+  /* Add extra left margin to prevent overlap with panel */
+  margin-left: 0;
+}
+
+/* Ensure feedback content is properly contained */
+#feedback-container .feedback-content {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* Feedback message styling */
+#feedback-message {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  font-weight: bold;
+  padding: 0.5rem 0;
+}
+
+#feedback-message.correct {
+  color: var(--success-color, #28a745);
+  border-left: 4px solid var(--success-color, #28a745);
+  padding-left: 1rem;
+  background-color: rgba(40, 167, 69, 0.1);
+}
+
+#feedback-message.incorrect {
+  color: var(--error-color, #dc3545);
+  border-left: 4px solid var(--error-color, #dc3545);
+  padding-left: 1rem;
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+/* Explanation box specific positioning */
+#explanation {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding: 1rem;
+  background-color: var(--input-bg, white);
+  border-left: 4px solid var(--accent-color, #4a6fa5);
+  border-radius: 0 4px 4px 0;
+  margin-top: 0.75rem;
+  position: relative;
+  /* Ensure explanation text wraps properly */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+/* Responsive feedback positioning */
+@media (max-width: 1200px) {
+  .test-container.panel-open #feedback-container {
+    /* Adjust for smaller panel on smaller screens */
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #feedback-container {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .test-container.panel-open #feedback-container {
+    /* Ensure it doesn't get squeezed too much on mobile */
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  #feedback-message {
+    font-size: 1rem;
+  }
+  
+  #explanation {
+    font-size: 0.9rem;
+    padding: 0.875rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #feedback-container {
+    padding: 0.875rem;
+  }
+  
+  #explanation {
+    font-size: 0.85rem;
+    padding: 0.75rem;
+  }
+}
+
+/* Ensure feedback container is always visible and accessible */
+#feedback-container[style*="display: block"] {
+  /* Override any hiding when it should be shown */
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Animation for feedback appearance */
+#feedback-container {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#feedback-container[style*="display: block"] {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Ensure the entire test container accommodates feedback */
+.test-container {
+  position: relative;
+  /* Ensure it can contain absolutely positioned elements if needed */
+}
+
+/* Fix for explanation text readability */
+#explanation p {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+#explanation p:last-child {
+  margin-bottom: 0;
+}
+
+/* Enhanced visibility when panel is open */
+.test-container.panel-open {
+  /* Ensure the content area is properly defined */
+  position: relative;
+  overflow: visible;
+}
+
+.test-container.panel-open #feedback-container {
+  /* Ensure feedback stays within the content bounds */
+  box-sizing: border-box;
+  width: 100%;
+  clear: both;
+}
+
+/* Prevent feedback from extending under the panel */
+.reading-panel.open ~ .test-container #feedback-container,
+.test-container.panel-open #feedback-container {
+  /* Calculate available width excluding panel */
+  max-width: calc(100% - 1rem); /* Account for any margins */
+  box-sizing: border-box;
+}
+
+/* Large screen optimizations */
+@media (min-width: 1400px) {
+  .test-container.panel-open #feedback-container {
+    /* More generous spacing on large screens */
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  #explanation {
+    font-size: 1rem;
+    padding: 1.25rem;
+  }
+}
+
+/* Print styles for feedback */
+@media print {
+  #feedback-container {
+    margin-left: 0 !important;
+    max-width: 100% !important;
+    page-break-inside: avoid;
+  }
+}

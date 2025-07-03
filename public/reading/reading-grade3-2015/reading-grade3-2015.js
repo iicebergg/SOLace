@@ -120,7 +120,7 @@ the sea.</p>
     `
   },
 
-   '': {
+   'hidden_treasure': {
     title: 'A Hidden Treasure',
     content: `
       <p>Evan and his 16-year-old brother, Mark, liked spending
@@ -201,10 +201,9 @@ with Grandma.</p>
     `
   },
 
-   'the_ostrich_one_odd_bird': {
+   'ostrich': {
     title: 'The Ostrich: One Odd Bird',
     content: `
-      <h4>The Ostrich: One Odd Bird</h4>
       <p>Ostriches hold the
 record as the largest
 birds in the world. A
@@ -607,6 +606,288 @@ const sampleQuestions = [
       'need the use of a lamp',
       'have messages that must be dry to be read',
       'have messages that must be painted to be read',
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '22',
+    text: 'The title tells readers that a character in the story will most likely--',
+    type: 'multiple-choice',
+    passageId: 'hidden_treasure',
+    options: [
+      'spend time outdoors',
+      'need to draw a map',
+      'go to an amazing place',
+      'search for something',
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '23',
+    text: 'Paragraph 5 is important to the story because it-',
+    type: 'multiple-choice',
+    passageId: 'hidden_treasure',
+    options: [
+      'tells what is on the map',
+      'tells why Evan likes to go fishing',
+      'shows how the attic looks',
+      'shows where Grandma lives',
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '24',
+    text: 'After Evan and Mark find the map, they both feel--',
+    type: 'multiple-choice',
+    passageId: 'hidden_treasure',
+    options: [
+      'wise',
+      'calm',
+      'proud',
+      'eager',
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '25',
+    text: 'Where does this story begin and end?',
+    type: 'multiple-choice',
+    passageId: 'hidden_treasure',
+    options: [
+      'At the river',
+      'Near the trees',
+      'In the kitchen',
+      'In the attic',
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '26',
+    text: 'Based on the story, where does the map first lead the boys? (image)',
+    type: 'multiple-choice',
+    passageId: 'hidden_treasure',
+    options: [
+      'The house',
+      'The water drop',
+      'The trees',
+      'The Greatest Fishing Spot',
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '27',
+    text: 'Which question is answered at the end of the story?',
+    type: 'multiple-choice',
+    passageId: 'hidden_treasure',
+    options: [
+      'What brings fish to a certain area?',
+      'What happened to the old dock?',
+      'How often did Mom go to the old dock?',
+      'How many fish does Grandma catch?',
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '28',
+    text: 'Place these words in alphabetical order.',
+    type: 'drag-drop',
+    passageId: 'hidden_treasure',
+    options: [
+      
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '29',
+    text: 'Based on paragraph 4, the reader can tell that-',
+    type: 'multiple-choice',
+    passageId: 'ostrich',
+    options: [
+      'chicks learn to eat by watching older ostriches',
+      'ostriches need people to feed them a healthy diet',
+      'plants are easier for ostriches to feed on than insects',
+      'chicks wait to eat until the grown ostriches finish',
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '30',
+    text: 'Paragraph 6 explains that one way ostriches keep themselves safe is by--',
+    type: 'multiple-choice',
+    passageId: 'ostrich',
+    options: [
+      'flying',
+      'digging',
+      'kicking',
+      'sleeping',
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '31',
+    text: 'What information can be learned by reading the chart at the end of the article?',
+    type: 'multiple-choice',
+    passageId: 'ostrich',
+    options: [
+      'What do ostriches use to build a nest?',
+      'Why do ostriches keep the herd size low?',
+      'How long do ostriches live?',
+      'How many eggs do ostriches lay?',
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '32',
+    text: 'Based on the article, one way the male leader is like the females in the herd is that he helps--',
+    type: 'multiple-choice',
+    passageId: 'ostrich',
+    options: [
+      'make the nest',
+      'guard the eggs',
+      'hide the chicks',
+      'feed the chicks',
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '33',
+    text: 'The feathers of an ostrich help the bird--',
+    type: 'multiple-choice',
+    passageId: 'ostrich',
+    options: [
+      'run fast',
+      'stay warm',
+      'move quietly',
+      'look bigger',
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '34',
+    text: 'Based on the article, what can the reader most likely tell about ostriches?',
+    type: 'multiple-choice',
+    passageId: 'ostrich',
+    options: [
+      'They can run faster than any other animal.',
+      'Their wings are their most useful part.',
+      'Their speed helps them escape.',
+      'They usually kick their enemies.',
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '35',
+    text: 'After looking at the title, the reader knows that this poem is about--',
+    type: 'multiple-choice',
+    passageId: 'search',
+    options: [
+      'hiding something',
+      'finding something',
+      'looking for something',
+      'thinking about something',
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '36',
+    text: 'What does <u>pause</u> mean in line 13?',
+    type: 'multiple-choice',
+    passageId: 'search',
+    options: [
+      'Try to remember',
+      'Begin to ask questions',
+      'Think about the past',
+      'Stop for a short time',
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '37',
+    text: 'In lines 17-20, the speaker can best be described as--',
+    type: 'multiple-choice',
+    passageId: 'search',
+    options: [
+      'scared',
+      'upset',
+      'angry',
+      'lazy',
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '38',
+    text: 'Where is the first place the speaker looks for the shoe?',
+    type: 'multiple-choice',
+    passageId: 'search',
+    options: [
+      'Under the sofa',
+      'In the car',
+      'In a sports bag',
+      'Near the steps',
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '39',
+    text: 'Based on the events in the poem, the shoe was most likely last worn--',
+    type: 'multiple-choice',
+    passageId: 'search',
+    options: [
+      'at school',
+      'during a game',
+      'at a friend\'s house',
+      'in a friend\'s car',
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '40',
+    text: 'Which question is answered in the poem?',
+    type: 'multiple-choice',
+    passageId: 'search',
+    options: [
+      'What is the dog\'s new chew toy?',
+      'Why is the dog playing outside?',
+      'What sport does the speaker play?',
+      'When was the speaker\'s last game?',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
