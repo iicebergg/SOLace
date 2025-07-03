@@ -122,7 +122,7 @@ the sea.</p>
     `
   },
 
-   'a_hidden_treasure': {
+   '': {
     title: 'A Hidden Treasure',
     content: `
       <h4>A Hidden Treasure</h4>
@@ -317,14 +317,14 @@ fastest animals on land.</p>
 const sampleQuestions = [
   {
     id: '1',
-    text: 'According to the passage, what does "migrate" mean?',
+    text: 'Another good title for this story would be--',
     type: 'multiple-choice',
     passageId: 'the_cooks_surprise',
     options: [
-      'To sleep for a long time',
-      'To grow thicker fur', 
-      'To travel to warmer places',
-      'To collect food for winter'
+      'Sewing New Clothes',
+      'Baking for the Family', 
+      'A Morning Snack',
+      'Gifts for Everyone'
     ],
     correctAnswer: 2,
     explanation: 'The passage states that "migrate means they travel to warmer places."'
@@ -332,40 +332,44 @@ const sampleQuestions = [
 
   {
     id: '2', 
-    text: 'Which animals are mentioned as hibernating in winter?',
-    type: 'multiple-select',
-    passageId: '',
+    text: 'Danielle keeps the cupcakes a secret by--',
+    type: 'multiple-choice',
+    passageId: 'the_cooks_surprise',
     options: [
-      'Bears',
-      'Geese', 
-      'Groundhogs',
-      'Frogs',
-      'Deer',
-      'Squirrels'
+      'moving them to the laundry room',
+      'making them in the morning', 
+      'placing them inside a box',
+      'covering them with paper'
     ],
-    correctAnswer: [0, 2, 3],
+    correctAnswer: 0,
     explanation: 'The passage mentions that bears, groundhogs, and some frogs hibernate.'
   },
 
   {
     id: '3',
-    text: 'How do animals prepare for hibernation?',
-    type: 'free-response',
-    passageId: 'animals_in_winter',
-    correctKeywords: ['eat', 'food', 'fat', 'store'],
+    text: 'Complete this flow chart. (image)',
+    type: 'multiple-choice',
+    passageId: 'the_cooks_surprise',
+    options: [
+      'Danielle looks at the edges of the apron.',
+      'Danielle finds bits of cloth in the laundry room.', 
+      'Danielle sets the cupcakes on the table.',
+      'Danielle walks into her bedroom.',
+      'Danielle tries on the apron.'
+    ],
     explanation: 'Animals eat lots of food before hibernating to store fat in their bodies.'
   },
 
   {
     id: '4',
-    text: 'What made Emma think the garden was magical?',
+    text: 'Danielle is pleased with the surprise most likely because she--',
     type: 'multiple-choice',
-    passageId: 'the_magic_garden',
+    passageId: 'the_cooks_surprise',
     options: [
-      'The flowers were many different colors',
-      'The vegetables were very large',
-      'The garden was hidden behind tall plants',
-      'Her grandmother talked to the plants'
+      'needs to wear it when making cupcakes',
+      'can cook more often for her family',
+      'enjoys wearing blue and yellow clothes',
+      'can tell that her family cares about her'
     ],
     correctAnswer: 1,
     explanation: 'Emma thought the garden was magical because the vegetables were the biggest she had ever seen.'
@@ -373,14 +377,14 @@ const sampleQuestions = [
 
   {
     id: '5',
-    text: 'According to Grandma, what is the secret to growing big vegetables?',
+    text: 'What will Martin and Madison most likely do next?',
     type: 'multiple-choice', 
-    passageId: 'the_magic_garden',
+    passageId: 'the_cooks_surprise',
     options: [
-      'Talking to the plants every day',
-      'Using water from the special pond',
-      'Planting them behind tall sunflowers',
-      'Watering them very carefully'
+      'Make another apron',
+      'Help their sister cook',
+      'Clean the laundry room',
+      'Bite into their cupcakes'
     ],
     correctAnswer: 1,
     explanation: 'Grandma said the secret is in the water from the pond with special minerals.'
@@ -388,11 +392,17 @@ const sampleQuestions = [
 
   {
     id: '6',
-    text: 'What does the story suggest about growing a garden?',
-    type: 'free-response',
-    passageId: 'the_magic_garden', 
-    correctKeywords: ['patience', 'care', 'time', 'work'],
-    explanation: 'The story says that growing a garden takes patience, care, and maybe a little magic.'
+    text: 'Which of these do the characters have in common?',
+    type: 'multiple-choice', 
+    passageId: 'the_cooks_surprise',
+    options: [
+      'They think of others.',
+      'They sleep late.',
+      'They sew clothes.',
+      'They like to cook.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Grandma said the secret is in the water from the pond with special minerals.'
   },
 
   {
@@ -523,114 +533,61 @@ const sampleQuestions = [
   }
 ];
 
-// Reading panel management
+// Reading panel management - Auto-opening, no toggle
 let isReadingPanelOpen = false;
 let currentPassageId = null;
 
-// Initialize reading panel functionality
-function initReadingPanel() {
-  const toggleBtn = document.getElementById('toggle-reading-panel');
-  const closeBtn = document.getElementById('close-reading-panel');
-  const overlay = document.getElementById('reading-panel-overlay');
-  
-  if (toggleBtn) {
-    toggleBtn.addEventListener('click', toggleReadingPanel);
-  }
-  
-  if (closeBtn) {
-    closeBtn.addEventListener('click', closeReadingPanel);
-  }
-  
-  if (overlay) {
-    overlay.addEventListener('click', closeReadingPanel);
-  }
-  
-  // Keyboard shortcuts
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && isReadingPanelOpen) {
-      closeReadingPanel();
-    }
-    if (e.key === 'r' && e.ctrlKey) {
-      e.preventDefault();
-      toggleReadingPanel();
-    }
-  });
-}
-
-function toggleReadingPanel() {
-  if (isReadingPanelOpen) {
-    closeReadingPanel();
-  } else {
-    openReadingPanel();
-  }
-}
-
 function openReadingPanel() {
   const panel = document.getElementById('reading-panel');
-  const overlay = document.getElementById('reading-panel-overlay');
-  const toggleBtn = document.getElementById('toggle-reading-panel');
   const testContainer = document.getElementById('test-container');
   
   if (panel) {
     panel.classList.add('open');
     isReadingPanelOpen = true;
-    
-    // Update button text
-    if (toggleBtn) {
-      toggleBtn.querySelector('.reading-text').textContent = 'Hide Passage';
-    }
-    
-    // Show overlay on mobile
-    if (overlay) {
-      overlay.classList.add('active');
-    }
-    
-    // Adjust test container on desktop
-    if (testContainer && window.innerWidth > 768) {
-      testContainer.classList.add('panel-open');
-    }
-    
-    console.log('Reading panel opened');
+    console.log('Reading panel auto-opened');
+  }
+  
+  // Always adjust test container to make room for left panel
+  if (testContainer) {
+    testContainer.classList.add('panel-open');
+    console.log('Test container adjusted for left panel');
   }
 }
 
 function closeReadingPanel() {
   const panel = document.getElementById('reading-panel');
-  const overlay = document.getElementById('reading-panel-overlay');
-  const toggleBtn = document.getElementById('toggle-reading-panel');
   const testContainer = document.getElementById('test-container');
   
   if (panel) {
     panel.classList.remove('open');
     isReadingPanelOpen = false;
-    
-    // Update button text
-    if (toggleBtn) {
-      toggleBtn.querySelector('.reading-text').textContent = 'Show Passage';
-    }
-    
-    // Hide overlay
-    if (overlay) {
-      overlay.classList.remove('active');
-    }
-    
-    // Reset test container
-    if (testContainer) {
-      testContainer.classList.remove('panel-open');
-    }
-    
     console.log('Reading panel closed');
+  }
+  
+  // Reset test container
+  if (testContainer) {
+    testContainer.classList.remove('panel-open');
+    console.log('Test container reset');
   }
 }
 
 function loadPassage(passageId) {
-  if (!passageId || currentPassageId === passageId) {
-    return; // No passage needed or already loaded
+  if (!passageId) {
+    console.log('No passageId provided, closing panel');
+    closeReadingPanel();
+    return;
+  }
+  
+  if (currentPassageId === passageId && isReadingPanelOpen) {
+    console.log('Passage already loaded and panel open:', passageId);
+    return; // Already loaded and open
   }
   
   const passage = readingPassages[passageId];
   if (!passage) {
     console.error('Passage not found:', passageId);
+    console.log('Available passages:', Object.keys(readingPassages));
+    closeReadingPanel();
     return;
   }
   
@@ -641,230 +598,65 @@ function loadPassage(passageId) {
   
   if (titleElement) {
     titleElement.textContent = passage.title;
+    console.log('Passage title set to:', passage.title);
+  } else {
+    console.error('Passage title element not found');
   }
   
   if (contentElement) {
     contentElement.innerHTML = passage.content;
+    console.log('Passage content loaded, length:', passage.content.length);
+  } else {
+    console.error('Passage content element not found');
   }
   
-  // Update toggle button to show passage is available
-  const toggleBtn = document.getElementById('toggle-reading-panel');
-  if (toggleBtn) {
-    toggleBtn.style.display = 'flex';
-    toggleBtn.disabled = false;
-  }
+  // Auto-open the panel
+  openReadingPanel();
   
-  console.log('Loaded passage:', passage.title);
+  console.log('Successfully loaded and opened passage:', passage.title);
 }
 
-function hidePassageToggle() {
+// AUTO-OPEN APPROACH: Watch for question changes and auto-load passages
+document.addEventListener('DOMContentLoaded', function() {
+  console.log('Auto-opening left panel reading test initializing...');
+  
+  // Set questions for the test framework using the expected variable name
+  window.sampleQuestions = sampleQuestions;
+  
+  // Remove any toggle button functionality since we auto-open
   const toggleBtn = document.getElementById('toggle-reading-panel');
   if (toggleBtn) {
     toggleBtn.style.display = 'none';
+    console.log('Toggle button hidden');
   }
   
-  // Close panel if open
-  if (isReadingPanelOpen) {
-    closeReadingPanel();
-  }
+  // Watch for question changes and auto-load passages accordingly
+  let lastQuestionIndex = -1;
   
-  currentPassageId = null;
-}
-
-// Override the loadQuestion function to handle passages
-const originalLoadQuestion = window.loadQuestion;
-
-function loadQuestion(index) {
-  console.log(`Loading reading question ${index + 1} of ${questions.length}`);
-  
-  if (index >= questions.length) {
-    finishTest();
-    return;
-  }
-
-  const question = questions[index];
-  
-  // Load passage if question has one
-  if (question.passageId) {
-    loadPassage(question.passageId);
-  } else {
-    hidePassageToggle();
-  }
-  
-  // Call the original loadQuestion function
-  if (originalLoadQuestion) {
-    originalLoadQuestion(index);
-  } else {
-    // Fallback implementation
-    renderQuestion(question, index);
-  }
-}
-
-function renderQuestion(question, index) {
-  const questionContainer = document.getElementById('question-container');
-  if (!questionContainer) {
-    console.error('Question container not found');
-    return;
-  }
-
-  // Clear previous question
-  questionContainer.innerHTML = '';
-
-  // Hide feedback container
-  const feedbackContainer = document.getElementById('feedback-container');
-  if (feedbackContainer) {
-    feedbackContainer.style.display = 'none';
-  }
-
-  // Show submit button, hide next button
-  const submitBtn = document.getElementById('submit-answer');
-  const nextBtn = document.getElementById('next-question');
-  if (submitBtn) submitBtn.style.display = 'block';
-  if (nextBtn) nextBtn.style.display = 'none';
-
-  // Update progress
-  const progressFill = document.getElementById('progress-fill');
-  const currentQuestionSpan = document.getElementById('current-question');
-  
-  if (progressFill) {
-    progressFill.style.width = `${((index + 1) / questions.length) * 100}%`;
-  }
-  if (currentQuestionSpan) {
-    currentQuestionSpan.textContent = index + 1;
-  }
-
-  // Get template and render question
-  const templateId = `${question.type}-template`;
-  const templateElement = document.getElementById(templateId);
-  
-  if (!templateElement) {
-    console.error(`Template not found: ${templateId}`);
-    return;
-  }
-
-  const template = templateElement.content.cloneNode(true);
-  
-  try {
-    switch (question.type) {
-      case 'multiple-choice':
-        renderMultipleChoiceQuestion(template, question);
-        break;
-      case 'multiple-select':
-        renderMultipleSelectQuestion(template, question);
-        break;
-      case 'free-response':
-        renderFreeResponseQuestion(template, question);
-        break;
-      default:
-        console.error(`Unknown question type: ${question.type}`);
-        return;
-    }
-
-    questionContainer.appendChild(template);
-    console.log(`Reading question ${index + 1} loaded successfully`);
-  } catch (error) {
-    console.error(`Error rendering question ${index + 1}:`, error);
-  }
-}
-
-// Enhanced question rendering for reading questions
-function renderMultipleChoiceQuestion(template, question) {
-  const questionTextElement = template.querySelector('.question-text');
-  questionTextElement.innerHTML = question.text;
-  
-  const optionsContainer = template.querySelector('.options-container');
-  
-  question.options.forEach((option, index) => {
-    const optionElement = document.createElement('div');
-    optionElement.className = 'option';
-    
-    optionElement.innerHTML = `
-      <input type="radio" id="option-${index}" name="question-option" value="${index}">
-      <label for="option-${index}">${option}</label>
-    `;
-    
-    optionElement.addEventListener('click', () => {
-      const radioInput = optionElement.querySelector('input');
-      if (radioInput) {
-        radioInput.checked = true;
-        
-        // Update selected state for all options
-        optionsContainer.querySelectorAll('.option').forEach(opt => {
-          if (opt === optionElement) {
-            opt.classList.add('selected');
-          } else {
-            opt.classList.remove('selected');
-          }
-        });
-      }
-    });
-    
-    optionsContainer.appendChild(optionElement);
-  });
-}
-
-function renderMultipleSelectQuestion(template, question) {
-  const questionTextElement = template.querySelector('.question-text');
-  questionTextElement.innerHTML = question.text;
-  
-  const optionsContainer = template.querySelector('.options-container');
-  
-  question.options.forEach((option, index) => {
-    const optionElement = document.createElement('div');
-    optionElement.className = 'option';
-    
-    optionElement.innerHTML = `
-      <input type="checkbox" id="option-${index}" name="question-option" value="${index}">
-      <label for="option-${index}">${option}</label>
-    `;
-    
-    optionElement.addEventListener('click', () => {
-      const checkbox = optionElement.querySelector('input');
-      checkbox.checked = !checkbox.checked;
+  function checkForQuestionChange() {
+    const currentQuestionSpan = document.getElementById('current-question');
+    if (currentQuestionSpan) {
+      const currentIndex = parseInt(currentQuestionSpan.textContent) - 1;
       
-      if (checkbox.checked) {
-        optionElement.classList.add('selected');
-      } else {
-        optionElement.classList.remove('selected');
-      }
-    });
-    
-    optionsContainer.appendChild(optionElement);
-  });
-}
-
-function renderFreeResponseQuestion(template, question) {
-  const questionTextElement = template.querySelector('.question-text');
-  questionTextElement.innerHTML = question.text;
-}
-
-// Initialize when the page loads
-document.addEventListener('DOMContentLoaded', function() {
-  console.log('Reading test initializing...');
-  
-  // Set questions for the test framework
-  questions = sampleQuestions;
-  window.sampleQuestions = sampleQuestions;
-  
-  // Initialize reading panel
-  initReadingPanel();
-  
-  // Handle window resize for responsive behavior
-  window.addEventListener('resize', () => {
-    if (window.innerWidth <= 768 && isReadingPanelOpen) {
-      // On mobile, always use overlay
-      const testContainer = document.getElementById('test-container');
-      if (testContainer) {
-        testContainer.classList.remove('panel-open');
-      }
-    } else if (window.innerWidth > 768 && isReadingPanelOpen) {
-      // On desktop, adjust layout
-      const testContainer = document.getElementById('test-container');
-      if (testContainer) {
-        testContainer.classList.add('panel-open');
+      if (currentIndex !== lastQuestionIndex && currentIndex >= 0 && currentIndex < sampleQuestions.length) {
+        lastQuestionIndex = currentIndex;
+        const question = sampleQuestions[currentIndex];
+        
+        console.log('Question changed to:', currentIndex + 1, 'passageId:', question.passageId || 'none');
+        
+        // Auto-load passage if question has one, close panel if it doesn't
+        if (question.passageId) {
+          loadPassage(question.passageId);
+        } else {
+          closeReadingPanel();
+          currentPassageId = null;
+        }
       }
     }
-  });
+  }
   
-  console.log('Reading test initialized with', sampleQuestions.length, 'questions');
+  // Check for question changes every 500ms
+  setInterval(checkForQuestionChange, 500);
+  
+  console.log('Auto-opening left panel initialized with', sampleQuestions.length, 'questions');
 });

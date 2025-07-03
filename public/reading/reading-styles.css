@@ -1,20 +1,30 @@
-/* Reading Test Specific Styles */
+/* AUTO-OPENING LEFT PANEL WITH WIDE LAYOUT - reading-styles.css */
 
-/* Test Layout with Reading Panel */
+/* Test Layout with Reading Panel on LEFT */
 #test {
   position: relative;
   overflow: hidden;
 }
 
+/* Increase main container width to use more screen space */
+main {
+  max-width: 1400px !important; /* Increased from default 800px */
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
 .test-container {
-  transition: margin-right 0.3s ease;
+  transition: margin-left 0.3s ease; /* Changed from margin-right */
+  max-width: none; /* Remove width restrictions */
+  width: 100%;
 }
 
+/* Panel open state - content moves RIGHT to make room for LEFT panel */
 .test-container.panel-open {
-  margin-right: 400px;
+  margin-left: 400px; /* Changed from margin-right */
 }
 
-/* Test Header with Reading Toggle */
+/* Test Header - Remove toggle button styles since there's no button */
 .test-header {
   display: flex;
   flex-direction: column;
@@ -24,66 +34,35 @@
 
 .test-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center since no toggle button */
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
-/* Reading Toggle Button */
+/* Hide any toggle button completely */
 .reading-toggle-btn {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background-color: var(--accent-color, #4a6fa5);
-  color: white;
-  border: none;
-  border-radius: 6px;
-  padding: 0.75rem 1rem;
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none !important;
 }
 
-.reading-toggle-btn:hover {
-  background-color: var(--accent-color, #3a5a80);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-.reading-toggle-btn:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-  transform: none;
-}
-
-.reading-icon {
-  font-size: 1.1rem;
-}
-
-.reading-text {
-  font-weight: 500;
-}
-
-/* Reading Panel */
+/* Reading Panel - Positioned on LEFT side */
 .reading-panel {
   position: fixed;
   top: 0;
-  right: -400px;
+  left: -400px; /* Changed from right: -400px */
   width: 400px;
   height: 100vh;
   background-color: var(--bg-color, #ffffff);
-  border-left: 2px solid var(--border-color, #dddddd);
-  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.15);
+  border-right: 2px solid var(--border-color, #dddddd); /* Changed from border-left */
+  box-shadow: 4px 0 12px rgba(0, 0, 0, 0.15); /* Changed shadow direction */
   z-index: 1000;
-  transition: right 0.3s ease;
+  transition: left 0.3s ease; /* Changed from right */
   display: flex;
   flex-direction: column;
 }
 
 .reading-panel.open {
-  right: 0;
+  left: 0; /* Changed from right: 0 */
 }
 
 .reading-panel-header {
@@ -93,6 +72,7 @@
   padding: 1.5rem 1.5rem 1rem 1.5rem;
   border-bottom: 1px solid var(--border-color, #eee);
   background-color: var(--secondary-bg, #f8f9fa);
+  flex-shrink: 0;
 }
 
 .reading-panel-header h3 {
@@ -101,20 +81,9 @@
   font-size: 1.2rem;
 }
 
+/* Hide close button since panel auto-opens/closes */
 .close-btn {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  color: var(--text-color, #666);
-  cursor: pointer;
-  padding: 0.25rem;
-  border-radius: 4px;
-  transition: background-color 0.2s ease;
-}
-
-.close-btn:hover {
-  background-color: var(--border-color, #eee);
-  color: var(--text-color, #333);
+  display: none !important;
 }
 
 .reading-panel-content {
@@ -147,59 +116,143 @@
   margin-bottom: 0;
 }
 
-/* Mobile Overlay */
+#passage-content ol {
+  margin-bottom: 1.2rem;
+  padding-left: 2rem;
+}
+
+#passage-content ol li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Remove overlay completely */
 .reading-panel-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  display: none !important;
 }
 
-.reading-panel-overlay.active {
-  opacity: 1;
-  visibility: visible;
+/* Increase question container width when panel is open */
+#test-container {
+  background-color: var(--secondary-bg, #f9f9f9);
+  border: 1px solid var(--border-color, #dddddd);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  min-height: 500px; /* Ensure good height */
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  /* Mobile layout */
-  .test-container.panel-open {
-    margin-right: 0;
+/* Enhanced question styling for wider layout */
+.question-text {
+  font-size: 1.2rem; /* Slightly larger */
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: var(--text-color, #333);
+}
+
+/* Enhanced options styling for wider layout */
+.option {
+  padding: 1.25rem 1rem; /* More padding for better spacing */
+  margin-bottom: 1rem;
+  line-height: 1.6;
+  font-size: 1.05rem; /* Slightly larger text */
+}
+
+.option label {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  cursor: pointer;
+  flex: 1;
+}
+
+/* Free response for reading questions - larger for wide layout */
+.response-input {
+  min-height: 120px; /* Increased */
+  font-family: inherit;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  resize: vertical;
+  padding: 1rem; /* More padding */
+}
+
+/* Progress bar styling for wider layout */
+#progress-bar {
+  background-color: var(--border-color, #e1e7f0);
+  border-radius: 10px;
+  height: 12px; /* Slightly taller */
+  margin-bottom: 1rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+#progress-fill {
+  background-color: var(--accent-color, #4a6fa5);
+  height: 100%;
+  transition: width 0.5s;
+}
+
+/* Question counter for wider layout */
+#question-counter {
+  color: var(--text-color, #666);
+  font-size: 1rem; /* Slightly larger */
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Responsive Design - Adjust panel and layout for different screen sizes */
+@media (max-width: 1200px) {
+  main {
+    max-width: 1200px !important;
   }
   
   .reading-panel {
-    width: 90vw;
-    right: -90vw;
-    max-width: 400px;
+    width: 350px;
+    left: -350px;
   }
   
-  .test-info {
-    flex-direction: column;
-    align-items: stretch;
-    text-align: center;
+  .test-container.panel-open {
+    margin-left: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    max-width: 100% !important;
+    padding: 0 1rem;
   }
   
-  .reading-toggle-btn {
-    justify-content: center;
-    width: 100%;
+  .reading-panel {
+    width: 300px;
+    left: -300px;
   }
   
-  #question-counter {
-    text-align: center;
+  .test-container.panel-open {
+    margin-left: 300px;
+  }
+  
+  #test-container {
+    padding: 1.5rem;
+  }
+  
+  .question-text {
+    font-size: 1.1rem;
+  }
+  
+  .option {
+    padding: 1rem 0.75rem;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
-  /* Very small screens */
   .reading-panel {
-    width: 95vw;
-    right: -95vw;
+    width: 280px;
+    left: -280px;
+  }
+  
+  .test-container.panel-open {
+    margin-left: 280px;
   }
   
   .reading-panel-header {
@@ -214,84 +267,102 @@
     font-size: 0.95rem;
     line-height: 1.6;
   }
+  
+  #test-container {
+    padding: 1rem;
+  }
 }
 
-/* Large screens */
-@media (min-width: 1200px) {
+/* Large screens - Use even more space */
+@media (min-width: 1400px) {
+  main {
+    max-width: 1600px !important;
+  }
+  
   .reading-panel {
     width: 450px;
-    right: -450px;
+    left: -450px;
   }
   
   .test-container.panel-open {
-    margin-right: 450px;
+    margin-left: 450px;
+  }
+  
+  .question-text {
+    font-size: 1.3rem;
+  }
+  
+  .option {
+    padding: 1.5rem 1.25rem;
+    font-size: 1.1rem;
+  }
+  
+  .response-input {
+    min-height: 140px;
+    font-size: 1.1rem;
   }
 }
 
-/* Enhanced question styling for reading */
-.question-text {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-  color: var(--text-color, #333);
-}
-
-/* Free response for reading questions */
-.response-input {
-  min-height: 100px;
-  font-family: inherit;
-  font-size: 1rem;
-  line-height: 1.5;
-  resize: vertical;
-}
-
-/* Options styling for reading questions */
-.option {
-  padding: 1rem 0.75rem;
-  margin-bottom: 0.75rem;
-  line-height: 1.5;
-}
-
-.option label {
-  font-size: 1rem;
-  line-height: 1.5;
-  cursor: pointer;
-  flex: 1;
-}
-
-/* Focus states for accessibility */
-.reading-toggle-btn:focus,
-.close-btn:focus {
-  outline: 2px solid var(--accent-color, #4a6fa5);
-  outline-offset: 2px;
-}
-
-/* Print styles */
-@media print {
-  .reading-panel,
-  .reading-panel-overlay,
-  .reading-toggle-btn {
-    display: none !important;
+/* Very large screens */
+@media (min-width: 1800px) {
+  main {
+    max-width: 1800px !important;
+  }
+  
+  .reading-panel {
+    width: 500px;
+    left: -500px;
   }
   
   .test-container.panel-open {
-    margin-right: 0 !important;
+    margin-left: 500px;
   }
 }
 
-/* Reduced motion preferences */
-@media (prefers-reduced-motion: reduce) {
-  .reading-panel,
-  .test-container,
-  .reading-toggle-btn,
-  .reading-panel-overlay {
-    transition: none !important;
+/* Enhanced feedback for reading questions */
+#feedback-container {
+  margin-top: 2rem;
+  padding: 1.5rem;
+}
+
+#feedback-message {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+#explanation {
+  font-size: 1rem;
+  line-height: 1.7;
+  padding: 1.25rem;
+}
+
+/* Better button group spacing for wide layout */
+#controls {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+#controls button {
+  padding: 0.875rem 2rem; /* Larger buttons */
+  font-size: 1.05rem;
+}
+
+@media (max-width: 480px) {
+  #controls {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  #controls button {
+    width: 100%;
   }
 }
 
 /* Dark theme adjustments */
 body.theme-white-on-black .reading-panel {
-  border-left-color: var(--border-color, #555);
+  border-right-color: var(--border-color, #555);
 }
 
 body.theme-white-on-black .reading-panel-header {
@@ -304,10 +375,10 @@ body.theme-gray-on-green .reading-panel-header h3 {
   color: var(--text-color) !important;
 }
 
-/* Animation for panel opening */
-@keyframes slideInRight {
+/* Animation for panel opening from LEFT */
+@keyframes slideInLeft {
   from {
-    transform: translateX(100%);
+    transform: translateX(-100%);
   }
   to {
     transform: translateX(0);
@@ -315,7 +386,7 @@ body.theme-gray-on-green .reading-panel-header h3 {
 }
 
 .reading-panel.open {
-  animation: slideInRight 0.3s ease-out;
+  animation: slideInLeft 0.3s ease-out;
 }
 
 /* Scrollbar styling for reading panel */
@@ -336,55 +407,25 @@ body.theme-gray-on-green .reading-panel-header h3 {
   background: var(--accent-color, #4a6fa5);
 }
 
-/* Loading state for passages */
-.passage-loading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 200px;
-  color: var(--text-color, #666);
-  font-style: italic;
-}
-
-/* Passage not available state */
-.passage-unavailable {
-  text-align: center;
-  padding: 2rem;
-  color: var(--text-color, #666);
-  font-style: italic;
-}
-
-/* Enhanced feedback for reading questions */
-#feedback-container {
-  margin-top: 1.5rem;
-}
-
-#explanation {
-  font-size: 0.95rem;
-  line-height: 1.6;
-}
-
-/* Question counter responsive design */
-@media (max-width: 600px) {
-  #question-counter {
-    font-size: 0.85rem;
-  }
-}
-
-/* Better button group spacing */
-#controls {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-@media (max-width: 480px) {
-  #controls {
-    flex-direction: column;
+/* Print styles */
+@media print {
+  .reading-panel {
+    display: none !important;
   }
   
-  #controls button {
-    width: 100%;
+  .test-container.panel-open {
+    margin-left: 0 !important;
+  }
+  
+  main {
+    max-width: 100% !important;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .reading-panel,
+  .test-container {
+    transition: none !important;
   }
 }

@@ -34,6 +34,50 @@ const submitAnswerBtn = document.getElementById('submit-answer');
 const nextQuestionBtn = document.getElementById('next-question');
 const saveSettingsBtn = document.getElementById('save-settings');
 
+// Add to your existing DOMContentLoaded function:
+document.addEventListener('DOMContentLoaded', function() {
+  // ... your existing code ...
+  
+  // Simple footer management with CSS classes
+  const testBtn = document.getElementById('test-btn');
+  const startTestBtn = document.getElementById('start-test');
+  const homeBtn = document.getElementById('home-btn');
+  const resultsBtn = document.getElementById('results-btn');
+  const settingsBtn = document.getElementById('settings-btn');
+  
+  // Hide footer when entering test
+  if (testBtn) {
+    testBtn.addEventListener('click', () => {
+      document.body.classList.add('test-mode');
+    });
+  }
+  
+  if (startTestBtn) {
+    startTestBtn.addEventListener('click', () => {
+      document.body.classList.add('test-mode');
+    });
+  }
+  
+  // Show footer when leaving test
+  if (homeBtn) {
+    homeBtn.addEventListener('click', () => {
+      document.body.classList.remove('test-mode');
+    });
+  }
+  
+  if (resultsBtn) {
+    resultsBtn.addEventListener('click', () => {
+      document.body.classList.remove('test-mode');
+    });
+  }
+  
+  if (settingsBtn) {
+    settingsBtn.addEventListener('click', () => {
+      document.body.classList.remove('test-mode');
+    });
+  }
+});
+
 // Application State
 let currentPage = 'home';
 let currentQuestionIndex = 0;
