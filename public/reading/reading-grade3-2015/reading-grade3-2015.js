@@ -189,23 +189,339 @@ explained. "How did you know about it?" she puzzled.</p>
       <p>The boys presented the map, and Mom smiled. "That's my
 map I made when I was a young girl. Grandma and I
 loved fishing from the old dock."</p>
+
+      <p>"Wow! Could you take us to that place? The dock is no
+longer there, but maybe it's still a great fishing spot," Evan
+said hopefully.</p>
+
+      <p>Grandma smiled, remembering the times she spent with
+Mom. "Sure," she agreed. "Let's see if the fish still like
+it there."</p>
+
+      <p>"I'll get our fishing poles," Evan offered. The map had
+certainly led to a treasure and a chance to spend time
+with Grandma.</p>
     `
   },
 
-   'space_exploration': {
-    title: 'Exploring Space',
+   'the_ostrich_one_odd_bird': {
+    title: 'The Ostrich: One Odd Bird',
     content: `
-      <h4>Exploring Space</h4>
-      <p>People have always been curious about space. Long ago, they could only look at the stars with their eyes. Then they invented telescopes to see farther into space.</p>
+      <h4>The Ostrich: One Odd Bird</h4>
+      <p>Ostriches hold the
+record as the largest
+birds in the world. A
+male can grow to
+nine feet tall. That is
+about three feet
+taller than most
+men. How do these
+giants spend
+their days?</p>
       
-      <p>The first person to travel to space was Yuri Gagarin from Russia in 1961. A few years later, American astronauts Neil Armstrong and Buzz Aldrin became the first people to walk on the moon in 1969.</p>
+      <p><b>Life in a Bird Herd</b><br>
+      Ostriches live in
+groups called herds.
+One male is the
+leader. He uses his
+strong legs to dig a hole for a nest. The herd only needs
+one nest because all the females lay their eggs in it. The
+male and one of the females take turns guarding and
+sitting on the eggs.</p>
       
-      <p>Today, astronauts live and work on the International Space Station. They do experiments and learn about how things work in space where there's no gravity. Scientists on Earth use robots to explore other planets like Mars.</p>
+      <p>When the chicks hatch from the eggs, they are covered
+with yellow fuzz and black spots. Their colors match the
+sandy ground. This coloring helps them hide from
+dangerous animals. The mother and father ostrich protect
+the chicks too. Before long, feathers replace the fuzz on
+the chicks. Their new fluffy feathers trap air and keep the
+chicks warm at night.</p>
       
-      <p>Maybe someday, people will travel to Mars or even farther into space. What would you like to discover if you could be an astronaut?</p>
+      <p>The young birds learn to peck the ground and eat plants
+by watching older ostriches. They eat mostly plants,
+seeds, and roots but will also eat insects and small lizards.
+This diet helps the chicks grow quickly, almost a foot
+each month!</p>
+
+      <p><b>Speedy Runners</b><br>
+      Although these birds cannot fly, powerful legs help them
+move quickly. Ostriches can bolt across the ground at
+43 miles per hour. They keep their wings outstretched
+while running. This helps them keep their balance,
+especially when changing direction.</p>
+
+      <p><b>Staying Safe</b><br>
+      With such speed, ostriches outrun most predators, but
+they know how to defend themselves too. Their strong
+legs can deliver a kick that stops a lion! Ostriches use
+another trick to stay safe. They sit down on the ground,
+rest their heads on the sand, and lie very still. The sand
+blends with the color of the ostriches so other animals do
+not notice them.</p>
+
+      <p>Today, wild ostriches live in Africa, but many tame ones
+live on farms and in zoos. Ostriches are unusual-looking
+birds, but their power and speed make them one of the
+fastest animals on land.</p>
+
+      <p><b>Ostrich Facts</b><br>
+      Life span: 30-40 years<br>
+      Weight: 350 pounds<br>
+      Height: 8-9 feet<br>
+      Egg weight: 3 pounds<br>
+      Nest size: Up to 8 feet<br>
+      Herd size: Usually fewer than 12 birds</p>
+    `
+  },
+
+     'the_search': {
+    title: 'The Search',
+    content: `
+      <h4>The Search</h4>
+
+      <p><ol>
+      <li>I've emptied my sports bag</li>
+<li>Checked in the car</li>
+<li>Reached under the sofa</li>
+<li>And searched near and far.</li>
+<li>But hunt as I may</li>
+<li>I've got only one shoe--</li>
+<li>And where its mate is</li>
+<li>I haven't a clue.</li>
+<li>"When was your last game?"</li>
+<li>Dad asks thoughtfully.</li>
+<li>"And after the game</li>
+<li>Whom did you see?"</li>
+<li>I pause in my tracks--</li>
+<li>Dad's smart, it is true</li>
+<li>But his questions don't lead</li>
+<li>To my runaway shoe.</li>
+<li>It's surely gone missing</li>
+<li>There's clearly no hope.</li>
+<li>I have to give up</li>
+<li>Find somewhere to mope.</li>
+<li>So I sit on the steps</li>
+<li>And stare into the yard</li>
+<li>Where Otis the dog</li>
+<li>Serves as guard--</li>
+<li>Then I notice that Otis</li>
+<li>Has a new chew</li>
+<li>With laces and treads--</li>
+<li>Oh, no! It's my shoe!</li>
+</ol>
     `
   }
+
 };
+
+const sampleQuestions = [
+  {
+    id: '1',
+    text: 'According to the passage, what does "migrate" mean?',
+    type: 'multiple-choice',
+    passageId: 'the_cooks_surprise',
+    options: [
+      'To sleep for a long time',
+      'To grow thicker fur', 
+      'To travel to warmer places',
+      'To collect food for winter'
+    ],
+    correctAnswer: 2,
+    explanation: 'The passage states that "migrate means they travel to warmer places."'
+  },
+
+  {
+    id: '2', 
+    text: 'Which animals are mentioned as hibernating in winter?',
+    type: 'multiple-select',
+    passageId: '',
+    options: [
+      'Bears',
+      'Geese', 
+      'Groundhogs',
+      'Frogs',
+      'Deer',
+      'Squirrels'
+    ],
+    correctAnswer: [0, 2, 3],
+    explanation: 'The passage mentions that bears, groundhogs, and some frogs hibernate.'
+  },
+
+  {
+    id: '3',
+    text: 'How do animals prepare for hibernation?',
+    type: 'free-response',
+    passageId: 'animals_in_winter',
+    correctKeywords: ['eat', 'food', 'fat', 'store'],
+    explanation: 'Animals eat lots of food before hibernating to store fat in their bodies.'
+  },
+
+  {
+    id: '4',
+    text: 'What made Emma think the garden was magical?',
+    type: 'multiple-choice',
+    passageId: 'the_magic_garden',
+    options: [
+      'The flowers were many different colors',
+      'The vegetables were very large',
+      'The garden was hidden behind tall plants',
+      'Her grandmother talked to the plants'
+    ],
+    correctAnswer: 1,
+    explanation: 'Emma thought the garden was magical because the vegetables were the biggest she had ever seen.'
+  },
+
+  {
+    id: '5',
+    text: 'According to Grandma, what is the secret to growing big vegetables?',
+    type: 'multiple-choice', 
+    passageId: 'the_magic_garden',
+    options: [
+      'Talking to the plants every day',
+      'Using water from the special pond',
+      'Planting them behind tall sunflowers',
+      'Watering them very carefully'
+    ],
+    correctAnswer: 1,
+    explanation: 'Grandma said the secret is in the water from the pond with special minerals.'
+  },
+
+  {
+    id: '6',
+    text: 'What does the story suggest about growing a garden?',
+    type: 'free-response',
+    passageId: 'the_magic_garden', 
+    correctKeywords: ['patience', 'care', 'time', 'work'],
+    explanation: 'The story says that growing a garden takes patience, care, and maybe a little magic.'
+  },
+
+  {
+    id: '7',
+    text: 'What was the first tool people used to see farther into space?',
+    type: 'multiple-choice',
+    passageId: 'space_exploration',
+    options: [
+      'Satellites',
+      'Telescopes', 
+      'Spaceships',
+      'Robots'
+    ],
+    correctAnswer: 1,
+    explanation: 'The passage states that people invented telescopes to see farther into space.'
+  },
+
+  {
+    id: '8',
+    text: 'Who was the first person to travel to space?',
+    type: 'multiple-choice',
+    passageId: 'space_exploration', 
+    options: [
+      'Neil Armstrong',
+      'Buzz Aldrin',
+      'Yuri Gagarin', 
+      'The passage does not say'
+    ],
+    correctAnswer: 2,
+    explanation: 'The passage states that Yuri Gagarin from Russia was the first person to travel to space in 1961.'
+  },
+
+  {
+    id: '9',
+    text: 'Select all the space exploration achievements mentioned in the passage.',
+    type: 'multiple-select',
+    passageId: 'space_exploration',
+    options: [
+      'First person in space',
+      'First people on the moon',
+      'International Space Station',
+      'Robots exploring Mars',
+      'People living on Mars',
+      'Traveling to other galaxies'
+    ],
+    correctAnswer: [0, 1, 2, 3],
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '10',
+    text: 'What do astronauts do on the International Space Station?',
+    type: 'free-response',
+    passageId: 'space_exploration',
+    correctKeywords: ['experiments', 'learn', 'gravity', 'work'],
+    explanation: 'Astronauts do experiments and learn about how things work in space where there is no gravity.'
+  },
+
+  // Questions without passages (general reading skills)
+  {
+    id: '11',
+    text: 'Which word means the opposite of "enormous"?',
+    type: 'multiple-choice',
+    options: [
+      'Huge',
+      'Tiny',
+      'Large', 
+      'Giant'
+    ],
+    correctAnswer: 1,
+    explanation: 'Tiny is the opposite of enormous, which means very large.'
+  },
+
+  {
+    id: '12',
+    text: 'What is the main idea of this sentence: "The library has thousands of books on many different subjects like science, history, and art."',
+    type: 'multiple-choice',
+    options: [
+      'Libraries are important places',
+      'Science books are interesting',
+      'The library has many books on different topics',
+      'History and art are popular subjects'
+    ],
+    correctAnswer: 2,
+    explanation: 'The main idea is that the library has many books covering different subjects.'
+  },
+
+  {
+    id: '13',
+    text: 'If a character in a story is described as "brave," what does this tell you about them?',
+    type: 'multiple-choice',
+    options: [
+      'They are afraid of many things',
+      'They are not willing to try new things',
+      'They are willing to face danger or challenges',
+      'They always stay at home where it is safe'
+    ],
+    correctAnswer: 2,
+    explanation: 'Being brave means being willing to face danger or difficult situations.'
+  },
+
+  {
+    id: '14', 
+    text: 'What does it mean when an author uses the phrase "time flew by"?',
+    type: 'multiple-choice',
+    options: [
+      'A clock was thrown through the air',
+      'Time passed very quickly',
+      'It was time to catch a plane',
+      'The story happened in the future'
+    ],
+    correctAnswer: 1,
+    explanation: '"Time flew by" is a figure of speech meaning that time passed very quickly.'
+  },
+
+  {
+    id: '15',
+    text: 'Choose the sentence that is written correctly.',
+    type: 'multiple-choice',
+    options: [
+      'The dog run fast to catch the ball.',
+      'The dog runs fast to catch the ball.',
+      'The dog running fast to catch the ball.',
+      'The dog ran fast to catching the ball.'
+    ],
+    correctAnswer: 1,
+    explanation: 'This sentence uses correct present tense grammar with proper subject-verb agreement.'
+  }
+];
 
 // Reading panel management
 let isReadingPanelOpen = false;
@@ -527,6 +843,7 @@ document.addEventListener('DOMContentLoaded', function() {
   console.log('Reading test initializing...');
   
   // Set questions for the test framework
+  questions = sampleQuestions;
   window.sampleQuestions = sampleQuestions;
   
   // Initialize reading panel
