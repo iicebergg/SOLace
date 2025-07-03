@@ -289,6 +289,11 @@ function loadQuestion(index) {
   if (submitAnswerBtn) submitAnswerBtn.style.display = 'block';
   if (nextQuestionBtn) nextQuestionBtn.style.display = 'none';
 
+  // Scroll to top of page smoothly
+  window.scrollTo({
+    top: 0,
+  });
+
   // Update progress
   const progressFill = document.getElementById('progress-fill');
   const currentQuestionSpan = document.getElementById('current-question');

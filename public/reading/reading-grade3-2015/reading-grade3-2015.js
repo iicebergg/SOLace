@@ -5,7 +5,6 @@ const readingPassages = {
   'the_cooks_surprise': {
     title: 'The Cook\'s Surprise',
     content: `
-      <h4>The Cook's Surprise</h4>
       <p>Danielle loved to cook delicious food on Saturdays. She
 enjoyed seeing her family members smile as they tasted a
 meal she made. Today Danielle had a surprise for her
@@ -73,7 +72,6 @@ the kitchen.</p>
   'useful_weeds_of_the_sea': {
     title: 'Useful Weeds of the Sea',
     content: `
-      <h4>Useful Weeds of the Sea</h4>
       <p>Seaweed may not be on many shopping lists, but
 it plays a big part in people's everyday lives.
 Seaweed is a plant that grows in the shallow
@@ -125,7 +123,6 @@ the sea.</p>
    '': {
     title: 'A Hidden Treasure',
     content: `
-      <h4>A Hidden Treasure</h4>
       <p>Evan and his 16-year-old brother, Mark, liked spending
 time with their grandmother. Today, though, Grandma was
 busy painting.</p>
@@ -407,14 +404,14 @@ const sampleQuestions = [
 
   {
     id: '7',
-    text: 'What was the first tool people used to see farther into space?',
+    text: 'What is the root word in "discovered"?',
     type: 'multiple-choice',
-    passageId: 'space_exploration',
+    passageId: 'the_cooks_surprise',
     options: [
-      'Satellites',
-      'Telescopes', 
-      'Spaceships',
-      'Robots'
+      'disc',
+      'disco', 
+      'cover',
+      'over'
     ],
     correctAnswer: 1,
     explanation: 'The passage states that people invented telescopes to see farther into space.'
@@ -422,14 +419,14 @@ const sampleQuestions = [
 
   {
     id: '8',
-    text: 'Who was the first person to travel to space?',
+    text: 'Some people eat seaweed all by itself because they most likely--',
     type: 'multiple-choice',
-    passageId: 'space_exploration', 
+    passageId: 'useful_weeds_of_the_sea', 
     options: [
-      'Neil Armstrong',
-      'Buzz Aldrin',
-      'Yuri Gagarin', 
-      'The passage does not say'
+      'do not know it is used in other foods',
+      'eat many foods that come from the ocean',
+      'enjoy foods that add color to the meals they eat', 
+      'do not like how it tastes mixed with other foods'
     ],
     correctAnswer: 2,
     explanation: 'The passage states that Yuri Gagarin from Russia was the first person to travel to space in 1961.'
@@ -437,100 +434,183 @@ const sampleQuestions = [
 
   {
     id: '9',
-    text: 'Select all the space exploration achievements mentioned in the passage.',
-    type: 'multiple-select',
-    passageId: 'space_exploration',
+    text: 'Based on the article, seaweed makes ice cream and yogurt--',
+    type: 'multiple-choice',
+    passageId: 'useful_weeds_of_the_sea',
     options: [
-      'First person in space',
-      'First people on the moon',
-      'International Space Station',
-      'Robots exploring Mars',
-      'People living on Mars',
-      'Traveling to other galaxies'
+      'last longer',
+      'taste different',
+      'sell faster',
+      'look different',
     ],
-    correctAnswer: [0, 1, 2, 3],
+    correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
   {
     id: '10',
-    text: 'What do astronauts do on the International Space Station?',
-    type: 'free-response',
-    passageId: 'space_exploration',
-    correctKeywords: ['experiments', 'learn', 'gravity', 'work'],
-    explanation: 'Astronauts do experiments and learn about how things work in space where there is no gravity.'
+    text: 'Which question is answered in the article?',
+    type: 'multiple-choice',
+    passageId: 'useful_weeds_of_the_sea',
+    options: [
+      'What does seaweed taste like?',
+      'Where do farmers buy seaweed?',
+      'Which ocean has the most seaweed?',
+      'Which goods have seaweed in them?',
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
-  // Questions without passages (general reading skills)
-  {
+    {
     id: '11',
-    text: 'Which word means the opposite of "enormous"?',
+    text: 'The author wrote this article most likely to--',
     type: 'multiple-choice',
+    passageId: 'useful_weeds_of_the_sea',
     options: [
-      'Huge',
-      'Tiny',
-      'Large', 
-      'Giant'
+      'give facts about an ocean plant',
+      'list kinds of ocean plants',
+      'tell about people who eat ocean plants',
+      'tell how to cook with ocean plants',
     ],
-    correctAnswer: 1,
-    explanation: 'Tiny is the opposite of enormous, which means very large.'
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
   {
     id: '12',
-    text: 'What is the main idea of this sentence: "The library has thousands of books on many different subjects like science, history, and art."',
+    text: 'In an Internet search about oceans, which website would most likely have information about where red seaweed grows?',
     type: 'multiple-choice',
+    passageId: 'useful_weeds_of_the_sea',
     options: [
-      'Libraries are important places',
-      'Science books are interesting',
-      'The library has many books on different topics',
-      'History and art are popular subjects'
+      'give facts about an ocean plant',
+      'list kinds of ocean plants',
+      'tell about people who eat ocean plants',
+      'tell how to cook with ocean plants',
     ],
-    correctAnswer: 2,
-    explanation: 'The main idea is that the library has many books covering different subjects.'
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
   {
     id: '13',
-    text: 'If a character in a story is described as "brave," what does this tell you about them?',
+    text: 'What makes the secret message appear in "Lemony Letter"?',
     type: 'multiple-choice',
+    passageId: 'secret_message',
     options: [
-      'They are afraid of many things',
-      'They are not willing to try new things',
-      'They are willing to face danger or challenges',
-      'They always stay at home where it is safe'
+      'Heat',
+      'Light',
+      'Juice',
+      'Water',
     ],
-    correctAnswer: 2,
-    explanation: 'Being brave means being willing to face danger or difficult situations.'
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
   {
-    id: '14', 
-    text: 'What does it mean when an author uses the phrase "time flew by"?',
+    id: '14',
+    text: 'In "Mirror Message" when the steam in the bathroom is gone, the message will most likely--',
     type: 'multiple-choice',
+    passageId: 'secret_message',
     options: [
-      'A clock was thrown through the air',
-      'Time passed very quickly',
-      'It was time to catch a plane',
-      'The story happened in the future'
+      'spread',
+      'turn white',
+      'disappear',
+      'turn brown',
     ],
-    correctAnswer: 1,
-    explanation: '"Time flew by" is a figure of speech meaning that time passed very quickly.'
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
   {
     id: '15',
-    text: 'Choose the sentence that is written correctly.',
+    text: 'In step 3 of "Mirror Message," what does the word invisible mean?',
     type: 'multiple-choice',
+    passageId: 'secret_message',
     options: [
-      'The dog run fast to catch the ball.',
-      'The dog runs fast to catch the ball.',
-      'The dog running fast to catch the ball.',
-      'The dog ran fast to catching the ball.'
+      'clear',
+      'small',
+      'hidden',
+      'forgotten',
     ],
-    correctAnswer: 1,
-    explanation: 'This sentence uses correct present tense grammar with proper subject-verb agreement.'
-  }
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '16',
+    text: '"Lemony Letter" and "Mirror Message" are alike because both--',
+    type: 'multiple-choice',
+    passageId: 'secret_message',
+    options: [
+      'need help from a grownup',
+      'need the use of a lamp',
+      'have messages that must be dry to be read',
+      'have messages that must be painted to be read',
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '17',
+    text: 'In "Crazy Crayon," it is hard to see the message before painting over it because the message--',
+    type: 'multiple-choice',
+    passageId: 'secret_message',
+    options: [
+      'needs to be next to light',
+      'takes a long time to change color',
+      'is written on dark paper',
+      'is written in a white color',
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '18',
+    text: 'One reason to read the flier is to--',
+    type: 'multiple-choice',
+    passageId: 'secret_message',
+    options: [
+      'find out when spies need to use secret messages',
+      'learn how secret messages are made',
+      'discover secret messages that have been sent in the past',
+      'learn about the first person to send a secret message',
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '19',
+    text: 'The author puts numbers before some sentences in the flier to--',
+    type: 'multiple-choice',
+    passageId: 'secret_message',
+    options: [
+      'list the steps in the order of importance',
+      'order the steps the reader will follow',
+      'show how many items the reader needs in each step',
+      'tell about how many minutes each step will take',
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '20',
+    text: 'Read this sentence and dictionary entry. <br> In the winter, grocery stores <u>charge</u> too much for strawberries.',
+    type: 'multiple-choice',
+    passageId: 'secret_message',
+    options: [
+      'need help from a grownup',
+      'need the use of a lamp',
+      'have messages that must be dry to be read',
+      'have messages that must be painted to be read',
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
 ];
 
 // Reading panel management - Auto-opening, no toggle
