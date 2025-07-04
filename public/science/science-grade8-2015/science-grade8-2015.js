@@ -78,7 +78,7 @@ const sampleQuestions = [
     {url: 'images/question_9e.png', alt: 'Image failed to load. Please try again later.'},
     {url: 'images/question_9f.png', alt: 'Image failed to load. Please try again later.'}
  ],
- correctAnswer: ['2,662', '2662'],
+ correctAnswer: [2, 3, 5],
  explanation: 'Multiply 57 × 5 = 285 pieces of gum.'
  },
  {
