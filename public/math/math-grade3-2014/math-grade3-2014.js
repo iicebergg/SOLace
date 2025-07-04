@@ -467,6 +467,9 @@ function getPerformanceLevel(scaledScore) {
       
       console.log(`Saving Grade 3 Math result: ${rawScore}/40 → ${scaledScore} (${performanceLevel})`);
       
+      // Store for immediate use
+      window.tempEnhancedResult = enhancedResultData;
+      
       // Create the result object
       const result = {
         id: 'result_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9),
@@ -497,6 +500,13 @@ function getPerformanceLevel(scaledScore) {
       try {
         localStorage.setItem(TEST_STORAGE_KEY, JSON.stringify(this.results));
         console.log('Test-specific result saved successfully:', result.id);
+        
+        // Trigger immediate enhancement after saving
+        setTimeout(() => {
+          console.log('Triggering immediate enhancement after save');
+          enhanceResultsWithRetry();
+        }, 10);
+        
         return result;
       } catch (error) {
         console.error('Error saving test-specific result:', error);
@@ -506,6 +516,26 @@ function getPerformanceLevel(scaledScore) {
     
     // Reload results with the new system
     window.resultsManager.results = window.resultsManager.loadAllResults();
+    
+    // Also override displayResults to inject scaled scores immediately
+    if (window.resultsManager.displayResults) {
+      const originalDisplayResults = window.resultsManager.displayResults.bind(window.resultsManager);
+      
+      window.resultsManager.displayResults = function() {
+        console.log('Results manager displayResults called - injecting scaled scores');
+        
+        // Call original display
+        const result = originalDisplayResults.apply(this, arguments);
+        
+        // Immediately attempt to enhance with scaled scores
+        setTimeout(() => {
+          console.log('Post-displayResults enhancement trigger');
+          enhanceResultsWithRetry();
+        }, 10);
+        
+        return result;
+      };
+    }
   }
   
   // Function to enhance ALL historical results with scaled scores
@@ -656,51 +686,25 @@ function getPerformanceLevel(scaledScore) {
   }
   
   function enhanceResultsDisplay() {
-    enhanceAllHistoricalResults();
-    
-    const resultsSummary = document.getElementById('results-summary');
-    if (!resultsSummary) return false;
-    
-    if (resultsSummary.querySelector('.scaled-score-info')) {
-      enhanceResultsHistory();
-      return true;
-    }
-    
-    const latestResult = window.resultsManager ? window.resultsManager.getLatestResult() : null;
-    if (!latestResult) {
-      const savedResults = JSON.parse(localStorage.getItem(TEST_STORAGE_KEY) || '[]');
-      if (savedResults.length === 0) return false;
-      
-      const lastResult = savedResults[0];
-      if (!lastResult.scaledScore && lastResult.correctAnswers !== undefined) {
-        lastResult.scaledScore = getScaledScore(lastResult.correctAnswers);
-        lastResult.performanceLevel = getPerformanceLevel(lastResult.scaledScore);
-        lastResult.rawScore = lastResult.correctAnswers;
-      }
-      
-      if (!lastResult.scaledScore) return false;
-      
-      addScaledScoreToDisplay(resultsSummary, lastResult);
-      enhanceResultsHistory();
-      return true;
-    }
-    
-    if (!latestResult.scaledScore && latestResult.correctAnswers !== undefined) {
-      latestResult.scaledScore = getScaledScore(latestResult.correctAnswers);
-      latestResult.performanceLevel = getPerformanceLevel(latestResult.scaledScore);
-      latestResult.rawScore = latestResult.correctAnswers;
-    }
-    
-    if (!latestResult.scaledScore) return false;
-    
-    addScaledScoreToDisplay(resultsSummary, latestResult);
-    enhanceResultsHistory();
-    return true;
+    // This function is now mainly used as a fallback
+    console.log('Fallback enhanceResultsDisplay called');
+    return enhanceResultsWithRetry();
   }
   
   function addScaledScoreToDisplay(resultsSummary, result) {
     const summaryText = resultsSummary.querySelector('.result-summary-text');
-    if (!summaryText) return;
+    if (!summaryText) {
+      console.log('Result summary text not found');
+      return;
+    }
+    
+    // Check if already enhanced to prevent duplicates
+    if (summaryText.querySelector('.scaled-score-info')) {
+      console.log('Scaled score info already present, skipping duplicate');
+      return;
+    }
+    
+    console.log('Adding scaled score display with data:', result);
     
     const scaledScoreInfo = document.createElement('div');
     scaledScoreInfo.className = 'scaled-score-info';
@@ -714,12 +718,14 @@ function getPerformanceLevel(scaledScore) {
         </div>
       </div>
       <div class="score-explanation">
-        <p><em>The scaled score is a score used by the Virginia Department of Education to compare performance in different regions of the state over time.</em></p>
+        <p><em>The scaled score is a converted score that accounts for test difficulty and allows for comparison across different test versions.</em></p>
       </div>
     `;
     
     summaryText.appendChild(scaledScoreInfo);
     addScaledScoreStyles();
+    
+    console.log('Scaled score display added successfully');
   }
   
   function enhanceResultsHistory() {
@@ -749,14 +755,183 @@ function getPerformanceLevel(scaledScore) {
   }
   
   function checkAndEnhanceResults() {
-    const resultsPage = document.getElementById('results');
-    if (!resultsPage || !resultsPage.classList.contains('active')) return;
+    // Legacy function - now redirects to the new retry system
+    return enhanceResultsWithRetry();
+  }
+  
+  // Enhanced finishTest override for immediate scaled score display
+  function enhanceFinishTest() {
+    // Wait for finishTest to be available
+    const waitForFinishTest = () => {
+      if (typeof window.finishTest === 'function') {
+        const originalFinishTest = window.finishTest;
+        
+        window.finishTest = function() {
+          console.log('Enhanced finishTest called - injecting scaled scores immediately');
+          
+          // Get current test data
+          const correctAnswers = window.currentTestAnswers ? 
+            window.currentTestAnswers.filter(answer => answer.correct).length : 0;
+          const totalQuestions = window.questions ? window.questions.length : 40;
+          const score = Math.round((correctAnswers / totalQuestions) * 100);
+          
+          // Calculate scaled score data
+          const scaledScore = getScaledScore(correctAnswers);
+          const performanceLevel = getPerformanceLevel(scaledScore);
+          
+          console.log(`Calculated immediately: ${correctAnswers}/${totalQuestions} → ${scaledScore} (${performanceLevel})`);
+          
+          // Store enhanced data for immediate use
+          window.tempEnhancedResult = {
+            score: score,
+            correctAnswers: correctAnswers,
+            totalQuestions: totalQuestions,
+            scaledScore: scaledScore,
+            performanceLevel: performanceLevel,
+            rawScore: correctAnswers,
+            testType: 'Grade 3 Mathematics (2014)'
+          };
+          
+          // Call original finishTest
+          const result = originalFinishTest.apply(this, arguments);
+          
+          // Immediately enhance results with multiple attempts
+          setTimeout(() => enhanceResultsWithRetry(), 50);
+          setTimeout(() => enhanceResultsWithRetry(), 150);
+          setTimeout(() => enhanceResultsWithRetry(), 300);
+          setTimeout(() => enhanceResultsWithRetry(), 500);
+          
+          return result;
+        };
+        
+        console.log('finishTest function enhanced for immediate scaled score display');
+      } else {
+        // Retry if finishTest not yet available
+        setTimeout(waitForFinishTest, 100);
+      }
+    };
     
-    if (enhanceResultsDisplay()) {
-      setTimeout(() => enhanceResultsHistory(), 100);
-      return true;
+    waitForFinishTest();
+  }
+  
+  // Results enhancement with retry logic
+  function enhanceResultsWithRetry(retryCount = 0) {
+    const maxRetries = 10;
+    
+    console.log(`Attempting to enhance results (attempt ${retryCount + 1})`);
+    
+    // Check if we're on results page
+    const resultsPage = document.getElementById('results');
+    if (!resultsPage || !resultsPage.classList.contains('active')) {
+      if (retryCount < maxRetries) {
+        setTimeout(() => enhanceResultsWithRetry(retryCount + 1), 100);
+      }
+      return;
     }
-    return false;
+    
+    const resultsSummary = document.getElementById('results-summary');
+    if (!resultsSummary) {
+      if (retryCount < maxRetries) {
+        setTimeout(() => enhanceResultsWithRetry(retryCount + 1), 100);
+      }
+      return;
+    }
+    
+    // Check if results content is actually displayed
+    const scoreCircle = resultsSummary.querySelector('.score-circle');
+    if (!scoreCircle) {
+      if (retryCount < maxRetries) {
+        setTimeout(() => enhanceResultsWithRetry(retryCount + 1), 100);
+      }
+      return;
+    }
+    
+    // Check if already enhanced
+    if (resultsSummary.querySelector('.scaled-score-info')) {
+      console.log('Results already enhanced');
+      // Still enhance history in case it's not done
+      setTimeout(() => enhanceResultsHistory(), 100);
+      return;
+    }
+    
+    // Try to get result data
+    let resultData = window.tempEnhancedResult;
+    
+    if (!resultData) {
+      // Fallback to results manager
+      const latestResult = window.resultsManager ? window.resultsManager.getLatestResult() : null;
+      if (latestResult) {
+        if (!latestResult.scaledScore && latestResult.correctAnswers !== undefined) {
+          latestResult.scaledScore = getScaledScore(latestResult.correctAnswers);
+          latestResult.performanceLevel = getPerformanceLevel(latestResult.scaledScore);
+          latestResult.rawScore = latestResult.correctAnswers;
+        }
+        resultData = latestResult;
+      }
+    }
+    
+    if (!resultData) {
+      // Last resort - check localStorage
+      const savedResults = JSON.parse(localStorage.getItem(TEST_STORAGE_KEY) || '[]');
+      if (savedResults.length > 0) {
+        resultData = savedResults[0];
+        if (!resultData.scaledScore && resultData.correctAnswers !== undefined) {
+          resultData.scaledScore = getScaledScore(resultData.correctAnswers);
+          resultData.performanceLevel = getPerformanceLevel(resultData.scaledScore);
+          resultData.rawScore = resultData.correctAnswers;
+        }
+      }
+    }
+    
+    if (!resultData || !resultData.scaledScore) {
+      console.log('No valid result data found, retrying...');
+      if (retryCount < maxRetries) {
+        setTimeout(() => enhanceResultsWithRetry(retryCount + 1), 200);
+      }
+      return;
+    }
+    
+    // Add scaled score display
+    console.log('Adding scaled score display immediately');
+    addScaledScoreToDisplay(resultsSummary, resultData);
+    
+    // Enhance history after a short delay
+    setTimeout(() => {
+      enhanceAllHistoricalResults();
+      enhanceResultsHistory();
+    }, 200);
+    
+    console.log('Immediate scaled score enhancement completed');
+  }
+  
+  // MutationObserver to watch for results changes
+  function setupResultsObserver() {
+    const resultsSection = document.getElementById('results');
+    if (!resultsSection) return;
+    
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.type === 'childList' || mutation.type === 'subtree') {
+          // Check if results summary was updated
+          const resultsSummary = document.getElementById('results-summary');
+          if (resultsSummary && !resultsSummary.querySelector('.scaled-score-info')) {
+            const scoreCircle = resultsSummary.querySelector('.score-circle');
+            if (scoreCircle) {
+              console.log('Results detected via MutationObserver, enhancing...');
+              setTimeout(() => enhanceResultsWithRetry(), 50);
+            }
+          }
+        }
+      });
+    });
+    
+    observer.observe(resultsSection, {
+      childList: true,
+      subtree: true,
+      attributes: false
+    });
+    
+    console.log('Results MutationObserver setup complete');
   }
   
   function initialize() {
@@ -764,21 +939,27 @@ function getPerformanceLevel(scaledScore) {
     
     addScaledScoreStyles();
     createTestSpecificResultsManager();
+    enhanceFinishTest();
+    setupResultsObserver();
     
+    // Backup polling system (reduced frequency since we have better detection now)
     const checkInterval = setInterval(() => {
-      if (checkAndEnhanceResults()) {
+      const resultsPage = document.getElementById('results');
+      if (resultsPage && resultsPage.classList.contains('active')) {
+        enhanceResultsWithRetry();
         clearInterval(checkInterval);
       }
-    }, 500);
+    }, 1000);
     
-    setTimeout(() => clearInterval(checkInterval), 30000);
+    setTimeout(() => clearInterval(checkInterval), 20000);
     
+    // Enhanced click listeners
     document.addEventListener('click', function(e) {
       if (e.target && (e.target.id === 'results-btn' || e.target.id === 'view-results')) {
-        setTimeout(() => {
-          checkAndEnhanceResults();
-          setTimeout(() => enhanceResultsHistory(), 300);
-        }, 200);
+        console.log('Navigation to results detected');
+        setTimeout(() => enhanceResultsWithRetry(), 100);
+        setTimeout(() => enhanceResultsWithRetry(), 300);
+        setTimeout(() => enhanceResultsWithRetry(), 600);
       }
     });
     
