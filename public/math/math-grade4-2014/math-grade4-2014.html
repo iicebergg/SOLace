@@ -472,18 +472,17 @@
     class CalculatorManager {
   constructor() {
     this.calculatorContainer = document.getElementById('calculator-container');
-    this.calculatorHeader = document.getElementById('calculator-header'); // ADD THIS LINE
+    this.calculatorHeader = document.getElementById('calculator-header');
     this.calculatorToggle = document.getElementById('calculator-toggle');
     this.calculatorNote = document.getElementById('calculator-note');
     this.isMinimized = false;
     this.isCalculatorSection = false;
     
-    // ADD THESE DRAG PROPERTIES
     this.isDragging = false;
     this.dragOffset = { x: 0, y: 0 };
     
     this.initializeCalculator();
-    this.initializeDrag(); // ADD THIS LINE
+    this.initializeDrag();
   }
 
       initializeDrag() {
