@@ -815,4 +815,8 @@ footer {
   .category-card {
     padding: 1.5rem;
   }
+
+  .footer-links {
+    justify-content: center;
+  }
 }
