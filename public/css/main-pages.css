@@ -779,6 +779,7 @@ footer {
   .footer-bottom {
     flex-direction: column;
     gap: 1rem;
+    align-items: center;
   }
 
   .footer-links {
