@@ -468,22 +468,41 @@
   <script src="../../js/accessibility.js"></script>
   
   <script>
-        class CalculatorManager {
+  class CalculatorManager {
   constructor() {
-    this.calculatorContainer = document.getElementById('calculator-container');
-    this.calculatorHeader = document.getElementById('calculator-header'); // ADD THIS LINE
-    this.calculatorToggle = document.getElementById('calculator-toggle');
-    this.calculatorNote = document.getElementById('calculator-note');
-    this.isMinimized = false;
-    this.isCalculatorSection = false;
-    
-    // ADD THESE DRAG PROPERTIES
-    this.isDragging = false;
-    this.dragOffset = { x: 0, y: 0 };
-    
-    this.initializeCalculator();
-    this.initializeDrag(); // ADD THIS LINE
-  }
+  this.calculatorContainer = document.getElementById('calculator-container');
+  this.calculatorHeader = document.getElementById('calculator-header');
+  this.calculatorToggle = document.getElementById('calculator-toggle');
+  this.calculatorNote = document.getElementById('calculator-note');
+  this.isMinimized = false;
+  this.isCalculatorSection = false;
+  
+  // Drag properties
+  this.isDragging = false;
+  this.dragOffset = { x: 0, y: 0 };
+  
+  // Resize properties
+  this.isResizing = false;
+  this.resizeDirection = null;
+  this.resizeStartBounds = null;
+  this.resizeStartMouse = null;
+  
+  // Size constraints
+  this.minWidth = 250;
+  this.minHeight = 200;
+  this.maxWidth = 800;
+  this.maxHeight = 600;
+  
+  // Store last dimensions for minimize/maximize
+  this.lastDimensions = {
+    width: 320,
+    height: 400
+  };
+  
+  this.initializeCalculator();
+  this.initializeDrag();
+  this.initializeResize();
+}
 
       initializeDrag() {
   // Mouse events
@@ -501,8 +520,8 @@
 }
 
 startDrag(e) {
-  // Don't start drag if clicking the toggle button
-  if (e.target.closest('.calculator-toggle')) {
+  // Don't start drag if clicking the toggle button or resize handles
+  if (e.target.closest('.calculator-toggle') || e.target.closest('.resize-handle')) {
     return;
   }
   
@@ -602,6 +621,147 @@ snapToEdges() {
     }, 200);
   }
 }
+
+initializeResize() {
+  const resizeHandles = this.calculatorContainer.querySelectorAll('.resize-handle');
+  
+  resizeHandles.forEach(handle => {
+    // Mouse events
+    handle.addEventListener('mousedown', (e) => this.startResize(e));
+    
+    // Touch events
+    handle.addEventListener('touchstart', (e) => this.startResize(e), { passive: false });
+  });
+  
+  // Global resize events
+  document.addEventListener('mousemove', (e) => this.resize(e));
+  document.addEventListener('mouseup', () => this.endResize());
+  document.addEventListener('touchmove', (e) => this.resize(e), { passive: false });
+  document.addEventListener('touchend', () => this.endResize());
+  
+  console.log('Resize functionality initialized');
+}
+
+startResize(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  
+  this.isResizing = true;
+  this.resizeDirection = e.target.getAttribute('data-direction');
+  this.calculatorContainer.classList.add('resizing');
+  
+  const rect = this.calculatorContainer.getBoundingClientRect();
+  const clientX = e.clientX || (e.touches && e.touches[0].clientX);
+  const clientY = e.clientY || (e.touches && e.touches[0].clientY);
+  
+  this.resizeStartBounds = {
+    left: rect.left,
+    top: rect.top,
+    width: rect.width,
+    height: rect.height
+  };
+  
+  this.resizeStartMouse = {
+    x: clientX,
+    y: clientY
+  };
+  
+  // Prevent text selection
+  document.body.style.userSelect = 'none';
+  
+  console.log('Started resizing:', this.resizeDirection);
+}
+
+resize(e) {
+  if (!this.isResizing) return;
+  
+  const clientX = e.clientX || (e.touches && e.touches[0].clientX);
+  const clientY = e.clientY || (e.touches && e.touches[0].clientY);
+  
+  if (!clientX || !clientY) return;
+  
+  const deltaX = clientX - this.resizeStartMouse.x;
+  const deltaY = clientY - this.resizeStartMouse.y;
+  
+  let newWidth = this.resizeStartBounds.width;
+  let newHeight = this.resizeStartBounds.height;
+  let newLeft = this.resizeStartBounds.left;
+  let newTop = this.resizeStartBounds.top;
+  
+  // Apply resize based on direction
+  if (this.resizeDirection.includes('e')) {
+    newWidth = this.resizeStartBounds.width + deltaX;
+  }
+  if (this.resizeDirection.includes('w')) {
+    newWidth = this.resizeStartBounds.width - deltaX;
+    newLeft = this.resizeStartBounds.left + deltaX;
+  }
+  if (this.resizeDirection.includes('s')) {
+    newHeight = this.resizeStartBounds.height + deltaY;
+  }
+  if (this.resizeDirection.includes('n')) {
+    newHeight = this.resizeStartBounds.height - deltaY;
+    newTop = this.resizeStartBounds.top + deltaY;
+  }
+  
+  // Apply size constraints
+  newWidth = Math.max(this.minWidth, Math.min(this.maxWidth, newWidth));
+  newHeight = Math.max(this.minHeight, Math.min(this.maxHeight, newHeight));
+  
+  // Adjust position if we hit size constraints
+  if (this.resizeDirection.includes('w') && newWidth === this.minWidth) {
+    newLeft = this.resizeStartBounds.left + this.resizeStartBounds.width - this.minWidth;
+  }
+  if (this.resizeDirection.includes('n') && newHeight === this.minHeight) {
+    newTop = this.resizeStartBounds.top + this.resizeStartBounds.height - this.minHeight;
+  }
+  
+  // Apply viewport constraints
+  const viewportWidth = window.innerWidth;
+  const viewportHeight = window.innerHeight;
+  
+  // Ensure calculator stays within viewport
+  if (newLeft < 0) {
+    newWidth += newLeft;
+    newLeft = 0;
+  }
+  if (newTop < 0) {
+    newHeight += newTop;
+    newTop = 0;
+  }
+  if (newLeft + newWidth > viewportWidth) {
+    newWidth = viewportWidth - newLeft;
+  }
+  if (newTop + newHeight > viewportHeight) {
+    newHeight = viewportHeight - newTop;
+  }
+  
+  // Apply the new dimensions and position
+  this.calculatorContainer.style.width = newWidth + 'px';
+  this.calculatorContainer.style.height = newHeight + 'px';
+  this.calculatorContainer.style.left = newLeft + 'px';
+  this.calculatorContainer.style.top = newTop + 'px';
+  this.calculatorContainer.style.right = 'auto';
+  this.calculatorContainer.style.bottom = 'auto';
+}
+
+endResize() {
+  if (!this.isResizing) return;
+  
+  this.isResizing = false;
+  this.resizeDirection = null;
+  this.calculatorContainer.classList.remove('resizing');
+  document.body.style.userSelect = '';
+  
+  // Save the new dimensions as the last known size
+  const computedStyle = window.getComputedStyle(this.calculatorContainer);
+  this.lastDimensions = {
+    width: parseInt(computedStyle.width),
+    height: parseInt(computedStyle.height)
+  };
+  
+  console.log('Finished resizing, saved new dimensions:', this.lastDimensions);
+}
       
       initializeCalculator() {
   // Set up toggle button functionality
@@ -621,12 +781,28 @@ snapToEdges() {
       }
       
       showCalculator() {
-        if (!this.isCalculatorSection) return;
-        
-        this.calculatorContainer.style.display = 'flex';
-        this.calculatorNote.classList.remove('hidden');
-        console.log('Calculator shown for question', currentQuestionIndex + 1);
-      }
+  if (!this.isCalculatorSection) {
+    console.log('Calculator not shown: not in calculator section');
+    return;
+  }
+  
+  console.log('Showing calculator...');
+  this.calculatorContainer.style.display = 'flex';
+  this.calculatorNote.classList.remove('hidden');
+  
+  // Apply last known dimensions if not minimized
+  if (!this.isMinimized) {
+    this.calculatorContainer.style.width = this.lastDimensions.width + 'px';
+    this.calculatorContainer.style.height = this.lastDimensions.height + 'px';
+  }
+  
+  // Reset position for mobile
+  if (window.innerWidth <= 768) {
+    this.resetToMobilePosition();
+  }
+  
+  console.log('Calculator shown for question', this.getCurrentQuestionNumber());
+}
       
       hideCalculator() {
         this.calculatorContainer.style.display = 'none';
@@ -638,20 +814,37 @@ snapToEdges() {
       }
       
       toggleCalculator() {
-        this.isMinimized = !this.isMinimized;
-        
-        if (this.isMinimized) {
-          this.calculatorContainer.classList.add('minimized');
-          this.calculatorToggle.textContent = '+';
-          this.calculatorToggle.title = 'Maximize Calculator';
-        } else {
-          this.calculatorContainer.classList.remove('minimized');
-          this.calculatorToggle.textContent = '−';
-          this.calculatorToggle.title = 'Minimize Calculator';
-        }
-        
-        console.log('Calculator', this.isMinimized ? 'minimized' : 'maximized');
-      }
+  this.isMinimized = !this.isMinimized;
+  
+  if (this.isMinimized) {
+    // Save current dimensions before minimizing
+    const computedStyle = window.getComputedStyle(this.calculatorContainer);
+    this.lastDimensions = {
+      width: parseInt(computedStyle.width),
+      height: parseInt(computedStyle.height)
+    };
+    
+    // Apply minimized state
+    this.calculatorContainer.classList.add('minimized');
+    this.calculatorContainer.style.height = '40px';
+    this.calculatorContainer.style.width = this.lastDimensions.width + 'px'; // Keep width
+    
+    this.calculatorToggle.textContent = '+';
+    this.calculatorToggle.title = 'Maximize Calculator';
+    
+    console.log('Calculator minimized, saved dimensions:', this.lastDimensions);
+  } else {
+    // Restore to last dimensions
+    this.calculatorContainer.classList.remove('minimized');
+    this.calculatorContainer.style.height = this.lastDimensions.height + 'px';
+    this.calculatorContainer.style.width = this.lastDimensions.width + 'px';
+    
+    this.calculatorToggle.textContent = '−';
+    this.calculatorToggle.title = 'Minimize Calculator';
+    
+    console.log('Calculator maximized, restored dimensions:', this.lastDimensions);
+  }
+}
       
       checkQuestionForCalculator(questionIndex) {
         const questionNumber = questionIndex + 1;

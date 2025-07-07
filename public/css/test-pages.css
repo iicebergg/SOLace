@@ -1115,7 +1115,6 @@ footer {
     
     .calculator-container.dragging {
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-      transform: rotate(1deg);
       transition: none;
     }
     
@@ -1131,13 +1130,12 @@ footer {
       cursor: move;
       position: relative;
     }
-    
+
     .calculator-header:hover {
-      background: var(--accent-color, #3a5a80);
+      background: #3a5a80;
     }
-    
+
     .calculator-header::before {
-      content: '⋮⋮';
       position: absolute;
       left: 4px;
       top: 50%;
@@ -1173,10 +1171,6 @@ footer {
       border: none;
       width: 100%;
       pointer-events: auto;
-    }
-    
-    .calculator-container.minimized {
-      height: 40px;
     }
     
     .calculator-container.minimized .calculator-iframe {
@@ -1237,28 +1231,94 @@ footer {
         letter-spacing: normal;
       }
     }
-
-    .calculator-container.dragging {
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-  transform: rotate(1deg);
-  transition: none;
-}
-
-.calculator-header {
-  cursor: move;
-}
-
-.calculator-header:hover {
-  background: #3a5a80;
-}
-
-.calculator-header::before {
-  content: '⋮⋮';
+    /* Resize handles */
+.resize-handle {
   position: absolute;
-  left: 4px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 0.8rem;
-  opacity: 0.7;
-  letter-spacing: -2px;
+  background: transparent;
+  z-index: 11;
+}
+
+.resize-handle-n {
+  top: 0;
+  left: 8px;
+  right: 8px;
+  height: 4px;
+  cursor: n-resize;
+}
+
+.resize-handle-s {
+  bottom: 0;
+  left: 8px;
+  right: 8px;
+  height: 4px;
+  cursor: s-resize;
+}
+
+.resize-handle-e {
+  top: 8px;
+  bottom: 8px;
+  right: 0;
+  width: 4px;
+  cursor: e-resize;
+}
+
+.resize-handle-w {
+  top: 8px;
+  bottom: 8px;
+  left: 0;
+  width: 4px;
+  cursor: w-resize;
+}
+
+.resize-handle-ne {
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  cursor: ne-resize;
+}
+
+.resize-handle-nw {
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  cursor: nw-resize;
+}
+
+.resize-handle-se {
+  bottom: 0;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  cursor: se-resize;
+}
+
+.resize-handle-sw {
+  bottom: 0;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  cursor: sw-resize;
+}
+
+.calculator-container.resizing {
+  user-select: none;
+}
+
+.calculator-container.resizing .calculator-iframe {
+  pointer-events: none;
+}
+
+.calculator-container.minimized {
+  height: 40px !important;
+  min-height: 40px;
+}
+
+.calculator-container.minimized .calculator-iframe {
+  display: none;
+}
+
+.calculator-container.minimized .resize-handle {
+  display: none; /* Hide resize handles when minimized */
 }
