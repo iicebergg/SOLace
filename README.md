@@ -1,7 +1,6 @@
-<a href="https://learnsolace.org">![SOLace logo](https://github.com/user-attachments/assets/7b556c46-9019-431a-ab1e-b9d86c24a7bc)</a>
-
 <div align="center">
 
+<a href="https://learnsolace.org">![SOLace logo](https://github.com/user-attachments/assets/7b556c46-9019-431a-ab1e-b9d86c24a7bc)</a>
 <a href="https://www.instagram.com/learnsolace/"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/097d0b23dcc0d22ba7710f6c113fafd321624a79/medium/filled/instagram.svg" alt="Instagram"></a>
 <a href="https://www.facebook.com/share/1WwFmGxD3H/?mibextid=wwXIfr"><img src="https://raw.githubusercontent.com/CLorant/readme-social-icons/097d0b23dcc0d22ba7710f6c113fafd321624a79/medium/filled/facebook.svg" alt="Facebook"></a>
 [![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](#)
