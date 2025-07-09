@@ -486,11 +486,11 @@ function getPerformanceLevel(scaledScore) {
   return 'Minimal';
 }
 
-// Independent Results Manager for Grade 3 Math
+// Independent Results Manager for Grade 7 Math
 (function() {
   'use strict';
   
-  console.log(`Grade 3 Math independent results system initializing with storage key: ${TEST_STORAGE_KEY}`);
+  console.log(`Grade 7 Math independent results system initializing with storage key: ${TEST_STORAGE_KEY}`);
   
   // Override the results manager to use test-specific storage
   function createTestSpecificResultsManager() {
@@ -508,7 +508,7 @@ function getPerformanceLevel(scaledScore) {
       try {
         const stored = localStorage.getItem(TEST_STORAGE_KEY);
         this.results = stored ? JSON.parse(stored) : [];
-        console.log(`Loaded ${this.results.length} results for Grade 3 Math`);
+        console.log(`Loaded ${this.results.length} results for Grade 7 Math`);
         return this.results;
       } catch (error) {
         console.error('Error loading test-specific results:', error);
@@ -528,10 +528,10 @@ function getPerformanceLevel(scaledScore) {
         scaledScore: scaledScore,
         performanceLevel: performanceLevel,
         rawScore: rawScore,
-        testType: 'Grade 3 Mathematics (2014)'
+        testType: 'Grade 7 Mathematics (2014)'
       };
       
-      console.log(`Saving Grade 3 Math result: ${rawScore}/40 → ${scaledScore} (${performanceLevel})`);
+      console.log(`Saving Grade 7 Math result: ${rawScore}/50 → ${scaledScore} (${performanceLevel})`);
       
       // Store for immediate use
       window.tempEnhancedResult = enhancedResultData;
@@ -606,7 +606,7 @@ function getPerformanceLevel(scaledScore) {
   
   // Function to enhance ALL historical results with scaled scores
   function enhanceAllHistoricalResults() {
-    console.log('Enhancing all historical Grade 3 Math results with scaled scores...');
+    console.log('Enhancing all historical 7 Math results with scaled scores...');
     
     const savedResults = JSON.parse(localStorage.getItem(TEST_STORAGE_KEY) || '[]');
     let updated = false;
@@ -616,15 +616,15 @@ function getPerformanceLevel(scaledScore) {
         result.scaledScore = getScaledScore(result.correctAnswers);
         result.performanceLevel = getPerformanceLevel(result.scaledScore);
         result.rawScore = result.correctAnswers;
-        result.testType = 'Grade 3 Mathematics (2014)';
+        result.testType = 'Grade 7 Mathematics (2014)';
         updated = true;
-        console.log(`Enhanced Grade 3 Math result ${index + 1}: ${result.rawScore}/40 → ${result.scaledScore} (${result.performanceLevel})`);
+        console.log(`Enhanced Grade 7 Math result ${index + 1}: ${result.rawScore}/40 → ${result.scaledScore} (${result.performanceLevel})`);
       }
     });
     
     if (updated) {
       localStorage.setItem(TEST_STORAGE_KEY, JSON.stringify(savedResults));
-      console.log('Updated Grade 3 Math results saved');
+      console.log('Updated Grade 7 Math results saved');
       
       // Update results manager if available
       if (window.resultsManager && window.resultsManager.results) {
@@ -855,7 +855,7 @@ function getPerformanceLevel(scaledScore) {
             scaledScore: scaledScore,
             performanceLevel: performanceLevel,
             rawScore: correctAnswers,
-            testType: 'Grade 3 Mathematics (2014)'
+            testType: 'Grade 7 Mathematics (2014)'
           };
           
           // Call original finishTest
@@ -1001,7 +1001,7 @@ function getPerformanceLevel(scaledScore) {
   }
   
   function initialize() {
-    console.log('Initializing Grade 3 Math independent results system');
+    console.log('Initializing Grade 7 Math independent results system');
     
     addScaledScoreStyles();
     createTestSpecificResultsManager();
@@ -1029,7 +1029,7 @@ function getPerformanceLevel(scaledScore) {
       }
     });
     
-    console.log('Grade 3 Math independent results system initialized');
+    console.log('Grade 7 Math independent results system initialized');
   }
   
   if (document.readyState === 'loading') {
