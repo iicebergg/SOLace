@@ -83,318 +83,391 @@ const sampleQuestions = [
  },
  {
  id: '11',
- text: 'Which fraction and decimal are equivalent to 10 ?',
+ text: 'Which fraction and decimal are equivalent to 10⁻³?',
  type: 'multiple-choice',
- options: ['6', '7', '8', '9'],
+ options: ['<math><mfrac><mn>-1</mn><mn>10³</mn></mfrac></math> and -0.003', '<math><mfrac><mn>1</mn><mn>10³</mn></mfrac></math> and -0.003', '<math><mfrac><mn>-1</mn><mn>10³</mn></mfrac></math> and 0.001', '<math><mfrac><mn>1</mn><mn>10³</mn></mfrac></math> and 0.001'],
  correctAnswer: 1, 
  explanation: '63 ÷ 7 = 9, so the answer is 7.'
  },
  {
  id: '12',
- text: 'This model is shaded to represent one whole. <br><img src="images/question_12a.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> These two models are each shaded to represent a fraction. <br><img src="images/question_12b.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> What is the sum of these two fractions?',
+ text: 'What is the absolute value of -8.2?',
  type: 'multiple-choice',
- options: ['<math><mfrac><mn>1</mn><mn>14</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>7</mn></mfrac></math>', '<math><mfrac><mn>5</mn><mn>14</mn></mfrac></math>', '<math><mfrac><mn>5</mn><mn>7</mn></mfrac></math>'],
+ options: ['8.2', '4.1', '-4.1', '-8.2'],
  correctAnswer: 3, 
  explanation: 'Count the total parts and the shaded parts to determine the fraction.'
  },
  {
  id: '13',
- text: 'Which number sentence best represents this set of flowers? <br><img src="images/question_13.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Which statement is true about the pattern shown? <center> 5, 20, 80, 320, ...</center>',
  type: 'multiple-choice',
- options: ['32 ÷ 4 = ?', '32 - 8 = ?', '8 × 4 = ?', '8 + 8 = ?'],
+ options: ['The common ratio is 4.', 'The common ratio is 15.', 'The common difference is 4.', 'The common difference is 15.'],
  correctAnswer: 0, 
  explanation: 'Look at the arrangement to determine the multiplication sentence that represents the groups.'
  },
  {
  id: '14',
- text: 'Kiku had a total of 25 plants at her store on Tuesday morning. During the day, she sold 16 of these plants and then received 136 new plants. At the end of the day, exactly how many plants did Kiku have?',
+ text: 'Kelly received a 25% discount on the purchase of a $240 bicycle. What was the amount of the discount Kelly received?',
  type: 'multiple-choice',
- options: ['9', '61', '145', '197'],
+ options: ['$25', '$60', '$180', '$215'],
  correctAnswer: 2, 
  explanation: 'Start with 25, subtract 16 sold, then add 136 new plants: 25 - 16 + 136 = 145.'
  },
  {
  id: '15',
- text: 'This model is shaded to represent one whole. <br><img src="images/question_15a.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> These two models are shaded to represent a fraction. <br><img src="images/question_15b.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> What is the difference between these two fractions?',
+ text: 'Which number sentence is represented by this model? <br><img src="images/question_15.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>',
  type: 'multiple-choice',
- options: ['<math><mfrac><mn>2</mn><mn>8</mn></mfrac></math>', '<math><mfrac><mn>6</mn><mn>16</mn></mfrac></math>', '<math><mfrac><mn>10</mn><mn>16</mn></mfrac></math>', '<math><mfrac><mn>6</mn><mn>8</mn></mfrac></math>'],
+ options: ['-4 • 7 = 28', '-4 • 7 = -28', '4 • (-7) = 28', '4 • (-7) = -28'],
  correctAnswer: 0, 
  explanation: 'Count the total equal parts and the shaded parts to find the fraction.'
  },
  {
  id: '16',
- text: 'A store has 57 packages of gum with 5 pieces of gum in each package. What is the total number of pieces of gum in these packages? Write the number only; do not include units.',
- type: 'free-response',
- correctKeywords: ['285'],
- explanation: 'Multiply 57 × 5 = 285 pieces of gum.'
+ text: 'What is |<math><mfrac><mn>-11</mn><mn>12</mn></mfrac></math>|?',
+ type: 'multiple-choice',
+ options: ['<math><mfrac><mn>12</mn><mn>11</mn></mfrac></math>', '<math><mfrac><mn>11</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>-11</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>-12</mn><mn>11</mn></mfrac></math>'],
+ correctAnswer: 0, 
+ explanation: 'Count the total equal parts and the shaded parts to find the fraction.'
  },
  {
  id: '17',
- text: 'What is <math><mfrac><mn>3</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>? <br><img src="images/question_17.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'The length of Rectangular Prism A is shown. <br><img src="images/question_17.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> The length of this prism is multiplied by a scale factor of <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math> to create Rectangular Prism B. The volume of Rectangular Prism B is--',
  type: 'multiple-choice',
- options: ['1 <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>', '1', '<math><mfrac><mn>4</mn><mn>8</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>8</mn></mfrac></math>'],
+ options: ['2 times the volume of Rectangular Prism A', '3 times the volume of Rectangular Prism A', '<math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> the volume of Rectangular Prism A', '<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math> the volume of Rectangular Prism A'],
  correctAnswer: 1, 
  explanation: 'When adding fractions with the same denominator, add the numerators: <math><mfrac><mn>3</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> = <math><mfrac><mn>4</mn><mn>4</mn></mfrac></math> = 1.'
  },
  {
  id: '18',
- text: '3,000 - 285 = ?',
+ text: 'Which statement is false?',
  type: 'multiple-choice',
- options: ['2,285', '2,715', '2,815', '3,285'],
+ options: ['All squares are rectangles.', 'All squares are parallelograms.', 'All rhombuses are squares.', 'All rhombuses are parallelograms.'],
  correctAnswer: 1, 
  explanation: '3,000 - 285 = 2,715.'
  },
  {
  id: '19',
- text: 'Which of these is best represented by this number line? <br><img src="images/question_19.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Quadrilateral KL1WN is rotated 180° clockwise about the origin. Which coordinates best represent the image of point K? <br><img src="images/question_19.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
- options: ['24 + 4', '24 - 4', '6 × 4', '4 × 6'],
+ options: ['(6, 8)', '(-4, 2)', '(8, -6)', '(4, -2)'],
  correctAnswer: 3, 
  explanation: 'Look at the pattern on the number line to determine which operation it represents.'
  },
  {
  id: '20',
- text: 'Select each multiplication fact that equals 48.',
- type: 'multiple-select',
- options: ['4 × 8', '6 × 9', '12 × 4', '7 × 6', '8 × 6', '5 × 8'],
- correctAnswer: [2, 4],
- explanation: 'Check each multiplication: 4×12=48, 6×8=48, 12×4=48, 7×6=42, 8×6=48, 5×8=40.'
+ text: 'Triangle STV and triangle ZXY are similar. Which pair of segments are corresponding sides of these triangles? <br><img src="images/question_20.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ type: 'drag-drop',
+ options: ['ST', 'TV', 'XY', 'ZX', 'ZY', 'SV'],
+ dropZones: ['', ''],
+ correctAnswer: [4, 1, 2],
+ explanation: 'To round 5,647: to nearest thousand (6,000), nearest hundred (5,600), nearest ten (5,650).'
  },
  {
  id: '21',
- text: 'How many minutes are there from 10:30 A.M. to 1:00 P.M.?',
- type: 'multiple-choice',
- options: ['500 minutes', '300 minutes', '150 minutes', '120 minutes'],
+ text: 'The dimensions of 4 rectangular prisms are shown. Identify each of the prisms for which the maximum amount of sand the prism can hold is 30 cubic inches.',
+ type: 'multiple-select',
+ options: [
+    {url: 'images/question_21a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_21b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_21c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_21d.png', alt: 'Image failed to load. Please try again later.'}
+ ],
  correctAnswer: 2, 
  explanation: 'From 10:30 A.M. to 1:00 P.M. is 2 hours and 30 minutes = 150 minutes.'
  },
  {
  id: '22',
- text: 'Harry drew a picture with the figures shown. <br><img src="images/question_22.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which best describes the figures in this picture?',
+ text: 'A rectangular prism has a height of 3 inches and a volume of 27 cubic inches. The height of this prism is changed to 6 inches, and the other dimensions stay the same. What is the volume of the prism with this change?',
  type: 'multiple-choice',
- options: ['Cubes', 'Squares', 'Rectangles', 'Rectangular prisms'],
+ options: ['30 cubic inches', '54 cubic inches', '81 cubic inches', '162 cubic'],
  correctAnswer: 2, 
  explanation: 'The figures are three-dimensional, so they are rectangular prisms, not flat shapes.'
  },
  {
  id: '23',
- text: 'Which is the most reasonable length of a bed?',
+ text: 'Every rhombus is also a--',
  type: 'multiple-choice',
- options: ['6 feet', '6 inches', '6 meters', '6 centimeters'],
+ options: ['parallelogram', 'trapezoid', 'rectangle', 'square'],
  correctAnswer: 0, 
  explanation: '6 feet is the most reasonable length for a bed. 6 inches and 6 centimeters are too short, 6 meters is too long.'
  },
  {
  id: '24',
- text: 'Which is closest to the time shown on this clock? <br><img src="images/question_24.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Quadrilateral PQMN is similar to quadrilateral WXYZ. <br><img src="images/question_24.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> What is the measure of angle Z?',
  type: 'multiple-choice',
- options: ['4:45', '5:45', '9:05', '9:25'],
+ options: ['65°', '80°', '100°', '115°'],
  correctAnswer: 0, 
  explanation: 'Read the hour and minute hands to determine the approximate time.'
  },
  {
  id: '25',
- text: 'What is the temperature in °F on this thermometer? Write the number only; do not include units. <br><img src="images/question_25.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
- type: 'free-response',
- correctKeywords: ['84'],
- explanation: 'Read the temperature scale on the thermometer to find the exact temperature.'
+ text: 'This table shows the dimensions of four rectangular prisms. <br><img src="images/question_26.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which rectangular prism has the greatest volume?',
+ type: 'multiple-choice',
+ options: ['Rectangular Prism Q', 'Rectangular Prism R', 'Rectangular Prism S', 'Rectangular Prism T'],
+ correctAnswer: 3, 
+ explanation: 'Congruent figures have the same shape and size. Look for the tower that matches exactly.'
  },
  {
  id: '26',
- text: 'Jack built a tower of blocks as shown. <br><img src="images/question_26.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which tower of blocks appears to be congruent to Jack\'s tower of blocks?',
+ text: 'Which numbered triangle is a 90° counterclockwise rotation about the origin of the shaded triangle? <br><img src="images/question_26.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>',
  type: 'multiple-choice',
- options: [
-    {url: 'images/question_26a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_26b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_26c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_26d.png', alt: 'Image failed to load. Please try again later.'}
- ],
+ options: ['Triangle 1', 'Triangle 2', 'Triangle 3', 'Triangle 4'],
  correctAnswer: 3, 
  explanation: 'Congruent figures have the same shape and size. Look for the tower that matches exactly.'
  },
  {
  id: '27',
- text: 'Franklin began selling lumber in the morning at the time shown on the clock. <br><img src="images/question_27.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> He finished selling lumber three hours later. At what time did Franklin finish selling lumber?',
+ text: 'The diameter and height of a cylindrical container are shown. <br><img src="images/question_27.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> The container is filled completely with cheese sauce. Which of these represents the total number of cubic inches of cheese sauce in the container?',
  type: 'multiple-choice',
- options: ['8:45 A.M.', '9:45 A.M.', '10:45 A.M.', '11:45 A.M.'],
+ options: ['π • 8² • 7', 'π • 16² • 7', '2π • 8² + 2π • 8 • 7', '2π • 16² + 2π • 16 • 7'],
  correctAnswer: 2, 
  explanation: 'Add 3 hours to the starting time shown on the clock.'
  },
  {
  id: '28',
- text: 'What is the perimeter of the shaded figure on this grid? <br><img src="images/question_28.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
- type: 'multiple-choice',
- options: ['18 units', '19 units', '22 units', '24 units'],
- correctAnswer: 3, 
- explanation: 'Count the units around the outside edge of the shaded figure to find the perimeter.'
+ text: 'Figure LMNP will be reflected across the y-axis. Place the point on the graph that represents point N\'.',
+ type: 'point-select',
+ image: {url: 'images/question_28.png', alt: 'Image failed to load. Please try again later.'},
+ correctAnswer: { x: 0.27, y: 0.3 }, 
+ explanation: 'The probability of rolling a 2 is 1/6 ≈ 0.167. Place the point at approximately 1/6 on the number line.'
  },
  {
  id: '29',
- text: 'Christina has the money shown. <br><img src="images/question_29.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Exactly how much money does Christina have?',
+ text: 'Triangle PQR is similar to triangle STU. <br><img src="images/question_29.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which proportion can be used to find n?',
  type: 'multiple-choice',
- options: ['$3.50', '$3.60', '$3.85', '$4.05'],
+ options: ['<math><mfrac><mn>5</mn><mn>15</mn></mfrac></math> = <math><mfrac><mn>n</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>15</mn><mn>5</mn></mfrac></math> = <math><mfrac><mn>n</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>13</mn><mn>n</mn></mfrac></math> = <math><mfrac><mn>12</mn><mn>36</mn></mfrac></math>', '<math><mfrac><mn>13</mn><mn>n</mn></mfrac></math> = <math><mfrac><mn>36</mn><mn>12</mn></mfrac></math>'],
  correctAnswer: 1, 
  explanation: 'Count the value of all the coins and bills shown.'
  },
  {
  id: '30',
- text: 'Alfred drew two rays and a line segment in his geometry notebook. Which of these could be the picture Alfred drew?',
+ text: 'The number of 8-ounce glasses of water Shane drank each day for 12 days is represented in this histogram. <br><img src="images/question_30.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Based on this histogram, which statement must be true?',
  type: 'multiple-choice',
- options: [
-    {url: 'images/question_30a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_30b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_30c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_30d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 3, 
- explanation: 'A ray has one endpoint and extends infinitely in one direction. A line segment has two endpoints.'
+ options: ['On exactly 2 of these days, Shane drank 1 to 2 glasses of water.', 'On exactly 3 of these days, Shane drank 7 to 8 glasses of water.', 'On exactly 25% of these days, Shane drank 3 to 4 glasses of water.', 'On exactly 60% of these days, Shane drank 5 to 6 glasses of water.'],
+ correctAnswer: 1, 
+ explanation: 'Count the value of all the coins and bills shown.'
  },
  {
  id: '31',
- text: 'Each side of this figure is the same length. <br><img src="images/question_31.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which measurement is closest to the perimeter of this figure?',
+ text: 'The digits 1, 2, 3, and 4 are used to make a 3-digit number. Each digit can be repeated. What is the total number of 3-digit numbers that can be made using the.se digits?',
  type: 'multiple-choice',
- options: ['5 feet', '8 feet', '10 feet', '12 feet'],
+ options: ['12', '27', '64', '81'],
  correctAnswer: 2, 
  explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
  },
  {
  id: '32',
- text: 'This chart shows the type of toy and color choices for a reward in a teacher\'s basket. <br><img src="images/question_32.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which shows all the possible outcomes for a reward using one type of toy and one color?',
+ text: 'If k = 2, what is the value of k³ - (k - 10) + 4k?',
  type: 'multiple-choice',
- options: [
-    {url: 'images/question_32a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_32b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_32c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_32d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 3, 
- explanation: 'Count the total possible combinations by multiplying the number of toy types by the number of colors.'
+ options: ['6', '8', '22', '24'],
+ correctAnswer: 2, 
+ explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
  },
  {
  id: '33',
- text: 'This pattern repeats after the first four circles. Joanne removed two circles from this repeating pattern. <br><img src="images/question_33.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which ordered pair of circles did she remove?',
+ text: 'A spinner has 5 sections of equal size labeled P, Q, R, S, and T. The arrow of this spinner was spun 15 times and landed 4 times on the section labeled Q. <br><img src="images/question_33.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which statement best describes the experimental probability and theoretical probability of the arrow landing on the section labeled Q?',
  type: 'multiple-choice',
- options: [
-    {url: 'images/question_33a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_33b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_33c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_33d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 1, 
- explanation: 'Identify the repeating pattern and determine which circles are missing from the sequence.'
+ options: ['The experimental probability is <math><mfrac><mn>1</mn><mn>5</mn></mfrac></math>, and the theoretical probability is <math><mfrac><mn>1</mn><mn>5</mn></mfrac></math>.', 'The experimental probability is <math><mfrac><mn>1</mn><mn>5</mn></mfrac></math>, and the theoretical probability is <math><mfrac><mn>4</mn><mn>15</mn></mfrac></math>.', 'The experimental probability is <math><mfrac><mn>4</mn><mn>15</mn></mfrac></math>, and the theoretical probability is <math><mfrac><mn>1</mn><mn>5</mn></mfrac></math>.', 'The experimental probability is <math><mfrac><mn>4</mn><mn>15</mn></mfrac></math>, and the theoretical probability is <math><mfrac><mn>4</mn><mn>15</mn></mfrac></math>.'],
+ correctAnswer: 2, 
+ explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
  },
  {
  id: '34',
- text: 'Tia surveyed 14 students. She asked each student to choose one favorite food from four choices. Which chart could show the data from Tia\'s survey?',
+ text: 'Ethan earns $12 per hour to walk 2 dogs, plus an additional $7 for brushing the 2 dogs after their walk. <center>Let x represent the hours Ethan works.<br>Let v represent the total he earns each day.</center> Which number sentence best represents this situation?',
  type: 'multiple-choice',
- options: [
-    {url: 'images/question_34a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_34b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_34c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_34d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 1, 
- explanation: 'The correct chart should show data for 14 students total across four food choices.'
+ options: ['12x + 2 + 7 = y', '12x • 2 + 7 = y', '12x + 7 = y', '12x - 7 = y'],
+ correctAnswer: 2, 
+ explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
  },
  {
  id: '35',
- text: 'This table shows the number of minutes it takes Kendal to run laps around a track. <br><img src="images/question_35.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> If the pattern in the table continues in the same way, which of the following should be used to determine how many minutes it takes Kendal to run 10 laps?',
+ text: 'Aidan\'s age is 6 years less than half of Maggie\'s age. Aidan\'s age is 4 years. What is Maggie\'s age?',
  type: 'multiple-choice',
- options: ['10 × 3', '10 + 6', '10 + 24', '10 × 6'],
+ options: ['2 years', '5 years', '10 years', '20 years'],
  correctAnswer: 0, 
  explanation: 'Look at the pattern in the table to determine the relationship between laps and minutes.'
  },
  {
  id: '36',
- text: 'Stephanie recorded the number of inches of rainfall in her city during 4 weeks. The graph below shows the results. <br><img src="images/question_36.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which bar graph shows the same information?',
+ text: 'What is the solution to -12x ≤ -72?',
  type: 'multiple-choice',
- options: [
-    {url: 'images/question_36a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_36b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_36c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_36d.png', alt: 'BImage failed to load. Please try again later.'}
- ],
- correctAnswer: 2, 
- explanation: 'Compare the data values in the line graph to find the matching bar graph.'
+ options: ['x ≥ 6', 'x ≤ 6', 'x ≥ -6', 'x ≤ -6'],
+ correctAnswer: 0, 
+ explanation: 'Look at the pattern in the table to determine the relationship between laps and minutes.'
  },
  {
  id: '37',
- text: 'Which number sentence shows the use of the identity property of multiplication?',
+ text: 'Which property is illustrated by this number sentence? <center>(-1 • 7) + 3 = 3 + (-1 • 7)</center>',
  type: 'multiple-choice',
- options: ['5 × 3 = 3 × 5', '5 + 0 = 5', '4 + 1 = 5', '1 × 5 = 5'],
+ options: ['Associative Property of Addition', 'Associative Property of Multiplication', 'Commutative Property of Addition', 'Communative Property of Multiplication', 'Distributive Property', 'Multiplicative Identity Property'],
  correctAnswer: 3, 
  explanation: 'The identity property of multiplication states that any number multiplied by 1 equals itself.'
  },
  {
  id: '38',
- text: 'Look at this pattern. <br>1, 3, 9, 27, 81.<br> Which describes the rule used in this pattern?',
+ text: 'Which graph represents the solution set to this inequality? <center>x + 5 < 7</center>',
  type: 'multiple-choice',
- options: ['Divide by 9', 'Multiply by 3', 'Subtract 2', 'Add 2'],
+ options: [
+    {url: 'images/question_38a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_38b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_38c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_38d.png', alt: 'Image failed to load. Please try again later.'}
+ ],
  correctAnswer: 1, 
  explanation: 'Each number in the pattern is multiplied by 3 to get the next number: 1×3=3, 3×3=9, 9×3=27, 27×3=81.'
  },
  {
  id: '39',
- text: 'This line plot shows the number of points scored by students on a team. <br><img src="images/question_39.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> What was the total number of points scored by the students?',
+ text: 'This stem-and-leaf plot shows the high temperatures for a city over 20 days. <br><img src="images/question_39.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which histogram represents the same set of data?',
  type: 'multiple-choice',
- options: ['20', '19', '56', '8'],
+ options: [
+    {url: 'images/question_39a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_39b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_39c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_39d.png', alt: 'Image failed to load. Please try again later.'}
+ ],
  correctAnswer: 0, 
  explanation: 'Add up all the points shown on the line plot by multiplying each score by the number of students who achieved it.'
  },
  {
  id: '40',
- text: 'Debi will pick a card from the bag without looking. Which combination of 8 cards in the bag show that the likelihood of Debi picking a card with a star is equally likely as picking a card with a heart?',
+ text: 'Marjorie bought 24 bottles of juice. Each day she opens and drinks 2 of these bottles of juice. Which of the following best represents the number of unopened bottles of juice Marjorie has at the end of d days?',
  type: 'multiple-choice',
- options: ['4 star cards, 4 heart cards', '2 star cards, 6 heart cards', '6 star cards, 2 heart cards', '0 star cards, 8 heart cards'],
+ options: ['2d - 24', '24d - 2', '24 + 2d', '24 - 2d'],
  correctAnswer: 0, 
  explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
- }
+ },
+ {
+ id: '42',
+ text: 'This spinner has 6 sections of equal size. <br><img src="images/question_42.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> The arrow of this spinner was spun 60 times. On 45 out of 60 times, the arrow landed on a section labeled with a multiple of 4. What was the experimenal probability of the arrow landing on a section labeled with a multiple of 4?',
+ type: 'multiple-choice',
+ options: ['<math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>3</mn></mfrac></math>', '<math><mfrac><mn>3</mn><mn>4</mn></mfrac></math>'],
+ correctAnswer: 0, 
+ explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
+ },
+ {
+ id: '43',
+ text: 'What is the solution to <math><mfrac><mn>x</mn><mn>-4</mn></mfrac></math> = 10',
+ type: 'multiple-choice',
+ options: ['-40', '-6', '6', '40'],
+ correctAnswer: 0, 
+ explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
+ },
+ {
+ id: '44',
+ text: 'Which of the following is the algebraic form for the verbal statement shown? <center>"13 more than the product of 4 and a number, n"</center>',
+ type: 'multiple-choice',
+ options: ['<math><mfrac><mn>n</mn><mn>4</mn></mfrac></math> + 13', '4n + 13', '4(n + 13)', '13(n + 4)'],
+ correctAnswer: 0, 
+ explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
+ },
+ {
+ id: '45',
+ text: 'The table shows the results of 50 rolls of a fair number cube numbered 1 to 6. <br><img src="images/question_45.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> According to the data in the table, what was the experimental probability of rolling a 1?',
+ type: 'multiple-choice',
+ options: ['<math><mfrac><mn>4</mn><mn>25</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>6</mn></mfrac></math>', '<math><mfrac><mn>9</mn><mn>50</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>5</mn></mfrac></math>'],
+ correctAnswer: 0, 
+ explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
+ },
+ {
+ id: '46',
+ text: 'A spinner has sections labeled W, X, Y, and Z. The faces of a number cube are labeled 1, 2, 3, 4, 5, and 6. What is the total number of possible outcomes of 1 spin of the arrow on the spinner and 1 roll of the number cube?',
+ type: 'multiple-choice',
+ options: ['6', '10', '24', '48'],
+ correctAnswer: 0, 
+ explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
+ },
+ {
+ id: '47',
+ text: 'Which value of k makes -5 > k + 11 true?',
+ type: 'multiple-choice',
+ options: ['8', '-4', '-16', '-22'],
+ correctAnswer: 0, 
+ explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
+ },
+ {
+ id: '48',
+ text: 'Which table contains only the points that lie on the line represented by y = <math><mfrac><mn>5</mn><mn>4</mn></mfrac></math>x - 3?',
+ type: 'multiple-choice',
+ options: [
+    {url: 'images/question_48a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_48b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_48c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_48d.png', alt: 'Image failed to load. Please try again later.'}
+ ],
+ correctAnswer: 0, 
+ explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
+ },
+ {
+ id: '49',
+ text: 'What is the value of n that makes the following true? <center>n + (-7) = -77</center>',
+ type: 'multiple-choice',
+ options: ['-84', '-70', '84', '70'],
+ correctAnswer: 0, 
+ explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
+ },
+ {
+ id: '50',
+ text: 'What is the solution to c - 14 < 16?',
+ type: 'multiple-choice',
+ options: ['c < 2', 'c > 2', 'c < 30', 'c > 30'],
+ correctAnswer: 0, 
+ explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
+ },
 ];
 
-// Scaled Score Mapping for Grade 3 Mathematics (2014)
-// Maps raw scores (number correct out of 40) to scaled scores
 const scaledScoreMapping = {
   0: 0,
-  1: 134,
-  2: 174,
-  3: 199,
-  4: 217,
-  5: 232,
-  6: 245,
-  7: 256,
-  8: 266,
-  9: 275,
-  10: 284,
-  11: 292,
-  12: 300,
-  13: 307,
-  14: 314,
-  15: 321,
-  16: 328,
-  17: 335,
-  18: 342,
-  19: 348,
-  20: 355,
-  21: 362,
-  22: 368,
-  23: 375,
-  24: 382,
-  25: 389,
-  26: 396,
-  27: 404,
-  28: 412,
-  29: 420,
-  30: 428,
-  31: 437,
-  32: 447,
-  33: 458,
-  34: 470,
-  35: 484,
-  36: 500,
-  37: 519,
-  38: 546,
-  39: 589,
-  40: 600
+  1: 152,
+  2: 189,
+  3: 211,
+  4: 227,
+  5: 241,
+  6: 252,
+  7: 262,
+  8: 270,
+  9: 278,
+  10: 286,
+  11: 293,
+  12: 299,
+  13: 305,
+  14: 311,
+  15: 317,
+  16: 322,
+  17: 328,
+  18: 333,
+  19: 338,
+  20: 343,
+  21: 348,
+  22: 353,
+  23: 358,
+  24: 363,
+  25: 368,
+  26: 373,
+  27: 377,
+  28: 382,
+  29: 387,
+  30: 392,
+  31: 397,
+  32: 402,
+  33: 408,
+  34: 413,
+  35: 419,
+  36: 425,
+  37: 431,
+  38: 437,
+  39: 444,
+  40: 451,
+  41: 458,
+  42: 466,
+  43: 475,
+  44: 485,
+  45: 497,
+  46: 510,
+  47: 527,
+  48: 549,
+  49: 587,
+  50: 600
 };
 
 // Test-specific storage key for this test
