@@ -1084,7 +1084,7 @@ footer {
 
 /* Hide footer when in test mode */
 body.test-mode footer {
-  opacity: 0;
+  display: none;
   transform: translateY(100%);
   pointer-events: none;
   transition: opacity 0.3s ease, transform 0.3s ease;
