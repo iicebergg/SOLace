@@ -22,7 +22,7 @@ const sampleQuestions = [
  text: 'What is 0.000012 written in scientific notation?',
  type: 'multiple-choice',
  options: ['1.2 × 10⁻⁵', '1.2 × 10⁻⁴', '1.2 × 10⁴', '1.2 × 10⁵'],
- correctAnswer: 2, 
+ correctAnswer: 0, 
  explanation: 'Count the place value blocks: thousands, hundreds, tens, and ones to determine the number.'
  },
  {
@@ -31,7 +31,7 @@ const sampleQuestions = [
  type: 'drag-drop',
  options: ['4.7 × 10⁵', '3.9 × 10⁸', '5.2 × 10⁵'],
  dropZones: ['Least', '↓', 'Greatest'],
- correctAnswer: [4, 1, 2],
+ correctAnswer: [0, 2, 1],
  explanation: 'To round 5,647: to nearest thousand (6,000), nearest hundred (5,600), nearest ten (5,650).'
  },
  {
@@ -46,7 +46,7 @@ const sampleQuestions = [
  id: '6',
  text: 'What is the value of (-15) - (-18) ÷ 3?',
  type: 'free-response',
- correctKeywords: ['285'],
+ correctKeywords: ['-9'],
  explanation: 'Multiply 57 × 5 = 285 pieces of gum.'
  },
  {
@@ -62,7 +62,7 @@ const sampleQuestions = [
  text: 'Let n represent any number in this sequence. <center> 2, 24, 46, 68, ...</center> Which of these can be used to determine the next number?',
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>n</mn><mn>12</mn></mfrac></math>', '12n', 'n + 22', 'n - 22'],
- correctAnswer: 1, 
+ correctAnswer: 2, 
  explanation: 'Multiplication and division are inverse operations, so 3 × 2 = 6 helps solve 6 ÷ 3 = 2.'
  },
  {
@@ -78,7 +78,7 @@ const sampleQuestions = [
  text: 'Clarence made a scale drawing of a classroom. The scale in the drawing is 2 inches represents 9 feet. The actual length of the classroom is 36 feet. What is the length of the classroom on the scale drawing?',
  type: 'multiple-choice',
  options: ['4 inches', '8 inches', '27 inches', '162 inches'],
- correctAnswer: 3, 
+ correctAnswer: 1, 
  explanation: 'Count the total shapes and circles in each group to find where exactly <math><mfrac><mn>3</mn><mn>8</mn></mfrac></math> are circles.'
  },
  {
@@ -86,7 +86,7 @@ const sampleQuestions = [
  text: 'Which fraction and decimal are equivalent to 10⁻³?',
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>-1</mn><mn>10³</mn></mfrac></math> and -0.003', '<math><mfrac><mn>1</mn><mn>10³</mn></mfrac></math> and -0.003', '<math><mfrac><mn>-1</mn><mn>10³</mn></mfrac></math> and 0.001', '<math><mfrac><mn>1</mn><mn>10³</mn></mfrac></math> and 0.001'],
- correctAnswer: 1, 
+ correctAnswer: 3, 
  explanation: '63 ÷ 7 = 9, so the answer is 7.'
  },
  {
@@ -94,7 +94,7 @@ const sampleQuestions = [
  text: 'What is the absolute value of -8.2?',
  type: 'multiple-choice',
  options: ['8.2', '4.1', '-4.1', '-8.2'],
- correctAnswer: 3, 
+ correctAnswer: 0, 
  explanation: 'Count the total parts and the shaded parts to determine the fraction.'
  },
  {
@@ -110,7 +110,7 @@ const sampleQuestions = [
  text: 'Kelly received a 25% discount on the purchase of a $240 bicycle. What was the amount of the discount Kelly received?',
  type: 'multiple-choice',
  options: ['$25', '$60', '$180', '$215'],
- correctAnswer: 2, 
+ correctAnswer: 1, 
  explanation: 'Start with 25, subtract 16 sold, then add 136 new plants: 25 - 16 + 136 = 145.'
  },
  {
@@ -118,7 +118,7 @@ const sampleQuestions = [
  text: 'Which number sentence is represented by this model? <br><img src="images/question_15.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>',
  type: 'multiple-choice',
  options: ['-4 • 7 = 28', '-4 • 7 = -28', '4 • (-7) = 28', '4 • (-7) = -28'],
- correctAnswer: 0, 
+ correctAnswer: 1, 
  explanation: 'Count the total equal parts and the shaded parts to find the fraction.'
  },
  {
@@ -126,7 +126,7 @@ const sampleQuestions = [
  text: 'What is |<math><mfrac><mn>-11</mn><mn>12</mn></mfrac></math>|?',
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>12</mn><mn>11</mn></mfrac></math>', '<math><mfrac><mn>11</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>-11</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>-12</mn><mn>11</mn></mfrac></math>'],
- correctAnswer: 0, 
+ correctAnswer: 1, 
  explanation: 'Count the total equal parts and the shaded parts to find the fraction.'
  },
  {
@@ -134,7 +134,7 @@ const sampleQuestions = [
  text: 'The length of Rectangular Prism A is shown. <br><img src="images/question_17.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> The length of this prism is multiplied by a scale factor of <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math> to create Rectangular Prism B. The volume of Rectangular Prism B is--',
  type: 'multiple-choice',
  options: ['2 times the volume of Rectangular Prism A', '3 times the volume of Rectangular Prism A', '<math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> the volume of Rectangular Prism A', '<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math> the volume of Rectangular Prism A'],
- correctAnswer: 1, 
+ correctAnswer: 3, 
  explanation: 'When adding fractions with the same denominator, add the numerators: <math><mfrac><mn>3</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> = <math><mfrac><mn>4</mn><mn>4</mn></mfrac></math> = 1.'
  },
  {
@@ -142,7 +142,7 @@ const sampleQuestions = [
  text: 'Which statement is false?',
  type: 'multiple-choice',
  options: ['All squares are rectangles.', 'All squares are parallelograms.', 'All rhombuses are squares.', 'All rhombuses are parallelograms.'],
- correctAnswer: 1, 
+ correctAnswer: 2, 
  explanation: '3,000 - 285 = 2,715.'
  },
  {
@@ -150,7 +150,7 @@ const sampleQuestions = [
  text: 'Quadrilateral KL1WN is rotated 180° clockwise about the origin. Which coordinates best represent the image of point K? <br><img src="images/question_19.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
  options: ['(6, 8)', '(-4, 2)', '(8, -6)', '(4, -2)'],
- correctAnswer: 3, 
+ correctAnswer: 2, 
  explanation: 'Look at the pattern on the number line to determine which operation it represents.'
  },
  {
@@ -159,7 +159,7 @@ const sampleQuestions = [
  type: 'drag-drop',
  options: ['ST', 'TV', 'XY', 'ZX', 'ZY', 'SV'],
  dropZones: ['', ''],
- correctAnswer: [4, 1, 2],
+ correctAnswer: [0, 3],
  explanation: 'To round 5,647: to nearest thousand (6,000), nearest hundred (5,600), nearest ten (5,650).'
  },
  {
@@ -172,7 +172,7 @@ const sampleQuestions = [
     {url: 'images/question_21c.png', alt: 'Image failed to load. Please try again later.'},
     {url: 'images/question_21d.png', alt: 'Image failed to load. Please try again later.'}
  ],
- correctAnswer: 2, 
+ correctAnswer: [2, 3], 
  explanation: 'From 10:30 A.M. to 1:00 P.M. is 2 hours and 30 minutes = 150 minutes.'
  },
  {
@@ -180,7 +180,7 @@ const sampleQuestions = [
  text: 'A rectangular prism has a height of 3 inches and a volume of 27 cubic inches. The height of this prism is changed to 6 inches, and the other dimensions stay the same. What is the volume of the prism with this change?',
  type: 'multiple-choice',
  options: ['30 cubic inches', '54 cubic inches', '81 cubic inches', '162 cubic'],
- correctAnswer: 2, 
+ correctAnswer: 1, 
  explanation: 'The figures are three-dimensional, so they are rectangular prisms, not flat shapes.'
  },
  {
@@ -196,7 +196,7 @@ const sampleQuestions = [
  text: 'Quadrilateral PQMN is similar to quadrilateral WXYZ. <br><img src="images/question_24.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> What is the measure of angle Z?',
  type: 'multiple-choice',
  options: ['65°', '80°', '100°', '115°'],
- correctAnswer: 0, 
+ correctAnswer: 2, 
  explanation: 'Read the hour and minute hands to determine the approximate time.'
  },
  {
@@ -204,7 +204,7 @@ const sampleQuestions = [
  text: 'This table shows the dimensions of four rectangular prisms. <br><img src="images/question_26.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which rectangular prism has the greatest volume?',
  type: 'multiple-choice',
  options: ['Rectangular Prism Q', 'Rectangular Prism R', 'Rectangular Prism S', 'Rectangular Prism T'],
- correctAnswer: 3, 
+ correctAnswer: 1, 
  explanation: 'Congruent figures have the same shape and size. Look for the tower that matches exactly.'
  },
  {
@@ -212,7 +212,7 @@ const sampleQuestions = [
  text: 'Which numbered triangle is a 90° counterclockwise rotation about the origin of the shaded triangle? <br><img src="images/question_26.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>',
  type: 'multiple-choice',
  options: ['Triangle 1', 'Triangle 2', 'Triangle 3', 'Triangle 4'],
- correctAnswer: 3, 
+ correctAnswer: 1, 
  explanation: 'Congruent figures have the same shape and size. Look for the tower that matches exactly.'
  },
  {
@@ -220,7 +220,7 @@ const sampleQuestions = [
  text: 'The diameter and height of a cylindrical container are shown. <br><img src="images/question_27.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> The container is filled completely with cheese sauce. Which of these represents the total number of cubic inches of cheese sauce in the container?',
  type: 'multiple-choice',
  options: ['π • 8² • 7', 'π • 16² • 7', '2π • 8² + 2π • 8 • 7', '2π • 16² + 2π • 16 • 7'],
- correctAnswer: 2, 
+ correctAnswer: 0, 
  explanation: 'Add 3 hours to the starting time shown on the clock.'
  },
  {
@@ -228,7 +228,7 @@ const sampleQuestions = [
  text: 'Figure LMNP will be reflected across the y-axis. Place the point on the graph that represents point N\'.',
  type: 'point-select',
  image: {url: 'images/question_28.png', alt: 'Image failed to load. Please try again later.'},
- correctAnswer: { x: 0.27, y: 0.3 }, 
+ correctAnswer: { x: 0.27, y: 0.8 }, 
  explanation: 'The probability of rolling a 2 is 1/6 ≈ 0.167. Place the point at approximately 1/6 on the number line.'
  },
  {
@@ -236,7 +236,7 @@ const sampleQuestions = [
  text: 'Triangle PQR is similar to triangle STU. <br><img src="images/question_29.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which proportion can be used to find n?',
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>5</mn><mn>15</mn></mfrac></math> = <math><mfrac><mn>n</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>15</mn><mn>5</mn></mfrac></math> = <math><mfrac><mn>n</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>13</mn><mn>n</mn></mfrac></math> = <math><mfrac><mn>12</mn><mn>36</mn></mfrac></math>', '<math><mfrac><mn>13</mn><mn>n</mn></mfrac></math> = <math><mfrac><mn>36</mn><mn>12</mn></mfrac></math>'],
- correctAnswer: 1, 
+ correctAnswer: 2, 
  explanation: 'Count the value of all the coins and bills shown.'
  },
  {
@@ -244,7 +244,7 @@ const sampleQuestions = [
  text: 'The number of 8-ounce glasses of water Shane drank each day for 12 days is represented in this histogram. <br><img src="images/question_30.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Based on this histogram, which statement must be true?',
  type: 'multiple-choice',
  options: ['On exactly 2 of these days, Shane drank 1 to 2 glasses of water.', 'On exactly 3 of these days, Shane drank 7 to 8 glasses of water.', 'On exactly 25% of these days, Shane drank 3 to 4 glasses of water.', 'On exactly 60% of these days, Shane drank 5 to 6 glasses of water.'],
- correctAnswer: 1, 
+ correctAnswer: 2, 
  explanation: 'Count the value of all the coins and bills shown.'
  },
  {
@@ -260,7 +260,7 @@ const sampleQuestions = [
  text: 'If k = 2, what is the value of k³ - (k - 10) + 4k?',
  type: 'multiple-choice',
  options: ['6', '8', '22', '24'],
- correctAnswer: 2, 
+ correctAnswer: 3, 
  explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
  },
  {
@@ -284,7 +284,7 @@ const sampleQuestions = [
  text: 'Aidan\'s age is 6 years less than half of Maggie\'s age. Aidan\'s age is 4 years. What is Maggie\'s age?',
  type: 'multiple-choice',
  options: ['2 years', '5 years', '10 years', '20 years'],
- correctAnswer: 0, 
+ correctAnswer: 3, 
  explanation: 'Look at the pattern in the table to determine the relationship between laps and minutes.'
  },
  {
@@ -300,7 +300,7 @@ const sampleQuestions = [
  text: 'Which property is illustrated by this number sentence? <center>(-1 • 7) + 3 = 3 + (-1 • 7)</center>',
  type: 'multiple-choice',
  options: ['Associative Property of Addition', 'Associative Property of Multiplication', 'Commutative Property of Addition', 'Communative Property of Multiplication', 'Distributive Property', 'Multiplicative Identity Property'],
- correctAnswer: 3, 
+ correctAnswer: 2, 
  explanation: 'The identity property of multiplication states that any number multiplied by 1 equals itself.'
  },
  {
@@ -313,7 +313,7 @@ const sampleQuestions = [
     {url: 'images/question_38c.png', alt: 'Image failed to load. Please try again later.'},
     {url: 'images/question_38d.png', alt: 'Image failed to load. Please try again later.'}
  ],
- correctAnswer: 1, 
+ correctAnswer: 2, 
  explanation: 'Each number in the pattern is multiplied by 3 to get the next number: 1×3=3, 3×3=9, 9×3=27, 27×3=81.'
  },
  {
@@ -326,7 +326,7 @@ const sampleQuestions = [
     {url: 'images/question_39c.png', alt: 'Image failed to load. Please try again later.'},
     {url: 'images/question_39d.png', alt: 'Image failed to load. Please try again later.'}
  ],
- correctAnswer: 0, 
+ correctAnswer: 3, 
  explanation: 'Add up all the points shown on the line plot by multiplying each score by the number of students who achieved it.'
  },
  {
@@ -334,7 +334,7 @@ const sampleQuestions = [
  text: 'Marjorie bought 24 bottles of juice. Each day she opens and drinks 2 of these bottles of juice. Which of the following best represents the number of unopened bottles of juice Marjorie has at the end of d days?',
  type: 'multiple-choice',
  options: ['2d - 24', '24d - 2', '24 + 2d', '24 - 2d'],
- correctAnswer: 0, 
+ correctAnswer: 3, 
  explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
  },
  {
@@ -342,7 +342,7 @@ const sampleQuestions = [
  text: 'This spinner has 6 sections of equal size. <br><img src="images/question_42.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> The arrow of this spinner was spun 60 times. On 45 out of 60 times, the arrow landed on a section labeled with a multiple of 4. What was the experimenal probability of the arrow landing on a section labeled with a multiple of 4?',
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>3</mn></mfrac></math>', '<math><mfrac><mn>3</mn><mn>4</mn></mfrac></math>'],
- correctAnswer: 0, 
+ correctAnswer: 3, 
  explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
  },
  {
@@ -358,7 +358,7 @@ const sampleQuestions = [
  text: 'Which of the following is the algebraic form for the verbal statement shown? <center>"13 more than the product of 4 and a number, n"</center>',
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>n</mn><mn>4</mn></mfrac></math> + 13', '4n + 13', '4(n + 13)', '13(n + 4)'],
- correctAnswer: 0, 
+ correctAnswer: 1, 
  explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
  },
  {
@@ -374,7 +374,7 @@ const sampleQuestions = [
  text: 'A spinner has sections labeled W, X, Y, and Z. The faces of a number cube are labeled 1, 2, 3, 4, 5, and 6. What is the total number of possible outcomes of 1 spin of the arrow on the spinner and 1 roll of the number cube?',
  type: 'multiple-choice',
  options: ['6', '10', '24', '48'],
- correctAnswer: 0, 
+ correctAnswer: 2, 
  explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
  },
  {
@@ -382,7 +382,7 @@ const sampleQuestions = [
  text: 'Which value of k makes -5 > k + 11 true?',
  type: 'multiple-choice',
  options: ['8', '-4', '-16', '-22'],
- correctAnswer: 0, 
+ correctAnswer: 3, 
  explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
  },
  {
@@ -395,7 +395,7 @@ const sampleQuestions = [
     {url: 'images/question_48c.png', alt: 'Image failed to load. Please try again later.'},
     {url: 'images/question_48d.png', alt: 'Image failed to load. Please try again later.'}
  ],
- correctAnswer: 0, 
+ correctAnswer: 3, 
  explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
  },
  {
@@ -403,7 +403,7 @@ const sampleQuestions = [
  text: 'What is the value of n that makes the following true? <center>n + (-7) = -77</center>',
  type: 'multiple-choice',
  options: ['-84', '-70', '84', '70'],
- correctAnswer: 0, 
+ correctAnswer: 1, 
  explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
  },
  {
@@ -411,7 +411,7 @@ const sampleQuestions = [
  text: 'What is the solution to c - 14 < 16?',
  type: 'multiple-choice',
  options: ['c < 2', 'c > 2', 'c < 30', 'c > 30'],
- correctAnswer: 0, 
+ correctAnswer: 2, 
  explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
  },
 ];
