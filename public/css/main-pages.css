@@ -1,18 +1,5 @@
 /* Home Page Styles for SOLace */
 
-/* Navigate Away Warning */
-.navigate-away {
-  display: none;
-}
-
-.navigate-away.active {
-  display: block;
-  position: absolute;
-  width: 200px;
-  height: 100px;
-  background-color: red;
-}
-
 /* Reset and Base Styles */
 * {
   box-sizing: border-box;
@@ -336,16 +323,6 @@ header {
 .feature-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-}
-
-.feature-icon {
-  margin-bottom: 1.5rem;
-}
-
-.feature-img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
 }
 
 .feature-title {
@@ -844,4 +821,31 @@ footer {
   .category-card {
     padding: 1.5rem;
   }
+}
+
+/* Directory Cards */
+.directory-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.directory-card {
+  background: linear-gradient(135deg, #3a5a80 0%, #2a4a70 100%);
+  box-shadow: 0 4px 15px rgba(74, 111, 165, 0.3);
+  border-radius: 15px;
+  padding: 2.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.directory-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.feature-title {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
 }
