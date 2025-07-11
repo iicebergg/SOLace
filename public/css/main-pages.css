@@ -837,15 +837,12 @@ footer {
   padding: 2.5rem;
   text-align: center;
   transition: all 0.3s ease;
+  font-size: 1.3rem;
+  color: #FFF;
+  margin-bottom: 1rem;
 }
 
 .directory-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-}
-
-.feature-title {
-  font-size: 1.3rem;
-  color: #2c3e50;
-  margin-bottom: 1rem;
 }
