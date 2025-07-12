@@ -33,6 +33,11 @@ body {
   font-size: 42px;
 }
 
+.page-subtitle {
+  font-size: 18px;
+  color: #6c757d;
+}
+
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
