@@ -7,7 +7,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['decomposer', 'carnivore', 'predator', 'producer'],
  correctAnswer: 0,
- explanation: 'Addition and subtraction are inverse operations, so 9 + 6 = 15 helps solve 15 - 9 = 6.'
+ explanation: 'A decomposer breaks down dead organic matter like leaves, returning nutrients to the soil. Fungi are important decomposers in ecosystems.'
  },
  {
  id: '2',
@@ -16,7 +16,7 @@ const sampleQuestions = [
  image: {url:'images/question_2.png', alt: 'Image failed to load. Please try again later.'},
  options: ['12-17 inches', '15-20 inches', '18-23 inches', '21-26 inches'],
  correctAnswer: 3, 
- explanation: 'When comparing fractions with the same denominator, compare the numerators. Since 3 < 4, we have 3/11 < 4/11.'
+ explanation: 'Look at the pattern in the rainfall data table to predict the expected range for May 2011 in Norfolk.'
  },
  {
  id: '3',
@@ -24,7 +24,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['The moon blocks the sun from view.', 'That side of the sun faces away from Earth.', 'The sun stops creating light at night.', 'That side of Earth faces away from the sun.'],
  correctAnswer: 3, 
- explanation: 'Count the place value blocks: thousands, hundreds, tens, and ones to determine the number.'
+ explanation: 'Earth rotates on its axis. During night, our side of Earth faces away from the sun, so we cannot see sunlight.'
  },
  {
  id: '4',
@@ -33,7 +33,7 @@ const sampleQuestions = [
  image: {url:'images/question_4.png', alt: 'Image failed to load. Please try again later.'},
  options: ['A mountain forms.', 'An earthquake occurs.', 'The ocean floor widens.', 'Magma comes to the surface.'],
  correctAnswer: 1,
- explanation: 'To round 5,647: to nearest thousand (6,000), nearest hundred (5,600), nearest ten (5,650).'
+ explanation: 'When tectonic plates slide past each other at a transform boundary, the friction and sudden movement cause earthquakes.'
  },
  {
  id: '5',
@@ -41,7 +41,7 @@ const sampleQuestions = [
  type: 'free-response',
  image: {url:'images/question_5.png', alt: 'Image failed to load. Please try again later.'},
  correctKeywords: ['37'],
- explanation: 'Multiply 57 × 5 = 285 pieces of gum.'
+ explanation: 'Read the balance scale to determine the mass. The rock balances at 37 grams.'
  },
  {
  id: '6',
@@ -50,7 +50,7 @@ const sampleQuestions = [
  image: {url:'images/question_6.png', alt: 'Image failed to load. Please try again later.'},
  options: ['petal', 'stem', 'stepal', 'stigma'],
  correctAnswer: 3, 
- explanation: '78,025 is read as seventy-eight thousand, twenty-five.'
+ explanation: 'In pollination, pollen grains move from the stamen (male part) to the stigma (female part) of a flower.'
  },
  {
  id: '7',
@@ -58,7 +58,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['Marble being dug from a rock quarry', 'Marble forming from sedimentary rock', 'Oceans drying and exposing limestone', 'Limestone forming from shells of ocean animals'],
  correctAnswer: 0, 
- explanation: 'Count the whole units and fractional parts shown in the model.'
+ explanation: 'Quarrying marble from rock is a human activity. The other options are natural geological processes.'
  },
  {
  id: '8',
@@ -66,7 +66,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['On the bottom of an ocean trench', 'On top of a mid-ocean ridge', 'On the continental slope', 'On the continental shelf'],
  correctAnswer: 3, 
- explanation: 'Multiplication and division are inverse operations, so 3 × 2 = 6 helps solve 6 ÷ 3 = 2.'
+ explanation: 'The continental shelf is the shallow, underwater area near coastlines where lobsters live and can be easily accessed by fishermen.'
  },
  {
  id: '9',
@@ -74,7 +74,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['mm', 'cm', 'm', 'km'],
  correctAnswer: 2, 
- explanation: 'Multiplication and division are inverse operations, so 3 × 2 = 6 helps solve 6 ÷ 3 = 2.'
+ explanation: 'Meters (m) is the appropriate unit for measuring distances a person runs in a short time. A runner might cover 100-200 meters in 30 seconds.'
  },
  {
  id: '10',
@@ -88,16 +88,17 @@ const sampleQuestions = [
     {url: 'images/question_10d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 2, 
- explanation: 'The correct chart should show data for 14 students total across four food choices.'
+ explanation: 'When a ball hits a wall, it bounces back at an angle equal to the angle it hit the wall (angle of incidence equals angle of reflection).'
  },
+ /*
  {
  id: '11',
  text: 'What is the difference between 5/12 and 1/4',
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>1</mn><mn>6</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>3</mn></mfrac></math>'],
  correctAnswer: 0, 
- explanation: '63 ÷ 7 = 9, so the answer is 7.'
- },
+ explanation: 'Note: This appears to be a math question that may have been included in error. Convert to common denominator: 5/12 - 3/12 = 2/12 = 1/6.'
+ },*/
  {
  id: '12',
  text: 'Which cell part is necessary for producing food?',
@@ -105,7 +106,7 @@ const sampleQuestions = [
  image: {url:'images/question_12.png', alt: 'Image failed to load. Please try again later.'},
  options: ['Cell membrane', 'Vacuole', 'Chloroplast', 'Cytoplasm'],
  correctAnswer: 2, 
- explanation: 'Count the total parts and the shaded parts to determine the fraction.'
+ explanation: 'Chloroplasts contain chlorophyll and are where photosynthesis occurs, allowing plant cells to make their own food using sunlight.'
  },
  {
  id: '13',
@@ -113,7 +114,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['can move through empty space', 'are caused by rapid vibrations', 'travel more slowly', 'can be reflected'],
  correctAnswer: 0, 
- explanation: 'Look at the arrangement to determine the multiplication sentence that represents the groups.'
+ explanation: 'Light waves can travel through empty space (vacuum), while sound waves need matter to travel through. Sound cannot travel in a vacuum.'
  },
  {
  id: '14',
@@ -122,7 +123,7 @@ const sampleQuestions = [
  image: {url:'images/question_14.png', alt: 'Image failed to load. Please try again later.'},
  options: ['Gold, because it is a shiny metal', 'Salt, because it is made of two types of atoms', 'Nitrogen, because it is a gas in the atmosphere', 'Carbon, because it is part of many different molecules'],
  correctAnswer: 1, 
- explanation: 'Start with 25, subtract 26 sold, then add 136 new plants: 25 - 26 + 136 = 135. Wait, this seems to have an error in the problem or answer choices.'
+ explanation: 'Salt (sodium chloride) is a compound made of two different types of atoms: sodium and chlorine.'
  },
  {
  id: '15',
@@ -131,7 +132,7 @@ const sampleQuestions = [
  image: {url:'images/question_15.png', alt: 'Image failed to load. Please try again later.'},
  options: ['thermal energy', 'static electricity', 'magnetism', 'gravity'],
  correctAnswer: 1, 
- explanation: 'Count the total equal parts and the shaded parts to find the fraction.'
+ explanation: 'Rubbing the comb with wool creates static electricity. The charged comb attracts the water stream through electrostatic force.'
  },
  {
  id: '16',
@@ -139,7 +140,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['Flower', 'Stem', 'Leaf', 'Root'],
  correctAnswer: 0, 
- explanation: 'When adding fractions with the same denominator, add the numerators: 3/4 + 1/4 = 4/4 = 1.'
+ explanation: 'After pollination and fertilization, the flower (specifically the ovary) develops into a fruit containing seeds.'
  },
  {
  id: '17',
@@ -147,7 +148,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['time to reach the ground', 'distance to the ground', 'weight of each object', 'object being dropped'],
  correctAnswer: 1,
- explanation: 'For equally likely outcomes, place 4 star cards and 4 heart cards in the bag.'
+ explanation: 'In a controlled experiment, the constant (controlled variable) is what stays the same. The distance to the ground should remain constant for all objects.'
  },
  {
  id: '18',
@@ -156,7 +157,7 @@ const sampleQuestions = [
  options: ['Gold color', 'Weighs 20.5 g', 'Greenish black streak', 'About 4 cubic cm', 'Sinks in water', 'Hardness of 6-6.5'],
  dropZones: ['Quantitative', 'Quantitative', 'Quantitative', 'Qualitative', 'Qualitative', 'Qualitative'],
  correctAnswer: [],
- explanation: 'To round 5,647: to nearest thousand (6,000), nearest hundred (5,600), nearest ten (5,650).'
+ explanation: 'Quantitative data involves numbers/measurements (weight, volume, hardness). Qualitative data describes qualities (color, streak, behavior in water).'
  },
  {
  id: '19',
@@ -165,7 +166,7 @@ const sampleQuestions = [
  image: {url: 'images/question_19.png', alt: 'Image failed to load. Please try again later.'},
  options: ['Loggerhead Turtle → Horseshoe Crab → Razor Clam', 'Horseshoe Crab → Loggerhead Turtle → Sanderling', 'Diamondback Terrapin → Razor Clam → Plankton', 'Razor Clam → Horseshoe Crab → Sanderling'],
  correctAnswer: 3, 
- explanation: 'Look at the pattern on the number line to determine which operation it represents.'
+ explanation: 'Energy flows from prey to predator. In this sequence, razor clams are eaten by horseshoe crabs, which are eaten by sanderlings.'
  },
  {
  id: '20',
@@ -173,7 +174,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['Sand and salt', 'Sugar and salt', 'Sand and water', 'Sugar and water'],
  correctAnswer: 3, 
- explanation: 'Look at the pattern on the number line to determine which operation it represents.'
+ explanation: 'A solution forms when one substance dissolves completely in another. Sugar dissolves in water to form a solution.'
  },
  {
  id: '21',
@@ -182,7 +183,7 @@ const sampleQuestions = [
  image: {url: 'images/question_21.png', alt: 'Image failed to load. Please try again later.'},
  options: ['Light', 'Water', 'Oxygen', 'Carbon dioxide'],
  correctAnswer: 0, 
- explanation: 'From 10:30 A.M. to 1:00 P.M. is 2 hours and 30 minutes = 150 minutes.'
+ explanation: 'Plants show phototropism - they grow toward light sources. The plants in the image are bending toward the light.'
  },
  {
  id: '22',
@@ -191,7 +192,7 @@ const sampleQuestions = [
  image: {url: 'images/question_22.png', alt: 'Image failed to load. Please try again later.'},
  options: ['lower the pitch', 'higher the pitch', 'softer the sound', 'louder the sound'],
  correctAnswer: 1, 
- explanation: 'From 10:30 A.M. to 1:00 P.M. is 2 hours and 30 minutes = 150 minutes.'
+ explanation: 'Frequency and pitch are directly related. Higher frequency sound waves produce higher pitch sounds.'
  },
  {
  id: '23',
@@ -200,7 +201,7 @@ const sampleQuestions = [
  image: {url: 'images/question_23.png', alt: 'Image failed to load. Please try again later.'},
  options: ['put the beads in a square container', 'take out some beads so the particles can move more easily', 'shake the container gently to show how the particles vibrate', 'use different-colored beads to make the particles easier to see'],
  correctAnswer: 2, 
- explanation: '6 feet is the most reasonable length for a bed. 6 inches and 6 centimeters are too short, 6 meters is too long.'
+ explanation: 'In solids, particles are tightly packed but vibrate in place. Gentle shaking would demonstrate this vibration motion.'
  },
  {
  id: '24',
@@ -209,7 +210,7 @@ const sampleQuestions = [
  image: {url: 'images/question_24.png', alt: 'Image failed to load. Please try again later.'},
  options: ['Water', 'Oxygen', 'Sunlight', 'Carbon dioxide'],
  correctAnswer: 1,
- explanation: 'For equally likely outcomes, place 4 star cards and 4 heart cards in the bag.'
+ explanation: 'During photosynthesis, plants produce oxygen as a byproduct. The X likely represents oxygen being released from the plant.'
  },
  {
  id: '25',
@@ -222,7 +223,7 @@ const sampleQuestions = [
     {url: 'images/question_25d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 1, 
- explanation: 'A ray has one endpoint and extends infinitely in one direction. A line segment has two endpoints.'
+ explanation: 'Vertebrates are animals with backbones (spinal columns). Look for the animal that has a backbone.'
  },
  {
  id: '26',
@@ -230,7 +231,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['an iron nail', 'an aluminum can', 'a nickel coin', 'a gold chain'],
  correctAnswer: 0, 
- explanation: 'Add 3 hours to the starting time shown on the clock.'
+ explanation: 'Iron is ferromagnetic and can be magnetized. Wrapping wire around an iron nail and connecting to a battery creates an electromagnet.'
  },
  {
  id: '27',
@@ -238,7 +239,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['underwater earthquakes', 'the gravity from the moon', 'storms over the ocean', 'the tilt of Earth'], 
  correctAnswer: 1,
- explanation: 'Count the units around the outside edge of the shaded figure to find the perimeter.'
+ explanation: 'The moon\'s gravitational pull causes tides. As the moon orbits Earth, its gravity pulls on ocean water, creating high and low tides.'
  },
  {
  id: '28',
@@ -247,7 +248,7 @@ const sampleQuestions = [
  image: {url: 'images/question_28.png', alt: 'Image failed to load. Please try again later.'},
  options: ['It depends on a moist environment.', 'It has a certain role in the ecosystem.', 'It is prized by gardeners for its flowers.', 'It has leaves that are about the same shape as each other.'],
  correctAnswer: 1, 
- explanation: 'Count the value of all the coins and bills shown.'
+ explanation: 'Every organism has an important role in its ecosystem. Even unusual plants like skunk cabbage contribute to the balance of their environment.'
  },
  {
  id: '29',
@@ -256,7 +257,7 @@ const sampleQuestions = [
  image: {url: 'images/question_29.png', alt: 'Image failed to load. Please try again later.'},
  options: ['Phytoplankton and fish', 'Animal-like plankton and fish', 'White shark and phytoplankton', 'White shark and animal-like plankton'],
  correctAnswer: 3, 
- explanation: 'Count the value of all the coins and bills shown.'
+ explanation: 'In a food chain, energy flows from producers to consumers. The white shark and animal-like plankton are in the wrong positions in the energy flow.'
  },
  {
  id: '30',
@@ -270,7 +271,7 @@ const sampleQuestions = [
     {url: 'images/question_30d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 2, 
- explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
+ explanation: 'Look at the data table for brown paper and find the graph that matches those temperature values over time.'
  },
  {
  id: '31',
@@ -279,7 +280,7 @@ const sampleQuestions = [
  image: {url: 'images/question_31.png', alt: 'Image failed to load. Please try again later.'},
  options: ['1', '2', '3', '4'],
  correctAnswer: 1, 
- explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
+ explanation: 'Rough surfaces create more friction than smooth surfaces. Look for the section with the roughest or most textured material.'
  },
  {
  id: '32',
@@ -287,7 +288,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['Green, orange', 'Yellow, red', 'Violet, blue', 'Red, violet'],
  correctAnswer: 3, 
- explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
+ explanation: 'In the visible light spectrum, red has the longest wavelength and violet has the shortest wavelength (ROYGBIV order).'
  },
  {
  id: '33',
@@ -296,7 +297,7 @@ const sampleQuestions = [
  image: {url: 'images/question_33.png', alt: 'Image failed to load. Please try again later.'},
  options: ['Mica', 'Graphite', 'Magnetite', 'Hornblende'],
  correctAnswer: 2, 
- explanation: 'The correct chart should show data for 14 students total across four food choices.'
+ explanation: 'Follow the flowchart using the mineral identification table. The properties should lead to magnetite for square X.'
  },
  {
  id: '34',
@@ -305,7 +306,7 @@ const sampleQuestions = [
  image: {url: 'images/question_34.png', alt: 'Image failed to load. Please try again later.'},
  options: ['thermal energy', 'radiant energy', 'mechanical energy', 'potential energy'],
  correctAnswer: 2, 
- explanation: 'The correct chart should show data for 14 students total across four food choices.'
+ explanation: 'A conveyor belt motor converts electrical energy into mechanical energy (motion) to move the belt and groceries.'
  },
  {
  id: '35',
@@ -314,7 +315,7 @@ const sampleQuestions = [
  image: {url: 'images/question_35.png', alt: 'Image failed to load. Please try again later.'},
  options: ['wind direction', 'temperature', 'air pressure', 'precipitation'],
  correctAnswer: 2, 
- explanation: 'The correct chart should show data for 14 students total across four food choices.'
+ explanation: 'A barometer is an instrument specifically designed to measure air pressure (atmospheric pressure).'
  },
  {
  id: '36',
@@ -322,7 +323,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['A cow that has flat teeth', 'A squirrel that has buried acorns', 'A fish that has scales', 'An owl that has soft feathers'],
  correctAnswer: 1, 
- explanation: 'The correct chart should show data for 14 students total across four food choices.'
+ explanation: 'Behavioral adaptations are actions animals take to survive. Burying acorns is a behavior that helps squirrels store food for winter.'
  },
  {
  id: '37',
@@ -330,7 +331,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['can be used for energy', 'can be divided into four types', 'is found in many areas of the country', 'is formed from plant and animal remains'],
  correctAnswer: 0, 
- explanation: 'The correct chart should show data for 14 students total across four food choices.'
+ explanation: 'Coal is important to Virginia\'s economy because it can be burned to produce energy for electricity and heat.'
  },
 ];
 
