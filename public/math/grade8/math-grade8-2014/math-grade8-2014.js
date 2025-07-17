@@ -36,7 +36,7 @@ const sampleQuestions = [
  id: '5',
  text: 'Which number is an irrational number?',
  type: 'multiple-choice',
- options: ['5.499', '<math><msqrt>17</msqrt></math>', '-<math><msqrt>9</msqrt></math>', '-10'],
+ options: ['5.499', '<math><msqrt><mi>17</mi></msqrt></math>', '-<math><msqrt>9</msqrt></math>', '-10'],
  correctAnswer: 1, 
  explanation: 'Compare the fractions by looking at the numerators when denominators are the same.'
  },
@@ -105,7 +105,7 @@ const sampleQuestions = [
  },
  {
  id: '14',
- text: 'What is the value of <math><mfrac><mn>8</mn><mn>3</mn></mfrac><mi>n³</mi></math> when <math><mi>n = <mfrac><mn>3</mn><mn>2</mn></mfrac></math>?',
+ text: 'What is the value of <math><mfrac><mn>8</mn><mn>3</mn></mfrac><mi>n³</mi></math> when <math><mi>n = </mi><mfrac><mn>3</mn><mn>2</mn></mfrac></math>?',
  type: 'multiple-choice',
  options: ['4', '6', '9', '12'],
  correctAnswer: 2, 
@@ -195,7 +195,7 @@ const sampleQuestions = [
  },
  {
  id: '25',
- text: 'A wire connects the top of a flagpole to the ground as shown. <br><img src="images/question_26.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which is closest to the height, <math><mi>h</mi></math>, of the flagpole?',
+ text: 'A wire connects the top of a flagpole to the ground as shown. <br><img src="images/question_25.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which is closest to the height, <math><mi>h</mi></math>, of the flagpole?',
  type: 'multiple-choice',
  options: ['3.2 m', '5.0 m', '8.7 m', '11.2 m'],
  correctAnswer: 2, 
@@ -219,15 +219,15 @@ const sampleQuestions = [
  },
  {
  id: '28',
- text: 'Identify each three-dimensional figure that could be represented by these three views.',
+ text: 'Identify each three-dimensional figure that could be represented by these three views. <br><img src="images/question_28.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>',
  type: 'multiple-select',
  options: [
-    {url: 'images/question_24a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_24b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_24c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_24d.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_24e.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_24f.png', alt: 'Image failed to load. Please try again later.'}
+    {url: 'images/question_28a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_28b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_28c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_28d.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_28e.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_28f.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: [1, 5], 
  explanation: 'Add 3 hours to the starting time shown on the clock.'
@@ -245,10 +245,10 @@ const sampleQuestions = [
  text: 'Which line appears to contain both ordered pairs shown in this table? <br><img src="images/question_30.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>',
  type: 'multiple-choice',
  options: [
-    {url: 'images/question_24a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_24b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_24c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_24d.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_30a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_30b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_30c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_30d.png', alt: 'Image failed to load. Please try again later.'},
  ],
  correctAnswer: 2, 
  explanation: 'Add 3 hours to the starting time shown on the clock.'
@@ -257,7 +257,7 @@ const sampleQuestions = [
  id: '31',
  text: 'Identify each equation that illustrates the commutative property of multiplication.',
  type: 'multiple-select',
- options: ['<math><mi>xy + 3 = yx + 3</mi></math>', '<math><mi>6(x + 7) = 6x + 42</mi></math>', '<math><mi>3x + (5x + 7x) = (3x + 5x) + 7x</mi></math>', '<math><mi>4(3) = 3(4)</mi></math>', '<math><mi></mi></math>12 + (-3) = (-3) + 12'],
+ options: ['<math><mi>xy + 3 = yx + 3</mi></math>', '<math><mi>6(x + 7) = 6x + 42</mi></math>', '<math><mi>3x + (5x + 7x) = (3x + 5x) + 7x</mi></math>', '<math><mi>4(3) = 3(4)</mi></math>', '<math><mi>12 + (-3) = (-3) + 12</mi></math>'],
  correctAnswer: [0, 3], 
  explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
  },
@@ -334,7 +334,7 @@ const sampleQuestions = [
  },
  {
  id: '39',
- text: 'Whta is the solution to <math><mfrac><mn>n + 4</mn><mn>2</mn></mfrac><mi>- 3 = 13</mi></math>?',
+ text: 'Whta is the solution to <math><mfrac><mn>n + 4</mn><mn>2</mn></mfrac><mi> - 3 = 13</mi></math>?',
  type: 'multiple-choice',
  options: ['<math><mi>n = 4</mi></math>', '<math><mi>n = 14</mi></math>', '<math><mi>n = 16</mi></math>', '<math><mi>n = 28</mi></math>'],
  correctAnswer: 3, 
@@ -387,7 +387,7 @@ const sampleQuestions = [
  },
  {
  id: '45',
- text: 'Which table contains only points that lie on the line represented by <math><mi>y = </mi><mfrac><mn>2</mn><mn>3</mn></mfrac><mi>- 6</mi></math>',
+ text: 'Which table contains only points that lie on the line represented by <math><mi>y = </mi><mfrac><mn>2</mn><mn>3</mn></mfrac><mi> - 6</mi></math>',
  type: 'multiple-choice',
  options: [
     {url: 'images/question_45a.png', alt: 'Image failed to load. Please try again later.'},
