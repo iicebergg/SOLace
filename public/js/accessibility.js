@@ -1,12 +1,7 @@
-// Accessibility features implementation
-
-// DOM Elements
 const themeButtons = document.querySelectorAll('.theme-btn');
 const increaseFontBtn = document.getElementById('increase-font');
 const decreaseFontBtn = document.getElementById('decrease-font');
 const fontSizeValue = document.getElementById('font-size-value');
-const reduceMotionCheckbox = document.getElementById('reduce-motion');
-const screenReaderOptCheckbox = document.getElementById('screen-reader-opt');
 
 // Font size management
 const fontSizes = {
@@ -17,7 +12,7 @@ const fontSizes = {
 };
 
 // Current state
-let currentFontSizeIndex = 1; // Default is medium (index 1)
+let currentFontSizeIndex = 1; // medium (index 1)
 
 // Initialize accessibility settings
 function initAccessibilitySettings() {
@@ -30,8 +25,6 @@ function initAccessibilitySettings() {
   const preferences = {
     theme: savedPreferences.theme || 'black-on-white',
     fontSize: savedPreferences.fontSize || 'medium',
-    reduceMotion: savedPreferences.reduceMotion || false,
-    screenReaderOptimized: savedPreferences.screenReaderOptimized || false
   };
 
   console.log('Loaded preferences:', preferences);
@@ -45,19 +38,6 @@ function initAccessibilitySettings() {
   if (currentFontSizeIndex === -1) currentFontSizeIndex = 1; // Default to medium if not found
   setFontSize(sizeKeys[currentFontSizeIndex]);
 
-  // Apply motion preferences
-  if (preferences.reduceMotion && reduceMotionCheckbox) {
-    reduceMotionCheckbox.checked = true;
-    document.body.classList.add('reduce-motion');
-  }
-
-  // Apply screen reader optimizations
-  if (preferences.screenReaderOptimized && screenReaderOptCheckbox) {
-    screenReaderOptCheckbox.checked = true;
-    document.body.classList.add('screen-reader-optimized');
-  }
-
-  // Set up event listeners
   setupAccessibilityEventListeners();
 }
 
@@ -87,19 +67,6 @@ function setupAccessibilityEventListeners() {
     });
   }
 
-  // Motion toggle
-  if (reduceMotionCheckbox) {
-    reduceMotionCheckbox.addEventListener('change', () => {
-      toggleReduceMotion(reduceMotionCheckbox.checked);
-    });
-  }
-
-  // Screen reader optimizations toggle
-  if (screenReaderOptCheckbox) {
-    screenReaderOptCheckbox.addEventListener('change', () => {
-      toggleScreenReaderOpt(screenReaderOptCheckbox.checked);
-    });
-  }
 }
 
 // Set theme
@@ -183,34 +150,6 @@ function setFontSize(sizeKey) {
 
   // Save preference
   saveAccessibilityPreference('fontSize', sizeKey);
-}
-
-// Toggle reduce motion
-function toggleReduceMotion(enabled) {
-  console.log('Toggle reduce motion:', enabled);
-  
-  if (enabled) {
-    document.body.classList.add('reduce-motion');
-  } else {
-    document.body.classList.remove('reduce-motion');
-  }
-
-  // Save preference
-  saveAccessibilityPreference('reduceMotion', enabled);
-}
-
-// Toggle screen reader optimizations
-function toggleScreenReaderOpt(enabled) {
-  console.log('Toggle screen reader optimizations:', enabled);
-  
-  if (enabled) {
-    document.body.classList.add('screen-reader-optimized');
-  } else {
-    document.body.classList.remove('screen-reader-optimized');
-  }
-
-  // Save preference
-  saveAccessibilityPreference('screenReaderOptimized', enabled);
 }
 
 // Save a single accessibility preference
