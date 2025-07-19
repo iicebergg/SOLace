@@ -120,6 +120,90 @@ the sea.</p>
     `
   },
 
+  'secret_message': {
+    title: 'Want to Send a Secret Message?',
+    content: `
+      <p><i>Here are three amazing ways to do it!</i></p>
+      
+      <p>Secret messages have been around for hundreds of years.
+Spies used them to pass important information without being
+caught. The next time you want to send a secret message,
+try one of these fun ideas!</p>
+      
+<div class="passage-innerbox">
+      <p><b>Lemony Letter</b></p>
+      <p><u>What you will need:</u>
+      <ul>
+      <li>A lemon</li>
+      <li>A knife</li>
+      <li>A small cup</li>
+      <li>A thin paintbrush</li>
+      <li>A piece of white paper</li>
+      <li>A lamp</li>
+      </ul></p>
+      
+      <p><ol>
+      <li>To have enough juice, gently roll the lemon back and forth
+against the table with your palm.</li>
+      <li>Have a grownup cut the lemon in half.</li>
+      <li>Squeeze the lemon so the juice drips into the cup.</li>
+      <li>Dip the paintbrush into the juice and write a message on the paper. When the "ink" dries, the paper will appear blank.</li>
+      <li>Give your secret message to a friend or family member.</li>
+      <li>Have the person who receives your message hold the paper
+near a light bulb. The heat will make the secret message
+appear! The lemon juice will turn a brown color.</li>
+      </ol></p>
+</div>
+
+<div class="passage-innerbox">
+      <p><b>Mirror Message</b></p>
+      <p><u>What you will need:</u>
+      <ul>
+      <li>A potato</li>
+      <li>A potato peeler of knife</li>
+      <li>A bathroom mirror</li>
+      </ul></p>
+      
+      <p><ol>
+      <li>Ask a grownup to peel the skin from one end of the potato.</li>
+      <li>Using the peeled end of the potato, write a message in big
+letters on the bathroom mirror.</li>
+      <li>Your message will be <u>invisible</u> until you take a bath or
+shower. When you take a shower or bath, close the door so
+the steam stays in the bathroom. Steam from the hot water
+will appear on the mirror and make your message show.</li>
+      </ol></p>
+
+      <p>Surprise someone else! Write a message on the bathroom
+mirror for a family member. See how long it takes for the
+person to discover your secret message.</p>
+</div>
+
+<div class="passage-innerbox">
+      <p><b>Crazy Crayon</b></p>
+      <p><u>What you will need:</u>
+      <ul>
+      <li>A piece of white paper</li>
+      <li>A white crayon</li>
+      <li>Dark-colored paint</li>
+      <li>A paintbrush</li>
+      </ul></p>
+      
+      <p><ol>
+      <li>Using the white crayon, write your message on the paper.
+It will be difficult to see the markings, so be careful.</li>
+      <li>Give your secret message to a friend.</li>
+      <li>Have your friend use the paintbrush to spread the paint
+over the paper. The message will appear on the paper as
+the person paints.</li>
+      </ol></p>
+
+      <p>It's amazing! The paint does not stick to the waxy crayon,
+so the words will show through.</p>
+</div>
+    `
+  },
+
    'hidden_treasure': {
     title: 'A Hidden Treasure',
     content: `
@@ -260,6 +344,7 @@ live on farms and in zoos. Ostriches are unusual-looking
 birds, but their power and speed make them one of the
 fastest animals on land.</p>
 
+<div class="passage-innerbox">
       <p><b>Ostrich Facts</b><br>
       Life span: 30-40 years<br>
       Weight: 350 pounds<br>
@@ -267,39 +352,38 @@ fastest animals on land.</p>
       Egg weight: 3 pounds<br>
       Nest size: Up to 8 feet<br>
       Herd size: Usually fewer than 12 birds</p>
+</div>
     `
   },
 
-     'the_search': {
+     'search': {
     title: 'The Search',
     content: `
-      <h4>The Search</h4>
-
       <p><ol>
       <li>I've emptied my sports bag</li>
 <li>Checked in the car</li>
 <li>Reached under the sofa</li>
-<li>And searched near and far.</li>
+<li>And searched near and far.</li><br>
 <li>But hunt as I may</li>
 <li>I've got only one shoe--</li>
 <li>And where its mate is</li>
-<li>I haven't a clue.</li>
+<li>I haven't a clue.</li><br>
 <li>"When was your last game?"</li>
 <li>Dad asks thoughtfully.</li>
 <li>"And after the game</li>
-<li>Whom did you see?"</li>
+<li>Whom did you see?"</li><br>
 <li>I pause in my tracks--</li>
 <li>Dad's smart, it is true</li>
 <li>But his questions don't lead</li>
-<li>To my runaway shoe.</li>
+<li>To my runaway shoe.</li><br>
 <li>It's surely gone missing</li>
 <li>There's clearly no hope.</li>
 <li>I have to give up</li>
-<li>Find somewhere to mope.</li>
+<li>Find somewhere to mope.</li><br>
 <li>So I sit on the steps</li>
 <li>And stare into the yard</li>
 <li>Where Otis the dog</li>
-<li>Serves as guard--</li>
+<li>Serves as guard--</li><br>
 <li>Then I notice that Otis</li>
 <li>Has a new chew</li>
 <li>With laces and treads--</li>
@@ -344,7 +428,7 @@ const sampleQuestions = [
   {
     id: '3',
     text: 'Complete this flow chart. (image)',
-    type: 'multiple-choice',
+    type: 'drag-drop',
     passageId: 'the_cooks_surprise',
     options: [
       'Danielle looks at the edges of the apron.',
@@ -353,6 +437,7 @@ const sampleQuestions = [
       'Danielle walks into her bedroom.',
       'Danielle tries on the apron.'
     ],
+    dropZones: [' ', ' ', ' ', ' '],
     explanation: 'Animals eat lots of food before hibernating to store fat in their bodies.'
   },
 
@@ -478,14 +563,15 @@ const sampleQuestions = [
 
   {
     id: '12',
-    text: 'In an Internet search about oceans, which website would most likely have information about where red seaweed grows?',
+    text: 'In an Internet search about oceans, which website would most likely have information about where red seaweed grows? <img src=',
     type: 'multiple-choice',
     passageId: 'useful_weeds_of_the_sea',
     options: [
-      'give facts about an ocean plant',
-      'list kinds of ocean plants',
-      'tell about people who eat ocean plants',
-      'tell how to cook with ocean plants',
+      'Life in the Ocean',
+      'Ocean Habitats',
+      'Discover Ocean Plants',
+      'Photos of the Ocean Floor',
+      'Foods From the Ocean'
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -523,7 +609,7 @@ const sampleQuestions = [
 
   {
     id: '15',
-    text: 'In step 3 of "Mirror Message," what does the word invisible mean?',
+    text: 'In step 3 of "Mirror Message," what does the word <u>invisible</u> mean?',
     type: 'multiple-choice',
     passageId: 'secret_message',
     options: [
@@ -598,9 +684,8 @@ const sampleQuestions = [
 
   {
     id: '20',
-    text: 'Read this sentence and dictionary entry. <br> In the winter, grocery stores <u>charge</u> too much for strawberries.',
+    text: 'Read this sentence and dictionary entry. <div class="passage-innerbox"><b>In the winter, grocery stores <u>charge</u> too much for strawberries.</b></div> <div class="passage-dicbox"><b>charge</b> (chärj) <i>v.</i> <b>1.</b> To give orders. <b>2.</b> To set as a price. <b>3.</b> To fill up completely. <b>4.</b> To rush forward.</div>',
     type: 'multiple-choice',
-    passageId: 'secret_message',
     options: [
       'need help from a grownup',
       'need the use of a lamp',
@@ -608,6 +693,21 @@ const sampleQuestions = [
       'have messages that must be painted to be read',
     ],
     correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '21',
+    text: 'Guide words: <div class="passage-innerbox">camera - cause</div> <br>Which two words would appear on the same page as these guide words?',
+    type: 'multiple-select',
+    options: [
+      'carrot',
+      'cabin',
+      'calm',
+      'canal',
+      'cave'
+    ],
+    correctAnswer: [0, 1],
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -706,11 +806,10 @@ const sampleQuestions = [
     text: 'Place these words in alphabetical order.',
     type: 'drag-drop',
     passageId: 'hidden_treasure',
-    options: [
-      
-    ],
-    correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    options: ['steps', 'shouted', 'searched', 'smiled', 'spend'],
+    dropZones: [' ', ' ', ' ', ' ', ' '],
+    correctAnswer: [4, 1, 2],
+    explanation: 'To round 5,647: to nearest thousand (6,000), nearest hundred (5,600), nearest ten (5,650).'
   },
 
   {

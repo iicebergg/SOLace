@@ -19,6 +19,21 @@ main {
   width: 100%;
 }
 
+.passage-innerbox {
+  border: 1px solid black;
+  padding: 12px;
+  margin-bottom: 10px;
+  list-style-position: inside;
+}
+
+.passage-dicbox {
+  border: 1px solid black;
+  padding: 12px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-weight: lighter;
+}
+
 /* Panel open state - content moves RIGHT to make room for LEFT panel */
 .test-container.panel-open {
   margin-left: 400px; /* Changed from margin-right */
