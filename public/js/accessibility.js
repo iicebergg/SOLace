@@ -226,6 +226,35 @@ function toggleMagnifier(enabled) {
   }
 }
 
+// Helper function to get coordinates from mouse or touch events
+function getEventCoordinates(e) {
+  if (e.touches && e.touches.length > 0) {
+    return {
+      clientX: e.touches[0].clientX,
+      clientY: e.touches[0].clientY
+    };
+  }
+  return {
+    clientX: e.clientX,
+    clientY: e.clientY
+  };
+}
+
+// Helper function to add both mouse and touch event listeners
+function addPointerEventListener(element, eventType, handler) {
+  if (eventType === 'start') {
+    element.addEventListener('mousedown', handler);
+    element.addEventListener('touchstart', handler, { passive: false });
+  } else if (eventType === 'move') {
+    document.addEventListener('mousemove', handler);
+    document.addEventListener('touchmove', handler, { passive: false });
+  } else if (eventType === 'end') {
+    document.addEventListener('mouseup', handler);
+    document.addEventListener('touchend', handler);
+    document.addEventListener('touchcancel', handler);
+  }
+}
+
 function setupMagnifier() {
   if (!magnifier) return;
   
@@ -233,22 +262,25 @@ function setupMagnifier() {
   let lastUpdate = 0;
   const updateThreshold = 16; // ~60fps
 
-  magnifier.addEventListener('mousedown', (e) => {
+  const handleStart = (e) => {
+    e.preventDefault(); // Prevent default touch behaviors
+    const coords = getEventCoordinates(e);
     magnifierState.isDragging = true;
-    magnifierState.startX = e.clientX - magnifierState.currentX;
-    magnifierState.startY = e.clientY - magnifierState.currentY;
+    magnifierState.startX = coords.clientX - magnifierState.currentX;
+    magnifierState.startY = coords.clientY - magnifierState.currentY;
     magnifier.style.cursor = 'grabbing';
-    e.preventDefault();
     e.stopPropagation();
-  });
+  };
 
-  document.addEventListener('mousemove', (e) => {
+  const handleMove = (e) => {
     if (!magnifierState.isDragging) return;
     
+    e.preventDefault(); // Prevent scrolling on mobile
+    const coords = getEventCoordinates(e);
     const now = Date.now();
     
-    magnifierState.currentX = e.clientX - magnifierState.startX;
-    magnifierState.currentY = e.clientY - magnifierState.startY;
+    magnifierState.currentX = coords.clientX - magnifierState.startX;
+    magnifierState.currentY = coords.clientY - magnifierState.startY;
     
     // Keep magnifier within viewport
     const maxX = window.innerWidth - magnifier.offsetWidth;
@@ -265,16 +297,21 @@ function setupMagnifier() {
       updateMagnifierContent();
       lastUpdate = now;
     }
-  });
+  };
 
-  document.addEventListener('mouseup', () => {
+  const handleEnd = () => {
     if (magnifierState.isDragging) {
       magnifierState.isDragging = false;
       magnifier.style.cursor = 'move';
       // Final update when dragging stops
       updateMagnifierContent();
     }
-  });
+  };
+
+  // Add event listeners for both mouse and touch
+  addPointerEventListener(magnifier, 'start', handleStart);
+  addPointerEventListener(document, 'move', handleMove);
+  addPointerEventListener(document, 'end', handleEnd);
 }
 
 function updateMagnifierContent() {
@@ -393,67 +430,92 @@ function setupLineReader() {
 
   console.log('Setting up line reader');
 
+  // Helper function for mask dragging
+  const handleMaskStart = (e) => {
+    e.preventDefault();
+    const coords = getEventCoordinates(e);
+    console.log('Mask body drag started');
+    lineReaderState.isDragging = true;
+    lineReaderState.startX = coords.clientX - lineReaderState.left;
+    lineReaderState.startY = coords.clientY - lineReaderState.top;
+    lineReader.style.cursor = 'grabbing';
+    e.stopPropagation();
+  };
+
   // Make the entire line reader container draggable
-  lineReader.addEventListener('mousedown', (e) => {
+  const maskBodyStart = (e) => {
     // Don't drag if clicking on window, handles, or resize elements
     if (e.target === lineReader || e.target.classList.contains('line-reader-mask-top') || 
         e.target.classList.contains('line-reader-mask-bottom') || 
         e.target.classList.contains('line-reader-mask-left') || 
         e.target.classList.contains('line-reader-mask-right')) {
-      console.log('Mask body drag started');
-      lineReaderState.isDragging = true;
-      lineReaderState.startX = e.clientX - lineReaderState.left;
-      lineReaderState.startY = e.clientY - lineReaderState.top;
-      lineReader.style.cursor = 'grabbing';
-      e.preventDefault();
-      e.stopPropagation();
+      handleMaskStart(e);
     }
-  });
+  };
+
+  lineReader.addEventListener('mousedown', maskBodyStart);
+  lineReader.addEventListener('touchstart', maskBodyStart, { passive: false });
 
   // Handle dragging the mask container via handle (alternative)
   if (handle) {
-    handle.addEventListener('mousedown', (e) => {
+    const handleStart = (e) => {
+      e.preventDefault();
+      const coords = getEventCoordinates(e);
       console.log('Mask handle drag started');
       lineReaderState.isDragging = true;
-      lineReaderState.startX = e.clientX - lineReaderState.left;
-      lineReaderState.startY = e.clientY - lineReaderState.top;
+      lineReaderState.startX = coords.clientX - lineReaderState.left;
+      lineReaderState.startY = coords.clientY - lineReaderState.top;
       handle.style.cursor = 'grabbing';
-      e.preventDefault();
       e.stopPropagation();
-    });
+    };
+
+    handle.addEventListener('mousedown', handleStart);
+    handle.addEventListener('touchstart', handleStart, { passive: false });
   }
 
   // Handle dragging the window inside the mask - ONLY VERTICAL
   if (windowElement) {
-    windowElement.addEventListener('mousedown', (e) => {
+    const windowStart = (e) => {
       // Only drag if clicking on the window itself, not its children
       if (e.target === windowElement) {
+        e.preventDefault();
+        const coords = getEventCoordinates(e);
         console.log('Window drag started');
         lineReaderState.window.isDragging = true;
-        lineReaderState.window.startY = e.clientY - lineReaderState.window.top;
+        lineReaderState.window.startY = coords.clientY - lineReaderState.window.top;
         windowElement.style.cursor = 'ns-resize';
-        e.preventDefault();
         e.stopPropagation();
       }
-    });
+    };
+
+    windowElement.addEventListener('mousedown', windowStart);
+    windowElement.addEventListener('touchstart', windowStart, { passive: false });
   }
 
   if (windowHandle) {
-    windowHandle.addEventListener('mousedown', (e) => {
+    const windowHandleStart = (e) => {
+      e.preventDefault();
+      const coords = getEventCoordinates(e);
       console.log('Window handle drag started');
       lineReaderState.window.isDragging = true;
-      lineReaderState.window.startY = e.clientY - lineReaderState.window.top;
+      lineReaderState.window.startY = coords.clientY - lineReaderState.window.top;
       windowHandle.style.cursor = 'ns-resize';
-      e.preventDefault();
       e.stopPropagation();
-    });
+    };
+
+    windowHandle.addEventListener('mousedown', windowHandleStart);
+    windowHandle.addEventListener('touchstart', windowHandleStart, { passive: false });
   }
 
-  document.addEventListener('mousemove', (e) => {
+  // Global move handlers
+  const handleMove = (e) => {
+    e.preventDefault(); // Prevent scrolling on mobile
+    const coords = getEventCoordinates(e);
+
     // Handle mask dragging
     if (lineReaderState.isDragging) {
-      lineReaderState.left = e.clientX - lineReaderState.startX;
-      lineReaderState.top = e.clientY - lineReaderState.startY;
+      lineReaderState.left = coords.clientX - lineReaderState.startX;
+      lineReaderState.top = coords.clientY - lineReaderState.startY;
       
       // Keep within viewport
       const maxLeft = window.innerWidth - lineReaderState.width;
@@ -471,7 +533,7 @@ function setupLineReader() {
     
     // Handle window dragging - ONLY VERTICAL MOVEMENT
     else if (lineReaderState.window.isDragging) {
-      const newTop = e.clientY - lineReaderState.window.startY;
+      const newTop = coords.clientY - lineReaderState.window.startY;
       
       // Keep window within mask bounds vertically
       const maxWindowTop = lineReaderState.height - lineReaderState.window.height - 10;
@@ -486,9 +548,9 @@ function setupLineReader() {
     else if (lineReaderState.window.isResizing) {
       handleWindowResize(e);
     }
-  });
+  };
 
-  document.addEventListener('mouseup', () => {
+  const handleEnd = () => {
     if (lineReaderState.isDragging) {
       lineReaderState.isDragging = false;
       if (handle) handle.style.cursor = 'move';
@@ -511,7 +573,14 @@ function setupLineReader() {
       lineReaderState.window.resizeType = null;
       console.log('Window resize ended');
     }
-  });
+  };
+
+  // Add global event listeners for both mouse and touch
+  document.addEventListener('mousemove', handleMove);
+  document.addEventListener('touchmove', handleMove, { passive: false });
+  document.addEventListener('mouseup', handleEnd);
+  document.addEventListener('touchend', handleEnd);
+  document.addEventListener('touchcancel', handleEnd);
 }
 
 function createMaskSegments() {
@@ -550,15 +619,20 @@ function createResizeHandles() {
     const handle = document.createElement('div');
     handle.className = `line-reader-resize line-reader-resize-${direction}`;
     handle.dataset.resize = direction;
-    handle.addEventListener('mousedown', (e) => {
+    
+    const handleStart = (e) => {
+      e.preventDefault();
+      const coords = getEventCoordinates(e);
       console.log('Mask resize started:', direction);
       lineReaderState.isResizing = true;
       lineReaderState.resizeType = direction;
-      lineReaderState.startX = e.clientX;
-      lineReaderState.startY = e.clientY;
-      e.preventDefault();
+      lineReaderState.startX = coords.clientX;
+      lineReaderState.startY = coords.clientY;
       e.stopPropagation();
-    });
+    };
+
+    handle.addEventListener('mousedown', handleStart);
+    handle.addEventListener('touchstart', handleStart, { passive: false });
     lineReader.appendChild(handle);
   });
 
@@ -570,23 +644,29 @@ function createResizeHandles() {
       const handle = document.createElement('div');
       handle.className = `line-reader-window-resize line-reader-window-resize-${direction}`;
       handle.dataset.windowResize = direction;
-      handle.addEventListener('mousedown', (e) => {
+      
+      const handleStart = (e) => {
+        e.preventDefault();
+        const coords = getEventCoordinates(e);
         console.log('Window resize started:', direction);
         lineReaderState.window.isResizing = true;
         lineReaderState.window.resizeType = direction;
-        lineReaderState.window.startX = e.clientX;
-        lineReaderState.window.startY = e.clientY;
-        e.preventDefault();
+        lineReaderState.window.startX = coords.clientX;
+        lineReaderState.window.startY = coords.clientY;
         e.stopPropagation();
-      });
+      };
+
+      handle.addEventListener('mousedown', handleStart);
+      handle.addEventListener('touchstart', handleStart, { passive: false });
       windowElement.appendChild(handle);
     });
   }
 }
 
 function handleMaskResize(e) {
-  const deltaX = e.clientX - lineReaderState.startX;
-  const deltaY = e.clientY - lineReaderState.startY;
+  const coords = getEventCoordinates(e);
+  const deltaX = coords.clientX - lineReaderState.startX;
+  const deltaY = coords.clientY - lineReaderState.startY;
   
   const minWidth = 200;
   const minHeight = 100;
@@ -603,8 +683,8 @@ function handleMaskResize(e) {
         lineReaderState.top = newTopNE;
         lineReaderState.height = newHeightNE;
         lineReaderState.width = newWidthNE;
-        lineReaderState.startX = e.clientX;
-        lineReaderState.startY = e.clientY;
+        lineReaderState.startX = coords.clientX;
+        lineReaderState.startY = coords.clientY;
         adjustWindowToBounds();
       }
       break;
@@ -619,8 +699,8 @@ function handleMaskResize(e) {
         lineReaderState.height = newHeightNW;
         lineReaderState.left = newLeftNW;
         lineReaderState.width = newWidthNW;
-        lineReaderState.startX = e.clientX;
-        lineReaderState.startY = e.clientY;
+        lineReaderState.startX = coords.clientX;
+        lineReaderState.startY = coords.clientY;
         adjustWindowToBounds();
       }
       break;
@@ -633,8 +713,8 @@ function handleMaskResize(e) {
       if (newHeightSE >= minHeight && newHeightSE <= maxBottomSE && newWidthSE >= minWidth && newWidthSE <= maxRightSE) {
         lineReaderState.height = newHeightSE;
         lineReaderState.width = newWidthSE;
-        lineReaderState.startX = e.clientX;
-        lineReaderState.startY = e.clientY;
+        lineReaderState.startX = coords.clientX;
+        lineReaderState.startY = coords.clientY;
         adjustWindowToBounds();
       }
       break;
@@ -648,8 +728,8 @@ function handleMaskResize(e) {
         lineReaderState.height = newHeightSW;
         lineReaderState.left = newLeftSW;
         lineReaderState.width = newWidthSW;
-        lineReaderState.startX = e.clientX;
-        lineReaderState.startY = e.clientY;
+        lineReaderState.startX = coords.clientX;
+        lineReaderState.startY = coords.clientY;
         adjustWindowToBounds();
       }
       break;
@@ -659,7 +739,8 @@ function handleMaskResize(e) {
 }
 
 function handleWindowResize(e) {
-  const deltaY = e.clientY - lineReaderState.window.startY;
+  const coords = getEventCoordinates(e);
+  const deltaY = coords.clientY - lineReaderState.window.startY;
   
   const minWindowHeight = 20;
   
@@ -671,7 +752,7 @@ function handleWindowResize(e) {
       if (newWindowHeightN >= minWindowHeight && newWindowTopN >= 10) {
         lineReaderState.window.top = newWindowTopN;
         lineReaderState.window.height = newWindowHeightN;
-        lineReaderState.window.startY = e.clientY;
+        lineReaderState.window.startY = coords.clientY;
       }
       break;
     case 's':
@@ -679,7 +760,7 @@ function handleWindowResize(e) {
       const maxWindowBottom = lineReaderState.height - lineReaderState.window.top - 10;
       if (newWindowHeightS >= minWindowHeight && newWindowHeightS <= maxWindowBottom) {
         lineReaderState.window.height = newWindowHeightS;
-        lineReaderState.window.startY = e.clientY;
+        lineReaderState.window.startY = coords.clientY;
       }
       break;
   }
@@ -768,3 +849,30 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('Accessibility module fully initialized');
   }, 100);
 });
+
+// Handle orientation changes and window resizing for mobile
+window.addEventListener('resize', () => {
+  if (isMobileDevice()) {
+    // Re-optimize positioning when screen size changes
+    setTimeout(() => {
+      if (magnifier && magnifier.classList.contains('active')) {
+        optimizeForMobile();
+        magnifier.style.left = magnifierState.currentX + 'px';
+        magnifier.style.top = magnifierState.currentY + 'px';
+        updateMagnifierContent();
+      }
+      
+      if (lineReader && lineReader.classList.contains('active')) {
+        optimizeForMobile();
+        updateLineReaderPosition();
+      }
+    }, 100); // Small delay to let orientation change complete
+  }
+});
+
+// Prevent zoom on double-tap for mobile (optional - improves UX for accessibility tools)
+document.addEventListener('touchend', (e) => {
+  if (e.target.closest('.magnifier-container') || e.target.closest('.line-reader-container')) {
+    e.preventDefault();
+  }
+}, { passive: false });
