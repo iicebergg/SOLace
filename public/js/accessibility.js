@@ -3,6 +3,12 @@ const increaseFontBtn = document.getElementById('increase-font');
 const decreaseFontBtn = document.getElementById('decrease-font');
 const fontSizeValue = document.getElementById('font-size-value');
 
+// Accessibility Tools
+const magnifierToggle = document.getElementById('magnifier-toggle');
+const lineReaderToggle = document.getElementById('line-reader-toggle');
+const magnifier = document.getElementById('magnifier');
+const lineReader = document.getElementById('line-reader');
+
 // Font size management
 const fontSizes = {
   small: { value: 'small', display: 'Small', size: 14 },
@@ -11,37 +17,83 @@ const fontSizes = {
   xlarge: { value: 'xlarge', display: 'Extra Large', size: 20 }
 };
 
-// Current state
-let currentFontSizeIndex = 1; // medium (index 1)
+let currentFontSizeIndex = 1; // medium
 
-// Initialize accessibility settings
+// Magnifier state
+let magnifierState = {
+  isDragging: false,
+  startX: 0,
+  startY: 0,
+  currentX: 100,
+  currentY: 100
+};
+
+// Line reader state
+let lineReaderState = {
+  // Mask container properties
+  isDragging: false,
+  isResizing: false,
+  resizeType: null,
+  startX: 0,
+  startY: 0,
+  width: 400,
+  height: 200,
+  left: 100,
+  top: 200,
+  
+  // Window properties
+  window: {
+    isDragging: false,
+    isResizing: false,
+    resizeType: null,
+    startX: 0,
+    startY: 0,
+    width: 380, // Will be adjusted to span mask width
+    height: 60,
+    left: 10,
+    top: 50
+  }
+};
+
 function initAccessibilitySettings() {
   console.log('Initializing accessibility settings...');
   
-  // Load saved preferences if available
   const savedPreferences = JSON.parse(localStorage.getItem('userPreferences') || '{}');
 
-  // Set defaults if no saved preferences
   const preferences = {
     theme: savedPreferences.theme || 'black-on-white',
     fontSize: savedPreferences.fontSize || 'medium',
+    magnifierEnabled: savedPreferences.magnifierEnabled || false,
+    lineReaderEnabled: savedPreferences.lineReaderEnabled || false
   };
 
   console.log('Loaded preferences:', preferences);
 
-  // Apply theme
   setTheme(preferences.theme);
 
-  // Apply font size
   const sizeKeys = Object.keys(fontSizes);
   currentFontSizeIndex = sizeKeys.indexOf(preferences.fontSize);
-  if (currentFontSizeIndex === -1) currentFontSizeIndex = 1; // Default to medium if not found
+  if (currentFontSizeIndex === -1) currentFontSizeIndex = 1;
   setFontSize(sizeKeys[currentFontSizeIndex]);
+
+  // Set accessibility tool states - don't enable by default, only if saved preference is true
+  if (magnifierToggle) {
+    magnifierToggle.checked = preferences.magnifierEnabled;
+    if (preferences.magnifierEnabled) {
+      toggleMagnifier(true);
+    }
+  }
+
+  if (lineReaderToggle) {
+    lineReaderToggle.checked = preferences.lineReaderEnabled;
+    if (preferences.lineReaderEnabled) {
+      toggleLineReader(true);
+    }
+  }
 
   setupAccessibilityEventListeners();
 }
 
-// Set up accessibility event listeners
 function setupAccessibilityEventListeners() {
   console.log('Setting up accessibility event listeners...');
   
@@ -67,13 +119,33 @@ function setupAccessibilityEventListeners() {
     });
   }
 
+  // Accessibility tool toggles
+  if (magnifierToggle) {
+    magnifierToggle.addEventListener('change', (e) => {
+      console.log('Magnifier toggle changed:', e.target.checked);
+      toggleMagnifier(e.target.checked);
+      saveAccessibilityPreference('magnifierEnabled', e.target.checked);
+    });
+  }
+
+  if (lineReaderToggle) {
+    lineReaderToggle.addEventListener('change', (e) => {
+      console.log('Line reader toggle changed:', e.target.checked);
+      toggleLineReader(e.target.checked);
+      saveAccessibilityPreference('lineReaderEnabled', e.target.checked);
+    });
+  }
+
+  // Setup magnifier functionality
+  setupMagnifier();
+  
+  // Setup line reader functionality
+  setupLineReader();
 }
 
-// Set theme
 function setTheme(theme) {
   console.log('Setting theme to:', theme);
   
-  // Remove all existing theme classes
   document.body.classList.remove(
     'theme-black-on-white',
     'theme-black-on-cream', 
@@ -84,45 +156,31 @@ function setTheme(theme) {
     'theme-gray-on-green'
   );
 
-  // Add the selected theme class
   document.body.classList.add(`theme-${theme}`);
   
-  console.log('Applied theme class:', `theme-${theme}`);
-  console.log('Current body classes:', document.body.className);
-
-  // Update theme buttons state
   themeButtons.forEach(button => {
     if (button.getAttribute('data-theme') === theme) {
       button.classList.add('active');
-      console.log('Set active theme button:', theme);
     } else {
       button.classList.remove('active');
     }
   });
 
-  // Save preference
   saveAccessibilityPreference('theme', theme);
   
-  // Force a repaint to apply theme changes immediately
   document.body.style.display = 'none';
-  document.body.offsetHeight; // Trigger reflow
+  document.body.offsetHeight;
   document.body.style.display = '';
-  
-  console.log('Theme change complete');
 }
 
-// Change font size
 function changeFontSize(direction) {
   const sizeKeys = Object.keys(fontSizes);
 
-  // Calculate new index
   let newIndex = currentFontSizeIndex + direction;
 
-  // Bounds checking
   if (newIndex < 0) newIndex = 0;
   if (newIndex >= sizeKeys.length) newIndex = sizeKeys.length - 1;
 
-  // Only proceed if there's a change
   if (newIndex !== currentFontSizeIndex) {
     currentFontSizeIndex = newIndex;
     const newSize = sizeKeys[currentFontSizeIndex];
@@ -130,116 +188,583 @@ function changeFontSize(direction) {
   }
 }
 
-// Set font size
 function setFontSize(sizeKey) {
   console.log('Setting font size to:', sizeKey);
   
-  // Remove all existing font size classes
   document.body.classList.remove('font-size-small', 'font-size-medium', 'font-size-large', 'font-size-xlarge');
-  
-  // Add the new font size class
   document.body.classList.add(`font-size-${sizeKey}`);
 
-  // Update display text
   if (fontSizeValue) {
     fontSizeValue.textContent = fontSizes[sizeKey].display;
   }
 
-  // Actually set the root font size
   document.documentElement.style.fontSize = `${fontSizes[sizeKey].size}px`;
 
-  // Save preference
   saveAccessibilityPreference('fontSize', sizeKey);
 }
 
-// Save a single accessibility preference
 function saveAccessibilityPreference(key, value) {
-  // Get current preferences
   const preferences = JSON.parse(localStorage.getItem('userPreferences') || '{}');
-
-  // Update the specific preference
   preferences[key] = value;
-
-  // Save back to localStorage
   localStorage.setItem('userPreferences', JSON.stringify(preferences));
-  
   console.log('Saved accessibility preference:', key, '=', value);
 }
 
-// Add keyboard navigation enhancements
-function enhanceKeyboardNavigation() {
-  // Add tabindex to all interactive elements that might not have it
-  const interactiveElements = document.querySelectorAll('button, a, input, select, textarea, [role="button"]');
+// Magnifier functionality
+function toggleMagnifier(enabled) {
+  console.log('Toggling magnifier:', enabled);
+  if (!magnifier) return;
+  
+  if (enabled) {
+    magnifier.classList.add('active');
+    // Position magnifier at saved position
+    magnifier.style.left = magnifierState.currentX + 'px';
+    magnifier.style.top = magnifierState.currentY + 'px';
+    updateMagnifierContent();
+  } else {
+    magnifier.classList.remove('active');
+  }
+}
 
-  interactiveElements.forEach(element => {
-    if (!element.hasAttribute('tabindex')) {
-      element.setAttribute('tabindex', '0');
+function setupMagnifier() {
+  if (!magnifier) return;
+  
+  let animationId;
+  let lastUpdate = 0;
+  const updateThreshold = 16; // ~60fps
+
+  magnifier.addEventListener('mousedown', (e) => {
+    magnifierState.isDragging = true;
+    magnifierState.startX = e.clientX - magnifierState.currentX;
+    magnifierState.startY = e.clientY - magnifierState.currentY;
+    magnifier.style.cursor = 'grabbing';
+    e.preventDefault();
+    e.stopPropagation();
+  });
+
+  document.addEventListener('mousemove', (e) => {
+    if (!magnifierState.isDragging) return;
+    
+    const now = Date.now();
+    
+    magnifierState.currentX = e.clientX - magnifierState.startX;
+    magnifierState.currentY = e.clientY - magnifierState.startY;
+    
+    // Keep magnifier within viewport
+    const maxX = window.innerWidth - magnifier.offsetWidth;
+    const maxY = window.innerHeight - magnifier.offsetHeight;
+    
+    magnifierState.currentX = Math.max(0, Math.min(maxX, magnifierState.currentX));
+    magnifierState.currentY = Math.max(0, Math.min(maxY, magnifierState.currentY));
+    
+    magnifier.style.left = magnifierState.currentX + 'px';
+    magnifier.style.top = magnifierState.currentY + 'px';
+    
+    // Throttle updates for better performance
+    if (now - lastUpdate > updateThreshold) {
+      updateMagnifierContent();
+      lastUpdate = now;
     }
   });
 
-  // Add keyboard event listeners for custom components like the quiz options
-  document.addEventListener('click', () => {
-    // Re-add keyboard listeners for dynamically created options
-    document.querySelectorAll('.option').forEach(option => {
-      option.addEventListener('keydown', (event) => {
-        // Enter or Space activates the option
-        if (event.key === 'Enter' || event.key === ' ') {
-          event.preventDefault();
-
-          // Simulate a click on the option
-          const clickEvent = new MouseEvent('click', {
-            bubbles: true,
-            cancelable: true,
-            view: window
-          });
-
-          option.dispatchEvent(clickEvent);
-        }
-      });
-    });
+  document.addEventListener('mouseup', () => {
+    if (magnifierState.isDragging) {
+      magnifierState.isDragging = false;
+      magnifier.style.cursor = 'move';
+      // Final update when dragging stops
+      updateMagnifierContent();
+    }
   });
 }
 
-// Add ARIA attributes to improve screen reader experience
-function enhanceAriaAttributes() {
-  // Add appropriate ARIA roles to main sections
-  const header = document.querySelector('header');
-  const nav = document.querySelector('nav');
-  const main = document.querySelector('main');
-  const footer = document.querySelector('footer');
+function updateMagnifierContent() {
+  if (!magnifier || !magnifier.classList.contains('active')) return;
+
+  const magnifierContent = document.getElementById('magnifier-content');
+  if (!magnifierContent) return;
   
-  if (header) header.setAttribute('role', 'banner');
-  if (nav) nav.setAttribute('role', 'navigation');
-  if (main) main.setAttribute('role', 'main');
-  if (footer) footer.setAttribute('role', 'contentinfo');
+  const rect = magnifier.getBoundingClientRect();
+  const centerX = rect.left + rect.width / 2;
+  const centerY = rect.top + rect.height / 2;
 
-  // Add ARIA labels to navigation buttons
-  document.querySelectorAll('.nav-btn').forEach(button => {
-    button.setAttribute('aria-label', `Go to ${button.textContent.trim()} page`);
-  });
+  // Clear previous content
+  magnifierContent.innerHTML = '';
 
-  // Add ARIA for the test section
-  const questionCounter = document.getElementById('question-counter');
-  if (questionCounter) {
-    questionCounter.setAttribute('aria-live', 'polite');
+  // Clone the entire document body
+  const bodyClone = document.body.cloneNode(true);
+  
+  // Remove the magnifier itself from the clone to avoid recursion
+  const magnifierClone = bodyClone.querySelector('#magnifier');
+  if (magnifierClone) {
+    magnifierClone.remove();
+  }
+  
+  // Remove the line reader from the clone to avoid interference
+  const lineReaderClone = bodyClone.querySelector('#line-reader');
+  if (lineReaderClone) {
+    lineReaderClone.remove();
   }
 
-  // Add ARIA for feedback messages
-  const feedbackMessage = document.getElementById('feedback-message');
-  if (feedbackMessage) {
-    feedbackMessage.setAttribute('aria-live', 'assertive');
+  // Apply styles to make the clone work as magnified content
+  bodyClone.style.position = 'absolute';
+  bodyClone.style.top = '0';
+  bodyClone.style.left = '0';
+  bodyClone.style.width = '100vw';
+  bodyClone.style.height = '100vh';
+  bodyClone.style.transform = 'scale(2)';
+  bodyClone.style.transformOrigin = '0 0';
+  bodyClone.style.pointerEvents = 'none';
+  bodyClone.style.overflow = 'hidden';
+  
+  // Calculate the offset to center the magnified content on the cursor position
+  const offsetX = -(centerX * 2 - 100); // 100 is half the magnifier width
+  const offsetY = -(centerY * 2 - 100); // 100 is half the magnifier height
+  
+  bodyClone.style.marginLeft = offsetX + 'px';
+  bodyClone.style.marginTop = offsetY + 'px';
+
+  // Copy computed styles for better rendering
+  const originalElements = document.body.querySelectorAll('*');
+  const clonedElements = bodyClone.querySelectorAll('*');
+  
+  // Copy essential computed styles for proper rendering
+  for (let i = 0; i < Math.min(originalElements.length, clonedElements.length); i++) {
+    const original = originalElements[i];
+    const cloned = clonedElements[i];
+    
+    if (original && cloned) {
+      const computedStyle = window.getComputedStyle(original);
+      
+      // Copy key visual properties
+      cloned.style.backgroundColor = computedStyle.backgroundColor;
+      cloned.style.color = computedStyle.color;
+      cloned.style.fontSize = computedStyle.fontSize;
+      cloned.style.fontFamily = computedStyle.fontFamily;
+      cloned.style.fontWeight = computedStyle.fontWeight;
+      cloned.style.border = computedStyle.border;
+      cloned.style.borderRadius = computedStyle.borderRadius;
+      cloned.style.padding = computedStyle.padding;
+      cloned.style.margin = computedStyle.margin;
+      cloned.style.display = computedStyle.display;
+      cloned.style.position = computedStyle.position;
+      
+      // Handle images specifically
+      if (original.tagName === 'IMG' && original.src) {
+        cloned.src = original.src;
+        cloned.style.width = computedStyle.width;
+        cloned.style.height = computedStyle.height;
+      }
+    }
+  }
+
+  // Append the cloned content to the magnifier
+  magnifierContent.appendChild(bodyClone);
+}
+
+// Line Reader functionality
+function toggleLineReader(enabled) {
+  console.log('Toggling line reader:', enabled);
+  if (!lineReader) return;
+  
+  if (enabled) {
+    lineReader.classList.add('active');
+    // Set window width to span the mask
+    lineReaderState.window.width = lineReaderState.width - 20;
+    lineReaderState.window.left = 10;
+    createMaskSegments(); // Make sure mask segments are created
+    updateLineReaderPosition();
+  } else {
+    lineReader.classList.remove('active');
   }
 }
 
-// Initialize when the DOM is loaded
+function setupLineReader() {
+  if (!lineReader) return;
+  
+  const handle = document.getElementById('line-reader-handle');
+  const windowElement = document.getElementById('line-reader-window');
+  const windowHandle = document.getElementById('line-reader-window-handle');
+
+  // Create resize handles dynamically since they're not in the HTML
+  createResizeHandles();
+  
+  // Create mask segments
+  createMaskSegments();
+
+  console.log('Setting up line reader');
+
+  // Make the entire line reader container draggable
+  lineReader.addEventListener('mousedown', (e) => {
+    // Don't drag if clicking on window, handles, or resize elements
+    if (e.target === lineReader || e.target.classList.contains('line-reader-mask-top') || 
+        e.target.classList.contains('line-reader-mask-bottom') || 
+        e.target.classList.contains('line-reader-mask-left') || 
+        e.target.classList.contains('line-reader-mask-right')) {
+      console.log('Mask body drag started');
+      lineReaderState.isDragging = true;
+      lineReaderState.startX = e.clientX - lineReaderState.left;
+      lineReaderState.startY = e.clientY - lineReaderState.top;
+      lineReader.style.cursor = 'grabbing';
+      e.preventDefault();
+      e.stopPropagation();
+    }
+  });
+
+  // Handle dragging the mask container via handle (alternative)
+  if (handle) {
+    handle.addEventListener('mousedown', (e) => {
+      console.log('Mask handle drag started');
+      lineReaderState.isDragging = true;
+      lineReaderState.startX = e.clientX - lineReaderState.left;
+      lineReaderState.startY = e.clientY - lineReaderState.top;
+      handle.style.cursor = 'grabbing';
+      e.preventDefault();
+      e.stopPropagation();
+    });
+  }
+
+  // Handle dragging the window inside the mask - ONLY VERTICAL
+  if (windowElement) {
+    windowElement.addEventListener('mousedown', (e) => {
+      // Only drag if clicking on the window itself, not its children
+      if (e.target === windowElement) {
+        console.log('Window drag started');
+        lineReaderState.window.isDragging = true;
+        lineReaderState.window.startY = e.clientY - lineReaderState.window.top;
+        windowElement.style.cursor = 'ns-resize';
+        e.preventDefault();
+        e.stopPropagation();
+      }
+    });
+  }
+
+  if (windowHandle) {
+    windowHandle.addEventListener('mousedown', (e) => {
+      console.log('Window handle drag started');
+      lineReaderState.window.isDragging = true;
+      lineReaderState.window.startY = e.clientY - lineReaderState.window.top;
+      windowHandle.style.cursor = 'ns-resize';
+      e.preventDefault();
+      e.stopPropagation();
+    });
+  }
+
+  document.addEventListener('mousemove', (e) => {
+    // Handle mask dragging
+    if (lineReaderState.isDragging) {
+      lineReaderState.left = e.clientX - lineReaderState.startX;
+      lineReaderState.top = e.clientY - lineReaderState.startY;
+      
+      // Keep within viewport
+      const maxLeft = window.innerWidth - lineReaderState.width;
+      const maxTop = window.innerHeight - lineReaderState.height;
+      lineReaderState.left = Math.max(0, Math.min(maxLeft, lineReaderState.left));
+      lineReaderState.top = Math.max(0, Math.min(maxTop, lineReaderState.top));
+      
+      updateLineReaderPosition();
+    }
+    
+    // Handle mask resizing
+    else if (lineReaderState.isResizing) {
+      handleMaskResize(e);
+    }
+    
+    // Handle window dragging - ONLY VERTICAL MOVEMENT
+    else if (lineReaderState.window.isDragging) {
+      const newTop = e.clientY - lineReaderState.window.startY;
+      
+      // Keep window within mask bounds vertically
+      const maxWindowTop = lineReaderState.height - lineReaderState.window.height - 10;
+      
+      lineReaderState.window.top = Math.max(10, Math.min(maxWindowTop, newTop));
+      // Window left and width stay fixed to fit within mask
+      
+      updateLineReaderPosition();
+    }
+    
+    // Handle window resizing
+    else if (lineReaderState.window.isResizing) {
+      handleWindowResize(e);
+    }
+  });
+
+  document.addEventListener('mouseup', () => {
+    if (lineReaderState.isDragging) {
+      lineReaderState.isDragging = false;
+      if (handle) handle.style.cursor = 'move';
+      lineReader.style.cursor = 'move';
+      console.log('Mask drag ended');
+    }
+    if (lineReaderState.isResizing) {
+      lineReaderState.isResizing = false;
+      lineReaderState.resizeType = null;
+      console.log('Mask resize ended');
+    }
+    if (lineReaderState.window.isDragging) {
+      lineReaderState.window.isDragging = false;
+      if (windowHandle) windowHandle.style.cursor = 'ns-resize';
+      if (windowElement) windowElement.style.cursor = 'ns-resize';
+      console.log('Window drag ended');
+    }
+    if (lineReaderState.window.isResizing) {
+      lineReaderState.window.isResizing = false;
+      lineReaderState.window.resizeType = null;
+      console.log('Window resize ended');
+    }
+  });
+}
+
+function createMaskSegments() {
+  if (!lineReader) return;
+  
+  // Remove existing mask segments
+  const existingSegments = lineReader.querySelectorAll('.line-reader-mask-top, .line-reader-mask-bottom, .line-reader-mask-left, .line-reader-mask-right');
+  existingSegments.forEach(segment => segment.remove());
+  
+  // Create new mask segments
+  const maskTop = document.createElement('div');
+  maskTop.className = 'line-reader-mask-top';
+  
+  const maskBottom = document.createElement('div');
+  maskBottom.className = 'line-reader-mask-bottom';
+  
+  const maskLeft = document.createElement('div');
+  maskLeft.className = 'line-reader-mask-left';
+  
+  const maskRight = document.createElement('div');
+  maskRight.className = 'line-reader-mask-right';
+  
+  // Insert mask segments before other elements
+  lineReader.insertBefore(maskTop, lineReader.firstChild);
+  lineReader.insertBefore(maskBottom, lineReader.firstChild);
+  lineReader.insertBefore(maskLeft, lineReader.firstChild);
+  lineReader.insertBefore(maskRight, lineReader.firstChild);
+}
+
+function createResizeHandles() {
+  if (!lineReader) return;
+  
+  // Create mask resize handles - ONLY CORNERS
+  const cornerDirections = ['ne', 'nw', 'se', 'sw'];
+  cornerDirections.forEach(direction => {
+    const handle = document.createElement('div');
+    handle.className = `line-reader-resize line-reader-resize-${direction}`;
+    handle.dataset.resize = direction;
+    handle.addEventListener('mousedown', (e) => {
+      console.log('Mask resize started:', direction);
+      lineReaderState.isResizing = true;
+      lineReaderState.resizeType = direction;
+      lineReaderState.startX = e.clientX;
+      lineReaderState.startY = e.clientY;
+      e.preventDefault();
+      e.stopPropagation();
+    });
+    lineReader.appendChild(handle);
+  });
+
+  // Create window resize handles - ONLY VERTICAL (top and bottom)
+  const windowElement = document.getElementById('line-reader-window');
+  if (windowElement) {
+    const verticalDirections = ['n', 's'];
+    verticalDirections.forEach(direction => {
+      const handle = document.createElement('div');
+      handle.className = `line-reader-window-resize line-reader-window-resize-${direction}`;
+      handle.dataset.windowResize = direction;
+      handle.addEventListener('mousedown', (e) => {
+        console.log('Window resize started:', direction);
+        lineReaderState.window.isResizing = true;
+        lineReaderState.window.resizeType = direction;
+        lineReaderState.window.startX = e.clientX;
+        lineReaderState.window.startY = e.clientY;
+        e.preventDefault();
+        e.stopPropagation();
+      });
+      windowElement.appendChild(handle);
+    });
+  }
+}
+
+function handleMaskResize(e) {
+  const deltaX = e.clientX - lineReaderState.startX;
+  const deltaY = e.clientY - lineReaderState.startY;
+  
+  const minWidth = 200;
+  const minHeight = 100;
+  
+  // Only handle corner resizing
+  switch (lineReaderState.resizeType) {
+    case 'ne':
+      const newTopNE = lineReaderState.top + deltaY;
+      const newHeightNE = lineReaderState.height - deltaY;
+      const newWidthNE = lineReaderState.width + deltaX;
+      const maxRightNE = window.innerWidth - lineReaderState.left;
+      
+      if (newHeightNE >= minHeight && newTopNE >= 0 && newWidthNE >= minWidth && newWidthNE <= maxRightNE) {
+        lineReaderState.top = newTopNE;
+        lineReaderState.height = newHeightNE;
+        lineReaderState.width = newWidthNE;
+        lineReaderState.startX = e.clientX;
+        lineReaderState.startY = e.clientY;
+        adjustWindowToBounds();
+      }
+      break;
+    case 'nw':
+      const newTopNW = lineReaderState.top + deltaY;
+      const newHeightNW = lineReaderState.height - deltaY;
+      const newLeftNW = lineReaderState.left + deltaX;
+      const newWidthNW = lineReaderState.width - deltaX;
+      
+      if (newHeightNW >= minHeight && newTopNW >= 0 && newWidthNW >= minWidth && newLeftNW >= 0) {
+        lineReaderState.top = newTopNW;
+        lineReaderState.height = newHeightNW;
+        lineReaderState.left = newLeftNW;
+        lineReaderState.width = newWidthNW;
+        lineReaderState.startX = e.clientX;
+        lineReaderState.startY = e.clientY;
+        adjustWindowToBounds();
+      }
+      break;
+    case 'se':
+      const newHeightSE = lineReaderState.height + deltaY;
+      const newWidthSE = lineReaderState.width + deltaX;
+      const maxBottomSE = window.innerHeight - lineReaderState.top;
+      const maxRightSE = window.innerWidth - lineReaderState.left;
+      
+      if (newHeightSE >= minHeight && newHeightSE <= maxBottomSE && newWidthSE >= minWidth && newWidthSE <= maxRightSE) {
+        lineReaderState.height = newHeightSE;
+        lineReaderState.width = newWidthSE;
+        lineReaderState.startX = e.clientX;
+        lineReaderState.startY = e.clientY;
+        adjustWindowToBounds();
+      }
+      break;
+    case 'sw':
+      const newHeightSW = lineReaderState.height + deltaY;
+      const newLeftSW = lineReaderState.left + deltaX;
+      const newWidthSW = lineReaderState.width - deltaX;
+      const maxBottomSW = window.innerHeight - lineReaderState.top;
+      
+      if (newHeightSW >= minHeight && newHeightSW <= maxBottomSW && newWidthSW >= minWidth && newLeftSW >= 0) {
+        lineReaderState.height = newHeightSW;
+        lineReaderState.left = newLeftSW;
+        lineReaderState.width = newWidthSW;
+        lineReaderState.startX = e.clientX;
+        lineReaderState.startY = e.clientY;
+        adjustWindowToBounds();
+      }
+      break;
+  }
+  
+  updateLineReaderPosition();
+}
+
+function handleWindowResize(e) {
+  const deltaY = e.clientY - lineReaderState.window.startY;
+  
+  const minWindowHeight = 20;
+  
+  // Only handle vertical resizing
+  switch (lineReaderState.window.resizeType) {
+    case 'n':
+      const newWindowTopN = lineReaderState.window.top + deltaY;
+      const newWindowHeightN = lineReaderState.window.height - deltaY;
+      if (newWindowHeightN >= minWindowHeight && newWindowTopN >= 10) {
+        lineReaderState.window.top = newWindowTopN;
+        lineReaderState.window.height = newWindowHeightN;
+        lineReaderState.window.startY = e.clientY;
+      }
+      break;
+    case 's':
+      const newWindowHeightS = lineReaderState.window.height + deltaY;
+      const maxWindowBottom = lineReaderState.height - lineReaderState.window.top - 10;
+      if (newWindowHeightS >= minWindowHeight && newWindowHeightS <= maxWindowBottom) {
+        lineReaderState.window.height = newWindowHeightS;
+        lineReaderState.window.startY = e.clientY;
+      }
+      break;
+  }
+  
+  updateLineReaderPosition();
+}
+
+function adjustWindowToBounds() {
+  // Window width should always span most of the mask width with small margins
+  lineReaderState.window.left = 10;
+  lineReaderState.window.width = lineReaderState.width - 20; // 10px margin on each side
+  
+  // Keep window within mask bounds vertically
+  const maxWindowTop = lineReaderState.height - lineReaderState.window.height - 10;
+  lineReaderState.window.top = Math.max(10, Math.min(maxWindowTop, lineReaderState.window.top));
+  
+  // Adjust window height if it's too big for the mask
+  const maxWindowHeight = lineReaderState.height - lineReaderState.window.top - 10;
+  lineReaderState.window.height = Math.min(lineReaderState.window.height, maxWindowHeight);
+  
+  // Update positions after adjusting bounds
+  updateLineReaderPosition();
+}
+
+function updateLineReaderPosition() {
+  if (!lineReader) return;
+  
+  const windowElement = document.getElementById('line-reader-window');
+  const maskTop = lineReader.querySelector('.line-reader-mask-top');
+  const maskBottom = lineReader.querySelector('.line-reader-mask-bottom');
+  const maskLeft = lineReader.querySelector('.line-reader-mask-left');
+  const maskRight = lineReader.querySelector('.line-reader-mask-right');
+  
+  // Update mask position and size
+  lineReader.style.left = lineReaderState.left + 'px';
+  lineReader.style.top = lineReaderState.top + 'px';
+  lineReader.style.width = lineReaderState.width + 'px';
+  lineReader.style.height = lineReaderState.height + 'px';
+  
+  // Update window position and size
+  if (windowElement) {
+    windowElement.style.left = lineReaderState.window.left + 'px';
+    windowElement.style.top = lineReaderState.window.top + 'px';
+    windowElement.style.width = lineReaderState.window.width + 'px';
+    windowElement.style.height = lineReaderState.window.height + 'px';
+  }
+  
+  // Update mask segments to create the "hole" around the window
+  if (maskTop) {
+    maskTop.style.top = '0px';
+    maskTop.style.left = '0px';
+    maskTop.style.width = lineReaderState.width + 'px';
+    maskTop.style.height = lineReaderState.window.top + 'px';
+  }
+  
+  if (maskBottom) {
+    const bottomTop = lineReaderState.window.top + lineReaderState.window.height;
+    maskBottom.style.top = bottomTop + 'px';
+    maskBottom.style.left = '0px';
+    maskBottom.style.width = lineReaderState.width + 'px';
+    maskBottom.style.height = (lineReaderState.height - bottomTop) + 'px';
+  }
+  
+  if (maskLeft) {
+    maskLeft.style.top = lineReaderState.window.top + 'px';
+    maskLeft.style.left = '0px';
+    maskLeft.style.width = lineReaderState.window.left + 'px';
+    maskLeft.style.height = lineReaderState.window.height + 'px';
+  }
+  
+  if (maskRight) {
+    const rightLeft = lineReaderState.window.left + lineReaderState.window.width;
+    maskRight.style.top = lineReaderState.window.top + 'px';
+    maskRight.style.left = rightLeft + 'px';
+    maskRight.style.width = (lineReaderState.width - rightLeft) + 'px';
+    maskRight.style.height = lineReaderState.window.height + 'px';
+  }
+}
+
+// Initialize when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
   console.log('Accessibility module initializing...');
   
-  // Small delay to ensure other scripts have loaded
   setTimeout(() => {
     initAccessibilitySettings();
-    enhanceKeyboardNavigation();
-    enhanceAriaAttributes();
     console.log('Accessibility module fully initialized');
   }, 100);
 });

@@ -177,8 +177,6 @@ function setupEventListeners() {
   if (saveSettingsBtn) {
     saveSettingsBtn.addEventListener('click', saveUserPreferences);
   }
-
-  // Remove the duplicate theme and font size handling since accessibility.js handles this
 }
 
 // Navigate to a different page
