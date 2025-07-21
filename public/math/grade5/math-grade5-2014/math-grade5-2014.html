@@ -97,8 +97,40 @@
           <button id="increase-font" class="font-btn">A+</button>
         </div>
       </div>
+      <div class="settings-group">
+        <h3>Reading Assistance Tools</h3>
+        <div class="accessibility-tool-option">
+          <label for="magnifier-toggle">
+            Screen Magnifier
+            <div class="tool-description">Draggable square magnifier that zooms content 2x where you place it</div>
+          </label>
+          <input type="checkbox" id="magnifier-toggle">
+        </div>
+        <div class="accessibility-tool-option">
+          <label for="line-reader-toggle">
+            Line Reader Mask
+            <div class="tool-description">Resizable reading guide that highlights one line at a time</div>
+          </label>
+          <input type="checkbox" id="line-reader-toggle">
+        </div>
+      </div>
     </section>
   </main>
+
+  <!-- Magnifier -->
+  <div id="magnifier" class="magnifier-container">
+    <div id="magnifier-content" class="magnifier-content"></div>
+    <div class="magnifier-crosshair"></div>
+  </div>
+
+  <!-- Line Reader Mask -->
+  <div id="line-reader" class="line-reader-container">
+    <!-- Mask segments will be created dynamically by JavaScript -->
+    <div class="line-reader-handle" id="line-reader-handle"></div>
+    <div class="line-reader-window" id="line-reader-window">
+      <div class="line-reader-window-handle" id="line-reader-window-handle"></div>
+    </div>
+  </div>
 
   <!-- Desmos Calculator -->
   <div id="calculator-container" class="calculator-container">
