@@ -134,12 +134,6 @@ function setupCategoryCards() {
     // Card click handler (excluding the button)
     card.addEventListener('click', (e) => {
       const button = card.querySelector('.category-btn');
-      
-      // Don't trigger if the button was clicked directly
-      if (e.target === button) return;
-      
-      // Navigate to test platform with category parameter
-      window.location.href = `${category}-directory.html`;
     });
   });
 }
