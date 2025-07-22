@@ -76,6 +76,9 @@ function initAccessibilitySettings() {
   if (currentFontSizeIndex === -1) currentFontSizeIndex = 1;
   setFontSize(sizeKeys[currentFontSizeIndex]);
 
+  // Check screen size compatibility for line reader
+  updateLineReaderAvailability();
+
   // Set accessibility tool states - don't enable by default, only if saved preference is true
   if (magnifierToggle) {
     magnifierToggle.checked = preferences.magnifierEnabled;
@@ -85,8 +88,10 @@ function initAccessibilitySettings() {
   }
 
   if (lineReaderToggle) {
-    lineReaderToggle.checked = preferences.lineReaderEnabled;
-    if (preferences.lineReaderEnabled) {
+    // Only enable line reader if screen is compatible AND preference is true
+    const shouldEnable = preferences.lineReaderEnabled && isScreenSizeCompatible();
+    lineReaderToggle.checked = shouldEnable;
+    if (shouldEnable) {
       toggleLineReader(true);
     }
   }
@@ -226,7 +231,67 @@ function toggleMagnifier(enabled) {
   }
 }
 
-// Helper function to get coordinates from mouse or touch events
+// Configuration for accessibility tools screen size requirements
+// Line Reader is disabled on smaller screens where it may not be practical
+const ACCESSIBILITY_CONFIG = {
+  lineReader: {
+    minWidth: 768, // Minimum screen width for line reader (pixels) - tablet size and up
+    minHeight: 400 // Minimum screen height for line reader (pixels)
+  }
+};
+
+// Function to update screen size requirements (for future customization)
+function updateScreenSizeRequirements(minWidth, minHeight) {
+  ACCESSIBILITY_CONFIG.lineReader.minWidth = minWidth;
+  ACCESSIBILITY_CONFIG.lineReader.minHeight = minHeight;
+  updateLineReaderAvailability();
+}
+
+// Helper function to check if screen is large enough for line reader
+function isScreenSizeCompatible() {
+  return window.innerWidth >= ACCESSIBILITY_CONFIG.lineReader.minWidth && 
+         window.innerHeight >= ACCESSIBILITY_CONFIG.lineReader.minHeight;
+}
+
+// Helper function to update line reader availability
+function updateLineReaderAvailability() {
+  if (!lineReaderToggle) return;
+  
+  const isCompatible = isScreenSizeCompatible();
+  const container = lineReaderToggle.closest('.accessibility-tool-option');
+  
+  if (isCompatible) {
+    // Enable line reader option
+    lineReaderToggle.disabled = false;
+    if (container) {
+      container.style.opacity = '1';
+      container.style.pointerEvents = 'auto';
+    }
+    
+    // Update description to show it's available
+    const description = container?.querySelector('.tool-description');
+    if (description) {
+      description.textContent = 'Resizable reading guide that highlights one line at a time';
+    }
+  } else {
+    // Disable line reader option and hide if active
+    lineReaderToggle.disabled = true;
+    lineReaderToggle.checked = false;
+    toggleLineReader(false);
+    saveAccessibilityPreference('lineReaderEnabled', false);
+    
+    if (container) {
+      container.style.opacity = '0.6';
+      container.style.pointerEvents = 'none';
+    }
+    
+    // Update description to show why it's unavailable
+    const description = container?.querySelector('.tool-description');
+    if (description) {
+      description.textContent = `Requires screen size of at least ${ACCESSIBILITY_CONFIG.lineReader.minWidth}×${ACCESSIBILITY_CONFIG.lineReader.minHeight}px`;
+    }
+  }
+}
 function getEventCoordinates(e) {
   if (e.touches && e.touches.length > 0) {
     return {
@@ -263,19 +328,23 @@ function setupMagnifier() {
   const updateThreshold = 16; // ~60fps
 
   const handleStart = (e) => {
-    e.preventDefault(); // Prevent default touch behaviors
-    const coords = getEventCoordinates(e);
-    magnifierState.isDragging = true;
-    magnifierState.startX = coords.clientX - magnifierState.currentX;
-    magnifierState.startY = coords.clientY - magnifierState.currentY;
-    magnifier.style.cursor = 'grabbing';
-    e.stopPropagation();
+    // Only prevent default if we're actually on the magnifier
+    if (e.target === magnifier || magnifier.contains(e.target)) {
+      e.preventDefault(); // Only prevent when touching the magnifier
+      const coords = getEventCoordinates(e);
+      magnifierState.isDragging = true;
+      magnifierState.startX = coords.clientX - magnifierState.currentX;
+      magnifierState.startY = coords.clientY - magnifierState.currentY;
+      magnifier.style.cursor = 'grabbing';
+      e.stopPropagation();
+    }
   };
 
   const handleMove = (e) => {
     if (!magnifierState.isDragging) return;
     
-    e.preventDefault(); // Prevent scrolling on mobile
+    // Only prevent default when actively dragging
+    e.preventDefault();
     const coords = getEventCoordinates(e);
     const now = Date.now();
     
@@ -308,10 +377,16 @@ function setupMagnifier() {
     }
   };
 
-  // Add event listeners for both mouse and touch
-  addPointerEventListener(magnifier, 'start', handleStart);
-  addPointerEventListener(document, 'move', handleMove);
-  addPointerEventListener(document, 'end', handleEnd);
+  // Add event listeners
+  magnifier.addEventListener('mousedown', handleStart);
+  magnifier.addEventListener('touchstart', handleStart, { passive: false });
+  
+  document.addEventListener('mousemove', handleMove);
+  document.addEventListener('touchmove', handleMove, { passive: false });
+  
+  document.addEventListener('mouseup', handleEnd);
+  document.addEventListener('touchend', handleEnd);
+  document.addEventListener('touchcancel', handleEnd);
 }
 
 function updateMagnifierContent() {
@@ -432,29 +507,25 @@ function setupLineReader() {
 
   // Helper function for mask dragging
   const handleMaskStart = (e) => {
-    e.preventDefault();
-    const coords = getEventCoordinates(e);
-    console.log('Mask body drag started');
-    lineReaderState.isDragging = true;
-    lineReaderState.startX = coords.clientX - lineReaderState.left;
-    lineReaderState.startY = coords.clientY - lineReaderState.top;
-    lineReader.style.cursor = 'grabbing';
-    e.stopPropagation();
-  };
-
-  // Make the entire line reader container draggable
-  const maskBodyStart = (e) => {
-    // Don't drag if clicking on window, handles, or resize elements
+    // Only prevent default when touching interactive elements
     if (e.target === lineReader || e.target.classList.contains('line-reader-mask-top') || 
         e.target.classList.contains('line-reader-mask-bottom') || 
         e.target.classList.contains('line-reader-mask-left') || 
         e.target.classList.contains('line-reader-mask-right')) {
-      handleMaskStart(e);
+      e.preventDefault();
+      const coords = getEventCoordinates(e);
+      console.log('Mask body drag started');
+      lineReaderState.isDragging = true;
+      lineReaderState.startX = coords.clientX - lineReaderState.left;
+      lineReaderState.startY = coords.clientY - lineReaderState.top;
+      lineReader.style.cursor = 'grabbing';
+      e.stopPropagation();
     }
   };
 
-  lineReader.addEventListener('mousedown', maskBodyStart);
-  lineReader.addEventListener('touchstart', maskBodyStart, { passive: false });
+  // Make the entire line reader container draggable
+  lineReader.addEventListener('mousedown', handleMaskStart);
+  lineReader.addEventListener('touchstart', handleMaskStart, { passive: false });
 
   // Handle dragging the mask container via handle (alternative)
   if (handle) {
@@ -509,7 +580,12 @@ function setupLineReader() {
 
   // Global move handlers
   const handleMove = (e) => {
-    e.preventDefault(); // Prevent scrolling on mobile
+    // Only prevent default when actively dragging or resizing
+    if (lineReaderState.isDragging || lineReaderState.isResizing || 
+        lineReaderState.window.isDragging || lineReaderState.window.isResizing) {
+      e.preventDefault();
+    }
+    
     const coords = getEventCoordinates(e);
 
     // Handle mask dragging
@@ -575,7 +651,7 @@ function setupLineReader() {
     }
   };
 
-  // Add global event listeners for both mouse and touch
+  // Add global event listeners
   document.addEventListener('mousemove', handleMove);
   document.addEventListener('touchmove', handleMove, { passive: false });
   document.addEventListener('mouseup', handleEnd);
@@ -621,7 +697,7 @@ function createResizeHandles() {
     handle.dataset.resize = direction;
     
     const handleStart = (e) => {
-      e.preventDefault();
+      e.preventDefault(); // Only prevent when touching resize handles
       const coords = getEventCoordinates(e);
       console.log('Mask resize started:', direction);
       lineReaderState.isResizing = true;
@@ -646,7 +722,7 @@ function createResizeHandles() {
       handle.dataset.windowResize = direction;
       
       const handleStart = (e) => {
-        e.preventDefault();
+        e.preventDefault(); // Only prevent when touching resize handles
         const coords = getEventCoordinates(e);
         console.log('Window resize started:', direction);
         lineReaderState.window.isResizing = true;
@@ -850,29 +926,24 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 100);
 });
 
-// Handle orientation changes and window resizing for mobile
+// Handle window resizing
 window.addEventListener('resize', () => {
-  if (isMobileDevice()) {
-    // Re-optimize positioning when screen size changes
-    setTimeout(() => {
-      if (magnifier && magnifier.classList.contains('active')) {
-        optimizeForMobile();
-        magnifier.style.left = magnifierState.currentX + 'px';
-        magnifier.style.top = magnifierState.currentY + 'px';
-        updateMagnifierContent();
-      }
-      
-      if (lineReader && lineReader.classList.contains('active')) {
-        optimizeForMobile();
-        updateLineReaderPosition();
-      }
-    }, 100); // Small delay to let orientation change complete
+  // Keep tools within viewport bounds when window resizes
+  if (magnifier && magnifier.classList.contains('active')) {
+    const maxX = window.innerWidth - magnifier.offsetWidth;
+    const maxY = window.innerHeight - magnifier.offsetHeight;
+    magnifierState.currentX = Math.max(0, Math.min(maxX, magnifierState.currentX));
+    magnifierState.currentY = Math.max(0, Math.min(maxY, magnifierState.currentY));
+    magnifier.style.left = magnifierState.currentX + 'px';
+    magnifier.style.top = magnifierState.currentY + 'px';
+    updateMagnifierContent();
+  }
+  
+  if (lineReader && lineReader.classList.contains('active')) {
+    const maxLeft = window.innerWidth - lineReaderState.width;
+    const maxTop = window.innerHeight - lineReaderState.height;
+    lineReaderState.left = Math.max(0, Math.min(maxLeft, lineReaderState.left));
+    lineReaderState.top = Math.max(0, Math.min(maxTop, lineReaderState.top));
+    updateLineReaderPosition();
   }
 });
-
-// Prevent zoom on double-tap for mobile (optional - improves UX for accessibility tools)
-document.addEventListener('touchend', (e) => {
-  if (e.target.closest('.magnifier-container') || e.target.closest('.line-reader-container')) {
-    e.preventDefault();
-  }
-}, { passive: false });
