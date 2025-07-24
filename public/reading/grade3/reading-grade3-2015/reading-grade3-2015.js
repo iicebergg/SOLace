@@ -997,9 +997,9 @@ const sampleQuestions = [
 let isReadingPanelOpen = false;
 let currentPassageId = null;
 
-function openReadingPanel() {
+ function openReadingPanel() {
   const panel = document.getElementById('reading-panel');
-  const testContainer = document.getElementById('test-container');
+  const testContainer = document.querySelector('.test-container'); // Outer container with class
   
   if (panel) {
     panel.classList.add('open');
@@ -1007,7 +1007,7 @@ function openReadingPanel() {
     console.log('Reading panel auto-opened');
   }
   
-  // Always adjust test container to make room for left panel
+  // Add class to outer test container (the one with class="test-container")
   if (testContainer) {
     testContainer.classList.add('panel-open');
     console.log('Test container adjusted for left panel');
@@ -1016,7 +1016,7 @@ function openReadingPanel() {
 
 function closeReadingPanel() {
   const panel = document.getElementById('reading-panel');
-  const testContainer = document.getElementById('test-container');
+  const testContainer = document.querySelector('.test-container'); // Outer container with class
   
   if (panel) {
     panel.classList.remove('open');
@@ -1024,10 +1024,97 @@ function closeReadingPanel() {
     console.log('Reading panel closed');
   }
   
-  // Reset test container
+  // Remove class from outer test container
   if (testContainer) {
     testContainer.classList.remove('panel-open');
     console.log('Test container reset');
+  }
+}
+
+// Also update the loadPassage function to ensure proper class application
+function loadPassage(passageId) {
+  if (!passageId) {
+    console.log('No passageId provided, closing panel');
+    closeReadingPanel();
+    return;
+  }
+  
+  if (currentPassageId === passageId && isReadingPanelOpen) {
+    console.log('Passage already loaded and panel open:', passageId);
+    return; // Already loaded and open
+  }
+  
+  const passage = readingPassages[passageId];
+  if (!passage) {
+    console.error('Passage not found:', passageId);
+    console.log('Available passages:', Object.keys(readingPassages));
+    closeReadingPanel();
+    return;
+  }
+  
+  currentPassageId = passageId;
+  
+  const titleElement = document.getElementById('passage-title');
+  const contentElement = document.getElementById('passage-content');
+  
+  if (titleElement) {
+    titleElement.textContent = passage.title;
+    console.log('Passage title set to:', passage.title);
+  } else {
+    console.error('Passage title element not found');
+  }
+  
+  if (contentElement) {
+    contentElement.innerHTML = passage.content;
+    console.log('Passage content loaded, length:', passage.content.length);
+  } else {
+    console.error('Passage content element not found');
+  }
+  
+  // Auto-open the panel and ensure test container gets proper class
+  openReadingPanel();
+  
+  // Force reflow and ensure class is applied
+  setTimeout(() => {
+    const testContainer = document.querySelector('.test-container');
+    if (testContainer && !testContainer.classList.contains('panel-open')) {
+      console.log('Force applying panel-open class');
+      testContainer.classList.add('panel-open');
+    }
+  }, 100);
+  
+  console.log('Successfully loaded and opened passage:', passage.title);
+}
+
+// Enhanced displayFeedback function with positioning fix
+function displayFeedback(isCorrect, explanation) {
+  const feedbackContainer = document.getElementById('feedback-container');
+  const feedbackMessage = document.getElementById('feedback-message');
+  const explanationElement = document.getElementById('explanation');
+
+  if (feedbackMessage) {
+    feedbackMessage.textContent = isCorrect ? 'Correct!' : 'Incorrect:';
+    feedbackMessage.className = isCorrect ? 'correct' : 'incorrect';
+  }
+
+  if (explanationElement) {
+    explanationElement.textContent = explanation;
+  }
+
+  if (feedbackContainer) {
+    feedbackContainer.style.display = 'block';
+    
+    // Force a reflow to ensure positioning is applied
+    feedbackContainer.offsetHeight;
+    
+    // Scroll feedback into view if needed
+    setTimeout(() => {
+      feedbackContainer.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'nearest',
+        inline: 'nearest'
+      });
+    }, 100);
   }
 }
 

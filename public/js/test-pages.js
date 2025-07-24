@@ -860,7 +860,41 @@ function displayFeedback(isCorrect, explanation) {
   }
 
   if (feedbackContainer) {
+    // Force proper positioning when panel is open
+    const testContainer = document.querySelector('.test-container');
+    const readingPanel = document.querySelector('.reading-panel');
+    
+    if (testContainer && readingPanel && readingPanel.classList.contains('open')) {
+      // Ensure feedback container is properly constrained
+      feedbackContainer.style.position = 'relative';
+      feedbackContainer.style.zIndex = '102';
+      feedbackContainer.style.left = '0';
+      feedbackContainer.style.right = '0';
+      feedbackContainer.style.width = '100%';
+      feedbackContainer.style.maxWidth = '100%';
+      feedbackContainer.style.marginLeft = '0';
+      feedbackContainer.style.marginRight = '0';
+      feedbackContainer.style.transform = 'none';
+      
+      // Ensure the parent container has proper positioning context
+      testContainer.style.position = 'relative';
+      testContainer.style.zIndex = '100';
+      testContainer.style.isolation = 'isolate';
+    }
+    
     feedbackContainer.style.display = 'block';
+    
+    // Force a reflow to ensure positioning is applied
+    feedbackContainer.offsetHeight;
+    
+    // Scroll feedback into view if needed
+    setTimeout(() => {
+      feedbackContainer.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'nearest',
+        inline: 'nearest'
+      });
+    }, 100);
   }
 }
 

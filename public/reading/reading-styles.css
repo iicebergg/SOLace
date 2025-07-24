@@ -10,8 +10,8 @@ main {
 }
 
 .test-container {
-  transition: margin-left 0.3s ease; /* Changed from margin-right */
-  max-width: none; /* Remove width restrictions */
+  transition: margin-left 0.3s ease, max-width 0.3s ease;
+  max-width: none;
   width: 100%;
 }
 
@@ -32,7 +32,16 @@ main {
 
 /* Panel open state - content moves RIGHT to make room for LEFT panel */
 .test-container.panel-open {
-  margin-left: 400px;
+  margin-left: 420px; /* 400px panel + 20px breathing room */
+  margin-right: 20px; /* Right margin for screen edge */
+  max-width: calc(100vw - 460px); /* More conservative calculation */
+  width: auto; /* Let it size naturally within constraints */
+  box-sizing: border-box;
+  /* Create isolated positioning context */
+  position: relative;
+  z-index: 100; /* Higher than reading panel */
+  /* Ensure content is completely separated from panel area */
+  isolation: isolate;
 }
 
 /* Test Header - Remove toggle button styles since there's no button */
@@ -137,7 +146,7 @@ main {
   display: none !important;
 }
 
-/* Increase question container width when panel is open */
+/* Enhanced test container sizing when panel is open */
 #test-container {
   background-color: var(--secondary-bg, #f9f9f9);
   border: 1px solid var(--border-color, #dddddd);
@@ -145,23 +154,39 @@ main {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 2rem;
   margin-bottom: 2rem;
-  min-height: 500px; /* Ensure good height */
+  min-height: 500px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+/* Let inner container fill its parent normally when panel is open */
+.test-container.panel-open #test-container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
 }
 
 /* Enhanced question styling for wider layout */
 .question-text {
-  font-size: 1.2rem; /* Slightly larger */
+  font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 2rem;
   color: var(--text-color, #333);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Enhanced options styling for wider layout */
 .option {
-  padding: 1.25rem 1rem; /* More padding for better spacing */
+  padding: 1.25rem 1rem;
   margin-bottom: 1rem;
   line-height: 1.6;
-  font-size: 1.05rem; /* Slightly larger text */
+  font-size: 1.05rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .option label {
@@ -169,26 +194,31 @@ main {
   line-height: 1.6;
   cursor: pointer;
   flex: 1;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Free response for reading questions - larger for wide layout */
 .response-input {
-  min-height: 120px; /* Increased */
+  min-height: 120px;
   font-family: inherit;
   font-size: 1.05rem;
   line-height: 1.6;
   resize: vertical;
-  padding: 1rem; /* More padding */
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-/* Progress bar styling for wider layout */
+/* Progress bar styling for wider layout - FIXED */
 #progress-bar {
   background-color: var(--border-color, #e1e7f0);
   border-radius: 10px;
-  height: 12px; /* Slightly taller */
+  height: 12px;
   margin-bottom: 1rem;
   overflow: hidden;
   width: 100%;
+  box-sizing: border-box;
 }
 
 #progress-fill {
@@ -200,14 +230,108 @@ main {
 /* Question counter for wider layout */
 #question-counter {
   color: var(--text-color, #666);
-  font-size: 1rem; /* Slightly larger */
+  font-size: 1rem;
   margin-bottom: 1.5rem;
   text-align: center;
   font-weight: 500;
 }
 
+/* FIXED: Feedback container positioning and sizing */
+#feedback-container {
+  margin-top: 1.25rem;
+  padding: 1.25rem;
+  margin-bottom: 0;
+  background-color: var(--secondary-bg, #f9f9f9);
+  border: 1px solid var(--border-color, #dddddd);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 101;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  clear: both;
+}
+
+/* CRITICAL FIX: Apply same positioning as test-container when panel is open */
+.test-container.panel-open ~ #feedback-container,
+.reading-panel.open ~ main #feedback-container {
+  margin-left: 420px !important; /* Same as test-container */
+  margin-right: 20px !important; /* Same as test-container */
+  max-width: calc(100vw - 460px) !important; /* Same as test-container */
+  width: auto !important;
+  box-sizing: border-box !important;
+  position: relative !important;
+  z-index: 101 !important;
+}
+
+/* Feedback content wrapper */
+#feedback-container .feedback-content {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* Feedback message styling */
+#feedback-message {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  font-weight: bold;
+  padding: 0.5rem 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+#feedback-message.correct {
+  color: var(--success-color, #28a745);
+  border-left: 4px solid var(--success-color, #28a745);
+  padding-left: 1rem;
+  background-color: rgba(40, 167, 69, 0.1);
+}
+
+#feedback-message.incorrect {
+  color: var(--error-color, #dc3545);
+  border-left: 4px solid var(--error-color, #dc3545);
+  padding-left: 1rem;
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+/* FIXED: Explanation box specific positioning */
+#explanation {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  padding: 1rem;
+  background-color: var(--input-bg, white);
+  border-left: 4px solid var(--accent-color, #4a6fa5);
+  border-radius: 0 4px 4px 0;
+  margin-top: 0.75rem;
+  position: relative;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Enhanced button group spacing for wide layout */
+#controls {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#controls button {
+  padding: 0.875rem 2rem;
+  font-size: 1.05rem;
+}
+
 /* Responsive Design - Adjust panel and layout for different screen sizes */
-@media (max-width: 1200px) {
+@media (max-width: 1200px) and (min-width: 901px) {
   main {
     max-width: 1200px !important;
   }
@@ -218,7 +342,51 @@ main {
   }
   
   .test-container.panel-open {
-    margin-left: 350px;
+    margin-left: 390px !important; /* 350px panel + 40px clearance */
+    margin-right: 25px !important;
+    max-width: calc(100vw - 435px) !important;
+    min-width: 450px !important;
+    width: auto !important;
+  }
+  
+  /* Apply same positioning to feedback container */
+  .test-container.panel-open ~ #feedback-container,
+  .reading-panel.open ~ main #feedback-container {
+    margin-left: 390px !important; /* 350px panel + 40px clearance */
+    margin-right: 25px !important;
+    max-width: calc(100vw - 435px) !important;
+    min-width: 450px !important;
+    width: auto !important;
+  }
+}
+
+@media (max-width: 900px) and (min-width: 769px) {
+  main {
+    max-width: 100% !important;
+    padding: 0 1rem;
+  }
+  
+  .reading-panel {
+    width: 320px;
+    left: -320px;
+  }
+  
+  .test-container.panel-open {
+    margin-left: 360px !important; /* 320px panel + 40px clearance */
+    margin-right: 20px !important;
+    max-width: calc(100vw - 400px) !important;
+    min-width: 350px !important;
+    width: auto !important;
+  }
+  
+  /* Apply same positioning to feedback container */
+  .test-container.panel-open ~ #feedback-container,
+  .reading-panel.open ~ main #feedback-container {
+    margin-left: 360px !important; /* 320px panel + 40px clearance */
+    margin-right: 20px !important;
+    max-width: calc(100vw - 400px) !important;
+    min-width: 350px !important;
+    width: auto !important;
   }
 }
 
@@ -234,7 +402,21 @@ main {
   }
   
   .test-container.panel-open {
-    margin-left: 300px;
+    margin-left: 340px !important; /* 300px panel + 40px clearance */
+    margin-right: 20px !important;
+    max-width: calc(100vw - 380px) !important;
+    min-width: 280px !important;
+    width: auto !important;
+  }
+  
+  /* Apply same positioning to feedback container */
+  .test-container.panel-open ~ #feedback-container,
+  .reading-panel.open ~ main #feedback-container {
+    margin-left: 340px !important; /* 300px panel + 40px clearance */
+    margin-right: 20px !important;
+    max-width: calc(100vw - 380px) !important;
+    min-width: 280px !important;
+    width: auto !important;
   }
   
   #test-container {
@@ -249,6 +431,24 @@ main {
     padding: 1rem 0.75rem;
     font-size: 1rem;
   }
+  
+  #controls {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  #controls button {
+    width: 100%;
+  }
+  
+  #feedback-container {
+    padding: 1rem;
+  }
+  
+  #explanation {
+    font-size: 0.9rem;
+    padding: 0.875rem;
+  }
 }
 
 @media (max-width: 480px) {
@@ -258,7 +458,21 @@ main {
   }
   
   .test-container.panel-open {
-    margin-left: 280px;
+    margin-left: 320px !important; /* 280px panel + 40px clearance */
+    margin-right: 15px !important;
+    max-width: calc(100vw - 355px) !important;
+    min-width: 240px !important;
+    width: auto !important;
+  }
+  
+  /* Apply same positioning to feedback container */
+  .test-container.panel-open ~ #feedback-container,
+  .reading-panel.open ~ main #feedback-container {
+    margin-left: 320px !important; /* 280px panel + 40px clearance */
+    margin-right: 15px !important;
+    max-width: calc(100vw - 355px) !important;
+    min-width: 240px !important;
+    width: auto !important;
   }
   
   .reading-panel-header {
@@ -277,6 +491,45 @@ main {
   #test-container {
     padding: 1rem;
   }
+  
+  #feedback-container {
+    padding: 0.875rem;
+  }
+  
+  #explanation {
+    font-size: 0.85rem;
+    padding: 0.75rem;
+  }
+}
+
+/* Medium-large screens - Bridge the gap between medium and large */
+@media (min-width: 1201px) and (max-width: 1399px) {
+  main {
+    max-width: 1400px !important;
+  }
+  
+  .reading-panel {
+    width: 400px;
+    left: -400px;
+  }
+  
+  .test-container.panel-open {
+    margin-left: 440px !important; /* 400px panel + 40px clearance */
+    margin-right: 30px !important;
+    max-width: calc(100vw - 490px) !important;
+    min-width: 500px !important;
+    width: auto !important;
+  }
+  
+  /* Apply same positioning to feedback container */
+  .test-container.panel-open ~ #feedback-container,
+  .reading-panel.open ~ main #feedback-container {
+    margin-left: 440px !important; /* 400px panel + 40px clearance */
+    margin-right: 30px !important;
+    max-width: calc(100vw - 490px) !important;
+    min-width: 500px !important;
+    width: auto !important;
+  }
 }
 
 /* Large screens - Use even more space */
@@ -291,7 +544,21 @@ main {
   }
   
   .test-container.panel-open {
-    margin-left: 450px;
+    margin-left: 490px !important; /* 450px panel + 40px clearance */
+    margin-right: 40px !important;
+    max-width: calc(100vw - 550px) !important;
+    min-width: 600px !important;
+    width: auto !important;
+  }
+  
+  /* Apply same positioning to feedback container */
+  .test-container.panel-open ~ #feedback-container,
+  .reading-panel.open ~ main #feedback-container {
+    margin-left: 490px !important; /* 450px panel + 40px clearance */
+    margin-right: 40px !important;
+    max-width: calc(100vw - 550px) !important;
+    min-width: 600px !important;
+    width: auto !important;
   }
   
   .question-text {
@@ -307,6 +574,16 @@ main {
     min-height: 140px;
     font-size: 1.1rem;
   }
+  
+  #feedback-container {
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  #explanation {
+    font-size: 1rem;
+    padding: 1.25rem;
+  }
 }
 
 /* Very large screens */
@@ -321,48 +598,21 @@ main {
   }
   
   .test-container.panel-open {
-    margin-left: 500px;
-  }
-}
-
-/* Enhanced feedback for reading questions */
-#feedback-container {
-  margin-top: 2rem;
-  padding: 1.5rem;
-}
-
-#feedback-message {
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
-}
-
-#explanation {
-  font-size: 1rem;
-  line-height: 1.7;
-  padding: 1.25rem;
-}
-
-/* Better button group spacing for wide layout */
-#controls {
-  margin-top: 2.5rem;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-#controls button {
-  padding: 0.875rem 2rem; /* Larger buttons */
-  font-size: 1.05rem;
-}
-
-@media (max-width: 480px) {
-  #controls {
-    flex-direction: column;
-    gap: 1rem;
+    margin-left: 540px !important; /* 500px panel + 40px clearance */
+    margin-right: 50px !important;
+    max-width: calc(100vw - 610px) !important;
+    min-width: 700px !important;
+    width: auto !important;
   }
   
-  #controls button {
-    width: 100%;
+  /* Apply same positioning to feedback container */
+  .test-container.panel-open ~ #feedback-container,
+  .reading-panel.open ~ main #feedback-container {
+    margin-left: 540px !important; /* 500px panel + 40px clearance */
+    margin-right: 50px !important;
+    max-width: calc(100vw - 610px) !important;
+    min-width: 700px !important;
+    width: auto !important;
   }
 }
 
@@ -421,6 +671,8 @@ body.theme-gray-on-green .reading-panel-header h3 {
   
   .test-container.panel-open {
     margin-left: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
   }
   
   main {
@@ -436,128 +688,11 @@ body.theme-gray-on-green .reading-panel-header h3 {
   }
 }
 
-#feedback-container {
-  margin-top: 1.25rem;
-  padding: 1.25rem;
-  margin-bottom: 0;
-  background-color: var(--secondary-bg, #f9f9f9);
-  border: 1px solid var(--border-color, #dddddd);
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  position: relative;
-  z-index: 10;
-  /* Ensure it's not hidden behind the panel */
-}
-
-/* Adjust feedback container when reading panel is open */
-.test-container.panel-open #feedback-container {
-  /* Keep it within the available content area */
-  margin-right: 0;
-  max-width: 100%;
-  /* Add extra left margin to prevent overlap with panel */
-  margin-left: 0;
-}
-
-/* Ensure feedback content is properly contained */
-#feedback-container .feedback-content {
-  max-width: 100%;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-}
-
-/* Feedback message styling */
-#feedback-message {
-  font-size: 1.1rem;
-  margin-bottom: 0.75rem;
-  font-weight: bold;
-  padding: 0.5rem 0;
-}
-
-#feedback-message.correct {
-  color: var(--success-color, #28a745);
-  border-left: 4px solid var(--success-color, #28a745);
-  padding-left: 1rem;
-  background-color: rgba(40, 167, 69, 0.1);
-}
-
-#feedback-message.incorrect {
-  color: var(--error-color, #dc3545);
-  border-left: 4px solid var(--error-color, #dc3545);
-  padding-left: 1rem;
-  background-color: rgba(220, 53, 69, 0.1);
-}
-
-/* Explanation box specific positioning */
-#explanation {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  padding: 1rem;
-  background-color: var(--input-bg, white);
-  border-left: 4px solid var(--accent-color, #4a6fa5);
-  border-radius: 0 4px 4px 0;
-  margin-top: 0.75rem;
-  position: relative;
-  /* Ensure explanation text wraps properly */
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  hyphens: auto;
-}
-
-/* Responsive feedback positioning */
-@media (max-width: 1200px) {
-  .test-container.panel-open #feedback-container {
-    /* Adjust for smaller panel on smaller screens */
-    margin-left: 0;
-  }
-}
-
-@media (max-width: 768px) {
-  #feedback-container {
-    padding: 1rem;
-    margin-top: 1rem;
-  }
-  
-  .test-container.panel-open #feedback-container {
-    /* Ensure it doesn't get squeezed too much on mobile */
-    margin-left: 0;
-    margin-right: 0;
-  }
-  
-  #feedback-message {
-    font-size: 1rem;
-  }
-  
-  #explanation {
-    font-size: 0.9rem;
-    padding: 0.875rem;
-  }
-}
-
-@media (max-width: 480px) {
-  #feedback-container {
-    padding: 0.875rem;
-  }
-  
-  #explanation {
-    font-size: 0.85rem;
-    padding: 0.75rem;
-  }
-}
-
-/* Ensure feedback container is always visible and accessible */
-#feedback-container[style*="display: block"] {
-  /* Override any hiding when it should be shown */
-  display: block !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-
-/* Animation for feedback appearance */
+/* FIXED: Animation for feedback appearance */
 #feedback-container {
   opacity: 0;
   transform: translateY(-10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition: opacity 0.3s ease, transform 0.3s ease, margin-left 0.3s ease, margin-right 0.3s ease, max-width 0.3s ease;
 }
 
 #feedback-container[style*="display: block"] {
@@ -565,10 +700,17 @@ body.theme-gray-on-green .reading-panel-header h3 {
   transform: translateY(0);
 }
 
-/* Ensure the entire test container accommodates feedback */
+/* FIXED: Ensure feedback container is always visible and accessible */
+#feedback-container[style*="display: block"] {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* FIXED: Ensure the entire test container accommodates feedback */
 .test-container {
   position: relative;
-  /* Ensure it can contain absolutely positioned elements if needed */
+  overflow: visible;
 }
 
 /* Fix for explanation text readability */
@@ -581,40 +723,39 @@ body.theme-gray-on-green .reading-panel-header h3 {
   margin-bottom: 0;
 }
 
-/* Enhanced visibility when panel is open */
+/* FIXED: Enhanced visibility when panel is open */
 .test-container.panel-open {
-  /* Ensure the content area is properly defined */
   position: relative;
   overflow: visible;
 }
 
-.test-container.panel-open #feedback-container {
-  /* Ensure feedback stays within the content bounds */
-  box-sizing: border-box;
-  width: 100%;
-  clear: both;
-}
-
-/* Prevent feedback from extending under the panel */
+/* FIXED: Prevent any content from extending under the panel */
 .reading-panel.open ~ .test-container #feedback-container,
 .test-container.panel-open #feedback-container {
-  /* Calculate available width excluding panel */
-  max-width: calc(100% - 1rem); /* Account for any margins */
+  clear: both;
+  width: 100% !important;
+  max-width: 100% !important;
   box-sizing: border-box;
+  overflow: hidden;
+  /* Absolutely constrain to content area */
+  position: relative !important;
+  z-index: 101 !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  /* Force it to respect container boundaries */
+  contain: layout style !important;
 }
 
-/* Large screen optimizations */
-@media (min-width: 1400px) {
-  .test-container.panel-open #feedback-container {
-    /* More generous spacing on large screens */
-    padding: 1.5rem;
-    margin-top: 1.5rem;
-  }
-  
-  #explanation {
-    font-size: 1rem;
-    padding: 1.25rem;
-  }
+/* Fix for explanation text readability */
+#explanation p {
+  margin-bottom: 0.75rem;
+  line-height: 1.6;
+}
+
+#explanation p:last-child {
+  margin-bottom: 0;
 }
 
 /* Print styles for feedback */
