@@ -438,6 +438,7 @@ const sampleQuestions = [
       'Danielle tries on the apron.'
     ],
     dropZones: [' ', ' ', ' ', ' '],
+    correctAnswer: [4, 1, 2, 3, 0],
     explanation: 'Animals eat lots of food before hibernating to store fat in their bodies.'
   },
 

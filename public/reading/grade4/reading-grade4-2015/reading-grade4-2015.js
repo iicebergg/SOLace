@@ -360,14 +360,14 @@ one billion pounds each year!</p>
 const sampleQuestions = [
   {
     id: '1',
-    text: 'Another good title for this story would be--',
+    text: 'Which question is answered in paragraph 5?',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: 'summer_adventures',
     options: [
-      'Sewing New Clothes',
-      'Baking for the Family', 
-      'A Morning Snack',
-      'Gifts for Everyone'
+      'What had Ben and Eli planned for the summer?',
+      'Where is Eli after the last week of school?', 
+      'Who helps Ben solve his problem?',
+      'Where do Ben and Eli go to school?'
     ],
     correctAnswer: 2,
     explanation: 'The passage states that "migrate means they travel to warmer places."'
@@ -375,14 +375,14 @@ const sampleQuestions = [
 
   {
     id: '2', 
-    text: 'Danielle keeps the cupcakes a secret by--',
+    text: 'Based on paragraph 6, Ben\'s mother may best be described as--',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: 'summer_adventures',
     options: [
-      'moving them to the laundry room',
-      'making them in the morning', 
-      'placing them inside a box',
-      'covering them with paper'
+      'honest',
+      'trusting', 
+      'grateful',
+      'caring'
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions that bears, groundhogs, and some frogs hibernate.'
@@ -390,30 +390,29 @@ const sampleQuestions = [
 
   {
     id: '3',
-    text: 'Complete this flow chart. (image)',
-    type: 'drag-drop',
-    passageId: 'the_cooks_surprise',
+    text: 'A student asks this question after reading the story. <div class="passage-dicbox">What activity to ben and Mark choose first?</div> Which paragraph answers this question?',
+    type: 'multiple-choice',
+    passageId: 'summer_adventures',
     options: [
-      'Danielle looks at the edges of the apron.',
-      'Danielle finds bits of cloth in the laundry room.', 
-      'Danielle sets the cupcakes on the table.',
-      'Danielle walks into her bedroom.',
-      'Danielle tries on the apron.'
+      '7',
+      '8', 
+      '9',
+      '12'
     ],
-    dropZones: [' ', ' ', ' ', ' '],
+    correctAnswer: 0,
     explanation: 'Animals eat lots of food before hibernating to store fat in their bodies.'
   },
 
   {
     id: '4',
-    text: 'Danielle is pleased with the surprise most likely because she--',
+    text: 'Eli shows he wants to be Mark\'s friend by --',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: 'summer_adventures',
     options: [
-      'needs to wear it when making cupcakes',
-      'can cook more often for her family',
-      'enjoys wearing blue and yellow clothes',
-      'can tell that her family cares about her'
+      'suggesting that Mark be invited to the lake',
+      'saying that he and Mark have many things in common',
+      'asking to join Mark and Ben at summer camp next year',
+      'asking Mark and Ben to join him when he visits his cousin'
     ],
     correctAnswer: 1,
     explanation: 'Emma thought the garden was magical because the vegetables were the biggest she had ever seen.'
@@ -421,14 +420,14 @@ const sampleQuestions = [
 
   {
     id: '5',
-    text: 'What will Martin and Madison most likely do next?',
+    text: 'Ben agrees to go to camp because he--',
     type: 'multiple-choice', 
-    passageId: 'the_cooks_surprise',
+    passageId: 'summer_adventures',
     options: [
-      'Make another apron',
-      'Help their sister cook',
-      'Clean the laundry room',
-      'Bite into their cupcakes'
+      'wants to make his mom happy',
+      'likes swimming at the pool',
+      'wants to meet new people from his school',
+      'thinks he will enjoy being outdoors'
     ],
     correctAnswer: 1,
     explanation: 'Grandma said the secret is in the water from the pond with special minerals.'
@@ -436,14 +435,14 @@ const sampleQuestions = [
 
   {
     id: '6',
-    text: 'Which of these do the characters have in common?',
+    text: 'Which sentence best supports the idea that Ben is excited about summer vacation at the beginning of the story?',
     type: 'multiple-choice', 
-    passageId: 'the_cooks_surprise',
+    passageId: 'summer_adventures',
     options: [
-      'They think of others.',
-      'They sleep late.',
-      'They sew clothes.',
-      'They like to cook.'
+      'He talks to his mother about going to a summer camp.',
+      'He speaks to a friend about going to a nearby pond.',
+      'He decides that he would like to go hiking.',
+      'He mentions the length of time left in the school year.'
     ],
     correctAnswer: 1,
     explanation: 'Grandma said the secret is in the water from the pond with special minerals.'
@@ -451,14 +450,14 @@ const sampleQuestions = [
 
   {
     id: '7',
-    text: 'What is the root word in "discovered"?',
+    text: 'Once summer is over, the three boys will most likely--',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: 'summer_adventures',
     options: [
-      'disc',
-      'disco', 
-      'cover',
-      'over'
+      'learn about other camping activities',
+      'look for other day camps in their area', 
+      'play together during the school year',
+      'make more friends at their school'
     ],
     correctAnswer: 1,
     explanation: 'The passage states that people invented telescopes to see farther into space.'
@@ -466,14 +465,14 @@ const sampleQuestions = [
 
   {
     id: '8',
-    text: 'Some people eat seaweed all by itself because they most likely--',
+    text: 'Read this sentence from paragraph 2. <div class="passage-dicbox">Mud kept the houses cool from the <u>soaring</u> temperatures.</div> Which word has the same meaning as <u>soaring</u> in this sentence?',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea', 
+    passageId: 'ancient_egypt', 
     options: [
-      'do not know it is used in other foods',
-      'eat many foods that come from the ocean',
-      'enjoy foods that add color to the meals they eat', 
-      'do not like how it tastes mixed with other foods'
+      'damaging',
+      'crashing',
+      'floating', 
+      'rising'
     ],
     correctAnswer: 2,
     explanation: 'The passage states that Yuri Gagarin from Russia was the first person to travel to space in 1961.'
