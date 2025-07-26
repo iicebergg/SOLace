@@ -369,7 +369,7 @@ const sampleQuestions = [
       'Who helps Ben solve his problem?',
       'Where do Ben and Eli go to school?'
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     explanation: 'The passage states that "migrate means they travel to warmer places."'
   },
 
@@ -384,7 +384,7 @@ const sampleQuestions = [
       'grateful',
       'caring'
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
     explanation: 'The passage mentions that bears, groundhogs, and some frogs hibernate.'
   },
 
@@ -399,7 +399,7 @@ const sampleQuestions = [
       '9',
       '12'
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'Animals eat lots of food before hibernating to store fat in their bodies.'
   },
 
@@ -414,7 +414,7 @@ const sampleQuestions = [
       'asking to join Mark and Ben at summer camp next year',
       'asking Mark and Ben to join him when he visits his cousin'
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: 'Emma thought the garden was magical because the vegetables were the biggest she had ever seen.'
   },
 
@@ -429,7 +429,7 @@ const sampleQuestions = [
       'wants to meet new people from his school',
       'thinks he will enjoy being outdoors'
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'Grandma said the secret is in the water from the pond with special minerals.'
   },
 
@@ -444,7 +444,7 @@ const sampleQuestions = [
       'He decides that he would like to go hiking.',
       'He mentions the length of time left in the school year.'
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'Grandma said the secret is in the water from the pond with special minerals.'
   },
 
@@ -459,7 +459,7 @@ const sampleQuestions = [
       'play together during the school year',
       'make more friends at their school'
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: 'The passage states that people invented telescopes to see farther into space.'
   },
 
@@ -474,7 +474,7 @@ const sampleQuestions = [
       'floating', 
       'rising'
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: 'The passage states that Yuri Gagarin from Russia was the first person to travel to space in 1961.'
   },
 
@@ -504,7 +504,7 @@ const sampleQuestions = [
       'Different crops grew well in the hot climate of Egypt.',
       'Fruits and vegetables were a favorite food for people in Egypt.',
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -519,7 +519,7 @@ const sampleQuestions = [
       'It was used for many purposes.',
       'It was made from expensive materials.',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -534,7 +534,7 @@ const sampleQuestions = [
       'clever',
       'gentle'
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -549,7 +549,7 @@ const sampleQuestions = [
       'Egyptian clothing was easy to make.',
       'The Egyptians developed the greatest culture in history.',
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -564,7 +564,7 @@ const sampleQuestions = [
       'Wore wigs on their heads',
       'Built small windows in houses',
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -594,7 +594,7 @@ const sampleQuestions = [
       'thirst<u>y</u>',
       'coz<u>y</u>',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -609,7 +609,7 @@ const sampleQuestions = [
       'Swim in the pool',
       'Run in the field',
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -624,7 +624,7 @@ const sampleQuestions = [
       'cookbooks for students',
       'food at the school fair',
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -654,7 +654,7 @@ const sampleQuestions = [
       'To amuse students with some ideas for a school fair',
       'To tell students about future school events',
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -684,7 +684,7 @@ const sampleQuestions = [
       'trade',
       'build',
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -698,7 +698,7 @@ const sampleQuestions = [
       'She tied a cloth belt around her <u>waste</u>.',
       'This is the <u>main</u> street in our town.',
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -713,7 +713,7 @@ const sampleQuestions = [
       'Bright',
       'Funny'
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -728,7 +728,7 @@ const sampleQuestions = [
       'Max keeps his pride hidden from Sidney.',
       'Max beats Sidney in a somersault contest.',
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -743,7 +743,7 @@ const sampleQuestions = [
       'feeling lazy',
       'lying',
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -774,7 +774,7 @@ const sampleQuestions = [
       'Jumping from a treetop',
       'Bouncing off the branches'
     ],
-    correctAnswer: [4, 1, 2],
+    correctAnswer: 1,
     explanation: 'To round 5,647: to nearest thousand (6,000), nearest hundred (5,600), nearest ten (5,650).'
   },
 
@@ -819,7 +819,7 @@ const sampleQuestions = [
       'The light of the moon is shining on the thieves.',
       'The noise outside is making the thieves nervous.',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -849,7 +849,7 @@ const sampleQuestions = [
       'Some food to eat',
       'Some jewels to steal',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -864,7 +864,7 @@ const sampleQuestions = [
       'Sitting on the grass',
       'Watching from inside',
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -910,7 +910,7 @@ const sampleQuestions = [
       'Popcorn is a snack that is easy to make at home.',
       'Popcorn continues to be sold at movie theaters.',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -926,7 +926,7 @@ const sampleQuestions = [
       'People add popcorn to many other types of food.',
       'People bake bread made from popcorn flour.'
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -941,7 +941,7 @@ const sampleQuestions = [
       'list differences between types of popcorn',
       'tell readers about the history of popcorn',
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -956,7 +956,7 @@ const sampleQuestions = [
       'began, invented',
       'still, again',
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 ];
