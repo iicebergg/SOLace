@@ -149,7 +149,7 @@ the greatest in history.</p>
     `
   },
 
-  'spring_fundraisers': {
+  'fundraisers': {
     title: 'Harrison Elementary Spring Fundraisers',
     content: `
       <p><From the first graders' day at the zoo to the fifth graders' tour of the
@@ -206,7 +206,7 @@ field trips successful!</p>
     `
   },
 
-   'first_place_friend': {
+   'friend': {
     title: 'A First-Place Friend',
     content: `
       <p>One morning two monkey friends named Max and Sidney were
@@ -283,7 +283,7 @@ speedy and smart!</p>
     `
   },
 
-     'band_of_thieves': {
+     'thieves': {
     title: 'Band of Thieves',
     content: `
       <p><ol>
@@ -390,7 +390,7 @@ const sampleQuestions = [
 
   {
     id: '3',
-    text: 'A student asks this question after reading the story. <div class="passage-dicbox">What activity to ben and Mark choose first?</div> Which paragraph answers this question?',
+    text: 'A student asks this question after reading the story. <div class="passage-innerbox">What activity to ben and Mark choose first?</div> Which paragraph answers this question?',
     type: 'multiple-choice',
     passageId: 'summer_adventures',
     options: [
@@ -465,7 +465,7 @@ const sampleQuestions = [
 
   {
     id: '8',
-    text: 'Read this sentence from paragraph 2. <div class="passage-dicbox">Mud kept the houses cool from the <u>soaring</u> temperatures.</div> Which word has the same meaning as <u>soaring</u> in this sentence?',
+    text: 'Read this sentence from paragraph 2. <div class="passage-innerbox">Mud kept the houses cool from the <u>soaring</u> temperatures.</div> Which word has the same meaning as <u>soaring</u> in this sentence?',
     type: 'multiple-choice',
     passageId: 'ancient_egypt', 
     options: [
@@ -480,14 +480,14 @@ const sampleQuestions = [
 
   {
     id: '9',
-    text: 'Based on the article, seaweed makes ice cream and yogurt--',
+    text: 'Which question is answered in the section titled "Clothing and Hair"?',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea',
+    passageId: 'ancient_egypt',
     options: [
-      'last longer',
-      'taste different',
-      'sell faster',
-      'look different',
+      'How were the hairstyles of Egyptian men and women alike?',
+      'What was the most popular style of clothing for Egyptian boys and girls?',
+      'How often did Egyptians have to shave their heads?',
+      'What type of tunic was worn during special Egyptian celebrations?',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -495,14 +495,14 @@ const sampleQuestions = [
 
   {
     id: '10',
-    text: 'Which question is answered in the article?',
+    text: 'What is the main idea of paragraph 6?',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea',
+    passageId: 'ancient_egypt',
     options: [
-      'What does seaweed taste like?',
-      'Where do farmers buy seaweed?',
-      'Which ocean has the most seaweed?',
-      'Which goods have seaweed in them?',
+      'The Egyptians fished from the surrounding seas and the Nile River.',
+      'The Egyptians ate many types of foods from their region.',
+      'Different crops grew well in the hot climate of Egypt.',
+      'Fruits and vegetables were a favorite food for people in Egypt.',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -510,14 +510,14 @@ const sampleQuestions = [
 
     {
     id: '11',
-    text: 'The author wrote this article most likely to--',
+    text: 'Which of these best describes the roof of an ancient Egyptian home?',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea',
+    passageId: 'ancient_egypt',
     options: [
-      'give facts about an ocean plant',
-      'list kinds of ocean plants',
-      'tell about people who eat ocean plants',
-      'tell how to cook with ocean plants',
+      'It was very steep.',
+      'It was white to reflect the sun.',
+      'It was used for many purposes.',
+      'It was made from expensive materials.',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -525,15 +525,14 @@ const sampleQuestions = [
 
   {
     id: '12',
-    text: 'In an Internet search about oceans, which website would most likely have information about where red seaweed grows? <img src=',
+    text: 'Information from the article shows that the ancient Egyptians were--',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea',
+    passageId: 'ancient_egypt',
     options: [
-      'Life in the Ocean',
-      'Ocean Habitats',
-      'Discover Ocean Plants',
-      'Photos of the Ocean Floor',
-      'Foods From the Ocean'
+      'lucky',
+      'faithful',
+      'clever',
+      'gentle'
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -541,14 +540,14 @@ const sampleQuestions = [
 
   {
     id: '13',
-    text: 'What makes the secret message appear in "Lemony Letter"?',
+    text: 'Which sentence about this article is a fact?',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'ancient_egypt',
     options: [
-      'Heat',
-      'Light',
-      'Juice',
-      'Water',
+      'Egyptian homes took a long time to build.',
+      'The Egyptians ate foods such as beans and cucumbers.',
+      'Egyptian clothing was easy to make.',
+      'The Egyptians developed the greatest culture in history.',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -556,14 +555,14 @@ const sampleQuestions = [
 
   {
     id: '14',
-    text: 'In "Mirror Message" when the steam in the bathroom is gone, the message will most likely--',
+    text: 'A student makes these notes about the article. (image) Which of these belongs on the blank line?',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'ancient_egypt',
     options: [
-      'spread',
-      'turn white',
-      'disappear',
-      'turn brown',
+      'Built houses on high ground',
+      'Stayed indoors most of the day',
+      'Wore wigs on their heads',
+      'Built small windows in houses',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -571,14 +570,14 @@ const sampleQuestions = [
 
   {
     id: '15',
-    text: 'In step 3 of "Mirror Message," what does the word <u>invisible</u> mean?',
+    text: 'Which sentence is most likely true about the ancient Egyptians?',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'ancient_egypt',
     options: [
-      'clear',
-      'small',
-      'hidden',
-      'forgotten',
+      'They enjoyed a healthy diet.',
+      'They worried about their clothing.',
+      'They avoided work that was difficult.',
+      'They liked food from distant countries.',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -586,14 +585,14 @@ const sampleQuestions = [
 
   {
     id: '16',
-    text: '"Lemony Letter" and "Mirror Message" are alike because both--',
+    text: 'Read this sentence from the flier. <div class="passage-innerbox">Teddy bears, posters, games, stickers, and pencils are just some of the prizes for the luck<u>y</u> winners.</div> In which word does -<u>y</u> mean the same as it does in luck<u>y</u>?',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'fundraisers',
     options: [
-      'need help from a grownup',
-      'need the use of a lamp',
-      'have messages that must be dry to be read',
-      'have messages that must be painted to be read',
+      'empt<u>y</u>',
+      'tin<u>y</u>',
+      'thirst<u>y</u>',
+      'coz<u>y</u>',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -601,14 +600,14 @@ const sampleQuestions = [
 
   {
     id: '17',
-    text: 'In "Crazy Crayon," it is hard to see the message before painting over it because the message--',
+    text: 'Complete this list of school fair activities. (image)',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'fundraisers',
     options: [
-      'needs to be next to light',
-      'takes a long time to change color',
-      'is written on dark paper',
-      'is written in a white color',
+      'Explore the playground',
+      'Play a game',
+      'Swim in the pool',
+      'Run in the field',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -616,14 +615,14 @@ const sampleQuestions = [
 
   {
     id: '18',
-    text: 'One reason to read the flier is to--',
+    text: 'Money earned during the fundraisers will be used to pay for--',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'fundraisers',
     options: [
-      'find out when spies need to use secret messages',
-      'learn how secret messages are made',
-      'discover secret messages that have been sent in the past',
-      'learn about the first person to send a secret message',
+      'prizes for the winners',
+      'field trips for students',
+      'cookbooks for students',
+      'food at the school fair',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -631,14 +630,14 @@ const sampleQuestions = [
 
   {
     id: '19',
-    text: 'The author puts numbers before some sentences in the flier to--',
+    text: 'The principal will sit in the dunking booth most likely because he wants to--',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'fundraisers',
     options: [
-      'list the steps in the order of importance',
-      'order the steps the reader will follow',
-      'show how many items the reader needs in each step',
-      'tell about how many minutes each step will take',
+      'help sell more tickets',
+      'see the students throw',
+      'show he can swim',
+      'make students laugh',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -646,13 +645,14 @@ const sampleQuestions = [
 
   {
     id: '20',
-    text: 'Read this sentence and dictionary entry. <div class="passage-innerbox"><b>In the winter, grocery stores <u>charge</u> too much for strawberries.</b></div> <div class="passage-dicbox"><b>charge</b> (chärj) <i>v.</i> <b>1.</b> To give orders. <b>2.</b> To set as a price. <b>3.</b> To fill up completely. <b>4.</b> To rush forward.</div>',
+    text: 'What is the main reason the author wrote the flier?',
     type: 'multiple-choice',
+    passageId: 'fundraisers',
     options: [
-      'need help from a grownup',
-      'need the use of a lamp',
-      'have messages that must be dry to be read',
-      'have messages that must be painted to be read',
+      'To offer ways that students can earn money after school',
+      'To persuade students to send in recipes for a school cookbook',
+      'To amuse students with some ideas for a school fair',
+      'To tell students about future school events',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -660,29 +660,29 @@ const sampleQuestions = [
 
   {
     id: '21',
-    text: 'Guide words: <div class="passage-innerbox">camera - cause</div> <br>Which two words would appear on the same page as these guide words?',
-    type: 'multiple-select',
+    text: 'Which sentence about the flier is an opinion?',
+    type: 'multiple-choice',
+    passageId: 'fundraisers',
     options: [
-      'carrot',
-      'cabin',
-      'calm',
-      'canal',
-      'cave'
+      'The recipes will be enjoyed by many people.',
+      'The raffle winners will receive prizes.',
+      'The cookbooks will be sold at a later date.',
+      'The school fair will have a new activity.',
+      'The raffle tickets will be sold at the front office.'
     ],
-    correctAnswer: [0, 1],
+    correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
   {
     id: '22',
-    text: 'The title tells readers that a character in the story will most likely--',
+    text: 'Read this sentence. <div class="passage-innerbox">The factory will <u>manufacture</u> new tractors and other farm machines.</div> In this sentence, the word <u>manufacture</u> means--',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
     options: [
-      'spend time outdoors',
-      'need to draw a map',
-      'go to an amazing place',
-      'search for something',
+      'order',
+      'choose',
+      'trade',
+      'build',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -690,14 +690,13 @@ const sampleQuestions = [
 
   {
     id: '23',
-    text: 'Paragraph 5 is important to the story because it-',
+    text: 'In which sentence is the underlined word used correctly?',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
     options: [
-      'tells what is on the map',
-      'tells why Evan likes to go fishing',
-      'shows how the attic looks',
-      'shows where Grandma lives',
+      'My new shirt has <u>for</u> large buttons.',
+      'The rusted hinges make this door <u>creek</u>.',
+      'She tied a cloth belt around her <u>waste</u>.',
+      'This is the <u>main</u> street in our town.',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -705,14 +704,14 @@ const sampleQuestions = [
 
   {
     id: '24',
-    text: 'After Evan and Mark find the map, they both feel--',
+    text: 'Select the meaning of <u>rich</u> as used in this sentence. <div class="passage-innerbox">I could barely finish my slice of that <u>rich</u> chocolate cake.</div>',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
     options: [
-      'wise',
-      'calm',
-      'proud',
-      'eager',
+      'Fortunate',
+      'Expensive',
+      'Flavorful',
+      'Bright',
+      'Funny'
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -720,14 +719,14 @@ const sampleQuestions = [
 
   {
     id: '25',
-    text: 'Where does this story begin and end?',
+    text: 'Read paragraph 7. <div class="passage-innerbox">"You won again," Sidney muttered, and his head drooped.</div> Which sentence tells why Sidney is acting this way?',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
+    passageId: 'friend',
     options: [
-      'At the river',
-      'Near the trees',
-      'In the kitchen',
-      'In the attic',
+      'Sidney plans to have another contest.',
+      'Sidney begins to fear for his safety.',
+      'Max keeps his pride hidden from Sidney.',
+      'Max beats Sidney in a somersault contest.',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -735,14 +734,14 @@ const sampleQuestions = [
 
   {
     id: '26',
-    text: 'Based on the story, where does the map first lead the boys? (image)',
+    text: 'Read these sentences from paragraph 18. <div class="passage-innerbox">"No, no," argued Alligator. "I was just yawning "</div> The author includes this information to show that Alligator is--',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
+    passageId: 'friend',
     options: [
-      'The house',
-      'The water drop',
-      'The trees',
-      'The Greatest Fishing Spot',
+      'feeling tired',
+      'waiting',
+      'feeling lazy',
+      'lying',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -750,14 +749,14 @@ const sampleQuestions = [
 
   {
     id: '27',
-    text: 'Which question is answered at the end of the story?',
+    text: 'Which sentence about the story best shows that Max is careful?',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
+    passageId: 'friend',
     options: [
-      'What brings fish to a certain area?',
-      'What happened to the old dock?',
-      'How often did Mom go to the old dock?',
-      'How many fish does Grandma catch?',
+      'Max tells Sidney that one of the tricks is too dangerous.',
+      'Max admits to Sidney that he practices the tricks.',
+      'Max holds Sidney to keep him from falling off the branch.',
+      'Max speaks quietly to Sidney after winning many contests.',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -765,25 +764,30 @@ const sampleQuestions = [
 
   {
     id: '28',
-    text: 'Place these words in alphabetical order.',
-    type: 'drag-drop',
-    passageId: 'hidden_treasure',
-    options: ['steps', 'shouted', 'searched', 'smiled', 'spend'],
-    dropZones: [' ', ' ', ' ', ' ', ' '],
+    text: 'Complete this web. (image)',
+    type: 'multiple-choice',
+    passageId: 'friend',
+    options: [
+      'Doing cartwheels',
+      'Walking on a branch',
+      'Swimming in the river',
+      'Jumping from a treetop',
+      'Bouncing off the branches'
+    ],
     correctAnswer: [4, 1, 2],
     explanation: 'To round 5,647: to nearest thousand (6,000), nearest hundred (5,600), nearest ten (5,650).'
   },
 
   {
     id: '29',
-    text: 'Based on paragraph 4, the reader can tell that-',
+    text: 'Which lesson does Sidney leam in the story?',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: 'friend',
     options: [
-      'chicks learn to eat by watching older ostriches',
-      'ostriches need people to feed them a healthy diet',
-      'plants are easier for ostriches to feed on than insects',
-      'chicks wait to eat until the grown ostriches finish',
+      'Friendship is more important than winning.',
+      'Practicing can lead to winning contests.',
+      'Tricks should only be done in calm weather.',
+      'Being friendly means saying kind words.',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -791,14 +795,14 @@ const sampleQuestions = [
 
   {
     id: '30',
-    text: 'Paragraph 6 explains that one way ostriches keep themselves safe is by--',
+    text: 'Which detail about the setting is most important to the story?',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: 'friend',
     options: [
-      'flying',
-      'digging',
-      'kicking',
-      'sleeping',
+      'A tree branch hangs above a river.',
+      'The weather stays warm in the jungle.',
+      'Umbrella trees have many branches.',
+      'The force of the wind can be very strong.',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -806,14 +810,14 @@ const sampleQuestions = [
 
   {
     id: '31',
-    text: 'What information can be learned by reading the chart at the end of the article?',
+    text: 'Based on lines 1-4 of the poem, which sentence is correct?',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: 'thieves',
     options: [
-      'What do ostriches use to build a nest?',
-      'Why do ostriches keep the herd size low?',
-      'How long do ostriches live?',
-      'How many eggs do ostriches lay?',
+      'The thieves are having trouble seeing.',
+      'The thieves are stealing silver objects.',
+      'The light of the moon is shining on the thieves.',
+      'The noise outside is making the thieves nervous.',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -821,14 +825,14 @@ const sampleQuestions = [
 
   {
     id: '32',
-    text: 'Based on the article, one way the male leader is like the females in the herd is that he helps--',
+    text: 'The author includes lines 7 and 8 to--',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: 'thieves',
     options: [
-      'make the nest',
-      'guard the eggs',
-      'hide the chicks',
-      'feed the chicks',
+      'show that the thieves are animals',
+      'explain why the thieves are quiet',
+      'describe the feelings of the characters',
+      'give reasons the young are behind the leader',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -836,14 +840,14 @@ const sampleQuestions = [
 
   {
     id: '33',
-    text: 'The feathers of an ostrich help the bird--',
+    text: 'Which of these are the thieves trying to find?',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: 'thieves',
     options: [
-      'run fast',
-      'stay warm',
-      'move quietly',
-      'look bigger',
+      'A place to hide',
+      'A place to rest',
+      'Some food to eat',
+      'Some jewels to steal',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -851,14 +855,14 @@ const sampleQuestions = [
 
   {
     id: '34',
-    text: 'Based on the article, what can the reader most likely tell about ostriches?',
+    text: 'What is the speaker doing in the poem?',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: 'thieves',
     options: [
-      'They can run faster than any other animal.',
-      'Their wings are their most useful part.',
-      'Their speed helps them escape.',
-      'They usually kick their enemies.',
+      'Feeding the dog',
+      'Chasing animals',
+      'Sitting on the grass',
+      'Watching from inside',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -866,14 +870,14 @@ const sampleQuestions = [
 
   {
     id: '35',
-    text: 'After looking at the title, the reader knows that this poem is about--',
+    text: 'In paragraph 3, what does <u>crushed</u> mean?',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'popcorn',
     options: [
-      'hiding something',
-      'finding something',
-      'looking for something',
-      'thinking about something',
+      'ground',
+      'stirred',
+      'baked',
+      'shook',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -881,14 +885,15 @@ const sampleQuestions = [
 
   {
     id: '36',
-    text: 'What does <u>pause</u> mean in line 13?',
+    text: 'Which choice best completes this cause-and-effect chart? (image)',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'popcorn',
     options: [
-      'Try to remember',
-      'Begin to ask questions',
-      'Think about the past',
-      'Stop for a short time',
+      'The popcorn kernel explodes.',
+      'The steam turns into water.',
+      'The steam escapes slowly.',
+      'The popcorn kernel is heated.',
+      'The steam becomes hotter.'
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -896,14 +901,14 @@ const sampleQuestions = [
 
   {
     id: '37',
-    text: 'In lines 17-20, the speaker can best be described as--',
+    text: 'Which sentence about the article is an opinion?',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'popcorn',
     options: [
-      'scared',
-      'upset',
-      'angry',
-      'lazy',
+      'Popcorn is a snack that has a long history.',
+      'Popcorn kernels contain a tiny amount of water.',
+      'Popcorn is a snack that is easy to make at home.',
+      'Popcorn continues to be sold at movie theaters.',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -911,14 +916,15 @@ const sampleQuestions = [
 
   {
     id: '38',
-    text: 'Where is the first place the speaker looks for the shoe?',
+    text: 'Complete these notes. (image)',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'popcorn',
     options: [
-      'Under the sofa',
-      'In the car',
-      'In a sports bag',
-      'Near the steps',
+      'People sell popcorn on the streets from wagons.',
+      'People make popcorn in microwave ovens.',
+      'People have popcorn poppers in their homes.',
+      'People add popcorn to many other types of food.',
+      'People bake bread made from popcorn flour.'
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -926,14 +932,14 @@ const sampleQuestions = [
 
   {
     id: '39',
-    text: 'Based on the events in the poem, the shoe was most likely last worn--',
+    text: 'The main reason the author wrote this article is to--',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'popcorn',
     options: [
-      'at school',
-      'during a game',
-      'at a friend\'s house',
-      'in a friend\'s car',
+      'suggest unusual ways to make popcorn',
+      'persuade readers to eat more popcorn',
+      'list differences between types of popcorn',
+      'tell readers about the history of popcorn',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -941,14 +947,14 @@ const sampleQuestions = [
 
   {
     id: '40',
-    text: 'Which question is answered in the poem?',
+    text: 'Which two words are synonyms?',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'popcorn',
     options: [
-      'What is the dog\'s new chew toy?',
-      'Why is the dog playing outside?',
-      'What sport does the speaker play?',
-      'When was the speaker\'s last game?',
+      'shared, discovered',
+      'delicious, tasty',
+      'began, invented',
+      'still, again',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
