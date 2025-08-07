@@ -577,14 +577,14 @@ const sampleQuestions = [
 
   {
     id: '9',
-    text: 'Which question is answered in the section titled "Clothing and Hair"?',
+    text: 'Which sentence supports the idea that blobfish are rarely seen by people?',
     type: 'multiple-choice',
-    passageId: 'ancient_egypt',
+    passageId: '2',
     options: [
-      'How were the hairstyles of Egyptian men and women alike?',
-      'What was the most popular style of clothing for Egyptian boys and girls?',
-      'How often did Egyptians have to shave their heads?',
-      'What type of tunic was worn during special Egyptian celebrations?',
+      'Blobfish make their homes near lobsters and crabs.',
+      'Blobfish live off the coasts of several islands.',
+      'Blobfish live thousands of feet below the surface of the ocean.',
+      'Blobfish are known for bobbing rather than swimming.',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -592,14 +592,14 @@ const sampleQuestions = [
 
   {
     id: '10',
-    text: 'What is the main idea of paragraph 6?',
+    text: 'Based on this article, what does the author most likely believe?',
     type: 'multiple-choice',
-    passageId: 'ancient_egypt',
+    passageId: '2',
     options: [
-      'The Egyptians fished from the surrounding seas and the Nile River.',
-      'The Egyptians ate many types of foods from their region.',
-      'Different crops grew well in the hot climate of Egypt.',
-      'Fruits and vegetables were a favorite food for people in Egypt.',
+      'Blobfish can learn to survive in other habitats.',
+      'Strict fishing rules will help the blobfish find prey.',
+      'Underwater video of the blobfish will help people study it.',
+      'Saving the blobfish from the fishing industry is an important cause.',
     ],
     correctAnswer: 1,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -607,14 +607,14 @@ const sampleQuestions = [
 
     {
     id: '11',
-    text: 'Which of these best describes the roof of an ancient Egyptian home?',
+    text: 'Which sentence from the article is an opinion?',
     type: 'multiple-choice',
-    passageId: 'ancient_egypt',
+    passageId: '2',
     options: [
-      'It was very steep.',
-      'It was white to reflect the sun.',
-      'It was used for many purposes.',
-      'It was made from expensive materials.',
+      'This human-looking fish is the blobfish.',
+      'The blobfish may not be the most attractive of sea creatures, but it is certainly one of the most interesting.',
+      'Blobfish resemble their name through their looks as well as their habits.',
+      'Deep-sea fishermen have scooped up many blobfish in nets along with the sea creatures they are seeking.',
     ],
     correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -622,14 +622,14 @@ const sampleQuestions = [
 
   {
     id: '12',
-    text: 'Information from the article shows that the ancient Egyptians were--',
+    text: 'Read this sentence from paragraph 3. <div class="passage-innerbox">On the drive from Arlington that morning, Rachel listened to her family\'s excited <u>chatter</u> about their trip.</div> Which word would be the best synonym for the word <u>chatter</u> as it is used in this sentence?',
     type: 'multiple-choice',
-    passageId: 'ancient_egypt',
+    passageId: '3',
     options: [
-      'lucky',
-      'faithful',
-      'clever',
-      'gentle'
+      'feelings',
+      'plans',
+      'jokes',
+      'discussions'
     ],
     correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -637,14 +637,14 @@ const sampleQuestions = [
 
   {
     id: '13',
-    text: 'Which sentence about this article is a fact?',
+    text: 'As Rachel approaches the camp activity areas, she discovers that all of them--',
     type: 'multiple-choice',
-    passageId: 'ancient_egypt',
+    passageId: '3',
     options: [
-      'Egyptian homes took a long time to build.',
-      'The Egyptians ate foods such as beans and cucumbers.',
-      'Egyptian clothing was easy to make.',
-      'The Egyptians developed the greatest culture in history.',
+      'reflect the beauty of the campgrounds',
+      'are full of campers enjoying projects',
+      'remind her of how different camp is from home',
+      'need work in order to be ready for the campers',
     ],
     correctAnswer: 1,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -652,14 +652,14 @@ const sampleQuestions = [
 
   {
     id: '14',
-    text: 'A student makes these notes about the article. (image) Which of these belongs on the blank line?',
+    text: 'Rachel\'s main conflict in the story is with--',
     type: 'multiple-choice',
-    passageId: 'ancient_egypt',
+    passageId: '3',
     options: [
-      'Built houses on high ground',
-      'Stayed indoors most of the day',
-      'Wore wigs on their heads',
-      'Built small windows in houses',
+      'Mona',
+      'Sarah',
+      'herself',
+      'her parents',
     ],
     correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -667,14 +667,14 @@ const sampleQuestions = [
 
   {
     id: '15',
-    text: 'Which sentence is most likely true about the ancient Egyptians?',
+    text: 'What changes Rachel\'s mind about the camp?',
     type: 'multiple-choice',
-    passageId: 'ancient_egypt',
+    passageId: '3',
     options: [
-      'They enjoyed a healthy diet.',
-      'They worried about their clothing.',
-      'They avoided work that was difficult.',
-      'They liked food from distant countries.',
+      'Working with some of the staff',
+      'Meeting other campers',
+      'Reading on the deck',
+      'Riding the bicycle',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -682,14 +682,14 @@ const sampleQuestions = [
 
   {
     id: '16',
-    text: 'Read this sentence from the flier. <div class="passage-innerbox">Teddy bears, posters, games, stickers, and pencils are just some of the prizes for the luck<u>y</u> winners.</div> In which word does -<u>y</u> mean the same as it does in luck<u>y</u>?',
+    text: 'Rachel wants to stay home for the summer because she--',
     type: 'multiple-choice',
-    passageId: 'fundraisers',
+    passageId: '3',
     options: [
-      'empt<u>y</u>',
-      'tin<u>y</u>',
-      'thirst<u>y</u>',
-      'coz<u>y</u>',
+      'is afraid of meeting new people',
+      'thinks it would be more relaxing than camp',
+      'does not want to share a room with her sister',
+      'does not want to leave her friends from school',
     ],
     correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -697,14 +697,14 @@ const sampleQuestions = [
 
   {
     id: '17',
-    text: 'Complete this list of school fair activities. (image)',
+    text: 'Which quality do Lyla and Sarah share?',
     type: 'multiple-choice',
-    passageId: 'fundraisers',
+    passageId: '3',
     options: [
-      'Explore the playground',
-      'Play a game',
-      'Swim in the pool',
-      'Run in the field',
+      'Friendliness',
+      'Seriousness',
+      'Talent in art',
+      'Sense of humor',
     ],
     correctAnswer: 1,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -712,14 +712,14 @@ const sampleQuestions = [
 
   {
     id: '18',
-    text: 'Money earned during the fundraisers will be used to pay for--',
+    text: 'Based on the recipe, a reader should consider cooking syrup in order to--',
     type: 'multiple-choice',
-    passageId: 'fundraisers',
+    passageId: '4',
     options: [
-      'prizes for the winners',
-      'field trips for students',
-      'cookbooks for students',
-      'food at the school fair',
+      'practice using kitchen utensils',
+      'improve the flavor of other foods',
+      'have a large amount of it at home',
+      'share it with others',
     ],
     correctAnswer: 1,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -727,14 +727,14 @@ const sampleQuestions = [
 
   {
     id: '19',
-    text: 'The principal will sit in the dunking booth most likely because he wants to--',
+    text: 'Which sentence is a fact based on the recipe?',
     type: 'multiple-choice',
-    passageId: 'fundraisers',
+    passageId: '4',
     options: [
-      'help sell more tickets',
-      'see the students throw',
-      'show he can swim',
-      'make students laugh',
+      'Letting fruit air-dry is better than towel-drying it.',
+      'Syrup tastes best when eaten on favorite foods.',
+      'All restaurants serve syrup with breakfast foods and desserts.',
+      'Sugar and fruit mixtures may produce foam when they are boiled.',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -742,14 +742,14 @@ const sampleQuestions = [
 
   {
     id: '20',
-    text: 'What is the main reason the author wrote the flier?',
+    text: 'If the author had included reasons for using honey instead of sugar, in which section would it appear?',
     type: 'multiple-choice',
-    passageId: 'fundraisers',
+    passageId: '4',
     options: [
-      'To offer ways that students can earn money after school',
-      'To persuade students to send in recipes for a school cookbook',
-      'To amuse students with some ideas for a school fair',
-      'To tell students about future school events',
+      'Choose Your Favorite Fruit',
+      'To Make the Syrup',
+      'Follow These Helpful Cooking Hints',
+      'Try Your Syrup On...',
     ],
     correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -757,15 +757,15 @@ const sampleQuestions = [
 
   {
     id: '21',
-    text: 'Which sentence about the flier is an opinion?',
+    text: 'If a person wants extra flavor in the syrup, at which step in the recipe would lemon juice be added?',
     type: 'multiple-choice',
-    passageId: 'fundraisers',
+    passageId: '4',
     options: [
-      'The recipes will be enjoyed by many people.',
-      'The raffle winners will receive prizes.',
-      'The cookbooks will be sold at a later date.',
-      'The school fair will have a new activity.',
-      'The raffle tickets will be sold at the front office.'
+      'Remove the stems, pits, and cores.',
+      'Mash the fruit in a pan.',
+      'Heat the mixture and stir it until it boils.',
+      'Pour the mixture through a strainer into a bowl.',
+      'Add sugar into the mixture and return it to the pan.'
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -773,13 +773,14 @@ const sampleQuestions = [
 
   {
     id: '22',
-    text: 'Read this sentence. <div class="passage-innerbox">The factory will <u>manufacture</u> new tractors and other farm machines.</div> In this sentence, the word <u>manufacture</u> means--',
-    type: 'multiple-choice',
+    text: 'Which words from this history textbook are synonyms?',
+    type: 'multiple-select',
     options: [
-      'order',
-      'choose',
-      'trade',
-      'build',
+      'colony: a group of people who move to settle in another land but who still remain citizens of their own country',
+      'landowner: a person who owns property',
+      'settlement: a village of persons in a new country',
+      'territory: the land or waters belonging to or under the rule of a government',
+      'trading post: a place where the exchange of goods takes place'
     ],
     correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -787,13 +788,13 @@ const sampleQuestions = [
 
   {
     id: '23',
-    text: 'In which sentence is the underlined word used correctly?',
+    text: 'Which sentence contains an example of figurative language?',
     type: 'multiple-choice',
     options: [
-      'My new shirt has <u>for</u> large buttons.',
-      'The rusted hinges make this door <u>creek</u>.',
-      'She tied a cloth belt around her <u>waste</u>.',
-      'This is the <u>main</u> street in our town.',
+      'My friends and I played outdoors until the sun went down.',
+      'There is nothing better than a picnic on a summer day.',
+      'In the evening, I like to sit on the porch and look up at the dark sky.',
+      'As we looked up at the sky from our camp, the moon greeted us.',
     ],
     correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -801,14 +802,13 @@ const sampleQuestions = [
 
   {
     id: '24',
-    text: 'Select the meaning of <u>rich</u> as used in this sentence. <div class="passage-innerbox">I could barely finish my slice of that <u>rich</u> chocolate cake.</div>',
+    text: 'Read this dictionary entry. <div class="passage-dicbox"><b>prime</b> (prīm) <i>ajd</i> <b>1.</b> Of main importance. <b>2.</b> Of the finest quality. <b>3.</b> Evenly divisible only by itself and one. <i>n.</i> <b>4.</b> A time of strength or success in a person\'s life.</div> Which sentence is an example of definition 2?',
     type: 'multiple-choice',
     options: [
-      'Fortunate',
-      'Expensive',
-      'Flavorful',
-      'Bright',
-      'Funny'
+      'In math we learned about <u>prime</u> numbers.',
+      'Your <u>prime</u> concern should be your health.',
+      'She was elected president during her <u>prime</u>.',
+      'They are building a home on a <u>prime</u> piece of land.',
     ],
     correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -816,14 +816,14 @@ const sampleQuestions = [
 
   {
     id: '25',
-    text: 'Read paragraph 7. <div class="passage-innerbox">"You won again," Sidney muttered, and his head drooped.</div> Which sentence tells why Sidney is acting this way?',
+    text: 'Read this sentence from paragraph 6. <div class="passage-innerbox">Since catching a glimpse of Earth from space will be the <u>main</u> reason most guests want to travel to a space hotel, they will be able to open and close viewing windows and watch as the hotel orbits Earth 15 times a day.</div> Which word is a homophone for <u>main</u>?',
     type: 'multiple-choice',
-    passageId: 'friend',
+    passageId: '5',
     options: [
-      'Sidney plans to have another contest.',
-      'Sidney begins to fear for his safety.',
-      'Max keeps his pride hidden from Sidney.',
-      'Max beats Sidney in a somersault contest.',
+      'mine',
+      'moan',
+      'mean',
+      'mane',
     ],
     correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -831,14 +831,14 @@ const sampleQuestions = [
 
   {
     id: '26',
-    text: 'Read these sentences from paragraph 18. <div class="passage-innerbox">"No, no," argued Alligator. "I was just yawning "</div> The author includes this information to show that Alligator is--',
+    text: 'Paragraphs 6 and 7 mainly provide details about the--',
     type: 'multiple-choice',
-    passageId: 'friend',
+    passageId: '5',
     options: [
-      'feeling tired',
-      'waiting',
-      'feeling lazy',
-      'lying',
+      'services a space hotel will provide for guests',
+      'spacecraft docking process',
+      'situations guests will experience in space',
+      'view from the space hotel',
     ],
     correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -846,14 +846,14 @@ const sampleQuestions = [
 
   {
     id: '27',
-    text: 'Which sentence about the story best shows that Max is careful?',
+    text: 'What does the illustration help the reader understand?',
     type: 'multiple-choice',
-    passageId: 'friend',
+    passageId: '5',
     options: [
-      'Max tells Sidney that one of the tricks is too dangerous.',
-      'Max admits to Sidney that he practices the tricks.',
-      'Max holds Sidney to keep him from falling off the branch.',
-      'Max speaks quietly to Sidney after winning many contests.',
+      'The outside appearanceo f a space hotel',
+      'The size of the living area provided in a space hotel',
+      'The equipment needed for a spacecraft to dock with a space hotel',
+      'The distance to the space hotel',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
