@@ -175,169 +175,281 @@ matchless in its mystery and marvel.</p>
     title: 'Flying on Snow',
     content: `
       <ol class="increment5">
-      <li>The ground rushes up to meet us as</li>
+<li>The ground rushes up to meet us as</li>
 <li>We hurtle down this slippery hill</li>
 <li>At lightning speed.</li>
 <li>My sled and I are like one creature;</li>
 
 <li>We lean together in the turns,</li>
-<li>Shifting position to go faster still ...</li>
+<li>Shifting position to go faster still...</li>
 <li>This time, surely, we'll make it</li>
-<li>All the way to the . . .</li>
+<li>All the way to the...</li>
 <li><i>Splat!</i></li>
+
+<li>Oops,</li>
+<li>A tumble. Capsized again.</li>
+<li>My sled has left me</li>
+<li>Sprawling in the snow.</li>
+<li>My eyes and mouth are full of feathery flakes.</li>
+
+<li>They tingle like tiny fireworks against my skin.</li>
+<li>With mitten-clad hands, I wipe away the snow</li>
+<li>And struggle to my feet. I am no longer</li>
+<li>A graceful, flying creature; I <u>lumber</u> across the snow</li>
+<li>Like a tired bear. Walking is a chore;</li>
+
+<li>With each step, I sink into the snow</li>
+<li>Up to my knees. Finally, I reach my sled.</li>
+<li>We begin to struggle up the hill,</li>
+<li>That winter wall of whiteness, shining in the sun.</li>
+<li>Near the top it grows steep; this is the tricky part</li>
+
+<li>That sends the careless sledder right back down...</li>
+<li>There! We've made it, my sled and I;</li>
+<li>We have a brand new chance to fly.</li>
       </ol>
     `
   },
 
-   'friend': {
-    title: 'A First-Place Friend',
+   '4': {
+    title: 'The Lion\'s Den',
     content: `
-      <p>One morning two monkey friends named Max and Sidney were
-swinging through the leafy jungle. They decided to race up an
-umbrella tree, and Max easily won the contest. When Sidney finally
-caught up, he felt a stab of jealousy.</p>
+      <p>Stop by the Lion's Den before or after school or during lunch to check out
+the wide variety of merchandisea vailablea t our new schools tore. Here
+you can find school supplies, gym uniforms, used books, and gifts. Choir
+students, under the supervision of Mrs. Simmons, the music director,
+manage the store and are ready to serve you. Shop at the Lion's Den and
+support the school choir. Money raised from sales will help purchase new
+music, costumes, and sound equipment for the choir. There's no better
+way to show your Lakeway school spirit than to shop at the Lion's Den.</p>
       
-      <p>"You're the winner," Sidney declared with a sigh.</p>
+      <div class="passage-innerbox"><b>Location:</b> Room #255B, next to the chorus hall<br><b>Hours:</b>Monday-Friday; 7:30-8:00 A.M., 11:30 A.M.-1:30 P.M., and 3:30-4:15 P.M</div>
       
-      <p>"I've been practicing," Max admitted shyly.</p>
+      <table>
+    <tr>
+    <td>
+      <b>School Supplies</b>
+      <ul>
+      <li>Wooden pencils</li>
+      <li>Mechanical pencils</li>
+      <li>Pens</li>
+      <li>Erasers</li>
+      <li>Highlighters</li>
+      <li>Notebook paper</li>
+      <li>Folders</li>
+      <li>Binders</li>
+      </ul>
+    </td>
+    <td>
+      <b>Math Supplies</b>
+      <ul>
+      <li>Rulers</li>
+      <li>Protractors</li>
+      <li>Compasses</li>
+      <li>Calculators</li>
+      <li>Graph paper</li>
+      </ul>
+    </td>
+    <td>
+      <b>Lakeway Lions Spirit Wear and Gifts</b>
+      <ul>
+      <li>Short-sleeve T-shirts</li>
+      <li>Long-sleeve T-shirts</li>
+      <li>Sweatshirts</li>
+      <li>Sweatpants</li>
+      <li>Stuffed animals</li>
+      <li>Baseball caps</li>
+      <li>Pompons</li>
+      <li>Game ribbons</li>
+      </ul>
+    </td>
+    </tr>
+    <tr>
+    <td>
+      <b>Computer Supplies</b>
+      <ul>
+      <li>CDs</li>
+      <li>CD storage cases</li>
+      <li>Flash drives</li>
+      </ul>
+    </td>
+    <td>
+      <b>Used Books</b>
+      <ul>
+      <li>Fiction</li>
+      <li>Nonfiction</li>
+      <li>Word puzzles</li>
+      <li>Much more!</li>
+      </ul>
+    </td>
+    <td>
+      <b>Lakeway Lions Gym Uniforms</b>
+      <ul>
+      <li>T-shirts</li>
+      <li>Shorts</li>
+      </ul>
+    </td>
+    </tr>
+      </table>
       
-      <p>Down below, Alligator floated in the river, watching the monkeys
-with hungry eyes. How can I catch one of them? Suddenly, Alligator
-had an idea.</p>
+      <p><b>Used Book Donations</b></p>
+      <p>Donations of used books are welcome and rewarded. Drop off your used
+book donations in the choir room or at the school store. For every five
+books donated, receive a Lions Reward Coin good for 25 cents off your
+next purchase at the Lion's Den.</p>
 
-      <p>"Monkeys!" Alligator shrieked. "You both climb well, but who can do
-the most somersaults? It's a much harder trick to spin around on
-the branches."</p>
+      <p><b>Clip, Save, and Win</b></p>
+      <p>Clip the attached coupons and bring them in when you visit the Lion's
+Den. You can save 20% off your first purchase, receive a free pen or
+pencil, and enter your name in a drawing to win a T-shirt.</p>
 
-      <p>Sidney puffed out his chest and stood as tall as he could. "I can!"
-he announced in a determined voice. A second later, the two
-monkeys began spinning around like furry wheels. Sidney tumbled
-over three times, but Max did four somersaults.</p>
-
-      <p>"You won again," Sidney muttered, and his head drooped.</p>
-
-      <p>"I practiced my somersaults too," Max told him quietly.</p>
-
-      <p>Down below, Alligator crept closer. "You both somersault well, but
-who can walk across that long, skinny branch above me?" she
-challenged. "That is the hardest trick of all."</p>
-
-      <p>Max stared at the skinny branch and at Alligator's big jaws. Her
-sharp teeth made his heart pound. "That trick is too dangerous,"
-Max replied.</p>
-
-      <p>"I'm not afraid to try!" Sidney bragged. His mind was set on winning
-this contest. This time he'd be the best!</p>
-
-      <p>Carefully, Sidney made his way through the tree branches and
-stepped onto the skinny branch like a tightrope walker. The branch
-bowed under his weight, but he used his tail as a safety rope and
-held on tightly.</p>
-
-      <p>Step by step, Sidney slowly made his way across the branch. He'd
-almost reached the end when a gust of wind shook him. Sidney's
-foot slipped, and he started to tumble down, bouncing off
-the branches.</p>
-
-      <p>"Help me!" cried Sidney, as Alligator opened her enormous jaws.</p>
-
-      <p>In a flash, Max jumped over and reached out to catch Sidney. A
-moment later, Alligator's jaws snapped shut, but she only caught a
-mouthful of air.</p>
-
-      <p>"Thank you," replied Sidney as he rested safely on a branch with
-Max. All at once, Sidney realized that Alligator wanted him to fall,
-and Sidney felt foolish. He'd been so busy trying to beat Max, he
-hadn't been careful.</p>
-
-      <p>"No more tricks," Sidney informed Alligator. "It is only your hungry
-stomach that likes our contests."</p>
-
-      <p>"No, no," argued Alligator. "I was just yawning. Why don't you see
-who can do the most cartwheels?" she suggested sweetly.</p>
-
-      <p>"I have a much better idea," replied Sidney. "We'll show you who
-can climb the highest."</p>
-
-      <p>"Yes!" laughed Max, and he shot into the treetop. Sidney followed
-behind him, and this time, Sidney didn't mind if Max took first
-place. In fact, he was truly glad he had a friend who was both
-speedy and smart!</p>
+(image)
     `
   },
 
-     'thieves': {
-    title: 'Band of Thieves',
+   '4': {
+    title: 'A Canine Reading Buddy',
     content: `
-      <p><ol>
-      <li>A band of thieves I spied tonight,</li>
-<li>Their silver fur in silver light</li>
-<li>Winked at the moon as if to say--</li>
-<li>Shhh! Quiet! Don't give us away!</li><br>
-<li>The leader wore a thief's disguise,</li>
-<li>A mask of black around her eyes.</li>
-<li>Not far behind, her young did trail</li>
-<li>Each with a mask and bushy tail.</li><br>
-<li>And as they whisked across our grass</li>
-<li>I puzzled at them through the glass.</li>
-<li>I wondered what had brought them here--</li>
-<li>Money? Jewels? Expensive gear?</li><br>
-<li>Turns out, these bandits on all fours</li>
-<li>Were treasure-hunting out-of-doors!</li>
-<li>They'd come to snack on my dog's kibble--</li>
-<li>To satisfy a midnight nibble!</li>
-</ol>
+      <p>Dogs can make great pets. In fact, dogs and people have developed
+a special bond over time. Recently, however, some dogs have taken
+a different role in the lives of people-the role of therapy dogs. A
+therapy dog is more of a companion than a pet and is trained to
+help people in many different ways. Some therapy dogs visit
+patients in hospitals or nursing homes, while other therapy dogs
+visit children in schools and libraries. These therapy dogs have an
+important role. They are there to help children become
+better readers.</p>
+      
+      <p>Reading programs that use therapy dogs have been in existence for
+more than ten years. A dog can be any size to be part of this
+program, from a tiny, four-pound Yorkshire terrier to a huge,
+180-pound Saint Bernard. All therapy dogs are registered with an
+organization that tests the dogs to make sure they have the right
+personality for the job. Therapy dogs need to be calm, gentle, and
+friendly. Of course, they must enjoy being around people. A dog's
+handler also takes a class and must pass a test to work in the
+therapy program. Both the dogs and the handlers are volunteers
+with the reading program.</p>
+      
+      <p>At the start of a reading therapy session, a child and a dog are
+introduced. The pair is allowed to settle down in a quiet corner
+together. The child is encouraged to pet the dog or lie close to the
+animal if he or she wants. As the child reads, the dog usually lies
+quietly and listens, creating a relaxing environment. An adult
+handler stays nearby but generally lets the dog perform its job
+without interfering. Sometimes, a handler may ask a question that
+prompts the child to interact with the dog to help the child feel
+more comfortable. For example, the handler may direct the child to
+clarify what is being read so the dog may "understand."</p>
+      
+      <p>Of course, not every child will be able to be part of a reading
+therapy program that uses dogs. A few children might be allergic to
+dogs or afraid of them; some children might have cultural traditions
+that prevent them from touching a dog. In these <u>circumstances</u>,
+other animals are available, such as cats, rabbits, guinea pigs, and,
+in one program, an African gray parrot.</p>
+
+      <p>How do the therapy dogs benefit from this program? They spend
+time with new friends. For dogs that love human companionship
+and a quiet place to rest, being part of a reading therapy program
+can be a great way to spend a few hours each day. The readers
+benefit too, gaining confidence and learning that reading aloud can
+be a relaxing experience. Some children may become nervous when
+reading in front of other people, but somehow this feeling does not
+surface easily when reading to an animal that is trained to sit and
+listen in a safe environment.</p>
+
+      <p>There is an old saying that a dog is man's best friend. A dog can
+certainly be a reader's best friend too!</p>
     `
   },
 
-   'popcorn': {
-    title: 'Popcorn, the Perfect Snack',
+     '5': {
+    title: 'Anthony Races Time',
     content: `
-      <p>Pop! Pop-pop! Yum! Fresh popcorn is one of the most popular foods
-when it comes to watching a movie or a ball game. Delicious and
-good for people's health, popcorn is inexpensive and easy to make.
-Popcorn may just be the perfect snack.</p>
+      <p>Anthony and his family always relished the weekends, but this
+particular Saturday would be even more enjoyable because his
+cousins were coming for a visit. While Anthony and his younger
+sister, Kate, started to eat breakfast, their mom and dad sat down
+at the table with a piece of paper and a pen.</p>
       
-      <p>Not all corn pops. Corn kernels contain a tiny amount of water.
-When the kernel is heated, the water turns to steam. In regular
-corn, the steam escapes through the outside cover, or skin. In
-popcorn, the skin of each kernel is sealed. When popcorn kernels
-are heated, the steam that builds up inside is trapped. Pressure
-builds up until ... pop! The kernel explodes into the fluffy white
-treat called popcorn.</p>
+      <p>"We have so much to do before Alyssa and Nicolas arrive,"
+Anthony's mom said as she glanced over the list. Anthony noticed
+shivers of excitement from his little sister as his mom talked about
+their cousins' arrival. "We need to buy groceries, clean the floors,
+and finish several other chores. We have plenty of time to complete
+everything since your cousins won't be here until after dinner."</p>
       
-      <p>Popcorn has been around for thousands of years. In fact,
-researchers have found popcorn that is more than 5,600 years old.
-Back then people popped the kernels by putting them on red-hot
-stones near a fire. Popcorn was not always eaten whole as it is
-now. Instead, people <u>crushed</u> the popcorn into a type of flour and
-then added water to make bread.</p>
+      <p>"Can I go to the grocery store with you, Mom?" Anthony asked. He
+liked helping his mom with the shopping, and sometimes she
+rewarded him with a small treat. Anthony thought about the kind of
+treat he might choose at the store, such as the cinnamon gum that
+his friend Caleb loved to chew. When he thought of Caleb, suddenly
+Anthony jumped up from the kitchen table, nearly spilling
+everyone's breakfast cereal.</p>
       
-      <p>For centuries American Indians popped corn in clay containers on
-an open fire. At the first Thanksgiving dinner, American Indians
-shared this tasty treat with the Pilgrims who had arrived from
-Europe. The Pilgrims discovered that they loved popcorn. After
-these newcomers learned to make popcorn in cast-iron pots, they
-began to pour milk and sugar on it before eating it for breakfast.
-Some say it was the first breakfast cereal!</p>
+      <p>"Today is Field Day at the recreation center!" Anthony blurted out
+with a worried look on his face. "Caleb is counting on me to run the
+team races with him. We have to beat the team that won last year!"</p>
 
-      <p>The first machines that were designed to pop corn were invented
-around 1885. These poppers heated the corn with steam. Later,
-these popcorn poppers were put into small wagons. The wagons
-could be pulled to different places. Street vendors sold popcorn at
-carnivals, parks, and state fairs. People could not get enough of it!</p>
+      <p>"Did you tell Mom and me about this before today?" his dad asked.
+Anthony shook his head in disappointment. Anthony <u>slumped</u> in his
+chair. With all the excitement surrounding his cousins' upcoming
+visit, it was easy to see how Field Day had slipped his mind.</p>
 
-      <p>Soon movie theaters began selling popcorn too. This started the
-tradition of eating popcorn at the movies. At this time popcorn
-became more popular than ever. For a short time though, people
-began eating less popcorn. In the 1950s television was still very
-new. Many people stayed home to watch television instead of going
-to the movies. Few people owned popcorn poppers. Then
-microwave ovens were invented. Now popcorn is easy to make at
-home. Today Americans are eating more popcorn again-more than
-one billion pounds each year!</p>
+      <p>"I'm sorry," Anthony said. "I lost the flier Mr. Jacobs gave us after
+soccer practice, and I forgot to tell you about it. Field Day starts at
+noon with a family picnic, and the games and races begin after lunch."
+Anthony sighed. "I need to call Caleb so he can find a new partner."</p>
+
+      <p>Anthony knew his parents would not let him shirk his responsibilities
+around the house just because he forgot to mention the event.
+While Anthony loved hanging out with his cousins and wanted to
+make everything presentable for their visit, he also wanted to keep
+his word to Caleb. <i>Maybe there's a way to do both,</i> Anthony thought.</p>
+
+      <p>"What if...," Anthony hesitated, looking at his parents. "What if we
+all work together quickly to finish by noon?" he suggested thoughtfully.
+"Then the house will be ready and we can go to Field Day."</p>
+
+      <p>Anthony's mom and dad looked at the children and then at each
+other. By this time, Kate was practically begging to go to Field Day.
+"We can try," Anthony's rmom finally yielded.</p>
+
+      <p>Anthony leaped from his chair like a loaded spring and hugged his
+mom, catching her by surprise. Then he looked at the list of chores
+and thought about how long it would take to complete each one.
+Even though Anthony wanted to go to the grocery store, he decided
+that he should stay home with his dad and sister to complete the
+other jobs. The children started talking about how they would divide
+the chores as their mom took the grocery list and walked toward
+the door. "I bet I'll be back before you're finished!" she teased.</p>
+
+      <p>"Is that a challenge?" Anthony joked back with a smile. "Accepted!"</p>
+
+      <p>Anthony and his mom loved to compete against each other, and
+today was the perfect day for a little family competition. If he was
+going to make it to Field Day, he had to finish first!</p>
+
+      <p>Everyone went right to work. Anthony and Kate made the beds while
+their dad vacuumed the carpet. Afterward, Kate helped their dad
+clean the bathroom as Anthony swept the kitchen floor. Anthony's
+mom arrived at the door with her arms full of bags just as everyone
+in the house was finishing. "Great timing!" Anthony exclaimed.</p>
+
+      <p>Working at record speed, everyone helped unload the car and put
+the groceries away. When the last item was put in the pantry,
+Anthony's dad looked at his watch as if he were timing a race.
+"Perfect!" he announced as he tapped his watch. "We have thirty
+minutes before Field Day begins!"</p>
+
+      <p>"We did it!" Kate cheered.</p>
+
+      <p>"We sure did," Anthony agreed. While he did not know how well he
+would do in his races with Caleb, he felt as though he had already
+won the first race of the day.</p>
     `
-  }
+  },
 };
 
 const sampleQuestions = [
