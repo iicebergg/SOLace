@@ -466,7 +466,7 @@ const sampleQuestions = [
       'opposed',
       'created'
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'The passage states that "migrate means they travel to warmer places."'
   },
 
@@ -481,7 +481,7 @@ const sampleQuestions = [
       'He believes it needs more order.',
       'He wants it to contain music.'
     ],
-    correctAnswer: 3,
+    correctAnswer: 0,
     explanation: 'The passage mentions that bears, groundhogs, and some frogs hibernate.'
   },
 
@@ -496,7 +496,7 @@ const sampleQuestions = [
       'thinks of new projects when he wakes up',
       'likes to find different ways of completing a task'
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: 'Animals eat lots of food before hibernating to store fat in their bodies.'
   },
 
@@ -511,7 +511,7 @@ const sampleQuestions = [
       'His friends add their voices to the school song.',
       'His friends decide to play a joke on their teacher.'
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'Emma thought the garden was magical because the vegetables were the biggest she had ever seen.'
   },
 
@@ -526,7 +526,7 @@ const sampleQuestions = [
       'He tries to mention it earlier in the school day, but she is making copies.',
       'He wants to be sure she is the only one to hear his plan.'
     ],
-    correctAnswer: 3,
+    correctAnswer: 1,
     explanation: 'Grandma said the secret is in the water from the pond with special minerals.'
   },
 
@@ -541,7 +541,7 @@ const sampleQuestions = [
       'Play a copy of the school song',
       'Remind the school about pizza day'
     ],
-    correctAnswer: 3,
+    correctAnswer: 2,
     explanation: 'Grandma said the secret is in the water from the pond with special minerals.'
   },
 
@@ -556,7 +556,7 @@ const sampleQuestions = [
       'Home at the Bottom of the Sea',
       'Made Like No Other Fish'
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: 'The passage states that people invented telescopes to see farther into space.'
   },
 
@@ -571,7 +571,7 @@ const sampleQuestions = [
       'Chronological order', 
       'Comparison/contrast'
     ],
-    correctAnswer: 3,
+    correctAnswer: 1,
     explanation: 'The passage states that Yuri Gagarin from Russia was the first person to travel to space in 1961.'
   },
 
@@ -586,7 +586,7 @@ const sampleQuestions = [
       'Blobfish live thousands of feet below the surface of the ocean.',
       'Blobfish are known for bobbing rather than swimming.',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -601,7 +601,7 @@ const sampleQuestions = [
       'Underwater video of the blobfish will help people study it.',
       'Saving the blobfish from the fishing industry is an important cause.',
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -616,7 +616,7 @@ const sampleQuestions = [
       'Blobfish resemble their name through their looks as well as their habits.',
       'Deep-sea fishermen have scooped up many blobfish in nets along with the sea creatures they are seeking.',
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -631,7 +631,7 @@ const sampleQuestions = [
       'jokes',
       'discussions'
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -646,7 +646,7 @@ const sampleQuestions = [
       'remind her of how different camp is from home',
       'need work in order to be ready for the campers',
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -661,7 +661,7 @@ const sampleQuestions = [
       'herself',
       'her parents',
     ],
-    correctAnswer: 3,
+    correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -691,7 +691,7 @@ const sampleQuestions = [
       'does not want to share a room with her sister',
       'does not want to leave her friends from school',
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -706,7 +706,7 @@ const sampleQuestions = [
       'Talent in art',
       'Sense of humor',
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -736,7 +736,7 @@ const sampleQuestions = [
       'All restaurants serve syrup with breakfast foods and desserts.',
       'Sugar and fruit mixtures may produce foam when they are boiled.',
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -751,7 +751,7 @@ const sampleQuestions = [
       'Follow These Helpful Cooking Hints',
       'Try Your Syrup On...',
     ],
-    correctAnswer: 3,
+    correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -767,7 +767,7 @@ const sampleQuestions = [
       'Pour the mixture through a strainer into a bowl.',
       'Add sugar into the mixture and return it to the pan.'
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -782,7 +782,7 @@ const sampleQuestions = [
       'territory: the land or waters belonging to or under the rule of a government',
       'trading post: a place where the exchange of goods takes place'
     ],
-    correctAnswer: 3,
+    correctAnswer: [0, 2],
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -810,7 +810,7 @@ const sampleQuestions = [
       'She was elected president during her <u>prime</u>.',
       'They are building a home on a <u>prime</u> piece of land.',
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -840,7 +840,7 @@ const sampleQuestions = [
       'situations guests will experience in space',
       'view from the space hotel',
     ],
-    correctAnswer: 3,
+    correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -850,7 +850,7 @@ const sampleQuestions = [
     type: 'multiple-choice',
     passageId: '5',
     options: [
-      'The outside appearanceo f a space hotel',
+      'The outside appearanceo 0f a space hotel',
       'The size of the living area provided in a space hotel',
       'The equipment needed for a spacecraft to dock with a space hotel',
       'The distance to the space hotel',
@@ -861,45 +861,44 @@ const sampleQuestions = [
 
   {
     id: '28',
-    text: 'Complete this web. (image)',
+    text: 'According to the article, how many guests will the first space hotel hold at one time?',
     type: 'multiple-choice',
-    passageId: 'friend',
+    passageId: '5',
     options: [
-      'Doing cartwheels',
-      'Walking on a branch',
-      'Swimming in the river',
-      'Jumping from a treetop',
-      'Bouncing off the branches'
+      '15',
+      '10',
+      '4',
+      '2',
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: 'To round 5,647: to nearest thousand (6,000), nearest hundred (5,600), nearest ten (5,650).'
   },
 
   {
     id: '29',
-    text: 'Which lesson does Sidney leam in the story?',
+    text: 'Based on the article, space hotel guests would wear Velcro suits mainly to--',
     type: 'multiple-choice',
-    passageId: 'friend',
+    passageId: '5',
     options: [
-      'Friendship is more important than winning.',
-      'Practicing can lead to winning contests.',
-      'Tricks should only be done in calm weather.',
-      'Being friendly means saying kind words.',
+      'resemble trained astronauts',
+      'exercise in the living area',
+      'prevent floating in the chambers',
+      'move from the spacecraft to the hotel',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
   {
     id: '30',
-    text: 'Which detail about the setting is most important to the story?',
+    text: 'Which sentence would best belong in a summary of the article?',
     type: 'multiple-choice',
-    passageId: 'friend',
+    passageId: '5',
     options: [
-      'A tree branch hangs above a river.',
-      'The weather stays warm in the jungle.',
-      'Umbrella trees have many branches.',
-      'The force of the wind can be very strong.',
+      'Galactic Suite Limited will try to open the first space hotel.',
+      'Two astronaut pilots will fly the spacecraft to the hotel.',
+      'Training for travel to the space hotel will be on a tropical island.',
+      'A Russian spacecraft will transport guests to the space hotel.',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -907,74 +906,76 @@ const sampleQuestions = [
 
   {
     id: '31',
-    text: 'Based on lines 1-4 of the poem, which sentence is correct?',
+    text: 'What is the effect of the cause shown below? <br>Cause:<div class="passage-innerbox">Four companies form Galactic Suite Limited.</div>',
     type: 'multiple-choice',
-    passageId: 'thieves',
+    passageId: '5',
     options: [
-      'The thieves are having trouble seeing.',
-      'The thieves are stealing silver objects.',
-      'The light of the moon is shining on the thieves.',
-      'The noise outside is making the thieves nervous.',
+      'Space vacations are now common.',
+      'A chain of space resorts is planned.',
+      'Interest in space travel increases.',
+      'A spaceport is built in the desert.',
+      'Astronauts train on a tropical island',
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
   {
     id: '32',
-    text: 'The author includes lines 7 and 8 to--',
+    text: 'What is the best title for these notes? <br><ul><li>Receive 16 weeks of astronaut training</li><li>Experience conditions of life in space</li><li>Take a day-and-a-half spacecraft trip</li></ul>',
     type: 'multiple-choice',
-    passageId: 'thieves',
+    passageId: '5',
     options: [
-      'show that the thieves are animals',
-      'explain why the thieves are quiet',
-      'describe the feelings of the characters',
-      'give reasons the young are behind the leader',
-    ],
-    correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
-  },
-
-  {
-    id: '33',
-    text: 'Which of these are the thieves trying to find?',
-    type: 'multiple-choice',
-    passageId: 'thieves',
-    options: [
-      'A place to hide',
-      'A place to rest',
-      'Some food to eat',
-      'Some jewels to steal',
-    ],
-    correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
-  },
-
-  {
-    id: '34',
-    text: 'What is the speaker doing in the poem?',
-    type: 'multiple-choice',
-    passageId: 'thieves',
-    options: [
-      'Feeding the dog',
-      'Chasing animals',
-      'Sitting on the grass',
-      'Watching from inside',
+      'How to Schedule a Space Vacation',
+      'Ways to Take a Trip to Space',
+      'From Earth to Outer Space',
+      'Preparing to Vacation in Space',
+      'Space Trips Already Available',
     ],
     correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
   {
-    id: '35',
-    text: 'In paragraph 3, what does <u>crushed</u> mean?',
+    id: '33',
+    text: 'The main idea of the article is that space travel--',
     type: 'multiple-choice',
-    passageId: 'popcorn',
+    passageId: '5',
     options: [
-      'ground',
-      'stirred',
-      'baked',
-      'shook',
+      'may be a possibility for ordinary people in the future',
+      'is a goal of businessmen and scientists',
+      'requires astronaut training and preparation in the Caribbean',
+      'will allow people to view Earth',
+    ],
+    correctAnswer: 0,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '34',
+    text: 'What is the root word in "weightlessness"?',
+    type: 'multiple-choice',
+    passageId: '5',
+    options: [
+      'less',
+      'weight',
+      'eight',
+      'weightless',
+    ],
+    correctAnswer: 1,
+    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+  },
+
+  {
+    id: '35',
+    text: 'The poet includes lines 1 and 2 most likely to--',
+    type: 'multiple-choice',
+    passageId: '6',
+    options: [
+      'establish the setting for the reader',
+      'explain the conflict in the poem',
+      'demonstrate how newspapers were used',
+      'prepare the reader for a history lesson',
     ],
     correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -982,30 +983,29 @@ const sampleQuestions = [
 
   {
     id: '36',
-    text: 'Which choice best completes this cause-and-effect chart? (image)',
+    text: 'Nellie Bly writes about her journey for <i>New York World</i> because she wants to--',
     type: 'multiple-choice',
-    passageId: 'popcorn',
+    passageId: '6',
     options: [
-      'The popcorn kernel explodes.',
-      'The steam turns into water.',
-      'The steam escapes slowly.',
-      'The popcorn kernel is heated.',
-      'The steam becomes hotter.'
+      'earn fame as a newspaper reporter',
+      'help the newspaper sell more copies',
+      'keep a journal about her fabulous trip',
+      'teach the public about other countries',
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
   {
     id: '37',
-    text: 'Which sentence about the article is an opinion?',
+    text: 'Nellie Bly\'s boss most likely believes that women--',
     type: 'multiple-choice',
-    passageId: 'popcorn',
+    passageId: '6',
     options: [
-      'Popcorn is a snack that has a long history.',
-      'Popcorn kernels contain a tiny amount of water.',
-      'Popcorn is a snack that is easy to make at home.',
-      'Popcorn continues to be sold at movie theaters.',
+      'cannot travel around the world',
+      'should not be reporters',
+      'should not travel alone',
+      'are not adventurous',
     ],
     correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -1013,30 +1013,29 @@ const sampleQuestions = [
 
   {
     id: '38',
-    text: 'Complete these notes. (image)',
+    text: 'Which question presents one problem Nellie faced during her trip?',
     type: 'multiple-choice',
-    passageId: 'popcorn',
+    passageId: '6',
     options: [
-      'People sell popcorn on the streets from wagons.',
-      'People make popcorn in microwave ovens.',
-      'People have popcorn poppers in their homes.',
-      'People add popcorn to many other types of food.',
-      'People bake bread made from popcorn flour.'
+      'How will she travel from one place to another?',
+      'How will she carry her luggage to all the places she visits?',
+      'When will she have time to write her stories for the paper?',
+      'Who will she hire to perform her job while she is away?',
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
   {
     id: '39',
-    text: 'The main reason the author wrote this article is to--',
+    text: 'Which of these is the best summary of the poem?',
     type: 'multiple-choice',
-    passageId: 'popcorn',
+    passageId: '6',
     options: [
-      'suggest unusual ways to make popcorn',
-      'persuade readers to eat more popcorn',
-      'list differences between types of popcorn',
-      'tell readers about the history of popcorn',
+      'Nellie Bly traveled around the world after her boss told her not to go, and a legend was created from her travels.',
+      'Nellie Bly wore one outfit for a seventy-two-day trip that ended in San Franciscow hen her fans celebrated her return.',
+      'Nellie Bly wrote about her trip aboard ships to faraway countries, and people enjoyed it so much they held a big party.',
+      'Nellie Bly wanted to travel around the world and write about her journey, so she set out alone, and the public read about her adventures.',
     ],
     correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -1044,14 +1043,14 @@ const sampleQuestions = [
 
   {
     id: '40',
-    text: 'Which two words are synonyms?',
+    text: 'Which root word has a prefix and a suffix?',
     type: 'multiple-choice',
-    passageId: 'popcorn',
+    passageId: '6',
     options: [
-      'shared, discovered',
-      'delicious, tasty',
-      'began, invented',
-      'still, again',
+      'legend',
+      'unsupportive',
+      'themselves',
+      'celebrate',
     ],
     correctAnswer: 1,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -1060,45 +1059,45 @@ const sampleQuestions = [
 
 const scaledScoreMapping = {
   0: 0,
-  1: 112,
-  2: 157,
+  1: 107,
+  2: 155,
   3: 184,
-  4: 204,
-  5: 220,
-  6: 234,
-  7: 246,
-  8: 257,
-  9: 267,
-  10: 276,
-  11: 285,
-  12: 293,
-  13: 301,
-  14: 309,
-  15: 316,
-  16: 323,
-  17: 331,
-  18: 338,
-  19: 345,
-  20: 352,
-  21: 359,
-  22: 366,
-  23: 373,
-  24: 380,
-  25: 388,
-  26: 396,
-  27: 404,
-  28: 412,
-  29: 420,
-  30: 430,
-  31: 439,
-  32: 450,
-  33: 461,
-  34: 474,
-  35: 488,
-  36: 505,
-  37: 526,
-  38: 554,
-  39: 599,
+  4: 206,
+  5: 224,
+  6: 239,
+  7: 252,
+  8: 264,
+  9: 275,
+  10: 285,
+  11: 294,
+  12: 303,
+  13: 312,
+  14: 320,
+  15: 329,
+  16: 337,
+  17: 344,
+  18: 352,
+  19: 360,
+  20: 367,
+  21: 375,
+  22: 383,
+  23: 391,
+  24: 398,
+  25: 407,
+  26: 415,
+  27: 423,
+  28: 432,
+  29: 441,
+  30: 451,
+  31: 461,
+  32: 472,
+  33: 484,
+  34: 497,
+  35: 512,
+  36: 530,
+  37: 552,
+  38: 581,
+  39: 600,
   40: 600
 };
 
