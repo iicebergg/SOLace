@@ -34,6 +34,16 @@ ul {
   list-style-position: inside;
 }
 
+.increment5 {
+  list-style-type: none; /* Hide default markers */
+  counter-reset: my-counter; /* Initialize the counter */
+  counter-increment: my-counter; /* Increment counter for every list item */
+}
+
+.increment5:nth-child(5n)::before {
+  content: counter(my-counter) ". "; /* Display the counter value */
+}
+
 /* Panel open state - content moves RIGHT to make room for LEFT panel */
 .test-container.panel-open {
   margin-left: 420px; /* 400px panel + 20px breathing room */

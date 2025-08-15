@@ -2,207 +2,190 @@ window.TEST_IDENTIFIER = 'reading_grade6_2015';
 
 // Reading passages that can be referenced by multiple questions
 const readingPassages = {
-  'summer_adventures': {
-    title: 'Summer Adventures',
+  '1': {
+    title: 'Cleaning Tables',
     content: `
-      <p>Ben and his best friend Eli jumped on their bicycles after school. As
-they rode down the sidewalk, they talked about their summer plans.</p>
+      <p>Julia raced down the hallway, sliding the last few feet to her next
+class. The bell had already rung, so she slipped through the door
+and quickly sat down, hoping the teacher would not notice.</p>
       
-      <p>"One more week until summer vacation!" Ben yelled.</p>
+      <p>Mr. Malone turned from the piano and said, "Julia, I'm happy you
+could join us." He continued teaching, explaining the new music
+they were preparing to learn. Julia relaxed, thinking Mr. Malone
+would let another tardy slide by. Unfortunately, she realized at the
+end of class that she was incorrect.</p>
       
-      <p>"I can't wait to hang out in the tree house and go to the swimming
-pool with you," Eli answered. "I sure hope the two weeks I have to
-spend with my cousin go by fast," he added.</p>
+      <p>"This is the third time in the grading period that you've been late,
+Julia," Mr. Malone stopped Julia as she walked by his desk. "Please
+explain this behavior."</p>
       
-      <p>Ben squeezed the brakes and came to a screeching halt. "I
-completely forgot you will be gone for two weeks," he said. Now,
-instead of feeling excited about the summer, Ben felt gloomy.</p>
+      <p>Julia hesitated. "I'm sorry I was late. I was cleaning the tables in
+the science room. Someone spilled vinegar, so cleaning took me
+longer than usual."</p>
 
-      <p>The last week of school went by quickly, and soon enough, Eli was
-at his cousin's house. Ben feared the next fourteen days would
-creep by slowly. He thought about all the adventures Eli and he had
-planned. Instead, Ben watched TV and read comic books. This was
-not the summer he had thought it would be.</p>
+      <p>Mr. Malone replied, "I've talked to you about your tardiness, and
+you're aware of the rules for being tardy so many times. I'm afraid
+you won't be able to attend the upcoming field trip."</p>
 
-      <p>When Ben's mother saw him sulking, she offered a suggestion.
-"Mrs. Chandler was telling me about an adventure camp that starts
-in two days. Her son Mark is signed up to go. Why don't you join
-too? I think you would have a good time, and you would get some
-fresh air."</p>
+      <p>"It's to hear the city orchestra!" Julia protested. "We're going behind
+the scenes at the concert hall and learning--"</p>
 
-      <p>Being outside did sound like a good idea. Also, Mark went to the
-same school as Ben. Although they did not know each other very
-well, at least Ben would see a familiar face at camp. Days later he
-was at the Winding River Adventure Day Camp. He spotted Mark
-and walked over to him.</p>
+      <p>Mr. Malone interrupted gently. "I don't want you to have to stay
+here, but I don't have a choice. Unless your parent or guardian
+comes in to discuss this with the principal and me, you won't be
+attending." Julia turned to gather up things from her desk and left,
+walking slowly home.</p>
 
-      <p>"Hi. I was just looking at the list of activities to choose from," Mark
-said. "I think I'm going to try hiking, fishing, and canoeing."</p>
+      <p>It was after dinner before Julia found the courage to talk to her
+dad. "Um, Dad? Are you really busy at work tomorrow?" Julia
+continued, stammering: "I ... well, I mean ... you need to come
+to the school and talk to the principal."</p>
 
-      <p>Ben had no time to carefully consider his choices, but he decided
-that fishing would be a good activity to try first. So he and Mark
-walked over to the fishing group. They grabbed their gear and
-followed the leader to the pond. After the first lesson, Ben cast his
-line into the water and caught a small fish.</p>
+      <p>"Really? Why do I need to talk to the principal?" Julia's dad asked.</p>
 
-      <p>"You're a natural at this," the leader said.</p>
+      <p>With a deep breath, Julia started to talk. She told her dad about the
+messy science tables and how her science teacher deducted points
+from their daily grades if they did not clean up after experiments.
+She spoke about how her friends' next classes were on the opposite
+side of the building. Since her next class was nearby, Julia
+volunteered to help clean up so that her friends would not be late.
+Finally, she explained her tardies and how those would prevent her
+from attending the orchestra field trip. When she was finished, she
+waited anxiously for her dad to speak.</p>
 
-      <p>Ben beamed. <i>Maybe this summer won't be so bad after all</i>,
-he thought.</p>
+      <p>He watched his daughter for several seconds, considering the best
+way to handle the situation. Finally, he simply said, "I'll be there
+right after school."</p>
 
-      <p>Each day at camp brought a new adventure for the two boys.
-However, they enjoyed fishing the most, and both learned quickly.</p>
+      <p>The next day after school, Julia walked to the principal's office. Her
+father and Mr. Malone were already there, talking with
+Mrs. Thompson, the principal. When everyone was seated,
+Mrs. Thompson spoke. "Julia, I have a question for you. Why are
+you cleaning the science tables alone?"</p>
 
-      <p>"It looks like you made a new friend," Ben's mother said one day.</p>
+      <p>Julia fidgeted and squirmed nervously for a moment, not looking at
+anyone. Then she mumbled, "I'm not really sure." The adults
+watched her a moment longer. "I guess no one wants to clean up,
+and I don't want my friends to get in trouble."</p>
 
-      <p>"Yeah, Mark has become a good friend," Ben said. Then he paused.
-"I hope Eli will like him too."</p>
+      <p>"By helping your friends so they wouldn't get in trouble, you got
+yourself in trouble," Mrs. Thompson said. Julia nodded in
+<u>acknowledgment</u>. "Your science teacher and I will be dealing with that
+issue soon. However, you were still tardy three times in one grading
+period, Julia. The school rules state that there must be a consequence."</p>
 
-      <p>"I'm sure everything will work out fine," replied his mother.</p>
+      <p>Julia's dad continued. "You're still responsible for breaking the
+rules, even if it was for a good reason. Do you have any ideas for
+a punishment?"</p>
 
-      <p>"Before Ben knew it, the two weeks had zoomed by, and Eli was
-home again.</p>
+      <p>Julia just shook her head and swallowed hard. She already knew that
+she would have to miss the field trip. Mr. Malone quietly motioned to
+Mrs. Thompson, and they both stepped out of the office. Julia's dad
+placed his hand on Julia's shoulder while they waited.</p>
 
-<p>"Did you have a good time with your cousin?" Ben asked his
-best friend.</p>
+<p>"I have some good news for you, Julia," Mrs. Thompson said as she
+walked back into the room. "Mr. Malone has explained to me how
+excited you are about the orchestra field trip. Normally, this many
+tardies would exclude you from participating." She paused and
+stared at Julia. "However, I have considered the motives behind
+your tardies and will allow you to attend."</p>
 
-<p>"It was great," Eli began. "My cousin and I went camping. He has a
-small pond on his farm where we set up our tents. We really
-enjoyed spending time outside."</p>
+<p>Julia jumped out of her seat, repeating, "Thank you, thank you,
+thank you!"</p>
 
-<p>"That sounds fun!" Ben said. "I've been fishing at summer camp
-with a kid from school named Mark;' Ben explained.</p>
+<p>"Don't get too excited," Mrs. Thompson cautioned. "You'll have a
+one-day detention for each tardy. I hope you won't let your friends
+take advantage of you like this again."</p>
 
-<p>"Hey, I have an idea," Eli replied. "Maybe we can go to the lake this
-weekend. I'll ask my parents if they can take us, and we can invite
-Mark to go along."</p>
-
-<p>Ben was relieved when Eli suggested the three boys go to the lake
-together. They may have a lot in common after all. One thing
-seemed to be certain: together they would have many exciting
-summer adventures!</p>
+<p>"No, ma'am, I won't," Julia replied, grinning from ear to ear.</p>
     `
   },
 
-  'ancient_egypt': {
-    title: 'Life in Ancient Egypt',
-    content: `
-      <p>Thousands of years ago, much of life in Egypt was shaped by its
-environment. People who lived in this area learned to adapt to the
-hot weather and their surroundings. These conditions determined
-how homes were built, how people dressed, and what foods
-people ate.</p>
+  '2': {
+    title: 'Mysterious and Marvelous Mountain Lake',
+    content: ` 
+      <p><b>The Mystery of Mountain Lake</b></p>
+      <p>High in the Appalachian Mountains of southwestern Virginia sits one
+of only two freshwater lakes in the state. This amazing body of
+water is Mountain Lake. Nearly 4,000 feet above sea level, it is the
+highest lake in elevation east of the Mississippi River. Mountain Lake
+has existed for a long time, and the mystery that surrounds the lake
+seems to have been around for a million years. The water levels of
+this inland lake rise and fall considerably. For years no one
+understood exactly why this happens.</p>
       
-      <p><b>Mud Houses</b></p>
-      <p>The locations and designs of houses were determined by both the
-Nile River and the hot temperatures. Homes were usually built on
-high spots near the
-Nile River to keep them
-safe from rising waters. In
-addition, the houses were
-made of mud bricks. Mud
-kept the houses cool from
-the <u>soaring</u> temperatures.
-The insides of the houses
-were comfortable too
-because small windows
-would not allow much heat
-to come inside.</p>
+      <p>What causes the water in Mountain Lake to rise and fall? This is a
+question scientists, researchers, and neighbors around the lake have
+asked for years. When a large, natural hole at the bottom of
+Mountain Lake was discovered, the door to the mystery was finally
+unlocked. Scientists found that sediment, such as rocks and mud,
+collects around the hole, eventually closing it. When the hole is
+blocked and there is considerable rainfall, the water level in the lake
+rises. In addition, springs and groundwater also feed into the lake. In
+years with above-average rainfall, the lake is full and deep. When the
+water level becomes too high, excess water flows into the New River.</p>
       
-      <p>People spent a great deal of time on the flat rooftops of their
-houses. Roofs provided extra storage space and also a great place
-for family gatherings. During the summertime, it was common to
-sleep on the roofs, which were cooler than the insides of homes.</p>
+      <p>During times of drought, less rainfall fills the lake. Drought does not
+make the water level fall substantially. However, coupled with
+evaporation, drought causes the water levels to drop. When water
+drains through small openings at the lake bottom near the hole, it
+wears away the sediment. Draining causes more lake water to flow
+underground and the surface level of the lake to drop the most.
+This combination of events has caused the lake to rise and fall
+throughout its history.</p>
       
-      <p><b>Clothing and Hair</b></p>
-      <p>Most ancient Egyptians spent much of their time outdoors. To stay
-cool in the hot sun, men and women
-often wore clothes called tunics. This type
-of clothing looked like a long robe and
-was made out of a thin, lightweight fabric.
-The white color of the tunics also helped
-reflect the hot sun.</p>
-      
-      <p>Another way that men and women stayed
-cool was by keeping their hair very short
-or even shaving their heads. However, for
-special events, they wore wigs. The wigs
-also protected people's heads from the
-harsh sun.</p>
+      <p><b>Marvelous Mountain Lake</b></p>
+      <p>Mountain Lake offers more than interesting changes in water
+surface levels; it is an excellent place for learning. Mountain Lake
+Conservancy functions mostly to manage and protect the land,
+water, and natural resources in the area. It also offers children's
+educational programs, which teach about the aquatic and woodland
+habitats and the creatures that live in these areas.</p>
 
-      <p><b>Egyptian Diet</b></p>
-      <p>Different types of foods, such as grains, fruits, and vegetables, grew
-well in the hot climate. Grains were used in making breads, cakes,
-and desserts and became the main part of the daily diet. Fruits and
-vegetables, such as lettuce, beans, figs, grapes, and cucumbers,
-were also popular foods in Egypt. In addition, people often ate fish.
-The Nile River and the surrounding seas provided a variety of fish to
-the Egyptians and were an
-important part of their diet.</p>
+      <p>Additionally, the Mountain Lake Biological Station is a field research
+and teaching location. It has been operated by the Biology
+Department of the University of Virginia since 1929. The station is a
+perfect spot for aquatic biology study because it is located near
+Mountain Lake, streams, waterfalls, and ponds. Researchers from
+around the world and university students use the specialized facility.
+Deer, bears, bobcats, raccoons, and squirrels may be seen here.</p>
       
-      <p>Many interesting facts have
-been discovered about ancient
-Egyptians. They adapted very
-well to the environment, and
-their culture became one of
-the greatest in history.</p>
+      <p><b>Recreation at the Lake</b></p>
+      <p>A peaceful retreat for relaxing, Mountain Lake attracts visitors who
+have long appreciated the natural beauty of the area. In the late
+1850s the Mountain Lake Company built the first wooden hotel here
+to lodge stagecoach travelers. Hotel ownership changed throughout
+the years. In the 1930s a new owner replaced the wooden hotel with
+the present structure of native sandstone. The historical Mountain
+Lake Hotel has provided comfortable beds and fine food to its guests
+ever since. Today the site includes the main hotel and smaller cabins.
+Guests enjoy many outdoor activities. Some of these include hiking,
+fishing, swimming, mountain bike riding, and boat riding.</p>
+
+      <p>Whether for study or rest, countless people frequent this fascinating
+place. It offers mystery with its ever-changing water levels and
+immeasurable scientific opportunities for researchers and students.
+The awe-inspiring beauty of this natural setting will delight many
+more visitors for years to come. Without a doubt, Mountain Lake is
+matchless in its mystery and marvel.</p>
     `
   },
 
-  'fundraisers': {
-    title: 'Harrison Elementary Spring Fundraisers',
+  '3': {
+    title: 'Flying on Snow',
     content: `
-      <p><From the first graders' day at the zoo to the fifth graders' tour of the
-downtown art museum, Harrison students look forward to spring field
-trips each year. Help make these exciting experiences possible by
-taking part in these school fundraisers.</p>
-      
-<div class="passage-innerbox">
-      <p><b>Share a Harrison Hunger-Buster</b></p>
-      <p>What is your favorite food? Maybe it's your mother's
-chocolate chip cookies or your uncle's famous
-French toast. Share your recipe with the students,
-teachers, and parents in the Harrison community.</p>
-      <p><ul>
-      <li>Ask relatives and friends for a recipe for the
-school cookbook, <i>Harrison Hunger-Busters</i>.</li>
-      <li>Bring the recipe to Mrs. Voltz in the front office either before
-or after school by February 15.</li>
-      <li>Buy a cookbook for $4.50 to see your friends' recipes. We will
-announce the beginning of the sale when the cookbooks
-arrive. Your family will surely enjoy giving these delicious
-dishes a try.</li>
-      </ul></p>
-      
-<div class="passage-innerbox">
-      <p><b>Try Your Luck in a Raffle</b></p>
-      <p>Mark your calendars for the spring raffle! Teddy
-bears, posters, games, stickers, and pencils are
-just some of the prizes for the <u>lucky</u> inners.</p>
-      <p><ul>
-      <li>Buy a raffle ticket at the front office
-for $1.00.</li>
-      <li>The winners will be announced at the end of the
-day on March 21. Good luck!</li>
-      </ul></p>
+      <ol class="increment5">
+      <li>The ground rushes up to meet us as</li>
+<li>We hurtle down this slippery hill</li>
+<li>At lightning speed.</li>
+<li>My sled and I are like one creature;</li>
 
-<div class="passage-innerbox">
-      <p><b>Celebrate at the School Fair</b></p>
-      <p>Saturday, May 2<br>10:00 A.M. - 3:30 P.M.</p>
-      <p>Join family and friends on the field behind
-the playground for a fun-filled day. Race
-down the gigantic slide, jump around the
-moon bounce, or test your skills at one of
-the many exciting games. This year there
-will be a new activity-the dunking booth!
-Hit the target to drop the principal into a
-pool of water. Don't forget to stop by one of the food stands for
-delicious snacks and drinks. Tickets for food and rides will sell for
-50 cents each.</p>
-</div>
-
-      <p>With everyone's help, we can make the Harrison fundraisers and
-field trips successful!</p>
+<li>We lean together in the turns,</li>
+<li>Shifting position to go faster still ...</li>
+<li>This time, surely, we'll make it</li>
+<li>All the way to the . . .</li>
+<li><i>Splat!</i></li>
+      </ol>
     `
   },
 
@@ -362,7 +345,7 @@ const sampleQuestions = [
     id: '1',
     text: 'Which question is answered in paragraph 5?',
     type: 'multiple-choice',
-    passageId: 'summer_adventures',
+    passageId: '3',
     options: [
       'What had Ben and Eli planned for the summer?',
       'Where is Eli after the last week of school?', 
