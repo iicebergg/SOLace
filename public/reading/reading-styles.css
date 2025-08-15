@@ -30,6 +30,10 @@ main {
   font-weight: lighter;
 }
 
+ul {
+  list-style-position: inside;
+}
+
 /* Panel open state - content moves RIGHT to make room for LEFT panel */
 .test-container.panel-open {
   margin-left: 420px; /* 400px panel + 20px breathing room */

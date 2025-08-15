@@ -15,7 +15,7 @@ something to enjoy. Since the show is viewed schoolwide, we could
 help everyone begin the day in a positive way."</p>
       
       <p>"What do you mean, Charlie?" Mrs. Barnes asked since she was the
-one who had devised the plan for the morning news program at
+one who had <u>devised</u> the plan for the morning news program at
 Eleanor Elementary School. "Don't you think the students like
 watching our news show and hearing about the important events of
 the day? And you reminded them that today is pizza day in the
@@ -476,7 +476,7 @@ const sampleQuestions = [
     type: 'multiple-choice',
     passageId: '1',
     options: [
-      'He feels it lacks a fun ending.t',
+      'He feels it lacks a fun ending.',
       'He expects it to include the lunch menu.', 
       'He believes it needs more order.',
       'He wants it to contain music.'
@@ -802,7 +802,7 @@ const sampleQuestions = [
 
   {
     id: '24',
-    text: 'Read this dictionary entry. <div class="passage-dicbox"><b>prime</b> (prīm) <i>ajd</i> <b>1.</b> Of main importance. <b>2.</b> Of the finest quality. <b>3.</b> Evenly divisible only by itself and one. <i>n.</i> <b>4.</b> A time of strength or success in a person\'s life.</div> Which sentence is an example of definition 2?',
+    text: 'Read this dictionary entry. <div class="passage-dicbox"><b>prime</b> (prīm) <i>adj</i> <b>1.</b> Of main importance. <b>2.</b> Of the finest quality. <b>3.</b> Evenly divisible only by itself and one. <i>n.</i> <b>4.</b> A time of strength or success in a person\'s life.</div> Which sentence is an example of definition 2?',
     type: 'multiple-choice',
     options: [
       'In math we learned about <u>prime</u> numbers.',
