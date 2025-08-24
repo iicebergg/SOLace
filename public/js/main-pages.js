@@ -33,10 +33,16 @@ function initHomePage() {
 // Mobile Menu Toggle
 function setupMobileMenu() {
   if (mobileMenuToggle && navLinks) {
+    // Create overlay element
+    const overlay = document.createElement('div');
+    overlay.className = 'menu-overlay';
+    document.body.appendChild(overlay);
+
     // Toggle mobile menu
     mobileMenuToggle.addEventListener('click', () => {
       navLinks.classList.toggle('active');
       mobileMenuToggle.classList.toggle('active');
+      overlay.classList.toggle('active');
       
       // Prevent body scroll when menu is open
       if (navLinks.classList.contains('active')) {
@@ -46,11 +52,20 @@ function setupMobileMenu() {
       }
     });
 
-    // Close mobile menu when clicking outside
+    // Close mobile menu when clicking on overlay
+    overlay.addEventListener('click', () => {
+      navLinks.classList.remove('active');
+      mobileMenuToggle.classList.remove('active');
+      overlay.classList.remove('active');
+      document.body.style.overflow = 'auto';
+    });
+
+    // Close mobile menu when clicking outside (keep existing functionality)
     document.addEventListener('click', (e) => {
       if (!mobileMenuToggle.contains(e.target) && !navLinks.contains(e.target)) {
         navLinks.classList.remove('active');
         mobileMenuToggle.classList.remove('active');
+        overlay.classList.remove('active');
         document.body.style.overflow = 'auto';
       }
     });
@@ -60,6 +75,7 @@ function setupMobileMenu() {
       link.addEventListener('click', () => {
         navLinks.classList.remove('active');
         mobileMenuToggle.classList.remove('active');
+        overlay.classList.remove('active');
         document.body.style.overflow = 'auto';
       });
     });
@@ -77,8 +93,9 @@ function setupMobileMenu() {
       if (e.key === 'Escape' && navLinks.classList.contains('active')) {
         navLinks.classList.remove('active');
         mobileMenuToggle.classList.remove('active');
+        overlay.classList.remove('active');
         document.body.style.overflow = 'auto';
-        mobileMenuToggle.focus(); // Return focus to menu button
+        mobileMenuToggle.focus();
       }
     });
   }
