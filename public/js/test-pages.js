@@ -1286,9 +1286,7 @@ function addQuestionDetailStyles() {
     }
     
     .question-result:hover {
-      transform: scale(1.05);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-      z-index: 10;
     }
     
     .question-result:active {
@@ -1327,17 +1325,6 @@ function addQuestionDetailStyles() {
       position: relative;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
       animation: modalSlideIn 0.3s ease-out;
-    }
-    
-    @keyframes modalSlideIn {
-      from {
-        opacity: 0;
-        transform: translateY(-20px) scale(0.95);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-      }
     }
     
     .question-detail-header {
@@ -1413,18 +1400,18 @@ function addQuestionDetailStyles() {
     }
     
     .detail-option.correct-answer {
-      border-color: var(--success-color, #28a745);
-      background-color: var(--success-color, #d4edda);
+      border-color: #28a745;
+      background-color: #d4edda;
     }
     
     .detail-option.user-selected.correct-answer {
-      border-color: var(--success-color, #28a745);
-      background-color: var(--success-color, #d4edda);
+      border-color: #28a745;
+      background-color: #d4edda;
     }
     
     .detail-option.user-selected:not(.correct-answer) {
-      border-color: var(--error-color, #dc3545);
-      background-color: var(--error-color, #f8d7da);
+      border-color: #dc3545;
+      background-color: #f8d7da;
     }
     
     .detail-option-indicator {
@@ -2049,7 +2036,7 @@ function generateAnswerSummary(question, userAnswer, questionNumber) {
       <h4>Answer Summary</h4>
       <div class="answer-summary-item">
         <span class="answer-summary-label">Question:</span>
-        <span class="answer-summary-value">${questionNumber} of ${window.questions ? window.questions.length : 'N/A'}</span>
+        <span class="answer-summary-value">${questionNumber} of ${questions.length}</span>
       </div>
       <div class="answer-summary-item">
         <span class="answer-summary-label">Result:</span>
