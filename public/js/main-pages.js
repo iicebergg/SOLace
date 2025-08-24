@@ -344,7 +344,6 @@ function setupPerformanceMonitoring() {
 document.addEventListener('DOMContentLoaded', () => {
   initHomePage();
   setupCounterAnimation();
-  setupLazyLoading();
   setupHeaderScrollEffect();
   setupFormValidation();
   setupAccessibility();
