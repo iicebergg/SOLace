@@ -43,13 +43,6 @@ function setupMobileMenu() {
       navLinks.classList.toggle('active');
       mobileMenuToggle.classList.toggle('active');
       overlay.classList.toggle('active');
-      
-      // Prevent body scroll when menu is open
-      if (navLinks.classList.contains('active')) {
-        document.body.style.overflow = 'hidden';
-      } else {
-        document.body.style.overflow = 'auto';
-      }
     });
 
     // Close mobile menu when clicking on overlay
