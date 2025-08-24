@@ -548,14 +548,14 @@ const sampleQuestions = [
     id: '7',
     text: 'Which statement is most likely true about Julia\'s dad?',
     type: 'multiple-choice',
-    passageId: '0',
+    passageId: '1',
     options: [
       'He wants Julia to learn from her mistakes.',
       'He closely observes Julia\'s behavior.', 
       'He is eager to defend Julia\'s actions.',
       'He feels Julia has the ability to do well in school.'
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
     explanation: 'The passage states that people invented telescopes to see farther into space.'
   },
 
@@ -563,7 +563,7 @@ const sampleQuestions = [
     id: '8',
     text: 'Which sentence states the most likely reason Julia is allowed to go on the field trip?',
     type: 'multiple-choice',
-    passageId: '3', 
+    passageId: '1', 
     options: [
       'She agrees to take the advice of her father.',
       'She conducts herself respectfully during the meeting',
@@ -1431,8 +1431,8 @@ function getPerformanceLevel(scaledScore) {
       }
       
       .performance-level.pass-advanced, .mini-performance-level.pass-advanced {
-        background-color: var(--success-color, #d4edda);
-        color: var(--success-color, #155724);
+        background-color: #d4edda;
+        color: #155724;
       }
       
       .performance-level.pass-proficient, .mini-performance-level.pass-proficient {
