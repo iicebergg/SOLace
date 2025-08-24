@@ -33,9 +33,17 @@ function initHomePage() {
 // Mobile Menu Toggle
 function setupMobileMenu() {
   if (mobileMenuToggle && navLinks) {
+    // Toggle mobile menu
     mobileMenuToggle.addEventListener('click', () => {
       navLinks.classList.toggle('active');
       mobileMenuToggle.classList.toggle('active');
+      
+      // Prevent body scroll when menu is open
+      if (navLinks.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'auto';
+      }
     });
 
     // Close mobile menu when clicking outside
@@ -43,6 +51,7 @@ function setupMobileMenu() {
       if (!mobileMenuToggle.contains(e.target) && !navLinks.contains(e.target)) {
         navLinks.classList.remove('active');
         mobileMenuToggle.classList.remove('active');
+        document.body.style.overflow = 'auto';
       }
     });
 
@@ -51,7 +60,26 @@ function setupMobileMenu() {
       link.addEventListener('click', () => {
         navLinks.classList.remove('active');
         mobileMenuToggle.classList.remove('active');
+        document.body.style.overflow = 'auto';
       });
+    });
+
+    // Handle keyboard navigation
+    mobileMenuToggle.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        mobileMenuToggle.click();
+      }
+    });
+
+    // Handle escape key to close menu
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
+        mobileMenuToggle.classList.remove('active');
+        document.body.style.overflow = 'auto';
+        mobileMenuToggle.focus(); // Return focus to menu button
+      }
     });
   }
 }
