@@ -155,6 +155,11 @@ ul {
   line-height: 1.6;
 }
 
+.paragraph-numbers li::marker {
+  color: #777;
+  font-size: small;
+}
+
 /* Remove overlay completely */
 .reading-panel-overlay {
   display: none !important;

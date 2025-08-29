@@ -5,6 +5,7 @@ const readingPassages = {
   'summer_adventures': {
     title: 'Summer Adventures',
     content: `
+    <ol class="paragraph-numbers">
       <p>Ben and his best friend Eli jumped on their bicycles after school. As
 they rode down the sidewalk, they talked about their summer plans.</p>
       
@@ -81,6 +82,7 @@ Mark to go along."</p>
 together. They may have a lot in common after all. One thing
 seemed to be certain: together they would have many exciting
 summer adventures!</p>
+</ol>
     `
   },
 
