@@ -6,82 +6,82 @@ const readingPassages = {
     title: 'Summer Adventures',
     content: `
     <ol class="paragraph-numbers">
-      <p>Ben and his best friend Eli jumped on their bicycles after school. As
-they rode down the sidewalk, they talked about their summer plans.</p>
+      <li>Ben and his best friend Eli jumped on their bicycles after school. As
+they rode down the sidewalk, they talked about their summer plans.</li>
       
-      <p>"One more week until summer vacation!" Ben yelled.</p>
+      <li>"One more week until summer vacation!" Ben yelled.</li>
       
-      <p>"I can't wait to hang out in the tree house and go to the swimming
+      <li>"I can't wait to hang out in the tree house and go to the swimming
 pool with you," Eli answered. "I sure hope the two weeks I have to
-spend with my cousin go by fast," he added.</p>
+spend with my cousin go by fast," he added.</li>
       
-      <p>Ben squeezed the brakes and came to a screeching halt. "I
+      <li>Ben squeezed the brakes and came to a screeching halt. "I
 completely forgot you will be gone for two weeks," he said. Now,
-instead of feeling excited about the summer, Ben felt gloomy.</p>
+instead of feeling excited about the summer, Ben felt gloomy.</li>
 
-      <p>The last week of school went by quickly, and soon enough, Eli was
+      <li>The last week of school went by quickly, and soon enough, Eli was
 at his cousin's house. Ben feared the next fourteen days would
 creep by slowly. He thought about all the adventures Eli and he had
 planned. Instead, Ben watched TV and read comic books. This was
-not the summer he had thought it would be.</p>
+not the summer he had thought it would be.</li>
 
-      <p>When Ben's mother saw him sulking, she offered a suggestion.
+      <li>When Ben's mother saw him sulking, she offered a suggestion.
 "Mrs. Chandler was telling me about an adventure camp that starts
 in two days. Her son Mark is signed up to go. Why don't you join
 too? I think you would have a good time, and you would get some
-fresh air."</p>
+fresh air."</li>
 
-      <p>Being outside did sound like a good idea. Also, Mark went to the
+      <li>Being outside did sound like a good idea. Also, Mark went to the
 same school as Ben. Although they did not know each other very
 well, at least Ben would see a familiar face at camp. Days later he
 was at the Winding River Adventure Day Camp. He spotted Mark
-and walked over to him.</p>
+and walked over to him.</li>
 
-      <p>"Hi. I was just looking at the list of activities to choose from," Mark
-said. "I think I'm going to try hiking, fishing, and canoeing."</p>
+      <li>"Hi. I was just looking at the list of activities to choose from," Mark
+said. "I think I'm going to try hiking, fishing, and canoeing."</li>
 
-      <p>Ben had no time to carefully consider his choices, but he decided
+      <li>Ben had no time to carefully consider his choices, but he decided
 that fishing would be a good activity to try first. So he and Mark
 walked over to the fishing group. They grabbed their gear and
 followed the leader to the pond. After the first lesson, Ben cast his
-line into the water and caught a small fish.</p>
+line into the water and caught a small fish.</li>
 
-      <p>"You're a natural at this," the leader said.</p>
+      <li>"You're a natural at this," the leader said.</li>
 
-      <p>Ben beamed. <i>Maybe this summer won't be so bad after all</i>,
-he thought.</p>
+      <li>Ben beamed. <i>Maybe this summer won't be so bad after all</i>,
+he thought.</li>
 
-      <p>Each day at camp brought a new adventure for the two boys.
-However, they enjoyed fishing the most, and both learned quickly.</p>
+      <li>Each day at camp brought a new adventure for the two boys.
+However, they enjoyed fishing the most, and both learned quickly.</li>
 
-      <p>"It looks like you made a new friend," Ben's mother said one day.</p>
+      <li>"It looks like you made a new friend," Ben's mother said one day.</li>
 
-      <p>"Yeah, Mark has become a good friend," Ben said. Then he paused.
-"I hope Eli will like him too."</p>
+      <li>"Yeah, Mark has become a good friend," Ben said. Then he paused.
+"I hope Eli will like him too."</li>
 
-      <p>"I'm sure everything will work out fine," replied his mother.</p>
+      <li>"I'm sure everything will work out fine," replied his mother.</li>
 
-      <p>"Before Ben knew it, the two weeks had zoomed by, and Eli was
-home again.</p>
+      <li>"Before Ben knew it, the two weeks had zoomed by, and Eli was
+home again.</li>
 
-<p>"Did you have a good time with your cousin?" Ben asked his
-best friend.</p>
+      <li>"Did you have a good time with your cousin?" Ben asked his
+best friend.</li>
 
-<p>"It was great," Eli began. "My cousin and I went camping. He has a
+      <li>"It was great," Eli began. "My cousin and I went camping. He has a
 small pond on his farm where we set up our tents. We really
-enjoyed spending time outside."</p>
+enjoyed spending time outside."</li>
 
-<p>"That sounds fun!" Ben said. "I've been fishing at summer camp
-with a kid from school named Mark;' Ben explained.</p>
+      <li>"That sounds fun!" Ben said. "I've been fishing at summer camp
+with a kid from school named Mark;' Ben explained.</li>
 
-<p>"Hey, I have an idea," Eli replied. "Maybe we can go to the lake this
+      <li>"Hey, I have an idea," Eli replied. "Maybe we can go to the lake this
 weekend. I'll ask my parents if they can take us, and we can invite
-Mark to go along."</p>
+Mark to go along."</li>
 
-<p>Ben was relieved when Eli suggested the three boys go to the lake
+      <li>Ben was relieved when Eli suggested the three boys go to the lake
 together. They may have a lot in common after all. One thing
 seemed to be certain: together they would have many exciting
-summer adventures!</p>
+summer adventures!</li>
 </ol>
     `
   },
@@ -89,14 +89,15 @@ summer adventures!</p>
   'ancient_egypt': {
     title: 'Life in Ancient Egypt',
     content: `
-      <p>Thousands of years ago, much of life in Egypt was shaped by its
+    <ol class="paragraph-numbers">
+      <li>Thousands of years ago, much of life in Egypt was shaped by its
 environment. People who lived in this area learned to adapt to the
 hot weather and their surroundings. These conditions determined
 how homes were built, how people dressed, and what foods
-people ate.</p>
+people ate.</li>
       
       <p><b>Mud Houses</b></p>
-      <p>The locations and designs of houses were determined by both the
+      <li>The locations and designs of houses were determined by both the
 Nile River and the hot temperatures. Homes were usually built on
 high spots near the
 Nile River to keep them
@@ -109,45 +110,46 @@ The insides of the houses
 were comfortable too
 because small windows
 would not allow much heat
-to come inside.</p>
+to come inside.</li>
       
-      <p>People spent a great deal of time on the flat rooftops of their
+      <li>People spent a great deal of time on the flat rooftops of their
 houses. Roofs provided extra storage space and also a great place
 for family gatherings. During the summertime, it was common to
-sleep on the roofs, which were cooler than the insides of homes.</p>
+sleep on the roofs, which were cooler than the insides of homes.</li>
       
       <p><b>Clothing and Hair</b></p>
-      <p>Most ancient Egyptians spent much of their time outdoors. To stay
+      <li>Most ancient Egyptians spent much of their time outdoors. To stay
 cool in the hot sun, men and women
 often wore clothes called tunics. This type
 of clothing looked like a long robe and
 was made out of a thin, lightweight fabric.
 The white color of the tunics also helped
-reflect the hot sun.</p>
+reflect the hot sun.</li>
       
-      <p>Another way that men and women stayed
+      <li>Another way that men and women stayed
 cool was by keeping their hair very short
 or even shaving their heads. However, for
 special events, they wore wigs. The wigs
 also protected people's heads from the
-harsh sun.</p>
+harsh sun.</li>
 
       <p><b>Egyptian Diet</b></p>
-      <p>Different types of foods, such as grains, fruits, and vegetables, grew
+      <li>Different types of foods, such as grains, fruits, and vegetables, grew
 well in the hot climate. Grains were used in making breads, cakes,
 and desserts and became the main part of the daily diet. Fruits and
 vegetables, such as lettuce, beans, figs, grapes, and cucumbers,
 were also popular foods in Egypt. In addition, people often ate fish.
 The Nile River and the surrounding seas provided a variety of fish to
 the Egyptians and were an
-important part of their diet.</p>
+important part of their diet.</li>
       
-      <p>Many interesting facts have
+      <li>Many interesting facts have
 been discovered about ancient
 Egyptians. They adapted very
 well to the environment, and
 their culture became one of
-the greatest in history.</p>
+the greatest in history.</li>
+</ol>
     `
   },
 
@@ -211,84 +213,86 @@ field trips successful!</p>
    'friend': {
     title: 'A First-Place Friend',
     content: `
-      <p>One morning two monkey friends named Max and Sidney were
+    <ol class="paragraph-numbers">
+      <li>One morning two monkey friends named Max and Sidney were
 swinging through the leafy jungle. They decided to race up an
 umbrella tree, and Max easily won the contest. When Sidney finally
-caught up, he felt a stab of jealousy.</p>
+caught up, he felt a stab of jealousy.</li>
       
-      <p>"You're the winner," Sidney declared with a sigh.</p>
+      <li>"You're the winner," Sidney declared with a sigh.</li>
       
-      <p>"I've been practicing," Max admitted shyly.</p>
+      <li>"I've been practicing," Max admitted shyly.</li>
       
-      <p>Down below, Alligator floated in the river, watching the monkeys
+      <li>Down below, Alligator floated in the river, watching the monkeys
 with hungry eyes. How can I catch one of them? Suddenly, Alligator
-had an idea.</p>
+had an idea.</li>
 
-      <p>"Monkeys!" Alligator shrieked. "You both climb well, but who can do
+      <li>"Monkeys!" Alligator shrieked. "You both climb well, but who can do
 the most somersaults? It's a much harder trick to spin around on
-the branches."</p>
+the branches."</li>
 
-      <p>Sidney puffed out his chest and stood as tall as he could. "I can!"
+      <li>Sidney puffed out his chest and stood as tall as he could. "I can!"
 he announced in a determined voice. A second later, the two
 monkeys began spinning around like furry wheels. Sidney tumbled
-over three times, but Max did four somersaults.</p>
+over three times, but Max did four somersaults.</li>
 
-      <p>"You won again," Sidney muttered, and his head drooped.</p>
+      <li>"You won again," Sidney muttered, and his head drooped.</li>
 
-      <p>"I practiced my somersaults too," Max told him quietly.</p>
+      <li>"I practiced my somersaults too," Max told him quietly.</li>
 
-      <p>Down below, Alligator crept closer. "You both somersault well, but
+      <li>Down below, Alligator crept closer. "You both somersault well, but
 who can walk across that long, skinny branch above me?" she
-challenged. "That is the hardest trick of all."</p>
+challenged. "That is the hardest trick of all."</li>
 
-      <p>Max stared at the skinny branch and at Alligator's big jaws. Her
+      <li>Max stared at the skinny branch and at Alligator's big jaws. Her
 sharp teeth made his heart pound. "That trick is too dangerous,"
-Max replied.</p>
+Max replied.</li>
 
-      <p>"I'm not afraid to try!" Sidney bragged. His mind was set on winning
-this contest. This time he'd be the best!</p>
+      <li>"I'm not afraid to try!" Sidney bragged. His mind was set on winning
+this contest. This time he'd be the best!</li>
 
-      <p>Carefully, Sidney made his way through the tree branches and
+      <li>Carefully, Sidney made his way through the tree branches and
 stepped onto the skinny branch like a tightrope walker. The branch
 bowed under his weight, but he used his tail as a safety rope and
-held on tightly.</p>
+held on tightly.</li>
 
-      <p>Step by step, Sidney slowly made his way across the branch. He'd
+      <li>Step by step, Sidney slowly made his way across the branch. He'd
 almost reached the end when a gust of wind shook him. Sidney's
 foot slipped, and he started to tumble down, bouncing off
-the branches.</p>
+the branches.</li>
 
-      <p>"Help me!" cried Sidney, as Alligator opened her enormous jaws.</p>
+      <li>"Help me!" cried Sidney, as Alligator opened her enormous jaws.</li>
 
-      <p>In a flash, Max jumped over and reached out to catch Sidney. A
+      <li>In a flash, Max jumped over and reached out to catch Sidney. A
 moment later, Alligator's jaws snapped shut, but she only caught a
-mouthful of air.</p>
+mouthful of air.</li>
 
-      <p>"Thank you," replied Sidney as he rested safely on a branch with
+      <li>"Thank you," replied Sidney as he rested safely on a branch with
 Max. All at once, Sidney realized that Alligator wanted him to fall,
 and Sidney felt foolish. He'd been so busy trying to beat Max, he
-hadn't been careful.</p>
+hadn't been careful.</li>
 
-      <p>"No more tricks," Sidney informed Alligator. "It is only your hungry
-stomach that likes our contests."</p>
+      <li>"No more tricks," Sidney informed Alligator. "It is only your hungry
+stomach that likes our contests."</li>
 
-      <p>"No, no," argued Alligator. "I was just yawning. Why don't you see
-who can do the most cartwheels?" she suggested sweetly.</p>
+      <li>"No, no," argued Alligator. "I was just yawning. Why don't you see
+who can do the most cartwheels?" she suggested sweetly.</li>
 
-      <p>"I have a much better idea," replied Sidney. "We'll show you who
-can climb the highest."</p>
+      <li>"I have a much better idea," replied Sidney. "We'll show you who
+can climb the highest."</li>
 
-      <p>"Yes!" laughed Max, and he shot into the treetop. Sidney followed
+      <li>"Yes!" laughed Max, and he shot into the treetop. Sidney followed
 behind him, and this time, Sidney didn't mind if Max took first
 place. In fact, he was truly glad he had a friend who was both
-speedy and smart!</p>
+speedy and smart!</li>
+</ol>
     `
   },
 
      'thieves': {
     title: 'Band of Thieves',
     content: `
-      <p><ol>
+      <ol class="paragraph-numbers">
       <li>A band of thieves I spied tonight,</li>
 <li>Their silver fur in silver light</li>
 <li>Winked at the moon as if to say--</li>
@@ -312,41 +316,42 @@ speedy and smart!</p>
    'popcorn': {
     title: 'Popcorn, the Perfect Snack',
     content: `
-      <p>Pop! Pop-pop! Yum! Fresh popcorn is one of the most popular foods
+    <ol class="paragraph-numbers">
+      <li>Pop! Pop-pop! Yum! Fresh popcorn is one of the most popular foods
 when it comes to watching a movie or a ball game. Delicious and
 good for people's health, popcorn is inexpensive and easy to make.
-Popcorn may just be the perfect snack.</p>
-      
-      <p>Not all corn pops. Corn kernels contain a tiny amount of water.
+Popcorn may just be the perfect snack.</li>
+
+      <li>Not all corn pops. Corn kernels contain a tiny amount of water.
 When the kernel is heated, the water turns to steam. In regular
 corn, the steam escapes through the outside cover, or skin. In
 popcorn, the skin of each kernel is sealed. When popcorn kernels
 are heated, the steam that builds up inside is trapped. Pressure
 builds up until ... pop! The kernel explodes into the fluffy white
-treat called popcorn.</p>
-      
-      <p>Popcorn has been around for thousands of years. In fact,
+treat called popcorn.</li>
+
+      <li>Popcorn has been around for thousands of years. In fact,
 researchers have found popcorn that is more than 5,600 years old.
 Back then people popped the kernels by putting them on red-hot
 stones near a fire. Popcorn was not always eaten whole as it is
 now. Instead, people <u>crushed</u> the popcorn into a type of flour and
-then added water to make bread.</p>
-      
-      <p>For centuries American Indians popped corn in clay containers on
+then added water to make bread.</li>
+
+      <li>For centuries American Indians popped corn in clay containers on
 an open fire. At the first Thanksgiving dinner, American Indians
 shared this tasty treat with the Pilgrims who had arrived from
 Europe. The Pilgrims discovered that they loved popcorn. After
 these newcomers learned to make popcorn in cast-iron pots, they
 began to pour milk and sugar on it before eating it for breakfast.
-Some say it was the first breakfast cereal!</p>
+Some say it was the first breakfast cereal!</li>
 
-      <p>The first machines that were designed to pop corn were invented
+      <li>The first machines that were designed to pop corn were invented
 around 1885. These poppers heated the corn with steam. Later,
 these popcorn poppers were put into small wagons. The wagons
 could be pulled to different places. Street vendors sold popcorn at
-carnivals, parks, and state fairs. People could not get enough of it!</p>
+carnivals, parks, and state fairs. People could not get enough of it!</li>
 
-      <p>Soon movie theaters began selling popcorn too. This started the
+      <li>Soon movie theaters began selling popcorn too. This started the
 tradition of eating popcorn at the movies. At this time popcorn
 became more popular than ever. For a short time though, people
 began eating less popcorn. In the 1950s television was still very
@@ -354,7 +359,7 @@ new. Many people stayed home to watch television instead of going
 to the movies. Few people owned popcorn poppers. Then
 microwave ovens were invented. Now popcorn is easy to make at
 home. Today Americans are eating more popcorn again-more than
-one billion pounds each year!</p>
+one billion pounds each year!</li>
     `
   }
 };
