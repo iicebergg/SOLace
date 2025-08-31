@@ -283,7 +283,7 @@ header {
     background: rgba(255, 255, 255, 0.4) !important;
     transform: translateY(-1px);
   }
-}
+
 
   /* Keep all your other existing mobile styles below (hero, features, etc.) */
   .hero-content {
@@ -380,6 +380,7 @@ header {
   .footer-link {
     text-align: center;
   }
+} 
 
 /* Hero Section */
 .hero-section {
