@@ -5,45 +5,46 @@ const readingPassages = {
   '1': {
     title: 'Cleaning Tables',
     content: `
-      <p>Julia raced down the hallway, sliding the last few feet to her next
+    <ol class="paragraph-numbers">
+      <li>Julia raced down the hallway, sliding the last few feet to her next
 class. The bell had already rung, so she slipped through the door
-and quickly sat down, hoping the teacher would not notice.</p>
-      
-      <p>Mr. Malone turned from the piano and said, "Julia, I'm happy you
+and quickly sat down, hoping the teacher would not notice.</li>
+
+      <li>Mr. Malone turned from the piano and said, "Julia, I'm happy you
 could join us." He continued teaching, explaining the new music
 they were preparing to learn. Julia relaxed, thinking Mr. Malone
 would let another tardy slide by. Unfortunately, she realized at the
-end of class that she was incorrect.</p>
-      
-      <p>"This is the third time in the grading period that you've been late,
+end of class that she was incorrect.</li>
+
+      <li>"This is the third time in the grading period that you've been late,
 Julia," Mr. Malone stopped Julia as she walked by his desk. "Please
-explain this behavior."</p>
-      
-      <p>Julia hesitated. "I'm sorry I was late. I was cleaning the tables in
+explain this behavior."</li>
+
+      <li>Julia hesitated. "I'm sorry I was late. I was cleaning the tables in
 the science room. Someone spilled vinegar, so cleaning took me
-longer than usual."</p>
+longer than usual."</li>
 
-      <p>Mr. Malone replied, "I've talked to you about your tardiness, and
+      <li>Mr. Malone replied, "I've talked to you about your tardiness, and
 you're aware of the rules for being tardy so many times. I'm afraid
-you won't be able to attend the upcoming field trip."</p>
+you won't be able to attend the upcoming field trip."</li>
 
-      <p>"It's to hear the city orchestra!" Julia protested. "We're going behind
-the scenes at the concert hall and learning--"</p>
+      <li>"It's to hear the city orchestra!" Julia protested. "We're going behind
+the scenes at the concert hall and learning--"</li>
 
-      <p>Mr. Malone interrupted gently. "I don't want you to have to stay
+      <li>Mr. Malone interrupted gently. "I don't want you to have to stay
 here, but I don't have a choice. Unless your parent or guardian
 comes in to discuss this with the principal and me, you won't be
 attending." Julia turned to gather up things from her desk and left,
-walking slowly home.</p>
+walking slowly home.</li>
 
-      <p>It was after dinner before Julia found the courage to talk to her
+      <li>It was after dinner before Julia found the courage to talk to her
 dad. "Um, Dad? Are you really busy at work tomorrow?" Julia
 continued, stammering: "I ... well, I mean ... you need to come
-to the school and talk to the principal."</p>
+to the school and talk to the principal."</li>
 
-      <p>"Really? Why do I need to talk to the principal?" Julia's dad asked.</p>
+      <li>"Really? Why do I need to talk to the principal?" Julia's dad asked.</li>
 
-      <p>With a deep breath, Julia started to talk. She told her dad about the
+      <li>With a deep breath, Julia started to talk. She told her dad about the
 messy science tables and how her science teacher deducted points
 from their daily grades if they did not clean up after experiments.
 She spoke about how her friends' next classes were on the opposite
@@ -51,70 +52,72 @@ side of the building. Since her next class was nearby, Julia
 volunteered to help clean up so that her friends would not be late.
 Finally, she explained her tardies and how those would prevent her
 from attending the orchestra field trip. When she was finished, she
-waited anxiously for her dad to speak.</p>
+waited anxiously for her dad to speak.</li>
 
-      <p>He watched his daughter for several seconds, considering the best
+      <li>He watched his daughter for several seconds, considering the best
 way to handle the situation. Finally, he simply said, "I'll be there
-right after school."</p>
+right after school."</li>
 
-      <p>The next day after school, Julia walked to the principal's office. Her
+      <li>The next day after school, Julia walked to the principal's office. Her
 father and Mr. Malone were already there, talking with
 Mrs. Thompson, the principal. When everyone was seated,
 Mrs. Thompson spoke. "Julia, I have a question for you. Why are
-you cleaning the science tables alone?"</p>
+you cleaning the science tables alone?"</li>
 
-      <p>Julia fidgeted and squirmed nervously for a moment, not looking at
+      <li>Julia fidgeted and squirmed nervously for a moment, not looking at
 anyone. Then she mumbled, "I'm not really sure." The adults
 watched her a moment longer. "I guess no one wants to clean up,
-and I don't want my friends to get in trouble."</p>
+and I don't want my friends to get in trouble."</li>
 
-      <p>"By helping your friends so they wouldn't get in trouble, you got
+      <li>"By helping your friends so they wouldn't get in trouble, you got
 yourself in trouble," Mrs. Thompson said. Julia nodded in
 <u>acknowledgment</u>. "Your science teacher and I will be dealing with that
 issue soon. However, you were still tardy three times in one grading
-period, Julia. The school rules state that there must be a consequence."</p>
+period, Julia. The school rules state that there must be a consequence."</li>
 
-      <p>Julia's dad continued. "You're still responsible for breaking the
+      <li>Julia's dad continued. "You're still responsible for breaking the
 rules, even if it was for a good reason. Do you have any ideas for
-a punishment?"</p>
+a punishment?"</li>
 
-      <p>Julia just shook her head and swallowed hard. She already knew that
+      <li>Julia just shook her head and swallowed hard. She already knew that
 she would have to miss the field trip. Mr. Malone quietly motioned to
 Mrs. Thompson, and they both stepped out of the office. Julia's dad
-placed his hand on Julia's shoulder while they waited.</p>
+placed his hand on Julia's shoulder while they waited.</li>
 
-<p>"I have some good news for you, Julia," Mrs. Thompson said as she
+<li>"I have some good news for you, Julia," Mrs. Thompson said as she
 walked back into the room. "Mr. Malone has explained to me how
 excited you are about the orchestra field trip. Normally, this many
 tardies would exclude you from participating." She paused and
 stared at Julia. "However, I have considered the motives behind
-your tardies and will allow you to attend."</p>
+your tardies and will allow you to attend."</li>
 
-<p>Julia jumped out of her seat, repeating, "Thank you, thank you,
-thank you!"</p>
+<li>Julia jumped out of her seat, repeating, "Thank you, thank you,
+thank you!"</li>
 
-<p>"Don't get too excited," Mrs. Thompson cautioned. "You'll have a
+<li>"Don't get too excited," Mrs. Thompson cautioned. "You'll have a
 one-day detention for each tardy. I hope you won't let your friends
-take advantage of you like this again."</p>
+take advantage of you like this again."</li>
 
-<p>"No, ma'am, I won't," Julia replied, grinning from ear to ear.</p>
+<li>"No, ma'am, I won't," Julia replied, grinning from ear to ear.</li>
+</ol>
     `
   },
 
   '2': {
     title: 'Mysterious and Marvelous Mountain Lake',
-    content: ` 
+    content: `
+    <ol class="paragraph-numbers">
       <p><b>The Mystery of Mountain Lake</b></p>
-      <p>High in the Appalachian Mountains of southwestern Virginia sits one
+      <li>High in the Appalachian Mountains of southwestern Virginia sits one
 of only two freshwater lakes in the state. This amazing body of
 water is Mountain Lake. Nearly 4,000 feet above sea level, it is the
 highest lake in elevation east of the Mississippi River. Mountain Lake
 has existed for a long time, and the mystery that surrounds the lake
 seems to have been around for a million years. The water levels of
 this inland lake rise and fall considerably. For years no one
-understood exactly why this happens.</p>
-      
-      <p>What causes the water in Mountain Lake to rise and fall? This is a
+understood exactly why this happens.</li>
+
+      <li>What causes the water in Mountain Lake to rise and fall? This is a
 question scientists, researchers, and neighbors around the lake have
 asked for years. When a large, natural hole at the bottom of
 Mountain Lake was discovered, the door to the mystery was finally
@@ -123,35 +126,35 @@ collects around the hole, eventually closing it. When the hole is
 blocked and there is considerable rainfall, the water level in the lake
 rises. In addition, springs and groundwater also feed into the lake. In
 years with above-average rainfall, the lake is full and deep. When the
-water level becomes too high, excess water flows into the New River.</p>
-      
-      <p>During times of drought, less rainfall fills the lake. Drought does not
+water level becomes too high, excess water flows into the New River.</li>
+
+      <li>During times of drought, less rainfall fills the lake. Drought does not
 make the water level fall substantially. However, coupled with
 evaporation, drought causes the water levels to drop. When water
 drains through small openings at the lake bottom near the hole, it
 wears away the sediment. Draining causes more lake water to flow
 underground and the surface level of the lake to drop the most.
 This combination of events has caused the lake to rise and fall
-throughout its history.</p>
+throughout its history.</li>
       
       <p><b>Marvelous Mountain Lake</b></p>
-      <p>Mountain Lake offers more than interesting changes in water
+      <li>Mountain Lake offers more than interesting changes in water
 surface levels; it is an excellent place for learning. Mountain Lake
 Conservancy functions mostly to manage and protect the land,
 water, and natural resources in the area. It also offers children's
 educational programs, which teach about the aquatic and woodland
-habitats and the creatures that live in these areas.</p>
+habitats and the creatures that live in these areas.</li>
 
-      <p>Additionally, the Mountain Lake Biological Station is a field research
+      <li>Additionally, the Mountain Lake Biological Station is a field research
 and teaching location. It has been operated by the Biology
 Department of the University of Virginia since 1929. The station is a
 perfect spot for aquatic biology study because it is located near
 Mountain Lake, streams, waterfalls, and ponds. Researchers from
 around the world and university students use the specialized facility.
-Deer, bears, bobcats, raccoons, and squirrels may be seen here.</p>
+Deer, bears, bobcats, raccoons, and squirrels may be seen here.</li>
       
       <p><b>Recreation at the Lake</b></p>
-      <p>A peaceful retreat for relaxing, Mountain Lake attracts visitors who
+      <li>A peaceful retreat for relaxing, Mountain Lake attracts visitors who
 have long appreciated the natural beauty of the area. In the late
 1850s the Mountain Lake Company built the first wooden hotel here
 to lodge stagecoach travelers. Hotel ownership changed throughout
@@ -160,21 +163,22 @@ the present structure of native sandstone. The historical Mountain
 Lake Hotel has provided comfortable beds and fine food to its guests
 ever since. Today the site includes the main hotel and smaller cabins.
 Guests enjoy many outdoor activities. Some of these include hiking,
-fishing, swimming, mountain bike riding, and boat riding.</p>
+fishing, swimming, mountain bike riding, and boat riding.</li>
 
-      <p>Whether for study or rest, countless people frequent this fascinating
+      <li>Whether for study or rest, countless people frequent this fascinating
 place. It offers mystery with its ever-changing water levels and
 immeasurable scientific opportunities for researchers and students.
 The awe-inspiring beauty of this natural setting will delight many
 more visitors for years to come. Without a doubt, Mountain Lake is
-matchless in its mystery and marvel.</p>
+matchless in its mystery and marvel.</li>
+</ol>
     `
   },
 
   '3': {
     title: 'Flying on Snow',
     content: `
-      <ol class="increment5">
+      <ol class="paragraph-numbers">
 <li>The ground rushes up to meet us as</li>
 <li>We hurtle down this slippery hill</li>
 <li>At lightning speed.</li>
@@ -310,7 +314,8 @@ pencil, and enter your name in a drawing to win a T-shirt.</p>
    '4': {
     title: 'A Canine Reading Buddy',
     content: `
-      <p>Dogs can make great pets. In fact, dogs and people have developed
+    <ol class="paragraph-numbers">
+      <li>Dogs can make great pets. In fact, dogs and people have developed
 a special bond over time. Recently, however, some dogs have taken
 a different role in the lives of people-the role of therapy dogs. A
 therapy dog is more of a companion than a pet and is trained to
@@ -318,9 +323,9 @@ help people in many different ways. Some therapy dogs visit
 patients in hospitals or nursing homes, while other therapy dogs
 visit children in schools and libraries. These therapy dogs have an
 important role. They are there to help children become
-better readers.</p>
-      
-      <p>Reading programs that use therapy dogs have been in existence for
+better readers.</li>
+
+      <li>Reading programs that use therapy dogs have been in existence for
 more than ten years. A dog can be any size to be part of this
 program, from a tiny, four-pound Yorkshire terrier to a huge,
 180-pound Saint Bernard. All therapy dogs are registered with an
@@ -329,9 +334,9 @@ personality for the job. Therapy dogs need to be calm, gentle, and
 friendly. Of course, they must enjoy being around people. A dog's
 handler also takes a class and must pass a test to work in the
 therapy program. Both the dogs and the handlers are volunteers
-with the reading program.</p>
+with the reading program.</li>
       
-      <p>At the start of a reading therapy session, a child and a dog are
+      <li>At the start of a reading therapy session, a child and a dog are
 introduced. The pair is allowed to settle down in a quiet corner
 together. The child is encouraged to pet the dog or lie close to the
 animal if he or she wants. As the child reads, the dog usually lies
@@ -340,16 +345,16 @@ handler stays nearby but generally lets the dog perform its job
 without interfering. Sometimes, a handler may ask a question that
 prompts the child to interact with the dog to help the child feel
 more comfortable. For example, the handler may direct the child to
-clarify what is being read so the dog may "understand."</p>
+clarify what is being read so the dog may "understand."</li>
       
-      <p>Of course, not every child will be able to be part of a reading
+      <li>Of course, not every child will be able to be part of a reading
 therapy program that uses dogs. A few children might be allergic to
 dogs or afraid of them; some children might have cultural traditions
 that prevent them from touching a dog. In these <u>circumstances</u>,
 other animals are available, such as cats, rabbits, guinea pigs, and,
-in one program, an African gray parrot.</p>
+in one program, an African gray parrot.</li>
 
-      <p>How do the therapy dogs benefit from this program? They spend
+      <li>How do the therapy dogs benefit from this program? They spend
 time with new friends. For dogs that love human companionship
 and a quiet place to rest, being part of a reading therapy program
 can be a great way to spend a few hours each day. The readers
@@ -357,97 +362,100 @@ benefit too, gaining confidence and learning that reading aloud can
 be a relaxing experience. Some children may become nervous when
 reading in front of other people, but somehow this feeling does not
 surface easily when reading to an animal that is trained to sit and
-listen in a safe environment.</p>
+listen in a safe environment.</li>
 
-      <p>There is an old saying that a dog is man's best friend. A dog can
-certainly be a reader's best friend too!</p>
+      <li>There is an old saying that a dog is man's best friend. A dog can
+certainly be a reader's best friend too!</li>
+</ol>
     `
   },
 
      '5': {
     title: 'Anthony Races Time',
     content: `
-      <p>Anthony and his family always relished the weekends, but this
+    <ol class="paragraph-numbers">
+      <li>Anthony and his family always relished the weekends, but this
 particular Saturday would be even more enjoyable because his
 cousins were coming for a visit. While Anthony and his younger
 sister, Kate, started to eat breakfast, their mom and dad sat down
-at the table with a piece of paper and a pen.</p>
-      
-      <p>"We have so much to do before Alyssa and Nicolas arrive,"
+at the table with a piece of paper and a pen.</li>
+
+      <li>"We have so much to do before Alyssa and Nicolas arrive,"
 Anthony's mom said as she glanced over the list. Anthony noticed
 shivers of excitement from his little sister as his mom talked about
 their cousins' arrival. "We need to buy groceries, clean the floors,
 and finish several other chores. We have plenty of time to complete
-everything since your cousins won't be here until after dinner."</p>
+everything since your cousins won't be here until after dinner."</li>
       
-      <p>"Can I go to the grocery store with you, Mom?" Anthony asked. He
+      <li>"Can I go to the grocery store with you, Mom?" Anthony asked. He
 liked helping his mom with the shopping, and sometimes she
 rewarded him with a small treat. Anthony thought about the kind of
 treat he might choose at the store, such as the cinnamon gum that
 his friend Caleb loved to chew. When he thought of Caleb, suddenly
 Anthony jumped up from the kitchen table, nearly spilling
-everyone's breakfast cereal.</p>
-      
-      <p>"Today is Field Day at the recreation center!" Anthony blurted out
-with a worried look on his face. "Caleb is counting on me to run the
-team races with him. We have to beat the team that won last year!"</p>
+everyone's breakfast cereal.</li>
 
-      <p>"Did you tell Mom and me about this before today?" his dad asked.
+      <li>"Today is Field Day at the recreation center!" Anthony blurted out
+with a worried look on his face. "Caleb is counting on me to run the
+team races with him. We have to beat the team that won last year!"</li>
+
+      <li>"Did you tell Mom and me about this before today?" his dad asked.
 Anthony shook his head in disappointment. Anthony <u>slumped</u> in his
 chair. With all the excitement surrounding his cousins' upcoming
-visit, it was easy to see how Field Day had slipped his mind.</p>
+visit, it was easy to see how Field Day had slipped his mind.</li>
 
-      <p>"I'm sorry," Anthony said. "I lost the flier Mr. Jacobs gave us after
+      <li>"I'm sorry," Anthony said. "I lost the flier Mr. Jacobs gave us after
 soccer practice, and I forgot to tell you about it. Field Day starts at
 noon with a family picnic, and the games and races begin after lunch."
-Anthony sighed. "I need to call Caleb so he can find a new partner."</p>
+Anthony sighed. "I need to call Caleb so he can find a new partner."</li>
 
-      <p>Anthony knew his parents would not let him shirk his responsibilities
+      <li>Anthony knew his parents would not let him shirk his responsibilities
 around the house just because he forgot to mention the event.
 While Anthony loved hanging out with his cousins and wanted to
 make everything presentable for their visit, he also wanted to keep
-his word to Caleb. <i>Maybe there's a way to do both,</i> Anthony thought.</p>
+his word to Caleb. <i>Maybe there's a way to do both,</i> Anthony thought.</li>
 
-      <p>"What if...," Anthony hesitated, looking at his parents. "What if we
+      <li>"What if...," Anthony hesitated, looking at his parents. "What if we
 all work together quickly to finish by noon?" he suggested thoughtfully.
-"Then the house will be ready and we can go to Field Day."</p>
+"Then the house will be ready and we can go to Field Day."</li>
 
-      <p>Anthony's mom and dad looked at the children and then at each
+      <li>Anthony's mom and dad looked at the children and then at each
 other. By this time, Kate was practically begging to go to Field Day.
-"We can try," Anthony's rmom finally yielded.</p>
+"We can try," Anthony's mom finally yielded.</li>
 
-      <p>Anthony leaped from his chair like a loaded spring and hugged his
+      <li>Anthony leaped from his chair like a loaded spring and hugged his
 mom, catching her by surprise. Then he looked at the list of chores
 and thought about how long it would take to complete each one.
 Even though Anthony wanted to go to the grocery store, he decided
 that he should stay home with his dad and sister to complete the
 other jobs. The children started talking about how they would divide
 the chores as their mom took the grocery list and walked toward
-the door. "I bet I'll be back before you're finished!" she teased.</p>
+the door. "I bet I'll be back before you're finished!" she teased.</li>
 
-      <p>"Is that a challenge?" Anthony joked back with a smile. "Accepted!"</p>
+      <li>"Is that a challenge?" Anthony joked back with a smile. "Accepted!"</li>
 
-      <p>Anthony and his mom loved to compete against each other, and
+      <li>Anthony and his mom loved to compete against each other, and
 today was the perfect day for a little family competition. If he was
-going to make it to Field Day, he had to finish first!</p>
+going to make it to Field Day, he had to finish first!</li>
 
-      <p>Everyone went right to work. Anthony and Kate made the beds while
+      <li>Everyone went right to work. Anthony and Kate made the beds while
 their dad vacuumed the carpet. Afterward, Kate helped their dad
 clean the bathroom as Anthony swept the kitchen floor. Anthony's
 mom arrived at the door with her arms full of bags just as everyone
-in the house was finishing. "Great timing!" Anthony exclaimed.</p>
+in the house was finishing. "Great timing!" Anthony exclaimed.</li>
 
-      <p>Working at record speed, everyone helped unload the car and put
+      <li>Working at record speed, everyone helped unload the car and put
 the groceries away. When the last item was put in the pantry,
 Anthony's dad looked at his watch as if he were timing a race.
 "Perfect!" he announced as he tapped his watch. "We have thirty
-minutes before Field Day begins!"</p>
+minutes before Field Day begins!"</li>
 
-      <p>"We did it!" Kate cheered.</p>
+      <li>"We did it!" Kate cheered.</li>
 
-      <p>"We sure did," Anthony agreed. While he did not know how well he
+      <li>"We sure did," Anthony agreed. While he did not know how well he
 would do in his races with Caleb, he felt as though he had already
-won the first race of the day.</p>
+won the first race of the day.</li>
+</ol>
     `
   },
 };
