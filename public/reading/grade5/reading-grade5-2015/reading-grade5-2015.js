@@ -5,83 +5,86 @@ const readingPassages = {
   '1': {
     title: 'A Fun Way to Start the Day',
     content: `
-      <p>Mrs. Barnes turned off the bright camera light that shone on the
+    <ol class="paragraph-numbers">
+      <li>Mrs. Barnes turned off the bright camera light that shone on the
 news desk. Charlie, a fifth-grade news announcer, sat at the desk
 and tapped a stack of papers on their ends, making an orderly pile.
 "Our show seems to be missing something," he said. "I don't know
 what it is, but it seems like we should end our news and daily
 announcements on a cheerful note. We should give the students
 something to enjoy. Since the show is viewed schoolwide, we could
-help everyone begin the day in a positive way."</p>
-      
-      <p>"What do you mean, Charlie?" Mrs. Barnes asked since she was the
+help everyone begin the day in a positive way."</li>
+
+      <li>"What do you mean, Charlie?" Mrs. Barnes asked since she was the
 one who had <u>devised</u> the plan for the morning news program at
 Eleanor Elementary School. "Don't you think the students like
 watching our news show and hearing about the important events of
 the day? And you reminded them that today is pizza day in the
 cafeteria," Mrs. Barnes said jokingly. "Now isn't that something that
-most students want to know?"</p>
-      
-      <p>"Sure," Charlie answered. He seemed distracted and unaware that
+most students want to know?"</li>
+
+      <li>"Sure," Charlie answered. He seemed distracted and unaware that
 Mrs. Barnes was teasing him. ''I'm just looking for a little something
 extra to add to our program," he said. Then Charlie handed the
-news script to Mrs. Barnes.</p>
-      
-      <p>"I'll have copies of the daily announcements distributed before the
-first bell rings," Mrs. Barnes said with a cheery smile as Charlie left
-the main office and walked down the hall toward his classroom.</p>
+news script to Mrs. Barnes.</li>
 
-      <p>Charlie was what his mother called an "experimenter." He was
+      <li>"I'll have copies of the daily announcements distributed before the
+first bell rings," Mrs. Barnes said with a cheery smile as Charlie left
+the main office and walked down the hall toward his classroom.</li>
+
+      <li>Charlie was what his mother called an "experimenter." He was
 always trying to find a new way of doing something, and today
 Charlie wanted to think of how to really wake up the school with
 the morning news. Charlie gathered his belongings into his modified
 backpack. He had added a special strap with several pockets for a
-place to store his pens, pencils, and coins.</p>
+place to store his pens, pencils, and coins.</li>
 
-      <p>As Charlie walked, he hummed the school song. His friend Sara met
+      <li>As Charlie walked, he hummed the school song. His friend Sara met
 him in the hallway and, without a word, she too began humming.
 By the time they reached the classroom door, another buddy,
 Joshua, had joined them and started singing their happy tune. The
 fun beat and rhythm of the song grew louder as more voices
 chimed in singing. At first Mrs. Barnes stared at the class with a
 confused expression, and then with a twinkle in her eye,
-she smiled.</p>
+she smiled.</li>
 
-      <p>"I feel like I am being honored," she said with a pretend look of
+      <li>"I feel like I am being honored," she said with a pretend look of
 embarrassment. Her class loved to sing, and she liked sharing this
-moment with them.</p>
+moment with them.</li>
 
-      <p>While the rest of the class laughed, Charlie realized that music was
+      <li>While the rest of the class laughed, Charlie realized that music was
 the answer he had been seeking. <i>That's it!</i> Charlie thought. <i>We can
 end the morning news and announcements by singing our school
-song. Everyone will love to start the day with music!</i></p>
+song. Everyone will love to start the day with music!</i></li>
 
-      <p>Before Charlie could tell Mrs. Barnes about his new idea, the bell
+      <li>Before Charlie could tell Mrs. Barnes about his new idea, the bell
 rang. The students sat back in their chairs ready to watch their
 classmate, Charlie Bell, on the classroom television set as he
 reported the news and announcements that had been prerecorded
-earlier that morning. "Go, Charlie!" his friend Oscar encouraged.</p>
+earlier that morning. "Go, Charlie!" his friend Oscar encouraged.</li>
 
-      <p>After school, Charlie shared his "experimenter" idea with his
+      <li>After school, Charlie shared his "experimenter" idea with his
 teacher. He explained that he could secure a copy of the school
 song that had been recorded by the music teacher. "We can play it
 at the end of each morning's program so students can sing along,"
-he explained.</p>
+he explained.</li>
 
-      <p>"So what do you think?" Charlie asked enthusiastically.</p>
+      <li>"So what do you think?" Charlie asked enthusiastically.</li>
 
-      <p>Mrs. Barnes was happy to see her student excited about his
+      <li>Mrs. Barnes was happy to see her student excited about his
 volunteer work as the school news anchor. "Let's give it a try!"
 Mrs. Barnes replied. "And let's start tomorrow. I have a feeling that
 will be a pleasant way to end our morning news show and a fun
-way to start the day!"</p>
+way to start the day!"</li>
+</ol>
     `
   },
 
   '2': {
     title: 'The Blobfish',
     content: `
-      <p>Many research teams send underwater cameras to explore the
+    <ol class="paragraph-numbers">
+      <li>Many research teams send underwater cameras to explore the
 ocean floor. Imagine the surprise of the research team reviewing
 footage of a deep-sea camera's dive and seeing a human-looking
 face on the film. The face doesn't belong to a human at all-it is a
@@ -91,25 +94,25 @@ most interesting. This uncommon fish exists only off the coasts of
 southern Australia and Tasmania. It lives at depths of around
 2,600 feet, where it is rarely seen. Yet, sightings have become
 much more common as the deep-sea fishing industry has expanded
-in that region.</p>
-      
-      <p>The nearly human-looking, fleshy face of the blobfish may seem
+in that region.</li>
+
+      <li>The nearly human-looking, fleshy face of the blobfish may seem
 strange to some people. The blobfish looks the way it does because
 it is made of flesh that resembles and moves freely like gelatin. This
 fish also has no muscles to create the firm, structured shape of
 other fish. Its shapelessness allows the blobfish to float easily while
 handling the powerful pressure of the ocean depths where it makes
-its home.</p>
-      
-      <p>Blobfish resemble their name through their looks as well as their
+its home.</li>
+
+      <li>Blobfish resemble their name through their looks as well as their
 habits. The average, full-grown blobfish reaches about a foot in size
 and spends all its time floating just off the seabed. Rather than
 swimming toward its meals of sea urchins or mollusks, the blobfish
 bobs and waits for its food to swim to it. Since blobfish spend most
 of their time floating, they have been referred to as lazy, when in
-fact they are made for floating.</p>
+fact they are made for floating.</li>
       
-      <p>Other creatures such
+      <li>Other creatures such
 as lobsters and crabs
 live near the seabed
 as well, but I ivi ng so
@@ -120,108 +123,110 @@ Deep-sea fishermen
 have scooped up many
 blobfish in nets along
 with the sea creatures
-they are seeking.</p>
+they are seeking.</li>
 
-      <p>Wildlife supporters may have an important reason to be concerned
+      <li>Wildlife supporters may have an important reason to be concerned
 about the blobfish: it is in danger of becoming extinct. The more
 nets that catch the blobfish, the fewer blobfish that remain. Even if
 fishermen try to release the blobfish they mistakenly catch, their
 survival could still be affected. After just a little exposure to air, the
 blobfish will dry out and shrivel up so that it no longer resembles a
-blobby, balloon-faced creature.</p>
-      
-      <p>Many animal protection groups have tried to limit deep-sea fishing
+blobby, balloon-faced creature.</li>
+
+      <li>Many animal protection groups have tried to limit deep-sea fishing
 to areas farther away from the blobfish's habitats. With stricter
 fishing rules, the blobfish may have a chance to gain back some
 population numbers. The blobfish may not be the most attractive
 fish in the sea, but it is a remarkable sea creature that is
-worth protecting.</p>
+worth protecting.</li>
+</ol>
     `
   },
 
   '3': {
     title: 'Time Flies',
     content: `
-      <p>"Bunk beds--cool!" Mona said, turning to Rachel when they arrived.
+      <li>"Bunk beds--cool!" Mona said, turning to Rachel when they arrived.
 "It looks like we are sharing a room!" Then she raced to check out
-the rest of the cabin.</p>
+the rest of the cabin.</li>
 
-      <p>Rachel sighed and casually investigated the place they would call
+      <li>Rachel sighed and casually investigated the place they would call
 home for the summer. Aside from two bedrooms with bunk beds,
 there was a living room, a kitchen, and a bathroom. Rachel's
 parents called it "charming," but all Rachel saw was a log cabin
-without the conveniences of home.</p>
-      
-      <p>On the drive from Arlington that morning, Rachel listened to her
-family's excited chatter about their trip. She tried reading a book,
+without the conveniences of home.</li>
+
+      <li>On the drive from Arlington that morning, Rachel listened to her
+family's excited <u>chatter</u> about their trip. She tried reading a book,
 but her mind strayed. What would she do for two months at a camp
 in the middle of nowhere? Her parents, both teachers during the
 school year, would be busy helping run the camp. Her younger
 sister was sweet, but like Rachel, Mona had her own interests.
 Besides that, Rachel had hoped they could spend the summer
-relaxing at home in Arlington.</p>
+relaxing at home in Arlington.</li>
 
-      <p>"Hey, Rachel, look!" called Mona from the deck of the cabin as she
+      <li>"Hey, Rachel, look!" called Mona from the deck of the cabin as she
 pointed to their parents, who were helping the other staff members
-set up the welcome station at the entrance to the camp.</p>
+set up the welcome station at the entrance to the camp.</li>
 
-      <p>Rachel smiled weakly. All she wanted to do was escape by reading
+      <li>Rachel smiled weakly. All she wanted to do was escape by reading
 her book and pretending that she was somewhere else. She walked
-across the deck and stood for a moment.</p>
+across the deck and stood for a moment.</li>
 
-      <p>The deck was littered with leaves and pinecones, but Rachel cleared
+      <li>The deck was littered with leaves and pinecones, but Rachel cleared
 a spot beneath the trees and relaxed. Listening to the murmur of a
 nearby creek, Rachel felt the knots in her shoulders loosen.
 Surprising herself, she put down her book, walked over, and climbed
-on one of the mountain bikes leaning against the cabin.</p>
+on one of the mountain bikes leaning against the cabin.</li>
 
-      <p>Rachel called and waved to her parents, and they waved back. As
+      <li>Rachel called and waved to her parents, and they waved back. As
 she pedaled past, she noticed a path that led from the cabins, down
 a hill, and across a footbridge made of split logs. Beyond it was a
 swimming pool that appeared unused. Jumping off the bike, Rachel
 peered through the fence that surrounded the pool area. The pool
 needed vacuuming. Its surface and bottom were peppered
-with leaves.</p>
+with leaves.</li>
 
-<p>"How are your painting skills?" someone called from inside the
+<li>"How are your painting skills?" someone called from inside the
 fence. It was Lyla, the lifeguard. After introducing herself, she
-showed Rachel the faded "Pool Rules" sign.</p>
+showed Rachel the faded "Pool Rules" sign.</li>
 
-<p>Rachel agreed to help with the sign. She propped the bike against
+<li>Rachel agreed to help with the sign. She propped the bike against
 the fence, took the paintbrush and can of paint, and went to work.
 When she finished repainting the sign, she grabbed a long pole with
 a net on one end and skimmed the top of the pool while Lyla
-vacuumed the bottom.</p>
+vacuumed the bottom.</li>
 
-<p>As Rachel prepared to leave, Lyla said, "You're welcome to come
+<li>As Rachel prepared to leave, Lyla said, "You're welcome to come
 and help anytime." Rachel said goodbye and rode off on her bicycle.
 Looking back, she noticed the water now sparkled like a shimmering
-jewel, and the sign looked new.</p>
+jewel, and the sign looked new.</li>
 
-<p>Next, Rachel came upon a large field with a baseball diamond.
+<li>Next, Rachel came upon a large field with a baseball diamond.
 Nearly overgrown with grass, it looked nothing like the perfectly
 groomed fields back home. Someone on a riding mower was cutting
 a path through the grassy jungle. Somehow, the sweet smell of the
 freshly mowed lawn mingled with the scent of cedar trees seemed
-nicer than it did back home.</p>
+nicer than it did back home.</li>
 
-<p>Riding farther, Rachel saw an unusual wooden shed. "Welcome to
+<li>Riding farther, Rachel saw an unusual wooden shed. "Welcome to
 the craft shack," said a young woman wearing a camp T-shirt.
 "When the campers arrive, they will come here to do all kinds of art
-projects. By the way, I'm Sarah."</p>
+projects. By the way, I'm Sarah."</li>
 
-<p>Sarah was organizing supplies for candle-making and tie-dyeing.
+<li>Sarah was organizing supplies for candle-making and tie-dyeing.
 Rachel, who had never done either craft, was looking at the colorful
 materials and thinking that a candle or a tie-dye project might be
 fun to try. Just as Rachel was about to ask Sarah if she needed help
-running the craft shack, a loud bell sounded.</p>
+running the craft shack, a loud bell sounded.</li>
 
-<p>At first, Rachel was startled by the ringing. Then Sarah told her the
+<li>At first, Rachel was startled by the ringing. Then Sarah told her the
 bell meant it was time for dinner, and Rachel was surprised in a
 different way. She could hardly believe the afternoon had passed so
 quickly. Maybe this summer might not be so bad after all, she
 thought. She raced back, eager to share her discoveries with her
-family and anxious for the other campers to arrive.</p>
+family and anxious for the other campers to arrive.</li>
+</ol>
     `
   },
 
@@ -319,12 +324,13 @@ to two days.</p>
      '5': {
     title: 'Space Hotels',
     content: `
-      <p>For the average person, taking a trip to outer space seems like
+    <ol class="paragraph-numbers">
+      <li>For the average person, taking a trip to outer space seems like
 something in a science-fiction story. However, providing ordinary
 people with the opportunity to vacation in space is becoming
-a reality.</p>
+a reality.</li>
 
-<p>When Richard Branson, owner of an aircraft company called
+<li>When Richard Branson, owner of an aircraft company called
 Virgin Atlantic Airways, announced plans to build a spaceport (an
 airport for spacecraft) in New Mexico, many people doubted it could
 happen. Yet, the spaceport is being built. One of Branson's newest
@@ -335,21 +341,21 @@ at possible future plans for a space hotel. He once told a news
 group, "It will enable people to go into space, to become
 astronauts, to see the Earth, to enjoy <u>weightlessness</u>." However,
 Branson is not alone in trying to make space tourism possible
-for everyone.</p>
+for everyone.</li>
 
-<p>In Barcelona, Spain, architect and aerospace engineer Xavier Claramunt
+<li>In Barcelona, Spain, architect and aerospace engineer Xavier Claramunt
 developed an idea of a space hotel. To make Claramunt's dream
 possible, four companies have formed Galactic Suite Limited. They
-have plans to become the world's largest chain of space resorts.</p>
+have plans to become the world's largest chain of space resorts.</li>
 
-<p>Galactic Suite Limited has plans to open the first space hotel,
+<li>Galactic Suite Limited has plans to open the first space hotel,
 Galactic Suite Space Resort. The hotel will be made up of
 three living units, a recreational unit, and a service unit. The hotel
 will be able to house four guests and two astronaut pilots for a
 three-night stay. Yet, the company does not plan to send guests
-into space unprepared.</p>
+into space unprepared.</li>
 
-<p>To prepare them for the conditions in space, guests will receive
+<li>To prepare them for the conditions in space, guests will receive
 16 weeks of astronaut training on a tropical island in the
 caribbean Sea. In a life-sized model of the space suite that
 re-creates conditions in space, guests will participate in activities to
@@ -358,9 +364,9 @@ board a Russian spacecraft and head to the space resort. Traveling
 at a speed of 30,000 kilometers per hour, the spacecraft will take a
 day and a half to reach the hotel from the island. Even with the
 training, it is unlikely that anything can truly prepare guests. A
-vacation in space will be the adventure of their lives.</p>
+vacation in space will be the adventure of their lives.</li>
 
-<p>When the spacecraft
+<li>When the spacecraft
 docks at the Galactic
 Suite Space Resort
 280 miles above Earth,
@@ -376,25 +382,26 @@ walls as they eat or sleep. The Velcro suits will help keep the guests
 in place. Since catching a glimpse of Earth from space will be the
 main reason most guests want to travel to a space hotel, they will
 be able to open and close viewing windows and watch as the hotel
-orbits Earth 15 times a day.</p>
+orbits Earth 15 times a day.</li>
 
-<p>The hotel will offer activities that are commonly provided by hotels
+<li>The hotel will offer activities that are commonly provided by hotels
 on Earth. Guests will be able to enjoy the unique physical conditions
 in space by exercising onboard the orbiting hotel. Meals will also be
 available in the space hotel. At least 43 people have already
-reserved a spot with the Galactic Suite Space Resort.</p>
+reserved a spot with the Galactic Suite Space Resort.</li>
 
-<p>Considering the plans for the spaceports and the hotel that are
+<li>Considering the plans for the spaceports and the hotel that are
 already underway, people who doubt the possibility of tourism in
 space may want to hold back their doubt for now. Vacations in
-outer space may be a reality in the near future.</p>
+outer space may be a reality in the near future.</li>
+</ol>
     `
   },
 
      '6': {
     title: 'Around the World in 72 Days',
     content: `
-      <p><ol>
+      <ol class="paragraph-numbers">
       <li>If you had read the paper</li>
 <li>back in 1889</li>
 <li>you'd certainly have learned about</li>
