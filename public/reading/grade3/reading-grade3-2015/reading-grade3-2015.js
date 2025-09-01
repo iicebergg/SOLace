@@ -33,6 +33,9 @@ grinning with delight when they discovered the surprise.</p>
       <li>Suddenly, Danielle heard noises coming from her
 bedroom. She decided to find out what was happening.</p>
 
+      <li>"Surprise!" shouted two voices when Danielle opened
+her door.</li>
+
       <li>Danielle's heart jumped. Martin and Madison were waiting
 for her, and they had a package in their hands.</p>
 
@@ -79,7 +82,8 @@ the kitchen.</li>
 it plays a big part in people's everyday lives.
 Seaweed is a plant that grows in the shallow
 waters near the shores of the world's oceans.</li>
-      
+
+    <img src="images/seaweed.png" alt="Seaweed" style="float: right; height: 120px; margin-left: 10px;">
       <li>In some parts
 of the world,
 especially
@@ -135,6 +139,7 @@ caught. The next time you want to send a secret message,
 try one of these fun ideas!</p>
       
 <div class="passage-innerbox">
+<img src="images/lemony-letter.png" alt="Lemony Letter" style="float: right; height: 100px; margin-left: 10px;">
       <p><b>Lemony Letter</b></p>
       <p><u>What you will need:</u>
       <ul>
@@ -160,6 +165,7 @@ appear! The lemon juice will turn a brown color.</li>
 </div>
 
 <div class="passage-innerbox">
+<img src="images/mirror-message.png" alt="Mirror Message" style="float: right; height: 100px; margin-left: 10px;">
       <p><b>Mirror Message</b></p>
       <p><u>What you will need:</u>
       <ul>
@@ -184,6 +190,7 @@ person to discover your secret message.</p>
 </div>
 
 <div class="passage-innerbox">
+<img src="images/crazy-crayon.png" alt="Crazy Crayon" style="float: right; height: 100px; margin-left: 10px;">
       <p><b>Crazy Crayon</b></p>
       <p><u>What you will need:</u>
       <ul>
@@ -295,6 +302,7 @@ with Grandma.</li>
     title: 'The Ostrich: One Odd Bird',
     content: `
     <ol class="paragraph-numbers">
+    <img src="images/ostrich.png" alt="Ostrich" style="float: right; height: 250px; margin-left: 10px;">
       <li>Ostriches hold the
 record as the largest
 birds in the world. A
@@ -413,7 +421,7 @@ const sampleQuestions = [
       'A Morning Snack',
       'Gifts for Everyone'
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: 'The passage states that "migrate means they travel to warmer places."'
   },
 
@@ -428,14 +436,14 @@ const sampleQuestions = [
       'placing them inside a box',
       'covering them with paper'
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: 'The passage mentions that bears, groundhogs, and some frogs hibernate.'
   },
 
   {
     id: '3',
-    text: 'Complete this flow chart. (image)',
-    type: 'drag-drop',
+    text: 'Complete this flow chart. <br><img src="images/question_3.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+    type: 'multiple-choice',
     passageId: 'the_cooks_surprise',
     options: [
       'Danielle looks at the edges of the apron.',
@@ -444,8 +452,7 @@ const sampleQuestions = [
       'Danielle walks into her bedroom.',
       'Danielle tries on the apron.'
     ],
-    dropZones: [' ', ' ', ' ', ' '],
-    correctAnswer: [4, 1, 2, 3, 0],
+    correctAnswer: 4,
     explanation: 'Animals eat lots of food before hibernating to store fat in their bodies.'
   },
 
@@ -460,7 +467,7 @@ const sampleQuestions = [
       'enjoys wearing blue and yellow clothes',
       'can tell that her family cares about her'
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'Emma thought the garden was magical because the vegetables were the biggest she had ever seen.'
   },
 
@@ -475,7 +482,7 @@ const sampleQuestions = [
       'Clean the laundry room',
       'Bite into their cupcakes'
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'Grandma said the secret is in the water from the pond with special minerals.'
   },
 
@@ -490,7 +497,7 @@ const sampleQuestions = [
       'They sew clothes.',
       'They like to cook.'
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: 'Grandma said the secret is in the water from the pond with special minerals.'
   },
 
@@ -505,7 +512,7 @@ const sampleQuestions = [
       'cover',
       'over'
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: 'The passage states that people invented telescopes to see farther into space.'
   },
 
@@ -520,7 +527,7 @@ const sampleQuestions = [
       'enjoy foods that add color to the meals they eat', 
       'do not like how it tastes mixed with other foods'
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     explanation: 'The passage states that Yuri Gagarin from Russia was the first person to travel to space in 1961.'
   },
 
@@ -535,7 +542,7 @@ const sampleQuestions = [
       'sell faster',
       'look different',
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -550,7 +557,7 @@ const sampleQuestions = [
       'Which ocean has the most seaweed?',
       'Which goods have seaweed in them?',
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -571,17 +578,17 @@ const sampleQuestions = [
 
   {
     id: '12',
-    text: 'In an Internet search about oceans, which website would most likely have information about where red seaweed grows? <img src=',
+    text: 'In an Internet search about oceans, which website would most likely have information about where red seaweed grows?',
     type: 'multiple-choice',
     passageId: 'useful_weeds_of_the_sea',
     options: [
-      'Life in the Ocean',
-      'Ocean Habitats',
-      'Discover Ocean Plants',
-      'Photos of the Ocean Floor',
-      'Foods From the Ocean'
+      'Life in the Ocean: Learn about whales, dolphins, and many other creatures of the ocean...',
+      'Ocean Habitats: Learn to recognize the ocean homes of many types of fish...',
+      'Discover Ocean Plants: Find interesting facts about plants that live in the ocean...',
+      'Photos of the Ocean Floor: Follow a team of divers who take amazing pictures of the ocean floor...',
+      'Foods From the Ocean: Discover how food from the ocean ends up on people\'s plates...'
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -611,7 +618,7 @@ const sampleQuestions = [
       'disappear',
       'turn brown',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -626,7 +633,7 @@ const sampleQuestions = [
       'hidden',
       'forgotten',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -656,7 +663,7 @@ const sampleQuestions = [
       'is written on dark paper',
       'is written in a white color',
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -671,7 +678,7 @@ const sampleQuestions = [
       'discover secret messages that have been sent in the past',
       'learn about the first person to send a secret message',
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -686,7 +693,7 @@ const sampleQuestions = [
       'show how many items the reader needs in each step',
       'tell about how many minutes each step will take',
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -700,7 +707,7 @@ const sampleQuestions = [
       'have messages that must be dry to be read',
       'have messages that must be painted to be read',
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -715,7 +722,7 @@ const sampleQuestions = [
       'canal',
       'cave'
     ],
-    correctAnswer: [0, 1],
+    correctAnswer: [0, 3],
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -730,7 +737,7 @@ const sampleQuestions = [
       'go to an amazing place',
       'search for something',
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -760,7 +767,7 @@ const sampleQuestions = [
       'proud',
       'eager',
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -775,13 +782,13 @@ const sampleQuestions = [
       'In the kitchen',
       'In the attic',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
   {
     id: '26',
-    text: 'Based on the story, where does the map first lead the boys? (image)',
+    text: 'Based on the story, where does the map first lead the boys? <br><img src="images/question_26.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
     type: 'multiple-choice',
     passageId: 'hidden_treasure',
     options: [
@@ -790,7 +797,7 @@ const sampleQuestions = [
       'The trees',
       'The Greatest Fishing Spot',
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -805,7 +812,7 @@ const sampleQuestions = [
       'How often did Mom go to the old dock?',
       'How many fish does Grandma catch?',
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -816,7 +823,7 @@ const sampleQuestions = [
     passageId: 'hidden_treasure',
     options: ['steps', 'shouted', 'searched', 'smiled', 'spend'],
     dropZones: [' ', ' ', ' ', ' ', ' '],
-    correctAnswer: [4, 1, 2],
+    correctAnswer: [2, 1, 3, 4, 0],
     explanation: 'To round 5,647: to nearest thousand (6,000), nearest hundred (5,600), nearest ten (5,650).'
   },
 
@@ -846,7 +853,7 @@ const sampleQuestions = [
       'kicking',
       'sleeping',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -861,7 +868,7 @@ const sampleQuestions = [
       'How long do ostriches live?',
       'How many eggs do ostriches lay?',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -876,7 +883,7 @@ const sampleQuestions = [
       'hide the chicks',
       'feed the chicks',
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -891,7 +898,7 @@ const sampleQuestions = [
       'move quietly',
       'look bigger',
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -906,7 +913,7 @@ const sampleQuestions = [
       'Their speed helps them escape.',
       'They usually kick their enemies.',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -921,7 +928,7 @@ const sampleQuestions = [
       'looking for something',
       'thinking about something',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -936,7 +943,7 @@ const sampleQuestions = [
       'Think about the past',
       'Stop for a short time',
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -951,7 +958,7 @@ const sampleQuestions = [
       'angry',
       'lazy',
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -966,7 +973,7 @@ const sampleQuestions = [
       'In a sports bag',
       'Near the steps',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
@@ -981,7 +988,7 @@ const sampleQuestions = [
       'at a friend\'s house',
       'in a friend\'s car',
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
 
