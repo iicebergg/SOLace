@@ -422,7 +422,7 @@ const sampleQuestions = [
       'Gifts for Everyone'
     ],
     correctAnswer: 3,
-    explanation: 'The passage states that "migrate means they travel to warmer places."'
+    explanation: 'The story is about both Danielle making cupcakes as a surprise for her siblings and her siblings making an apron as a surprise for her. Everyone in the story gives and receives gifts.'
   },
 
   {
@@ -437,7 +437,7 @@ const sampleQuestions = [
       'covering them with paper'
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions that bears, groundhogs, and some frogs hibernate.'
+    explanation: 'The passage states that Danielle "had baked cupcakes early in the morning, while Martin and Madison were still asleep," which kept them secret.'
   },
 
   {
@@ -453,7 +453,7 @@ const sampleQuestions = [
       'Danielle tries on the apron.'
     ],
     correctAnswer: 4,
-    explanation: 'Animals eat lots of food before hibernating to store fat in their bodies.'
+    explanation: 'After receiving the apron and saying "Thank you. It\'s perfect," the passage says "As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table."'
   },
 
   {
@@ -468,7 +468,7 @@ const sampleQuestions = [
       'can tell that her family cares about her'
     ],
     correctAnswer: 3,
-    explanation: 'Emma thought the garden was magical because the vegetables were the biggest she had ever seen.'
+    explanation: 'Madison says "We wanted to make a surprise for you because you\'re such a nice sister. You are always thinking of us." This shows her family\'s care and appreciation for her.'
   },
 
   {
@@ -483,7 +483,7 @@ const sampleQuestions = [
       'Bite into their cupcakes'
     ],
     correctAnswer: 3,
-    explanation: 'Grandma said the secret is in the water from the pond with special minerals.'
+    explanation: 'At the end, Danielle says "I have a surprise for you too!" and leads them to the kitchen where she left cupcakes for them.'
   },
 
   {
@@ -498,7 +498,7 @@ const sampleQuestions = [
       'They like to cook.'
     ],
     correctAnswer: 0,
-    explanation: 'Grandma said the secret is in the water from the pond with special minerals.'
+    explanation: 'All three characters make surprises for each other: Danielle bakes cupcakes for her siblings, and Martin and Madison make an apron for Danielle, showing they all think of others.'
   },
 
   {
@@ -513,7 +513,7 @@ const sampleQuestions = [
       'over'
     ],
     correctAnswer: 2,
-    explanation: 'The passage states that people invented telescopes to see farther into space.'
+    explanation: 'The root word in "discovered" is "cover." The prefix "dis-" means "not" and the suffix "-ed" shows past tense, so "discovered" means "uncovered" or "found."'
   },
 
   {
@@ -528,7 +528,7 @@ const sampleQuestions = [
       'do not like how it tastes mixed with other foods'
     ],
     correctAnswer: 1,
-    explanation: 'The passage states that Yuri Gagarin from Russia was the first person to travel to space in 1961.'
+    explanation: 'The passage states that "In some parts of the world, especially near the ocean, people eat seaweed all by itself," suggesting people near oceans commonly eat foods from the sea.'
   },
 
   {
@@ -543,7 +543,7 @@ const sampleQuestions = [
       'look different',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The passage explains that "Without seaweed, ice cream and yogurt would not be as thick or creamy but would seem rather lumpy and watery," showing seaweed affects how they look and their texture.'
   },
 
   {
@@ -558,7 +558,7 @@ const sampleQuestions = [
       'Which goods have seaweed in them?',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The article mentions several goods that contain seaweed: toothpaste, shampoo, makeup, ice cream, and yogurt. It also states "Hundreds of everyday items have seaweed in them."'
   },
 
     {
@@ -573,7 +573,7 @@ const sampleQuestions = [
       'tell how to cook with ocean plants',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The article provides factual information about seaweed, explaining what it is, where it grows, and how it is used in various everyday products.'
   },
 
   {
@@ -589,7 +589,7 @@ const sampleQuestions = [
       'Foods From the Ocean: Discover how food from the ocean ends up on people\'s plates...'
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The website "Discover Ocean Plants" would be most likely to have information about where red seaweed grows, as seaweed is a type of ocean plant.'
   },
 
   {
@@ -604,7 +604,7 @@ const sampleQuestions = [
       'Water',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The instructions state: "Have the person who receives your message hold the paper near a light bulb. The heat will make the secret message appear!"'
   },
 
   {
@@ -619,7 +619,7 @@ const sampleQuestions = [
       'turn brown',
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The message only appears when steam covers the mirror. When the steam clears and goes away, the message would no longer be visible.'
   },
 
   {
@@ -634,7 +634,7 @@ const sampleQuestions = [
       'forgotten',
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'In this context, "invisible" means the message cannot be seen or is hidden from view until the steam makes it appear.'
   },
 
   {
@@ -649,7 +649,7 @@ const sampleQuestions = [
       'have messages that must be painted to be read',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Both methods require adult assistance: "Lemony Letter" needs a grownup to cut the lemon in half, and "Mirror Message" needs a grownup to peel the potato.'
   },
 
   {
@@ -664,7 +664,7 @@ const sampleQuestions = [
       'is written in a white color',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The instructions say to use a white crayon on white paper, making it "difficult to see the markings" because white crayon on white paper is nearly invisible.'
   },
 
   {
@@ -679,7 +679,7 @@ const sampleQuestions = [
       'learn about the first person to send a secret message',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The flier provides step-by-step instructions for three different methods of creating secret messages, teaching readers how to make them.'
   },
 
   {
@@ -694,21 +694,21 @@ const sampleQuestions = [
       'tell about how many minutes each step will take',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The numbers indicate the sequential order of steps that must be followed to successfully create each type of secret message.'
   },
 
   {
     id: '20',
-    text: 'Read this sentence and dictionary entry. <div class="passage-innerbox"><b>In the winter, grocery stores <u>charge</u> too much for strawberries.</b></div> <div class="passage-dicbox"><b>charge</b> (chärj) <i>v.</i> <b>1.</b> To give orders. <b>2.</b> To set as a price. <b>3.</b> To fill up completely. <b>4.</b> To rush forward.</div>',
+    text: 'Read this sentence and dictionary entry. <div class="passage-innerbox"><b>In the winter, grocery stores <u>charge</u> too much for strawberries.</b></div> <div class="passage-dicbox"><b>charge</b> (chÃ¤rj) <i>v.</i> <b>1.</b> To give orders. <b>2.</b> To set as a price. <b>3.</b> To fill up completely. <b>4.</b> To rush forward.</div>',
     type: 'multiple-choice',
     options: [
-      'need help from a grownup',
-      'need the use of a lamp',
-      'have messages that must be dry to be read',
-      'have messages that must be painted to be read',
+      '1',
+      '2',
+      '3',
+      '4',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'In the context of grocery stores charging "too much" for strawberries, "charge" means "to set as a price," which is definition 2.'
   },
 
   {
@@ -723,7 +723,7 @@ const sampleQuestions = [
       'cave'
     ],
     correctAnswer: [0, 3],
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Guide words show the first and last entries on a dictionary page. "Carrot" and "canal" fall alphabetically between "camera" and "cause." "Cabin" comes before "camera" and "cave" comes after "cause."'
   },
 
   {
@@ -738,7 +738,7 @@ const sampleQuestions = [
       'search for something',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The title "A Hidden Treasure" suggests that characters will be looking for or searching for something that is hidden.'
   },
 
   {
@@ -753,7 +753,7 @@ const sampleQuestions = [
       'shows where Grandma lives',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Paragraph 5 describes what Evan found on the map: "Grandma\'s house, a raindrop inside a square, two little triangles, and a dock" with an "X" marking the "Greatest Fishing Spot."'
   },
 
   {
@@ -768,7 +768,7 @@ const sampleQuestions = [
       'eager',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The text shows their excitement: Evan asks "Excitedly" if they can find the fishing spot, Mark says "Let\'s try," and "they thundered down the steps," showing they are eager to start their search.'
   },
 
   {
@@ -783,7 +783,7 @@ const sampleQuestions = [
       'In the attic',
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The story begins with Grandma painting her kitchen, and ends with the boys rushing back "into the kitchen" with their question about the dock, then planning to get fishing poles.'
   },
 
   {
@@ -798,7 +798,7 @@ const sampleQuestions = [
       'The Greatest Fishing Spot',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Mark says "The square with the raindrop is behind Grandma\'s house" and they look for the water tower with the faded raindrop symbol first.'
   },
 
   {
@@ -813,7 +813,7 @@ const sampleQuestions = [
       'How many fish does Grandma catch?',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'When the boys ask about the dock, Grandma explains: "That dock was torn down a long time ago."'
   },
 
   {
@@ -824,7 +824,7 @@ const sampleQuestions = [
     options: ['steps', 'shouted', 'searched', 'smiled', 'spend'],
     dropZones: [' ', ' ', ' ', ' ', ' '],
     correctAnswer: [2, 1, 3, 4, 0],
-    explanation: 'To round 5,647: to nearest thousand (6,000), nearest hundred (5,600), nearest ten (5,650).'
+    explanation: 'In alphabetical order: searched, shouted, smiled, spend, steps.'
   },
 
   {
@@ -839,7 +839,7 @@ const sampleQuestions = [
       'chicks wait to eat until the grown ostriches finish',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Paragraph 4 directly states: "The young birds learn to peck the ground and eat plants by watching older ostriches."'
   },
 
   {
@@ -854,7 +854,7 @@ const sampleQuestions = [
       'sleeping',
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Paragraph 6 states: "Their strong legs can deliver a kick that stops a lion!"'
   },
 
   {
@@ -869,7 +869,7 @@ const sampleQuestions = [
       'How many eggs do ostriches lay?',
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The "Ostrich Facts" chart shows "Life span: 30-40 years," which answers how long ostriches live.'
   },
 
   {
@@ -884,7 +884,7 @@ const sampleQuestions = [
       'feed the chicks',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The text states: "The male and one of the females take turns guarding and sitting on the eggs."'
   },
 
   {
@@ -899,7 +899,7 @@ const sampleQuestions = [
       'look bigger',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The passage explains: "Their new fluffy feathers trap air and keep the chicks warm at night."'
   },
 
   {
@@ -914,7 +914,7 @@ const sampleQuestions = [
       'They usually kick their enemies.',
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The article states: "With such speed, ostriches outrun most predators" and that they can run 43 miles per hour, showing their speed helps them escape danger.'
   },
 
   {
@@ -929,7 +929,7 @@ const sampleQuestions = [
       'thinking about something',
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The title "The Search" indicates the poem will be about someone searching or looking for something.'
   },
 
   {
@@ -944,7 +944,7 @@ const sampleQuestions = [
       'Stop for a short time',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: '"Pause" means to stop briefly or for a short time. The speaker stops in their tracks when Dad asks questions.'
   },
 
   {
@@ -959,7 +959,7 @@ const sampleQuestions = [
       'lazy',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Lines 17-20 show disappointment and sadness: "It\'s surely gone missing / There\'s clearly no hope. / I have to give up / Find somewhere to mope." The speaker feels upset about losing the shoe.'
   },
 
   {
@@ -974,7 +974,7 @@ const sampleQuestions = [
       'Near the steps',
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The first line of the poem states: "I\'ve emptied my sports bag," which shows this was the first place searched.'
   },
 
   {
@@ -989,7 +989,7 @@ const sampleQuestions = [
       'in a friend\'s car',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
   },
 
   {
@@ -1004,7 +1004,7 @@ const sampleQuestions = [
       'When was the speaker\'s last game?',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
   },
 ];
 
