@@ -856,7 +856,7 @@ function displayFeedback(isCorrect, explanation) {
   }
 
   if (explanationElement) {
-    explanationElement.textContent = explanation;
+    explanationElement.innerHTML = explanation;
   }
 
   if (feedbackContainer) {
@@ -1149,25 +1149,6 @@ function loadUserPreferences() {
   const fontSizeValue = document.getElementById('font-size-value');
   if (fontSizeValue) fontSizeValue.textContent = capitalize(currentUser.accessibilityPreferences.fontSize);
 
-  // Set checkboxes
-  const reduceMotionCheckbox = document.getElementById('reduce-motion');
-  const screenReaderOptCheckbox = document.getElementById('screen-reader-opt');
-  
-  if (reduceMotionCheckbox) {
-    reduceMotionCheckbox.checked = currentUser.accessibilityPreferences.reduceMotion;
-  }
-  
-  if (screenReaderOptCheckbox) {
-    screenReaderOptCheckbox.checked = currentUser.accessibilityPreferences.screenReaderOptimized;
-  }
-
-  if (currentUser.accessibilityPreferences.reduceMotion) {
-    document.body.classList.add('reduce-motion');
-  }
-
-  if (currentUser.accessibilityPreferences.screenReaderOptimized) {
-    document.body.classList.add('screen-reader-optimized');
-  }
 }
 
 // Save user preferences
@@ -1719,19 +1700,9 @@ function showQuestionDetail(questionIndex, testResult) {
   }
   
   // Last resort: try to find sampleQuestions in global scope
-  if (!questionsArray) {
-    // Check if we're in a test-specific file that has sampleQuestions defined
-    const scripts = document.getElementsByTagName('script');
-    for (let script of scripts) {
-      if (script.src && script.src.includes('math-grade3-2014.js')) {
-        // We know this test has sampleQuestions
-        if (typeof sampleQuestions !== 'undefined') {
-          questionsArray = sampleQuestions;
-          console.log('Using global sampleQuestions');
-          break;
-        }
-      }
-    }
+  if (!questionsArray && typeof sampleQuestions !== 'undefined') {
+    questionsArray = sampleQuestions;
+    console.log('Using global sampleQuestions');
   }
   
   if (!questionsArray || questionsArray.length === 0) {
