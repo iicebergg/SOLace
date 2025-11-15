@@ -44,17 +44,17 @@ const sampleQuestions = [
  },
  {
  id: '6',
- text: 'Which shows the number 78,025 written in word form?',
+ text: 'Which of these is equivalent to <math><msup><mi>i</mi><mn>7</mn></msup></math>?',
  type: 'multiple-choice',
- options: ['Seven hundred eight thousand, two hundred fifty', 'Seven hundred eight thousand, twenty-five', 'Seventy-eight thousand, two hundred fifty', 'Seventy-eight thousand, twenty-five'],
+ options: ['<math><mi>i</mi></math>', '<math><mi>-i</mi></math>', '1', '-1'],
  correctAnswer: 3, 
  explanation: '78,025 is read as seventy-eight thousand, twenty-five.'
  },
  {
  id: '7',
- text: 'This model is shaded to represent one whole. <br><img src="images/question_7a.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Look at the following model. <img src="images/question_7b.png" class="question-image" alt="Image failed to load. Please try again later."></img> What number do the shaded parts in this model represent?',
+ text: 'For which value of <math><mi>b</mi></math> is <math><msup><mi>x</mi><mn>2</mn></msup><mi>+ bx - 60</mi></math> factorable over the set of integers?',
  type: 'multiple-choice',
- options: ['<math><mfrac><mn>1</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>11</mn><mn>12</mn></mfrac></math>', '5 <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>', '10 <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>'],
+ options: ['61', '23', '-7', '-16'],
  correctAnswer: 2, 
  explanation: 'Count the whole units and fractional parts shown in the model.'
  },
@@ -150,7 +150,7 @@ const sampleQuestions = [
  },
  {
  id: '18',
- text: 'What are the apparent roots of the equation graphed on the coordinate grid?',
+ text: 'What are the apparent roots of the equation graphed on the coordinate grid? <br><img src="images/question_18.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
  options: ['{0, 3}', '{<math><mfrac><mn>-1</mn><mn>2</mn></mfrac></math>, 4}', '{<math><mfrac><mn>-3</mn><mn>2</mn></mfrac></math>, <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>}', '{-2, 1}'],
  correctAnswer: 1, 
