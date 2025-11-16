@@ -36,8 +36,6 @@ const saveSettingsBtn = document.getElementById('save-settings');
 
 // Add to your existing DOMContentLoaded function:
 document.addEventListener('DOMContentLoaded', function() {
-  // ... your existing code ...
-  
   // Simple footer management with CSS classes
   const testBtn = document.getElementById('test-btn');
   const startTestBtn = document.getElementById('start-test');
