@@ -26,9 +26,8 @@
     <!-- Home Section -->
     <section id="home" class="page active">
       <h2>Grade 8 Mathematics (2014)</h2>
-      <p>To access a PDF version of this test, visit the <a href="https://www.doe.virginia.gov/home/showpublisheddocument/20911/638043645513400000">official VDOE site</a>.</p>
-      <p><b>Questions #1-#13 are in the non-calculator section of this test.</b></p>
-      <p><b>Questions #14-#48 are in the calculator section of this test.</b></p>
+      <p>To access a PDF version of this test, visit the <a href="https://www.doe.virginia.gov/home/showpublisheddocument/20901/638043645472930000">official VDOE site</a>.</p>
+      <p><b>All questions on this test are calculator-permitted.</b></p>
       <div class="action-btns">
         <button id="start-test" class="primary-btn">Start New Test</button>
         <button id="view-results" class="secondary-btn">View Previous Results</button>
@@ -130,6 +129,28 @@
     <div class="line-reader-window" id="line-reader-window">
       <div class="line-reader-window-handle" id="line-reader-window-handle"></div>
     </div>
+  </div>
+
+  <!-- Desmos Calculator -->
+  <div id="calculator-container" class="calculator-container">
+    <div class="calculator-header" id="calculator-header">
+      <span>Calculator</span>
+      <button id="calculator-toggle" class="calculator-toggle" title="Minimize/Maximize Calculator">−</button>
+    </div>
+    <iframe id="calculator-iframe" class="calculator-iframe" 
+            src="https://www.desmos.com/testing/virginia/graphing" 
+            title="Desmos Graphing Calculator">
+    </iframe>
+
+    <!-- Resize handles -->
+    <div class="resize-handle resize-handle-n" data-direction="n"></div>
+    <div class="resize-handle resize-handle-s" data-direction="s"></div>
+    <div class="resize-handle resize-handle-e" data-direction="e"></div>
+    <div class="resize-handle resize-handle-w" data-direction="w"></div>
+    <div class="resize-handle resize-handle-ne" data-direction="ne"></div>
+    <div class="resize-handle resize-handle-nw" data-direction="nw"></div>
+    <div class="resize-handle resize-handle-se" data-direction="se"></div>
+    <div class="resize-handle resize-handle-sw" data-direction="sw"></div>
   </div>
 
   <footer>
@@ -606,7 +627,7 @@
       
       checkQuestionForCalculator(questionIndex) {
         const questionNumber = questionIndex + 1;
-        this.isCalculatorSection = questionNumber >= 8;
+        this.isCalculatorSection = questionNumber >= 1;
         
         // NEW: Only show/hide if test is active
         if (this.isTestActive) {
