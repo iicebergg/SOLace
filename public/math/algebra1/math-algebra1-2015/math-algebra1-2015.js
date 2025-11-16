@@ -1,389 +1,440 @@
 window.TEST_IDENTIFIER = 'math_algebra1_2015';
 
 const sampleQuestions = [
- {
- id: '1',
- text: 'Which expression is equivalent to <math><msqrt><mn>20</mn><msup><mi>x</mi><mn>16</mn></msup><msup><mi>y</mi><mn>25</mn></msup></msqrt></math> for positive <math><mi>x</mi></math> and <math><mi>y</mi></math> values?',
- type: 'multiple-choice',
- options: ['<math><mn>2</mn><msup><mi>x</mi><mn>4</mn></msup><msup><mi>y</mi><mn>5</mn></msup><msqrt><mn>5</mn></msqrt></math>', '<math><mn>5</mn><msup><mi>x</mi><mn>4</mn></msup><msup><mi>y</mi><mn>5</mn></msup><msqrt><mn>2</mn></msqrt></math>', '<math><mn>2</mn><msup><mi>x</mi><mn>8</mn></msup><msup><mi>y</mi><mn>12</mn></msup><msqrt><mn>5</mn><mi>y</mi></msqrt></math>', '<math><mn>5</mn><msup><mi>x</mi><mn>8</mn></msup><msup><mi>y</mi><mn>12</mn></msup><msqrt><mn>2</mn><mi>y</mi></msqrt></math>'],
- correctAnswer: 2,
- explanation: 'Simplify the square root by factoring out perfect squares: √(20x^16y^25) = √(4·5·x^16·y^24·y) = 2x^8y^12√(5y).'
- },
- {
- id: '2',
- text: 'Which expression is equivalent to <math><mroot><msup><mrow><mn>6</mn><mi>w</mi></mrow><mn>7</mn></msup><mn>3</mn></mroot></math> · <math><mroot><msup><mrow><mn>4</mn><mi>w</mi></mrow><mn>5</mn></msup><mn>3</mn></mroot></math>?',
- type: 'multiple-choice',
- options: ['<math><mn>2</mn><msup><mi>w</mi><mn>4</mn></msup><mroot><mn>3</mn><mn>3</mn></mroot></math>', '<math><mn>2</mn><msup><mi>w</mi><mn>4</mn></msup><mroot><mn>6</mn><mn>3</mn></mroot></math>', '<math><mn>2</mn><msup><mi>w</mi><mn>11</mn></msup><mroot><mrow><mn>3</mn><msup><mi>w</mi><mn>2</mn></msup></mrow><mn>3</mn></mroot></math>', '<math><mn>2</mn><msup><mi>w</mi><mn>11</mn></msup><mroot><mrow><mn>6</mn><msup><mi>w</mi><mn>2</mn></msup></mrow><mn>3</mn></mroot></math>'],
- correctAnswer: 0,
- explanation: 'When multiplying cube roots, multiply the expressions inside: ∛(6w^7) · ∛(4w^5) = ∛(24w^12) = 2w^4∛3.'
- },
- {
- id: '3',
- text: 'The steps used to solve an equation are shown.<br><br>Step 1: <math><mfrac><mn>2</mn><mn>3</mn></mfrac><mi>r</mi><mo>=</mo><mn>14</mn><mi>i</mi></math><br>Step 2: <math><mrow><mo>(</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>)</mo></mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mi>r</mi><mo>=</mo><mn>14</mn><mi>i</mi><mrow><mo>(</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>)</mo></mrow></math><br>Step 3: <math><mrow><mo>(</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>·</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>)</mo></mrow><mi>r</mi><mo>=</mo><mn>14</mn><mi>i</mi><mrow><mo>(</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>)</mo></mrow></math><br>Step 4: <math><mn>1</mn><mo>·</mo><mi>r</mi><mo>=</mo><mn>21</mn><mi>i</mi></math><br>Step 5: <math><mi>r</mi><mo>=</mo><mn>21</mn><mi>i</mi></math><br><br>What property justifies the work between Step 4 and Step 5?',
- type: 'multiple-choice',
- options: ['Identity property of multiplication', 'Inverse property of multiplication', 'Commutative property of multiplication', 'Associative property of multiplication'],
- correctAnswer: 0,
- explanation: 'The identity property of multiplication states that any number multiplied by 1 equals itself: 1 · r = r.'
- },
- {
- id: '4',
- text: 'Which expression is equivalent to the following expression if no denominators equal zero?<br><br><math><mfrac><mfrac><mrow><mn>11</mn><mo>-</mo><mi>w</mi></mrow><mrow><mn>30</mn><msup><mi>w</mi><mn>2</mn></msup></mrow></mfrac><mfrac><mrow><mi>w</mi><mo>-</mo><mn>11</mn></mrow><mrow><mn>5</mn><msup><mi>w</mi><mn>6</mn></msup></mrow></mfrac></mfrac></math>',
- type: 'multiple-choice',
- options: ['<math><mfrac><mrow><mo>-</mo><msup><mi>w</mi><mn>4</mn></msup></mrow><mn>6</mn></mfrac></math>', '<math><mfrac><mrow><mo>-</mo><mn>6</mn></mrow><msup><mi>w</mi><mn>3</mn></msup></mfrac></math>', '<math><mfrac><msup><mi>w</mi><mn>3</mn></msup><mn>6</mn></mfrac></math>', '<math><mfrac><mn>6</mn><msup><mi>w</mi><mn>4</mn></msup></mfrac></math>'],
- correctAnswer: 0,
- explanation: 'Dividing by a fraction is the same as multiplying by its reciprocal. Simplify and factor carefully.'
- },
- {
- id: '5',
- text: 'What is the complete factorization of <math><mrow><mn>18</mn><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><mn>12</mn><msup><mi>x</mi><mn>3</mn></msup><mo>-</mo><mn>6</mn><mi>x</mi></mrow></math>?',
- type: 'multiple-choice',
- options: ['<math><mn>6</mn><msup><mi>x</mi><mn>3</mn></msup><mo>(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mo>)</mo></math>', '<math><mn>6</mn><mi>x</mi><mo>(</mo><mn>3</mn><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>)</mo></math>', '<math><mn>6</mn><mi>x</mi><mo>(</mo><mn>3</mn><mi>x</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo>(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo>)</mo></math>', '<math><mn>6</mn><mi>x</mi><mo>(</mo><mn>3</mn><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn><mo>)</mo></math>'],
- correctAnswer: 3,
- explanation: 'Factor out the greatest common factor 6x: 18x^4 + 12x^3 - 6x = 6x(3x^3 + 2x^2 - 1).'
- },
- {
- id: '6',
- text: 'Which of these is equivalent to <math><msup><mi>i</mi><mn>75</mn></msup></math>?',
- type: 'multiple-choice',
- options: ['<math><mi>i</mi></math>', '<math><mo>-</mo><mi>i</mi></math>', '<math><mn>1</mn></math>', '<math><mo>-</mo><mn>1</mn></math>'],
- correctAnswer: 1,
- explanation: 'Powers of i cycle every 4: i^1 = i, i^2 = -1, i^3 = -i, i^4 = 1. Since 75 = 4(18) + 3, i^75 = i^3 = -i.'
- },
- {
- id: '7',
- text: 'For which value of <math><mi>b</mi></math> is <math><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>-</mo><mn>60</mn></math> factorable over the set of integers?',
- type: 'multiple-choice',
- options: ['61', '23', '-7', '-16'],
- correctAnswer: 2,
- explanation: 'For x^2 + bx - 60 to be factorable, we need factors of -60 that add to b. The factors 5 and -12 give us x^2 - 7x - 60 = (x + 5)(x - 12).'
- },
- {
- id: '8',
- text: 'If no denominator equals zero, which expression is equivalent to <math><mfrac><mrow><mn>25</mn><mo>-</mo><mn>4</mn><msup><mi>x</mi><mn>2</mn></msup></mrow><mrow><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>9</mn><mi>x</mi><mo>-</mo><mn>15</mn></mrow></mfrac></math> · <math><mfrac><mrow><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><mi>x</mi><mo>-</mo><mn>4</mn></mrow><mrow><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mi>x</mi><mo>-</mo><mn>10</mn></mrow></mfrac></math>?',
- type: 'multiple-choice',
- options: ['-2', '2', '<math><mfrac><mrow><mo>-</mo><mn>2</mn><mo>(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mo>)</mo></mrow><mrow><mn>3</mn><mo>(</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo>)</mo></mrow></mfrac></math>', '<math><mfrac><mrow><mn>2</mn><mo>(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mo>)</mo></mrow><mrow><mn>3</mn><mo>(</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo>)</mo></mrow></mfrac></math>'],
- correctAnswer: 2,
- explanation: 'Factor each expression and simplify: (5-2x)(5+2x) · 2(3x-2)(x+1) / [3(2x^2+3x-5) · (2x-5)(x+2)].'
- },
- {
- id: '9',
- text: 'Assuming the denominators do NOT equal zero, which expression is equivalent to <math><mfrac><mn>12</mn><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><mi>x</mi><mo>-</mo><mn>4</mn></mrow></mfrac></math>?',
- type: 'multiple-choice',
- options: ['<math><mfrac><mrow><mn>13</mn><mi>x</mi><mo>-</mo><mn>47</mn></mrow><mrow><mo>(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo>)</mo><mo>(</mo><mi>x</mi><mo>-</mo><mn>4</mn><mo>)</mo></mrow></mfrac></math>', '<math><mfrac><mn>13</mn><mrow><mo>(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo>)</mo><mo>(</mo><mi>x</mi><mo>-</mo><mn>4</mn><mo>)</mo></mrow></mfrac></math>', '<math><mfrac><mrow><mn>13</mn><mi>x</mi><mo>-</mo><mn>47</mn></mrow><mrow><mn>2</mn><mi>x</mi><mo>-</mo><mn>3</mn></mrow></mfrac></math>', '<math><mfrac><mn>13</mn><mrow><mn>2</mn><mi>x</mi><mo>-</mo><mn>3</mn></mrow></mfrac></math>'],
- correctAnswer: 0,
- explanation: 'Find common denominator and add: 12(x-4) + 1(x+1) over (x+1)(x-4) = (13x - 47) / [(x+1)(x-4)].'
- },
- {
- id: '10',
- text: 'Which expression is equivalent to <math><msqrt><mn>36</mn><msup><mi>x</mi><mn>9</mn></msup><msup><mi>y</mi><mn>25</mn></msup></msqrt></math>, where <math><mi>x</mi><mo>></mo><mn>0</mn></math> and <math><mi>y</mi><mo>></mo><mn>0</mn></math>?',
- type: 'multiple-choice',
- options: ['<math><mn>6</mn><msup><mi>x</mi><mn>3</mn></msup><msup><mi>y</mi><mn>5</mn></msup></math>', '<math><mn>6</mn><msup><mi>x</mi><mfrac><mn>9</mn><mn>2</mn></mfrac></msup><msup><mi>y</mi><mfrac><mn>25</mn><mn>2</mn></mfrac></msup></math>', '<math><mn>18</mn><msup><mi>x</mi><mn>3</mn></msup><msup><mi>y</mi><mn>5</mn></msup></math>', '<math><mn>18</mn><msup><mi>x</mi><mfrac><mn>9</mn><mn>2</mn></mfrac></msup><msup><mi>y</mi><mfrac><mn>25</mn><mn>2</mn></mfrac></msup></math>'],
- correctAnswer: 1,
- explanation: 'The square root of each factor: √36 = 6, √(x^9) = x^(9/2), √(y^25) = y^(25/2).'
- },
- {
- id: '11',
- text: 'What nonzero value of <math><mi>x</mi></math> is a solution to the following equation?<br><br><math><mfrac><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mi>x</mi></mfrac><mo>+</mo><mfrac><mrow><mi>x</mi><mo>-</mo><mn>6</mn></mrow><mrow><mn>3</mn><mi>x</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>9</mn></mrow><mrow><mn>5</mn><mi>x</mi></mrow></mfrac></math>',
- type: 'multiple-choice',
- options: ['<math><mi>x</mi><mo>=</mo><mfrac><mn>27</mn><mn>14</mn></mfrac></math>', '<math><mi>x</mi><mo>=</mo><mfrac><mn>17</mn><mn>14</mn></mfrac></math>', '<math><mi>x</mi><mo>=</mo><mfrac><mn>13</mn><mn>14</mn></mfrac></math>', '<math><mi>x</mi><mo>=</mo><mfrac><mn>5</mn><mn>14</mn></mfrac></math>'],
- correctAnswer: 0,
- explanation: 'Multiply through by 15x to clear denominators, then solve the resulting linear equation.'
- },
- {
- id: '12',
- text: 'How many values of <math><mi>x</mi></math> will satisfy the equation <math><mo>-</mo><mn>2</mn><mo>|</mo><mn>3</mn><mi>x</mi><mo>-</mo><mn>5</mn><mo>|</mo><mo>=</mo><mn>0</mn></math>?',
- type: 'multiple-choice',
- options: ['0', '1', '2', '3'],
- correctAnswer: 1,
- explanation: 'The equation simplifies to |3x - 5| = 0, which has exactly one solution: x = 5/3.'
- },
- {
- id: '13',
- text: 'Which graph best represents the solutions for <math><mi>y</mi><mo><</mo><mo>|</mo><mi>x</mi><mo>+</mo><mn>4</mn><mo>|</mo><mo>-</mo><mn>1</mn></math>?',
- type: 'multiple-choice',
- options: [
-    {url: 'images/question_13a.png', alt: 'Graph A'},
-    {url: 'images/question_13b.png', alt: 'Graph B'},
-    {url: 'images/question_13c.png', alt: 'Graph C'},
-    {url: 'images/question_13d.png', alt: 'Graph D'}
- ],
- correctAnswer: 1,
- explanation: 'The graph of y < |x + 4| - 1 shows the region below the V-shaped graph with vertex at (-4, -1).'
- },
- {
- id: '14',
- text: 'What is a solution of <math><msqrt><mn>7</mn><mo>-</mo><mn>2</mn><mi>x</mi></msqrt><mo>+</mo><mn>5</mn><mo>=</mo><mn>8</mn></math>?',
- type: 'multiple-choice',
- options: ['<math><mi>x</mi><mo>=</mo><mo>-</mo><mn>26</mn></math>', '<math><mi>x</mi><mo>=</mo><mo>-</mo><mfrac><mn>19</mn><mn>2</mn></mfrac></math>', '<math><mi>x</mi><mo>=</mo><mo>-</mo><mfrac><mn>13</mn><mn>2</mn></mfrac></math>', '<math><mi>x</mi><mo>=</mo><mo>-</mo><mn>1</mn></math>'],
- correctAnswer: 3,
- explanation: 'Square both sides: 7 - 2x + 5 = 64, which gives 12 - 2x = 64, so -2x = 52, and x = -26. Wait, let me recalculate: √(7 - 2x + 5) = 8 means √(12 - 2x) = 8, so 12 - 2x = 64, -2x = 52, x = -26. No wait, the answer key says D which is x = -1.'
- },
- {
- id: '15',
- text: 'Which is the apparent solution set of the system of equations graphed on the following grid? <br><img src="images/question_15.png" class="question-image" alt="Graph showing system of equations">',
- type: 'multiple-choice',
- options: ['{(0, -5), (0, 5)}', '{(-3, 4), (-2, -2)}', '{(-4, 3), (-1, 0)}', '{(-5, 0), (-3<math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>, 0), (-1, 0)}'],
- correctAnswer: 2,
- explanation: 'The intersection points of the two curves shown on the graph are at (-4, 3) and (-1, 0).'
- },
- {
- id: '16',
- text: 'This graph best represents the solution to which inequality? <br><img src="images/question_16.png" class="question-image" alt="Number line with solution">',
- type: 'multiple-choice',
- options: ['|x - 11| > 4', '|x - 11| < 4', '|2x + 7| > 15', '|2x + 7| < 15'],
- correctAnswer: 3,
- explanation: 'The graph shows the solution -11 < x < 4, which corresponds to |2x + 7| < 15.'
- },
- {
- id: '17',
- text: 'What value of <math><mi>x</mi></math> makes <math><mroot><mrow><mn>2</mn><mi>x</mi><mo>-</mo><mn>5</mn></mrow><mn>3</mn></mroot><mo>=</mo><mn>3</mn></math> true?',
- type: 'free-response',
- correctKeywords: ['16'],
- explanation: 'Cube both sides: 2x - 5 = 27, so 2x = 32, and x = 16.'
- },
- {
- id: '18',
- text: 'What are the apparent roots of the equation graphed on the coordinate grid? <br><img src="images/question_18.png" class="question-image" alt="Graph showing parabola">',
- type: 'multiple-choice',
- options: ['{0, 3}', '{<math><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></math>, 4}', '{<math><mo>-</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></math>, <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>}', '{-2, 1}'],
- correctAnswer: 2,
- explanation: 'The x-intercepts of the parabola shown are at x = -3/2 and x = 1/2.'
- },
- {
- id: '19',
- text: 'If no denominator is equal to zero, what is the solution set for the following equation?<br><br><math><mfrac><mrow><mn>3</mn><mi>x</mi><mo>-</mo><mn>4</mn></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>=</mo><mfrac><mn>3</mn><mrow><mn>2</mn><mi>x</mi></mrow></mfrac></math>',
- type: 'multiple-choice',
- options: ['{<math><mfrac><mn>8</mn><mn>3</mn></mfrac></math>}', '{<math><mfrac><mn>8</mn><mn>9</mn></mfrac></math>}', '{<math><mo>-</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></math>, 2}', '{<math><mo>-</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></math>, <math><mfrac><mn>2</mn><mn>3</mn></mfrac></math>}'],
- correctAnswer: 0,
- explanation: 'Cross-multiply and solve: 2x(3x - 4) = 3x^2, which gives 6x^2 - 8x = 3x^2, so 3x^2 - 8x = 0.'
- },
- {
- id: '20',
- text: 'What is the solution set for the following system of equations?<br><br><math><mi>y</mi><mo>=</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>2</mn></math><br><math><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mo>-</mo><mn>8</mn></math>',
- type: 'multiple-choice',
- options: ['{(-5, -18), (2, 10)}', '{(-1, -2), (6, 26)}', '{(-6, -22), (1, 6)}', '{(-2, -6), (5, 22)}'],
- correctAnswer: 3,
- explanation: 'Set the equations equal: 4x + 2 = x^2 + x - 8. Solve to get x = -2 and x = 5.'
- },
- {
- id: '21',
- text: 'Identify all the points where the graph of <math><mi>h</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mo>(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo>)</mo><mo>(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>8</mn><mi>x</mi><mo>+</mo><mn>16</mn><mo>)</mo></math> intersects the x-axis.',
- type: 'multiple-select',
- options: ['(-4, 0)', '(1, 0)', '(-2, 0)', '(4, 0)', '(-1, 0)', '(16, 0)'],
- correctAnswer: [0, 4],
- explanation: 'Factor: h(x) = (x + 1)(x + 4)^2. The x-intercepts are at x = -1 and x = -4.'
- },
- {
- id: '22',
- text: 'The function <math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mrow><mo>(</mo><mn>1</mn><mo>-</mo><mi>x</mi><mo>)</mo></mrow><mn>2</mn></msup><mo>-</mo><mn>4</mn></math> is decreasing throughout the interval —',
- type: 'multiple-choice',
- options: ['-4 < x < ∞', '-∞ < x < 1', '-1 < x < 3', '-∞ < x < ∞'],
- correctAnswer: 1,
- explanation: 'The vertex of f(x) = (1 - x)^2 - 4 is at x = 1. The function decreases for x < 1.'
- },
- {
- id: '23',
- text: 'Given: <math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>4</mn><msup><mi>x</mi><mn>4</mn></msup><mo>-</mo><mn>15</mn></math> and <math><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>11</mn></math><br><br>What is the value of <math><mi>g</mi><mo>(</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>)</mo></math>?',
- type: 'multiple-choice',
- options: ['<math><mn>8</mn><msup><mi>x</mi><mn>5</mn></msup><mo>+</mo><mn>44</mn><msup><mi>x</mi><mn>4</mn></msup><mo>-</mo><mn>30</mn><mi>x</mi><mo>-</mo><mn>165</mn></math>', '<math><mn>8</mn><msup><mi>x</mi><mn>5</mn></msup><mo>-</mo><mn>165</mn></math>', '<math><mn>8</mn><msup><mi>x</mi><mn>4</mn></msup><mo>-</mo><mn>4</mn></math>', '<math><mn>8</mn><msup><mi>x</mi><mn>4</mn></msup><mo>-</mo><mn>19</mn></math>'],
- correctAnswer: 3,
- explanation: 'g(f(x)) = g(4x^4 - 15) = 2(4x^4 - 15) + 11 = 8x^4 - 30 + 11 = 8x^4 - 19.'
- },
- {
- id: '24',
- text: 'A normally distributed data set has a mean of 0 and a standard deviation of 0.5. Which is closest to the percent of values between -1 and 1?',
- type: 'multiple-choice',
- options: ['34%', '50%', '68%', '95%'],
- correctAnswer: 3,
- explanation: 'Values between -1 and 1 represent 2 standard deviations from the mean (since σ = 0.5). About 95% of data falls within 2 standard deviations.'
- },
- {
- id: '25',
- text: 'Point A lies on the graph of <math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>x</mi><mo>+</mo><mn>2</mn></math>. Locate the image of Point A that lies on the graph of <math><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>(</mo><mi>x</mi><mo>)</mo></math>.',
- type: 'free-response',
- correctKeywords: ['(1, -2)'],
- explanation: 'The inverse function is f^(-1)(x) = 2x - 4. If Point A is on f(x), its image on f^(-1)(x) is found by swapping coordinates.'
- },
- {
- id: '26',
- text: 'Which equation best represents this graph? <br><img src="images/question_26.png" class="question-image" alt="Exponential decay graph">',
- type: 'multiple-choice',
- options: ['<math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>3</mn><msup><mrow><mo>(</mo><mfrac><mn>1</mn><mn>5</mn></mfrac><mo>)</mo></mrow><mi>x</mi></msup></math>', '<math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>3</mn><msqrt><mn>5</mn><mi>x</mi></msqrt></math>', '<math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>log</mo><mo>(</mo><mn>5</mn><mi>x</mi><mo>)</mo></math>', '<math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><msup><mrow><mo>(</mo><mn>5</mn><mo>)</mo></mrow><mi>x</mi></msup></math>'],
- correctAnswer: 0,
- explanation: 'The graph shows exponential decay with y-intercept at 3, consistent with f(x) = 3(1/5)^x.'
- },
- {
- id: '27',
- text: 'If <math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><mi>x</mi></math> and <math><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup></math>, what is <math><mi>g</mi><mo>(</mo><mi>f</mi><mo>(</mo><mo>-</mo><mn>1</mn><mo>)</mo><mo>)</mo></math>?',
- type: 'multiple-choice',
- options: ['-4', '0', '8', '10'],
- correctAnswer: 2,
- explanation: 'First find f(-1) = (-1)^2 + 3(-1) = 1 - 3 = -2. Then g(-2) = 2(-2)^2 = 2(4) = 8.'
- },
- {
- id: '28',
- text: 'The volume of a cone (V) varies jointly with its height (h) and the square of its radius (r). If k is the constant of proportionality, which of the following equations represents the correct relationship between volume, radius, and height?',
- type: 'multiple-choice',
- options: ['<math><mi>V</mi><mo>=</mo><mi>k</mi><mo>(</mo><mi>r</mi><mi>h</mi><msup><mo>)</mo><mn>2</mn></msup></math>', '<math><mi>V</mi><mo>=</mo><mfrac><mrow><mi>k</mi><msup><mi>r</mi><mn>2</mn></msup></mrow><mi>h</mi></mfrac></math>', '<math><mi>V</mi><mo>=</mo><mfrac><mi>k</mi><mrow><msup><mi>r</mi><mn>2</mn></msup><mi>h</mi></mrow></mfrac></math>', '<math><mi>V</mi><mo>=</mo><mi>k</mi><msup><mi>r</mi><mn>2</mn></msup><mi>h</mi></math>'],
- correctAnswer: 3,
- explanation: 'Joint variation means V is proportional to both h and r^2, so V = kr^2h.'
- },
- {
- id: '29',
- text: 'What is the equation of the horizontal asymptote of the graph of the following equation?<br><br><math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mn>4</mn><mrow><mo>(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow></msup><mo>-</mo><mn>10</mn></math>',
- type: 'multiple-choice',
- options: ['y = 4', 'y = 0', 'y = -1', 'y = -10'],
- correctAnswer: 3,
- explanation: 'The horizontal asymptote of f(x) = 4^(x+1) - 10 is y = -10 as x approaches negative infinity.'
- },
- {
- id: '30',
- text: 'As x approaches negative infinity, which of the following describes the end behavior of <math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mo>-</mo><msup><mi>x</mi><mn>7</mn></msup><mo>+</mo><mi>b</mi><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mi>c</mi></math>?',
- type: 'multiple-choice',
- options: ['f(x) approaches c', 'f(x) approaches 0', 'f(x) approaches positive infinity', 'f(x) approaches negative infinity'],
- correctAnswer: 2,
- explanation: 'As x → -∞, the term -x^7 dominates. Since (-x)^7 = -x^7 and x is negative, -x^7 becomes positive and approaches positive infinity.'
- },
- {
- id: '31',
- text: 'Jessica paid $23,000 for her car and kept a record of its value.<br><img src="images/question_31.png" class="question-image" alt="Exponential decay graph"><br>Assuming the relationship is exponential, which equation best models the curve of best fit for the data?',
- type: 'multiple-choice',
- options: ['<math><mi>y</mi><mo>=</mo><mn>21,000</mn><msup><mrow><mo>(</mo><mn>1.20</mn><mo>)</mo></mrow><mi>x</mi></msup></math>', '<math><mi>y</mi><mo>=</mo><mn>22,300</mn><msup><mrow><mo>(</mo><mn>2.60</mn><mo>)</mo></mrow><mi>x</mi></msup></math>', '<math><mi>y</mi><mo>=</mo><mn>23,100</mn><msup><mrow><mo>(</mo><mn>0.85</mn><mo>)</mo></mrow><mi>x</mi></msup></math>', '<math><mi>y</mi><mo>=</mo><mn>23,500</mn><msup><mrow><mo>(</mo><mn>0.70</mn><mo>)</mo></mrow><mi>x</mi></msup></math>'],
- correctAnswer: 2,
- explanation: 'An exponential decay model with initial value near 23,000 and decay factor around 0.85 best fits the data.'
- },
- {
- id: '32',
- text: 'What is the sum of the infinite geometric series <math><mn>9</mn><mo>-</mo><mn>6</mn><mo>+</mo><mn>4</mn><mo>-</mo><mfrac><mn>8</mn><mn>3</mn></mfrac><mo>+</mo><mo>...</mo></math>?',
- type: 'multiple-choice',
- options: ['<math><mfrac><mn>29</mn><mn>3</mn></mfrac></math>', '<math><mfrac><mn>25</mn><mn>3</mn></mfrac></math>', '<math><mfrac><mn>27</mn><mn>5</mn></mfrac></math>', '<math><mfrac><mn>18</mn><mn>5</mn></mfrac></math>'],
- correctAnswer: 2,
- explanation: 'First term a = 9, common ratio r = -2/3. Sum = a/(1-r) = 9/(1+2/3) = 9/(5/3) = 27/5.'
- },
- {
- id: '33',
- text: 'Which number is a zero of <math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>7</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>16</mn><mi>x</mi><mo>-</mo><mn>48</mn></math>?',
- type: 'multiple-choice',
- options: ['12', '4', '<math><mfrac><mn>12</mn><mn>7</mn></mfrac></math>', '<math><mfrac><mn>4</mn><mn>7</mn></mfrac></math>'],
- correctAnswer: 2,
- explanation: 'Using the quadratic formula or factoring: 7x^2 + 16x - 48 = 0 gives x = 12/7 or x = -4.'
- },
- {
- id: '34',
- text: 'Which function is the inverse of <math><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>11</mn></math>?',
- type: 'multiple-choice',
- options: ['<math><msup><mi>g</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mroot><mrow><mi>x</mi><mo>-</mo><mn>11</mn></mrow><mn>3</mn></mroot></math>', '<math><msup><mi>g</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mroot><mrow><mi>x</mi><mo>+</mo><mn>11</mn></mrow><mn>3</mn></mroot></math>', '<math><msup><mi>g</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>x</mi><mo>-</mo><mroot><mn>11</mn><mn>3</mn></mroot></math>', '<math><msup><mi>g</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>x</mi><mo>+</mo><mroot><mn>11</mn><mn>3</mn></mroot></math>'],
- correctAnswer: 0,
- explanation: 'To find the inverse: y = x^3 + 11, swap x and y: x = y^3 + 11, solve for y: y = ∛(x - 11).'
- },
- {
- id: '35',
- text: 'What is the domain of <math><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mo>log</mo><mo>(</mo><mi>x</mi><mo>-</mo><mn>1</mn><mo>)</mo></math>?',
- type: 'multiple-choice',
- options: ['{x | x > 10}', '{x | x > 9}', '{x | x > 1}', '{x | x > 0}'],
- correctAnswer: 2,
- explanation: 'For log(x - 1) to be defined, we need x - 1 > 0, which means x > 1.'
- },
- {
- id: '36',
- text: 'A scientist obtained a sample that contained 80 grams of radioactive Barium-122 that decays exponentially over time. The amount of Barium-122 that remained in the sample at observed times is shown in the table.<br><img src="images/question_36.png" class="question-image" alt="Exponential decay graph"><br>If the radioactive decay continues at the same rate, which is closest to the amount of the sample of Barium-122 remaining at 5 minutes?',
- type: 'multiple-choice',
- options: ['8.3 grams', '10.0 grams', '11.7 grams', '14.1 grams'],
- correctAnswer: 3,
- explanation: 'The decay factor is approximately 0.707 per minute. At 5 minutes: 80(0.707)^5 ≈ 14.1 grams.'
- },
- {
- id: '37',
- text: 'What is the sum of the first 20 terms of the arithmetic sequence shown?<br><br><math><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>,</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>,</mo><mn>1</mn><mo>,</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mo>,</mo><mfrac><mn>5</mn><mn>3</mn></mfrac><mo>,</mo><mo>...</mo></math>',
- type: 'multiple-choice',
- options: ['5', '20', '70', '140'],
- correctAnswer: 2,
- explanation: 'First term a = 1/3, common difference d = 1/3. Sum = n/2[2a + (n-1)d] = 20/2[2(1/3) + 19(1/3)] = 10(21/3) = 70.'
- },
- {
- id: '38',
- text: 'What is the number of possible permutations of 8 objects taken 3 at a time?',
- type: 'free-response',
- correctKeywords: ['336'],
- explanation: 'P(8,3) = 8!/(8-3)! = 8!/5! = 8 × 7 × 6 = 336.'
- }
+  {
+    id: '1',
+    text: 'Which expression represents four less than half a number, n?',
+    type: 'multiple-choice',
+    options: [
+      '<math><mn>4</mn><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>n</mi></math>',
+      '<math><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>n</mi><mo>-</mo><mn>4</mn></math>',
+      '<math><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>(</mo><mn>4</mn><mo>-</mo><mi>n</mi><mo>)</mo></math>',
+      '<math><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>(</mo><mi>n</mi><mo>-</mo><mn>4</mn><mo>)</mo></math>'
+    ],
+    correctAnswer: 1,
+    explanation: 'Four less than half a number means we take half the number (1/2)n and subtract 4 from it: (1/2)n - 4.'
+  },
+  {
+    id: '2',
+    text: 'Which of the following binomials is a factor of <math><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mi>x</mi><mo>-</mo><mn>6</mn></math>?',
+    type: 'multiple-choice',
+    options: [
+      '<math><mi>x</mi><mo>-</mo><mn>1</mn></math>',
+      '<math><mi>x</mi><mo>-</mo><mn>2</mn></math>',
+      '<math><mi>x</mi><mo>-</mo><mn>3</mn></math>',
+      '<math><mi>x</mi><mo>-</mo><mn>6</mn></math>'
+    ],
+    correctAnswer: 2,
+    explanation: 'Factoring x² - x - 6, we need two numbers that multiply to -6 and add to -1. These are -3 and 2, giving us (x - 3)(x + 2).'
+  },
+  {
+    id: '3',
+    text: 'Identify each expression that is in simplest radical form.',
+    type: 'multiple-select',
+    options: [
+      '<math><mi>x</mi><msqrt><mn>50</mn><mi>y</mi></msqrt></math>',
+      '<math><mn>64</mn><msqrt><mi>x</mi></msqrt></math>',
+      '<math><mn>7</mn><msup><mi>x</mi><mn>3</mn></msup><mi>y</mi><msqrt><mn>2</mn><mi>x</mi><mi>y</mi></msqrt></math>',
+      '<math><msqrt><mn>12</mn><msup><mi>x</mi><mn>3</mn></msup><msup><mi>y</mi><mn>4</mn></msup></msqrt></math>'
+    ],
+    correctAnswer: [1, 2],
+    explanation: '64√x and 7x³y√(2xy) are in simplest radical form. The others can be simplified further.'
+  },
+  {
+    id: '4',
+    text: 'Which expression is equivalent to <math><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>(</mo><mn>30</mn><mi>x</mi><mo>-</mo><mn>24</mn><mi>y</mi><mo>)</mo><mo>-</mo><mfrac><mn>1</mn><mn>8</mn></mfrac><mo>(</mo><mn>32</mn><mi>x</mi><mo>-</mo><mn>16</mn><mi>y</mi><mo>)</mo></math>?',
+    type: 'multiple-choice',
+    options: [
+      '<math><mi>x</mi><mo>-</mo><mn>6</mn><mi>y</mi></math>',
+      '<math><mi>x</mi><mo>-</mo><mn>2</mn><mi>y</mi></math>',
+      '<math><mn>2</mn><mi>x</mi><mo>-</mo><mn>4</mn><mi>y</mi></math>',
+      '<math><mn>9</mn><mi>x</mi><mo>-</mo><mn>6</mn><mi>y</mi></math>'
+    ],
+    correctAnswer: 1,
+    explanation: 'Distributing: (1/6)(30x - 24y) - (1/8)(32x - 16y) = 5x - 4y - 4x + 2y = x - 2y.'
+  },
+  {
+    id: '5',
+    text: 'Which is equivalent to <math><mroot><mn>48</mn><mn>3</mn></mroot></math> in simplest form?',
+    type: 'multiple-choice',
+    options: [
+      '<math><mn>2</mn><mroot><mn>6</mn><mn>3</mn></mroot></math>',
+      '<math><mn>6</mn><mroot><mn>2</mn><mn>3</mn></mroot></math>',
+      '<math><mn>16</mn></math>',
+      '<math><mn>24</mn></math>'
+    ],
+    correctAnswer: 0,
+    explanation: '48 = 8 × 6 = 2³ × 6, so ∛48 = ∛(2³ × 6) = 2∛6.'
+  },
+  {
+    id: '6',
+    text: 'What is the value of <math><msqrt><mn>128</mn></msqrt></math> in simplest radical form?',
+    type: 'multiple-choice',
+    options: [
+      '<math><mn>8</mn><msqrt><mn>2</mn></msqrt></math>',
+      '<math><mn>64</mn><msqrt><mn>2</mn></msqrt></math>',
+      '<math><mn>4</mn><msqrt><mn>8</mn></msqrt></math>',
+      '<math><mn>16</mn><msqrt><mn>8</mn></msqrt></math>'
+    ],
+    correctAnswer: 0,
+    explanation: '128 = 64 × 2 = 8² × 2, so √128 = 8√2.'
+  },
+  {
+    id: '7',
+    text: 'Which polynomial is equivalent to this expression if <math><mi>n</mi><mo>≠</mo><mo>-</mo><mn>1</mn></math>?<br><br><math><mfrac><mrow><mn>3</mn><mo>+</mo><mi>n</mi><mo>-</mo><mn>2</mn><msup><mi>n</mi><mn>2</mn></msup></mrow><mrow><mn>1</mn><mo>+</mo><mi>n</mi></mrow></mfrac></math>',
+    type: 'multiple-choice',
+    options: [
+      '<math><mn>2</mn><mi>n</mi><mo>-</mo><mn>3</mn></math>',
+      '<math><mn>3</mn><mo>-</mo><mn>2</mn><mi>n</mi></math>',
+      '<math><mn>3</mn><mo>-</mo><mn>2</mn><msup><mi>n</mi><mn>2</mn></msup></math>',
+      '<math><mn>4</mn><mo>-</mo><mn>2</mn><msup><mi>n</mi><mn>2</mn></msup></math>'
+    ],
+    correctAnswer: 1,
+    explanation: 'Using polynomial division or factoring, (3 + n - 2n²)/(1 + n) simplifies to 3 - 2n.'
+  },
+  {
+    id: '8',
+    text: 'Which is a factor of <math><mn>2</mn><msup><mi>n</mi><mn>2</mn></msup><mo>-</mo><mn>5</mn><mi>n</mi><mo>-</mo><mn>42</mn></math>?',
+    type: 'multiple-choice',
+    options: [
+      '<math><mn>2</mn><mi>n</mi><mo>-</mo><mn>7</mn></math>',
+      '<math><mn>2</mn><mi>n</mi><mo>-</mo><mn>6</mn></math>',
+      '<math><mi>n</mi><mo>-</mo><mn>7</mn></math>',
+      '<math><mi>n</mi><mo>-</mo><mn>6</mn></math>'
+    ],
+    correctAnswer: 3,
+    explanation: '2n² - 5n - 42 = (2n + 7)(n - 6), so n - 6 is a factor.'
+  },
+  {
+    id: '9',
+    text: 'Which of the following is equivalent to <math><mfrac><mrow><msup><mi>a</mi><mn>12</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mrow><mrow><msup><mi>a</mi><mn>3</mn></msup><msup><mi>b</mi><mn>6</mn></msup></mrow></mfrac></math>?',
+    type: 'multiple-choice',
+    options: [
+      '<math><mfrac><msup><mi>a</mi><mn>9</mn></msup><msup><mi>b</mi><mn>4</mn></msup></mfrac></math>',
+      '<math><mfrac><msup><mi>b</mi><mn>4</mn></msup><msup><mi>a</mi><mn>9</mn></msup></mfrac></math>',
+      '<math><mfrac><msup><mi>a</mi><mn>4</mn></msup><msup><mi>b</mi><mn>3</mn></msup></mfrac></math>',
+      '<math><msup><mi>a</mi><mn>9</mn></msup><msup><mi>b</mi><mn>4</mn></msup></math>'
+    ],
+    correctAnswer: 0,
+    explanation: 'Using exponent rules: a¹²/a³ = a⁹ and b²/b⁶ = b⁻⁴ = 1/b⁴, so the answer is a⁹/b⁴.'
+  },
+  {
+    id: '10',
+    text: 'What is the value of this expression when <math><mi>n</mi><mo>=</mo><mo>-</mo><mn>15</mn></math>?<br><br><math><mo>-</mo><mn>2</mn><mo>|</mo><mi>n</mi><mo>+</mo><mn>6</mn><mo>|</mo></math>',
+    type: 'multiple-choice',
+    options: ['-42', '-18', '18', '42'],
+    correctAnswer: 1,
+    explanation: 'When n = -15: -2|-15 + 6| = -2|−9| = -2(9) = -18.'
+  },
+  {
+    id: '11',
+    text: 'Which graph best represents the equation <math><mn>4</mn><mi>x</mi><mo>+</mo><mn>5</mn><mi>y</mi><mo>=</mo><mo>-</mo><mn>20</mn></math>?',
+    type: 'multiple-choice',
+    options: [
+      {url: 'images/question_11a.png', alt: 'Graph A'},
+      {url: 'images/question_11b.png', alt: 'Graph B'},
+      {url: 'images/question_11c.png', alt: 'Graph C'},
+      {url: 'images/question_11d.png', alt: 'Graph D'}
+    ],
+    correctAnswer: 0,
+    explanation: 'The x-intercept is (-5, 0) and y-intercept is (0, -4), matching graph A.'
+  },
+  {
+    id: '12',
+    text: 'A formula to find the angle measures of an isosceles triangle is shown.<br><br><math><mn>180</mn><mo>=</mo><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi></math><br><br>Which equation can be used to find <math><mi>x</mi></math>?',
+    type: 'multiple-choice',
+    options: [
+      '<math><mi>x</mi><mo>=</mo><mfrac><mrow><mn>180</mn><mo>-</mo><mi>y</mi></mrow><mn>2</mn></mfrac></math>',
+      '<math><mi>x</mi><mo>=</mo><mfrac><mrow><mn>180</mn><mo>+</mo><mi>y</mi></mrow><mn>2</mn></mfrac></math>',
+      '<math><mi>x</mi><mo>=</mo><mn>90</mn><mo>-</mo><mi>y</mi></math>',
+      '<math><mi>x</mi><mo>=</mo><mn>90</mn><mo>+</mo><mi>y</mi></math>'
+    ],
+    correctAnswer: 0,
+    explanation: 'Solving for x: 180 = 2x + y → 180 - y = 2x → x = (180 - y)/2.'
+  },
+  {
+    id: '13',
+    text: 'Which equation represents the line that passes through the points <math><mo>(</mo><mo>-</mo><mn>4</mn><mo>,</mo><mn>4</mn><mo>)</mo></math> and <math><mo>(</mo><mn>8</mn><mo>,</mo><mo>-</mo><mn>2</mn><mo>)</mo></math>?',
+    type: 'multiple-choice',
+    options: [
+      '<math><mi>y</mi><mo>=</mo><mo>-</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>14</mn></math>',
+      '<math><mi>y</mi><mo>=</mo><mo>-</mo><mn>2</mn><mi>x</mi><mo>-</mo><mn>4</mn></math>',
+      '<math><mi>y</mi><mo>=</mo><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>x</mi><mo>+</mo><mn>2</mn></math>',
+      '<math><mi>y</mi><mo>=</mo><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>x</mi><mo>-</mo><mn>2</mn></math>'
+    ],
+    correctAnswer: 2,
+    explanation: 'Slope = (-2 - 4)/(8 - (-4)) = -6/12 = -1/2. Using point-slope form with (8, -2): y = -1/2x + 2.'
+  },
+  {
+    id: '14',
+    text: 'For which system of inequalities is <math><mo>(</mo><mo>-</mo><mn>3</mn><mo>,</mo><mn>1</mn><mo>)</mo></math> a solution?',
+    type: 'multiple-choice',
+    options: [
+      '<math><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>&lt;</mo><mo>-</mo><mn>2</mn></mrow></math><br><math><mrow><mn>2</mn><mi>x</mi><mo>-</mo><mn>3</mn><mi>y</mi><mo>&lt;</mo><mo>-</mo><mn>9</mn></mrow></math>',
+      '<math><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>&lt;</mo><mo>-</mo><mn>2</mn></mrow></math><br><math><mrow><mn>2</mn><mi>x</mi><mo>-</mo><mn>3</mn><mi>y</mi><mo>≤</mo><mo>-</mo><mn>9</mn></mrow></math>',
+      '<math><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>≤</mo><mo>-</mo><mn>2</mn></mrow></math><br><math><mrow><mn>2</mn><mi>x</mi><mo>-</mo><mn>3</mn><mi>y</mi><mo>&lt;</mo><mo>-</mo><mn>9</mn></mrow></math>',
+      '<math><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>≤</mo><mo>-</mo><mn>2</mn></mrow></math><br><math><mrow><mn>2</mn><mi>x</mi><mo>-</mo><mn>3</mn><mi>y</mi><mo>≤</mo><mo>-</mo><mn>9</mn></mrow></math>'
+    ],
+    correctAnswer: 3,
+    explanation: 'Checking (-3, 1): x + y = -3 + 1 = -2 ≤ -2 ✓ and 2x - 3y = -6 - 3 = -9 ≤ -9 ✓.'
+  },
+  {
+    id: '15',
+    text: 'What is the solution to this system of equations?<br><br><math><mn>2</mn><mi>x</mi><mo>+</mo><mn>4</mn><mi>y</mi><mo>=</mo><mn>22</mn></math><br><math><mn>7</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>12</mn></math>',
+    type: 'multiple-choice',
+    options: ['(3, 4)', '(2, -2)', '(1, 5)', '(-1, 6)'],
+    correctAnswer: 2,
+    explanation: 'Solving by substitution or elimination gives x = 1, y = 5.'
+  },
+  {
+    id: '16',
+    text: 'The graph of <math><mi>y</mi><mo>=</mo><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>8</mn></math> is shown. On the grid, identify each of the solutions to <math><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>8</mn><mo>=</mo><mn>0</mn></math>.',
+    type: 'point-select',
+    correctAnswer: [[-4, 0], [2, 0]],
+    explanation: 'The x-intercepts of the parabola are at x = -4 and x = 2.'
+  },
+  {
+    id: '17',
+    text: 'What value of <math><mi>x</mi></math> makes this equation true?<br><br><math><mn>3</mn><mi>x</mi><mo>-</mo><mn>20</mn><mo>=</mo><mo>-</mo><mn>2</mn><mi>x</mi></math>',
+    type: 'multiple-choice',
+    options: ['-20', '-4', '4', '20'],
+    correctAnswer: 2,
+    explanation: '3x - 20 = -2x → 5x = 20 → x = 4.'
+  },
+  {
+    id: '18',
+    text: 'Which equation best represents line <math><mi>m</mi></math>?<br><img src="images/question_18.png" class="question-image" alt="Graph showing line m">',
+    type: 'multiple-choice',
+    options: [
+      '<math><mi>y</mi><mo>=</mo><mo>-</mo><mn>3</mn><mi>x</mi><mo>-</mo><mn>4</mn></math>',
+      '<math><mi>y</mi><mo>=</mo><mo>-</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>x</mi><mo>-</mo><mn>4</mn></math>',
+      '<math><mi>y</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>x</mi><mo>-</mo><mn>4</mn></math>',
+      '<math><mi>y</mi><mo>=</mo><mn>3</mn><mi>x</mi><mo>-</mo><mn>4</mn></math>'
+    ],
+    correctAnswer: 2,
+    explanation: 'From the graph, the line has a positive slope of 1/3 and y-intercept of -4.'
+  },
+  {
+    id: '19',
+    text: 'Christopher incorrectly solved an inequality. Between which two consecutive steps did Christopher make a mistake?<br><br>Step 1: <math><mo>-</mo><mn>4</mn><mo>(</mo><mi>x</mi><mo>-</mo><mn>7</mn><mo>)</mo><mo>+</mo><mn>1</mn><mo>≤</mo><mo>-</mo><mn>3</mn></math><br>Step 2: <math><mo>-</mo><mn>4</mn><mo>(</mo><mi>x</mi><mo>-</mo><mn>7</mn><mo>)</mo><mo>≤</mo><mo>-</mo><mn>4</mn></math><br>Step 3: <math><mo>-</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>28</mn><mo>≤</mo><mo>-</mo><mn>4</mn></math><br>Step 4: <math><mo>-</mo><mn>4</mn><mi>x</mi><mo>≤</mo><mo>-</mo><mn>32</mn></math><br>Step 5: <math><mi>x</mi><mo>≤</mo><mn>8</mn></math>',
+    type: 'multiple-choice',
+    options: ['Step 1 and Step 2', 'Step 2 and Step 3', 'Step 3 and Step 4', 'Step 4 and Step 5'],
+    correctAnswer: 3,
+    explanation: 'When dividing by -4 in Step 5, the inequality sign should reverse: x ≥ 8.'
+  },
+  {
+    id: '20',
+    text: 'Solve for <math><mi>n</mi></math>:<br><br><math><mfrac><mrow><mn>3</mn><mi>n</mi><mo>-</mo><mn>7</mn></mrow><mn>6</mn></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mi>n</mi><mo>+</mo><mn>5</mn></mrow><mn>3</mn></mfrac></math>',
+    type: 'free-response',
+    correctKeywords: ['-17'],
+    explanation: 'Cross-multiplying: 3(3n - 7) = 6(2n + 5) → 9n - 21 = 12n + 30 → -3n = 51 → n = -17.'
+  },
+  {
+    id: '21',
+    text: 'What values of <math><mi>x</mi></math> are solutions of <math><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>11</mn><mi>x</mi><mo>=</mo><mn>20</mn></math>?',
+    type: 'multiple-choice',
+    options: [
+      '<math><mo>-</mo><mfrac><mn>4</mn><mn>3</mn></mfrac></math> and 5',
+      '<math><mo>-</mo><mfrac><mn>5</mn><mn>3</mn></mfrac></math> and 4',
+      '-4 and <math><mfrac><mn>5</mn><mn>3</mn></mfrac></math>',
+      '-5 and <math><mfrac><mn>4</mn><mn>3</mn></mfrac></math>'
+    ],
+    correctAnswer: 3,
+    explanation: 'Rearranging: 3x² + 11x - 20 = 0. Factoring: (3x - 4)(x + 5) = 0. Solutions: x = 4/3 or x = -5.'
+  },
+  {
+    id: '22',
+    text: 'The graph of line <math><mi>l</mi></math> is shown. Which number is closest in value to the slope of line <math><mi>l</mi></math>?<br><img src="images/question_22.png" class="question-image" alt="Graph showing line l">',
+    type: 'multiple-choice',
+    options: ['-6', '<math><mo>-</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>6</mn></mfrac></math>', '6'],
+    correctAnswer: 1,
+    explanation: 'From the graph, the line has a small negative slope, approximately -1/6.'
+  },
+  {
+    id: '23',
+    text: 'Based on the transitive property, complete this statement.<br><br>If <math><mn>2</mn><mo>(</mo><mi>y</mi><mo>-</mo><mn>3</mn><mo>)</mo><mo>≥</mo><mn>3</mn><mi>x</mi><mo>-</mo><mn>4</mn></math> and <math><mn>3</mn><mi>x</mi><mo>-</mo><mn>4</mn><mo>≥</mo><mn>6</mn><mo>-</mo><mi>y</mi></math>, then <math><mn>2</mn><mo>(</mo><mi>y</mi><mo>-</mo><mn>3</mn><mo>)</mo><mo>≥</mo></math> __?__',
+    type: 'free-response',
+    correctKeywords: ['6-y'],
+    explanation: 'By the transitive property, if a ≥ b and b ≥ c, then a ≥ c. So 2(y - 3) ≥ 6 - y.'
+  },
+  {
+    id: '24',
+    text: 'This system of linear equations is graphed as shown. What is the solution to this system of equations?<br><br><math><mn>3</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>2</mn></math><br><math><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>=</mo><mo>-</mo><mn>18</mn></math><br><img src="images/question_24.png" class="question-image" alt="Graph showing system of equations">',
+    type: 'multiple-choice',
+    options: ['(2, -6)', '(3, -7)', '(-6, 2)', '(-7, 3)'],
+    correctAnswer: 1,
+    explanation: 'From the graph, the lines intersect at (3, -7).'
+  },
+  {
+    id: '25',
+    text: 'Renee is going bowling.<br>• The cost per game is $2.50.<br>• Renee will need to rent a pair of bowling shoes for $1.50.<br>• She can spend up to $16.00 to bowl and rent a pair of shoes.<br><br>What is the maximum number of games that Renee can bowl?',
+    type: 'multiple-choice',
+    options: ['4', '5', '6', '9'],
+    correctAnswer: 1,
+    explanation: '1.50 + 2.50x ≤ 16.00 → 2.50x ≤ 14.50 → x ≤ 5.8. Maximum whole number is 5 games.'
+  },
+  {
+    id: '26',
+    text: 'Malik can spend no more than $24 to buy pecans and cashews. He will pay $6 per pound for pecans and $8 per pound for cashews. Which graph best represents the number of pounds of pecans and the number of pounds of cashews Malik can buy?',
+    type: 'multiple-choice',
+    options: [
+      {url: 'images/question_26a.png', alt: 'Graph A'},
+      {url: 'images/question_26b.png', alt: 'Graph B'},
+      {url: 'images/question_26c.png', alt: 'Graph C'},
+      {url: 'images/question_26d.png', alt: 'Graph D'}
+    ],
+    correctAnswer: 3,
+    explanation: '6p + 8c ≤ 24, which simplifies to 3p + 4c ≤ 12. Graph D shows the correct shaded region.'
+  },
+  {
+    id: '27',
+    text: 'Point A is an element of a direct variation. Plot two points, other than A, that are elements of this direct variation. The coordinates of the points must be integers.<br><img src="images/question_27.png" class="question-image" alt="Coordinate grid with point A">',
+    type: 'grid-plot',
+    correctAnswer: 'Various points on line through origin and A',
+    explanation: 'Direct variation passes through the origin. Any points on the line y = kx where k is determined by point A.'
+  },
+  {
+    id: '28',
+    text: 'Which graph has exactly one x-intercept and one y-intercept?',
+    type: 'multiple-choice',
+    options: [
+      {url: 'images/question_28a.png', alt: 'Graph A - horizontal line'},
+      {url: 'images/question_28b.png', alt: 'Graph B - diagonal line'},
+      {url: 'images/question_28c.png', alt: 'Graph C - line segment'},
+      {url: 'images/question_28d.png', alt: 'Graph D - diagonal line'}
+    ],
+    correctAnswer: 1,
+    explanation: 'Graph B shows a diagonal line that crosses both axes exactly once.'
+  },
+  {
+    id: '29',
+    text: 'Which equation best represents this data set?<br><br>{(-4, -4.8), (-3, -8.2), (-2, -9.1), (-1, -8.1), (0, -4.7), (1, 0.3)}',
+    type: 'multiple-choice',
+    options: [
+      '<math><mi>y</mi><mo>=</mo><mn>1.1</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4.2</mn><mi>x</mi><mo>+</mo><mn>4.9</mn></math>',
+      '<math><mi>y</mi><mo>=</mo><mn>1.1</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4.2</mn><mi>x</mi><mo>-</mo><mn>4.9</mn></math>',
+      '<math><mi>y</mi><mo>=</mo><mn>1.1</mn><mi>x</mi><mo>-</mo><mn>4.2</mn></math>',
+      '<math><mi>y</mi><mo>=</mo><mn>1.1</mn><mi>x</mi><mo>+</mo><mn>4.2</mn></math>'
+    ],
+    correctAnswer: 1,
+    explanation: 'The quadratic equation y = 1.1x² + 4.2x - 4.9 best fits the given data points.'
+  },
+  {
+    id: '30',
+    text: 'A relationship between <math><mi>x</mi></math> and <math><mi>y</mi></math> is shown in this table.<br><img src="images/question_30.png" class="question-image" alt="Table showing values of x and y"><br>Which equation represents this relationship?',
+    type: 'multiple-choice',
+    options: [
+      '<math><mi>y</mi><mo>=</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn></math>',
+      '<math><mi>y</mi><mo>=</mo><mn>5</mn><mi>x</mi><mo>-</mo><mn>5</mn></math>',
+      '<math><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></math>',
+      '<math><mi>y</mi><mo>=</mo><msup><mi>(x+1)</mi><mn>2</mn></msup></math>'
+    ],
+    correctAnswer: 2,
+    explanation: 'Testing the values: y = x² + 1 fits all points in the table.'
+  },
+  {
+    id: '31',
+    text: 'Ms. Scott will pay $2,000 to have her house painted. The amount each painter earns, A, varies inversely for the number of painters, n, that will paint the house. Which equation best represents this situation?',
+    type: 'multiple-choice',
+    options: [
+      '<math><mi>A</mi><mo>=</mo><mn>2,000</mn><mo>+</mo><mi>n</mi></math>',
+      '<math><mn>2,000</mn><mo>=</mo><mi>A</mi><mo>+</mo><mi>n</mi></math>',
+      '<math><mi>A</mi><mo>=</mo><mn>2,000</mn><mi>n</mi></math>',
+      '<math><mn>2,000</mn><mo>=</mo><mi>A</mi><mi>n</mi></math>'
+    ],
+    correctAnswer: 3,
+    explanation: 'For inverse variation, the product is constant: A × n = 2,000, or 2,000 = An.'
+  },
+  {
+    id: '32',
+    text: 'The following graph shows a relation. Which of the following best describes the range of this relation?<br><img src="images/question_32.png" class="question-image" alt="Graph showing V-shaped relation">',
+    type: 'multiple-choice',
+    options: [
+      'All real numbers',
+      'All real numbers between -10 and 10',
+      'All real numbers less than or equal to -4',
+      'All real numbers greater than or equal to -4'
+    ],
+    correctAnswer: 3,
+    explanation: 'The V-shaped graph has a minimum at y = -4, so the range is y ≥ -4.'
+  },
+  {
+    id: '33',
+    text: 'Each of these data sets has a mean of 20.<br><br>Set 1: {18, 19, 20, 21, 22}<br>Set 2: {20, 20, 20, 20, 20}<br>Set 3: {16, 18, 20, 21, 25}<br><br>Order the sets from greatest standard deviation to least standard deviation.',
+    type: 'drag-drop',
+    correctAnswer: ['Set 3', 'Set 1', 'Set 2'],
+    explanation: 'Set 3 has the most spread, Set 1 has moderate spread, Set 2 has no spread (SD = 0).'
+  },
+  {
+    id: '34',
+    text: 'A study was conducted to determine the number of cars that passed through two intersections each day for 20 days. The results are summarized in these box-and-whisker plots. Which statement is best supported by these data?<br><img src="images/question_34.png" class="question-image" alt="Box plots">',
+    type: 'multiple-choice',
+    options: [
+      'The range of the data for Intersection 2 is twice the range of the data for Intersection 1.',
+      'The lower quartile for Intersection 1 is greater than the lower quartile for Intersection 2.',
+      'The interquartile range for Intersection 1 is the same as the interquartile range for Intersection 2.',
+      'The total number of vehicles that passed through Intersection 2 is greater than the total number of vehicles that passed through Intersection 1.'
+    ],
+    correctAnswer: 0,
+    explanation: 'From the box plots, Intersection 2 has approximately twice the range of Intersection 1.'
+  },
+  {
+    id: '35',
+    text: 'Which of these functions has exactly two different zeros?',
+    type: 'multiple-choice',
+    options: [
+      '<math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mn>10</mn></mfrac><mi>x</mi><mo>+</mo><mn>4</mn></math>',
+      '<math><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mn>3</mn><mi>x</mi><mo>-</mo><mn>10</mn></mrow><mn>3</mn></mfrac></math>',
+      '<math><mi>h</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>4</mn></math>',
+      '<math><mi>k</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>11</mn><mi>x</mi><mo>+</mo><mn>24</mn></math>'
+    ],
+    correctAnswer: 3,
+    explanation: 'k(x) = x² + 11x + 24 = (x + 3)(x + 8) has two distinct zeros: x = -3 and x = -8.'
+  },
+  {
+    id: '36',
+    text: 'In which table does <math><mi>y</mi></math> vary directly with <math><mi>x</mi></math>?',
+    type: 'multiple-choice',
+    options: [
+      {url: 'images/question_36a.png', alt: 'Table A'},
+      {url: 'images/question_36b.png', alt: 'Table B'},
+      {url: 'images/question_36c.png', alt: 'Table C'},
+      {url: 'images/question_36d.png', alt: 'Table D'}
+    ],
+    correctAnswer: 1,
+    explanation: 'In direct variation, y/x is constant. Table B shows y = 4x, a direct variation.'
+  },
+  {
+    id: '37',
+    text: 'Which equation could represent a graph with x-intercepts of (4, 0) and (-7, 0)?',
+    type: 'multiple-choice',
+    options: [
+      '<math><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><mi>x</mi><mo>-</mo><mn>28</mn></math>',
+      '<math><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>3</mn><mi>x</mi><mo>-</mo><mn>28</mn></math>',
+      '<math><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>28</mn></math>',
+      '<math><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>28</mn></math>'
+    ],
+    correctAnswer: 0,
+    explanation: 'With x-intercepts at 4 and -7: y = (x - 4)(x + 7) = x² + 3x - 28.'
+  },
+  {
+    id: '38',
+    text: 'Which number is a zero of the function <math><mi>h</mi></math>?<br><br><math><mi>h</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><mi>x</mi><mo>-</mo><mn>18</mn></math>',
+    type: 'multiple-choice',
+    options: ['-6', '-3', '0', '6'],
+    correctAnswer: 0,
+    explanation: 'Factoring: x² + 3x - 18 = (x + 6)(x - 3). The zeros are x = -6 and x = 3.'
+  }
 ];
-
-const scaledScoreMapping = {
-  0: 0,
-  1: 194,
-  2: 225,
-  3: 244,
-  4: 258,
-  5: 269,
-  6: 278,
-  7: 286,
-  8: 294,
-  9: 300,
-  10: 307,
-  11: 312,
-  12: 318,
-  13: 323,
-  14: 328,
-  15: 333,
-  16: 337,
-  17: 342,
-  18: 346,
-  19: 351,
-  20: 355,
-  21: 359,
-  22: 363,
-  23: 367,
-  24: 371,
-  25: 375,
-  26: 379,
-  27: 384,
-  28: 388,
-  29: 392,
-  30: 396,
-  31: 400,
-  32: 405,
-  33: 409,
-  34: 414,
-  35: 418,
-  36: 423,
-  37: 428,
-  38: 434,
-  39: 439,
-  40: 445,
-  41: 451,
-  42: 458,
-  43: 466,
-  44: 475,
-  45: 484,
-  46: 496,
-  47: 510,
-  48: 530,
-  49: 562,
-  50: 600
-};
 
 // Test-specific storage key for this test
 const TEST_STORAGE_KEY = `solace_test_results_${window.TEST_IDENTIFIER}`;
 
-function getScaledScore(rawScore) {
-  const clampedScore = Math.max(0, Math.min(38, rawScore));
-  return scaledScoreMapping[clampedScore] || 0;
-}
-
-function getPerformanceLevel(scaledScore) {
-  if (scaledScore == 600) return 'Perfect Score';
-  if (scaledScore >= 500) return 'Pass Advanced';
-  if (scaledScore >= 400) return 'Pass Proficient';
-  if (scaledScore >= 0) return 'Not Passing';
-  return 'Minimal';
-}
-
-// Independent Results Manager for Algebra II
+// Independent Results Manager for Non-Scaled Tests
 (function() {
   'use strict';
   
-  console.log(`Algebra II independent results system initializing with storage key: ${TEST_STORAGE_KEY}`);
+  console.log(`Non-scaled test results system initializing with storage key: ${TEST_STORAGE_KEY}`);
   
   // Override the results manager to use test-specific storage
   function createTestSpecificResultsManager() {
@@ -401,7 +452,7 @@ function getPerformanceLevel(scaledScore) {
       try {
         const stored = localStorage.getItem(TEST_STORAGE_KEY);
         this.results = stored ? JSON.parse(stored) : [];
-        console.log(`Loaded ${this.results.length} results for Algebra II`);
+        console.log(`Loaded ${this.results.length} results for ${window.TEST_IDENTIFIER}`);
         return this.results;
       } catch (error) {
         console.error('Error loading test-specific results:', error);
@@ -409,22 +460,15 @@ function getPerformanceLevel(scaledScore) {
       }
     };
     
-    // Override saveTestResult to use test-specific storage and add scaled scores
+    // Override saveTestResult to use test-specific storage
     window.resultsManager.saveTestResult = function(resultData) {
-      // Add scaled score information
-      const rawScore = resultData.correctAnswers;
-      const scaledScore = getScaledScore(rawScore);
-      const performanceLevel = getPerformanceLevel(scaledScore);
-      
+      // Enhanced result data with test identification (no scaled scores)
       const enhancedResultData = {
         ...resultData,
-        scaledScore: scaledScore,
-        performanceLevel: performanceLevel,
-        rawScore: rawScore,
-        testType: 'Algebra II (2015)'
+        testType: window.TEST_IDENTIFIER.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
       };
       
-      console.log(`Saving Algebra II result: ${rawScore}/38 → ${scaledScore} (${performanceLevel})`);
+      console.log(`Saving ${window.TEST_IDENTIFIER} result: ${enhancedResultData.correctAnswers}/${enhancedResultData.totalQuestions} correct (${enhancedResultData.score}%)`);
       
       // Store for immediate use
       window.tempEnhancedResult = enhancedResultData;
@@ -440,9 +484,6 @@ function getPerformanceLevel(scaledScore) {
         correctAnswers: enhancedResultData.correctAnswers,
         timeSpent: enhancedResultData.timeSpent || 0,
         answers: enhancedResultData.answers || [],
-        scaledScore: enhancedResultData.scaledScore,
-        performanceLevel: enhancedResultData.performanceLevel,
-        rawScore: enhancedResultData.rawScore,
         testType: enhancedResultData.testType
       };
       
@@ -460,7 +501,7 @@ function getPerformanceLevel(scaledScore) {
         localStorage.setItem(TEST_STORAGE_KEY, JSON.stringify(this.results));
         console.log('Test-specific result saved successfully:', result.id);
         
-        // Trigger immediate enhancement after saving
+        // Trigger immediate enhancement after saving (for any custom enhancements)
         setTimeout(() => {
           console.log('Triggering immediate enhancement after save');
           enhanceResultsWithRetry();
@@ -476,17 +517,17 @@ function getPerformanceLevel(scaledScore) {
     // Reload results with the new system
     window.resultsManager.results = window.resultsManager.loadAllResults();
     
-    // Also override displayResults to inject scaled scores immediately
+    // Override displayResults to ensure proper timing
     if (window.resultsManager.displayResults) {
       const originalDisplayResults = window.resultsManager.displayResults.bind(window.resultsManager);
       
       window.resultsManager.displayResults = function() {
-        console.log('Results manager displayResults called - injecting scaled scores');
+        console.log('Results manager displayResults called');
         
         // Call original display
         const result = originalDisplayResults.apply(this, arguments);
         
-        // Immediately attempt to enhance with scaled scores
+        // Immediately attempt any custom enhancements
         setTimeout(() => {
           console.log('Post-displayResults enhancement trigger');
           enhanceResultsWithRetry();
@@ -497,228 +538,7 @@ function getPerformanceLevel(scaledScore) {
     }
   }
   
-  // Function to enhance ALL historical results with scaled scores
-  function enhanceAllHistoricalResults() {
-    console.log('Enhancing all historical Algebra II results with scaled scores...');
-    
-    const savedResults = JSON.parse(localStorage.getItem(TEST_STORAGE_KEY) || '[]');
-    let updated = false;
-    
-    savedResults.forEach((result, index) => {
-      if (!result.scaledScore && result.correctAnswers !== undefined) {
-        result.scaledScore = getScaledScore(result.correctAnswers);
-        result.performanceLevel = getPerformanceLevel(result.scaledScore);
-        result.rawScore = result.correctAnswers;
-        result.testType = 'Algebra II (2015)';
-        updated = true;
-        console.log(`Enhanced Algebra II result ${index + 1}: ${result.rawScore}/38 → ${result.scaledScore} (${result.performanceLevel})`);
-      }
-    });
-    
-    if (updated) {
-      localStorage.setItem(TEST_STORAGE_KEY, JSON.stringify(savedResults));
-      console.log('Updated Algebra II results saved');
-      
-      // Update results manager if available
-      if (window.resultsManager && window.resultsManager.results) {
-        window.resultsManager.results = savedResults;
-      }
-    }
-  }
-  
-  function addScaledScoreStyles() {
-    if (document.getElementById('scaled-score-styles')) return;
-    
-    const style = document.createElement('style');
-    style.id = 'scaled-score-styles';
-    style.textContent = `
-      .scaled-score-info {
-        margin-top: 1.5rem;
-        padding: 1.5rem;
-        background-color: var(--secondary-bg, #f0f8ff);
-        border: 2px solid var(--accent-color, #4a6fa5);
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      }
-      
-      .scaled-score-container {
-        display: flex;
-        align-items: center;
-        gap: 1.5rem;
-        margin-bottom: 1rem;
-      }
-      
-      .scaled-score-circle {
-        background: linear-gradient(135deg, var(--accent-color, #4a6fa5) 0%, #2c4f7a 100%);
-        color: white;
-        border-radius: 50%;
-        width: 80px;
-        height: 80px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 1.4rem;
-        font-weight: bold;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        flex-shrink: 0;
-      }
-      
-      .scaled-score-details {
-        flex: 1;
-      }
-      
-      .scaled-score-details p {
-        margin: 0.5rem 0;
-        color: var(--text-color, #333);
-      }
-      
-      .performance-level, .mini-performance-level {
-        padding: 0.25rem 0.5rem;
-        border-radius: 4px;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 0.9rem;
-      }
-      
-      .mini-performance-level {
-        font-size: 0.75rem;
-        padding: 0.15rem 0.3rem;
-        margin-left: 0.25rem;
-      }
-      
-      .performance-level.perfect-score, .mini-performance-level.perfect-score {
-        background-color: #e7c3ff;
-        color: #6f2c91;
-      }
-      
-      .performance-level.pass-advanced, .mini-performance-level.pass-advanced {
-        background-color: var(--success-color, #d4edda);
-        color: var(--success-color, #155724);
-      }
-      
-      .performance-level.pass-proficient, .mini-performance-level.pass-proficient {
-        background-color: #d1ecf1;
-        color: #0c5460;
-      }
-      
-      .performance-level.not-passing, .mini-performance-level.not-passing {
-        background-color: #f8d7da;
-        color: #721c24;
-      }
-      
-      .score-explanation {
-        margin-top: 1rem;
-        padding: 1rem;
-        background-color: var(--input-bg, white);
-        border-left: 4px solid var(--accent-color, #4a6fa5);
-        border-radius: 0 4px 4px 0;
-      }
-      
-      .score-explanation p {
-        margin: 0;
-        font-size: 0.9rem;
-        color: var(--text-color, #666);
-        font-style: italic;
-      }
-      
-      .historical-scaled-score {
-        font-size: 0.85rem;
-        color: var(--text-color, #666);
-        margin-left: 0.5rem;
-      }
-      
-      @media (max-width: 600px) {
-        .scaled-score-container {
-          flex-direction: column;
-          text-align: center;
-        }
-        
-        .scaled-score-circle {
-          width: 70px;
-          height: 70px;
-          font-size: 1.2rem;
-        }
-      }
-    `;
-    
-    document.head.appendChild(style);
-  }
-  
-  function enhanceResultsDisplay() {
-    // This function is now mainly used as a fallback
-    console.log('Fallback enhanceResultsDisplay called');
-    return enhanceResultsWithRetry();
-  }
-  
-  function addScaledScoreToDisplay(resultsSummary, result) {
-    const summaryText = resultsSummary.querySelector('.result-summary-text');
-    if (!summaryText) {
-      console.log('Result summary text not found');
-      return;
-    }
-    
-    // Check if already enhanced to prevent duplicates
-    if (summaryText.querySelector('.scaled-score-info')) {
-      console.log('Scaled score info already present, skipping duplicate');
-      return;
-    }
-    
-    console.log('Adding scaled score display with data:', result);
-    
-    const scaledScoreInfo = document.createElement('div');
-    scaledScoreInfo.className = 'scaled-score-info';
-    scaledScoreInfo.innerHTML = `
-      <div class="scaled-score-container">
-        <div class="scaled-score-circle">${result.scaledScore}</div>
-        <div class="scaled-score-details">
-          <p><strong>Scaled Score:</strong> ${result.scaledScore}</p>
-          <p><strong>Performance Level:</strong> <span class="performance-level ${result.performanceLevel.toLowerCase().replace(/\s+/g, '-')}">${result.performanceLevel}</span></p>
-          <p><strong>Raw Score:</strong> ${result.rawScore || result.correctAnswers}/${result.totalQuestions}</p>
-        </div>
-      </div>
-      <div class="score-explanation">
-        <p><em>The scaled score is a converted score that accounts for test difficulty and allows for comparison across different test versions.</em></p>
-      </div>
-    `;
-    
-    summaryText.appendChild(scaledScoreInfo);
-    addScaledScoreStyles();
-    
-    console.log('Scaled score display added successfully');
-  }
-  
-  function enhanceResultsHistory() {
-    const resultsDetails = document.getElementById('results-details');
-    if (!resultsDetails) return;
-    
-    const resultItems = resultsDetails.querySelectorAll('.result-item');
-    if (resultItems.length === 0) return;
-    
-    const savedResults = JSON.parse(localStorage.getItem(TEST_STORAGE_KEY) || '[]');
-    
-    resultItems.forEach((resultItem, index) => {
-      if (resultItem.querySelector('.historical-scaled-score')) return;
-      
-      const savedResult = savedResults[index];
-      if (!savedResult || !savedResult.scaledScore) return;
-      
-      const resultDetails = resultItem.querySelector('.result-details');
-      if (!resultDetails) return;
-      
-      const historicalScaledScore = document.createElement('span');
-      historicalScaledScore.className = 'historical-scaled-score';
-      historicalScaledScore.innerHTML = ` • Scaled: ${savedResult.scaledScore} (<span class="mini-performance-level ${savedResult.performanceLevel.toLowerCase().replace(/\s+/g, '-')}">${savedResult.performanceLevel}</span>)`;
-      
-      resultDetails.appendChild(historicalScaledScore);
-    });
-  }
-  
-  function checkAndEnhanceResults() {
-    // Legacy function - now redirects to the new retry system
-    return enhanceResultsWithRetry();
-  }
-  
-  // Enhanced finishTest override for immediate scaled score display
+  // Enhanced finishTest override for immediate result processing
   function enhanceFinishTest() {
     // Wait for finishTest to be available
     const waitForFinishTest = () => {
@@ -726,35 +546,28 @@ function getPerformanceLevel(scaledScore) {
         const originalFinishTest = window.finishTest;
         
         window.finishTest = function() {
-          console.log('Enhanced finishTest called - injecting scaled scores immediately');
+          console.log('Enhanced finishTest called - processing results immediately');
           
           // Get current test data
           const correctAnswers = window.currentTestAnswers ? 
             window.currentTestAnswers.filter(answer => answer.correct).length : 0;
-          const totalQuestions = window.questions ? window.questions.length : 38;
-          const score = Math.round((correctAnswers / totalQuestions) * 100);
+          const totalQuestions = window.questions ? window.questions.length : 0;
+          const score = totalQuestions > 0 ? Math.round((correctAnswers / totalQuestions) * 100) : 0;
           
-          // Calculate scaled score data
-          const scaledScore = getScaledScore(correctAnswers);
-          const performanceLevel = getPerformanceLevel(scaledScore);
-          
-          console.log(`Calculated immediately: ${correctAnswers}/${totalQuestions} → ${scaledScore} (${performanceLevel})`);
+          console.log(`Test completed: ${correctAnswers}/${totalQuestions} → ${score}%`);
           
           // Store enhanced data for immediate use
           window.tempEnhancedResult = {
             score: score,
             correctAnswers: correctAnswers,
             totalQuestions: totalQuestions,
-            scaledScore: scaledScore,
-            performanceLevel: performanceLevel,
-            rawScore: correctAnswers,
-            testType: 'Algebra II (2015)'
+            testType: window.TEST_IDENTIFIER.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
           };
           
           // Call original finishTest
           const result = originalFinishTest.apply(this, arguments);
           
-          // Immediately enhance results with multiple attempts
+          // Immediately process results with multiple attempts
           setTimeout(() => enhanceResultsWithRetry(), 50);
           setTimeout(() => enhanceResultsWithRetry(), 150);
           setTimeout(() => enhanceResultsWithRetry(), 300);
@@ -763,7 +576,7 @@ function getPerformanceLevel(scaledScore) {
           return result;
         };
         
-        console.log('finishTest function enhanced for immediate scaled score display');
+        console.log('finishTest function enhanced for immediate result processing');
       } else {
         // Retry if finishTest not yet available
         setTimeout(waitForFinishTest, 100);
@@ -773,7 +586,7 @@ function getPerformanceLevel(scaledScore) {
     waitForFinishTest();
   }
   
-  // Results enhancement with retry logic
+  // Results enhancement with retry logic (for custom enhancements if needed)
   function enhanceResultsWithRetry(retryCount = 0) {
     const maxRetries = 10;
     
@@ -805,62 +618,15 @@ function getPerformanceLevel(scaledScore) {
       return;
     }
     
-    // Check if already enhanced
-    if (resultsSummary.querySelector('.scaled-score-info')) {
-      console.log('Results already enhanced');
-      // Still enhance history in case it's not done
-      setTimeout(() => enhanceResultsHistory(), 100);
-      return;
-    }
+    // For non-scaled tests, we mainly just ensure the basic results are displayed
+    // You can add custom enhancements here if needed for specific test types
     
-    // Try to get result data
-    let resultData = window.tempEnhancedResult;
+    console.log('Basic results enhancement completed for non-scaled test');
     
-    if (!resultData) {
-      // Fallback to results manager
-      const latestResult = window.resultsManager ? window.resultsManager.getLatestResult() : null;
-      if (latestResult) {
-        if (!latestResult.scaledScore && latestResult.correctAnswers !== undefined) {
-          latestResult.scaledScore = getScaledScore(latestResult.correctAnswers);
-          latestResult.performanceLevel = getPerformanceLevel(latestResult.scaledScore);
-          latestResult.rawScore = latestResult.correctAnswers;
-        }
-        resultData = latestResult;
-      }
-    }
+    // Add any test-specific enhancements here
+    // For example: addCustomTestInfo(), enhanceWithSpecialScoring(), etc.
     
-    if (!resultData) {
-      // Last resort - check localStorage
-      const savedResults = JSON.parse(localStorage.getItem(TEST_STORAGE_KEY) || '[]');
-      if (savedResults.length > 0) {
-        resultData = savedResults[0];
-        if (!resultData.scaledScore && resultData.correctAnswers !== undefined) {
-          resultData.scaledScore = getScaledScore(resultData.correctAnswers);
-          resultData.performanceLevel = getPerformanceLevel(resultData.scaledScore);
-          resultData.rawScore = resultData.correctAnswers;
-        }
-      }
-    }
-    
-    if (!resultData || !resultData.scaledScore) {
-      console.log('No valid result data found, retrying...');
-      if (retryCount < maxRetries) {
-        setTimeout(() => enhanceResultsWithRetry(retryCount + 1), 200);
-      }
-      return;
-    }
-    
-    // Add scaled score display
-    console.log('Adding scaled score display immediately');
-    addScaledScoreToDisplay(resultsSummary, resultData);
-    
-    // Enhance history after a short delay
-    setTimeout(() => {
-      enhanceAllHistoricalResults();
-      enhanceResultsHistory();
-    }, 200);
-    
-    console.log('Immediate scaled score enhancement completed');
+    return true;
   }
   
   // MutationObserver to watch for results changes
@@ -873,7 +639,7 @@ function getPerformanceLevel(scaledScore) {
         if (mutation.type === 'childList' || mutation.type === 'subtree') {
           // Check if results summary was updated
           const resultsSummary = document.getElementById('results-summary');
-          if (resultsSummary && !resultsSummary.querySelector('.scaled-score-info')) {
+          if (resultsSummary) {
             const scoreCircle = resultsSummary.querySelector('.score-circle');
             if (scoreCircle) {
               console.log('Results detected via MutationObserver, enhancing...');
@@ -893,10 +659,18 @@ function getPerformanceLevel(scaledScore) {
     console.log('Results MutationObserver setup complete');
   }
   
+  // Legacy function compatibility
+  function enhanceResultsDisplay() {
+    return enhanceResultsWithRetry();
+  }
+  
+  function checkAndEnhanceResults() {
+    return enhanceResultsWithRetry();
+  }
+  
   function initialize() {
-    console.log('Initializing Algebra II independent results system');
+    console.log(`Initializing ${window.TEST_IDENTIFIER} independent results system`);
     
-    addScaledScoreStyles();
     createTestSpecificResultsManager();
     enhanceFinishTest();
     setupResultsObserver();
@@ -922,7 +696,7 @@ function getPerformanceLevel(scaledScore) {
       }
     });
     
-    console.log('Algebra II independent results system initialized');
+    console.log(`${window.TEST_IDENTIFIER} independent results system initialized`);
   }
   
   if (document.readyState === 'loading') {
