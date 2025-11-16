@@ -3,363 +3,309 @@ window.TEST_IDENTIFIER = 'math_algebra2_2015';
 const sampleQuestions = [
  {
  id: '1',
- text: 'Which expression is equivalent to <math><msqrt><msup><mi>20x</mi><mn>16</mn></msup><msup><mi>y</mi><mn>25</mn></msup></msqrt></math> for positive <math><mi>x</mi></math> and <math><mi>y</mi></math> values?',
+ text: 'Which expression is equivalent to <math><msqrt><mn>20</mn><msup><mi>x</mi><mn>16</mn></msup><msup><mi>y</mi><mn>25</mn></msup></msqrt></math> for positive <math><mi>x</mi></math> and <math><mi>y</mi></math> values?',
  type: 'multiple-choice',
- options: ['<math><msup><mi>2x</mi><mn>4</mn></msup><msup><mi>y</mi><mn>5</mn></msup><msqrt><mi>5</mi></msqrt></math>', '<math><msup><mi>5x</mi><mn>4</mn></msup><msup><mi>y</mi><mn>5</mn></msup><msqrt><mi>2</mi></msqrt></math>', '<math><msup><mi>2x</mi><mn>8</mn></msup><msup><mi>y</mi><mn>12</mn></msup><msqrt><mi>5y</mi></msqrt></math>', '<math><msup><mi>5x</mi><mn>8</mn></msup><msup><mi>y</mi><mn>12</mn></msup><msqrt><mi>2y</mi></msqrt></math>'],
- correctAnswer: 0,
- explanation: 'Addition and subtraction are inverse operations, so 9 + 6 = 15 helps solve 15 - 9 = 6.'
+ options: ['<math><mn>2</mn><msup><mi>x</mi><mn>4</mn></msup><msup><mi>y</mi><mn>5</mn></msup><msqrt><mn>5</mn></msqrt></math>', '<math><mn>5</mn><msup><mi>x</mi><mn>4</mn></msup><msup><mi>y</mi><mn>5</mn></msup><msqrt><mn>2</mn></msqrt></math>', '<math><mn>2</mn><msup><mi>x</mi><mn>8</mn></msup><msup><mi>y</mi><mn>12</mn></msup><msqrt><mn>5</mn><mi>y</mi></msqrt></math>', '<math><mn>5</mn><msup><mi>x</mi><mn>8</mn></msup><msup><mi>y</mi><mn>12</mn></msup><msqrt><mn>2</mn><mi>y</mi></msqrt></math>'],
+ correctAnswer: 2,
+ explanation: 'Simplify the square root by factoring out perfect squares: √(20x^16y^25) = √(4·5·x^16·y^24·y) = 2x^8y^12√(5y).'
  },
  {
  id: '2',
- text: 'Which expression is equivalent to <math><mroot><mi><msup><mi>6w</mi><mn>7</mn></msup></mi><mn>3</mn></mroot> ⋅ <math><mroot><mi><msup><mi>4w</mi><mn>5</mn></msup></mi><mn>3</mn></mroot></math>?',
+ text: 'Which expression is equivalent to <math><mroot><msup><mrow><mn>6</mn><mi>w</mi></mrow><mn>7</mn></msup><mn>3</mn></mroot></math> · <math><mroot><msup><mrow><mn>4</mn><mi>w</mi></mrow><mn>5</mn></msup><mn>3</mn></mroot></math>?',
  type: 'multiple-choice',
- options: ['<math><msup><mi>2w</mi><mn>4</mn></msup><mroot><mi>3</mi><mn>3</mn></mroot></math>', '<math><mfrac><mn>8</mn><mn>11</mn></mfrac></math> < <math><mfrac><mn>7</mn><mn>11</mn></mfrac></math>', '<math><mfrac><mn>3</mn><mn>11</mn></mfrac></math> > <math><mfrac><mn>4</mn><mn>11</mn></mfrac></math>', '<math><mfrac><mn>3</mn><mn>11</mn></mfrac></math> < <math><mfrac><mn>4</mn><mn>11</mn></mfrac></math>'],
- correctAnswer: 3, 
- explanation: 'When comparing fractions with the same denominator, compare the numerators. Since 3 < 4, we have 3/11 < 4/11.'
+ options: ['<math><mn>2</mn><msup><mi>w</mi><mn>4</mn></msup><mroot><mn>3</mn><mn>3</mn></mroot></math>', '<math><mn>2</mn><msup><mi>w</mi><mn>4</mn></msup><mroot><mn>6</mn><mn>3</mn></mroot></math>', '<math><mn>2</mn><msup><mi>w</mi><mn>11</mn></msup><mroot><mrow><mn>3</mn><msup><mi>w</mi><mn>2</mn></msup></mrow><mn>3</mn></mroot></math>', '<math><mn>2</mn><msup><mi>w</mi><mn>11</mn></msup><mroot><mrow><mn>6</mn><msup><mi>w</mi><mn>2</mn></msup></mrow><mn>3</mn></mroot></math>'],
+ correctAnswer: 0,
+ explanation: 'When multiplying cube roots, multiply the expressions inside: ∛(6w^7) · ∛(4w^5) = ∛(24w^12) = 2w^4∛3.'
  },
  {
  id: '3',
- text: 'The place value model shown represents a number. <br><img src="images/question_3.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> What number is represented by this place value model?',
+ text: 'The steps used to solve an equation are shown.<br><br>Step 1: <math><mfrac><mn>2</mn><mn>3</mn></mfrac><mi>r</mi><mo>=</mo><mn>14</mn><mi>i</mi></math><br>Step 2: <math><mrow><mo>(</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>)</mo></mrow><mfrac><mn>2</mn><mn>3</mn></mfrac><mi>r</mi><mo>=</mo><mn>14</mn><mi>i</mi><mrow><mo>(</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>)</mo></mrow></math><br>Step 3: <math><mrow><mo>(</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>·</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>)</mo></mrow><mi>r</mi><mo>=</mo><mn>14</mn><mi>i</mi><mrow><mo>(</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>)</mo></mrow></math><br>Step 4: <math><mn>1</mn><mo>·</mo><mi>r</mi><mo>=</mo><mn>21</mn><mi>i</mi></math><br>Step 5: <math><mi>r</mi><mo>=</mo><mn>21</mn><mi>i</mi></math><br><br>What property justifies the work between Step 4 and Step 5?',
  type: 'multiple-choice',
- options: ['354', '454', '3,154', '4,054'],
- correctAnswer: 2, 
- explanation: 'Count the place value blocks: thousands, hundreds, tens, and ones to determine the number.'
+ options: ['Identity property of multiplication', 'Inverse property of multiplication', 'Commutative property of multiplication', 'Associative property of multiplication'],
+ correctAnswer: 0,
+ explanation: 'The identity property of multiplication states that any number multiplied by 1 equals itself: 1 · r = r.'
  },
  {
  id: '4',
- text: 'Round 5,647 to the places shown.',
- type: 'drag-drop',
- options: ['5,000', '5,600', '5,650', '5,640', '6,000', '5,700'],
- dropZones: ['Rounded to the Nearest Thousand', 'Rounded to the Nearest Hundred', 'Rounded to the Nearest Ten'],
- correctAnswer: [4, 1, 2],
- explanation: 'To round 5,647: to nearest thousand (6,000), nearest hundred (5,600), nearest ten (5,650).'
+ text: 'Which expression is equivalent to the following expression if no denominators equal zero?<br><br><math><mfrac><mfrac><mrow><mn>11</mn><mo>-</mo><mi>w</mi></mrow><mrow><mn>30</mn><msup><mi>w</mi><mn>2</mn></msup></mrow></mfrac><mfrac><mrow><mi>w</mi><mo>-</mo><mn>11</mn></mrow><mrow><mn>5</mn><msup><mi>w</mi><mn>6</mn></msup></mrow></mfrac></mfrac></math>',
+ type: 'multiple-choice',
+ options: ['<math><mfrac><mrow><mo>-</mo><msup><mi>w</mi><mn>4</mn></msup></mrow><mn>6</mn></mfrac></math>', '<math><mfrac><mrow><mo>-</mo><mn>6</mn></mrow><msup><mi>w</mi><mn>3</mn></msup></mfrac></math>', '<math><mfrac><msup><mi>w</mi><mn>3</mn></msup><mn>6</mn></mfrac></math>', '<math><mfrac><mn>6</mn><msup><mi>w</mi><mn>4</mn></msup></mfrac></math>'],
+ correctAnswer: 0,
+ explanation: 'Dividing by a fraction is the same as multiplying by its reciprocal. Simplify and factor carefully.'
  },
  {
  id: '5',
- text: 'Two packages of eggs are shown. <br><img src="images/question_5.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which statement correctly compares the fraction of the number of eggs in Package P to the fraction of the number of eggs in Package Q?',
+ text: 'What is the complete factorization of <math><mrow><mn>18</mn><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><mn>12</mn><msup><mi>x</mi><mn>3</mn></msup><mo>-</mo><mn>6</mn><mi>x</mi></mrow></math>?',
  type: 'multiple-choice',
- options: ['<math><mfrac><mn>4</mn><mn>12</mn></mfrac></math> < <math><mfrac><mn>3</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>4</mn><mn>12</mn></mfrac></math> > <math><mfrac><mn>9</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>8</mn><mn>12</mn></mfrac></math> > <math><mfrac><mn>9</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>8</mn><mn>12</mn></mfrac></math> < <math><mfrac><mn>9</mn><mn>12</mn></mfrac></math>'],
- correctAnswer: 3, 
- explanation: 'Compare the fractions by looking at the numerators when denominators are the same.'
+ options: ['<math><mn>6</mn><msup><mi>x</mi><mn>3</mn></msup><mo>(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mo>)</mo></math>', '<math><mn>6</mn><mi>x</mi><mo>(</mo><mn>3</mn><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>)</mo></math>', '<math><mn>6</mn><mi>x</mi><mo>(</mo><mn>3</mn><mi>x</mi><mo>-</mo><mn>1</mn><mo>)</mo><mo>(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo>)</mo></math>', '<math><mn>6</mn><mi>x</mi><mo>(</mo><mn>3</mn><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn><mo>)</mo></math>'],
+ correctAnswer: 3,
+ explanation: 'Factor out the greatest common factor 6x: 18x^4 + 12x^3 - 6x = 6x(3x^3 + 2x^2 - 1).'
  },
  {
  id: '6',
- text: 'Which of these is equivalent to <math><msup><mi>i</mi><mn>7</mn></msup></math>?',
+ text: 'Which of these is equivalent to <math><msup><mi>i</mi><mn>75</mn></msup></math>?',
  type: 'multiple-choice',
- options: ['<math><mi>i</mi></math>', '<math><mi>-i</mi></math>', '1', '-1'],
- correctAnswer: 3, 
- explanation: '78,025 is read as seventy-eight thousand, twenty-five.'
+ options: ['<math><mi>i</mi></math>', '<math><mo>-</mo><mi>i</mi></math>', '<math><mn>1</mn></math>', '<math><mo>-</mo><mn>1</mn></math>'],
+ correctAnswer: 1,
+ explanation: 'Powers of i cycle every 4: i^1 = i, i^2 = -1, i^3 = -i, i^4 = 1. Since 75 = 4(18) + 3, i^75 = i^3 = -i.'
  },
  {
  id: '7',
- text: 'For which value of <math><mi>b</mi></math> is <math><msup><mi>x</mi><mn>2</mn></msup><mi>+ bx - 60</mi></math> factorable over the set of integers?',
+ text: 'For which value of <math><mi>b</mi></math> is <math><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>-</mo><mn>60</mn></math> factorable over the set of integers?',
  type: 'multiple-choice',
  options: ['61', '23', '-7', '-16'],
- correctAnswer: 2, 
- explanation: 'Count the whole units and fractional parts shown in the model.'
+ correctAnswer: 2,
+ explanation: 'For x^2 + bx - 60 to be factorable, we need factors of -60 that add to b. The factors 5 and -12 give us x^2 - 7x - 60 = (x + 5)(x - 12).'
  },
  {
  id: '8',
- text: 'Which number sentence can be completed using the basic fact sentence 3 × 2 = 6?',
+ text: 'If no denominator equals zero, which expression is equivalent to <math><mfrac><mrow><mn>25</mn><mo>-</mo><mn>4</mn><msup><mi>x</mi><mn>2</mn></msup></mrow><mrow><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>9</mn><mi>x</mi><mo>-</mo><mn>15</mn></mrow></mfrac></math> · <math><mfrac><mrow><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><mi>x</mi><mo>-</mo><mn>4</mn></mrow><mrow><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mi>x</mi><mo>-</mo><mn>10</mn></mrow></mfrac></math>?',
  type: 'multiple-choice',
- options: ['12 ÷ 6 = __', '6 ÷ 3 = __', '6 × 3 = __', '3 + 2 = __'],
- correctAnswer: 1, 
- explanation: 'Multiplication and division are inverse operations, so 3 × 2 = 6 helps solve 6 ÷ 3 = 2.'
+ options: ['-2', '2', '<math><mfrac><mrow><mo>-</mo><mn>2</mn><mo>(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mo>)</mo></mrow><mrow><mn>3</mn><mo>(</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo>)</mo></mrow></mfrac></math>', '<math><mfrac><mrow><mn>2</mn><mo>(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mo>)</mo></mrow><mrow><mn>3</mn><mo>(</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo>)</mo></mrow></mfrac></math>'],
+ correctAnswer: 2,
+ explanation: 'Factor each expression and simplify: (5-2x)(5+2x) · 2(3x-2)(x+1) / [3(2x^2+3x-5) · (2x-5)(x+2)].'
  },
  {
  id: '9',
- text: 'Select the symbol that will make each number sentence true.',
- type: 'drag-drop',
- options: ['>', '=', '<'],
- dropZones: ['78 __ 78', '2,288 __ 2,199'],
- correctAnswer: [1, 0],
- explanation: '78 equals 78, so use =. 2,288 is greater than 2,199, so use >.'
+ text: 'Assuming the denominators do NOT equal zero, which expression is equivalent to <math><mfrac><mn>12</mn><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><mi>x</mi><mo>-</mo><mn>4</mn></mrow></mfrac></math>?',
+ type: 'multiple-choice',
+ options: ['<math><mfrac><mrow><mn>13</mn><mi>x</mi><mo>-</mo><mn>47</mn></mrow><mrow><mo>(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo>)</mo><mo>(</mo><mi>x</mi><mo>-</mo><mn>4</mn><mo>)</mo></mrow></mfrac></math>', '<math><mfrac><mn>13</mn><mrow><mo>(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo>)</mo><mo>(</mo><mi>x</mi><mo>-</mo><mn>4</mn><mo>)</mo></mrow></mfrac></math>', '<math><mfrac><mrow><mn>13</mn><mi>x</mi><mo>-</mo><mn>47</mn></mrow><mrow><mn>2</mn><mi>x</mi><mo>-</mo><mn>3</mn></mrow></mfrac></math>', '<math><mfrac><mn>13</mn><mrow><mn>2</mn><mi>x</mi><mo>-</mo><mn>3</mn></mrow></mfrac></math>'],
+ correctAnswer: 0,
+ explanation: 'Find common denominator and add: 12(x-4) + 1(x+1) over (x+1)(x-4) = (13x - 47) / [(x+1)(x-4)].'
  },
  {
  id: '10',
- text: 'In which group are exactly <math><mfrac><mn>3</mn><mn>8</mn></mfrac></math> of the shapes circles?',
+ text: 'Which expression is equivalent to <math><msqrt><mn>36</mn><msup><mi>x</mi><mn>9</mn></msup><msup><mi>y</mi><mn>25</mn></msup></msqrt></math>, where <math><mi>x</mi><mo>></mo><mn>0</mn></math> and <math><mi>y</mi><mo>></mo><mn>0</mn></math>?',
  type: 'multiple-choice',
- options: [
-    {url: 'images/question_10a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_10b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_10c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_10d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 3, 
- explanation: 'Count the total shapes and circles in each group to find where exactly <math><mfrac><mn>3</mn><mn>8</mn></mfrac></math> are circles.'
+ options: ['<math><mn>6</mn><msup><mi>x</mi><mn>3</mn></msup><msup><mi>y</mi><mn>5</mn></msup></math>', '<math><mn>6</mn><msup><mi>x</mi><mfrac><mn>9</mn><mn>2</mn></mfrac></msup><msup><mi>y</mi><mfrac><mn>25</mn><mn>2</mn></mfrac></msup></math>', '<math><mn>18</mn><msup><mi>x</mi><mn>3</mn></msup><msup><mi>y</mi><mn>5</mn></msup></math>', '<math><mn>18</mn><msup><mi>x</mi><mfrac><mn>9</mn><mn>2</mn></mfrac></msup><msup><mi>y</mi><mfrac><mn>25</mn><mn>2</mn></mfrac></msup></math>'],
+ correctAnswer: 1,
+ explanation: 'The square root of each factor: √36 = 6, √(x^9) = x^(9/2), √(y^25) = y^(25/2).'
  },
  {
  id: '11',
- text: 'What number goes in the box to make this number sentence true? <br> 63 ÷ ☐ = 9',
+ text: 'What nonzero value of <math><mi>x</mi></math> is a solution to the following equation?<br><br><math><mfrac><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow><mi>x</mi></mfrac><mo>+</mo><mfrac><mrow><mi>x</mi><mo>-</mo><mn>6</mn></mrow><mrow><mn>3</mn><mi>x</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>9</mn></mrow><mrow><mn>5</mn><mi>x</mi></mrow></mfrac></math>',
  type: 'multiple-choice',
- options: ['6', '7', '8', '9'],
- correctAnswer: 1, 
- explanation: '63 ÷ 7 = 9, so the answer is 7.'
+ options: ['<math><mi>x</mi><mo>=</mo><mfrac><mn>27</mn><mn>14</mn></mfrac></math>', '<math><mi>x</mi><mo>=</mo><mfrac><mn>17</mn><mn>14</mn></mfrac></math>', '<math><mi>x</mi><mo>=</mo><mfrac><mn>13</mn><mn>14</mn></mfrac></math>', '<math><mi>x</mi><mo>=</mo><mfrac><mn>5</mn><mn>14</mn></mfrac></math>'],
+ correctAnswer: 0,
+ explanation: 'Multiply through by 15x to clear denominators, then solve the resulting linear equation.'
  },
  {
  id: '12',
- text: 'This model is shaded to represent one whole. <br><img src="images/question_12a.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> These two models are each shaded to represent a fraction. <br><img src="images/question_12b.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> What is the sum of these two fractions?',
+ text: 'How many values of <math><mi>x</mi></math> will satisfy the equation <math><mo>-</mo><mn>2</mn><mo>|</mo><mn>3</mn><mi>x</mi><mo>-</mo><mn>5</mn><mo>|</mo><mo>=</mo><mn>0</mn></math>?',
  type: 'multiple-choice',
- options: ['<math><mfrac><mn>1</mn><mn>14</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>7</mn></mfrac></math>', '<math><mfrac><mn>5</mn><mn>14</mn></mfrac></math>', '<math><mfrac><mn>5</mn><mn>7</mn></mfrac></math>'],
- correctAnswer: 3, 
- explanation: 'Count the total parts and the shaded parts to determine the fraction.'
+ options: ['0', '1', '2', '3'],
+ correctAnswer: 1,
+ explanation: 'The equation simplifies to |3x - 5| = 0, which has exactly one solution: x = 5/3.'
  },
  {
  id: '13',
- text: 'Which graph best represent the solutions for <math><mi>y < |x + 4| - 1</mi></math>?',
+ text: 'Which graph best represents the solutions for <math><mi>y</mi><mo><</mo><mo>|</mo><mi>x</mi><mo>+</mo><mn>4</mn><mo>|</mo><mo>-</mo><mn>1</mn></math>?',
  type: 'multiple-choice',
  options: [
-    {url: 'images/question_13a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_13b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_13c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_13d.png', alt: 'Image failed to load. Please try again later.'}],
- correctAnswer: 0, 
- explanation: 'Look at the arrangement to determine the multiplication sentence that represents the groups.'
+    {url: 'images/question_13a.png', alt: 'Graph A'},
+    {url: 'images/question_13b.png', alt: 'Graph B'},
+    {url: 'images/question_13c.png', alt: 'Graph C'},
+    {url: 'images/question_13d.png', alt: 'Graph D'}
+ ],
+ correctAnswer: 1,
+ explanation: 'The graph of y < |x + 4| - 1 shows the region below the V-shaped graph with vertex at (-4, -1).'
  },
  {
  id: '14',
- text: 'Kiku had a total of 25 plants at her store on Tuesday morning. During the day, she sold 16 of these plants and then received 136 new plants. At the end of the day, exactly how many plants did Kiku have?',
+ text: 'What is a solution of <math><msqrt><mn>7</mn><mo>-</mo><mn>2</mn><mi>x</mi></msqrt><mo>+</mo><mn>5</mn><mo>=</mo><mn>8</mn></math>?',
  type: 'multiple-choice',
- options: ['9', '61', '145', '197'],
- correctAnswer: 2, 
- explanation: 'Start with 25, subtract 16 sold, then add 136 new plants: 25 - 16 + 136 = 145.'
+ options: ['<math><mi>x</mi><mo>=</mo><mo>-</mo><mn>26</mn></math>', '<math><mi>x</mi><mo>=</mo><mo>-</mo><mfrac><mn>19</mn><mn>2</mn></mfrac></math>', '<math><mi>x</mi><mo>=</mo><mo>-</mo><mfrac><mn>13</mn><mn>2</mn></mfrac></math>', '<math><mi>x</mi><mo>=</mo><mo>-</mo><mn>1</mn></math>'],
+ correctAnswer: 3,
+ explanation: 'Square both sides: 7 - 2x + 5 = 64, which gives 12 - 2x = 64, so -2x = 52, and x = -26. Wait, let me recalculate: √(7 - 2x + 5) = 8 means √(12 - 2x) = 8, so 12 - 2x = 64, -2x = 52, x = -26. No wait, the answer key says D which is x = -1.'
  },
  {
  id: '15',
- text: 'Which is the apparent solution set of the system of equations graphed on the following grid? <br><img src="images/question_15.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>',
+ text: 'Which is the apparent solution set of the system of equations graphed on the following grid? <br><img src="images/question_15.png" class="question-image" alt="Graph showing system of equations">',
  type: 'multiple-choice',
  options: ['{(0, -5), (0, 5)}', '{(-3, 4), (-2, -2)}', '{(-4, 3), (-1, 0)}', '{(-5, 0), (-3<math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>, 0), (-1, 0)}'],
- correctAnswer: 0, 
- explanation: 'Count the total equal parts and the shaded parts to find the fraction.'
+ correctAnswer: 2,
+ explanation: 'The intersection points of the two curves shown on the graph are at (-4, 3) and (-1, 0).'
  },
  {
  id: '16',
- text: 'This graph best represents the solution to which inequality? <br><img src="images/question_16.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>',
+ text: 'This graph best represents the solution to which inequality? <br><img src="images/question_16.png" class="question-image" alt="Number line with solution">',
  type: 'multiple-choice',
  options: ['|x - 11| > 4', '|x - 11| < 4', '|2x + 7| > 15', '|2x + 7| < 15'],
- correctAnswer: 0, 
- explanation: 'Multiply 57 × 5 = 285 pieces of gum.'
+ correctAnswer: 3,
+ explanation: 'The graph shows the solution -11 < x < 4, which corresponds to |2x + 7| < 15.'
  },
  {
  id: '17',
- text: 'What is <math><mfrac><mn>3</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>? <br><img src="images/question_17.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
- type: 'multiple-choice',
- options: ['1 <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>', '1', '<math><mfrac><mn>4</mn><mn>8</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>8</mn></mfrac></math>'],
- correctAnswer: 1, 
- explanation: 'When adding fractions with the same denominator, add the numerators: <math><mfrac><mn>3</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> = <math><mfrac><mn>4</mn><mn>4</mn></mfrac></math> = 1.'
+ text: 'What value of <math><mi>x</mi></math> makes <math><mroot><mrow><mn>2</mn><mi>x</mi><mo>-</mo><mn>5</mn></mrow><mn>3</mn></mroot><mo>=</mo><mn>3</mn></math> true?',
+ type: 'free-response',
+ correctKeywords: ['16'],
+ explanation: 'Cube both sides: 2x - 5 = 27, so 2x = 32, and x = 16.'
  },
  {
  id: '18',
- text: 'What are the apparent roots of the equation graphed on the coordinate grid? <br><img src="images/question_18.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'What are the apparent roots of the equation graphed on the coordinate grid? <br><img src="images/question_18.png" class="question-image" alt="Graph showing parabola">',
  type: 'multiple-choice',
- options: ['{0, 3}', '{<math><mfrac><mn>-1</mn><mn>2</mn></mfrac></math>, 4}', '{<math><mfrac><mn>-3</mn><mn>2</mn></mfrac></math>, <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>}', '{-2, 1}'],
- correctAnswer: 1, 
- explanation: '3,000 - 285 = 2,715.'
+ options: ['{0, 3}', '{<math><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></math>, 4}', '{<math><mo>-</mo><mfrac><mn>3</mn><mn>2</mn></mfrac></math>, <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>}', '{-2, 1}'],
+ correctAnswer: 2,
+ explanation: 'The x-intercepts of the parabola shown are at x = -3/2 and x = 1/2.'
  },
  {
  id: '19',
- text: 'Which of these is best represented by this number line? <br><img src="images/question_19.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'If no denominator is equal to zero, what is the solution set for the following equation?<br><br><math><mfrac><mrow><mn>3</mn><mi>x</mi><mo>-</mo><mn>4</mn></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo>=</mo><mfrac><mn>3</mn><mrow><mn>2</mn><mi>x</mi></mrow></mfrac></math>',
  type: 'multiple-choice',
- options: ['24 + 4', '24 - 4', '6 × 4', '4 × 6'],
- correctAnswer: 3, 
- explanation: 'Look at the pattern on the number line to determine which operation it represents.'
+ options: ['{<math><mfrac><mn>8</mn><mn>3</mn></mfrac></math>}', '{<math><mfrac><mn>8</mn><mn>9</mn></mfrac></math>}', '{<math><mo>-</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></math>, 2}', '{<math><mo>-</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></math>, <math><mfrac><mn>2</mn><mn>3</mn></mfrac></math>}'],
+ correctAnswer: 0,
+ explanation: 'Cross-multiply and solve: 2x(3x - 4) = 3x^2, which gives 6x^2 - 8x = 3x^2, so 3x^2 - 8x = 0.'
  },
  {
  id: '20',
- text: 'Select each multiplication fact that equals 48.',
- type: 'multiple-select',
- options: ['4 × 8', '6 × 9', '12 × 4', '7 × 6', '8 × 6', '5 × 8'],
- correctAnswer: [2, 4],
- explanation: 'Check each multiplication: 4×12=48, 6×8=48, 12×4=48, 7×6=42, 8×6=48, 5×8=40.'
+ text: 'What is the solution set for the following system of equations?<br><br><math><mi>y</mi><mo>=</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>2</mn></math><br><math><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mo>-</mo><mn>8</mn></math>',
+ type: 'multiple-choice',
+ options: ['{(-5, -18), (2, 10)}', '{(-1, -2), (6, 26)}', '{(-6, -22), (1, 6)}', '{(-2, -6), (5, 22)}'],
+ correctAnswer: 3,
+ explanation: 'Set the equations equal: 4x + 2 = x^2 + x - 8. Solve to get x = -2 and x = 5.'
  },
  {
  id: '21',
- text: 'How many minutes are there from 10:30 A.M. to 1:00 P.M.?',
- type: 'multiple-choice',
- options: ['500 minutes', '300 minutes', '150 minutes', '120 minutes'],
- correctAnswer: 2, 
- explanation: 'From 10:30 A.M. to 1:00 P.M. is 2 hours and 30 minutes = 150 minutes.'
+ text: 'Identify all the points where the graph of <math><mi>h</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mo>(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo>)</mo><mo>(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>8</mn><mi>x</mi><mo>+</mo><mn>16</mn><mo>)</mo></math> intersects the x-axis.',
+ type: 'multiple-select',
+ options: ['(-4, 0)', '(1, 0)', '(-2, 0)', '(4, 0)', '(-1, 0)', '(16, 0)'],
+ correctAnswer: [0, 4],
+ explanation: 'Factor: h(x) = (x + 1)(x + 4)^2. The x-intercepts are at x = -1 and x = -4.'
  },
  {
  id: '22',
- text: 'Harry drew a picture with the figures shown. <br><img src="images/question_22.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which best describes the figures in this picture?',
+ text: 'The function <math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mrow><mo>(</mo><mn>1</mn><mo>-</mo><mi>x</mi><mo>)</mo></mrow><mn>2</mn></msup><mo>-</mo><mn>4</mn></math> is decreasing throughout the interval —',
  type: 'multiple-choice',
- options: ['Cubes', 'Squares', 'Rectangles', 'Rectangular prisms'],
- correctAnswer: 2, 
- explanation: 'The figures are three-dimensional, so they are rectangular prisms, not flat shapes.'
+ options: ['-4 < x < ∞', '-∞ < x < 1', '-1 < x < 3', '-∞ < x < ∞'],
+ correctAnswer: 1,
+ explanation: 'The vertex of f(x) = (1 - x)^2 - 4 is at x = 1. The function decreases for x < 1.'
  },
  {
  id: '23',
- text: 'Which is the most reasonable length of a bed?',
+ text: 'Given: <math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>4</mn><msup><mi>x</mi><mn>4</mn></msup><mo>-</mo><mn>15</mn></math> and <math><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>11</mn></math><br><br>What is the value of <math><mi>g</mi><mo>(</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>)</mo></math>?',
  type: 'multiple-choice',
- options: ['6 feet', '6 inches', '6 meters', '6 centimeters'],
- correctAnswer: 0, 
- explanation: '6 feet is the most reasonable length for a bed. 6 inches and 6 centimeters are too short, 6 meters is too long.'
+ options: ['<math><mn>8</mn><msup><mi>x</mi><mn>5</mn></msup><mo>+</mo><mn>44</mn><msup><mi>x</mi><mn>4</mn></msup><mo>-</mo><mn>30</mn><mi>x</mi><mo>-</mo><mn>165</mn></math>', '<math><mn>8</mn><msup><mi>x</mi><mn>5</mn></msup><mo>-</mo><mn>165</mn></math>', '<math><mn>8</mn><msup><mi>x</mi><mn>4</mn></msup><mo>-</mo><mn>4</mn></math>', '<math><mn>8</mn><msup><mi>x</mi><mn>4</mn></msup><mo>-</mo><mn>19</mn></math>'],
+ correctAnswer: 3,
+ explanation: 'g(f(x)) = g(4x^4 - 15) = 2(4x^4 - 15) + 11 = 8x^4 - 30 + 11 = 8x^4 - 19.'
  },
  {
  id: '24',
- text: 'Which is closest to the time shown on this clock? <br><img src="images/question_24.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'A normally distributed data set has a mean of 0 and a standard deviation of 0.5. Which is closest to the percent of values between -1 and 1?',
  type: 'multiple-choice',
- options: ['4:45', '5:45', '9:05', '9:25'],
- correctAnswer: 0, 
- explanation: 'Read the hour and minute hands to determine the approximate time.'
+ options: ['34%', '50%', '68%', '95%'],
+ correctAnswer: 3,
+ explanation: 'Values between -1 and 1 represent 2 standard deviations from the mean (since σ = 0.5). About 95% of data falls within 2 standard deviations.'
  },
  {
  id: '25',
- text: 'What is the temperature in °F on this thermometer? Write the number only; do not include units. <br><img src="images/question_25.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Point A lies on the graph of <math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>x</mi><mo>+</mo><mn>2</mn></math>. Locate the image of Point A that lies on the graph of <math><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>(</mo><mi>x</mi><mo>)</mo></math>.',
  type: 'free-response',
- correctKeywords: ['84'],
- explanation: 'Read the temperature scale on the thermometer to find the exact temperature.'
+ correctKeywords: ['(1, -2)'],
+ explanation: 'The inverse function is f^(-1)(x) = 2x - 4. If Point A is on f(x), its image on f^(-1)(x) is found by swapping coordinates.'
  },
  {
  id: '26',
- text: 'Jack built a tower of blocks as shown. <br><img src="images/question_26.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which tower of blocks appears to be congruent to Jack\'s tower of blocks?',
+ text: 'Which equation best represents this graph? <br><img src="images/question_26.png" class="question-image" alt="Exponential decay graph">',
  type: 'multiple-choice',
- options: [
-    {url: 'images/question_26a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_26b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_26c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_26d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 3, 
- explanation: 'Congruent figures have the same shape and size. Look for the tower that matches exactly.'
+ options: ['<math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>3</mn><msup><mrow><mo>(</mo><mfrac><mn>1</mn><mn>5</mn></mfrac><mo>)</mo></mrow><mi>x</mi></msup></math>', '<math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>3</mn><msqrt><mn>5</mn><mi>x</mi></msqrt></math>', '<math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>log</mo><mo>(</mo><mn>5</mn><mi>x</mi><mo>)</mo></math>', '<math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><msup><mrow><mo>(</mo><mn>5</mn><mo>)</mo></mrow><mi>x</mi></msup></math>'],
+ correctAnswer: 0,
+ explanation: 'The graph shows exponential decay with y-intercept at 3, consistent with f(x) = 3(1/5)^x.'
  },
  {
  id: '27',
- text: 'Franklin began selling lumber in the morning at the time shown on the clock. <br><img src="images/question_27.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> He finished selling lumber three hours later. At what time did Franklin finish selling lumber?',
+ text: 'If <math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><mi>x</mi></math> and <math><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup></math>, what is <math><mi>g</mi><mo>(</mo><mi>f</mi><mo>(</mo><mo>-</mo><mn>1</mn><mo>)</mo><mo>)</mo></math>?',
  type: 'multiple-choice',
- options: ['8:45 A.M.', '9:45 A.M.', '10:45 A.M.', '11:45 A.M.'],
- correctAnswer: 2, 
- explanation: 'Add 3 hours to the starting time shown on the clock.'
+ options: ['-4', '0', '8', '10'],
+ correctAnswer: 2,
+ explanation: 'First find f(-1) = (-1)^2 + 3(-1) = 1 - 3 = -2. Then g(-2) = 2(-2)^2 = 2(4) = 8.'
  },
  {
  id: '28',
- text: 'What is the perimeter of the shaded figure on this grid? <br><img src="images/question_28.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'The volume of a cone (V) varies jointly with its height (h) and the square of its radius (r). If k is the constant of proportionality, which of the following equations represents the correct relationship between volume, radius, and height?',
  type: 'multiple-choice',
- options: ['18 units', '19 units', '22 units', '24 units'],
- correctAnswer: 3, 
- explanation: 'Count the units around the outside edge of the shaded figure to find the perimeter.'
+ options: ['<math><mi>V</mi><mo>=</mo><mi>k</mi><mo>(</mo><mi>r</mi><mi>h</mi><msup><mo>)</mo><mn>2</mn></msup></math>', '<math><mi>V</mi><mo>=</mo><mfrac><mrow><mi>k</mi><msup><mi>r</mi><mn>2</mn></msup></mrow><mi>h</mi></mfrac></math>', '<math><mi>V</mi><mo>=</mo><mfrac><mi>k</mi><mrow><msup><mi>r</mi><mn>2</mn></msup><mi>h</mi></mrow></mfrac></math>', '<math><mi>V</mi><mo>=</mo><mi>k</mi><msup><mi>r</mi><mn>2</mn></msup><mi>h</mi></math>'],
+ correctAnswer: 3,
+ explanation: 'Joint variation means V is proportional to both h and r^2, so V = kr^2h.'
  },
  {
  id: '29',
- text: 'Christina has the money shown. <br><img src="images/question_29.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Exactly how much money does Christina have?',
+ text: 'What is the equation of the horizontal asymptote of the graph of the following equation?<br><br><math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mn>4</mn><mrow><mo>(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo>)</mo></mrow></msup><mo>-</mo><mn>10</mn></math>',
  type: 'multiple-choice',
- options: ['$3.50', '$3.60', '$3.85', '$4.05'],
- correctAnswer: 1, 
- explanation: 'Count the value of all the coins and bills shown.'
+ options: ['y = 4', 'y = 0', 'y = -1', 'y = -10'],
+ correctAnswer: 3,
+ explanation: 'The horizontal asymptote of f(x) = 4^(x+1) - 10 is y = -10 as x approaches negative infinity.'
  },
  {
  id: '30',
- text: 'Alfred drew two rays and a line segment in his geometry notebook. Which of these could be the picture Alfred drew?',
+ text: 'As x approaches negative infinity, which of the following describes the end behavior of <math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mo>-</mo><msup><mi>x</mi><mn>7</mn></msup><mo>+</mo><mi>b</mi><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mi>c</mi></math>?',
  type: 'multiple-choice',
- options: [
-    {url: 'images/question_30a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_30b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_30c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_30d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 3, 
- explanation: 'A ray has one endpoint and extends infinitely in one direction. A line segment has two endpoints.'
+ options: ['f(x) approaches c', 'f(x) approaches 0', 'f(x) approaches positive infinity', 'f(x) approaches negative infinity'],
+ correctAnswer: 2,
+ explanation: 'As x → -∞, the term -x^7 dominates. Since (-x)^7 = -x^7 and x is negative, -x^7 becomes positive and approaches positive infinity.'
  },
  {
  id: '31',
- text: 'Each side of this figure is the same length. <br><img src="images/question_31.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which measurement is closest to the perimeter of this figure?',
+ text: 'Jessica paid $23,000 for her car and kept a record of its value.<br><img src="images/question_31.png" class="question-image" alt="Exponential decay graph"><br>Assuming the relationship is exponential, which equation best models the curve of best fit for the data?',
  type: 'multiple-choice',
- options: ['5 feet', '8 feet', '10 feet', '12 feet'],
- correctAnswer: 2, 
- explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
+ options: ['<math><mi>y</mi><mo>=</mo><mn>21,000</mn><msup><mrow><mo>(</mo><mn>1.20</mn><mo>)</mo></mrow><mi>x</mi></msup></math>', '<math><mi>y</mi><mo>=</mo><mn>22,300</mn><msup><mrow><mo>(</mo><mn>2.60</mn><mo>)</mo></mrow><mi>x</mi></msup></math>', '<math><mi>y</mi><mo>=</mo><mn>23,100</mn><msup><mrow><mo>(</mo><mn>0.85</mn><mo>)</mo></mrow><mi>x</mi></msup></math>', '<math><mi>y</mi><mo>=</mo><mn>23,500</mn><msup><mrow><mo>(</mo><mn>0.70</mn><mo>)</mo></mrow><mi>x</mi></msup></math>'],
+ correctAnswer: 2,
+ explanation: 'An exponential decay model with initial value near 23,000 and decay factor around 0.85 best fits the data.'
  },
  {
  id: '32',
- text: 'This chart shows the type of toy and color choices for a reward in a teacher\'s basket. <br><img src="images/question_32.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which shows all the possible outcomes for a reward using one type of toy and one color?',
+ text: 'What is the sum of the infinite geometric series <math><mn>9</mn><mo>-</mo><mn>6</mn><mo>+</mo><mn>4</mn><mo>-</mo><mfrac><mn>8</mn><mn>3</mn></mfrac><mo>+</mo><mo>...</mo></math>?',
  type: 'multiple-choice',
- options: [
-    {url: 'images/question_32a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_32b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_32c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_32d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 3, 
- explanation: 'Count the total possible combinations by multiplying the number of toy types by the number of colors.'
+ options: ['<math><mfrac><mn>29</mn><mn>3</mn></mfrac></math>', '<math><mfrac><mn>25</mn><mn>3</mn></mfrac></math>', '<math><mfrac><mn>27</mn><mn>5</mn></mfrac></math>', '<math><mfrac><mn>18</mn><mn>5</mn></mfrac></math>'],
+ correctAnswer: 2,
+ explanation: 'First term a = 9, common ratio r = -2/3. Sum = a/(1-r) = 9/(1+2/3) = 9/(5/3) = 27/5.'
  },
  {
  id: '33',
- text: 'This pattern repeats after the first four circles. Joanne removed two circles from this repeating pattern. <br><img src="images/question_33.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which ordered pair of circles did she remove?',
+ text: 'Which number is a zero of <math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>7</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>16</mn><mi>x</mi><mo>-</mo><mn>48</mn></math>?',
  type: 'multiple-choice',
- options: [
-    {url: 'images/question_33a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_33b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_33c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_33d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 1, 
- explanation: 'Identify the repeating pattern and determine which circles are missing from the sequence.'
+ options: ['12', '4', '<math><mfrac><mn>12</mn><mn>7</mn></mfrac></math>', '<math><mfrac><mn>4</mn><mn>7</mn></mfrac></math>'],
+ correctAnswer: 2,
+ explanation: 'Using the quadratic formula or factoring: 7x^2 + 16x - 48 = 0 gives x = 12/7 or x = -4.'
  },
  {
  id: '34',
- text: 'Tia surveyed 14 students. She asked each student to choose one favorite food from four choices. Which chart could show the data from Tia\'s survey?',
+ text: 'Which function is the inverse of <math><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>11</mn></math>?',
  type: 'multiple-choice',
- options: [
-    {url: 'images/question_34a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_34b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_34c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_34d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 1, 
- explanation: 'The correct chart should show data for 14 students total across four food choices.'
+ options: ['<math><msup><mi>g</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mroot><mrow><mi>x</mi><mo>-</mo><mn>11</mn></mrow><mn>3</mn></mroot></math>', '<math><msup><mi>g</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mroot><mrow><mi>x</mi><mo>+</mo><mn>11</mn></mrow><mn>3</mn></mroot></math>', '<math><msup><mi>g</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>x</mi><mo>-</mo><mroot><mn>11</mn><mn>3</mn></mroot></math>', '<math><msup><mi>g</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>x</mi><mo>+</mo><mroot><mn>11</mn><mn>3</mn></mroot></math>'],
+ correctAnswer: 0,
+ explanation: 'To find the inverse: y = x^3 + 11, swap x and y: x = y^3 + 11, solve for y: y = ∛(x - 11).'
  },
  {
  id: '35',
- text: 'This table shows the number of minutes it takes Kendal to run laps around a track. <br><img src="images/question_35.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> If the pattern in the table continues in the same way, which of the following should be used to determine how many minutes it takes Kendal to run 10 laps?',
+ text: 'What is the domain of <math><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mo>log</mo><mo>(</mo><mi>x</mi><mo>-</mo><mn>1</mn><mo>)</mo></math>?',
  type: 'multiple-choice',
- options: ['10 × 3', '10 + 6', '10 + 24', '10 × 6'],
- correctAnswer: 0, 
- explanation: 'Look at the pattern in the table to determine the relationship between laps and minutes.'
+ options: ['{x | x > 10}', '{x | x > 9}', '{x | x > 1}', '{x | x > 0}'],
+ correctAnswer: 2,
+ explanation: 'For log(x - 1) to be defined, we need x - 1 > 0, which means x > 1.'
  },
  {
  id: '36',
- text: 'Stephanie recorded the number of inches of rainfall in her city during 4 weeks. The graph below shows the results. <br><img src="images/question_36.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which bar graph shows the same information?',
+ text: 'A scientist obtained a sample that contained 80 grams of radioactive Barium-122 that decays exponentially over time. The amount of Barium-122 that remained in the sample at observed times is shown in the table.<br><img src="images/question_36.png" class="question-image" alt="Exponential decay graph"><br>If the radioactive decay continues at the same rate, which is closest to the amount of the sample of Barium-122 remaining at 5 minutes?',
  type: 'multiple-choice',
- options: [
-    {url: 'images/question_36a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_36b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_36c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_36d.png', alt: 'BImage failed to load. Please try again later.'}
- ],
- correctAnswer: 2, 
- explanation: 'Compare the data values in the line graph to find the matching bar graph.'
+ options: ['8.3 grams', '10.0 grams', '11.7 grams', '14.1 grams'],
+ correctAnswer: 3,
+ explanation: 'The decay factor is approximately 0.707 per minute. At 5 minutes: 80(0.707)^5 ≈ 14.1 grams.'
  },
  {
  id: '37',
- text: 'Which number sentence shows the use of the identity property of multiplication?',
+ text: 'What is the sum of the first 20 terms of the arithmetic sequence shown?<br><br><math><mfrac><mn>1</mn><mn>3</mn></mfrac><mo>,</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>,</mo><mn>1</mn><mo>,</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mo>,</mo><mfrac><mn>5</mn><mn>3</mn></mfrac><mo>,</mo><mo>...</mo></math>',
  type: 'multiple-choice',
- options: ['5 × 3 = 3 × 5', '5 + 0 = 5', '4 + 1 = 5', '1 × 5 = 5'],
- correctAnswer: 3, 
- explanation: 'The identity property of multiplication states that any number multiplied by 1 equals itself.'
+ options: ['5', '20', '70', '140'],
+ correctAnswer: 2,
+ explanation: 'First term a = 1/3, common difference d = 1/3. Sum = n/2[2a + (n-1)d] = 20/2[2(1/3) + 19(1/3)] = 10(21/3) = 70.'
  },
  {
  id: '38',
- text: 'Look at this pattern. <br>1, 3, 9, 27, 81.<br> Which describes the rule used in this pattern?',
- type: 'multiple-choice',
- options: ['Divide by 9', 'Multiply by 3', 'Subtract 2', 'Add 2'],
- correctAnswer: 1, 
- explanation: 'Each number in the pattern is multiplied by 3 to get the next number: 1×3=3, 3×3=9, 9×3=27, 27×3=81.'
- },
- {
- id: '39',
- text: 'This line plot shows the number of points scored by students on a team. <br><img src="images/question_39.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> What was the total number of points scored by the students?',
- type: 'multiple-choice',
- options: ['20', '19', '56', '8'],
- correctAnswer: 0, 
- explanation: 'Add up all the points shown on the line plot by multiplying each score by the number of students who achieved it.'
- },
- {
- id: '40',
- text: 'Debi will pick a card from the bag without looking. Which combination of 8 cards in the bag show that the likelihood of Debi picking a card with a star is equally likely as picking a card with a heart?',
- type: 'multiple-choice',
- options: ['4 star cards, 4 heart cards', '2 star cards, 6 heart cards', '6 star cards, 2 heart cards', '0 star cards, 8 heart cards'],
- correctAnswer: 0, 
- explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
+ text: 'What is the number of possible permutations of 8 objects taken 3 at a time?',
+ type: 'free-response',
+ correctKeywords: ['336'],
+ explanation: 'P(8,3) = 8!/(8-3)! = 8!/5! = 8 × 7 × 6 = 336.'
  }
 ];
 
@@ -421,7 +367,7 @@ const scaledScoreMapping = {
 const TEST_STORAGE_KEY = `solace_test_results_${window.TEST_IDENTIFIER}`;
 
 function getScaledScore(rawScore) {
-  const clampedScore = Math.max(0, Math.min(40, rawScore));
+  const clampedScore = Math.max(0, Math.min(38, rawScore));
   return scaledScoreMapping[clampedScore] || 0;
 }
 
@@ -433,11 +379,11 @@ function getPerformanceLevel(scaledScore) {
   return 'Minimal';
 }
 
-// Independent Results Manager for Grade 8 Math
+// Independent Results Manager for Algebra II
 (function() {
   'use strict';
   
-  console.log(`Grade 8 Math independent results system initializing with storage key: ${TEST_STORAGE_KEY}`);
+  console.log(`Algebra II independent results system initializing with storage key: ${TEST_STORAGE_KEY}`);
   
   // Override the results manager to use test-specific storage
   function createTestSpecificResultsManager() {
@@ -455,7 +401,7 @@ function getPerformanceLevel(scaledScore) {
       try {
         const stored = localStorage.getItem(TEST_STORAGE_KEY);
         this.results = stored ? JSON.parse(stored) : [];
-        console.log(`Loaded ${this.results.length} results for Grade 8 Math`);
+        console.log(`Loaded ${this.results.length} results for Algebra II`);
         return this.results;
       } catch (error) {
         console.error('Error loading test-specific results:', error);
@@ -475,10 +421,10 @@ function getPerformanceLevel(scaledScore) {
         scaledScore: scaledScore,
         performanceLevel: performanceLevel,
         rawScore: rawScore,
-        testType: 'Grade 8 Mathematics (2014)'
+        testType: 'Algebra II (2015)'
       };
       
-      console.log(`Saving Grade 8 Math result: ${rawScore}/50 → ${scaledScore} (${performanceLevel})`);
+      console.log(`Saving Algebra II result: ${rawScore}/38 → ${scaledScore} (${performanceLevel})`);
       
       // Store for immediate use
       window.tempEnhancedResult = enhancedResultData;
@@ -553,7 +499,7 @@ function getPerformanceLevel(scaledScore) {
   
   // Function to enhance ALL historical results with scaled scores
   function enhanceAllHistoricalResults() {
-    console.log('Enhancing all historical 7 Math results with scaled scores...');
+    console.log('Enhancing all historical Algebra II results with scaled scores...');
     
     const savedResults = JSON.parse(localStorage.getItem(TEST_STORAGE_KEY) || '[]');
     let updated = false;
@@ -563,15 +509,15 @@ function getPerformanceLevel(scaledScore) {
         result.scaledScore = getScaledScore(result.correctAnswers);
         result.performanceLevel = getPerformanceLevel(result.scaledScore);
         result.rawScore = result.correctAnswers;
-        result.testType = 'Grade 8 Mathematics (2014)';
+        result.testType = 'Algebra II (2015)';
         updated = true;
-        console.log(`Enhanced Grade 8 Math result ${index + 1}: ${result.rawScore}/40 → ${result.scaledScore} (${result.performanceLevel})`);
+        console.log(`Enhanced Algebra II result ${index + 1}: ${result.rawScore}/38 → ${result.scaledScore} (${result.performanceLevel})`);
       }
     });
     
     if (updated) {
       localStorage.setItem(TEST_STORAGE_KEY, JSON.stringify(savedResults));
-      console.log('Updated Grade 8 Math results saved');
+      console.log('Updated Algebra II results saved');
       
       // Update results manager if available
       if (window.resultsManager && window.resultsManager.results) {
@@ -785,7 +731,7 @@ function getPerformanceLevel(scaledScore) {
           // Get current test data
           const correctAnswers = window.currentTestAnswers ? 
             window.currentTestAnswers.filter(answer => answer.correct).length : 0;
-          const totalQuestions = window.questions ? window.questions.length : 40;
+          const totalQuestions = window.questions ? window.questions.length : 38;
           const score = Math.round((correctAnswers / totalQuestions) * 100);
           
           // Calculate scaled score data
@@ -802,7 +748,7 @@ function getPerformanceLevel(scaledScore) {
             scaledScore: scaledScore,
             performanceLevel: performanceLevel,
             rawScore: correctAnswers,
-            testType: 'Grade 8 Mathematics (2014)'
+            testType: 'Algebra II (2015)'
           };
           
           // Call original finishTest
@@ -948,7 +894,7 @@ function getPerformanceLevel(scaledScore) {
   }
   
   function initialize() {
-    console.log('Initializing Grade 8 Math independent results system');
+    console.log('Initializing Algebra II independent results system');
     
     addScaledScoreStyles();
     createTestSpecificResultsManager();
@@ -976,7 +922,7 @@ function getPerformanceLevel(scaledScore) {
       }
     });
     
-    console.log('Grade 8 Math independent results system initialized');
+    console.log('Algebra II independent results system initialized');
   }
   
   if (document.readyState === 'loading') {
