@@ -3,427 +3,579 @@ window.TEST_IDENTIFIER = 'math_algebra1_2014';
 const sampleQuestions = [
   {
     id: '1',
-    text: 'Which expression represents four less than half a number, n?',
+    text: 'Look at the graphed function shown.<br><img src="images/question_1.png" class="question-image" alt="Graph showing a parabola"><br>Based on the zeros, which best represents the graphed function?',
     type: 'multiple-choice',
     options: [
-      '<math><mn>4</mn><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>n</mi></math>',
-      '<math><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>n</mi><mo>-</mo><mn>4</mn></math>',
-      '<math><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>(</mo><mn>4</mn><mo>-</mo><mi>n</mi><mo>)</mo></math>',
-      '<math><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>(</mo><mi>n</mi><mo>-</mo><mn>4</mn><mo>)</mo></math>'
+      '<math><mi>y</mi><mo>=</mo><mo>(</mo><mi>x</mi><mo>-</mo><mn>3</mn><mo>)</mo><mo>(</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>2</mn><mo>)</mo></math>',
+      '<math><mi>y</mi><mo>=</mo><mo>(</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>6</mn><mo>)</mo><mo>(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo>)</mo></math>',
+      '<math><mi>y</mi><mo>=</mo><mn>2</mn><mo>(</mo><mi>x</mi><mo>+</mo><mn>3</mn><mo>)</mo><mo>(</mo><mi>x</mi><mo>-</mo><mn>1</mn><mo>)</mo></math>',
+      '<math><mi>y</mi><mo>=</mo><mn>2</mn><mo>(</mo><mi>x</mi><mo>-</mo><mn>3</mn><mo>)</mo><mo>(</mo><mi>x</mi><mo>-</mo><mn>1</mn><mo>)</mo></math>'
     ],
-    correctAnswer: 1,
-    explanation: 'Four less than half a number means we take half the number (1/2)n and subtract 4 from it: (1/2)n - 4.'
+    correctAnswer: 3,
+    explanation: 'The graph shows zeros at x = 1 and x = 3, which corresponds to factors (x - 1) and (x - 3).'
   },
   {
     id: '2',
-    text: 'Which of the following binomials is a factor of <math><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mi>x</mi><mo>-</mo><mn>6</mn></math>?',
+    text: 'Travis would like to buy some toys to donate to charity. He plans to buy 9 dolls at d dollars each, 2 toy cars at c dollars each, and 3 train sets at t dollars each. Which expression represents the total cost, in dollars, of these items that Travis wants to buy?',
     type: 'multiple-choice',
     options: [
-      '<math><mi>x</mi><mo>-</mo><mn>1</mn></math>',
-      '<math><mi>x</mi><mo>-</mo><mn>2</mn></math>',
-      '<math><mi>x</mi><mo>-</mo><mn>3</mn></math>',
-      '<math><mi>x</mi><mo>-</mo><mn>6</mn></math>'
+      '<math><mn>9</mn><mi>c</mi><mo>+</mo><mn>2</mn><mi>t</mi><mo>+</mo><mn>3</mn><mi>d</mi></math>',
+      '<math><mn>9</mn><mi>d</mi><mo>-</mo><mn>2</mn><mi>c</mi><mo>-</mo><mn>3</mn><mi>t</mi></math>',
+      '<math><mn>9</mn><mi>d</mi><mo>+</mo><mn>2</mn><mi>c</mi><mo>+</mo><mn>3</mn><mi>t</mi></math>',
+      '<math><mn>9</mn><mi>c</mi><mo>-</mo><mn>2</mn><mi>t</mi><mo>-</mo><mn>3</mn><mi>d</mi></math>'
     ],
     correctAnswer: 2,
-    explanation: 'Factoring x² - x - 6, we need two numbers that multiply to -6 and add to -1. These are -3 and 2, giving us (x - 3)(x + 2).'
+    explanation: 'Total cost = 9 dolls × d dollars + 2 cars × c dollars + 3 train sets × t dollars = 9d + 2c + 3t.'
   },
   {
     id: '3',
-    text: 'Identify each expression that is in simplest radical form.',
-    type: 'multiple-select',
+    text: 'Which expression is equivalent to <math><mfrac><mrow><mn>18</mn><msup><mi>c</mi><mn>8</mn></msup><msup><mi>d</mi><mn>9</mn></msup></mrow><mrow><mn>9</mn><msup><mi>c</mi><mn>3</mn></msup><msup><mi>d</mi><mn>6</mn></msup></mrow></mfrac></math>? Assume the denominator does not equal zero.',
+    type: 'multiple-choice',
     options: [
-      '<math><mi>x</mi><msqrt><mn>50</mn><mi>y</mi></msqrt></math>',
-      '<math><mn>64</mn><msqrt><mi>x</mi></msqrt></math>',
-      '<math><mn>7</mn><msup><mi>x</mi><mn>3</mn></msup><mi>y</mi><msqrt><mn>2</mn><mi>x</mi><mi>y</mi></msqrt></math>',
-      '<math><msqrt><mn>12</mn><msup><mi>x</mi><mn>3</mn></msup><msup><mi>y</mi><mn>4</mn></msup></msqrt></math>'
+      '<math><mn>2</mn><msup><mi>c</mi><mn>5</mn></msup><msup><mi>d</mi><mn>3</mn></msup></math>',
+      '<math><mn>9</mn><msup><mi>c</mi><mn>5</mn></msup><msup><mi>d</mi><mn>3</mn></msup></math>',
+      '<math><mn>2</mn><msup><mi>c</mi><mn>11</mn></msup><msup><mi>d</mi><mn>15</mn></msup></math>',
+      '<math><mn>9</mn><msup><mi>c</mi><mn>11</mn></msup><msup><mi>d</mi><mn>15</mn></msup></math>'
     ],
-    correctAnswer: [1, 2],
-    explanation: '64√x and 7x³y√(2xy) are in simplest radical form. The others can be simplified further.'
+    correctAnswer: 0,
+    explanation: 'Simplifying: 18/9 = 2, c⁸/c³ = c⁵, d⁹/d⁶ = d³, so the answer is 2c⁵d³.'
   },
   {
     id: '4',
-    text: 'Which expression is equivalent to <math><mfrac><mn>1</mn><mn>6</mn></mfrac><mo>(</mo><mn>30</mn><mi>x</mi><mo>-</mo><mn>24</mn><mi>y</mi><mo>)</mo><mo>-</mo><mfrac><mn>1</mn><mn>8</mn></mfrac><mo>(</mo><mn>32</mn><mi>x</mi><mo>-</mo><mn>16</mn><mi>y</mi><mo>)</mo></math>?',
-    type: 'multiple-choice',
+    text: 'Identify each expression that is a factor of this polynomial.<br><math><mn>4</mn><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><mi>x</mi><mo>-</mo><mn>2</mn></math>',
+    type: 'multiple-select',
     options: [
-      '<math><mi>x</mi><mo>-</mo><mn>6</mn><mi>y</mi></math>',
-      '<math><mi>x</mi><mo>-</mo><mn>2</mn><mi>y</mi></math>',
-      '<math><mn>2</mn><mi>x</mi><mo>-</mo><mn>4</mn><mi>y</mi></math>',
-      '<math><mn>9</mn><mi>x</mi><mo>-</mo><mn>6</mn><mi>y</mi></math>'
+      '<math><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn></math>',
+      '<math><mn>2</mn></math>',
+      '<math><mi>x</mi><mo>-</mo><mn>1</mn></math>',
+      '<math><mn>2</mn><mi>x</mi><mo>-</mo><mn>1</mn></math>',
+      '<math><mn>4</mn><mi>x</mi><mo>-</mo><mn>1</mn></math>'
     ],
-    correctAnswer: 1,
-    explanation: 'Distributing: (1/6)(30x - 24y) - (1/8)(32x - 16y) = 5x - 4y - 4x + 2y = x - 2y.'
+    correctAnswer: [0, 1, 2],
+    explanation: '4x² - 2x - 2 = 2(2x² - x - 1) = 2(2x + 1)(x - 1), so the factors are 2, (2x + 1), and (x - 1).'
   },
   {
     id: '5',
-    text: 'Which is equivalent to <math><mroot><mn>48</mn><mn>3</mn></mroot></math> in simplest form?',
+    text: 'Look at this key.<br><img src="images/question_5.png" class="question-image" alt="Key showing squares for x², rectangles for x, and unit squares"><br>Which model correctly represents the product of <math><mo>(</mo><mi>x</mi><mo>+</mo><mn>3</mn><mo>)</mo></math> and <math><mo>(</mo><mi>x</mi><mo>+</mo><mn>4</mn><mo>)</mo></math>?',
     type: 'multiple-choice',
     options: [
-      '<math><mn>2</mn><mroot><mn>6</mn><mn>3</mn></mroot></math>',
-      '<math><mn>6</mn><mroot><mn>2</mn><mn>3</mn></mroot></math>',
-      '<math><mn>16</mn></math>',
-      '<math><mn>24</mn></math>'
+      {url: 'images/question_5a.png', alt: 'Model A'},
+      {url: 'images/question_5b.png', alt: 'Model B'},
+      {url: 'images/question_5c.png', alt: 'Model C'},
+      {url: 'images/question_5d.png', alt: 'Model D'}
     ],
-    correctAnswer: 0,
-    explanation: '48 = 8 × 6 = 2³ × 6, so ∛48 = ∛(2³ × 6) = 2∛6.'
+    correctAnswer: 3,
+    explanation: '(x + 3)(x + 4) = x² + 7x + 12, which requires 1 x²-square, 7 x-rectangles, and 12 unit squares.'
   },
   {
     id: '6',
-    text: 'What is the value of <math><msqrt><mn>128</mn></msqrt></math> in simplest radical form?',
+    text: 'What is <math><msqrt><mn>18</mn></msqrt></math> written in simplest radical form?',
     type: 'multiple-choice',
     options: [
-      '<math><mn>8</mn><msqrt><mn>2</mn></msqrt></math>',
-      '<math><mn>64</mn><msqrt><mn>2</mn></msqrt></math>',
-      '<math><mn>4</mn><msqrt><mn>8</mn></msqrt></math>',
-      '<math><mn>16</mn><msqrt><mn>8</mn></msqrt></math>'
+      '<math><mn>2</mn><msqrt><mn>3</mn></msqrt></math>',
+      '<math><mn>3</mn><msqrt><mn>2</mn></msqrt></math>',
+      '<math><mn>3</mn><msqrt><mn>6</mn></msqrt></math>',
+      '<math><mn>6</mn><msqrt><mn>3</mn></msqrt></math>'
     ],
-    correctAnswer: 0,
-    explanation: '128 = 64 × 2 = 8² × 2, so √128 = 8√2.'
+    correctAnswer: 1,
+    explanation: '√18 = √(9 × 2) = √9 × √2 = 3√2.'
   },
   {
     id: '7',
-    text: 'Which polynomial is equivalent to this expression if <math><mi>n</mi><mo>≠</mo><mo>-</mo><mn>1</mn></math>?<br><br><math><mfrac><mrow><mn>3</mn><mo>+</mo><mi>n</mi><mo>-</mo><mn>2</mn><msup><mi>n</mi><mn>2</mn></msup></mrow><mrow><mn>1</mn><mo>+</mo><mi>n</mi></mrow></mfrac></math>',
+    text: 'Which binomial is a factor of <math><msup><mi>c</mi><mn>2</mn></msup><mo>-</mo><mn>12</mn><mi>c</mi><mo>+</mo><mn>32</mn></math>?',
     type: 'multiple-choice',
     options: [
-      '<math><mn>2</mn><mi>n</mi><mo>-</mo><mn>3</mn></math>',
-      '<math><mn>3</mn><mo>-</mo><mn>2</mn><mi>n</mi></math>',
-      '<math><mn>3</mn><mo>-</mo><mn>2</mn><msup><mi>n</mi><mn>2</mn></msup></math>',
-      '<math><mn>4</mn><mo>-</mo><mn>2</mn><msup><mi>n</mi><mn>2</mn></msup></math>'
+      '<math><mi>c</mi><mo>-</mo><mn>12</mn></math>',
+      '<math><mi>c</mi><mo>-</mo><mn>8</mn></math>',
+      '<math><mi>c</mi><mo>-</mo><mn>2</mn></math>',
+      '<math><mi>c</mi><mo>-</mo><mn>1</mn></math>'
     ],
     correctAnswer: 1,
-    explanation: 'Using polynomial division or factoring, (3 + n - 2n²)/(1 + n) simplifies to 3 - 2n.'
+    explanation: 'c² - 12c + 32 = (c - 4)(c - 8), so c - 8 is a factor.'
   },
   {
     id: '8',
-    text: 'Which is a factor of <math><mn>2</mn><msup><mi>n</mi><mn>2</mn></msup><mo>-</mo><mn>5</mn><mi>n</mi><mo>-</mo><mn>42</mn></math>?',
+    text: 'What is the value of this expression when <math><mi>x</mi><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac></math>?<br><br><math><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><mi>x</mi><mo>-</mo><mn>2</mn></math>',
     type: 'multiple-choice',
     options: [
-      '<math><mn>2</mn><mi>n</mi><mo>-</mo><mn>7</mn></math>',
-      '<math><mn>2</mn><mi>n</mi><mo>-</mo><mn>6</mn></math>',
-      '<math><mi>n</mi><mo>-</mo><mn>7</mn></math>',
-      '<math><mi>n</mi><mo>-</mo><mn>6</mn></math>'
+      '<math><mfrac><mn>16</mn><mn>3</mn></mfrac></math>',
+      '<math><mfrac><mn>40</mn><mn>9</mn></mfrac></math>',
+      '<math><mfrac><mn>4</mn><mn>3</mn></mfrac></math>',
+      '<math><mfrac><mn>4</mn><mn>9</mn></mfrac></math>'
     ],
     correctAnswer: 3,
-    explanation: '2n² - 5n - 42 = (2n + 7)(n - 6), so n - 6 is a factor.'
+    explanation: 'Substituting x = 2/3: (2/3)² + 3(2/3) - 2 = 4/9 + 2 - 2 = 4/9.'
   },
   {
     id: '9',
-    text: 'Which of the following is equivalent to <math><mfrac><mrow><msup><mi>a</mi><mn>12</mn></msup><msup><mi>b</mi><mn>2</mn></msup></mrow><mrow><msup><mi>a</mi><mn>3</mn></msup><msup><mi>b</mi><mn>6</mn></msup></mrow></mfrac></math>?',
+    text: 'Which expression is equivalent to <math><msup><mrow><mo>(</mo><mn>3</mn><msup><mi>x</mi><mn>-4</mn></msup><mo>)</mo></mrow><mn>2</mn></msup><mo>(</mo><mn>5</mn><msup><mi>x</mi><mn>-2</mn></msup><mo>)</mo></math>?',
     type: 'multiple-choice',
     options: [
-      '<math><mfrac><msup><mi>a</mi><mn>9</mn></msup><msup><mi>b</mi><mn>4</mn></msup></mfrac></math>',
-      '<math><mfrac><msup><mi>b</mi><mn>4</mn></msup><msup><mi>a</mi><mn>9</mn></msup></mfrac></math>',
-      '<math><mfrac><msup><mi>a</mi><mn>4</mn></msup><msup><mi>b</mi><mn>3</mn></msup></mfrac></math>',
-      '<math><msup><mi>a</mi><mn>9</mn></msup><msup><mi>b</mi><mn>4</mn></msup></math>'
+      '<math><mfrac><mn>30</mn><msup><mi>x</mi><mn>10</mn></msup></mfrac></math>',
+      '<math><mn>30</mn><msup><mi>x</mi><mn>14</mn></msup></math>',
+      '<math><mfrac><mn>45</mn><msup><mi>x</mi><mn>10</mn></msup></mfrac></math>',
+      '<math><mn>45</mn><msup><mi>x</mi><mn>14</mn></msup></math>'
     ],
-    correctAnswer: 0,
-    explanation: 'Using exponent rules: a¹²/a³ = a⁹ and b²/b⁶ = b⁻⁴ = 1/b⁴, so the answer is a⁹/b⁴.'
+    correctAnswer: 2,
+    explanation: '(3x⁻⁴)² × (5x⁻²) = 9x⁻⁸ × 5x⁻² = 45x⁻¹⁰ = 45/x¹⁰.'
   },
   {
     id: '10',
-    text: 'What is the value of this expression when <math><mi>n</mi><mo>=</mo><mo>-</mo><mn>15</mn></math>?<br><br><math><mo>-</mo><mn>2</mn><mo>|</mo><mi>n</mi><mo>+</mo><mn>6</mn><mo>|</mo></math>',
+    text: 'Which polynomial is equivalent to <math><mfrac><mrow><mn>18</mn><msup><mi>n</mi><mn>2</mn></msup><mo>-</mo><mn>9</mn><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mrow><mn>3</mn><mi>n</mi><mo>-</mo><mn>1</mn></mrow></mfrac></math>? Assume the divisor is not equal to zero.',
     type: 'multiple-choice',
-    options: ['-42', '-18', '18', '42'],
-    correctAnswer: 1,
-    explanation: 'When n = -15: -2|-15 + 6| = -2|−9| = -2(9) = -18.'
+    options: [
+      '<math><mn>6</mn><mi>n</mi><mo>-</mo><mn>1</mn></math>',
+      '<math><mn>6</mn><mi>n</mi><mo>+</mo><mn>1</mn></math>',
+      '<math><mn>6</mn><msup><mi>n</mi><mn>2</mn></msup><mo>-</mo><mn>3</mn></math>',
+      '<math><mn>18</mn><msup><mi>n</mi><mn>2</mn></msup><mo>-</mo><mn>3</mn></math>'
+    ],
+    correctAnswer: 0,
+    explanation: 'Using polynomial division, (18n² - 9n + 1) ÷ (3n - 1) = 6n - 1.'
   },
   {
     id: '11',
-    text: 'Which graph best represents the equation <math><mn>4</mn><mi>x</mi><mo>+</mo><mn>5</mn><mi>y</mi><mo>=</mo><mo>-</mo><mn>20</mn></math>?',
-    type: 'multiple-choice',
-    options: [
-      {url: 'images/question_11a.png', alt: 'Graph A'},
-      {url: 'images/question_11b.png', alt: 'Graph B'},
-      {url: 'images/question_11c.png', alt: 'Graph C'},
-      {url: 'images/question_11d.png', alt: 'Graph D'}
-    ],
-    correctAnswer: 0,
-    explanation: 'The x-intercept is (-5, 0) and y-intercept is (0, -4), matching graph A.'
+    text: 'What is the value of this expression when <math><mi>a</mi><mo>=</mo><mn>64</mn></math> and <math><mi>b</mi><mo>=</mo><mo>-</mo><mn>5</mn></math>?<br><br><math><mo>-</mo><mn>2</mn><mroot><mi>a</mi><mn>3</mn></mroot><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></math>',
+    type: 'free-response',
+    correctKeywords: ['17'],
+    explanation: '-2∛64 + (-5)² = -2(4) + 25 = -8 + 25 = 17.'
   },
   {
     id: '12',
-    text: 'A formula to find the angle measures of an isosceles triangle is shown.<br><br><math><mn>180</mn><mo>=</mo><mn>2</mn><mi>x</mi><mo>+</mo><mi>y</mi></math><br><br>Which equation can be used to find <math><mi>x</mi></math>?',
+    text: 'When <math><mi>n</mi><mo>></mo><mn>0</mn></math>, which expression is equivalent to <math><msqrt><mn>42</mn><msup><mi>n</mi><mn>9</mn></msup></msqrt></math> in simplest form?',
     type: 'multiple-choice',
     options: [
-      '<math><mi>x</mi><mo>=</mo><mfrac><mrow><mn>180</mn><mo>-</mo><mi>y</mi></mrow><mn>2</mn></mfrac></math>',
-      '<math><mi>x</mi><mo>=</mo><mfrac><mrow><mn>180</mn><mo>+</mo><mi>y</mi></mrow><mn>2</mn></mfrac></math>',
-      '<math><mi>x</mi><mo>=</mo><mn>90</mn><mo>-</mo><mi>y</mi></math>',
-      '<math><mi>x</mi><mo>=</mo><mn>90</mn><mo>+</mo><mi>y</mi></math>'
+      '<math><msup><mi>n</mi><mn>3</mn></msup><msqrt><mn>42</mn></msqrt></math>',
+      '<math><msup><mi>n</mi><mn>4</mn></msup><msqrt><mn>42</mn><mi>n</mi></msqrt></math>',
+      '<math><mn>6</mn><msup><mi>n</mi><mn>3</mn></msup><msqrt><mn>7</mn></msqrt></math>',
+      '<math><mn>6</mn><msup><mi>n</mi><mn>4</mn></msup><msqrt><mn>7</mn><mi>n</mi></msqrt></math>'
     ],
-    correctAnswer: 0,
-    explanation: 'Solving for x: 180 = 2x + y → 180 - y = 2x → x = (180 - y)/2.'
+    correctAnswer: 1,
+    explanation: '√(42n⁹) = √42 × √(n⁹) = n⁴√42.'
   },
   {
     id: '13',
-    text: 'Which equation represents the line that passes through the points <math><mo>(</mo><mo>-</mo><mn>4</mn><mo>,</mo><mn>4</mn><mo>)</mo></math> and <math><mo>(</mo><mn>8</mn><mo>,</mo><mo>-</mo><mn>2</mn><mo>)</mo></math>?',
+    text: 'Look at the system of equations.<br><br><math><mi>y</mi><mo>=</mo><mo>-</mo><mi>x</mi><mo>+</mo><mn>2</mn></math><br><math><mn>7</mn><mi>x</mi><mo>+</mo><mn>4</mn><mi>y</mi><mo>=</mo><mo>-</mo><mn>1</mn></math><br><br>What is the value of x for the solution to this system of equations?',
     type: 'multiple-choice',
-    options: [
-      '<math><mi>y</mi><mo>=</mo><mo>-</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>14</mn></math>',
-      '<math><mi>y</mi><mo>=</mo><mo>-</mo><mn>2</mn><mi>x</mi><mo>-</mo><mn>4</mn></math>',
-      '<math><mi>y</mi><mo>=</mo><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>x</mi><mo>+</mo><mn>2</mn></math>',
-      '<math><mi>y</mi><mo>=</mo><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>x</mi><mo>-</mo><mn>2</mn></math>'
-    ],
-    correctAnswer: 2,
-    explanation: 'Slope = (-2 - 4)/(8 - (-4)) = -6/12 = -1/2. Using point-slope form with (8, -2): y = -1/2x + 2.'
+    options: ['-5', '-3', '3', '5'],
+    correctAnswer: 1,
+    explanation: 'Substituting y = -x + 2 into the second equation: 7x + 4(-x + 2) = -1, which gives x = -3.'
   },
   {
     id: '14',
-    text: 'For which system of inequalities is <math><mo>(</mo><mo>-</mo><mn>3</mn><mo>,</mo><mn>1</mn><mo>)</mo></math> a solution?',
+    text: 'Pierre solved an inequality as shown.<br><br>Step 1: <math><mo>-</mo><mn>8</mn><mo>≥</mo><mi>n</mi><mo>+</mo><mn>3</mn></math><br>Step 2: <math><mo>-</mo><mn>8</mn><mo>+</mo><mo>(</mo><mo>-</mo><mn>3</mn><mo>)</mo><mo>≥</mo><mi>n</mi><mo>+</mo><mn>3</mn><mo>+</mo><mo>(</mo><mo>-</mo><mn>3</mn><mo>)</mo></math><br>Step 3: <math><mo>-</mo><mn>11</mn><mo>≥</mo><mi>n</mi><mo>+</mo><mn>0</mn></math><br>Step 4: <math><mo>-</mo><mn>11</mn><mo>≥</mo><mi>n</mi></math><br><br>What property justifies the work between Step 3 and Step 4?',
     type: 'multiple-choice',
     options: [
-      '<math><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>&lt;</mo><mo>-</mo><mn>2</mn></mrow></math><br><math><mrow><mn>2</mn><mi>x</mi><mo>-</mo><mn>3</mn><mi>y</mi><mo>&lt;</mo><mo>-</mo><mn>9</mn></mrow></math>',
-      '<math><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>&lt;</mo><mo>-</mo><mn>2</mn></mrow></math><br><math><mrow><mn>2</mn><mi>x</mi><mo>-</mo><mn>3</mn><mi>y</mi><mo>≤</mo><mo>-</mo><mn>9</mn></mrow></math>',
-      '<math><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>≤</mo><mo>-</mo><mn>2</mn></mrow></math><br><math><mrow><mn>2</mn><mi>x</mi><mo>-</mo><mn>3</mn><mi>y</mi><mo>&lt;</mo><mo>-</mo><mn>9</mn></mrow></math>',
-      '<math><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>≤</mo><mo>-</mo><mn>2</mn></mrow></math><br><math><mrow><mn>2</mn><mi>x</mi><mo>-</mo><mn>3</mn><mi>y</mi><mo>≤</mo><mo>-</mo><mn>9</mn></mrow></math>'
+      'Inverse property of addition',
+      'Identity property of addition',
+      'Addition property of inequality',
+      'Commutative property of addition'
     ],
-    correctAnswer: 3,
-    explanation: 'Checking (-3, 1): x + y = -3 + 1 = -2 ≤ -2 ✓ and 2x - 3y = -6 - 3 = -9 ≤ -9 ✓.'
+    correctAnswer: 1,
+    explanation: 'n + 0 = n uses the identity property of addition.'
   },
   {
     id: '15',
-    text: 'What is the solution to this system of equations?<br><br><math><mn>2</mn><mi>x</mi><mo>+</mo><mn>4</mn><mi>y</mi><mo>=</mo><mn>22</mn></math><br><math><mn>7</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>12</mn></math>',
+    text: 'Which property of real numbers justifies the work shown?<br><br><math><mn>13</mn><mi>x</mi><mo>-</mo><mn>1</mn><mo>=</mo><mo>(</mo><mn>12</mn><mi>x</mi><mo>+</mo><mn>15</mn><mo>)</mo><mo>+</mo><mn>7</mn><mi>x</mi></math><br><math><mn>13</mn><mi>x</mi><mo>-</mo><mn>1</mn><mo>=</mo><mn>7</mn><mi>x</mi><mo>+</mo><mo>(</mo><mn>12</mn><mi>x</mi><mo>+</mo><mn>15</mn><mo>)</mo></math>',
     type: 'multiple-choice',
-    options: ['(3, 4)', '(2, -2)', '(1, 5)', '(-1, 6)'],
-    correctAnswer: 2,
-    explanation: 'Solving by substitution or elimination gives x = 1, y = 5.'
+    options: [
+      'Commutative property of addition',
+      'Associative property of addition',
+      'Identity property of addition',
+      'Distributive property'
+    ],
+    correctAnswer: 0,
+    explanation: 'The order of addition terms is changed, which uses the commutative property of addition.'
   },
   {
     id: '16',
-    text: 'The graph of <math><mi>y</mi><mo>=</mo><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>8</mn></math> is shown. On the grid, identify each of the solutions to <math><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>8</mn><mo>=</mo><mn>0</mn></math>.',
-    type: 'point-select',
-    correctAnswer: [[-4, 0], [2, 0]],
-    explanation: 'The x-intercepts of the parabola are at x = -4 and x = 2.'
+    text: 'What is the slope of the line represented by <math><mfrac><mn>1</mn><mn>8</mn></mfrac><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>=</mo><mn>3</mn></math>?',
+    type: 'multiple-choice',
+    options: [
+      '<math><mo>-</mo><mfrac><mn>1</mn><mn>8</mn></mfrac></math>',
+      '<math><mo>-</mo><mfrac><mn>1</mn><mn>24</mn></mfrac></math>',
+      '<math><mfrac><mn>1</mn><mn>24</mn></mfrac></math>',
+      '<math><mfrac><mn>1</mn><mn>8</mn></mfrac></math>'
+    ],
+    correctAnswer: 1,
+    explanation: 'Solving for y: 3y = -1/8 x + 3, so y = -1/24 x + 1. The slope is -1/24.'
   },
   {
     id: '17',
-    text: 'What value of <math><mi>x</mi></math> makes this equation true?<br><br><math><mn>3</mn><mi>x</mi><mo>-</mo><mn>20</mn><mo>=</mo><mo>-</mo><mn>2</mn><mi>x</mi></math>',
-    type: 'multiple-choice',
-    options: ['-20', '-4', '4', '20'],
-    correctAnswer: 2,
-    explanation: '3x - 20 = -2x → 5x = 20 → x = 4.'
+    text: 'Solve for x:<br><br><math><mo>-</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>6</mn><mo><</mo><mi>x</mi><mo>-</mo><mn>6</mn></math>',
+    type: 'free-response',
+    correctKeywords: ['x > 4', 'x>4', '4 < x', '4<x'],
+    explanation: '-2x + 6 < x - 6 → -3x < -12 → x > 4.'
   },
   {
     id: '18',
-    text: 'Which equation best represents line <math><mi>m</mi></math>?<br><img src="images/question_18.png" class="question-image" alt="Graph showing line m">',
+    text: 'Which graph best models <math><mi>y</mi><mo>≤</mo><mfrac><mn>2</mn><mn>7</mn></mfrac><mi>x</mi><mo>-</mo><mn>2</mn></math>?',
     type: 'multiple-choice',
     options: [
-      '<math><mi>y</mi><mo>=</mo><mo>-</mo><mn>3</mn><mi>x</mi><mo>-</mo><mn>4</mn></math>',
-      '<math><mi>y</mi><mo>=</mo><mo>-</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>x</mi><mo>-</mo><mn>4</mn></math>',
-      '<math><mi>y</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>x</mi><mo>-</mo><mn>4</mn></math>',
-      '<math><mi>y</mi><mo>=</mo><mn>3</mn><mi>x</mi><mo>-</mo><mn>4</mn></math>'
+      {url: 'images/question_18a.png', alt: 'Graph A'},
+      {url: 'images/question_18b.png', alt: 'Graph B'},
+      {url: 'images/question_18c.png', alt: 'Graph C'},
+      {url: 'images/question_18d.png', alt: 'Graph D'}
     ],
     correctAnswer: 2,
-    explanation: 'From the graph, the line has a positive slope of 1/3 and y-intercept of -4.'
+    explanation: 'Graph C shows the line y = 2/7 x - 2 with shading below (≤).'
   },
   {
     id: '19',
-    text: 'Christopher incorrectly solved an inequality. Between which two consecutive steps did Christopher make a mistake?<br><br>Step 1: <math><mo>-</mo><mn>4</mn><mo>(</mo><mi>x</mi><mo>-</mo><mn>7</mn><mo>)</mo><mo>+</mo><mn>1</mn><mo>≤</mo><mo>-</mo><mn>3</mn></math><br>Step 2: <math><mo>-</mo><mn>4</mn><mo>(</mo><mi>x</mi><mo>-</mo><mn>7</mn><mo>)</mo><mo>≤</mo><mo>-</mo><mn>4</mn></math><br>Step 3: <math><mo>-</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>28</mn><mo>≤</mo><mo>-</mo><mn>4</mn></math><br>Step 4: <math><mo>-</mo><mn>4</mn><mi>x</mi><mo>≤</mo><mo>-</mo><mn>32</mn></math><br>Step 5: <math><mi>x</mi><mo>≤</mo><mn>8</mn></math>',
+    text: 'Which inequality represents all the solutions of <math><mn>9</mn><mo>(</mo><mn>4</mn><mi>x</mi><mo>-</mo><mn>8</mn><mo>)</mo><mo><</mo><mn>4</mn><mo>(</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>9</mn><mo>)</mo></math>?',
     type: 'multiple-choice',
-    options: ['Step 1 and Step 2', 'Step 2 and Step 3', 'Step 3 and Step 4', 'Step 4 and Step 5'],
-    correctAnswer: 3,
-    explanation: 'When dividing by -4 in Step 5, the inequality sign should reverse: x ≥ 8.'
+    options: [
+      '<math><mi>x</mi><mo><</mo><mo>-</mo><mn>3</mn></math>',
+      '<math><mi>x</mi><mo>></mo><mo>-</mo><mn>3</mn></math>',
+      '<math><mi>x</mi><mo><</mo><mn>9</mn></math>',
+      '<math><mi>x</mi><mo>></mo><mn>9</mn></math>'
+    ],
+    correctAnswer: 2,
+    explanation: '36x - 72 < 24x + 36 → 12x < 108 → x < 9.'
   },
   {
     id: '20',
-    text: 'Solve for <math><mi>n</mi></math>:<br><br><math><mfrac><mrow><mn>3</mn><mi>n</mi><mo>-</mo><mn>7</mn></mrow><mn>6</mn></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mi>n</mi><mo>+</mo><mn>5</mn></mrow><mn>3</mn></mfrac></math>',
-    type: 'free-response',
-    correctKeywords: ['-17'],
-    explanation: 'Cross-multiplying: 3(3n - 7) = 6(2n + 5) → 9n - 21 = 12n + 30 → -3n = 51 → n = -17.'
+    text: 'A total of 243 adults and children are at a movie theater. There are 109 more adults than children in the theater. If a represents the number of adults and b represents the number of children, which system of equations could be used to find the number of adults and the number of children in the theater?',
+    type: 'multiple-choice',
+    options: [
+      '<math><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>=</mo><mn>243</mn></mrow></math><br><math><mrow><mi>a</mi><mo>=</mo><mn>109</mn><mi>b</mi></mrow></math>',
+      '<math><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>=</mo><mn>243</mn></mrow></math><br><math><mrow><mi>b</mi><mo>=</mo><mn>109</mn><mi>a</mi></mrow></math>',
+      '<math><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>=</mo><mn>243</mn></mrow></math><br><math><mrow><mi>a</mi><mo>=</mo><mi>b</mi><mo>+</mo><mn>109</mn></mrow></math>',
+      '<math><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>=</mo><mn>243</mn></mrow></math><br><math><mrow><mi>b</mi><mo>=</mo><mi>a</mi><mo>+</mo><mn>109</mn></mrow></math>'
+    ],
+    correctAnswer: 2,
+    explanation: 'Total: a + b = 243. Adults are 109 more than children: a = b + 109.'
   },
   {
     id: '21',
-    text: 'What values of <math><mi>x</mi></math> are solutions of <math><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>11</mn><mi>x</mi><mo>=</mo><mn>20</mn></math>?',
-    type: 'multiple-choice',
-    options: [
-      '<math><mo>-</mo><mfrac><mn>4</mn><mn>3</mn></mfrac></math> and 5',
-      '<math><mo>-</mo><mfrac><mn>5</mn><mn>3</mn></mfrac></math> and 4',
-      '-4 and <math><mfrac><mn>5</mn><mn>3</mn></mfrac></math>',
-      '-5 and <math><mfrac><mn>4</mn><mn>3</mn></mfrac></math>'
-    ],
-    correctAnswer: 3,
-    explanation: 'Rearranging: 3x² + 11x - 20 = 0. Factoring: (3x - 4)(x + 5) = 0. Solutions: x = 4/3 or x = -5.'
+    text: 'A system of inequalities is shown.<br><br><math><mi>y</mi><mo>></mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>x</mi><mo>+</mo><mn>1</mn></math><br><math><mi>y</mi><mo>+</mo><mn>3</mn><mi>x</mi><mo>≤</mo><mn>6</mn></math><br><br>From the given points, select each point that is a solution to this system of inequalities.',
+    type: 'multiple-select',
+    options: ['(-1, -3)', '(1, 2)', '(2, 0)', '(4, 6)'],
+    correctAnswer: [1],
+    explanation: 'Only (1, 2) satisfies both inequalities: 2 > 1/2(1) + 1 ✓ and 2 + 3(1) ≤ 6 ✓.'
   },
   {
     id: '22',
-    text: 'The graph of line <math><mi>l</mi></math> is shown. Which number is closest in value to the slope of line <math><mi>l</mi></math>?<br><img src="images/question_22.png" class="question-image" alt="Graph showing line l">',
+    text: 'The graph of line n is shown.<br><img src="images/question_22.png" class="question-image" alt="Graph showing line n"><br>Which number is closest in value to the slope of line n?',
     type: 'multiple-choice',
-    options: ['-6', '<math><mo>-</mo><mfrac><mn>1</mn><mn>6</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>6</mn></mfrac></math>', '6'],
-    correctAnswer: 1,
-    explanation: 'From the graph, the line has a small negative slope, approximately -1/6.'
+    options: ['-4', '<math><mo>-</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>', '4'],
+    correctAnswer: 2,
+    explanation: 'From the graph, the line has a small positive slope of approximately 1/4.'
   },
   {
     id: '23',
-    text: 'Based on the transitive property, complete this statement.<br><br>If <math><mn>2</mn><mo>(</mo><mi>y</mi><mo>-</mo><mn>3</mn><mo>)</mo><mo>≥</mo><mn>3</mn><mi>x</mi><mo>-</mo><mn>4</mn></math> and <math><mn>3</mn><mi>x</mi><mo>-</mo><mn>4</mn><mo>≥</mo><mn>6</mn><mo>-</mo><mi>y</mi></math>, then <math><mn>2</mn><mo>(</mo><mi>y</mi><mo>-</mo><mn>3</mn><mo>)</mo><mo>≥</mo></math> __?__',
-    type: 'free-response',
-    correctKeywords: ['6-y'],
-    explanation: 'By the transitive property, if a ≥ b and b ≥ c, then a ≥ c. So 2(y - 3) ≥ 6 - y.'
+    text: 'The formula shown can be used to find A, the amount of money Raul has in his savings account.<br><br><math><mi>A</mi><mo>=</mo><mi>P</mi><mo>+</mo><mi>P</mi><mi>r</mi><mi>t</mi></math><br><br>Raul wants to find r, the rate of interest his money earns. Which equation is correctly solved for r?',
+    type: 'multiple-choice',
+    options: [
+      '<math><mi>r</mi><mo>=</mo><mi>A</mi><mi>P</mi><mi>t</mi></math>',
+      '<math><mi>r</mi><mo>=</mo><mi>A</mi><mo>-</mo><mn>2</mn><mi>P</mi><mi>t</mi></math>',
+      '<math><mi>r</mi><mo>=</mo><mfrac><mi>A</mi><mrow><mn>2</mn><mi>P</mi><mi>t</mi></mrow></mfrac></math>',
+      '<math><mi>r</mi><mo>=</mo><mfrac><mrow><mi>A</mi><mo>-</mo><mi>P</mi></mrow><mrow><mi>P</mi><mi>t</mi></mrow></mfrac></math>'
+    ],
+    correctAnswer: 3,
+    explanation: 'A = P + Prt → A - P = Prt → r = (A - P)/(Pt).'
   },
   {
     id: '24',
-    text: 'This system of linear equations is graphed as shown. What is the solution to this system of equations?<br><br><math><mn>3</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>=</mo><mn>2</mn></math><br><math><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>=</mo><mo>-</mo><mn>18</mn></math><br><img src="images/question_24.png" class="question-image" alt="Graph showing system of equations">',
+    text: 'What are the real roots of <math><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>7</mn><mi>x</mi><mo>+</mo><mn>10</mn><mo>=</mo><mn>0</mn></math>?',
     type: 'multiple-choice',
-    options: ['(2, -6)', '(3, -7)', '(-6, 2)', '(-7, 3)'],
-    correctAnswer: 1,
-    explanation: 'From the graph, the lines intersect at (3, -7).'
+    options: [
+      '2 and 5',
+      '1 and 10',
+      '-1 and -10',
+      '-2 and -5'
+    ],
+    correctAnswer: 0,
+    explanation: 'Factoring: (x - 2)(x - 5) = 0, so x = 2 or x = 5.'
   },
   {
     id: '25',
-    text: 'Renee is going bowling.<br>• The cost per game is $2.50.<br>• Renee will need to rent a pair of bowling shoes for $1.50.<br>• She can spend up to $16.00 to bowl and rent a pair of shoes.<br><br>What is the maximum number of games that Renee can bowl?',
+    text: 'A data set with an even number of data points is ordered from least to greatest. The middle two data points are represented by x₁ and x₂. This formula can be used to find the median of the data set.<br><br><math><mi>m</mi><mo>=</mo><mfrac><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mn>2</mn></mfrac></math><br><br>Which shows this formula solved for x₁?',
     type: 'multiple-choice',
-    options: ['4', '5', '6', '9'],
+    options: [
+      '<math><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mi>m</mi><mo>-</mo><mfrac><msub><mi>x</mi><mn>2</mn></msub><mn>2</mn></mfrac></math>',
+      '<math><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><mi>m</mi><mo>-</mo><msub><mi>x</mi><mn>2</mn></msub></math>',
+      '<math><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><mi>m</mi><mo>-</mo><mn>2</mn><msub><mi>x</mi><mn>2</mn></msub></math>',
+      '<math><msub><mi>x</mi><mn>1</mn></msub><mo>=</mo><mi>m</mi><mo>-</mo><mn>2</mn><mo>-</mo><msub><mi>x</mi><mn>2</mn></msub></math>'
+    ],
     correctAnswer: 1,
-    explanation: '1.50 + 2.50x ≤ 16.00 → 2.50x ≤ 14.50 → x ≤ 5.8. Maximum whole number is 5 games.'
+    explanation: 'm = (x₁ + x₂)/2 → 2m = x₁ + x₂ → x₁ = 2m - x₂.'
   },
   {
     id: '26',
-    text: 'Malik can spend no more than $24 to buy pecans and cashews. He will pay $6 per pound for pecans and $8 per pound for cashews. Which graph best represents the number of pounds of pecans and the number of pounds of cashews Malik can buy?',
+    text: 'Which equation represents the horizontal line passing through (7, 5)?',
     type: 'multiple-choice',
     options: [
-      {url: 'images/question_26a.png', alt: 'Graph A'},
-      {url: 'images/question_26b.png', alt: 'Graph B'},
-      {url: 'images/question_26c.png', alt: 'Graph C'},
-      {url: 'images/question_26d.png', alt: 'Graph D'}
+      '<math><mi>x</mi><mo>=</mo><mn>5</mn></math>',
+      '<math><mi>y</mi><mo>=</mo><mn>5</mn></math>',
+      '<math><mi>x</mi><mo>=</mo><mn>7</mn></math>',
+      '<math><mi>y</mi><mo>=</mo><mn>7</mn></math>'
     ],
-    correctAnswer: 3,
-    explanation: '6p + 8c ≤ 24, which simplifies to 3p + 4c ≤ 12. Graph D shows the correct shaded region.'
+    correctAnswer: 1,
+    explanation: 'A horizontal line has constant y-value. Since it passes through (7, 5), y = 5.'
   },
   {
     id: '27',
-    text: 'Point A is an element of a direct variation. Plot two points, other than A, that are elements of this direct variation. The coordinates of the points must be integers.<br><img src="images/question_27.png" class="question-image" alt="Coordinate grid with point A">',
-    type: 'grid-plot',
-    correctAnswer: 'Various points on line through origin and A',
-    explanation: 'Direct variation passes through the origin. Any points on the line y = kx where k is determined by point A.'
+    text: 'The graph of <math><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><mi>x</mi><mo>-</mo><mn>8</mn></math> is shown.<br><img src="images/question_27.png" class="question-image" alt="Graph of parabola"><br>What are the solutions to <math><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><mi>x</mi><mo>-</mo><mn>8</mn><mo>=</mo><mn>0</mn></math>?',
+    type: 'multiple-choice',
+    options: [
+      '<math><mi>x</mi><mo>=</mo><mn>1</mn></math> and <math><mi>x</mi><mo>=</mo><mo>-</mo><mn>9</mn></math>',
+      '<math><mi>x</mi><mo>=</mo><mn>0</mn></math> and <math><mi>x</mi><mo>=</mo><mo>-</mo><mn>8</mn></math>',
+      '<math><mi>x</mi><mo>=</mo><mo>-</mo><mn>2</mn></math> and <math><mi>x</mi><mo>=</mo><mn>4</mn></math>',
+      '<math><mi>x</mi><mo>=</mo><mo>-</mo><mn>4</mn></math> and <math><mi>x</mi><mo>=</mo><mn>2</mn></math>'
+    ],
+    correctAnswer: 2,
+    explanation: 'The x-intercepts of the parabola are at x = -2 and x = 4.'
   },
   {
     id: '28',
-    text: 'Which graph has exactly one x-intercept and one y-intercept?',
+    text: 'What value of p will make this equation true?<br><br><math><mfrac><mrow><mn>6</mn><mi>p</mi><mo>+</mo><mn>4</mn></mrow><mn>6</mn></mfrac><mo>=</mo><mfrac><mrow><mn>4</mn><mi>p</mi><mo>-</mo><mn>8</mn></mrow><mn>3</mn></mfrac></math>',
     type: 'multiple-choice',
-    options: [
-      {url: 'images/question_28a.png', alt: 'Graph A - horizontal line'},
-      {url: 'images/question_28b.png', alt: 'Graph B - diagonal line'},
-      {url: 'images/question_28c.png', alt: 'Graph C - line segment'},
-      {url: 'images/question_28d.png', alt: 'Graph D - diagonal line'}
-    ],
-    correctAnswer: 1,
-    explanation: 'Graph B shows a diagonal line that crosses both axes exactly once.'
+    options: ['-10', '-6', '2', '10'],
+    correctAnswer: 3,
+    explanation: 'Cross-multiply: 3(6p + 4) = 6(4p - 8) → 18p + 12 = 24p - 48 → p = 10.'
   },
   {
     id: '29',
-    text: 'Which equation best represents this data set?<br><br>{(-4, -4.8), (-3, -8.2), (-2, -9.1), (-1, -8.1), (0, -4.7), (1, 0.3)}',
-    type: 'multiple-choice',
-    options: [
-      '<math><mi>y</mi><mo>=</mo><mn>1.1</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4.2</mn><mi>x</mi><mo>+</mo><mn>4.9</mn></math>',
-      '<math><mi>y</mi><mo>=</mo><mn>1.1</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4.2</mn><mi>x</mi><mo>-</mo><mn>4.9</mn></math>',
-      '<math><mi>y</mi><mo>=</mo><mn>1.1</mn><mi>x</mi><mo>-</mo><mn>4.2</mn></math>',
-      '<math><mi>y</mi><mo>=</mo><mn>1.1</mn><mi>x</mi><mo>+</mo><mn>4.2</mn></math>'
-    ],
-    correctAnswer: 1,
-    explanation: 'The quadratic equation y = 1.1x² + 4.2x - 4.9 best fits the given data points.'
+    text: 'What is the slope of the line represented by this equation?<br><br><math><mn>3</mn><mi>x</mi><mo>+</mo><mn>5</mn><mi>y</mi><mo>=</mo><mo>-</mo><mn>7</mn></math>',
+    type: 'free-response',
+    correctKeywords: ['-3/5', '-0.6'],
+    explanation: 'Rewriting in slope-intercept form: 5y = -3x - 7, so y = -3/5 x - 7/5. Slope = -3/5.'
   },
   {
     id: '30',
-    text: 'A relationship between <math><mi>x</mi></math> and <math><mi>y</mi></math> is shown in this table.<br><img src="images/question_30.png" class="question-image" alt="Table showing values of x and y"><br>Which equation represents this relationship?',
+    text: 'The length, l, of a rectangle is 3 times its width. The perimeter of the rectangle is greater than 48 centimeters. Which inequality expresses all the possible lengths, in centimeters, of the rectangle?',
     type: 'multiple-choice',
     options: [
-      '<math><mi>y</mi><mo>=</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn></math>',
-      '<math><mi>y</mi><mo>=</mo><mn>5</mn><mi>x</mi><mo>-</mo><mn>5</mn></math>',
-      '<math><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></math>',
-      '<math><mi>y</mi><mo>=</mo><msup><mi>(x+1)</mi><mn>2</mn></msup></math>'
+      '<math><mi>l</mi><mo>></mo><mn>6</mn></math>',
+      '<math><mi>l</mi><mo>></mo><mn>12</mn></math>',
+      '<math><mi>l</mi><mo>></mo><mn>18</mn></math>',
+      '<math><mi>l</mi><mo>></mo><mn>36</mn></math>'
     ],
     correctAnswer: 2,
-    explanation: 'Testing the values: y = x² + 1 fits all points in the table.'
+    explanation: 'If l = 3w and P = 2l + 2w > 48, then 2(3w) + 2w > 48 → 8w > 48 → w > 6 → l > 18.'
   },
   {
     id: '31',
-    text: 'Ms. Scott will pay $2,000 to have her house painted. The amount each painter earns, A, varies inversely for the number of painters, n, that will paint the house. Which equation best represents this situation?',
+    text: 'These box-and-whisker plots summarize the percent of the workforce employed in agriculture, industry, and service jobs in twenty towns.<br><img src="images/question_31.png" class="question-image" alt="Box plots for workforce distribution"><br><br>Which statement is NOT true?',
     type: 'multiple-choice',
     options: [
-      '<math><mi>A</mi><mo>=</mo><mn>2,000</mn><mo>+</mo><mi>n</mi></math>',
-      '<math><mn>2,000</mn><mo>=</mo><mi>A</mi><mo>+</mo><mi>n</mi></math>',
-      '<math><mi>A</mi><mo>=</mo><mn>2,000</mn><mi>n</mi></math>',
-      '<math><mn>2,000</mn><mo>=</mo><mi>A</mi><mi>n</mi></math>'
+      'Industry has the greatest median value.',
+      'Service has the range with the least value.',
+      'Agriculture has the range with the greatest value.',
+      'Industry has the interquartile range with the least value.'
     ],
-    correctAnswer: 3,
-    explanation: 'For inverse variation, the product is constant: A × n = 2,000, or 2,000 = An.'
+    correctAnswer: 0,
+    explanation: 'From the box plots, Agriculture has a higher median than Industry.'
   },
   {
     id: '32',
-    text: 'The following graph shows a relation. Which of the following best describes the range of this relation?<br><img src="images/question_32.png" class="question-image" alt="Graph showing V-shaped relation">',
-    type: 'multiple-choice',
-    options: [
-      'All real numbers',
-      'All real numbers between -10 and 10',
-      'All real numbers less than or equal to -4',
-      'All real numbers greater than or equal to -4'
-    ],
-    correctAnswer: 3,
-    explanation: 'The V-shaped graph has a minimum at y = -4, so the range is y ≥ -4.'
+    text: 'Using the ordered pairs shown, create a relation containing three ordered pairs with a domain of {-1, 2, 4}.',
+    type: 'multiple-select',
+    options: ['(-3, -1)', '(-1, 0)', '(-2, 2)', '(4, -2)', '(3, 4)', '(2, 3)'],
+    correctAnswer: [1, 3, 5],
+    explanation: 'Select ordered pairs with x-values of -1, 2, and 4 for the domain.'
   },
   {
     id: '33',
-    text: 'Each of these data sets has a mean of 20.<br><br>Set 1: {18, 19, 20, 21, 22}<br>Set 2: {20, 20, 20, 20, 20}<br>Set 3: {16, 18, 20, 21, 25}<br><br>Order the sets from greatest standard deviation to least standard deviation.',
-    type: 'drag-drop',
-    correctAnswer: ['Set 3', 'Set 1', 'Set 2'],
-    explanation: 'Set 3 has the most spread, Set 1 has moderate spread, Set 2 has no spread (SD = 0).'
+    text: 'This relation is an inverse variation.<br><br>{(-1, 8), (4, -2), (-2, 4)}<br><br>Which equation represents this relation?',
+    type: 'multiple-choice',
+    options: [
+      '<math><mi>y</mi><mo>=</mo><mo>-</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>5</mn></math>',
+      '<math><mi>y</mi><mo>=</mo><mo>-</mo><mn>2</mn><mi>x</mi></math>',
+      '<math><mi>y</mi><mo>=</mo><mo>-</mo><mfrac><mi>x</mi><mn>8</mn></mfrac></math>',
+      '<math><mi>y</mi><mo>=</mo><mo>-</mo><mfrac><mn>8</mn><mi>x</mi></mfrac></math>'
+    ],
+    correctAnswer: 3,
+    explanation: 'For inverse variation, xy = k. Testing: (-1)(8) = -8, (4)(-2) = -8, (-2)(4) = -8. So y = -8/x.'
   },
   {
     id: '34',
-    text: 'A study was conducted to determine the number of cars that passed through two intersections each day for 20 days. The results are summarized in these box-and-whisker plots. Which statement is best supported by these data?<br><img src="images/question_34.png" class="question-image" alt="Box plots">',
+    text: 'Which equation represents the pattern shown in the table?<br><img src="images/question_34.png" class="question-image" alt="Table showing x and y values">',
     type: 'multiple-choice',
     options: [
-      'The range of the data for Intersection 2 is twice the range of the data for Intersection 1.',
-      'The lower quartile for Intersection 1 is greater than the lower quartile for Intersection 2.',
-      'The interquartile range for Intersection 1 is the same as the interquartile range for Intersection 2.',
-      'The total number of vehicles that passed through Intersection 2 is greater than the total number of vehicles that passed through Intersection 1.'
+      '<math><mi>y</mi><mo>=</mo><mo>-</mo><mn>3</mn><mi>x</mi><mo>-</mo><mn>19</mn></math>',
+      '<math><mi>y</mi><mo>=</mo><mo>-</mo><mi>x</mi><mo>-</mo><mn>13</mn></math>',
+      '<math><mi>y</mi><mo>=</mo><mi>x</mi><mo>-</mo><mn>1</mn></math>',
+      '<math><mi>y</mi><mo>=</mo><mn>3</mn><mi>x</mi><mo>-</mo><mn>1</mn></math>'
     ],
-    correctAnswer: 0,
-    explanation: 'From the box plots, Intersection 2 has approximately twice the range of Intersection 1.'
+    correctAnswer: 3,
+    explanation: 'Testing with the given points shows y = 3x - 1 fits the pattern.'
   },
   {
     id: '35',
-    text: 'Which of these functions has exactly two different zeros?',
-    type: 'multiple-choice',
-    options: [
-      '<math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mn>10</mn></mfrac><mi>x</mi><mo>+</mo><mn>4</mn></math>',
-      '<math><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mn>3</mn><mi>x</mi><mo>-</mo><mn>10</mn></mrow><mn>3</mn></mfrac></math>',
-      '<math><mi>h</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>4</mn></math>',
-      '<math><mi>k</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>11</mn><mi>x</mi><mo>+</mo><mn>24</mn></math>'
-    ],
-    correctAnswer: 3,
-    explanation: 'k(x) = x² + 11x + 24 = (x + 3)(x + 8) has two distinct zeros: x = -3 and x = -8.'
+    text: 'The graph of the equation representing a direct variation passes through point A. Locate one additional point that is on the graph of this equation.<br><img src="images/question_35.png" class="question-image" alt="Coordinate grid with point A">',
+    type: 'point-select',
+    correctAnswer: 'Various points on line through origin and A',
+    explanation: 'Direct variation passes through the origin. Any point on the line through (0,0) and A is correct.'
   },
   {
     id: '36',
-    text: 'In which table does <math><mi>y</mi></math> vary directly with <math><mi>x</mi></math>?',
+    text: 'Look at the data in this table.<br><img src="images/question_36.png" class="question-image" alt="Data table"><br>Which equation most closely represents the line of best fit for this data?',
     type: 'multiple-choice',
     options: [
-      {url: 'images/question_36a.png', alt: 'Table A'},
-      {url: 'images/question_36b.png', alt: 'Table B'},
-      {url: 'images/question_36c.png', alt: 'Table C'},
-      {url: 'images/question_36d.png', alt: 'Table D'}
+      '<math><mi>y</mi><mo>=</mo><mn>1.77</mn><mi>x</mi><mo>+</mo><mn>0.13</mn></math>',
+      '<math><mi>y</mi><mo>=</mo><mn>0.56</mn><mi>x</mi><mo>-</mo><mn>0.05</mn></math>',
+      '<math><mi>y</mi><mo>=</mo><mn>0.5</mn><mi>x</mi></math>',
+      '<math><mi>y</mi><mo>=</mo><mn>2</mn><mi>x</mi></math>'
     ],
-    correctAnswer: 1,
-    explanation: 'In direct variation, y/x is constant. Table B shows y = 4x, a direct variation.'
+    correctAnswer: 0,
+    explanation: 'The line of best fit for the data is approximately y = 1.77x + 0.13.'
   },
   {
     id: '37',
-    text: 'Which equation could represent a graph with x-intercepts of (4, 0) and (-7, 0)?',
+    text: 'What is the range of this relation?<br><img src="images/question_37.png" class="question-image" alt="Graph showing discrete points">',
     type: 'multiple-choice',
     options: [
-      '<math><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><mi>x</mi><mo>-</mo><mn>28</mn></math>',
-      '<math><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>3</mn><mi>x</mi><mo>-</mo><mn>28</mn></math>',
-      '<math><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>28</mn></math>',
-      '<math><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>28</mn></math>'
+      '{x | -3 ≤ x ≤ 3}',
+      '{-3, -2, 0, 3}',
+      '{y | -4 ≤ y ≤ 4}',
+      '{-4, 0, 2, 4}'
     ],
-    correctAnswer: 0,
-    explanation: 'With x-intercepts at 4 and -7: y = (x - 4)(x + 7) = x² + 3x - 28.'
+    correctAnswer: 3,
+    explanation: 'The range consists of all y-values: {-4, 0, 2, 4}.'
   },
   {
     id: '38',
-    text: 'Which number is a zero of the function <math><mi>h</mi></math>?<br><br><math><mi>h</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><mi>x</mi><mo>-</mo><mn>18</mn></math>',
+    text: 'Katie recorded the number of miles she drove for each of 9 days. She drove a different number of miles each day. This box-and-whisker plot summarizes her information.<br><img src="images/question_38.png" class="question-image" alt="Box plot of miles driven"><br>Katie drove 30 miles on each of two additional days. She redrew the box-and-whisker plot to include this data. Which statement must be true?',
     type: 'multiple-choice',
-    options: ['-6', '-3', '0', '6'],
+    options: [
+      'The value of the range decreased.',
+      'The value of the mean remained the same.',
+      'The value of the median remained the same.',
+      'The value of the interquartile range increased.'
+    ],
+    correctAnswer: 2,
+    explanation: 'Adding 30 miles twice (near Q1) keeps the median at the same position.'
+  },
+  {
+    id: '39',
+    text: 'Two relationships are described.<br><br>Relationship S: Karen drove 160 miles in 4 hours, and then she drove 80 miles in 2 hours.<br><br>Relationship T: Vernon cooked 6 hamburgers in 10 minutes, and then he cooked 9 hamburgers in 15 minutes.<br><br>Which statement is true about these relationships?',
+    type: 'multiple-choice',
+    options: [
+      'Neither relationship is a direct variation.',
+      'Both relationships are direct variations.',
+      'Only Relationship S is a direct variation.',
+      'Only Relationship T is a direct variation.'
+    ],
+    correctAnswer: 1,
+    explanation: 'Both have constant rates: S has 40 mph, T has 0.6 hamburgers/minute. Both are direct variations.'
+  },
+  {
+    id: '40',
+    text: 'Identify each of the x- and y-intercepts of the relation shown.<br><img src="images/question_40.png" class="question-image" alt="Parabola graph">',
+    type: 'point-select',
+    correctAnswer: ['(-1, 0)', '(5, 0)', '(0, 5)'],
+    explanation: 'The parabola crosses the x-axis at (-1, 0) and (5, 0), and the y-axis at (0, 5).'
+  },
+  {
+    id: '41',
+    text: 'What is f(-8) for the function f?<br><br><math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mn>11</mn><mo>(</mo><mi>x</mi><mo>-</mo><mn>24</mn><mo>)</mo></mrow><mn>2</mn></mfrac></math>',
+    type: 'multiple-choice',
+    options: ['-56', '-88', '-176', '-352'],
+    correctAnswer: 2,
+    explanation: 'f(-8) = 11(-8 - 24)/2 = 11(-32)/2 = -352/2 = -176.'
+  },
+  {
+    id: '42',
+    text: 'The number of complaints a company received at the end of each of six weeks is shown in this table.<br><img src="images/question_42.png" class="question-image" alt="Table of complaints by week"><br>Based on the line of best fit, how many complaints should the company expect at the end of week 8?',
+    type: 'multiple-choice',
+    options: ['75', '91', '96', '110'],
+    correctAnswer: 1,
+    explanation: 'Following the decreasing trend, the company should expect approximately 91 complaints.'
+  },
+  {
+    id: '43',
+    text: 'The table shows the relationship between corresponding values of x and y.<br><img src="images/question_43.png" class="question-image" alt="Table with x and y values"><br>To determine the y-value —',
+    type: 'multiple-choice',
+    options: [
+      'add 3 to the x-value',
+      'subtract 3 from the x-value',
+      'divide the x-value by 3 and add 1',
+      'divide the x-value by 3 and subtract 1'
+    ],
+    correctAnswer: 3,
+    explanation: 'The pattern shows y = x/3 - 1.'
+  },
+  {
+    id: '44',
+    text: 'Which relation is a function?',
+    type: 'multiple-choice',
+    options: [
+      {url: 'images/question_44a.png', alt: 'Model A'},
+      {url: 'images/question_44b.png', alt: 'Model B'},
+      {url: 'images/question_44c.png', alt: 'Model C'},
+      {url: 'images/question_44d.png', alt: 'Model D'}
+    ],
+    correctAnswer: 3,
+    explanation: 'Only relation D passes the vertical line test for functions.'
+  },
+  {
+    id: '45',
+    text: 'The manager of a company recorded the number of hours his employees worked during each of two weeks. The following statistics were calculated.<br><br>• Week 1: The mean was 35 hours with a standard deviation of 1.5 hours.<br>• Week 2: The mean was 40 hours with a standard deviation of 2.0 hours.<br><br>The manager concluded that there was more variation in the number of hours worked for Week 2 than for Week 1. The manager\'s conclusion was —',
+    type: 'multiple-choice',
+    options: [
+      'valid because the mean for Week 2 was greater than the mean for Week 1',
+      'valid because the standard deviation for Week 2 was greater than the standard deviation for Week 1',
+      'invalid because the mean for Week 1 was less than the mean for Week 2',
+      'invalid because the standard deviation for Week 1 was less than the standard deviation for Week 2'
+    ],
+    correctAnswer: 1,
+    explanation: 'Standard deviation measures variation. Week 2 has higher standard deviation (2.0 vs 1.5), so more variation.'
+  },
+  {
+    id: '46',
+    text: 'Which graph appears to show a relation that is NOT a function?',
+    type: 'multiple-choice',
+    options: [
+      {url: 'images/question_46a.png', alt: 'Model A'},
+      {url: 'images/question_46b.png', alt: 'Model B'},
+      {url: 'images/question_46c.png', alt: 'Model C'},
+      {url: 'images/question_46d.png', alt: 'Model D'}
+    ],
     correctAnswer: 0,
-    explanation: 'Factoring: x² + 3x - 18 = (x + 6)(x - 3). The zeros are x = -6 and x = 3.'
+    explanation: 'Graph A shows a vertical line, which fails the vertical line test for functions.'
+  },
+  {
+    id: '47',
+    text: 'A scientist dropped an object from a height of 200 feet. She recorded the height of the object in 0.5-second intervals. Her data is shown.<br><img src="images/question_47.png" class="question-image" alt="Table of time vs height"><br>Based on a quadratic model, which best approximates the height at 3 seconds?',
+    type: 'multiple-choice',
+    options: ['52 feet', '55 feet', '65 feet', '80 feet'],
+    correctAnswer: 1,
+    explanation: 'Following the quadratic pattern of free fall, the height at 3 seconds is approximately 55 feet.'
+  },
+  {
+    id: '48',
+    text: 'Look at function g.<br><br><math><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>9</mn><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>16</mn></math><br><br>Which set contains only the zeros of function g?',
+    type: 'multiple-choice',
+    options: [
+      '<math><mo>{</mo><mo>-</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mo>,</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mo>}</mo></math>',
+      '<math><mo>{</mo><mo>-</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mo>,</mo><mn>0</mn><mo>,</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mo>}</mo></math>',
+      '{-16, 9}',
+      '{-16, 0, 9}'
+    ],
+    correctAnswer: 0,
+    explanation: '9x² - 16 = 0 → x² = 16/9 → x = ±4/3.'
+  },
+  {
+    id: '49',
+    text: 'Statistical information for a data set is given.<br><br>• The mean is 18.1.<br>• The z-score for 13.0 is -1.7.<br><br>What is the standard deviation for this data set?',
+    type: 'multiple-choice',
+    options: ['1.7', '3.0', '3.4', '5.1'],
+    correctAnswer: 1,
+    explanation: 'z = (x - μ)/σ → -1.7 = (13.0 - 18.1)/σ → σ = 5.1/1.7 = 3.0.'
+  },
+  {
+    id: '50',
+    text: 'A representation of a function is shown.<br><br><math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mo>-</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>2</mn></math><br><br>What are the x-intercept and the y-intercept of this function?',
+    type: 'multiple-choice',
+    options: [
+      'x-intercept of (0, -2) and y-intercept of <math><mo>(</mo><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo><mn>0</mn><mo>)</mo></math>',
+      'x-intercept of (0, 2) and y-intercept of <math><mo>(</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo><mn>0</mn><mo>)</mo></math>',
+      'x-intercept of <math><mo>(</mo><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo><mn>0</mn><mo>)</mo></math> and y-intercept of (0, -2)',
+      'x-intercept of <math><mo>(</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo><mn>0</mn><mo>)</mo></math> and y-intercept of (0, 2)'
+    ],
+    correctAnswer: 3,
+    explanation: 'For x-intercept, set y = 0: 0 = -4x + 2 → x = 1/2. For y-intercept, set x = 0: y = 2.'
   }
 ];
 
