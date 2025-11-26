@@ -51,7 +51,7 @@ const sampleQuestions = [
   {
     id: '5',
     text: 'This Venn diagram represents students who play instruments in the orchestra.<br><br><img src="images/question_5.png" class="question-image" alt="Venn diagram with Clarinet, Oboe, Bassoon, and Flute circles"><br><br>Identify each region of the Venn diagram that represents students who play only the flute and the oboe.',
-    type: 'technology-enhanced',
+    type: 'point-select',
     correctAnswer: 'The intersection of Flute and Oboe circles only',
     explanation: 'Select the region that is common to both the Oboe and Flute circles, but not part of any other circle.'
   },
@@ -70,9 +70,14 @@ const sampleQuestions = [
   },
   {
     id: '7',
-    text: 'Which diagram shows a pair of angle measures that prove lines a and b are parallel?<br><br><img src="images/question_7.png" class="question-image" alt="Four diagrams showing lines with angle measurements">',
+    text: 'Which diagram shows a pair of angle measures that prove lines a and b are parallel?',
     type: 'multiple-choice',
-    options: ['Diagram A', 'Diagram B', 'Diagram C', 'Diagram D'],
+    options: [
+    {url: 'images/question_7a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_7b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_7c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_7d.png', alt: 'Image failed to load. Please try again later.'}
+    ],
     correctAnswer: 1,
     explanation: 'When corresponding angles are congruent or co-interior angles are supplementary, lines are parallel.'
   },
@@ -113,7 +118,7 @@ const sampleQuestions = [
   {
     id: '11',
     text: 'Line l contains the points (-8, 5) and (8, -3). Plot a point other than point P with integral coordinates that is on a line parallel to l and passes through point P.<br><br><img src="images/question_11.png" class="question-image" alt="Coordinate grid with line l and point P(4, -6)">',
-    type: 'technology-enhanced',
+    type: 'point-select',
     correctAnswer: 'Any point with slope -1/2 passing through P(4, -6)',
     explanation: 'The slope of line l is -1/2. A parallel line through P(4, -6) has the same slope. Examples: (2, -5), (6, -7), (0, -4), etc.'
   },
@@ -178,15 +183,20 @@ const sampleQuestions = [
   },
   {
     id: '17',
-    text: 'For which polygon are both x = -1 and y = -2 lines of symmetry?<br><br><img src="images/question_17.png" class="question-image" alt="Four polygons on coordinate grids">',
+    text: 'For which polygon are both x = -1 and y = -2 lines of symmetry?',
     type: 'multiple-choice',
-    options: ['Polygon A', 'Polygon B', 'Polygon C', 'Polygon D'],
+    options: [
+    {url: 'images/question_17a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_17b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_17c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_17d.png', alt: 'Image failed to load. Please try again later.'}
+    ],
     correctAnswer: 2,
     explanation: 'Check which polygon has reflectional symmetry about both x = -1 and y = -2.'
   },
   {
     id: '18',
-    text: 'The figure represents a ramp with handrails. If m∠JCB = 115°, what is m∠CBA?<br><br><img src="images/question_18.png" class="question-image" alt="3D ramp diagram with labeled angles">',
+    text: 'The figure represents a ramp with handrails. Segments AB and DE are parallel to GH. Segments BC and EF are parallel to HJ. Segments AG and BH are parallel to CJ.<br><br><img src="images/question_18.png" class="question-image" alt="3D ramp diagram with labeled angles"><br>If m∠JCB = 115°, what is m∠CBA?',
     type: 'multiple-choice',
     options: ['65°', '90°', '115°', '155°'],
     correctAnswer: 3,
@@ -216,7 +226,7 @@ const sampleQuestions = [
   {
     id: '21',
     text: 'The lengths of two sides of a triangle are 24 inches and 43 inches. What is the range of possible lengths, in inches, for the third side, x, of this triangle?<br><br>___ < x < ___',
-    type: 'technology-enhanced',
+    type: 'drag-drop',
     correctAnswer: '19 < x < 67',
     explanation: 'Triangle inequality theorem: The sum of any two sides must be greater than the third side. So 43 - 24 < x < 43 + 24, which gives 19 < x < 67.'
   },
@@ -277,10 +287,10 @@ const sampleQuestions = [
     text: 'Look at this triangle.<br><br><img src="images/question_26.png" class="question-image" alt="Triangle with sides 4 cm, 5.5 cm, 5.5 cm"><br><br>Which triangle is similar to the given triangle?',
     type: 'multiple-choice',
     options: [
-      'Triangle with sides 3 cm, 4.125 cm, 4.125 cm',
-      'Triangle with sides 3 cm, 5.83 cm, 5.83 cm',
-      'Triangle with sides 2.25 cm, 2.825 cm, 3.61 cm',
-      'Triangle with sides 4 cm, 4 cm, 5.5 cm'
+    {url: 'images/question_26a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_26b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_26c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_26d.png', alt: 'Image failed to load. Please try again later.'}
     ],
     correctAnswer: 0,
     explanation: 'Similar triangles have proportional sides. The ratio 3:4.125:4.125 equals 4:5.5:5.5 (ratio of 0.75).'
@@ -288,7 +298,7 @@ const sampleQuestions = [
   {
     id: '27',
     text: 'Complete the proof of △ABC ≅ △CDA by selecting the reasons for the last two statements.<br><br><img src="images/question_27.png" class="question-image" alt="Proof table for quadrilateral ABCD"><br><br>Given: Figure ABCD with diagonal AC<br>AB ≅ DC; BC ≅ AD',
-    type: 'technology-enhanced',
+    type: 'drag-drop',
     correctAnswer: 'Row 2: Reflexive property; Row 3: Side-Side-Side (SSS) Theorem',
     explanation: 'AC ≅ AC by reflexive property, then all three sides are congruent, so SSS theorem applies.'
   },
@@ -302,7 +312,7 @@ const sampleQuestions = [
   },
   {
     id: '29',
-    text: 'Three triangles that do not overlap are shown on the coordinate grid.<br><br><img src="images/question_29.png" class="question-image" alt="Three triangles ABD, CBD, and ABE on coordinate grid"><br><br>Which statement is true?',
+    text: 'Three triangles that do not overlap are shown on the coordinate grid. The coordinates of all vertices are integers.<br><br><img src="images/question_29.png" class="question-image" alt="Three triangles ABD, CBD, and ABE on coordinate grid"><br><br>Which statement is true?',
     type: 'multiple-choice',
     options: [
       '△ABD ~ △EBA',
@@ -493,7 +503,7 @@ const sampleQuestions = [
   {
     id: '46',
     text: 'The ratio of the lengths of the radii of two spheres is 3:5. What is the ratio of the volumes of these two spheres?',
-    type: 'technology-enhanced',
+    type: 'drag-drop',
     correctAnswer: '27:125',
     explanation: 'Volume ratio = (radius ratio)³ = 3³:5³ = 27:125'
   },
@@ -508,7 +518,7 @@ const sampleQuestions = [
   {
     id: '48',
     text: 'Plot the center of the circle defined by the equation <math><msup><mrow><mo>(</mo><mi>x</mi><mo>+</mo><mn>4</mn><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><mi>y</mi><mo>-</mo><mn>5</mn><mo>)</mo></mrow><mn>2</mn></msup><mo>=</mo><msup><mn>3</mn><mn>2</mn></msup></math>.<br><br><img src="images/question_48.png" class="question-image" alt="Coordinate grid">',
-    type: 'technology-enhanced',
+    type: 'point-select',
     correctAnswer: 'Point at (-4, 5)',
     explanation: 'From equation (x + 4)² + (y - 5)² = 9, the center is at (-4, 5).'
   },
