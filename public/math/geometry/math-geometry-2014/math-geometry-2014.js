@@ -96,7 +96,7 @@ const sampleQuestions = [
   },
   {
     id: '9',
-    text: 'This figure shows parallel stair railings through points M, N, P, and Q.<br><br><img src="images/question_9.png" class="question-image" alt="Parallel stair railings with angle measurements"><br><br>What is the value of x?',
+    text: 'This figure shows parallel stair railings through points M, N, P, and Q.<br><br><img src="images/question_9.png" class="question-image"><br><br>What is the value of x?',
     type: 'multiple-choice',
     options: ['29', '45', '61', '119'],
     correctAnswer: 2,

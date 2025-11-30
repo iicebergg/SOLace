@@ -3,8 +3,7 @@ window.TEST_IDENTIFIER = 'science_earth_sci_2015';
 const sampleQuestions = [
  {
  id: '1',
- text: 'The fossil at point X has been dated to be 65 million years old. What can relative dating indicate about the fossil at point Y?',
- image: {url:'images/question_1.png', alt: 'Rock Profile diagram showing fossils at points X and Y'},
+ text: '<img src="images/question_1.png" class="question-image"><br><br>The fossil at point X has been dated to be 65 million years old. What can relative dating indicate about the fossil at point Y?',
  type: 'multiple-choice',
  options: ['The age of the organism when it died', 'The type of environment the organism lived in', 'The distortion of the organism by the fault', 'The similar time period in which the organism lived'],
  correctAnswer: 3,
@@ -20,9 +19,8 @@ const sampleQuestions = [
  },
  {
  id: '3',
- text: 'Which best describes the area shown in this aerial photograph?',
+ text: '<img src="images/question_3.png" class="question-image"><br><br>Which best describes the area shown in this aerial photograph?',
  type: 'multiple-choice',
- image: {url:'images/question_3.png', alt: 'Aerial photograph showing landscape features'},
  options: ['Forest and farmland', 'Deeply eroded bedrock', 'Extensive urban development', 'Folded mountainside and rivers'],
  correctAnswer: 0,
  explanation: 'The aerial photograph shows a mixture of forested areas (darker patches) and cleared agricultural land (lighter, geometric patterns), which is characteristic of forest and farmland.'
@@ -53,10 +51,9 @@ const sampleQuestions = [
  },
  {
  id: '7',
- text: 'When a river flows into a lake, the velocity of the water decreases. Which sediments will most likely be in the numbered locations?',
+ text: 'When a river flows into a lake, the velocity of the water decreases. Which sediments will most likely be in the numbered locations? <br><br><img src="images/question_7.png" class="question-image">',
  type: 'drag-drop',
- image: {url:'images/question_7.png', alt: 'River and Lake Diagram showing three numbered locations'},
- options: ['Sand Grains', 'Clay-Sized Particles', 'Large Gravel'],
+ options: ['<img src="images/question_7a.png" class="question-image"><br>Sand Grains', '<img src="images/question_7b.png" class="question-image"><br>Clay-Sized Particles', '<img src="images/question_7c.png" class="question-image"><br>Large Gravel'],
  dropZones: ['Location 1', 'Location 2', 'Location 3'],
  correctAnswer: [2, 0, 1],
  explanation: 'As water velocity decreases, larger particles settle first. Location 1 (where the river enters) receives large gravel, Location 2 receives sand grains, and Location 3 (furthest into the lake) receives clay-sized particles which settle last due to their small size.'
@@ -67,7 +64,7 @@ const sampleQuestions = [
  type: 'drag-drop',
  image: {url:'images/question_8.png', alt: 'Diagram showing four rock formation processes'},
  options: ['Intrusive Igneous', 'Extrusive Igneous', 'Chemical Sedimentary', 'Organic Sedimentary', 'Metamorphic'],
- dropZones: ['Evaporation of Ocean', 'Compression of Crust', 'Sinking of Plankton', 'Formation of Granite Underground'],
+ dropZones: ['<br><br><img src="images/question_8.png" class="question-image"><br><br>Evaporation of Ocean', 'Compression of Crust', 'Sinking of Plankton', 'Formation of Granite Underground'],
  correctAnswer: [2, 4, 3, 0],
  explanation: 'Evaporation of ocean water leaves behind dissolved minerals that form chemical sedimentary rock. Compression of crust creates metamorphic rock through heat and pressure. Sinking plankton accumulate to form organic sedimentary rock. Granite forming underground from slow-cooling magma creates intrusive igneous rock.'
  },
