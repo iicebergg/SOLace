@@ -554,7 +554,7 @@ function renderDragDropQuestion(template, question) {
     
     const zoneLabel = document.createElement('div');
     zoneLabel.className = 'zone-label';
-    zoneLabel.textContent = zone;
+    zoneLabel.innerHTML = zone;
     
     dropZone.appendChild(zoneLabel);
     
