@@ -3,375 +3,376 @@ window.TEST_IDENTIFIER = 'science_biology_2015';
 const sampleQuestions = [
  {
  id: '1',
- text: '<img src="images/question_1.png" class="question-image"><br><br>The fossil at point X has been dated to be 65 million years old. What can relative dating indicate about the fossil at point Y?',
+ text: '<img src="images/question_1.png" class="question-image"><br><br>Red flower color is dominant to white flower color in rose plants. What is the expected result of a cross between two heterozygous rose plants?',
  type: 'multiple-choice',
- options: ['The age of the organism when it died', 'The type of environment the organism lived in', 'The distortion of the organism by the fault', 'The similar time period in which the organism lived'],
- correctAnswer: 3,
- explanation: 'Relative dating indicates the similar time period in which organisms lived by comparing their positions in rock layers. Since fossils X and Y are in the same rock layer (separated by a fault), they lived during a similar time period.'
+ options: ['100% red', '75% red, 25% white', '50% red, 50% white', '25% red, 75% white'],
+ correctAnswer: 1,
+ explanation: 'When two heterozygous plants (Rr × Rr) are crossed, the Punnett square shows: RR (25%), Rr (50%), and rr (25%). Since red (R) is dominant, both RR and Rr will display red flowers (75%), while only rr will display white flowers (25%).'
  },
  {
  id: '2',
- text: 'The highest and lowest tides are known as the spring tides. When do these tides occur?',
- type: 'multiple-choice',
- options: ['During the new moon and full moon phases', 'Between the half moon and full moon phases', 'During the new moon and crescent moon phases', 'Between the full moon and crescent moon phases'],
- correctAnswer: 0,
- explanation: 'Spring tides occur during new moon and full moon phases when the Sun, Moon, and Earth are aligned. This alignment causes the gravitational forces to combine, creating the highest high tides and lowest low tides.'
+ text: '<img src="images/question_2.png" class="question-image"><br><br>Place the phases of mitosis in the correct sequence.',
+ type: 'drag-drop',
+ options: ['<img src="images/question_2a.png" class="question-image">', '<img src="images/question_2b.png" class="question-image">', '<img src="images/question_2c.png" class="question-image">', '<img src="images/question_2d.png" class="question-image">'],
+ dropZones: ['Phase 1', 'Phase 2', 'Phase 3', 'Phase 4'],
+ correctAnswer: [1, 0, 2, 3],
+ explanation: 'The correct sequence of mitosis is: Prophase (chromosomes condense, nuclear envelope breaks down), Metaphase (chromosomes align at cell equator), Anaphase (sister chromatids separate and move to opposite poles), and Telophase (nuclear envelopes reform, cytokinesis begins).'
  },
  {
  id: '3',
- text: '<img src="images/question_3.png" class="question-image"><br><br>Which best describes the area shown in this aerial photograph?',
+ text: 'To classify an organism a scientist finds in the field, which of these will the scientist first compare to other known organisms?',
  type: 'multiple-choice',
- options: ['Forest and farmland', 'Deeply eroded bedrock', 'Extensive urban development', 'Folded mountainside and rivers'],
- correctAnswer: 0,
- explanation: 'The aerial photograph shows a mixture of forested areas (darker patches) and cleared agricultural land (lighter, geometric patterns), which is characteristic of forest and farmland.'
+ options: ['Dietary habits', 'Ecological niche', 'Physical structure', 'Reproductive method'],
+ correctAnswer: 2,
+ explanation: 'Physical structure (morphology) is the first characteristic scientists use to classify organisms in the field because it is immediately observable without requiring extended study of the organism\'s behavior, diet, or reproduction.'
  },
  {
  id: '4',
- text: 'The moon has a stronger influence on Earth\'s tides than the sun because the moon —',
+ text: '<img src="images/question_4.png" class="question-image"><br><br>For the growth curve to continue increasing, which of these must occur?',
  type: 'multiple-choice',
- options: ['is denser than the sun', 'has more mass than the sun', 'is much closer to Earth', 'moves much faster relative to Earth'],
+ options: ['The organisms must adapt to a new habitat.', 'The organisms must migrate to a new environment.', 'The resources in the environment must be unlimited.', 'The environment must provide a habitat for a large variety of organisms.'],
  correctAnswer: 2,
- explanation: 'Although the Sun has much more mass than the Moon, the Moon\'s proximity to Earth gives it a stronger tidal influence. Tidal force depends on distance cubed, so the Moon\'s closeness makes its gravitational effect on tides about twice as strong as the Sun\'s.'
+ explanation: 'Exponential population growth can only continue indefinitely if resources (food, water, space) remain unlimited. In reality, resources become limiting factors that cause population growth to level off at the carrying capacity.'
  },
  {
  id: '5',
- text: 'Remains of ancient life are most often preserved through which process?',
+ text: 'What did Rosalind Franklin contribute to the understanding of DNA molecules?',
  type: 'multiple-choice',
- options: ['Freezing', 'Burial in sediment', 'Entrapment in tar', 'Drying out'],
- correctAnswer: 1,
- explanation: 'Burial in sediment is the most common method of fossil preservation. When organisms are quickly buried by sediment, they are protected from decay and scavengers, allowing the fossilization process to occur over millions of years.'
+ options: ['An image indicating the shape of a DNA molecule', 'An analysis of the chemical makeup of a DNA molecule', 'A thought that DNA carries genetic information', 'A theory about how DNA conveys genetic information'],
+ correctAnswer: 0,
+ explanation: 'Rosalind Franklin produced X-ray crystallography images of DNA, most famously "Photo 51," which revealed the helical structure of DNA. This image was crucial to Watson and Crick\'s discovery of the double helix structure.'
  },
  {
  id: '6',
- text: 'Environmental effects of the impact of a meteorite 66.4 million years ago may have led to the extinction of many species on Earth. Which evidence best supports this theory?',
- type: 'multiple-choice',
- options: ['The Cenozoic Era began 66.4 million years ago when the Mesozoic Era ended.', 'Iridium found in meteorites is also present in rock layers that are 66.4 million years old.', 'Many other meteorite impact sites have been identified on Earth.', 'Many asteroids are found between Mars and Jupiter.'],
- correctAnswer: 1,
- explanation: 'The presence of iridium (a rare element on Earth but common in meteorites) in the 66.4 million-year-old rock layer provides direct evidence linking a meteorite impact to the mass extinction event at the end of the Mesozoic Era.'
+ text: 'Some functions of several structures of a fish are listed in the chart. Complete the chart by placing the structures of a cell next to the function they perform.',
+ type: 'drag-drop',
+ options: ['Cell Membrane', 'Flagellum', 'Nucleus', 'Vacuole'],
+ dropZones: ['Control of Functions (Brain)', 'Gas Exchange (Gills)', 'Waste Storage (Bladder)', 'Movement (Fins, Tail)'],
+ correctAnswer: [2, 0, 3, 1],
+ explanation: 'The nucleus controls cell functions like the brain controls body functions. The cell membrane exchanges gases like gills do in fish. The vacuole stores waste like the bladder. The flagellum provides movement like fins and tail.'
  },
  {
  id: '7',
- text: 'When a river flows into a lake, the velocity of the water decreases. Which sediments will most likely be in the numbered locations? <br><br><img src="images/question_7.png" class="question-image">',
- type: 'drag-drop',
- options: ['<img src="images/question_7a.png" class="question-image"><br>Sand Grains', '<img src="images/question_7b.png" class="question-image"><br>Clay-Sized Particles', '<img src="images/question_7c.png" class="question-image"><br>Large Gravel'],
- dropZones: ['Location 1', 'Location 2', 'Location 3'],
- correctAnswer: [2, 0, 1],
- explanation: 'As water velocity decreases, larger particles settle first. Location 1 (where the river enters) receives large gravel, Location 2 receives sand grains, and Location 3 (furthest into the lake) receives clay-sized particles which settle last due to their small size.'
+ text: 'Darwin\'s explanation for evolution was dependent on which scientific concept?',
+ type: 'multiple-choice',
+ options: ['The ability of organisms to learn', 'The significance of social behaviors to survival', 'The existence of variations in a population', 'The relationship between size and survival'],
+ correctAnswer: 2,
+ explanation: 'Darwin\'s theory of evolution by natural selection depends on the existence of variation within populations. Without variation, natural selection would have no traits to act upon, and evolution could not occur.'
  },
  {
  id: '8',
- text: 'Which type of rock is formed by each process?',
- type: 'drag-drop',
- options: ['Intrusive Igneous', 'Extrusive Igneous', 'Chemical Sedimentary', 'Organic Sedimentary', 'Metamorphic'],
- dropZones: ['<img src="images/question_8a.png" class="question-image"><br>Evaporation of Ocean', '<img src="images/question_8b.png" class="question-image"><br>Compression of Crust', '<img src="images/question_8c.png" class="question-image"><br>Sinking of Plankton', '<img src="images/question_8d.png" class="question-image"><br>Formation of Granite Underground'],
- correctAnswer: [2, 4, 3, 0],
- explanation: 'Evaporation of ocean water leaves behind dissolved minerals that form chemical sedimentary rock. Compression of crust creates metamorphic rock through heat and pressure. Sinking plankton accumulate to form organic sedimentary rock. Granite forming underground from slow-cooling magma creates intrusive igneous rock.'
+ text: 'Which best helps scientists determine the age of fossils?',
+ type: 'multiple-choice',
+ options: ['Physical traits', 'Genetic makeup', 'Reproductive strategy', 'Radioactive isotopes'],
+ correctAnswer: 3,
+ explanation: 'Radioactive isotopes undergo decay at known rates (half-lives), allowing scientists to determine the absolute age of fossils through radiometric dating techniques such as carbon-14 dating or potassium-argon dating.'
  },
  {
  id: '9',
- text: 'A student hypothesizes that water from infrequently used school faucets contains more chemical impurities than the water from frequently used faucets. At the same time of day, the student uses a water test kit to measure the water impurities from the different faucets. Which is the manipulated variable in this investigation?',
+ text: 'A student is investigating the effect of plants on indoor air quality and states, "If plants are added to an indoor environment, the air quality will improve." This statement is an example of —',
  type: 'multiple-choice',
- options: ['The chemicals used to test the water', 'The amount of water per sample', 'The time of day when water is collected', 'The locations of water collection'],
+ options: ['a theory', 'a procedure', 'an observation', 'a hypothesis'],
  correctAnswer: 3,
- explanation: 'The manipulated (independent) variable is what the experimenter deliberately changes. In this investigation, the student is testing water from different faucet locations (frequently vs. infrequently used) to compare impurity levels.'
+ explanation: 'A hypothesis is a testable prediction in "if...then" format. The student\'s statement predicts an outcome (improved air quality) based on a condition (adding plants), making it a hypothesis that can be tested experimentally.'
  },
  {
  id: '10',
- text: 'Which coordinates identify a location north of a city that has a latitude of 38.0°N and a longitude of 25.0°W?',
+ text: 'Although controversial at first, the germ theory of disease proposed that microorganisms were the cause of many diseases. Which of these was a result of the general acceptance that microorganisms cause disease?',
  type: 'multiple-choice',
- options: ['0.0° and 0.0°', '25.0°N and 38.0°W', '38.0°N and 47.0°W', '47.0°N and 25.0°W'],
- correctAnswer: 3,
- explanation: 'To be north of 38.0°N latitude, the new location must have a higher latitude value. 47.0°N is north of 38.0°N. The longitude of 25.0°W can remain the same for a location directly north.'
+ options: ['The development and use of antibiotics', 'The belief in spontaneous generation', 'The link between viruses and RNA', 'The proof of a supernatural cause for illnesses'],
+ correctAnswer: 0,
+ explanation: 'Once scientists accepted that microorganisms cause disease, they developed antibiotics to kill or inhibit these disease-causing bacteria. This led to major advances in treating infectious diseases throughout the 20th century.'
  },
  {
  id: '11',
- text: '<img src="images/question_11.png" class="question-image"><br><br>At which range of altitude is air pressure closest to 40 kPa based on these data?',
+ text: '<img src="images/question_11.png" class="question-image"><br><br>A biologist gathered data to show the interaction of the golden-cheeked warbler and juniper tree populations. Which conclusion did the biologist most likely make from the data shown?',
  type: 'multiple-choice',
- options: ['Between 4.5 km and 6.0 km', 'Between 6.0 km and 7.5 km', 'Between 7.5 km and 9.0 km', 'Between 9.0 km and 10.5 km'],
+ options: ['As the juniper tree population increases, the golden-cheeked warbler population increases.', 'The optimum habitat for the golden-cheeked warbler population is 100 juniper trees per acre.', 'The golden-cheeked warbler population stabilizes when the juniper tree population increases above 120 trees per acre.', 'A golden-cheeked warbler population is unable to survive if juniper trees are present.'],
  correctAnswer: 1,
- explanation: 'Reading the graph, 40 kPa (40,000 Pascals) on the y-axis corresponds to an altitude between approximately 6.0 km and 7.5 km on the x-axis.'
+ explanation: 'The data shows that warblers reach their peak population (60 per acre) when there are approximately 100 juniper trees per acre. Above and below this number, the warbler population is lower, indicating 100 trees per acre is the optimum habitat.'
  },
  {
  id: '12',
- text: 'Which was the first object made by humans to orbit Earth?',
+ text: '<img src="images/question_12.png" class="question-image"><br><br>Studying the differences between fossils and modern organisms helps scientists better understand the —',
  type: 'multiple-choice',
- options: [
-    {url: 'images/question_12a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_12b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_12c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_12d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 2,
- explanation: 'Sputnik 1, launched by the Soviet Union on October 4, 1957, was the first artificial satellite to orbit Earth. Voyager was a deep space probe, Skylab was a space station, and Mercury was a crewed spacecraft program.'
+ options: ['role of mutation in life functions', 'primary function of key macromolecules', 'adaptation of organisms through acquired traits', 'evolution of organisms over time'],
+ correctAnswer: 3,
+ explanation: 'Comparing fossils to modern organisms reveals how species have changed over geological time periods. This evidence of gradual change supports our understanding of evolution and how organisms have adapted over millions of years.'
  },
  {
  id: '13',
- text: 'Under which condition would a lowering of the water table most likely occur?',
+ text: '<img src="images/question_13.png" class="question-image"><br><br>This chart shows observations made of an unknown organism. Based on this information, the organism most likely belongs to the kingdom —',
  type: 'multiple-choice',
- options: ['Extended drought over the recharge zone', 'Decreased runoff due to the planting of grass', 'Icecaps expand and cause lower sea levels', 'Slow evaporation of heavy rainfall'],
+ options: ['Fungi', 'Plantae', 'Eubacteria', 'Animalia'],
  correctAnswer: 0,
- explanation: 'Extended drought reduces the amount of water that can infiltrate and recharge groundwater aquifers. Without precipitation to replenish the groundwater, the water table will drop.'
+ explanation: 'The organism has a nucleus and mitochondria (eukaryotic), is multicellular, has cell walls made of chitin, and is a decomposer. These characteristics are defining features of the kingdom Fungi. Plants have cellulose cell walls, not chitin.'
  },
  {
  id: '14',
- text: '<img src="images/question_14.png" class="question-image"><br><br>This weather map helps to predict the location where a storm will occur by giving which type of information?',
+ text: '<img src="images/question_14.png" class="question-image"><br><br>What can be concluded from this graph?',
  type: 'multiple-choice',
- options: ['Air pressure', 'Humidity', 'Wind speed', 'Temperature'],
- correctAnswer: 0,
- explanation: 'The weather map shows isobars (lines of equal pressure) with values like 1008, 1012, and 1016, as well as H (high pressure) and L (low pressure) centers. Storms typically form where low pressure systems exist.'
+ options: ['The reactants have less energy than the products.', 'The enzyme is consumed during the course of the reaction.', 'The enzyme lowers the energy of activation for the reaction.', 'The amount of free energy produced in the reaction increases with an enzyme.'],
+ correctAnswer: 2,
+ explanation: 'The graph shows that the reaction with enzyme (dashed line) has a lower activation energy peak than the reaction without enzyme. Enzymes are biological catalysts that lower the activation energy required for reactions to proceed.'
  },
  {
  id: '15',
- text: 'Spacecraft traveling to Jupiter from Earth would most likely have to navigate through or around which natural obstacle?',
+ text: '<img src="images/question_15.png" class="question-image"><br><br>Which statement is an inference based on this information?',
  type: 'multiple-choice',
- options: ['Uranus', 'Neptune', 'Asteroid belt', 'Comet\'s tail'],
- correctAnswer: 2,
- explanation: 'The asteroid belt is located between Mars and Jupiter. Any spacecraft traveling from Earth to Jupiter must pass through or navigate around this region of rocky debris.'
+ options: ['Plant seeds have different shapes.', 'Milkweed seeds are dispersed by wind.', 'Maple seeds have a membrane-like extension.', 'Burdock seeds have short, peg-like extensions.'],
+ correctAnswer: 1,
+ explanation: 'An inference is a conclusion drawn from observations. Observing that milkweed seeds have feather-like extensions, one can infer they are dispersed by wind. The other options are direct observations, not inferences.'
  },
  {
  id: '16',
- text: 'A geologist studying volcanic activity is collecting rocks that formed from hot, molten magma. What type of rock is the geologist collecting?',
+ text: 'The weakness of hydrogen bonds between the bases of DNA allows —',
  type: 'multiple-choice',
- options: ['Clastic sedimentary', 'Metamorphic', 'Chemical sedimentary', 'Igneous'],
- correctAnswer: 3,
- explanation: 'Igneous rocks form from the cooling and solidification of molten magma or lava. The word "igneous" comes from the Latin word for fire, reflecting this origin.'
+ options: ['rearrangement of the sequence of bases to take place', 'base pairs to separate during transcription and replication', 'new bases to be incorporated into the DNA molecule', 'conversion of bases to amino acids in the event of cell starvation'],
+ correctAnswer: 1,
+ explanation: 'The hydrogen bonds between complementary base pairs (A-T and G-C) are weak enough to allow the DNA strands to separate during replication and transcription, yet strong enough collectively to hold the double helix together normally.'
  },
  {
  id: '17',
- text: 'Which substance is a mixture of organic matter and weathered rock?',
+ text: 'Which of these would most likely result in a change to the current classification of an organism?',
  type: 'multiple-choice',
- options: ['Limestone', 'Schist', 'Soil', 'Granite'],
+ options: ['Discovering organisms with similar physical traits in the fossil record', 'Finding a related organism that was previously considered extinct', 'Linking the organism to different ancestors through DNA sequencing', 'Observing organisms that occupy the same ecological niche'],
  correctAnswer: 2,
- explanation: 'Soil is composed of weathered rock particles (sand, silt, clay) mixed with organic matter (decomposed plant and animal material). Limestone, schist, and granite are all types of rock, not mixtures.'
+ explanation: 'Modern classification relies heavily on DNA sequencing to determine evolutionary relationships. If DNA analysis reveals different ancestors than previously thought, the organism\'s taxonomic classification would likely change.'
  },
  {
  id: '18',
- text: '<img src="images/question_18.png" class="question-image"><br><br>Which natural process is the main cause of the ocean currents shown?',
- type: 'multiple-choice',
- options: ['Convection', 'Orbit of Earth', 'Evaporation', 'Drift of continents'],
- correctAnswer: 0,
- explanation: 'Convection is the main driver of ocean currents. Warm water near the equator rises and moves toward the poles, while cold polar water sinks and moves toward the equator, creating a continuous circulation pattern.'
+ text: 'Classify the organisms by their metabolic strategies.',
+ type: 'drag-drop',
+ options: ['Fern', 'Euglena', 'Grass', 'Paramecium', 'Yeast'],
+ dropZones: ['Autotroph', 'Autotroph', 'Both', 'Heterotroph', 'Heterotroph'],
+ correctAnswer: [0, 2, 1, 3, 4],
+ explanation: 'Fern and Grass are autotrophs (they photosynthesize). Paramecium and Yeast are heterotrophs (they consume other organisms). Euglena is unique in being both—it can photosynthesize in light or consume food in dark.'
  },
  {
  id: '19',
- text: 'Determining how the sea floor changes over time has given scientists information about the —',
+ text: 'Five species of frogs that live in separate habitats within 5 non-overlapping ranges along the Mississippi River share a common ancestor. Which process is most likely responsible for the formation of these five distinct species?',
  type: 'multiple-choice',
- options: ['circulation of solar energy', 'patterns of carbon movement', 'formation rate of the ocean crust', 'impact of the atmosphere on ocean depth'],
- correctAnswer: 2,
- explanation: 'Studying sea floor changes, particularly at mid-ocean ridges where new crust forms and at subduction zones where crust is destroyed, has allowed scientists to determine the rate at which ocean crust forms and spreads.'
+ options: ['Physiological isolation', 'Geographic isolation', 'Behavioral isolation', 'Reproductive isolation'],
+ correctAnswer: 1,
+ explanation: 'Geographic isolation occurs when populations are separated by physical barriers (in this case, different ranges along the river). Over time, isolated populations evolve independently, leading to speciation.'
  },
  {
  id: '20',
- text: 'Why do regions of the world near the equator (0° latitude) have a more consistent climate than regions at middle latitudes?',
+ text: 'Chloroplast process<br><u>X</u> + H₂O → <u>Y</u> + O₂<br><br>The diagram shown represents the input and output of a process performed by the chloroplast of a cell. Which substance is most likely represented by Y?',
  type: 'multiple-choice',
- options: ['They have strong, moist westerly prevailing winds.', 'They have high averages of yearly rainfall.', 'They get about the same amount of radiant energy year-round.', 'They are close to large areas of very warm ocean water.'],
- correctAnswer: 2,
- explanation: 'Equatorial regions receive relatively constant solar radiation throughout the year because the Sun\'s rays strike at a consistent angle. Middle latitudes experience significant seasonal variation in solar energy due to Earth\'s axial tilt.'
+ options: ['Glucose', 'CO₂', 'ATP', 'Light'],
+ correctAnswer: 0,
+ explanation: 'The equation X + H₂O → Y + O₂ represents photosynthesis. X is CO₂, and Y is glucose (C₆H₁₂O₆). Chloroplasts use carbon dioxide and water, with light energy, to produce glucose and oxygen.'
  },
  {
  id: '21',
- text: 'In order to protect aquifers near landfills, material is placed under the soil to prevent pollution. Which property must the protective material possess?',
+ text: '<img src="images/question_21.png" class="question-image"><br><br>Which statement best describes her hypothesis?',
  type: 'multiple-choice',
- options: ['High porosity', 'Low permeability', 'High reflectivity', 'Low conductivity'],
+ options: ['A student notices fewer robins in her yard during the winter.', 'She thinks that some robins must migrate in the winter.', 'She counts the robins in her yard once a week for 2 years.', 'Her research has shown that some robins are not in her yard during winter.'],
  correctAnswer: 1,
- explanation: 'Low permeability prevents liquids from passing through the material. A liner with low permeability will block pollutants from leaching through the soil and contaminating groundwater aquifers.'
+ explanation: 'A hypothesis is a proposed explanation that can be tested. Statement 2 ("She thinks that some robins must migrate in the winter") is the hypothesis because it proposes an explanation for the observation of fewer robins.'
  },
  {
  id: '22',
- text: 'Which is a characteristic of all nonfoliated metamorphic rocks?',
+ text: 'Seaweeds occupy an important niche in the Chesapeake Bay ecosystem. Which question will best help a student identify the role of seaweeds in this ecosystem?',
  type: 'multiple-choice',
- options: ['Presence of fossils', 'Cleavage planes', 'Lack of banding', 'Metallic luster'],
- correctAnswer: 2,
- explanation: 'Nonfoliated metamorphic rocks lack the layered or banded appearance (foliation) seen in foliated metamorphic rocks. They have a more uniform, massive texture. Examples include marble and quartzite.'
+ options: ['Which organisms depend on seaweeds as an energy source?', 'Which seaweed species produces the greatest amount of oxygen?', 'What wavelengths of light are photosynthesized by seaweed species?', 'What is the salinity in areas where seaweed is growing?'],
+ correctAnswer: 0,
+ explanation: 'The ecological niche of an organism includes its role in energy transfer within the ecosystem. Identifying which organisms depend on seaweeds as an energy source directly addresses seaweeds\' role in the food web.'
  },
  {
  id: '23',
- text: '<img src="images/question_23.png" class="question-image"><br><br>Students made a hydrometer by sealing the end of a straw with wax and adding some sand until the hydrometer barely floated in fresh water. The diagram shows what the students observed when they used the hydrometer to test water from three different sites. Each water sample had the same temperature. Which of these explanations best fits these observations?',
+ text: 'In 1950, Erwin Chargaff discovered that the percentage of adenine in DNA equals the percentage of thymine, and that the percentage of cytosine equals the percentage of guanine. This proved invaluable to the eventual discovery of which aspect of DNA?',
  type: 'multiple-choice',
- options: ['Estuaries are less salty than fresh water.', 'Oceans support more microbes than fresh water.', 'Salt water is denser than fresh water.', 'Ocean water can freeze at lower temperatures than fresh water.'],
+ options: ['Location', 'Solubility', 'Structure', 'Volume'],
  correctAnswer: 2,
- explanation: 'The hydrometer floats highest in ocean water because salt water is denser than fresh water. Denser liquids provide more buoyant force, causing objects to float higher. Estuary water has intermediate density.'
+ explanation: 'Chargaff\'s rules (A=T and C=G) provided crucial evidence for the base-pairing structure of DNA. This supported Watson and Crick\'s discovery that DNA is a double helix with complementary base pairs.'
  },
  {
  id: '24',
- text: 'The cleavage properties of mica result from the —',
+ text: 'The study of embryos and other early stages of development can help in the classification of living things, past and present, by providing clues about the —',
  type: 'multiple-choice',
- options: ['alternating layers of silica and aluminum', 'weak bonds between flat layers', 'strong covalent bonds within dense carbon clusters', 'metallic bonds between all elements present'],
- correctAnswer: 1,
- explanation: 'Mica has perfect cleavage in one direction because of weak bonds between its flat, sheet-like layers of atoms. These weak bonds allow the mineral to split easily into thin, flexible sheets.'
+ options: ['prokaryotic species that are at risk for extinction', 'rate of appearances of new terrestrial organisms', 'barriers to mating among marine populations', 'common ancestry among vertebrate species'],
+ correctAnswer: 3,
+ explanation: 'Embryological development reveals evolutionary relationships. Similar embryonic stages across different species (like gill slits and tails in vertebrate embryos) indicate common ancestry, helping scientists classify organisms.'
  },
  {
  id: '25',
- text: 'A star begins its formation as gravitational forces cause instability within a —',
- type: 'multiple-choice',
- options: ['black hole', 'red giant', 'supernova', 'nebula'],
- correctAnswer: 3,
- explanation: 'Stars form within nebulae, which are clouds of gas and dust in space. Gravitational forces cause regions of the nebula to collapse, and as the material compresses and heats up, a protostar forms.'
+ text: 'Complete the sentences about water molecules by dragging the correct terms to each box.',
+ type: 'drag-drop',
+ options: ['polar', 'nonpolar', 'hydrogen', 'oxygen', 'positive', 'negative'],
+ dropZones: ['A water molecule is ___', 'It has a slightly ___ charge on', 'the ___ atom and a slightly', '___ charge on the two', '___ atoms'],
+ correctAnswer: [0, 5, 3, 4, 2],
+ explanation: 'A water molecule is polar. It has a slightly negative charge on the oxygen atom (due to higher electronegativity) and a slightly positive charge on the two hydrogen atoms. This polarity gives water its unique properties.'
  },
  {
  id: '26',
- text: '<img src="images/question_26.png" class="question-image"><br><br>The diagram represents areas below the surface of Earth in which fossils have been found. The fossil located in which labeled area is most likely the oldest?',
+ text: 'Which characteristic do most adult fungi and plants share?',
  type: 'multiple-choice',
- options: ['1', '2', '3', '4'],
- correctAnswer: 2,
- explanation: 'According to the principle of superposition, in undisturbed rock layers, the oldest layers are at the bottom. However, the diagram shows an intrusion that affects the layers. Area 3 represents the oldest undisturbed sedimentary layer containing fossils.'
+ options: ['They both are producers.', 'They both have cells with cell walls.', 'They both reproduce through binary fission.', 'They both have multiple nuclei in each cell.'],
+ correctAnswer: 1,
+ explanation: 'Both fungi and plants have cells with cell walls, though the composition differs (chitin in fungi, cellulose in plants). Fungi are decomposers not producers, neither reproduces by binary fission, and most don\'t have multiple nuclei per cell.'
  },
  {
  id: '27',
- text: 'Which structure is most similar to an alluvial fan in formation and composition?',
+ text: '<img src="images/question_27.png" class="question-image"><br><br>Students use a dissolved oxygen probe during a laboratory activity involving 1,000 mL samples of pond water. The function of the probe is to —',
  type: 'multiple-choice',
- options: ['Delta', 'Watershed', 'River', 'Lake'],
- correctAnswer: 0,
- explanation: 'Both alluvial fans and deltas are depositional landforms created when flowing water slows down and deposits sediment. An alluvial fan forms where a stream exits mountains onto flat land; a delta forms where a river enters a body of water.'
+ options: ['create a model', 'test a hypothesis', 'gather accurate data', 'analyze investigation conditions'],
+ correctAnswer: 2,
+ explanation: 'A dissolved oxygen probe is a measurement tool used to gather accurate, quantitative data about oxygen levels in water. It provides precise measurements that would be difficult to obtain through other means.'
  },
  {
  id: '28',
- text: 'Label these ocean features. <br><br><img src="images/question_28.png" class="question-image">',
- type: 'drag-drop',
- options: ['Continental Slope', 'Abyssal Plain', 'Continental Shelf', 'Continental Rise'],
- dropZones: ['Top (at Sea Level)', 'Upper slope', 'Lower slope', 'Deep ocean floor'],
- correctAnswer: [2, 0, 3, 1],
- explanation: 'Moving from shore to deep ocean: Continental Shelf is the shallow, flat area near shore; Continental Slope is the steep drop-off; Continental Rise is the gentle slope at the base; Abyssal Plain is the flat, deep ocean floor.'
+ text: 'In a population of 120 oak trees, 25% of the population has oak wilt disease. What is the number of trees in this population that have oak wilt?',
+ type: 'free-response',
+ correctKeywords: ['30'],
+ explanation: 'To find 25% of 120: 0.25 × 120 = 30 trees. Twenty-five percent of the population means one quarter, so 120 ÷ 4 = 30 trees have oak wilt disease.'
  },
  {
  id: '29',
- text: 'Scientists study small pockets of air trapped deep within frozen glaciers. What are scientists trying to understand about the climate of Earth by analyzing these ice samples?',
+ text: 'An insect called the hemlock woolly adelgid was introduced to a Virginia forest ecosystem. This pest feeds on the nutrients stored inside a hemlock tree, resulting in the death of the tree. Which kind of data would best help a student evaluate the effect of this insect?',
  type: 'multiple-choice',
- options: ['Changes in direction of the magnetic poles', 'Changes in atmospheric gas composition', 'Changes in global wind patterns', 'Changes in atmospheric pressure'],
- correctAnswer: 1,
- explanation: 'Ice cores contain trapped air bubbles that preserve samples of ancient atmosphere. Scientists analyze these bubbles to determine past concentrations of gases like carbon dioxide and methane, helping them understand historical climate changes.'
+ options: ['A comparison of the adelgid with native pest species', 'An account of how the adelgid was introduced into Virginia ecosystems', 'A list of the foreign ecosystems infiltrated by the hemlock woolly adelgid', 'Information about the ecosystem\'s characteristics before the adelgid infestation'],
+ correctAnswer: 3,
+ explanation: 'To evaluate the effect of the invasive species, scientists need baseline data about the ecosystem before the infestation. This allows comparison of before and after conditions to determine the actual impact of the adelgid.'
  },
  {
  id: '30',
- text: '<img src="images/question_30.png" class="question-image"><br><br>The picture shows a sinkhole. Which of these most likely caused this sinkhole to form?',
+ text: '<img src="images/question_30.png" class="question-image"><br><br>A student wanted to compare the transpiration rates of two different plant species at varying levels of humidity. The results are recorded in the table shown. Each plant group was given the same amount of water and light throughout the investigation. Which procedure should have been performed to prevent error in this investigation?',
  type: 'multiple-choice',
- options: ['The collapse of the roof of a limestone cave', 'The abrupt movement of two tectonic plates', 'The thinning of topsoil due to forest clearing', 'The impact of a meteorite striking the surface of Earth'],
- correctAnswer: 0,
- explanation: 'Sinkholes commonly form in areas with limestone bedrock. Acidic groundwater dissolves the limestone over time, creating underground caves. When the cave roof becomes too thin to support the surface, it collapses, forming a sinkhole.'
+ options: ['One type of plant should have been tested.', 'Fewer plants should have been included in each group.', 'The percentage of humidity should have been kept constant.', 'Both groups should have been tested in the same soil type at each humidity level.'],
+ correctAnswer: 3,
+ explanation: 'For a valid comparison, all variables except the one being tested should be controlled. Using different soil types (sand vs. clay) for different trials introduces a confounding variable. Both groups should use the same soil type at each humidity level.'
  },
  {
  id: '31',
- text: '<img src="images/question_31.png" class="question-image"><br><br>Which Virginia watershed has the greatest impact in the state due to its size?',
+ text: 'In an ecosystem, a sudden decrease in the number of bacteria in the soil would most likely result in —',
  type: 'multiple-choice',
- options: ['Tennessee River Watershed', 'James River Watershed', 'Chowan River Watershed', 'Rappahannock River Watershed'],
- correctAnswer: 1,
- explanation: 'Looking at the map, the James River Watershed covers the largest area of Virginia, stretching across the central portion of the state. A larger watershed has greater impact on water resources, flooding, and ecosystems.'
+ options: ['increased water pollution in the soil', 'increased precipitation and flooding of the soil', 'a reduction in the amount of nitrogen available to the ecosystem', 'a decrease in the number of fossils formed in the soil'],
+ correctAnswer: 2,
+ explanation: 'Soil bacteria play a crucial role in the nitrogen cycle by converting atmospheric nitrogen into forms plants can use (nitrogen fixation) and decomposing organic matter. A decrease in bacteria would reduce available nitrogen in the ecosystem.'
  },
  {
  id: '32',
- text: 'Which mineral is most likely an ingredient used in baby powder?',
+ text: 'Medicines are being produced using recombinant DNA technology. For veterinarians, the use of this DNA technology will result in —',
  type: 'multiple-choice',
- options: ['Graphite', 'Pyrite', 'Corundum', 'Talc'],
- correctAnswer: 3,
- explanation: 'Talc is the softest mineral (hardness of 1 on Mohs scale) and has a slippery feel. These properties make it ideal for use in baby powder and cosmetics. Graphite is used in pencils, pyrite contains iron sulfide, and corundum is very hard (used as abrasive).'
+ options: ['decreasing the number of antibodies produced by pets', 'altering the chromosomes of healthy pets', 'making more treatments available for pets', 'identifying new diseases spread by pets'],
+ correctAnswer: 2,
+ explanation: 'Recombinant DNA technology allows scientists to produce medicines, hormones, and vaccines that were previously unavailable or expensive. This technology expands treatment options available to veterinarians for treating animals.'
  },
  {
  id: '33',
- text: 'Pollution due to coal burning most frequently tends to affect lakes by —',
+ text: '<img src="images/question_33.png" class="question-image"><br><br>The arrow in the diagram represents the movement of which molecular structure?',
  type: 'multiple-choice',
- options: ['reducing the amount of dissolved carbon dioxide', 'increasing acidity', 'reducing radioactivity', 'increasing the concentration of nutrients'],
+ options: ['DNA molecule', 'mRNA molecule', 'Base pair', 'Protein'],
  correctAnswer: 1,
- explanation: 'Coal burning releases sulfur dioxide and nitrogen oxides into the atmosphere. These gases combine with water vapor to form sulfuric and nitric acids, which fall as acid rain, increasing the acidity of lakes and harming aquatic ecosystems.'
+ explanation: 'The diagram shows the flow of genetic information from the nucleus to the ribosome. mRNA (messenger RNA) is transcribed in the nucleus and travels to ribosomes in the cytoplasm where proteins are synthesized.'
  },
  {
  id: '34',
- text: 'Some ponds are designed to increase the amount of water seeping into the ground. These types of ponds will fail to work properly in —',
+ text: '<img src="images/question_34.png" class="question-image"><br><br>According to the classification key, what is the genus and species of this organism?',
  type: 'multiple-choice',
- options: ['locations with shallow wells', 'areas with deep surface sands', 'soils with low permeability', 'rock with high porosity'],
- correctAnswer: 2,
- explanation: 'Infiltration ponds rely on water seeping through the soil to recharge groundwater. Soils with low permeability do not allow water to pass through easily, preventing the pond from functioning as intended.'
+ options: ['<i>Papilio polyxenes</i>', '<i>Malacosoma americanum</i>', '<i>Papilio palamedes</i>', '<i>Eurytides marcellus</i>'],
+ correctAnswer: 3,
+ explanation: 'Following the dichotomous key: The butterfly has rounded antennae tips (go to 2), wings with stripes (go to 4), and wings with tail-like extensions longer than antennae, which identifies it as Eurytides marcellus.'
  },
  {
  id: '35',
- text: 'Which action would most likely reduce concerns about how strip mining can harm the environment?',
+ text: '<img src="images/question_35.png" class="question-image"><br><br>The jackrabbit is a desert mammal. The jackrabbit\'s circulatory system increases blood flow to the ears during hot days. The blood flow to the ears decreases during cool or cold nights. This circulation pattern is most directly related to —',
  type: 'multiple-choice',
- options: ['Restrict mining operations to rural areas', 'Reclaim the ecosystem after mining', 'Increase the usage of the products being mined', 'Decrease the amount of labor needed in the mines'],
- correctAnswer: 1,
- explanation: 'Reclamation involves restoring mined land to a natural or economically usable state by replacing soil, replanting vegetation, and restoring the ecosystem. This directly addresses environmental damage from strip mining.'
+ options: ['detoxification', 'excretion', 'osmosis', 'homeostasis'],
+ correctAnswer: 3,
+ explanation: 'Homeostasis is the maintenance of stable internal conditions. The jackrabbit regulates its body temperature by adjusting blood flow to its large ears—increasing flow to release heat when hot, decreasing flow to conserve heat when cold.'
  },
  {
  id: '36',
- text: 'Identify the geologic time in which these organisms first appeared.',
- type: 'drag-drop',
- options: ['First Birds', 'First Bacteria', 'First Fish', 'First Humans'],
- dropZones: ['Cenozoic', 'Mesozoic', 'Paleozoic', 'Precambrian'],
- correctAnswer: [3, 0, 2, 1],
- explanation: 'First Humans appeared in the Cenozoic Era (most recent). First Birds appeared in the Mesozoic Era (Age of Reptiles). First Fish appeared in the Paleozoic Era. First Bacteria appeared in the Precambrian (earliest life forms).'
+ text: 'Proteins are among the most diverse group of macromolecules because of the —',
+ type: 'multiple-choice',
+ options: ['different amino acids that can be connected in many sequences', 'different types of bonds linking amino acids together', 'energy phosphate groups that the amino acids contain', 'link between each DNA base and an amino acid in a protein'],
+ correctAnswer: 0,
+ explanation: 'There are 20 different amino acids that can be combined in virtually unlimited sequences to form proteins. The specific sequence of amino acids determines each protein\'s unique structure and function, creating enormous diversity.'
  },
  {
  id: '37',
- text: 'Crushed stone is an economic resource that is second only to coal in Virginia. How is crushed stone mainly used?',
+ text: 'Which is an activity that increases the genetic variation within a population of earthworms?',
  type: 'multiple-choice',
- options: ['As building insulation', 'In steel production', 'For coal mine reclamation', 'As a construction material'],
- correctAnswer: 3,
- explanation: 'Crushed stone is primarily used as a construction material for road bases, concrete aggregate, railroad ballast, and drainage applications. Virginia\'s abundant limestone, granite, and other rocks make it a major producer.'
+ options: ['Binary fission', 'Sexual reproduction', 'Budding', 'Fragmentation'],
+ correctAnswer: 1,
+ explanation: 'Sexual reproduction increases genetic variation through the combination of genetic material from two parents and through crossing over and independent assortment during meiosis. Asexual methods (binary fission, budding, fragmentation) produce genetically identical offspring.'
  },
  {
  id: '38',
- text: 'A student hypothesizes that a sample of rock formed from ocean sediments. Which would best help the student support this hypothesis?',
+ text: 'The structural differences between a tadpole and an adult frog are due to the —',
  type: 'multiple-choice',
- options: ['A textbook about rock formation methods', 'Rock samples from several locations on Earth', 'A model of the different crustal plate boundaries', 'Clam shells found within the rock sample'],
+ options: ['availability of food sources at different stages', 'type of DNA present at each developmental stage', 'combination of genetic material inherited during fertilization', 'different sets of genes expressed at each stage of development'],
  correctAnswer: 3,
- explanation: 'Marine fossils such as clam shells found within a rock sample provide direct evidence that the rock formed from sediments deposited in an ocean environment. This is physical evidence that supports the hypothesis.'
+ explanation: 'A tadpole and adult frog have the same DNA, but different genes are expressed (turned on or off) at different developmental stages. This differential gene expression causes the dramatic structural changes during metamorphosis.'
  },
  {
  id: '39',
- text: 'About 2.0 billion years ago, complex organisms began to inhabit Earth. These complex organisms developed primarily because of —',
+ text: '<img src="images/question_39.png" class="question-image"><br><br>After 24 hours, the amount of gas that accumulated at the top of the inverted test tube is measured. The students conclude that the light source is causing the water to evaporate, causing water vapor to fill the top of the tube. The best alternative explanation of the differences between the setups is that the —',
  type: 'multiple-choice',
- options: ['changes in atmospheric gases', 'sunlight being absorbed by land', 'the eruption of volcanoes', 'the impact of comets'],
- correctAnswer: 0,
- explanation: 'The development of complex organisms about 2 billion years ago was primarily driven by the increase in atmospheric oxygen produced by cyanobacteria through photosynthesis. This oxygen allowed for aerobic respiration and more complex life forms.'
+ options: ['gravity increased the downward flow of the trapped water', 'metabolism of the elodea plants absorbed CO₂ from the water', 'heat from the light source caused the escape of dissolved gas', 'light caused the elodea plants to photosynthesize, releasing O₂ gas'],
+ correctAnswer: 3,
+ explanation: 'The most likely explanation is that light enabled the Elodea plants to photosynthesize, producing oxygen gas (O₂). The gas collected at the top of the inverted tube is oxygen, not water vapor from evaporation.'
  },
  {
  id: '40',
- text: 'Students on a geology field trip will identify minerals by their streak. Which of these should the students bring on the field trip?',
- type: 'multiple-choice',
- options: ['A long, pointed iron rod', 'A rough, white ceramic tile', 'A disposable sample of talc', 'A low-powered telescope'],
- correctAnswer: 1,
- explanation: 'A streak plate (unglazed porcelain tile) is used to determine a mineral\'s streak color by rubbing the mineral across the plate. The white surface allows the true color of the powdered mineral to be seen.'
+ text: '<img src="images/question_40.png" class="question-image"><br><br>This table was found in a journal of student research. What are the components found in these experimental data?',
+ type: 'drag-drop',
+ options: ['Water (mL)', 'Starch Solution (mL)', 'Enzyme: Amylase (mL)', 'Incubation Temperature (°C)', 'Fractional Activity (%)'],
+ dropZones: ['Independent Variable', 'Dependent Variable', 'Constant 1', 'Constant 2', 'Constant 3'],
+ correctAnswer: [3, 4, 0, 1, 2],
+ explanation: 'The independent variable is Incubation Temperature (what the researcher changes). The dependent variable is Fractional Activity (what is measured). The constants are Water, Starch Solution, and Enzyme amounts (kept the same across test groups).'
  },
  {
  id: '41',
- text: 'Well logs are used by oil companies to correlate geologic formations. Based on the formations in Well A, which geologic formations are missing in Well B?<br><br><img src="images/question_31.png" class="question-image">',
- type: 'drag-drop',
- options: ['Sand 1', 'Shale 2', 'Sand 3', 'Shale 4', 'Limestone 5', 'Shale 6', 'Sand 7', 'Shale 8'],
- dropZones: ['Missing formation 1', 'Missing formation 2', 'Missing formation 3'],
- correctAnswer: [0, 1, 7],
- explanation: 'Comparing Well A and Well B, the formations Sand 1, Shale 2, and Shale 8 that appear in Well A are not present in Well B. These layers may have been eroded away or were never deposited at the Well B location.'
+ text: 'Scientists classifying modern animals are most likely to compare the —',
+ type: 'multiple-choice',
+ options: ['structure of the animals\' ATP', 'function of the animals\' limbs', 'composition of the animals\' bones', 'sequence of the animals\' DNA'],
+ correctAnswer: 3,
+ explanation: 'Modern classification (phylogenetics) relies primarily on DNA sequence comparisons to determine evolutionary relationships. DNA provides the most accurate information about how closely related different species are.'
  },
  {
  id: '42',
- text: 'A low pressure system has moved away from the equator and is moving directly over water. When the system reaches 60°N latitude, the system will most likely be at a point where —',
+ text: 'Which feature do viruses have in common with animal cells?',
  type: 'multiple-choice',
- options: ['its water temperature is at its highest level', 'its direction of rotation has changed', 'most of its wind speeds are greatest', 'most of its energy is lost'],
- correctAnswer: 3,
- explanation: 'Low pressure systems (like hurricanes) derive their energy from warm ocean water. As the system moves to higher latitudes (60°N), the water becomes much colder, cutting off the energy supply and causing the system to weaken significantly.'
+ options: ['Ability to form proteins at the ribosomes', 'Existence of lipids in cell membranes', 'Presence of a genetic code in nucleic acid', 'Production of energy by a mitochondrion'],
+ correctAnswer: 2,
+ explanation: 'Both viruses and animal cells contain genetic material (nucleic acid—either DNA or RNA) that carries the genetic code. Viruses lack ribosomes, cell membranes, and mitochondria, relying on host cells for these functions.'
  },
  {
  id: '43',
- text: 'Starting with the event that scientists theorize happened first and ending with the event that scientists theorize happened last, arrange the events in chronological order.',
- type: 'drag-drop',
- options: ['Birth of the Earliest Star', 'Formation of the Sun', 'Origin of Life on Earth', 'The Big Bang'],
- dropZones: ['First', 'Second', 'Third', 'Last'],
- correctAnswer: [3, 0, 1, 2],
- explanation: 'The chronological order is: The Big Bang (13.8 billion years ago) created the universe; Birth of the Earliest Stars (about 200 million years after Big Bang); Formation of the Sun (about 4.6 billion years ago); Origin of Life on Earth (about 3.5-4 billion years ago).'
+ text: '<img src="images/question_43.png" class="question-image"><br><br>According to this diagram, the result of spermatogenesis is four sperm cells, each with —',
+ type: 'multiple-choice',
+ options: ['strands of DNA that resulted from crossing over', 'half of the original number of chromosomes', 'genetically identical strands of DNA', 'complete copies of all the original chromosomes'],
+ correctAnswer: 1,
+ explanation: 'Spermatogenesis involves meiosis, which reduces the chromosome number by half. Each sperm cell (gamete) contains half the number of chromosomes as the original cell, which will be restored when fertilization occurs.'
  },
  {
  id: '44',
- text: 'Which characteristic do all the planets in our solar system have in common?',
+ text: 'A group of ponies lives in the Chincoteague National Wildlife Reserve in Virginia. The development of longer legs over time would be selected for if —',
  type: 'multiple-choice',
- options: ['Angle of axial tilt', 'Direction of revolution', 'Percentages of atmospheric gases', 'Features of a rocky crust'],
- correctAnswer: 1,
- explanation: 'All planets in our solar system revolve around the Sun in the same direction (counterclockwise when viewed from above the North Pole). Their axial tilts, atmospheric compositions, and surface features vary significantly.'
+ options: ['it increased the survival rate of the long-legged ponies', 'it decreased the rate of reproduction of the long-legged ponies', 'it prohibited the long-legged ponies from using available food sources', 'it made the long-legged ponies run more slowly'],
+ correctAnswer: 0,
+ explanation: 'Natural selection favors traits that increase survival and reproduction. If longer legs increased survival rates (perhaps by helping ponies escape predators or reach food), ponies with longer legs would be more likely to survive and reproduce.'
  },
  {
  id: '45',
- text: 'A scientist is studying energy transfer that occurs in the oceans, atmosphere, and Earth\'s interior. Which of these is the scientist most likely studying?',
+ text: 'One parent is heterozygous for a certain trait (Dd). The other parent is homozygous dominant (DD) for that trait. What is the percent chance that an offspring from this cross will be heterozygous?',
  type: 'multiple-choice',
- options: ['Pressure', 'Density', 'Gravity', 'Convection'],
- correctAnswer: 3,
- explanation: 'Convection is the transfer of heat through the movement of fluids (liquids and gases). It occurs in the oceans (ocean currents), atmosphere (wind and weather patterns), and Earth\'s interior (mantle convection driving plate tectonics).'
+ options: ['0%', '25%', '50%', '100%'],
+ correctAnswer: 2,
+ explanation: 'Crossing Dd × DD produces offspring with genotypes: DD (50%) and Dd (50%). The D from the homozygous parent combines with either D or d from the heterozygous parent, giving a 50% chance of heterozygous (Dd) offspring.'
  },
+ {
+ id: '46',
+ text: '<img src="images/question_46.png" class="question-image"><br><br>Which trial in the table of data shown has questionable data?',
+ type: 'multiple-choice',
+ options: ['W', 'X', 'Y', 'Z'],
+ correctAnswer: 3,
+ explanation: 'Trial Z shows questionable data because the Day 15 measurement (17 cm) is much higher than expected based on the pattern of growth. Trials W, X, and Y show consistent progressive growth, while Z shows an unusual spike at Day 15.'
+ }
 ];
 
 // Test-specific storage key for this test
