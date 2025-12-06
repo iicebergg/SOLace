@@ -62,9 +62,8 @@ const sampleQuestions = [
  id: '8',
  text: 'Which type of rock is formed by each process?',
  type: 'drag-drop',
- image: {url:'images/question_8.png', alt: 'Diagram showing four rock formation processes'},
  options: ['Intrusive Igneous', 'Extrusive Igneous', 'Chemical Sedimentary', 'Organic Sedimentary', 'Metamorphic'],
- dropZones: ['<br><br><img src="images/question_8.png" class="question-image"><br><br>Evaporation of Ocean', 'Compression of Crust', 'Sinking of Plankton', 'Formation of Granite Underground'],
+ dropZones: ['<img src="images/question_8a.png" class="question-image"><br>Evaporation of Ocean', '<img src="images/question_8b.png" class="question-image"><br>Compression of Crust', '<img src="images/question_8c.png" class="question-image"><br>Sinking of Plankton', '<img src="images/question_8d.png" class="question-image"><br>Formation of Granite Underground'],
  correctAnswer: [2, 4, 3, 0],
  explanation: 'Evaporation of ocean water leaves behind dissolved minerals that form chemical sedimentary rock. Compression of crust creates metamorphic rock through heat and pressure. Sinking plankton accumulate to form organic sedimentary rock. Granite forming underground from slow-cooling magma creates intrusive igneous rock.'
  },
@@ -86,9 +85,8 @@ const sampleQuestions = [
  },
  {
  id: '11',
- text: 'At which range of altitude is air pressure closest to 40 kPa based on these data?',
+ text: '<img src="images/question_11.png" class="question-image"><br><br>At which range of altitude is air pressure closest to 40 kPa based on these data?',
  type: 'multiple-choice',
- image: {url:'images/question_11.png', alt: 'Graph showing Relationship Between Air Pressure and Altitude'},
  options: ['Between 4.5 km and 6.0 km', 'Between 6.0 km and 7.5 km', 'Between 7.5 km and 9.0 km', 'Between 9.0 km and 10.5 km'],
  correctAnswer: 1,
  explanation: 'Reading the graph, 40 kPa (40,000 Pascals) on the y-axis corresponds to an altitude between approximately 6.0 km and 7.5 km on the x-axis.'
@@ -97,8 +95,12 @@ const sampleQuestions = [
  id: '12',
  text: 'Which was the first object made by humans to orbit Earth?',
  type: 'multiple-choice',
- image: {url:'images/question_12.png', alt: 'Images of Voyager, Sputnik, Skylab, and Mercury spacecraft'},
- options: ['Voyager', 'Skylab', 'Sputnik', 'Mercury'],
+ options: [
+    {url: 'images/question_12a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_12b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_12c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_12d.png', alt: 'Image failed to load. Please try again later.'}
+ ],
  correctAnswer: 2,
  explanation: 'Sputnik 1, launched by the Soviet Union on October 4, 1957, was the first artificial satellite to orbit Earth. Voyager was a deep space probe, Skylab was a space station, and Mercury was a crewed spacecraft program.'
  },
@@ -112,9 +114,8 @@ const sampleQuestions = [
  },
  {
  id: '14',
- text: 'This weather map helps to predict the location where a storm will occur by giving which type of information?',
+ text: '<img src="images/question_14.png" class="question-image"><br><br>This weather map helps to predict the location where a storm will occur by giving which type of information?',
  type: 'multiple-choice',
- image: {url:'images/question_14.png', alt: 'Weather Map showing pressure systems and fronts over the United States'},
  options: ['Air pressure', 'Humidity', 'Wind speed', 'Temperature'],
  correctAnswer: 0,
  explanation: 'The weather map shows isobars (lines of equal pressure) with values like 1008, 1012, and 1016, as well as H (high pressure) and L (low pressure) centers. Storms typically form where low pressure systems exist.'
@@ -145,9 +146,8 @@ const sampleQuestions = [
  },
  {
  id: '18',
- text: 'Which natural process is the main cause of the ocean currents shown?',
+ text: '<img src="images/question_18.png" class="question-image"><br><br>Which natural process is the main cause of the ocean currents shown?',
  type: 'multiple-choice',
- image: {url:'images/question_18.png', alt: 'Map showing Ocean Currents around North America and Europe'},
  options: ['Convection', 'Orbit of Earth', 'Evaporation', 'Drift of continents'],
  correctAnswer: 0,
  explanation: 'Convection is the main driver of ocean currents. Warm water near the equator rises and moves toward the poles, while cold polar water sinks and moves toward the equator, creating a continuous circulation pattern.'
@@ -186,9 +186,8 @@ const sampleQuestions = [
  },
  {
  id: '23',
- text: 'Students made a hydrometer by sealing the end of a straw with wax and adding some sand until the hydrometer barely floated in fresh water. The diagram shows what the students observed when they used the hydrometer to test water from three different sites. Each water sample had the same temperature. Which of these explanations best fits these observations?',
+ text: '<img src="images/question_23.png" class="question-image"><br><br>Students made a hydrometer by sealing the end of a straw with wax and adding some sand until the hydrometer barely floated in fresh water. The diagram shows what the students observed when they used the hydrometer to test water from three different sites. Each water sample had the same temperature. Which of these explanations best fits these observations?',
  type: 'multiple-choice',
- image: {url:'images/question_23.png', alt: 'Hydrometer Investigation diagram showing straw floating at different levels in Fresh Water, Ocean Water, and Estuary Water'},
  options: ['Estuaries are less salty than fresh water.', 'Oceans support more microbes than fresh water.', 'Salt water is denser than fresh water.', 'Ocean water can freeze at lower temperatures than fresh water.'],
  correctAnswer: 2,
  explanation: 'The hydrometer floats highest in ocean water because salt water is denser than fresh water. Denser liquids provide more buoyant force, causing objects to float higher. Estuary water has intermediate density.'
@@ -211,9 +210,8 @@ const sampleQuestions = [
  },
  {
  id: '26',
- text: 'The diagram represents areas below the surface of Earth in which fossils have been found. The fossil located in which labeled area is most likely the oldest?',
+ text: '<img src="images/question_26.png" class="question-image"><br><br>The diagram represents areas below the surface of Earth in which fossils have been found. The fossil located in which labeled area is most likely the oldest?',
  type: 'multiple-choice',
- image: {url:'images/question_26.png', alt: 'Diagram showing layers below Surface of Earth with areas labeled 1, 2, 3, and 4'},
  options: ['1', '2', '3', '4'],
  correctAnswer: 2,
  explanation: 'According to the principle of superposition, in undisturbed rock layers, the oldest layers are at the bottom. However, the diagram shows an intrusion that affects the layers. Area 3 represents the oldest undisturbed sedimentary layer containing fossils.'
@@ -228,9 +226,8 @@ const sampleQuestions = [
  },
  {
  id: '28',
- text: 'Label these ocean features.',
+ text: 'Label these ocean features. <br><br><img src="images/question_28.png" class="question-image">',
  type: 'drag-drop',
- image: {url:'images/question_28.png', alt: 'Ocean Features diagram showing cross-section of ocean floor'},
  options: ['Continental Slope', 'Abyssal Plain', 'Continental Shelf', 'Continental Rise'],
  dropZones: ['Top (at Sea Level)', 'Upper slope', 'Lower slope', 'Deep ocean floor'],
  correctAnswer: [2, 0, 3, 1],
@@ -246,18 +243,16 @@ const sampleQuestions = [
  },
  {
  id: '30',
- text: 'The picture shows a sinkhole. Which of these most likely caused this sinkhole to form?',
+ text: '<img src="images/question_30.png" class="question-image"><br><br>The picture shows a sinkhole. Which of these most likely caused this sinkhole to form?',
  type: 'multiple-choice',
- image: {url:'images/question_30.png', alt: 'Picture of a sinkhole'},
  options: ['The collapse of the roof of a limestone cave', 'The abrupt movement of two tectonic plates', 'The thinning of topsoil due to forest clearing', 'The impact of a meteorite striking the surface of Earth'],
  correctAnswer: 0,
  explanation: 'Sinkholes commonly form in areas with limestone bedrock. Acidic groundwater dissolves the limestone over time, creating underground caves. When the cave roof becomes too thin to support the surface, it collapses, forming a sinkhole.'
  },
  {
  id: '31',
- text: 'Which Virginia watershed has the greatest impact in the state due to its size?',
+ text: '<img src="images/question_31.png" class="question-image"><br><br>Which Virginia watershed has the greatest impact in the state due to its size?',
  type: 'multiple-choice',
- image: {url:'images/question_31.png', alt: 'Map showing Major Watersheds of Virginia'},
  options: ['Tennessee River Watershed', 'James River Watershed', 'Chowan River Watershed', 'Rappahannock River Watershed'],
  correctAnswer: 1,
  explanation: 'Looking at the map, the James River Watershed covers the largest area of Virginia, stretching across the central portion of the state. A larger watershed has greater impact on water resources, flooding, and ecosystems.'
@@ -298,7 +293,6 @@ const sampleQuestions = [
  id: '36',
  text: 'Identify the geologic time in which these organisms first appeared.',
  type: 'drag-drop',
- image: {url:'images/question_36.png', alt: 'Geologic Time diagram showing Cenozoic, Mesozoic, Paleozoic, and Precambrian eras'},
  options: ['First Birds', 'First Bacteria', 'First Fish', 'First Humans'],
  dropZones: ['Cenozoic', 'Mesozoic', 'Paleozoic', 'Precambrian'],
  correctAnswer: [3, 0, 2, 1],
@@ -338,9 +332,8 @@ const sampleQuestions = [
  },
  {
  id: '41',
- text: 'Well logs are used by oil companies to correlate geologic formations. Based on the formations in Well A, which geologic formations are missing in Well B?',
+ text: 'Well logs are used by oil companies to correlate geologic formations. Based on the formations in Well A, which geologic formations are missing in Well B?<br><br><img src="images/question_31.png" class="question-image">',
  type: 'drag-drop',
- image: {url:'images/question_41.png', alt: 'Well Logs diagram showing formations in Well A and Well B'},
  options: ['Sand 1', 'Shale 2', 'Sand 3', 'Shale 4', 'Limestone 5', 'Shale 6', 'Sand 7', 'Shale 8'],
  dropZones: ['Missing formation 1', 'Missing formation 2', 'Missing formation 3'],
  correctAnswer: [0, 1, 7],
@@ -358,7 +351,6 @@ const sampleQuestions = [
  id: '43',
  text: 'Starting with the event that scientists theorize happened first and ending with the event that scientists theorize happened last, arrange the events in chronological order.',
  type: 'drag-drop',
- image: {url:'images/question_43.png', alt: 'Diagram for arranging cosmic events in chronological order'},
  options: ['Birth of the Earliest Star', 'Formation of the Sun', 'Origin of Life on Earth', 'The Big Bang'],
  dropZones: ['First', 'Second', 'Third', 'Last'],
  correctAnswer: [3, 0, 1, 2],
@@ -418,38 +410,84 @@ const TEST_STORAGE_KEY = `solace_test_results_${window.TEST_IDENTIFIER}`;
     // Override saveTestResult to use test-specific storage
     window.resultsManager.saveTestResult = function(resultData) {
       // Enhanced result data with test identification (no scaled scores)
-      const enhancedResult = {
+      const enhancedResultData = {
         ...resultData,
-        testIdentifier: window.TEST_IDENTIFIER,
-        testType: window.TEST_IDENTIFIER.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase()),
-        timestamp: new Date().toISOString(),
-        rawScore: resultData.correctAnswers,
-        totalQuestions: resultData.totalQuestions,
-        percentCorrect: Math.round((resultData.correctAnswers / resultData.totalQuestions) * 100)
+        testType: window.TEST_IDENTIFIER.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase())
       };
       
-      // Load existing results for this test
-      this.loadAllResults();
+      console.log(`Saving ${window.TEST_IDENTIFIER} result: ${enhancedResultData.correctAnswers}/${enhancedResultData.totalQuestions} correct (${enhancedResultData.score}%)`);
       
-      // Add new result
-      this.results.push(enhancedResult);
+      // Store for immediate use
+      window.tempEnhancedResult = enhancedResultData;
+      
+      // Create the result object
+      const result = {
+        id: 'result_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9),
+        timestamp: new Date().toISOString(),
+        date: new Date().toLocaleDateString(),
+        time: new Date().toLocaleTimeString(),
+        score: enhancedResultData.score,
+        totalQuestions: enhancedResultData.totalQuestions,
+        correctAnswers: enhancedResultData.correctAnswers,
+        timeSpent: enhancedResultData.timeSpent || 0,
+        answers: enhancedResultData.answers || [],
+        testType: enhancedResultData.testType
+      };
+      
+      // Load current results, add new one, and save
+      this.results = this.loadAllResults();
+      this.results.unshift(result);
+      
+      // Keep only the most recent 50 results
+      if (this.results.length > 50) {
+        this.results = this.results.slice(0, 50);
+      }
       
       // Save to test-specific storage
       try {
         localStorage.setItem(TEST_STORAGE_KEY, JSON.stringify(this.results));
-        console.log(`Saved result for ${window.TEST_IDENTIFIER}: ${enhancedResult.percentCorrect}%`);
+        console.log('Test-specific result saved successfully:', result.id);
+        
+        // Trigger immediate enhancement after saving (for any custom enhancements)
+        setTimeout(() => {
+          console.log('Triggering immediate enhancement after save');
+          enhanceResultsWithRetry();
+        }, 10);
+        
+        return result;
       } catch (error) {
         console.error('Error saving test-specific result:', error);
+        return null;
       }
-      
-      return enhancedResult;
     };
     
-    console.log('Test-specific results manager configured');
+    // Reload results with the new system
+    window.resultsManager.results = window.resultsManager.loadAllResults();
+    
+    // Override displayResults to ensure proper timing
+    if (window.resultsManager.displayResults) {
+      const originalDisplayResults = window.resultsManager.displayResults.bind(window.resultsManager);
+      
+      window.resultsManager.displayResults = function() {
+        console.log('Results manager displayResults called');
+        
+        // Call original display
+        const result = originalDisplayResults.apply(this, arguments);
+        
+        // Immediately attempt any custom enhancements
+        setTimeout(() => {
+          console.log('Post-displayResults enhancement trigger');
+          enhanceResultsWithRetry();
+        }, 10);
+        
+        return result;
+      };
+    }
   }
   
-  // Enhance finishTest to trigger proper results display
+  // Enhanced finishTest override for immediate result processing
   function enhanceFinishTest() {
+    // Wait for finishTest to be available
     const waitForFinishTest = () => {
       if (typeof window.finishTest === 'function') {
         const originalFinishTest = window.finishTest;
