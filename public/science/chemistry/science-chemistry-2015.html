@@ -26,7 +26,6 @@
     <!-- Home Section -->
     <section id="home" class="page active">
       <h2>Chemistry (2015)</h2>
-      <p>To access a PDF version of this test, visit the <a href="https://www.doe.virginia.gov/home/showpublisheddocument/20911/638043645513400000">official VDOE site</a>.</p>
       <div class="action-btns">
         <button id="start-test" class="primary-btn">Start New Test</button>
         <button id="view-results" class="secondary-btn">View Previous Results</button>
@@ -96,19 +95,39 @@
         </div>
       </div>
       <div class="settings-group">
-        <h3>Additional Options</h3>
-        <div class="checkbox-option">
-          <input type="checkbox" id="reduce-motion">
-          <label for="reduce-motion">Reduce motion</label>
+        <h3>Reading Assistance Tools</h3>
+        <div class="accessibility-tool-option">
+          <label for="magnifier-toggle">
+            Screen Magnifier
+            <div class="tool-description">Draggable square magnifier that zooms content 2x where you place it</div>
+          </label>
+          <input type="checkbox" id="magnifier-toggle">
         </div>
-        <div class="checkbox-option">
-          <input type="checkbox" id="screen-reader-opt">
-          <label for="screen-reader-opt">Screen reader optimizations</label>
+        <div class="accessibility-tool-option">
+          <label for="line-reader-toggle">
+            Line Reader Mask
+            <div class="tool-description">Resizable reading guide that highlights one line at a time</div>
+          </label>
+          <input type="checkbox" id="line-reader-toggle">
         </div>
       </div>
-      <button id="save-settings" class="primary-btn">Save Settings</button>
     </section>
   </main>
+
+  <!-- Magnifier -->
+  <div id="magnifier" class="magnifier-container">
+    <div id="magnifier-content" class="magnifier-content"></div>
+    <div class="magnifier-crosshair"></div>
+  </div>
+
+  <!-- Line Reader Mask -->
+  <div id="line-reader" class="line-reader-container">
+    <!-- Mask segments will be created dynamically by JavaScript -->
+    <div class="line-reader-handle" id="line-reader-handle"></div>
+    <div class="line-reader-window" id="line-reader-window">
+      <div class="line-reader-window-handle" id="line-reader-window-handle"></div>
+    </div>
+  </div>
 
   <footer>
     <div class="footer-content">
@@ -198,13 +217,6 @@
       <textarea class="response-input" rows="1" placeholder="Type your answer here..."></textarea>
     </div>
   </template>
-  
-  <template id="point-select-template">
-    <div class="question point-select">
-      <h3 class="question-text"></h3>
-       <div class="point-select-image-container"></div>
-    </div>
-  </template>
 
   <!-- Load Scripts in Order -->
   <script src="science-chemistry-2015.js"></script>
@@ -212,11 +224,6 @@
   <!-- Enhanced Results Manager -->
   <script>
     // Enhanced Results Storage System
-    const STORAGE_KEYS = {
-      TEST_RESULTS: 'solace_test_results',
-      USER_PREFERENCES: 'solace_user_preferences'
-    };
-    
     const MAX_STORED_RESULTS = 50;
     
     class EnhancedResultsManager {

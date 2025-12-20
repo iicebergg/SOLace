@@ -1,377 +1,412 @@
 window.TEST_IDENTIFIER = 'science_chemistry_2015';
 
 const sampleQuestions = [
- {
- id: '1',
- text: '<img src="images/question_1.png" class="question-image"><br><br>The fossil at point X has been dated to be 65 million years old. What can relative dating indicate about the fossil at point Y?',
- type: 'multiple-choice',
- options: ['The age of the organism when it died', 'The type of environment the organism lived in', 'The distortion of the organism by the fault', 'The similar time period in which the organism lived'],
- correctAnswer: 3,
- explanation: 'Relative dating indicates the similar time period in which organisms lived by comparing their positions in rock layers. Since fossils X and Y are in the same rock layer (separated by a fault), they lived during a similar time period.'
- },
- {
- id: '2',
- text: 'The highest and lowest tides are known as the spring tides. When do these tides occur?',
- type: 'multiple-choice',
- options: ['During the new moon and full moon phases', 'Between the half moon and full moon phases', 'During the new moon and crescent moon phases', 'Between the full moon and crescent moon phases'],
- correctAnswer: 0,
- explanation: 'Spring tides occur during new moon and full moon phases when the Sun, Moon, and Earth are aligned. This alignment causes the gravitational forces to combine, creating the highest high tides and lowest low tides.'
- },
- {
- id: '3',
- text: '<img src="images/question_3.png" class="question-image"><br><br>Which best describes the area shown in this aerial photograph?',
- type: 'multiple-choice',
- options: ['Forest and farmland', 'Deeply eroded bedrock', 'Extensive urban development', 'Folded mountainside and rivers'],
- correctAnswer: 0,
- explanation: 'The aerial photograph shows a mixture of forested areas (darker patches) and cleared agricultural land (lighter, geometric patterns), which is characteristic of forest and farmland.'
- },
- {
- id: '4',
- text: 'The moon has a stronger influence on Earth\'s tides than the sun because the moon —',
- type: 'multiple-choice',
- options: ['is denser than the sun', 'has more mass than the sun', 'is much closer to Earth', 'moves much faster relative to Earth'],
- correctAnswer: 2,
- explanation: 'Although the Sun has much more mass than the Moon, the Moon\'s proximity to Earth gives it a stronger tidal influence. Tidal force depends on distance cubed, so the Moon\'s closeness makes its gravitational effect on tides about twice as strong as the Sun\'s.'
- },
- {
- id: '5',
- text: 'Remains of ancient life are most often preserved through which process?',
- type: 'multiple-choice',
- options: ['Freezing', 'Burial in sediment', 'Entrapment in tar', 'Drying out'],
- correctAnswer: 1,
- explanation: 'Burial in sediment is the most common method of fossil preservation. When organisms are quickly buried by sediment, they are protected from decay and scavengers, allowing the fossilization process to occur over millions of years.'
- },
- {
- id: '6',
- text: 'Environmental effects of the impact of a meteorite 66.4 million years ago may have led to the extinction of many species on Earth. Which evidence best supports this theory?',
- type: 'multiple-choice',
- options: ['The Cenozoic Era began 66.4 million years ago when the Mesozoic Era ended.', 'Iridium found in meteorites is also present in rock layers that are 66.4 million years old.', 'Many other meteorite impact sites have been identified on Earth.', 'Many asteroids are found between Mars and Jupiter.'],
- correctAnswer: 1,
- explanation: 'The presence of iridium (a rare element on Earth but common in meteorites) in the 66.4 million-year-old rock layer provides direct evidence linking a meteorite impact to the mass extinction event at the end of the Mesozoic Era.'
- },
- {
- id: '7',
- text: 'When a river flows into a lake, the velocity of the water decreases. Which sediments will most likely be in the numbered locations? <br><br><img src="images/question_7.png" class="question-image">',
- type: 'drag-drop',
- options: ['<img src="images/question_7a.png" class="question-image"><br>Sand Grains', '<img src="images/question_7b.png" class="question-image"><br>Clay-Sized Particles', '<img src="images/question_7c.png" class="question-image"><br>Large Gravel'],
- dropZones: ['Location 1', 'Location 2', 'Location 3'],
- correctAnswer: [2, 0, 1],
- explanation: 'As water velocity decreases, larger particles settle first. Location 1 (where the river enters) receives large gravel, Location 2 receives sand grains, and Location 3 (furthest into the lake) receives clay-sized particles which settle last due to their small size.'
- },
- {
- id: '8',
- text: 'Which type of rock is formed by each process?',
- type: 'drag-drop',
- options: ['Intrusive Igneous', 'Extrusive Igneous', 'Chemical Sedimentary', 'Organic Sedimentary', 'Metamorphic'],
- dropZones: ['<img src="images/question_8a.png" class="question-image"><br>Evaporation of Ocean', '<img src="images/question_8b.png" class="question-image"><br>Compression of Crust', '<img src="images/question_8c.png" class="question-image"><br>Sinking of Plankton', '<img src="images/question_8d.png" class="question-image"><br>Formation of Granite Underground'],
- correctAnswer: [2, 4, 3, 0],
- explanation: 'Evaporation of ocean water leaves behind dissolved minerals that form chemical sedimentary rock. Compression of crust creates metamorphic rock through heat and pressure. Sinking plankton accumulate to form organic sedimentary rock. Granite forming underground from slow-cooling magma creates intrusive igneous rock.'
- },
- {
- id: '9',
- text: 'A student hypothesizes that water from infrequently used school faucets contains more chemical impurities than the water from frequently used faucets. At the same time of day, the student uses a water test kit to measure the water impurities from the different faucets. Which is the manipulated variable in this investigation?',
- type: 'multiple-choice',
- options: ['The chemicals used to test the water', 'The amount of water per sample', 'The time of day when water is collected', 'The locations of water collection'],
- correctAnswer: 3,
- explanation: 'The manipulated (independent) variable is what the experimenter deliberately changes. In this investigation, the student is testing water from different faucet locations (frequently vs. infrequently used) to compare impurity levels.'
- },
- {
- id: '10',
- text: 'Which coordinates identify a location north of a city that has a latitude of 38.0°N and a longitude of 25.0°W?',
- type: 'multiple-choice',
- options: ['0.0° and 0.0°', '25.0°N and 38.0°W', '38.0°N and 47.0°W', '47.0°N and 25.0°W'],
- correctAnswer: 3,
- explanation: 'To be north of 38.0°N latitude, the new location must have a higher latitude value. 47.0°N is north of 38.0°N. The longitude of 25.0°W can remain the same for a location directly north.'
- },
- {
- id: '11',
- text: '<img src="images/question_11.png" class="question-image"><br><br>At which range of altitude is air pressure closest to 40 kPa based on these data?',
- type: 'multiple-choice',
- options: ['Between 4.5 km and 6.0 km', 'Between 6.0 km and 7.5 km', 'Between 7.5 km and 9.0 km', 'Between 9.0 km and 10.5 km'],
- correctAnswer: 1,
- explanation: 'Reading the graph, 40 kPa (40,000 Pascals) on the y-axis corresponds to an altitude between approximately 6.0 km and 7.5 km on the x-axis.'
- },
- {
- id: '12',
- text: 'Which was the first object made by humans to orbit Earth?',
- type: 'multiple-choice',
- options: [
-    {url: 'images/question_12a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_12b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_12c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_12d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 2,
- explanation: 'Sputnik 1, launched by the Soviet Union on October 4, 1957, was the first artificial satellite to orbit Earth. Voyager was a deep space probe, Skylab was a space station, and Mercury was a crewed spacecraft program.'
- },
- {
- id: '13',
- text: 'Under which condition would a lowering of the water table most likely occur?',
- type: 'multiple-choice',
- options: ['Extended drought over the recharge zone', 'Decreased runoff due to the planting of grass', 'Icecaps expand and cause lower sea levels', 'Slow evaporation of heavy rainfall'],
- correctAnswer: 0,
- explanation: 'Extended drought reduces the amount of water that can infiltrate and recharge groundwater aquifers. Without precipitation to replenish the groundwater, the water table will drop.'
- },
- {
- id: '14',
- text: '<img src="images/question_14.png" class="question-image"><br><br>This weather map helps to predict the location where a storm will occur by giving which type of information?',
- type: 'multiple-choice',
- options: ['Air pressure', 'Humidity', 'Wind speed', 'Temperature'],
- correctAnswer: 0,
- explanation: 'The weather map shows isobars (lines of equal pressure) with values like 1008, 1012, and 1016, as well as H (high pressure) and L (low pressure) centers. Storms typically form where low pressure systems exist.'
- },
- {
- id: '15',
- text: 'Spacecraft traveling to Jupiter from Earth would most likely have to navigate through or around which natural obstacle?',
- type: 'multiple-choice',
- options: ['Uranus', 'Neptune', 'Asteroid belt', 'Comet\'s tail'],
- correctAnswer: 2,
- explanation: 'The asteroid belt is located between Mars and Jupiter. Any spacecraft traveling from Earth to Jupiter must pass through or navigate around this region of rocky debris.'
- },
- {
- id: '16',
- text: 'A geologist studying volcanic activity is collecting rocks that formed from hot, molten magma. What type of rock is the geologist collecting?',
- type: 'multiple-choice',
- options: ['Clastic sedimentary', 'Metamorphic', 'Chemical sedimentary', 'Igneous'],
- correctAnswer: 3,
- explanation: 'Igneous rocks form from the cooling and solidification of molten magma or lava. The word "igneous" comes from the Latin word for fire, reflecting this origin.'
- },
- {
- id: '17',
- text: 'Which substance is a mixture of organic matter and weathered rock?',
- type: 'multiple-choice',
- options: ['Limestone', 'Schist', 'Soil', 'Granite'],
- correctAnswer: 2,
- explanation: 'Soil is composed of weathered rock particles (sand, silt, clay) mixed with organic matter (decomposed plant and animal material). Limestone, schist, and granite are all types of rock, not mixtures.'
- },
- {
- id: '18',
- text: '<img src="images/question_18.png" class="question-image"><br><br>Which natural process is the main cause of the ocean currents shown?',
- type: 'multiple-choice',
- options: ['Convection', 'Orbit of Earth', 'Evaporation', 'Drift of continents'],
- correctAnswer: 0,
- explanation: 'Convection is the main driver of ocean currents. Warm water near the equator rises and moves toward the poles, while cold polar water sinks and moves toward the equator, creating a continuous circulation pattern.'
- },
- {
- id: '19',
- text: 'Determining how the sea floor changes over time has given scientists information about the —',
- type: 'multiple-choice',
- options: ['circulation of solar energy', 'patterns of carbon movement', 'formation rate of the ocean crust', 'impact of the atmosphere on ocean depth'],
- correctAnswer: 2,
- explanation: 'Studying sea floor changes, particularly at mid-ocean ridges where new crust forms and at subduction zones where crust is destroyed, has allowed scientists to determine the rate at which ocean crust forms and spreads.'
- },
- {
- id: '20',
- text: 'Why do regions of the world near the equator (0° latitude) have a more consistent climate than regions at middle latitudes?',
- type: 'multiple-choice',
- options: ['They have strong, moist westerly prevailing winds.', 'They have high averages of yearly rainfall.', 'They get about the same amount of radiant energy year-round.', 'They are close to large areas of very warm ocean water.'],
- correctAnswer: 2,
- explanation: 'Equatorial regions receive relatively constant solar radiation throughout the year because the Sun\'s rays strike at a consistent angle. Middle latitudes experience significant seasonal variation in solar energy due to Earth\'s axial tilt.'
- },
- {
- id: '21',
- text: 'In order to protect aquifers near landfills, material is placed under the soil to prevent pollution. Which property must the protective material possess?',
- type: 'multiple-choice',
- options: ['High porosity', 'Low permeability', 'High reflectivity', 'Low conductivity'],
- correctAnswer: 1,
- explanation: 'Low permeability prevents liquids from passing through the material. A liner with low permeability will block pollutants from leaching through the soil and contaminating groundwater aquifers.'
- },
- {
- id: '22',
- text: 'Which is a characteristic of all nonfoliated metamorphic rocks?',
- type: 'multiple-choice',
- options: ['Presence of fossils', 'Cleavage planes', 'Lack of banding', 'Metallic luster'],
- correctAnswer: 2,
- explanation: 'Nonfoliated metamorphic rocks lack the layered or banded appearance (foliation) seen in foliated metamorphic rocks. They have a more uniform, massive texture. Examples include marble and quartzite.'
- },
- {
- id: '23',
- text: '<img src="images/question_23.png" class="question-image"><br><br>Students made a hydrometer by sealing the end of a straw with wax and adding some sand until the hydrometer barely floated in fresh water. The diagram shows what the students observed when they used the hydrometer to test water from three different sites. Each water sample had the same temperature. Which of these explanations best fits these observations?',
- type: 'multiple-choice',
- options: ['Estuaries are less salty than fresh water.', 'Oceans support more microbes than fresh water.', 'Salt water is denser than fresh water.', 'Ocean water can freeze at lower temperatures than fresh water.'],
- correctAnswer: 2,
- explanation: 'The hydrometer floats highest in ocean water because salt water is denser than fresh water. Denser liquids provide more buoyant force, causing objects to float higher. Estuary water has intermediate density.'
- },
- {
- id: '24',
- text: 'The cleavage properties of mica result from the —',
- type: 'multiple-choice',
- options: ['alternating layers of silica and aluminum', 'weak bonds between flat layers', 'strong covalent bonds within dense carbon clusters', 'metallic bonds between all elements present'],
- correctAnswer: 1,
- explanation: 'Mica has perfect cleavage in one direction because of weak bonds between its flat, sheet-like layers of atoms. These weak bonds allow the mineral to split easily into thin, flexible sheets.'
- },
- {
- id: '25',
- text: 'A star begins its formation as gravitational forces cause instability within a —',
- type: 'multiple-choice',
- options: ['black hole', 'red giant', 'supernova', 'nebula'],
- correctAnswer: 3,
- explanation: 'Stars form within nebulae, which are clouds of gas and dust in space. Gravitational forces cause regions of the nebula to collapse, and as the material compresses and heats up, a protostar forms.'
- },
- {
- id: '26',
- text: '<img src="images/question_26.png" class="question-image"><br><br>The diagram represents areas below the surface of Earth in which fossils have been found. The fossil located in which labeled area is most likely the oldest?',
- type: 'multiple-choice',
- options: ['1', '2', '3', '4'],
- correctAnswer: 2,
- explanation: 'According to the principle of superposition, in undisturbed rock layers, the oldest layers are at the bottom. However, the diagram shows an intrusion that affects the layers. Area 3 represents the oldest undisturbed sedimentary layer containing fossils.'
- },
- {
- id: '27',
- text: 'Which structure is most similar to an alluvial fan in formation and composition?',
- type: 'multiple-choice',
- options: ['Delta', 'Watershed', 'River', 'Lake'],
- correctAnswer: 0,
- explanation: 'Both alluvial fans and deltas are depositional landforms created when flowing water slows down and deposits sediment. An alluvial fan forms where a stream exits mountains onto flat land; a delta forms where a river enters a body of water.'
- },
- {
- id: '28',
- text: 'Label these ocean features. <br><br><img src="images/question_28.png" class="question-image">',
- type: 'drag-drop',
- options: ['Continental Slope', 'Abyssal Plain', 'Continental Shelf', 'Continental Rise'],
- dropZones: ['Top (at Sea Level)', 'Upper slope', 'Lower slope', 'Deep ocean floor'],
- correctAnswer: [2, 0, 3, 1],
- explanation: 'Moving from shore to deep ocean: Continental Shelf is the shallow, flat area near shore; Continental Slope is the steep drop-off; Continental Rise is the gentle slope at the base; Abyssal Plain is the flat, deep ocean floor.'
- },
- {
- id: '29',
- text: 'Scientists study small pockets of air trapped deep within frozen glaciers. What are scientists trying to understand about the climate of Earth by analyzing these ice samples?',
- type: 'multiple-choice',
- options: ['Changes in direction of the magnetic poles', 'Changes in atmospheric gas composition', 'Changes in global wind patterns', 'Changes in atmospheric pressure'],
- correctAnswer: 1,
- explanation: 'Ice cores contain trapped air bubbles that preserve samples of ancient atmosphere. Scientists analyze these bubbles to determine past concentrations of gases like carbon dioxide and methane, helping them understand historical climate changes.'
- },
- {
- id: '30',
- text: '<img src="images/question_30.png" class="question-image"><br><br>The picture shows a sinkhole. Which of these most likely caused this sinkhole to form?',
- type: 'multiple-choice',
- options: ['The collapse of the roof of a limestone cave', 'The abrupt movement of two tectonic plates', 'The thinning of topsoil due to forest clearing', 'The impact of a meteorite striking the surface of Earth'],
- correctAnswer: 0,
- explanation: 'Sinkholes commonly form in areas with limestone bedrock. Acidic groundwater dissolves the limestone over time, creating underground caves. When the cave roof becomes too thin to support the surface, it collapses, forming a sinkhole.'
- },
- {
- id: '31',
- text: '<img src="images/question_31.png" class="question-image"><br><br>Which Virginia watershed has the greatest impact in the state due to its size?',
- type: 'multiple-choice',
- options: ['Tennessee River Watershed', 'James River Watershed', 'Chowan River Watershed', 'Rappahannock River Watershed'],
- correctAnswer: 1,
- explanation: 'Looking at the map, the James River Watershed covers the largest area of Virginia, stretching across the central portion of the state. A larger watershed has greater impact on water resources, flooding, and ecosystems.'
- },
- {
- id: '32',
- text: 'Which mineral is most likely an ingredient used in baby powder?',
- type: 'multiple-choice',
- options: ['Graphite', 'Pyrite', 'Corundum', 'Talc'],
- correctAnswer: 3,
- explanation: 'Talc is the softest mineral (hardness of 1 on Mohs scale) and has a slippery feel. These properties make it ideal for use in baby powder and cosmetics. Graphite is used in pencils, pyrite contains iron sulfide, and corundum is very hard (used as abrasive).'
- },
- {
- id: '33',
- text: 'Pollution due to coal burning most frequently tends to affect lakes by —',
- type: 'multiple-choice',
- options: ['reducing the amount of dissolved carbon dioxide', 'increasing acidity', 'reducing radioactivity', 'increasing the concentration of nutrients'],
- correctAnswer: 1,
- explanation: 'Coal burning releases sulfur dioxide and nitrogen oxides into the atmosphere. These gases combine with water vapor to form sulfuric and nitric acids, which fall as acid rain, increasing the acidity of lakes and harming aquatic ecosystems.'
- },
- {
- id: '34',
- text: 'Some ponds are designed to increase the amount of water seeping into the ground. These types of ponds will fail to work properly in —',
- type: 'multiple-choice',
- options: ['locations with shallow wells', 'areas with deep surface sands', 'soils with low permeability', 'rock with high porosity'],
- correctAnswer: 2,
- explanation: 'Infiltration ponds rely on water seeping through the soil to recharge groundwater. Soils with low permeability do not allow water to pass through easily, preventing the pond from functioning as intended.'
- },
- {
- id: '35',
- text: 'Which action would most likely reduce concerns about how strip mining can harm the environment?',
- type: 'multiple-choice',
- options: ['Restrict mining operations to rural areas', 'Reclaim the ecosystem after mining', 'Increase the usage of the products being mined', 'Decrease the amount of labor needed in the mines'],
- correctAnswer: 1,
- explanation: 'Reclamation involves restoring mined land to a natural or economically usable state by replacing soil, replanting vegetation, and restoring the ecosystem. This directly addresses environmental damage from strip mining.'
- },
- {
- id: '36',
- text: 'Identify the geologic time in which these organisms first appeared.',
- type: 'drag-drop',
- options: ['First Birds', 'First Bacteria', 'First Fish', 'First Humans'],
- dropZones: ['Cenozoic', 'Mesozoic', 'Paleozoic', 'Precambrian'],
- correctAnswer: [3, 0, 2, 1],
- explanation: 'First Humans appeared in the Cenozoic Era (most recent). First Birds appeared in the Mesozoic Era (Age of Reptiles). First Fish appeared in the Paleozoic Era. First Bacteria appeared in the Precambrian (earliest life forms).'
- },
- {
- id: '37',
- text: 'Crushed stone is an economic resource that is second only to coal in Virginia. How is crushed stone mainly used?',
- type: 'multiple-choice',
- options: ['As building insulation', 'In steel production', 'For coal mine reclamation', 'As a construction material'],
- correctAnswer: 3,
- explanation: 'Crushed stone is primarily used as a construction material for road bases, concrete aggregate, railroad ballast, and drainage applications. Virginia\'s abundant limestone, granite, and other rocks make it a major producer.'
- },
- {
- id: '38',
- text: 'A student hypothesizes that a sample of rock formed from ocean sediments. Which would best help the student support this hypothesis?',
- type: 'multiple-choice',
- options: ['A textbook about rock formation methods', 'Rock samples from several locations on Earth', 'A model of the different crustal plate boundaries', 'Clam shells found within the rock sample'],
- correctAnswer: 3,
- explanation: 'Marine fossils such as clam shells found within a rock sample provide direct evidence that the rock formed from sediments deposited in an ocean environment. This is physical evidence that supports the hypothesis.'
- },
- {
- id: '39',
- text: 'About 2.0 billion years ago, complex organisms began to inhabit Earth. These complex organisms developed primarily because of —',
- type: 'multiple-choice',
- options: ['changes in atmospheric gases', 'sunlight being absorbed by land', 'the eruption of volcanoes', 'the impact of comets'],
- correctAnswer: 0,
- explanation: 'The development of complex organisms about 2 billion years ago was primarily driven by the increase in atmospheric oxygen produced by cyanobacteria through photosynthesis. This oxygen allowed for aerobic respiration and more complex life forms.'
- },
- {
- id: '40',
- text: 'Students on a geology field trip will identify minerals by their streak. Which of these should the students bring on the field trip?',
- type: 'multiple-choice',
- options: ['A long, pointed iron rod', 'A rough, white ceramic tile', 'A disposable sample of talc', 'A low-powered telescope'],
- correctAnswer: 1,
- explanation: 'A streak plate (unglazed porcelain tile) is used to determine a mineral\'s streak color by rubbing the mineral across the plate. The white surface allows the true color of the powdered mineral to be seen.'
- },
- {
- id: '41',
- text: 'Well logs are used by oil companies to correlate geologic formations. Based on the formations in Well A, which geologic formations are missing in Well B?<br><br><img src="images/question_31.png" class="question-image">',
- type: 'drag-drop',
- options: ['Sand 1', 'Shale 2', 'Sand 3', 'Shale 4', 'Limestone 5', 'Shale 6', 'Sand 7', 'Shale 8'],
- dropZones: ['Missing formation 1', 'Missing formation 2', 'Missing formation 3'],
- correctAnswer: [0, 1, 7],
- explanation: 'Comparing Well A and Well B, the formations Sand 1, Shale 2, and Shale 8 that appear in Well A are not present in Well B. These layers may have been eroded away or were never deposited at the Well B location.'
- },
- {
- id: '42',
- text: 'A low pressure system has moved away from the equator and is moving directly over water. When the system reaches 60°N latitude, the system will most likely be at a point where —',
- type: 'multiple-choice',
- options: ['its water temperature is at its highest level', 'its direction of rotation has changed', 'most of its wind speeds are greatest', 'most of its energy is lost'],
- correctAnswer: 3,
- explanation: 'Low pressure systems (like hurricanes) derive their energy from warm ocean water. As the system moves to higher latitudes (60°N), the water becomes much colder, cutting off the energy supply and causing the system to weaken significantly.'
- },
- {
- id: '43',
- text: 'Starting with the event that scientists theorize happened first and ending with the event that scientists theorize happened last, arrange the events in chronological order.',
- type: 'drag-drop',
- options: ['Birth of the Earliest Star', 'Formation of the Sun', 'Origin of Life on Earth', 'The Big Bang'],
- dropZones: ['First', 'Second', 'Third', 'Last'],
- correctAnswer: [3, 0, 1, 2],
- explanation: 'The chronological order is: The Big Bang (13.8 billion years ago) created the universe; Birth of the Earliest Stars (about 200 million years after Big Bang); Formation of the Sun (about 4.6 billion years ago); Origin of Life on Earth (about 3.5-4 billion years ago).'
- },
- {
- id: '44',
- text: 'Which characteristic do all the planets in our solar system have in common?',
- type: 'multiple-choice',
- options: ['Angle of axial tilt', 'Direction of revolution', 'Percentages of atmospheric gases', 'Features of a rocky crust'],
- correctAnswer: 1,
- explanation: 'All planets in our solar system revolve around the Sun in the same direction (counterclockwise when viewed from above the North Pole). Their axial tilts, atmospheric compositions, and surface features vary significantly.'
- },
- {
- id: '45',
- text: 'A scientist is studying energy transfer that occurs in the oceans, atmosphere, and Earth\'s interior. Which of these is the scientist most likely studying?',
- type: 'multiple-choice',
- options: ['Pressure', 'Density', 'Gravity', 'Convection'],
- correctAnswer: 3,
- explanation: 'Convection is the transfer of heat through the movement of fluids (liquids and gases). It occurs in the oceans (ocean currents), atmosphere (wind and weather patterns), and Earth\'s interior (mantle convection driving plate tectonics).'
- },
+  {
+    id: 1,
+    type: "multiple-choice",
+    text: "A student measures the mass of a 1.00 g aluminum rod as 0.99 g. The best estimate of the percent error associated with this measurement is —",
+    options: ["0.01%", "0.1%", "1%", "10%"],
+    correctAnswer: 2,
+    explanation: "Percent error = |measured value - actual value| / actual value × 100% = |0.99 - 1.00| / 1.00 × 100% = 0.01 / 1.00 × 100% = 1%. The correct answer is C."
+  },
+  {
+    id: 2,
+    type: "multiple-choice",
+    text: "The most efficient way to determine whether a reaction is an exothermic chemical reaction is to use —",
+    options: ["an oxygen probe", "a temperature probe", "a pressure probe", "a pH probe"],
+    correctAnswer: 1,
+    explanation: "Exothermic reactions release heat energy, causing the temperature to increase. A temperature probe is the most efficient way to measure this temperature change. The correct answer is B."
+  },
+  {
+    id: 3,
+    type: "multiple-choice",
+    text: "Which type of chemical reaction does this equation represent?",
+    image: "images/question_3.png",
+    options: ["Synthesis", "Neutralization", "Oxidation-reduction", "Double-replacement"],
+    correctAnswer: 3,
+    explanation: "In this reaction, the cations (Al³⁺ and Ba²⁺) and anions (C₂H₃O₂⁻ and SO₄²⁻) switch partners. This is characteristic of a double-replacement reaction. The correct answer is D."
+  },
+  {
+    id: 4,
+    type: "free-response",
+    text: "What is the oxidation number of an oxide ion?",
+    image: "images/question_4.png",
+    correctAnswer: ["-2", "2-"],
+    explanation: "An oxide ion (O²⁻) has gained 2 electrons, giving it an oxidation number of -2. The correct answer is -2 or 2-."
+  },
+  {
+    id: 5,
+    type: "multiple-choice",
+    text: "What is the molarity of a solution with 0.2 moles of potassium permanganate (KMnO₄) dissolved in enough water to make a 500.0 mL solution?",
+    options: ["0.0004 M", "0.1 M", "0.4 M", "100 M"],
+    correctAnswer: 2,
+    explanation: "Molarity = moles of solute / liters of solution = 0.2 mol / 0.500 L = 0.4 M. The correct answer is C."
+  },
+  {
+    id: 6,
+    type: "multiple-choice",
+    text: "When 92.0 g of ethanol (C₂H₅OH) are vaporized at its boiling point of 78.3°C, it requires 78.6 kJ of energy. What is the approximate molar heat of vaporization of ethanol in kJ/mol?",
+    options: ["0.854", "1.17", "39.3", "78.3"],
+    correctAnswer: 2,
+    explanation: "First, calculate the moles of ethanol: Molar mass of C₂H₅OH = 2(12) + 6(1) + 16 = 46 g/mol. Moles = 92.0 g / 46 g/mol = 2.0 mol. Molar heat of vaporization = 78.6 kJ / 2.0 mol = 39.3 kJ/mol. The correct answer is C."
+  },
+  {
+    id: 7,
+    type: "free-response",
+    text: "What is the density of an aqueous solution that has a mass of 10.081 g and 12.5 mL?",
+    image: "images/question_7.png",
+    correctAnswer: ["0.806", ".806"],
+    explanation: "Density = mass / volume = 10.081 g / 12.5 mL = 0.80648 g/mL. With correct significant figures (3 sig figs based on 12.5 mL), the answer is 0.806 g/mL."
+  },
+  {
+    id: 8,
+    type: "multiple-choice",
+    text: "Which element has 16 neutrons, 15 protons, and 15 electrons?",
+    options: ["Sulfur (S)", "Phosphorus (P)", "Gallium (Ga)", "Zinc (Zn)"],
+    correctAnswer: 1,
+    explanation: "The number of protons determines the element. An atom with 15 protons is phosphorus (P). The mass number would be 15 + 16 = 31, which corresponds to phosphorus-31. The correct answer is B."
+  },
+  {
+    id: 9,
+    type: "multiple-choice",
+    text: "This equation represents which type of chemical reaction?",
+    image: "images/question_9.png",
+    options: ["Single-replacement", "Double-replacement", "Decomposition", "Synthesis"],
+    correctAnswer: 0,
+    explanation: "In this reaction, Al(s) + 3AgNO₃(aq) → Al(NO₃)₃(aq) + 3Ag(s), aluminum replaces silver in the silver nitrate compound. This is a single-replacement reaction. The correct answer is A."
+  },
+  {
+    id: 10,
+    type: "multiple-choice",
+    text: "In the formula for barium chloride, (BaCl₂), barium (Ba) is written first because it is —",
+    options: ["a single atom", "a larger atom", "the positive ion", "the negative ion"],
+    correctAnswer: 2,
+    explanation: "In chemical formulas for ionic compounds, the cation (positive ion) is always written first, followed by the anion (negative ion). Barium forms Ba²⁺ ions. The correct answer is C."
+  },
+  {
+    id: 11,
+    type: "multiple-choice",
+    text: "Which of these laboratory techniques is best to separate a solid from a liquid to recover the liquid?",
+    options: ["Titration", "Chromatography", "Filtering", "Vaporization"],
+    correctAnswer: 2,
+    explanation: "Filtering is the best technique to separate a solid from a liquid while recovering the liquid. The liquid passes through the filter paper while the solid remains behind. The correct answer is C."
+  },
+  {
+    id: 12,
+    type: "multiple-choice",
+    text: "Which of these is NOT required to ensure that stock solutions are free of contamination?",
+    options: ["Store all solutions in brown bottles", "Do not place dropping pipettes in stock solution bottles", "Never return excess chemicals to stock bottles", "Replace tops on reagent bottles after use"],
+    correctAnswer: 0,
+    explanation: "Brown bottles are used to protect light-sensitive chemicals, not to prevent contamination. Options B, C, and D are all important practices to prevent contamination of stock solutions. The correct answer is A."
+  },
+  {
+    id: 13,
+    type: "multiple-choice",
+    text: "Which of these values is most responsible for changing the boiling and freezing points of a solvent?",
+    options: ["Molar mass of the solvent", "Electronegativity of the solvent", "Weight of the solute particles", "Number of the solute particles"],
+    correctAnswer: 3,
+    explanation: "Colligative properties (like boiling point elevation and freezing point depression) depend on the number of solute particles, not their identity or mass. The correct answer is D."
+  },
+  {
+    id: 14,
+    type: "multiple-choice",
+    text: "What is the name of the compound with the formula NH₄NO₃?",
+    options: ["Ammonium nitrate", "Nitrogen nitrate", "Nitrogen hydrogen oxide", "Ammonium nitrogen trioxide"],
+    correctAnswer: 0,
+    explanation: "NH₄NO₃ contains the ammonium ion (NH₄⁺) and the nitrate ion (NO₃⁻). The compound name is ammonium nitrate. The correct answer is A."
+  },
+  {
+    id: 15,
+    type: "free-response",
+    text: "Calculate the number of moles of Li₃PO₄ in 2.2 L of a 0.60 M Li₃PO₄ solution.",
+    image: "images/question_15.png",
+    correctAnswer: ["1.3", "1.32", "1.33", "1.4", "1", "1.", "2", "2."],
+    explanation: "Moles = Molarity × Volume = 0.60 M × 2.2 L = 1.32 moles. The correct answer is approximately 1.3 moles."
+  },
+  {
+    id: 16,
+    type: "multiple-choice",
+    text: "Equilibrium has been reached for the reaction shown. Which conclusion is correct?",
+    image: "images/question_16.png",
+    options: [
+      "The N₂ and F₂ together will form at a faster rate than the NF₃.",
+      "The partial pressures of N₂, F₂, and NF₃ will stay constant.",
+      "The NF₃ will form at a faster rate than the N₂ and F₂ together.",
+      "The partial pressure of NF₃ will keep changing."
+    ],
+    correctAnswer: 1,
+    explanation: "At equilibrium, the rate of the forward reaction equals the rate of the reverse reaction, so the concentrations (and partial pressures for gases) of all species remain constant. The correct answer is B."
+  },
+  {
+    id: 17,
+    type: "multiple-choice",
+    text: "If 89.6 joules of heat are needed to heat 20.0 grams of iron from 30.0°C to 40.0°C, what is the specific heat of the iron in J/(g·°C)?",
+    options: ["0.448", "2.23", "8.96", "896"],
+    correctAnswer: 0,
+    explanation: "Using q = mcΔT, we can solve for c: c = q / (mΔT) = 89.6 J / (20.0 g × 10.0°C) = 89.6 / 200 = 0.448 J/(g·°C). The correct answer is A."
+  },
+  {
+    id: 18,
+    type: "multiple-choice",
+    text: "Which of the four substances on this pH scale is slightly basic?",
+    image: "images/question_18.png",
+    options: ["Calcium hydroxide", "Human blood", "Whole milk", "Lemon juice"],
+    correctAnswer: 1,
+    explanation: "A slightly basic substance has a pH just above 7. From the scale, human blood has a pH around 7.4, which is slightly basic. Calcium hydroxide (pH ~12) is strongly basic. The correct answer is B."
+  },
+  {
+    id: 19,
+    type: "multiple-choice",
+    text: "Which element will most likely form covalent bonds with fluorine?",
+    options: ["Carbon", "Potassium", "Neon", "Tin"],
+    correctAnswer: 0,
+    explanation: "Covalent bonds form between nonmetals. Carbon is a nonmetal that will share electrons with fluorine to form covalent bonds (as in CF₄). Potassium is a metal that would form ionic bonds. Neon is a noble gas that doesn't form bonds. The correct answer is A."
+  },
+  {
+    id: 20,
+    type: "multiple-choice",
+    text: "The physical process of evaporation involves —",
+    options: ["ion formation", "electron sharing", "transferring valence electrons", "overcoming intermolecular forces"],
+    correctAnswer: 3,
+    explanation: "Evaporation is a physical change where molecules gain enough energy to overcome intermolecular forces and escape from the liquid phase to the gas phase. No chemical bonds are broken or formed. The correct answer is D."
+  },
+  {
+    id: 21,
+    type: "multiple-choice",
+    text: "How many moles of O₂ are in the chemical equation when balanced using the lowest whole numbers?",
+    image: "images/question_21.png",
+    options: ["5", "4", "3", "2"],
+    correctAnswer: 2,
+    explanation: "Balancing C₂H₄ + O₂ → CO₂ + H₂O: C₂H₄ + 3O₂ → 2CO₂ + 2H₂O. Checking: C: 2=2, H: 4=4, O: 6=6. The coefficient for O₂ is 3. The correct answer is C."
+  },
+  {
+    id: 22,
+    type: "multiple-choice",
+    text: "While English physicist J. J. Thomson was carrying out experiments on cathode rays, he was able to determine that the rays consisted of particles he called \"corpuscles.\" These particles were later named —",
+    image: "images/question_22.png",
+    options: ["protons", "electrons", "gamma rays", "neutrons"],
+    correctAnswer: 1,
+    explanation: "J. J. Thomson discovered electrons through his cathode ray tube experiments. He initially called them \"corpuscles\" but they were later named electrons. The correct answer is B."
+  },
+  {
+    id: 23,
+    type: "multiple-choice",
+    text: "In the Haber process, nitrogen (N₂) and hydrogen (H₂) are directly combined to form ammonia (NH₃). Which illustration contains the stoichiometric quantities of the reactants for this reaction?",
+    image: "images/question_23.png",
+    options: ["A", "B", "C", "D"],
+    correctAnswer: 3,
+    explanation: "The balanced equation is N₂ + 3H₂ → 2NH₃. The stoichiometric ratio requires 1 mole of N₂ for every 3 moles of H₂. Option D shows 1 N₂ molecule (double circles) and 3 H₂ molecules (filled double circles). The correct answer is D."
+  },
+  {
+    id: 24,
+    type: "multiple-choice",
+    text: "A beaker of water is placed in a large sealed jar that is attached to a vacuum pump. As air is pumped out of the jar, the water begins to boil because —",
+    image: "images/question_24.png",
+    options: [
+      "the temperature of the water decreases as the surrounding pressure decreases",
+      "the lower pressure inside the jar causes the water to contract",
+      "the air pressure in the jar has been lowered until it is equal to the vapor pressure of the water",
+      "the pressure on the water is insufficient to hold the hydrogen and oxygen atoms together, resulting in a decomposition reaction"
+    ],
+    correctAnswer: 2,
+    explanation: "Water boils when its vapor pressure equals the external pressure. By lowering the air pressure with a vacuum pump until it equals the vapor pressure of the water, the water will boil even at room temperature. The correct answer is C."
+  },
+  {
+    id: 25,
+    type: "multiple-select",
+    text: "According to the periodic table of the elements, which elements belong to the same period?",
+    image: "images/question_25.png",
+    options: ["Aluminum", "Germanium", "Antimony", "Arsenic", "Gallium"],
+    correctAnswer: [1, 3, 4],
+    explanation: "Germanium (Ge), Arsenic (As), and Gallium (Ga) are all in Period 4 of the periodic table. Aluminum is in Period 3, and Antimony is in Period 5. The correct answers are Germanium, Arsenic, and Gallium."
+  },
+  {
+    id: 26,
+    type: "multiple-choice",
+    text: "How many moles are in 2.04 × 10²⁴ molecules of H₂O?",
+    options: ["0.295 mol", "3.39 mol", "1.13 × 10²⁴ mol", "1.44 × 10⁴⁸ mol"],
+    correctAnswer: 1,
+    explanation: "Moles = number of molecules / Avogadro's number = (2.04 × 10²⁴) / (6.02 × 10²³) = 3.39 mol. The correct answer is B."
+  },
+  {
+    id: 27,
+    type: "multiple-choice",
+    text: "What is the name for FeCl₃ using the IUPAC nomenclature rules?",
+    options: ["Iron chloride", "Iron(II) chloride", "Iron trichloride", "Iron(III) chloride"],
+    correctAnswer: 3,
+    explanation: "In FeCl₃, iron has an oxidation state of +3 (since each Cl is -1). Using IUPAC nomenclature for transition metals, the Roman numeral indicates the oxidation state: Iron(III) chloride. The correct answer is D."
+  },
+  {
+    id: 28,
+    type: "free-response",
+    text: "An expandable container of oxygen gas has a volume of 125 mL at a temperature of 25.0°C. What volume will the gas occupy at 55.0°C?",
+    image: "images/question_28.png",
+    correctAnswer: ["137", "137.", "137.5", "137.6", "138", "138.", "140", "140.", "130", "130."],
+    explanation: "Using Charles's Law: V₁/T₁ = V₂/T₂. Converting to Kelvin: T₁ = 25.0 + 273 = 298 K, T₂ = 55.0 + 273 = 328 K. V₂ = V₁ × T₂/T₁ = 125 mL × 328/298 = 137.6 mL ≈ 138 mL."
+  },
+  {
+    id: 29,
+    type: "multiple-choice",
+    text: "Which of these correctly describes how organic catalysts operate in biological reactions?",
+    options: [
+      "They are used up in the reactions.",
+      "They lower the overall energy of the reactions.",
+      "They lower the activation energy of the reactions.",
+      "They keep the temperature of the reactions constant."
+    ],
+    correctAnswer: 2,
+    explanation: "Enzymes (organic catalysts) work by lowering the activation energy required for a reaction to occur. They are not consumed in the reaction and do not change the overall energy of the reaction. The correct answer is C."
+  },
+  {
+    id: 30,
+    type: "multiple-choice",
+    text: "What volume will 35.9 g of hydrogen gas (H₂) occupy at STP?",
+    options: ["399 L", "798 L", "804 L", "1,620 L"],
+    correctAnswer: 0,
+    explanation: "Moles of H₂ = 35.9 g / 2.02 g/mol = 17.8 mol. At STP, 1 mole of gas occupies 22.4 L. Volume = 17.8 mol × 22.4 L/mol = 399 L. The correct answer is A."
+  },
+  {
+    id: 31,
+    type: "multiple-choice",
+    text: "When this equation is balanced, the coefficient in front of H₃PO₄ is —",
+    image: "images/question_31.png",
+    options: ["1", "2", "3", "4"],
+    correctAnswer: 1,
+    explanation: "Balancing Ca(NO₃)₂ + H₃PO₄ → Ca₃(PO₄)₂ + HNO₃: 3Ca(NO₃)₂ + 2H₃PO₄ → Ca₃(PO₄)₂ + 6HNO₃. The coefficient in front of H₃PO₄ is 2. The correct answer is B."
+  },
+  {
+    id: 32,
+    type: "multiple-choice",
+    text: "Increasing the volume of a sealed container will cause the gas particles within the container to —",
+    options: ["form a liquid", "collide more frequently", "increase in molecular attraction", "exhibit lower pressure"],
+    correctAnswer: 3,
+    explanation: "According to Boyle's Law, increasing volume at constant temperature causes pressure to decrease. With more space, gas particles collide with the walls less frequently, resulting in lower pressure. The correct answer is D."
+  },
+  {
+    id: 33,
+    type: "multiple-choice",
+    text: "Each of four groups of students determined and recorded the melting point of a solid compound. If the actual melting point is 113°C, which group had the best precision?",
+    image: "images/question_33.png",
+    options: ["Group 1", "Group 2", "Group 3", "Group 4"],
+    correctAnswer: 3,
+    explanation: "Precision refers to how close measurements are to each other, not to the actual value. Group 4 has values of 110, 111, 111, 110 (range of 1°C), showing the best precision. The correct answer is D."
+  },
+  {
+    id: 34,
+    type: "multiple-choice",
+    text: "Consider any set of three adjacent elements in the same period on the periodic table. For which characteristic is the average for the three elements always equal to the value of the middle element?",
+    options: ["Atomic number", "Atomic mass", "Number of neutrons", "Number of isotopes"],
+    correctAnswer: 0,
+    explanation: "Atomic numbers increase by 1 for each adjacent element. For three adjacent elements (n-1, n, n+1), the average is always n, the middle element's atomic number. The correct answer is A."
+  },
+  {
+    id: 35,
+    type: "multiple-choice",
+    text: "A substance has a molecular formula of C₈H₁₀N₄O₂. The empirical formula is —",
+    options: ["C₂H₆N₂O", "C₄H₅N₂O", "C₉H₇N₃O", "CHNO"],
+    correctAnswer: 1,
+    explanation: "To find the empirical formula, divide all subscripts by the greatest common factor. GCF of 8, 10, 4, 2 is 2. C₈H₁₀N₄O₂ ÷ 2 = C₄H₅N₂O. The correct answer is B."
+  },
+  {
+    id: 36,
+    type: "drag-drop",
+    text: "Create the formula for diboron trioxide using the symbols provided.",
+    image: "images/question_36.png",
+    dragItems: ["B", "b", "O", "o", "1", "2", "3", "4"],
+    dropZones: ["Zone 1", "Zone 2", "Zone 3", "Zone 4"],
+    correctAnswer: ["B", "2", "O", "3"],
+    explanation: "Diboron trioxide contains 2 boron atoms (di-) and 3 oxygen atoms (tri-). The correct formula is B₂O₃, written as B, 2, O, 3."
+  },
+  {
+    id: 37,
+    type: "multiple-choice",
+    text: "What is the name for the compound AlI₃?",
+    options: ["Aluminum(I) iodide", "Aluminum triiodide", "Aluminum(III) iodide", "Aluminum iodide"],
+    correctAnswer: 3,
+    explanation: "Aluminum always has a +3 oxidation state, so Roman numerals are not needed. Since there's only one possible compound between Al and I, the name is simply aluminum iodide. The correct answer is D."
+  },
+  {
+    id: 38,
+    type: "multiple-choice",
+    text: "How many moles of carbon dioxide (CO₂) are produced when reacting 6.00 moles of butane (C₄H₁₀) in excess oxygen (O₂)?",
+    image: "images/question_38.png",
+    options: ["1.50 mol", "24.0 mol", "66.0 mol", "1,060 mol"],
+    correctAnswer: 1,
+    explanation: "From the equation 2C₄H₁₀ + 13O₂ → 8CO₂ + 10H₂O, the ratio of C₄H₁₀ to CO₂ is 2:8 or 1:4. Moles of CO₂ = 6.00 mol × (8/2) = 24.0 mol. The correct answer is B."
+  },
+  {
+    id: 39,
+    type: "multiple-choice",
+    text: "Which structure represents a nonpolar molecule?",
+    image: "images/question_39.png",
+    options: ["A", "B", "C", "D"],
+    correctAnswer: 0,
+    explanation: "Structure A shows ethene (C₂H₄), which is a nonpolar molecule due to its symmetrical structure. The other options show molecules with polar bonds that don't cancel out (formaldehyde, ethanol, and chloromethane). The correct answer is A."
+  },
+  {
+    id: 40,
+    type: "multiple-choice",
+    text: "Using only one trial to collect data in an experiment —",
+    options: [
+      "makes it easier to determine a valid conclusion",
+      "reduces the percent error in the results",
+      "causes the conclusion to be less reliable",
+      "requires data with more significant figures"
+    ],
+    correctAnswer: 2,
+    explanation: "Using only one trial provides no way to check for consistency or identify errors. Multiple trials increase reliability and allow for calculation of averages and error analysis. The correct answer is C."
+  },
+  {
+    id: 41,
+    type: "multiple-choice",
+    text: "A common product of acid-base neutralization reactions is —",
+    options: ["hydrogen", "water", "carbon dioxide", "oxygen"],
+    correctAnswer: 1,
+    explanation: "Acid-base neutralization reactions produce a salt and water. For example: HCl + NaOH → NaCl + H₂O. Water is always a product. The correct answer is B."
+  },
+  {
+    id: 42,
+    type: "multiple-choice",
+    text: "Based on the information provided, which solution is a base and a weak electrolyte?",
+    image: "images/question_42.png",
+    options: ["NaHCO₃", "HClO", "NaNO₃", "CH₃NH₂"],
+    correctAnswer: 3,
+    explanation: "A base has pH > 7, and a weak electrolyte produces a dim light bulb. CH₃NH₂ has pH 8.0 (basic) and a dim bulb (weak electrolyte). NaHCO₃ is basic but a strong electrolyte (bright). The correct answer is D."
+  },
+  {
+    id: 43,
+    type: "multiple-choice",
+    text: "What is the half-life of Americium-242?",
+    image: "images/question_43.png",
+    options: ["11 hours", "16 hours", "32 hours", "64 hours"],
+    correctAnswer: 1,
+    explanation: "Half-life is the time for half the sample to decay. Starting at 80 μg, half (40 μg) remains at about 16 hours on the graph. The correct answer is B."
+  },
+  {
+    id: 44,
+    type: "multiple-choice",
+    text: "Two electrons are shared equally in bromine (Br₂). What type of bond is represented between the bromine atoms in this Lewis structure?",
+    image: "images/question_44.png",
+    options: ["Nonpolar covalent bond", "Polar covalent bond", "Metallic bond", "Ionic bond"],
+    correctAnswer: 0,
+    explanation: "When electrons are shared equally between two identical atoms, the bond is nonpolar covalent. In Br₂, both atoms have the same electronegativity, so the electron sharing is equal. The correct answer is A."
+  },
+  {
+    id: 45,
+    type: "multiple-choice",
+    text: "A student is studying the effects of several solutions on the prevention of the browning of apples. The student used solutions having different pH values and immersed three apple slices in equal volumes of each of the solutions. Which of these is the independent variable in this investigation?",
+    options: ["pH of solution", "Shade of brown", "Number of apple slices", "Volume of solutions"],
+    correctAnswer: 0,
+    explanation: "The independent variable is what the experimenter deliberately changes. In this experiment, the pH of the solutions is varied while other factors (volume, number of slices) are controlled. The correct answer is A."
+  },
+  {
+    id: 46,
+    type: "multiple-choice",
+    text: "An experiment produced 0.10 g CO₂ with a volume of 0.056 L at STP. If the accepted density of CO₂ at STP is 1.96 g/L, what is the approximate percent error?",
+    options: ["110%", "92%", "71%", "8.2%"],
+    correctAnswer: 3,
+    explanation: "Experimental density = mass/volume = 0.10 g / 0.056 L = 1.79 g/L. Percent error = |accepted - experimental| / accepted × 100% = |1.96 - 1.79| / 1.96 × 100% = 0.17/1.96 × 100% = 8.7% ≈ 8.2%. The correct answer is D."
+  }
 ];
 
 // Test-specific storage key for this test
