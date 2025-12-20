@@ -20,7 +20,7 @@ const sampleQuestions = [
   {
     id: 3,
     type: 'multiple-choice',
-    text: '<center>2Al(C₂H₃O₂)₃ + 3Ba(SO₄) → Al₂(SO₄)₃ + 3Ba(C₂H₃O₂)₂</center><br><br>Which type of chemical reaction does this equation represent?',
+    text: '<center>2Al(C₂H₃O₂)₃ + 3Ba(SO₄) → Al₂(SO₄)₃ + 3Ba(C₂H₃O₂)₂</center><br>Which type of chemical reaction does this equation represent?',
     options: ['Synthesis', 'Neutralization', 'Oxidation-reduction', 'Double-replacement'],
     correctAnswer: 3,
     explanation: 'In this reaction, the cations (Al³⁺ and Ba²⁺) and anions (C₂H₃O₂⁻ and SO₄²⁻) switch partners. This is characteristic of a double-replacement reaction. The correct answer is D.'
@@ -29,8 +29,7 @@ const sampleQuestions = [
     id: 4,
     type: 'free-response',
     text: 'What is the oxidation number of an oxide ion?',
-    image: 'images/question_4.png',
-    correctAnswer: ['-2', '2-'],
+    correctKeywords: ['-2', '2-'],
     explanation: 'An oxide ion (O²⁻) has gained 2 electrons, giving it an oxidation number of -2. The correct answer is -2 or 2-.'
   },
   {
@@ -53,7 +52,7 @@ const sampleQuestions = [
     id: 7,
     type: 'free-response',
     text: 'What is the density (in g/mL) of an aqueous solution that has a mass of 10.081 g and 12.5 mL? Your answer must use significant digits.',
-    correctAnswer: ['0.806', '.806'],
+    correctKeywords: ['0.806', '.806'],
     explanation: 'Density = mass / volume = 10.081 g / 12.5 mL = 0.80648 g/mL. With correct significant figures (3 sig figs based on 12.5 mL), the answer is 0.806 g/mL.'
   },
   {
@@ -67,7 +66,7 @@ const sampleQuestions = [
   {
     id: 9,
     type: 'multiple-choice',
-    text: '<center>Al(<i>s</i>) + 3AgNO₃(<i>aq</i>) → Al(NO₃)₃(<i>aq</i>) + 3Ag(<i>s</i>)</center><br><br>This equation represents which type of chemical reaction?',
+    text: '<center>Al(<i>s</i>) + 3AgNO₃(<i>aq</i>) → Al(NO₃)₃(<i>aq</i>) + 3Ag(<i>s</i>)</center><br>This equation represents which type of chemical reaction?',
     options: ['Single-replacement', 'Double-replacement', 'Decomposition', 'Synthesis'],
     correctAnswer: 0,
     explanation: 'In this reaction, Al(s) + 3AgNO₃(aq) → Al(NO₃)₃(aq) + 3Ag(s), aluminum replaces silver in the silver nitrate compound. This is a single-replacement reaction. The correct answer is A.'
@@ -116,13 +115,13 @@ const sampleQuestions = [
     id: 15,
     type: 'free-response',
     text: 'Calculate the number of moles of Li₃PO₄ in 2.2 L of a 0.60 M Li₃PO₄ solution.',
-    correctAnswer: ['1.3', '1.32', '1.33', '1.4', '1', '1.', '2', '2.'],
+    correctKeywords: ['1.3', '1.32', '1.33', '1.4', '1', '1.', '2', '2.'],
     explanation: 'Moles = Molarity × Volume = 0.60 M × 2.2 L = 1.32 moles. The correct answer is approximately 1.3 moles.'
   },
   {
     id: 16,
     type: 'multiple-choice',
-    text: '<center>N₂ + 3F₂ ⇌ 2NF₃</center><br><br>Equilibrium has been reached for the reaction shown. Which conclusion is correct?',
+    text: '<center>N₂ + 3F₂ ⇌ 2NF₃</center><br>Equilibrium has been reached for the reaction shown. Which conclusion is correct?',
     options: [
       'The N₂ and F₂ together will form at a faster rate than the NF₃.',
       'The partial pressures of N₂, F₂, and NF₃ will stay constant.',
@@ -167,7 +166,7 @@ const sampleQuestions = [
   {
     id: 21,
     type: 'multiple-choice',
-    text: '<center>___C₂H₄ + ___O₂ → ___CO₂ + ___H₂O</center><br><br>How many moles of O₂ are in the chemical equation when balanced using the lowest whole numbers?',
+    text: '<center>___C₂H₄ + ___O₂ → ___CO₂ + ___H₂O</center><br>How many moles of O₂ are in the chemical equation when balanced using the lowest whole numbers?',
     options: ['5', '4', '3', '2'],
     correctAnswer: 2,
     explanation: 'Balancing C₂H₄ + O₂ → CO₂ + H₂O: C₂H₄ + 3O₂ → 2CO₂ + 2H₂O. Checking: C: 2=2, H: 4=4, O: 6=6. The coefficient for O₂ is 3. The correct answer is C.'
@@ -176,7 +175,6 @@ const sampleQuestions = [
     id: 22,
     type: 'multiple-choice',
     text: '<img src="images/question_22.png" class="question-image"><br><br>While English physicist J. J. Thomson was carrying out experiments on cathode rays, he was able to determine that the rays consisted of particles he called "corpuscles." These particles were later named —',
-    image: 'images/question_22.png',
     options: ['protons', 'electrons', 'gamma rays', 'neutrons'],
     correctAnswer: 1,
     explanation: 'J. J. Thomson discovered electrons through his cathode ray tube experiments. He initially called them "corpuscles" but they were later named electrons. The correct answer is B.'
@@ -211,7 +209,6 @@ const sampleQuestions = [
     id: 25,
     type: 'multiple-select',
     text: 'According to the periodic table of the elements, which elements belong to the same period?',
-    image: 'images/question_25.png',
     options: ['Aluminum', 'Germanium', 'Antimony', 'Arsenic', 'Gallium'],
     correctAnswer: [1, 3, 4],
     explanation: 'Germanium (Ge), Arsenic (As), and Gallium (Ga) are all in Period 4 of the periodic table. Aluminum is in Period 3, and Antimony is in Period 5. The correct answers are Germanium, Arsenic, and Gallium.'
@@ -236,7 +233,7 @@ const sampleQuestions = [
     id: 28,
     type: 'free-response',
     text: 'An expandable container of oxygen gas has a volume of 125 mL at a temperature of 25.0°C. What volume will the gas occupy at 55.0°C?',
-    correctAnswer: ['137', '137.', '137.5', '137.6', '138', '138.', '140', '140.', '130', '130.'],
+    correctKeywords: ['137', '137.', '137.5', '137.6', '138', '138.', '140', '140.', '130', '130.'],
     explanation: 'Using Charles\'s Law: V₁/T₁ = V₂/T₂. Converting to Kelvin: T₁ = 25.0 + 273 = 298 K, T₂ = 55.0 + 273 = 328 K. V₂ = V₁ × T₂/T₁ = 125 mL × 328/298 = 137.6 mL ≈ 138 mL.'
   },
   {
@@ -263,7 +260,7 @@ const sampleQuestions = [
   {
     id: 31,
     type: 'multiple-choice',
-    text: '<center>___Ca(NO₃)₂ + H₃PO₄ → ___Ca₃(PO₄)₂ + ___HNO₃</center><br><br>When this equation is balanced, the coefficient in front of H₃PO₄ is —',
+    text: '<center>___Ca(NO₃)₂ + H₃PO₄ → ___Ca₃(PO₄)₂ + ___HNO₃</center><br>When this equation is balanced, the coefficient in front of H₃PO₄ is —',
     options: ['1', '2', '3', '4'],
     correctAnswer: 1,
     explanation: 'Balancing Ca(NO₃)₂ + H₃PO₄ → Ca₃(PO₄)₂ + HNO₃: 3Ca(NO₃)₂ + 2H₃PO₄ → Ca₃(PO₄)₂ + 6HNO₃. The coefficient in front of H₃PO₄ is 2. The correct answer is B.'
@@ -304,7 +301,7 @@ const sampleQuestions = [
     id: 36,
     type: 'drag-drop',
     text: 'Create the formula for diboron trioxide using the symbols provided.',
-    dragItems: ['B', 'b', 'O', 'o', '1', '2', '3', '4'],
+    options: ['B', 'b', 'O', 'o', '1', '2', '3', '4'],
     dropZones: ['Zone 1', 'Zone 2', 'Zone 3', 'Zone 4'],
     correctAnswer: [0, 5, 2, 6],
     explanation: 'Diboron trioxide contains 2 boron atoms (di-) and 3 oxygen atoms (tri-). The correct formula is B₂O₃, written as B, 2, O, 3.'
@@ -320,7 +317,7 @@ const sampleQuestions = [
   {
     id: 38,
     type: 'multiple-choice',
-    text: '<center>2C₄H₁₀ + 13O₂ → 8CO₂ + 10H₂O</center><br><br>How many moles of carbon dioxide (CO₂) are produced when reacting 6.00 moles of butane (C₄H₁₀) in excess oxygen (O₂)?',
+    text: '<center>2C₄H₁₀ + 13O₂ → 8CO₂ + 10H₂O</center><br>How many moles of carbon dioxide (CO₂) are produced when reacting 6.00 moles of butane (C₄H₁₀) in excess oxygen (O₂)?',
     options: ['1.50 mol', '24.0 mol', '66.0 mol', '1,060 mol'],
     correctAnswer: 1,
     explanation: 'From the equation 2C₄H₁₀ + 13O₂ → 8CO₂ + 10H₂O, the ratio of C₄H₁₀ to CO₂ is 2:8 or 1:4. Moles of CO₂ = 6.00 mol × (8/2) = 24.0 mol. The correct answer is B.'
