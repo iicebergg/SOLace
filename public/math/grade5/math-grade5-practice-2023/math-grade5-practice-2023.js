@@ -1,157 +1,198 @@
 window.TEST_IDENTIFIER = 'math_grade5_practice_2023';
 
-const sampleQuestions = [
+const questions = [
  {
  id: '1',
- text: 'Which number sentence will make this statement true? <center>? > 8,243</center>',
+ text: '4.221 ÷ 7 = ______ ?',
  type: 'multiple-choice',
- options: ['8,223', '8,285', '8,198', '8,234'],
+ options: ['0.063', '0.603', '0.63', '6.03'],
  correctAnswer: 1,
- explanation: 'To be greater than 8,243, the number must be bigger. Compare: 8,285 > 8,243 because 285 is greater than 243 in the last three digits.'
+ explanation: 'When dividing 4.221 by 7, we get 0.603. To divide, we perform the division: 4.221 ÷ 7 = 0.603'
  },
  {
  id: '2',
- text: 'This set of circles is shaded to represent one whole. <br><img src="images/2.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which model is shaded to represent this expression? <center><math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math></center>',
+ text: 'Using the order of operations, which calculation should be done first to simplify this expression?<br><br><center>54 + 6 × (3 + 6) ÷ 3</center>',
  type: 'multiple-choice',
- options: [
-    {url: 'images/2a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/2b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/2c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/2d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 1, 
- explanation: 'Adding five quarters: 1/4 + 1/4 + 1/4 + 1/4 + 1/4 = 5/4, which is one whole circle plus one more quarter.'
+ options: ['3 + 6', '6 × 3', '6 ÷ 3', '54 + 6'],
+ correctAnswer: 0,
+ explanation: 'Following the order of operations (PEMDAS), parentheses are evaluated first, so 3 + 6 should be calculated first.'
  },
  {
  id: '3',
- text: 'This model is shaded to represent one whole. <br><img src="images/3_1.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Model R is shaded to represent a fraction. <br><img src="images/3_2.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which of these is shaded to represent a fraction that is less than the fraction represented by Model R?',
+ text: 'Which expression represents the prime factorization of 75?',
  type: 'multiple-choice',
- options: [
-    {url: 'images/3a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/3b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/3c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/3d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 2, 
- explanation: 'Compare the shaded parts. A fraction is smaller when fewer parts are shaded. Look for the model with less shaded area than Model R.'
+ options: ['3 × 25', '3 × 3 × 5', '3 × 5 × 5', '3 × 3 × 5 × 5'],
+ correctAnswer: 2,
+ explanation: '75 = 3 × 25 = 3 × 5 × 5, which is the complete prime factorization using only prime numbers.'
  },
  {
  id: '4',
- text: 'The table shows the number of miles a family traveled on three days. <br><img src="images/4.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Based on the table, which is closest to the difference between the total number of miles this family traveled on Day 1 and Day 2 combined and the number of miles traveled on Day 3?',
+ text: 'Destiny is delivering a total of 32,000 flowers to several stores. This table shows the number of these flowers she has delivered to Store P and Store Q.<br><br><table style="margin: 10px auto; border-collapse: collapse;"><tr><th style="border: 1px solid black; padding: 8px; background-color: #f0f0f0;">Store</th><th style="border: 1px solid black; padding: 8px; background-color: #f0f0f0;">Number of Flowers</th></tr><tr><td style="border: 1px solid black; padding: 8px;">Store P</td><td style="border: 1px solid black; padding: 8px;">18,104</td></tr><tr><td style="border: 1px solid black; padding: 8px;">Store Q</td><td style="border: 1px solid black; padding: 8px;">9,294</td></tr></table><br>The total number of these flowers that Destiny still needs to deliver is —',
  type: 'multiple-choice',
- options: ['200 miles', '300 miles', '600 miles', '900 miles'],
- correctAnswer: 1, 
- explanation: 'Add Day 1 and Day 2 miles together, then subtract Day 3 miles to find the difference. Use estimation to find the closest answer.'
+ options: ['59,398', '27,398', '8,810', '4,602'],
+ correctAnswer: 3,
+ explanation: 'Total delivered: 18,104 + 9,294 = 27,398. Still to deliver: 32,000 - 27,398 = 4,602'
  },
  {
  id: '5',
- text: 'There were a total of 750 drinks in the cafeteria. There were 249 chocolate milks and 203 whole milks. The rest of the drinks were orange juice. Which estimate is closest to the number of orange juices in the cafeteria?',
+ text: 'A farmer is picking fruit. She picks 1,457 apples and 678 pears.<br>• She will fill baskets using these pieces of fruit.<br>• She will fill each basket with 24 pieces of fruit.<br><br>What is the total number of baskets the farmer will be able to fill with these pieces of fruit?',
  type: 'multiple-choice',
- options: ['400 because 200 + 200 = 400 and 800 - 400 = 400', '1,200 because 200 + 200 = 400 and 800 + 400 = 1,200 ', '300 because 250 + 200 = 450 and 750 - 450 = 300 ', '1,150 because 250 + 200 = 450 and 700 + 450 = 1,500'],
- correctAnswer: 2, 
- explanation: 'Round 249 to 250 and 203 to 200. Add: 250 + 200 = 450 drinks. Subtract from total: 750 - 450 = 300 orange juices.',
+ options: ['2,135', '779', '89', '88'],
+ correctAnswer: 3,
+ explanation: 'Total fruit: 1,457 + 678 = 2,135. Number of complete baskets: 2,135 ÷ 24 = 88 remainder 23, so 88 complete baskets.'
  },
  {
  id: '6',
- text: 'Mr. Gary\'s class has a goal of selling 500 pizzas in three months. The class sold 135 pizzas in the first month and 257 pizzas in the second month. Exactly how many more pizzas does the class need to sell to reach its goal?',
+ text: 'What is the least common denominator for <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> and <math><mfrac><mn>7</mn><mn>12</mn></mfrac></math>?',
  type: 'multiple-choice',
- options: ['392', '382', '208', '108'],
- correctAnswer: 3, 
- explanation: 'Add pizzas sold: 135 + 257 = 392. Subtract from goal: 500 - 392 = 108 more pizzas needed.',
+ options: ['12', '16', '24', '48'],
+ correctAnswer: 0,
+ explanation: 'The least common multiple of 4 and 12 is 12. Since 12 = 4 × 3 and 12 = 12 × 1.'
  },
  {
  id: '7',
- text: 'Which of these best represents this set of cherries? <br><img src="images/7.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'A trail is <math><mfrac><mn>3</mn><mn>4</mn></mfrac></math> mile long. Robert ran the length of the trail 2 times. A blank number line is provided.<br><img src="images/question_7.png" class="question-image" alt="Number line for the problem"></img><br>What is the total number of miles Robert ran?',
  type: 'multiple-choice',
- options: ['40 - 5', '40 ÷ 5', '5 + 8', '5 × 40'],
- correctAnswer: 1, 
- explanation: 'If 40 cherries are divided into 5 equal groups, use division: 40 ÷ 5 = 8 cherries in each group.'
+ options: ['<math><mfrac><mn>6</mn><mn>4</mn></mfrac></math>', '<math><mfrac><mn>5</mn><mn>4</mn></mfrac></math>', '<math><mfrac><mn>4</mn><mn>4</mn></mfrac></math>', '<math><mfrac><mn>3</mn><mn>8</mn></mfrac></math>'],
+ correctAnswer: 0,
+ explanation: 'Robert ran 3/4 mile twice: 3/4 × 2 = 6/4 miles (or 1 1/2 miles).'
  },
  {
  id: '8',
- text: 'Which of these best represents this set of cherries? <img src="images/8.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Mason has a brick and 5 wood blocks.<br>• The brick has a mass of 2.27 kilograms.<br>• Each wood block has a mass of 1.097 kilograms.<br><br>What is the difference between the combined mass of the 5 wood blocks and the mass of the brick?',
  type: 'multiple-choice',
- options: ['6 + 2', '6 × 2', '3 + 2', '3 × 2'],
- correctAnswer: 3, 
- explanation: 'If there are 3 groups with 2 cherries in each group, use multiplication: 3 × 2 = 6 total cherries.'
+ options: ['7.755 kilograms', '5.485 kilograms', '3.215 kilograms', '1.173 kilograms'],
+ correctAnswer: 2,
+ explanation: 'Mass of 5 wood blocks: 5 × 1.097 = 5.485 kg. Difference: 5.485 - 2.27 = 3.215 kg'
  },
  {
  id: '9',
- text: 'Which number sentence is true?',
+ text: 'Ms. Collins bought 2 CDs for $14.55 each and 3 DVDs for $10.39 each. These prices include tax. She gave the cashier $65.00. How much change should Ms. Collins receive?',
  type: 'multiple-choice',
- options: ['8 × 2 = 16 + 3', '9 - 1 = 8 ÷ 2', '5 × 6 = 25 + 5', '15 - 3 = 6 × 3'],
- correctAnswer: 2, 
- explanation: 'Check each equation: 5 × 6 = 30 and 25 + 5 = 30, so both sides equal 30. This makes the equation true.'
+ options: ['$4.73', '$5.27', '$40.06', '$60.27'],
+ correctAnswer: 0,
+ explanation: 'Total cost: (2 × $14.55) + (3 × $10.39) = $29.10 + $31.17 = $60.27. Change: $65.00 - $60.27 = $4.73'
+ },
+ {
+ id: '10',
+ text: 'The measurements between four points on a map are shown. (Figure is not drawn to scale.)<br><img src="images/question_10.png" class="question-image" alt="Map showing points A, B, C, and D with distances"></img><br>What is the distance from point C to point D on the map?',
+ type: 'multiple-choice',
+ options: ['5.25 cm', '9.75 cm', '11.25 cm', '15.75 cm'],
+ correctAnswer: 0,
+ explanation: 'Total distance is 15.75 cm. Distance from A to C: 4.5 + 6 = 10.5 cm. Distance from C to D: 15.75 - 10.5 = 5.25 cm'
  },
  {
  id: '11',
- text: 'This model shows a rectangle that is 3 feet long and 2 feet wide. <br><img src="images/11.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which is the closest to the area of the shaded part of this modeL?',
+ text: 'A right triangle is shaded inside the rectangle shown.<br><img src="images/question_11.png" class="question-image" alt="Rectangle with shaded right triangle"></img><br>Which expression could be used to find the area, in square units, of the triangle?',
  type: 'multiple-choice',
- options: ['8 square feet', '6 square feet', '4 square feet', '2 square feet'],
- correctAnswer: 2, 
- explanation: 'Count the shaded squares in the rectangle. If about half of the 6 total squares (3 × 2) are shaded, the area is about 4 square feet.'
+ options: ['3 × 4 × <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>', '3 × 4 × 5 × <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>', '3 + 4 + 5', '3 + 4 + 3 + 4'],
+ correctAnswer: 0,
+ explanation: 'Area of a triangle = 1/2 × base × height = 3 × 4 × 1/2'
+ },
+ {
+ id: '12',
+ text: 'Which term best describes the amount of jelly a jar will hold?',
+ type: 'multiple-choice',
+ options: ['Length', 'Perimeter', 'Volume', 'Area'],
+ correctAnswer: 2,
+ explanation: 'Volume measures the amount of space inside a container, which is what a jar can hold.'
  },
  {
  id: '13',
- text: 'Claudia painted a picture as shown. <br><img src="images/13.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which measurement is closest to the perimeter of Claudia\'s picture?',
+ text: 'This figure represents a storage container.<br><img src="images/question_13.png" class="question-image" alt="Rectangular prism with dimensions"></img><br>What is the volume of this storage container?',
  type: 'multiple-choice',
- options: ['14 feet', '12 feet', '8 feet', '6 feet'],
- correctAnswer: 1, 
- explanation: 'Perimeter is the distance around the outside. Add all four sides of the picture frame to find the total distance around.'
+ options: ['600 cubic meters', '195 cubic meters', '120 cubic meters', '115 cubic meters'],
+ correctAnswer: 0,
+ explanation: 'Volume = length × width × height = 15 × 8 × 5 = 600 cubic meters'
  },
  {
  id: '14',
- text: 'Which is closest to the time shown on this clock? <br><img src="images/14.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Brady is using grid paper to design a garden. The shaded figure represents the garden.<br><img src="images/question_14.png" class="question-image" alt="Grid with shaded garden shape"></img><br>Which best describes the area and perimeter of the shaded figure on this grid?',
  type: 'multiple-choice',
- options: ['4:08', '4:40', '8:04', '8:20'],
- correctAnswer: 3, 
- explanation: 'Look at the clock hands. The short hand (hour hand) points between 8 and 9, and the long hand (minute hand) points to 4, which means 20 minutes. The time is 8:20.'
+ options: ['Area of 24 square meters and perimeter of 24 meters', 'Area of 21 square meters and perimeter of 21 meters', 'Area of 24 square meters and perimeter of 21 meters', 'Area of 21 square meters and perimeter of 24 meters'],
+ correctAnswer: 3,
+ explanation: 'Count the shaded squares for area (21 square meters) and count the outside edges for perimeter (24 meters).'
  },
  {
  id: '15',
- text: 'Allen arrived at his friend\'s house at 3:20 P.M. He left 2 hours later. At what time did Allen leave his friend\'s house?',
+ text: 'Which angle is an obtuse angle?<br><img src="images/question_15.png" class="question-image" alt="Diagram showing 4 different angles"></img>',
  type: 'multiple-choice',
- options: ['2:20 P.M.', '3:20 P.M.', '4:20 P.M.', '5:20 P.M.'],
- correctAnswer: 3, 
- explanation: 'Add 2 hours to the start time: 3:20 P.M. + 2 hours = 5:20 P.M.'
+ options: ['Angle 1', 'Angle 2', 'Angle 3', 'Angle 4'],
+ correctAnswer: 1,
+ explanation: 'An obtuse angle measures between 90° and 180°. Angle 2 is the obtuse angle.'
  },
  {
  id: '16',
- text: 'Claire arrived at the zoo at 12:45 P.M. She left the zoo at 3:45 P.M. What was the total amount of time Claire was at the zoo?',
+ text: 'Which figure appears to be an isosceles triangle?<br><img src="images/question_16.png" class="question-image" alt="Four triangles labeled F, G, H, and J"></img>',
  type: 'multiple-choice',
- options: ['3 hours', '4 hours', '9 hours', '12 hours'],
- correctAnswer: 0, 
- explanation: 'Count the hours from 12:45 P.M. to 3:45 P.M.: from 12:45 to 1:45 is 1 hour, to 2:45 is 2 hours, to 3:45 is 3 hours total.'
+ options: ['Figure F', 'Figure G', 'Figure H', 'Figure J'],
+ correctAnswer: 2,
+ explanation: 'An isosceles triangle has at least two equal sides. Figure H appears to be an isosceles triangle.'
  },
  {
  id: '17',
- text: 'Which 3 polygons were combined without overlapping to make the figure shown? <br><img src="images/17.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Which pattern follows the rule "divide by 4" to find each number after the first?',
  type: 'multiple-choice',
- options: ['Triangle, pentagon, triangle', 'Quadrilateral, triangle, quadrilateral', 'Quadrilateral, pentagon, triangle', 'Triangle, quadrilateral, triangle'],
- correctAnswer: 3, 
- explanation: 'Look at the shapes that make up the figure. Count the sides of each part: triangles have 3 sides, quadrilaterals have 4 sides.'
+ options: ['360, 90, 30, 15', '256, 64, 16, 4', '92, 88, 84, 80', '23, 19, 15, 11'],
+ correctAnswer: 1,
+ explanation: '256 ÷ 4 = 64, 64 ÷ 4 = 16, 16 ÷ 4 = 4. Each number is the previous number divided by 4.'
  },
  {
  id: '18',
- text: ' Mrs. Morgan wants to know what game the students would like to play during indoor recess. What is the best way for Mrs. Morgan to collect the data?',
+ text: 'Seven students in a class are raising money for a fundraiser by riding their bicycles for 10 days.<br>• The students will be paid for every mile they ride.<br>• This table shows the number of miles each student rode in the first four days.<br><br><table style="margin: 10px auto; border-collapse: collapse;"><tr><th style="border: 1px solid black; padding: 8px; background-color: #f0f0f0;">Student</th><th style="border: 1px solid black; padding: 8px;">Blake</th><th style="border: 1px solid black; padding: 8px;">Charles</th><th style="border: 1px solid black; padding: 8px;">Eva</th><th style="border: 1px solid black; padding: 8px;">Jasmine</th><th style="border: 1px solid black; padding: 8px;">Lucy</th><th style="border: 1px solid black; padding: 8px;">Micah</th><th style="border: 1px solid black; padding: 8px;">Robert</th></tr><tr><td style="border: 1px solid black; padding: 8px; background-color: #f0f0f0;">Number of Miles</td><td style="border: 1px solid black; padding: 8px;">10</td><td style="border: 1px solid black; padding: 8px;">18</td><td style="border: 1px solid black; padding: 8px;">9</td><td style="border: 1px solid black; padding: 8px;">10</td><td style="border: 1px solid black; padding: 8px;">18</td><td style="border: 1px solid black; padding: 8px;">18</td><td style="border: 1px solid black; padding: 8px;">22</td></tr></table><br>Which question can the students NOT answer by analyzing the data in the table?',
  type: 'multiple-choice',
- options: ['Count the number of students who like to play football', 'Count the number of students that will be at indoor recess', 'Create a tally chart to show how long students play during recess', 'Create a tally chart to show what game the students would like to play during indoor recess'],
- correctAnswer: 3, 
- explanation: 'To find out what game students want to play, make a tally chart that shows each game choice and how many students picked each one.'
+ options: ['What is the least number of miles a student rode?', 'What is the number of miles the most students rode?', 'What is the number of miles the students rode each day?', 'What is the total number of miles the students rode on these four days?'],
+ correctAnswer: 2,
+ explanation: 'The table shows total miles for four days, not the breakdown by individual days.'
  },
  {
  id: '19',
- text: 'Four students have a total of 200 coins. This pictograph represents the number of coins three of the students have. The number of coins Diana has is missing. <br><img src="images/19.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which set represents the number of coins Diana has?',
+ text: 'Based on this table of data, the median number of miles is —<br><br><table style="margin: 10px auto; border-collapse: collapse;"><tr><th style="border: 1px solid black; padding: 8px; background-color: #f0f0f0;">Student</th><th style="border: 1px solid black; padding: 8px;">Blake</th><th style="border: 1px solid black; padding: 8px;">Charles</th><th style="border: 1px solid black; padding: 8px;">Eva</th><th style="border: 1px solid black; padding: 8px;">Jasmine</th><th style="border: 1px solid black; padding: 8px;">Lucy</th><th style="border: 1px solid black; padding: 8px;">Micah</th><th style="border: 1px solid black; padding: 8px;">Robert</th></tr><tr><td style="border: 1px solid black; padding: 8px; background-color: #f0f0f0;">Number of Miles</td><td style="border: 1px solid black; padding: 8px;">10</td><td style="border: 1px solid black; padding: 8px;">18</td><td style="border: 1px solid black; padding: 8px;">9</td><td style="border: 1px solid black; padding: 8px;">10</td><td style="border: 1px solid black; padding: 8px;">18</td><td style="border: 1px solid black; padding: 8px;">18</td><td style="border: 1px solid black; padding: 8px;">22</td></tr></table>',
  type: 'multiple-choice',
- options: [
-    {url: 'images/19a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/19b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/19c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/19d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 1, 
- explanation: 'Add up the coins for the three students shown in the pictograph. Subtract that total from 200 to find how many coins Diana has.'
+ options: ['10, because it is the average number of miles', '10, because it is the middle number of miles in the table', '18, because it is the middle number of miles when the data are ordered from least to greatest', '18, because it is the difference between the greatest number of miles and the least number of miles'],
+ correctAnswer: 2,
+ explanation: 'When ordered: 9, 10, 10, 18, 18, 18, 22. The median (middle value) is 18.'
  },
+ {
+ id: '20',
+ text: 'A principal wants to know the number of days each student was absent from school last month. Which question would best collect the data?',
+ type: 'multiple-choice',
+ options: ['What is the number of students in the school?', 'What is each student\'s favorite school subject?', 'What is the number of days each student was absent last year?', 'What is the number of days each student was absent last month?'],
+ correctAnswer: 3,
+ explanation: 'This question directly asks for the specific information the principal wants to know.'
+ },
+ {
+ id: '21',
+ text: 'This line plot shows the number of envelopes Tammie received in the mail on each of ten days.<br><img src="images/question_21.png" class="question-image" alt="Line plot showing envelope distribution"></img><br>What is the total number of days on which Tammie received at least 6 envelopes in the mail?',
+ type: 'multiple-choice',
+ options: ['2', '3', '5', '7'],
+ correctAnswer: 2,
+ explanation: 'Count the X\'s at 6, 7, and 8 on the line plot to find the days with at least 6 envelopes.'
+ },
+ {
+ id: '22',
+ text: 'This table shows the number of beads Irma has in 5 bowls.<br><br><table style="margin: 10px auto; border-collapse: collapse;"><tr><th style="border: 1px solid black; padding: 8px; background-color: #f0f0f0;">Bowl</th><th style="border: 1px solid black; padding: 8px; background-color: #f0f0f0;">Number of Beads</th></tr><tr><td style="border: 1px solid black; padding: 8px;">A</td><td style="border: 1px solid black; padding: 8px;">15</td></tr><tr><td style="border: 1px solid black; padding: 8px;">B</td><td style="border: 1px solid black; padding: 8px;">10</td></tr><tr><td style="border: 1px solid black; padding: 8px;">C</td><td style="border: 1px solid black; padding: 8px;">12</td></tr><tr><td style="border: 1px solid black; padding: 8px;">D</td><td style="border: 1px solid black; padding: 8px;">8</td></tr><tr><td style="border: 1px solid black; padding: 8px;">E</td><td style="border: 1px solid black; padding: 8px;">10</td></tr></table><br>Irma will empty all the beads from these bowls and will put an equal number of beads back into each bowl. The number of beads she will put in each bowl represents the —',
+ type: 'multiple-choice',
+ options: ['sample space', 'fair share', 'product', 'pattern'],
+ correctAnswer: 1,
+ explanation: 'Dividing items equally among groups represents a fair share.'
+ },
+ {
+ id: '23',
+ text: 'The data sets represent daily low temperatures, in degrees Fahrenheit, for four different cities.<br><br>In which data set does the range have the greatest spread?',
+ type: 'multiple-choice',
+ options: ['21, 24, 29, 25, 27', '33, 37, 36, 36, 33', '42, 41, 43, 48, 44', '53, 57, 54, 51, 53'],
+ correctAnswer: 0,
+ explanation: 'Range is max - min. A: 29-21=8, B: 37-33=4, C: 48-41=7, D: 57-51=6. Set A has the greatest range of 8.'
+ },
+ {
+ id: '24',
+ text: 'This sample space shows all of the possible combinations of one type of drink and one type of snack that Leslie can choose.<br><br>Water, Apple<br>Water, Cheese<br>Water, Pretzels<br>Water, Banana<br>Juice, Apple<br>Juice, Cheese<br>Juice, Pretzels<br>Juice, Banana<br><br>According to the sample space, what is the probability that the combination Leslie chooses will include juice?',
+ type: 'multiple-choice',
+ options: ['<math><mfrac><mn>1</mn><mn>8</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>', '<math><mfrac><mn>4</mn><mn>8</mn></mfrac></math>', '<math><mfrac><mn>8</mn><mn>8</mn></mfrac></math>'],
+ correctAnswer: 2,
+ explanation: '4 out of 8 combinations include juice, so the probability is 4/8 or 1/2.'
+ }
 ];
 
 // Test-specific storage key for this test

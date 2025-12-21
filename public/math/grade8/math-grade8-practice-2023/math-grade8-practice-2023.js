@@ -3,155 +3,485 @@ window.TEST_IDENTIFIER = 'math_grade8_practice_2023';
 const sampleQuestions = [
  {
  id: '1',
- text: 'Which number sentence will make this statement true? <center>? > 8,243</center>',
+ text: 'Two friends went out to dinner. The total bill was $38.90 before tax and tip.<br>• The tax rate was 5.5%.<br>• They wanted to tip 20% on the total before tax.<br><br>Which expression could NOT be used to estimate the total cost including tax and tip?',
  type: 'multiple-choice',
- options: ['8,223', '8,285', '8,198', '8,234'],
+ options: ['40(1.26)', '40(0.06) + 40(0.2)', '40 + 40(0.2 + 0.06)', '40 + 40(0.06) + 40(0.2)'],
  correctAnswer: 1,
- explanation: 'To be greater than 8,243, the number must be bigger. Compare: 8,285 > 8,243 because 285 is greater than 243 in the last three digits.'
+ explanation: 'To estimate the total with tax (5.5% ≈ 6%) and tip (20%), we need 40 + 40(0.06) + 40(0.2) = 40(1.26). Option B only calculates the tax and tip amounts without the original bill.'
  },
  {
  id: '2',
- text: 'This set of circles is shaded to represent one whole. <br><img src="images/2.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which model is shaded to represent this expression? <center><math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math></center>',
+ text: 'The original price of a holiday decoration was $28. The price decreased to $0.60 after the holiday was over. Which is closest to the percent decrease in the holiday decoration price?',
  type: 'multiple-choice',
- options: [
-    {url: 'images/2a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/2b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/2c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/2d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 1, 
- explanation: 'Adding five quarters: 1/4 + 1/4 + 1/4 + 1/4 + 1/4 = 5/4, which is one whole circle plus one more quarter.'
+ options: ['114%', '98%', '46%', '27%'],
+ correctAnswer: 1,
+ explanation: 'The decrease is $28 - $0.60 = $27.40. Percent decrease = (27.40/28) × 100% ≈ 98%'
  },
  {
  id: '3',
- text: 'This model is shaded to represent one whole. <br><img src="images/3_1.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Model R is shaded to represent a fraction. <br><img src="images/3_2.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which of these is shaded to represent a fraction that is less than the fraction represented by Model R?',
+ text: 'Which number has a value between <math><mo>−</mo><msqrt><mn>9</mn></msqrt></math> and π?',
  type: 'multiple-choice',
- options: [
-    {url: 'images/3a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/3b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/3c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/3d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 2, 
- explanation: 'Compare the shaded parts. A fraction is smaller when fewer parts are shaded. Look for the model with less shaded area than Model R.'
+ options: ['<math><mfrac><mn>13</mn><mn>4</mn></mfrac></math>', '<math><mo>−</mo><mfrac><mn>18</mn><mn>6</mn></mfrac></math>', '3.1 × 10²', '3.2 × 10⁻²'],
+ correctAnswer: 3,
+ explanation: '−√9 = −3 and π ≈ 3.14. We need a value between −3 and 3.14. Option D: 3.2 × 10⁻² = 0.032, which is between −3 and 3.14.'
  },
  {
  id: '4',
- text: 'The table shows the number of miles a family traveled on three days. <br><img src="images/4.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Based on the table, which is closest to the difference between the total number of miles this family traveled on Day 1 and Day 2 combined and the number of miles traveled on Day 3?',
+ text: 'Look at these angles.<br><img src="images/question_4.png" class="question-image" alt="Angles M=71°, N=109°, P=19°, Q=71°"><br>Which two angles are complementary?',
  type: 'multiple-choice',
- options: ['200 miles', '300 miles', '600 miles', '900 miles'],
- correctAnswer: 1, 
- explanation: 'Add Day 1 and Day 2 miles together, then subtract Day 3 miles to find the difference. Use estimation to find the closest answer.'
+ options: ['∠M and ∠Q', '∠N and ∠P', '∠P and ∠Q', '∠M and ∠N'],
+ correctAnswer: 2,
+ explanation: 'Complementary angles add to 90°. ∠P (19°) + ∠Q (71°) = 90°'
  },
  {
  id: '5',
- text: 'There were a total of 750 drinks in the cafeteria. There were 249 chocolate milks and 203 whole milks. The rest of the drinks were orange juice. Which estimate is closest to the number of orange juices in the cafeteria?',
+ text: 'Angle C and angle D are supplementary. The measure of angle D is 72°. What is the measure of angle C?',
  type: 'multiple-choice',
- options: ['400 because 200 + 200 = 400 and 800 - 400 = 400', '1,200 because 200 + 200 = 400 and 800 + 400 = 1,200 ', '300 because 250 + 200 = 450 and 750 - 450 = 300 ', '1,150 because 250 + 200 = 450 and 700 + 450 = 1,500'],
- correctAnswer: 2, 
- explanation: 'Round 249 to 250 and 203 to 200. Add: 250 + 200 = 450 drinks. Subtract from total: 750 - 450 = 300 orange juices.',
+ options: ['18°', '72°', '108°', '162°'],
+ correctAnswer: 2,
+ explanation: 'Supplementary angles add to 180°. Angle C = 180° − 72° = 108°'
  },
  {
  id: '6',
- text: 'Mr. Gary\'s class has a goal of selling 500 pizzas in three months. The class sold 135 pizzas in the first month and 257 pizzas in the second month. Exactly how many more pizzas does the class need to sell to reach its goal?',
+ text: 'A student made the square-based pyramid shown. What is the area of the base of this pyramid?<br><img src="images/question_6.png" class="question-image" alt="Pyramid with Volume = 588 cubic inches and Height = 9 inches">',
  type: 'multiple-choice',
- options: ['392', '382', '208', '108'],
- correctAnswer: 3, 
- explanation: 'Add pizzas sold: 135 + 257 = 392. Subtract from goal: 500 - 392 = 108 more pizzas needed.',
+ options: ['196 sq in.', '65 sq in.', '49 sq in.', '14 sq in.'],
+ correctAnswer: 0,
+ explanation: 'Volume of pyramid = (1/3) × Base area × Height. 588 = (1/3) × Base area × 9. Base area = 588 × 3 ÷ 9 = 196 sq in.'
  },
  {
  id: '7',
- text: 'Which of these best represents this set of cherries? <br><img src="images/7.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Trapezoid MNPQ is graphed on the coordinate plane.<br><img src="images/question_7.png" class="question-image" alt="Trapezoid MNPQ on coordinate plane"><br>Trapezoid MNPQ will be translated 3 units to the left and 2 units down. Which of these best represents the coordinates of N′?',
  type: 'multiple-choice',
- options: ['40 - 5', '40 ÷ 5', '5 + 8', '5 × 40'],
- correctAnswer: 1, 
- explanation: 'If 40 cherries are divided into 5 equal groups, use division: 40 ÷ 5 = 8 cherries in each group.'
+ options: ['(0, 0)', '(1, −1)', '(0, 4)', '(6, 4)'],
+ correctAnswer: 0,
+ explanation: 'From the graph, N is at (3, 2). Translating 3 units left and 2 units down: N′ = (3−3, 2−2) = (0, 0)'
  },
  {
  id: '8',
- text: 'Which of these best represents this set of cherries? <img src="images/8.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Each model shown consists of three squares and a triangle. The areas of the squares are given in square centimeters. For which model could the Pythagorean Theorem be used to prove that the triangle is a right triangle? Note: Models are not drawn to scale.<br><img src="images/question_8.png" class="question-image" alt="Four triangle models with squares">',
  type: 'multiple-choice',
- options: ['6 + 2', '6 × 2', '3 + 2', '3 × 2'],
- correctAnswer: 3, 
- explanation: 'If there are 3 groups with 2 cherries in each group, use multiplication: 3 × 2 = 6 total cherries.'
+ options: ['196 cm², 36 cm², 64 cm²', '15 cm², 9 cm², 12 cm²', '45 cm², 10 cm², 35 cm²', '20 cm², 12 cm², 16 cm²'],
+ correctAnswer: 2,
+ explanation: 'For a right triangle, a² + b² = c². Check option H: 10 + 35 = 45, so the Pythagorean Theorem holds.'
  },
  {
  id: '9',
- text: 'Which number sentence is true?',
+ text: 'A composite figure is shown.<br><img src="images/question_9.png" class="question-image" alt="Composite figure with dimensions 13cm, 10cm, 3cm, 2cm, 2cm"><br>What is the area of this figure?',
  type: 'multiple-choice',
- options: ['8 × 2 = 16 + 3', '9 - 1 = 8 ÷ 2', '5 × 6 = 25 + 5', '15 - 3 = 6 × 3'],
- correctAnswer: 2, 
- explanation: 'Check each equation: 5 × 6 = 30 and 25 + 5 = 30, so both sides equal 30. This makes the equation true.'
+ options: ['30 cm²', '54 cm²', '59 cm²', '74 cm²'],
+ correctAnswer: 3,
+ explanation: 'Break the figure into rectangles and calculate the total area. The area is 74 cm².'
+ },
+ {
+ id: '10',
+ text: 'A rectangle as shown has a length of 0.9 centimeters and a width of 0.4 cm. A circle is drawn inside that touches the rectangle at two points.<br><img src="images/question_10.png" class="question-image" alt="Rectangle 0.9cm × 0.4cm with circle inside"><br>Which is closest to the area of the shaded region in the rectangle?',
+ type: 'multiple-choice',
+ options: ['0.14 cm²', '0.23 cm²', '0.28 cm²', '0.49 cm²'],
+ correctAnswer: 1,
+ explanation: 'Rectangle area = 0.9 × 0.4 = 0.36 cm². Circle diameter = 0.4 cm, radius = 0.2 cm. Circle area = πr² ≈ 3.14 × 0.04 ≈ 0.126 cm². Shaded area ≈ 0.36 − 0.126 ≈ 0.23 cm²'
  },
  {
  id: '11',
- text: 'This model shows a rectangle that is 3 feet long and 2 feet wide. <br><img src="images/11.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which is the closest to the area of the shaded part of this modeL?',
+ text: 'Leslie built a walkway around a rectangular garden as shown. The walkway is the same width on all sides of the garden.<br><img src="images/question_11.png" class="question-image" alt="Garden 20ft × 30ft with 3ft walkway"><br>What is the perimeter of this garden?',
  type: 'multiple-choice',
- options: ['8 square feet', '6 square feet', '4 square feet', '2 square feet'],
- correctAnswer: 2, 
- explanation: 'Count the shaded squares in the rectangle. If about half of the 6 total squares (3 × 2) are shaded, the area is about 4 square feet.'
+ options: ['100 ft', '94 ft', '88 ft', '76 ft'],
+ correctAnswer: 3,
+ explanation: 'The walkway is 3 ft wide on all sides. Garden dimensions: Length = 30 − 2(3) = 24 ft, Width = 20 − 2(3) = 14 ft. Perimeter = 2(24 + 14) = 76 ft'
+ },
+ {
+ id: '12',
+ text: 'Which set has a domain of {2, 3} and a range of {5, 8}?',
+ type: 'multiple-choice',
+ options: ['{ (2, 8), (3, 5), (5, 8) }', '{ (3, 5), (2, 5), (8, 3) }', '{ (2, 8), (3, 5) }', '{ (5, 2), (8, 3) }'],
+ correctAnswer: 2,
+ explanation: 'Domain is the set of x-values, range is the set of y-values. Option H has domain {2, 3} and range {5, 8}.'
  },
  {
  id: '13',
- text: 'Claudia painted a picture as shown. <br><img src="images/13.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which measurement is closest to the perimeter of Claudia\'s picture?',
+ text: 'Some students are selling candy bars to raise money to purchase new gym equipment. The more candy bars they sell, the more money they raise. Which of these is the independent variable in this situation?',
  type: 'multiple-choice',
- options: ['14 feet', '12 feet', '8 feet', '6 feet'],
- correctAnswer: 1, 
- explanation: 'Perimeter is the distance around the outside. Add all four sides of the picture frame to find the total distance around.'
+ options: ['The amount of money raised', 'The number of students', 'The number of candy bars sold', 'The cost of new gym equipment'],
+ correctAnswer: 2,
+ explanation: 'The independent variable is what you control or change. Students control how many candy bars they sell, which then determines the money raised.'
  },
  {
  id: '14',
- text: 'Which is closest to the time shown on this clock? <br><img src="images/14.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'A line contains the points represented by this table of values.<br><img src="images/question_14.png" class="question-image" alt="Table with x values 1,3,5 and y values 4,6,8"><br>This line has a y-intercept of —',
  type: 'multiple-choice',
- options: ['4:08', '4:40', '8:04', '8:20'],
- correctAnswer: 3, 
- explanation: 'Look at the clock hands. The short hand (hour hand) points between 8 and 9, and the long hand (minute hand) points to 4, which means 20 minutes. The time is 8:20.'
+ options: ['0', '1', '2', '3'],
+ correctAnswer: 3,
+ explanation: 'The pattern shows y = x + 3. When x = 0, y = 3. The y-intercept is 3.'
  },
  {
  id: '15',
- text: 'Allen arrived at his friend\'s house at 3:20 P.M. He left 2 hours later. At what time did Allen leave his friend\'s house?',
+ text: 'Which graph appears to contain all the ordered pairs in this table?<br>x: −5, 0, 3<br>y: −3, 2, 5<br><img src="images/question_15.png" class="question-image" alt="Four coordinate plane graphs labeled A, B, C, D">',
  type: 'multiple-choice',
- options: ['2:20 P.M.', '3:20 P.M.', '4:20 P.M.', '5:20 P.M.'],
- correctAnswer: 3, 
- explanation: 'Add 2 hours to the start time: 3:20 P.M. + 2 hours = 5:20 P.M.'
+ options: ['Graph A', 'Graph B', 'Graph C', 'Graph D'],
+ correctAnswer: 0,
+ explanation: 'Plot the points (−5, −3), (0, 2), and (3, 5). These points form a line that appears in Graph A.'
  },
  {
  id: '16',
- text: 'Claire arrived at the zoo at 12:45 P.M. She left the zoo at 3:45 P.M. What was the total amount of time Claire was at the zoo?',
+ text: 'Aaron has 5 ounces of water in a container. He adds 2.6 ounces of water each minute. Which table of values represents the number of ounces of water in the container, y, after x minutes?',
  type: 'multiple-choice',
- options: ['3 hours', '4 hours', '9 hours', '12 hours'],
- correctAnswer: 0, 
- explanation: 'Count the hours from 12:45 P.M. to 3:45 P.M.: from 12:45 to 1:45 is 1 hour, to 2:45 is 2 hours, to 3:45 is 3 hours total.'
+ options: [
+    'x: 2, 5 | y: 5.2, 13.0',
+    'x: 2, 5 | y: 10.2, 18.0',
+    'x: 2, 5 | y: 15.2, 38.0',
+    'x: 2, 5 | y: 18.2, 26.0'
+ ],
+ correctAnswer: 1,
+ explanation: 'y = 5 + 2.6x. When x = 2: y = 5 + 5.2 = 10.2. When x = 5: y = 5 + 13 = 18.0'
  },
  {
  id: '17',
- text: 'Which 3 polygons were combined without overlapping to make the figure shown? <br><img src="images/17.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Which equation represents all the values in the table?<br>x: 1, 3, 4<br>y: 1, 5, 7',
  type: 'multiple-choice',
- options: ['Triangle, pentagon, triangle', 'Quadrilateral, triangle, quadrilateral', 'Quadrilateral, pentagon, triangle', 'Triangle, quadrilateral, triangle'],
- correctAnswer: 3, 
- explanation: 'Look at the shapes that make up the figure. Count the sides of each part: triangles have 3 sides, quadrilaterals have 4 sides.'
+ options: ['y = −2x + 3', 'y = −x + 11', 'y = x + 2', 'y = 2x − 1'],
+ correctAnswer: 3,
+ explanation: 'Test each equation with the given points. y = 2x − 1 works: When x = 1: y = 2(1) − 1 = 1. When x = 3: y = 2(3) − 1 = 5. When x = 4: y = 2(4) − 1 = 7.'
  },
  {
  id: '18',
- text: ' Mrs. Morgan wants to know what game the students would like to play during indoor recess. What is the best way for Mrs. Morgan to collect the data?',
+ text: 'What value of p makes this equation true?<br><math><mn>2</mn><mi>p</mi><mo>=</mo><mfrac><mrow><mo>−</mo><mn>3</mn><mo>(</mo><mi>p</mi><mo>+</mo><mn>2</mn><mo>)</mo></mrow><mn>4</mn></mfrac></math>',
  type: 'multiple-choice',
- options: ['Count the number of students who like to play football', 'Count the number of students that will be at indoor recess', 'Create a tally chart to show how long students play during recess', 'Create a tally chart to show what game the students would like to play during indoor recess'],
- correctAnswer: 3, 
- explanation: 'To find out what game students want to play, make a tally chart that shows each game choice and how many students picked each one.'
+ options: ['<math><mfrac><mn>6</mn><mn>5</mn></mfrac></math>', '<math><mfrac><mn>6</mn><mn>11</mn></mfrac></math>', '<math><mo>−</mo><mfrac><mn>6</mn><mn>11</mn></mfrac></math>', '<math><mo>−</mo><mfrac><mn>6</mn><mn>5</mn></mfrac></math>'],
+ correctAnswer: 2,
+ explanation: 'Multiply both sides by 4: 8p = −3(p + 2). Expand: 8p = −3p − 6. Add 3p: 11p = −6. Divide by 11: p = −6/11'
  },
  {
  id: '19',
- text: 'Four students have a total of 200 coins. This pictograph represents the number of coins three of the students have. The number of coins Diana has is missing. <br><img src="images/19.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which set represents the number of coins Diana has?',
+ text: 'The math club had $200 to buy supplies for t-shirt decorating.<br>• They spent $10 for the first t-shirt and $8 for each additional t-shirt.<br>• They purchased y t-shirts.<br><br>Which inequality best represents this situation?',
+ type: 'multiple-choice',
+ options: ['10(y − 1) + 8 ≥ 200', '10 + 8(y − 1) ≥ 200', '10(y − 1) + 8 ≤ 200', '10 + 8(y − 1) ≤ 200'],
+ correctAnswer: 3,
+ explanation: 'First t-shirt costs $10, then (y−1) additional t-shirts at $8 each. Total: 10 + 8(y−1) must be ≤ 200 (cannot exceed budget).'
+ },
+ {
+ id: '20',
+ text: 'Greta has 2 bags of tiles that are all the same size and shape.<br>• Bag A has 1 blue tile and 3 green tiles.<br>• Bag B has 2 yellow tiles and 4 black tiles.<br><br>Which of these best describes dependent events?',
  type: 'multiple-choice',
  options: [
-    {url: 'images/19a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/19b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/19c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/19d.png', alt: 'Image failed to load. Please try again later.'}
+    'Randomly selecting one tile from Bag A, replacing the tile, then randomly selecting another tile from Bag A',
+    'Randomly selecting one tile from Bag B, not replacing the tile, then randomly selecting another tile from Bag B',
+    'Randomly selecting one tile from Bag A, replacing the tile, then randomly selecting one tile from Bag B',
+    'Randomly selecting one tile from Bag B, not replacing the tile, then randomly selecting one tile from Bag A'
  ],
- correctAnswer: 1, 
- explanation: 'Add up the coins for the three students shown in the pictograph. Subtract that total from 200 to find how many coins Diana has.'
+ correctAnswer: 1,
+ explanation: 'Dependent events occur when the first event affects the probability of the second. Not replacing the tile from Bag B changes the probability for the second selection.'
  },
+ {
+ id: '21',
+ text: 'A spinner has four equal sections labeled W, X, Y, and Z. A fair coin has faces labeled heads and tails. Edward will spin the arrow of the spinner and flip the coin one time each. What is the probability the arrow will land on the section labeled Z and the coin will land with heads face-up?',
+ type: 'multiple-choice',
+ options: ['<math><mfrac><mn>1</mn><mn>8</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>'],
+ correctAnswer: 0,
+ explanation: 'P(Z) = 1/4 and P(heads) = 1/2. For independent events: P(Z and heads) = 1/4 × 1/2 = 1/8'
+ },
+ {
+ id: '22',
+ text: 'Stella has some colored cards that are the same size and shape.<br>• The probability of randomly selecting a blue card is 20%.<br>• The probability of randomly selecting a red card is 30%.<br><br>What is the probability Stella will randomly select a card that is NOT blue, replace it, then randomly select a card that is red?',
+ type: 'multiple-choice',
+ options: ['6%', '14%', '24%', '50%'],
+ correctAnswer: 2,
+ explanation: 'P(not blue) = 1 − 0.20 = 0.80. P(red) = 0.30. P(not blue then red) = 0.80 × 0.30 = 0.24 = 24%'
+ },
+ {
+ id: '23',
+ text: 'Emma is on the school golf team. Her scores from 15 practice rounds are shown.<br>93, 95, 102, 107, 107, 108, 111, 113, 114, 114, 115, 118, 120, 120, 125<br><br>From the sample scores collected, can you perform a non-biased statistical analysis for the school golf team?',
+ type: 'multiple-choice',
+ options: [
+    'Yes, because the golfer is in the school',
+    'No, because the scores are only from practice rounds',
+    'No, because the scores are only from one member of the golf team',
+    'Yes, because the data include scores from a large number of practice rounds'
+ ],
+ correctAnswer: 2,
+ explanation: 'To analyze the entire team, you need data from all team members, not just one golfer. This sample is biased.'
+ },
+ {
+ id: '24',
+ text: 'A baker recorded the number of batches of cookies he made on each of seven days. He baked a different number of batches of cookies each day. This boxplot summarizes his data.<br><img src="images/question_24.png" class="question-image" alt="Boxplot showing cookie batch data"><br>The baker baked 30 batches of cookies on the eighth day. He redraws the boxplot to include the additional data. Which statement comparing the new boxplot to the original boxplot is NOT true?',
+ type: 'multiple-choice',
+ options: ['The median increased.', 'The lower extreme increased.', 'The upper extreme increased.', 'The value of the interquartile range increased.'],
+ correctAnswer: 1,
+ explanation: 'Adding 30 batches (a high value) increases the upper extreme and median, but does not change the lower extreme (minimum value).'
+ },
+ {
+ id: '25',
+ text: 'The number of points scored by four basketball players during each of 20 games is summarized in these boxplots.<br><img src="images/question_25.png" class="question-image" alt="Boxplots for Stephen, Ronald, Dennis, and Charles"><br>Which player scored 10 or more points in the greatest number of games?',
+ type: 'multiple-choice',
+ options: ['Charles', 'Dennis', 'Ronald', 'Stephen'],
+ correctAnswer: 1,
+ explanation: 'Look at the median and quartiles for each player. Dennis has the highest percentage of games with 10+ points based on the boxplot distribution.'
+ },
+ {
+ id: '26',
+ text: 'The number of points scored by two basketball teams is summarized in these boxplots.<br><img src="images/question_26.png" class="question-image" alt="Boxplots for Team A and Team B"><br>• Team A scored a different number of points in each of the team\'s 14 games.<br>• Team B scored a different number of points in each of the team\'s 13 games.<br><br>What is the total number of games in which Team A and Team B each scored 55 or more points?',
+ type: 'multiple-choice',
+ options: ['13', '14', '16', '18'],
+ correctAnswer: 3,
+ explanation: 'From the boxplots, count games where each team scored 55+. Team A: about 10 games. Team B: about 8 games. Total: 18 games.'
+ },
+ {
+ id: '27',
+ text: 'A student will collect data about fertilizer and its effect on grass. The student will create a scatterplot to display the amount of fertilizer used and the height of grass after 2 weeks.<br><br>To create this scatterplot, the student does NOT need to include —',
+ type: 'multiple-choice',
+ options: ['the height of the grass samples', 'the amount of fertilizer for each sample', 'the amount of water for each sample', 'the number of grass samples'],
+ correctAnswer: 2,
+ explanation: 'The scatterplot shows fertilizer amount vs. grass height. Water amount is not being plotted, so it\'s not needed for the scatterplot.'
+ },
+ {
+ id: '28',
+ text: 'Which scatterplot shows data with a negative relationship?<br><img src="images/question_28.png" class="question-image" alt="Four scatterplots: Text Messages vs Age, Vehicle Weight vs Price, States vs Year, Water in Container vs Time">',
+ type: 'multiple-choice',
+ options: ['Text Messages Sent Daily', 'Vehicle Weight vs. Vehicle Price', 'States', 'Water in a Container'],
+ correctAnswer: 3,
+ explanation: 'A negative relationship means as one variable increases, the other decreases. The Water in Container graph shows water decreasing over time.'
+ }
+];
+
+const practiceQuestions = [
+ {
+ id: '1',
+ text: 'Two friends went out to dinner. The total bill was $38.90 before tax and tip.<br>• The tax rate was 5.5%.<br>• They wanted to tip 20% on the total before tax.<br><br>Which expression could NOT be used to estimate the total cost including tax and tip?',
+ type: 'multiple-choice',
+ options: ['40(1.26)', '40(0.06) + 40(0.2)', '40 + 40(0.2 + 0.06)', '40 + 40(0.06) + 40(0.2)'],
+ correctAnswer: 1,
+ explanation: 'To estimate the total with tax (5.5% ≈ 6%) and tip (20%), we need 40 + 40(0.06) + 40(0.2) = 40(1.26). Option B only calculates the tax and tip amounts without the original bill.'
+ },
+ {
+ id: '2',
+ text: 'The original price of a holiday decoration was $28. The price decreased to $0.60 after the holiday was over. Which is closest to the percent decrease in the holiday decoration price?',
+ type: 'multiple-choice',
+ options: ['114%', '98%', '46%', '27%'],
+ correctAnswer: 1,
+ explanation: 'The decrease is $28 - $0.60 = $27.40. Percent decrease = (27.40/28) × 100% ≈ 98%'
+ },
+ {
+ id: '3',
+ text: 'Which number has a value between <math><mo>−</mo><msqrt><mn>9</mn></msqrt></math> and π?',
+ type: 'multiple-choice',
+ options: ['<math><mfrac><mn>13</mn><mn>4</mn></mfrac></math>', '<math><mo>−</mo><mfrac><mn>18</mn><mn>6</mn></mfrac></math>', '3.1 × 10²', '3.2 × 10⁻²'],
+ correctAnswer: 3,
+ explanation: '−√9 = −3 and π ≈ 3.14. We need a value between −3 and 3.14. Option D: 3.2 × 10⁻² = 0.032, which is between −3 and 3.14.'
+ },
+ {
+ id: '4',
+ text: 'Look at these angles.<br><img src="images/question_4.png" class="question-image" alt="Angles M=71°, N=109°, P=19°, Q=71°"><br>Which two angles are complementary?',
+ type: 'multiple-choice',
+ options: ['∠M and ∠Q', '∠N and ∠P', '∠P and ∠Q', '∠M and ∠N'],
+ correctAnswer: 2,
+ explanation: 'Complementary angles add to 90°. ∠P (19°) + ∠Q (71°) = 90°'
+ },
+ {
+ id: '5',
+ text: 'Angle C and angle D are supplementary. The measure of angle D is 72°. What is the measure of angle C?',
+ type: 'multiple-choice',
+ options: ['18°', '72°', '108°', '162°'],
+ correctAnswer: 2,
+ explanation: 'Supplementary angles add to 180°. Angle C = 180° − 72° = 108°'
+ },
+ {
+ id: '6',
+ text: 'A student made the square-based pyramid shown. What is the area of the base of this pyramid?<br><img src="images/question_6.png" class="question-image" alt="Pyramid with Volume = 588 cubic inches and Height = 9 inches">',
+ type: 'multiple-choice',
+ options: ['196 sq in.', '65 sq in.', '49 sq in.', '14 sq in.'],
+ correctAnswer: 0,
+ explanation: 'Volume of pyramid = (1/3) × Base area × Height. 588 = (1/3) × Base area × 9. Base area = 588 × 3 ÷ 9 = 196 sq in.'
+ },
+ {
+ id: '7',
+ text: 'Trapezoid MNPQ is graphed on the coordinate plane.<br><img src="images/question_7.png" class="question-image" alt="Trapezoid MNPQ on coordinate plane"><br>Trapezoid MNPQ will be translated 3 units to the left and 2 units down. Which of these best represents the coordinates of N′?',
+ type: 'multiple-choice',
+ options: ['(0, 0)', '(1, −1)', '(0, 4)', '(6, 4)'],
+ correctAnswer: 0,
+ explanation: 'From the graph, N is at (3, 2). Translating 3 units left and 2 units down: N′ = (3−3, 2−2) = (0, 0)'
+ },
+ {
+ id: '8',
+ text: 'Each model shown consists of three squares and a triangle. The areas of the squares are given in square centimeters. For which model could the Pythagorean Theorem be used to prove that the triangle is a right triangle? Note: Models are not drawn to scale.<br><img src="images/question_8.png" class="question-image" alt="Four triangle models with squares">',
+ type: 'multiple-choice',
+ options: ['196 cm², 36 cm², 64 cm²', '15 cm², 9 cm², 12 cm²', '45 cm², 10 cm², 35 cm²', '20 cm², 12 cm², 16 cm²'],
+ correctAnswer: 2,
+ explanation: 'For a right triangle, a² + b² = c². Check option H: 10 + 35 = 45, so the Pythagorean Theorem holds.'
+ },
+ {
+ id: '9',
+ text: 'A composite figure is shown.<br><img src="images/question_9.png" class="question-image" alt="Composite figure with dimensions 13cm, 10cm, 3cm, 2cm, 2cm"><br>What is the area of this figure?',
+ type: 'multiple-choice',
+ options: ['30 cm²', '54 cm²', '59 cm²', '74 cm²'],
+ correctAnswer: 3,
+ explanation: 'Break the figure into rectangles and calculate the total area. The area is 74 cm².'
+ },
+ {
+ id: '10',
+ text: 'A rectangle as shown has a length of 0.9 centimeters and a width of 0.4 cm. A circle is drawn inside that touches the rectangle at two points.<br><img src="images/question_10.png" class="question-image" alt="Rectangle 0.9cm × 0.4cm with circle inside"><br>Which is closest to the area of the shaded region in the rectangle?',
+ type: 'multiple-choice',
+ options: ['0.14 cm²', '0.23 cm²', '0.28 cm²', '0.49 cm²'],
+ correctAnswer: 1,
+ explanation: 'Rectangle area = 0.9 × 0.4 = 0.36 cm². Circle diameter = 0.4 cm, radius = 0.2 cm. Circle area = πr² ≈ 3.14 × 0.04 ≈ 0.126 cm². Shaded area ≈ 0.36 − 0.126 ≈ 0.23 cm²'
+ },
+ {
+ id: '11',
+ text: 'Leslie built a walkway around a rectangular garden as shown. The walkway is the same width on all sides of the garden.<br><img src="images/question_11.png" class="question-image" alt="Garden 20ft × 30ft with 3ft walkway"><br>What is the perimeter of this garden?',
+ type: 'multiple-choice',
+ options: ['100 ft', '94 ft', '88 ft', '76 ft'],
+ correctAnswer: 3,
+ explanation: 'The walkway is 3 ft wide on all sides. Garden dimensions: Length = 30 − 2(3) = 24 ft, Width = 20 − 2(3) = 14 ft. Perimeter = 2(24 + 14) = 76 ft'
+ },
+ {
+ id: '12',
+ text: 'Which set has a domain of {2, 3} and a range of {5, 8}?',
+ type: 'multiple-choice',
+ options: ['{ (2, 8), (3, 5), (5, 8) }', '{ (3, 5), (2, 5), (8, 3) }', '{ (2, 8), (3, 5) }', '{ (5, 2), (8, 3) }'],
+ correctAnswer: 2,
+ explanation: 'Domain is the set of x-values, range is the set of y-values. Option H has domain {2, 3} and range {5, 8}.'
+ },
+ {
+ id: '13',
+ text: 'Some students are selling candy bars to raise money to purchase new gym equipment. The more candy bars they sell, the more money they raise. Which of these is the independent variable in this situation?',
+ type: 'multiple-choice',
+ options: ['The amount of money raised', 'The number of students', 'The number of candy bars sold', 'The cost of new gym equipment'],
+ correctAnswer: 2,
+ explanation: 'The independent variable is what you control or change. Students control how many candy bars they sell, which then determines the money raised.'
+ },
+ {
+ id: '14',
+ text: 'A line contains the points represented by this table of values.<br><img src="images/question_14.png" class="question-image" alt="Table with x values 1,3,5 and y values 4,6,8"><br>This line has a y-intercept of —',
+ type: 'multiple-choice',
+ options: ['0', '1', '2', '3'],
+ correctAnswer: 3,
+ explanation: 'The pattern shows y = x + 3. When x = 0, y = 3. The y-intercept is 3.'
+ },
+ {
+ id: '15',
+ text: 'Which graph appears to contain all the ordered pairs in this table?<br>x: −5, 0, 3<br>y: −3, 2, 5<br><img src="images/question_15.png" class="question-image" alt="Four coordinate plane graphs labeled A, B, C, D">',
+ type: 'multiple-choice',
+ options: ['Graph A', 'Graph B', 'Graph C', 'Graph D'],
+ correctAnswer: 0,
+ explanation: 'Plot the points (−5, −3), (0, 2), and (3, 5). These points form a line that appears in Graph A.'
+ },
+ {
+ id: '16',
+ text: 'Aaron has 5 ounces of water in a container. He adds 2.6 ounces of water each minute. Which table of values represents the number of ounces of water in the container, y, after x minutes?',
+ type: 'multiple-choice',
+ options: [
+    'x: 2, 5 | y: 5.2, 13.0',
+    'x: 2, 5 | y: 10.2, 18.0',
+    'x: 2, 5 | y: 15.2, 38.0',
+    'x: 2, 5 | y: 18.2, 26.0'
+ ],
+ correctAnswer: 1,
+ explanation: 'y = 5 + 2.6x. When x = 2: y = 5 + 5.2 = 10.2. When x = 5: y = 5 + 13 = 18.0'
+ },
+ {
+ id: '17',
+ text: 'Which equation represents all the values in the table?<br>x: 1, 3, 4<br>y: 1, 5, 7',
+ type: 'multiple-choice',
+ options: ['y = −2x + 3', 'y = −x + 11', 'y = x + 2', 'y = 2x − 1'],
+ correctAnswer: 3,
+ explanation: 'Test each equation with the given points. y = 2x − 1 works: When x = 1: y = 2(1) − 1 = 1. When x = 3: y = 2(3) − 1 = 5. When x = 4: y = 2(4) − 1 = 7.'
+ },
+ {
+ id: '18',
+ text: 'What value of p makes this equation true?<br><math><mn>2</mn><mi>p</mi><mo>=</mo><mfrac><mrow><mo>−</mo><mn>3</mn><mo>(</mo><mi>p</mi><mo>+</mo><mn>2</mn><mo>)</mo></mrow><mn>4</mn></mfrac></math>',
+ type: 'multiple-choice',
+ options: ['<math><mfrac><mn>6</mn><mn>5</mn></mfrac></math>', '<math><mfrac><mn>6</mn><mn>11</mn></mfrac></math>', '<math><mo>−</mo><mfrac><mn>6</mn><mn>11</mn></mfrac></math>', '<math><mo>−</mo><mfrac><mn>6</mn><mn>5</mn></mfrac></math>'],
+ correctAnswer: 2,
+ explanation: 'Multiply both sides by 4: 8p = −3(p + 2). Expand: 8p = −3p − 6. Add 3p: 11p = −6. Divide by 11: p = −6/11'
+ },
+ {
+ id: '19',
+ text: 'The math club had $200 to buy supplies for t-shirt decorating.<br>• They spent $10 for the first t-shirt and $8 for each additional t-shirt.<br>• They purchased y t-shirts.<br><br>Which inequality best represents this situation?',
+ type: 'multiple-choice',
+ options: ['10(y − 1) + 8 ≥ 200', '10 + 8(y − 1) ≥ 200', '10(y − 1) + 8 ≤ 200', '10 + 8(y − 1) ≤ 200'],
+ correctAnswer: 3,
+ explanation: 'First t-shirt costs $10, then (y−1) additional t-shirts at $8 each. Total: 10 + 8(y−1) must be ≤ 200 (cannot exceed budget).'
+ },
+ {
+ id: '20',
+ text: 'Greta has 2 bags of tiles that are all the same size and shape.<br>• Bag A has 1 blue tile and 3 green tiles.<br>• Bag B has 2 yellow tiles and 4 black tiles.<br><br>Which of these best describes dependent events?',
+ type: 'multiple-choice',
+ options: [
+    'Randomly selecting one tile from Bag A, replacing the tile, then randomly selecting another tile from Bag A',
+    'Randomly selecting one tile from Bag B, not replacing the tile, then randomly selecting another tile from Bag B',
+    'Randomly selecting one tile from Bag A, replacing the tile, then randomly selecting one tile from Bag B',
+    'Randomly selecting one tile from Bag B, not replacing the tile, then randomly selecting one tile from Bag A'
+ ],
+ correctAnswer: 1,
+ explanation: 'Dependent events occur when the first event affects the probability of the second. Not replacing the tile from Bag B changes the probability for the second selection.'
+ },
+ {
+ id: '21',
+ text: 'A spinner has four equal sections labeled W, X, Y, and Z. A fair coin has faces labeled heads and tails. Edward will spin the arrow of the spinner and flip the coin one time each. What is the probability the arrow will land on the section labeled Z and the coin will land with heads face-up?',
+ type: 'multiple-choice',
+ options: ['<math><mfrac><mn>1</mn><mn>8</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>'],
+ correctAnswer: 0,
+ explanation: 'P(Z) = 1/4 and P(heads) = 1/2. For independent events: P(Z and heads) = 1/4 × 1/2 = 1/8'
+ },
+ {
+ id: '22',
+ text: 'Stella has some colored cards that are the same size and shape.<br>• The probability of randomly selecting a blue card is 20%.<br>• The probability of randomly selecting a red card is 30%.<br><br>What is the probability Stella will randomly select a card that is NOT blue, replace it, then randomly select a card that is red?',
+ type: 'multiple-choice',
+ options: ['6%', '14%', '24%', '50%'],
+ correctAnswer: 2,
+ explanation: 'P(not blue) = 1 − 0.20 = 0.80. P(red) = 0.30. P(not blue then red) = 0.80 × 0.30 = 0.24 = 24%'
+ },
+ {
+ id: '23',
+ text: 'Emma is on the school golf team. Her scores from 15 practice rounds are shown.<br>93, 95, 102, 107, 107, 108, 111, 113, 114, 114, 115, 118, 120, 120, 125<br><br>From the sample scores collected, can you perform a non-biased statistical analysis for the school golf team?',
+ type: 'multiple-choice',
+ options: [
+    'Yes, because the golfer is in the school',
+    'No, because the scores are only from practice rounds',
+    'No, because the scores are only from one member of the golf team',
+    'Yes, because the data include scores from a large number of practice rounds'
+ ],
+ correctAnswer: 2,
+ explanation: 'To analyze the entire team, you need data from all team members, not just one golfer. This sample is biased.'
+ },
+ {
+ id: '24',
+ text: 'A baker recorded the number of batches of cookies he made on each of seven days. He baked a different number of batches of cookies each day. This boxplot summarizes his data.<br><img src="images/question_24.png" class="question-image" alt="Boxplot showing cookie batch data"><br>The baker baked 30 batches of cookies on the eighth day. He redraws the boxplot to include the additional data. Which statement comparing the new boxplot to the original boxplot is NOT true?',
+ type: 'multiple-choice',
+ options: ['The median increased.', 'The lower extreme increased.', 'The upper extreme increased.', 'The value of the interquartile range increased.'],
+ correctAnswer: 1,
+ explanation: 'Adding 30 batches (a high value) increases the upper extreme and median, but does not change the lower extreme (minimum value).'
+ },
+ {
+ id: '25',
+ text: 'The number of points scored by four basketball players during each of 20 games is summarized in these boxplots.<br><img src="images/question_25.png" class="question-image" alt="Boxplots for Stephen, Ronald, Dennis, and Charles"><br>Which player scored 10 or more points in the greatest number of games?',
+ type: 'multiple-choice',
+ options: ['Charles', 'Dennis', 'Ronald', 'Stephen'],
+ correctAnswer: 1,
+ explanation: 'Look at the median and quartiles for each player. Dennis has the highest percentage of games with 10+ points based on the boxplot distribution.'
+ },
+ {
+ id: '26',
+ text: 'The number of points scored by two basketball teams is summarized in these boxplots.<br><img src="images/question_26.png" class="question-image" alt="Boxplots for Team A and Team B"><br>• Team A scored a different number of points in each of the team\'s 14 games.<br>• Team B scored a different number of points in each of the team\'s 13 games.<br><br>What is the total number of games in which Team A and Team B each scored 55 or more points?',
+ type: 'multiple-choice',
+ options: ['13', '14', '16', '18'],
+ correctAnswer: 3,
+ explanation: 'From the boxplots, count games where each team scored 55+. Team A: about 10 games. Team B: about 8 games. Total: 18 games.'
+ },
+ {
+ id: '27',
+ text: 'A student will collect data about fertilizer and its effect on grass. The student will create a scatterplot to display the amount of fertilizer used and the height of grass after 2 weeks.<br><br>To create this scatterplot, the student does NOT need to include —',
+ type: 'multiple-choice',
+ options: ['the height of the grass samples', 'the amount of fertilizer for each sample', 'the amount of water for each sample', 'the number of grass samples'],
+ correctAnswer: 2,
+ explanation: 'The scatterplot shows fertilizer amount vs. grass height. Water amount is not being plotted, so it\'s not needed for the scatterplot.'
+ },
+ {
+ id: '28',
+ text: 'Which scatterplot shows data with a negative relationship?<br><img src="images/question_28.png" class="question-image" alt="Four scatterplots: Text Messages vs Age, Vehicle Weight vs Price, States vs Year, Water in Container vs Time">',
+ type: 'multiple-choice',
+ options: ['Text Messages Sent Daily', 'Vehicle Weight vs. Vehicle Price', 'States', 'Water in a Container'],
+ correctAnswer: 3,
+ explanation: 'A negative relationship means as one variable increases, the other decreases. The Water in Container graph shows water decreasing over time.'
+ }
 ];
 
 // Test-specific storage key for this test

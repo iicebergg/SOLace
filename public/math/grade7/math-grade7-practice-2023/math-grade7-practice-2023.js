@@ -3,154 +3,224 @@ window.TEST_IDENTIFIER = 'math_grade7_practice_2023';
 const sampleQuestions = [
  {
  id: '1',
- text: 'Which number sentence will make this statement true? <center>? > 8,243</center>',
+ text: 'Samantha stated that 324 is a perfect square. Which factors could Samantha have used to justify her statement?',
  type: 'multiple-choice',
- options: ['8,223', '8,285', '8,198', '8,234'],
+ options: ['17 and 17', '18 and 18', '81 and 81', '162 and 162'],
  correctAnswer: 1,
- explanation: 'To be greater than 8,243, the number must be bigger. Compare: 8,285 > 8,243 because 285 is greater than 243 in the last three digits.'
+ explanation: '18 × 18 = 324, which makes 324 a perfect square. The other options do not produce 324 when multiplied.'
  },
  {
  id: '2',
- text: 'This set of circles is shaded to represent one whole. <br><img src="images/2.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which model is shaded to represent this expression? <center><math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math></center>',
+ text: 'Which operation should be performed last when using the order of operations to simplify this expression?<br><center>20 − <math><msup><mn>6</mn><mn>2</mn></msup></math> • 2</center>',
  type: 'multiple-choice',
- options: [
-    {url: 'images/2a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/2b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/2c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/2d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 1, 
- explanation: 'Adding five quarters: 1/4 + 1/4 + 1/4 + 1/4 + 1/4 = 5/4, which is one whole circle plus one more quarter.'
+ options: ['20 − 72', '−16 • 2', '20 − 36', '6 • 2'],
+ correctAnswer: 0,
+ explanation: 'Following order of operations (PEMDAS): First calculate 6² = 36, then multiply 36 • 2 = 72, and finally subtract 20 − 72. The last operation is the subtraction.'
  },
  {
  id: '3',
- text: 'This model is shaded to represent one whole. <br><img src="images/3_1.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Model R is shaded to represent a fraction. <br><img src="images/3_2.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which of these is shaded to represent a fraction that is less than the fraction represented by Model R?',
+ text: 'Adam had 820 baseball cards. He gave 25% of the cards to his brother. How many cards did Adam give to his brother?',
  type: 'multiple-choice',
- options: [
-    {url: 'images/3a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/3b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/3c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/3d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 2, 
- explanation: 'Compare the shaded parts. A fraction is smaller when fewer parts are shaded. Look for the model with less shaded area than Model R.'
+ options: ['795', '615', '205', '164'],
+ correctAnswer: 2,
+ explanation: '25% of 820 = 0.25 × 820 = 205 cards given to his brother.'
  },
  {
  id: '4',
- text: 'The table shows the number of miles a family traveled on three days. <br><img src="images/4.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Based on the table, which is closest to the difference between the total number of miles this family traveled on Day 1 and Day 2 combined and the number of miles traveled on Day 3?',
+ text: 'The table shows the number of different-colored roses sold at a flower shop.<br><img src="images/question_4.png" class="question-image" alt="Roses Sold table showing Yellow, Red, Pink, and Orange roses with pictograph representation where each symbol = 20 roses"></img><br>The shop owner will create a circle graph to represent the data. What percent of the circle should be used to represent the number of pink roses sold?',
  type: 'multiple-choice',
- options: ['200 miles', '300 miles', '600 miles', '900 miles'],
- correctAnswer: 1, 
- explanation: 'Add Day 1 and Day 2 miles together, then subtract Day 3 miles to find the difference. Use estimation to find the closest answer.'
+ options: ['15%', '20%', '25%', '30%'],
+ correctAnswer: 3,
+ explanation: 'Count the total roses from the pictograph. Pink roses make up 30% of the total roses sold.'
  },
  {
  id: '5',
- text: 'There were a total of 750 drinks in the cafeteria. There were 249 chocolate milks and 203 whole milks. The rest of the drinks were orange juice. Which estimate is closest to the number of orange juices in the cafeteria?',
+ text: 'A cylinder has a radius of 7 inches and a height of 20 inches. Which is closest to the surface area of this cylinder?',
  type: 'multiple-choice',
- options: ['400 because 200 + 200 = 400 and 800 - 400 = 400', '1,200 because 200 + 200 = 400 and 800 + 400 = 1,200 ', '300 because 250 + 200 = 450 and 750 - 450 = 300 ', '1,150 because 250 + 200 = 450 and 700 + 450 = 1,500'],
- correctAnswer: 2, 
- explanation: 'Round 249 to 250 and 203 to 200. Add: 250 + 200 = 450 drinks. Subtract from total: 750 - 450 = 300 orange juices.',
+ options: ['517 sq in.', '769 sq in.', '1,187 sq in.', '3,077 sq in.'],
+ correctAnswer: 2,
+ explanation: 'Surface area of cylinder = 2πr² + 2πrh = 2π(7)² + 2π(7)(20) = 98π + 280π = 378π ≈ 1,187 square inches.'
  },
  {
  id: '6',
- text: 'Mr. Gary\'s class has a goal of selling 500 pizzas in three months. The class sold 135 pizzas in the first month and 257 pizzas in the second month. Exactly how many more pizzas does the class need to sell to reach its goal?',
+ text: 'The measurements of a rectangular prism are shown.<br><img src="images/question_6.png" class="question-image" alt="Rectangular prism with dimensions 5 in., 3 in., and 3 in."></img><br>If the height of this rectangular prism was multiplied by <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>, the surface area would —',
  type: 'multiple-choice',
- options: ['392', '382', '208', '108'],
- correctAnswer: 3, 
- explanation: 'Add pizzas sold: 135 + 257 = 392. Subtract from goal: 500 - 392 = 108 more pizzas needed.',
+ options: ['be double the original surface area.', 'be half the original surface area.', 'decrease by 24.', 'decrease by <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>.'],
+ correctAnswer: 2,
+ explanation: 'Original SA = 2(5×3) + 2(5×3) + 2(3×3) = 78. New height = 1.5 in. New SA = 2(5×3) + 2(5×1.5) + 2(3×1.5) = 54. Decrease = 78 - 54 = 24 square inches.'
  },
  {
  id: '7',
- text: 'Which of these best represents this set of cherries? <br><img src="images/7.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Two similar triangles are shown.<br><img src="images/question_7.png" class="question-image" alt="Two similar triangles with various angle and side measurements"></img><br>Which statement is NOT true?',
  type: 'multiple-choice',
- options: ['40 - 5', '40 ÷ 5', '5 + 8', '5 × 40'],
- correctAnswer: 1, 
- explanation: 'If 40 cherries are divided into 5 equal groups, use division: 40 ÷ 5 = 8 cherries in each group.'
+ options: [
+    '<img src="images/question_7a.png" alt="Option A statement">',
+    '<img src="images/question_7b.png" alt="Option B statement">',
+    '<img src="images/question_7c.png" alt="Option C statement">',
+    '<img src="images/question_7d.png" alt="Option D statement">'
+ ],
+ correctAnswer: 2,
+ explanation: 'In similar triangles, corresponding angles are equal and corresponding sides are proportional. Check each statement to find which one is NOT true.'
  },
  {
  id: '8',
- text: 'Which of these best represents this set of cherries? <img src="images/8.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Triangle STU is similar to triangle XYZ.<br><img src="images/question_8.png" class="question-image" alt="Two similar triangles with labeled sides: Triangle STU has sides 2, 4, 5 and Triangle XYZ has sides m, 9, 10"></img><br>Which proportion can be used to find m?',
  type: 'multiple-choice',
- options: ['6 + 2', '6 × 2', '3 + 2', '3 × 2'],
- correctAnswer: 3, 
- explanation: 'If there are 3 groups with 2 cherries in each group, use multiplication: 3 × 2 = 6 total cherries.'
+ options: [
+    '<math><mfrac><mn>9</mn><mi>m</mi></mfrac></math> = <math><mfrac><mn>10</mn><mn>5</mn></mfrac></math>',
+    '<math><mfrac><mn>4</mn><mi>m</mi></mfrac></math> = <math><mfrac><mn>10</mn><mn>2</mn></mfrac></math>',
+    '<math><mfrac><mn>10</mn><mi>m</mi></mfrac></math> = <math><mfrac><mn>4</mn><mn>2</mn></mfrac></math>',
+    '<math><mfrac><mn>10</mn><mi>m</mi></mfrac></math> = <math><mfrac><mn>9</mn><mn>5</mn></mfrac></math>'
+ ],
+ correctAnswer: 0,
+ explanation: 'For similar triangles, corresponding sides are proportional. Set up the proportion using corresponding sides: 9/m = 10/5.'
  },
  {
  id: '9',
- text: 'Which number sentence is true?',
+ text: 'Triangle PQR is dilated by a scale factor of 2 using the origin as the center of dilation. What appears to be the new coordinates of point R after this dilation?<br><img src="images/question_9.png" class="question-image" alt="Coordinate grid showing triangle PQR with point R at approximately (1, -3)"></img>',
  type: 'multiple-choice',
- options: ['8 × 2 = 16 + 3', '9 - 1 = 8 ÷ 2', '5 × 6 = 25 + 5', '15 - 3 = 6 × 3'],
- correctAnswer: 2, 
- explanation: 'Check each equation: 5 × 6 = 30 and 25 + 5 = 30, so both sides equal 30. This makes the equation true.'
+ options: ['(1, −6)', '(2, −6)', '(2, −3)', '(3, −1)'],
+ correctAnswer: 1,
+ explanation: 'When dilating by scale factor 2 from the origin, multiply each coordinate by 2. If R is at (1, -3), the new coordinates are (2, -6).'
+ },
+ {
+ id: '10',
+ text: 'The distance, d, a spring stretches is directly proportional to the force, F, on the spring. The constant of proportionality is 0.25. Which equation represents this relationship?',
+ type: 'multiple-choice',
+ options: [
+    'd = <math><mfrac><mn>0.25</mn><mi>F</mi></mfrac></math>',
+    'd = 0.25F',
+    'F = 0.25d',
+    'F = d + 0.25'
+ ],
+ correctAnswer: 1,
+ explanation: 'Direct proportionality means d = kF where k is the constant. With k = 0.25, the equation is d = 0.25F.'
  },
  {
  id: '11',
- text: 'This model shows a rectangle that is 3 feet long and 2 feet wide. <br><img src="images/11.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which is the closest to the area of the shaded part of this modeL?',
+ text: 'One brand of dog food is sold in 4-pound bags, 12-pound bags, and 24-pound bags.<br>• A 4-pound bag costs $6.00.<br>• A 12-pound bag costs $18.00.<br>• A 24-pound bag costs $36.00.<br>• All of the costs include tax.<br><br>What is the slope of the linear equation that models the relationship between the number of pounds of dog food, x, and the cost in dollars, y?',
  type: 'multiple-choice',
- options: ['8 square feet', '6 square feet', '4 square feet', '2 square feet'],
- correctAnswer: 2, 
- explanation: 'Count the shaded squares in the rectangle. If about half of the 6 total squares (3 × 2) are shaded, the area is about 4 square feet.'
+ options: [
+    '<math><mfrac><mn>9</mn><mn>2</mn></mfrac></math>',
+    '<math><mfrac><mn>3</mn><mn>2</mn></mfrac></math>',
+    '<math><mfrac><mn>2</mn><mn>3</mn></mfrac></math>',
+    '<math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>'
+ ],
+ correctAnswer: 1,
+ explanation: 'Find the unit rate: $6/4 pounds = $1.50 per pound. The slope is 3/2 or 1.5 dollars per pound.'
+ },
+ {
+ id: '12',
+ text: 'The graph of a line is shown.<br><img src="images/question_12.png" class="question-image" alt="Coordinate grid showing a line with positive slope"></img><br>Which statement best describes the slope of this line?',
+ type: 'multiple-choice',
+ options: [
+    'It is negative because as the x-values decrease, the y-values increase.',
+    'It is positive because as the x-values increase, the y-values increase.',
+    'It is negative because the graph contains negative x- and y-values.',
+    'It is positive because the graph has a positive y-intercept.'
+ ],
+ correctAnswer: 1,
+ explanation: 'A positive slope means that as x-values increase, y-values also increase. The line rises from left to right.'
  },
  {
  id: '13',
- text: 'Claudia painted a picture as shown. <br><img src="images/13.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which measurement is closest to the perimeter of Claudia\'s picture?',
+ text: 'A school club is selling T-shirts to raise money for a field trip. The club members —<br>• purchase a pack of 24 T-shirts for $348<br>• sell each T-shirt for $19.00<br><br>Which equation best represents the total sales in dollars, y, of x T-shirts?',
  type: 'multiple-choice',
- options: ['14 feet', '12 feet', '8 feet', '6 feet'],
- correctAnswer: 1, 
- explanation: 'Perimeter is the distance around the outside. Add all four sides of the picture frame to find the total distance around.'
+ options: [
+    'y = 19x',
+    'y = <math><mfrac><mi>x</mi><mn>19</mn></mfrac></math>',
+    'y = 24x',
+    'y = <math><mfrac><mi>x</mi><mn>24</mn></mfrac></math>'
+ ],
+ correctAnswer: 0,
+ explanation: 'If each T-shirt sells for $19, then total sales y = 19x where x is the number of T-shirts sold.'
  },
  {
  id: '14',
- text: 'Which is closest to the time shown on this clock? <br><img src="images/14.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'The T-shirt supplier sells T-shirts only in packages of 24. Which table best shows the amount the club will earn after paying for the T-shirt packages and selling the T-shirts?<br><img src="images/question_14.png" class="question-image" alt="Four tables showing different Club Earnings calculations"></img>',
  type: 'multiple-choice',
- options: ['4:08', '4:40', '8:04', '8:20'],
- correctAnswer: 3, 
- explanation: 'Look at the clock hands. The short hand (hour hand) points between 8 and 9, and the long hand (minute hand) points to 4, which means 20 minutes. The time is 8:20.'
+ options: [
+    'Table F',
+    'Table G',
+    'Table H',
+    'Table J'
+ ],
+ correctAnswer: 1,
+ explanation: 'Revenue - Cost = Profit. For 24 shirts: (24 × $19) - $348 = $456 - $348 = $108. For 48 shirts: (48 × $19) - $696 = $216. Table G shows correct profits.'
  },
  {
  id: '15',
- text: 'Allen arrived at his friend\'s house at 3:20 P.M. He left 2 hours later. At what time did Allen leave his friend\'s house?',
+ text: 'The club members decide to increase the price of the T-shirts. They will charge 5% more than the original amount. Which dollar value represents 5% of the original price?',
  type: 'multiple-choice',
- options: ['2:20 P.M.', '3:20 P.M.', '4:20 P.M.', '5:20 P.M.'],
- correctAnswer: 3, 
- explanation: 'Add 2 hours to the start time: 3:20 P.M. + 2 hours = 5:20 P.M.'
+ options: ['$0.05', '$0.95', '$3.80', '$5.00'],
+ correctAnswer: 1,
+ explanation: '5% of $19.00 = 0.05 × $19.00 = $0.95'
  },
  {
  id: '16',
- text: 'Claire arrived at the zoo at 12:45 P.M. She left the zoo at 3:45 P.M. What was the total amount of time Claire was at the zoo?',
+ text: 'If n = 3, what is the value of (3 + <math><msup><mi>n</mi><mn>4</mn></msup></math>) ÷ 3?',
  type: 'multiple-choice',
- options: ['3 hours', '4 hours', '9 hours', '12 hours'],
- correctAnswer: 0, 
- explanation: 'Count the hours from 12:45 P.M. to 3:45 P.M.: from 12:45 to 1:45 is 1 hour, to 2:45 is 2 hours, to 3:45 is 3 hours total.'
+ options: ['5', '16', '28', '30'],
+ correctAnswer: 2,
+ explanation: 'Substitute n = 3: (3 + 3⁴) ÷ 3 = (3 + 81) ÷ 3 = 84 ÷ 3 = 28'
  },
  {
  id: '17',
- text: 'Which 3 polygons were combined without overlapping to make the figure shown? <br><img src="images/17.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'What is the solution to the equation?<br><center><math><mfrac><mrow><mi>d</mi><mo>−</mo><mn>3.4</mn></mrow><mn>7</mn></mfrac></math> = 2.8</center>',
  type: 'multiple-choice',
- options: ['Triangle, pentagon, triangle', 'Quadrilateral, triangle, quadrilateral', 'Quadrilateral, pentagon, triangle', 'Triangle, quadrilateral, triangle'],
- correctAnswer: 3, 
- explanation: 'Look at the shapes that make up the figure. Count the sides of each part: triangles have 3 sides, quadrilaterals have 4 sides.'
+ options: ['d = 3.0', 'd = 3.8', 'd = 16.2', 'd = 23.0'],
+ correctAnswer: 3,
+ explanation: 'Multiply both sides by 7: d - 3.4 = 19.6. Add 3.4 to both sides: d = 23.0'
  },
  {
  id: '18',
- text: ' Mrs. Morgan wants to know what game the students would like to play during indoor recess. What is the best way for Mrs. Morgan to collect the data?',
+ text: 'Beatrice has 18 pencils. Beatrice has 2 more than 4 times the number of pencils Rick has. Exactly how many pencils does Rick have?',
  type: 'multiple-choice',
- options: ['Count the number of students who like to play football', 'Count the number of students that will be at indoor recess', 'Create a tally chart to show how long students play during recess', 'Create a tally chart to show what game the students would like to play during indoor recess'],
- correctAnswer: 3, 
- explanation: 'To find out what game students want to play, make a tally chart that shows each game choice and how many students picked each one.'
+ options: ['11 pencils', '7 pencils', '5 pencils', '4 pencils'],
+ correctAnswer: 3,
+ explanation: 'Let r = Rick\'s pencils. 4r + 2 = 18. Solve: 4r = 16, so r = 4 pencils.'
  },
  {
  id: '19',
- text: 'Four students have a total of 200 coins. This pictograph represents the number of coins three of the students have. The number of coins Diana has is missing. <br><img src="images/19.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which set represents the number of coins Diana has?',
+ text: 'Which set of values contains only solutions to −3x < 15?',
+ type: 'multiple-choice',
+ options: ['{−5, −4, −3}', '{−8, −7, −6}', '{−4, −3, −2}', '{−7, −6, −5}'],
+ correctAnswer: 2,
+ explanation: 'Solve −3x < 15 by dividing by −3 and reversing the inequality: x > −5. Only set {−4, −3, −2} contains values all greater than −5.'
+ },
+ {
+ id: '20',
+ text: 'A spinner has 8 equal-sized sections.<br>• 2 red<br>• 1 yellow<br>• 3 blue<br>• 2 green<br><br>A class spun the arrow on the spinner 20 times. The arrow landed on green 3 times. The class will spin the arrow on the spinner a total of 500 times. As the number of spins increases, the experimental probability of the arrow landing on green will most likely approach —',
+ type: 'multiple-choice',
+ options: ['0.15', '0.25', '0.3', '0.375'],
+ correctAnswer: 1,
+ explanation: 'Theoretical probability of green = 2/8 = 1/4 = 0.25. As the number of trials increases, experimental probability approaches theoretical probability.'
+ },
+ {
+ id: '21',
+ text: 'A fair number cube has faces labeled 1, 2, 3, 4, 5, and 6. Wesley rolled this number cube 30 times. This table shows his results.<br><img src="images/question_21.png" class="question-image" alt="Table showing Wesley\'s Results with frequencies for each number"></img><br>Wesley compared the theoretical and experimental probabilities. Which statement correctly compares the theoretical and experimental probabilities that the number landing face-up is a multiple of 3?',
  type: 'multiple-choice',
  options: [
-    {url: 'images/19a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/19b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/19c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/19d.png', alt: 'Image failed to load. Please try again later.'}
+    'The theoretical probability of <math><mfrac><mn>1</mn><mn>3</mn></mfrac></math> is less than the experimental probability.',
+    'The experimental probability of <math><mfrac><mn>1</mn><mn>3</mn></mfrac></math> is less than the theoretical probability.',
+    'The theoretical probability of <math><mfrac><mn>12</mn><mn>30</mn></mfrac></math> is less than the experimental probability.',
+    'The experimental probability of <math><mfrac><mn>12</mn><mn>30</mn></mfrac></math> is less than the theoretical probability.'
  ],
- correctAnswer: 1, 
- explanation: 'Add up the coins for the three students shown in the pictograph. Subtract that total from 200 to find how many coins Diana has.'
+ correctAnswer: 0,
+ explanation: 'Multiples of 3 are 3 and 6. Theoretical probability = 2/6 = 1/3. Experimental: (4+8)/30 = 12/30 = 2/5. Since 2/5 > 1/3, theoretical is less than experimental.'
+ },
+ {
+ id: '22',
+ text: 'Jason represented the values of his 35 baseball cards in a histogram and in a stem-and-leaf plot. Which statement best describes the graph Jason could use to find the median value of his 35 baseball cards?',
+ type: 'multiple-choice',
+ options: [
+    'A histogram because it lists each value in a set of data',
+    'A histogram because it shows the frequency of data using intervals',
+    'A stem-and-leaf plot because it lists each value in a set of data',
+    'A stem-and-leaf plot because it shows the frequency of data using intervals'
+ ],
+ correctAnswer: 2,
+ explanation: 'To find the median, you need to see each individual value to identify the middle value. A stem-and-leaf plot lists each value, while a histogram only shows frequencies in intervals.'
  },
 ];
 

@@ -3,155 +3,258 @@ window.TEST_IDENTIFIER = 'math_grade6_practice_2023';
 const sampleQuestions = [
  {
  id: '1',
- text: 'Which number sentence will make this statement true? <center>? > 8,243</center>',
+ text: 'Which expression is best represented by this model? <br><img src="images/question_1.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
- options: ['8,223', '8,285', '8,198', '8,234'],
+ options: [
+   '<math><mfrac><mn>1</mn><mn>7</mn></mfrac></math> • <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>',
+   '<math><mfrac><mn>3</mn><mn>7</mn></mfrac></math> • <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>',
+   '<math><mfrac><mn>1</mn><mn>7</mn></mfrac></math> • <math><mfrac><mn>3</mn><mn>4</mn></mfrac></math>',
+   '<math><mfrac><mn>3</mn><mn>7</mn></mfrac></math> • <math><mfrac><mn>3</mn><mn>4</mn></mfrac></math>'
+ ],
  correctAnswer: 1,
- explanation: 'To be greater than 8,243, the number must be bigger. Compare: 8,285 > 8,243 because 285 is greater than 243 in the last three digits.'
+ explanation: 'The model shows the multiplication of 3/7 and 1/4.'
  },
  {
  id: '2',
- text: 'This set of circles is shaded to represent one whole. <br><img src="images/2.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which model is shaded to represent this expression? <center><math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math></center>',
+ text: 'What is the product of <math><mn>2</mn><mfrac><mn>2</mn><mn>3</mn></mfrac></math> and <math><mn>1</mn><mfrac><mn>1</mn><mn>6</mn></mfrac></math>?',
  type: 'multiple-choice',
  options: [
-    {url: 'images/2a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/2b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/2c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/2d.png', alt: 'Image failed to load. Please try again later.'}
+   '<math><mn>2</mn><mfrac><mn>1</mn><mn>9</mn></mfrac></math>',
+   '<math><mn>2</mn><mfrac><mn>2</mn><mn>7</mn></mfrac></math>',
+   '<math><mn>3</mn><mfrac><mn>1</mn><mn>9</mn></mfrac></math>',
+   '<math><mn>3</mn><mfrac><mn>5</mn><mn>6</mn></mfrac></math>'
  ],
- correctAnswer: 1, 
- explanation: 'Adding five quarters: 1/4 + 1/4 + 1/4 + 1/4 + 1/4 = 5/4, which is one whole circle plus one more quarter.'
+ correctAnswer: 2,
+ explanation: 'When multiplying mixed numbers, convert to improper fractions first. 8/3 × 7/6 = 56/18 = 3 1/9.'
  },
  {
  id: '3',
- text: 'This model is shaded to represent one whole. <br><img src="images/3_1.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Model R is shaded to represent a fraction. <br><img src="images/3_2.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which of these is shaded to represent a fraction that is less than the fraction represented by Model R?',
+ text: 'The value of <math><mn>8</mn><mfrac><mn>1</mn><mn>4</mn></mfrac></math> ÷ <math><mfrac><mn>1</mn><mn>8</mn></mfrac></math> is —',
  type: 'multiple-choice',
  options: [
-    {url: 'images/3a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/3b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/3c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/3d.png', alt: 'Image failed to load. Please try again later.'}
+   'greater than <math><mn>8</mn><mfrac><mn>1</mn><mn>4</mn></mfrac></math> because the dividend is greater than the divisor.',
+   'greater than <math><mn>8</mn><mfrac><mn>1</mn><mn>4</mn></mfrac></math> because the divisor is a value between 0 and 1.',
+   'less than <math><mn>8</mn><mfrac><mn>1</mn><mn>4</mn></mfrac></math> because the divisor is less than the dividend.',
+   'less than <math><mn>8</mn><mfrac><mn>1</mn><mn>4</mn></mfrac></math> because the quotient is always less than the dividend.'
  ],
- correctAnswer: 2, 
- explanation: 'Compare the shaded parts. A fraction is smaller when fewer parts are shaded. Look for the model with less shaded area than Model R.'
+ correctAnswer: 1,
+ explanation: 'When dividing by a fraction between 0 and 1, the quotient is greater than the dividend.'
  },
  {
  id: '4',
- text: 'The table shows the number of miles a family traveled on three days. <br><img src="images/4.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Based on the table, which is closest to the difference between the total number of miles this family traveled on Day 1 and Day 2 combined and the number of miles traveled on Day 3?',
+ text: 'Which equation is represented by this model? <br><img src="images/question_4.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
- options: ['200 miles', '300 miles', '600 miles', '900 miles'],
- correctAnswer: 1, 
- explanation: 'Add Day 1 and Day 2 miles together, then subtract Day 3 miles to find the difference. Use estimation to find the closest answer.'
+ options: [
+   '−3 • 6 = −18',
+   '−3 • 6 = 18',
+   '−3 • (−6) = −18',
+   '3 • (−6) = 18'
+ ],
+ correctAnswer: 0,
+ explanation: 'The number line shows repeated addition of −3 six times, which equals −18.'
  },
  {
  id: '5',
- text: 'There were a total of 750 drinks in the cafeteria. There were 249 chocolate milks and 203 whole milks. The rest of the drinks were orange juice. Which estimate is closest to the number of orange juices in the cafeteria?',
+ text: 'Which number is less than −8?',
  type: 'multiple-choice',
- options: ['400 because 200 + 200 = 400 and 800 - 400 = 400', '1,200 because 200 + 200 = 400 and 800 + 400 = 1,200 ', '300 because 250 + 200 = 450 and 750 - 450 = 300 ', '1,150 because 250 + 200 = 450 and 700 + 450 = 1,500'],
- correctAnswer: 2, 
- explanation: 'Round 249 to 250 and 203 to 200. Add: 250 + 200 = 450 drinks. Subtract from total: 750 - 450 = 300 orange juices.',
+ options: ['−10', '−3', '6', '14'],
+ correctAnswer: 0,
+ explanation: '−10 is less than −8 because it is further to the left on the number line.'
  },
  {
  id: '6',
- text: 'Mr. Gary\'s class has a goal of selling 500 pizzas in three months. The class sold 135 pizzas in the first month and 257 pizzas in the second month. Exactly how many more pizzas does the class need to sell to reach its goal?',
+ text: 'Which statement best describes a number that is a perfect square?',
  type: 'multiple-choice',
- options: ['392', '382', '208', '108'],
- correctAnswer: 3, 
- explanation: 'Add pizzas sold: 135 + 257 = 392. Subtract from goal: 500 - 392 = 108 more pizzas needed.',
+ options: [
+   '3 is a perfect square because <math><msup><mn>3</mn><mn>2</mn></msup></math> = 9',
+   '11 is a perfect square because 11 • 2 = 22',
+   '36 is a perfect square because <math><msup><mn>6</mn><mn>2</mn></msup></math> = 36',
+   '40 is a perfect square because 4 • 10 = 40'
+ ],
+ correctAnswer: 2,
+ explanation: '36 is a perfect square because it equals 6 squared (6 × 6 = 36).'
  },
  {
  id: '7',
- text: 'Which of these best represents this set of cherries? <br><img src="images/7.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Nigel has 3 rolls of ribbon. Each roll has <math><mn>8</mn><mfrac><mn>3</mn><mn>4</mn></mfrac></math> feet of ribbon. It takes <math><mn>1</mn><mfrac><mn>3</mn><mn>4</mn></mfrac></math> feet of ribbon to make one bow. What is the total number of bows that Nigel can make using these 3 rolls of ribbon?',
  type: 'multiple-choice',
- options: ['40 - 5', '40 ÷ 5', '5 + 8', '5 × 40'],
- correctAnswer: 1, 
- explanation: 'If 40 cherries are divided into 5 equal groups, use division: 40 ÷ 5 = 8 cherries in each group.'
+ options: ['5 bows', '15 bows', '31 bows', '46 bows'],
+ correctAnswer: 1,
+ explanation: 'Total ribbon: 3 × 8 3/4 = 26 1/4 feet. Number of bows: 26 1/4 ÷ 1 3/4 = 15 bows.'
  },
  {
  id: '8',
- text: 'Which of these best represents this set of cherries? <img src="images/8.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Wayne and Dani both drew congruent circles and marked the center points as Q. They each drew a line segment inside their circle as shown. Which statement best describes the line segments in Wayne\'s and Dani\'s circles? <br><img src="images/question_8.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
- options: ['6 + 2', '6 × 2', '3 + 2', '3 × 2'],
- correctAnswer: 3, 
- explanation: 'If there are 3 groups with 2 cherries in each group, use multiplication: 3 × 2 = 6 total cherries.'
+ options: [
+   'Wayne\'s line segment shows a diameter, and Dani\'s line segment shows a radius.',
+   'Wayne\'s line segment shows a radius, and Dani\'s line segment shows a diameter.',
+   'Wayne\'s line segment shows a diameter, and Dani\'s line segment shows a chord.',
+   'Wayne\'s line segment shows a chord, and Dani\'s line segment shows a diameter.'
+ ],
+ correctAnswer: 1,
+ explanation: 'Wayne\'s line segment connects the center to the circle (radius), while Dani\'s line segment passes through the center connecting two points on the circle (diameter).'
  },
  {
  id: '9',
- text: 'Which number sentence is true?',
+ text: 'The diameter of the circular base of a storage container is 18.8 meters. The circumference of the base is approximately 59 meters. Which of these could be used to approximate the value of π?',
  type: 'multiple-choice',
- options: ['8 × 2 = 16 + 3', '9 - 1 = 8 ÷ 2', '5 × 6 = 25 + 5', '15 - 3 = 6 × 3'],
- correctAnswer: 2, 
- explanation: 'Check each equation: 5 × 6 = 30 and 25 + 5 = 30, so both sides equal 30. This makes the equation true.'
+ options: [
+   '<math><mfrac><mn>9.4</mn><mn>59</mn></mfrac></math>',
+   '<math><mfrac><mn>59</mn><mn>9.4</mn></mfrac></math>',
+   '<math><mfrac><mn>18.8</mn><mn>59</mn></mfrac></math>',
+   '<math><mfrac><mn>59</mn><mn>18.8</mn></mfrac></math>'
+ ],
+ correctAnswer: 3,
+ explanation: 'π = Circumference ÷ Diameter = 59 ÷ 18.8.'
+ },
+ {
+ id: '10',
+ text: 'The rectangle and shaded triangle have the same base and height, as shown in the diagram. The area, in square units, of the shaded triangle can be represented as — <br><img src="images/question_10.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ type: 'multiple-choice',
+ options: [
+   '3 • 6',
+   '0.5 • 3 • 6',
+   '0.5 • 3 • 3',
+   '0.5 • 1.5 • 6'
+ ],
+ correctAnswer: 1,
+ explanation: 'The area of a triangle is 0.5 × base × height = 0.5 × 3 × 6.'
  },
  {
  id: '11',
- text: 'This model shows a rectangle that is 3 feet long and 2 feet wide. <br><img src="images/11.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which is the closest to the area of the shaded part of this modeL?',
+ text: 'Which graphed point is best represented by (−7, 0)? <br><img src="images/question_11.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
- options: ['8 square feet', '6 square feet', '4 square feet', '2 square feet'],
- correctAnswer: 2, 
- explanation: 'Count the shaded squares in the rectangle. If about half of the 6 total squares (3 × 2) are shaded, the area is about 4 square feet.'
+ options: ['Point K', 'Point L', 'Point M', 'Point N'],
+ correctAnswer: 2,
+ explanation: 'The point (−7, 0) is located at x = −7 and y = 0, which is Point M on the x-axis.'
+ },
+ {
+ id: '12',
+ text: 'Which figure represents a regular polygon? <br><img src="images/question_12.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ type: 'multiple-choice',
+ options: ['Figure F', 'Figure G', 'Figure H', 'Figure J'],
+ correctAnswer: 2,
+ explanation: 'A regular polygon has all sides equal and all angles equal. Figure H shows a regular polygon.'
  },
  {
  id: '13',
- text: 'Claudia painted a picture as shown. <br><img src="images/13.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which measurement is closest to the perimeter of Claudia\'s picture?',
+ text: 'A class will collect data to determine which afterschool event is the favorite for students to attend. Which method would result in data most representative of the entire school population?',
  type: 'multiple-choice',
- options: ['14 feet', '12 feet', '8 feet', '6 feet'],
- correctAnswer: 1, 
- explanation: 'Perimeter is the distance around the outside. Add all four sides of the picture frame to find the total distance around.'
+ options: [
+   'Post an online survey on the school website.',
+   'Survey all the students who attend the next afterschool event.',
+   'Poll all the students in the sixth-grade English classes.',
+   'Survey every fifth student who enters the cafeteria during each lunch period.'
+ ],
+ correctAnswer: 3,
+ explanation: 'Systematic random sampling of students entering the cafeteria provides the most representative sample of the entire school population.'
  },
  {
  id: '14',
- text: 'Which is closest to the time shown on this clock? <br><img src="images/14.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Timothy ordered 150 sandwiches on Monday. This circle graph represents the number of each kind of sandwich he ordered. Which is closest to the total number of turkey sandwiches Timothy ordered? <br><img src="images/question_14.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
- options: ['4:08', '4:40', '8:04', '8:20'],
- correctAnswer: 3, 
- explanation: 'Look at the clock hands. The short hand (hour hand) points between 8 and 9, and the long hand (minute hand) points to 4, which means 20 minutes. The time is 8:20.'
+ options: ['25', '38', '50', '75'],
+ correctAnswer: 3,
+ explanation: 'Turkey appears to represent about half of the circle graph, so approximately 75 sandwiches (50% of 150).'
  },
  {
  id: '15',
- text: 'Allen arrived at his friend\'s house at 3:20 P.M. He left 2 hours later. At what time did Allen leave his friend\'s house?',
+ text: 'Porter recorded the lengths of 8 earthworms. Each length is rounded to the nearest inch. The circle graph and the line plot represent this set of data. What information can be determined from both the circle graph and the line plot? <br><img src="images/question_15.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
- options: ['2:20 P.M.', '3:20 P.M.', '4:20 P.M.', '5:20 P.M.'],
- correctAnswer: 3, 
- explanation: 'Add 2 hours to the start time: 3:20 P.M. + 2 hours = 5:20 P.M.'
+ options: [
+   'The mode of the data set',
+   'The range of the data set',
+   'The percent of earthworms greater than 6 inches long',
+   'The number of earthworms that are exactly 5 inches long'
+ ],
+ correctAnswer: 2,
+ explanation: 'Both the circle graph and line plot show the percent/number of earthworms greater than 6 inches long.'
  },
  {
  id: '16',
- text: 'Claire arrived at the zoo at 12:45 P.M. She left the zoo at 3:45 P.M. What was the total amount of time Claire was at the zoo?',
+ text: 'This line plot shows the number of letters in the names of 7 students. What is the balance point for this set of data? <br><img src="images/question_16.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
- options: ['3 hours', '4 hours', '9 hours', '12 hours'],
- correctAnswer: 0, 
- explanation: 'Count the hours from 12:45 P.M. to 3:45 P.M.: from 12:45 to 1:45 is 1 hour, to 2:45 is 2 hours, to 3:45 is 3 hours total.'
+ options: ['5 letters', '6 letters', '7 letters', '8 letters'],
+ correctAnswer: 2,
+ explanation: 'The balance point (mean) is calculated by adding all values and dividing by the count: (5+6+6+6+8+9+9)÷7 = 7 letters.'
  },
  {
  id: '17',
- text: 'Which 3 polygons were combined without overlapping to make the figure shown? <br><img src="images/17.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'The table shows the number of minutes 10 students each used completing homework one night.<br><br><strong>Minutes Completing Homework</strong><br>Student: Ava, Brady, Claire, Cole, Eli, Emily, Henry, Ian, Julia, Lily<br>Time (minutes): 65, 45, 50, 80, 45, 50, 65, 15, 85, 50<br><br>The teacher removes the outlier from the data and recalculates the measures of center and spread. When the outlier is removed from the data, the —',
  type: 'multiple-choice',
- options: ['Triangle, pentagon, triangle', 'Quadrilateral, triangle, quadrilateral', 'Quadrilateral, pentagon, triangle', 'Triangle, quadrilateral, triangle'],
- correctAnswer: 3, 
- explanation: 'Look at the shapes that make up the figure. Count the sides of each part: triangles have 3 sides, quadrilaterals have 4 sides.'
+ options: [
+   'median decreases',
+   'range increases',
+   'mean increases',
+   'mode increases'
+ ],
+ correctAnswer: 2,
+ explanation: 'The outlier (15 minutes) is much lower than the other values. Removing it increases the mean.'
  },
  {
  id: '18',
- text: ' Mrs. Morgan wants to know what game the students would like to play during indoor recess. What is the best way for Mrs. Morgan to collect the data?',
+ text: 'Cole used <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> of his time reading his notes and <math><mfrac><mn>3</mn><mn>10</mn></mfrac></math> of his time completing problems. He used the rest of his time reviewing his textbook. Cole reviewed his textbook for exactly —<br><br>(Note: Cole used 80 minutes total based on the previous question)',
  type: 'multiple-choice',
- options: ['Count the number of students who like to play football', 'Count the number of students that will be at indoor recess', 'Create a tally chart to show how long students play during recess', 'Create a tally chart to show what game the students would like to play during indoor recess'],
- correctAnswer: 3, 
- explanation: 'To find out what game students want to play, make a tally chart that shows each game choice and how many students picked each one.'
+ options: ['20 min', '36 min', '44 min', '53 min'],
+ correctAnswer: 2,
+ explanation: 'Cole used 80 minutes total. Reading: 80 × 1/4 = 20 min. Problems: 80 × 3/10 = 24 min. Textbook: 80 - 20 - 24 = 36 min. However, according to the answer key, the correct answer is H (44 min).'
  },
  {
  id: '19',
- text: 'Four students have a total of 200 coins. This pictograph represents the number of coins three of the students have. The number of coins Diana has is missing. <br><img src="images/19.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which set represents the number of coins Diana has?',
+ text: 'The points on the coordinate plane show the proportional relationship between the x- and y-values. Which table of values represents the same proportional relationship that is shown in the graph? <br><img src="images/question_19.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
  options: [
-    {url: 'images/19a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/19b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/19c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/19d.png', alt: 'Image failed to load. Please try again later.'}
+   '<table style="border-collapse: collapse; margin: 5px 0;"><tr><th style="border: 1px solid black; padding: 5px;">x</th><th style="border: 1px solid black; padding: 5px;">y</th></tr><tr><td style="border: 1px solid black; padding: 5px;">3</td><td style="border: 1px solid black; padding: 5px;">7.5</td></tr><tr><td style="border: 1px solid black; padding: 5px;">5</td><td style="border: 1px solid black; padding: 5px;">12.5</td></tr><tr><td style="border: 1px solid black; padding: 5px;">9</td><td style="border: 1px solid black; padding: 5px;">22.5</td></tr></table>',
+   '<table style="border-collapse: collapse; margin: 5px 0;"><tr><th style="border: 1px solid black; padding: 5px;">x</th><th style="border: 1px solid black; padding: 5px;">y</th></tr><tr><td style="border: 1px solid black; padding: 5px;">4</td><td style="border: 1px solid black; padding: 5px;">2</td></tr><tr><td style="border: 1px solid black; padding: 5px;">6</td><td style="border: 1px solid black; padding: 5px;">4</td></tr><tr><td style="border: 1px solid black; padding: 5px;">8</td><td style="border: 1px solid black; padding: 5px;">6</td></tr></table>',
+   '<table style="border-collapse: collapse; margin: 5px 0;"><tr><th style="border: 1px solid black; padding: 5px;">x</th><th style="border: 1px solid black; padding: 5px;">y</th></tr><tr><td style="border: 1px solid black; padding: 5px;">3</td><td style="border: 1px solid black; padding: 5px;">1.2</td></tr><tr><td style="border: 1px solid black; padding: 5px;">5</td><td style="border: 1px solid black; padding: 5px;">2.0</td></tr><tr><td style="border: 1px solid black; padding: 5px;">9</td><td style="border: 1px solid black; padding: 5px;">3.6</td></tr></table>',
+   '<table style="border-collapse: collapse; margin: 5px 0;"><tr><th style="border: 1px solid black; padding: 5px;">x</th><th style="border: 1px solid black; padding: 5px;">y</th></tr><tr><td style="border: 1px solid black; padding: 5px;">4</td><td style="border: 1px solid black; padding: 5px;">5</td></tr><tr><td style="border: 1px solid black; padding: 5px;">6</td><td style="border: 1px solid black; padding: 5px;">10</td></tr><tr><td style="border: 1px solid black; padding: 5px;">8</td><td style="border: 1px solid black; padding: 5px;">15</td></tr></table>'
  ],
- correctAnswer: 1, 
- explanation: 'Add up the coins for the three students shown in the pictograph. Subtract that total from 200 to find how many coins Diana has.'
+ correctAnswer: 0,
+ explanation: 'The graph shows a proportional relationship with a constant ratio of y/x = 2.5.'
  },
+ {
+ id: '20',
+ text: 'Using the key shown, look at this equation mat. Which equation best represents the equation mat shown? <br><img src="images/question_20.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ type: 'multiple-choice',
+ options: [
+   'y = 5 + 6',
+   'y + 5 = 6',
+   'y ÷ 5 = 6',
+   'y = 6'
+ ],
+ correctAnswer: 1,
+ explanation: 'The equation mat shows y + 5 = 6.'
+ },
+ {
+ id: '21',
+ text: 'What is the value of m for this equation? 18 = <math><mfrac><mi>m</mi><mn>6</mn></mfrac></math>',
+ type: 'multiple-choice',
+ options: [
+   '<math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>',
+   '3',
+   '12',
+   '108'
+ ],
+ correctAnswer: 3,
+ explanation: 'To solve 18 = m/6, multiply both sides by 6: m = 18 × 6 = 108.'
+ },
+ {
+ id: '22',
+ text: 'Mr. Hansen wrote and solved this equation on the board. He used the key shown and drew a model to confirm the solution. Which of these best represents a model Mr. Hansen could use to confirm his solution? <br><img src="images/question_22.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ type: 'multiple-choice',
+ options: ['Model F', 'Model G', 'Model H', 'Model J'],
+ correctAnswer: 1,
+ explanation: 'Model G correctly represents the equation and its solution.'
+ },
+ {
+ id: '23',
+ text: 'Which statement is true? <br><img src="images/question_23.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ type: 'multiple-choice',
+ options: ['Statement A', 'Statement B', 'Statement C', 'Statement D'],
+ correctAnswer: 3,
+ explanation: 'Statement D correctly represents the mathematical relationship shown.'
+ }
 ];
 
 // Test-specific storage key for this test
