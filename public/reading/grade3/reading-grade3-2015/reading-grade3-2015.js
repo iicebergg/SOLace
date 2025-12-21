@@ -545,7 +545,7 @@ const sampleQuestions = [
 
   {
     id: '20',
-    text: 'Read this sentence and dictionary entry. <div class="passage-innerbox"><b>In the winter, grocery stores <u>charge</u> too much for strawberries.</b></div> <div class="passage-dicbox"><b>charge</b> (chÃ¤rj) <i>v.</i> <b>1.</b> To give orders. <b>2.</b> To set as a price. <b>3.</b> To fill up completely. <b>4.</b> To rush forward.</div>',
+    text: 'Read this sentence and dictionary entry. <div class="passage-innerbox"><b>In the winter, grocery stores <u>charge</u> too much for strawberries.</b></div> <div class="passage-dicbox"><b>charge</b> (chärj) <i>v.</i> <b>1.</b> To give orders. <b>2.</b> To set as a price. <b>3.</b> To fill up completely. <b>4.</b> To rush forward.</div>',
     type: 'multiple-choice',
     options: [
       '1',
@@ -639,7 +639,7 @@ const sampleQuestions = [
     passageId: 'hidden_treasure',
     options: [
       'The house',
-      'The water drop',
+      'The water tower',
       'The trees',
       'The Greatest Fishing Spot',
     ],
