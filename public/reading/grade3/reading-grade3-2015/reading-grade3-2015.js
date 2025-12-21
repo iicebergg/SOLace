@@ -84,15 +84,12 @@ const readingPassages = {
       </ul></p>
       
       <p><ol>
-      <li>To have enough juice, gently roll the lemon back and forth
-against the table with your palm.</li>
+      <li>To have enough juice, gently roll the lemon back and forth against the table with your palm.</li>
       <li>Have a grownup cut the lemon in half.</li>
       <li>Squeeze the lemon so the juice drips into the cup.</li>
       <li>Dip the paintbrush into the juice and write a message on the paper. When the "ink" dries, the paper will appear blank.</li>
       <li>Give your secret message to a friend or family member.</li>
-      <li>Have the person who receives your message hold the paper
-near a light bulb. The heat will make the secret message
-appear! The lemon juice will turn a brown color.</li>
+      <li>Have the person who receives your message hold the paper near a light bulb. The heat will make the secret message appear! The lemon juice will turn a brown color.</li>
       </ol></p>
 </div>
 
@@ -132,8 +129,7 @@ appear! The lemon juice will turn a brown color.</li>
       <li>Have your friend use the paintbrush to spread the paint over the paper. The message will appear on the paper as the person paints.</li>
       </ol></p>
 
-      <p>It's amazing! The paint does not stick to the waxy crayon,
-so the words will show through.</p>
+      <p>It's amazing! The paint does not stick to the waxy crayon, so the words will show through.</p>
 </div>
     `
   },
