@@ -6,70 +6,39 @@ const readingPassages = {
     title: 'The Cook\'s Surprise',
     content: `
      <ol class="paragraph-numbers">
-      <li>Danielle loved to cook delicious food on Saturdays. She
-enjoyed seeing her family members smile as they tasted a
-meal she made. Today Danielle had a surprise for her
-younger brother and sister. She had baked cupcakes early
-in the morning, while Martin and Madison were
-still asleep.</li>
-      
-      <li>After lunch Danielle decided to take her brother and sister
-their surprises. Danielle carried the two cupcakes as she
-walked from room to room. She could not find Martin and
-Madison anywhere.</li>
-      
-      <li>At last, Danielle entered the laundry room. There she
-noticed bits of yellow ribbon on the floor. Scraps of blue
-cloth lay next to the sewing machine, which had not been
-used in years. She thought it was an odd sight but
-decided to keep looking for her brother and sister.</p>
-      
-      <li>On her way back to the kitchen, Danielle had a perfect
-idea. She set the cupcakes on the table and found a sheet
-of paper and a marker. In large letters, she wrote, "For
-Martin and Madison." She imagined Martin and Madison
-grinning with delight when they discovered the surprise.</p>
+      <li>Danielle loved to cook delicious food on Saturdays. She enjoyed seeing her family members smile as they tasted a meal she made. Today Danielle had a surprise for her younger brother and sister. She had baked cupcakes early in the morning, while Martin and Madison were still asleep.</li>
 
-      <li>Suddenly, Danielle heard noises coming from her
-bedroom. She decided to find out what was happening.</p>
+      <li>After lunch Danielle decided to take her brother and sister their surprises. Danielle carried the two cupcakes as she walked from room to room. She could not find Martin and Madison anywhere.</li>
 
-      <li>"Surprise!" shouted two voices when Danielle opened
-her door.</li>
+      <li>At last, Danielle entered the laundry room. There she noticed bits of yellow ribbon on the floor. Scraps of blue cloth lay next to the sewing machine, which had not been used in years. She thought it was an odd sight but decided to keep looking for her brother and sister.</p>
 
-      <li>Danielle's heart jumped. Martin and Madison were waiting
-for her, and they had a package in their hands.</p>
+      <li>On her way back to the kitchen, Danielle had a perfect idea. She set the cupcakes on the table and found a sheet of paper and a marker. In large letters, she wrote, "For Martin and Madison." She imagined Martin and Madison grinning with delight when they discovered the surprise.</p>
+
+      <li>Suddenly, Danielle heard noises coming from her bedroom. She decided to find out what was happening.</p>
+
+      <li>"Surprise!" shouted two voices when Danielle opened her door.</li>
+
+      <li>Danielle's heart jumped. Martin and Madison were waiting for her, and they had a package in their hands.</p>
 
       <li>"This is for you," said Martin.</p>
 
       <li>"Open it," added Madison.</li>
 
-      <li>Danielle took the package. Her hands quickly ripped off
-the shiny paper, and she opened the box. There was a
-blue apron folded neatly inside.</li>
+      <li>Danielle took the package. Her hands quickly ripped off the shiny paper, and she opened the box. There was a blue apron folded neatly inside.</li>
 
-      <li>"We wanted to make a surprise for you because you're
-such a nice sister," said Madison. "You are always thinking
-of us."</li>
+      <li>"We wanted to make a surprise for you because you're such a nice sister," said Madison. "You are always thinking of us."</li>
 
-      <li>"I drew the apron pattern on the blue cloth and cut it
-out," Martin said.</li>
+      <li>"I drew the apron pattern on the blue cloth and cut it out," Martin said.</li>
 
-      <li>"Mom helped me sew the apron, and we attached the
-yellow ribbon," beamed Madison.</li>
+      <li>"Mom helped me sew the apron, and we attached the yellow ribbon," beamed Madison.</li>
 
-      <li>Danielle held the apron. She noticed the crooked lines of
-stitching along the edges, but she didn't mind the small
-sewing mistakes. To her, this was the most beautiful apron
-she had ever seen.</li>
+      <li>Danielle held the apron. She noticed the crooked lines of stitching along the edges, but she didn't mind the small sewing mistakes. To her, this was the most beautiful apron she had ever seen.</li>
 
       <li>"Thank you. It's perfect," said Danielle.</li>
 
-      <li>As she put on the apron, Danielle suddenly remembered
-the cupcakes she left on the table.</li>
+      <li>As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table.</li>
 
-      <li>"I have a surprise for you too!" Danielle said, as she
-began leading her brother and sister down the hall into
-the kitchen.</li>
+      <li>"I have a surprise for you too!" Danielle said, as she began leading her brother and sister down the hall into the kitchen.</li>
 </ol>
     `
   },
@@ -78,52 +47,18 @@ the kitchen.</li>
     title: 'Useful Weeds of the Sea',
     content: `
     <ol class="paragraph-numbers">
-      <li>Seaweed may not be on many shopping lists, but
-it plays a big part in people's everyday lives.
-Seaweed is a plant that grows in the shallow
-waters near the shores of the world's oceans.</li>
+      <li>Seaweed may not be on many shopping lists, but it plays a big part in people's everyday lives. Seaweed is a plant that grows in the shallow waters near the shores of the world's oceans.</li>
 
     <img src="images/seaweed.png" alt="Seaweed" style="float: right; height: 120px; margin-left: 10px;">
-      <li>In some parts
-of the world,
-especially
-near the
-ocean, people
-eat seaweed
-all by itself. It
-has lots of
-vitamins and
-is a healthful
-treat. In
-places where seaweed is not served as a meal,
-people use goods that are made from these
-plants. Hundreds of everyday items have
-seaweed in them.</li>
+      <li>In some parts of the world, especially near the ocean, people eat seaweed all by itself. It has lots of vitamins and is a healthful treat. In places where seaweed is not served as a meal, people use goods that are made from these plants. Hundreds of everyday items have seaweed in them.</li>
 
-      <li>Seaweed helps many people keep their teeth
-clean. Toothpaste stays thick when it comes out
-of the tube because of a gel from a type of red
-seaweed. No one can see the seaweed in the
-toothpaste because it is mixed with the gel. This
-gel is in shampoo and makeup too.</li>
+      <li>Seaweed helps many people keep their teeth clean. Toothpaste stays thick when it comes out of the tube because of a gel from a type of red seaweed. No one can see the seaweed in the toothpaste because it is mixed with the gel. This gel is in shampoo and makeup too.</li>
 
-      <li>Without seaweed, ice cream and yogurt would
-not be as thick or creamy but would seem rather
-lumpy and watery. Many people eat foods with
-seaweed without even knowing it.</li>
+      <li>Without seaweed, ice cream and yogurt would not be as thick or creamy but would seem rather lumpy and watery. Many people eat foods with seaweed without even knowing it.</li>
 
-      <li>Seaweed also helps plants grow. Many farmers
-around the world spray their fields with seaweed.
-They buy the seaweed after it has been made
-into a liquid. The seaweed becomes food for the
-plants. The vegetables on people's plates often
-come from these farms.</li>
+      <li>Seaweed also helps plants grow. Many farmers around the world spray their fields with seaweed. They buy the seaweed after it has been made into a liquid. The seaweed becomes food for the plants. The vegetables on people's plates often come from these farms.</li>
 
-      <li>People cannot see seaweed in the foods they eat
-or in the items they use to look their best.
-However, none of these things would be the
-same without this useful weed that comes from
-the sea.</li>
+      <li>People cannot see seaweed in the foods they eat or in the items they use to look their best. However, none of these things would be the same without this useful weed that comes from the sea.</li>
 </ol>
     `
   },
@@ -133,10 +68,7 @@ the sea.</li>
     content: `
       <p><i>Here are three amazing ways to do it!</i></p>
       
-      <p>Secret messages have been around for hundreds of years.
-Spies used them to pass important information without being
-caught. The next time you want to send a secret message,
-try one of these fun ideas!</p>
+      <p>Secret messages have been around for hundreds of years. Spies used them to pass important information without being caught. The next time you want to send a secret message, try one of these fun ideas!</p>
       
 <div class="passage-innerbox">
 <img src="images/lemony-letter.png" alt="Lemony Letter" style="float: right; height: 100px; margin-left: 10px;">
@@ -176,17 +108,11 @@ appear! The lemon juice will turn a brown color.</li>
       
       <p><ol>
       <li>Ask a grownup to peel the skin from one end of the potato.</li>
-      <li>Using the peeled end of the potato, write a message in big
-letters on the bathroom mirror.</li>
-      <li>Your message will be <u>invisible</u> until you take a bath or
-shower. When you take a shower or bath, close the door so
-the steam stays in the bathroom. Steam from the hot water
-will appear on the mirror and make your message show.</li>
+      <li>Using the peeled end of the potato, write a message in big letters on the bathroom mirror.</li>
+      <li>Your message will be <u>invisible</u> until you take a bath or shower. When you take a shower or bath, close the door so the steam stays in the bathroom. Steam from the hot water will appear on the mirror and make your message show.</li>
       </ol></p>
 
-      <p>Surprise someone else! Write a message on the bathroom
-mirror for a family member. See how long it takes for the
-person to discover your secret message.</p>
+      <p>Surprise someone else! Write a message on the bathroom mirror for a family member. See how long it takes for the person to discover your secret message.</p>
 </div>
 
 <div class="passage-innerbox">
@@ -201,12 +127,9 @@ person to discover your secret message.</p>
       </ul></p>
       
       <p><ol>
-      <li>Using the white crayon, write your message on the paper.
-It will be difficult to see the markings, so be careful.</li>
+      <li>Using the white crayon, write your message on the paper. It will be difficult to see the markings, so be careful.</li>
       <li>Give your secret message to a friend.</li>
-      <li>Have your friend use the paintbrush to spread the paint
-over the paper. The message will appear on the paper as
-the person paints.</li>
+      <li>Have your friend use the paintbrush to spread the paint over the paper. The message will appear on the paper as the person paints.</li>
       </ol></p>
 
       <p>It's amazing! The paint does not stick to the waxy crayon,
@@ -219,81 +142,47 @@ so the words will show through.</p>
     title: 'A Hidden Treasure',
     content: `
     <ol class="paragraph-numbers">
-      <li>Evan and his 16-year-old brother, Mark, liked spending
-time with their grandmother. Today, though, Grandma was
-busy painting.</li>
+      <li>Evan and his 16-year-old brother, Mark, liked spending time with their grandmother. Today, though, Grandma was busy painting.</li>
 
-      <li>"May I help you paint your kitchen, Grandma?"
-asked Evan.</li>
+      <li>"May I help you paint your kitchen, Grandma?" asked Evan.</li>
 
-      <li>"Your mom is helping me," Grandma replied with a smile.
-"Maybe you could play a game with Mark. I have some
-games in the attic."</li>
+      <li>"Your mom is helping me," Grandma replied with a smile. "Maybe you could play a game with Mark. I have some games in the attic."</li>
 
-      <li>The brothers nodded. They climbed the steps and opened
-the attic door to look for the games.</li>
+      <li>The brothers nodded. They climbed the steps and opened the attic door to look for the games.</li>
 
-      <li>Instead of a game, Evan found an old journal in a dusty
-trunk. He opened the pages and discovered a map! The
-drawing showed Grandma's house, a raindrop inside a
-square, two little triangles, and a dock. Best of all, a large
-"X" marked the "Greatest Fishing Spot," which was near
-the dock.</li>
+      <li>Instead of a game, Evan found an old journal in a dusty trunk. He opened the pages and discovered a map! The drawing showed Grandma's house, a raindrop inside a square, two little triangles, and a dock. Best of all, a large "X" marked the "Greatest Fishing Spot," which was near the dock.</li>
 
-      <li>Excitedly, Evan asked Mark, "Do you think we can find this
-fishing spot?"</li>
+      <li>Excitedly, Evan asked Mark, "Do you think we can find this fishing spot?"</li>
 
-      <li>Mark took a closer look at the map. "Let's try," he said,
-and they thundered down the steps.</li>
+      <li>Mark took a closer look at the map. "Let's try," he said, and they thundered down the steps.</li>
 
-      <li>"Mom, we're going outside on a treasure hunt!" Evan
-shouted from the back door.</li>
+      <li>"Mom, we're going outside on a treasure hunt!" Evan shouted from the back door.</li>
 
       <li>"Okay," Mom laughed, shaking her head.</li>
 
-      <li>"The square with the raindrop is behind Grandma's
-house," Mark said, narrowing his eyes as he examined
-the map.</li>
+      <li>"The square with the raindrop is behind Grandma's house," Mark said, narrowing his eyes as he examined the map.</li>
 
-      <li>When he looked up, Mark noticed a faded blue spot on
-the water tower nearby. "Look!" he exclaimed. "The water
-tower once had a raindrop painted on it. That must be it."</li>
+      <li>When he looked up, Mark noticed a faded blue spot on the water tower nearby. "Look!" he exclaimed. "The water tower once had a raindrop painted on it. That must be it."</li>
 
-      <li>Next, the boys searched for the two small triangles near
-the tower. Before long, Evan patted the trunks of two
-pine trees.</li>
+      <li>Next, the boys searched for the two small triangles near the tower. Before long, Evan patted the trunks of two pine trees.</li>
 
-      <li>"These trees must be the triangles on the map," he
-decided. "They're in the right places."</li>
+      <li>"These trees must be the triangles on the map," he decided. "They're in the right places."</li>
 
-      <li>"Now we just need to find the dock," Mark said. The two
-boys searched the riverside near the trees, but they found
-only weeds.</li>
+      <li>"Now we just need to find the dock," Mark said. The two boys searched the riverside near the trees, but they found only weeds.</li>
 
-      <li>Evan finally suggested that Grandma might remember the
-old dock.</li>
+      <li>Evan finally suggested that Grandma might remember the old dock.</li>
 
-      <li>The boys rushed into the kitchen with their question as
-Grandma and Mom were washing their paintbrushes.</li>
+      <li>The boys rushed into the kitchen with their question as Grandma and Mom were washing their paintbrushes.</li>
 
-      <li>"That dock was torn down a long time ago," Grandma
-explained. "How did you know about it?" she puzzled.</li>
+      <li>"That dock was torn down a long time ago," Grandma explained. "How did you know about it?" she puzzled.</li>
 
-      <li>The boys presented the map, and Mom smiled. "That's my
-map I made when I was a young girl. Grandma and I
-loved fishing from the old dock."</li>
+      <li>The boys presented the map, and Mom smiled. "That's my map I made when I was a young girl. Grandma and I loved fishing from the old dock."</li>
 
-      <li>"Wow! Could you take us to that place? The dock is no
-longer there, but maybe it's still a great fishing spot," Evan
-said hopefully.</li>
+      <li>"Wow! Could you take us to that place? The dock is no longer there, but maybe it's still a great fishing spot," Evan said hopefully.</li>
 
-      <li>Grandma smiled, remembering the times she spent with
-Mom. "Sure," she agreed. "Let's see if the fish still like
-it there."</li>
+      <li>Grandma smiled, remembering the times she spent with Mom. "Sure," she agreed. "Let's see if the fish still like it there."</li>
 
-      <li>"I'll get our fishing poles," Evan offered. The map had
-certainly led to a treasure and a chance to spend time
-with Grandma.</li>
+      <li>"I'll get our fishing poles," Evan offered. The map had certainly led to a treasure and a chance to spend time with Grandma.</li>
 </ol>
     `
   },
@@ -303,61 +192,22 @@ with Grandma.</li>
     content: `
     <ol class="paragraph-numbers">
     <img src="images/ostrich.png" alt="Ostrich" style="float: right; height: 250px; margin-left: 10px;">
-      <li>Ostriches hold the
-record as the largest
-birds in the world. A
-male can grow to
-nine feet tall. That is
-about three feet
-taller than most
-men. How do these
-giants spend
-their days?</li>
+      <li>Ostriches hold the record as the largest birds in the world. A male can grow to nine feet tall. That is about three feet taller than most men. How do these giants spend their days?</li>
 
       <p><b>Life in a Bird Herd</b></p>
-      <li>Ostriches live in
-groups called herds.
-One male is the
-leader. He uses his
-strong legs to dig a hole for a nest. The herd only needs
-one nest because all the females lay their eggs in it. The
-male and one of the females take turns guarding and
-sitting on the eggs.</li>
+      <li>Ostriches live in groups called herds. One male is the leader. He uses his strong legs to dig a hole for a nest. The herd only needs one nest because all the females lay their eggs in it. The male and one of the females take turns guarding and sitting on the eggs.</li>
 
-      <li>When the chicks hatch from the eggs, they are covered
-with yellow fuzz and black spots. Their colors match the
-sandy ground. This coloring helps them hide from
-dangerous animals. The mother and father ostrich protect
-the chicks too. Before long, feathers replace the fuzz on
-the chicks. Their new fluffy feathers trap air and keep the
-chicks warm at night.</li>
-      
-      <li>The young birds learn to peck the ground and eat plants
-by watching older ostriches. They eat mostly plants,
-seeds, and roots but will also eat insects and small lizards.
-This diet helps the chicks grow quickly, almost a foot
-each month!</li>
+      <li>When the chicks hatch from the eggs, they are covered with yellow fuzz and black spots. Their colors match the sandy ground. This coloring helps them hide from dangerous animals. The mother and father ostrich protect the chicks too. Before long, feathers replace the fuzz on the chicks. Their new fluffy feathers trap air and keep the chicks warm at night.</li>
+
+      <li>The young birds learn to peck the ground and eat plants by watching older ostriches. They eat mostly plants, seeds, and roots but will also eat insects and small lizards. This diet helps the chicks grow quickly, almost a foot each month!</li>
 
       <p><b>Speedy Runners</b></p>
-      <li>Although these birds cannot fly, powerful legs help them
-move quickly. Ostriches can bolt across the ground at
-43 miles per hour. They keep their wings outstretched
-while running. This helps them keep their balance,
-especially when changing direction.</li>
+      <li>Although these birds cannot fly, powerful legs help them move quickly. Ostriches can bolt across the ground at 43 miles per hour. They keep their wings outstretched while running. This helps them keep their balance, especially when changing direction.</li>
 
       <p><b>Staying Safe</b></p>
-      <li>With such speed, ostriches outrun most predators, but
-they know how to defend themselves too. Their strong
-legs can deliver a kick that stops a lion! Ostriches use
-another trick to stay safe. They sit down on the ground,
-rest their heads on the sand, and lie very still. The sand
-blends with the color of the ostriches so other animals do
-not notice them.</li>
+      <li>With such speed, ostriches outrun most predators, but they know how to defend themselves too. Their strong legs can deliver a kick that stops a lion! Ostriches use another trick to stay safe. They sit down on the ground, rest their heads on the sand, and lie very still. The sand blends with the color of the ostriches so other animals do not notice them.</li>
 
-      <li>Today, wild ostriches live in Africa, but many tame ones
-live on farms and in zoos. Ostriches are unusual-looking
-birds, but their power and speed make them one of the
-fastest animals on land.</li>
+      <li>Today, wild ostriches live in Africa, but many tame ones live on farms and in zoos. Ostriches are unusual-looking birds, but their power and speed make them one of the fastest animals on land.</li>
 
 <div class="passage-innerbox">
       <p><b>Ostrich Facts</b><br>
@@ -375,35 +225,35 @@ fastest animals on land.</li>
     title: 'The Search',
     content: `
       <ol class="paragraph-numbers">
-      <li>I've emptied my sports bag</li>
-<li>Checked in the car</li>
-<li>Reached under the sofa</li>
-<li>And searched near and far.</li><br>
-<li>But hunt as I may</li>
-<li>I've got only one shoe--</li>
-<li>And where its mate is</li>
-<li>I haven't a clue.</li><br>
-<li>"When was your last game?"</li>
-<li>Dad asks thoughtfully.</li>
-<li>"And after the game</li>
-<li>Whom did you see?"</li><br>
-<li>I pause in my tracks--</li>
-<li>Dad's smart, it is true</li>
-<li>But his questions don't lead</li>
-<li>To my runaway shoe.</li><br>
-<li>It's surely gone missing</li>
-<li>There's clearly no hope.</li>
-<li>I have to give up</li>
-<li>Find somewhere to mope.</li><br>
-<li>So I sit on the steps</li>
-<li>And stare into the yard</li>
-<li>Where Otis the dog</li>
-<li>Serves as guard--</li><br>
-<li>Then I notice that Otis</li>
-<li>Has a new chew</li>
-<li>With laces and treads--</li>
-<li>Oh, no! It's my shoe!</li>
-</ol>
+        <li>I've emptied my sports bag</li>
+        <li>Checked in the car</li>
+        <li>Reached under the sofa</li>
+        <li>And searched near and far.</li><br>
+        <li>But hunt as I may</li>
+        <li>I've got only one shoe--</li>
+        <li>And where its mate is</li>
+        <li>I haven't a clue.</li><br>
+        <li>"When was your last game?"</li>
+        <li>Dad asks thoughtfully.</li>
+        <li>"And after the game</li>
+        <li>Whom did you see?"</li><br>
+        <li>I pause in my tracks--</li>
+        <li>Dad's smart, it is true</li>
+        <li>But his questions don't lead</li>
+        <li>To my runaway shoe.</li><br>
+        <li>It's surely gone missing</li>
+        <li>There's clearly no hope.</li>
+        <li>I have to give up</li>
+        <li>Find somewhere to mope.</li><br>
+        <li>So I sit on the steps</li>
+        <li>And stare into the yard</li>
+        <li>Where Otis the dog</li>
+        <li>Serves as guard--</li><br>
+        <li>Then I notice that Otis</li>
+        <li>Has a new chew</li>
+        <li>With laces and treads--</li>
+        <li>Oh, no! It's my shoe!</li>
+      </ol>
     `
   }
 
