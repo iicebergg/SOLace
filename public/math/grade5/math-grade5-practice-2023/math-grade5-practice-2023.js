@@ -1,4 +1,4 @@
-window.TEST_IDENTIFIER = 'math_grade7_practice_2023';
+window.TEST_IDENTIFIER = 'math_grade5_practice_2023';
 
 const sampleQuestions = [
  {
