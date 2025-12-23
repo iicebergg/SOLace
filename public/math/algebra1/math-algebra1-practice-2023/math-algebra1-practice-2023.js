@@ -61,10 +61,10 @@ const sampleQuestions = [
  text: 'Frank works at a convenience store.<br>• He earns $7.50 per hour when he works during the day.<br>• He earns $12.50 per hour when he works at night.<br>• He wants to earn at least $300 per week.<br><br>Which graph best represents this situation?',
  type: 'multiple-choice',
  options: [
-    {url: 'images/6f.png', alt: 'Graph F'},
-    {url: 'images/6g.png', alt: 'Graph G'},
-    {url: 'images/6h.png', alt: 'Graph H'},
-    {url: 'images/6j.png', alt: 'Graph J'}
+    {url: 'images/6a.png', alt: 'Graph F'},
+    {url: 'images/6b.png', alt: 'Graph G'},
+    {url: 'images/6c.png', alt: 'Graph H'},
+    {url: 'images/6d.png', alt: 'Graph J'}
  ],
  correctAnswer: 2,
  explanation: 'Set up the inequality: 7.50x + 12.50y ≥ 300, where x is day hours and y is night hours. The correct graph shows the region above the line 7.50x + 12.50y = 300, which is Graph H.'
