@@ -1,4 +1,4 @@
-window.TEST_IDENTIFIER = 'math_algebra1_practice_2023';
+window.TEST_IDENTIFIER = 'math_algebra2_practice_2023';
 
 const sampleQuestions = [
  {
