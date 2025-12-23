@@ -1,4 +1,4 @@
-window.TEST_IDENTIFIER = 'reading_grade8_practice_2024';
+window.TEST_IDENTIFIER = 'reading_endofcourse_practice_2024';
 
 // Reading passages that can be referenced by multiple questions
 const readingPassages = {
