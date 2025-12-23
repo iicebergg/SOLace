@@ -2,218 +2,93 @@ window.TEST_IDENTIFIER = 'reading_endofcourse_practice_2024';
 
 // Reading passages that can be referenced by multiple questions
 const readingPassages = {
-  'the_cooks_surprise': {
-    title: 'The Cook\'s Surprise',
+  'speedy_and_spotty': {
+    title: 'Speedy and Spotty',
     content: `
      <ol class="paragraph-numbers">
-      <li>Danielle loved to cook delicious food on Saturdays. She enjoyed seeing her family members smile as they tasted a meal she made. Today Danielle had a surprise for her younger brother and sister. She had baked cupcakes early in the morning, while Martin and Madison were still asleep.</li>
+      <li>Imagine you are in Africa. Suddenly, a group of spots streaks past you. What was it? It may have been a cheetah, the fastest animal on land. It can run up to 70 miles per hour, which is faster than most cars travel on the highway!</li>
 
-      <li>After lunch Danielle decided to take her brother and sister their surprises. Danielle carried the two cupcakes as she walked from room to room. She could not find Martin and Madison anywhere.</li>
+      <p><b>A Fast Cat</b></p>
+      <li>In many ways, the cheetah is built for speed. Even though this animal is a cat, its paws are much more like a dog’s paws. The paws allow the cheetah to grip the ground when it makes quick turns. A cheetah also has long legs that help it take big steps. It can jump as far as 20 feet in one leap! Even the cheetah’s backbone helps it move quickly. Its backbone twists and turns, letting the cheetah zigzag across the ground easily. The backbone acts as a spring, moving the cheetah forward with sudden bursts of energy. Although the cheetah can run fast, it cannot run for long distances. It uses its energy quickly and becomes tired. If the cheetah cannot catch its dinner in a hurry, it will have to rest awhile before trying again.</li>
 
-      <li>At last, Danielle entered the laundry room. There she noticed bits of yellow ribbon on the floor. Scraps of blue cloth lay next to the sewing machine, which had not been used in years. She thought it was an odd sight but decided to keep looking for her brother and sister.</p>
+      <p><b>Made to Hunt</b></p>
+      <li>A cheetah is also made to be a great hunter. It has sharp eyesight. A cheetah can see other animals up to three miles away. Good eyesight helps the cheetah find its prey so it can plan an attack. A cheetah’s coat is also very useful. The coat is tan with black spots. This coloring allows a cheetah to blend in with the tall, brown grass in Africa. Other animals do not see it hiding, so a cheetah can sneak up on rabbits, birds, and other animals.</p>
 
-      <li>On her way back to the kitchen, Danielle had a perfect idea. She set the cupcakes on the table and found a sheet of paper and a marker. In large letters, she wrote, "For Martin and Madison." She imagined Martin and Madison grinning with delight when they discovered the surprise.</p>
-
-      <li>Suddenly, Danielle heard noises coming from her bedroom. She decided to find out what was happening.</p>
-
-      <li>"Surprise!" shouted two voices when Danielle opened her door.</li>
-
-      <li>Danielle's heart jumped. Martin and Madison were waiting for her, and they had a package in their hands.</p>
-
-      <li>"This is for you," said Martin.</p>
-
-      <li>"Open it," added Madison.</li>
-
-      <li>Danielle took the package. Her hands quickly ripped off the shiny paper, and she opened the box. There was a blue apron folded neatly inside.</li>
-
-      <li>"We wanted to make a surprise for you because you're such a nice sister," said Madison. "You are always thinking of us."</li>
-
-      <li>"I drew the apron pattern on the blue cloth and cut it out," Martin said.</li>
-
-      <li>"Mom helped me sew the apron, and we attached the yellow ribbon," beamed Madison.</li>
-
-      <li>Danielle held the apron. She noticed the crooked lines of stitching along the edges, but she didn't mind the small sewing mistakes. To her, this was the most beautiful apron she had ever seen.</li>
-
-      <li>"Thank you. It's perfect," said Danielle.</li>
-
-      <li>As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table.</li>
-
-      <li>"I have a surprise for you too!" Danielle said, as she began leading her brother and sister down the hall into the kitchen.</li>
+      <p><b>Saving the Cheetah</b></p>
+      <li>Today there are many threats to the cheetah. Parts of Africa are being turned into farms and ranches. This change forces the cheetah and other animals to find new places to live, which is not always easy. Cheetahs are also being hunted by other animals such as lions and hyenas. However, zookeepers and wildlife experts are trying to save the cheetah. Maybe with their help, cheetahs will grow larger in number.</p>
 </ol>
     `
   },
 
-  'useful_weeds_of_the_sea': {
-    title: 'Useful Weeds of the Sea',
+  'ready_for_the_race': {
+    title: 'Ready for the Race',
     content: `
     <ol class="paragraph-numbers">
-      <li>Seaweed may not be on many shopping lists, but it plays a big part in people's everyday lives. Seaweed is a plant that grows in the shallow waters near the shores of the world's oceans.</li>
+      <li>“Do you want to come with me?” Kelly asked her brother as she rolled her bike out of the garage. “I’m going to meet some friends at the Oak Park Trails. We’re going to practice for the race next week.”</li>
 
-    <img src="images/seaweed.png" alt="Seaweed" style="float: right; height: 120px; margin-left: 10px;">
-      <li>In some parts of the world, especially near the ocean, people eat seaweed all by itself. It has lots of vitamins and is a healthful treat. In places where seaweed is not served as a meal, people use goods that are made from these plants. Hundreds of everyday items have seaweed in them.</li>
+      <li>“No thanks,” Marcus replied as he bounced a ball in the driveway. “Sam’s coming over to play basketball.”</li>
 
-      <li>Seaweed helps many people keep their teeth clean. Toothpaste stays thick when it comes out of the tube because of a gel from a type of red seaweed. No one can see the seaweed in the toothpaste because it is mixed with the gel. This gel is in shampoo and makeup too.</li>
+      <li>Kelly rode off on her bike while Marcus waited for his friend. Marcus was fast, and he usually did well in most sports. He didn’t think it would help if he practiced the course. It could be hilly or sandy, and Marcus knew he would still speed along.</li>
 
-      <li>Without seaweed, ice cream and yogurt would not be as thick or creamy but would seem rather lumpy and watery. Many people eat foods with seaweed without even knowing it.</li>
+      <li>When race day finally arrived, Marcus and Kelly put on their helmets and rode their bikes to the Oak Park Trails with their parents.</li>
 
-      <li>Seaweed also helps plants grow. Many farmers around the world spray their fields with seaweed. They buy the seaweed after it has been made into a liquid. The seaweed becomes food for the plants. The vegetables on people's plates often come from these farms.</li>
+      <li>“My stomach feels like I swallowed some butterflies,” Kelly told Marcus when they saw the crowd of kids. They joined the other bike riders behind some bright orange cones.</li>
 
-      <li>People cannot see seaweed in the foods they eat or in the items they use to look their best. However, none of these things would be the same without this useful weed that comes from the sea.</li>
+      <li><i>Kelly is always nervous</i>, Marcus thought. “Don’t worry. You’ll do fine,” he said as he focused on the road ahead.</li>
+
+      <li>As soon as the starter yelled “Go!” Marcus’s legs pumped up and down like two machines. He quickly zoomed to the front of the pack of riders.</li>
+
+      <li>A few minutes later he was zipping down the trail, and there wasn’t anyone ahead of him! Marcus raced along the trail. He bumped over tree roots and rode past some pine trees. Then the path looped around a pond. Marcus was surprised that the course was so long.</li>
+
+      <li>His tired legs felt like they weighed a hundred pounds. All at once, a flash of color caught his eye. There was a line of bike riders on the trail ahead of him! “How could this be?” Marcus groaned to himself as he pushed forward. I must have taken a wrong turn and made an extra loop in the course, he thought.</li>
+
+      <li>Marcus gritted his teeth and pushed his achy muscles harder. He realized his speed alone wouldn’t be enough this time; knowing the course was just as important. He edged past a couple of bike riders, but he couldn’t reach the riders who were in the lead.</li>
+
+      <li>After the race Marcus saw his sister at the finish line, and he rode over to her. “Wow, you must have done a good job in the race. What place did you get?” Marcus asked Kelly.</li>
+
+      <li>“I came in third place. Mom and Dad said I would even receive a medal!” Kelly answered excitedly.</li>
+
+      <li>“That’s great! I went in a different direction from the other riders, so I came in ninth place,” Marcus replied. “I’d like to go over this course again to practice with you, Kelly. That way I know we’ll both do better next year!” he said.</li>
 </ol>
     `
   },
 
-  'secret_message': {
-    title: 'Want to Send a Secret Message?',
-    content: `
-      <p><i>Here are three amazing ways to do it!</i></p>
-      
-      <p>Secret messages have been around for hundreds of years. Spies used them to pass important information without being caught. The next time you want to send a secret message, try one of these fun ideas!</p>
-      
-<div class="passage-innerbox">
-<img src="images/lemony-letter.png" alt="Lemony Letter" style="float: right; height: 100px; margin-left: 10px;">
-      <p><b>Lemony Letter</b></p>
-      <p><u>What you will need:</u>
-      <ul>
-      <li>A lemon</li>
-      <li>A knife</li>
-      <li>A small cup</li>
-      <li>A thin paintbrush</li>
-      <li>A piece of white paper</li>
-      <li>A lamp</li>
-      </ul></p>
-      
-      <p><ol>
-      <li>To have enough juice, gently roll the lemon back and forth against the table with your palm.</li>
-      <li>Have a grownup cut the lemon in half.</li>
-      <li>Squeeze the lemon so the juice drips into the cup.</li>
-      <li>Dip the paintbrush into the juice and write a message on the paper. When the "ink" dries, the paper will appear blank.</li>
-      <li>Give your secret message to a friend or family member.</li>
-      <li>Have the person who receives your message hold the paper near a light bulb. The heat will make the secret message appear! The lemon juice will turn a brown color.</li>
-      </ol></p>
-</div>
-
-<div class="passage-innerbox">
-<img src="images/mirror-message.png" alt="Mirror Message" style="float: right; height: 100px; margin-left: 10px;">
-      <p><b>Mirror Message</b></p>
-      <p><u>What you will need:</u>
-      <ul>
-      <li>A potato</li>
-      <li>A potato peeler of knife</li>
-      <li>A bathroom mirror</li>
-      </ul></p>
-      
-      <p><ol>
-      <li>Ask a grownup to peel the skin from one end of the potato.</li>
-      <li>Using the peeled end of the potato, write a message in big letters on the bathroom mirror.</li>
-      <li>Your message will be <u>invisible</u> until you take a bath or shower. When you take a shower or bath, close the door so the steam stays in the bathroom. Steam from the hot water will appear on the mirror and make your message show.</li>
-      </ol></p>
-
-      <p>Surprise someone else! Write a message on the bathroom mirror for a family member. See how long it takes for the person to discover your secret message.</p>
-</div>
-
-<div class="passage-innerbox">
-<img src="images/crazy-crayon.png" alt="Crazy Crayon" style="float: right; height: 100px; margin-left: 10px;">
-      <p><b>Crazy Crayon</b></p>
-      <p><u>What you will need:</u>
-      <ul>
-      <li>A piece of white paper</li>
-      <li>A white crayon</li>
-      <li>Dark-colored paint</li>
-      <li>A paintbrush</li>
-      </ul></p>
-      
-      <p><ol>
-      <li>Using the white crayon, write your message on the paper. It will be difficult to see the markings, so be careful.</li>
-      <li>Give your secret message to a friend.</li>
-      <li>Have your friend use the paintbrush to spread the paint over the paper. The message will appear on the paper as the person paints.</li>
-      </ol></p>
-
-      <p>It's amazing! The paint does not stick to the waxy crayon, so the words will show through.</p>
-</div>
-    `
-  },
-
-   'hidden_treasure': {
-    title: 'A Hidden Treasure',
+  'american_bald_eagle': {
+    title: 'The American Bald Eagle',
     content: `
     <ol class="paragraph-numbers">
-      <li>Evan and his 16-year-old brother, Mark, liked spending time with their grandmother. Today, though, Grandma was busy painting.</li>
+      <li>After winning the Revolutionary War with England, the United States became a free country. At that time, Americans wanted a symbol for their country’s freedom. The members of Congress had a bitter argument over what the national symbol should be. Many people wanted the bald eagle to represent their country.</li>
 
-      <li>"May I help you paint your kitchen, Grandma?" asked Evan.</li>
+      <li>One of the new nation’s Founding Fathers, Benjamin Franklin, thought the turkey was a better symbol. In a letter to his daughter, Franklin wrote that the turkey, unlike the eagle, is a respectable bird that would stand strong when challenged. He noted that the eagle was lazy because it took food from other animals that hunted honestly. Others saw the bald eagle as a symbol of strength, courage, and freedom. A flying eagle represented the freedom that the Americans had fought for and gained. They also felt the bald eagle would be the best symbol for their country because it was the only eagle originally found in North America. Finally, after six years of arguing, the bald eagle was chosen by Congress to represent the United States.</li>
 
-      <li>"Your mom is helping me," Grandma replied with a smile. "Maybe you could play a game with Mark. I have some games in the attic."</li>
+      <li>Early in American history, each state had its own form of money. The bald eagle first appeared as a symbol of America on a Massachusetts copper coin in 1776. Later, as the government began using one form of money, the eagle was used on coins and paper bills. Today, the eagle is printed on the back of the one dollar bill.</li>
 
-      <li>The brothers nodded. They climbed the steps and opened the attic door to look for the games.</li>
+      <li>The bald eagle is a central part of the Great Seal designed in 1782 by Charles Thomson. The Great Seal shows a bald eagle spreading its wings and holding a banner in its beak. The words on the banner mean “Out of many, one,” to remind people that many states joined to form one country. The eagle carries an olive branch in one claw and arrows in the other claw. The olive branch means peace, and the arrows show that the United States is ready to defend itself. The Great Seal is printed on important government documents 2,000 to 3,000 times a year. It can be seen on flags, uniforms, and buildings.</li>
 
-      <li>Instead of a game, Evan found an old journal in a dusty trunk. He opened the pages and discovered a map! The drawing showed Grandma's house, a raindrop inside a square, two little triangles, and a dock. Best of all, a large "X" marked the "Greatest Fishing Spot," which was near the dock.</li>
-
-      <li>Excitedly, Evan asked Mark, "Do you think we can find this fishing spot?"</li>
-
-      <li>Mark took a closer look at the map. "Let's try," he said, and they thundered down the steps.</li>
-
-      <li>"Mom, we're going outside on a treasure hunt!" Evan shouted from the back door.</li>
-
-      <li>"Okay," Mom laughed, shaking her head.</li>
-
-      <li>"The square with the raindrop is behind Grandma's house," Mark said, narrowing his eyes as he examined the map.</li>
-
-      <li>When he looked up, Mark noticed a faded blue spot on the water tower nearby. "Look!" he exclaimed. "The water tower once had a raindrop painted on it. That must be it."</li>
-
-      <li>Next, the boys searched for the two small triangles near the tower. Before long, Evan patted the trunks of two pine trees.</li>
-
-      <li>"These trees must be the triangles on the map," he decided. "They're in the right places."</li>
-
-      <li>"Now we just need to find the dock," Mark said. The two boys searched the riverside near the trees, but they found only weeds.</li>
-
-      <li>Evan finally suggested that Grandma might remember the old dock.</li>
-
-      <li>The boys rushed into the kitchen with their question as Grandma and Mom were washing their paintbrushes.</li>
-
-      <li>"That dock was torn down a long time ago," Grandma explained. "How did you know about it?" she puzzled.</li>
-
-      <li>The boys presented the map, and Mom smiled. "That's my map I made when I was a young girl. Grandma and I loved fishing from the old dock."</li>
-
-      <li>"Wow! Could you take us to that place? The dock is no longer there, but maybe it's still a great fishing spot," Evan said hopefully.</li>
-
-      <li>Grandma smiled, remembering the times she spent with Mom. "Sure," she agreed. "Let's see if the fish still like it there."</li>
-
-      <li>"I'll get our fishing poles," Evan offered. The map had certainly led to a treasure and a chance to spend time with Grandma.</li>
+      <li>The American bald eagle is used as a symbol in a variety of ways. It appears on the President’s flag and military symbols. Today Americans think of their country when they see a bald eagle. It reminds them that their country is strong and free.</li>
 </ol>
     `
   },
 
-   'ostrich': {
-    title: 'The Ostrich: One Odd Bird',
+   'sea_otters': {
+    title: 'Sea Otters',
     content: `
     <ol class="paragraph-numbers">
-    <img src="images/ostrich.png" alt="Ostrich" style="float: right; height: 250px; margin-left: 10px;">
-      <li>Ostriches hold the record as the largest birds in the world. A male can grow to nine feet tall. That is about three feet taller than most men. How do these giants spend their days?</li>
+    <img src="images/otter.png" alt="Sea otters" style="float: right; height: 250px; margin-left: 10px;">
+      <li>The sea otter is an animal that spends most of its life in the water. This animal eats, sleeps, and hunts in the ocean. In fact, it spends much of the day floating on its back or swimming in the shallow parts of the ocean.</li>
 
-      <p><b>Life in a Bird Herd</b></p>
-      <li>Ostriches live in groups called herds. One male is the leader. He uses his strong legs to dig a hole for a nest. The herd only needs one nest because all the females lay their eggs in it. The male and one of the females take turns guarding and sitting on the eggs.</li>
+      <p><b>For for the Sea</b></p>
+      <li>A sea otter grows to be about four feet long. Webbed feet help it swim. While the sea otter swims, its eyes stay open while its nostrils and ears close to keep out water. This is helpful when a sea otter hunts for food. Some otters can swim as deep as 200 feet to find a meal!</li>
 
-      <li>When the chicks hatch from the eggs, they are covered with yellow fuzz and black spots. Their colors match the sandy ground. This coloring helps them hide from dangerous animals. The mother and father ostrich protect the chicks too. Before long, feathers replace the fuzz on the chicks. Their new fluffy feathers trap air and keep the chicks warm at night.</li>
+      <p><b>Time to Eat</b></p>
+      <li>Diving deep into the water, a sea otter gathers food from the bottom of the ocean. Some favorite meals include crabs, snails, and clams. The sea otter may also grab a small rock in its paws to use as a tool. On the surface of the water, the sea otter floats on its back with the shellfish on its chest. Using its chest as a table, the sea otter hits the shellfish using the rock like a hammer. The shell opens, and the sea otter eats a tasty meal.</li>
 
-      <li>The young birds learn to peck the ground and eat plants by watching older ostriches. They eat mostly plants, seeds, and roots but will also eat insects and small lizards. This diet helps the chicks grow quickly, almost a foot each month!</li>
+      <p><b>Thick Fur</b></p>
+      <li>Oceans are cold, and the sea otter does not have blubber, or fat, to keep it warm like other sea mammals. Instead, the sea otter has very thick fur. The fur is made of two layers. Between each layer there are pockets of air, which keep the animal warm. The fur is very important because it helps keep the sea otter warm in the water.</li>
 
-      <p><b>Speedy Runners</b></p>
-      <li>Although these birds cannot fly, powerful legs help them move quickly. Ostriches can bolt across the ground at 43 miles per hour. They keep their wings outstretched while running. This helps them keep their balance, especially when changing direction.</li>
-
-      <p><b>Staying Safe</b></p>
-      <li>With such speed, ostriches outrun most predators, but they know how to defend themselves too. Their strong legs can deliver a kick that stops a lion! Ostriches use another trick to stay safe. They sit down on the ground, rest their heads on the sand, and lie very still. The sand blends with the color of the ostriches so other animals do not notice them.</li>
-
-      <li>Today, wild ostriches live in Africa, but many tame ones live on farms and in zoos. Ostriches are unusual-looking birds, but their power and speed make them one of the fastest animals on land.</li>
-
-<div class="passage-innerbox">
-      <p><b>Ostrich Facts</b><br>
-      Life span: 30-40 years<br>
-      Weight: 350 pounds<br>
-      Height: 8-9 feet<br>
-      Egg weight: 3 pounds<br>
-      Nest size: Up to 8 feet<br>
-      Herd size: Usually fewer than 12 birds</p>
-</div>
+      <p><b>Nap Time</b></p>
+      <li>A sea otter likes to float on its back in a sea of kelp, or large seaweed. The animal wraps strands of the kelp around itself while resting or sleeping. The kelp stops the sea otter from floating away. Whole groups of sea otters may be seen floating together. Living in the ocean is just right for the sea otter!</li>
+</ol>
     `
   },
 
@@ -251,6 +126,38 @@ const readingPassages = {
         <li>Oh, no! It's my shoe!</li>
       </ol>
     `
+  },
+
+       'cherry_lemonade': {
+    title: 'Cherry Lemonade',
+    content: `
+      <ol class="paragraph-numbers">
+        <li>“Lemonade for sale!” called Bonnie</li>
+        <li>As a boy walked past.</li>
+        <li>“I just bought some cherry juice!”</li>
+        <li>He said. “Go try a glass!”</li><br>
+
+        <li>Bonnie looked across the street</li>
+        <li>To where Steve sold that drink.</li>
+        <li>“My lemonade’s the best,” she yelled.</li>
+        <li>Steve yelled, “That’s what you think!”</li><br>
+
+        <li>Some people bought from Bonnie.</li>
+        <li>A few more bought from Steve,</li>
+        <li>Until finally Bonnie said to him,</li>
+        <li>“Here’s what I now believe.”</li><br>
+
+        <li>“There is a way to reach them all,</li>
+        <li>Another way to sell—</li>
+        <li>Let’s mix our drinks together!”</li>
+        <li>Steve said, “Yeah! That would work well!”</li><br>
+
+        <li>They mixed their drinks and shared a stand.</li>
+        <li>Steve said, “We have it made!”</li>
+        <li>A line of people waited now</li>
+        <li>For cherry lemonade.</li>
+      </ol>
+    `
   }
 
 };
@@ -258,14 +165,14 @@ const readingPassages = {
 const sampleQuestions = [
   {
     id: '1',
-    text: 'Another good title for this story would be--',
+    text: 'The photograph in the article helps the reader understand —',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: 'speedy_and_spotty',
     options: [
-      'Sewing New Clothes',
-      'Baking for the Family', 
-      'A Morning Snack',
-      'Gifts for Everyone'
+      'what makes a cheetah a great hunter',
+      'why a cheetah has spots on its fur', 
+      'how cheetahs are able to make quick turns',
+      'how cheetahs are different from other cats'
     ],
     correctAnswer: 3,
     explanation: 'The story is about both Danielle making cupcakes as a surprise for her siblings and her siblings making an apron as a surprise for her. Everyone in the story gives and receives gifts.'
@@ -273,14 +180,14 @@ const sampleQuestions = [
 
   {
     id: '2', 
-    text: 'Danielle keeps the cupcakes a secret by--',
+    text: 'The cheetah’s coat is most useful because it —',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: 'speedy_and_spotty',
     options: [
-      'moving them to the laundry room',
-      'making them in the morning', 
-      'placing them inside a box',
-      'covering them with paper'
+      'keeps the cheetah cool after a long run',
+      'lets the cheetah move with great speed', 
+      'helps the cheetah hide in the grass',
+      'protects the cheetah from the sun'
     ],
     correctAnswer: 1,
     explanation: 'The passage states that Danielle "had baked cupcakes early in the morning, while Martin and Madison were still asleep," which kept them secret.'
@@ -288,15 +195,14 @@ const sampleQuestions = [
 
   {
     id: '3',
-    text: 'Complete this flow chart. <br><img src="images/question_3.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+    text: 'One reason Kelly finishes in third place is because she —',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: 'ready_for_the_race',
     options: [
-      'Danielle looks at the edges of the apron.',
-      'Danielle finds bits of cloth in the laundry room.', 
-      'Danielle sets the cupcakes on the table.',
-      'Danielle walks into her bedroom.',
-      'Danielle tries on the apron.'
+      'knows the course well',
+      'is more confident than Marcus', 
+      'has a better bicycle than Marcus',
+      'pays attention to the other riders',
     ],
     correctAnswer: 4,
     explanation: 'After receiving the apron and saying "Thank you. It\'s perfect," the passage says "As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table."'
@@ -304,14 +210,14 @@ const sampleQuestions = [
 
   {
     id: '4',
-    text: 'Danielle is pleased with the surprise most likely because she--',
+    text: 'Who is telling this story?',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: 'ready_for_the_race',
     options: [
-      'needs to wear it when making cupcakes',
-      'can cook more often for her family',
-      'enjoys wearing blue and yellow clothes',
-      'can tell that her family cares about her'
+      'Kelly',
+      'Sam',
+      'Marcus',
+      'Narrator'
     ],
     correctAnswer: 3,
     explanation: 'Madison says "We wanted to make a surprise for you because you\'re such a nice sister. You are always thinking of us." This shows her family\'s care and appreciation for her.'
@@ -319,14 +225,14 @@ const sampleQuestions = [
 
   {
     id: '5',
-    text: 'What will Martin and Madison most likely do next?',
+    text: 'Which sentence best states the theme of the story?',
     type: 'multiple-choice', 
-    passageId: 'the_cooks_surprise',
+    passageId: 'ready_for_the_race',
     options: [
-      'Make another apron',
-      'Help their sister cook',
-      'Clean the laundry room',
-      'Bite into their cupcakes'
+      'It is important to admit mistakes.',
+      'It is better to join in with friends than to do an activity alone.',
+      'It is helpful to encourage others when trying something for the first time.',
+      'It is a good idea to prepare before doing something new.'
     ],
     correctAnswer: 3,
     explanation: 'At the end, Danielle says "I have a surprise for you too!" and leads them to the kitchen where she left cupcakes for them.'
@@ -334,14 +240,14 @@ const sampleQuestions = [
 
   {
     id: '6',
-    text: 'Which of these do the characters have in common?',
+    text: 'Which sentence best states the main idea of paragraph 1?',
     type: 'multiple-choice', 
-    passageId: 'the_cooks_surprise',
+    passageId: 'american_bald_eagle',
     options: [
-      'They think of others.',
-      'They sleep late.',
-      'They sew clothes.',
-      'They like to cook.'
+      'The bald eagle was a popular choice for a symbol.',
+      'People in America wanted a symbol for their new country.',
+      'Congress disagreed about which symbol to select.',
+      'The symbol would remind people that they were a free country.'
     ],
     correctAnswer: 0,
     explanation: 'All three characters make surprises for each other: Danielle bakes cupcakes for her siblings, and Martin and Madison make an apron for Danielle, showing they all think of others.'
@@ -349,14 +255,14 @@ const sampleQuestions = [
 
   {
     id: '7',
-    text: 'What is the root word in "discovered"?',
+    text: 'Which heading best belongs above paragraph 2?',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: 'american_bald_eagle',
     options: [
-      'disc',
-      'disco', 
-      'cover',
-      'over'
+      'Writing Letters',
+      'Eagles and Turkeys', 
+      'Freedom for America',
+      'The Founding Fathers'
     ],
     correctAnswer: 2,
     explanation: 'The root word in "discovered" is "cover." The prefix "dis-" means "not" and the suffix "-ed" shows past tense, so "discovered" means "uncovered" or "found."'
@@ -364,14 +270,14 @@ const sampleQuestions = [
 
   {
     id: '8',
-    text: 'Some people eat seaweed all by itself because they most likely--',
+    text: 'Which question is answered in paragraph 2?',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea', 
+    passageId: 'american_bald_eagle', 
     options: [
-      'do not know it is used in other foods',
-      'eat many foods that come from the ocean',
-      'enjoy foods that add color to the meals they eat', 
-      'do not like how it tastes mixed with other foods'
+      'Who were the Founding Fathers of the United States?',
+      'Why was Benjamin Franklin against choosing the bald eagle?',
+      'How many types of birds can be found in North America?', 
+      'Why did Americans want a symbol for their country?'
     ],
     correctAnswer: 1,
     explanation: 'The passage states that "In some parts of the world, especially near the ocean, people eat seaweed all by itself," suggesting people near oceans commonly eat foods from the sea.'
@@ -379,14 +285,14 @@ const sampleQuestions = [
 
   {
     id: '9',
-    text: 'Based on the article, seaweed makes ice cream and yogurt--',
+    text: 'Which word is an antonym for <u>joined</u> as used in paragraph 4?',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea',
+    passageId: 'american_bald_eagle',
     options: [
-      'last longer',
-      'taste different',
-      'sell faster',
-      'look different',
+      'prepared',
+      'changed',
+      'completed',
+      'separated',
     ],
     correctAnswer: 3,
     explanation: 'The passage explains that "Without seaweed, ice cream and yogurt would not be as thick or creamy but would seem rather lumpy and watery," showing seaweed affects how they look and their texture.'
@@ -394,29 +300,29 @@ const sampleQuestions = [
 
   {
     id: '10',
-    text: 'Which question is answered in the article?',
+    text: 'What does <u>defend</u> mean in paragraph 4?',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea',
+    passageId: 'american_bald_eagle',
     options: [
-      'What does seaweed taste like?',
-      'Where do farmers buy seaweed?',
-      'Which ocean has the most seaweed?',
-      'Which goods have seaweed in them?',
+      'lead the way',
+      'find help',
+      'protect from harm',
+      'break away',
     ],
     correctAnswer: 3,
     explanation: 'The article mentions several goods that contain seaweed: toothpaste, shampoo, makeup, ice cream, and yogurt. It also states "Hundreds of everyday items have seaweed in them."'
   },
 
-    {
+  {
     id: '11',
-    text: 'The author wrote this article most likely to--',
+    text: 'The author wrote this article most likely to —',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea',
+    passageId: 'american_bald_eagle',
     options: [
-      'give facts about an ocean plant',
-      'list kinds of ocean plants',
-      'tell about people who eat ocean plants',
-      'tell how to cook with ocean plants',
+      'explain why Americans need a symbol',
+      'show ways to honor the bald eagle',
+      'share a part of American history',
+      'describe the bald eagle',
     ],
     correctAnswer: 0,
     explanation: 'The article provides factual information about seaweed, explaining what it is, where it grows, and how it is used in various everyday products.'
@@ -424,433 +330,272 @@ const sampleQuestions = [
 
   {
     id: '12',
-    text: 'In an Internet search about oceans, which website would most likely have information about where red seaweed grows?',
-    type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea',
-    options: [
-      'Life in the Ocean: Learn about whales, dolphins, and many other creatures of the ocean...',
-      'Ocean Habitats: Learn to recognize the ocean homes of many types of fish...',
-      'Discover Ocean Plants: Find interesting facts about plants that live in the ocean...',
-      'Photos of the Ocean Floor: Follow a team of divers who take amazing pictures of the ocean floor...',
-      'Foods From the Ocean: Discover how food from the ocean ends up on people\'s plates...'
-    ],
-    correctAnswer: 2,
-    explanation: 'The website "Discover Ocean Plants" would be most likely to have information about where red seaweed grows, as seaweed is a type of ocean plant.'
-  },
-
-  {
-    id: '13',
-    text: 'What makes the secret message appear in "Lemony Letter"?',
-    type: 'multiple-choice',
-    passageId: 'secret_message',
-    options: [
-      'Heat',
-      'Light',
-      'Juice',
-      'Water',
-    ],
-    correctAnswer: 0,
-    explanation: 'The instructions state: "Have the person who receives your message hold the paper near a light bulb. The heat will make the secret message appear!"'
-  },
-
-  {
-    id: '14',
-    text: 'In "Mirror Message" when the steam in the bathroom is gone, the message will most likely--',
-    type: 'multiple-choice',
-    passageId: 'secret_message',
-    options: [
-      'spread',
-      'turn white',
-      'disappear',
-      'turn brown',
-    ],
-    correctAnswer: 2,
-    explanation: 'The message only appears when steam covers the mirror. When the steam clears and goes away, the message would no longer be visible.'
-  },
-
-  {
-    id: '15',
-    text: 'In step 3 of "Mirror Message," what does the word <u>invisible</u> mean?',
-    type: 'multiple-choice',
-    passageId: 'secret_message',
-    options: [
-      'clear',
-      'small',
-      'hidden',
-      'forgotten',
-    ],
-    correctAnswer: 2,
-    explanation: 'In this context, "invisible" means the message cannot be seen or is hidden from view until the steam makes it appear.'
-  },
-
-  {
-    id: '16',
-    text: '"Lemony Letter" and "Mirror Message" are alike because both--',
-    type: 'multiple-choice',
-    passageId: 'secret_message',
-    options: [
-      'need help from a grownup',
-      'need the use of a lamp',
-      'have messages that must be dry to be read',
-      'have messages that must be painted to be read',
-    ],
-    correctAnswer: 0,
-    explanation: 'Both methods require adult assistance: "Lemony Letter" needs a grownup to cut the lemon in half, and "Mirror Message" needs a grownup to peel the potato.'
-  },
-
-  {
-    id: '17',
-    text: 'In "Crazy Crayon," it is hard to see the message before painting over it because the message--',
-    type: 'multiple-choice',
-    passageId: 'secret_message',
-    options: [
-      'needs to be next to light',
-      'takes a long time to change color',
-      'is written on dark paper',
-      'is written in a white color',
-    ],
-    correctAnswer: 3,
-    explanation: 'The instructions say to use a white crayon on white paper, making it "difficult to see the markings" because white crayon on white paper is nearly invisible.'
-  },
-
-  {
-    id: '18',
-    text: 'One reason to read the flier is to--',
-    type: 'multiple-choice',
-    passageId: 'secret_message',
-    options: [
-      'find out when spies need to use secret messages',
-      'learn how secret messages are made',
-      'discover secret messages that have been sent in the past',
-      'learn about the first person to send a secret message',
-    ],
-    correctAnswer: 1,
-    explanation: 'The flier provides step-by-step instructions for three different methods of creating secret messages, teaching readers how to make them.'
-  },
-
-  {
-    id: '19',
-    text: 'The author puts numbers before some sentences in the flier to--',
-    type: 'multiple-choice',
-    passageId: 'secret_message',
-    options: [
-      'list the steps in the order of importance',
-      'order the steps the reader will follow',
-      'show how many items the reader needs in each step',
-      'tell about how many minutes each step will take',
-    ],
-    correctAnswer: 1,
-    explanation: 'The numbers indicate the sequential order of steps that must be followed to successfully create each type of secret message.'
-  },
-
-  {
-    id: '20',
-    text: 'Read this sentence and dictionary entry. <div class="passage-innerbox"><b>In the winter, grocery stores <u>charge</u> too much for strawberries.</b></div> <div class="passage-dicbox"><b>charge</b> (chärj) <i>v.</i> <b>1.</b> To give orders. <b>2.</b> To set as a price. <b>3.</b> To fill up completely. <b>4.</b> To rush forward.</div>',
-    type: 'multiple-choice',
-    options: [
-      '1',
-      '2',
-      '3',
-      '4',
-    ],
-    correctAnswer: 1,
-    explanation: 'In the context of grocery stores charging "too much" for strawberries, "charge" means "to set as a price," which is definition 2.'
-  },
-
-  {
-    id: '21',
-    text: 'Guide words: <div class="passage-innerbox">camera - cause</div> <br>Which two words would appear on the same page as these guide words?',
-    type: 'multiple-select',
-    options: [
-      'carrot',
-      'cabin',
-      'calm',
-      'canal',
-      'cave'
-    ],
-    correctAnswer: [0, 3],
-    explanation: 'Guide words show the first and last entries on a dictionary page. "Carrot" and "canal" fall alphabetically between "camera" and "cause." "Cabin" comes before "camera" and "cave" comes after "cause."'
-  },
-
-  {
-    id: '22',
-    text: 'The title tells readers that a character in the story will most likely--',
-    type: 'multiple-choice',
-    passageId: 'hidden_treasure',
-    options: [
-      'spend time outdoors',
-      'need to draw a map',
-      'go to an amazing place',
-      'search for something',
-    ],
-    correctAnswer: 3,
-    explanation: 'The title "A Hidden Treasure" suggests that characters will be looking for or searching for something that is hidden.'
-  },
-
-  {
-    id: '23',
-    text: 'Paragraph 5 is important to the story because it-',
-    type: 'multiple-choice',
-    passageId: 'hidden_treasure',
-    options: [
-      'tells what is on the map',
-      'tells why Evan likes to go fishing',
-      'shows how the attic looks',
-      'shows where Grandma lives',
-    ],
-    correctAnswer: 0,
-    explanation: 'Paragraph 5 describes what Evan found on the map: "Grandma\'s house, a raindrop inside a square, two little triangles, and a dock" with an "X" marking the "Greatest Fishing Spot."'
-  },
-
-  {
-    id: '24',
-    text: 'After Evan and Mark find the map, they both feel--',
-    type: 'multiple-choice',
-    passageId: 'hidden_treasure',
-    options: [
-      'wise',
-      'calm',
-      'proud',
-      'eager',
-    ],
-    correctAnswer: 3,
-    explanation: 'The text shows their excitement: Evan asks "Excitedly" if they can find the fishing spot, Mark says "Let\'s try," and "they thundered down the steps," showing they are eager to start their search.'
-  },
-
-  {
-    id: '25',
-    text: 'Where does this story begin and end?',
-    type: 'multiple-choice',
-    passageId: 'hidden_treasure',
-    options: [
-      'At the river',
-      'Near the trees',
-      'In the kitchen',
-      'In the attic',
-    ],
-    correctAnswer: 2,
-    explanation: 'The story begins with Grandma painting her kitchen, and ends with the boys rushing back "into the kitchen" with their question about the dock, then planning to get fishing poles.'
-  },
-
-  {
-    id: '26',
-    text: 'Based on the story, where does the map first lead the boys? <br><img src="images/question_26.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
-    type: 'multiple-choice',
-    passageId: 'hidden_treasure',
-    options: [
-      'The house',
-      'The water tower',
-      'The trees',
-      'The Greatest Fishing Spot',
-    ],
-    correctAnswer: 1,
-    explanation: 'Mark says "The square with the raindrop is behind Grandma\'s house" and they look for the water tower with the faded raindrop symbol first.'
-  },
-
-  {
-    id: '27',
-    text: 'Which question is answered at the end of the story?',
-    type: 'multiple-choice',
-    passageId: 'hidden_treasure',
-    options: [
-      'What brings fish to a certain area?',
-      'What happened to the old dock?',
-      'How often did Mom go to the old dock?',
-      'How many fish does Grandma catch?',
-    ],
-    correctAnswer: 1,
-    explanation: 'When the boys ask about the dock, Grandma explains: "That dock was torn down a long time ago."'
-  },
-
-  {
-    id: '28',
-    text: 'Place these words in alphabetical order.',
-    type: 'drag-drop',
-    passageId: 'hidden_treasure',
-    options: ['steps', 'shouted', 'searched', 'smiled', 'spend'],
-    dropZones: [' ', ' ', ' ', ' ', ' '],
-    correctAnswer: [2, 1, 3, 4, 0],
-    explanation: 'In alphabetical order: searched, shouted, smiled, spend, steps.'
-  },
-
-  {
-    id: '29',
-    text: 'Based on paragraph 4, the reader can tell that-',
-    type: 'multiple-choice',
-    passageId: 'ostrich',
-    options: [
-      'chicks learn to eat by watching older ostriches',
-      'ostriches need people to feed them a healthy diet',
-      'plants are easier for ostriches to feed on than insects',
-      'chicks wait to eat until the grown ostriches finish',
-    ],
-    correctAnswer: 0,
-    explanation: 'Paragraph 4 directly states: "The young birds learn to peck the ground and eat plants by watching older ostriches."'
-  },
-
-  {
-    id: '30',
-    text: 'Paragraph 6 explains that one way ostriches keep themselves safe is by--',
-    type: 'multiple-choice',
-    passageId: 'ostrich',
-    options: [
-      'flying',
-      'digging',
-      'kicking',
-      'sleeping',
-    ],
-    correctAnswer: 2,
-    explanation: 'Paragraph 6 states: "Their strong legs can deliver a kick that stops a lion!"'
-  },
-
-  {
-    id: '31',
-    text: 'What information can be learned by reading the chart at the end of the article?',
-    type: 'multiple-choice',
-    passageId: 'ostrich',
-    options: [
-      'What do ostriches use to build a nest?',
-      'Why do ostriches keep the herd size low?',
-      'How long do ostriches live?',
-      'How many eggs do ostriches lay?',
-    ],
-    correctAnswer: 2,
-    explanation: 'The "Ostrich Facts" chart shows "Life span: 30-40 years," which answers how long ostriches live.'
-  },
-
-  {
-    id: '32',
-    text: 'Based on the article, one way the male leader is like the females in the herd is that he helps--',
-    type: 'multiple-choice',
-    passageId: 'ostrich',
-    options: [
-      'make the nest',
-      'guard the eggs',
-      'hide the chicks',
-      'feed the chicks',
-    ],
-    correctAnswer: 1,
-    explanation: 'The text states: "The male and one of the females take turns guarding and sitting on the eggs."'
-  },
-
-  {
-    id: '33',
-    text: 'The feathers of an ostrich help the bird--',
-    type: 'multiple-choice',
-    passageId: 'ostrich',
-    options: [
-      'run fast',
-      'stay warm',
-      'move quietly',
-      'look bigger',
-    ],
-    correctAnswer: 1,
-    explanation: 'The passage explains: "Their new fluffy feathers trap air and keep the chicks warm at night."'
-  },
-
-  {
-    id: '34',
-    text: 'Based on the article, what can the reader most likely tell about ostriches?',
-    type: 'multiple-choice',
-    passageId: 'ostrich',
-    options: [
-      'They can run faster than any other animal.',
-      'Their wings are their most useful part.',
-      'Their speed helps them escape.',
-      'They usually kick their enemies.',
-    ],
-    correctAnswer: 2,
-    explanation: 'The article states: "With such speed, ostriches outrun most predators" and that they can run 43 miles per hour, showing their speed helps them escape danger.'
-  },
-
-  {
-    id: '35',
-    text: 'After looking at the title, the reader knows that this poem is about--',
+    text: 'Which lines show the conflict in the poem?',
     type: 'multiple-choice',
     passageId: 'search',
     options: [
-      'hiding something',
-      'finding something',
-      'looking for something',
-      'thinking about something',
+      'Lines 1-4',
+      'Lines 5-8',
+      'Lines 9-12',
+      'Lines 21-24',
     ],
     correctAnswer: 2,
     explanation: 'The title "The Search" indicates the poem will be about someone searching or looking for something.'
   },
 
   {
-    id: '36',
-    text: 'What does <u>pause</u> mean in line 13?',
+    id: '13',
+    text: 'The resolution in the poem happens as soon as the speaker —',
     type: 'multiple-choice',
     passageId: 'search',
     options: [
-      'Try to remember',
-      'Begin to ask questions',
-      'Think about the past',
-      'Stop for a short time',
+      'stops searching',
+      'looks out into the yard',
+      'hears Dad ask questions',
+      'sits on the steps',
     ],
     correctAnswer: 3,
     explanation: '"Pause" means to stop briefly or for a short time. The speaker stops in their tracks when Dad asks questions.'
   },
 
   {
-    id: '37',
-    text: 'In lines 17-20, the speaker can best be described as--',
+    id: '14',
+    text: 'Which word best describes the speaker throughout the poem?',
     type: 'multiple-choice',
     passageId: 'search',
     options: [
-      'scared',
-      'upset',
-      'angry',
-      'lazy',
+      'Patient',
+      'Tired',
+      'Lazy',
+      'Worried',
     ],
     correctAnswer: 1,
     explanation: 'Lines 17-20 show disappointment and sadness: "It\'s surely gone missing / There\'s clearly no hope. / I have to give up / Find somewhere to mope." The speaker feels upset about losing the shoe.'
   },
 
   {
-    id: '38',
-    text: 'Where is the first place the speaker looks for the shoe?',
+    id: '15',
+    text: 'Which question is answered in paragraph 2?',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'sea_otters',
     options: [
-      'Under the sofa',
-      'In the car',
-      'In a sports bag',
-      'Near the steps',
+      'How often do sea otters hunt?',
+      'How do sea otters keep their ears closed?',
+      'When are sea otters fully grown?',
+      'What do sea otters do when they hunt?',
     ],
     correctAnswer: 2,
     explanation: 'The first line of the poem states: "I\'ve emptied my sports bag," which shows this was the first place searched.'
   },
 
   {
-    id: '39',
-    text: 'Based on the events in the poem, the shoe was most likely last worn--',
+    id: '16',
+    text: 'What is the main idea of paragraph 4?',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'sea_otters',
     options: [
-      'at school',
-      'during a game',
-      'at a friend\'s house',
-      'in a friend\'s car',
+      'Most sea animals have fur.',
+      'Sea animals are often cold.',
+      'A sea otter has fur to keep it warm.',
+      'A sea otter is a type of mammal.',
     ],
     correctAnswer: 1,
     explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
   },
 
   {
-    id: '40',
-    text: 'Which question is answered in the poem?',
+    id: '17',
+    text: 'Read this sentence from paragraph 5. <div class="question-innerbox">Whole groups of sea otters may be <u>seen</u> floating together.</div>Which word is a homophone for <u>seen</u>?',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'sea_otters',
     options: [
-      'What is the dog\'s new chew toy?',
-      'Why is the dog playing outside?',
-      'What sport does the speaker play?',
-      'When was the speaker\'s last game?',
+      'seed',
+      'scene',
+      'sing',
+      'seem',
     ],
     correctAnswer: 0,
     explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+  },
+
+  {
+    id: '18',
+    text: 'Based on the article, the ocean is a perfect home for the sea otter because the —',
+    type: 'multiple-choice',
+    passageId: 'sea_otters',
+    options: [
+      'ocean has everything that the sea otter needs',
+      'sea otter has few enemies in the ocean',
+      'ocean is deep enough for the sea otter to float',
+      'sea otter can easily find kelp in the ocean',
+    ],
+    correctAnswer: 1,
+    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+  },
+
+  {
+    id: '19',
+    text: 'Based on the article, sea otters can swim well mainly because their —',
+    type: 'multiple-choice',
+    passageId: 'sea_otters',
+    options: [
+      'feet are webbed',
+      'eyes are large',
+      'backs are flat',
+      'paws are strong',
+    ],
+    correctAnswer: 1,
+    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+  },
+
+  {
+    id: '20',
+    text: 'Based on the article, a sea otter finds its favorite foods —',
+    type: 'multiple-choice',
+    passageId: 'sea_otters',
+    options: [
+      'within the kelp',
+      'on top of the water',
+      'underneath small rocks',
+      'on the ocean floor',
+    ],
+    correctAnswer: 1,
+    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+  },
+
+  {
+    id: '21',
+    text: 'One purpose of the sea otter’s chest is to help the animal —',
+    type: 'multiple-choice',
+    passageId: 'sea_otters',
+    options: [
+      'protect itself',
+      'dive',
+      'break shells',
+      'float',
+    ],
+    correctAnswer: 1,
+    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+  },
+
+  {
+    id: '22',
+    text: 'The author uses headings in the article most likely to —',
+    type: 'multiple-choice',
+    passageId: 'sea_otters',
+    options: [
+      'list interesting facts about sea otters',
+      'tell what can be learned from each section',
+      'share answers to common questions',
+      'put information about sea otters in order',
+    ],
+    correctAnswer: 1,
+    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+  },
+
+  {
+    id: '23',
+    text: 'Based on the article, what may happen if a sea otter rests far from seaweed?',
+    type: 'multiple-choice',
+    passageId: 'sea_otters',
+    options: [
+      'It may become colder more quickly.',
+      'It may wake up in another area.',
+      'It may have trouble falling asleep.',
+      'It may find another group.',
+    ],
+    correctAnswer: 1,
+    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+  },
+
+  {
+    id: '24',
+    text: 'Bonnie and Steve are proud in the beginning of the poem because they each —',
+    type: 'multiple-choice',
+    passageId: 'cherry_lemonade',
+    options: [
+      'used a special fruit to make their drinks',
+      'believe their drinks are the best',
+      'learned how to make new drinks',
+      'set up a stand to sell drinks',
+    ],
+    correctAnswer: 1,
+    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+  },
+
+  {
+    id: '25',
+    text: 'Based on the poem, how does Bonnie first find out Steve is selling cherry juice?',
+    type: 'multiple-choice',
+    passageId: 'cherry_lemonade',
+    options: [
+      'A boy tells her he bought some.',
+      'Steve sets up his stand across the street.',
+      'More people are waiting in line at the other stand.',
+      'Bonnie looks across the street.',
+    ],
+    correctAnswer: 1,
+    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+  },
+
+  {
+    id: '26',
+    text: 'Which question is answered in the poem?',
+    type: 'multiple-choice',
+    passageId: 'cherry_lemonade',
+    options: [
+      'How do Steve and Bonnie decide to sell cherry lemonade?',
+      'How many people bought cherry juice?',
+      'Why do Steve and Bonnie decide to have drink stands?',
+      'Why is selling drinks a good idea?',
+    ],
+    correctAnswer: 1,
+    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+  },
+
+  {
+    id: '27',
+    text: 'Which line from the poem is where the reader understands how the problem is solved?',
+    type: 'multiple-choice',
+    passageId: 'cherry_lemonade',
+    options: [
+      '8',
+      '12',
+      '15',
+      '16',
+    ],
+    correctAnswer: 1,
+    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+  },
+
+  {
+    id: '28',
+    text: 'How is Bonnie different from Steve?',
+    type: 'multiple-choice',
+    passageId: 'cherry_lemonade',
+    options: [
+      'She sells a fruity drink.',
+      'She is better at selling drinks.',
+      'She thinks of an idea.',
+      'She is excited about working with someone.',
+    ],
+    correctAnswer: 1,
+    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+  },
+
+  {
+    id: '29',
+    text: 'Bonnie and Steve end up sharing a stand because they —',
+    type: 'multiple-choice',
+    passageId: 'cherry_lemonade',
+    options: [
+      'are tired of shouting at each other',
+      'think they should help each other',
+      'become friends after spending time together',
+      'want to sell to as many people as possible',
+    ],
+    correctAnswer: 1,
+    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
   },
 ];
 

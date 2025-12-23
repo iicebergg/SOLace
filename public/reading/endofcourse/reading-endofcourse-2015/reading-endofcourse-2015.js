@@ -2,270 +2,689 @@ window.TEST_IDENTIFIER = 'reading_endofcourse_2015';
 
 // Reading passages that can be referenced by multiple questions
 const readingPassages = {
-  'the_cooks_surprise': {
-    title: 'The Cook\'s Surprise',
+  'all_this_junk': {
+    title: 'All This Junk',
     content: `
      <ol class="paragraph-numbers">
-      <li>Danielle loved to cook delicious food on Saturdays. She enjoyed seeing her family members smile as they tasted a meal she made. Today Danielle had a surprise for her younger brother and sister. She had baked cupcakes early in the morning, while Martin and Madison were still asleep.</li>
+      <li>Benjamin slumped down on his front steps and leaned back on
+his elbows, ignoring the rough prickle of the concrete on his skin.
+He silently bemoaned that there was nothing to do around his
+tranquil neighborhood in the summertime. Squinting up at the
+cloudless sky, the tall teenager shook his head. It was definitely
+too hot for basketball, even if he knew any guys to shoot baskets
+with. Benjamin shut his eyes and tipped his face up to the sun. The
+sun glowed through his eyelids, but he stayed that way, listening to
+the neighborhood sounds. Traffic rumbled on Fremont Avenue, and
+someone's dog barked repetitively. A lawn mower buzzed back and
+forth blocks away, while squeals and splashes exploded from the
+little kids playing in the backyard next door. It was nothing but the
+omnipresent summer soundtrack, so ordinary it blended together
+as a hum of background sound, noise without meaning. And then,
+underneath it all, a deep, rhythmical banging floated through
+the air.</li>
 
-      <li>After lunch Danielle decided to take her brother and sister their surprises. Danielle carried the two cupcakes as she walked from room to room. She could not find Martin and Madison anywhere.</li>
+      <li>Benjamin cocked his head and listened to the odd, particularly loud
+and metallic <i>whang!</i> The banging stopped for a bit, only to start
+again on a slightly different note. Benjamin tapped his hand in time
+to the rhythm and then climbed back to his feet, stuck his head
+inside the house, and called, "Mom, I'm going for a walk."</li>
 
-      <li>At last, Danielle entered the laundry room. There she noticed bits of yellow ribbon on the floor. Scraps of blue cloth lay next to the sewing machine, which had not been used in years. She thought it was an odd sight but decided to keep looking for her brother and sister.</p>
+      <li>His mother yelled her agreement back to him, but Benjamin
+was already listening to the industrial music again, trying to
+decide where the noise was coming from. He ambled slowly
+down the street until he reached the corner and realized the
+noise was traveling uphill from the nearby bramble-choked
+junkyards. "<i>Humph</i>," Benjamin snorted, "I've never seen anything
+around there except guys hunting for car parts. Maybe one of
+them is breaking up a wrecked car or something." Standing on the
+corner, Benjamin thought about heading back home and maybe
+calling one of his friends from his old neighborhood across town,
+but the banging kept interrupting his thoughts. Almost without his
+permission, his feet started down the hill toward the sound.</p>
 
-      <li>On her way back to the kitchen, Danielle had a perfect idea. She set the cupcakes on the table and found a sheet of paper and a marker. In large letters, she wrote, "For Martin and Madison." She imagined Martin and Madison grinning with delight when they discovered the surprise.</p>
+      <li>Soon Benjamin was tracking the sound down an old alley cluttered
+with rusty machinery tumbled into heaps. He swung wide around
+an anonymous heap of metal being swallowed by a greedy mound
+of blackberry brambles and came to an abrupt halt.</p>
 
-      <li>Suddenly, Danielle heard noises coming from her bedroom. She decided to find out what was happening.</p>
+      <li>In front of him was a gate made of wildly twisted neon-green metal
+bars, but Benjamin hardly glanced at the gate; his gaze was pinned
+on the scene beyond the gate: a tall woman with a gray ponytail
+was leaning over a large, metal sheet and pounding powerfully
+with a heavy hammer. Benjamin stared for a minute, wincing
+occasionally when the hammer met the metal with an especially
+loud clang, then leaned into the gate to get a better look at the
+form the metal was taking under her hammer.</p>
 
-      <li>"Surprise!" shouted two voices when Danielle opened her door.</li>
+      <li>The gate screamed a shrill <i>squeeeeee</i> and swung open
+unexpectedly under Benjamin's weight, making him stumble into
+a nearby stack of metal bars that clattered helter-skelter to the
+ground around him. When Benjamin regained his balance he found
+the woman standing tall in front of him. "Who might you be?" she
+asked, scowling, while removing her ear protection and looking him
+straight in the eye. "And why are you wreaking havoc in my yard?"</li>
 
-      <li>Danielle's heart jumped. Martin and Madison were waiting for her, and they had a package in their hands.</p>
+      <li>Benjamin shifted from foot to foot under the woman's intent gaze
+and thought about just walking away, but he still hadn't gotten a
+good look at the bright sheet of metal behind her. Craning his head
+to the side to get another peek at it, he answered politely enough,
+"My name's Benjamin, and I live up on Hendricks Avenue," waving
+his hand vaguely at the steep hill behind him. "I heard the noise of
+your hammering and wandered down here to find out what it was."
+Then Benjamin blushed and apologized. "I'm sorry about knocking
+over those metal bars; I'll lean them up for you if you like."</p>
 
-      <li>"This is for you," said Martin.</p>
+      <li>The woman continued staring at him for so long that Benjamin
+wondered if he'd said something wrong, but then she nodded
+sharply and spoke again. "There's nothing wrong with being
+curious, though it helps if you're light on your feet." She gestured
+at the metal scattered around his feet. "Stack those in the barrel by
+the tower," she said, pointing to an unexpectedly graceful tower of
+angular metal shapes welded together that stood in the far comer
+of the yard. "And I'm sorry if my hammering bothered you; usually
+I work inside my studio, but it's too hot for that today."</p>
 
-      <li>"Open it," added Madison.</li>
+      <li>Benjamin had to agree with her about the temperature since just
+carrying the bars to the barrel made him sweaty, but he didn't mind
+so much since each trip took him past the metal tower. The tower's
+form reminded him of a leaping flame or a spouting fountain, but
+he saw it differently from each side, and he noticed something new
+with each trip to the barrel. The woman stood to one side, and he
+eventually realized she was intently watching him study the tower.
+"You like it," she stated bluntly in her gravelly voice, surprising him.</li>
 
-      <li>Danielle took the package. Her hands quickly ripped off the shiny paper, and she opened the box. There was a blue apron folded neatly inside.</li>
+      <li>"I do," Benjamin responded, "even though I don't know what it is."
+He waved his arms around the fenced yard, filled with piles and
+stacks of metal in all shapes and sizes, from shiny bits to rusty
+hulks. "Did you make it out of all this junk?"</li>
 
-      <li>"We wanted to make a surprise for you because you're such a nice sister," said Madison. "You are always thinking of us."</li>
+      <li>The woman laughed, and a wide smile spread across her face.
+"The tower doesn't have to represent anything at all because the
+tower is art, but I did indeed make it out of 'all this junk,' as you
+so cleverly put it." Her voice hardened and her scowl returned and
+she spoke determinedly. "And I'll make another one if I can't get
+this right." She strode impatiently back to the sheet of metal and
+reached for a pair of ear protectors. "You should leave now so I can
+hammer this some more."</li>
 
-      <li>"I drew the apron pattern on the blue cloth and cut it out," Martin said.</li>
+      <li>Benjamin wished he could hang around and watch because he
+couldn't imagine how she could create another tower using the
+materials around her. Instead he turned obediently to go, hesitating
+only when he got to the fantastic gate. "Can I-" he turned to
+face her, swallowed, and started again more politely. "Excuse me,
+ma'am, may I come back tomorrow and see what you've made?"</li>
 
-      <li>"Mom helped me sew the apron, and we attached the yellow ribbon," beamed Madison.</li>
+      <li>The artist barked with laughter and answered, "My name is
+Delilah Norman, and you may definitely come back and inspect
+my progress tomorrow, but go now or there won't be anything to
+inspect except a pile of junk."</li>
 
-      <li>Danielle held the apron. She noticed the crooked lines of stitching along the edges, but she didn't mind the small sewing mistakes. To her, this was the most beautiful apron she had ever seen.</li>
-
-      <li>"Thank you. It's perfect," said Danielle.</li>
-
-      <li>As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table.</li>
-
-      <li>"I have a surprise for you too!" Danielle said, as she began leading her brother and sister down the hall into the kitchen.</li>
+      <li>Benjamin smiled and swung the gate shut. It wasn't the most
+gracious invitation he'd ever heard, but it beat sitting on his steps
+doing nothing.</li>
 </ol>
     `
   },
 
-  'useful_weeds_of_the_sea': {
-    title: 'Useful Weeds of the Sea',
+  'super_stadiums': {
+    title: 'Super Stadiums',
     content: `
     <ol class="paragraph-numbers">
-      <li>Seaweed may not be on many shopping lists, but it plays a big part in people's everyday lives. Seaweed is a plant that grows in the shallow waters near the shores of the world's oceans.</li>
+      <li>Building stadiums that sports teams can use year-round, rain or
+shine, in hot or cold weather, has always been a challenge. In
+places with harsh winters, late-season football games can become
+rather chilly for players and fans alike. In desert regions, where
+autumn sunshine can bring temperatures over 100°F, players face
+the danger of heat exhaustion. However, inventive architects have
+always welcomed the opportunity to face such challenges
+throughout history.</li>
 
-    <img src="images/seaweed.png" alt="Seaweed" style="float: right; height: 120px; margin-left: 10px;">
-      <li>In some parts of the world, especially near the ocean, people eat seaweed all by itself. It has lots of vitamins and is a healthful treat. In places where seaweed is not served as a meal, people use goods that are made from these plants. Hundreds of everyday items have seaweed in them.</li>
+      <li>Now giant stadiums opened to the sky or closed to the elements
+have emerged as the latest attraction in spectator sports. The
+National Football League's Arizona Cardinals University of Phoenix
+Stadium stands out among a new generation of sports arenas
+dubbed Super Stadiums for their size and inventiveness.
+Super Stadiums are to regular sports arenas what computers are to
+typewriters: a technologically advanced version of an old modelbut
+with a higher price tag.</li>
 
-      <li>Seaweed helps many people keep their teeth clean. Toothpaste stays thick when it comes out of the tube because of a gel from a type of red seaweed. No one can see the seaweed in the toothpaste because it is mixed with the gel. This gel is in shampoo and makeup too.</li>
+      <li>Like most stadiums, these big, bulky structures typically hold 20,000
+to 50,000 fans. Some, like the new $1.5 billion New York Giants and
+Jets stadium in New Jersey, hold 82,500 fans. Most stadiums hold
+enough people to form the populace of a midsized city, but
+Super Stadiums offer additional accommodations, such as
+restaurants, luxury lounges-even land bridges to neighboring
+hotels. Architectural and engineering innovations complement the
+package, allowing some facilities to use solar power, recycle water,
+and retract their roofs.</li>
 
-      <li>Without seaweed, ice cream and yogurt would not be as thick or creamy but would seem rather lumpy and watery. Many people eat foods with seaweed without even knowing it.</li>
+      <li>The stadium in Phoenix where the Arizona Cardinals football team plays can be open to the elements on comfortable days or closed to the blazing Arizona sun when the need arises. The roof retracts, or pulls back, on conveyor belts. The grassy playing field also moves on rollers so the grass can be moved outside into full, growth-enhancing sunlight and back inside for a weather-free football game. The field-grass, dirt, and a watering system is embedded in a giant metal sheet that has been compared to a cookie sheet. Motorized rollers-546 of them-move the field outside at a rate of .8 mile per hour.</li>
 
-      <li>Seaweed also helps plants grow. Many farmers around the world spray their fields with seaweed. They buy the seaweed after it has been made into a liquid. The seaweed becomes food for the plants. The vegetables on people's plates often come from these farms.</li>
+      <li>The building materials
+of Super Stadiums can
+also be highly
+specialized. Besides the
+substantial amount of concrete needed to produce a building so
+large, some of these monuments also use energy-saving materials.
+The roof of the cardinals stadium, for example, is made of a thick
+fabric of fiberglass and Teflon. While the roof is only as thick as
+denim jeans, it is strong, holding up to 17,000 pounds per
+square foot. Jumping on it would feel like bouncing on the world's
+largest trampoline. On the outside "skin" of the building is an
+energy-saving metal designed to reflect the changing colors of the
+sky from sun rise to sunset and keep the inside cool but bright.</li>
 
-      <li>People cannot see seaweed in the foods they eat or in the items they use to look their best. However, none of these things would be the same without this useful weed that comes from the sea.</li>
+      <li>Such innovations, however, are not cheap. The cost of
+Super Stadium projects is commonly astronomical. The emphasis on
+increased luxury and advanced technology may lead to even higher
+prices, according to Tom Van Riper, a staff writer for <i>Forbes</i>, a
+leading business journal.</li>
+
+      <li>"The formula," Riper writes, is to "build new facilities with fewer
+seats and more luxury boxes, charge higher prices, earn more
+revenue, hire better players, and reap more wins. Then turn around
+and raise ticket prices."</li>
+
+      <li>Smaller cities around the world hope that investment in these
+monuments of the modern age will pay off by bringing in new
+business revenue and acclaim to their sports teams. Futuristic
+Super Stadiums dedicated to soccer and rugby are opening in
+Lyon, France, and Dublin, Ireland. The Chinese National Stadium,
+which resembles a bird's nest, opened for the 2008 Olympics in
+Beijing. Recently Kansas City built a multifaceted ice hockey
+stadium in the hopes of luring a high-profile professional team.</li>
+
+      <li>Cities and developers alike hope these giant buildings will draw
+new fans to both their sports and their cities at a price tag
+everyone can afford.</li>
 </ol>
     `
   },
 
-  'secret_message': {
-    title: 'Want to Send a Secret Message?',
+  'tezuka': {
+    title: 'Osamu Tezuka, Father of Modern Japanese Manga',
     content: `
-      <p><i>Here are three amazing ways to do it!</i></p>
-      
-      <p>Secret messages have been around for hundreds of years. Spies used them to pass important information without being caught. The next time you want to send a secret message, try one of these fun ideas!</p>
-      
-<div class="passage-innerbox">
-<img src="images/lemony-letter.png" alt="Lemony Letter" style="float: right; height: 100px; margin-left: 10px;">
-      <p><b>Lemony Letter</b></p>
-      <p><u>What you will need:</u>
-      <ul>
-      <li>A lemon</li>
-      <li>A knife</li>
-      <li>A small cup</li>
-      <li>A thin paintbrush</li>
-      <li>A piece of white paper</li>
-      <li>A lamp</li>
-      </ul></p>
-      
-      <p><ol>
-      <li>To have enough juice, gently roll the lemon back and forth against the table with your palm.</li>
-      <li>Have a grownup cut the lemon in half.</li>
-      <li>Squeeze the lemon so the juice drips into the cup.</li>
-      <li>Dip the paintbrush into the juice and write a message on the paper. When the "ink" dries, the paper will appear blank.</li>
-      <li>Give your secret message to a friend or family member.</li>
-      <li>Have the person who receives your message hold the paper near a light bulb. The heat will make the secret message appear! The lemon juice will turn a brown color.</li>
-      </ol></p>
-</div>
+          <ol class="paragraph-numbers">
+      <li>Imagine a camera thousands of feet in the air, looking down on a
+broad river that passes through a rough landscape. Giant cliffs
+tower over the rushing water. A lone canoe moves like a shadow
+downstream. Moving in for a close-up, the camera captures the
+scene as the canoe hits a submerged rock and flips high in the air.
+The canoe and its occupants, a girl and boy, are sent spinning and
+tumbling down a roaring waterfall. Pushed past rocks and assaulted
+with sound, they eventually wash up on a tropical shoreline, bruised
+and battered, but safe at last.</li>
 
-<div class="passage-innerbox">
-<img src="images/mirror-message.png" alt="Mirror Message" style="float: right; height: 100px; margin-left: 10px;">
-      <p><b>Mirror Message</b></p>
-      <p><u>What you will need:</u>
-      <ul>
-      <li>A potato</li>
-      <li>A potato peeler of knife</li>
-      <li>A bathroom mirror</li>
-      </ul></p>
-      
-      <p><ol>
-      <li>Ask a grownup to peel the skin from one end of the potato.</li>
-      <li>Using the peeled end of the potato, write a message in big letters on the bathroom mirror.</li>
-      <li>Your message will be <u>invisible</u> until you take a bath or shower. When you take a shower or bath, close the door so the steam stays in the bathroom. Steam from the hot water will appear on the mirror and make your message show.</li>
-      </ol></p>
+      <li>It could be a scene from an action movie. The point of view shifts
+as fast as a well-edited film. However, this is no movie. It is a page
+from a manga (mahn-ga),
+a Japanese graphic novel.
+Manga are often compared
+to comic books but differ
+dramatically from
+traditional American comic
+books. While manga and
+comic books are similar art
+forms, there are some
+important features that
+distinguish manga from
+comic books, like subject
+matter and artistic style.
+One of the great masters
+of manga is
+Osamu Tezuka.</li>
 
-      <p>Surprise someone else! Write a message on the bathroom mirror for a family member. See how long it takes for the person to discover your secret message.</p>
-</div>
+      <li>Tezuka was born in 1928, the oldest of three children. Tezuka's
+father collected manga and animated films before marrying and
+becoming an engineer. Manga had not yet achieved widespread
+popularity in Japan and was still an undeveloped art form at this
+time. Most manga consisted of groups of sketches arranged to form
+a simple narrative, with generally a dozen sketches to each story.
+Tezuka's father instilled in young Osamu a love of the art form. He
+also shared with his son a large library of manga, a movie projector,
+an interest in animators such as Walt Disney, and an abundant
+supply of sketchpads.</li>
 
-<div class="passage-innerbox">
-<img src="images/crazy-crayon.png" alt="Crazy Crayon" style="float: right; height: 100px; margin-left: 10px;">
-      <p><b>Crazy Crayon</b></p>
-      <p><u>What you will need:</u>
-      <ul>
-      <li>A piece of white paper</li>
-      <li>A white crayon</li>
-      <li>Dark-colored paint</li>
-      <li>A paintbrush</li>
-      </ul></p>
-      
-      <p><ol>
-      <li>Using the white crayon, write your message on the paper. It will be difficult to see the markings, so be careful.</li>
-      <li>Give your secret message to a friend.</li>
-      <li>Have your friend use the paintbrush to spread the paint over the paper. The message will appear on the paper as the person paints.</li>
-      </ol></p>
+      <li>At nine years old Osamu Tezuka drew his first manga. Following
+his recovery from a childhood illness, Tezuka also became
+interested in the field of healthcare and later studied medicine at
+Osaka University. At eighteen, while still a medical student, Tezuka
+submitted his first newspaper comic strip, a four-panel piece called
+"Ma-chan's Diary," to a children's newspaper. Tom between manga
+and medicine, Tezuka consulted his mother about whether he
+should pursue manga full-time or become a doctor. She told him,
+"You should work doing the thing you like most of all," and Tezuka
+decided to devote himself full-time to drawing manga. Within a few
+years, he was publishing collections of manga based on Western
+classic novels such as <i>Treasure Island</i>. Tezuka was one of Japan's
+first artists to serialize manga, publishing his works in installments
+and turning them into books. His early books were enormously
+popular, selling more than 400,000 copies each, and Tezuka became
+a household name in Japan.</li>
 
-      <p>It's amazing! The paint does not stick to the waxy crayon, so the words will show through.</p>
-</div>
-    `
-  },
+      <li>Tezuka is considered the father of modern manga. Manga artists
+have copied his style of big-eyed characters for decades. His
+approach to manga was influenced by Japanese history and culture.
+His complicated line drawings, spare design, and depictions of the
+natural world bring to mind ancient Japanese landscapes of ink and
+watercolor. The complex plots and choice of subject matter for
+some of his books-retellings of famous Russian novels, for
+example-allow Tezuka's works to lay claim to the title "classics."
+Page after page of each massive volume, many more than
+400 pages long, is filled with intricate, detailed drawings. While
+Tezuka's manga may stand on the same library shelves as
+American superhero comic books, Tezuka's manga are to most
+traditional American comic books what Shakespeare's plays are to
+soap operas on American television: a similar art form, but with
+much richer content.</li>
 
-   'hidden_treasure': {
-    title: 'A Hidden Treasure',
-    content: `
-    <ol class="paragraph-numbers">
-      <li>Evan and his 16-year-old brother, Mark, liked spending time with their grandmother. Today, though, Grandma was busy painting.</li>
+      <li>According to the Asian Art Museum of San Francisco, which staged
+an exhibit of Tezuka's work in 2007 entitled <u>The Marvel of Manga</u>,
+Tezuka changed the world of comics dramatically. Before Tezuka,
+Japanese cartoons were confined to small strips in the corners of
+newspapers. Tezuka evolved the art form, and the world of manga
+expanded and matured, eventually earning its own section in many
+Japanese newspapers.</li>
 
-      <li>"May I help you paint your kitchen, Grandma?" asked Evan.</li>
+      <li>One element that makes Osamu Tezuka's work different from the
+work of earlier manga artists in Japan is the film-like quality of his
+work. The website for San Francisco'sA sian Art Museume xplains
+that manga is "dynamic storytelling by way of cinematic, engaging
+pictures." This method is evident in Tezuka's drawings, which make
+use of a filmmaker's trick of editing scenes to show a variety of
+points of view. From extreme close-ups of characters' faces to
+panoramic views of vast landscapes, Osamu Tezuka's work brings a
+filmmaker's eye to manga storytelling. The effect on the reader is
+intense and gripping, and one of Tezuka's books of manga can be
+difficult to put down.</li>
 
-      <li>"Your mom is helping me," Grandma replied with a smile. "Maybe you could play a game with Mark. I have some games in the attic."</li>
+      <li>Tezuka's work may be full of action and suspense, but it is also
+subtle and sensitive. Characters share real emotion-joy, grief, and
+anger-and face real challenges. However, unlike conventional
+Hollywood movies, Tezuka does not reveal every detail, plot
+element, and character detail in his stories. Critical action often
+takes place out of view of the reader, making Tezuka's fans work a
+little to understand a character's perspective. A single tear dripping
+down a cheek, for example, might reveal that a dreaded event has
+taken place. Or a battle might end with a close-up of a surprised
+look on the face of a falling hero.</li>
 
-      <li>The brothers nodded. They climbed the steps and opened the attic door to look for the games.</li>
-
-      <li>Instead of a game, Evan found an old journal in a dusty trunk. He opened the pages and discovered a map! The drawing showed Grandma's house, a raindrop inside a square, two little triangles, and a dock. Best of all, a large "X" marked the "Greatest Fishing Spot," which was near the dock.</li>
-
-      <li>Excitedly, Evan asked Mark, "Do you think we can find this fishing spot?"</li>
-
-      <li>Mark took a closer look at the map. "Let's try," he said, and they thundered down the steps.</li>
-
-      <li>"Mom, we're going outside on a treasure hunt!" Evan shouted from the back door.</li>
-
-      <li>"Okay," Mom laughed, shaking her head.</li>
-
-      <li>"The square with the raindrop is behind Grandma's house," Mark said, narrowing his eyes as he examined the map.</li>
-
-      <li>When he looked up, Mark noticed a faded blue spot on the water tower nearby. "Look!" he exclaimed. "The water tower once had a raindrop painted on it. That must be it."</li>
-
-      <li>Next, the boys searched for the two small triangles near the tower. Before long, Evan patted the trunks of two pine trees.</li>
-
-      <li>"These trees must be the triangles on the map," he decided. "They're in the right places."</li>
-
-      <li>"Now we just need to find the dock," Mark said. The two boys searched the riverside near the trees, but they found only weeds.</li>
-
-      <li>Evan finally suggested that Grandma might remember the old dock.</li>
-
-      <li>The boys rushed into the kitchen with their question as Grandma and Mom were washing their paintbrushes.</li>
-
-      <li>"That dock was torn down a long time ago," Grandma explained. "How did you know about it?" she puzzled.</li>
-
-      <li>The boys presented the map, and Mom smiled. "That's my map I made when I was a young girl. Grandma and I loved fishing from the old dock."</li>
-
-      <li>"Wow! Could you take us to that place? The dock is no longer there, but maybe it's still a great fishing spot," Evan said hopefully.</li>
-
-      <li>Grandma smiled, remembering the times she spent with Mom. "Sure," she agreed. "Let's see if the fish still like it there."</li>
-
-      <li>"I'll get our fishing poles," Evan offered. The map had certainly led to a treasure and a chance to spend time with Grandma.</li>
+      <li>Tezuka passed away on February 10, 1989, still at work on new
+publications. During his lifetime, Tezuka drew more than
+150,000 pages of images. He evolved Japanese manga, and in so
+doing, he evolved the art of animation in general. The power of his
+works can be measured by the reach of his influence, which today
+extends well beyond the borders of Japan.</li>
 </ol>
     `
   },
 
-   'ostrich': {
-    title: 'The Ostrich: One Odd Bird',
+   'dragon_cafe': {
+    title: 'from Midnight at the Dragon Café',
     content: `
+    <center><i>Judy Fong Bates</i></center>
+    <div class="passage-innerbox">
+    <b>This excerpt is from a novel about Su-Jen, a girl who
+travels with her mother from China to Ontario, a small
+province of Canada. She is meeting her father for the
+first time. He left his family to emigrate alone to the
+small Ontario town of Irvine to be the proprietor of a
+Chinese restaurant. In this scene, Su-Jen and her
+mother say goodbye to relatives in Toronto, Canada,
+and travel to Irvine.</b></div>
     <ol class="paragraph-numbers">
-    <img src="images/ostrich.png" alt="Ostrich" style="float: right; height: 250px; margin-left: 10px;">
-      <li>Ostriches hold the record as the largest birds in the world. A male can grow to nine feet tall. That is about three feet taller than most men. How do these giants spend their days?</li>
+      <li>Before leaving Toronto on the train to Irvine, my mother changed
+back into her dark green suit. She gave Uncle Jong and Aunt
+Hai-Lan a package of ginseng and a set of ivory mah-jong¹ tiles.
+"Lai-Jing," Aunt Hai-Lan said to her in a pleading voice, "you must
+not think so much about China. We couldn't have stayed; China is
+no longer the country we knew. Life here really is better. You must
+concentrate on Su-Jen. Give yourself some time, and soon things
+will improve. Now come and visit, don't spend all your time hiding
+in the small town."</li>
 
-      <p><b>Life in a Bird Herd</b></p>
-      <li>Ostriches live in groups called herds. One male is the leader. He uses his strong legs to dig a hole for a nest. The herd only needs one nest because all the females lay their eggs in it. The male and one of the females take turns guarding and sitting on the eggs.</li>
+      <li>Smiling with her lips together and a sad look in her eyes, my
+mother nodded and said, "I have to visit. You have the mah-jong
+set." They both laughed and Aunt Hai-Lan hugged her goodbye.</li>
 
-      <li>When the chicks hatch from the eggs, they are covered with yellow fuzz and black spots. Their colors match the sandy ground. This coloring helps them hide from dangerous animals. The mother and father ostrich protect the chicks too. Before long, feathers replace the fuzz on the chicks. Their new fluffy feathers trap air and keep the chicks warm at night.</li>
+      <li>During the trip, mother remained <u>pensive</u>; she was absorbed in her
+own world and barely spoke to me. I watched her play with the top
+button of her coat and thought about the man I was about to meet,
+my father, whose face I knew only from a small black-and-white
+photograph. At last my mother pulled me close to her and I nestled
+into her softness and warmth. I started to fall asleep, feeling her
+finger lightly circle the whorl of my ear.</li>
 
-      <li>The young birds learn to peck the ground and eat plants by watching older ostriches. They eat mostly plants, seeds, and roots but will also eat insects and small lizards. This diet helps the chicks grow quickly, almost a foot each month!</li>
+      <li>My mother had shown the conductor a white envelope on which
+Uncle Jong had written the name of our town. When we left
+Toronto, the sun was low on the horizon and the city's buildings had
+towered into the sky, but when we arrived in Irvine, it seemed the
+empty darkness would swallow us. My mother remarked to herself
+how quickly the day had become night. The conductor gestured to
+us in a brusque manner, eager to get us moving, and pointed at the
+door; my mother and I followed behind, hesitating at the steps. He
+took our suitcases off the train and placed them on the long
+platform that ran in front of a low-roofed, wooden building. Then, in
+an apparent change of manner, he scooped me up and carried me
+down from the train. I started to laugh but stopped when I saw the
+anxious look on my mother's face.</li>
 
-      <p><b>Speedy Runners</b></p>
-      <li>Although these birds cannot fly, powerful legs help them move quickly. Ostriches can bolt across the ground at 43 miles per hour. They keep their wings outstretched while running. This helps them keep their balance, especially when changing direction.</li>
+      <li>In the dim light of the overhang, I saw an old man running toward
+us, his woollen peak cap pulled over his forehead, his brown,
+loose-fitting coat flopping up and down with each step. He stopped
+as he drew near, huffing out of breath. I noticed how the sleeves of
+the coat covered his hands. He touched my mother lightly on the
+arm and spoke in our dialect, "Lai-Jing, you are here, at last."</li>
 
-      <p><b>Staying Safe</b></p>
-      <li>With such speed, ostriches outrun most predators, but they know how to defend themselves too. Their strong legs can deliver a kick that stops a lion! Ostriches use another trick to stay safe. They sit down on the ground, rest their heads on the sand, and lie very still. The sand blends with the color of the ostriches so other animals do not notice them.</li>
+      <li>"Yes, Hing-Wun, we are here," she said, nodding and holding his
+gaze for a moment. "This is Su-Jen." Gently easing me from her
+side, she looked down at me, "Su-Jen, this is your ba ba."</li>
 
-      <li>Today, wild ostriches live in Africa, but many tame ones live on farms and in zoos. Ostriches are unusual-looking birds, but their power and speed make them one of the fastest animals on land.</li>
+      <li>My father knelt down and li~ed me into his arms. I peeked over his
+shoulder and saw my mother staring at us, her face without
+expression, her eyes wet with tears. I looked up and saw stars
+against a dark, deep sky. Small puffs of mist escaped from my
+mouth. With his hand against my head, my father gently pressed
+my face against his shoulder. I felt the rough texture of wool
+chafing my cheek and breathed in the faint scent of cooking oil.
+This memory has remained as crisp as the air that night. Over time,
+my life in Hong Kong and in our village in China became distant,
+almost forgotten, with only flashes of clarity, rare memories of
+sleeping on a straw mat in the humid summer, or watching my
+mother close the wrought-iron accordion gates in front of our home.</li>
 
-<div class="passage-innerbox">
-      <p><b>Ostrich Facts</b><br>
-      Life span: 30-40 years<br>
-      Weight: 350 pounds<br>
-      Height: 8-9 feet<br>
-      Egg weight: 3 pounds<br>
-      Nest size: Up to 8 feet<br>
-      Herd size: Usually fewer than 12 birds</p>
-</div>
+      <li>My father carried our suitcases, and we followed him onto the
+empty street to a taxi parked in front of the station. The light from
+the street lamps reflected off the snow. Everything around us was
+still and quiet.</li>
+
+<hr>
+¹mah-jong - a Chinese game played with rectangular tiles bearing various designs
+
+Copyright © 2005 by Judy Bates from <u>Midnight at the Dragon Café: A Novel</u>. Reprinted by permission of Counterpoint.
+
+</ol>
     `
   },
 
-     'search': {
-    title: 'The Search',
+   'frozen_fish': {
+    title: 'No Frozen Fish Here!',
     content: `
-      <ol class="paragraph-numbers">
-        <li>I've emptied my sports bag</li>
-        <li>Checked in the car</li>
-        <li>Reached under the sofa</li>
-        <li>And searched near and far.</li><br>
-        <li>But hunt as I may</li>
-        <li>I've got only one shoe--</li>
-        <li>And where its mate is</li>
-        <li>I haven't a clue.</li><br>
-        <li>"When was your last game?"</li>
-        <li>Dad asks thoughtfully.</li>
-        <li>"And after the game</li>
-        <li>Whom did you see?"</li><br>
-        <li>I pause in my tracks--</li>
-        <li>Dad's smart, it is true</li>
-        <li>But his questions don't lead</li>
-        <li>To my runaway shoe.</li><br>
-        <li>It's surely gone missing</li>
-        <li>There's clearly no hope.</li>
-        <li>I have to give up</li>
-        <li>Find somewhere to mope.</li><br>
-        <li>So I sit on the steps</li>
-        <li>And stare into the yard</li>
-        <li>Where Otis the dog</li>
-        <li>Serves as guard--</li><br>
-        <li>Then I notice that Otis</li>
-        <li>Has a new chew</li>
-        <li>With laces and treads--</li>
-        <li>Oh, no! It's my shoe!</li>
-      </ol>
-    `
-  }
+    <ol class="paragraph-numbers">
+      <li>Some of the coldest water in the world surrounds the continent of
+Antarctica. In fact, the water temperature is actually below freezing,
+around 28.5 degrees Fahrenheit. Ordinarily, water would freeze at
+32 degrees, but the salt in seawater lowers the freezing point.
+Indeed, the temperature is so low that ice crystals float in
+the water.</li>
 
+      <li>Given the water temperature, one must wonder how fish thrive in
+the water around Antarctica. After all, the tissues and fluids in a fish
+freeze at 30.2 degrees, which should make the water surrounding
+Antarctica uninhabitable. Moreover, any fish in the area would ingest
+ice crystals with each mouthful. Despite these facts, many fish do
+live in the water of Antarctica. For nearly SO years scientists have
+studied these fish, noting their exceptional capabilities.</li>
+
+      <p><b>Notothenioids</b></p>
+      <li>3 Scientists call the fish that can survive such conditions notothenioids
+[nō-tō-thǐnē'-oidz]. Antarctica boasts more than 120 species of such
+fish that can flourish in freezing water. These species include many
+types of fish unique to Antarctica. The threadfin pithead, for
+instance, lives at depths of around 2,000 feet in the cold dark of the
+Antarctic seas. It is difficult to imagine a more adverse environment.
+One of the most resilient species is the bald notothen, a fish that
+possesses unique physical features to ensure its survival in this
+environment. The mottled black and white appearance of the bald
+notothen, popularly called a "bark," provides excellent camouflage
+while it swims under the layer of ice floating on the ocean. The
+slender fish spends its days swimming through the honeycombed
+channels of the icepack hunting krill-small crustaceans-for
+its <u>sustenance</u>.</li>
+
+      <p><b>The Question</b></p>
+      <li>With the establishment of McMurdo Station in 1956, scientists
+enjoyed an outpost that allowed them to study Antarctica up close.
+One of the first questions addressed had to do with the presence of
+fish in the region's below-freezing water. The central question was
+really a very basic one: how do fish, whose tissues and fluids should
+freeze at temperatures below 30.2 degrees, survive in the Antarctic
+water? Even swallowing the ice crystals in the water would be
+sufficient for freezing and killing most fish species.</li>
+
+      <li>Scientists at McMurdo Station analyzed the notothenioids in the
+1960s. They were astonished to discover that the different species
+of fish had one thing in common: a protein present in their blood
+that was missing in other species of fish common to warmer
+regions. This protein, researchers theorized, must serve as a kind
+of antifreeze.</li>
+
+      <p><b>AFGP</b></p>
+      <li>Scientists named the mysterious protein antifreeze glycoprotein, or
+AFGP; it exists in the bloodstream of all the fish that inhabit the
+Antarctic waters, such as the "borks," that dart in and out of the ice
+channels. Interestingly, the protein does not warm the blood; rather,
+it attaches to ice crystals and prevents them from connecting to one
+another. Only recently have scientists discovered that the fish's
+pancreas produces the protein and secretes it into its intestines.
+Scientists believe this process occurs because the ice crystals, which
+enter into the stomach and intestine, pose one of the first dangers
+to fish in very cold water. This <u>salutary</u> protein targets those ice
+crystals and also enters the bloodstream, thereby preventing
+freezing from taking place in the circulatory system.</li>
+
+      <p><b>Human Applications</b></p>
+      <li>The same protein that fish use to keep their fluids and tissues from
+freezing has a wide range of potential applications for people. AFGP
+can aid in preserving organs for transplant. Researchers believe it
+might even be valuable as a deicer because it is 300 times more
+powerful than chemical antifreeze. In the area of food production,
+the protein could be used to ensure that frozen foods taste fresher.</li>
+  
+      <li>The adaptive capabilities of these extraordinary fish still attract
+scientists to probe even further, even to this day. Studying the
+creatures of the Antarctic area could eventually enhance or improve
+many aspects of our lives. Perhaps more useful secrets lurk in the
+deep water of Antarctica.</li>
+</ol>
+    `
+  },
+
+  'classical_carnival': {
+    title: 'A Classical Carnival',
+    content: `
+    <ol class="paragraph-numbers">
+      <li>My journalism teacher taught me the two basic requirements for
+effective news writing: start with an engaging lead and support it
+with essential facts. What his class did not prepare me for was my
+internship position as Life Events Correspondent for the "Lifestyles"
+section of the local newspaper, an impressive title for a person who
+reports births, engagements, weddings, and anniversaries. My
+dreams of winning a Pulitzer Prize for Investigative Reporting by
+age 25 vanished under elaborate descriptions of wedding gowns
+and birth statistics. Whenever I felt discouraged, I remembered my
+grandfather's sage advice: "Michelangelo's¹ first job was not the
+ceiling of the Sistine Chapel." That advice helped keep my situation
+in perspective; I was <u>polishing</u> my craft, getting experience, and
+establishing myself as a talented writer.</li>
+
+      <li>Arriving at my desk promptly at 8 o'clock Thursday morning, I
+started the day in the usual fashion: going through the list of
+engagement announcements. I needed to write and review the
+wedding and anniversary passages destined for Sunday's
+publication. When the Lifestyles editor stopped by and slapped a
+ticket on my desk, I was stunned. I didn't think she even knew
+my name.</li>
+
+      <li>"Wylie is out sick, Jake, and you're going to cover for him
+tomorrow," she said. Wylie was our resident music/theater critic
+whose enviable job got him complimentary tickets for every play,
+concert, jazz club, and symphony opening that enriched our midsize
+city with culture.</li>
+
+      <li>I tried not to appear too eager, knowing that my good fortune came
+solely due to another writer's illness, but it was difficult to control
+my excitement. This ticket provided me with the opportunity to
+write an article far more significant than last month's feature on
+Mr. and Mrs. Judge Brown's 25th anniversary jubilee.</li>
+
+      <li>"Five hundred words by noon Saturday," she added before
+disappearing through the maze of desks into her corner office. I
+looked down at the tickets, hoping for a Shakespearean tragedy, a
+jazz concert, or a touring company presenting a version of a
+Broadway play. I gulped. The ticket was inscribed with the logo for
+KidsPop, the symphony orchestra's <u>overt</u> attempt to entice children
+away from video games and into the world of classical music. My
+heart plummeted to my knees. I was doomed; my knowledge of
+classical music was limited to melodies used as soundtracks for
+chase scenes in 50-year-old cartoons.</li>
+
+      <li>I searched the symphony's website and found that headlining the
+concert was Camille Saint-Saëns's <u>Carnival of the Animals</u>. A quick
+scan of Saint-Saëns's biography provided little assistance-the
+information was nearly <u>incomprehensible</u> to a beginner such as
+myself. Elaborate descriptions of the composer's "virtuosity" and
+"thematic transformations" provided no useful information. What I
+did discover was that Saint-Saëns considered <u>Carnival of the
+Animals</u> a mistake and an embarrassment, and he forbade
+performances of the work during his lifetime. My golden opportunity
+required me to review music that even the composer disliked. My
+earlier excitement over this assignment was turning to ambivalence.
+I was beginning to miss the familiar world of lace gowns and baby
+birth weights.</li>
+
+      <li>Friday afternoon I settled into my 12th-row center seat with a
+notepad and pen ready. Since this was a concert for children, I
+decided to take a simple approach to the experience. I would write
+my review from the viewpoint of my fellow attendeestwo
+10-year-old girls on my left and a boy of 12 who pointed out
+that I, a 22-year-old, was too old to be attending a kid's concert,
+even if it was classical music.</li>
+  
+      <li>The conductor entered, bowed, and addressed the orchestra. Two
+quick taps of the baton on her music stand, and we entered the
+<u>Carnival of the Animals</u> as fellow travelers on an enchanting safari
+of 14 distinctly clever movements.²</li>
+
+      <li>Pompous lions, full of boastfulness and bravado, paraded through
+our thoughts-grand, regal, and majestic. The lions gave way to a
+barnyard full of pecking, cackling hens and scratching, crowing
+roosters, mimicked by the violins. Then, the brisk fingerwork of two
+talented pianists recreated a frantic, stampeding herd of wild
+donkeys in the third movement.</li>
+
+      <li>Now came a contrast in tempo-the lumbering sluggishness of giant
+tortoises, painfully trudging along, step by laborious step. Keeping
+pace with the tortoises, a herd of elephants followed, dancing a
+clumsy waltz.</li>
+
+      <li>In the sixth movement, we made an abrupt departure from Africa
+and headed eastward to the scrub and brush of the Australian
+outback. There two pianos produced the clipped hippity-hop of a
+mob of startled kangaroos, springing away in a burst of
+erratic leaps.</li>
+
+      <li>From the barren outback, we plunged to the depths of an aquarium
+filled with tropical fish darting past in a display of brilliant silvers,
+blues, and yellows. The delicate tones of the glass harmonica
+appeared and disappeared like bubbles in tropical waters.</li>
+
+      <li>Movements slipped from one to another, and I was so entranced by
+the music that I neglected my note-taking. My seatmates were
+transfixed by the scintillating melodies that so perfectly and
+brilliantly represented each animal. When the 13th movement, "The
+Swan," began, we all closed our eyes and pictured the elegant swan
+gliding across a pond. The fanfare and flourishes of the finale
+announced a farewell to our carnival. Around me children rose from
+their seats and burst into applause.</li>
+
+      <li>Two hours later, back at my desk, my fingers flexed over the
+computer keyboard. Closing my eyes, I once again heard the loud
+thundering of elephants, saw the swift quiver of angelfish, and
+enjoyed the serene gracefulness of the swan. I smiled, glad for the
+chance to describe the delightful, appreciative reactions of the
+audience to the piece that so chagrined Saint-Saëns.</li>
+</ol>
+
+<hr>
+
+¹Michelangelo - a famous Italian artist and architect (1475-1564), whose painting of the chapel in the Vatican earned him the title "greatest living artist"<br>
+²movement - a section of a musical composition with its own unique theme
+    `
+  },
+
+    'contact_lenses': {
+    title: 'Computers in Contact Lenses',
+    content: `
+    <ol class="paragraph-numbers">
+      <li>Imagine peering at a view of mountaintops and wondering about the
+name of each peak. Suddenly, above each pinnacle, a name appears
+superimposed on the sky. The words are not written in smoke by
+skywriting planes. The words are actually not in the sky at all. They come
+from tiny computers embedded in contact lenses.</li>
+
+      <li>Computers have become smaller and smaller over the decades. The first
+computers filled warehouses. Transistors and then silicon chips allowed
+computers to shrink small enough to fit on a desktop, then a laptop, and
+finally a phone. When experimenting with further reductions In size,
+developers often contend with the limits of human eyesight, which control
+how small the computers can be and still present visible information.</li>
+
+      <li>One new solution employs microprojectors to create a readable display for
+tiny computers. These machines project computer information onto any
+surface. Though an impressive breakthrough, such public displays can
+lead to privacy issues; most people do not want their information
+displayed on a wall for everyone to see. Moreover, current models are
+prohibitively expensive, and their blurry screens give users headaches.</li>
+
+      <li>Babak Parviz, a researcher at the University of Washington, created
+another solution: inventing a screen visible only to a person wearing a
+contact lens. Parviz created a computer in a contact lens that uses the
+wearer's field of vision as the display.</li>
+
+      <li>"Looking through a completed lens," Parviz said in an interview with
+<i>Gizmag.com</i>, "you would see what the display is generating superimposed
+on the world outside."</li>
+
+      <li>To create the display, Parviz took ordinary soft contact lenses and
+imprinted them with a wirelessly controlled system of microcircuitry and
+lights. At some point, Parviz says, it will be possible to connect the lens to
+a remote personal computing device such as a cell phone or a laptop.</li>
+
+      <li>While the person wearing the computer lenses looks quite ordinary, these
+discreet contact lenses actually enhance his or her experience. By looking
+in a certain direction, the wearer sends the computer visual cues about
+what he or she sees. The device then uses this information to point out
+the names of peaks, for example, or to label landmarks.</li>
+  
+      <li>These contact lenses are inserted and removed in much the same way as
+ordinary contact lenses. Once in place, the electronic components are
+outside the line of vision, leaving the wearer's sight unimpeded. While the
+computers are not currently imprinted on corrective or prescribed lenses,
+Parviz hopes that someday the technology will progress to that level.</li>
+
+      <li>Engineers developing this project see many applications for the lenses.
+The automobile industry would like to insert them in cars to help drivers
+find directions or tune the radio. Future models of cameras with zoom
+features may take bionic vision, made famous by science fiction movies,
+from fantasy to reality. The level of "computer-human interface," the point
+at which computers and humans interact, will be radically altered as
+humans adapt and learn to use this innovative technology.</li>
+    `
+  },
 };
 
 const sampleQuestions = [
   {
     id: '1',
-    text: 'Another good title for this story would be--',
+    text: 'In paragraph 1, the words "rumbled," "buzzed," and "exploded" evoke images of-',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: 'all_this_junk',
     options: [
-      'Sewing New Clothes',
-      'Baking for the Family', 
-      'A Morning Snack',
-      'Gifts for Everyone'
+      'disorder',
+      'progress', 
+      'activity',
+      'frustration'
     ],
     correctAnswer: 3,
     explanation: 'The story is about both Danielle making cupcakes as a surprise for her siblings and her siblings making an apron as a surprise for her. Everyone in the story gives and receives gifts.'
@@ -273,14 +692,14 @@ const sampleQuestions = [
 
   {
     id: '2', 
-    text: 'Danielle keeps the cupcakes a secret by--',
+    text: 'The details in paragraph 2 support the idea that Benjamin is -',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: 'all_this_junk',
     options: [
-      'moving them to the laundry room',
-      'making them in the morning', 
-      'placing them inside a box',
-      'covering them with paper'
+      'patient and sincere',
+      'curious and observant', 
+      'talented and studious',
+      'respectful and obedient'
     ],
     correctAnswer: 1,
     explanation: 'The passage states that Danielle "had baked cupcakes early in the morning, while Martin and Madison were still asleep," which kept them secret.'
