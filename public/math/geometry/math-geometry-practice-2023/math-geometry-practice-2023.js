@@ -3,155 +3,231 @@ window.TEST_IDENTIFIER = 'math_geometry_practice_2023';
 const sampleQuestions = [
  {
  id: '1',
- text: 'Which number sentence will make this statement true? <center>? > 8,243</center>',
+ text: 'Which value for x is a counterexample to the following statement?<br><center>For all positive values of x, <math><msup><mi>x</mi><mn>3</mn></msup></math> ≥ x.</center>',
  type: 'multiple-choice',
- options: ['8,223', '8,285', '8,198', '8,234'],
- correctAnswer: 1,
- explanation: 'To be greater than 8,243, the number must be bigger. Compare: 8,285 > 8,243 because 285 is greater than 243 in the last three digits.'
+ options: ['−1.0', '−0.1', '0.1', '1.0'],
+ correctAnswer: 2,
+ explanation: 'For small positive values between 0 and 1, cubing the number makes it smaller. For example, 0.1³ = 0.001, which is less than 0.1. This serves as a counterexample to the statement.'
  },
  {
  id: '2',
- text: 'This set of circles is shaded to represent one whole. <br><img src="images/2.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which model is shaded to represent this expression? <center><math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math></center>',
+ text: 'The Venn diagram represents the combination of lunches that athletes selected.<br><img src="images/question_2.png" class="question-image" alt="Venn diagram showing Soup, Sandwich, and Salad selections"></img><br>• A total of 310 athletes selected a sandwich.<br>• A total of 125 athletes selected both a sandwich and a salad.<br>• A total of 180 athletes selected both a sandwich and a soup.<br><br>How many athletes selected a sandwich, a soup, and a salad?',
  type: 'multiple-choice',
- options: [
-    {url: 'images/2a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/2b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/2c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/2d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 1, 
- explanation: 'Adding five quarters: 1/4 + 1/4 + 1/4 + 1/4 + 1/4 = 5/4, which is one whole circle plus one more quarter.'
+ options: ['5', '55', '65', '110'],
+ correctAnswer: 2,
+ explanation: 'Using the given information and the Venn diagram, we can determine that 65 athletes selected all three items - sandwich, soup, and salad.'
  },
  {
  id: '3',
- text: 'This model is shaded to represent one whole. <br><img src="images/3_1.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Model R is shaded to represent a fraction. <br><img src="images/3_2.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which of these is shaded to represent a fraction that is less than the fraction represented by Model R?',
+ text: 'Given the Venn diagram:<br><img src="images/question_3.png" class="question-image" alt="Venn diagram showing Triangles with overlapping Acute Triangles and Isosceles Triangles"></img><br>Which statement is valid?',
  type: 'multiple-choice',
- options: [
-    {url: 'images/3a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/3b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/3c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/3d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 2, 
- explanation: 'Compare the shaded parts. A fraction is smaller when fewer parts are shaded. Look for the model with less shaded area than Model R.'
+ options: ['All triangles are acute and isosceles.', 'All triangles are either acute or isosceles.', 'No triangles are both acute and isosceles.', 'Some triangles are both acute and isosceles.'],
+ correctAnswer: 3,
+ explanation: 'The Venn diagram shows overlapping sets of acute triangles and isosceles triangles, indicating that some triangles possess both properties.'
  },
  {
  id: '4',
- text: 'The table shows the number of miles a family traveled on three days. <br><img src="images/4.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Based on the table, which is closest to the difference between the total number of miles this family traveled on Day 1 and Day 2 combined and the number of miles traveled on Day 3?',
+ text: 'Lines a and b intersect lines c and d.<br><img src="images/question_4.png" class="question-image" alt="Lines a and b intersecting lines c and d with angles labeled 1-6"></img><br>Which of the following statements could be used to prove that a ∥ b and c ∥ d?',
  type: 'multiple-choice',
- options: ['200 miles', '300 miles', '600 miles', '900 miles'],
- correctAnswer: 1, 
- explanation: 'Add Day 1 and Day 2 miles together, then subtract Day 3 miles to find the difference. Use estimation to find the closest answer.'
+ options: ['∠1 ≅ ∠6, ∠3 ≅ ∠5', '∠1 ≅ ∠6, ∠4 and ∠5 are supplementary', '∠1 ≅ ∠4, ∠1 and ∠2 are supplementary', '∠1 and ∠3 are supplementary, ∠1 and ∠6 are supplementary'],
+ correctAnswer: 1,
+ explanation: 'When corresponding angles are congruent and consecutive interior angles are supplementary, we can prove that lines are parallel.'
  },
  {
  id: '5',
- text: 'There were a total of 750 drinks in the cafeteria. There were 249 chocolate milks and 203 whole milks. The rest of the drinks were orange juice. Which estimate is closest to the number of orange juices in the cafeteria?',
+ text: 'Lines j and k are cut by transversals m and n. (Figure is not drawn to scale.)<br><img src="images/question_5.png" class="question-image" alt="Lines j and k cut by transversals m and n with angles labeled"></img><br>Which relationship is sufficient to prove j ∥ k?',
  type: 'multiple-choice',
- options: ['400 because 200 + 200 = 400 and 800 - 400 = 400', '1,200 because 200 + 200 = 400 and 800 + 400 = 1,200 ', '300 because 250 + 200 = 450 and 750 - 450 = 300 ', '1,150 because 250 + 200 = 450 and 700 + 450 = 1,500'],
- correctAnswer: 2, 
- explanation: 'Round 249 to 250 and 203 to 200. Add: 250 + 200 = 450 drinks. Subtract from total: 750 - 450 = 300 orange juices.',
+ options: ['x = 60', 'y = 30', 'y = x − 30', 'y = 150 − 2x'],
+ correctAnswer: 3,
+ explanation: 'For lines j and k to be parallel, corresponding angles must be equal. The relationship y = 150 − 2x ensures this condition is met.'
  },
  {
  id: '6',
- text: 'Mr. Gary\'s class has a goal of selling 500 pizzas in three months. The class sold 135 pizzas in the first month and 257 pizzas in the second month. Exactly how many more pizzas does the class need to sell to reach its goal?',
+ text: 'The perimeter of △JKL is 200 centimeters.<br>• JK = 68 centimeters<br>• KL = 62 centimeters<br><br>Which statement is true about the interior angles of △JKL?',
  type: 'multiple-choice',
- options: ['392', '382', '208', '108'],
- correctAnswer: 3, 
- explanation: 'Add pizzas sold: 135 + 257 = 392. Subtract from goal: 500 - 392 = 108 more pizzas needed.',
+ options: ['m∠L is the greatest of the interior angles', 'm∠L is the least of the interior angles', 'm∠K is the greatest of the interior angles', 'm∠K is the least of the interior angles'],
+ correctAnswer: 2,
+ explanation: 'JL = 200 - 68 - 62 = 70 cm. Since JL is the longest side, the angle opposite to it (∠K) is the greatest angle in the triangle.'
  },
  {
  id: '7',
- text: 'Which of these best represents this set of cherries? <br><img src="images/7.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Triangle STW and △XYZ are shown.<br><img src="images/question_7.png" class="question-image" alt="Two triangles with labeled angles and sides"></img><br>Which value of x makes △STW ≅ △XYZ?',
  type: 'multiple-choice',
- options: ['40 - 5', '40 ÷ 5', '5 + 8', '5 × 40'],
- correctAnswer: 1, 
- explanation: 'If 40 cherries are divided into 5 equal groups, use division: 40 ÷ 5 = 8 cherries in each group.'
+ options: ['2', '3', '4', '6'],
+ correctAnswer: 2,
+ explanation: 'For the triangles to be congruent, corresponding sides must be equal. Setting up the equation and solving gives x = 4.'
  },
  {
  id: '8',
- text: 'Which of these best represents this set of cherries? <img src="images/8.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Evelyn is constructing a triangle congruent to △ABC using SAS.<br><img src="images/question_8.png" class="question-image" alt="Triangle ABC and construction options"></img><br>Which triangle should Evelyn construct that will be congruent to △ABC?',
  type: 'multiple-choice',
- options: ['6 + 2', '6 × 2', '3 + 2', '3 × 2'],
- correctAnswer: 3, 
- explanation: 'If there are 3 groups with 2 cherries in each group, use multiplication: 3 × 2 = 6 total cherries.'
+ options: [
+    {url: 'images/question_8a.png', alt: 'Triangle option F'},
+    {url: 'images/question_8b.png', alt: 'Triangle option G'},
+    {url: 'images/question_8c.png', alt: 'Triangle option H'},
+    {url: 'images/question_8d.png', alt: 'Triangle option J'}
+ ],
+ correctAnswer: 2,
+ explanation: 'Using SAS (Side-Angle-Side) congruence, Evelyn needs two sides and the included angle to match the original triangle.'
  },
  {
  id: '9',
- text: 'Which number sentence is true?',
+ text: 'The figure shown is a regular hexagon.<br><img src="images/question_9.png" class="question-image" alt="Regular hexagon ABCDEF with side length 4 in"></img><br>Which measure is the length of the diagonal AC?',
  type: 'multiple-choice',
- options: ['8 × 2 = 16 + 3', '9 - 1 = 8 ÷ 2', '5 × 6 = 25 + 5', '15 - 3 = 6 × 3'],
- correctAnswer: 2, 
- explanation: 'Check each equation: 5 × 6 = 30 and 25 + 5 = 30, so both sides equal 30. This makes the equation true.'
+ options: ['<math><mn>4</mn><msqrt><mn>3</mn></msqrt></math> in.', '8 in.', '12 in.', '<math><mn>8</mn><msqrt><mn>3</mn></msqrt></math> in.'],
+ correctAnswer: 0,
+ explanation: 'In a regular hexagon with side length 4, the diagonal connecting vertices separated by one vertex has length 4√3 inches.'
+ },
+ {
+ id: '10',
+ text: 'A carpenter will build a shed with four walls and a roof. The shape of the shed will consist of a triangular prism and a rectangular prism as shown in the model.<br><img src="images/question_10.png" class="question-image" alt="Aerial and front view of shed"></img><br>A vertical plane intersects the model. The plane is parallel to the front face of the model. What is the shape of this cross section?',
+ type: 'multiple-choice',
+ options: ['Triangle', 'Pentagon', 'Rectangle', 'Trapezoid'],
+ correctAnswer: 1,
+ explanation: 'A vertical plane parallel to the front face creates a cross section that shows both the rectangular base and triangular roof, forming a pentagon.'
  },
  {
  id: '11',
- text: 'This model shows a rectangle that is 3 feet long and 2 feet wide. <br><img src="images/11.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which is the closest to the area of the shaded part of this modeL?',
+ text: 'A carpenter will build a shed with four walls and a roof. The shape of the shed will consist of a triangular prism and a rectangular prism as shown in the model.<br><img src="images/question_11.png" class="question-image" alt="Aerial and front view of shed"></img><br>If w = 12 and h = 6, the surface area of the exterior walls and doors is exactly —',
  type: 'multiple-choice',
- options: ['8 square feet', '6 square feet', '4 square feet', '2 square feet'],
- correctAnswer: 2, 
- explanation: 'Count the shaded squares in the rectangle. If about half of the 6 total squares (3 × 2) are shaded, the area is about 4 square feet.'
+ options: ['360 square feet', '414 square feet', '468 square feet', '630 square feet'],
+ correctAnswer: 1,
+ explanation: 'Calculating the surface area with w = 12 and h = 6: front/back rectangles, side walls, and triangular portions sum to 414 square feet.'
+ },
+ {
+ id: '12',
+ text: 'A carpenter will build a shed with four walls and a roof. The shape of the shed will consist of a triangular prism and a rectangular prism as shown in the model.<br><img src="images/question_12.png" class="question-image" alt="Aerial and front view of shed"></img><br>If w = 6, which equation correctly models a calculation of the volume of the shed?',
+ type: 'multiple-choice',
+ options: [
+    'V = 9 × 6 × 18',
+    'V = <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math> × 9 × 6 × 18',
+    'V = 9 × 6 × 18 + <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math> × 9 × 6 × 18',
+    'V = 9 × 6 × 18 + <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math> × 6 × h × 18'
+ ],
+ correctAnswer: 3,
+ explanation: 'The volume combines the rectangular prism (9 × 6 × 18) and the triangular prism (½ × 6 × h × 18).'
  },
  {
  id: '13',
- text: 'Claudia painted a picture as shown. <br><img src="images/13.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which measurement is closest to the perimeter of Claudia\'s picture?',
+ text: 'A cylinder has a volume of 540π cubic centimeters and a base with a circumference of 12π centimeters. What is the height of the cylinder?',
  type: 'multiple-choice',
- options: ['14 feet', '12 feet', '8 feet', '6 feet'],
- correctAnswer: 1, 
- explanation: 'Perimeter is the distance around the outside. Add all four sides of the picture frame to find the total distance around.'
+ options: ['30 cm', '15 cm', '12 cm', '3 cm'],
+ correctAnswer: 2,
+ explanation: 'From circumference 12π, radius r = 6. Using V = πr²h: 540π = π(36)h, so h = 15 cm.'
  },
  {
  id: '14',
- text: 'Which is closest to the time shown on this clock? <br><img src="images/14.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'The height of a rectangular prism is decreased by a factor of <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>. The other dimensions are unchanged. Which statement is true?',
  type: 'multiple-choice',
- options: ['4:08', '4:40', '8:04', '8:20'],
- correctAnswer: 3, 
- explanation: 'Look at the clock hands. The short hand (hour hand) points between 8 and 9, and the long hand (minute hand) points to 4, which means 20 minutes. The time is 8:20.'
+ options: [
+    'The volume is decreased by a factor of <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>',
+    'The volume is decreased by a factor of <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>',
+    'The volume is decreased by a factor of <math><mfrac><mn>1</mn><mn>8</mn></mfrac></math>',
+    'The volume is decreased by a factor of 2'
+ ],
+ correctAnswer: 0,
+ explanation: 'Volume is directly proportional to height. If height is halved, volume is also halved (decreased by factor of ½).'
  },
  {
  id: '15',
- text: 'Allen arrived at his friend\'s house at 3:20 P.M. He left 2 hours later. At what time did Allen leave his friend\'s house?',
+ text: 'A company makes two similar cylindrical containers. The total surface area of the smaller container is 0.81 times that of the larger container. The height of the larger container is 60 centimeters. What is the height of the smaller container?',
  type: 'multiple-choice',
- options: ['2:20 P.M.', '3:20 P.M.', '4:20 P.M.', '5:20 P.M.'],
- correctAnswer: 3, 
- explanation: 'Add 2 hours to the start time: 3:20 P.M. + 2 hours = 5:20 P.M.'
+ options: ['54 cm', '48.6 cm', '24.3 cm', '21 cm'],
+ correctAnswer: 0,
+ explanation: 'For similar cylinders, if surface area ratio is 0.81, then linear ratio is √0.81 = 0.9. Height of smaller container: 60 × 0.9 = 54 cm.'
  },
  {
  id: '16',
- text: 'Claire arrived at the zoo at 12:45 P.M. She left the zoo at 3:45 P.M. What was the total amount of time Claire was at the zoo?',
+ text: 'Given: Quadrilateral ABCD<br><img src="images/question_16.png" class="question-image" alt="Quadrilateral ABCD with vertices labeled"></img><br>Which expression proves that ABCD is a rectangle?',
  type: 'multiple-choice',
- options: ['3 hours', '4 hours', '9 hours', '12 hours'],
- correctAnswer: 0, 
- explanation: 'Count the hours from 12:45 P.M. to 3:45 P.M.: from 12:45 to 1:45 is 1 hour, to 2:45 is 2 hours, to 3:45 is 3 hours total.'
+ options: [
+    'The length of each diagonal is <math><msqrt><msup><mi>r</mi><mn>2</mn></msup><mo>+</mo><msup><mi>m</mi><mn>2</mn></msup></msqrt></math>',
+    'The common midpoint of the diagonals is <math><mo>(</mo><mfrac><mi>r</mi><mn>2</mn></mfrac><mo>,</mo><mfrac><mi>m</mi><mn>2</mn></mfrac><mo>)</mo></math>',
+    'The slope of AC is <math><mfrac><mi>m</mi><mi>r</mi></mfrac></math> and the slope of BD is <math><mo>−</mo><mfrac><mi>r</mi><mi>m</mi></mfrac></math>',
+    'The length of both AB and DC is r and the length of both BC and AD is m'
+ ],
+ correctAnswer: 0,
+ explanation: 'A rectangle has congruent diagonals. Both diagonals having length √(r² + m²) proves ABCD is a rectangle.'
  },
  {
  id: '17',
- text: 'Which 3 polygons were combined without overlapping to make the figure shown? <br><img src="images/17.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'The figure shown is composed of a regular pentagon and a rectangle.<br><img src="images/question_17.png" class="question-image" alt="Regular pentagon attached to rectangle with angles x marked"></img><br>What is the measure of each of the angles identified as x?',
  type: 'multiple-choice',
- options: ['Triangle, pentagon, triangle', 'Quadrilateral, triangle, quadrilateral', 'Quadrilateral, pentagon, triangle', 'Triangle, quadrilateral, triangle'],
- correctAnswer: 3, 
- explanation: 'Look at the shapes that make up the figure. Count the sides of each part: triangles have 3 sides, quadrilaterals have 4 sides.'
+ options: ['36°', '54°', '72°', '108°'],
+ correctAnswer: 0,
+ explanation: 'Interior angle of regular pentagon is 108°. The rectangle has 90° angles. So x = 180° - 90° - 54° = 36°.'
  },
  {
  id: '18',
- text: ' Mrs. Morgan wants to know what game the students would like to play during indoor recess. What is the best way for Mrs. Morgan to collect the data?',
+ text: 'Points Q, R, and S lie on circle P.<br><img src="images/question_18.png" class="question-image" alt="Circle P with points Q, R, S and angles marked"></img><br>What is the value of x?',
  type: 'multiple-choice',
- options: ['Count the number of students who like to play football', 'Count the number of students that will be at indoor recess', 'Create a tally chart to show how long students play during recess', 'Create a tally chart to show what game the students would like to play during indoor recess'],
- correctAnswer: 3, 
- explanation: 'To find out what game students want to play, make a tally chart that shows each game choice and how many students picked each one.'
+ options: ['5', '12', '25', '65'],
+ correctAnswer: 2,
+ explanation: 'Using properties of inscribed angles and arcs in a circle, solving the equation gives x = 25.'
  },
  {
  id: '19',
- text: 'Four students have a total of 200 coins. This pictograph represents the number of coins three of the students have. The number of coins Diana has is missing. <br><img src="images/19.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which set represents the number of coins Diana has?',
+ text: 'In circle P, m∠HJK = 60° and m⏜JK = 2 • m⏜HJ.<br><img src="images/question_19.png" class="question-image" alt="Circle P with points H, J, K marked"></img><br>What is m⏜HJ?',
+ type: 'multiple-choice',
+ options: ['80°', '120°', '150°', '160°'],
+ correctAnswer: 0,
+ explanation: 'The inscribed angle is half the intercepted arc. If ∠HJK = 60°, then arc HK = 120°. With m⏜JK = 2 • m⏜HJ and the arcs summing to 120°, m⏜HJ = 80°.'
+ },
+ {
+ id: '20',
+ text: 'Circle P has a radius of 1 unit. A central angle of circle P is 225°. What is the length of the minor arc?',
  type: 'multiple-choice',
  options: [
-    {url: 'images/19a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/19b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/19c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/19d.png', alt: 'Image failed to load. Please try again later.'}
+    '<math><mfrac><mrow><mn>5</mn><mi>π</mi></mrow><mn>4</mn></mfrac></math> units',
+    '<math><mfrac><mrow><mn>3</mn><mi>π</mi></mrow><mn>4</mn></mfrac></math> units',
+    '<math><mfrac><mrow><mn>5</mn><mi>π</mi></mrow><mn>8</mn></mfrac></math> units',
+    '<math><mfrac><mrow><mn>3</mn><mi>π</mi></mrow><mn>8</mn></mfrac></math> units'
  ],
- correctAnswer: 1, 
- explanation: 'Add up the coins for the three students shown in the pictograph. Subtract that total from 200 to find how many coins Diana has.'
+ correctAnswer: 1,
+ explanation: 'The minor arc corresponds to 360° - 225° = 135°. Arc length = (135/360) × 2π × 1 = 3π/4 units.'
  },
+ {
+ id: '21',
+ text: 'The design for the arc-shaped stand of the hammock shown was based on a 144° arc, ⏜ST, of a circle with a radius of 2.3 meters. (Figure is not drawn to scale.)<br><img src="images/question_21.png" class="question-image" alt="Arc ST of hammock stand"></img><br>The length of ⏜ST is closest to —',
+ type: 'multiple-choice',
+ options: ['2.89 m', '3.68 m', '5.78 m', '7.23 m'],
+ correctAnswer: 2,
+ explanation: 'Arc length = (144/360) × 2π × 2.3 = 0.4 × 2π × 2.3 ≈ 5.78 meters.'
+ },
+ {
+ id: '22',
+ text: 'Given: Three concentric circles with the center O<br><img src="images/question_22.png" class="question-image" alt="Three concentric circles with radii 7, 11, and 14 inches"></img><br>Which is closest to the area of the shaded region?',
+ type: 'multiple-choice',
+ options: ['231 sq in.', '308 sq in.', '539 sq in.', '616 sq in.'],
+ correctAnswer: 3,
+ explanation: 'Area of shaded region = π(14)² - π(7)² = 196π - 49π = 147π ≈ 616 square inches.'
+ },
+ {
+ id: '23',
+ text: 'Given: Circle T with radius 9<br><img src="images/question_23.png" class="question-image" alt="Circle T with shaded sector"></img><br>Which best represents the area of the shaded sector?',
+ type: 'multiple-choice',
+ options: [
+    '<math><mfrac><mrow><mn>81</mn><mi>π</mi></mrow><mn>4</mn></mfrac></math>',
+    '<math><mfrac><mrow><mn>81</mn><mi>π</mi></mrow><mn>2</mn></mfrac></math>',
+    '<math><mfrac><mrow><mn>9</mn><mi>π</mi></mrow><mn>4</mn></mfrac></math>',
+    '<math><mfrac><mrow><mn>9</mn><mi>π</mi></mrow><mn>2</mn></mfrac></math>'
+ ],
+ correctAnswer: 0,
+ explanation: 'For a 90° sector with radius 9: Area = (90/360) × π × 9² = (1/4) × 81π = 81π/4.'
+ },
+ {
+ id: '24',
+ text: 'Given: Circle W<br><img src="images/question_24.png" class="question-image" alt="Circle W with center and points"></img><br>Which point lies on circle W?',
+ type: 'multiple-choice',
+ options: [
+    '(−3, 1)',
+    '(1, −3)',
+    '(3, 1)',
+    '(3, −1)'
+ ],
+ correctAnswer: 2,
+ explanation: 'Calculate the distance from the center to each point. The point (3, −1) is at the correct distance to lie on circle W.'
+ }
 ];
 
 // Test-specific storage key for this test

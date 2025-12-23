@@ -3,155 +3,213 @@ window.TEST_IDENTIFIER = 'math_algebra1_practice_2023';
 const sampleQuestions = [
  {
  id: '1',
- text: 'Which number sentence will make this statement true? <center>? > 8,243</center>',
+ text: 'What is the value of this expression when a = 8, b = 16, and c = −4?<br><center><math><mfrac><mn>5</mn><mn>3</mn></mfrac></math><math><msqrt><mi>a</mi><mo>−</mo><mi>c</mi></msqrt></math><math><msqrt><mi>b</mi></msqrt></math><mo>+</mo><mn>9</mn></center>',
  type: 'multiple-choice',
- options: ['8,223', '8,285', '8,198', '8,234'],
+ options: ['30', '35', '50', '51'],
  correctAnswer: 1,
- explanation: 'To be greater than 8,243, the number must be bigger. Compare: 8,285 > 8,243 because 285 is greater than 243 in the last three digits.'
+ explanation: 'Substituting values: a = 8, b = 16, c = -4. First calculate a - c = 8 - (-4) = 12. Then √12 = 2√3, √16 = 4. The expression becomes (5/3)(2√3)(4) + 9 = (5/3)(8√3) + 9 = (40√3)/3 + 9 ≈ 35.'
  },
  {
  id: '2',
- text: 'This set of circles is shaded to represent one whole. <br><img src="images/2.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which model is shaded to represent this expression? <center><math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math></center>',
+ text: 'What is the quotient of <math><mo>(</mo><mn>15</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>8</mn><mi>x</mi><mo>−</mo><mn>12</mn><mo>)</mo></math> and <math><mo>(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mo>)</mo></math>? Assume the denominator does not equal zero.',
  type: 'multiple-choice',
  options: [
-    {url: 'images/2a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/2b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/2c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/2d.png', alt: 'Image failed to load. Please try again later.'}
+   '<math><mn>45</mn><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>52</mn><mi>x</mi><mo>−</mo><mn>24</mn></math>',
+   '<math><mn>15</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>5</mn><mi>x</mi><mo>−</mo><mn>10</mn></math>',
+   '<math><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn></math>',
+   '<math><mn>5</mn><mi>x</mi><mo>−</mo><mn>6</mn></math>'
  ],
- correctAnswer: 1, 
- explanation: 'Adding five quarters: 1/4 + 1/4 + 1/4 + 1/4 + 1/4 = 5/4, which is one whole circle plus one more quarter.'
+ correctAnswer: 3,
+ explanation: 'Using polynomial long division or factoring: (15x² - 8x - 12) ÷ (3x + 2). First multiply: 5x(3x + 2) = 15x² + 10x, subtract to get -18x - 12. Then -6(3x + 2) = -18x - 12. The quotient is 5x - 6.'
  },
  {
  id: '3',
- text: 'This model is shaded to represent one whole. <br><img src="images/3_1.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Model R is shaded to represent a fraction. <br><img src="images/3_2.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which of these is shaded to represent a fraction that is less than the fraction represented by Model R?',
+ text: 'Which represents this expression in simplest form?<br><img src="images/3.png" class="question-image" alt="Expression to simplify"></img>',
  type: 'multiple-choice',
  options: [
-    {url: 'images/3a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/3b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/3c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/3d.png', alt: 'Image failed to load. Please try again later.'}
+    {url: 'images/3a.png', alt: 'Option A'},
+    {url: 'images/3b.png', alt: 'Option B'},
+    {url: 'images/3c.png', alt: 'Option C'},
+    {url: 'images/3d.png', alt: 'Option D'}
  ],
- correctAnswer: 2, 
- explanation: 'Compare the shaded parts. A fraction is smaller when fewer parts are shaded. Look for the model with less shaded area than Model R.'
+ correctAnswer: 3,
+ explanation: 'Simplify the given expression by combining like terms and following the order of operations to arrive at option D.'
  },
  {
  id: '4',
- text: 'The table shows the number of miles a family traveled on three days. <br><img src="images/4.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Based on the table, which is closest to the difference between the total number of miles this family traveled on Day 1 and Day 2 combined and the number of miles traveled on Day 3?',
+ text: 'For which value of x does <img src="images/4_expression.png" alt="Expression" style="vertical-align: middle;"> simplify to <img src="images/4_result.png" alt="Result" style="vertical-align: middle;">?',
  type: 'multiple-choice',
- options: ['200 miles', '300 miles', '600 miles', '900 miles'],
- correctAnswer: 1, 
- explanation: 'Add Day 1 and Day 2 miles together, then subtract Day 3 miles to find the difference. Use estimation to find the closest answer.'
+ options: ['35', '245', '875', '1715'],
+ correctAnswer: 2,
+ explanation: 'Solve by setting up the equation and working through the algebraic simplification. The value x = 875 satisfies the equation.'
  },
  {
  id: '5',
- text: 'There were a total of 750 drinks in the cafeteria. There were 249 chocolate milks and 203 whole milks. The rest of the drinks were orange juice. Which estimate is closest to the number of orange juices in the cafeteria?',
+ text: 'What is <img src="images/5.png" alt="Expression to simplify" style="vertical-align: middle;"> in simplest form?',
  type: 'multiple-choice',
- options: ['400 because 200 + 200 = 400 and 800 - 400 = 400', '1,200 because 200 + 200 = 400 and 800 + 400 = 1,200 ', '300 because 250 + 200 = 450 and 750 - 450 = 300 ', '1,150 because 250 + 200 = 450 and 700 + 450 = 1,500'],
- correctAnswer: 2, 
- explanation: 'Round 249 to 250 and 203 to 200. Add: 250 + 200 = 450 drinks. Subtract from total: 750 - 450 = 300 orange juices.',
+ options: [
+    {url: 'images/5a.png', alt: 'Option A'},
+    {url: 'images/5b.png', alt: 'Option B'},
+    {url: 'images/5c.png', alt: 'Option C'},
+    {url: 'images/5d.png', alt: 'Option D'}
+ ],
+ correctAnswer: 2,
+ explanation: 'Simplify the expression by following algebraic rules for combining terms and simplifying radicals or fractions.'
  },
  {
  id: '6',
- text: 'Mr. Gary\'s class has a goal of selling 500 pizzas in three months. The class sold 135 pizzas in the first month and 257 pizzas in the second month. Exactly how many more pizzas does the class need to sell to reach its goal?',
+ text: 'Frank works at a convenience store.<br>• He earns $7.50 per hour when he works during the day.<br>• He earns $12.50 per hour when he works at night.<br>• He wants to earn at least $300 per week.<br><br>Which graph best represents this situation?',
  type: 'multiple-choice',
- options: ['392', '382', '208', '108'],
- correctAnswer: 3, 
- explanation: 'Add pizzas sold: 135 + 257 = 392. Subtract from goal: 500 - 392 = 108 more pizzas needed.',
+ options: [
+    {url: 'images/6f.png', alt: 'Graph F'},
+    {url: 'images/6g.png', alt: 'Graph G'},
+    {url: 'images/6h.png', alt: 'Graph H'},
+    {url: 'images/6j.png', alt: 'Graph J'}
+ ],
+ correctAnswer: 2,
+ explanation: 'Set up the inequality: 7.50x + 12.50y ≥ 300, where x is day hours and y is night hours. The correct graph shows the region above the line 7.50x + 12.50y = 300, which is Graph H.'
  },
  {
  id: '7',
- text: 'Which of these best represents this set of cherries? <br><img src="images/7.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'A square with a side length of x inches is shown.<br><img src="images/7.png" class="question-image" alt="Square with side length x"></img><br>The equation y = 4x represents the relationship between the side length, x, and the perimeter, y, of the square in inches. Which student states the correct domain and range of this relationship?',
  type: 'multiple-choice',
- options: ['40 - 5', '40 ÷ 5', '5 + 8', '5 × 40'],
- correctAnswer: 1, 
- explanation: 'If 40 cherries are divided into 5 equal groups, use division: 40 ÷ 5 = 8 cherries in each group.'
+ options: [
+   'Juan says the domain is all integers, and the range is all integers.',
+   'Stacy says the domain is all positive integers, and the range is all positive integers.',
+   'George says the domain is all negative numbers, and the range is all negative numbers.',
+   'Marla says the domain is all positive real numbers, and the range is all positive real numbers.'
+ ],
+ correctAnswer: 3,
+ explanation: 'Since side length must be positive (x > 0), the domain is all positive real numbers. The perimeter y = 4x will also be all positive real numbers. Marla is correct.'
  },
  {
  id: '8',
- text: 'Which of these best represents this set of cherries? <img src="images/8.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'A function f is described.<br><center>f(x) = (x − 2)² + 3</center><br>• The domain of f is all real numbers greater than 0.<br><br>The range of f is all real numbers greater than or equal to —',
  type: 'multiple-choice',
- options: ['6 + 2', '6 × 2', '3 + 2', '3 × 2'],
- correctAnswer: 3, 
- explanation: 'If there are 3 groups with 2 cherries in each group, use multiplication: 3 × 2 = 6 total cherries.'
+ options: ['2', '3', '5', '7'],
+ correctAnswer: 1,
+ explanation: 'The vertex form shows minimum at (2, 3). Since domain is x > 0, we check f(0) = 4 + 3 = 7. As x approaches 0 from right, f approaches 7. The minimum in the domain occurs at x = 2, giving f(2) = 3. Range is y ≥ 3.'
  },
  {
  id: '9',
- text: 'Which number sentence is true?',
+ text: 'Which function does NOT have a y-intercept of 2?',
  type: 'multiple-choice',
- options: ['8 × 2 = 16 + 3', '9 - 1 = 8 ÷ 2', '5 × 6 = 25 + 5', '15 - 3 = 6 × 3'],
- correctAnswer: 2, 
- explanation: 'Check each equation: 5 × 6 = 30 and 25 + 5 = 30, so both sides equal 30. This makes the equation true.'
+ options: [
+   '<math><mi>y</mi><mo>=</mo><mfrac><mrow><mi>x</mi><mo>+</mo><mn>10</mn></mrow><mn>5</mn></mfrac></math>',
+   '<math><mi>y</mi><mo>=</mo><mn>4</mn><mo>(</mo><mi>x</mi><mo>+</mo><mn>0.5</mn><mo>)</mo></math>',
+   '<math><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>7</mn><mi>x</mi><mo>+</mo><mn>2</mn></math>',
+   '<math><mi>y</mi><mo>=</mo><mo>(</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo>)</mo><mo>(</mo><mi>x</mi><mo>+</mo><mn>5</mn><mo>)</mo></math>'
+ ],
+ correctAnswer: 3,
+ explanation: 'Find y-intercept by setting x = 0: A) y = 10/5 = 2; B) y = 4(0.5) = 2; C) y = 2; D) y = (-2)(5) = -10. Option D does not have y-intercept of 2.'
+ },
+ {
+ id: '10',
+ text: 'The graph of the function f(x) is shown on the coordinate plane.<br><img src="images/10.png" class="question-image" alt="Graph showing points (0,50), (1,100), (2,200)"></img><br>Which of these points is a solution of y = 3f(x)?',
+ type: 'multiple-choice',
+ options: ['(0, 300)', '(1, 300)', '(3, 300)', '(6, 200)'],
+ correctAnswer: 1,
+ explanation: 'From the graph: f(0) = 50, f(1) = 100, f(2) = 200. For y = 3f(x): when x = 1, y = 3(100) = 300. So (1, 300) is a solution.'
  },
  {
  id: '11',
- text: 'This model shows a rectangle that is 3 feet long and 2 feet wide. <br><img src="images/11.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which is the closest to the area of the shaded part of this modeL?',
+ text: 'The graph of an exponential function in the form <img src="images/11_form.png" alt="Exponential form" style="vertical-align: middle;"> contains the points <img src="images/11_points.png" alt="Given points" style="vertical-align: middle;">. Which graph best represents the function?',
  type: 'multiple-choice',
- options: ['8 square feet', '6 square feet', '4 square feet', '2 square feet'],
- correctAnswer: 2, 
- explanation: 'Count the shaded squares in the rectangle. If about half of the 6 total squares (3 × 2) are shaded, the area is about 4 square feet.'
+ options: [
+    {url: 'images/11a.png', alt: 'Graph A'},
+    {url: 'images/11b.png', alt: 'Graph B'},
+    {url: 'images/11c.png', alt: 'Graph C'},
+    {url: 'images/11d.png', alt: 'Graph D'}
+ ],
+ correctAnswer: 2,
+ explanation: 'Use the given points to determine the exponential function parameters, then identify which graph matches the behavior of the function.'
+ },
+ {
+ id: '12',
+ text: 'Which table represents <math><mi>y</mi><mo>=</mo><msup><mrow><mo>(</mo><mi>x</mi><mo>+</mo><mn>5</mn><mo>)</mo></mrow><mn>2</mn></msup></math>?',
+ type: 'multiple-choice',
+ options: [
+   'x: 3, y: 28; x: 4, y: 29',
+   'x: 3, y: 14; x: 4, y: 21',
+   'x: 3, y: 64; x: 4, y: 81',
+   'x: 3, y: 34; x: 4, y: 41'
+ ],
+ correctAnswer: 2,
+ explanation: 'Calculate y = (x + 5)²: When x = 3, y = (3 + 5)² = 8² = 64. When x = 4, y = (4 + 5)² = 9² = 81. This matches option H.'
  },
  {
  id: '13',
- text: 'Claudia painted a picture as shown. <br><img src="images/13.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which measurement is closest to the perimeter of Claudia\'s picture?',
+ text: 'Each table represents values from four different functions.<br><br>Table 1: x: 1,2,3,4; y: 10,100,1000,10000<br>Table 2: x: 1,2,3,4; y: 100,400,900,1600<br>Table 3: x: 1,2,3,4; y: 2000,1500,1000,500<br>Table 4: x: 1,2,3,4; y: 5000,2500,1250,625<br><br>Which tables could represent an exponential function?',
  type: 'multiple-choice',
- options: ['14 feet', '12 feet', '8 feet', '6 feet'],
- correctAnswer: 1, 
- explanation: 'Perimeter is the distance around the outside. Add all four sides of the picture frame to find the total distance around.'
+ options: [
+   'Table 1 and Table 2',
+   'Table 1 and Table 4',
+   'Table 2 and Table 4',
+   'Table 3 and Table 4'
+ ],
+ correctAnswer: 1,
+ explanation: 'Exponential functions have constant ratios between consecutive y-values. Table 1: ratio is 10 (exponential). Table 4: ratio is 0.5 (exponential). Tables 2 and 3 show quadratic and linear patterns respectively.'
  },
  {
  id: '14',
- text: 'Which is closest to the time shown on this clock? <br><img src="images/14.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Given:<br><center>f(x) = −x + 5<br>g(x) = 2x − 5<br>h(x) = (x + 2)(x − 5)</center><br>Which functions have at least one equivalent x-intercept?',
  type: 'multiple-choice',
- options: ['4:08', '4:40', '8:04', '8:20'],
- correctAnswer: 3, 
- explanation: 'Look at the clock hands. The short hand (hour hand) points between 8 and 9, and the long hand (minute hand) points to 4, which means 20 minutes. The time is 8:20.'
+ options: [
+   'f(x) and g(x) only',
+   'f(x) and h(x) only',
+   'g(x) and h(x) only',
+   'f(x), g(x), and h(x)'
+ ],
+ correctAnswer: 1,
+ explanation: 'Find x-intercepts by setting each equal to 0: f(x): x = 5; g(x): x = 2.5; h(x): x = -2 or x = 5. Functions f(x) and h(x) both have x-intercept at x = 5.'
  },
  {
  id: '15',
- text: 'Allen arrived at his friend\'s house at 3:20 P.M. He left 2 hours later. At what time did Allen leave his friend\'s house?',
+ text: 'The principal at Washington High School investigated the relationship between a student\'s cell phone use and the student\'s grade point average, GPA. The table shows a sample of the data collected.<br><img src="images/15_table.png" class="question-image" alt="Data table showing cell phone hours and GPA"></img><br><br>The correlation coefficient for the curve of best fit is <img src="images/15_coefficient.png" alt="correlation coefficient" style="vertical-align: middle;">. Based on the data, there appears to be —',
  type: 'multiple-choice',
- options: ['2:20 P.M.', '3:20 P.M.', '4:20 P.M.', '5:20 P.M.'],
- correctAnswer: 3, 
- explanation: 'Add 2 hours to the start time: 3:20 P.M. + 2 hours = 5:20 P.M.'
+ options: [
+   'no relationship',
+   'a weak relationship',
+   'a strong relationship',
+   'a positive relationship'
+ ],
+ correctAnswer: 2,
+ explanation: 'A correlation coefficient close to -1 or 1 indicates a strong relationship. The negative value shows an inverse relationship between cell phone use and GPA.'
  },
  {
  id: '16',
- text: 'Claire arrived at the zoo at 12:45 P.M. She left the zoo at 3:45 P.M. What was the total amount of time Claire was at the zoo?',
+ text: 'Which conclusion about the relationship between student cell phone use and GPA is best supported by these data?',
  type: 'multiple-choice',
- options: ['3 hours', '4 hours', '9 hours', '12 hours'],
- correctAnswer: 0, 
- explanation: 'Count the hours from 12:45 P.M. to 3:45 P.M.: from 12:45 to 1:45 is 1 hour, to 2:45 is 2 hours, to 3:45 is 3 hours total.'
+ options: [
+   'Increased cell phone use prevents students from getting good grades.',
+   'Decreased cell phone use causes students to perform better in school.',
+   'The more time students spend on their cell phones, the lower their GPA.',
+   'There is no relationship between student cell phone use and the student\'s GPA.'
+ ],
+ correctAnswer: 2,
+ explanation: 'The data shows a negative correlation: as cell phone use increases, GPA tends to decrease. Option H correctly describes this correlation without implying causation.'
  },
  {
  id: '17',
- text: 'Which 3 polygons were combined without overlapping to make the figure shown? <br><img src="images/17.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Using the quadratic curve of best fit, which equation most closely represents the set of data?<br><center>{(−8, 80.4), (−7, 57.8), (−6, 38.6), (−5, 22.8), (3, 18.8), (5, 51.8), (7, 98.4)}</center>',
  type: 'multiple-choice',
- options: ['Triangle, pentagon, triangle', 'Quadrilateral, triangle, quadrilateral', 'Quadrilateral, pentagon, triangle', 'Triangle, quadrilateral, triangle'],
- correctAnswer: 3, 
- explanation: 'Look at the shapes that make up the figure. Count the sides of each part: triangles have 3 sides, quadrilaterals have 4 sides.'
+ options: [
+   '<math><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>x</mi><mo>−</mo><mn>5</mn></math>',
+   '<math><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>5.2</mn></math>',
+   '<math><mi>y</mi><mo>=</mo><mn>1.7</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>5</mn></math>',
+   '<math><mi>y</mi><mo>=</mo><mn>1.7</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2.9</mn><mi>x</mi><mo>−</mo><mn>5.2</mn></math>'
+ ],
+ correctAnswer: 3,
+ explanation: 'Testing the equations with the given points, option D: y = 1.7x² + 2.9x − 5.2 provides the best fit for the data set.'
  },
  {
  id: '18',
- text: ' Mrs. Morgan wants to know what game the students would like to play during indoor recess. What is the best way for Mrs. Morgan to collect the data?',
+ text: 'This table shows the number of months used and the approximate distances driven, in miles, for six buses in a school district.<br><br>Bus A: 6 months, 10,100 miles<br>Bus B: 10 months, 17,000 miles<br>Bus C: 12 months, 23,900 miles<br>Bus D: 15 months, 31,500 miles<br>Bus E: 20 months, 43,200 miles<br>Bus F: 27 months, 59,900 miles<br><br>Using the line of best fit for these data, which value is the best prediction of the distance driven, in miles, by a bus that has been used for 40 months?',
  type: 'multiple-choice',
- options: ['Count the number of students who like to play football', 'Count the number of students that will be at indoor recess', 'Create a tally chart to show how long students play during recess', 'Create a tally chart to show what game the students would like to play during indoor recess'],
- correctAnswer: 3, 
- explanation: 'To find out what game students want to play, make a tally chart that shows each game choice and how many students picked each one.'
- },
- {
- id: '19',
- text: 'Four students have a total of 200 coins. This pictograph represents the number of coins three of the students have. The number of coins Diana has is missing. <br><img src="images/19.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which set represents the number of coins Diana has?',
- type: 'multiple-choice',
- options: [
-    {url: 'images/19a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/19b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/19c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/19d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 1, 
- explanation: 'Add up the coins for the three students shown in the pictograph. Subtract that total from 200 to find how many coins Diana has.'
- },
+ options: ['68,000', '79,100', '86,400', '91,400'],
+ correctAnswer: 3,
+ explanation: 'Calculate the line of best fit from the data points. The slope is approximately 2,200 miles per month. Extrapolating to 40 months gives approximately 91,400 miles.'
+ }
 ];
 
 // Test-specific storage key for this test

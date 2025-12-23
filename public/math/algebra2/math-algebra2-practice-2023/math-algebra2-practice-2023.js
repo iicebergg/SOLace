@@ -3,15 +3,20 @@ window.TEST_IDENTIFIER = 'math_algebra2_practice_2023';
 const sampleQuestions = [
  {
  id: '1',
- text: 'Which number sentence will make this statement true? <center>? > 8,243</center>',
+ text: 'Which expression is equivalent to the one shown if the denominators do not equal zero?<br><center><math><mfrac><mrow><mn>2</mn><mi>x</mi></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>49</mn></mrow></mfrac><mo>-</mo><mfrac><mn>3</mn><mrow><mo>(</mo><mi>x</mi><mo>-</mo><mn>4</mn><mo>)</mo><mo>(</mo><mi>x</mi><mo>-</mo><mn>7</mn><mo>)</mo></mrow></mfrac></math></center>',
  type: 'multiple-choice',
- options: ['8,223', '8,285', '8,198', '8,234'],
- correctAnswer: 1,
- explanation: 'To be greater than 8,243, the number must be bigger. Compare: 8,285 > 8,243 because 285 is greater than 243 in the last three digits.'
+ options: [
+    '<math><mfrac><mrow><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>11</mn><mi>x</mi><mo>-</mo><mn>21</mn></mrow><mrow><mo>(</mo><mi>x</mi><mo>-</mo><mn>4</mn><mo>)</mo><mo>(</mo><mi>x</mi><mo>+</mo><mn>7</mn><mo>)</mo></mrow></mfrac></math>',
+    '<math><mfrac><mrow><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>11</mn><mi>x</mi><mo>+</mo><mn>21</mn></mrow><mrow><mo>(</mo><mi>x</mi><mo>-</mo><mn>4</mn><mo>)</mo><mo>(</mo><mi>x</mi><mo>-</mo><mn>7</mn><mo>)</mo></mrow></mfrac></math>',
+    '<math><mfrac><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mrow><mo>(</mo><mi>x</mi><mo>-</mo><mn>4</mn><mo>)</mo><mo>(</mo><mi>x</mi><mo>+</mo><mn>7</mn><mo>)</mo></mrow></mfrac></math>',
+    '<math><mfrac><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mrow><mi>x</mi><mo>-</mo><mn>4</mn></mrow></mfrac></math>'
+ ],
+ correctAnswer: 2,
+ explanation: 'To combine these rational expressions, first factor x² - 49 = (x - 7)(x + 7). Find a common denominator and combine the fractions to get the equivalent expression.'
  },
  {
  id: '2',
- text: 'This set of circles is shaded to represent one whole. <br><img src="images/2.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which model is shaded to represent this expression? <center><math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math></center>',
+ text: 'Which expression is equivalent to the one shown if no denominators equal zero?<br><img src="images/2.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
  options: [
     {url: 'images/2a.png', alt: 'Image failed to load. Please try again later.'},
@@ -19,12 +24,12 @@ const sampleQuestions = [
     {url: 'images/2c.png', alt: 'Image failed to load. Please try again later.'},
     {url: 'images/2d.png', alt: 'Image failed to load. Please try again later.'}
  ],
- correctAnswer: 1, 
- explanation: 'Adding five quarters: 1/4 + 1/4 + 1/4 + 1/4 + 1/4 = 5/4, which is one whole circle plus one more quarter.'
+ correctAnswer: 3,
+ explanation: 'Simplify the complex rational expression by finding common denominators and applying division rules for fractions.'
  },
  {
  id: '3',
- text: 'This model is shaded to represent one whole. <br><img src="images/3_1.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Model R is shaded to represent a fraction. <br><img src="images/3_2.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which of these is shaded to represent a fraction that is less than the fraction represented by Model R?',
+ text: 'Which expression is equivalent to <img src="images/3.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
  options: [
     {url: 'images/3a.png', alt: 'Image failed to load. Please try again later.'},
@@ -32,116 +37,207 @@ const sampleQuestions = [
     {url: 'images/3c.png', alt: 'Image failed to load. Please try again later.'},
     {url: 'images/3d.png', alt: 'Image failed to load. Please try again later.'}
  ],
- correctAnswer: 2, 
- explanation: 'Compare the shaded parts. A fraction is smaller when fewer parts are shaded. Look for the model with less shaded area than Model R.'
+ correctAnswer: 0,
+ explanation: 'Apply rules of exponents and radicals to simplify the expression to its equivalent form.'
  },
  {
  id: '4',
- text: 'The table shows the number of miles a family traveled on three days. <br><img src="images/4.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Based on the table, which is closest to the difference between the total number of miles this family traveled on Day 1 and Day 2 combined and the number of miles traveled on Day 3?',
+ text: 'Which is the factored form of <img src="images/4.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
- options: ['200 miles', '300 miles', '600 miles', '900 miles'],
- correctAnswer: 1, 
- explanation: 'Add Day 1 and Day 2 miles together, then subtract Day 3 miles to find the difference. Use estimation to find the closest answer.'
+ options: [
+    {url: 'images/4a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/4b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/4c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/4d.png', alt: 'Image failed to load. Please try again later.'}
+ ],
+ correctAnswer: 1,
+ explanation: 'Factor the polynomial expression completely by finding common factors and applying factoring techniques.'
  },
  {
  id: '5',
- text: 'There were a total of 750 drinks in the cafeteria. There were 249 chocolate milks and 203 whole milks. The rest of the drinks were orange juice. Which estimate is closest to the number of orange juices in the cafeteria?',
+ text: 'What are the y-coordinates for the solutions to this system of equations?<br><img src="images/5.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
- options: ['400 because 200 + 200 = 400 and 800 - 400 = 400', '1,200 because 200 + 200 = 400 and 800 + 400 = 1,200 ', '300 because 250 + 200 = 450 and 750 - 450 = 300 ', '1,150 because 250 + 200 = 450 and 700 + 450 = 1,500'],
- correctAnswer: 2, 
- explanation: 'Round 249 to 250 and 203 to 200. Add: 250 + 200 = 450 drinks. Subtract from total: 750 - 450 = 300 orange juices.',
+ options: [
+    {url: 'images/5a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/5b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/5c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/5d.png', alt: 'Image failed to load. Please try again later.'}
+ ],
+ correctAnswer: 2,
+ explanation: 'Solve the system of equations by substitution or elimination to find the y-coordinates of the intersection points.'
  },
  {
  id: '6',
- text: 'Mr. Gary\'s class has a goal of selling 500 pizzas in three months. The class sold 135 pizzas in the first month and 257 pizzas in the second month. Exactly how many more pizzas does the class need to sell to reach its goal?',
+ text: 'What is the real solution set of <img src="images/6.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
- options: ['392', '382', '208', '108'],
- correctAnswer: 3, 
- explanation: 'Add pizzas sold: 135 + 257 = 392. Subtract from goal: 500 - 392 = 108 more pizzas needed.',
+ options: [
+    {url: 'images/6a.png', alt: 'Image failed to load. Please try again later.'},
+    '{4}',
+    '{28}',
+    {url: 'images/6d.png', alt: 'Image failed to load. Please try again later.'}
+ ],
+ correctAnswer: 3,
+ explanation: 'Solve the equation by isolating the variable and checking for extraneous solutions.'
  },
  {
  id: '7',
- text: 'Which of these best represents this set of cherries? <br><img src="images/7.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'What is the solution set for this equation?<br><center><math><mn>3</mn><msqrt><mn>2</mn><mi>x</mi><mo>-</mo><mn>4</mn></msqrt><mo>+</mo><mn>6</mn><mo>=</mo><mn>3</mn></math></center>',
  type: 'multiple-choice',
- options: ['40 - 5', '40 ÷ 5', '5 + 8', '5 × 40'],
- correctAnswer: 1, 
- explanation: 'If 40 cherries are divided into 5 equal groups, use division: 40 ÷ 5 = 8 cherries in each group.'
+ options: [
+    '<math><mo>{</mo><mfrac><mn>5</mn><mn>2</mn></mfrac><mo>}</mo></math>',
+    '<math><mo>{</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>}</mo></math>',
+    '<math><mo>{</mo><mo>-</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>}</mo></math>',
+    '{ }'
+ ],
+ correctAnswer: 3,
+ explanation: 'Isolate the radical: 3√(2x - 4) = -3, which gives √(2x - 4) = -1. Since square roots cannot equal negative values, there is no solution.'
  },
  {
  id: '8',
- text: 'Which of these best represents this set of cherries? <img src="images/8.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Which function is best represented by this graph?<br><img src="images/8.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
- options: ['6 + 2', '6 × 2', '3 + 2', '3 × 2'],
- correctAnswer: 3, 
- explanation: 'If there are 3 groups with 2 cherries in each group, use multiplication: 3 × 2 = 6 total cherries.'
+ options: [
+    '<math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mn>8</mn><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow></mfrac></math>',
+    '<math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mn>8</mn><mrow><mi>x</mi><mo>-</mo><mn>3</mn></mrow></mfrac></math>',
+    '<math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow></mfrac></math>',
+    '<math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>x</mi><mo>-</mo><mn>3</mn></mrow></mfrac></math>'
+ ],
+ correctAnswer: 1,
+ explanation: 'Identify the vertical asymptote and behavior of the rational function from the graph to determine which function matches.'
  },
  {
  id: '9',
- text: 'Which number sentence is true?',
+ text: 'Which graph could represent a function g(x) = log(x) + c where c < 0?',
  type: 'multiple-choice',
- options: ['8 × 2 = 16 + 3', '9 - 1 = 8 ÷ 2', '5 × 6 = 25 + 5', '15 - 3 = 6 × 3'],
- correctAnswer: 2, 
- explanation: 'Check each equation: 5 × 6 = 30 and 25 + 5 = 30, so both sides equal 30. This makes the equation true.'
+ options: [
+    {url: 'images/9a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/9b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/9c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/9d.png', alt: 'Image failed to load. Please try again later.'}
+ ],
+ correctAnswer: 3,
+ explanation: 'When c < 0, the logarithmic function shifts down by |c| units. Look for the graph that shows a downward vertical shift.'
+ },
+ {
+ id: '10',
+ text: 'An experiment is conducted on a container of gas that is kept at a constant temperature.<br>• When the pressure on the gas is 30 pounds per square inch, the volume is 120 cubic inches.<br>• When the pressure on the gas is 40 pounds per square inch, the volume is 90 cubic inches.<br>• Let p represent the pressure on the gas.<br>• Let v represent the volume of the gas.<br>Which statement is true about this relationship?',
+ type: 'multiple-choice',
+ options: [
+    'The volume of the gas varies directly with the pressure because v = 4p.',
+    'The volume of the gas varies directly with the pressure because vp = 3,600.',
+    'The volume of the gas varies inversely with the pressure because v = 4p.',
+    'The volume of the gas varies inversely with the pressure because vp = 3,600.'
+ ],
+ correctAnswer: 3,
+ explanation: 'Check the product: 30 × 120 = 3,600 and 40 × 90 = 3,600. Since vp = constant, this is an inverse variation.'
  },
  {
  id: '11',
- text: 'This model shows a rectangle that is 3 feet long and 2 feet wide. <br><img src="images/11.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which is the closest to the area of the shaded part of this modeL?',
+ text: 'A relation is shown in this table.<br><img src="images/11.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>Which statement about this relation is true?',
  type: 'multiple-choice',
- options: ['8 square feet', '6 square feet', '4 square feet', '2 square feet'],
- correctAnswer: 2, 
- explanation: 'Count the shaded squares in the rectangle. If about half of the 6 total squares (3 × 2) are shaded, the area is about 4 square feet.'
+ options: [
+    {url: 'images/11a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/11b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/11c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/11d.png', alt: 'Image failed to load. Please try again later.'}
+ ],
+ correctAnswer: 3,
+ explanation: 'Check if xy = constant (inverse variation) or y/x = constant (direct variation) to determine the relationship type.'
+ },
+ {
+ id: '12',
+ text: 'The graph of <img src="images/12.png" class="question-image" alt="Image failed to load. Please try again later."></img> has —',
+ type: 'multiple-choice',
+ options: [
+    'two x-intercepts and no y-intercept',
+    'two x-intercepts and one y-intercept',
+    'one x-intercept and no y-intercept',
+    'one x-intercept and one y-intercept'
+ ],
+ correctAnswer: 2,
+ explanation: 'Analyze the function to determine where it crosses the x-axis and y-axis, considering any restrictions on the domain.'
  },
  {
  id: '13',
- text: 'Claudia painted a picture as shown. <br><img src="images/13.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which measurement is closest to the perimeter of Claudia\'s picture?',
+ text: 'The graph of a function is shown on the grid.<br><img src="images/13.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>What appears to be the domain of this function?',
  type: 'multiple-choice',
- options: ['14 feet', '12 feet', '8 feet', '6 feet'],
- correctAnswer: 1, 
- explanation: 'Perimeter is the distance around the outside. Add all four sides of the picture frame to find the total distance around.'
+ options: [
+    '{x | −9 ≤ x ≤ 3}',
+    '{x | −5 ≤ x ≤ 2}',
+    '{x | −5 ≤ x ≤ −1 and −1 < x < 2}',
+    '{x | −9 ≤ x ≤ 0 and 2 < x ≤ 3}'
+ ],
+ correctAnswer: 1,
+ explanation: 'Identify the x-values for which the function is defined by examining the leftmost and rightmost points of the graph.'
  },
  {
  id: '14',
- text: 'Which is closest to the time shown on this clock? <br><img src="images/14.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Throughout which interval is <math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mo>-</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn><mi>x</mi><mo>-</mo><mn>2</mn></math> increasing?',
  type: 'multiple-choice',
- options: ['4:08', '4:40', '8:04', '8:20'],
- correctAnswer: 3, 
- explanation: 'Look at the clock hands. The short hand (hour hand) points between 8 and 9, and the long hand (minute hand) points to 4, which means 20 minutes. The time is 8:20.'
+ options: [
+    '(−∞, −3]',
+    '[−3, 0]',
+    '[0, 2)',
+    '(2, ∞)'
+ ],
+ correctAnswer: 2,
+ explanation: 'Find the derivative and determine where f\'(x) > 0 to identify intervals where the function is increasing.'
  },
  {
  id: '15',
- text: 'Allen arrived at his friend\'s house at 3:20 P.M. He left 2 hours later. At what time did Allen leave his friend\'s house?',
+ text: 'Which of the following describes the end behavior of <math><mi>h</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mi>x</mi><mo>-</mo><mn>6</mn></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac></math> as x approaches negative infinity?',
  type: 'multiple-choice',
- options: ['2:20 P.M.', '3:20 P.M.', '4:20 P.M.', '5:20 P.M.'],
- correctAnswer: 3, 
- explanation: 'Add 2 hours to the start time: 3:20 P.M. + 2 hours = 5:20 P.M.'
+ options: [
+    'y approaches negative infinity',
+    'y approaches −6',
+    'y approaches −1',
+    'y approaches 0'
+ ],
+ correctAnswer: 3,
+ explanation: 'As x → −∞, the degree of the denominator is higher than the numerator, so the function approaches 0.'
  },
  {
  id: '16',
- text: 'Claire arrived at the zoo at 12:45 P.M. She left the zoo at 3:45 P.M. What was the total amount of time Claire was at the zoo?',
+ text: 'Which of the following describes the end behavior of <math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>9</mn><msub><mi>log</mi><mn>5</mn></msub><mo>(</mo><mfrac><mi>x</mi><mn>2</mn></mfrac><mo>)</mo><mo>+</mo><mn>5</mn></math> as x approaches 0?',
  type: 'multiple-choice',
- options: ['3 hours', '4 hours', '9 hours', '12 hours'],
- correctAnswer: 0, 
- explanation: 'Count the hours from 12:45 P.M. to 3:45 P.M.: from 12:45 to 1:45 is 1 hour, to 2:45 is 2 hours, to 3:45 is 3 hours total.'
+ options: [
+    'f(x) approaches −∞',
+    'f(x) approaches 0',
+    'f(x) approaches 5',
+    'f(x) approaches ∞'
+ ],
+ correctAnswer: 0,
+ explanation: 'As x → 0⁺, x/2 → 0⁺, and log₅(x/2) → −∞, so f(x) → −∞.'
  },
  {
  id: '17',
- text: 'Which 3 polygons were combined without overlapping to make the figure shown? <br><img src="images/17.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Given: f(x) = x − 1<br>g(x) = −2x + 4<br>Which graph best represents f(g(x))?',
  type: 'multiple-choice',
- options: ['Triangle, pentagon, triangle', 'Quadrilateral, triangle, quadrilateral', 'Quadrilateral, pentagon, triangle', 'Triangle, quadrilateral, triangle'],
- correctAnswer: 3, 
- explanation: 'Look at the shapes that make up the figure. Count the sides of each part: triangles have 3 sides, quadrilaterals have 4 sides.'
+ options: [
+    {url: 'images/17a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/17b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/17c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/17d.png', alt: 'Image failed to load. Please try again later.'}
+ ],
+ correctAnswer: 0,
+ explanation: 'Compute f(g(x)) = f(−2x + 4) = (−2x + 4) − 1 = −2x + 3, which is a linear function with slope −2 and y-intercept 3.'
  },
  {
  id: '18',
- text: ' Mrs. Morgan wants to know what game the students would like to play during indoor recess. What is the best way for Mrs. Morgan to collect the data?',
+ text: 'The test scores of all students on the State 10th Grade English Assessment were collected and displayed in the histogram shown. The data appear normally distributed with a mean test score of 550 and a standard deviation of 82.<br><img src="images/18.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>The principal of a high school in the state wants to compare the data from her school\'s students with the data in the histogram on the same test. To collect the most appropriate data, the principal should —',
  type: 'multiple-choice',
- options: ['Count the number of students who like to play football', 'Count the number of students that will be at indoor recess', 'Create a tally chart to show how long students play during recess', 'Create a tally chart to show what game the students would like to play during indoor recess'],
- correctAnswer: 3, 
- explanation: 'To find out what game students want to play, make a tally chart that shows each game choice and how many students picked each one.'
+ options: [
+    'randomly poll 10th graders in her school asking them what test score they received on the State 10th Grade English assessment',
+    'ask the school administration for the data files that contain all the test scores on the State 10th Grade English assessment for her school',
+    'have every third 10th grader arranged alphabetically in her school report their test scores on the State 10th Grade English assessment',
+    'give a questionnaire to all 10th graders in fourth-period English class asking them to provide their test score on the State 10th Grade English assessment'
+ ],
+ correctAnswer: 1,
+ explanation: 'To get the most accurate and complete data, the principal should obtain the official data files containing all test scores rather than relying on sampling or self-reporting.'
  },
  {
  id: '19',
- text: 'Four students have a total of 200 coins. This pictograph represents the number of coins three of the students have. The number of coins Diana has is missing. <br><img src="images/19.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which set represents the number of coins Diana has?',
+ text: 'The data set containing the test scores on the State 10th Grade English Assessment for Mr. Carter\'s English classes has a median test score lower than the median for all students. Which graph best represents the data for Mr. Carter\'s English classes?',
  type: 'multiple-choice',
  options: [
     {url: 'images/19a.png', alt: 'Image failed to load. Please try again later.'},
@@ -149,9 +245,48 @@ const sampleQuestions = [
     {url: 'images/19c.png', alt: 'Image failed to load. Please try again later.'},
     {url: 'images/19d.png', alt: 'Image failed to load. Please try again later.'}
  ],
- correctAnswer: 1, 
- explanation: 'Add up the coins for the three students shown in the pictograph. Subtract that total from 200 to find how many coins Diana has.'
+ correctAnswer: 3,
+ explanation: 'A lower median indicates the distribution is shifted left with more scores in the lower ranges compared to the state distribution.'
  },
+ {
+ id: '20',
+ text: 'A normally distributed set of 968 values has a mean of 108 and a standard deviation of 11. Which is closest to the number of values expected to be above 130?',
+ type: 'multiple-choice',
+ options: [
+    '22',
+    '155',
+    '462',
+    '946'
+ ],
+ correctAnswer: 0,
+ explanation: 'Calculate z = (130 - 108)/11 = 2. Using the standard normal table, P(Z > 2) ≈ 0.0228. Therefore, 968 × 0.0228 ≈ 22 values.'
+ },
+ {
+ id: '21',
+ text: 'This table shows data on the amount of money raised during a fundraiser for four different classes and for one student in each class. The data is normally distributed.<br><img src="images/21.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>Which of the four students raised the greatest amount of money?',
+ type: 'multiple-choice',
+ options: [
+    'Jill',
+    'Kelli',
+    'Monroe',
+    'Tim'
+ ],
+ correctAnswer: 1,
+ explanation: 'Calculate actual amounts: Jill: 60 + 1.8(11) = 79.8, Kelli: 58 + 2.1(12) = 83.2, Monroe: 55 + 1.4(13) = 73.2, Tim: 57 + 2.5(10) = 82. Kelli raised the most.'
+ },
+ {
+ id: '22',
+ text: 'The amount of lost revenue from tickets not sold for a concert is shown in the table.<br><img src="images/22.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>Which equation best models the relationship between y, the amount of lost revenue, and x, the price per ticket?',
+ type: 'multiple-choice',
+ options: [
+    {url: 'images/22a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/22b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/22c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/22d.png', alt: 'Image failed to load. Please try again later.'}
+ ],
+ correctAnswer: 1,
+ explanation: 'Analyze the relationship between price and lost revenue. The pattern suggests an exponential or power function relationship.'
+ }
 ];
 
 // Test-specific storage key for this test
