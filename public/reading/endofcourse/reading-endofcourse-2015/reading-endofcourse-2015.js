@@ -686,7 +686,7 @@ const sampleQuestions = [
       'activity',
       'frustration'
     ],
-    correctAnswer: 3,
+    correctAnswer: 2,
     explanation: 'The story is about both Danielle making cupcakes as a surprise for her siblings and her siblings making an apron as a surprise for her. Everyone in the story gives and receives gifts.'
   },
 
@@ -707,45 +707,47 @@ const sampleQuestions = [
 
   {
     id: '3',
-    text: 'Complete this flow chart. <br><img src="images/question_3.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+    text: 'Read this sentence from paragraph 4. <div class="passage-innerbox">The passage says "As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table.</div> The sentence contains an example of--',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: 'all_this_junk',
     options: [
-      'Danielle looks at the edges of the apron.',
-      'Danielle finds bits of cloth in the laundry room.', 
-      'Danielle sets the cupcakes on the table.',
-      'Danielle walks into her bedroom.',
-      'Danielle tries on the apron.'
+      'apostrophe',
+      'metaphor', 
+      'symbolism',
+      'personification'
     ],
-    correctAnswer: 4,
+    correctAnswer: 3,
     explanation: 'After receiving the apron and saying "Thank you. It\'s perfect," the passage says "As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table."'
   },
 
   {
     id: '4',
-    text: 'Danielle is pleased with the surprise most likely because she--',
-    type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    text: 'In this excerpt from paragraph 7, select the words that best reveal Benjamin\'s attempt to gain the artist\'s trust. <div class= "passage-innerbox">Craning his head to the side to get another peek at it, he answered politely enough, "My name\'s Benjamin, and I live up on Hendricks Avenue," waving his hand vaguely at the steep hill behind him. ... Then Benjamin blushed and apologized.</div>', 
+    type: 'multiple-select',
+    passageId: 'all_this_junk',
     options: [
-      'needs to wear it when making cupcakes',
-      'can cook more often for her family',
-      'enjoys wearing blue and yellow clothes',
-      'can tell that her family cares about her'
+      'Craning',
+      'peek',
+      'answered',
+      'politely',
+      'waving',
+      'vaguely',
+      'apologized'
     ],
-    correctAnswer: 3,
+    correctAnswer: [3, 6],
     explanation: 'Madison says "We wanted to make a surprise for you because you\'re such a nice sister. You are always thinking of us." This shows her family\'s care and appreciation for her.'
   },
 
   {
     id: '5',
-    text: 'What will Martin and Madison most likely do next?',
+    text: 'Which situation in the selection is an example of irony?',
     type: 'multiple-choice', 
-    passageId: 'the_cooks_surprise',
+    passageId: 'all_this_junk',
     options: [
-      'Make another apron',
-      'Help their sister cook',
-      'Clean the laundry room',
-      'Bite into their cupcakes'
+      'Benjamin is able to discern an artist\'s noise over all of the other noises he hears',
+      'The artist initially appears hostile to Benjamin but warms to his presence.',
+      'The artist is amused by Benjamin and invites him to return the next day to observe the progress on her work.',
+      'Benjamin thinks of his neighborhood as quiet only to learn that an artist is noisily constructing a piece of art nearby.'
     ],
     correctAnswer: 3,
     explanation: 'At the end, Danielle says "I have a surprise for you too!" and leads them to the kitchen where she left cupcakes for them.'
@@ -753,14 +755,14 @@ const sampleQuestions = [
 
   {
     id: '6',
-    text: 'Which of these do the characters have in common?',
+    text: 'According to paragraph 3, the main difference between Super Stadiums and regular stadiums is that Super Stadiums -',
     type: 'multiple-choice', 
-    passageId: 'the_cooks_surprise',
+    passageId: 'super_stadiums',
     options: [
-      'They think of others.',
-      'They sleep late.',
-      'They sew clothes.',
-      'They like to cook.'
+      'offer extra services',
+      'are always larger',
+      'exist in midsized cities',
+      'have hotel rooms available'
     ],
     correctAnswer: 0,
     explanation: 'All three characters make surprises for each other: Danielle bakes cupcakes for her siblings, and Martin and Madison make an apron for Danielle, showing they all think of others.'
@@ -768,105 +770,104 @@ const sampleQuestions = [
 
   {
     id: '7',
-    text: 'What is the root word in "discovered"?',
+    text: 'In paragraph 6, which word best describes the author\'s attitude about Super Stadium projects?',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: 'super_stadiums',
     options: [
-      'disc',
-      'disco', 
-      'cover',
-      'over'
+      'Cynical',
+      'Aggressive', 
+      'Resentful',
+      'Cautionary'
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: 'The root word in "discovered" is "cover." The prefix "dis-" means "not" and the suffix "-ed" shows past tense, so "discovered" means "uncovered" or "found."'
   },
 
   {
     id: '8',
-    text: 'Some people eat seaweed all by itself because they most likely--',
+    text: 'According to paragraph 7, in the future, sports fans will-',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea', 
+    passageId: 'super_stadiums', 
     options: [
-      'do not know it is used in other foods',
-      'eat many foods that come from the ocean',
-      'enjoy foods that add color to the meals they eat', 
-      'do not like how it tastes mixed with other foods'
+      'expect their team to win',
+      'help to plan stadiums',
+      'demand greater luxury', 
+      'pay higher ticket prices'
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'The passage states that "In some parts of the world, especially near the ocean, people eat seaweed all by itself," suggesting people near oceans commonly eat foods from the sea.'
   },
 
   {
     id: '9',
-    text: 'Based on the article, seaweed makes ice cream and yogurt--',
+    text: 'Which sentence from this selection would be most difficult to verify as a fact?',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea',
+    passageId: 'super_stadiums',
     options: [
-      'last longer',
-      'taste different',
-      'sell faster',
-      'look different',
+      'In places with harsh winters, late-season football games can become rather chilly for players and fans alike.',
+      'However, inventive architects have always welcomed the opportunity to face such challenges throughout history.',
+      'The stadium in Phoenix where the Arizona Cardinals football team plays can be open to the elements on comfortable days or closed to the blazing Arizona sun when the need arises.',
+      'Futuristic Super Stadiums dedicated to soccer and rugby are opening in Lyon, France, and Dublin, Ireland.',
     ],
-    correctAnswer: 3,
+    correctAnswer: 1,
     explanation: 'The passage explains that "Without seaweed, ice cream and yogurt would not be as thick or creamy but would seem rather lumpy and watery," showing seaweed affects how they look and their texture.'
   },
 
   {
     id: '10',
-    text: 'Which question is answered in the article?',
+    text: 'Based on the selection, the reader may best infer that new building materials -',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea',
+    passageId: 'super_stadiums',
     options: [
-      'What does seaweed taste like?',
-      'Where do farmers buy seaweed?',
-      'Which ocean has the most seaweed?',
-      'Which goods have seaweed in them?',
+      'reflect a desire to conserve energy',
+      'require considerable patience to install',
+      'are sturdy enough to use on any building project',
+      'are responsible for yielding more attractive buildings',
     ],
-    correctAnswer: 3,
+    correctAnswer: 0,
     explanation: 'The article mentions several goods that contain seaweed: toothpaste, shampoo, makeup, ice cream, and yogurt. It also states "Hundreds of everyday items have seaweed in them."'
   },
 
     {
     id: '11',
-    text: 'The author wrote this article most likely to--',
+    text: 'Which information about the selection would be best to include in a report about the popularity of spectator sports?',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea',
+    passageId: 'super_stadiums',
     options: [
-      'give facts about an ocean plant',
-      'list kinds of ocean plants',
-      'tell about people who eat ocean plants',
-      'tell how to cook with ocean plants',
+      'The Arizona Cardinals, which are part of the National Football League, play in a new state-of-the-art stadium.',
+      'Most stadiums can accommodate 20,000 to 50,000 fans, and some Super Stadiums can hold even more than that.',
+      'The new stadium for the New York Giants and Jets cost $1.5 billion.',
+      'Sports team owners hope Super Stadiums will bring in more revenue, which can be used to improve team performance.',
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: 'The article provides factual information about seaweed, explaining what it is, where it grows, and how it is used in various everyday products.'
   },
 
   {
     id: '12',
-    text: 'In an Internet search about oceans, which website would most likely have information about where red seaweed grows?',
+    text: 'The purpose of this selection is to--',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea',
+    passageId: 'super_stadiums',
     options: [
-      'Life in the Ocean: Learn about whales, dolphins, and many other creatures of the ocean...',
-      'Ocean Habitats: Learn to recognize the ocean homes of many types of fish...',
-      'Discover Ocean Plants: Find interesting facts about plants that live in the ocean...',
-      'Photos of the Ocean Floor: Follow a team of divers who take amazing pictures of the ocean floor...',
-      'Foods From the Ocean: Discover how food from the ocean ends up on people\'s plates...'
+      'explain how to improve a traditional stadium',
+      'entertain the reader with facts about sporting events',
+      'persuade the reader to watch live sporting events',
+      'describe a popular trend in stadium construction',
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: 'The website "Discover Ocean Plants" would be most likely to have information about where red seaweed grows, as seaweed is a type of ocean plant.'
   },
 
   {
     id: '13',
-    text: 'What makes the secret message appear in "Lemony Letter"?',
+    text: 'The purpose of the first paragraph is to -',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'tezuka',
     options: [
-      'Heat',
-      'Light',
-      'Juice',
-      'Water',
+      'describe one of Osamu Tezuka\'s drawings',
+      'give a preview of Osamu Tezuka\'s newest manga book',
+      'provide a description of Osamu Tezuka\'s movie scenes',
+      'show how Osamu Tezuka\'s manga differs from older manga',
     ],
     correctAnswer: 0,
     explanation: 'The instructions state: "Have the person who receives your message hold the paper near a light bulb. The heat will make the secret message appear!"'
@@ -874,163 +875,164 @@ const sampleQuestions = [
 
   {
     id: '14',
-    text: 'In "Mirror Message" when the steam in the bathroom is gone, the message will most likely--',
+    text: 'Which question is answered in paragraph 3?',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'tezuka',
     options: [
-      'spread',
-      'turn white',
-      'disappear',
-      'turn brown',
+      'How often would Osamu Tezuka sketch pictures?',
+      'When did manga become widely popular?',
+      'Who invented the manga art form?',
+      'How many siblings did Osamu Tezuka have?',
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: 'The message only appears when steam covers the mirror. When the steam clears and goes away, the message would no longer be visible.'
   },
 
   {
     id: '15',
-    text: 'In step 3 of "Mirror Message," what does the word <u>invisible</u> mean?',
+    text: 'Paragraph 4 suggests that Osamu Tezuka -',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'tezuka',
     options: [
-      'clear',
-      'small',
-      'hidden',
-      'forgotten',
+      'spent most of his career writing comic strips for a children\'s newspaper',
+      'nearly decided upon a career in medicine rather than as a manga artist',
+      'decided to publish his works in installments instead of publishing books',
+      'deeply regretted taking his mother\'s advice about becoming a doctor',
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     explanation: 'In this context, "invisible" means the message cannot be seen or is hidden from view until the steam makes it appear.'
   },
 
   {
     id: '16',
-    text: '"Lemony Letter" and "Mirror Message" are alike because both--',
+    text: 'Read this sentence from paragraph 5. <div class="passage-innerbox">While Tezuka\'s manga may stand on the same library shelves as American superhero comic books, Tezuka\'s manga are to most traditional American comic books what Shakespeare\'s plays are to soap operas on American television: a similar art form, but with much richer content.</div> The purpose of the analogy in this sentence is to-',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'tezuka',
     options: [
-      'need help from a grownup',
-      'need the use of a lamp',
-      'have messages that must be dry to be read',
-      'have messages that must be painted to be read',
+      'illustrate the popular themes of American comic books',
+      'point out that the manga story lines are similar to American soap operas',
+      'emphasize the literary merit of Osamu Tezuka\'s manga',
+      'argue that comic book superheroes are based on Shakespeare\'s plays',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'Both methods require adult assistance: "Lemony Letter" needs a grownup to cut the lemon in half, and "Mirror Message" needs a grownup to peel the potato.'
   },
 
   {
     id: '17',
-    text: 'In "Crazy Crayon," it is hard to see the message before painting over it because the message--',
+    text: 'The author mainly develops the topic of this selection by -',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'tezuka',
     options: [
-      'needs to be next to light',
-      'takes a long time to change color',
-      'is written on dark paper',
-      'is written in a white color',
+      'summarizing an artist\'s career and his contribution to modern manga',
+      'providing detailed information for creating and publishing original manga',
+      'comparing and contrasting an artist\'s manga with traditional comic books',
+      'stating an opinion of manga and supporting it with examples and quotations',
     ],
-    correctAnswer: 3,
+    correctAnswer: 0,
     explanation: 'The instructions say to use a white crayon on white paper, making it "difficult to see the markings" because white crayon on white paper is nearly invisible.'
   },
 
   {
     id: '18',
-    text: 'One reason to read the flier is to--',
+    text: 'Which information from the selection supports the thesis that manga has become increasingly popular over time?',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'tezuka',
     options: [
-      'find out when spies need to use secret messages',
-      'learn how secret messages are made',
-      'discover secret messages that have been sent in the past',
-      'learn about the first person to send a secret message',
+      'Japanese manga originally contained a dozen sketches that formed one complete story.',
+      'Osamu Tezuka\'s father possessed a substantial collection of his favorite manga.',
+      'Osamu Tezuka\'s work contains borrowed plots from many literary classics.',
+      'Manga currently has its own section in many Japanese newspapers.',
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'The flier provides step-by-step instructions for three different methods of creating secret messages, teaching readers how to make them.'
   },
 
   {
     id: '19',
-    text: 'The author puts numbers before some sentences in the flier to--',
+    text: 'In paragraph 2, the author uses dialogue to -',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'dragon_cafe',
     options: [
-      'list the steps in the order of importance',
-      'order the steps the reader will follow',
-      'show how many items the reader needs in each step',
-      'tell about how many minutes each step will take',
+      'communicate critical aspects of the setting',
+      'introduce the fears of the main character',
+      'introduce a conflict between characters',
+      'add some humor to a serious situation',
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'The numbers indicate the sequential order of steps that must be followed to successfully create each type of secret message.'
   },
 
   {
     id: '20',
-    text: 'Read this sentence and dictionary entry. <div class="passage-innerbox"><b>In the winter, grocery stores <u>charge</u> too much for strawberries.</b></div> <div class="passage-dicbox"><b>charge</b> (chärj) <i>v.</i> <b>1.</b> To give orders. <b>2.</b> To set as a price. <b>3.</b> To fill up completely. <b>4.</b> To rush forward.</div>',
+    text: 'Read this sentence from paragraph 3. <div class="passage-innerbox">I watched her play with the top button of her coat and thought about the man I was about to meet, my father, whose face I knew only from a small black-and-white photograph.</div> This sentence conveys Su-Jen\'s feelings of -',
     type: 'multiple-choice',
+    passageId: 'dragon_cafe',
     options: [
-      '1',
-      '2',
-      '3',
-      '4',
+      'uncertainty',
+      'despair',
+      'irritation',
+      'disapproval',
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: 'In the context of grocery stores charging "too much" for strawberries, "charge" means "to set as a price," which is definition 2.'
   },
 
   {
     id: '21',
-    text: 'Guide words: <div class="passage-innerbox">camera - cause</div> <br>Which two words would appear on the same page as these guide words?',
-    type: 'multiple-select',
+    text: 'In paragraph 3, <u>pensive</u> means -',
+    type: 'multiple-choice',
+    passageId: 'dragon_cafe',
     options: [
-      'carrot',
-      'cabin',
-      'calm',
-      'canal',
-      'cave'
+      'polite',
+      'attentive',
+      'reassured',
+      'contemplative',
     ],
-    correctAnswer: [0, 3],
+    correctAnswer: 3,
     explanation: 'Guide words show the first and last entries on a dictionary page. "Carrot" and "canal" fall alphabetically between "camera" and "cause." "Cabin" comes before "camera" and "cave" comes after "cause."'
   },
 
   {
     id: '22',
-    text: 'The title tells readers that a character in the story will most likely--',
+    text: 'Read this sentence from paragraph 5. <div class="passage-innerbox">He stopped as he drew near, huffing out of breath.</div> This sentence contains an example of--',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
+    passageId: 'dragon_cafe',
     options: [
-      'spend time outdoors',
-      'need to draw a map',
-      'go to an amazing place',
-      'search for something',
+      'a simile',
+      'a metaphor',
+      'onamatopoeia',
+      'irony',
     ],
-    correctAnswer: 3,
+    correctAnswer: 2,
     explanation: 'The title "A Hidden Treasure" suggests that characters will be looking for or searching for something that is hidden.'
   },
 
   {
     id: '23',
-    text: 'Paragraph 5 is important to the story because it-',
+    text: 'The character of Su-Jen is mainly revealed through her--',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
+    passageId: 'dragon_cafe',
     options: [
-      'tells what is on the map',
-      'tells why Evan likes to go fishing',
-      'shows how the attic looks',
-      'shows where Grandma lives',
+      'actions',
+      'dialogue',
+      'appearance',
+      'thoughts',
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
     explanation: 'Paragraph 5 describes what Evan found on the map: "Grandma\'s house, a raindrop inside a square, two little triangles, and a dock" with an "X" marking the "Greatest Fishing Spot."'
   },
 
   {
     id: '24',
-    text: 'After Evan and Mark find the map, they both feel--',
+    text: 'Based on the selection, Su-Jen\'s father may best be described as--',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
+    passageId: 'dragon_cafe',
     options: [
-      'wise',
-      'calm',
-      'proud',
-      'eager',
+      'carefree',
+      'determined',
+      'confident',
+      'affectionate',
     ],
     correctAnswer: 3,
     explanation: 'The text shows their excitement: Evan asks "Excitedly" if they can find the fishing spot, Mark says "Let\'s try," and "they thundered down the steps," showing they are eager to start their search.'
@@ -1038,44 +1040,43 @@ const sampleQuestions = [
 
   {
     id: '25',
-    text: 'Where does this story begin and end?',
+    text: 'Later chapters of this selection would most likely describe--',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
+    passageId: 'dragon_cafe',
     options: [
-      'At the river',
-      'Near the trees',
-      'In the kitchen',
-      'In the attic',
+      'Su-Jen\'s adjustment to her new home',
+      'the reunions of other Chinese immigrants',
+      'Su-Jen\'s life in a small Chinese village',
+      'the construction of a new restaurant',
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
     explanation: 'The story begins with Grandma painting her kitchen, and ends with the boys rushing back "into the kitchen" with their question about the dock, then planning to get fishing poles.'
   },
 
   {
     id: '26',
-    text: 'Based on the story, where does the map first lead the boys? <br><img src="images/question_26.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+    text: 'Which word carries a negative connotation in this sentence? <div class="passage-innerbox">Patrick\'s mother is assuming that when her son refrains from fraternizing so much, he will become more accomplished.</div>',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
     options: [
-      'The house',
-      'The water tower',
-      'The trees',
-      'The Greatest Fishing Spot',
+      'mother',
+      'assuming',
+      'refrains',
+      'fraternizing',
+      'accomplished',
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'Mark says "The square with the raindrop is behind Grandma\'s house" and they look for the water tower with the faded raindrop symbol first.'
   },
 
   {
     id: '27',
-    text: 'Which question is answered at the end of the story?',
+    text: 'Read this sentence. <div class="passage-innerbox">Ryan was <u>meticulous</u> with his writing assignments, so the papers he turned in for English class received the highest grades for grammar because they never contained mistakes.</div> As used in this sentence, the word <u>meticulous</u> means--',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
     options: [
-      'What brings fish to a certain area?',
-      'What happened to the old dock?',
-      'How often did Mom go to the old dock?',
-      'How many fish does Grandma catch?',
+      'notably interested and insightful',
+      'especially careful about details',
+      'overly cautious of possible consequences',
+      'exceptionally rational and reasonable',
     ],
     correctAnswer: 1,
     explanation: 'When the boys ask about the dock, Grandma explains: "That dock was torn down a long time ago."'
@@ -1083,100 +1084,103 @@ const sampleQuestions = [
 
   {
     id: '28',
-    text: 'Place these words in alphabetical order.',
-    type: 'drag-drop',
-    passageId: 'hidden_treasure',
-    options: ['steps', 'shouted', 'searched', 'smiled', 'spend'],
-    dropZones: [' ', ' ', ' ', ' ', ' '],
-    correctAnswer: [2, 1, 3, 4, 0],
+    text: 'Which fact from a magazine article would be best to include in a report about the literary career of William Faulkner?',
+    type: 'multiple-choice',
+    options: [
+      'By the time Faulkner entered eighth grade in 1911, he had begun to show signs of increasing truancy.',
+      'Faulkner worked briefly as a clerk at First National Bank, which was owned by his grandfather.',
+      'Shortly after entering the University of Mississippi, Faulkner won a $10 poetry prize offered by Professor Calvin S. Brown.',
+      'In 1921 Faulkner accepted a job as postmaster at the University of Mississippi post office.',
+    ],
+    correctAnswer: 2,
     explanation: 'In alphabetical order: searched, shouted, smiled, spend, steps.'
   },
 
   {
     id: '29',
-    text: 'Based on paragraph 4, the reader can tell that-',
+    text: 'Read these sentences. <div class="passage-innerbox">The days following tryouts for the wrestling team were a roller coaster ride for Ian. He had done his best at the tryouts and hoped the coaches would want him to wrestle on the varsity team. He worried over it for hours.</div> The purpose of the figurative language in these sentences is to suggest that Ian--',
     type: 'multiple-choice',
-    passageId: 'ostrich',
     options: [
-      'chicks learn to eat by watching older ostriches',
-      'ostriches need people to feed them a healthy diet',
-      'plants are easier for ostriches to feed on than insects',
-      'chicks wait to eat until the grown ostriches finish',
+      'regretted how he had performed',
+      'alternately felt optimistic and pessimistic',
+      'desperately wanted to be on the varsity team',
+      'waited a long time to learn the results of the tryouts',
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: 'Paragraph 4 directly states: "The young birds learn to peck the ground and eat plants by watching older ostriches."'
   },
 
   {
     id: '30',
-    text: 'Paragraph 6 explains that one way ostriches keep themselves safe is by--',
+    text: 'The information in paragraph 2 supports the idea that Antarctic fish -',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: 'frozen_fish',
     options: [
-      'flying',
-      'digging',
-      'kicking',
-      'sleeping',
+      'adapt to cold water',
+      'struggle to find food',
+      'produce fatty layers of tissue',
+      'migrate to avoid ice',
+      'receive nutrition from crystals',
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
     explanation: 'Paragraph 6 states: "Their strong legs can deliver a kick that stops a lion!"'
   },
 
   {
     id: '31',
-    text: 'What information can be learned by reading the chart at the end of the article?',
+    text: 'Read these sentences from paragraph 3. <div class="passage-innerbox">The threadfin pithead, for instance, lives at depths of around 2,000 feet in the cold dark of the Antarctic seas. It is difficult to imagine a more adverse environment.</div> These sentences suggest that the author--',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: 'frozen_fish',
     options: [
-      'What do ostriches use to build a nest?',
-      'Why do ostriches keep the herd size low?',
-      'How long do ostriches live?',
-      'How many eggs do ostriches lay?',
+      'admires the unspoiled beauty of Antarctica',
+      'appreciates the kinds of life Antarctica supports',
+      'is disappointed that so little is known about Antarctica',
+      'is dissatisfied that people wrongly see Antarctica as a lifeless place',
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     explanation: 'The "Ostrich Facts" chart shows "Life span: 30-40 years," which answers how long ostriches live.'
   },
 
   {
     id: '32',
-    text: 'Based on the article, one way the male leader is like the females in the herd is that he helps--',
+    text: 'Read this sentence from paragraph 3. <div class="passage-innerbox">The slender fish spends its days swimming through the honeycombed channels of the icepack hunting krillsmall crustaceans-for its <u>sustenance.</u></div> The word <u>sustenance</u> means--',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: 'frozen_fish',
     options: [
-      'make the nest',
-      'guard the eggs',
-      'hide the chicks',
-      'feed the chicks',
+      'nourishment',
+      'camouflage',
+      'navigation',
+      'protection',
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: 'The text states: "The male and one of the females take turns guarding and sitting on the eggs."'
   },
 
   {
     id: '33',
-    text: 'The feathers of an ostrich help the bird--',
+    text: 'Which statement best expresses the main idea of paragraph 3?',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: 'frozen_fish',
     options: [
-      'run fast',
-      'stay warm',
-      'move quietly',
-      'look bigger',
+      'Fish that live in Antarctic water are called notothenioids.',
+      'Fish in the Antarctic Ocean have specialized coloring to hide from predators.',
+      'The features of the bald notothen fish help it dominate Antarctic waters.',
+      'Many types of fish thrive in the water around Antarctica.',
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'The passage explains: "Their new fluffy feathers trap air and keep the chicks warm at night."'
   },
 
   {
     id: '34',
-    text: 'Based on the article, what can the reader most likely tell about ostriches?',
+    text: 'In paragraph 6, the word salutary means--',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: 'frozen_fish',
     options: [
-      'They can run faster than any other animal.',
-      'Their wings are their most useful part.',
-      'Their speed helps them escape.',
-      'They usually kick their enemies.',
+      'individual',
+      'energetic',
+      'beneficial',
+      'invisible',
     ],
     correctAnswer: 2,
     explanation: 'The article states: "With such speed, ostriches outrun most predators" and that they can run 43 miles per hour, showing their speed helps them escape danger.'
@@ -1184,29 +1188,29 @@ const sampleQuestions = [
 
   {
     id: '35',
-    text: 'After looking at the title, the reader knows that this poem is about--',
+    text: 'The organizational structure of paragraph 6 is best described as -',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'frozen_fish',
     options: [
-      'hiding something',
-      'finding something',
-      'looking for something',
-      'thinking about something',
+      'definition',
+      'generalization',
+      'comparison/contrast',
+      'chronological order',
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
     explanation: 'The title "The Search" indicates the poem will be about someone searching or looking for something.'
   },
 
   {
     id: '36',
-    text: 'What does <u>pause</u> mean in line 13?',
+    text: 'Which section would most likely describe future uses of the protein found in fish that live in below-freezing water?',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'frozen_fish',
     options: [
-      'Try to remember',
-      'Begin to ask questions',
-      'Think about the past',
-      'Stop for a short time',
+      'Notohenioids',
+      'The Question',
+      'AFGP',
+      'Human Applications',
     ],
     correctAnswer: 3,
     explanation: '"Pause" means to stop briefly or for a short time. The speaker stops in their tracks when Dad asks questions.'
@@ -1214,14 +1218,14 @@ const sampleQuestions = [
 
   {
     id: '37',
-    text: 'In lines 17-20, the speaker can best be described as--',
+    text: 'How can the reader best tell that this is an expository selection?',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'frozen_fish',
     options: [
-      'scared',
-      'upset',
-      'angry',
-      'lazy',
+      'It offers a vivid description of ocean fish.',
+      'It presents a series of closely related facts.',
+      'It reveals the author\'s stance on an issue.',
+      'It focuses on fish rather than humans.',
     ],
     correctAnswer: 1,
     explanation: 'Lines 17-20 show disappointment and sadness: "It\'s surely gone missing / There\'s clearly no hope. / I have to give up / Find somewhere to mope." The speaker feels upset about losing the shoe.'
@@ -1229,46 +1233,260 @@ const sampleQuestions = [
 
   {
     id: '38',
-    text: 'Where is the first place the speaker looks for the shoe?',
+    text: 'What is the author\'s most likely purpose for writing this selection?',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'frozen_fish',
     options: [
-      'Under the sofa',
-      'In the car',
-      'In a sports bag',
-      'Near the steps',
+      'To explain how some fish can survive in challenging conditions',
+      'To prove that studying fish can be an economic boon for humans',
+      'To establish that McMurdo Station performs an important function',
+      'To highlight a certain fish that lives in the waters around Antarctica',
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
     explanation: 'The first line of the poem states: "I\'ve emptied my sports bag," which shows this was the first place searched.'
   },
 
   {
     id: '39',
-    text: 'Based on the events in the poem, the shoe was most likely last worn--',
+    text: '<div class="passage-innerbox">That advice helped keep my situation in perspective; I was <u>polishing</u> my craft, getting experience, and establishing myself as a talented writer.</div> In this sentence from paragraph 1, the word <u>polishing</u> suggests--',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'classical_carnival',
     options: [
-      'at school',
-      'during a game',
-      'at a friend\'s house',
-      'in a friend\'s car',
+      'earnings',
+      'overhauling',
+      'cleanliness',
+      'improvement',
+      'reputation'
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
   },
 
   {
     id: '40',
-    text: 'Which question is answered in the poem?',
+    text: 'Which set of statements provides the best summary of paragraphs 2-5?',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'classical_carnival',
     options: [
-      'What is the dog\'s new chew toy?',
-      'Why is the dog playing outside?',
-      'What sport does the speaker play?',
-      'When was the speaker\'s last game?',
+      'Jake envies his coworker Wylie, who reviews music and theater performances for the newspaper. He is pleased to learn that he will be given the chance to do Wylie\'s job for a day.',
+      'Jake does not think that the Lifestyles editor of the newspaper where he works even knows his name. To his surprise, she stops by and tells him he will be reviewing a classical concert.',
+      'Jake is asked to fill in for a coworker who normally reviews cultural performances for the newspaper. He feels excited until he sees that he will be reviewing classical music aimed at children.',
+      'Jake is busy reviewing his day\'s work when he learns he will also have to review a KidsPop concert that will take place the following afternoon. He feels that he does not know much about classical music.',
+    ],
+    correctAnswer: 2,
+    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+  },
+
+  {
+    id: '41',
+    text: 'Read this sentence from paragraph 5. <div class="passage-innerbox">The ticket was inscribed with the logo for KidsPop, the symphony orchestra\'s overt attempt to entice children away from video games and into the world of classical music.</div> What does the word <u>overt</u> mean?',
+    type: 'multiple-choice',
+    passageId: 'classical_carnival',
+    options: [
+      'meant to be adequate',
+      'easy to recognize',
+      'for a limited time',
+      'priced to be affordable',
+    ],
+    correctAnswer: 1,
+    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+  },
+
+  {
+    id: '42',
+    text: '<div class="passage-innerbox">A quick scan of Saint-Saën\'s biography provided little assistance--the information was nearly incomprehensible to a beginner such as myself.</div> The word <u>incomprehensible</u> from paragraph 6 contains a root word that means to--',
+    type: 'multiple-choice',
+    passageId: 'classical_carnival',
+    options: [
+      'enjoy',
+      'listen',
+      'construct',
+      'understand',
+      'invent'
+    ],
+    correctAnswer: 3,
+    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+  },
+
+  {
+    id: '43',
+    text: 'Read this sentence from paragraph 10. <div class="passage-innerbox">Now came a contrast in tempo--the lumbering sluggishness of giant tortoises, painfully trudging along, step by laborious step.</div> The author uses sensory language in this sentence in order to--',
+    type: 'multiple-choice',
+    passageId: 'classical_carnival',
+    options: [
+      'illustrate the boredom felt by some of the audience',
+      'indicate the musicians are playing much too slowly',
+      'show that the music engages the imagination',
+      'suggest that the concert will soon be ending',
+    ],
+    correctAnswer: 2,
+    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+  },
+
+  {
+    id: '44',
+    text: '<div class="passage-innerbox">The fanfare and flourishes of the finale announced a farewell to our carnival.</div> Which literary device does Jake use in this sentence from paragraph 13?',
+    type: 'multiple-choice',
+    passageId: 'classical_carnival',
+    options: [
+      'Simile',
+      'Alliteration',
+      'Hyperbole',
+      'Analogy',
+      'Flashback',
+      'Onomatopoeia'
+    ],
+    correctAnswer: 1,
+    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+  },
+
+  {
+    id: '45',
+    text: 'Jake\'s dismay over having to review a KidsPop concert affects the selection by--',
+    type: 'multiple-choice',
+    passageId: 'classical_carnival',
+    options: [
+      'revealing the conclusion',
+      'establishing the setting',
+      'reflecting the theme',
+      'creating the conflict'
+    ],
+    correctAnswer: 3,
+    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+  },
+
+  {
+    id: '46',
+    text: 'Jake uses extensive animal imagery in the selection to suggest the music\'s--',
+    type: 'multiple-choice',
+    passageId: 'classical_carnival',
+    options: [
+      'grit',
+      'origin',
+      'difficulty',
+      'playfulness'
+    ],
+    correctAnswer: 3,
+    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+  },
+
+  {
+    id: '47',
+    text: 'Which detail from the selection supports the concept that Jake is eager to do a good job reviewing the concert?',
+    type: 'multiple-choice',
+    passageId: 'classical_carnival',
+    options: [
+      'He attends although he is older than the kids.',
+      'He is comfortable with the extra workload.',
+      'He is ready to take notes about the performance.',
+      'He imagines the animals as the music portrays them.'
+    ],
+    correctAnswer: 2,
+    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+  },
+
+  {
+    id: '48',
+    text: 'The selection is told from Jake\s point of view in order to emphasize his--',
+    type: 'multiple-choice',
+    passageId: 'classical_carnival',
+    options: [
+      'fondness for music',
+      'connection with kids',
+      'wish to be a reporter',
+      'reaction to the concert'
+    ],
+    correctAnswer: 3,
+    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+  },
+
+  {
+    id: '49',
+    text: 'The author includes the illustration at the top of the selection to--',
+    type: 'multiple-choice',
+    passageId: 'contact_lenses',
+    options: [
+      'provide important facts about computers',
+      'add extra information about related technology',
+      'offer a representation of a complicated idea',
+      'entertain the reader with a cartoon'
+    ],
+    correctAnswer: 2,
+    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+  },
+
+  {
+    id: '50',
+    text: 'The purpose of paragraph 2 is to--',
+    type: 'multiple-choice',
+    passageId: 'contact_lenses',
+    options: [
+      'introduce an obstacle in the improvement of technology',
+      'show the similarities between old and new technology',
+      'relate current popular beliefs about technology',
+      'question the value of new technology'
     ],
     correctAnswer: 0,
+    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+  },
+
+  {
+    id: '51',
+    text: 'The author uses the source in paragraph 5 to--',
+    type: 'multiple-choice',
+    passageId: 'contact_lenses',
+    options: [
+      'compare the device to other technological advancements',
+      'relate a personal story about the creation of the device',
+      'respond to widespread criticism of the device',
+      'summarize how the device functions'
+    ],
+    correctAnswer: 3,
+    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+  },
+
+  {
+    id: '52',
+    text: 'The reader may conclude that computerized contact lenses will be most useful to people who--',
+    type: 'multiple-choice',
+    passageId: 'contact_lenses',
+    options: [
+      'like to browse new webpages',
+      'are traveling in a group',
+      'are in an unfamiliar region',
+      'prefer to prepare for weather changes'
+    ],
+    correctAnswer: 2,
+    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+  },
+
+  {
+    id: '53',
+    text: 'Paragraph 8 suggests that in the future, computers will be embedded into contact lenses that--',
+    type: 'multiple-choice',
+    passageId: 'contact_lenses',
+    options: [
+      'correct vision problems',
+      'work only during the daytime',
+      'need special equipment for removal',
+      'can only be worn for short periods of time'
+    ],
+    correctAnswer: 0,
+    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+  },
+
+  {
+    id: '54',
+    text: 'The purpose of this selection is to--',
+    type: 'multiple-choice',
+    passageId: 'contact_lenses',
+    options: [
+      'persuade the reader to try computerized contact lenses',
+      'explain the development of computerized contact lenses',
+      'evaluate the benefits of wearing computerized contact lenses',
+      'describe the process of manufacturing computerized contact lenses'
+    ],
+    correctAnswer: 1,
     explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
   },
 ];
