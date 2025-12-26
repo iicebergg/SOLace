@@ -2,257 +2,233 @@ window.TEST_IDENTIFIER = 'reading_grade4_practice_2024';
 
 // Reading passages that can be referenced by multiple questions
 const readingPassages = {
-  'the_cooks_surprise': {
-    title: 'The Cook\'s Surprise',
+  'callies_choice': {
+    title: 'Callie\'s Choice',
     content: `
      <ol class="paragraph-numbers">
-      <li>Danielle loved to cook delicious food on Saturdays. She enjoyed seeing her family members smile as they tasted a meal she made. Today Danielle had a surprise for her younger brother and sister. She had baked cupcakes early in the morning, while Martin and Madison were still asleep.</li>
+      <li>Callie heard a soft knock and pulled open the front door. Her favorite neighbor, Mrs. Baker, stood on the porch.</li>
 
-      <li>After lunch Danielle decided to take her brother and sister their surprises. Danielle carried the two cupcakes as she walked from room to room. She could not find Martin and Madison anywhere.</li>
+      <li>“I need your help, Callie,” Mrs. Baker said. “Do you know the empty lot down the street?” Callie nodded. “The place is a mess. It’s covered with trash. The city is letting us use the lot for a community garden,” Mrs. Baker explained. “We need help cleaning up the lot on Saturday.”</li>
 
-      <li>At last, Danielle entered the laundry room. There she noticed bits of yellow ribbon on the floor. Scraps of blue cloth lay next to the sewing machine, which had not been used in years. She thought it was an odd sight but decided to keep looking for her brother and sister.</p>
+      <li>“Sure, Mrs. Baker!” Callie said. “I will be happy to help!”</p>
 
-      <li>On her way back to the kitchen, Danielle had a perfect idea. She set the cupcakes on the table and found a sheet of paper and a marker. In large letters, she wrote, "For Martin and Madison." She imagined Martin and Madison grinning with delight when they discovered the surprise.</p>
+      <li>Mrs. Baker looked pleased. “Thanks, Callie. We want to get the garden planted before summer.”</p>
 
-      <li>Suddenly, Danielle heard noises coming from her bedroom. She decided to find out what was happening.</p>
+      <li>At school the next morning, Callie’s friend Tamara was waiting for her by their classroom. Tamara had a surprise for her best friend. “Tamara!” Callie called. “Have you heard about Saturday?”</p>
 
-      <li>"Surprise!" shouted two voices when Danielle opened her door.</li>
+      <li>Tamara looked confused. “How did you find out about Saturday?” she asked.</li>
 
-      <li>Danielle's heart jumped. Martin and Madison were waiting for her, and they had a package in their hands.</p>
+      <li>“My neighbor Mrs. Baker told me,” Callie explained. “She needs help cleaning up the empty lot.”</p>
 
-      <li>"This is for you," said Martin.</p>
+      <li>“Oh, that’s not what I am talking about,” Tamara said. “My mom bought tickets to go to Fun World this Saturday. She has an extra one for you!” The girls had been waiting for months for the new amusement park to open.</p>
 
-      <li>"Open it," added Madison.</li>
+      <li>Callie’s heart dropped. “But Mrs. Baker is counting on me to help,” she said.</li>
 
-      <li>Danielle took the package. Her hands quickly ripped off the shiny paper, and she opened the box. There was a blue apron folded neatly inside.</li>
+      <li>Tamara looked impatient. “Can’t someone else do it? I want you to go to Fun World with me! We’ve been waiting a long time to go.”</li>
 
-      <li>"We wanted to make a surprise for you because you're such a nice sister," said Madison. "You are always thinking of us."</li>
+      <li>Callie sighed and worried about her problem for the rest of the day. Her mother noticed her mood when she arrived home.</li>
 
-      <li>"I drew the apron pattern on the blue cloth and cut it out," Martin said.</li>
+      <li>“Did something go wrong at school?” her mother asked.</li>
 
-      <li>"Mom helped me sew the apron, and we attached the yellow ribbon," beamed Madison.</li>
+      <li>Callie explained her problem. “What should I do, Mom?” Callie asked when she was finished.</li>
 
-      <li>Danielle held the apron. She noticed the crooked lines of stitching along the edges, but she didn't mind the small sewing mistakes. To her, this was the most beautiful apron she had ever seen.</li>
+      <li>“I know you want to go with Tamara and also help Mrs. Baker. Think carefully about your choices. You need to make your own decisions, but I know you will do what is best,” her mother answered.</li>
 
-      <li>"Thank you. It's perfect," said Danielle.</li>
+      <li>Callie spent the rest of the evening thinking about her decision. She wanted to go to Fun World, but in the end, she decided her promise to her neighbor was more important.</li>
 
-      <li>As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table.</li>
+      <li>The next day at school, Callie told Tamara that she would not be able to go to Fun World. Tamara tried to understand, but Callie could tell she was disappointed. The girls hardly spoke for the rest of the week.</li>
 
-      <li>"I have a surprise for you too!" Danielle said, as she began leading her brother and sister down the hall into the kitchen.</li>
+      <li>On Saturday, Callie met Mrs. Baker at the vacant lot. “Hi, Callie,” her neighbor said. “Your mother said you made a tough choice. Thank you for helping us today.”</li>
+
+      <li>“You’re welcome,” Callie said. Callie smiled as she walked across the lot with a large trash bag.</li>
+
+      <li>“Do you need any help?” a voice behind her asked. Callie turned, surprised to see Tamara. She smiled at her friend.</li>
+
+      <li>“I know you made a promise to clean up the lot, and I wanted to come help you,” Tamara said. “My mom said she can take us to Fun World next weekend.”</li>
 </ol>
     `
   },
 
-  'useful_weeds_of_the_sea': {
-    title: 'Useful Weeds of the Sea',
+  'arctic': {
+    title: 'A Warm Welcome in the Arctic',
     content: `
     <ol class="paragraph-numbers">
-      <li>Seaweed may not be on many shopping lists, but it plays a big part in people's everyday lives. Seaweed is a plant that grows in the shallow waters near the shores of the world's oceans.</li>
+      <li>Hotels can make a person’s stay away from home as restful as possible. Hotels provide warm beds to allow guests a peaceful night’s rest. In addition, some hotels offer guests special services such as newspapers to read in the morning, fresh coffee, and even breakfast. Hotel workers want their guests to feel warm and welcome when they stay in their hotel.</li>
 
-    <img src="images/seaweed.png" alt="Seaweed" style="float: right; height: 120px; margin-left: 10px;">
-      <li>In some parts of the world, especially near the ocean, people eat seaweed all by itself. It has lots of vitamins and is a healthful treat. In places where seaweed is not served as a meal, people use goods that are made from these plants. Hundreds of everyday items have seaweed in them.</li>
+      <li>One hotel near the Arctic Circle, however, is different. The Ice Hotel in Sweden is made entirely of ice. The Ice Hotel might sound strange, but in some ways it is a typical hotel. It has a front lobby where guests check into the hotel, plenty of rooms to sleep in, and even room service, which guests can use to have food delivered to their rooms. The Ice Hotel is unusual, though, because most of the items are made from ice.</li>
 
-      <li>Seaweed helps many people keep their teeth clean. Toothpaste stays thick when it comes out of the tube because of a gel from a type of red seaweed. No one can see the seaweed in the toothpaste because it is mixed with the gel. This gel is in shampoo and makeup too.</li>
+      <li>It takes more than 30 tons of ice and snow to build the Ice Hotel. It melts in the summer and is rebuilt each winter. Different builders and artists create the Ice Hotel, so each winter this famous hotel has a new shape and design.</li>
 
-      <li>Without seaweed, ice cream and yogurt would not be as thick or creamy but would seem rather lumpy and watery. Many people eat foods with seaweed without even knowing it.</li>
+      <li>The effort of building the Ice Hotel is worth it, however. Inside the hotel, almost every inch sparkles like a diamond. The walls reflect even the smallest bits of light. The inside of the hotel gleams a bluish color. Ice pillars support the roof. The floor shines like glass. Visiting the Ice Hotel is truly an unusual experience.</li>
 
-      <li>Seaweed also helps plants grow. Many farmers around the world spray their fields with seaweed. They buy the seaweed after it has been made into a liquid. The seaweed becomes food for the plants. The vegetables on people's plates often come from these farms.</li>
+      <li>While it is cold inside, guests find that they can sleep quite well. Instead of sleeping on a regular bed, guests are given an insulated sleeping bag to keep them warm. The sleeping bag is laid on top of a layer of ice and snow. Although this sounds chilly, guests feel quite comfortable.</li>
 
-      <li>People cannot see seaweed in the foods they eat or in the items they use to look their best. However, none of these things would be the same without this useful weed that comes from the sea.</li>
+      <li>Temperatures inside the Ice Hotel are usually below freezing. Guests wear warm jackets, hats, gloves, and thick boots. Even the owners of the Ice Hotel know that staying in a building with walls of ice four feet thick can be a bit cold. They have a solution though. The Ice Hotel has a sauna for its guests. A sauna is a room filled with steam, where guests can warm themselves before bedtime or to thaw from the previous night. While a sauna is warm enough to heat a chilly person, it will not melt through the walls of ice. The Ice Hotel makes sure guests have a warm welcome and an excellent stay.</li>
 </ol>
     `
   },
 
-  'secret_message': {
-    title: 'Want to Send a Secret Message?',
-    content: `
-      <p><i>Here are three amazing ways to do it!</i></p>
-      
-      <p>Secret messages have been around for hundreds of years. Spies used them to pass important information without being caught. The next time you want to send a secret message, try one of these fun ideas!</p>
-      
-<div class="passage-innerbox">
-<img src="images/lemony-letter.png" alt="Lemony Letter" style="float: right; height: 100px; margin-left: 10px;">
-      <p><b>Lemony Letter</b></p>
-      <p><u>What you will need:</u>
-      <ul>
-      <li>A lemon</li>
-      <li>A knife</li>
-      <li>A small cup</li>
-      <li>A thin paintbrush</li>
-      <li>A piece of white paper</li>
-      <li>A lamp</li>
-      </ul></p>
-      
-      <p><ol>
-      <li>To have enough juice, gently roll the lemon back and forth against the table with your palm.</li>
-      <li>Have a grownup cut the lemon in half.</li>
-      <li>Squeeze the lemon so the juice drips into the cup.</li>
-      <li>Dip the paintbrush into the juice and write a message on the paper. When the "ink" dries, the paper will appear blank.</li>
-      <li>Give your secret message to a friend or family member.</li>
-      <li>Have the person who receives your message hold the paper near a light bulb. The heat will make the secret message appear! The lemon juice will turn a brown color.</li>
-      </ol></p>
-</div>
-
-<div class="passage-innerbox">
-<img src="images/mirror-message.png" alt="Mirror Message" style="float: right; height: 100px; margin-left: 10px;">
-      <p><b>Mirror Message</b></p>
-      <p><u>What you will need:</u>
-      <ul>
-      <li>A potato</li>
-      <li>A potato peeler of knife</li>
-      <li>A bathroom mirror</li>
-      </ul></p>
-      
-      <p><ol>
-      <li>Ask a grownup to peel the skin from one end of the potato.</li>
-      <li>Using the peeled end of the potato, write a message in big letters on the bathroom mirror.</li>
-      <li>Your message will be <u>invisible</u> until you take a bath or shower. When you take a shower or bath, close the door so the steam stays in the bathroom. Steam from the hot water will appear on the mirror and make your message show.</li>
-      </ol></p>
-
-      <p>Surprise someone else! Write a message on the bathroom mirror for a family member. See how long it takes for the person to discover your secret message.</p>
-</div>
-
-<div class="passage-innerbox">
-<img src="images/crazy-crayon.png" alt="Crazy Crayon" style="float: right; height: 100px; margin-left: 10px;">
-      <p><b>Crazy Crayon</b></p>
-      <p><u>What you will need:</u>
-      <ul>
-      <li>A piece of white paper</li>
-      <li>A white crayon</li>
-      <li>Dark-colored paint</li>
-      <li>A paintbrush</li>
-      </ul></p>
-      
-      <p><ol>
-      <li>Using the white crayon, write your message on the paper. It will be difficult to see the markings, so be careful.</li>
-      <li>Give your secret message to a friend.</li>
-      <li>Have your friend use the paintbrush to spread the paint over the paper. The message will appear on the paper as the person paints.</li>
-      </ol></p>
-
-      <p>It's amazing! The paint does not stick to the waxy crayon, so the words will show through.</p>
-</div>
-    `
-  },
-
-   'hidden_treasure': {
-    title: 'A Hidden Treasure',
+  'robinson': {
+    title: 'Jackie Robinson',
     content: `
     <ol class="paragraph-numbers">
-      <li>Evan and his 16-year-old brother, Mark, liked spending time with their grandmother. Today, though, Grandma was busy painting.</li>
+    <img src="images/robinson.png" alt="Jackie Robinson" style="float: right; height: 250px; margin-left: 10px;">
+      <li>Throughout history, many brilliant and brave people have changed the world through their actions. These notable figures include scientists, inventors, authors, and athletes. Jackie Robinson was an athlete who helped change the way people were treated in society. He was the first African American to play Major League Baseball in the history of modern baseball.</li>
 
-      <li>"May I help you paint your kitchen, Grandma?" asked Evan.</li>
+      <li>Jackie Robinson was born in Georgia in 1919. Like many children today, Jackie loved to play sports. He was a member of the track, football, basketball, and baseball teams in high school and college. In 1938 he received an award for being a great athlete. Many who enjoyed watching sports knew that Jackie had unbelievable talent.</li>
 
-      <li>"Your mom is helping me," Grandma replied with a smile. "Maybe you could play a game with Mark. I have some games in the attic."</li>
+      <p><b>Separate Leagues</b></p>
+      <li>A few years after college, Jackie became a baseball player. At the time, white and African-American baseball players did not play on the same professional teams. African Americans played in the Negro Leagues. Even though Jackie was good enough to play baseball on the white teams, he was not allowed because of the color of his skin. Many people thought this practice was acceptable, but others knew it was unfair. Jackie wanted to help change the rules that were created to keep groups of Americans separated.</li>
 
-      <li>The brothers nodded. They climbed the steps and opened the attic door to look for the games.</li>
+      <p><b>Big Changes for Baseball</b></p>
+      <li>In 1945 Jackie’s wish came true. He met a man named Branch Rickey, the main manager of a New York baseball team called the Brooklyn Dodgers. The Dodgers were a major league team with only white players and had thousands of baseball fans. Branch knew that Jackie was talented enough to be part of this team and play for the Dodgers. Therefore, Jackie would be the only African American in Major League baseball.</li>
 
-      <li>Instead of a game, Evan found an old journal in a dusty trunk. He opened the pages and discovered a map! The drawing showed Grandma's house, a raindrop inside a square, two little triangles, and a dock. Best of all, a large "X" marked the "Greatest Fishing Spot," which was near the dock.</li>
+      <p><b>Being a Dodger</b></p>
+      <li>In 1947 Jackie began playing for the Dodgers. Some people were still opposed, but that did not stop Jackie. He played with amazing skills and became one of the best players on the team. He was recognized with important sports awards. Baseball fans throughout the country were impressed by Jackie’s talent. Jackie proved that athletes should be judged on their ability, not on the color of their skin.</li>
 
-      <li>Excitedly, Evan asked Mark, "Do you think we can find this fishing spot?"</li>
-
-      <li>Mark took a closer look at the map. "Let's try," he said, and they thundered down the steps.</li>
-
-      <li>"Mom, we're going outside on a treasure hunt!" Evan shouted from the back door.</li>
-
-      <li>"Okay," Mom laughed, shaking her head.</li>
-
-      <li>"The square with the raindrop is behind Grandma's house," Mark said, narrowing his eyes as he examined the map.</li>
-
-      <li>When he looked up, Mark noticed a faded blue spot on the water tower nearby. "Look!" he exclaimed. "The water tower once had a raindrop painted on it. That must be it."</li>
-
-      <li>Next, the boys searched for the two small triangles near the tower. Before long, Evan patted the trunks of two pine trees.</li>
-
-      <li>"These trees must be the triangles on the map," he decided. "They're in the right places."</li>
-
-      <li>"Now we just need to find the dock," Mark said. The two boys searched the riverside near the trees, but they found only weeds.</li>
-
-      <li>Evan finally suggested that Grandma might remember the old dock.</li>
-
-      <li>The boys rushed into the kitchen with their question as Grandma and Mom were washing their paintbrushes.</li>
-
-      <li>"That dock was torn down a long time ago," Grandma explained. "How did you know about it?" she puzzled.</li>
-
-      <li>The boys presented the map, and Mom smiled. "That's my map I made when I was a young girl. Grandma and I loved fishing from the old dock."</li>
-
-      <li>"Wow! Could you take us to that place? The dock is no longer there, but maybe it's still a great fishing spot," Evan said hopefully.</li>
-
-      <li>Grandma smiled, remembering the times she spent with Mom. "Sure," she agreed. "Let's see if the fish still like it there."</li>
-
-      <li>"I'll get our fishing poles," Evan offered. The map had certainly led to a treasure and a chance to spend time with Grandma.</li>
-</ol>
+      <li>Once the rules separating people based on race began to disappear around the nation, professional teams in other sports began to allow African Americans to play. Today, sports fans cheer for teams that include talented players from many different backgrounds, but it all started with Jackie Robinson. He led the way to racial equality in sports.</li>
     `
   },
 
-   'ostrich': {
-    title: 'The Ostrich: One Odd Bird',
-    content: `
-    <ol class="paragraph-numbers">
-    <img src="images/ostrich.png" alt="Ostrich" style="float: right; height: 250px; margin-left: 10px;">
-      <li>Ostriches hold the record as the largest birds in the world. A male can grow to nine feet tall. That is about three feet taller than most men. How do these giants spend their days?</li>
-
-      <p><b>Life in a Bird Herd</b></p>
-      <li>Ostriches live in groups called herds. One male is the leader. He uses his strong legs to dig a hole for a nest. The herd only needs one nest because all the females lay their eggs in it. The male and one of the females take turns guarding and sitting on the eggs.</li>
-
-      <li>When the chicks hatch from the eggs, they are covered with yellow fuzz and black spots. Their colors match the sandy ground. This coloring helps them hide from dangerous animals. The mother and father ostrich protect the chicks too. Before long, feathers replace the fuzz on the chicks. Their new fluffy feathers trap air and keep the chicks warm at night.</li>
-
-      <li>The young birds learn to peck the ground and eat plants by watching older ostriches. They eat mostly plants, seeds, and roots but will also eat insects and small lizards. This diet helps the chicks grow quickly, almost a foot each month!</li>
-
-      <p><b>Speedy Runners</b></p>
-      <li>Although these birds cannot fly, powerful legs help them move quickly. Ostriches can bolt across the ground at 43 miles per hour. They keep their wings outstretched while running. This helps them keep their balance, especially when changing direction.</li>
-
-      <p><b>Staying Safe</b></p>
-      <li>With such speed, ostriches outrun most predators, but they know how to defend themselves too. Their strong legs can deliver a kick that stops a lion! Ostriches use another trick to stay safe. They sit down on the ground, rest their heads on the sand, and lie very still. The sand blends with the color of the ostriches so other animals do not notice them.</li>
-
-      <li>Today, wild ostriches live in Africa, but many tame ones live on farms and in zoos. Ostriches are unusual-looking birds, but their power and speed make them one of the fastest animals on land.</li>
-
-<div class="passage-innerbox">
-      <p><b>Ostrich Facts</b><br>
-      Life span: 30-40 years<br>
-      Weight: 350 pounds<br>
-      Height: 8-9 feet<br>
-      Egg weight: 3 pounds<br>
-      Nest size: Up to 8 feet<br>
-      Herd size: Usually fewer than 12 birds</p>
-</div>
-    `
-  },
-
-     'search': {
-    title: 'The Search',
+     'thieves': {
+    title: 'Band of Thieves',
     content: `
       <ol class="paragraph-numbers">
-        <li>I've emptied my sports bag</li>
-        <li>Checked in the car</li>
-        <li>Reached under the sofa</li>
-        <li>And searched near and far.</li><br>
-        <li>But hunt as I may</li>
-        <li>I've got only one shoe--</li>
-        <li>And where its mate is</li>
-        <li>I haven't a clue.</li><br>
-        <li>"When was your last game?"</li>
-        <li>Dad asks thoughtfully.</li>
-        <li>"And after the game</li>
-        <li>Whom did you see?"</li><br>
-        <li>I pause in my tracks--</li>
-        <li>Dad's smart, it is true</li>
-        <li>But his questions don't lead</li>
-        <li>To my runaway shoe.</li><br>
-        <li>It's surely gone missing</li>
-        <li>There's clearly no hope.</li>
-        <li>I have to give up</li>
-        <li>Find somewhere to mope.</li><br>
-        <li>So I sit on the steps</li>
-        <li>And stare into the yard</li>
-        <li>Where Otis the dog</li>
-        <li>Serves as guard--</li><br>
-        <li>Then I notice that Otis</li>
-        <li>Has a new chew</li>
-        <li>With laces and treads--</li>
-        <li>Oh, no! It's my shoe!</li>
-      </ol>
+      <li>A band of thieves I spied tonight,</li>
+<li>Their silver fur in silver light</li>
+<li>Winked at the moon as if to say--</li>
+<li>Shhh! Quiet! Don't give us away!</li><br>
+<li>The leader wore a thief's disguise,</li>
+<li>A mask of black around her eyes.</li>
+<li>Not far behind, her young did trail</li>
+<li>Each with a mask and bushy tail.</li><br>
+<li>And as they whisked across our grass</li>
+<li>I puzzled at them through the glass.</li>
+<li>I wondered what had brought them here--</li>
+<li>Money? Jewels? Expensive gear?</li><br>
+<li>Turns out, these bandits on all fours</li>
+<li>Were treasure-hunting out-of-doors!</li>
+<li>They'd come to snack on my dog's kibble--</li>
+<li>To satisfy a midnight nibble!</li>
+</ol>
     `
-  }
+  },
 
+   'thatcher': {
+    title: 'Welcome to Thatcher National Wilderness Area',
+    content: `
+      <p>Thatcher National Wilderness Area (TNWA) is an unspoiled forest of 500,000 acres. It has 42 peaks, 5 lakes, 22 ponds, 2 major rivers, and countless streams. There are many opportunities for recreational activities. Some of the nation’s best hiking, fishing, and camping can be found in these woods.</p>
+
+      <p>Visitors are cautioned to pay attention to the surroundings while in these areas. This is a wild place with unpredictable weather changes. With miles of woods and few roads, rescue is difficult or impossible. All visitors are responsible for exploring the area safely.</p>
+
+<div class="passage-innerbox">
+      <center><p><b>Hiking Essentials</b><br></center>
+      <p>Here are a few items that should be in every hiker's pack:</p>
+      <ul>
+      <li><b>Flashlight.</b> Not only is it a good idea in TNWA, but it is also a requirement.</li>
+      <li><b>Map and Compass.</b> Visitors are encouraged to bring an up-to-date map and a compass and should know how to use them.</li>
+      <li><b>Whistle</b> If help is needed, three short blasts should be blown as loudly as possible. This signal is known worldwide as a signal for help.</li>
+      <li><b>First-Aid Kit.</b> Visitors should bring a complete first-aid kit in case of illness or injury.</li>
+      <li><b>Food and Water.</b> Visitors should bring more than they think is needed. At least two or three bottles of water per day is recommended, but a hiker should bring more on hot days. Energy- boosting snacks such as peanuts, granola bars, and fruit should also be packed.</li>
+      <li><b>Rain Gear and Warm Clothes.</b> All visitors should be ready for changes in weather. Trail conditions may change, and hikes may take longer than originally planned.</li>
+      <li><b>Keep Eyes and Ears Alert.</b> Paying attention to the surroundings will help avoid accidents and harmful situations.</li>
+      </ul>
+
+      <p><b>Set a Turnaround Time</b></p>
+      <p>Hikers need to know when to turn back. It is more important to return safely to the vehicle at the end of the day than it is to reach the top of Thatcher Peak. It usually takes 8-10 hours to make it to the peak and back. Setting a time to turn around is good practice. This guarantees that hikers are back to the parking lot before dark. After all, Thatcher Peak will be there for another attempt!</p>
+
+      <p><b>Hike Smart</b></p>
+      <p>Hikers are asked to sign the trail register before starting a hike. Be sure to include the names of everyone in the group. Guidelines for safe hiking state that everyone should hike in groups and stay on marked trails. Hikers in a group should move only as fast as the slowest hiker. All members of the group should be comfortable with the difficulty level of the trail. <b>If you become lost, stay where you are.</b> It is easier to find lost hikers if they stay close to the trail.</p>
+
+      <p><b>Keep an Eye to the Sky</b></p>
+      <p>Visitors need to watch the weather while hiking. Even though the weather may be sunny and warm at the beginning of a hike, it can change rapidly, especially in the afternoon.</p>
+      
+      <p>Conditions get coldest and windiest on the mountains. Many of the plants that live on TNWA’s highest peaks can also be found in Arctic areas. There is a reason for that!</p>
+
+      <p>Thunderstorms can blow in quickly on hot summer days. If visitors hear thunder or see lightning, they should seek shelter as quickly and safely as possible. In the fall, snowstorms can appear without warning. Visitors must be prepared for sudden changes in the weather.</p>
+
+      <p>The staff at Thatcher National Wilderness Area hopes that all visitors will respect the park’s natural beauty and enjoy their time here. With preparation and a few safety measures, visitors will find that TNWA offers endless and rewarding experiences.</p>
+</div>
+    `
+  },
+
+  'benjamin': {
+    title: 'Benjamin and the Book Wagon',
+    content: `
+     <ol class="paragraph-numbers">
+      <li>Benjamin shifted in his seat as he gazed outside the open window in the one-room schoolhouse. A gentle breeze cooled his face, and he noticed the dirt road that led across the prairie to his house. Today was the last day of school. Benjamin could not wait to run barefoot in the cool grass next to the creek at home. He listened to his teacher, Miss Cotter.</li>
+
+      <li>“I expect all of you to read this summer,” she said. “Remember, reading a good book is like taking an exciting trip.”</li>
+
+      <li>Benjamin agreed. This year Miss Cotter had loaned him King Arthur and His Knights. As he read the book, Benjamin became so worried about Arthur’s adventures that he forgot about life on a Kansas farm. Instead, Benjamin was a brave king leading his loyal knights.</p>
+
+      <li>Benjamin sighed as he thought about books. When his family moved from Leesburg, Virginia, to Thomasville, Kansas, they had made tough decisions about what to bring with them. Most of the space in their horse- drawn wagon was taken up by necessities, such as food, clothing, and farm tools. Papa let Benjamin pack two books on the wagon. He chose a book of fairy tales for his sister Abigail and a book about pirates for himself. Benjamin had lost count of the number of times he had reread both books.</p>
+
+      <li>When the school day ended, Benjamin stayed to help Miss Cotter clean the schoolhouse for the summer. He watched longingly as she placed a stack of books in a wooden crate. King Arthur and His Knights sat on top. “Miss Cotter?” Benjamin asked shyly. “May I borrow a book for the summer? I’ll be careful with it.”</p>
+
+      <li>“I know you would,” Miss Cotter answered, “but these books come from the library in Greenfield. I keep them during the year, but I have to return them once school is out.”</li>
+
+      <li>Benjamin could not hide his disappointment. Greenfield had its own library, but it was 20 miles away. A trip to the library would take two days in the wagon.</p>
+
+      <li>“You know, Benjamin,” Miss Cotter said thoughtfully. “Mr. Peters who works at the library was thinking about starting a book wagon. I can ask him about it when I return these books.”</p>
+
+      <li>“What’s a book wagon?” Benjamin asked.</li>
+
+      <li>“It’s a small library on wheels,” she explained. “Mr. Peters loads a wagon with books and drives it to a small town. People can borrow books and exchange them for new ones when the wagon comes back in a few weeks.”</li>
+
+      <li>Benjamin brightened. “Do you think Mr. Peters will bring the book wagon here?” he asked.</li>
+
+      <li>Miss Cotter smiled. “I think he might agree to come. I’ll talk to him and ask him to write you when he makes a decision.”</li>
+
+      <li>For the next two Saturdays, Benjamin rode with Papa to the general store in Thomasville to buy supplies and pick up the mail. Both times he hoped for a letter from Mr. Peters, but nothing had arrived. Finally on the third Saturday, the storekeeper grinned and handed Benjamin a letter from the Greenfield Library. Benjamin held his breath as he slowly opened the letter and read it. Then he shouted with delight.</li>
+
+      <li>“Papa!” he exclaimed. “He’s going to do it! Mr. Peters is bringing the book wagon here!”</li>
+
+      <li>Papa hugged Benjamin. “Of course he is,” Papa said proudly. “How could he refuse when someone wants a book as much as you do?”</li>
+</ol>
+    `
+  },
+
+  'arabia': {
+    title: 'Buried Treasure: Finding the <i>Arabia</i>',
+    content: `
+    <ol class="paragraph-numbers">
+    <img src="images/arabia.png" alt="The Arabia steamboat" style="float: right; height: 250px; margin-left: 10px;">
+      <li>On September 5, 1856, the steamboat Arabia chugged up the muddy Missouri River. Eager passengers who were traveling west filled the ship. These pioneers planned to settle in new frontier towns. In addition to passengers, the ship carried more than 200 tons of food and supplies stored in its cargo hold.</li>
+
+      <li>All at once, the ship shook with a tremendous jolt. It had struck a fallen tree hidden beneath the river’s surface. The tree’s thick trunk stabbed the hull, or main body, of the ship. Within seconds water started to stream through the hole. Quickly, the crew began to ferry the frightened passengers to shore with a rowboat. People living near the river also rushed to the rescue. Everyone survived, but there was no time to save the cargo.</li>
+
+      <li>The next day one passenger wrote, “All that could be seen of our boat was the top of the pilot house. That sank out of sight in a short time.”</li>
+
+      <img src="images/arabia_diagram.png" alt="Steamboat diagram" style="float: right; height: 250px; margin-left: 10px;">
+
+      <p><b>Searching for a Buried Treasure</b></p>
+      <li>Many years later, treasure hunter David Hawley heard the story of the Arabia and its lost cargo. He wondered whether it might be possible to find the ship. Curious, he went to libraries and gathered information. Old newspaper articles listed the places where the boat was traveling. Old maps marked the site of the shipwreck.</li>
+
+      <li>Hawley also learned another key fact. The path of the Missouri River had changed over the years. Areas where the water once flowed had turned into dry land. As a result, the place where the Arabia had sunk was now located in a farmer’s field near Kansas City.</li>
+
+      <li>Hawley got permission from the farmer to search the field with a metal detector. This machine gives a signal when it senses a piece of metal. With the machine’s help, Hawley was able to locate the boat’s iron engines. They were 45 feet underground.</li>
+
+      <p><b>Unearthing the Past</b></p>
+      <li>Recovering the steamboat was a massive task. Hawley’s brother, father, and friends worked with him. First, they hired a company to dig some deep wells around the boat’s location. The wells did an important job. They pumped the groundwater away from the work area.</li>
+
+      <li>Next, the crew used bulldozers and backhoes. The heavy equipment cut through layers of soil, mud, and sand. Slowly, the hole grew larger and larger. After two weeks the crew spied a piece of weathered wood poking from the earth. It was part of the Arabia’s paddle wheel! Before long, Hawley’s team had found their next treasure. It was a small black rubber shoe.</li>
+
+      <p><b>Pioneer Living</b></p>
+      <li>The crew recovered many crates, boxes, and barrels. They were full of supplies from more than a century ago. These supplies offered a rare history lesson. They showed how the pioneers lived.</li>
+
+      <li>Some of the crates held food. There were jars of sweet pickles, canned fruit for pies, coffee beans, and spices. For cooking, the pioneers used sturdy pots and pans. Their supplies also included some delicate items. They had packed prized china dishes from England and perfume from France.</li>
+
+      <li>In the 1850s, when the Arabia sank, people did not have electricity to help them perform daily tasks and chores. The Arabia’s passengers had packed oil lamps as well as thousands of candles in the ship’s cargo hold to help light their homes. Other crates held bright fabrics and buttons, proof that the pioneers had worn some cheerful clothes. Window glass, doorknobs, axes, and nails told of hope- filled plans for building homes.</li>
+
+      <p><b>Preserving the Past</b></p>
+      <li>The hundreds of treasures inside the cargo hold were in good condition. The wet mud had protected them by sealing them against the water. Hawley and the crew could easily clean some of the items, such as metal water dippers and china. Other items, such as leather boots, were frail. If the crew removed the watery mud covering them, the boots might rot and fall apart.</li>
+
+      <li>The recovery crew stored the fragile items in tubs of water and in freezers to keep them safe. Then the crew asked experts from museums to help them. They learned how to clean, dry, and preserve each piece.</li>
+
+      <li>Hawley and his crew wanted to share the Arabia with the world. They could have sold the ship’s cargo for a large sum of money, but they chose to create a museum instead. Today people can visit the museum and view amazing treasures that unlock the past.</li>
+    `
+  },
 };
 
 const sampleQuestions = [
