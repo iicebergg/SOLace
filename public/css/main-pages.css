@@ -78,18 +78,6 @@ ul {
   box-shadow: 0 4px 15px rgba(74, 111, 165, 0.3);
 }
 
-.btn-secondary {
-  background: white;
-  border: 2px solid #4a6fa5;
-  color: #4a6fa5;
-}
-
-.btn-secondary:hover {
-  background: #4a6fa5;
-  color: white;
-  transform: translateY(-2px);
-}
-
 /* Header and Navigation */
 header {
   background: linear-gradient(135deg, #4a6fa5 0%, #3a5a80 100%);
@@ -520,11 +508,6 @@ header {
   text-align: center;
   transition: all 0.3s ease;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-}
-
-.feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
 .feature-title {
