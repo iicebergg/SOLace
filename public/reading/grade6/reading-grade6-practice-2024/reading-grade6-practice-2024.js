@@ -222,113 +222,66 @@ const readingPassages = {
 
       <li>Jada glanced at Zach then looked away. He seemed nice enough, but science and homeroom were the only classes they had together. Jada was always so busy listening to Sydney before and after homeroom that she didn’t have time to talk to her other classmates. Jada didn’t even remember if she and Zach had ever spoken to each other.</li>
 
-      <li>Instead of a game, Evan found an old journal in a dusty trunk. He opened the pages and discovered a map! The drawing showed Grandma's house, a raindrop inside a square, two little triangles, and a dock. Best of all, a large "X" marked the "Greatest Fishing Spot," which was near the dock.</li>
+      <li>Mr. Tao began organizing the students into a line and onto the bus. As Jada slumped into a seat, she wished that Sydney were there. Sydney normally did all the talking while Jada just listened.</li>
 
-      <li>Excitedly, Evan asked Mark, "Do you think we can find this fishing spot?"</li>
+      <li>“Can I sit here?” Zach asked, pointing to the empty seat next to Jada. He didn’t wait for an answer. “So, I guess we’re science partners today.”</li>
 
-      <li>Mark took a closer look at the map. "Let's try," he said, and they thundered down the steps.</li>
+      <li>Jada nodded.</li>
 
-      <li>"Mom, we're going outside on a treasure hunt!" Evan shouted from the back door.</li>
+      <li>“You’re pretty quiet today, even without Sydney around.”</li>
 
-      <li>"Okay," Mom laughed, shaking her head.</li>
+      <li>Jada blushed and looked at her shoes, but when she looked up at Zach’s face, his eyes were kind. He wasn’t making fun of her; he was simply stating his observations.</li>
 
-      <li>"The square with the raindrop is behind Grandma's house," Mark said, narrowing his eyes as he examined the map.</li>
+      <li>“Sorry,” she muttered.</li>
 
-      <li>When he looked up, Mark noticed a faded blue spot on the water tower nearby. "Look!" he exclaimed. "The water tower once had a raindrop painted on it. That must be it."</li>
+      <li>“Hey, I don’t mind if you’re quiet,” Zach said. “I have two sisters and one brother, and they never stop talking!”</li>
 
-      <li>Next, the boys searched for the two small triangles near the tower. Before long, Evan patted the trunks of two pine trees.</li>
+      <li>Jada examined her braid. “I guess sometimes I don’t have much to say.”</li>
 
-      <li>"These trees must be the triangles on the map," he decided. "They're in the right places."</li>
+      <li>“Sometimes you have a lot to say,” he replied.</li>
 
-      <li>"Now we just need to find the dock," Mark said. The two boys searched the riverside near the trees, but they found only weeds.</li>
+      <li>Jada looked up. “What do you mean?”</li>
 
-      <li>Evan finally suggested that Grandma might remember the old dock.</li>
+      <li>“Well, you always answer the questions in science. You seem to really understand the subject,” Zach said. “And I saw how you played the saxophone with Sydney in the band concert last fall. You were pretty good!”</li>
 
-      <li>The boys rushed into the kitchen with their question as Grandma and Mom were washing their paintbrushes.</li>
+      <li>“You went to the fall concert?” Jada asked.</li>
 
-      <li>"That dock was torn down a long time ago," Grandma explained. "How did you know about it?" she puzzled.</li>
+      <li>“It was the same night as the art show, and I had a painting in one of the exhibits that night. I stopped by the concert when the art show was over.”</li>
 
-      <li>The boys presented the map, and Mom smiled. "That's my map I made when I was a young girl. Grandma and I loved fishing from the old dock."</li>
+      <li>Jada did remember. She also remembered that the saxophone duet was supposed to be a solo; the program even listed only her name, but Jada had let Sydney talk her into performing it together. “You’re too shy to appear on stage all by yourself!” Sydney had demanded. “You know how anxious you get in front of people. I’ll perform it with you.”</li>
 
-      <li>"Wow! Could you take us to that place? The dock is no longer there, but maybe it's still a great fishing spot," Evan said hopefully.</li>
+      <li>Jada’s memory was interrupted by Mr. Tao’s announcement. “Students, we are on the way to the planetarium to view a program about the sun and the moon. Hopefully it will help all of you understand what we’ve been learning about eclipses. I’m passing around a handout for you to review with your partner.”</li>
 
-      <li>Grandma smiled, remembering the times she spent with Mom. "Sure," she agreed. "Let's see if the fish still like it there."</li>
+      <li>When the handout reached them, Zach groaned. “I always get the eclipses mixed up. How do you keep them straight?”</li>
 
-      <li>"I'll get our fishing poles," Evan offered. The map had certainly led to a treasure and a chance to spend time with Grandma.</li>
+      <li>Jada took a deep breath. “Well, a lunar eclipse has to do with the moon being in a shadow.”</li>
+
+      <li>Zach nodded. “Okay, go on.”</li>
+
+      <li>She pointed to the first picture on the handout. “In the lunar eclipse, Earth moves between the sun and the moon, so the sun’s light is blocked from the moon.”</li>
+
+      <li>“And the solar eclipse?” Zach asked.</li>
+
+      <li>Jada pointed to the other picture. “In the solar eclipse, the moon is between Earth and the sun, blocking the sun’s light from Earth. If I forget those facts, I just remember that solar and sun both begin with an S.”</li>
+
+      <li>Zach laughed.</li>
+
+      <li>“Are you still confused?” Jada asked.</li>
+
+      <li>“It’s not that,” Zach replied. “I was just thinking that Sydney’s kind of like an eclipse.”</li>
+
+      <li>Jada frowned. “What do you mean?”</li>
+
+      <li>“When Sydney’s around, she does all the talking and that keeps you from saying anything,” Zach explained. “It’s like she’s the moon keeping you in its shadow.”</li>
+
+      <li>Jada blushed again. “Sydney’s just trying to be a good friend. She knows I’m quiet.”</li>
+
+      <li>Zach continued. “I just think you should try stepping out of her shadow. You can stand on your own.”</li>
+
+      <li>Jada smiled as the bus pulled into the planetarium’s parking lot. She knew she might always be shy, but she did have something to say. Maybe she could learn to speak up and, just like the sun, appear from behind the moon to allow her light to shine.</li>
 </ol>
     `
-  },
-
-   'ostrich': {
-    title: 'The Ostrich: One Odd Bird',
-    content: `
-    <ol class="paragraph-numbers">
-    <img src="images/ostrich.png" alt="Ostrich" style="float: right; height: 250px; margin-left: 10px;">
-      <li>Ostriches hold the record as the largest birds in the world. A male can grow to nine feet tall. That is about three feet taller than most men. How do these giants spend their days?</li>
-
-      <p><b>Life in a Bird Herd</b></p>
-      <li>Ostriches live in groups called herds. One male is the leader. He uses his strong legs to dig a hole for a nest. The herd only needs one nest because all the females lay their eggs in it. The male and one of the females take turns guarding and sitting on the eggs.</li>
-
-      <li>When the chicks hatch from the eggs, they are covered with yellow fuzz and black spots. Their colors match the sandy ground. This coloring helps them hide from dangerous animals. The mother and father ostrich protect the chicks too. Before long, feathers replace the fuzz on the chicks. Their new fluffy feathers trap air and keep the chicks warm at night.</li>
-
-      <li>The young birds learn to peck the ground and eat plants by watching older ostriches. They eat mostly plants, seeds, and roots but will also eat insects and small lizards. This diet helps the chicks grow quickly, almost a foot each month!</li>
-
-      <p><b>Speedy Runners</b></p>
-      <li>Although these birds cannot fly, powerful legs help them move quickly. Ostriches can bolt across the ground at 43 miles per hour. They keep their wings outstretched while running. This helps them keep their balance, especially when changing direction.</li>
-
-      <p><b>Staying Safe</b></p>
-      <li>With such speed, ostriches outrun most predators, but they know how to defend themselves too. Their strong legs can deliver a kick that stops a lion! Ostriches use another trick to stay safe. They sit down on the ground, rest their heads on the sand, and lie very still. The sand blends with the color of the ostriches so other animals do not notice them.</li>
-
-      <li>Today, wild ostriches live in Africa, but many tame ones live on farms and in zoos. Ostriches are unusual-looking birds, but their power and speed make them one of the fastest animals on land.</li>
-
-<div class="passage-innerbox">
-      <p><b>Ostrich Facts</b><br>
-      Life span: 30-40 years<br>
-      Weight: 350 pounds<br>
-      Height: 8-9 feet<br>
-      Egg weight: 3 pounds<br>
-      Nest size: Up to 8 feet<br>
-      Herd size: Usually fewer than 12 birds</p>
-</div>
-    `
-  },
-
-     'search': {
-    title: 'The Search',
-    content: `
-      <ol class="paragraph-numbers">
-        <li>I've emptied my sports bag</li>
-        <li>Checked in the car</li>
-        <li>Reached under the sofa</li>
-        <li>And searched near and far.</li><br>
-        <li>But hunt as I may</li>
-        <li>I've got only one shoe--</li>
-        <li>And where its mate is</li>
-        <li>I haven't a clue.</li><br>
-        <li>"When was your last game?"</li>
-        <li>Dad asks thoughtfully.</li>
-        <li>"And after the game</li>
-        <li>Whom did you see?"</li><br>
-        <li>I pause in my tracks--</li>
-        <li>Dad's smart, it is true</li>
-        <li>But his questions don't lead</li>
-        <li>To my runaway shoe.</li><br>
-        <li>It's surely gone missing</li>
-        <li>There's clearly no hope.</li>
-        <li>I have to give up</li>
-        <li>Find somewhere to mope.</li><br>
-        <li>So I sit on the steps</li>
-        <li>And stare into the yard</li>
-        <li>Where Otis the dog</li>
-        <li>Serves as guard--</li><br>
-        <li>Then I notice that Otis</li>
-        <li>Has a new chew</li>
-        <li>With laces and treads--</li>
-        <li>Oh, no! It's my shoe!</li>
-      </ol>
-    `
   }
-
 };
 
 const sampleQuestions = [
