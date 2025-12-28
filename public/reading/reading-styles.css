@@ -1,8 +1,3 @@
-/* ========================================
-   PASSAGE TABS STYLING
-   For questions with multiple passages
-   ======================================== */
-
 .passage-tabs-container {
   display: none; /* Hidden by default, shown when multiple passages */
   background-color: var(--secondary-bg, #f0f5fa);
@@ -36,7 +31,6 @@
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
-  transition: all 0.2s ease;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
@@ -137,10 +131,6 @@
   font-size: 1rem;
 }
 
-/* ========================================
-   RESPONSIVE ADJUSTMENTS FOR TABS
-   ======================================== */
-
 @media (max-width: 768px) {
   .passage-tab {
     padding: 0.75rem 0.75rem;
@@ -163,10 +153,6 @@
     padding: 0.2rem 0.5rem;
   }
 }
-
-/* ========================================
-   THEME ADJUSTMENTS FOR TABS
-   ======================================== */
 
 /* Dark theme */
 body.theme-white-on-black .passage-tabs-container {
@@ -226,10 +212,6 @@ body.theme-gray-on-green .passage-tab:hover,
 body.theme-gray-on-green .passage-tab.active {
   background-color: var(--input-bg, #A3AE9E);
 }
-
-/* ========================================
-   EXISTING STYLES (Keep all original CSS below)
-   ======================================== */
 
 #test {
   position: relative;
