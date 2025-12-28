@@ -144,28 +144,6 @@ body.reduce-motion * {
   animation: none !important;
 }
 
-/* Screen reader optimizations */
-body.screen-reader-optimized .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
-body.screen-reader-optimized a:focus,
-body.screen-reader-optimized button:focus,
-body.screen-reader-optimized input:focus,
-body.screen-reader-optimized textarea:focus,
-body.screen-reader-optimized select:focus {
-  outline: 3px solid var(--accent-color);
-  outline-offset: 2px;
-}
-
 /* Focus states for all interactive elements */
 button:focus,
 a:focus,
