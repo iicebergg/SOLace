@@ -2,256 +2,372 @@ window.TEST_IDENTIFIER = 'reading_grade5_practice_2024';
 
 // Reading passages that can be referenced by multiple questions
 const readingPassages = {
-  'the_cooks_surprise': {
-    title: 'The Cook\'s Surprise',
+  'monticello': {
+    title: 'Monticello: A Mountaintop Treasure',
     content: `
      <ol class="paragraph-numbers">
-      <li>Danielle loved to cook delicious food on Saturdays. She enjoyed seeing her family members smile as they tasted a meal she made. Today Danielle had a surprise for her younger brother and sister. She had baked cupcakes early in the morning, while Martin and Madison were still asleep.</li>
+     <img src="images/monticello.png" alt="Monticello" style="float: right; height: 250px; margin-left: 10px;">
+      <li>Thomas Jefferson was a man of many achievements. He served as governor of Virginia, representative of America's government to France, vice president to President John Adams, and the third President of the United States. One of his greatest achievements, however, was designing and building his farm and plantation home, Monticello, located on a mountaintop near Charlottesville, Virginia.</li>
 
-      <li>After lunch Danielle decided to take her brother and sister their surprises. Danielle carried the two cupcakes as she walked from room to room. She could not find Martin and Madison anywhere.</li>
+      <li>Although Thomas Jefferson was an accomplished man, many people do not know that he was a talented gardener who devoted much of his time to caring for the land around his plantation home. It was here that Jefferson kept a diary to record his advancements in growing flowers, plants, fruits, and vegetables. His daughters and granddaughters even took part in this special hobby that was so dear to him. Today, the area is visited by thousands of people each year, but to truly appreciate the beauty of the stunning gardens and thriving trees, one must go back in history to learn about how this land gained the color and richness it boasts today.</li>
 
-      <li>At last, Danielle entered the laundry room. There she noticed bits of yellow ribbon on the floor. Scraps of blue cloth lay next to the sewing machine, which had not been used in years. She thought it was an odd sight but decided to keep looking for her brother and sister.</p>
+      <li>Monticello was more than a house to Jefferson. It was also a working farm and plantation covering 5,000 acres. There were flower gardens, fruit and vegetable gardens, and fields. The two orchards grew 170 types of fruit, and the vegetable garden grew 250 kinds of vegetables and herbs. Monticello also was an experimental laboratory. Jefferson brought seeds and plants back from his travels. He even tried to grow broccoli from Italy and peppers from Mexico. In addition, Jefferson was one of the first Americans to practice a new method of farming. Every seven years he grew a different crop in a certain field. By changing the crops to different fields, Jefferson kept the soil fresh. First he grew wheat, then Indian corn, peas or potatoes, and finally clover.</li>
 
-      <li>On her way back to the kitchen, Danielle had a perfect idea. She set the cupcakes on the table and found a sheet of paper and a marker. In large letters, she wrote, "For Martin and Madison." She imagined Martin and Madison grinning with delight when they discovered the surprise.</p>
+      <li>Not only did Jefferson want a working farm, but he also enjoyed the beauty of the land. In the spring of 1808, Jefferson designed a winding walk bordered with colorful flowers from North America and Europe. This walkway circled the West Lawn and was the front area of the home. It was somewhat of an open garden, which was modeled after English gardens Jefferson had visited. In 1812 Jefferson decided to divide the walkway into different sections. A different type of flower grew in each section. Throughout the years, the flower gardens were cared for by his daughters and granddaughters.</li>
 
-      <li>Suddenly, Danielle heard noises coming from her bedroom. She decided to find out what was happening.</p>
+      <li>Along with the attractive winding walk, 20 oval flower beds of beautiful, rich colors surrounded the home. Jefferson first began to plan for the flower beds in 1807, drawing a sketch of where they would be planted. Each bed contained a different flower, creating a diversity of plant life on the grounds. Some of the types of flowers planted that year were twinleaf, Columbian lily, and the Cardinal flower.</li>
 
-      <li>"Surprise!" shouted two voices when Danielle opened her door.</li>
-
-      <li>Danielle's heart jumped. Martin and Madison were waiting for her, and they had a package in their hands.</p>
-
-      <li>"This is for you," said Martin.</p>
-
-      <li>"Open it," added Madison.</li>
-
-      <li>Danielle took the package. Her hands quickly ripped off the shiny paper, and she opened the box. There was a blue apron folded neatly inside.</li>
-
-      <li>"We wanted to make a surprise for you because you're such a nice sister," said Madison. "You are always thinking of us."</li>
-
-      <li>"I drew the apron pattern on the blue cloth and cut it out," Martin said.</li>
-
-      <li>"Mom helped me sew the apron, and we attached the yellow ribbon," beamed Madison.</li>
-
-      <li>Danielle held the apron. She noticed the crooked lines of stitching along the edges, but she didn't mind the small sewing mistakes. To her, this was the most beautiful apron she had ever seen.</li>
-
-      <li>"Thank you. It's perfect," said Danielle.</li>
-
-      <li>As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table.</li>
-
-      <li>"I have a surprise for you too!" Danielle said, as she began leading her brother and sister down the hall into the kitchen.</li>
+      <li>Thomas Jefferson lived the last 17 years of his life at his treasured home. There, he often entertained visitors, showing them the variety of plant life on the grounds of Monticello. Jefferson let everyone know that his home was his happiness.</li>
 </ol>
     `
   },
 
-  'useful_weeds_of_the_sea': {
-    title: 'Useful Weeds of the Sea',
+  'etta': {
+    title: 'Grandma Etta\'s Wild Rice Soup',
     content: `
     <ol class="paragraph-numbers">
-      <li>Seaweed may not be on many shopping lists, but it plays a big part in people's everyday lives. Seaweed is a plant that grows in the shallow waters near the shores of the world's oceans.</li>
+    <img src="images/etta.png" alt="Grandma Etta" style="float: right; height: 120px; margin-left: 10px;">
+      <li>In 1888, the year that Leroy turned 10, he was told that he would be spendingthe summer with his Grandma Etta on her farm in central Texas. Before he leftfor his grandmother’s house, his mother had a few words to say to him: “Now Leroy, you are not going to stay with Grandma just to let her cook for you all summer. You need to help her out too.”</li>
 
-    <img src="images/seaweed.png" alt="Seaweed" style="float: right; height: 120px; margin-left: 10px;">
-      <li>In some parts of the world, especially near the ocean, people eat seaweed all by itself. It has lots of vitamins and is a healthful treat. In places where seaweed is not served as a meal, people use goods that are made from these plants. Hundreds of everyday items have seaweed in them.</li>
+      <li>Leroy had to admit that the first week he was at Grandma Etta’s, he did just what his mother feared. He defended his actions by telling himself that Grandma seemed to love cooking for him. In fact, she did not seem to mind at all. When his parents visited, however, he heard his mother’s voice from the kitchen.</li>
 
-      <li>Seaweed helps many people keep their teeth clean. Toothpaste stays thick when it comes out of the tube because of a gel from a type of red seaweed. No one can see the seaweed in the toothpaste because it is mixed with the gel. This gel is in shampoo and makeup too.</li>
+      <li>“You teach him to work the way you taught me to work, Mama. I don’t want you to let him sit here with his feet up while you cook and clean for him.”</li>
 
-      <li>Without seaweed, ice cream and yogurt would not be as thick or creamy but would seem rather lumpy and watery. Many people eat foods with seaweed without even knowing it.</li>
+      <li>After Leroy’s parents left, he watched Grandma Etta to see if she changed her treatment of him, but she didn’t. Then one day she sighed, “I would sure like to make you some of my special soup, Leroy, but I can’t do it alone. It is the most difficult soup in the world to make.”</li>
 
-      <li>Seaweed also helps plants grow. Many farmers around the world spray their fields with seaweed. They buy the seaweed after it has been made into a liquid. The seaweed becomes food for the plants. The vegetables on people's plates often come from these farms.</li>
+      <li>Leroy thought of last summer when he had that delicious broth, the sliced pieces of okra, the chopped tomato, and the wild rice. His mouth began watering just thinking about that soup. “I’ll be glad to help make it,” Leroy said.</li>
 
-      <li>People cannot see seaweed in the foods they eat or in the items they use to look their best. However, none of these things would be the same without this useful weed that comes from the sea.</li>
+      <li>Grandma Etta smiled after hearing Leroy’s words. “First, we need some wild rice,” Grandma Etta said.</li>
+
+      <li>Leroy turned to the cabinet and began rifling through its contents.</li>
+
+      <li>“Oh, it’s not in there,” she said. “It’s out there,” Grandma Etta replied as she pointed out the window.</li>
+
+      <li>“Where?” Leroy asked, a bit confused. He could not imagine what Grandma Etta was going to say.</li>
+
+      <li>“On the river,” Grandma answered.</li>
+
+      <li>Leroy soon found himself pulling the old canoe out of the chicken shed. It took him three days to clean the canoe. Leroy thought about quitting, but he remembered that soup. He also thought about what his mother had said.</li>
+
+      <li>Finally, Grandma Etta and Leroy glided onto the river to where the grain peeked above the water. He used sticks to knock the ripe grain heads into their canoe. Then they had to wash the rice and let it dry in the sun for several days.</li>
+
+      <li>“Next, we need some tomatoes and okra.”</li>
+
+      <li>“No problem,” Leroy replied. He then picked enough tomatoes and okra from the garden to make enough soup to feed an army for a week. Proudly walking into the kitchen, he tumbled the vegetables onto the table.</li>
+
+      <li>“Are we ready to cook now?” Leroy asked impatiently.</li>
+
+      <li>“Oh, yes,” she said, “just as soon as we chop wood for the fire.” After that, Leroy had to draw water from the spring and bring down the old iron pot, which seemed to weigh as much as a pile of rocks. Finally, the special soup began bubbling, and its sweet smell filled the air.</li>
+
+      <li>That day Leroy’s parents came to visit. He joked with Grandma Etta that they must have smelled the cooking. She just laughed and served a bowl of the hot, steaming soup for everyone.</li>
+
+      <li>Leroy learned how to make soup that summer, but he also learned a few other lessons as well. Watching Grandma Etta stir the big pot of soup and scoop out a hearty portion for everyone made Leroy realize how much hard work and love went into making Grandma Etta’s soup. He was proud when his father asked for a second helping, but Leroy was even prouder when Grandma Etta told his father that she and Leroy had made the soup together.</li>
+
+      <li>Grandma Etta was right. The soup was difficult to make, but it was worth it. With each spoonful of broth, Leroy forgot about how difficult it was to gather the ingredients. He could only think of Grandma Etta’s love and the next time he would have the opportunity to share this task with his grandmother.</li>
 </ol>
     `
   },
 
-  'secret_message': {
-    title: 'Want to Send a Secret Message?',
+'reality': {
+    title: 'Reality Takes a Fantastic Turn',
     content: `
-      <p><i>Here are three amazing ways to do it!</i></p>
-      
-      <p>Secret messages have been around for hundreds of years. Spies used them to pass important information without being caught. The next time you want to send a secret message, try one of these fun ideas!</p>
-      
-<div class="passage-innerbox">
-<img src="images/lemony-letter.png" alt="Lemony Letter" style="float: right; height: 100px; margin-left: 10px;">
-      <p><b>Lemony Letter</b></p>
-      <p><u>What you will need:</u>
-      <ul>
-      <li>A lemon</li>
-      <li>A knife</li>
-      <li>A small cup</li>
-      <li>A thin paintbrush</li>
-      <li>A piece of white paper</li>
-      <li>A lamp</li>
-      </ul></p>
-      
-      <p><ol>
-      <li>To have enough juice, gently roll the lemon back and forth against the table with your palm.</li>
-      <li>Have a grownup cut the lemon in half.</li>
-      <li>Squeeze the lemon so the juice drips into the cup.</li>
-      <li>Dip the paintbrush into the juice and write a message on the paper. When the "ink" dries, the paper will appear blank.</li>
-      <li>Give your secret message to a friend or family member.</li>
-      <li>Have the person who receives your message hold the paper near a light bulb. The heat will make the secret message appear! The lemon juice will turn a brown color.</li>
-      </ol></p>
-</div>
+     <ol class="paragraph-numbers">
+      <li>The unicorn is a famous creature that has long lived in stories. Writers describe it as a beautiful horselike animal with a single horn rising from its forehead. In some stories, unicorns are said to have healing powers. Many people have hoped that these animals were real. As it turns out, maybe they are.</li>
 
-<div class="passage-innerbox">
-<img src="images/mirror-message.png" alt="Mirror Message" style="float: right; height: 100px; margin-left: 10px;">
-      <p><b>Mirror Message</b></p>
-      <p><u>What you will need:</u>
-      <ul>
-      <li>A potato</li>
-      <li>A potato peeler of knife</li>
-      <li>A bathroom mirror</li>
-      </ul></p>
-      
-      <p><ol>
-      <li>Ask a grownup to peel the skin from one end of the potato.</li>
-      <li>Using the peeled end of the potato, write a message in big letters on the bathroom mirror.</li>
-      <li>Your message will be <u>invisible</u> until you take a bath or shower. When you take a shower or bath, close the door so the steam stays in the bathroom. Steam from the hot water will appear on the mirror and make your message show.</li>
-      </ol></p>
+      <li>In 2007 an incredible roe deer was born in Italy. He is special because of the single horn centered on his forehead. This unusual deer lives in Italy’s Center of Natural Sciences in Prato, near Florence. Since his discovery, crowds have gathered to catch a glimpse of this miracle deer. Not surprisingly, his name is Unicorn.</li>
 
-      <p>Surprise someone else! Write a message on the bathroom mirror for a family member. See how long it takes for the person to discover your secret message.</p>
-</div>
+      <li>Not only are fans of unicorn stories eager to see Unicorn, but researchers and scientists are also interested in learning about him. They want to know why Unicorn has only one horn. Unicorn’s twin has two horns like other deer, so Unicorn should have two horns also. Scientists also want to know why his horn is located in the center of his head. Most other one-horned deer have a horn located on either side of the head.</li>
 
-<div class="passage-innerbox">
-<img src="images/crazy-crayon.png" alt="Crazy Crayon" style="float: right; height: 100px; margin-left: 10px;">
-      <p><b>Crazy Crayon</b></p>
-      <p><u>What you will need:</u>
-      <ul>
-      <li>A piece of white paper</li>
-      <li>A white crayon</li>
-      <li>Dark-colored paint</li>
-      <li>A paintbrush</li>
-      </ul></p>
-      
-      <p><ol>
-      <li>Using the white crayon, write your message on the paper. It will be difficult to see the markings, so be careful.</li>
-      <li>Give your secret message to a friend.</li>
-      <li>Have your friend use the paintbrush to spread the paint over the paper. The message will appear on the paper as the person paints.</li>
-      </ol></p>
+      <li>According to scientists, there are two possible explanations for why Unicorn lacks a second horn. One possibility is that, early in life, the deer could have suffered an injury that prevented the second horn from growing. The second explanation is that the horn is a mutation. Mutations happen when there are changes in an animal’s genes. Genes are the units that give all living creatures their physical traits, such as eye color or height. Sometimes, though, a gene is altered, and that may cause a mutation. The result can be an unusual trait, like a deer having a single horn instead of two.</li>
 
-      <p>It's amazing! The paint does not stick to the waxy crayon, so the words will show through.</p>
-</div>
-    `
-  },
+      <img src="images/roe_deer.png" alt="Roe Deer" style="float: right; height: 250px; margin-left: 10px;">
 
-   'hidden_treasure': {
-    title: 'A Hidden Treasure',
-    content: `
-    <ol class="paragraph-numbers">
-      <li>Evan and his 16-year-old brother, Mark, liked spending time with their grandmother. Today, though, Grandma was busy painting.</li>
+      <li>No matter the cause of his unique appearance, Unicorn has made many scientists rethink how stories of unicorns began. Throughout history, such stories may have originated from sightings of real-—but rare—-deer or other animals with mutations much like Unicorn’s. One real- life mammal that possibly contributed to the myth of the unicorn is the narwhal. This pale- colored whale that makes its home in the frigid Arctic Ocean is identified by the spike extending from its head. However, this spike is not a horn. The narwhal has two teeth, and the larger of the two grows into a long spiral tusk that may reach up to nine feet. Narwhal tusks are depicted on ancient wall hangings as the horns of unicorns.</li>
 
-      <li>"May I help you paint your kitchen, Grandma?" asked Evan.</li>
+      <li>Gilberto Tozzi, director of the Center of Natural Sciences, notes that Unicorn “is fantasy becoming reality.” Yet the opposite also seems to be true. The sight of a single- horned animal would have thrilled or frightened ancient people. Over time, as people shared stories about such animals, the tales became more exaggerated. The result is the legend of the beautiful and powerful unicorns of fairy tales.</li>
 
-      <li>"Your mom is helping me," Grandma replied with a smile. "Maybe you could play a game with Mark. I have some games in the attic."</li>
-
-      <li>The brothers nodded. They climbed the steps and opened the attic door to look for the games.</li>
-
-      <li>Instead of a game, Evan found an old journal in a dusty trunk. He opened the pages and discovered a map! The drawing showed Grandma's house, a raindrop inside a square, two little triangles, and a dock. Best of all, a large "X" marked the "Greatest Fishing Spot," which was near the dock.</li>
-
-      <li>Excitedly, Evan asked Mark, "Do you think we can find this fishing spot?"</li>
-
-      <li>Mark took a closer look at the map. "Let's try," he said, and they thundered down the steps.</li>
-
-      <li>"Mom, we're going outside on a treasure hunt!" Evan shouted from the back door.</li>
-
-      <li>"Okay," Mom laughed, shaking her head.</li>
-
-      <li>"The square with the raindrop is behind Grandma's house," Mark said, narrowing his eyes as he examined the map.</li>
-
-      <li>When he looked up, Mark noticed a faded blue spot on the water tower nearby. "Look!" he exclaimed. "The water tower once had a raindrop painted on it. That must be it."</li>
-
-      <li>Next, the boys searched for the two small triangles near the tower. Before long, Evan patted the trunks of two pine trees.</li>
-
-      <li>"These trees must be the triangles on the map," he decided. "They're in the right places."</li>
-
-      <li>"Now we just need to find the dock," Mark said. The two boys searched the riverside near the trees, but they found only weeds.</li>
-
-      <li>Evan finally suggested that Grandma might remember the old dock.</li>
-
-      <li>The boys rushed into the kitchen with their question as Grandma and Mom were washing their paintbrushes.</li>
-
-      <li>"That dock was torn down a long time ago," Grandma explained. "How did you know about it?" she puzzled.</li>
-
-      <li>The boys presented the map, and Mom smiled. "That's my map I made when I was a young girl. Grandma and I loved fishing from the old dock."</li>
-
-      <li>"Wow! Could you take us to that place? The dock is no longer there, but maybe it's still a great fishing spot," Evan said hopefully.</li>
-
-      <li>Grandma smiled, remembering the times she spent with Mom. "Sure," she agreed. "Let's see if the fish still like it there."</li>
-
-      <li>"I'll get our fishing poles," Evan offered. The map had certainly led to a treasure and a chance to spend time with Grandma.</li>
+      <li>Of course, Unicorn the deer has no special powers other than fascinating those who are fortunate enough to see him. However, his story is a unique blend of imagination and science.</li>
 </ol>
     `
   },
 
-   'ostrich': {
-    title: 'The Ostrich: One Odd Bird',
-    content: `
-    <ol class="paragraph-numbers">
-    <img src="images/ostrich.png" alt="Ostrich" style="float: right; height: 250px; margin-left: 10px;">
-      <li>Ostriches hold the record as the largest birds in the world. A male can grow to nine feet tall. That is about three feet taller than most men. How do these giants spend their days?</li>
-
-      <p><b>Life in a Bird Herd</b></p>
-      <li>Ostriches live in groups called herds. One male is the leader. He uses his strong legs to dig a hole for a nest. The herd only needs one nest because all the females lay their eggs in it. The male and one of the females take turns guarding and sitting on the eggs.</li>
-
-      <li>When the chicks hatch from the eggs, they are covered with yellow fuzz and black spots. Their colors match the sandy ground. This coloring helps them hide from dangerous animals. The mother and father ostrich protect the chicks too. Before long, feathers replace the fuzz on the chicks. Their new fluffy feathers trap air and keep the chicks warm at night.</li>
-
-      <li>The young birds learn to peck the ground and eat plants by watching older ostriches. They eat mostly plants, seeds, and roots but will also eat insects and small lizards. This diet helps the chicks grow quickly, almost a foot each month!</li>
-
-      <p><b>Speedy Runners</b></p>
-      <li>Although these birds cannot fly, powerful legs help them move quickly. Ostriches can bolt across the ground at 43 miles per hour. They keep their wings outstretched while running. This helps them keep their balance, especially when changing direction.</li>
-
-      <p><b>Staying Safe</b></p>
-      <li>With such speed, ostriches outrun most predators, but they know how to defend themselves too. Their strong legs can deliver a kick that stops a lion! Ostriches use another trick to stay safe. They sit down on the ground, rest their heads on the sand, and lie very still. The sand blends with the color of the ostriches so other animals do not notice them.</li>
-
-      <li>Today, wild ostriches live in Africa, but many tame ones live on farms and in zoos. Ostriches are unusual-looking birds, but their power and speed make them one of the fastest animals on land.</li>
-
-<div class="passage-innerbox">
-      <p><b>Ostrich Facts</b><br>
-      Life span: 30-40 years<br>
-      Weight: 350 pounds<br>
-      Height: 8-9 feet<br>
-      Egg weight: 3 pounds<br>
-      Nest size: Up to 8 feet<br>
-      Herd size: Usually fewer than 12 birds</p>
-</div>
-    `
-  },
-
-     'search': {
+     '72_days': {
     title: 'The Search',
     content: `
-      <ol class="paragraph-numbers">
-        <li>I've emptied my sports bag</li>
-        <li>Checked in the car</li>
-        <li>Reached under the sofa</li>
-        <li>And searched near and far.</li><br>
-        <li>But hunt as I may</li>
-        <li>I've got only one shoe--</li>
-        <li>And where its mate is</li>
-        <li>I haven't a clue.</li><br>
-        <li>"When was your last game?"</li>
-        <li>Dad asks thoughtfully.</li>
-        <li>"And after the game</li>
-        <li>Whom did you see?"</li><br>
-        <li>I pause in my tracks--</li>
-        <li>Dad's smart, it is true</li>
-        <li>But his questions don't lead</li>
-        <li>To my runaway shoe.</li><br>
-        <li>It's surely gone missing</li>
-        <li>There's clearly no hope.</li>
-        <li>I have to give up</li>
-        <li>Find somewhere to mope.</li><br>
-        <li>So I sit on the steps</li>
-        <li>And stare into the yard</li>
-        <li>Where Otis the dog</li>
-        <li>Serves as guard--</li><br>
-        <li>Then I notice that Otis</li>
-        <li>Has a new chew</li>
-        <li>With laces and treads--</li>
-        <li>Oh, no! It's my shoe!</li>
+      <ol class="Around the World in 72 Days">
+        <li>If you had read the paper</li>
+        <li>back in 1889</li>
+        <li>you’d certainly have learned about</li>
+        <li>a legend of that time.</li><br>
+
+        <li>A daring young reporter</li>
+        <li>whose name was Nellie Bly</li>
+        <li>proposed to travel 'round the world—-</li>
+        <li>she simply had to try!</li><br>
+
+        <li>A fabulous adventure</li>
+        <li>did this young woman seek;</li>
+        <li>to help her paper with its sales</li>
+        <li>she would write about her feat.</li><br>
+        
+        <li>Her boss was unsupportive,</li>
+        <li>saying, “Ladies shouldn’t stray</li>
+        <li>so far from home—all by themselves!”</li>
+        <li>but Bly would not delay.</li><br>
+
+        <li>Big trunks and heavy luggage</li>
+        <li>she refused to bring</li>
+        <li>“A dress, a coat, and one small bag—</li>
+        <li>yes, yes, that’s everything!”</li><br>
+
+        <li>She climbed aboard a royal ship</li>
+        <li>beside a New Jersey pier</li>
+        <li>and then began her journey</li>
+        <li>in November of that year.</li><br>
+
+        <li>She went from Europe to the Middle East,</li>
+        <li>Ceylon to Singapore,</li>
+        <li>Hong Kong and on to Japan</li>
+        <li>as her readers cried for more.</li><br>
+
+        <li>She traveled on a ship,</li>
+        <li>a burro, and a train,</li>
+        <li>and even in a rickshaw</li>
+        <li>because there was no plane.</li><br>
+
+        <li>Her stories flew by cable</li>
+        <li>for <i>New York World</i> to print</li>
+        <li>where they informed the public</li>
+        <li>of her seventy-two-day sprint.</li><br>
+
+        <li>Adventures from around the world</li>
+        <li>were what she loved to write</li>
+        <li>to all the readers of the paper</li>
+        <li>who learned about her sights.</li><br>
+
+        <li>When Nellie’s reporting trek was over</li>
+        <li>in San Francisco she did face</li>
+        <li>cheering fans and big brass bands</li>
+        <li>to celebrate her race!</li>
       </ol>
     `
-  }
+  },
+
+   'desert': {
+    title: 'Born in the Desert',
+    content: `
+    <ol class="paragraph-numbers">
+      <li>Rahim Makeba stood at the front of the classroom holding his notes. His classmates looked at him curiously, waiting for him to begin. Rahim had never given a speech before, and his lips felt as if they were glued together. His palms were damp and his heart was pounding.</li>
+
+      <li>Ms. Blum set out a paper cup of water. “You may take a little drink before you start, if you would like. The class is looking forward to learning about Botswana.”</li>
+
+      <li>She smiled, and Rahim relaxed a little. He whispered a “thank you” for the water. After carefully taking a sip, he began.</li>
+
+      <li>“Good afternoon. As many of you know, I came to live in America a month ago. I am from the Republic of Botswana, which is on the continent of Africa. I was born in a town at the edge of the Kalahari Desert. My papa and two of my cousins worked for the Central Kalahari Game Reserve. Everyone in our family likes animals. When I was little, I used to sit under the Camel Thorn tree¹ in our village and wait for small animals and birds to visit. Sometimes Papa and I would drive out into the bush country to see the larger animals. If we were lucky, a Kalahari lion would cross our path.” Rahim paused to pick up the photographs he had brought.</li>
+
+      <li>A boy named Brian raised his hand. Ms. Blum called on him, and he asked, “How can people live in a desert? Isn’t it too hot? How can trees grow in a desert?”</li>
+
+      <li>Rahim had carefully planned and practiced his speech at home and was not expecting to be interrupted. He was not sure how to answer the questions. For a moment, he wished he were back in Botswana, where people knew that the desert was beautiful and thriving with life. He rubbed his hands on his jeans and stared at the floor.</li>
+
+      <li>Then, he remembered the photographs he had brought. He knew they would help answer Brian’s questions. He began distributing his photographs showing the landscape and some of the animals. As he passed one to a girl seated behind Brian, she smiled at him and raised her hand.</li>
+
+      <li>“There are many living things in the desert,” she said. “I know, because I was born in a desert too.”</li>
+
+      <li>All the students turned to look at her. Rahim looked at her in surprise.</li>
+
+      <li>“I was born in Arizona,” she went on, “in the Sonoran Desert. All kinds of animals live there—-jackrabbits and coyotes and big cats, too, such as cougars.” She glanced at Rahim and added, “They’re probably not as big as the Kalahari lions, but they’re huge compared with housecats.”</li>
+
+      <li>“Thank you, Julie. That information is very helpful,” Ms. Blum said. “Now let’s give Rahim some time to explain his pictures, and then we can have more discussion.”</li>
+
+      <li>With a grateful look at Ms. Blum and Julie, Rahim continued his speech.</li>
+
+      <li>“Many famous animals live in the Kalahari Desert,” he said as he finished handing out the rest of the pictures. “The Kalahari lion is the star of a movie, and the zebra is easily recognized. There are giraffes, aardvarks, hyenas, and wild dogs, as well as many other animals. My favorite is the meerkats. As you can see in the photographs, meerkats have pointy faces. They look like little bandits wearing masks. In fact, the masks look similar to those that raccoons have.”</li>
+
+      <li>At the end of Rahim’s speech, everyone applauded. Many classmates raised their hands, inspired by his speech to ask him more questions about Botswana and the Kalahari Desert. This time, Rahim was grinning confidently ready to answer all their questions.</li>
+</ol>
+
+<hr>
+
+<p>¹Camel Thorn tree - a common tree that grows in dry areas of southern Africa.</p>
+    `
+  },
+
+   'buddies': {
+    title: 'Buddies Make a Difference',
+    content: `
+    <ol class="paragraph-numbers">
+      <li>As Mrs. Hill walked from desk to desk in the fifth- grade classroom, she returned her students’ journals—-except for one.</li>
+
+      <li>“I finished reading about your new kindergarten buddies,” Mrs. Hill began. “My students have always enjoyed participating in the buddy program with the new kindergarten students. Based on what I read in all your journals,” said Mrs. Hill as she stopped at Joe’s desk, “I can tell that you are going to help make your buddies feel very welcome at Pearl Elementary.”</li>
+
+      <li>Then Mrs. Hill turned to Joe and asked, “May I read your journal entry to the class?” Joe smiled and nodded. Mrs. Hill opened the journal and read aloud, “My buddy seems to be very anxious about starting school. The little guy is as timid as a mouse. Maybe he is quiet and shy because he feels bewildered. I wish there was a way to make a difference and help him feel comfortable. Spending time together on Friday afternoons is a start, but I wish we could have an entire day together. If we could spend a whole day together, his fears would disappear.”</li>
+
+      <li>A rosy wash of pink swept across Joe’s cheeks as Mrs. Hill placed the journal in his hands. “The kindergarten teacher, Miss Shu, and I think this is a fantastic idea, Joe.”</li>
+
+      <li>Joe knew his classmates agreed when he saw their heads nod with enthusiasm. The warmth and color in Joe’s cheeks faded back to normal.</li>
+
+      <li>I can’t believe the whole class wants to do what I suggested! Joe thought.</li>
+
+      <li>The week flew by. On Friday morning Joe stood in the hall and scanned the passing students, looking for a short, red-haired boy.</li>
+
+      <li>“Tim, over here!” Joe called as he glimpsed a flash of red hair. Tim was happy to see the familiar face of his fifth- grade buddy.</li>
+
+      <li>“Being in kindergarten is a little like being a tadpole in a big river, isn’t it?” Joe asked. Tim’s smile widened as he nodded in agreement. Tim and Joe walked to the fifth- grade classroom.</li>
+
+      <li>After all the students were present and seated, Mrs. Hill welcomed the kindergartners. She explained that they would shadow their buddies for the day. “By following your buddy around today, you will get a better idea of some of the wonderful activities you can look forward to here.”</li>
+
+      <li>During the morning spelling test, Tim watched closely as Joe carefully wrote the long words. Each time Mrs. Hill said a spelling word, she also used it in a sentence.</li>
+
+      <li>“The last word is fabulous,” Mrs. Hill said slowly. “Have a fabulous Friday with your buddy.” When Joe put his pencil down, Tim studied the beautiful writing on the test. He thought it was great. “I want to write words like this,” he said hopefully.</li>
+
+      <li>“In kindergarten you will learn to write and spell many words,” Joe replied.</li>
+
+      <li>When all the tests had been collected, Mrs. Hill led the class on a nature walk outside. The buddies gathered leaves, acorns, twigs, bark, and rocks. “This is fun!” Tim exclaimed as he picked up a large red leaf. After returning to the classroom, the buddy pairs used rulers and scales to measure the size and weight of the found objects. Joe helped Tim record the measurements. “You’re a great helper,” Joe said as Tim placed a smooth stone on the scale.</li>
+
+      <li>On the way to the cafeteria, Mrs. Hill took the students on a quick tour. Fifth graders took turns pointing out important places in the school. Tim saw areas he had never seen before, but his older buddy reassured him. “Before long you’ll know this school really well,” Joe whispered.</li>
+
+      <li>After lunch Joe and Tim enjoyed finding books to read together in the library. “Later in the year you may be reading books to me!” Joe said to Tim. This made Tim stop and think. He knew that school was going to be fine and that having a buddy like Joe was going to be great.</li>
+
+      <li>At the end of the day, Tim said goodbye and lined up to go back to his kindergarten classroom. Joe sat at his desk, hoping that their time together had made a difference for his young buddy. When Tim glanced back and waved, his confident and genuine smile assured Joe that the day had been a success.</li>
+</ol>
+    `
+  },
+
+'monticello': {
+    title: 'Monticello: A Mountaintop Treasure',
+    content: `
+     <ol class="paragraph-numbers">
+     <img src="images/monticello.png" alt="Monticello" style="float: right; height: 250px; margin-left: 10px;">
+      <li>Thomas Jefferson was a man of many achievements. He served as governor of Virginia, representative of America's government to France, vice president to President John Adams, and the third President of the United States. One of his greatest achievements, however, was designing and building his farm and plantation home, Monticello, located on a mountaintop near Charlottesville, Virginia.</li>
+
+      <li>Although Thomas Jefferson was an accomplished man, many people do not know that he was a talented gardener who devoted much of his time to caring for the land around his plantation home. It was here that Jefferson kept a diary to record his advancements in growing flowers, plants, fruits, and vegetables. His daughters and granddaughters even took part in this special hobby that was so dear to him. Today, the area is visited by thousands of people each year, but to truly appreciate the beauty of the stunning gardens and thriving trees, one must go back in history to learn about how this land gained the color and richness it boasts today.</li>
+
+      <li>Monticello was more than a house to Jefferson. It was also a working farm and plantation covering 5,000 acres. There were flower gardens, fruit and vegetable gardens, and fields. The two orchards grew 170 types of fruit, and the vegetable garden grew 250 kinds of vegetables and herbs. Monticello also was an experimental laboratory. Jefferson brought seeds and plants back from his travels. He even tried to grow broccoli from Italy and peppers from Mexico. In addition, Jefferson was one of the first Americans to practice a new method of farming. Every seven years he grew a different crop in a certain field. By changing the crops to different fields, Jefferson kept the soil fresh. First he grew wheat, then Indian corn, peas or potatoes, and finally clover.</li>
+
+      <li>Not only did Jefferson want a working farm, but he also enjoyed the beauty of the land. In the spring of 1808, Jefferson designed a winding walk bordered with colorful flowers from North America and Europe. This walkway circled the West Lawn and was the front area of the home. It was somewhat of an open garden, which was modeled after English gardens Jefferson had visited. In 1812 Jefferson decided to divide the walkway into different sections. A different type of flower grew in each section. Throughout the years, the flower gardens were cared for by his daughters and granddaughters.</li>
+
+      <li>Along with the attractive winding walk, 20 oval flower beds of beautiful, rich colors surrounded the home. Jefferson first began to plan for the flower beds in 1807, drawing a sketch of where they would be planted. Each bed contained a different flower, creating a diversity of plant life on the grounds. Some of the types of flowers planted that year were twinleaf, Columbian lily, and the Cardinal flower.</li>
+
+      <li>Thomas Jefferson lived the last 17 years of his life at his treasured home. There, he often entertained visitors, showing them the variety of plant life on the grounds of Monticello. Jefferson let everyone know that his home was his happiness.</li>
+</ol>
+    `
+  },
+
+  'mine': {
+    title: 'Shiny Hills Gemstone Mine',
+    content: `
+      <p>Did you know that people have been mining gold in Virginia since the 1800s? Shiny Hills Gemstone Mine was named for the visible rock formations in the area that contain valuable ore, the material from which metals and minerals can be mined for profit. What was once an active mine in the 1840s, Shiny Hills Gemstone Mine now offers a unique recreational mining experience to prospectors of all ages.</p>
+
+      <p><b>Prospecting: Then and Now</b></p>
+      <p>Prospecting is searching for any valuable mineral, metal, or fossil. In the 1800s prospectors searched through creek beds, ridgelines, and hilltops looking for any evidence of minerals in the rocks. If anything promising was noticed, a prospector would mine some of these rocks for minerals by panning. Panning is the process of sifting through rocky material using water and a pan.</p>
+
+      <p>Today prospectors use much more elaborate technology, such as metal detectors, to help them find minerals. At Shiny Hills Gemstone Mine, staff members focus on teaching visitors the knowledge and the skill of observation, plus the panning techniques that have been used for centuries.</p>
+
+      <p><b>Your Prospecting Experience</b></p>
+      <p>You, too, can experience the excitement of mining at Shiny Hills Gemstone Mine. Visitors often find gold and gemstones, such as rubies or emeralds. During the first half- hour of the tour, you will learn the basics of panning techniques. In the next half- hour of the tour, you will walk in the lush, open meadow on the mine property.</p>
+
+      <p>Guides will point out rock formations and landmarks in the distance that may have interested prospectors long ago. You will also learn how prospectors searched for gold and how to identify ore that may contain minerals or metals of high value.</p>
+
+      <p>For the last hour, you will travel with a group underground into the mine to dig and collect your own bucket of ore. Electric power lines run into the underground mine and provide light for visitors while they dig. Finally, the group will return to the surface and the panning station to sift through buckets. Any gold or gems you find, you may keep. The guides will help to identify your treasures and will even assist in the hunt. After your visit, these treasures will provide a beautiful reminder of an enjoyable outing.</p>
+
+      <p><b>How to Pan for Gold</b></p>
+      <p>Are you curious about how panning works? Read the instructions on panning before your visit. You’ll be a panning expert when you arrive at Shiny Hills Gemstone Mine, and you may be able to help your fellow miners at the panning station.</p>
+
+      <p>A gold pan bowl with a drain at the side and bottom is provided for each visitor at the panning station.</p>
+      <img src="images/gold_pan.png" alt="Image failed to load. Please try again later." style="float: right; height: 120px; margin-left: 10px;">
+
+      <p><b>Panning Instructions</b></p>
+      <p>1. Scoop about 4 shovelfuls of dirt from the bucket into the gold pan.</p>
+      <img src="images/step1.png" alt="Image failed to load. Please try again later." style="float: right; height: 120px; margin-left: 10px;">
+
+      <p>2. Hold the gold pan just under the surface of the cool running water at the panning station so you can see the rocks and dirt. Begin to slowly swirl the pan around in a circular motion. Holding the pan too low in the water or swirling too quickly will make everything fall out of the pan.</p>
+      <img src="images/step2.png" alt="Image failed to load. Please try again later." style="float: right; height: 120px; margin-left: 10px;">
+
+      <p>3. As you swirl the pan, the lighter materials, such as dirt, will float away, and the larger, heavier items, like gold or gems, will sink to the bottom.</p>
+
+      <p>4. Pull the pan out of the water and, while holding it at a slight angle toward the drain side, begin swirling it around in the air. The water will drain from the pan. Repeat this step until nearly all the material from the pan is gone.</p>
+      <img src="images/step4.png" alt="Image failed to load. Please try again later." style="float: right; height: 120px; margin-left: 10px;">
+
+      <p>5. Search the material that remains in the bottom of the pan to separate any gold or gems from dirt and sand. Don’t forget to ask a staff member if you need help identifying the materials in your pan.</p>
+      <img src="images/step5.png" alt="Image failed to load. Please try again later." style="float: right; height: 120px; margin-left: 10px;">
+
+      <p>6. Continue the process with the remaining material in your bucket. If you don’t find anything right away, don’t worry. Panning takes patience, practice, and time!</p> 
+
+      <p><b>FREQUENTLY ASKED QUESTIONS</b></p>
+
+      <p><b><i>What should I wear when I visit the mine?</i></b><br>
+      
+      Wear comfortable, old clothes and shoes. Thick leather gloves and waterproof aprons are provided for use, but you and your clothing may still become wet and dirty—-that’s part of the fun!</p>
+
+      <p><b><i>How long should I plan to stay at the mine?</i></b><br>
+      
+      The tour lasts about two hours. After the tour, you will return to our processing area with the material you have gathered. You will empty out the buckets and begin separating the rocks from the possible treasures. Take as much time as you would like to pan through your buckets for gold or gemstones. Staff will be there to help you.</p>
+
+      <p><b><i>Will I find any big gemstones or gold nuggets?</i></b><br>
+      
+      The enjoyment of prospecting is in being outdoors participating in an entertaining activity. Shiny Hills Gemstone Mine does not make any claims that everyone will discover valuable gems or gold. However, visitors do regularly make interesting finds. One visitor uncovered a 2- ounce gold nugget about the size of a dime, and on numerous occasions, others have found gemstones of 5 ounces or more, or a little larger than a quarter.</p>
+
+      <p><b><i>What should I do with the gemstones I find?</i></b><br>
+      
+      The staff can clean, cut, and polish your gemstones, which you can then ask a jeweler to make into a piece of jewelry. If you prefer, simply take your gemstones home and admire their beauty in their natural form.</p>
+
+      <p>For additional questions, please contact Shiny Hills Gemstone Mine. The friendly staff is eager to help you make the most of your gemstone mining experience.</p>
+
+      <center><p><b>Shiny Hills Gemstone Mine</b><br>
+      10999 Highway 88 South<br>
+      Shiny Hills Town, VA 20151<br><br>
+      1-800-290-5992<br><br>
+      service@shiny#hills_mine.com</b></p></center>
+</ol>
+    `
+  },
+
+  'home_run': {
+    title: 'Home Run',
+    content: `
+    <ol class="paragraph-numbers">
+      <li>Maddy tossed her younger brother Lane’s backpack aside as she frantically hunted through the hall closet for her baseball glove. Her friends were playing a game in the park, and she was late. Not seeing the glove, she dashed into her bedroom to continue the search.</li>
+
+      <li>Maddy finally discovered the glove beside her fish tank. Snatching it up, she rushed down the hall and ran straight into the middle of a different disaster. Grape juice had leaked out of a bottle in Lane’s backpack and left a bright purple trail on the rug. Mom was pointing to the stain and scolding Lane.</li>
+
+      <li>“You have to be careful,” Mom stated firmly. “Juice bottles belong in the refrigerator, and your backpack belongs on a hook. It will take me an hour to clean up this mess.”</li>
+
+      <li>Maddy opened her mouth to admit what she had done, but before she could speak, Lane apologized.</li>
+
+      <li>“I’m sorry, Mom,” Lane mumbled with a bowed head.</li>
+
+      <li>Maddy bit her bottom lip, hugging her baseball glove. She did not want to miss her game by having to scrub a rug instead. Besides, Lane had left the juice in his backpack. It was mostly his fault.</li>
+
+      <li>“See you later,” Maddy blurted. Then she breezed around the mess, burst out the front door, and escaped.</li>
+
+      <li>At the park, Maddy eagerly joined her team in the players’ dugout. It was their turn to hit the ball. When Maddy stepped out of the dugout with her bat, she imagined smacking a home run. Narrowing her eyes, she concentrated on the whirling ball as it flew toward her, but she could not stop thinking about the grape-juice accident. Three times she swung her bat, and each time she missed.</li>
+
+      <li>Maddy’s shoulders slumped as her team strolled onto the baseball diamond for their turn in the field. She’d struck out.</li>
+
+      <li>“Don’t worry—-you’ll hit a home run next time,” her friend Justin said encouragingly as he stepped onto the pitching mound.</li>
+
+      <li>Maddy gave him a weak smile and trudged to second base. She was usually a reliable player who made few mistakes.</li>
+
+      <li>A few moments later the crack of a bat sent a baseball hurtling in Maddy’s direction. She quickly reached into the air and caught the ball.</li>
+
+      <li>“Yes!” her team whooped.</li>
+
+      <li>Maddy smiled, knowing her catch had prevented the batter from scoring a run, but her fantastic play did not bring her the expected wave of satisfaction. Instead, she wondered if Mom and Lane needed help cleaning the carpet. Maddy realized that only one thing would banish the invisible cloud hovering over her. She waved at Justin.</li>
+
+      <li>“I have to go home, but I’ll ask someone to take my place,” Maddy promised, pointing to the kids gathered on the sidelines.</li>
+
+      <li>Ten minutes later Maddy eased the front door open. Her eyes flew to the rug. The dreadful stain was gone, and she briefly considered retreating to her bedroom. Then she stood up straight and marched into the kitchen. Mom and Lane were baking cupcakes, and dirty dishes crowded the counters.</li>
+
+      <li>“I’ll wash the dishes,” Maddy announced, watching Mom’s eyebrows shoot up in surprise. Forcing the words out, she admitted, “I ... caused the other mess. I tossed Lane’s backpack onto the carpet—-I’m so sorry.”</li>
+
+      <li>Mom nodded, staring at Maddy’s anxious face. “Thank you for telling me,” she said. “It would be great if you washed our dishes.”</li>
+
+      <li>“Yes!” Lane exclaimed, dancing around Maddy.</li>
+
+      <li>Maddy laughed with him as she filled the sink with soapy water. Finally, she had hit her home run.</li>
+</ol>
+    `
+  },
 
 };
 
