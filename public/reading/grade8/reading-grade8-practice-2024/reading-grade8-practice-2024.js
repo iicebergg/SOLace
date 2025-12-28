@@ -2,52 +2,128 @@ window.TEST_IDENTIFIER = 'reading_grade8_practice_2024';
 
 // Reading passages that can be referenced by multiple questions
 const readingPassages = {
-  'the_cooks_surprise': {
-    title: 'The Cook\'s Surprise',
+  'hummingbirds': {
+    title: 'Hummingbirds',
     content: `
      <ol class="paragraph-numbers">
-      <li>Danielle loved to cook delicious food on Saturdays. She enjoyed seeing her family members smile as they tasted a meal she made. Today Danielle had a surprise for her younger brother and sister. She had baked cupcakes early in the morning, while Martin and Madison were still asleep.</li>
+      <li>Hummingbirds are one of nature’s most amazing creatures. Native only to the Western Hemisphere, these small birds are known for their deft flying abilities. They have a unique ability to hover in midair by rapidly flapping their wings as much as 80 times per second. In fact, hummingbirds are named for the distinct humming sound created by this rapid wing beat. Hummingbirds are the only birds that can actually fly backwards, and they can move quickly and easily in almost any direction. Therefore, if you’ve seen a petite bird appearing to dart and hover from one spot to the next, you were most likely watching a hummingbird.</li>
 
-      <li>After lunch Danielle decided to take her brother and sister their surprises. Danielle carried the two cupcakes as she walked from room to room. She could not find Martin and Madison anywhere.</li>
+      <li>Hummingbirds use their unique ability to hover in place while feeding on flower nectar. They sip their sweet meals by reaching inside the flower with their narrow bills and split tongues. They also eat hundreds of insects each day. In fact, their flying style requires so much energy that hummingbirds must consume enough food to nearly equal their body weight each day!</li>
 
-      <li>At last, Danielle entered the laundry room. There she noticed bits of yellow ribbon on the floor. Scraps of blue cloth lay next to the sewing machine, which had not been used in years. She thought it was an odd sight but decided to keep looking for her brother and sister.</p>
+      <li>Hummingbirds make delightful and beneficial visitors to any garden. They help pollinate plants and flowers much as bees do. Attracting these fascinating creatures is easy. Simply set up a hummingbird feeder in early spring, and keep it filled with a syrupy mixture. Before long, your garden will be “humming” with activity.</li>
 
-      <li>On her way back to the kitchen, Danielle had a perfect idea. She set the cupcakes on the table and found a sheet of paper and a marker. In large letters, she wrote, "For Martin and Madison." She imagined Martin and Madison grinning with delight when they discovered the surprise.</p>
-
-      <li>Suddenly, Danielle heard noises coming from her bedroom. She decided to find out what was happening.</p>
-
-      <li>"Surprise!" shouted two voices when Danielle opened her door.</li>
-
-      <li>Danielle's heart jumped. Martin and Madison were waiting for her, and they had a package in their hands.</p>
-
-      <li>"This is for you," said Martin.</p>
-
-      <li>"Open it," added Madison.</li>
-
-      <li>Danielle took the package. Her hands quickly ripped off the shiny paper, and she opened the box. There was a blue apron folded neatly inside.</li>
-
-      <li>"We wanted to make a surprise for you because you're such a nice sister," said Madison. "You are always thinking of us."</li>
-
-      <li>"I drew the apron pattern on the blue cloth and cut it out," Martin said.</li>
-
-      <li>"Mom helped me sew the apron, and we attached the yellow ribbon," beamed Madison.</li>
-
-      <li>Danielle held the apron. She noticed the crooked lines of stitching along the edges, but she didn't mind the small sewing mistakes. To her, this was the most beautiful apron she had ever seen.</li>
-
-      <li>"Thank you. It's perfect," said Danielle.</li>
-
-      <li>As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table.</li>
-
-      <li>"I have a surprise for you too!" Danielle said, as she began leading her brother and sister down the hall into the kitchen.</li>
+      <li>Hummingbirds are migratory and will leave in late fall when the weather gets too cold. Keep the feeder up two to three weeks after the last hummingbird is spotted. It might serve as a helpful feeding spot for passing hummingbirds migrating south. Don’t worry about delaying their migration, because hummers know when it’s time to leave, even if that means passing up a free lunch!</li>
 </ol>
     `
   },
 
-  'useful_weeds_of_the_sea': {
-    title: 'Useful Weeds of the Sea',
+  'leaves': {
+    title: 'Among the Leaves',
+    content: `
+    <center><p><i>Barbara Evans Stanush</i></p></center>
+     <ol class="paragraph-numbers">
+     <center><p>1</p></center>
+      <li>You found it, high amid thick branches</li>
+      <li>upright on a twig, plastered with lichen¹</li>
+      <li>blending with the live oak.</li><br>
+
+      <li>You spied it, bright-eyed daughter,</li>
+      <li>keen to find another life</li>
+      <li>among the hard leaves. You climbed</li><br>
+
+      <li>to watch a hummer feeding nestlings;</li>
+      <li>their tiny beaks gaped red. The mother</li>
+      <li>did not scare. The nest bulged with growing.</li><br>
+
+      <li>You called me to the mystery—-so slight</li>
+      <li>I lost the nest each time my stare wavered.</li>
+      <li>You balanced on the ladder, took a photograph.</li><br>
+
+      <center><p>2</p></center>
+      <li>Opening a box chock full of unclaimed views,</li>
+      <li>I gaze at live oak leaves. In black</li>
+      <li>and white, a puzzle</li><br>
+
+      <li>until you, long grown and distant, recall</li>
+      <li>the hummingbird, remind me of the nest.</li>
+      <li>The littlest nest crafted by a mother</li><br>
+
+      <li>who fused spider webs and moss into a bowl</li>
+      <li>of softest down and laid two pulsing ovals,</li>
+      <li>warmed them, brooded them to flight.</li><br>
+
+      <li>Moments</li>
+      <li>hidden in the live oak</li>
+      <li>large among the leaves.</li><br>
+</ol>
+
+<hr>
+
+<p>¹lichen - a type of moss that grows on trees.</p>
+<p>“Among the Leaves” by Barbara Evan Stanush, from Stone Garden, copyright © 1992 by Barbara Evans Stanush. Used by permission of the author.</p>
+    `
+  },
+
+  'woman': {
+    title: 'A Woman of Courage and Conviction',
+    content: `
+     <ol class="paragraph-numbers">
+      <li>With a satisfied smile, Keisha finished writing the last sentence of her English essay. She had written about one of her heroes, Rosa Parks, an important figure in the Civil Rights Movement. Keisha felt inspired by Rosa Parks’ actions, and in her essay she had tried to depict the courage and conviction Rosa Parks had shown the world.</li>
+
+      <li>“Keisha,” her mother shouted from downstairs. “It’s almost 4:15. Have you finished your homework?”</li>
+
+      <li>“I finished a minute ago, Mom,” Keisha answered. “Don’t worry, I won’t be late getting to the assisted living center. I just have to put some things in my backpack.” Keisha pulled down a collection of Maya Angelou’s poetry as well as a book of funny anecdotes from her bookshelf. She liked to be prepared with a selection of literature to read to the center’s residents. On an impulse, she added her English notebook as well.</li>
+
+      <li>Keisha ran down the stairs, poked her head into the kitchen, and said, “I’ll be back by 5:45, Mom. See you later.” Keisha grabbed her jacket and ran out the door. She had to jog the three blocks to the center to make it by 4:30, when her hour of volunteering began.</li>
+
+      <li>As Keisha came running in the door, Mrs. Ellis, the assisted living center manager, told Keisha, “We have a new resident this week. She’s still adjusting to her new surroundings, and I think you’ll be able to make friends with her.”</li>
+
+      <li>“What’s her name?” Keisha asked, nervously wondering what this new woman was like.</li>
+
+      <li>“Her name is Ruby Watson, and she’s lived in Alabama all her life until now,” Mrs. Ellis explained. “Her only daughter lives here in the city and wants her mother to be near. You’ll find Mrs. Watson in Room 28. And by the way, Keisha, good luck.”</li>
+
+      <li>Keisha walked down the hallway to Room 28 at a quick, determined pace. She knocked on the door and heard a strong voice ask what she wanted. The door stuck stubbornly as Keisha tried the handle, so she used her shoulder to push it open. Walking into the room, she met the gaze of two piercing brown eyes staring at her suspiciously.</li>
+
+      <li>“I’m Keisha Jackson, a student volunteer,” Keisha explained as she walked over to Mrs. Watson and sat down in the chair beside her. “I come here every Thursday afternoon to help pass the time with residents, or read to them, or, or ...” Keisha started to stumble over her words as Mrs. Watson continued to stare at her with an almost belligerent gaze.</li>
+
+      <li>“I didn’t request anyone to keep me company,” Mrs. Watson interrupted. “I’m alone most of the time, and that’s how I prefer it.”</li>
+
+      <li>“But it must be nice to see your daughter,” Keisha said, hoping to give the conversation a more positive turn.</li>
+
+      <li>“My daughter has to work two jobs, so she seldom comes here to visit me,” Mrs. Watson said. “And my two grandchildren are so involved with their school activities that they hardly have time to come see me.”</li>
+
+      <li>Keisha decided that a change of subject would be beneficial. “I brought along some books to read,” she said, pulling the books out of her backpack. “I have Maya Angelou’s poetry and a book of funny stories.”</li>
+
+      <li>“I don’t like poetry, and I’m not in the mood for funny stories,” Mrs. Watson retorted. “What else do you have?”</li>
+
+      <li>Nervously, Keisha pulled out her English notebook and opened it to her essay. She read the title aloud: “Rosa Parks: A Woman of Courage and Conviction.” She glanced at Mrs. Watson to see what kind of reaction she might have, but to her surprise, Mrs. Watson’s face had relaxed and her eyes shone with anticipation.</li>
+
+      <li>“Read to me about Rosa,” Mrs. Watson said.</li>
+
+      <li>At first, Keisha read the essay haltingly, but she soon fell into the natural, dramatic rhythm of her narrative. She read how Rosa Parks had staunchly refused to give up her seat on a segregated bus to a white passenger in 1955; then she read how Rosa’s action had inspired the Montgomery Bus Boycott, a protest that became a turning point in the struggle for civil rights.</li>
+
+      <li>After Keisha read her last sentence, she looked at Mrs. Watson’s face. It was lit by a radiantly happy smile.</li>
+
+      <li>“I marched in Montgomery too, you know,” Mrs. Watson said with pride. “I walked with Rosa Parks and Dr. Martin Luther King, Jr. The march was the greatest moment of my life because ...” Mrs. Watson paused, seemingly overwhelmed by her memory of the event.</li>
+
+      <li>Keisha finished the sentence for her. “Because ... you were a woman of courage and conviction too.”</li>
+
+      <li>“Yes,” Mrs. Watson said, sitting up straighter. “Yes, I was a woman of courage and conviction too, and I still am. Thank you for reminding me, Keisha.”</li>\
+      
+      <li>“Mrs. Watson, I’d like to see you again next Thursday, if that’s okay,” Keisha asked, hoping her voice wasn’t shaking with the emotions she felt.</li>
+
+      <li>“Next Thursday will be fine, Keisha, just fine,” Mrs. Watson said with a warm smile. “And next time we see each other, I’ll tell you some of my stories.”</li>
+
+      <li>“I’d like that,” Keisha answered. “I’d like that very much.”</li>
+</ol>
+    `
+  },
+
+  'harlem': {
+    title: 'The Harlem Renaissance',
     content: `
     <ol class="paragraph-numbers">
-      <li>Seaweed may not be on many shopping lists, but it plays a big part in people's everyday lives. Seaweed is a plant that grows in the shallow waters near the shores of the world's oceans.</li>
+      <li>Between World War I and the Great Depression, two of America’s most devastating events, an important cultural movement began to evolve in the heart of New York City. Beginning about 1920, it was called the Harlem Renaissance. Its name reveals its similarity to the European Renaissance, a golden age of art and literature during the 14th to 16th centuries. During this European Renaissance, geniuses like William Shakespeare and Leonardo da Vinci led the Western world out of the darkness of the Middle Ages.</li>
 
     <img src="images/seaweed.png" alt="Seaweed" style="float: right; height: 120px; margin-left: 10px;">
       <li>In some parts of the world, especially near the ocean, people eat seaweed all by itself. It has lots of vitamins and is a healthful treat. In places where seaweed is not served as a meal, people use goods that are made from these plants. Hundreds of everyday items have seaweed in them.</li>

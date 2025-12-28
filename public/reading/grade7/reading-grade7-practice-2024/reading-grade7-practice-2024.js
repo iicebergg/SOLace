@@ -654,14 +654,14 @@ const sampleQuestions = [
 
   {
     id: '27',
-    text: 'Which question is answered at the end of the story?',
+    text: 'The phrase “My heart swelled” in paragraph 1 conveys that the narrator is--',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
+    passageId: ['taste', 'no_regrets'],
     options: [
-      'What brings fish to a certain area?',
-      'What happened to the old dock?',
-      'How often did Mom go to the old dock?',
-      'How many fish does Grandma catch?',
+      'not feeling very well',
+      'proud of the dish he has created',
+      'nervous that his dish will not earn him a good grade',
+      'hoping that the teacher will make a decision quickly',
     ],
     correctAnswer: 1,
     explanation: 'When the boys ask about the dock, Grandma explains: "That dock was torn down a long time ago."'
@@ -669,25 +669,29 @@ const sampleQuestions = [
 
   {
     id: '28',
-    text: 'Place these words in alphabetical order.',
-    type: 'drag-drop',
-    passageId: 'hidden_treasure',
-    options: ['steps', 'shouted', 'searched', 'smiled', 'spend'],
-    dropZones: [' ', ' ', ' ', ' ', ' '],
-    correctAnswer: [2, 1, 3, 4, 0],
+    text: 'In paragraph 5, the word <u>consecutively</u> comes from a Latin root that means--',
+    type: 'multiple-choice',
+    passageId: ['taste', 'no_regrets'],
+    options: [
+      'finish early',
+      'empty rapidly',
+      'happen carefully',
+      'follow closely',
+    ],
+    correctAnswer: 1,
     explanation: 'In alphabetical order: searched, shouted, smiled, spend, steps.'
   },
 
   {
     id: '29',
-    text: 'Based on paragraph 4, the reader can tell that-',
+    text: 'Which word is a synonym for <u>enhance</u> in paragraph 19?',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: ['taste', 'no_regrets'],
     options: [
-      'chicks learn to eat by watching older ostriches',
-      'ostriches need people to feed them a healthy diet',
-      'plants are easier for ostriches to feed on than insects',
-      'chicks wait to eat until the grown ostriches finish',
+      'circulate',
+      'discover',
+      'intensify',
+      'scatter',
     ],
     correctAnswer: 0,
     explanation: 'Paragraph 4 directly states: "The young birds learn to peck the ground and eat plants by watching older ostriches."'
@@ -695,14 +699,14 @@ const sampleQuestions = [
 
   {
     id: '30',
-    text: 'Paragraph 6 explains that one way ostriches keep themselves safe is by--',
+    text: 'How is figurative language used in the first stanza of the poem?',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: ['taste', 'no_regrets'],
     options: [
-      'flying',
-      'digging',
-      'kicking',
-      'sleeping',
+      'To show that the speaker’s experience was agonizing',
+      'To re-create sounds from the speaker’s past experiences',
+      'To emphasize the effects of the speaker’s reaction',
+      'To exaggerate the speaker’s feelings of impatience',
     ],
     correctAnswer: 2,
     explanation: 'Paragraph 6 states: "Their strong legs can deliver a kick that stops a lion!"'
@@ -710,14 +714,14 @@ const sampleQuestions = [
 
   {
     id: '31',
-    text: 'What information can be learned by reading the chart at the end of the article?',
+    text: 'Lines 13-14 of the poem convey that the speaker’s anger is--',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: ['taste', 'no_regrets'],
     options: [
-      'What do ostriches use to build a nest?',
-      'Why do ostriches keep the herd size low?',
-      'How long do ostriches live?',
-      'How many eggs do ostriches lay?',
+      'difficult to control',
+      'part of the healing process',
+      'the result of many arguments',
+      'a normal reaction to the situation',
     ],
     correctAnswer: 2,
     explanation: 'The "Ostrich Facts" chart shows "Life span: 30-40 years," which answers how long ostriches live.'
@@ -725,14 +729,14 @@ const sampleQuestions = [
 
   {
     id: '32',
-    text: 'Based on the article, one way the male leader is like the females in the herd is that he helps--',
+    text: 'Lines 29-32 reveal that the speaker of the poem--',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: ['taste', 'no_regrets'],
     options: [
-      'make the nest',
-      'guard the eggs',
-      'hide the chicks',
-      'feed the chicks',
+      'is usually a sensible person',
+      'accepts responsibility for what she has done wrong',
+      'fails to understand her actions',
+      'is unable to forgive her friend for her betrayal',
     ],
     correctAnswer: 1,
     explanation: 'The text states: "The male and one of the females take turns guarding and sitting on the eggs."'
@@ -740,14 +744,14 @@ const sampleQuestions = [
 
   {
     id: '33',
-    text: 'The feathers of an ostrich help the bird--',
+    text: 'Which idea is developed in both the story and the poem?',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: ['taste', 'no_regrets'],
     options: [
-      'run fast',
-      'stay warm',
-      'move quietly',
-      'look bigger',
+      'The past is often the reason people are unable to move forward.',
+      'Having a disagreement will usually bring people closer in the end.',
+      'Admitting the reason for our failures is the first step toward transformation.',
+      'The harshest judgments we receive often come from ourselves.',
     ],
     correctAnswer: 1,
     explanation: 'The passage explains: "Their new fluffy feathers trap air and keep the chicks warm at night."'
@@ -755,14 +759,14 @@ const sampleQuestions = [
 
   {
     id: '34',
-    text: 'Based on the article, what can the reader most likely tell about ostriches?',
+    text: 'The endings of the story and the poem both convey a tone of--',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: ['taste', 'no_regrets'],
     options: [
-      'They can run faster than any other animal.',
-      'Their wings are their most useful part.',
-      'Their speed helps them escape.',
-      'They usually kick their enemies.',
+      'calmness',
+      'confusion',
+      'hopefulness',
+      'indecision',
     ],
     correctAnswer: 2,
     explanation: 'The article states: "With such speed, ostriches outrun most predators" and that they can run 43 miles per hour, showing their speed helps them escape danger.'
@@ -770,14 +774,14 @@ const sampleQuestions = [
 
   {
     id: '35',
-    text: 'After looking at the title, the reader knows that this poem is about--',
+    text: 'How do the narrator of the story and the speaker of the poem resolve their conflicts?',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: ['taste', 'no_regrets'],
     options: [
-      'hiding something',
-      'finding something',
-      'looking for something',
-      'thinking about something',
+      'By seeking guidance from someone who offers wise advice',
+      'By sharing an idea with someone who may or may not respond',
+      'By standing up for their beliefs even when others do not agree',
+      'By using a different approach than they have used in the past',
     ],
     correctAnswer: 2,
     explanation: 'The title "The Search" indicates the poem will be about someone searching or looking for something.'
@@ -785,78 +789,18 @@ const sampleQuestions = [
 
   {
     id: '36',
-    text: 'What does <u>pause</u> mean in line 13?',
+    text: 'Which major theme do the story and the poem have in common?',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: ['taste', 'no_regrets'],
     options: [
-      'Try to remember',
-      'Begin to ask questions',
-      'Think about the past',
-      'Stop for a short time',
+      'Expressing feelings in a kind and patient way can be difficult.',
+      'Making changes in life requires taking the necessary steps.',
+      'Respecting peers involves being honest with them.',
+      'Remaining loyal to one another in difficult times is important.',
     ],
     correctAnswer: 3,
     explanation: '"Pause" means to stop briefly or for a short time. The speaker stops in their tracks when Dad asks questions.'
-  },
-
-  {
-    id: '37',
-    text: 'In lines 17-20, the speaker can best be described as--',
-    type: 'multiple-choice',
-    passageId: 'search',
-    options: [
-      'scared',
-      'upset',
-      'angry',
-      'lazy',
-    ],
-    correctAnswer: 1,
-    explanation: 'Lines 17-20 show disappointment and sadness: "It\'s surely gone missing / There\'s clearly no hope. / I have to give up / Find somewhere to mope." The speaker feels upset about losing the shoe.'
-  },
-
-  {
-    id: '38',
-    text: 'Where is the first place the speaker looks for the shoe?',
-    type: 'multiple-choice',
-    passageId: 'search',
-    options: [
-      'Under the sofa',
-      'In the car',
-      'In a sports bag',
-      'Near the steps',
-    ],
-    correctAnswer: 2,
-    explanation: 'The first line of the poem states: "I\'ve emptied my sports bag," which shows this was the first place searched.'
-  },
-
-  {
-    id: '39',
-    text: 'Based on the events in the poem, the shoe was most likely last worn--',
-    type: 'multiple-choice',
-    passageId: 'search',
-    options: [
-      'at school',
-      'during a game',
-      'at a friend\'s house',
-      'in a friend\'s car',
-    ],
-    correctAnswer: 1,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
-  },
-
-  {
-    id: '40',
-    text: 'Which question is answered in the poem?',
-    type: 'multiple-choice',
-    passageId: 'search',
-    options: [
-      'What is the dog\'s new chew toy?',
-      'Why is the dog playing outside?',
-      'What sport does the speaker play?',
-      'When was the speaker\'s last game?',
-    ],
-    correctAnswer: 0,
-    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
-  },
+  }
 ];
 
 // Reading panel management - Auto-opening, no toggle
