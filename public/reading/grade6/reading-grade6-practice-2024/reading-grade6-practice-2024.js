@@ -86,88 +86,141 @@ const readingPassages = {
     `
   },
 
-  'secret_message': {
-    title: 'Want to Send a Secret Message?',
+  'patience': {
+    title: 'A Little Patience',
     content: `
-      <p><i>Here are three amazing ways to do it!</i></p>
-      
-      <p>Secret messages have been around for hundreds of years. Spies used them to pass important information without being caught. The next time you want to send a secret message, try one of these fun ideas!</p>
-      
-<div class="passage-innerbox">
-<img src="images/lemony-letter.png" alt="Lemony Letter" style="float: right; height: 100px; margin-left: 10px;">
-      <p><b>Lemony Letter</b></p>
-      <p><u>What you will need:</u>
-      <ul>
-      <li>A lemon</li>
-      <li>A knife</li>
-      <li>A small cup</li>
-      <li>A thin paintbrush</li>
-      <li>A piece of white paper</li>
-      <li>A lamp</li>
-      </ul></p>
-      
-      <p><ol>
-      <li>To have enough juice, gently roll the lemon back and forth against the table with your palm.</li>
-      <li>Have a grownup cut the lemon in half.</li>
-      <li>Squeeze the lemon so the juice drips into the cup.</li>
-      <li>Dip the paintbrush into the juice and write a message on the paper. When the "ink" dries, the paper will appear blank.</li>
-      <li>Give your secret message to a friend or family member.</li>
-      <li>Have the person who receives your message hold the paper near a light bulb. The heat will make the secret message appear! The lemon juice will turn a brown color.</li>
-      </ol></p>
-</div>
+     <ol class="paragraph-numbers">
+      <li>Alice groaned as she walked into her room, letting her backpack fall to the ground with a loud thump. Once again her room looked like a whirlwind had blown through it, and she knew exactly who the culprit was. “Mom! She did it again!”</li>
 
-<div class="passage-innerbox">
-<img src="images/mirror-message.png" alt="Mirror Message" style="float: right; height: 100px; margin-left: 10px;">
-      <p><b>Mirror Message</b></p>
-      <p><u>What you will need:</u>
-      <ul>
-      <li>A potato</li>
-      <li>A potato peeler of knife</li>
-      <li>A bathroom mirror</li>
-      </ul></p>
-      
-      <p><ol>
-      <li>Ask a grownup to peel the skin from one end of the potato.</li>
-      <li>Using the peeled end of the potato, write a message in big letters on the bathroom mirror.</li>
-      <li>Your message will be <u>invisible</u> until you take a bath or shower. When you take a shower or bath, close the door so the steam stays in the bathroom. Steam from the hot water will appear on the mirror and make your message show.</li>
-      </ol></p>
+      <li>Alice’s mom, who happened to be walking by, peeked through the doorway to appraise the damage that Alice’s younger sister had left behind. “I’ve talked to Mary about it,” Mom said with a sigh, “but she can’t seem to stay out of here. Your room is too irresistible. Maybe you should talk to her.”</li>
 
-      <p>Surprise someone else! Write a message on the bathroom mirror for a family member. See how long it takes for the person to discover your secret message.</p>
-</div>
+      <li>“Right,” Alice mumbled as she began to put away the stuffed animals and trinkets scattered everywhere. She was picking up the last of her belongings from the floor when she noticed her four-year-old sister at the door. “What do you want?” Alice snapped, tired from having to complete an unexpected chore.</li>
 
-<div class="passage-innerbox">
-<img src="images/crazy-crayon.png" alt="Crazy Crayon" style="float: right; height: 100px; margin-left: 10px;">
-      <p><b>Crazy Crayon</b></p>
-      <p><u>What you will need:</u>
-      <ul>
-      <li>A piece of white paper</li>
-      <li>A white crayon</li>
-      <li>Dark-colored paint</li>
-      <li>A paintbrush</li>
-      </ul></p>
-      
-      <p><ol>
-      <li>Using the white crayon, write your message on the paper. It will be difficult to see the markings, so be careful.</li>
-      <li>Give your secret message to a friend.</li>
-      <li>Have your friend use the paintbrush to spread the paint over the paper. The message will appear on the paper as the person paints.</li>
-      </ol></p>
+      <li>“I can’t because I have to finish cleaning my room,” Alice growled, “and then I have to do my homework.”</li>
 
-      <p>It's amazing! The paint does not stick to the waxy crayon, so the words will show through.</p>
-</div>
+      <li>“Why didn’t you do your homework already? Where were you?” Mary asked.</li>
+
+      <li>“I’ve explained this before, Mary. I have track practice immediately after school, so I don’t have time to play with you and finish my homework.” Alice plopped herself down at her desk and began pulling her books out of her backpack, pretending not to notice her little sister standing in the doorway. Mary lingered a few more minutes and then quietly left.</li>
+
+      <li>The next afternoon Alice walked into her room and found Mary in the middle of the floor surrounded by the stuffed animals that normally rested on her bed.</li>
+
+      <li>“Mary!” Alice shouted in annoyance. “Please leave my things alone. I’m tired of having to clean my room every day.”</li>
+
+      <li>“But you have some of the best toys in here,” Mary explained. “I really like this one!” she said as she held up a pink stuffed rabbit.</li>
+
+      <li>“Mary, put that down!” Alice shrieked as she noticed the toy Mary held in her hands. It wasn’t just an ordinary stuffed animal; it was one of Alice’s longtime favorites. Mary, shocked by Alice’s intense reaction, immediately dropped it.</li>
+
+      <li>“I’m sorry, Mary, but you have to go play somewhere else,” Alice pleaded.</li>
+
+      <li>Mary lifted the rabbit and carefully placed it on the bed before walking toward the door. She turned and looked at Alice, who was gathering the remaining stuffed animals from the floor. “I’m sorry,” Mary said softly before leaving the room.</li>
+
+      <li>Alice cleaned her room and, once again, began working on her homework, just as she usually did in the afternoons. She opened her backpack and emptied its contents onto her desk. After settling into her chair, she flipped open a textbook and started to read. Unlike most afternoons, though, she was unable to concentrate.</li>
+
+      <li>When Alice realized she had read the same page three times in her history book, she gave up and began to walk around her room. She was absently staring out the window when something outside caught her eye. It was an empty swing, swaying in the wind. Mary’s little face, with her big grin and twinkling eyes, immediately came to Alice’s mind and held her thoughts for the rest of the evening.</li>
+
+      <li>The next day Alice was surprised when she returned home after practice to find her room flawless. Not a thing was out of place. She set down her backpack, picked up the pink rabbit, and with a look of determination, she went to find Mary. She found her sister sitting at the kitchen table, paper and crayons scattered in front of her.</li>
+
+      <li>“Hey, Mary. What are you doing?” Alice sat in the seat beside her. Mary glanced up but then immediately went back to her task. “Those are some pretty pictures.” Still Mary did not answer.</li>
+
+      <li>Alice frowned. This was harder than she thought it would be. “Mary, I owe you an apology. I know I’ve been busy, but I shouldn’t have become angry with you yesterday.” She put the rabbit on the table. “This bunny misses you too,” she teased. “I’m wondering if you would do me a favor.”</li>
+
+      <li>Mary put down her crayon as soon as she saw the rabbit. Alice continued, “He is important to me, and I wouldn’t trust him with just anyone. I thought maybe you could take care of him for me while I’m at school. Then the two of you could meet me at the swings when I arrive home from practice. What do you think?”</li>
+
+      <li>Mary looked up at Alice, her eyes wide with excitement. She jumped down from her chair and grabbed Alice’s hand. “If we want to play on the swings today,” Mary said, “we have to go now. You have homework that you have to finish later.”</li>
+
+      <li>“Okay.” Alice smiled and followed her sister. As they made their way to the swing, Alice saw the huge grin on Mary’s face and was humbled by the thought that such a small child was able to teach her such a big lesson on patience.</li>
+</ol>
     `
   },
 
-   'hidden_treasure': {
-    title: 'A Hidden Treasure',
+  'home': {
+    title: 'My Family Home',
+    content: `
+      <ol class="paragraph-numbers">
+        <li>The last time I visited here,</li>
+        <li>I was a small girl of six.</li>
+        <li>Now I am nearly twice that age.</li>
+        <li>I am taller and smarter,</li>
+        <li>and I have come to appreciate</li>
+        <li>that I am from two places.</li>
+        <li>Virginia is my first home,</li>
+        <li>the land where I have grown</li>
+        <li>from a child into</li>
+        <li>a young lady.</li>
+        <li>But the island of Puerto Rico</li>
+        <li>is my family home.</li>
+        <li>I pause in my tracks--</li>
+        <li>It is here in these lush, green tropics</li>
+        <li>where so much of <i>mi familia</i> resides.</li><br>
+
+        <li>When my parents and I arrive,</li>
+        <li>my grandparents, aunts, and uncles</li>
+        <li>wrap us in warm hugs,</li>
+        <li>and their arms tell me how much</li>
+        <li>they have missed me.</li>
+        <li>My cousins—-some born</li>
+        <li>since I visited last—-</li>
+        <li>wear gracious, welcoming grins.</li>
+        <li>Right away they invite me</li>
+        <li>to go outside and play.</li>
+        <li>Although we are in December,</li>
+        <li>the sun here shines hot</li>
+        <li>and bright.</li><br>
+
+        <li>At night when my father</li>
+        <li>hugs me before I go to bed,</li>
+        <li>he tells me again how special,</li>
+        <li>how lucky I am to be</li>
+        <li>from two places.</li>
+        <li>Through the window of my room</li>
+        <li>at my grandmother’s house,</li>
+        <li>the voices of shouting, crashing waves remind me</li>
+        <li>of waves on the Virginia coast—-</li>
+        <li>except that these waves crash</li>
+        <li>in my family’s language.</li>
+        <li>These waves</li>
+        <li>are speaking</li>
+        <li>in Spanish.</li>
+      </ol>
+    `
+  },
+
+  'clocks': {
+    title: 'Our Internal Clocks',
     content: `
     <ol class="paragraph-numbers">
-      <li>Evan and his 16-year-old brother, Mark, liked spending time with their grandmother. Today, though, Grandma was busy painting.</li>
+      <li>Many people wake up to the sound of an alarm that they set the night before. At the end of the day when we look at a clock, we may be reminded that it is time to go to bed. Though we depend on external devices to tell time, our bodies follow their own built- in clocks, which work together to establish regular patterns. These internal clocks are the timekeeping systems that help our bodies adjust to changes.</li>
 
-      <li>"May I help you paint your kitchen, Grandma?" asked Evan.</li>
+      <p><b>A Sense of Timing</b></p>
+      <li>The body’s internal clocks are necessary for a living organism to perform basic functions. Their roles are coordinated by the brain, locked in perfect time by what are known as <i>circadian rhythms</i>. The word <i>circadian</i> comes from the Latin words <i>circa</i> (about) and <i>dies</i> (a day). Circadian rhythms are the physical, mental, and behavioral changes that humans experience in a 24- hour period. Examples of circadian rhythms include sleep patterns, body temperature, and blood pressure.</li>
 
-      <li>"Your mom is helping me," Grandma replied with a smile. "Maybe you could play a game with Mark. I have some games in the attic."</li>
+      <p><b>Following a Pattern</b></p>
+      <li>Circadian rhythms are the fine-tuned timing system of the human body. For example, circadian rhythms can influence a person’s athletic performance. A football player is more likely to perform better in the afternoon than in the evening. The human body becomes physically stronger as the day progresses and reaches full strength and alertness between the hours of 3 P.M. and 6 P.M. With less sunlight in the evening, the body begins slowing down and turns its energy toward fighting fatigue.</li>
 
-      <li>The brothers nodded. They climbed the steps and opened the attic door to look for the games.</li>
+      <li>One researcher concluded that circadian rhythms may affect the outcome of football games that are broadcast on television on a Monday night. These games usually start around 9 P.M. Eastern time and often involve one professional team flying from the West Coast to play another team on the East Coast. When it is 9 P.M. on the East Coast, it is only 6 P.M. on the West Coast due to the difference in time zones. As a result, West Coast players’ bodies are operating closer to their time of peak performance. In fact, West Coast teams playing on the East Coast win Monday night football games 63 percent of the time.</li>
+
+      <li>The first rays of morning sunlight detected by a person’s eyes start a process in the nervous system that results in a wake- up message to the brain. The absence of sunlight at night, however, triggers the release of melatonin, a substance produced by the brains of mammals. Melatonin signals the body to feel tired. After about eight hours of sleep, a person can wake up feeling mentally alert and ready to function effectively. Every 24 hours this circadian rhythm repeats itself, telling the body when it is time to rest and when it is time to wake up.</li>
+
+      <p><b>Nature in Rhythm</b></p>
+      <li>Circadian rhythms also play a role in an organism’s consumption of food and water. For example, morning sunlight signals a plant to unfold its leaves to capture sunlight and convert it to the sugars it needs to survive. At night, the plant’s leaves then fold back to conserve water.</li>
+
+      <li>One of the most interesting relationships between circadian rhythms involves bees and flowering plants. The circadian rhythms of flowers result in the opening and closing of petals at different times of day, depending on available sunshine. Since bees rely on nectar from flowers, their internal clocks coincide with plants’ circadian rhythms. When flowers open their petals, bees will be present to gather nectar at exactly the right time.</li>
+
+      <li>Just as plants and animals follow a built- in biological timing system, we, too, fall into a repetitive pattern of waking and sleeping. These circadian rhythms guide our daily routines and keep our bodies on a schedule that helps us be as productive as possible during the time we spend awake.</li>
+    `
+  },
+
+   'shine': {
+    title: 'Let It Shine',
+    content: `
+    <ol class="paragraph-numbers">
+      <li>As her eyes danced across the crowd, Jada nervously tugged on her long braid. Where was Sydney? The bus to the planetarium was leaving in five minutes! The girls had been looking forward to this field trip for weeks. They were in different science classes, so the field trip was a chance for the friends to spend time together. Jada was about to check her watch again when Mr. Tao approached her. “Sydney’s mother just called. Sydney has a cold and won’t be coming today.”</li>
+
+      <li>“Oh, no!” Jada said.</li>
+
+      <li>Mr. Tao continued, “Since you’re lacking a partner, you can pair up with Zach. Tyler also stayed home with a cold today, so Zach needs a partner too.”</li>
+
+      <li>Jada glanced at Zach then looked away. He seemed nice enough, but science and homeroom were the only classes they had together. Jada was always so busy listening to Sydney before and after homeroom that she didn’t have time to talk to her other classmates. Jada didn’t even remember if she and Zach had ever spoken to each other.</li>
 
       <li>Instead of a game, Evan found an old journal in a dusty trunk. He opened the pages and discovered a map! The drawing showed Grandma's house, a raindrop inside a square, two little triangles, and a dock. Best of all, a large "X" marked the "Greatest Fishing Spot," which was near the dock.</li>
 
