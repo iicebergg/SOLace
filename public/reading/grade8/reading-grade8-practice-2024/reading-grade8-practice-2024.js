@@ -125,210 +125,139 @@ const readingPassages = {
     <ol class="paragraph-numbers">
       <li>Between World War I and the Great Depression, two of America’s most devastating events, an important cultural movement began to evolve in the heart of New York City. Beginning about 1920, it was called the Harlem Renaissance. Its name reveals its similarity to the European Renaissance, a golden age of art and literature during the 14th to 16th centuries. During this European Renaissance, geniuses like William Shakespeare and Leonardo da Vinci led the Western world out of the darkness of the Middle Ages.</li>
 
-    <img src="images/seaweed.png" alt="Seaweed" style="float: right; height: 120px; margin-left: 10px;">
-      <li>In some parts of the world, especially near the ocean, people eat seaweed all by itself. It has lots of vitamins and is a healthful treat. In places where seaweed is not served as a meal, people use goods that are made from these plants. Hundreds of everyday items have seaweed in them.</li>
+      <li>The Harlem Renaissance of the 1920s also gave rise to a group of highly talented artists. The resemblance ends there, however. The Harlem Renaissance owed little to European- influenced cultures or the dominant culture of early- 20th century America. Instead, this artistic awakening was created exclusively by African Americans, and it occurred at the perfect time.</li>
 
-      <li>Seaweed helps many people keep their teeth clean. Toothpaste stays thick when it comes out of the tube because of a gel from a type of red seaweed. No one can see the seaweed in the toothpaste because it is mixed with the gel. This gel is in shampoo and makeup too.</li>
+      <p><b>The Power of Hope</b></p>
+      <li>In 1920, America was ripe for change; it needed a renewal of hope. World War I had cost more than $32 billion, and more than 100,000 American soldiers had been killed or wounded. Despite the continuing existence of racism in much of America, thousands of African Americans had served their country in the war. When the war ended, these soldiers returned to an America where social injustice was still tolerated and jobs were difficult to find.</li>
 
-      <li>Without seaweed, ice cream and yogurt would not be as thick or creamy but would seem rather lumpy and watery. Many people eat foods with seaweed without even knowing it.</li>
+      <li>Many African Americans looked northward for the chance to rebuild their lives. It was a trend that had begun after the Civil War, when newly freed Southern slaves had moved north hungering for opportunity. After World War I, African Americans again gravitated to the larger Northern cities. Harlem, a large neighborhood in New York City, appeared to offer the kind of fresh start they were seeking. In fact, by the early 1920s, African Americans in Harlem had grown into a large but closely knit community. Conditions were not ideal, but the African American residents of Harlem shared similar cultural, social, and artistic values. Among the thousands attracted to the possibilities of Harlem was a select group of highly gifted artists who turned this former Dutch village into a hub of creativity.</li>
 
-      <li>Seaweed also helps plants grow. Many farmers around the world spray their fields with seaweed. They buy the seaweed after it has been made into a liquid. The seaweed becomes food for the plants. The vegetables on people's plates often come from these farms.</li>
+      <p><b>A New Sound Emerges</b></p>
+      <li>It was called “jazz,” and no one had ever heard anything like it. A blend of traditional African rhythms, gospel, and blues, this new musical style was completely original. Not only did jazz express the African American experience, but its fluid, free- form nature also encouraged musicians to improvise and express themselves.</li>
 
-      <li>People cannot see seaweed in the foods they eat or in the items they use to look their best. However, none of these things would be the same without this useful weed that comes from the sea.</li>
+      <li>Though jazz originated in New Orleans, its irresistible sound had made its way to New York’s Harlem. Jazz could be heard everywhere, from street corners to nightclubs. It was in these clubs that the most accomplished jazz musicians got their start. Louis Armstrong, Cab Calloway, and many others became legends. Soulful jazz singers like Billie Holiday and Bessie Smith were instant celebrities. Harlem’s finest musicians soon helped make jazz an international sensation.</li>
+
+      <img src="images/armstrong.png" alt="Image failed to load. Please try again later." style="float: right; height: 120px; margin-left: 10px;">
+
+      <p><b>Literature and Art Abound</b></p>
+      <li>Despite the powerful influence of jazz, the foundation of the Harlem Renaissance was not made from music alone. African American writers such as Ralph Ellison and Zora Neale Hurston provided their own observations of African American life. They challenged others to examine prejudice and its damage to society and individuals. The words of gifted poets Langston Hughes and Countee Cullen revealed the complex and contradictory world of the African American experience, with all its joys and injustices.</li>
+
+      <li>Meanwhile, the talented painter Jacob Lawrence, opera singer Marian Anderson, jazz dancer Josephine Baker, and scores of actors, sculptors, and playwrights made timeless contributions to the vision shaping the Harlem Renaissance.</li>
+
+      <p><b>A Beginning, Not an End</b></p>
+      <li>The convergence of talent that spontaneously came together during the Harlem Renaissance was nothing short of amazing. These gifted artists arrived in Harlem looking for hope, and what resulted was the blossoming of a new African American identity.</li>
+
+      <li>The Harlem Renaissance began to decline in the late 1930s when the Great Depression crushed the nation’s economy. This sent most Americans into crisis, and time spent creating turned into time spent surviving. The heritage of the Harlem Renaissance is alive and well, however. The vision of its participants is a permanent part of our collective American culture. Their music, words, and art seem as fresh and powerful today in the 21st century as they were then.</li>
+
+      <li>Perhaps the most important achievement of the Harlem Renaissance is the enduring knowledge that all citizens are entitled to a chance at greatness. Whenever such opportunities have flourished, the world’s supply of cultural treasures has also grown. The Harlem Renaissance was one of America’s shining moments.</li>
 </ol>
     `
   },
 
-  'secret_message': {
-    title: 'Want to Send a Secret Message?',
+  'habitats': {
+    title: 'Delicate Habitats of the Ocean',
     content: `
-      <p><i>Here are three amazing ways to do it!</i></p>
-      
-      <p>Secret messages have been around for hundreds of years. Spies used them to pass important information without being caught. The next time you want to send a secret message, try one of these fun ideas!</p>
-      
-<div class="passage-innerbox">
-<img src="images/lemony-letter.png" alt="Lemony Letter" style="float: right; height: 100px; margin-left: 10px;">
-      <p><b>Lemony Letter</b></p>
-      <p><u>What you will need:</u>
-      <ul>
-      <li>A lemon</li>
-      <li>A knife</li>
-      <li>A small cup</li>
-      <li>A thin paintbrush</li>
-      <li>A piece of white paper</li>
-      <li>A lamp</li>
-      </ul></p>
-      
-      <p><ol>
-      <li>To have enough juice, gently roll the lemon back and forth against the table with your palm.</li>
-      <li>Have a grownup cut the lemon in half.</li>
-      <li>Squeeze the lemon so the juice drips into the cup.</li>
-      <li>Dip the paintbrush into the juice and write a message on the paper. When the "ink" dries, the paper will appear blank.</li>
-      <li>Give your secret message to a friend or family member.</li>
-      <li>Have the person who receives your message hold the paper near a light bulb. The heat will make the secret message appear! The lemon juice will turn a brown color.</li>
-      </ol></p>
-</div>
+    <img src="images/habitats.png" alt="Image failed to load. Please try again later." style="float: right; height: 120px; margin-left: 10px;">
+     <ol class="paragraph-numbers">
+      <li>Coral reefs and the ocean communities that surround them are some of the most beautiful and diverse ecosystems in the world. From Australia’s Great Barrier Reef to Virginia’s Chesapeake Bay, coral reefs are large and complex ocean systems. They provide food and shelter for thousands of fish and other ocean creatures. These coral reefs, while they are massive marine structures, actually depend on tiny ocean organisms and specific water conditions to survive and flourish.</li>
 
-<div class="passage-innerbox">
-<img src="images/mirror-message.png" alt="Mirror Message" style="float: right; height: 100px; margin-left: 10px;">
-      <p><b>Mirror Message</b></p>
-      <p><u>What you will need:</u>
-      <ul>
-      <li>A potato</li>
-      <li>A potato peeler of knife</li>
-      <li>A bathroom mirror</li>
-      </ul></p>
-      
-      <p><ol>
-      <li>Ask a grownup to peel the skin from one end of the potato.</li>
-      <li>Using the peeled end of the potato, write a message in big letters on the bathroom mirror.</li>
-      <li>Your message will be <u>invisible</u> until you take a bath or shower. When you take a shower or bath, close the door so the steam stays in the bathroom. Steam from the hot water will appear on the mirror and make your message show.</li>
-      </ol></p>
+      <li>Coral is a structure of tiny animals called polyps that live fixed in one place. Many singular polyps band together and form larger colonies called reefs. The polyps have tentacles that stretch out to catch and feed on microscopic plankton and other marine animals. Coral has a hard skeleton made of calcium. As the polyps die, they leave behind their skeletons, which creates a reef, the structural base for the entire colony. Over time the structure grows upward, sometimes as much as ten centimeters a year. The newest polyps of the coral colony live at the top of the structure. The polyps can retreat quickly into their hard outer skeletons to escape predators.</li>
 
-      <p>Surprise someone else! Write a message on the bathroom mirror for a family member. See how long it takes for the person to discover your secret message.</p>
-</div>
+      <li>Corals grow in a variety of shapes, sizes, and colors. Species such as brain coral and fan coral take shapes that fit their names. Whip coral, which has a thin branchlike structure reaching up to three feet in length, is native to the Chesapeake Bay and provides an important habitat for the bay’s black sea bass. The deep purple branches of whip coral can be found in the lower bay on rocks and pilings and human- made structures below the water’s surface, such as bridge supports.</li>
 
-<div class="passage-innerbox">
-<img src="images/crazy-crayon.png" alt="Crazy Crayon" style="float: right; height: 100px; margin-left: 10px;">
-      <p><b>Crazy Crayon</b></p>
-      <p><u>What you will need:</u>
-      <ul>
-      <li>A piece of white paper</li>
-      <li>A white crayon</li>
-      <li>Dark-colored paint</li>
-      <li>A paintbrush</li>
-      </ul></p>
-      
-      <p><ol>
-      <li>Using the white crayon, write your message on the paper. It will be difficult to see the markings, so be careful.</li>
-      <li>Give your secret message to a friend.</li>
-      <li>Have your friend use the paintbrush to spread the paint over the paper. The message will appear on the paper as the person paints.</li>
-      </ol></p>
+      <li>When polyp colonies become established, the coral reefs provide a home for many sea creatures. Marine sponges, sea slugs, jellyfish, sea anemones, sea turtles, and a variety of fish depend on reefs for both food and shelter. In fact, more than 4,000 species of fish and marine life may populate a typical coral community. Some species, such as anemones, attach themselves to the surface of the reef, while others, such as sea slugs, seek protection within it.</li>
 
-      <p>It's amazing! The paint does not stick to the waxy crayon, so the words will show through.</p>
-</div>
-    `
-  },
+      <li>Most types of corals have a cooperative relationship with algae, which benefits both organisms. Algae plants live among the coral polyps and, through the process of photosynthesis, produce food they share with the coral. In return, the reef’s structure provides protection for the algae. Algae need light for photosynthesis, and coral reefs are found in shallow water where light can easily reach the structures algae inhabit.</li>
 
-   'hidden_treasure': {
-    title: 'A Hidden Treasure',
-    content: `
-    <ol class="paragraph-numbers">
-      <li>Evan and his 16-year-old brother, Mark, liked spending time with their grandmother. Today, though, Grandma was busy painting.</li>
+      <li>In recent years scientists and researchers have observed a troubling trend in these delicate ocean communities. Reefs around the world are being stressed by changes in the oceans’ temperatures and chemical balances. These changes are damaging the relationship between the coral and the algae. When ocean water warms or coral is stressed in some other way, coral views algae as a foreign substance rather than a food source and rejects the algae. In addition, the increasing level of acidity in the oceans makes it harder for coral to build its skeletal structure and may even dissolve existing coral skeletons. This damage affects all the marine creatures that depend on the reef for survival.</li>
 
-      <li>"May I help you paint your kitchen, Grandma?" asked Evan.</li>
+      <li>There are positive developments, however, in the efforts to preserve the world’s coral reefs. The reefs themselves are helping scientists combat harmful environmental changes. Scientists hope that by learning more about how coral and algae coexist, species can be identified and better protected.</li>
 
-      <li>"Your mom is helping me," Grandma replied with a smile. "Maybe you could play a game with Mark. I have some games in the attic."</li>
+      <li>Along with other management programs, the state of Virginia is constructing artificial reefs in order to provide feeding grounds and shelter for endangered reef- dwelling fish. These reefs are made of old tires and sunken ships, and since the 1990s the program has been using a new concrete, igloo- shaped structure. The Virginia Artificial Reef Program has created more than 23 artificial reef sites that replicate natural ocean reefs and attract fish and other ocean creatures.</li>
 
-      <li>The brothers nodded. They climbed the steps and opened the attic door to look for the games.</li>
-
-      <li>Instead of a game, Evan found an old journal in a dusty trunk. He opened the pages and discovered a map! The drawing showed Grandma's house, a raindrop inside a square, two little triangles, and a dock. Best of all, a large "X" marked the "Greatest Fishing Spot," which was near the dock.</li>
-
-      <li>Excitedly, Evan asked Mark, "Do you think we can find this fishing spot?"</li>
-
-      <li>Mark took a closer look at the map. "Let's try," he said, and they thundered down the steps.</li>
-
-      <li>"Mom, we're going outside on a treasure hunt!" Evan shouted from the back door.</li>
-
-      <li>"Okay," Mom laughed, shaking her head.</li>
-
-      <li>"The square with the raindrop is behind Grandma's house," Mark said, narrowing his eyes as he examined the map.</li>
-
-      <li>When he looked up, Mark noticed a faded blue spot on the water tower nearby. "Look!" he exclaimed. "The water tower once had a raindrop painted on it. That must be it."</li>
-
-      <li>Next, the boys searched for the two small triangles near the tower. Before long, Evan patted the trunks of two pine trees.</li>
-
-      <li>"These trees must be the triangles on the map," he decided. "They're in the right places."</li>
-
-      <li>"Now we just need to find the dock," Mark said. The two boys searched the riverside near the trees, but they found only weeds.</li>
-
-      <li>Evan finally suggested that Grandma might remember the old dock.</li>
-
-      <li>The boys rushed into the kitchen with their question as Grandma and Mom were washing their paintbrushes.</li>
-
-      <li>"That dock was torn down a long time ago," Grandma explained. "How did you know about it?" she puzzled.</li>
-
-      <li>The boys presented the map, and Mom smiled. "That's my map I made when I was a young girl. Grandma and I loved fishing from the old dock."</li>
-
-      <li>"Wow! Could you take us to that place? The dock is no longer there, but maybe it's still a great fishing spot," Evan said hopefully.</li>
-
-      <li>Grandma smiled, remembering the times she spent with Mom. "Sure," she agreed. "Let's see if the fish still like it there."</li>
-
-      <li>"I'll get our fishing poles," Evan offered. The map had certainly led to a treasure and a chance to spend time with Grandma.</li>
+      <li>Coral reefs are beautiful habitats that provide food and shelter for fish and other marine animals. The reefs have an amazing ability to thrive, but changes in oceanic conditions are damaging these important habitats. However, scientists are working successfully to learn more about protecting the world’s coral reefs.</li>
 </ol>
     `
   },
 
-   'ostrich': {
-    title: 'The Ostrich: One Odd Bird',
+   'swift': {
+    title: 'The Black Swift',
     content: `
     <ol class="paragraph-numbers">
-    <img src="images/ostrich.png" alt="Ostrich" style="float: right; height: 250px; margin-left: 10px;">
-      <li>Ostriches hold the record as the largest birds in the world. A male can grow to nine feet tall. That is about three feet taller than most men. How do these giants spend their days?</li>
+      <li>It was on the third day that Joanna finally saw the bird.</li>
 
-      <p><b>Life in a Bird Herd</b></p>
-      <li>Ostriches live in groups called herds. One male is the leader. He uses his strong legs to dig a hole for a nest. The herd only needs one nest because all the females lay their eggs in it. The male and one of the females take turns guarding and sitting on the eggs.</li>
+      <li>Joanna was perched on a boulder enjoying the warmth of the summer sun and trying not to think about her old school and friends. The splashing of the waterfall nearby drowned out most other noises, so it took Joanna a moment to hear another sound, high-pitched and repeated.</li>
 
-      <li>When the chicks hatch from the eggs, they are covered with yellow fuzz and black spots. Their colors match the sandy ground. This coloring helps them hide from dangerous animals. The mother and father ostrich protect the chicks too. Before long, feathers replace the fuzz on the chicks. Their new fluffy feathers trap air and keep the chicks warm at night.</li>
+      <li><i>Plik-plik-plik-plik!</i></li>
 
-      <li>The young birds learn to peck the ground and eat plants by watching older ostriches. They eat mostly plants, seeds, and roots but will also eat insects and small lizards. This diet helps the chicks grow quickly, almost a foot each month!</li>
+      <li>Looking around, Joanna saw trees, both evergreen and leafy, and the pool of water at the base of the waterfall that fed a healthy stream running downhill. She also noted the rocky slope of the trail as it led upward behind her, farther into the mountain. Then she heard it again.</li>
 
-      <p><b>Speedy Runners</b></p>
-      <li>Although these birds cannot fly, powerful legs help them move quickly. Ostriches can bolt across the ground at 43 miles per hour. They keep their wings outstretched while running. This helps them keep their balance, especially when changing direction.</li>
+      <li><i>Plik-plik-plik-plik!</i></li>
 
-      <p><b>Staying Safe</b></p>
-      <li>With such speed, ostriches outrun most predators, but they know how to defend themselves too. Their strong legs can deliver a kick that stops a lion! Ostriches use another trick to stay safe. They sit down on the ground, rest their heads on the sand, and lie very still. The sand blends with the color of the ostriches so other animals do not notice them.</li>
+      <li>Joanna had been to this waterfall twice before. Her family had just relocated to Colorado, and upon their arrival, as the moving van was still being unloaded, Joanna had immediately asked if she could go for a ride to explore her new neighborhood.</li>
 
-      <li>Today, wild ostriches live in Africa, but many tame ones live on farms and in zoos. Ostriches are unusual-looking birds, but their power and speed make them one of the fastest animals on land.</li>
+      <li>“Take the walkie-talkie with you,” her mother had said that day, handing her one of the receivers they often used to communicate back in their old neighborhood.</li>
 
-<div class="passage-innerbox">
-      <p><b>Ostrich Facts</b><br>
-      Life span: 30-40 years<br>
-      Weight: 350 pounds<br>
-      Height: 8-9 feet<br>
-      Egg weight: 3 pounds<br>
-      Nest size: Up to 8 feet<br>
-      Herd size: Usually fewer than 12 birds</p>
-</div>
-    `
-  },
+      <li>As Joanna pedaled away on her bicycle, she called back, “First I’ll just do some preliminary scouting.”</li>
 
-     'search': {
-    title: 'The Search',
-    content: `
-      <ol class="paragraph-numbers">
-        <li>I've emptied my sports bag</li>
-        <li>Checked in the car</li>
-        <li>Reached under the sofa</li>
-        <li>And searched near and far.</li><br>
-        <li>But hunt as I may</li>
-        <li>I've got only one shoe--</li>
-        <li>And where its mate is</li>
-        <li>I haven't a clue.</li><br>
-        <li>"When was your last game?"</li>
-        <li>Dad asks thoughtfully.</li>
-        <li>"And after the game</li>
-        <li>Whom did you see?"</li><br>
-        <li>I pause in my tracks--</li>
-        <li>Dad's smart, it is true</li>
-        <li>But his questions don't lead</li>
-        <li>To my runaway shoe.</li><br>
-        <li>It's surely gone missing</li>
-        <li>There's clearly no hope.</li>
-        <li>I have to give up</li>
-        <li>Find somewhere to mope.</li><br>
-        <li>So I sit on the steps</li>
-        <li>And stare into the yard</li>
-        <li>Where Otis the dog</li>
-        <li>Serves as guard--</li><br>
-        <li>Then I notice that Otis</li>
-        <li>Has a new chew</li>
-        <li>With laces and treads--</li>
-        <li>Oh, no! It's my shoe!</li>
-      </ol>
+      <li>The truth was that she was running away.</li>
+
+      <li>"Not <i>literally</i> running away, of course, but getting out of her new house, away from the boxes that needed unpacking, and away from the neighbors who wanted to meet the “new girl.” She wanted to clear her mind of her worries. Would she like her new school? How would she make friends in this unfamiliar place? Would she be able to adjust? Joanna had seen signs that a state park was nearby, and by luck, she chanced upon one of its trail markers just a mile away.</li>
+
+      <li>Joanna locked up her bike, read the park rules, studied the maps at the outdoor kiosk, and started hiking up the trail. After a half-hour’s ascent of fairly steep climbing, she noticed the trail leveled off into a little clearing. It was like a landing halfway up a stairway, insulated by trees and a waterfall cascading into a pool from twenty feet up.</li>
+
+      <li>The setting was beautiful, and Joanna had felt her fears evaporate amid the soft ferns and the mist of the waterfall. In the following days, when she was not unpacking at home, Joanna had returned several times to this comforting place.</li>
+
+      <li><i>Plik-plik-plik-plik!</i></li>
+
+      <li>The sound jolted Joanna back to the present. Her watchful eyes now detected movement by the side of the waterfall. Standing slowly and creeping a step closer, she saw that there, clinging to a wet, mossy rock about twelve feet above the pool, was a small bird.</li>
+
+      <li>The bird tilted its head to study Joanna with one of its large eyes. Its feathers were mostly black, camouflaging its body against the dark, wet rocks. The bird had a gray head the color of soot, and its eyes, two onyx stones, were surrounded with black, as if rimmed in eye makeup.</li>
+
+      <li><i>Plik-plik-plik-plik!</i></li>
+
+      <li>Now Joanna understood what she was hearing—-it must be a call for help! Somehow the little fellow must have become stranded or injured; perhaps it was unable to fly. The little black bird managed to hang on to the rock despite the slippery moss and being pelted by the spray of the waterfall. <i>The poor thing is probably miserable</i>, Joanna thought, <i>but what can I do?</i></li>
+
+      <li>Remembering that the park map showed a ranger station higher up the trail, Joanna began hiking to get help. The trail above the waterfall was a more arduous, rockier climb, but she managed to reach the ranger station. A uniformed ranger in a wide--brimmed green hat stood on the porch, gazing across the canopy of the forest through large binoculars.</li>
+
+      <li>“I’m really sorry to bother you, but I think there’s a bird in distress down at the waterfall. I’m not sure what to do,” she said.</li>
+
+      <li>The ranger, whose nametag read “Dan,” shook his head. “No bother. Besides, I’m always looking for an excuse to hike down to the waterfall. Let’s have a look.”</li>
+
+      <li>Later, approaching the clearing from above, Joanna apologized again. “I’m really sorry to drag you all the way down here.” Entering the glade, she looked toward the location where the bird had been. “It was right there!” she said, starting to turn crimson with embarrassment.</li>
+
+      <li>Dan smiled patiently. “That’s okay,” he said, “maybe it found a way—-”</li>
+
+      <li><i>Plik-plik-plik-plik!</i></li>
+
+      <li>“There it is!” said Joanna excitedly. “Did you hear it?”</li>
+
+      <li>Dan slowly brought a finger to his lips in a “shushing” gesture and moved backward, away from the waterfall to where the trail led downhill. Once they were a little farther away, Joanna couldn’t endure the suspense anymore. “Don’t tell me; it’s actually a <i>dangerous</i> bird?” she whispered.</li>
+
+      <li>The ranger’s face looked awestruck. “Just fix your eyes on the waterfall,” he suggested. A few moments later, a black bird with a gray head and curved wings slowly emerged from behind the watery mist.</li>
+
+      <li>“I can’t believe it,” Dan breathed. “That’s not a dangerous bird, but it is a mysterious one. It’s called a black swift.”</li>
+
+      <li>Joanna shrugged and waited for an explanation.</li>
+
+      <li>“Let me put it this way,” Dan said. “I’ve been a birdwatcher for a long time, and I’ve never seen one. Black swifts are unusual birds because they nest only on sea cliffs or behind waterfalls, like this one, which makes it hard to observe them in their natural habitat.”</li>
+
+      <li>Joanna watched the bird inching along the rocks. “So it’s not actually injured?” As Joanna spoke, the bird jumped off the rock and disappeared instantly from sight, like an arrow shot from a bow.</li>
+
+      <li>“No,” Dan laughed. “It looks pretty healthy to me. The black swift flies so fast and so high, it was once nicknamed ‘the cloud dweller.’”</li>
+
+      <li><i>A bird called a “cloud dweller” that nests behind waterfalls</i>, Joanna thought. <i>How cool is that?</i></li>
+
+      <li>“It’s fortunate we heard it,” said Dan. “Black swifts are usually silent, but sometimes around their nests you might hear a—-”</li>
+
+      <li><i>Plik-plik-plik-plik!</i></li>
+
+      <li>The ranger and the girl looked at each other because both had heard the quieter, high- pitched call clearly. “It sounds like there’s a <i>family</i> of black swifts back there,” said Dan. “This is a rare discovery.”</li>
+
+      <li>Joanna gazed at the waterfall. This dark, cold, wet environment didn’t seem like it would make a good home, and yet this little family of birds was thriving here. They had adapted to a difficult, even treacherous environment to make a home here. She had assumed the bird needed help, but really it was going to get along just fine.</li>
+</ol>
     `
   }
-
 };
 
 const sampleQuestions = [

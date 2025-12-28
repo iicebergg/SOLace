@@ -1017,3 +1017,352 @@ document.addEventListener('DOMContentLoaded', function() {
   
   console.log('Auto-opening left panel initialized with', sampleQuestions.length, 'questions');
 });
+
+// ========================================
+// PASSAGE TABS SYSTEM
+// For questions with multiple passages
+// Add this code to test-pages.js
+// ========================================
+
+// Track current passage state
+let currentPassageIds = [];
+let currentActivePassageIndex = 0;
+let passagesData = {}; // Will be populated from window.passages if defined
+
+/**
+ * Initialize the passage tabs container in the reading panel
+ * Call this once during app initialization
+ */
+function initPassageTabs() {
+  const readingPanel = document.querySelector('.reading-panel');
+  if (!readingPanel) return;
+  
+  // Check if tabs container already exists
+  let tabsContainer = document.querySelector('.passage-tabs-container');
+  if (tabsContainer) return;
+  
+  // Create tabs container
+  tabsContainer = document.createElement('div');
+  tabsContainer.className = 'passage-tabs-container';
+  tabsContainer.setAttribute('role', 'tablist');
+  tabsContainer.setAttribute('aria-label', 'Passage selection');
+  
+  // Create the tabs wrapper
+  const tabsWrapper = document.createElement('div');
+  tabsWrapper.className = 'passage-tabs';
+  tabsContainer.appendChild(tabsWrapper);
+  
+  // Insert after header, before content
+  const header = readingPanel.querySelector('.reading-panel-header');
+  const content = readingPanel.querySelector('.reading-panel-content');
+  
+  if (header && content) {
+    header.after(tabsContainer);
+  } else {
+    readingPanel.insertBefore(tabsContainer, readingPanel.firstChild);
+  }
+  
+  console.log('Passage tabs container initialized');
+}
+
+/**
+ * Get passage IDs for a question
+ * Supports both single passageId and array of passageIds
+ */
+function getQuestionPassageIds(question) {
+  if (!question) return [];
+  
+  // Check for passageIds array first (multiple passages)
+  if (Array.isArray(question.passageIds) && question.passageIds.length > 0) {
+    return question.passageIds;
+  }
+  
+  // Fall back to single passageId
+  if (question.passageId) {
+    return [question.passageId];
+  }
+  
+  return [];
+}
+
+/**
+ * Get passage data by ID
+ * Looks in window.passages object defined in test files
+ */
+function getPassageById(passageId) {
+  // Check if passages are defined globally
+  if (window.passages && window.passages[passageId]) {
+    return window.passages[passageId];
+  }
+  
+  // Fallback: return null if not found
+  return null;
+}
+
+/**
+ * Get display name for a passage
+ */
+function getPassageDisplayName(passageId, passageData, index) {
+  // If passage has a title, use it
+  if (passageData && passageData.title) {
+    return passageData.title;
+  }
+  
+  // Otherwise generate a default name
+  return `Passage ${index + 1}`;
+}
+
+/**
+ * Update passage tabs based on current question
+ */
+function updatePassageTabs(question) {
+  const tabsContainer = document.querySelector('.passage-tabs-container');
+  const tabsWrapper = document.querySelector('.passage-tabs');
+  
+  if (!tabsContainer || !tabsWrapper) {
+    console.log('Tabs container not found, initializing...');
+    initPassageTabs();
+    return updatePassageTabs(question);
+  }
+  
+  // Get passage IDs for this question
+  const passageIds = getQuestionPassageIds(question);
+  currentPassageIds = passageIds;
+  
+  // Clear existing tabs
+  tabsWrapper.innerHTML = '';
+  
+  // If only one or no passages, hide tabs
+  if (passageIds.length <= 1) {
+    tabsContainer.classList.remove('active');
+    currentActivePassageIndex = 0;
+    
+    // Load single passage if exists
+    if (passageIds.length === 1) {
+      loadPassageContent(passageIds[0]);
+    }
+    return;
+  }
+  
+  // Multiple passages - show tabs
+  tabsContainer.classList.add('active');
+  
+  // Create tabs for each passage
+  passageIds.forEach((passageId, index) => {
+    const passageData = getPassageById(passageId);
+    const displayName = getPassageDisplayName(passageId, passageData, index);
+    
+    const tab = document.createElement('button');
+    tab.className = 'passage-tab';
+    tab.setAttribute('role', 'tab');
+    tab.setAttribute('aria-selected', index === 0 ? 'true' : 'false');
+    tab.setAttribute('aria-controls', 'passage-content');
+    tab.setAttribute('data-passage-id', passageId);
+    tab.setAttribute('data-passage-index', index);
+    tab.textContent = displayName;
+    
+    if (index === 0) {
+      tab.classList.add('active');
+    }
+    
+    // Tab click handler
+    tab.addEventListener('click', () => {
+      switchToPassage(index);
+    });
+    
+    // Keyboard navigation
+    tab.addEventListener('keydown', (e) => {
+      handleTabKeydown(e, index, passageIds.length);
+    });
+    
+    tabsWrapper.appendChild(tab);
+  });
+  
+  // Reset to first passage
+  currentActivePassageIndex = 0;
+  loadPassageContent(passageIds[0]);
+  
+  console.log(`Created ${passageIds.length} passage tabs`);
+}
+
+/**
+ * Handle keyboard navigation in tabs
+ */
+function handleTabKeydown(e, currentIndex, totalTabs) {
+  const tabs = document.querySelectorAll('.passage-tab');
+  let newIndex = currentIndex;
+  
+  switch (e.key) {
+    case 'ArrowLeft':
+      e.preventDefault();
+      newIndex = currentIndex > 0 ? currentIndex - 1 : totalTabs - 1;
+      break;
+    case 'ArrowRight':
+      e.preventDefault();
+      newIndex = currentIndex < totalTabs - 1 ? currentIndex + 1 : 0;
+      break;
+    case 'Home':
+      e.preventDefault();
+      newIndex = 0;
+      break;
+    case 'End':
+      e.preventDefault();
+      newIndex = totalTabs - 1;
+      break;
+    default:
+      return;
+  }
+  
+  if (newIndex !== currentIndex) {
+    tabs[newIndex].focus();
+    switchToPassage(newIndex);
+  }
+}
+
+/**
+ * Switch to a specific passage by index
+ */
+function switchToPassage(index) {
+  if (index < 0 || index >= currentPassageIds.length) return;
+  
+  const tabs = document.querySelectorAll('.passage-tab');
+  const passageId = currentPassageIds[index];
+  
+  // Update tab states
+  tabs.forEach((tab, i) => {
+    if (i === index) {
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+    } else {
+      tab.classList.remove('active');
+      tab.setAttribute('aria-selected', 'false');
+    }
+  });
+  
+  currentActivePassageIndex = index;
+  
+  // Load the passage content
+  loadPassageContent(passageId);
+  
+  console.log(`Switched to passage: ${passageId}`);
+}
+
+/**
+ * Load passage content into the reading panel
+ */
+function loadPassageContent(passageId) {
+  const passageContent = document.getElementById('passage-content');
+  if (!passageContent) return;
+  
+  const passageData = getPassageById(passageId);
+  
+  if (!passageData) {
+    passageContent.innerHTML = `<p><em>Passage "${passageId}" not found.</em></p>`;
+    return;
+  }
+  
+  // Build passage HTML
+  let html = '';
+  
+  // Add passage label if there are multiple passages
+  if (currentPassageIds.length > 1) {
+    const displayName = getPassageDisplayName(passageId, passageData, currentActivePassageIndex);
+    html += `<div class="passage-label">${displayName}</div>`;
+  }
+  
+  // Add title if exists
+  if (passageData.title) {
+    html += `<h4>${passageData.title}</h4>`;
+  }
+  
+  // Add content - support both string and HTML content
+  if (passageData.content) {
+    html += passageData.content;
+  } else if (passageData.html) {
+    html += passageData.html;
+  } else if (typeof passageData === 'string') {
+    html += passageData;
+  }
+  
+  // Apply to passage content with animation
+  passageContent.style.opacity = '0';
+  passageContent.style.transform = 'translateY(5px)';
+  
+  setTimeout(() => {
+    passageContent.innerHTML = html;
+    passageContent.style.transition = 'opacity 0.2s ease, transform 0.2s ease';
+    passageContent.style.opacity = '1';
+    passageContent.style.transform = 'translateY(0)';
+    
+    // Scroll to top of passage
+    const panelContent = document.querySelector('.reading-panel-content');
+    if (panelContent) {
+      panelContent.scrollTop = 0;
+    }
+  }, 50);
+}
+
+/**
+ * Check if question has multiple passages
+ */
+function hasMultiplePassages(question) {
+  const passageIds = getQuestionPassageIds(question);
+  return passageIds.length > 1;
+}
+
+/**
+ * Enhanced loadQuestion function wrapper
+ * Call this after the original loadQuestion to handle passages
+ */
+function handleQuestionPassages(question) {
+  if (!question) return;
+  
+  const passageIds = getQuestionPassageIds(question);
+  
+  // Initialize tabs if needed
+  initPassageTabs();
+  
+  // Update tabs based on question
+  if (passageIds.length > 0) {
+    updatePassageTabs(question);
+  } else {
+    // No passages - hide tabs
+    const tabsContainer = document.querySelector('.passage-tabs-container');
+    if (tabsContainer) {
+      tabsContainer.classList.remove('active');
+    }
+  }
+}
+
+// ========================================
+// INTEGRATION WITH EXISTING CODE
+// ========================================
+
+/**
+ * Override or enhance the existing loadQuestion function
+ * This integrates passage tabs with question loading
+ */
+function enhanceLoadQuestionWithPassages() {
+  // Store reference to original loadQuestion
+  const originalLoadQuestion = window.loadQuestion;
+  
+  if (typeof originalLoadQuestion !== 'function') {
+    console.warn('loadQuestion function not found, passage tabs will need manual integration');
+    return;
+  }
+  
+  // Create enhanced version
+  window.loadQuestion = function(index) {
+    // Call original function
+    originalLoadQuestion.call(this, index);
+    
+    // Handle passage tabs after a short delay to ensure DOM is ready
+    setTimeout(() => {
+      if (window.questions && window.questions[index]) {
+        handleQuestionPassages(window.questions[index]);
+      }
+    }, 50);
+  };
+  
+  console.log('loadQuestion enhanced with passage tabs support');
+}

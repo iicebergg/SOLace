@@ -1,3 +1,236 @@
+/* ========================================
+   PASSAGE TABS STYLING
+   For questions with multiple passages
+   ======================================== */
+
+.passage-tabs-container {
+  display: none; /* Hidden by default, shown when multiple passages */
+  background-color: var(--secondary-bg, #f0f5fa);
+  border-bottom: 1px solid var(--border-color, #ddd);
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.passage-tabs-container.active {
+  display: block;
+}
+
+.passage-tabs {
+  display: flex;
+  gap: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.passage-tab {
+  flex: 1;
+  min-width: 0;
+  padding: 0.875rem 1rem;
+  background-color: var(--secondary-bg, #e8ecf0);
+  border: none;
+  border-bottom: 3px solid transparent;
+  color: var(--text-color, #666);
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: relative;
+}
+
+.passage-tab:hover {
+  background-color: var(--input-bg, #fff);
+  color: var(--accent-color, #4a6fa5);
+}
+
+.passage-tab.active {
+  background-color: var(--input-bg, #fff);
+  border-bottom-color: var(--accent-color, #4a6fa5);
+  color: var(--accent-color, #4a6fa5);
+  font-weight: 600;
+}
+
+.passage-tab:focus {
+  outline: 2px solid var(--accent-color, #4a6fa5);
+  outline-offset: -2px;
+  z-index: 1;
+}
+
+.passage-tab:focus-visible {
+  outline: 3px solid var(--accent-color, #4a6fa5);
+  outline-offset: -2px;
+}
+
+/* Tab indicator for active state */
+.passage-tab::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background-color: var(--accent-color, #4a6fa5);
+  transition: width 0.2s ease, left 0.2s ease;
+}
+
+.passage-tab.active::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Passage content wrapper for transitions */
+.passage-content-wrapper {
+  position: relative;
+}
+
+#passage-content {
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Passage label/badge shown above content */
+.passage-label {
+  display: inline-block;
+  background-color: var(--accent-color, #4a6fa5);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Multiple passages indicator in question area */
+.multi-passage-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--secondary-bg, #f0f5fa);
+  border: 1px solid var(--border-color, #ddd);
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  color: var(--text-color, #666);
+  margin-bottom: 1rem;
+}
+
+.multi-passage-indicator::before {
+  content: '📄';
+  font-size: 1rem;
+}
+
+/* ========================================
+   RESPONSIVE ADJUSTMENTS FOR TABS
+   ======================================== */
+
+@media (max-width: 768px) {
+  .passage-tab {
+    padding: 0.75rem 0.75rem;
+    font-size: 0.85rem;
+  }
+  
+  .passage-tabs-container {
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .passage-tab {
+    padding: 0.625rem 0.5rem;
+    font-size: 0.8rem;
+  }
+  
+  .passage-label {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.5rem;
+  }
+}
+
+/* ========================================
+   THEME ADJUSTMENTS FOR TABS
+   ======================================== */
+
+/* Dark theme */
+body.theme-white-on-black .passage-tabs-container {
+  background-color: var(--bg-color, #111);
+  border-bottom-color: var(--border-color, #444);
+}
+
+body.theme-white-on-black .passage-tab {
+  background-color: var(--bg-color, #222);
+  color: var(--text-color, #ccc);
+}
+
+body.theme-white-on-black .passage-tab:hover,
+body.theme-white-on-black .passage-tab.active {
+  background-color: var(--input-bg, #333);
+  color: var(--text-color, #fff);
+}
+
+/* Yellow on blue theme */
+body.theme-yellow-on-blue .passage-tabs-container {
+  background-color: var(--bg-color, #1400aa);
+  border-bottom-color: var(--text-color, #F5E728);
+}
+
+body.theme-yellow-on-blue .passage-tab {
+  background-color: var(--bg-color, #1000aa);
+  color: var(--text-color, #F5E728);
+}
+
+body.theme-yellow-on-blue .passage-tab:hover,
+body.theme-yellow-on-blue .passage-tab.active {
+  background-color: var(--input-bg, #1800CC);
+  border-bottom-color: var(--text-color, #F5E728);
+}
+
+body.theme-yellow-on-blue .passage-tab::after {
+  background-color: var(--text-color, #F5E728);
+}
+
+body.theme-yellow-on-blue .passage-label {
+  background-color: var(--text-color, #F5E728);
+  color: var(--bg-color, #1800CC);
+}
+
+/* Gray on green theme */
+body.theme-gray-on-green .passage-tabs-container {
+  background-color: var(--bg-color, #8a9584);
+  border-bottom-color: var(--text-color, #6E6E6E);
+}
+
+body.theme-gray-on-green .passage-tab {
+  background-color: var(--bg-color, #95a08f);
+  color: var(--text-color, #5E5E5E);
+}
+
+body.theme-gray-on-green .passage-tab:hover,
+body.theme-gray-on-green .passage-tab.active {
+  background-color: var(--input-bg, #A3AE9E);
+}
+
+/* ========================================
+   EXISTING STYLES (Keep all original CSS below)
+   ======================================== */
+
 #test {
   position: relative;
   overflow: hidden;
@@ -40,19 +273,17 @@ ul {
 
 /* Panel open state - content moves RIGHT to make room for LEFT panel */
 .test-container.panel-open {
-  margin-left: 420px; /* 400px panel + 20px breathing room */
-  margin-right: 20px; /* Right margin for screen edge */
-  max-width: calc(100vw - 460px); /* More conservative calculation */
-  width: auto; /* Let it size naturally within constraints */
+  margin-left: 420px;
+  margin-right: 20px;
+  max-width: calc(100vw - 460px);
+  width: auto;
   box-sizing: border-box;
-  /* Create isolated positioning context */
   position: relative;
-  z-index: 100; /* Higher than reading panel */
-  /* Ensure content is completely separated from panel area */
+  z-index: 100;
   isolation: isolate;
 }
 
-/* Test Header - Remove toggle button styles since there's no button */
+/* Test Header */
 .test-header {
   display: flex;
   flex-direction: column;
@@ -173,7 +404,6 @@ ul {
   position: relative;
 }
 
-/* Let inner container fill its parent normally when panel is open */
 .test-container.panel-open #test-container {
   width: 100%;
   max-width: 100%;
@@ -211,7 +441,7 @@ ul {
   overflow-wrap: break-word;
 }
 
-/* Free response for reading questions - larger for wide layout */
+/* Free response for reading questions */
 .response-input {
   min-height: 120px;
   font-family: inherit;
@@ -223,7 +453,7 @@ ul {
   box-sizing: border-box;
 }
 
-/* Progress bar styling for wider layout - FIXED */
+/* Progress bar styling for wider layout */
 #progress-bar {
   background-color: var(--border-color, #e1e7f0);
   border-radius: 10px;
@@ -249,7 +479,7 @@ ul {
   font-weight: 500;
 }
 
-/* FIXED: Feedback container positioning and sizing */
+/* Feedback container positioning and sizing */
 #feedback-container {
   margin-top: 1.25rem;
   padding: 1.25rem;
@@ -268,12 +498,11 @@ ul {
   clear: both;
 }
 
-/* CRITICAL FIX: Apply same positioning as test-container when panel is open */
 .test-container.panel-open ~ #feedback-container,
 .reading-panel.open ~ main #feedback-container {
-  margin-left: 420px !important; /* Same as test-container */
-  margin-right: 20px !important; /* Same as test-container */
-  max-width: calc(100vw - 460px) !important; /* Same as test-container */
+  margin-left: 420px !important;
+  margin-right: 20px !important;
+  max-width: calc(100vw - 460px) !important;
   width: auto !important;
   box-sizing: border-box !important;
   position: relative !important;
@@ -311,7 +540,7 @@ ul {
   background-color: rgba(220, 53, 69, 0.1);
 }
 
-/* FIXED: Explanation box specific positioning */
+/* Explanation box specific positioning */
 #explanation {
   font-size: 0.95rem;
   line-height: 1.5;
@@ -355,17 +584,16 @@ ul {
   }
   
   .test-container.panel-open {
-    margin-left: 390px !important; /* 350px panel + 40px clearance */
+    margin-left: 390px !important;
     margin-right: 25px !important;
     max-width: calc(100vw - 435px) !important;
     min-width: 450px !important;
     width: auto !important;
   }
   
-  /* Apply same positioning to feedback container */
   .test-container.panel-open ~ #feedback-container,
   .reading-panel.open ~ main #feedback-container {
-    margin-left: 390px !important; /* 350px panel + 40px clearance */
+    margin-left: 390px !important;
     margin-right: 25px !important;
     max-width: calc(100vw - 435px) !important;
     min-width: 450px !important;
@@ -385,17 +613,16 @@ ul {
   }
   
   .test-container.panel-open {
-    margin-left: 360px !important; /* 320px panel + 40px clearance */
+    margin-left: 360px !important;
     margin-right: 20px !important;
     max-width: calc(100vw - 400px) !important;
     min-width: 350px !important;
     width: auto !important;
   }
   
-  /* Apply same positioning to feedback container */
   .test-container.panel-open ~ #feedback-container,
   .reading-panel.open ~ main #feedback-container {
-    margin-left: 360px !important; /* 320px panel + 40px clearance */
+    margin-left: 360px !important;
     margin-right: 20px !important;
     max-width: calc(100vw - 400px) !important;
     min-width: 350px !important;
@@ -415,17 +642,16 @@ ul {
   }
   
   .test-container.panel-open {
-    margin-left: 340px !important; /* 300px panel + 40px clearance */
+    margin-left: 340px !important;
     margin-right: 20px !important;
     max-width: calc(100vw - 380px) !important;
     min-width: 280px !important;
     width: auto !important;
   }
   
-  /* Apply same positioning to feedback container */
   .test-container.panel-open ~ #feedback-container,
   .reading-panel.open ~ main #feedback-container {
-    margin-left: 340px !important; /* 300px panel + 40px clearance */
+    margin-left: 340px !important;
     margin-right: 20px !important;
     max-width: calc(100vw - 380px) !important;
     min-width: 280px !important;
@@ -471,17 +697,16 @@ ul {
   }
   
   .test-container.panel-open {
-    margin-left: 320px !important; /* 280px panel + 40px clearance */
+    margin-left: 320px !important;
     margin-right: 15px !important;
     max-width: calc(100vw - 355px) !important;
     min-width: 240px !important;
     width: auto !important;
   }
   
-  /* Apply same positioning to feedback container */
   .test-container.panel-open ~ #feedback-container,
   .reading-panel.open ~ main #feedback-container {
-    margin-left: 320px !important; /* 280px panel + 40px clearance */
+    margin-left: 320px !important;
     margin-right: 15px !important;
     max-width: calc(100vw - 355px) !important;
     min-width: 240px !important;
@@ -515,7 +740,7 @@ ul {
   }
 }
 
-/* Medium-large screens - Bridge the gap between medium and large */
+/* Medium-large screens */
 @media (min-width: 1201px) and (max-width: 1399px) {
   main {
     max-width: 1400px !important;
@@ -527,17 +752,16 @@ ul {
   }
   
   .test-container.panel-open {
-    margin-left: 440px !important; /* 400px panel + 40px clearance */
+    margin-left: 440px !important;
     margin-right: 30px !important;
     max-width: calc(100vw - 490px) !important;
     min-width: 500px !important;
     width: auto !important;
   }
   
-  /* Apply same positioning to feedback container */
   .test-container.panel-open ~ #feedback-container,
   .reading-panel.open ~ main #feedback-container {
-    margin-left: 440px !important; /* 400px panel + 40px clearance */
+    margin-left: 440px !important;
     margin-right: 30px !important;
     max-width: calc(100vw - 490px) !important;
     min-width: 500px !important;
@@ -545,7 +769,7 @@ ul {
   }
 }
 
-/* Large screens - Use even more space */
+/* Large screens */
 @media (min-width: 1400px) {
   main {
     max-width: 1600px !important;
@@ -557,17 +781,16 @@ ul {
   }
   
   .test-container.panel-open {
-    margin-left: 490px !important; /* 450px panel + 40px clearance */
+    margin-left: 490px !important;
     margin-right: 40px !important;
     max-width: calc(100vw - 550px) !important;
     min-width: 600px !important;
     width: auto !important;
   }
   
-  /* Apply same positioning to feedback container */
   .test-container.panel-open ~ #feedback-container,
   .reading-panel.open ~ main #feedback-container {
-    margin-left: 490px !important; /* 450px panel + 40px clearance */
+    margin-left: 490px !important;
     margin-right: 40px !important;
     max-width: calc(100vw - 550px) !important;
     min-width: 600px !important;
@@ -611,17 +834,16 @@ ul {
   }
   
   .test-container.panel-open {
-    margin-left: 540px !important; /* 500px panel + 40px clearance */
+    margin-left: 540px !important;
     margin-right: 50px !important;
     max-width: calc(100vw - 610px) !important;
     min-width: 700px !important;
     width: auto !important;
   }
   
-  /* Apply same positioning to feedback container */
   .test-container.panel-open ~ #feedback-container,
   .reading-panel.open ~ main #feedback-container {
-    margin-left: 540px !important; /* 500px panel + 40px clearance */
+    margin-left: 540px !important;
     margin-right: 50px !important;
     max-width: calc(100vw - 610px) !important;
     min-width: 700px !important;
@@ -693,15 +915,7 @@ body.theme-gray-on-green .reading-panel-header h3 {
   }
 }
 
-/* Reduced motion preferences */
-@media (prefers-reduced-motion: reduce) {
-  .reading-panel,
-  .test-container {
-    transition: none !important;
-  }
-}
-
-/* FIXED: Animation for feedback appearance */
+/* Animation for feedback appearance */
 #feedback-container {
   opacity: 0;
   transform: translateY(-10px);
@@ -713,20 +927,17 @@ body.theme-gray-on-green .reading-panel-header h3 {
   transform: translateY(0);
 }
 
-/* FIXED: Ensure feedback container is always visible and accessible */
 #feedback-container[style*="display: block"] {
   display: block !important;
   visibility: visible !important;
   opacity: 1 !important;
 }
 
-/* FIXED: Ensure the entire test container accommodates feedback */
 .test-container {
   position: relative;
   overflow: visible;
 }
 
-/* Fix for explanation text readability */
 #explanation p {
   margin-bottom: 0.75rem;
   line-height: 1.6;
@@ -736,13 +947,11 @@ body.theme-gray-on-green .reading-panel-header h3 {
   margin-bottom: 0;
 }
 
-/* FIXED: Enhanced visibility when panel is open */
 .test-container.panel-open {
   position: relative;
   overflow: visible;
 }
 
-/* FIXED: Prevent any content from extending under the panel */
 .reading-panel.open ~ .test-container #feedback-container,
 .test-container.panel-open #feedback-container {
   clear: both;
@@ -750,25 +959,13 @@ body.theme-gray-on-green .reading-panel-header h3 {
   max-width: 100% !important;
   box-sizing: border-box;
   overflow: hidden;
-  /* Absolutely constrain to content area */
   position: relative !important;
   z-index: 101 !important;
   left: 0 !important;
   right: 0 !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
-  /* Force it to respect container boundaries */
   contain: layout style !important;
-}
-
-/* Fix for explanation text readability */
-#explanation p {
-  margin-bottom: 0.75rem;
-  line-height: 1.6;
-}
-
-#explanation p:last-child {
-  margin-bottom: 0;
 }
 
 /* Print styles for feedback */
