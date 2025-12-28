@@ -2,63 +2,86 @@ window.TEST_IDENTIFIER = 'reading_grade6_practice_2024';
 
 // Reading passages that can be referenced by multiple questions
 const readingPassages = {
-  'the_cooks_surprise': {
-    title: 'The Cook\'s Surprise',
+  'view': {
+    title: 'A Different View',
     content: `
      <ol class="paragraph-numbers">
-      <li>Danielle loved to cook delicious food on Saturdays. She enjoyed seeing her family members smile as they tasted a meal she made. Today Danielle had a surprise for her younger brother and sister. She had baked cupcakes early in the morning, while Martin and Madison were still asleep.</li>
+      <li>Twelve-year-old Quinterro stood at the edge of the mountain pass high above the city of Lima, Peru. He aimed his binoculars at the city below. It was late afternoon, and lights were starting to sparkle. Quinterro scanned the streets and the buildings, letting the binoculars bring the busy place into focus for him. He picked a mark on the old main street of Lima, adjusted the lenses, and stood still for a few minutes.</li>
 
-      <li>After lunch Danielle decided to take her brother and sister their surprises. Danielle carried the two cupcakes as she walked from room to room. She could not find Martin and Madison anywhere.</li>
+      <li>Lowering the binoculars, Quinterro looked back at his family. He squirmed as he thought of his life, day after hot summer day, watching the llamas. Supper was cooking slowly on the fire. Quinterro’s older brother Ireneo was talking quietly to his father. Behind them the llamas munched on the scrubby mountain grass. Quinterro sighed. His family seemed so content. Why couldn’t he feel the same? Operating a llama caravan over the mountain wasn’t exciting, but there were some benefits. He ran through the list in his head: trading old toys for new ones, keeping in shape for school sports, gazing across the city every chance he had. Quinterro looked down at the binoculars in his hand.</li>
 
-      <li>At last, Danielle entered the laundry room. There she noticed bits of yellow ribbon on the floor. Scraps of blue cloth lay next to the sewing machine, which had not been used in years. She thought it was an odd sight but decided to keep looking for her brother and sister.</p>
+      <li>“Quint!” exclaimed Ireneo. “I’ve told you a million times to pay attention!”</li>
 
-      <li>On her way back to the kitchen, Danielle had a perfect idea. She set the cupcakes on the table and found a sheet of paper and a marker. In large letters, she wrote, "For Martin and Madison." She imagined Martin and Madison grinning with delight when they discovered the surprise.</p>
+      <li>Ireneo was scrambling toward the llamas. Quinterro aimed the binoculars toward the mountain pass only to see that he was too late. Another caravan with llamas had reached the clearing, and the day’s peace was instantly disturbed. The new llamas smelled the other animals and bolted. Quinterro watched as a girl his age chased after one of the jumpy animals, and then he looked back at his brother. Ireneo had climbed partway up a steep incline to reach the nervous llamas.</li>
 
-      <li>Suddenly, Danielle heard noises coming from her bedroom. She decided to find out what was happening.</p>
+      <li>Hurrying across the clearing to help, Quinterro shifted his binoculars so they hung down his back. He and Ireneo led the llamas back to the clearing, and Ireneo gave the strap around Quinterro’s neck a slight tug.</li>
 
-      <li>"Surprise!" shouted two voices when Danielle opened her door.</li>
+      <li>“I thought you needed these to watch for other caravans,” Ireneo shouted with irritation.</li>
 
-      <li>Danielle's heart jumped. Martin and Madison were waiting for her, and they had a package in their hands.</p>
+      <li>Quinterro did not respond to Ireneo. Instead, he glanced around until he spotted the girl he had been watching earlier. She spoke in a soft and gentle voice. She seemed to be making friends with the llamas. Quinterro headed back across the clearing.</li>
 
-      <li>"This is for you," said Martin.</p>
+      <li>“I think they’re almost calmed down,” the girl said as Quinterro approached.</li>
 
-      <li>"Open it," added Madison.</li>
+      <li>“Ours too,” Quinterro said.</li>
 
-      <li>Danielle took the package. Her hands quickly ripped off the shiny paper, and she opened the box. There was a blue apron folded neatly inside.</li>
+      <li>“My name is Marta,” the girl said.</li>
 
-      <li>"We wanted to make a surprise for you because you're such a nice sister," said Madison. "You are always thinking of us."</li>
+      <li>Quinterro introduced himself. For a minute, there was nothing but the sound of llamas chewing grass. Then Marta spoke. “I’m curious,” she said. “Do you do this all the time?”</li>
 
-      <li>"I drew the apron pattern on the blue cloth and cut it out," Martin said.</li>
+      <li>“My family does. I help out during school breaks,” Quinterro said.</li>
 
-      <li>"Mom helped me sew the apron, and we attached the yellow ribbon," beamed Madison.</li>
+      <li>Marta smiled. “I live in the city, and every day I look up at these mountains and wonder where they go. This place looks so beautiful from below. When my cousin said he was joining a caravan, I begged to come along.”</li>
 
-      <li>Danielle held the apron. She noticed the crooked lines of stitching along the edges, but she didn't mind the small sewing mistakes. To her, this was the most beautiful apron she had ever seen.</li>
+      <li>Quinterro simply stared at her, disbelieving what he had heard, but Marta didn’t seem to notice. He was surprised that anyone would choose to leave the exciting city for the quiet mountains.</li>
 
-      <li>"Thank you. It's perfect," said Danielle.</li>
+      <li>“The city looks so different from up here,” Marta said as she looked down.</li>
 
-      <li>As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table.</li>
+      <li>A thought occurred to Quinterro, and he took the binoculars from around his neck. “Try these.”</li>
 
-      <li>"I have a surprise for you too!" Danielle said, as she began leading her brother and sister down the hall into the kitchen.</li>
+      <li>He passed the binoculars to Marta and then turned to look down at the city. When not magnified, the city looked smaller and duller. He was just about to ask for his binoculars back when Marta spoke.</li>
+
+      <li>“I think they’re broken,” she said.</li>
+
+      <li>Curious, Quinterro reached for the binoculars and held them to his eyes. The bushes in front of him were huge like green mountains. He saw every leaf and every branch in vivid detail. He aimed the binoculars at the llamas, at the mountain pass, and then at his family. Everything seemed bigger, closer, and more defined.</li>
+
+      <li>Next, he aimed the binoculars at the city below. It was completely out of focus. Quinterro adjusted the lenses to focus them on the city. With a smile, he handed the binoculars back to Marta.</li>
+
+      <li>“They’re not broken,” Quinterro said. “It depends on how you look through them.”</li>
 </ol>
     `
   },
 
-  'useful_weeds_of_the_sea': {
-    title: 'Useful Weeds of the Sea',
+  'fire': {
+    title: 'Along the Ring of Fire',
     content: `
     <ol class="paragraph-numbers">
-      <li>Seaweed may not be on many shopping lists, but it plays a big part in people's everyday lives. Seaweed is a plant that grows in the shallow waters near the shores of the world's oceans.</li>
+      <li>Off the coast of Alaska, molten rock rises through cracks in the floor of the Pacific Ocean. This superheated material known as magma oozes like toothpaste squeezed from a tube. Stretching, grumbling, and erupting, Earth slowly builds a new island.</li>
 
-    <img src="images/seaweed.png" alt="Seaweed" style="float: right; height: 120px; margin-left: 10px;">
-      <li>In some parts of the world, especially near the ocean, people eat seaweed all by itself. It has lots of vitamins and is a healthful treat. In places where seaweed is not served as a meal, people use goods that are made from these plants. Hundreds of everyday items have seaweed in them.</li>
+      <li>Along the Pacific coast of South America, one part of the planet’s surface gradually drifts toward another. Although difficult to believe, the rocky outer crust of Earth is not solid; rather, it is broken up into gigantic pieces called plates. Up to 250 miles thick, the plates, which float on top of a softer layer of hot rock, move at a pace of 0.39 to 3.94 inches per year. As the plates slide past one another, the action can sometimes result in volcanic activity.</li>
 
-      <li>Seaweed helps many people keep their teeth clean. Toothpaste stays thick when it comes out of the tube because of a gel from a type of red seaweed. No one can see the seaweed in the toothpaste because it is mixed with the gel. This gel is in shampoo and makeup too.</li>
+    <img src="images/ring_of_fire.png" alt="Image failed to load. Please try again later." style="float: right; height: 120px; margin-left: 10px;">
 
-      <li>Without seaweed, ice cream and yogurt would not be as thick or creamy but would seem rather lumpy and watery. Many people eat foods with seaweed without even knowing it.</li>
+      <li>These dramatic events take place thousands of miles apart, yet they are connected. Surrounding the Pacific Ocean is a circle of volcanoes that includes more than half of the world’s active volcanoes. While many are sleeping giants, others spew lava and toss ash and rock into the air. This region is called the Ring of Fire.</li>
 
-      <li>Seaweed also helps plants grow. Many farmers around the world spray their fields with seaweed. They buy the seaweed after it has been made into a liquid. The seaweed becomes food for the plants. The vegetables on people's plates often come from these farms.</li>
+      <li>The Ring of Fire stretches from the west coast of South America northward to Alaska. It curves west at the Aleutian Islands and crosses the Pacific Ocean. Then it heads down the east coast of Asia toward New Zealand.</li>
 
-      <li>People cannot see seaweed in the foods they eat or in the items they use to look their best. However, none of these things would be the same without this useful weed that comes from the sea.</li>
+      <p><b>Historical Eruptions</b></p>
+      <li>Major volcanic eruptions along the Ring of Fire make history. In 1883 Krakatoa, an island volcano at the western edge of the ring, erupted in four explosions. The third explosion was so loud that it could be clearly heard 3,000 miles away. Krakatoa heaved a massive dust cloud nearly 50 miles into the air. For a year, that cloud covered Earth and changed the weather worldwide. Areas near the eruption remained dark from dust for days. Even three years later, volcanic debris in the atmosphere caused red sunsets thousands of miles away.</li>
+
+      <li>Closer to home, Mount St. Helens, a volcano in the Cascade Range in the state of Washington, erupted in 1980. Although Mount St. Helens did not spew lava, it did cause tremendous damage. This eruption hurled a cloud of superheated ash, dirt, rock, and gases into the air. The ash blew eastward and was thick enough to disrupt travel. The side of the mountain fell away, causing a landslide.</li>
+
+      <li>In 1991 Mount Pinatubo in the Philippines erupted after 600 quiet years. During four days in June, Pinatubo released more than 20 million tons of debris into the air, destroying many homes.</li>
+
+      <li>Some volcanoes erupt more quietly, with lava oozing through the cracks in Earth’s surface. This type of volcano is found in Hawaii. Fluid lava from a volcano such as Kilauea tends to advance slowly but still causes extensive damage. Deep beneath the surface of the ocean, the Ring of Fire is destructive, but it is constructive too. How can a volcano destroy and build at the same time?</li>
+
+      <p><b>How Volcanoes Can Be Helpful</b></p>
+      <li>After a volcano erupts, lava flows and then hardens into rock. More lava adds another layer to the rock. Eventually the rock builds into either a mountain or an island. Many years must pass before the harsh surface of the new island can sustain life. Over time the hard volcanic rock crumbles into soil. Wind carries seeds that fall into the soil and take root. Islands soon become covered with dense plant life. Flowers and fruits attract birds, insects, and other animals.</li>
+
+      <li>Island chains such as Japan, New Zealand, and Hawaii formed as a result of volcanic activity. Mount Fuji in Japan is one of these volcanoes, though it is not an active one. It is said to be a dormant, or sleeping, volcano for the time being. Part of a national park, it has not been active in hundreds of years. Farmers even plant crops in fields along the slopes of Mount Fuji.</li>
+
+      <li>The Ring of Fire is constructive in other ways too. Its activity not only forms islands; it also provides useful materials. Volcanic rock contains reserves of minerals commonly used in everyday life. Large deposits of aluminum, nickel, zinc, and copper are found in volcanic rock all over the world. Forms of aluminum appear on grocery store shelves as foil and cans. Nickel, zinc, and copper have dozens of uses, including the copper wire and pipes found in most homes.</li>
+
+      <li>Volcanic activity creates some of the most spectacular fireworks found in nature. True, destruction lies behind the fireworks, but eventually new life rises from the ruins. If the Ring of Fire seems distant and unreal, remember that it also exists as an island awaiting new life, as a field for growing food, and as part of the pipes that make a home.</li>
 </ol>
     `
   },
