@@ -130,70 +130,122 @@ const readingPassages = {
     `
   },
 
-     'search': {
-    title: 'The Search',
+     'skating': {
+    title: 'Stone Age Skating Experience',
     content: `
       <ol class="paragraph-numbers">
-        <li>I've emptied my sports bag</li>
-        <li>Checked in the car</li>
-        <li>Reached under the sofa</li>
-        <li>And searched near and far.</li><br>
-        <li>But hunt as I may</li>
-        <li>I've got only one shoe--</li>
-        <li>And where its mate is</li>
-        <li>I haven't a clue.</li><br>
-        <li>"When was your last game?"</li>
-        <li>Dad asks thoughtfully.</li>
-        <li>"And after the game</li>
-        <li>Whom did you see?"</li><br>
-        <li>I pause in my tracks--</li>
-        <li>Dad's smart, it is true</li>
-        <li>But his questions don't lead</li>
-        <li>To my runaway shoe.</li><br>
-        <li>It's surely gone missing</li>
-        <li>There's clearly no hope.</li>
-        <li>I have to give up</li>
-        <li>Find somewhere to mope.</li><br>
-        <li>So I sit on the steps</li>
-        <li>And stare into the yard</li>
-        <li>Where Otis the dog</li>
-        <li>Serves as guard--</li><br>
-        <li>Then I notice that Otis</li>
-        <li>Has a new chew</li>
-        <li>With laces and treads--</li>
-        <li>Oh, no! It's my shoe!</li>
+      <li>Greta mustered a genuine- looking smile as she tore the silver wrapping paper and revealed the words “FasTech, the finest ice skates in the Northern Hemisphere,” printed in bold letters on the box. “They’re great, Mom!” she said. “Thank you!” Greta knew the ice skates were expensive, and she refused to let her mother know that she was anything but grateful.</li>
+
+      <li>“Are they the right kind? They’re supposed to help you skate faster,” Greta’s mother stated.</li>
+
+      <li>Greta’s recent first place win at the Citywide 5-Kilometer Speed-Skating Championship spurred everyone’s interest in her success. Even Mr. Ranta at The Sports Shack talked with Greta about her equipment, times, and style when she was there having her skates sharpened. Then there was the upcoming 10-kilometer race—-family and friends would be rooting for her. “They’re what the pros wear,” Greta said, “and I’m going to take them down to the lake and try them out.”</li>
+
+      <li>Greta donned warm outerwear, then hugged her mother and rushed out the door before she could catch a hint of displeasure. It wasn’t that Greta didn’t appreciate the gift. She did—-greatly. The skates would no doubt help her trim time in the upcoming race. The fact was that Greta had just secretly, and most likely foolishly, hoped for something different. She had hoped for something that didn’t really exist anymore: ancient bone skates.</li>
+
+      <li>Once at the lake, Greta sat on a bench near the edge of the frozen water and stared to the other side, her breath cascading like fog over the icy stillness. She pictured herself sitting at the computer last month researching professional skates when she found an article about the history of ice-skating. She had been immediately fascinated by the different designs of skates used over the years, particularly the first skates made out of bones. These skates had no metal blades or boots. They were just a pair of bones, filed down on the bottom side, with leather straps through them.</li>
+
+      <li>Greta had been so intrigued about how someone could actually skate on bones that she rushed to talk with her mother about them, only to hear her say, “That’s interesting, dear, but I need to run to the bank before it closes.” Each time Greta had tried to discuss bone skates with her mother, her mother had other things to do. Greta decided that this obsession was hers alone.</li>
+
+      <li>With a deep sigh, Greta turned her attention back to the lake. She laced up the new FasTechs and began cutting long strides into the hard ice.</li>
+
+      <li>After an hour of practice, Greta walked to The Sports Shack, where she knew her mother had purchased the skates. She wanted to talk with Mr. Ranta about how to take care of her skates so they would last as long as possible. Mr. Ranta, the owner, provided Greta with a wealth of information. She thanked him profusely and jokingly asked, “Now, Mr. Ranta, can you make some bone skates for me?”</li>
+
+      <li>“Bone skates! Here I thought I was the only person who knew about bone skates. I have a marvelous collection of skates, but they all have metal blades. I’ve seen bone skates in a museum, but as you can imagine, it is impossible to find any for sale. I would love to make some bone skates. At least I’m willing to give it a try,” Mr. Ranta’s excitement radiated like sparkles from fireworks.</li>
+
+      <li>Caught off guard by his enthusiasm, Greta could only stare at him.</li>
+
+      <li>Mr. Ranta smiled. “Like me, I can see you’re curious about how people could possibly skate on bones. It couldn’t have been easy, but what a great opportunity to see what it was like. I think I can create new skates modeled after the ancient ones, and you can experiment with them.”</li>
+
+      <li>Greta’s pulse increased as she saw Mr. Ranta grab a pencil and make bold, precise strokes on a piece of paper. After a few minutes of discussion about the design, Mr. Ranta said, “I’ll talk with Vera at the meat market. She saves bones for customers’ dogs, so she should be able to give us some to work with. I also have some leather pieces in the back of the store.”</li>
+
+      <li>Caught up in the frenzy of the plan, Greta flew home. Each day, she shortened her practice time at the lake so she could stop by to check on Mr. Ranta’s progress with the bone skates. After almost two weeks, Greta heard the words she’d been waiting for. “They’re done,” Mr. Ranta said when he saw her. “And, by the way, I’m not charging you for these skates, but you must promise to give them to me when you are done experimenting. They may not be authentic but they will complete my collection. Now, look in the bag behind the back counter. I’ll talk with you as soon as I finish with this customer.”</li>
+
+      <li>Inside the rumpled bag were two bones, each with slots drilled into them, one in the front and one in the rear. “I used the sander to flatten the sides that go against your boots,” Mr. Ranta said, walking up to Greta. “You’ll use these straps of leather and the buckles to hold the skates on.”</li>
+
+      <img src="images/skates.png" alt="Image failed to load. Please try again later." style="float: right; height: 250px; margin-left: 10px;">
+
+      <li>After listening intently to details, Greta raced to the lake and put on the skates the way Mr. Ranta had explained. As soon as she stepped onto the ice, her feet flew out from under her. She stood up again and one of her ankles buckled as a bone skate squeezed its way out from under her boot. Once she could actually stand up and move on the ice, she realized that bone skating bore little resemblance to the smooth skating technique she knew. She would have to adopt a slip and slide movement to master skating on bones. Greta hadn’t felt this shaky on the ice since she was five.</li>
+
+      <li>Instead of practicing for her upcoming race, Greta spent two weeks learning to skate completely across the lake on bones. She would start slowly and let the ice help her gain speed, wistfully imagining herself moving across the ice in ancient Scandinavia while following a herd of reindeer.</li>
+
+      <li>After one such outing, Greta returned home to find her mother typing on the computer. Mother queried, “Mr. Ranta tells me that you two have something in common. Want to tell me about it?”</li>
+
+      <li>The story spilled out of Greta’s mouth like a rushing waterfall. “I’m sorry, Mom,” Greta confessed. “I know the race is in a couple of days. I just got sidetracked with the history of skating, and bones, and experiments. I promise I won’t disappoint you at the race.”</li>
+
+      <li>Greta’s mother briefly glared at her daughter before returning to the computer. “I’m glad you found something to be so passionate about.”</li>
+
+      <li>On the day of the race, Greta stood on the ice wearing her sleek blue body suit and streamlined helmet, her feet snugly fastened in her FasTechs, feeling quite awkward. Competitors began surrounding her, jostling for positions. The starting pistol cracked and skaters began flowing across the ice— except for Greta, who stumbled forward and nearly fell. Gathering herself together, she began to focus intently on her style. Step, slice, kick. Step, slice, kick. What had been natural a month ago started to come back. Within minutes, Greta began moving more fluidly, but by that time the pack was far ahead of her. Greta experienced her worst finish since she had begun racing, and, at the finish line, she forced herself to congratulate the winners. Looking down, Greta approached her mother. Together they silently shuffled to the car.</li>
       </ol>
     `
   },
 
-       'cherry_lemonade': {
-    title: 'Cherry Lemonade',
+  'ice': {
+    title: 'History on Ice',
     content: `
       <ol class="paragraph-numbers">
-        <li>“Lemonade for sale!” called Bonnie</li>
-        <li>As a boy walked past.</li>
-        <li>“I just bought some cherry juice!”</li>
-        <li>He said. “Go try a glass!”</li><br>
+      <li>In the country of Finland, ice-skating is as popular as football is in the United States. Instead of the Super Bowl, Finland hosts an event called the Finland Ice Marathon, a challenging race of both speed and endurance held annually on Lake Kallavesi. Every year thousands of people visit just to watch or participate in this captivating event. Ice-skating, however, did not begin as a sport but as an important means of travel.</li>
 
-        <li>Bonnie looked across the street</li>
-        <li>To where Steve sold that drink.</li>
-        <li>“My lemonade’s the best,” she yelled.</li>
-        <li>Steve yelled, “That’s what you think!”</li><br>
+      <li>If any nation required fast travel on ice, it was Finland, a small country with more than 60,000 lakes. Scientists believe that ice- skating began in Finland some 5,000 years ago as a means of traveling quickly over a landscape dotted with frozen rivers and lakes. To increase speed, Finnish hunters needed smooth, hard objects to strap to their feet to reduce friction.</li>
 
-        <li>Some people bought from Bonnie.</li>
-        <li>A few more bought from Steve,</li>
-        <li>Until finally Bonnie said to him,</li>
-        <li>“Here’s what I now believe.”</li><br>
+      <li>To fulfill this requirement, early Finns made skates from animal bones. Usually from cattle or deer, these bones provided the perfect texture for gliding on the ice. Craftsmen began with a section of bone roughly eight inches long, carved a hole at each end, and strung leather straps through these holes. Using the leather straps, hunters could then attach the skates to boots. For greater stability, the Finns also slightly flattened the bottom of the skates. Although scientists are not certain, they believe the skaters used wooden poles, as skiers do, to keep their balance while zooming along on the ice.</li>
 
-        <li>“There is a way to reach them all,</li>
-        <li>Another way to sell—</li>
-        <li>Let’s mix our drinks together!”</li>
-        <li>Steve said, “Yeah! That would work well!”</li><br>
+      <li>Speed would have been imperative for early hunters. Due to its northern latitude, Finland experiences sunlight for only six hours a day in December, depending on where one is in the country. In fact, near the arctic regions, the sun does not appear at all in late December. Researchers believe that given an average of six hours of sunlight, a skater could traverse more than 12 miles, probably in a round trip.</li>
 
-        <li>They mixed their drinks and shared a stand.</li>
-        <li>Steve said, “We have it made!”</li>
-        <li>A line of people waited now</li>
-        <li>For cherry lemonade.</li>
+      <li>To test their theory, researchers made replicas of the bone ice skates that ancient Finns used. Working with high-tech devices, researchers recorded the skaters’ metabolic rates as well as distances covered. They discovered that these skates reduced traveling time and saved enough energy to allow the hunter to cover more miles in the allotted time. In a difficult environment, those humble skates might well have made survival possible.</li>
+
+      <li>Sometime in the 13th century, metal skates supplanted their bone counterparts. Illustrations from 14th-century books show people with iron rods strapped to the bottoms of their shoes. At this point in history, ice-skating seems to have shifted to a mainly recreational activity.</li>
+
+      <li>Even though the bone skates now sit on museum shelves, ice-skating remains as popular as ever in northern Europe. Today the Finns even hold championships in which the athletes purposely trade in their advanced titanium skates that cut the ice and flash in the sunlight in favor of the old bone skates of their ancestors. The skaters may not travel as fast, but they relish the opportunity to honor their own cultural origins.</li>
+      </ol>
+    `
+  },
+
+       'garden': {
+    title: 'The Asphalt Garden',
+    content: `
+      <ol class="paragraph-numbers">
+        <li>The light is withdrawing.</li>
+        <li>Soon the sun’s rays</li>
+        <li>will be too feeble</li>
+        <li>to melt the snow from the commuters’ windshields.</li>
+        <li>Soon it will be midnight in the morning</li>
+        <li>and dusk all afternoon,</li>
+        <li>and the sycamores, elms, and oaks,</li>
+        <li>with whom we share</li>
+        <li>the sidewalks, will stand</li>
+        <li>shorn and nearly bare</li>
+        <li>and shiver in their cloaks of dry leaves</li>
+        <li>by the din</li>
+        <li>of trucks rumbling past.</li><br>
+
+        <li>Once, in a dark alley on a brittle day</li>
+        <li>in the infancy of the new year,</li>
+        <li>I found a patch of grass growing</li>
+        <li>I kneeled on the ground</li>
+        <li>and pulled the gloves from my hands.</li>
+        <li>There, amid the lush green plot, was a tiny tree.</li>
+        <li>I touched its green-gilt leaves</li>
+        <li>and smelled citrus: lemon or grapefruit.</li>
+        <li>A seed carelessly tossed had somehow taken root,</li>
+        <li>and now in the heart of the city,</li>
+        <li>buffeted by the raw wind of winter,</li>
+        <li>a tropic life held fast to its square foot</li>
+        <li>of summer.</li><br>
+
+        <li>Is it memory, then, or anticipation,</li>
+        <li>that gives the pedestrian elms and oaks and sycamores</li>
+        <li>that pensive, inward look,</li>
+        <li>as if they were struggling to touch</li>
+        <li>the name of something just out of reach?</li>
+        <li>The soil beneath the city street,</li>
+        <li>once tilled and cleft by plow,</li>
+        <li>lies barren under the asphalt.</li>
+        <li>Rooted to the earth,</li>
+        <li>do the trees dream of the stream that flowed here once,</li>
+        <li>where shy deer would bend their slender necks to drink</li>
+        <li>and sometimes startle, having mistaken</li>
+        <li>the shadow of a passing cloud</li>
+        <li>for the onset of night?</li>
       </ol>
     `
   }
