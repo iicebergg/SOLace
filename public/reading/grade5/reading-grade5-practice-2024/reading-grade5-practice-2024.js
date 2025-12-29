@@ -374,14 +374,14 @@ const readingPassages = {
 const sampleQuestions = [
   {
     id: '1',
-    text: 'Another good title for this story would be--',
+    text: 'The author\'s purpose in the first paragraph is to--',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: 'monticello',
     options: [
-      'Sewing New Clothes',
-      'Baking for the Family', 
-      'A Morning Snack',
-      'Gifts for Everyone'
+      'give information about France and the United States',
+      'compare Jefferson’s and Adams’ achievements', 
+      'describe the mountains near Charlottesville',
+      'list Jefferson’s many successes'
     ],
     correctAnswer: 3,
     explanation: 'The story is about both Danielle making cupcakes as a surprise for her siblings and her siblings making an apron as a surprise for her. Everyone in the story gives and receives gifts.'
@@ -389,14 +389,14 @@ const sampleQuestions = [
 
   {
     id: '2', 
-    text: 'Danielle keeps the cupcakes a secret by--',
+    text: 'Read these sentences from paragraph 3. <div class="passage-innerbox">Jefferson brought seeds and plants back from his travels. He even tried to grow broccoli from Italy and peppers from Mexico.</div> Which word from a glossary entry best describes Jefferson\'s plants in these sentences?',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: 'monticello',
     options: [
-      'moving them to the laundry room',
-      'making them in the morning', 
-      'placing them inside a box',
-      'covering them with paper'
+      '<b>domesticated:</b> Tamed for people to use.',
+      '<b>imported:</b> Transported from one country to another.', 
+      '<b>organic:</b> Grown without the use of chemicals.',
+      '<b>valuable:</b> Having great worth.'
     ],
     correctAnswer: 1,
     explanation: 'The passage states that Danielle "had baked cupcakes early in the morning, while Martin and Madison were still asleep," which kept them secret.'
@@ -404,15 +404,14 @@ const sampleQuestions = [
 
   {
     id: '3',
-    text: 'Complete this flow chart. <br><img src="images/question_3.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+    text: 'The idea that Monticello continues to attract attention is best supported by the fact that--',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: 'monticello',
     options: [
-      'Danielle looks at the edges of the apron.',
-      'Danielle finds bits of cloth in the laundry room.', 
-      'Danielle sets the cupcakes on the table.',
-      'Danielle walks into her bedroom.',
-      'Danielle tries on the apron.'
+      'his daughters and granddaughters cared for the gardens',
+      'thousands of people visit the home annually', 
+      'twenty oval flowerbeds were planted around his home',
+      'the last years of his life were spent with family'
     ],
     correctAnswer: 4,
     explanation: 'After receiving the apron and saying "Thank you. It\'s perfect," the passage says "As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table."'
@@ -420,14 +419,14 @@ const sampleQuestions = [
 
   {
     id: '4',
-    text: 'Danielle is pleased with the surprise most likely because she--',
+    text: 'According to the article, how was Jefferson different from most American farmers of his time?',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: 'monticello',
     options: [
-      'needs to wear it when making cupcakes',
-      'can cook more often for her family',
-      'enjoys wearing blue and yellow clothes',
-      'can tell that her family cares about her'
+      'He experimented with a new kind of farming.',
+      'His plantation was admired by others.',
+      'He lived on and farmed his land.',
+      'His family helped him care for the land.'
     ],
     correctAnswer: 3,
     explanation: 'Madison says "We wanted to make a surprise for you because you\'re such a nice sister. You are always thinking of us." This shows her family\'s care and appreciation for her.'
@@ -435,14 +434,14 @@ const sampleQuestions = [
 
   {
     id: '5',
-    text: 'What will Martin and Madison most likely do next?',
+    text: 'In paragraph 7, what does the word <u>rifling</u> mean?',
     type: 'multiple-choice', 
-    passageId: 'the_cooks_surprise',
+    passageId: 'etta',
     options: [
-      'Make another apron',
-      'Help their sister cook',
-      'Clean the laundry room',
-      'Bite into their cupcakes'
+      'moving',
+      'laboring',
+      'nudging',
+      'searching'
     ],
     correctAnswer: 3,
     explanation: 'At the end, Danielle says "I have a surprise for you too!" and leads them to the kitchen where she left cupcakes for them.'
@@ -450,14 +449,14 @@ const sampleQuestions = [
 
   {
     id: '6',
-    text: 'Which of these do the characters have in common?',
+    text: 'The resolution of the story occurs when Leroy--',
     type: 'multiple-choice', 
-    passageId: 'the_cooks_surprise',
+    passageId: 'etta',
     options: [
-      'They think of others.',
-      'They sleep late.',
-      'They sew clothes.',
-      'They like to cook.'
+      'watches how Grandma Etta treats him after his parents leave',
+      'remembers what his mother said about his expected behavior',
+      'jokes with Grandma Etta about the reason for his parents visiting',
+      'hears his father ask for a second helping of the soup'
     ],
     correctAnswer: 0,
     explanation: 'All three characters make surprises for each other: Danielle bakes cupcakes for her siblings, and Martin and Madison make an apron for Danielle, showing they all think of others.'
@@ -465,14 +464,14 @@ const sampleQuestions = [
 
   {
     id: '7',
-    text: 'What is the root word in "discovered"?',
+    text: 'Leroy first begins to understand the value of hard work when he--',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: 'etta',
     options: [
-      'disc',
-      'disco', 
-      'cover',
-      'over'
+      'listens to the conversation between his mother and grandmother',
+      'refuses to stop the task of cleaning the canoe', 
+      'brings the pot to the kitchen after he prepares the firewood',
+      'forgets the difficulty of gathering the ingredients'
     ],
     correctAnswer: 2,
     explanation: 'The root word in "discovered" is "cover." The prefix "dis-" means "not" and the suffix "-ed" shows past tense, so "discovered" means "uncovered" or "found."'
@@ -480,14 +479,14 @@ const sampleQuestions = [
 
   {
     id: '8',
-    text: 'Some people eat seaweed all by itself because they most likely--',
+    text: 'After Leroy decides to help Grandma Etta, why must they wait several days before making the soup?',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea', 
+    passageId: 'etta', 
     options: [
-      'do not know it is used in other foods',
-      'eat many foods that come from the ocean',
-      'enjoy foods that add color to the meals they eat', 
-      'do not like how it tastes mixed with other foods'
+      'They have trouble cleaning the canoe.',
+      'The rice has not dried completely.',
+      'The necessary amount of rice is not available.', 
+      'They have to chop wood to make a fire.'
     ],
     correctAnswer: 1,
     explanation: 'The passage states that "In some parts of the world, especially near the ocean, people eat seaweed all by itself," suggesting people near oceans commonly eat foods from the sea.'
@@ -495,14 +494,14 @@ const sampleQuestions = [
 
   {
     id: '9',
-    text: 'Based on the article, seaweed makes ice cream and yogurt--',
+    text: 'Leroy performed all of these chores for Grandma Etta EXCEPT--',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea',
+    passageId: 'etta',
     options: [
-      'last longer',
-      'taste different',
-      'sell faster',
-      'look different',
+      'going to the garden and picking vegetables',
+      'drawing water from the spring and getting the old iron pot',
+      'knocking off the ripe grain heads and washing the rice',
+      'stirring the pot and scooping out a portion for everyone',
     ],
     correctAnswer: 3,
     explanation: 'The passage explains that "Without seaweed, ice cream and yogurt would not be as thick or creamy but would seem rather lumpy and watery," showing seaweed affects how they look and their texture.'
@@ -510,14 +509,14 @@ const sampleQuestions = [
 
   {
     id: '10',
-    text: 'Which question is answered in the article?',
+    text: 'If the story were told from Grandma Etta’s point of view, the reader would understand why--',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea',
+    passageId: 'etta',
     options: [
-      'What does seaweed taste like?',
-      'Where do farmers buy seaweed?',
-      'Which ocean has the most seaweed?',
-      'Which goods have seaweed in them?',
+      'Leroy is staying with Grandma Etta for the summer',
+      'Grandma Etta allows Leroy to look in the cabinet for rice',
+      'Grandma Etta decides to tempt Leroy into working',
+      'Leroy’s family visits Grandma Etta often',
     ],
     correctAnswer: 3,
     explanation: 'The article mentions several goods that contain seaweed: toothpaste, shampoo, makeup, ice cream, and yogurt. It also states "Hundreds of everyday items have seaweed in them."'
@@ -525,14 +524,14 @@ const sampleQuestions = [
 
     {
     id: '11',
-    text: 'The author wrote this article most likely to--',
+    text: 'The idea that ancient people had powerful imaginations is supported by the fact that they--',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea',
+    passageId: 'reality',
     options: [
-      'give facts about an ocean plant',
-      'list kinds of ocean plants',
-      'tell about people who eat ocean plants',
-      'tell how to cook with ocean plants',
+      'discovered the idea of genes',
+      'believed narwhal teeth to be tusks',
+      'displayed narwhal tusks as unicorn horns',
+      'gathered in groups to try to see unicorns',
     ],
     correctAnswer: 0,
     explanation: 'The article provides factual information about seaweed, explaining what it is, where it grows, and how it is used in various everyday products.'
@@ -540,15 +539,14 @@ const sampleQuestions = [
 
   {
     id: '12',
-    text: 'In an Internet search about oceans, which website would most likely have information about where red seaweed grows?',
+    text: 'The main idea of the article is that the one- horned deer —',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea',
+    passageId: 'reality',
     options: [
-      'Life in the Ocean: Learn about whales, dolphins, and many other creatures of the ocean...',
-      'Ocean Habitats: Learn to recognize the ocean homes of many types of fish...',
-      'Discover Ocean Plants: Find interesting facts about plants that live in the ocean...',
-      'Photos of the Ocean Floor: Follow a team of divers who take amazing pictures of the ocean floor...',
-      'Foods From the Ocean: Discover how food from the ocean ends up on people\'s plates...'
+      'is proof that unicorns existed at one time',
+      'will encourage a new generation of tales and legends',
+      'shares a gene with a whale that grows a long, spiral tusk',
+      'is the kind of animal that may have led to the idea of unicorns'
     ],
     correctAnswer: 2,
     explanation: 'The website "Discover Ocean Plants" would be most likely to have information about where red seaweed grows, as seaweed is a type of ocean plant.'
@@ -556,14 +554,14 @@ const sampleQuestions = [
 
   {
     id: '13',
-    text: 'What makes the secret message appear in "Lemony Letter"?',
+    text: 'Which detail would best belong in a summary of the article?',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'reality',
     options: [
-      'Heat',
-      'Light',
-      'Juice',
-      'Water',
+      'Other single-horned animals like Unicorn are real but rare.',
+      'Unicorn lives near Florence, Italy.',
+      'Gilberto Tozzi is the director of the Center of Natural Sciences.',
+      'Narwhals are found in the Arctic Ocean.',
     ],
     correctAnswer: 0,
     explanation: 'The instructions state: "Have the person who receives your message hold the paper near a light bulb. The heat will make the secret message appear!"'
@@ -571,14 +569,14 @@ const sampleQuestions = [
 
   {
     id: '14',
-    text: 'In "Mirror Message" when the steam in the bathroom is gone, the message will most likely--',
+    text: 'Which of these is the best summary of the poem?',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: '72_days',
     options: [
-      'spread',
-      'turn white',
-      'disappear',
-      'turn brown',
+      'Nellie Bly traveled around the world after her boss told her not to go, and a legend was created from her travels.',
+      'Nellie Bly wore one outfit for a seventy-two-day trip that ended in San Francisco when her fans celebrated her return.',
+      'Nellie Bly wrote about her trip aboard ships to faraway countries, and people enjoyed it so much they held a big party.',
+      'Nellie Bly wanted to travel around the world and write about her journey, so she set out alone, and the public read about her adventures.',
     ],
     correctAnswer: 2,
     explanation: 'The message only appears when steam covers the mirror. When the steam clears and goes away, the message would no longer be visible.'
@@ -586,14 +584,14 @@ const sampleQuestions = [
 
   {
     id: '15',
-    text: 'In step 3 of "Mirror Message," what does the word <u>invisible</u> mean?',
+    text: 'In “Born in the Desert,” the reader can tell that Rahim first becomes nervous when he--',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: ['desert', 'buddies'],
     options: [
-      'clear',
-      'small',
-      'hidden',
-      'forgotten',
+      'feels his palms become damp',
+      'wishes his classmates understood him',
+      'spends a long time writing his speech',
+      'forgets what to say next',
     ],
     correctAnswer: 2,
     explanation: 'In this context, "invisible" means the message cannot be seen or is hidden from view until the steam makes it appear.'
@@ -601,14 +599,14 @@ const sampleQuestions = [
 
   {
     id: '16',
-    text: '"Lemony Letter" and "Mirror Message" are alike because both--',
+    text: 'Which sentence from “Born in the Desert” is the best example of a comparison?',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: ['desert', 'buddies'],
     options: [
-      'need help from a grownup',
-      'need the use of a lamp',
-      'have messages that must be dry to be read',
-      'have messages that must be painted to be read',
+      'Rahim Makeba stood at the front of the classroom holding his notes.',
+      '“When I was little, I used to sit under the Camel Thorn tree in our village and wait for small animals and birds to visit.”',
+      'With a grateful look at Ms. Blum and Julie, Rahim continued his speech.',
+      '“In fact, the masks look similar to those that raccoons have.”',
     ],
     correctAnswer: 0,
     explanation: 'Both methods require adult assistance: "Lemony Letter" needs a grownup to cut the lemon in half, and "Mirror Message" needs a grownup to peel the potato.'
@@ -616,14 +614,14 @@ const sampleQuestions = [
 
   {
     id: '17',
-    text: 'In "Crazy Crayon," it is hard to see the message before painting over it because the message--',
+    text: 'Read this list. <img > According to “Buddies Make a Difference,” which activity belongs on the list?',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: ['desert', 'buddies'],
     options: [
-      'needs to be next to light',
-      'takes a long time to change color',
-      'is written on dark paper',
-      'is written in a white color',
+      'Practice handwriting',
+      'Take part in a spelling contest',
+      'Measure objects found outside',
+      'Write in daily journals',
     ],
     correctAnswer: 3,
     explanation: 'The instructions say to use a white crayon on white paper, making it "difficult to see the markings" because white crayon on white paper is nearly invisible.'
@@ -631,14 +629,14 @@ const sampleQuestions = [
 
   {
     id: '18',
-    text: 'One reason to read the flier is to--',
+    text: 'Fifth graders are buddies in “Buddies Make a Difference” because they--',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: ['desert', 'buddies'],
     options: [
-      'find out when spies need to use secret messages',
-      'learn how secret messages are made',
-      'discover secret messages that have been sent in the past',
-      'learn about the first person to send a secret message',
+      'have extra time to help kindergartners',
+      'know about taking care of young people',
+      'know how to spend the day together',
+      'have school experiences to share with younger students',
     ],
     correctAnswer: 1,
     explanation: 'The flier provides step-by-step instructions for three different methods of creating secret messages, teaching readers how to make them.'
@@ -646,14 +644,14 @@ const sampleQuestions = [
 
   {
     id: '19',
-    text: 'The author puts numbers before some sentences in the flier to--',
+    text: 'Rahim from “Born in the Desert” and Tim from “Buddies Make a Difference” both--',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: ['desert', 'buddies'],
     options: [
-      'list the steps in the order of importance',
-      'order the steps the reader will follow',
-      'show how many items the reader needs in each step',
-      'tell about how many minutes each step will take',
+      'struggle with answering questions from other students',
+      'feel nervous about adjusting to a new place',
+      'need help finding their way around a new school',
+      'ask for assistance with completing a school project',
     ],
     correctAnswer: 1,
     explanation: 'The numbers indicate the sequential order of steps that must be followed to successfully create each type of secret message.'
@@ -661,13 +659,14 @@ const sampleQuestions = [
 
   {
     id: '20',
-    text: 'Read this sentence and dictionary entry. <div class="passage-innerbox"><b>In the winter, grocery stores <u>charge</u> too much for strawberries.</b></div> <div class="passage-dicbox"><b>charge</b> (chärj) <i>v.</i> <b>1.</b> To give orders. <b>2.</b> To set as a price. <b>3.</b> To fill up completely. <b>4.</b> To rush forward.</div>',
+    text: 'What is the main idea of the section titled “Prospecting: Then and Now”?',
     type: 'multiple-choice',
+    passageId: 'mine',
     options: [
-      '1',
-      '2',
-      '3',
-      '4',
+      'Centuries ago, prospectors searched for valuables by panning.',
+      'Visitors to the mine learn how prospecting methods and tools have changed over time.',
+      'Water and a pan were used by prospectors to sift through rocky materials.',
+      'Metals and fossils are considered valuable finds by prospectors.',
     ],
     correctAnswer: 1,
     explanation: 'In the context of grocery stores charging "too much" for strawberries, "charge" means "to set as a price," which is definition 2.'
@@ -675,14 +674,14 @@ const sampleQuestions = [
 
   {
     id: '21',
-    text: 'Guide words: <div class="passage-innerbox">camera - cause</div> <br>Which two words would appear on the same page as these guide words?',
-    type: 'multiple-select',
+    text: 'According to step 3 of the “Panning Instructions” section, the main effect of swirling the pan in the water is to--',
+    type: 'multiple-choice',
+    passageId: 'mine',
     options: [
-      'carrot',
-      'cabin',
-      'calm',
-      'canal',
-      'cave'
+      'separate the materials by weight',
+      'collect dirt in the pan',
+      'clean the materials in the pan',
+      'find gemstones by their reflections'
     ],
     correctAnswer: [0, 3],
     explanation: 'Guide words show the first and last entries on a dictionary page. "Carrot" and "canal" fall alphabetically between "camera" and "cause." "Cabin" comes before "camera" and "cave" comes after "cause."'
@@ -690,14 +689,14 @@ const sampleQuestions = [
 
   {
     id: '22',
-    text: 'The title tells readers that a character in the story will most likely--',
+    text: 'TWhich detail would be the least important to include in a summary of the section “Panning Instructions”?',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
+    passageId: 'mine',
     options: [
-      'spend time outdoors',
-      'need to draw a map',
-      'go to an amazing place',
-      'search for something',
+      'The pan should be held so rocks and dirt are visible.',
+      'The pan should be swirled at an angle.',
+      'The flowing water at the panning station is cool.',
+      'The panning process can be time-consuming.',
     ],
     correctAnswer: 3,
     explanation: 'The title "A Hidden Treasure" suggests that characters will be looking for or searching for something that is hidden.'
@@ -705,14 +704,14 @@ const sampleQuestions = [
 
   {
     id: '23',
-    text: 'Paragraph 5 is important to the story because it-',
+    text: 'In addition to providing light to visitors, using electric power lines in the mine will--',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
+    passageId: 'mine',
     options: [
-      'tells what is on the map',
-      'tells why Evan likes to go fishing',
-      'shows how the attic looks',
-      'shows where Grandma lives',
+      'provide power for metal detectors',
+      'allow the staff to polish the gems',
+      'prevent accidents or injuries',
+      'show the way to the panning station',
     ],
     correctAnswer: 0,
     explanation: 'Paragraph 5 describes what Evan found on the map: "Grandma\'s house, a raindrop inside a square, two little triangles, and a dock" with an "X" marking the "Greatest Fishing Spot."'
@@ -720,14 +719,14 @@ const sampleQuestions = [
 
   {
     id: '24',
-    text: 'After Evan and Mark find the map, they both feel--',
+    text: 'Based on the “Panning Instructions” section, everything may fall out of the pan if the--',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
+    passageId: 'mine',
     options: [
-      'wise',
-      'calm',
-      'proud',
-      'eager',
+      'pan is held at an angle',
+      'movement is too quick',
+      'water is running fast',
+      'pan contains too much dirt',
     ],
     correctAnswer: 3,
     explanation: 'The text shows their excitement: Evan asks "Excitedly" if they can find the fishing spot, Mark says "Let\'s try," and "they thundered down the steps," showing they are eager to start their search.'
@@ -735,14 +734,14 @@ const sampleQuestions = [
 
   {
     id: '25',
-    text: 'Where does this story begin and end?',
+    text: 'If the author added additional questions about panning to the “Frequently Asked Questions” section, which would be least useful to the reader?',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
+    passageId: 'mine',
     options: [
-      'At the river',
-      'Near the trees',
-      'In the kitchen',
-      'In the attic',
+      'What size are the panning bowls?',
+      'How many visitors can work at the panning station at one time?',
+      'Is panning equipment available for purchase?',
+      'Is there a time limit at the panning station?',
     ],
     correctAnswer: 2,
     explanation: 'The story begins with Grandma painting her kitchen, and ends with the boys rushing back "into the kitchen" with their question about the dock, then planning to get fishing poles.'
@@ -750,14 +749,14 @@ const sampleQuestions = [
 
   {
     id: '26',
-    text: 'Based on the story, where does the map first lead the boys? <br><img src="images/question_26.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+    text: 'What does the word <u>processing</u> mean in the section “How long should I plan to stay at the mine”?',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
+    passageId: 'mine',
     options: [
-      'The house',
-      'The water tower',
-      'The trees',
-      'The Greatest Fishing Spot',
+      'purchasing',
+      'sorting',
+      'producing',
+      'waiting',
     ],
     correctAnswer: 1,
     explanation: 'Mark says "The square with the raindrop is behind Grandma\'s house" and they look for the water tower with the faded raindrop symbol first.'
@@ -765,14 +764,14 @@ const sampleQuestions = [
 
   {
     id: '27',
-    text: 'Which question is answered at the end of the story?',
+    text: 'Based on the brochure, which location is NOT a place prospectors mine for minerals?',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
+    passageId: 'mine',
     options: [
-      'What brings fish to a certain area?',
-      'What happened to the old dock?',
-      'How often did Mom go to the old dock?',
-      'How many fish does Grandma catch?',
+      'Ridgelines',
+      'Open meadows',
+      'Hilltops',
+      'Creek beds',
     ],
     correctAnswer: 1,
     explanation: 'When the boys ask about the dock, Grandma explains: "That dock was torn down a long time ago."'
@@ -780,25 +779,29 @@ const sampleQuestions = [
 
   {
     id: '28',
-    text: 'Place these words in alphabetical order.',
-    type: 'drag-drop',
-    passageId: 'hidden_treasure',
-    options: ['steps', 'shouted', 'searched', 'smiled', 'spend'],
-    dropZones: [' ', ' ', ' ', ' ', ' '],
-    correctAnswer: [2, 1, 3, 4, 0],
-    explanation: 'In alphabetical order: searched, shouted, smiled, spend, steps.'
+    text: 'According to the article, which activity is done by both visitors and staff?',
+    type: 'multiple-choice',
+    passageId: 'mine',
+    options: [
+      'Searching for new mines in the area',
+      'Preparing gemstones to be made into jewelry',
+      'Pointing out rock formations and landmarks',
+      'Sifting through buckets for gold or gems',
+    ],
+    correctAnswer: 1,
+    explanation: 'When the boys ask about the dock, Grandma explains: "That dock was torn down a long time ago."'
   },
 
   {
     id: '29',
-    text: 'Based on paragraph 4, the reader can tell that-',
+    text: 'According to the brochure, visitors should swirl the pans slowly because the--',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: 'mine',
     options: [
-      'chicks learn to eat by watching older ostriches',
-      'ostriches need people to feed them a healthy diet',
-      'plants are easier for ostriches to feed on than insects',
-      'chicks wait to eat until the grown ostriches finish',
+      'water may be warmer at the surface',
+      'pan is difficult to hold on to',
+      'material may fall out of the pan',
+      'material in the pan may be easier to see',
     ],
     correctAnswer: 0,
     explanation: 'Paragraph 4 directly states: "The young birds learn to peck the ground and eat plants by watching older ostriches."'
@@ -806,14 +809,14 @@ const sampleQuestions = [
 
   {
     id: '30',
-    text: 'Paragraph 6 explains that one way ostriches keep themselves safe is by--',
+    text: 'In which part of the brochure would the author include the names of local jewelers who work with gemstones?',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: 'mine',
     options: [
-      'flying',
-      'digging',
-      'kicking',
-      'sleeping',
+      'Prospecting: Then and Now',
+      'Your Prospecting Experience',
+      'Will I find any big gemstones or gold nuggets?',
+      'What should I do with the gemstones I find?',
     ],
     correctAnswer: 2,
     explanation: 'Paragraph 6 states: "Their strong legs can deliver a kick that stops a lion!"'
@@ -821,14 +824,14 @@ const sampleQuestions = [
 
   {
     id: '31',
-    text: 'What information can be learned by reading the chart at the end of the article?',
+    text: 'Which two words from the brochure are antonyms?',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: 'mine',
     options: [
-      'What do ostriches use to build a nest?',
-      'Why do ostriches keep the herd size low?',
-      'How long do ostriches live?',
-      'How many eggs do ostriches lay?',
+      'profit, value',
+      'experience, reminder',
+      'collect, learn',
+      'surface, underground',
     ],
     correctAnswer: 2,
     explanation: 'The "Ostrich Facts" chart shows "Life span: 30-40 years," which answers how long ostriches live.'
@@ -836,14 +839,14 @@ const sampleQuestions = [
 
   {
     id: '32',
-    text: 'Based on the article, one way the male leader is like the females in the herd is that he helps--',
+    text: 'Read this thesaurus entry. <div class="passage-dicbox"><b>scrub</b> <i>v.</i> - clean, erase, polish, scrap.</div> Which word best replaces <u>scrub</u> in paragraph 6?',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: 'home_run',
     options: [
-      'make the nest',
-      'guard the eggs',
-      'hide the chicks',
-      'feed the chicks',
+      'clean',
+      'erase',
+      'polish',
+      'scra[',
     ],
     correctAnswer: 1,
     explanation: 'The text states: "The male and one of the females take turns guarding and sitting on the eggs."'
@@ -851,14 +854,14 @@ const sampleQuestions = [
 
   {
     id: '33',
-    text: 'The feathers of an ostrich help the bird--',
+    text: 'Read this sentence from paragraph 7. <div class="passage-innerbox">Then she breezed around the mess, <u>burst</u> out the front door, and escaped.</div> Which meaning of <u>burst</u> is used in this sentence?',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: 'home_run',
     options: [
-      'run fast',
-      'stay warm',
-      'move quietly',
-      'look bigger',
+      'felt the pressure of a strong emotion',
+      'caused to explode or crack',
+      'broke open as a result of being full',
+      'rushed through suddenly and forcefully',
     ],
     correctAnswer: 1,
     explanation: 'The passage explains: "Their new fluffy feathers trap air and keep the chicks warm at night."'
@@ -866,14 +869,14 @@ const sampleQuestions = [
 
   {
     id: '34',
-    text: 'Based on the article, what can the reader most likely tell about ostriches?',
+    text: 'Maddy tosses her brother’s backpack on the floor because she--',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: 'home_run',
     options: [
-      'They can run faster than any other animal.',
-      'Their wings are their most useful part.',
-      'Their speed helps them escape.',
-      'They usually kick their enemies.',
+      'wants to get him in trouble',
+      'is in a hurry to find her glove',
+      'thinks he should have hung it up',
+      'believes that he borrowed her glove',
     ],
     correctAnswer: 2,
     explanation: 'The article states: "With such speed, ostriches outrun most predators" and that they can run 43 miles per hour, showing their speed helps them escape danger.'
@@ -881,14 +884,14 @@ const sampleQuestions = [
 
   {
     id: '35',
-    text: 'After looking at the title, the reader knows that this poem is about--',
+    text: 'Maddy goes to the game most likely because she--',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'home_run',
     options: [
-      'hiding something',
-      'finding something',
-      'looking for something',
-      'thinking about something',
+      'has a goal to hit a home run',
+      'has made plans to join her friends at the park',
+      'thinks someone will take her place on the team',
+      'wants to be home in time for cupcakes',
     ],
     correctAnswer: 2,
     explanation: 'The title "The Search" indicates the poem will be about someone searching or looking for something.'
@@ -896,14 +899,14 @@ const sampleQuestions = [
 
   {
     id: '36',
-    text: 'What does <u>pause</u> mean in line 13?',
+    text: 'Which phrase from the story tells the most about the setting?',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'home_run',
     options: [
-      'Try to remember',
-      'Begin to ask questions',
-      'Think about the past',
-      'Stop for a short time',
+      'straight into the middle',
+      'backpack belongs on a hook',
+      'stepped out of the dugout',
+      'quickly reached into the air',
     ],
     correctAnswer: 3,
     explanation: '"Pause" means to stop briefly or for a short time. The speaker stops in their tracks when Dad asks questions.'
@@ -911,14 +914,14 @@ const sampleQuestions = [
 
   {
     id: '37',
-    text: 'In lines 17-20, the speaker can best be described as--',
+    text: 'Which sentence from the story contains an example of figurative language?',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'home_run',
     options: [
-      'scared',
-      'upset',
-      'angry',
-      'lazy',
+      'Mom was pointing to the stain and scolding Lane.',
+      'Instead, she wondered if Mom and Lane needed help cleaning the carpet.',
+      'Maddy realized that only one thing would banish the invisible cloud hovering over her.',
+      'Ten minutes later Maddy eased the front door open.',
     ],
     correctAnswer: 1,
     explanation: 'Lines 17-20 show disappointment and sadness: "It\'s surely gone missing / There\'s clearly no hope. / I have to give up / Find somewhere to mope." The speaker feels upset about losing the shoe.'
@@ -926,235 +929,390 @@ const sampleQuestions = [
 
   {
     id: '38',
-    text: 'Where is the first place the speaker looks for the shoe?',
+    text: 'The main conflict in the story is that Maddy--',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'home-run',
     options: [
-      'Under the sofa',
-      'In the car',
-      'In a sports bag',
-      'Near the steps',
+      'needs to find her glove for the game',
+      'thinks she is disappointing her team',
+      'wants to eat cupcakes with her family',
+      'feels guilty about causing the mess',
     ],
     correctAnswer: 2,
     explanation: 'The first line of the poem states: "I\'ve emptied my sports bag," which shows this was the first place searched.'
-  },
-
-  {
-    id: '39',
-    text: 'Based on the events in the poem, the shoe was most likely last worn--',
-    type: 'multiple-choice',
-    passageId: 'search',
-    options: [
-      'at school',
-      'during a game',
-      'at a friend\'s house',
-      'in a friend\'s car',
-    ],
-    correctAnswer: 1,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
-  },
-
-  {
-    id: '40',
-    text: 'Which question is answered in the poem?',
-    type: 'multiple-choice',
-    passageId: 'search',
-    options: [
-      'What is the dog\'s new chew toy?',
-      'Why is the dog playing outside?',
-      'What sport does the speaker play?',
-      'When was the speaker\'s last game?',
-    ],
-    correctAnswer: 0,
-    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
-  },
+  }
 ];
 
-// Reading panel management - Auto-opening, no toggle
+// Make questions available globally
+window.sampleQuestions = sampleQuestions;
+
+// ========================================
+// READING PANEL MANAGEMENT
+// ========================================
+
 let isReadingPanelOpen = false;
 let currentPassageId = null;
 
- function openReadingPanel() {
+// Track current passage state for tabs
+let currentPassageIds = [];
+let currentActivePassageIndex = 0;
+
+function openReadingPanel() {
   const panel = document.getElementById('reading-panel');
-  const testContainer = document.querySelector('.test-container'); // Outer container with class
+  const testContainer = document.querySelector('.test-container');
   
   if (panel) {
     panel.classList.add('open');
     isReadingPanelOpen = true;
-    console.log('Reading panel auto-opened');
   }
   
-  // Add class to outer test container (the one with class="test-container")
   if (testContainer) {
     testContainer.classList.add('panel-open');
-    console.log('Test container adjusted for left panel');
   }
 }
 
 function closeReadingPanel() {
   const panel = document.getElementById('reading-panel');
-  const testContainer = document.querySelector('.test-container'); // Outer container with class
+  const testContainer = document.querySelector('.test-container');
   
   if (panel) {
     panel.classList.remove('open');
     isReadingPanelOpen = false;
-    console.log('Reading panel closed');
   }
   
-  // Remove class from outer test container
   if (testContainer) {
     testContainer.classList.remove('panel-open');
-    console.log('Test container reset');
+  }
+  
+  // Hide tabs when closing panel
+  const tabsContainer = document.querySelector('.passage-tabs-container');
+  if (tabsContainer) {
+    tabsContainer.classList.remove('active');
   }
 }
 
-// Also update the loadPassage function to ensure proper class application
-function loadPassage(passageId) {
-  if (!passageId) {
-    console.log('No passageId provided, closing panel');
-    closeReadingPanel();
-    return;
-  }
+/**
+ * Initialize the passage tabs container in the reading panel
+ */
+function initPassageTabs() {
+  const readingPanel = document.querySelector('.reading-panel');
+  if (!readingPanel) return;
   
-  if (currentPassageId === passageId && isReadingPanelOpen) {
-    console.log('Passage already loaded and panel open:', passageId);
-    return; // Already loaded and open
-  }
+  // Check if tabs container already exists
+  let tabsContainer = document.querySelector('.passage-tabs-container');
+  if (tabsContainer) return;
   
-  const passage = readingPassages[passageId];
-  if (!passage) {
-    console.error('Passage not found:', passageId);
-    console.log('Available passages:', Object.keys(readingPassages));
-    closeReadingPanel();
-    return;
-  }
+  // Create tabs container
+  tabsContainer = document.createElement('div');
+  tabsContainer.className = 'passage-tabs-container';
+  tabsContainer.setAttribute('role', 'tablist');
+  tabsContainer.setAttribute('aria-label', 'Passage selection');
   
-  currentPassageId = passageId;
+  // Create the tabs wrapper
+  const tabsWrapper = document.createElement('div');
+  tabsWrapper.className = 'passage-tabs';
+  tabsContainer.appendChild(tabsWrapper);
   
-  const titleElement = document.getElementById('passage-title');
-  const contentElement = document.getElementById('passage-content');
+  // Insert after header, before content
+  const header = readingPanel.querySelector('.reading-panel-header');
+  const content = readingPanel.querySelector('.reading-panel-content');
   
-  if (titleElement) {
-    titleElement.textContent = passage.title;
-    console.log('Passage title set to:', passage.title);
+  if (header && content) {
+    header.after(tabsContainer);
   } else {
-    console.error('Passage title element not found');
+    readingPanel.insertBefore(tabsContainer, readingPanel.firstChild);
   }
   
-  if (contentElement) {
-    contentElement.innerHTML = passage.content;
-    console.log('Passage content loaded, length:', passage.content.length);
-  } else {
-    console.error('Passage content element not found');
+  console.log('Passage tabs container initialized');
+}
+
+/**
+ * Get passage IDs for a question
+ * Supports both single passageId (string or array) and passageIds array
+ */
+function getQuestionPassageIds(question) {
+  if (!question) return [];
+  
+  // Check for passageIds array first
+  if (Array.isArray(question.passageIds) && question.passageIds.length > 0) {
+    return question.passageIds;
   }
   
-  // Auto-open the panel and ensure test container gets proper class
-  openReadingPanel();
+  // Check if passageId is an array (some tests use this format)
+  if (Array.isArray(question.passageId) && question.passageId.length > 0) {
+    return question.passageId;
+  }
   
-  // Force reflow and ensure class is applied
-  setTimeout(() => {
-    const testContainer = document.querySelector('.test-container');
-    if (testContainer && !testContainer.classList.contains('panel-open')) {
-      console.log('Force applying panel-open class');
-      testContainer.classList.add('panel-open');
+  // Fall back to single passageId string
+  if (question.passageId && typeof question.passageId === 'string') {
+    return [question.passageId];
+  }
+  
+  return [];
+}
+
+/**
+ * Get passage data by ID from readingPassages
+ */
+function getPassageById(passageId) {
+  if (readingPassages && readingPassages[passageId]) {
+    return readingPassages[passageId];
+  }
+  return null;
+}
+
+/**
+ * Get display name for a passage
+ */
+function getPassageDisplayName(passageId, passageData, index) {
+  if (passageData && passageData.title) {
+    return passageData.title;
+  }
+  return `Passage ${index + 1}`;
+}
+
+/**
+ * Handle keyboard navigation in tabs
+ */
+function handleTabKeydown(e, currentIndex, totalTabs) {
+  const tabs = document.querySelectorAll('.passage-tab');
+  let newIndex = currentIndex;
+  
+  switch (e.key) {
+    case 'ArrowLeft':
+      e.preventDefault();
+      newIndex = currentIndex > 0 ? currentIndex - 1 : totalTabs - 1;
+      break;
+    case 'ArrowRight':
+      e.preventDefault();
+      newIndex = currentIndex < totalTabs - 1 ? currentIndex + 1 : 0;
+      break;
+    case 'Home':
+      e.preventDefault();
+      newIndex = 0;
+      break;
+    case 'End':
+      e.preventDefault();
+      newIndex = totalTabs - 1;
+      break;
+    default:
+      return;
+  }
+  
+  if (newIndex !== currentIndex) {
+    tabs[newIndex].focus();
+    switchToPassage(newIndex);
+  }
+}
+
+/**
+ * Switch to a specific passage by index
+ */
+function switchToPassage(index) {
+  if (index < 0 || index >= currentPassageIds.length) return;
+  
+  const tabs = document.querySelectorAll('.passage-tab');
+  const passageId = currentPassageIds[index];
+  
+  // Update tab states
+  tabs.forEach((tab, i) => {
+    if (i === index) {
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+    } else {
+      tab.classList.remove('active');
+      tab.setAttribute('aria-selected', 'false');
     }
-  }, 100);
+  });
   
-  console.log('Successfully loaded and opened passage:', passage.title);
+  currentActivePassageIndex = index;
+  
+  // Load the passage content
+  loadPassageContentById(passageId);
+  
+  console.log(`Switched to passage: ${passageId}`);
 }
 
-// Enhanced displayFeedback function with positioning fix
-function displayFeedback(isCorrect, explanation) {
-  const feedbackContainer = document.getElementById('feedback-container');
-  const feedbackMessage = document.getElementById('feedback-message');
-  const explanationElement = document.getElementById('explanation');
-
-  if (feedbackMessage) {
-    feedbackMessage.textContent = isCorrect ? 'Correct!' : 'Incorrect:';
-    feedbackMessage.className = isCorrect ? 'correct' : 'incorrect';
-  }
-
-  if (explanationElement) {
-    explanationElement.textContent = explanation;
-  }
-
-  if (feedbackContainer) {
-    feedbackContainer.style.display = 'block';
-    
-    // Force a reflow to ensure positioning is applied
-    feedbackContainer.offsetHeight;
-    
-    // Scroll feedback into view if needed
-    setTimeout(() => {
-      feedbackContainer.scrollIntoView({ 
-        behavior: 'smooth', 
-        block: 'nearest',
-        inline: 'nearest'
-      });
-    }, 100);
-  }
-}
-
-function loadPassage(passageId) {
-  if (!passageId) {
-    console.log('No passageId provided, closing panel');
-    closeReadingPanel();
-    return;
-  }
-  
-  if (currentPassageId === passageId && isReadingPanelOpen) {
-    console.log('Passage already loaded and panel open:', passageId);
-    return; // Already loaded and open
-  }
-  
-  const passage = readingPassages[passageId];
-  if (!passage) {
-    console.error('Passage not found:', passageId);
-    console.log('Available passages:', Object.keys(readingPassages));
-    closeReadingPanel();
-    return;
-  }
-  
-  currentPassageId = passageId;
-  
+/**
+ * Load passage content into the reading panel by ID
+ */
+function loadPassageContentById(passageId) {
+  const passageContent = document.getElementById('passage-content');
   const titleElement = document.getElementById('passage-title');
-  const contentElement = document.getElementById('passage-content');
+  if (!passageContent) return;
   
-  if (titleElement) {
-    titleElement.textContent = passage.title;
-    console.log('Passage title set to:', passage.title);
-  } else {
-    console.error('Passage title element not found');
+  const passageData = getPassageById(passageId);
+  
+  if (!passageData) {
+    passageContent.innerHTML = `<p><em>Passage "${passageId}" not found.</em></p>`;
+    return;
   }
   
-  if (contentElement) {
-    contentElement.innerHTML = passage.content;
-    console.log('Passage content loaded, length:', passage.content.length);
-  } else {
-    console.error('Passage content element not found');
+  // Update title
+  if (titleElement && passageData.title) {
+    titleElement.textContent = passageData.title;
   }
   
-  // Auto-open the panel
+  // Build passage HTML
+  let html = '';
+  
+  // Add content
+  if (passageData.content) {
+    html += passageData.content;
+  } else if (passageData.html) {
+    html += passageData.html;
+  } else if (typeof passageData === 'string') {
+    html += passageData;
+  }
+  
+  // Apply to passage content with animation
+  passageContent.style.opacity = '0';
+  passageContent.style.transform = 'translateY(5px)';
+  
+  setTimeout(() => {
+    passageContent.innerHTML = html;
+    passageContent.style.transition = 'opacity 0.2s ease, transform 0.2s ease';
+    passageContent.style.opacity = '1';
+    passageContent.style.transform = 'translateY(0)';
+    
+    // Scroll to top of passage
+    const panelContent = document.querySelector('.reading-panel-content');
+    if (panelContent) {
+      panelContent.scrollTop = 0;
+    }
+  }, 50);
+}
+
+/**
+ * Update passage tabs based on current question's passages
+ */
+function updatePassageTabs(passageIds) {
+  const tabsContainer = document.querySelector('.passage-tabs-container');
+  const tabsWrapper = document.querySelector('.passage-tabs');
+  
+  if (!tabsContainer || !tabsWrapper) {
+    console.log('Tabs container not found, initializing...');
+    initPassageTabs();
+    // Retry after initialization
+    setTimeout(() => updatePassageTabs(passageIds), 100);
+    return;
+  }
+  
+  currentPassageIds = passageIds;
+  
+  // Clear existing tabs
+  tabsWrapper.innerHTML = '';
+  
+  // If only one or no passages, hide tabs
+  if (passageIds.length <= 1) {
+    tabsContainer.classList.remove('active');
+    currentActivePassageIndex = 0;
+    return;
+  }
+  
+  // Multiple passages - show tabs
+  tabsContainer.classList.add('active');
+  
+  // Create tabs for each passage
+  passageIds.forEach((passageId, index) => {
+    const passageData = getPassageById(passageId);
+    const displayName = getPassageDisplayName(passageId, passageData, index);
+    
+    const tab = document.createElement('button');
+    tab.className = 'passage-tab';
+    tab.setAttribute('role', 'tab');
+    tab.setAttribute('aria-selected', index === 0 ? 'true' : 'false');
+    tab.setAttribute('aria-controls', 'passage-content');
+    tab.setAttribute('data-passage-id', passageId);
+    tab.setAttribute('data-passage-index', index);
+    tab.textContent = displayName;
+    
+    if (index === 0) {
+      tab.classList.add('active');
+    }
+    
+    // Tab click handler
+    tab.addEventListener('click', () => {
+      switchToPassage(index);
+    });
+    
+    // Keyboard navigation
+    tab.addEventListener('keydown', (e) => {
+      handleTabKeydown(e, index, passageIds.length);
+    });
+    
+    tabsWrapper.appendChild(tab);
+  });
+  
+  // Reset to first passage
+  currentActivePassageIndex = 0;
+  
+  console.log(`Created ${passageIds.length} passage tabs`);
+}
+
+/**
+ * Main function to load passage(s) for a question
+ * Handles both single and multiple passages
+ */
+function loadPassageForQuestion(question) {
+  if (!question) {
+    closeReadingPanel();
+    return;
+  }
+  
+  const passageIds = getQuestionPassageIds(question);
+  
+  if (passageIds.length === 0) {
+    // No passages for this question
+    closeReadingPanel();
+    currentPassageId = null;
+    return;
+  }
+  
+  // Initialize tabs if needed
+  initPassageTabs();
+  
+  // Update tabs (will hide if only one passage)
+  updatePassageTabs(passageIds);
+  
+  // Load the first passage
+  currentPassageId = passageIds[0];
+  loadPassageContentById(passageIds[0]);
+  
+  // Open the panel
   openReadingPanel();
   
-  console.log('Successfully loaded and opened passage:', passage.title);
+  console.log(`Loaded passage(s) for question: ${passageIds.join(', ')}`);
 }
 
-// AUTO-OPEN APPROACH: Watch for question changes and auto-load passages
+// Legacy function for compatibility
+function loadPassage(passageId) {
+  if (!passageId) {
+    closeReadingPanel();
+    return;
+  }
+  
+  // Convert to array format and use the new system
+  const passageIds = Array.isArray(passageId) ? passageId : [passageId];
+  
+  // Create a mock question object
+  const mockQuestion = { passageId: passageIds };
+  loadPassageForQuestion(mockQuestion);
+}
+
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('Auto-opening left panel reading test initializing...');
+  console.log('Reading test initializing with passage tabs support...');
   
-  // Set questions for the test framework using the expected variable name
-  window.sampleQuestions = sampleQuestions;
-  
-  // Remove any toggle button functionality since we auto-open
+  // Hide toggle button if exists (we auto-open)
   const toggleBtn = document.getElementById('toggle-reading-panel');
   if (toggleBtn) {
     toggleBtn.style.display = 'none';
-    console.log('Toggle button hidden');
   }
   
-  // Watch for question changes and auto-load passages accordingly
+  // Initialize tabs container
+  initPassageTabs();
+  
+  // Watch for question changes
   let lastQuestionIndex = -1;
   
   function checkForQuestionChange() {
@@ -1166,15 +1324,10 @@ document.addEventListener('DOMContentLoaded', function() {
         lastQuestionIndex = currentIndex;
         const question = sampleQuestions[currentIndex];
         
-        console.log('Question changed to:', currentIndex + 1, 'passageId:', question.passageId || 'none');
+        console.log('Question changed to:', currentIndex + 1);
         
-        // Auto-load passage if question has one, close panel if it doesn't
-        if (question.passageId) {
-          loadPassage(question.passageId);
-        } else {
-          closeReadingPanel();
-          currentPassageId = null;
-        }
+        // Load passage(s) for the question
+        loadPassageForQuestion(question);
       }
     }
   }
@@ -1182,5 +1335,5 @@ document.addEventListener('DOMContentLoaded', function() {
   // Check for question changes every 500ms
   setInterval(checkForQuestionChange, 500);
   
-  console.log('Auto-opening left panel initialized with', sampleQuestions.length, 'questions');
+  console.log('Reading test initialized with', sampleQuestions.length, 'questions');
 });
