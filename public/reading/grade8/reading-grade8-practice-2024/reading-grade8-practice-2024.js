@@ -263,14 +263,14 @@ const readingPassages = {
 const sampleQuestions = [
   {
     id: '1',
-    text: 'Another good title for this story would be--',
+    text: 'Read this dictionary entry. <div class="passage-dicbox"><b>dis•tinct</b> (dĭ- stĭngkt´) <i>adj.</i> <b>1.</b> Not identical; separate. <b>2.</b> Easily recognized; clear. <b>3.</b> Obviously defined; unquestionable. [Lat. <i>dīstīnctus</i>, p. part. of distinguish]</div> In paragraph 1 of the article, <u>distinct</u> comes from a word that means--',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: ['hummingbirds', 'leaves'],
     options: [
-      'Sewing New Clothes',
-      'Baking for the Family', 
-      'A Morning Snack',
-      'Gifts for Everyone'
+      'separate',
+      'clear', 
+      'unquestionable',
+      'distinguish'
     ],
     correctAnswer: 3,
     explanation: 'The story is about both Danielle making cupcakes as a surprise for her siblings and her siblings making an apron as a surprise for her. Everyone in the story gives and receives gifts.'
@@ -278,14 +278,14 @@ const sampleQuestions = [
 
   {
     id: '2', 
-    text: 'Danielle keeps the cupcakes a secret by--',
+    text: 'Based on the article, the reader can determine that hummingbirds —',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: ['hummingbirds', 'leaves'],
     options: [
-      'moving them to the laundry room',
-      'making them in the morning', 
-      'placing them inside a box',
-      'covering them with paper'
+      'compete with bees for nectar',
+      'live primarily in warm climates', 
+      'become confused when flying backwards',
+      'rely on bird feeders in order to survive'
     ],
     correctAnswer: 1,
     explanation: 'The passage states that Danielle "had baked cupcakes early in the morning, while Martin and Madison were still asleep," which kept them secret.'
@@ -293,15 +293,14 @@ const sampleQuestions = [
 
   {
     id: '3',
-    text: 'Complete this flow chart. <br><img src="images/question_3.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+    text: 'In the poem, the hummingbird’s nest is a symbol of--',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: ['hummingbirds', 'leaves'],
     options: [
-      'Danielle looks at the edges of the apron.',
-      'Danielle finds bits of cloth in the laundry room.', 
-      'Danielle sets the cupcakes on the table.',
-      'Danielle walks into her bedroom.',
-      'Danielle tries on the apron.'
+      'lost opportunities',
+      'former relationships', 
+      'distant childhood',
+      'past adventures',
     ],
     correctAnswer: 4,
     explanation: 'After receiving the apron and saying "Thank you. It\'s perfect," the passage says "As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table."'
@@ -309,14 +308,14 @@ const sampleQuestions = [
 
   {
     id: '4',
-    text: 'Danielle is pleased with the surprise most likely because she--',
+    text: 'Both the poem and the article address the theme of--',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: ['hummingbirds', 'leaves'],
     options: [
-      'needs to wear it when making cupcakes',
-      'can cook more often for her family',
-      'enjoys wearing blue and yellow clothes',
-      'can tell that her family cares about her'
+      'enjoying nature',
+      'studying the weather',
+      'developing a hobby',
+      'holding on to memories'
     ],
     correctAnswer: 3,
     explanation: 'Madison says "We wanted to make a surprise for you because you\'re such a nice sister. You are always thinking of us." This shows her family\'s care and appreciation for her.'
@@ -324,14 +323,14 @@ const sampleQuestions = [
 
   {
     id: '5',
-    text: 'What will Martin and Madison most likely do next?',
+    text: 'In paragraph 7, Mrs. Ellis wishes Keisha good luck most likely because she thinks Keisha--',
     type: 'multiple-choice', 
-    passageId: 'the_cooks_surprise',
+    passageId: 'woman',
     options: [
-      'Make another apron',
-      'Help their sister cook',
-      'Clean the laundry room',
-      'Bite into their cupcakes'
+      'will need help finding Mrs. Watson’s room',
+      'is unprepared for visiting Mrs. Watson',
+      'will be challenged by Mrs. Watson’s attitude',
+      'is worried about reading to Mrs. Watson'
     ],
     correctAnswer: 3,
     explanation: 'At the end, Danielle says "I have a surprise for you too!" and leads them to the kitchen where she left cupcakes for them.'
@@ -339,14 +338,14 @@ const sampleQuestions = [
 
   {
     id: '6',
-    text: 'Which of these do the characters have in common?',
+    text: 'The purpose of the figurative language in paragraph 8 is to foreshadow--',
     type: 'multiple-choice', 
-    passageId: 'the_cooks_surprise',
+    passageId: 'woman',
     options: [
-      'They think of others.',
-      'They sleep late.',
-      'They sew clothes.',
-      'They like to cook.'
+      'Mrs. Watson’s response to Keisha’s essay',
+      'Keisha’s feelings toward Mrs. Watson',
+      'Keisha’s attitude about volunteering',
+      'Mrs. Watson’s first reaction to Keisha'
     ],
     correctAnswer: 0,
     explanation: 'All three characters make surprises for each other: Danielle bakes cupcakes for her siblings, and Martin and Madison make an apron for Danielle, showing they all think of others.'
@@ -354,14 +353,14 @@ const sampleQuestions = [
 
   {
     id: '7',
-    text: 'What is the root word in "discovered"?',
+    text: 'Read this sentence from paragraph 9. <div class="passage-innerbox">Keisha started to stumble over her words as Mrs. Watson continued to stare at her with an almost <u>belligerent</u> gaze.</div> What is the meaning of the word <u>belligerent</u>?',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: 'woman',
     options: [
-      'disc',
-      'disco', 
-      'cover',
-      'over'
+      'strangely familiar',
+      'hostile or argumentative', 
+      'weak or exhausted',
+      'overly exaggerated'
     ],
     correctAnswer: 2,
     explanation: 'The root word in "discovered" is "cover." The prefix "dis-" means "not" and the suffix "-ed" shows past tense, so "discovered" means "uncovered" or "found."'
@@ -369,14 +368,14 @@ const sampleQuestions = [
 
   {
     id: '8',
-    text: 'Some people eat seaweed all by itself because they most likely--',
+    text: 'In paragraphs 8 and 9, the author’s tone can best be described as--',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea', 
+    passageId: 'woman', 
     options: [
-      'do not know it is used in other foods',
-      'eat many foods that come from the ocean',
-      'enjoy foods that add color to the meals they eat', 
-      'do not like how it tastes mixed with other foods'
+      'confused',
+      'regretful',
+      'tense', 
+      'disappointed'
     ],
     correctAnswer: 1,
     explanation: 'The passage states that "In some parts of the world, especially near the ocean, people eat seaweed all by itself," suggesting people near oceans commonly eat foods from the sea.'
@@ -384,14 +383,14 @@ const sampleQuestions = [
 
   {
     id: '9',
-    text: 'Based on the article, seaweed makes ice cream and yogurt--',
+    text: 'Which event is part of the resolution of the story?',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea',
+    passageId: 'woman',
     options: [
-      'last longer',
-      'taste different',
-      'sell faster',
-      'look different',
+      'Mrs. Watson agrees that Keisha should return the following Thursday.',
+      'Mrs. Ellis tells Keisha to visit Mrs. Watson in her room.',
+      'Keisha reads her English essay about Rosa Parks to Mrs. Watson.',
+      'Mrs. Watson tells Keisha she would rather be alone.',
     ],
     correctAnswer: 3,
     explanation: 'The passage explains that "Without seaweed, ice cream and yogurt would not be as thick or creamy but would seem rather lumpy and watery," showing seaweed affects how they look and their texture.'
@@ -399,14 +398,14 @@ const sampleQuestions = [
 
   {
     id: '10',
-    text: 'Which question is answered in the article?',
+    text: 'Read this thesaurus entry. <div class="passage-dicbox"><b>evolve</b> <i>v.</i> — adapt, develop, increase, mature.</div> Which word best replaces <u>evolve</u> as it is used in paragraph 1?',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea',
+    passageId: 'harlem',
     options: [
-      'What does seaweed taste like?',
-      'Where do farmers buy seaweed?',
-      'Which ocean has the most seaweed?',
-      'Which goods have seaweed in them?',
+      'adapt',
+      'develop',
+      'increase',
+      'mature',
     ],
     correctAnswer: 3,
     explanation: 'The article mentions several goods that contain seaweed: toothpaste, shampoo, makeup, ice cream, and yogurt. It also states "Hundreds of everyday items have seaweed in them."'
@@ -414,14 +413,14 @@ const sampleQuestions = [
 
     {
     id: '11',
-    text: 'The author wrote this article most likely to--',
+    text: 'Based on paragraph 4, what can the reader determine?',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea',
+    passageId: 'harlem',
     options: [
-      'give facts about an ocean plant',
-      'list kinds of ocean plants',
-      'tell about people who eat ocean plants',
-      'tell how to cook with ocean plants',
+      'African Americans were attracted to Harlem for a variety of reasons after World War I.',
+      'African Americans encountered less social injustice in Harlem than in other places.',
+      'African Americans became a majority of the population in Harlem in the 1920s.',
+      'African Americans in Harlem were more successful than those who lived elsewhere.',
     ],
     correctAnswer: 0,
     explanation: 'The article provides factual information about seaweed, explaining what it is, where it grows, and how it is used in various everyday products.'
@@ -429,15 +428,14 @@ const sampleQuestions = [
 
   {
     id: '12',
-    text: 'In an Internet search about oceans, which website would most likely have information about where red seaweed grows?',
+    text: 'The organization of the ideas in “Literature and Art Abound” supports the author’s purpose by--',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea',
+    passageId: 'harlem',
     options: [
-      'Life in the Ocean: Learn about whales, dolphins, and many other creatures of the ocean...',
-      'Ocean Habitats: Learn to recognize the ocean homes of many types of fish...',
-      'Discover Ocean Plants: Find interesting facts about plants that live in the ocean...',
-      'Photos of the Ocean Floor: Follow a team of divers who take amazing pictures of the ocean floor...',
-      'Foods From the Ocean: Discover how food from the ocean ends up on people\'s plates...'
+      'listing examples of writers and artists who shared their talents',
+      'comparing and contrasting the popularity of writers and artists',
+      'explaining the effects of the writers’ and artists’ works on society',
+      'presenting the writers’ and artists’ works in order of importance'
     ],
     correctAnswer: 2,
     explanation: 'The website "Discover Ocean Plants" would be most likely to have information about where red seaweed grows, as seaweed is a type of ocean plant.'
@@ -445,14 +443,14 @@ const sampleQuestions = [
 
   {
     id: '13',
-    text: 'What makes the secret message appear in "Lemony Letter"?',
+    text: 'Which sentence from “A Beginning, Not an End” best represents the main idea of the section?',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'harlem',
     options: [
-      'Heat',
-      'Light',
-      'Juice',
-      'Water',
+      'These gifted artists arrived in Harlem looking for hope, and what resulted was the blossoming of a new African American identity.',
+      'The Harlem Renaissance began to decline in the late 1930s when the Great Depression crushed the nation’s economy.',
+      'This sent most Americans into crisis, and time spent creating turned into time spent surviving.',
+      'Their music, words, and art seem as fresh and powerful today in the 21st century as they were then.',
     ],
     correctAnswer: 0,
     explanation: 'The instructions state: "Have the person who receives your message hold the paper near a light bulb. The heat will make the secret message appear!"'
@@ -460,14 +458,14 @@ const sampleQuestions = [
 
   {
     id: '14',
-    text: 'In "Mirror Message" when the steam in the bathroom is gone, the message will most likely--',
+    text: 'Which detail best supports the idea that Harlem was a center of growth for jazz music in America?',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'harlem',
     options: [
-      'spread',
-      'turn white',
-      'disappear',
-      'turn brown',
+      'Harlem had nightclubs where musicians played jazz.',
+      'Jazz musicians in Harlem were known for improvising.',
+      'Famous jazz musicians pursued their careers in Harlem.',
+      'Jazz helped musicians in Harlem express themselves.',
     ],
     correctAnswer: 2,
     explanation: 'The message only appears when steam covers the mirror. When the steam clears and goes away, the message would no longer be visible.'
@@ -475,14 +473,14 @@ const sampleQuestions = [
 
   {
     id: '15',
-    text: 'In step 3 of "Mirror Message," what does the word <u>invisible</u> mean?',
+    text: 'The details in paragraph 2 are mostly about —',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'habitats',
     options: [
-      'clear',
-      'small',
-      'hidden',
-      'forgotten',
+      'what polyp skeletons look like',
+      'what polyps use to catch their food',
+      'how large coral structures can grow',
+      'how coral structures are formed',
     ],
     correctAnswer: 2,
     explanation: 'In this context, "invisible" means the message cannot be seen or is hidden from view until the steam makes it appear.'
@@ -490,14 +488,14 @@ const sampleQuestions = [
 
   {
     id: '16',
-    text: '"Lemony Letter" and "Mirror Message" are alike because both--',
+    text: 'Read this sentence from paragraph 4. <div class="passage-innerbox">In fact, more than 4,000 species of fish and marine life may <u>populate</u> a typical coral community.</div> In this sentence, <u>populate</u> means--',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'habitats',
     options: [
-      'need help from a grownup',
-      'need the use of a lamp',
-      'have messages that must be dry to be read',
-      'have messages that must be painted to be read',
+      'construct',
+      'disturb',
+      'occupy',
+      'recognize',
     ],
     correctAnswer: 0,
     explanation: 'Both methods require adult assistance: "Lemony Letter" needs a grownup to cut the lemon in half, and "Mirror Message" needs a grownup to peel the potato.'
@@ -505,14 +503,14 @@ const sampleQuestions = [
 
   {
     id: '17',
-    text: 'In "Crazy Crayon," it is hard to see the message before painting over it because the message--',
+    text: 'The organization of ideas in paragraph 6 supports the author’s message by--',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'habitats',
     options: [
-      'needs to be next to light',
-      'takes a long time to change color',
-      'is written on dark paper',
-      'is written in a white color',
+      'comparing several recent observations made by scientists who study the oceans',
+      'emphasizing the most important differences among inhabitants of a reef',
+      'outlining ways in which changes in water temperature affect a coral reef',
+      'describing in chronological order the events that occur in the ocean',
     ],
     correctAnswer: 3,
     explanation: 'The instructions say to use a white crayon on white paper, making it "difficult to see the markings" because white crayon on white paper is nearly invisible.'
@@ -520,14 +518,14 @@ const sampleQuestions = [
 
   {
     id: '18',
-    text: 'One reason to read the flier is to--',
+    text: 'The use of the word “however” indicates that paragraph 7 is organized by--',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'habitats',
     options: [
-      'find out when spies need to use secret messages',
-      'learn how secret messages are made',
-      'discover secret messages that have been sent in the past',
-      'learn about the first person to send a secret message',
+      'generalization',
+      'comparison/contrast',
+      'problem/solution',
+      'listing',
     ],
     correctAnswer: 1,
     explanation: 'The flier provides step-by-step instructions for three different methods of creating secret messages, teaching readers how to make them.'
@@ -535,14 +533,14 @@ const sampleQuestions = [
 
   {
     id: '19',
-    text: 'The author puts numbers before some sentences in the flier to--',
+    text: 'The word <u>co</u>exist in paragraph 7 has the prefix <u>co</u>-, which means--',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'habitats',
     options: [
-      'list the steps in the order of importance',
-      'order the steps the reader will follow',
-      'show how many items the reader needs in each step',
-      'tell about how many minutes each step will take',
+      'together',
+      'in abundance',
+      'near',
+      'in the past',
     ],
     correctAnswer: 1,
     explanation: 'The numbers indicate the sequential order of steps that must be followed to successfully create each type of secret message.'
@@ -550,13 +548,14 @@ const sampleQuestions = [
 
   {
     id: '20',
-    text: 'Read this sentence and dictionary entry. <div class="passage-innerbox"><b>In the winter, grocery stores <u>charge</u> too much for strawberries.</b></div> <div class="passage-dicbox"><b>charge</b> (chärj) <i>v.</i> <b>1.</b> To give orders. <b>2.</b> To set as a price. <b>3.</b> To fill up completely. <b>4.</b> To rush forward.</div>',
+    text: 'Which information best demonstrates that coral reefs are important to marine life?',
     type: 'multiple-choice',
+    passageId: 'habitats',
     options: [
-      '1',
-      '2',
-      '3',
-      '4',
+      'Coral reefs are massive structures in the seas.',
+      'Sea anemones attach themselves to the coral reefs.',
+      'Coral reefs are made of skeletal calcium.',
+      'Many ocean creatures survive because of coral reefs.',
     ],
     correctAnswer: 1,
     explanation: 'In the context of grocery stores charging "too much" for strawberries, "charge" means "to set as a price," which is definition 2.'
@@ -564,14 +563,14 @@ const sampleQuestions = [
 
   {
     id: '21',
-    text: 'Guide words: <div class="passage-innerbox">camera - cause</div> <br>Which two words would appear on the same page as these guide words?',
+    text: 'Which information from the article explains the cooperative relationship between algae and reef- dwelling coral?',
     type: 'multiple-select',
+    passageId: 'habitats',
     options: [
-      'carrot',
-      'cabin',
-      'calm',
-      'canal',
-      'cave'
+      'Coral and algae share the coral reef with other marine animals.',
+      'The algae plants grow on the coral reef, and the coral polyps live on the reef.',
+      'The algae share food with the coral, and the coral shelters the algae.',
+      'Changes that affect the coral also affect how the coral appears to the algae.'
     ],
     correctAnswer: [0, 3],
     explanation: 'Guide words show the first and last entries on a dictionary page. "Carrot" and "canal" fall alphabetically between "camera" and "cause." "Cabin" comes before "camera" and "cave" comes after "cause."'
@@ -579,14 +578,14 @@ const sampleQuestions = [
 
   {
     id: '22',
-    text: 'The title tells readers that a character in the story will most likely--',
+    text: 'Why are coral reefs ideal for the growth of algae?',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
+    passageId: 'habitats',
     options: [
-      'spend time outdoors',
-      'need to draw a map',
-      'go to an amazing place',
-      'search for something',
+      'Reefs are home to marine sponges and sea turtles.',
+      'Reefs are found in shallow waters and receive plenty of sunlight.',
+      'Coral polyps gather together and grow into large colonies.',
+      'Coral reefs form a large and complex ocean system.'
     ],
     correctAnswer: 3,
     explanation: 'The title "A Hidden Treasure" suggests that characters will be looking for or searching for something that is hidden.'
@@ -594,14 +593,14 @@ const sampleQuestions = [
 
   {
     id: '23',
-    text: 'Paragraph 5 is important to the story because it-',
+    text: 'How do warming ocean temperatures affect coral?',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
+    passageId: 'habitats',
     options: [
-      'tells what is on the map',
-      'tells why Evan likes to go fishing',
-      'shows how the attic looks',
-      'shows where Grandma lives',
+      'Coral no longer accepts algae as a food source.',
+      'Coral begins to form on structures made by humans.',
+      'Coral structures no longer offer protection to polyps.',
+      'Coral begins building a strong skeleton.',
     ],
     correctAnswer: 0,
     explanation: 'Paragraph 5 describes what Evan found on the map: "Grandma\'s house, a raindrop inside a square, two little triangles, and a dock" with an "X" marking the "Greatest Fishing Spot."'
@@ -609,14 +608,14 @@ const sampleQuestions = [
 
   {
     id: '24',
-    text: 'After Evan and Mark find the map, they both feel--',
+    text: 'Based on the article, the reader can determine that--',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
+    passageId: 'habitats',
     options: [
-      'wise',
-      'calm',
-      'proud',
-      'eager',
+      'artificial reefs are more attractive to fish',
+      'coral reefs are not found in deeper water',
+      'scientists cannot save the coral reefs',
+      'concrete is the only material used in artificial reefs',
     ],
     correctAnswer: 3,
     explanation: 'The text shows their excitement: Evan asks "Excitedly" if they can find the fishing spot, Mark says "Let\'s try," and "they thundered down the steps," showing they are eager to start their search.'
@@ -624,14 +623,14 @@ const sampleQuestions = [
 
   {
     id: '25',
-    text: 'Where does this story begin and end?',
+    text: 'Based on the article, the author most likely wants the reader to agree that--',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
+    passageId: 'habitats',
     options: [
-      'At the river',
-      'Near the trees',
-      'In the kitchen',
-      'In the attic',
+      'humans should leave coral reefs untouched',
+      'catching fish in coral reefs is harmful',
+      'coral is the most beautiful creature in the ocean',
+      'preserving coral reefs is important',
     ],
     correctAnswer: 2,
     explanation: 'The story begins with Grandma painting her kitchen, and ends with the boys rushing back "into the kitchen" with their question about the dock, then planning to get fishing poles.'
@@ -639,14 +638,14 @@ const sampleQuestions = [
 
   {
     id: '26',
-    text: 'Based on the story, where does the map first lead the boys? <br><img src="images/question_26.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+    text: 'By describing the ocean’s habitat as “delicate,” the author intends to--',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
+    passageId: 'habitats',
     options: [
-      'The house',
-      'The water tower',
-      'The trees',
-      'The Greatest Fishing Spot',
+      'explain why the habitat is likely to survive for only a few more years',
+      'emphasize how some types of corals form thin structures',
+      'emphasize that an altered habitat can be dangerous for creatures living there',
+      'explain that sea creatures are more fragile than creatures living on land',
     ],
     correctAnswer: 1,
     explanation: 'Mark says "The square with the raindrop is behind Grandma\'s house" and they look for the water tower with the faded raindrop symbol first.'
@@ -654,14 +653,14 @@ const sampleQuestions = [
 
   {
     id: '27',
-    text: 'Which question is answered at the end of the story?',
+    text: 'Which information should be included in a summary of this article?',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
+    passageId: 'habitats',
     options: [
-      'What brings fish to a certain area?',
-      'What happened to the old dock?',
-      'How often did Mom go to the old dock?',
-      'How many fish does Grandma catch?',
+      'Sea slugs hide among coral reefs for protection.',
+      'Reefs have been created by sinking old ships.',
+      'Whip corals provide a habitat for black sea bass.',
+      'Recent ocean changes have been affecting coral reefs.',
     ],
     correctAnswer: 1,
     explanation: 'When the boys ask about the dock, Grandma explains: "That dock was torn down a long time ago."'
@@ -669,25 +668,29 @@ const sampleQuestions = [
 
   {
     id: '28',
-    text: 'Place these words in alphabetical order.',
-    type: 'drag-drop',
-    passageId: 'hidden_treasure',
-    options: ['steps', 'shouted', 'searched', 'smiled', 'spend'],
-    dropZones: [' ', ' ', ' ', ' ', ' '],
-    correctAnswer: [2, 1, 3, 4, 0],
-    explanation: 'In alphabetical order: searched, shouted, smiled, spend, steps.'
+    text: 'Which type of literary device does the author use in paragraphs 6- 12?',
+    type: 'multiple-choice',
+    passageId: 'swift',
+    options: [
+      'Symbolism',
+      'Flashback',
+      'Foreshadowing',
+      'Ironic tone',
+    ],
+    correctAnswer: 1,
+    explanation: 'When the boys ask about the dock, Grandma explains: "That dock was torn down a long time ago."'
   },
 
   {
     id: '29',
-    text: 'Based on paragraph 4, the reader can tell that-',
+    text: 'In paragraph 8, the word <u>preliminary</u> means--',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: 'swift',
     options: [
-      'chicks learn to eat by watching older ostriches',
-      'ostriches need people to feed them a healthy diet',
-      'plants are easier for ostriches to feed on than insects',
-      'chicks wait to eat until the grown ostriches finish',
+      'initial',
+      'essential',
+      'additional',
+      'substantial',
     ],
     correctAnswer: 0,
     explanation: 'Paragraph 4 directly states: "The young birds learn to peck the ground and eat plants by watching older ostriches."'
@@ -695,14 +698,14 @@ const sampleQuestions = [
 
   {
     id: '30',
-    text: 'Paragraph 6 explains that one way ostriches keep themselves safe is by--',
+    text: 'Read this sentence from paragraph 15. <div class="passage-innerbox">The bird had a gray head the color of soot, and its eyes, two onyx stones, were surrounded with black, as if rimmed in eye makeup.</div> The purpose of the figurative language in this sentence is to--',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: 'swift',
     options: [
-      'flying',
-      'digging',
-      'kicking',
-      'sleeping',
+      'convey the bird’s actions',
+      'explain a defense strategy of the bird',
+      'illustrate the bird’s surroundings',
+      'describe physical characteristics of the bird',
     ],
     correctAnswer: 2,
     explanation: 'Paragraph 6 states: "Their strong legs can deliver a kick that stops a lion!"'
@@ -710,14 +713,14 @@ const sampleQuestions = [
 
   {
     id: '31',
-    text: 'What information can be learned by reading the chart at the end of the article?',
+    text: 'Which word is the best antonym for <u>arduous</u> in paragraph 18?',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: 'swift',
     options: [
-      'What do ostriches use to build a nest?',
-      'Why do ostriches keep the herd size low?',
-      'How long do ostriches live?',
-      'How many eggs do ostriches lay?',
+      'moderate',
+      'satisfying',
+      'effortless',
+      'direct',
     ],
     correctAnswer: 2,
     explanation: 'The "Ostrich Facts" chart shows "Life span: 30-40 years," which answers how long ostriches live.'
@@ -725,14 +728,14 @@ const sampleQuestions = [
 
   {
     id: '32',
-    text: 'Based on the article, one way the male leader is like the females in the herd is that he helps--',
+    text: 'Paragraph 18 suggests that Joanna--',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: 'swift',
     options: [
-      'make the nest',
-      'guard the eggs',
-      'hide the chicks',
-      'feed the chicks',
+      'is determined to rescue the bird',
+      'has hiked to the ranger station before',
+      'is nervous about the hiking trail',
+      'knows the park ranger studies birds',
     ],
     correctAnswer: 1,
     explanation: 'The text states: "The male and one of the females take turns guarding and sitting on the eggs."'
@@ -740,14 +743,14 @@ const sampleQuestions = [
 
   {
     id: '33',
-    text: 'The feathers of an ostrich help the bird--',
+    text: 'In paragraph 25, what is Dan’s most logical reason for moving away from the waterfall?',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: 'swift',
     options: [
-      'run fast',
-      'stay warm',
-      'move quietly',
-      'look bigger',
+      'He realizes they are going in the wrong direction.',
+      'He wants to have a better view of the bird.',
+      'He realizes the sound they hear could be imitated.',
+      'He wants to avoid startling the bird.',
     ],
     correctAnswer: 1,
     explanation: 'The passage explains: "Their new fluffy feathers trap air and keep the chicks warm at night."'
@@ -755,14 +758,14 @@ const sampleQuestions = [
 
   {
     id: '34',
-    text: 'Based on the article, what can the reader most likely tell about ostriches?',
+    text: 'The simile in paragraph 30 emphasizes that--',
     type: 'multiple-choice',
-    passageId: 'ostrich',
+    passageId: 'swift',
     options: [
-      'They can run faster than any other animal.',
-      'Their wings are their most useful part.',
-      'Their speed helps them escape.',
-      'They usually kick their enemies.',
+      'Joanna is patient',
+      'Joanna is curious',
+      'the bird is slender',
+      'the bird is quick',
     ],
     correctAnswer: 2,
     explanation: 'The article states: "With such speed, ostriches outrun most predators" and that they can run 43 miles per hour, showing their speed helps them escape danger.'
@@ -770,14 +773,14 @@ const sampleQuestions = [
 
   {
     id: '35',
-    text: 'After looking at the title, the reader knows that this poem is about--',
+    text: 'Joanna presumes the bird is in distress because it--',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'swift',
     options: [
-      'hiding something',
-      'finding something',
-      'looking for something',
-      'thinking about something',
+      'is clutching on to a rock within the glades',
+      'has black markings surrounding its eyes',
+      'is shrouded behind the cascading waterfall',
+      'looks fixedly at her while crooking its neck',
     ],
     correctAnswer: 2,
     explanation: 'The title "The Search" indicates the poem will be about someone searching or looking for something.'
@@ -785,14 +788,14 @@ const sampleQuestions = [
 
   {
     id: '36',
-    text: 'What does <u>pause</u> mean in line 13?',
+    text: 'In the story, Joanna is--',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'swift',
     options: [
-      'Try to remember',
-      'Begin to ask questions',
-      'Think about the past',
-      'Stop for a short time',
+      'able to adapt easily to new situations',
+      'overconfident about her abilities',
+      'quick to respond to a problem',
+      'comfortable with making mistakes',
     ],
     correctAnswer: 3,
     explanation: '"Pause" means to stop briefly or for a short time. The speaker stops in their tracks when Dad asks questions.'
@@ -800,14 +803,14 @@ const sampleQuestions = [
 
   {
     id: '37',
-    text: 'In lines 17-20, the speaker can best be described as--',
+    text: 'The repetition of “<i>Plik-plik-plik-plik!</i>” creates a feeling of--',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'swift',
     options: [
-      'scared',
-      'upset',
-      'angry',
-      'lazy',
+      'hope',
+      'suspense',
+      'amusement',
+      'peacefulness',
     ],
     correctAnswer: 1,
     explanation: 'Lines 17-20 show disappointment and sadness: "It\'s surely gone missing / There\'s clearly no hope. / I have to give up / Find somewhere to mope." The speaker feels upset about losing the shoe.'
@@ -815,14 +818,14 @@ const sampleQuestions = [
 
   {
     id: '38',
-    text: 'Where is the first place the speaker looks for the shoe?',
+    text: 'The point of view used in the story best helps the reader understand--',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'swift',
     options: [
-      'Under the sofa',
-      'In the car',
-      'In a sports bag',
-      'Near the steps',
+      'how Joanna reaches the park',
+      'how Dan feels about seeing the bird',
+      'why Joanna visits the park',
+      'why Dan hikes to the waterfall',
     ],
     correctAnswer: 2,
     explanation: 'The first line of the poem states: "I\'ve emptied my sports bag," which shows this was the first place searched.'
@@ -830,14 +833,14 @@ const sampleQuestions = [
 
   {
     id: '39',
-    text: 'Based on the events in the poem, the shoe was most likely last worn--',
+    text: 'A theme of the story is that--',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'swift',
     options: [
-      'at school',
-      'during a game',
-      'at a friend\'s house',
-      'in a friend\'s car',
+      'finding a new challenge is important for personal growth',
+      'adjusting to an unfamiliar environment can be easier than expected',
+      'solving a problem is possible with the help of a guide',
+      'investigating a mystery can lead to an unexpected adventure',
     ],
     correctAnswer: 1,
     explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
