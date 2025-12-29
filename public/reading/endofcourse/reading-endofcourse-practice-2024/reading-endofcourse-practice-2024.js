@@ -2,92 +2,130 @@ window.TEST_IDENTIFIER = 'reading_endofcourse_practice_2024';
 
 // Reading passages that can be referenced by multiple questions
 const readingPassages = {
-  'speedy_and_spotty': {
-    title: 'Speedy and Spotty',
+  'timekeeping': {
+    title: 'The Evolution of Timekeeping',
     content: `
      <ol class="paragraph-numbers">
-      <li>Imagine you are in Africa. Suddenly, a group of spots streaks past you. What was it? It may have been a cheetah, the fastest animal on land. It can run up to 70 miles per hour, which is faster than most cars travel on the highway!</li>
+      <li>Clocks are everywhere in today’s world. People wear wristwatches and carry mobile phones that show them the exact time of day. Without these timekeepers, our modern world would be chaotic, causing people to show up late for movies, meetings, and appointments. People, however, have not always lived lives that are regimented by hours and minutes. In fact, humans lived for tens of thousands of years without needing any device to organize time. The rhythm of their lives was basically determined by the rising and setting of the sun. When the sun was in the sky, they could work; when the sun had set, they rested. For the past 5,000 years, however, humans have spent a great deal of energy working to organize time more accurately and in smaller increments. As humans have created more accurate clocks, our lives have become increasingly separated from the traditional rhythms of nature and instead are more dependent on these devices.</li>
 
-      <p><b>A Fast Cat</b></p>
-      <li>In many ways, the cheetah is built for speed. Even though this animal is a cat, its paws are much more like a dog’s paws. The paws allow the cheetah to grip the ground when it makes quick turns. A cheetah also has long legs that help it take big steps. It can jump as far as 20 feet in one leap! Even the cheetah’s backbone helps it move quickly. Its backbone twists and turns, letting the cheetah zigzag across the ground easily. The backbone acts as a spring, moving the cheetah forward with sudden bursts of energy. Although the cheetah can run fast, it cannot run for long distances. It uses its energy quickly and becomes tired. If the cheetah cannot catch its dinner in a hurry, it will have to rest awhile before trying again.</li>
+      <img src="images/timekeeping.png" alt="Image failed to load. Please try again later." style="float: right; height: 250px; margin-left: 10px;">
 
-      <p><b>Made to Hunt</b></p>
-      <li>A cheetah is also made to be a great hunter. It has sharp eyesight. A cheetah can see other animals up to three miles away. Good eyesight helps the cheetah find its prey so it can plan an attack. A cheetah’s coat is also very useful. The coat is tan with black spots. This coloring allows a cheetah to blend in with the tall, brown grass in Africa. Other animals do not see it hiding, so a cheetah can sneak up on rabbits, birds, and other animals.</p>
+      <li>The first timekeepers used the natural positions of the sun to divide the day into parts. Around 3500 B.C. the Egyptians built obelisks (ŏb′ə-lĭsks), tall, slender, four- sided monuments that came to a point on the top. In the morning, as the sun rose in the east, an obelisk would cast a long shadow on the ground. As the day passed, the shadow grew shorter until it was the shortest shadow at noon when the sun was exactly overhead. The shadow cast by the obelisk would then continue to grow again as the sun repositioned westward and eventually set.</li>
 
-      <p><b>Saving the Cheetah</b></p>
-      <li>Today there are many threats to the cheetah. Parts of Africa are being turned into farms and ranches. This change forces the cheetah and other animals to find new places to live, which is not always easy. Cheetahs are also being hunted by other animals such as lions and hyenas. However, zookeepers and wildlife experts are trying to save the cheetah. Maybe with their help, cheetahs will grow larger in number.</p>
+      <li>When people saw the obelisk was casting its shortest shadow, they could tell it was the exact middle of the day, or noon. This allowed them to divide the day into two parts— before noon and after noon. Later, Egyptians made marks on the ground around the obelisk to further divide the time of day into shorter segments that are similar to the hours we use today.</li>
+
+      <li>Around 1500 B.C. Egyptians began using sundials, which are essentially smaller versions of obelisks. These ingenious time devices are made by placing a rod in the middle of a circular base that is marked in increments showing the passage of time. Sundials were placed outside in the sun and observers could tell what time of day it was by seeing which mark the shadow fell upon. Sundials were usually portable and allowed people to know what time it was even if they were far from an obelisk. They were very popular throughout Europe and the Middle East until the middle of the 14th century.</li>
+
+      <li>Although sundials allowed people to measure time with a fair amount of accuracy when the sun was shining, these instruments did not give people the ability to measure time at night or on cloudy days. Water clocks, the first timekeepers people used that did not depend upon the sun, appeared in Egypt as early as 2000 B.C. These were used by the Egyptians and then later by the Greeks, who called them <i>clepsydras</i> (klĕp′sĭ- drəs), or “water thieves.”</li>
+
+      <img src="images/timekeeping2.png" alt="Image failed to load. Please try again later." style="float: right; height: 250px; margin-left: 10px;">
+
+      <li>Clepsydras were simple stone containers that came in different types, two of which were outflow clocks and inflow clocks. Outflow clocks had sloping sides and a small hole in the bottom. Water would drip through the hole in the bottom of the container at a constant rate. As the water drained out, markings on the side of the clepsydra would be revealed, telling the observer how much time had passed. Inflow water clocks worked by dripping water into a container that was marked with time increments on the inside. As water filled the container and reached the marks on the inside of it, the observer could tell how much time had elapsed.</li>
+
+      <li>Mechanical clocks first appeared in Europe in the 14th century and demonstrated a huge leap in technology over sundials and water clocks. Instead of using natural processes like the flow of water or the movement of a shadow, mechanical clocks relied on oscillation, or repeated vibrations. These clocks eventually also used gears, did not need electricity to run, and contained two important parts that allowed them to keep fairly accurate time: a mainspring and a pendulum. The mainspring is a spring that is tightened when a key winds it. As the spring unwinds, it uses its energy to turn gears in the clock. These gears turn the hands on the clock. A pendulum (a string or rod with a weight at its end) helps to control how fast the gears turn. The pendulum swings at an even pace and ensures the gears turn consistently. Mechanical clocks were first built in public spaces, such as town squares, toward the end of the 14th century, and by the 16th century people began to have mechanical clocks in their homes.</li>
+
+      <li>In our homes today, modern clocks still rely on oscillation, albeit of another sort. Our quartz watches rely on the vibration of a quartz crystal. Atomic clocks rely on the vibrations of microwaves emitting from electrons inside atoms and are usually correct to within one second per thousand years. Currently, the most precise clock uses the vibrations of an aluminum ion and keeps time accurately to within a second every 3.7 billion years. Its precision relies on the fact that the aluminum ion vibrates at 1.1 quadrillion times a second. Yet even with this level of exactness, scientists are working on a clock that would be ten times more precise. Someday people may be wearing those devices, which would be accurate to within a second of twice the age of the universe and never require resetting. These remarkable advances in timekeeping mechanisms ensure that, like people of yore, we need no longer rely on the rhythms of nature to order our days but can depend on the increasing accuracy of man- made timekeeping devices.</li>
 </ol>
     `
   },
 
-  'ready_for_the_race': {
-    title: 'Ready for the Race',
+  'intersection': {
+    title: 'The Intersection',
     content: `
+    <div class="passage-innerbox"><b>When the United States entered World War II in 1941, a great number of men joined the military. At the same time, many women went to work in factories, textile mills, offices, and other workplaces to earn money and produce the goods needed to support the military. In this selection three such young women begin their workday.</b></div>
+
     <ol class="paragraph-numbers">
-      <li>“Do you want to come with me?” Kelly asked her brother as she rolled her bike out of the garage. “I’m going to meet some friends at the Oak Park Trails. We’re going to practice for the race next week.”</li>
+      <li>The clock on the end table droned on incessantly. Ruth Whitby groaned as she rolled over to turn off the alarm and wished, not for the first time, that it was 4:50 in the afternoon. Sleep, like tires, gasoline, meat, and sugar, was a commodity in short supply in the Whitby household.</li>
 
-      <li>“No thanks,” Marcus replied as he bounced a ball in the driveway. “Sam’s coming over to play basketball.”</li>
+      <li>Her thoughts turned to her husband Jack, who was currently deployed on an aircraft carrier in the Pacific Ocean. Did he think of her as often as she thought of him? She wondered what he was doing and whether it was day or night. Was he temporarily stationed on a steamy tropical island or huddled against the cold off the coast of Alaska?</li>
 
-      <li>Kelly rode off on her bike while Marcus waited for his friend. Marcus was fast, and he usually did well in most sports. He didn’t think it would help if he practiced the course. It could be hilly or sandy, and Marcus knew he would still speed along.</li>
+      <li>Dressed in a brown cotton dress with large cloth buttons, Ruth looked in the mirror at her drab reflection and, to her surprise, felt nothing. In her previous life, as she referred to her pre-WWII existence, she had been proud of her sense of style, of her coordinated shoes and handbags, of her impeccable fashion sense. That facade had evaporated when Jack enlisted, and, Ruth admitted, she liked herself more now than she had in the past.</li>
 
-      <li>When race day finally arrived, Marcus and Kelly put on their helmets and rode their bikes to the Oak Park Trails with their parents.</li>
+      <li>She woke her children, asking the oldest, Linda, to help her younger sister Suze dress, and hurried downstairs to make breakfast. It would be corn flakes for breakfast again. There was no sugar or coffee; she had spent her monthly rations on taking the three purchasing agents who worked for her at McNab’s textile mill out for dinner. After all her years spent shopping for clothes, now she had become director of purchasing for a mill that produced miles of cotton and canvas fabric for the making of military clothes.</li>
 
-      <li>“My stomach feels like I swallowed some butterflies,” Kelly told Marcus when they saw the crowd of kids. They joined the other bike riders behind some bright orange cones.</li>
+      <li>After five chaotic minutes of getting her three energetic children ready, she marched them out the door and headed to Grandma’s house. It was a long walk in the opposite direction from the textile mill, but the children required minding before and after school. As they rounded the corner onto Baxter Street, Ruth saw lights gleaming in every window of Louise Polanski’s quaint brick bungalow...</li>
 
-      <li><i>Kelly is always nervous</i>, Marcus thought. “Don’t worry. You’ll do fine,” he said as he focused on the road ahead.</li>
+      <li>Louise rolled out of bed at 5:58 in the morning and headed toward the bathroom. She shared her rented house with five other women, all young and all employed at McNab’s textile mill. With six women and only one bathroom, the housemates scheduled bathroom use at ten- minute intervals for the critical times of day: mornings before work and evenings before dates. Louise, to whom the others paid rent, held the prime time slot of 6:00 to 6:10. She pounded on the bathroom door and yelled, “Time’s up!” The door flew open and a cloud of steam billowed into the hall. As Sandra Northcott exited, Louise ducked in and locked the door behind her.</li>
 
-      <li>As soon as the starter yelled “Go!” Marcus’s legs pumped up and down like two machines. He quickly zoomed to the front of the pack of riders.</li>
+      <li>Louise used her allotted time to sponge bathe, brush her teeth, and battle her unmanageable auburn curls into a vague semblance of a hairdo. She didn’t have time to bother with makeup.</li>
 
-      <li>A few minutes later he was zipping down the trail, and there wasn’t anyone ahead of him! Marcus raced along the trail. He bumped over tree roots and rode past some pine trees. Then the path looped around a pond. Marcus was surprised that the course was so long.</li>
+      <li>About to turn nineteen in two months, Louise Ellen Polanski was the youngest in the house. She held a demanding position at McNab’s, worked a twelve- hour shift, and earned an enviable wage. She had completed three years of accounting classes in only two and earned top grades doing so. She applied at McNab’s on her eighteenth birthday and had been hired immediately— there were far too many jobs available and far too few candidates to fill them. Three months after she started work, the chief accountant was drafted into the United States Army. Unfortunately, his assistant left a few days later to nurse her elderly mother. Louise had assured Albert McNab that, despite her youth, she could handle the responsibility; she had been true to her word.</li>
 
-      <li>His tired legs felt like they weighed a hundred pounds. All at once, a flash of color caught his eye. There was a line of bike riders on the trail ahead of him! “How could this be?” Marcus groaned to himself as he pushed forward. I must have taken a wrong turn and made an extra loop in the course, he thought.</li>
+      <li>Had the Japanese not attacked Pearl Harbor, Louise would still be living on her parents’ farm in western Virginia. She probably would have married Harry Lennox or possibly Pete Lipscomb. But, as she and her family had listened to Roosevelt’s declaration of war, Louise knew her life would change dramatically. Harry, Pete, and Louise’s two older brothers enlisted immediately. Louise had wanted to do her duty. If her work in a Richmond textile factory brought any of those young men home even one day sooner, she, too, would have performed her part.</li>
 
-      <li>Marcus gritted his teeth and pushed his achy muscles harder. He realized his speed alone wouldn’t be enough this time; knowing the course was just as important. He edged past a couple of bike riders, but he couldn’t reach the riders who were in the lead.</li>
+      <li>Louise put on a dark green skirt and a pale yellow blouse. She pulled on a pair of hand- knit socks—a gift from her mother—and laced up her plain brown Oxfords. In the kitchen she devoured a piece of singed toast and a cup of artificial coffee and headed out the door. She passed Vera Rinaldi’s apartment building just as Vera came out in her unofficial uniform of denim coveralls and steel-toed boots...</li>
 
-      <li>After the race Marcus saw his sister at the finish line, and he rode over to her. “Wow, you must have done a good job in the race. What place did you get?” Marcus asked Kelly.</li>
+      <li>Vera Rinaldi was the only child of a stern yet loving mother and a perpetually cheerful father. Both loved their daughter wholeheartedly; both found Vera puzzling. From an early age, Vera cleverly avoided doing what her mother thought of as “girl” things. She had been remarkably persistent in wanting to pursue her father’s profession. However, women simply did not work as electricians. Vera didn’t care. By the time she was sixteen, she was as skilled as any experienced electrician. Her parents declared adamantly that she might never get a job as an electrician, but Vera proved them wrong.</li>
 
-      <li>“I came in third place. Mom and Dad said I would even receive a medal!” Kelly answered excitedly.</li>
+      <li>When the Lend-Lease Act¹ went into effect in 1941, Vera was positive that Albert McNab would reopen his mill. She applied for a position as an electrician and was given an interview primarily because she had entered her name as V. M. Rinaldi. Expecting a man, McNab had been dumbfounded when wide-eyed, fresh-faced Vera Rinaldi, with a screwdriver and snub-nosed pliers in her right hand, sauntered into his office. She unplugged his desk lamp and, in a matter of minutes, dismantled and rewired the lamp completely, using a length of wire she yanked from her pocket. Vera Rinaldi strolled out of the office that day—-with a new job.</li>
 
-      <li>“That’s great! I went in a different direction from the other riders, so I came in ninth place,” Marcus replied. “I’d like to go over this course again to practice with you, Kelly. That way I know we’ll both do better next year!” he said.</li>
+      <li>Vera and Louise crossed over to Mill Road just as Ruth arrived at the intersection. The three women walked together, talking about everything and nothing. Would McNab’s get another Army contract for 50,000 square yards of canvas? Was <i>Casablanca</i> still playing at the movie theater? Had any of them listened to Roosevelt on the radio last night?</li>
+
+      <li>They clocked in at the gate, and each went to her office. Vera had a long list of repairs to work on. There was the usual frayed wiring, uncontrollable looms that no one could stop, and lamps that needed more than a new light bulb to keep working. Ruth found six new contracts on her desk, along with the news that the last shipment of cotton had been short a dozen bales. Louise faced the task of working out the payroll for 312 workers, herself included.</li>
+
+      <li>The sun shone on a beautiful Virginia day as the three women satisfied heavy demands and faced new challenges. Evening would arrive, casting shadows on the intersection, where their laughter and conversation would herald the end of another exhausting day.</li>
+
+      <hr>
+
+      <p>¹Lend-Lease Act - a plan that helped the United States build war supplies for and offer needed materials to Britain and other countries in WWII</p>
 </ol>
     `
   },
 
-  'american_bald_eagle': {
-    title: 'The American Bald Eagle',
+  'canals': {
+    title: 'Ancient Canals: The Old Is New Again',
     content: `
     <ol class="paragraph-numbers">
-      <li>After winning the Revolutionary War with England, the United States became a free country. At that time, Americans wanted a symbol for their country’s freedom. The members of Congress had a bitter argument over what the national symbol should be. Many people wanted the bald eagle to represent their country.</li>
+      <li>Many specialized plants and animals call the Sonoran Desert home. Rains are intermittent in this arid climate, which has forced desert dwellers to adapt in a variety of ways. Instead of leaves, many plants have needles and thorns, which help conserve water. Animals sleep in shady dens or holes during the day and emerge at night when the temperature drops. Humans, like the Hohokam people, have also adapted to this environment by constructing canals to channel water from areas where it is plentiful to areas where it is scarce.</li>
 
-      <li>One of the new nation’s Founding Fathers, Benjamin Franklin, thought the turkey was a better symbol. In a letter to his daughter, Franklin wrote that the turkey, unlike the eagle, is a respectable bird that would stand strong when challenged. He noted that the eagle was lazy because it took food from other animals that hunted honestly. Others saw the bald eagle as a symbol of strength, courage, and freedom. A flying eagle represented the freedom that the Americans had fought for and gained. They also felt the bald eagle would be the best symbol for their country because it was the only eagle originally found in North America. Finally, after six years of arguing, the bald eagle was chosen by Congress to represent the United States.</li>
+      <li>Both Phoenix and Tucson, Arizona, were built near and, in some cases, on ancient cities of the Hohokam people. These cities, in recent years, have refurbished some of their oldest canals, transforming ancient wonders into modern marvels.</li>
 
-      <li>Early in American history, each state had its own form of money. The bald eagle first appeared as a symbol of America on a Massachusetts copper coin in 1776. Later, as the government began using one form of money, the eagle was used on coins and paper bills. Today, the eagle is printed on the back of the one dollar bill.</li>
+      <p><b>The Phoenix Basin</b></p>
+      <li>The Hohokam’s canal system along the Phoenix Basin was the most complex and well- designed in early North America. For many years archaeologists believed that the ancient canals around Phoenix were the oldest in North America. Over many years, the Hohokam built this system of canals to channel water from the Salt River and the Gila River. Using wooden tools and baskets to remove the soil and level the canal bed, the Hohokam built miles of canals to irrigate their fields of corn, squash, and beans. These crops would have been impossible to cultivate without the diverted water.</li>
 
-      <li>The bald eagle is a central part of the Great Seal designed in 1782 by Charles Thomson. The Great Seal shows a bald eagle spreading its wings and holding a banner in its beak. The words on the banner mean “Out of many, one,” to remind people that many states joined to form one country. The eagle carries an olive branch in one claw and arrows in the other claw. The olive branch means peace, and the arrows show that the United States is ready to defend itself. The Great Seal is printed on important government documents 2,000 to 3,000 times a year. It can be seen on flags, uniforms, and buildings.</li>
+      <li>Researchers are amazed by the technological complexity of the ancient Hohokam canal system. The turbulent rivers of the Phoenix Basin posed a particular challenge. The powerful water could easily wash away stone and dirt walls at the juncture between river and canal. The Hohokam solved this problem by building canals on terraces, allowing the rivers to flood the area leading up to the canals. The canals would simply drain the terraces as they filled with water. The canals sloped gradually away from the rivers, which allowed water to flow to farming plots in the desert many miles away.</li>
 
-      <li>The American bald eagle is used as a symbol in a variety of ways. It appears on the President’s flag and military symbols. Today Americans think of their country when they see a bald eagle. It reminds them that their country is strong and free.</li>
+      <p><b>The Tuscon Basin</b></p>
+      <li>Tucson’s canals date back nearly three thousand years and are still in use. In fact, the Tucson Basin’s canal system is the oldest in North America. The Hohokam, it now seems, built the canals in Tucson far earlier than the network that was discovered in the Phoenix Basin. The Tucson canals differ from those in Phoenix because of the character of the Santa Cruz River. Compared to the Salt and Gila Rivers, the Santa Cruz River is rather calm. Because the Santa Cruz flows more slowly than the Salt and Gila Rivers, researchers believe the Hohokam developed and honed their canal-building skills along its shores. Later they expanded into the Phoenix Basin and continued to develop their canal-building expertise.</li>
+
+      <li>In the Tucson Basin, small farming communities bloomed along the river, each with a small network of stone- lined canals to irrigate the Hohokam’s crops. Tucson Basin canals carried water from about half a mile to two or three miles away from the banks of the river. The canals did not always link with one another, although some did if enough water was available. Later canals tended to be larger and longer before they spilled into stone- lined tanks at the fields where the water was needed. In some areas the Hohokam actually built large reservoirs. On one side of each reservoir, a large rock could be moved to allow the water to flow into the fields as needed.</li>
+
+      <li>While this system is impressive, scientists have examined the sediment in the Tucson Basin canals and have learned that the canals did not carry water year round. Plants like cattails that are usually found growing around consistent sources of water are absent from the canal sediments. Pools and reservoirs would therefore have been important for storing water during the dry season. Researchers believe that the canals in the Tucson Basin carried water only during the more temperate months, coinciding with the seasons when the farmers would grow their crops. All along the Santa Cruz, tenacious farmers planted, tended, and harvested crops, providing agricultural products in a part of the country that, even today, is far more famous for desert wildlife than for agriculture. Archaeologists have uncovered evidence of corn, beans, tobacco, and cotton in the farming plots fed by Tucson Basin canals.</li>
+
+      <p><b>Still Flowing</b></p>
+      <li>Amazingly, the Hohokam canal systems in both Phoenix and Tucson are, to some degree, still in use. When city planners needed to route water for irrigation and drinking from the Salt, Gila, and Santa Cruz Rivers, they discovered that the lines dug by the Hohokam thousands of years ago were located along the most efficient routes. Consequently, engineers built new city water canals directly over some of the lines built by the Hohokam thousands of years ago.</li>
 </ol>
     `
   },
 
-   'sea_otters': {
-    title: 'Sea Otters',
+   'd_street': {
+    title: 'On D Street',
     content: `
+    <p><i>Myla Goldberg</i></p>
+    <div class="passage-innerbox"><b>The following excerpt from a novel describes the experiences of a young girl growing up in South Boston, Massachusetts (also known as Southie), during the early 1900s.</b></div>
     <ol class="paragraph-numbers">
-    <img src="images/otter.png" alt="Sea otters" style="float: right; height: 250px; margin-left: 10px;">
-      <li>The sea otter is an animal that spends most of its life in the water. This animal eats, sleeps, and hunts in the ocean. In fact, it spends much of the day floating on its back or swimming in the shallow parts of the ocean.</li>
 
-      <p><b>For for the Sea</b></p>
-      <li>A sea otter grows to be about four feet long. Webbed feet help it swim. While the sea otter swims, its eyes stay open while its nostrils and ears close to keep out water. This is helpful when a sea otter hunts for food. Some otters can swim as deep as 200 feet to find a meal!</li>
+      <li>On D Street there was no need for alarm clocks: the drays,1 ever punctual, were an army storming the gates of sleep. The wooden wagons were heavy and low- riding with loud rattling wheels, their broad planks too battered and begrimed to recall distant origins as trees. Each dray was pulled by horses— two, four, or sometimes six per wagon— pounding down nearby Third Street. Windows rattled and floors shook; the sound was a giant hand shaking Lydia Kilkenny’s sleeping shoulders. Each morning she did not awaken to the sound, but inside it. In winter the drays came when the sky was still dark, their pounding hooves sharp reports against the frozen cobblestones. In summer, perhaps because the sky was already pale with light, the sound of the horses seemed kinder.</li>
 
-      <p><b>Time to Eat</b></p>
-      <li>Diving deep into the water, a sea otter gathers food from the bottom of the ocean. Some favorite meals include crabs, snails, and clams. The sea otter may also grab a small rock in its paws to use as a tool. On the surface of the water, the sea otter floats on its back with the shellfish on its chest. Using its chest as a table, the sea otter hits the shellfish using the rock like a hammer. The shell opens, and the sea otter eats a tasty meal.</li>
+      <img src="images/southie.png" alt="Image failed to load. Please try again later." style="float: right; height: 250px; margin-left: 10px;">
 
-      <p><b>Thick Fur</b></p>
-      <li>Oceans are cold, and the sea otter does not have blubber, or fat, to keep it warm like other sea mammals. Instead, the sea otter has very thick fur. The fur is made of two layers. Between each layer there are pockets of air, which keep the animal warm. The fur is very important because it helps keep the sea otter warm in the water.</li>
+      <li>She knew the clattering wagons were bound for Boston proper, but the vague tangle of streets across the Broadway bridge surfaced in her mind with the sound of the horses and resubmerged with its diminishment. As the flow of drays subsided—-the wagons no longer traveling two by two but single file—pounding hooves gave way to the creak of floorboards and the muffled voices of neighbors. Factory whistles blew. Church bells rang. The vegetable man made his way down D Street shouting, “Fresh tomatoes,” even if there were no tomatoes, because those words distinguished him from the other vegetable men who plied their carts through Southie.</li>
 
-      <p><b>Nap Time</b></p>
-      <li>A sea otter likes to float on its back in a sea of kelp, or large seaweed. The animal wraps strands of the kelp around itself while resting or sleeping. The kelp stops the sea otter from floating away. Whole groups of sea otters may be seen floating together. Living in the ocean is just right for the sea otter!</li>
+      <li>South Boston belonged to Lydia as profoundly and wordlessly as her thimble finger. Her knowledge of its streets was more complete than any atlas, her mental maps reflecting changes that occurred from season to season, day to day, and hour to hour. Each time she left 28 D Street—-one among a row of identical triple-decker tenements lining the street like so many stained teeth—her route reflected this internal almanac. No matter what the errand, Third Street was best avoided in early evening when the flood tide of drays returning to their stables posed a threat to both body and nose.</li>
+
+      <li>In deep winter, when ice and hard-packed snow made walking treacherous, West Broadway was the place to catch a ride on the tailboard of a snow dray delivering milk [or] groceries, ... but sledding was best saved for Dorchester Heights. If a good enough sled could be found, and if the streets were not too crowded, it was possible to start at G Street and traverse almost a quarter of the alphabet—-all the way to L Street. Whether because he was luckier or a year older, Michael was the superior sledder; at her best Lydia could only make J Street before her sled or her resolve gave out.</li>
+
+      <li>Because Dan Kilkenny was an iceman, the whole D Street gang was in thrall to Lydia and Michael in summer. In the thick of that season there were few things more magical than ice—-the blocks that emerged, impossibly, from the back of the wagon, steaming not with heat but with cold, the unmistakable stomp of the iceman conquering the stairwell, gleaming blocks of ice piled on his broad back like enormous melting diamonds. ... Lydia was certain Heaven resembled the interior of her father’s ice wagon: a dark place, cool and quiet. There the salt hay, sawdust, and straw effaced the airborne tang of leather and glue from the nearby shoe factory and muted the call of the ragman.</li>
+
+      <li>On very hot days there was no need to confer in advance. The lot of them would be playing ball in Commonwealth Park, or ambling toward the beach at City Point, or playing marbles or Kick the Wicket on the street. Without a word Michael would turn to Lydia, or she toward him, and with a whoop they would preempt the day’s pursuit and set out for ice. At the sight of Dan Kilkenny’s brood, the iceman would toss out an extra block, the surplus ice arcing toward the street in a dream of captured light before exploding into frozen bliss on the cobbles. Decorum was traded for the fleeting comfort of ice pressed into the perfect place. Frozen shatterings found their way into mouths, inside shirts and dresses, under chins, and atop closed eyes. Ice was nestled into the hollows of throats and hammocked by the webbing between fingers and toes. Ice bent the iron rule of summer for a few precious moments before the heat clamped down again.</li>
+
+      <li>For ten years, this was enough. Then in fifth grade, Lydia saw a city map and realized her entire world was the smallest finger of Boston’s broad hand. The hazy destination of the morning drays acquired focus. Across the bridge lay Boston Common and the swan boats of the Public Garden. Across the bridge lay Washington Street—-the longest street in all New England—-which began like any other but then continued south, a single, determined thread of cobblestone that wove itself through every town from Boston to Providence. Once Lydia saw Washington Street, she knew she could not allow it to exist without her.</li>
+
+      <hr>
+
+      <p>¹drays - low, heavy carts without sides</p>
+
+      <p>“On D Street” from Wickett’s Remedy by Myla Goldberg, copyright© 2005 by Myla Goldberg. Used by permission of Doubleday, a division of Random House.</p>
 </ol>
     `
   },
