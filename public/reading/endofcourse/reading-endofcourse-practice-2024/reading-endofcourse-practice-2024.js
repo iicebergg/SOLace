@@ -255,14 +255,14 @@ const readingPassages = {
 const sampleQuestions = [
   {
     id: '1',
-    text: 'The photograph in the article helps the reader understand —',
+    text: 'In paragraph 1, the expression “rhythm of their lives” suggests that people’s lives were filled with--',
     type: 'multiple-choice',
-    passageId: 'speedy_and_spotty',
+    passageId: 'timekeeping',
     options: [
-      'what makes a cheetah a great hunter',
-      'why a cheetah has spots on its fur', 
-      'how cheetahs are able to make quick turns',
-      'how cheetahs are different from other cats'
+      'tedium and consistency',
+      'patterns and routines', 
+      'difficulties and changes',
+      'pleasure and seriousness'
     ],
     correctAnswer: 3,
     explanation: 'The story is about both Danielle making cupcakes as a surprise for her siblings and her siblings making an apron as a surprise for her. Everyone in the story gives and receives gifts.'
@@ -270,14 +270,14 @@ const sampleQuestions = [
 
   {
     id: '2', 
-    text: 'The cheetah’s coat is most useful because it —',
+    text: 'Based on paragraph 4, the reader can determine that the sundial was the first timekeeping device to--',
     type: 'multiple-choice',
-    passageId: 'speedy_and_spotty',
+    passageId: 'timekeeping',
     options: [
-      'keeps the cheetah cool after a long run',
-      'lets the cheetah move with great speed', 
-      'helps the cheetah hide in the grass',
-      'protects the cheetah from the sun'
+      'measure time more accurately than an obelisk',
+      'have a rod that indicated the location of the sun', 
+      'make timekeeping more accessible',
+      'divide the day into specific hours'
     ],
     correctAnswer: 1,
     explanation: 'The passage states that Danielle "had baked cupcakes early in the morning, while Martin and Madison were still asleep," which kept them secret.'
@@ -285,14 +285,14 @@ const sampleQuestions = [
 
   {
     id: '3',
-    text: 'One reason Kelly finishes in third place is because she —',
+    text: 'The main idea of paragraph 5 focuses on the concept that water clocks were--',
     type: 'multiple-choice',
-    passageId: 'ready_for_the_race',
+    passageId: 'timekeeping',
     options: [
-      'knows the course well',
-      'is more confident than Marcus', 
-      'has a better bicycle than Marcus',
-      'pays attention to the other riders',
+      'important technology of the ancient world',
+      'first developed by Egyptians and then improved by Greeks', 
+      'developed so that people could tell time without relying on the sun',
+      'known as “water thieves” by the Egyptians and the Greeks',
     ],
     correctAnswer: 4,
     explanation: 'After receiving the apron and saying "Thank you. It\'s perfect," the passage says "As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table."'
@@ -300,14 +300,14 @@ const sampleQuestions = [
 
   {
     id: '4',
-    text: 'Who is telling this story?',
+    text: 'This selection supports all these statements about timekeeping EXCEPT--',
     type: 'multiple-choice',
-    passageId: 'ready_for_the_race',
+    passageId: 'timekeeping',
     options: [
-      'Kelly',
-      'Sam',
-      'Marcus',
-      'Narrator'
+      'timekeeping divides moments into segments',
+      'timekeeping relies on observable movement',
+      'timekeeping requires functioning mechanical parts',
+      'timekeeping satisfies a human need for order'
     ],
     correctAnswer: 3,
     explanation: 'Madison says "We wanted to make a surprise for you because you\'re such a nice sister. You are always thinking of us." This shows her family\'s care and appreciation for her.'
@@ -315,14 +315,14 @@ const sampleQuestions = [
 
   {
     id: '5',
-    text: 'Which sentence best states the theme of the story?',
+    text: 'Based on information in the selection, which statement represents the author’s opinion?',
     type: 'multiple-choice', 
-    passageId: 'ready_for_the_race',
+    passageId: 'timekeeping',
     options: [
-      'It is important to admit mistakes.',
-      'It is better to join in with friends than to do an activity alone.',
-      'It is helpful to encourage others when trying something for the first time.',
-      'It is a good idea to prepare before doing something new.'
+      'The most precise clock now uses an aluminum ion for accuracy.',
+      'Life in ancient times was simpler because people relied on nature to organize their days.',
+      'Sundials are smaller versions of the obelisks used by an ancient civilization.',
+      'By the end of the 16th century, mechanical clocks were used in many homes.'
     ],
     correctAnswer: 3,
     explanation: 'At the end, Danielle says "I have a surprise for you too!" and leads them to the kitchen where she left cupcakes for them.'
@@ -330,14 +330,14 @@ const sampleQuestions = [
 
   {
     id: '6',
-    text: 'Which sentence best states the main idea of paragraph 1?',
+    text: 'Which tone is conveyed in paragraph 1?',
     type: 'multiple-choice', 
-    passageId: 'american_bald_eagle',
+    passageId: 'intersection',
     options: [
-      'The bald eagle was a popular choice for a symbol.',
-      'People in America wanted a symbol for their new country.',
-      'Congress disagreed about which symbol to select.',
-      'The symbol would remind people that they were a free country.'
+      'Irritation',
+      'Exhaustion',
+      'Depression',
+      'Resignation'
     ],
     correctAnswer: 0,
     explanation: 'All three characters make surprises for each other: Danielle bakes cupcakes for her siblings, and Martin and Madison make an apron for Danielle, showing they all think of others.'
@@ -345,14 +345,14 @@ const sampleQuestions = [
 
   {
     id: '7',
-    text: 'Which heading best belongs above paragraph 2?',
+    text: 'Read this sentence from paragraph 3. <div class="passage-innerbox">That facade had evaporated when Jack enlisted, and, Ruth admitted, she liked herself more now than she had in the past.</div> The author’s word choice in this sentence highlights the idea that--',
     type: 'multiple-choice',
-    passageId: 'american_bald_eagle',
+    passageId: 'intersection',
     options: [
-      'Writing Letters',
-      'Eagles and Turkeys', 
-      'Freedom for America',
-      'The Founding Fathers'
+      'Ruth’s life underwent a significant transition',
+      'Ruth’s life was defined by her relationships', 
+      'Ruth felt unhappy before the war started',
+      'Ruth did not want her husband to join the war'
     ],
     correctAnswer: 2,
     explanation: 'The root word in "discovered" is "cover." The prefix "dis-" means "not" and the suffix "-ed" shows past tense, so "discovered" means "uncovered" or "found."'
@@ -360,14 +360,14 @@ const sampleQuestions = [
 
   {
     id: '8',
-    text: 'Which question is answered in paragraph 2?',
+    text: 'Why does the author include the flashback in paragraph 9?',
     type: 'multiple-choice',
-    passageId: 'american_bald_eagle', 
+    passageId: 'intersection', 
     options: [
-      'Who were the Founding Fathers of the United States?',
-      'Why was Benjamin Franklin against choosing the bald eagle?',
-      'How many types of birds can be found in North America?', 
-      'Why did Americans want a symbol for their country?'
+      'To describe how an event affected many lives',
+      'To illustrate an idea about decision making',
+      'To develop a sense of intensifying suspense', 
+      'To highlight the tragedies of a certain era'
     ],
     correctAnswer: 1,
     explanation: 'The passage states that "In some parts of the world, especially near the ocean, people eat seaweed all by itself," suggesting people near oceans commonly eat foods from the sea.'
@@ -375,14 +375,14 @@ const sampleQuestions = [
 
   {
     id: '9',
-    text: 'Which word is an antonym for <u>joined</u> as used in paragraph 4?',
+    text: 'The details in paragraph 13 contribute to the selection by--',
     type: 'multiple-choice',
-    passageId: 'american_bald_eagle',
+    passageId: 'intersection',
     options: [
-      'prepared',
-      'changed',
-      'completed',
-      'separated',
+      'indicating that it is important to remain informed',
+      'noting that the three women live in close proximity to one another',
+      'reinforcing the idea that close friendships are important',
+      'highlighting the similarities of the three women',
     ],
     correctAnswer: 3,
     explanation: 'The passage explains that "Without seaweed, ice cream and yogurt would not be as thick or creamy but would seem rather lumpy and watery," showing seaweed affects how they look and their texture.'
@@ -390,14 +390,14 @@ const sampleQuestions = [
 
   {
     id: '10',
-    text: 'What does <u>defend</u> mean in paragraph 4?',
+    text: 'In this selection, Vera’s character is best described as a--',
     type: 'multiple-choice',
-    passageId: 'american_bald_eagle',
+    passageId: 'intersection',
     options: [
-      'lead the way',
-      'find help',
-      'protect from harm',
-      'break away',
+      'rebel',
+      'trickster',
+      'loner',
+      'scapegoat',
     ],
     correctAnswer: 3,
     explanation: 'The article mentions several goods that contain seaweed: toothpaste, shampoo, makeup, ice cream, and yogurt. It also states "Hundreds of everyday items have seaweed in them."'
@@ -405,14 +405,14 @@ const sampleQuestions = [
 
   {
     id: '11',
-    text: 'The author wrote this article most likely to —',
+    text: 'The author organizes information in paragraph 1 using explanation most likely to--',
     type: 'multiple-choice',
-    passageId: 'american_bald_eagle',
+    passageId: 'canals',
     options: [
-      'explain why Americans need a symbol',
-      'show ways to honor the bald eagle',
-      'share a part of American history',
-      'describe the bald eagle',
+      'show how animals and people who live in the desert are alike',
+      'introduce how humans adjusted to the desert environment',
+      'describe harsh conditions that exist in the desert',
+      'clarify how plants and animals are able to survive in the desert',
     ],
     correctAnswer: 0,
     explanation: 'The article provides factual information about seaweed, explaining what it is, where it grows, and how it is used in various everyday products.'
@@ -420,14 +420,14 @@ const sampleQuestions = [
 
   {
     id: '12',
-    text: 'Which lines show the conflict in the poem?',
+    text: 'The reader can tell this article is expository because it--',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'canals',
     options: [
-      'Lines 1-4',
-      'Lines 5-8',
-      'Lines 9-12',
-      'Lines 21-24',
+      'defends a position with supporting evidence',
+      'provides factual information logically',
+      'integrates details to describe an event',
+      'presents the events chronologically',
     ],
     correctAnswer: 2,
     explanation: 'The title "The Search" indicates the poem will be about someone searching or looking for something.'
@@ -435,14 +435,14 @@ const sampleQuestions = [
 
   {
     id: '13',
-    text: 'The resolution in the poem happens as soon as the speaker —',
+    text: 'How do scientists know that the canals were dry at times?',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'canals',
     options: [
-      'stops searching',
-      'looks out into the yard',
-      'hears Dad ask questions',
-      'sits on the steps',
+      'Water plant remains have not been discovered near the canals.',
+      'The Hohokam used large tanks to store water.',
+      'Rocks that adjusted the flow of water to the fields were found next to reservoirs.',
+      'The Hohokam did not grow certain crops that required constant watering.',
     ],
     correctAnswer: 3,
     explanation: '"Pause" means to stop briefly or for a short time. The speaker stops in their tracks when Dad asks questions.'
@@ -450,14 +450,14 @@ const sampleQuestions = [
 
   {
     id: '14',
-    text: 'Which word best describes the speaker throughout the poem?',
+    text: 'Read this sentence from paragraph 5. <div class="passage-innerbox">There the salt hay, sawdust, and straw <u>effaced</u> the airborne tang of leather and glue from the nearby shoe factory and muted the call of the ragman.</div> In this sentence, the word <u>effaced</u> means--',
     type: 'multiple-choice',
-    passageId: 'search',
+    passageId: 'd_street',
     options: [
-      'Patient',
-      'Tired',
-      'Lazy',
-      'Worried',
+      'called into question',
+      'supported with ease',
+      'reduced to nothing',
+      'brought to mind',
     ],
     correctAnswer: 1,
     explanation: 'Lines 17-20 show disappointment and sadness: "It\'s surely gone missing / There\'s clearly no hope. / I have to give up / Find somewhere to mope." The speaker feels upset about losing the shoe.'
@@ -465,14 +465,14 @@ const sampleQuestions = [
 
   {
     id: '15',
-    text: 'Which question is answered in paragraph 2?',
+    text: 'Read this sentence from paragraph 7. <div class="passage-innerbox">Then in fifth grade, Lydia saw a city map and realized her entire world was the smallest finger of Boston’s broad hand.</div> The figurative language in the sentence impacts readers by helping them--',
     type: 'multiple-choice',
-    passageId: 'sea_otters',
+    passageId: 'd_street',
     options: [
-      'How often do sea otters hunt?',
-      'How do sea otters keep their ears closed?',
-      'When are sea otters fully grown?',
-      'What do sea otters do when they hunt?',
+      'understand her perspective of being in fifth grade',
+      'recognize the usefulness of such complex maps',
+      'imagine the size of Lydia’s neighborhood by referring to their own hands',
+      'sense how overwhelming a crowded city can be for a girl Lydia’s age',
     ],
     correctAnswer: 2,
     explanation: 'The first line of the poem states: "I\'ve emptied my sports bag," which shows this was the first place searched.'
@@ -480,14 +480,14 @@ const sampleQuestions = [
 
   {
     id: '16',
-    text: 'What is the main idea of paragraph 4?',
+    text: 'Based on this story, the reader may best understand that Lydia--',
     type: 'multiple-choice',
-    passageId: 'sea_otters',
+    passageId: 'd_street',
     options: [
-      'Most sea animals have fur.',
-      'Sea animals are often cold.',
-      'A sea otter has fur to keep it warm.',
-      'A sea otter is a type of mammal.',
+      'learned how to ride a sled from her brother',
+      'had lived her entire life with her family in South Boston',
+      'frequently crossed the bridge to shop with her mother',
+      'was determined to improve her neighborhood in South Boston',
     ],
     correctAnswer: 1,
     explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
@@ -495,14 +495,14 @@ const sampleQuestions = [
 
   {
     id: '17',
-    text: 'Read this sentence from paragraph 5. <div class="question-innerbox">Whole groups of sea otters may be <u>seen</u> floating together.</div>Which word is a homophone for <u>seen</u>?',
+    text: 'The author’s use of a simile in paragraph 18 of “Stone Age Skating Experience” suggests that Greta--',
     type: 'multiple-choice',
-    passageId: 'sea_otters',
+    passageId: ['skating', 'ice'],
     options: [
-      'seed',
-      'scene',
-      'sing',
-      'seem',
+      'has practiced explaining the situation',
+      'is telling her mother a partial story',
+      'has trouble relating all the details',
+      'is relieved to tell her mother the truth',
     ],
     correctAnswer: 0,
     explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
@@ -510,14 +510,14 @@ const sampleQuestions = [
 
   {
     id: '18',
-    text: 'Based on the article, the ocean is a perfect home for the sea otter because the —',
+    text: 'Which sentence from “History on Ice” is least supported by details and would benefit from clarification?',
     type: 'multiple-choice',
-    passageId: 'sea_otters',
+    passageId: ['skating', 'ice'],
     options: [
-      'ocean has everything that the sea otter needs',
-      'sea otter has few enemies in the ocean',
-      'ocean is deep enough for the sea otter to float',
-      'sea otter can easily find kelp in the ocean',
+      'Ice-skating, however, did not begin as a sport but as an important means of travel.',
+      'To increase speed, Finnish hunters needed smooth, hard objects to strap to their feet to reduce friction.',
+      'Craftsmen began with a section of bone roughly eight inches long, carved a hole at each end, and strung leather straps through these holes.',
+      'At this point in history, ice- skating seems to have shifted to a mainly recreational activity.',
     ],
     correctAnswer: 1,
     explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
@@ -525,14 +525,14 @@ const sampleQuestions = [
 
   {
     id: '19',
-    text: 'Based on the article, sea otters can swim well mainly because their —',
+    text: 'Both selections express the idea that--',
     type: 'multiple-choice',
-    passageId: 'sea_otters',
+    passageId: ['skating', 'ice'],
     options: [
-      'feet are webbed',
-      'eyes are large',
-      'backs are flat',
-      'paws are strong',
+      'skating on bones takes time to perfect',
+      'early bone skaters endured harsh winter conditions',
+      'bone skating is rising in popularity',
+      'ancient bone skaters followed reindeer herds',
     ],
     correctAnswer: 1,
     explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
@@ -540,14 +540,14 @@ const sampleQuestions = [
 
   {
     id: '20',
-    text: 'Based on the article, a sea otter finds its favorite foods —',
+    text: 'The imagery in lines 7-11 of the poem helps the reader--',
     type: 'multiple-choice',
-    passageId: 'sea_otters',
+    passageId: 'garden',
     options: [
-      'within the kelp',
-      'on top of the water',
-      'underneath small rocks',
-      'on the ocean floor',
+      'envision the types of trees that grow in the city',
+      'empathize with the trees’ exposure to cold weather',
+      'appreciate the changing of the seasons',
+      'understand how nature enhances the city’s landscape',
     ],
     correctAnswer: 1,
     explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
@@ -555,14 +555,14 @@ const sampleQuestions = [
 
   {
     id: '21',
-    text: 'One purpose of the sea otter’s chest is to help the animal —',
+    text: 'In line 21, the speaker uses the word “lush” when describing the patch of grass to--',
     type: 'multiple-choice',
-    passageId: 'sea_otters',
+    passageId: 'garden',
     options: [
-      'protect itself',
-      'dive',
-      'break shells',
-      'float',
+      'contrast the small area of growth with the desolate setting',
+      'emphasize the effects of the heat coming from the dryer',
+      'highlight the variety of plants growing in the alley',
+      'establish a sad mood with an image of the plants',
     ],
     correctAnswer: 1,
     explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
@@ -570,14 +570,14 @@ const sampleQuestions = [
 
   {
     id: '22',
-    text: 'The author uses headings in the article most likely to —',
+    text: 'In lines 29-33 of the poem, the poet’s use of the rhetorical question suggests that the speaker--',
     type: 'multiple-choice',
-    passageId: 'sea_otters',
+    passageId: 'garden',
     options: [
-      'list interesting facts about sea otters',
-      'tell what can be learned from each section',
-      'share answers to common questions',
-      'put information about sea otters in order',
+      'admires the trees for their ability to survive the winter',
+      'believes most people fail to appreciate the presence of the trees',
+      'is expressing personal feelings through a description of the trees',
+      'is looking forward to spring, when the trees will again be green',
     ],
     correctAnswer: 1,
     explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
@@ -585,104 +585,14 @@ const sampleQuestions = [
 
   {
     id: '23',
-    text: 'Based on the article, what may happen if a sea otter rests far from seaweed?',
+    text: 'The purpose of the imagery in the poem is most likely to —',
     type: 'multiple-choice',
-    passageId: 'sea_otters',
+    passageId: 'garden',
     options: [
-      'It may become colder more quickly.',
-      'It may wake up in another area.',
-      'It may have trouble falling asleep.',
-      'It may find another group.',
-    ],
-    correctAnswer: 1,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
-  },
-
-  {
-    id: '24',
-    text: 'Bonnie and Steve are proud in the beginning of the poem because they each —',
-    type: 'multiple-choice',
-    passageId: 'cherry_lemonade',
-    options: [
-      'used a special fruit to make their drinks',
-      'believe their drinks are the best',
-      'learned how to make new drinks',
-      'set up a stand to sell drinks',
-    ],
-    correctAnswer: 1,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
-  },
-
-  {
-    id: '25',
-    text: 'Based on the poem, how does Bonnie first find out Steve is selling cherry juice?',
-    type: 'multiple-choice',
-    passageId: 'cherry_lemonade',
-    options: [
-      'A boy tells her he bought some.',
-      'Steve sets up his stand across the street.',
-      'More people are waiting in line at the other stand.',
-      'Bonnie looks across the street.',
-    ],
-    correctAnswer: 1,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
-  },
-
-  {
-    id: '26',
-    text: 'Which question is answered in the poem?',
-    type: 'multiple-choice',
-    passageId: 'cherry_lemonade',
-    options: [
-      'How do Steve and Bonnie decide to sell cherry lemonade?',
-      'How many people bought cherry juice?',
-      'Why do Steve and Bonnie decide to have drink stands?',
-      'Why is selling drinks a good idea?',
-    ],
-    correctAnswer: 1,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
-  },
-
-  {
-    id: '27',
-    text: 'Which line from the poem is where the reader understands how the problem is solved?',
-    type: 'multiple-choice',
-    passageId: 'cherry_lemonade',
-    options: [
-      '8',
-      '12',
-      '15',
-      '16',
-    ],
-    correctAnswer: 1,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
-  },
-
-  {
-    id: '28',
-    text: 'How is Bonnie different from Steve?',
-    type: 'multiple-choice',
-    passageId: 'cherry_lemonade',
-    options: [
-      'She sells a fruity drink.',
-      'She is better at selling drinks.',
-      'She thinks of an idea.',
-      'She is excited about working with someone.',
-    ],
-    correctAnswer: 1,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
-  },
-
-  {
-    id: '29',
-    text: 'Bonnie and Steve end up sharing a stand because they —',
-    type: 'multiple-choice',
-    passageId: 'cherry_lemonade',
-    options: [
-      'are tired of shouting at each other',
-      'think they should help each other',
-      'become friends after spending time together',
-      'want to sell to as many people as possible',
+      'enhance the contrast between nature and the street',
+      'bring the reader closer to the emotions of the speaker',
+      'portray the thoughts of a lifelong city resident',
+      'show the reader that changes in nature are important',
     ],
     correctAnswer: 1,
     explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
