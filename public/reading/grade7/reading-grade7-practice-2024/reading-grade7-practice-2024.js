@@ -263,14 +263,14 @@ const readingPassages = {
 const sampleQuestions = [
   {
     id: '1',
-    text: 'Another good title for this story would be--',
+    text: 'The name “the osprey garden” in paragraph 4 gives the reader the impression of--',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: 'divers',
     options: [
-      'Sewing New Clothes',
-      'Baking for the Family', 
-      'A Morning Snack',
-      'Gifts for Everyone'
+      'fields of flowers eaten by ospreys',
+      'colorful ospreys that look like flowers', 
+      'fields filled with flowers and ospreys',
+      'ospreys living together as thickly as flowers'
     ],
     correctAnswer: 3,
     explanation: 'The story is about both Danielle making cupcakes as a surprise for her siblings and her siblings making an apron as a surprise for her. Everyone in the story gives and receives gifts.'
@@ -278,14 +278,14 @@ const sampleQuestions = [
 
   {
     id: '2', 
-    text: 'Danielle keeps the cupcakes a secret by--',
+    text: 'Which sentence from the article contains a comparison?',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: 'divers',
     options: [
-      'moving them to the laundry room',
-      'making them in the morning', 
-      'placing them inside a box',
-      'covering them with paper'
+      'Usually, ospreys hit the water feet first, plunging completely underwater to catch their food.',
+      'Like other birds, ospreys like to build their nests where people are unlikely to approach them.', 
+      'When the eggs crack open, the chicks, which weigh only about two ounces, crawl out.',
+      'In less than two months, these tiny birds will have grown enough to take their first flight.'
     ],
     correctAnswer: 1,
     explanation: 'The passage states that Danielle "had baked cupcakes early in the morning, while Martin and Madison were still asleep," which kept them secret.'
@@ -293,15 +293,14 @@ const sampleQuestions = [
 
   {
     id: '3',
-    text: 'Complete this flow chart. <br><img src="images/question_3.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+    text: 'Which detail about ospreys should be included in a summary of the article?',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: 'divers',
     options: [
-      'Danielle looks at the edges of the apron.',
-      'Danielle finds bits of cloth in the laundry room.', 
-      'Danielle sets the cupcakes on the table.',
-      'Danielle walks into her bedroom.',
-      'Danielle tries on the apron.'
+      'The osprey has a wingspan of up to six feet across, and it has a distinctive mix of brown and white feathers.',
+      'The diet of the osprey consists mainly of fish, so it builds its nest in areas near large bodies of water.', 
+      'The average life span of an osprey in the wild is around 18 years, but the oldest bird of this type lived to be 25 years old.',
+      'The osprey typically migrates from Alaska to the Caribbean for the winter, so it has a long journey each fall and spring.',
     ],
     correctAnswer: 4,
     explanation: 'After receiving the apron and saying "Thank you. It\'s perfect," the passage says "As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table."'
@@ -309,14 +308,14 @@ const sampleQuestions = [
 
   {
     id: '4',
-    text: 'Danielle is pleased with the surprise most likely because she--',
+    text: 'Paragraph 19 contributes to the theme of the story by showing that--',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: 'doors',
     options: [
-      'needs to wear it when making cupcakes',
-      'can cook more often for her family',
-      'enjoys wearing blue and yellow clothes',
-      'can tell that her family cares about her'
+      'overcoming fears can bring power',
+      'honoring the beauty of simple objects is important',
+      'experiencing different cultures can lead to personal growth',
+      'celebrating traditions brings families together'
     ],
     correctAnswer: 3,
     explanation: 'Madison says "We wanted to make a surprise for you because you\'re such a nice sister. You are always thinking of us." This shows her family\'s care and appreciation for her.'
@@ -324,14 +323,14 @@ const sampleQuestions = [
 
   {
     id: '5',
-    text: 'What will Martin and Madison most likely do next?',
+    text: 'Which sentence from the story best communicates a sense of celebration?',
     type: 'multiple-choice', 
-    passageId: 'the_cooks_surprise',
+    passageId: 'doors',
     options: [
-      'Make another apron',
-      'Help their sister cook',
-      'Clean the laundry room',
-      'Bite into their cupcakes'
+      'Wen elaborated on the traditional Chinese festival while Brady listened intently.',
+      'Relatives and friends congratulated each other on finishing another year while welcoming in the new one.',
+      'Brady followed Wen into his room, asking why everyone was wearing red- colored pajamas for the sleepover.',
+      'When he went to bed that night, his stomach and his heart felt full.'
     ],
     correctAnswer: 3,
     explanation: 'At the end, Danielle says "I have a surprise for you too!" and leads them to the kitchen where she left cupcakes for them.'
@@ -339,14 +338,14 @@ const sampleQuestions = [
 
   {
     id: '6',
-    text: 'Which of these do the characters have in common?',
+    text: 'In paragraph 3, the newspaper reporter writes about Keichline most likely because she--',
     type: 'multiple-choice', 
-    passageId: 'the_cooks_surprise',
+    passageId: 'pioneer',
     options: [
-      'They think of others.',
-      'They sleep late.',
-      'They sew clothes.',
-      'They like to cook.'
+      'had uncommon abilities',
+      'used unusual materials',
+      'had won an impressive contest',
+      'was well known in the community'
     ],
     correctAnswer: 0,
     explanation: 'All three characters make surprises for each other: Danielle bakes cupcakes for her siblings, and Martin and Madison make an apron for Danielle, showing they all think of others.'
@@ -354,14 +353,14 @@ const sampleQuestions = [
 
   {
     id: '7',
-    text: 'What is the root word in "discovered"?',
+    text: 'In paragraph 5, the word <u>innovative</u> means--',
     type: 'multiple-choice',
-    passageId: 'the_cooks_surprise',
+    passageId: 'pioneer',
     options: [
-      'disc',
-      'disco', 
-      'cover',
-      'over'
+      'occurring rarely or infrequently',
+      'showing great value', 
+      'using new methods',
+      'quickly or easily built'
     ],
     correctAnswer: 2,
     explanation: 'The root word in "discovered" is "cover." The prefix "dis-" means "not" and the suffix "-ed" shows past tense, so "discovered" means "uncovered" or "found."'
@@ -369,14 +368,14 @@ const sampleQuestions = [
 
   {
     id: '8',
-    text: 'Some people eat seaweed all by itself because they most likely--',
+    text: 'In paragraph 5, the information is organized by--',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea', 
+    passageId: 'pioneer', 
     options: [
-      'do not know it is used in other foods',
-      'eat many foods that come from the ocean',
-      'enjoy foods that add color to the meals they eat', 
-      'do not like how it tastes mixed with other foods'
+      'cause and effect',
+      'process',
+      'listing', 
+      'comparison/contrast'
     ],
     correctAnswer: 1,
     explanation: 'The passage states that "In some parts of the world, especially near the ocean, people eat seaweed all by itself," suggesting people near oceans commonly eat foods from the sea.'
@@ -384,14 +383,14 @@ const sampleQuestions = [
 
   {
     id: '9',
-    text: 'Based on the article, seaweed makes ice cream and yogurt--',
+    text: '“A Leader in Her Profession” would be the best heading for which paragraph?',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea',
+    passageId: 'pioneer',
     options: [
-      'last longer',
-      'taste different',
-      'sell faster',
-      'look different',
+      '2',
+      '3',
+      '4',
+      '5',
     ],
     correctAnswer: 3,
     explanation: 'The passage explains that "Without seaweed, ice cream and yogurt would not be as thick or creamy but would seem rather lumpy and watery," showing seaweed affects how they look and their texture.'
@@ -399,14 +398,14 @@ const sampleQuestions = [
 
   {
     id: '10',
-    text: 'Which question is answered in the article?',
+    text: 'Read lines 21 and 22 from the poem. <div class="passage-innerbox">No canvas can compete with such a scene;<br>No tube of paint can duplicate so true</div> These lines show that the speaker believes--',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea',
+    passageId: 'gifts',
     options: [
-      'What does seaweed taste like?',
-      'Where do farmers buy seaweed?',
-      'Which ocean has the most seaweed?',
-      'Which goods have seaweed in them?',
+      'the beauty of nature is impossible to capture in art',
+      'leaves exhibit vivid colors for only a short time',
+      'artists are limited by the materials available to them',
+      'the sights of nature change with each season',
     ],
     correctAnswer: 3,
     explanation: 'The article mentions several goods that contain seaweed: toothpaste, shampoo, makeup, ice cream, and yogurt. It also states "Hundreds of everyday items have seaweed in them."'
@@ -414,14 +413,14 @@ const sampleQuestions = [
 
     {
     id: '11',
-    text: 'The author wrote this article most likely to--',
+    text: 'In line 31, the word <u>comfort</u> has a connotation of —',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea',
+    passageId: 'gifts',
     options: [
-      'give facts about an ocean plant',
-      'list kinds of ocean plants',
-      'tell about people who eat ocean plants',
-      'tell how to cook with ocean plants',
+      'an easing of grief',
+      'a freedom from hardship',
+      'a relaxed feeling of peace',
+      'an improved mood',
     ],
     correctAnswer: 0,
     explanation: 'The article provides factual information about seaweed, explaining what it is, where it grows, and how it is used in various everyday products.'
@@ -429,15 +428,14 @@ const sampleQuestions = [
 
   {
     id: '12',
-    text: 'In an Internet search about oceans, which website would most likely have information about where red seaweed grows?',
+    text: 'The speaker’s word choice in the poem conveys a tone of--',
     type: 'multiple-choice',
-    passageId: 'useful_weeds_of_the_sea',
+    passageId: 'gifts',
     options: [
-      'Life in the Ocean: Learn about whales, dolphins, and many other creatures of the ocean...',
-      'Ocean Habitats: Learn to recognize the ocean homes of many types of fish...',
-      'Discover Ocean Plants: Find interesting facts about plants that live in the ocean...',
-      'Photos of the Ocean Floor: Follow a team of divers who take amazing pictures of the ocean floor...',
-      'Foods From the Ocean: Discover how food from the ocean ends up on people\'s plates...'
+      'appreciation',
+      'humor',
+      'enthusiasm',
+      'admiration',
     ],
     correctAnswer: 2,
     explanation: 'The website "Discover Ocean Plants" would be most likely to have information about where red seaweed grows, as seaweed is a type of ocean plant.'
@@ -445,14 +443,14 @@ const sampleQuestions = [
 
   {
     id: '13',
-    text: 'What makes the secret message appear in "Lemony Letter"?',
+    text: 'At the top of the article, the words “Student Voices Column” are in boldface type and placed between horizontal lines in order to--',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'mustang',
     options: [
-      'Heat',
-      'Light',
-      'Juice',
-      'Water',
+      'highlight a featured section of the newspaper',
+      'indicate that the newspaper article conveys the ideas of all students',
+      'suggest the urgent nature of the newspaper article',
+      'emphasize that the newspaper is published by middle school students',
     ],
     correctAnswer: 0,
     explanation: 'The instructions state: "Have the person who receives your message hold the paper near a light bulb. The heat will make the secret message appear!"'
@@ -460,14 +458,14 @@ const sampleQuestions = [
 
   {
     id: '14',
-    text: 'In "Mirror Message" when the steam in the bathroom is gone, the message will most likely--',
+    text: 'In paragraph 1, the reader knows that the students--',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'mustang',
     options: [
-      'spread',
-      'turn white',
-      'disappear',
-      'turn brown',
+      'have expressed interest in newspaper articles about the menu',
+      'are divided in their attitudes about the quality of the cafeteria food',
+      'have discussed their food preferences with the cafeteria staff',
+      'are lacking information about the reasons for the menu changes',
     ],
     correctAnswer: 2,
     explanation: 'The message only appears when steam covers the mirror. When the steam clears and goes away, the message would no longer be visible.'
@@ -475,14 +473,14 @@ const sampleQuestions = [
 
   {
     id: '15',
-    text: 'In step 3 of "Mirror Message," what does the word <u>invisible</u> mean?',
+    text: 'In paragraph 3, the author puts “old-fashioned” in quotation marks to--',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'mustang',
     options: [
-      'clear',
-      'small',
-      'hidden',
-      'forgotten',
+      'highlight an important phrase',
+      'indicate a disagreement between chefs',
+      'emphasize the style of a particular dish',
+      'introduce an unfamiliar term',
     ],
     correctAnswer: 2,
     explanation: 'In this context, "invisible" means the message cannot be seen or is hidden from view until the steam makes it appear.'
@@ -490,14 +488,14 @@ const sampleQuestions = [
 
   {
     id: '16',
-    text: '"Lemony Letter" and "Mirror Message" are alike because both--',
+    text: 'Which detail from paragraphs 3 and 4 emphasizes the author’s positive viewpoint about menu items?',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'mustang',
     options: [
-      'need help from a grownup',
-      'need the use of a lamp',
-      'have messages that must be dry to be read',
-      'have messages that must be painted to be read',
+      'looked like real fried chicken, golden brown and crispy',
+      'cauliflower crust instead of pizza dough',
+      'macaroni and cheese using nonfat dairy products',
+      'made with grilled bell peppers, mushrooms, and onions',
     ],
     correctAnswer: 0,
     explanation: 'Both methods require adult assistance: "Lemony Letter" needs a grownup to cut the lemon in half, and "Mirror Message" needs a grownup to peel the potato.'
@@ -505,14 +503,14 @@ const sampleQuestions = [
 
   {
     id: '17',
-    text: 'In "Crazy Crayon," it is hard to see the message before painting over it because the message--',
+    text: 'Read this sentence from paragraph 4. <div class="passage-innerbox">Eighth- grader Jasmine Firestone says, “The new tacos on Tuesdays are the best food in the world!”</div> Why does the author include this example of hyperbole?',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'mustang',
     options: [
-      'needs to be next to light',
-      'takes a long time to change color',
-      'is written on dark paper',
-      'is written in a white color',
+      'to indicate which days the tacos will be served',
+      'to convey how large the tacos will be',
+      'to emphasize how delicious the new tacos taste',
+      'to highlight which students will eat the tacos',
     ],
     correctAnswer: 3,
     explanation: 'The instructions say to use a white crayon on white paper, making it "difficult to see the markings" because white crayon on white paper is nearly invisible.'
@@ -520,14 +518,14 @@ const sampleQuestions = [
 
   {
     id: '18',
-    text: 'One reason to read the flier is to--',
+    text: 'Read these glossary entries for words that appear in paragraph 5. <div class="passage-dicbox><b>alert:</b> Able to think and respond quickly.<br> <b>approach:</b> Move closer to a person or object.<br> <b>designed:</b> Created a drawing or sketch.<br> <b>surveyed:</b> Carefully examined something to determine its value.</div> Which entry gives the meaning of the word as it is used in paragraph 5?',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'mustang',
     options: [
-      'find out when spies need to use secret messages',
-      'learn how secret messages are made',
-      'discover secret messages that have been sent in the past',
-      'learn about the first person to send a secret message',
+      'alert',
+      'approach',
+      'designed',
+      'surveyed',
     ],
     correctAnswer: 1,
     explanation: 'The flier provides step-by-step instructions for three different methods of creating secret messages, teaching readers how to make them.'
@@ -535,14 +533,14 @@ const sampleQuestions = [
 
   {
     id: '19',
-    text: 'The author puts numbers before some sentences in the flier to--',
+    text: 'What is the main idea of paragraph 5?',
     type: 'multiple-choice',
-    passageId: 'secret_message',
+    passageId: 'mustang',
     options: [
-      'list the steps in the order of importance',
-      'order the steps the reader will follow',
-      'show how many items the reader needs in each step',
-      'tell about how many minutes each step will take',
+      'The chefs are knowledgeable about the health of students.',
+      'The nutritious food that the students are eating makes them feel better.',
+      'The new menu includes fresh ingredients that students have requested.',
+      'The students have responded positively to dishes on the new menu.',
     ],
     correctAnswer: 1,
     explanation: 'The numbers indicate the sequential order of steps that must be followed to successfully create each type of secret message.'
@@ -550,13 +548,14 @@ const sampleQuestions = [
 
   {
     id: '20',
-    text: 'Read this sentence and dictionary entry. <div class="passage-innerbox"><b>In the winter, grocery stores <u>charge</u> too much for strawberries.</b></div> <div class="passage-dicbox"><b>charge</b> (chärj) <i>v.</i> <b>1.</b> To give orders. <b>2.</b> To set as a price. <b>3.</b> To fill up completely. <b>4.</b> To rush forward.</div>',
+    text: 'Based on paragraph 6, the main outcome of interviewing Marge LaRough was that the author--',
     type: 'multiple-choice',
+    passageId: 'mustang',
     options: [
-      '1',
-      '2',
-      '3',
-      '4',
+      'was able to tell cafeteria staff what the students think about the meal variety',
+      'gained a better understanding of the requirements placed on the school cafeteria',
+      'could understand the challenges of locating the ingredients for certain dishes',
+      'learned that additional meal options would soon become available to students',
     ],
     correctAnswer: 1,
     explanation: 'In the context of grocery stores charging "too much" for strawberries, "charge" means "to set as a price," which is definition 2.'
@@ -564,14 +563,14 @@ const sampleQuestions = [
 
   {
     id: '21',
-    text: 'Guide words: <div class="passage-innerbox">camera - cause</div> <br>Which two words would appear on the same page as these guide words?',
-    type: 'multiple-select',
+    text: 'Based on the word choice in paragraph 7, what does the author most likely believe?',
+    type: 'multiple-choice',
+    passageId: 'mustang',
     options: [
-      'carrot',
-      'cabin',
-      'calm',
-      'canal',
-      'cave'
+      'Students should accept that healthful dishes are often similar in flavor.',
+      'Currently served dishes will be replaced with new versions.',
+      'Staff should consult students when making menu decisions.',
+      'Consistent improvements in the cafeteria will continue.'
     ],
     correctAnswer: [0, 3],
     explanation: 'Guide words show the first and last entries on a dictionary page. "Carrot" and "canal" fall alphabetically between "camera" and "cause." "Cabin" comes before "camera" and "cave" comes after "cause."'
@@ -579,14 +578,14 @@ const sampleQuestions = [
 
   {
     id: '22',
-    text: 'The title tells readers that a character in the story will most likely--',
+    text: 'Which action by cafeteria staff suggests that student opinions are taken into consideration when making menu decisions?',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
+    passageId: 'mustang',
     options: [
-      'spend time outdoors',
-      'need to draw a map',
-      'go to an amazing place',
-      'search for something',
+      'Continuing the tradition of serving tacos on Tuesday',
+      'Developing dishes that are more modern',
+      'Studying the rules of the U.S. Department of Agriculture',
+      'Replacing macaroni and cheese with a new dish',
     ],
     correctAnswer: 3,
     explanation: 'The title "A Hidden Treasure" suggests that characters will be looking for or searching for something that is hidden.'
@@ -594,14 +593,14 @@ const sampleQuestions = [
 
   {
     id: '23',
-    text: 'Paragraph 5 is important to the story because it-',
+    text: 'According to the article, cafeteria offerings were different before the 2012 rules in that they--',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
+    passageId: 'mustang',
     options: [
-      'tells what is on the map',
-      'tells why Evan likes to go fishing',
-      'shows how the attic looks',
-      'shows where Grandma lives',
+      'featured familiar ingredients',
+      'contained fresh fruits and vegetables',
+      'included sugary and fried foods',
+      'provided few vegetarian dishes',
     ],
     correctAnswer: 0,
     explanation: 'Paragraph 5 describes what Evan found on the map: "Grandma\'s house, a raindrop inside a square, two little triangles, and a dock" with an "X" marking the "Greatest Fishing Spot."'
@@ -609,14 +608,14 @@ const sampleQuestions = [
 
   {
     id: '24',
-    text: 'After Evan and Mark find the map, they both feel--',
+    text: 'Which sentence is NOT supported by relevant evidence?',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
+    passageId: 'mustang',
     options: [
-      'wise',
-      'calm',
-      'proud',
-      'eager',
+      'The cafeteria staff took the not-so-healthful meals and made them better for us.',
+      'The old tacos were made of seasoned and browned ground turkey topped with low-fat cheese and canned salsa.',
+      'The chefs who designed the new menu definitely have the health of today’s young people in mind.',
+      'The new menu may currently lack variety, but we are fortunate to now have dishes that focus on freshness and health.',
     ],
     correctAnswer: 3,
     explanation: 'The text shows their excitement: Evan asks "Excitedly" if they can find the fishing spot, Mark says "Let\'s try," and "they thundered down the steps," showing they are eager to start their search.'
@@ -624,14 +623,14 @@ const sampleQuestions = [
 
   {
     id: '25',
-    text: 'Where does this story begin and end?',
+    text: 'Which paragraph contains useful information for a presentation about how to make dishes healthier?',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
+    passageId: 'mustang',
     options: [
-      'At the river',
-      'Near the trees',
-      'In the kitchen',
-      'In the attic',
+      '2',
+      '3',
+      '5',
+      '7',
     ],
     correctAnswer: 2,
     explanation: 'The story begins with Grandma painting her kitchen, and ends with the boys rushing back "into the kitchen" with their question about the dock, then planning to get fishing poles.'
@@ -639,14 +638,14 @@ const sampleQuestions = [
 
   {
     id: '26',
-    text: 'Based on the story, where does the map first lead the boys? <br><img src="images/question_26.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+    text: 'Which statement best expresses the author’s viewpoint?',
     type: 'multiple-choice',
-    passageId: 'hidden_treasure',
+    passageId: 'mustang',
     options: [
-      'The house',
-      'The water tower',
-      'The trees',
-      'The Greatest Fishing Spot',
+      'The cafeteria’s healthful food options are delicious.',
+      'Some items on the current menu are more flavorful than others.',
+      'Traditional dishes should be added to the current menu.',
+      'The cafeteria’s chefs are more concerned about nutrition than taste.',
     ],
     correctAnswer: 1,
     explanation: 'Mark says "The square with the raindrop is behind Grandma\'s house" and they look for the water tower with the faded raindrop symbol first.'
