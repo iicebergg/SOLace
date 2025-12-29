@@ -302,7 +302,7 @@ const sampleQuestions = [
       'distant childhood',
       'past adventures',
     ],
-    correctAnswer: 4,
+    correctAnswer: 2,
     explanation: 'After receiving the apron and saying "Thank you. It\'s perfect," the passage says "As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table."'
   },
 
@@ -317,7 +317,7 @@ const sampleQuestions = [
       'developing a hobby',
       'holding on to memories'
     ],
-    correctAnswer: 3,
+    correctAnswer: 0,
     explanation: 'Madison says "We wanted to make a surprise for you because you\'re such a nice sister. You are always thinking of us." This shows her family\'s care and appreciation for her.'
   },
 
@@ -332,7 +332,7 @@ const sampleQuestions = [
       'will be challenged by Mrs. Watson’s attitude',
       'is worried about reading to Mrs. Watson'
     ],
-    correctAnswer: 3,
+    correctAnswer: 2,
     explanation: 'At the end, Danielle says "I have a surprise for you too!" and leads them to the kitchen where she left cupcakes for them.'
   },
 
@@ -347,7 +347,7 @@ const sampleQuestions = [
       'Keisha’s attitude about volunteering',
       'Mrs. Watson’s first reaction to Keisha'
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
     explanation: 'All three characters make surprises for each other: Danielle bakes cupcakes for her siblings, and Martin and Madison make an apron for Danielle, showing they all think of others.'
   },
 
@@ -362,7 +362,7 @@ const sampleQuestions = [
       'weak or exhausted',
       'overly exaggerated'
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     explanation: 'The root word in "discovered" is "cover." The prefix "dis-" means "not" and the suffix "-ed" shows past tense, so "discovered" means "uncovered" or "found."'
   },
 
@@ -377,7 +377,7 @@ const sampleQuestions = [
       'tense', 
       'disappointed'
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: 'The passage states that "In some parts of the world, especially near the ocean, people eat seaweed all by itself," suggesting people near oceans commonly eat foods from the sea.'
   },
 
@@ -392,7 +392,7 @@ const sampleQuestions = [
       'Keisha reads her English essay about Rosa Parks to Mrs. Watson.',
       'Mrs. Watson tells Keisha she would rather be alone.',
     ],
-    correctAnswer: 3,
+    correctAnswer: 0,
     explanation: 'The passage explains that "Without seaweed, ice cream and yogurt would not be as thick or creamy but would seem rather lumpy and watery," showing seaweed affects how they look and their texture.'
   },
 
@@ -407,7 +407,7 @@ const sampleQuestions = [
       'increase',
       'mature',
     ],
-    correctAnswer: 3,
+    correctAnswer: 1,
     explanation: 'The article mentions several goods that contain seaweed: toothpaste, shampoo, makeup, ice cream, and yogurt. It also states "Hundreds of everyday items have seaweed in them."'
   },
 
@@ -437,7 +437,7 @@ const sampleQuestions = [
       'explaining the effects of the writers’ and artists’ works on society',
       'presenting the writers’ and artists’ works in order of importance'
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
     explanation: 'The website "Discover Ocean Plants" would be most likely to have information about where red seaweed grows, as seaweed is a type of ocean plant.'
   },
 
@@ -452,7 +452,7 @@ const sampleQuestions = [
       'This sent most Americans into crisis, and time spent creating turned into time spent surviving.',
       'Their music, words, and art seem as fresh and powerful today in the 21st century as they were then.',
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
     explanation: 'The instructions state: "Have the person who receives your message hold the paper near a light bulb. The heat will make the secret message appear!"'
   },
 
@@ -482,7 +482,7 @@ const sampleQuestions = [
       'how large coral structures can grow',
       'how coral structures are formed',
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: 'In this context, "invisible" means the message cannot be seen or is hidden from view until the steam makes it appear.'
   },
 
@@ -497,7 +497,7 @@ const sampleQuestions = [
       'occupy',
       'recognize',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'Both methods require adult assistance: "Lemony Letter" needs a grownup to cut the lemon in half, and "Mirror Message" needs a grownup to peel the potato.'
   },
 
@@ -512,7 +512,7 @@ const sampleQuestions = [
       'outlining ways in which changes in water temperature affect a coral reef',
       'describing in chronological order the events that occur in the ocean',
     ],
-    correctAnswer: 3,
+    correctAnswer: 2,
     explanation: 'The instructions say to use a white crayon on white paper, making it "difficult to see the markings" because white crayon on white paper is nearly invisible.'
   },
 
@@ -542,7 +542,7 @@ const sampleQuestions = [
       'near',
       'in the past',
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: 'The numbers indicate the sequential order of steps that must be followed to successfully create each type of secret message.'
   },
 
@@ -557,7 +557,7 @@ const sampleQuestions = [
       'Coral reefs are made of skeletal calcium.',
       'Many ocean creatures survive because of coral reefs.',
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'In the context of grocery stores charging "too much" for strawberries, "charge" means "to set as a price," which is definition 2.'
   },
 
@@ -572,7 +572,7 @@ const sampleQuestions = [
       'The algae share food with the coral, and the coral shelters the algae.',
       'Changes that affect the coral also affect how the coral appears to the algae.'
     ],
-    correctAnswer: [0, 3],
+    correctAnswer: 2,
     explanation: 'Guide words show the first and last entries on a dictionary page. "Carrot" and "canal" fall alphabetically between "camera" and "cause." "Cabin" comes before "camera" and "cave" comes after "cause."'
   },
 
@@ -587,7 +587,7 @@ const sampleQuestions = [
       'Coral polyps gather together and grow into large colonies.',
       'Coral reefs form a large and complex ocean system.'
     ],
-    correctAnswer: 3,
+    correctAnswer: 1,
     explanation: 'The title "A Hidden Treasure" suggests that characters will be looking for or searching for something that is hidden.'
   },
 
@@ -617,7 +617,7 @@ const sampleQuestions = [
       'scientists cannot save the coral reefs',
       'concrete is the only material used in artificial reefs',
     ],
-    correctAnswer: 3,
+    correctAnswer: 1,
     explanation: 'The text shows their excitement: Evan asks "Excitedly" if they can find the fishing spot, Mark says "Let\'s try," and "they thundered down the steps," showing they are eager to start their search.'
   },
 
@@ -632,7 +632,7 @@ const sampleQuestions = [
       'coral is the most beautiful creature in the ocean',
       'preserving coral reefs is important',
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: 'The story begins with Grandma painting her kitchen, and ends with the boys rushing back "into the kitchen" with their question about the dock, then planning to get fishing poles.'
   },
 
@@ -647,7 +647,7 @@ const sampleQuestions = [
       'emphasize that an altered habitat can be dangerous for creatures living there',
       'explain that sea creatures are more fragile than creatures living on land',
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: 'Mark says "The square with the raindrop is behind Grandma\'s house" and they look for the water tower with the faded raindrop symbol first.'
   },
 
@@ -662,7 +662,7 @@ const sampleQuestions = [
       'Whip corals provide a habitat for black sea bass.',
       'Recent ocean changes have been affecting coral reefs.',
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'When the boys ask about the dock, Grandma explains: "That dock was torn down a long time ago."'
   },
 
@@ -707,7 +707,7 @@ const sampleQuestions = [
       'illustrate the bird’s surroundings',
       'describe physical characteristics of the bird',
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: 'Paragraph 6 states: "Their strong legs can deliver a kick that stops a lion!"'
   },
 
@@ -737,7 +737,7 @@ const sampleQuestions = [
       'is nervous about the hiking trail',
       'knows the park ranger studies birds',
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: 'The text states: "The male and one of the females take turns guarding and sitting on the eggs."'
   },
 
@@ -752,7 +752,7 @@ const sampleQuestions = [
       'He realizes the sound they hear could be imitated.',
       'He wants to avoid startling the bird.',
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'The passage explains: "Their new fluffy feathers trap air and keep the chicks warm at night."'
   },
 
@@ -767,7 +767,7 @@ const sampleQuestions = [
       'the bird is slender',
       'the bird is quick',
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: 'The article states: "With such speed, ostriches outrun most predators" and that they can run 43 miles per hour, showing their speed helps them escape danger.'
   },
 
@@ -782,7 +782,7 @@ const sampleQuestions = [
       'is shrouded behind the cascading waterfall',
       'looks fixedly at her while crooking its neck',
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
     explanation: 'The title "The Search" indicates the poem will be about someone searching or looking for something.'
   },
 
@@ -797,7 +797,7 @@ const sampleQuestions = [
       'quick to respond to a problem',
       'comfortable with making mistakes',
     ],
-    correctAnswer: 3,
+    correctAnswer: 2,
     explanation: '"Pause" means to stop briefly or for a short time. The speaker stops in their tracks when Dad asks questions.'
   },
 
@@ -844,22 +844,7 @@ const sampleQuestions = [
     ],
     correctAnswer: 1,
     explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
-  },
-
-  {
-    id: '40',
-    text: 'Which question is answered in the poem?',
-    type: 'multiple-choice',
-    passageId: 'search',
-    options: [
-      'What is the dog\'s new chew toy?',
-      'Why is the dog playing outside?',
-      'What sport does the speaker play?',
-      'When was the speaker\'s last game?',
-    ],
-    correctAnswer: 0,
-    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
-  },
+  }
 ];
 
 // Make questions available globally

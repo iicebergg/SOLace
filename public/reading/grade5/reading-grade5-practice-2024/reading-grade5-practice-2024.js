@@ -413,7 +413,7 @@ const sampleQuestions = [
       'twenty oval flowerbeds were planted around his home',
       'the last years of his life were spent with family'
     ],
-    correctAnswer: 4,
+    correctAnswer: 1,
     explanation: 'After receiving the apron and saying "Thank you. It\'s perfect," the passage says "As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table."'
   },
 
@@ -428,7 +428,7 @@ const sampleQuestions = [
       'He lived on and farmed his land.',
       'His family helped him care for the land.'
     ],
-    correctAnswer: 3,
+    correctAnswer: 0,
     explanation: 'Madison says "We wanted to make a surprise for you because you\'re such a nice sister. You are always thinking of us." This shows her family\'s care and appreciation for her.'
   },
 
@@ -458,7 +458,7 @@ const sampleQuestions = [
       'jokes with Grandma Etta about the reason for his parents visiting',
       'hears his father ask for a second helping of the soup'
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
     explanation: 'All three characters make surprises for each other: Danielle bakes cupcakes for her siblings, and Martin and Madison make an apron for Danielle, showing they all think of others.'
   },
 
@@ -473,7 +473,7 @@ const sampleQuestions = [
       'brings the pot to the kitchen after he prepares the firewood',
       'forgets the difficulty of gathering the ingredients'
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     explanation: 'The root word in "discovered" is "cover." The prefix "dis-" means "not" and the suffix "-ed" shows past tense, so "discovered" means "uncovered" or "found."'
   },
 
@@ -518,7 +518,7 @@ const sampleQuestions = [
       'Grandma Etta decides to tempt Leroy into working',
       'Leroy’s family visits Grandma Etta often',
     ],
-    correctAnswer: 3,
+    correctAnswer: 2,
     explanation: 'The article mentions several goods that contain seaweed: toothpaste, shampoo, makeup, ice cream, and yogurt. It also states "Hundreds of everyday items have seaweed in them."'
   },
 
@@ -533,7 +533,7 @@ const sampleQuestions = [
       'displayed narwhal tusks as unicorn horns',
       'gathered in groups to try to see unicorns',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'The article provides factual information about seaweed, explaining what it is, where it grows, and how it is used in various everyday products.'
   },
 
@@ -548,7 +548,7 @@ const sampleQuestions = [
       'shares a gene with a whale that grows a long, spiral tusk',
       'is the kind of animal that may have led to the idea of unicorns'
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: 'The website "Discover Ocean Plants" would be most likely to have information about where red seaweed grows, as seaweed is a type of ocean plant.'
   },
 
@@ -578,7 +578,7 @@ const sampleQuestions = [
       'Nellie Bly wrote about her trip aboard ships to faraway countries, and people enjoyed it so much they held a big party.',
       'Nellie Bly wanted to travel around the world and write about her journey, so she set out alone, and the public read about her adventures.',
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: 'The message only appears when steam covers the mirror. When the steam clears and goes away, the message would no longer be visible.'
   },
 
@@ -593,7 +593,7 @@ const sampleQuestions = [
       'spends a long time writing his speech',
       'forgets what to say next',
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
     explanation: 'In this context, "invisible" means the message cannot be seen or is hidden from view until the steam makes it appear.'
   },
 
@@ -608,7 +608,7 @@ const sampleQuestions = [
       'With a grateful look at Ms. Blum and Julie, Rahim continued his speech.',
       '“In fact, the masks look similar to those that raccoons have.”',
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
     explanation: 'Both methods require adult assistance: "Lemony Letter" needs a grownup to cut the lemon in half, and "Mirror Message" needs a grownup to peel the potato.'
   },
 
@@ -623,7 +623,7 @@ const sampleQuestions = [
       'Measure objects found outside',
       'Write in daily journals',
     ],
-    correctAnswer: 3,
+    correctAnswer: 2,
     explanation: 'The instructions say to use a white crayon on white paper, making it "difficult to see the markings" because white crayon on white paper is nearly invisible.'
   },
 
@@ -638,7 +638,7 @@ const sampleQuestions = [
       'know how to spend the day together',
       'have school experiences to share with younger students',
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'The flier provides step-by-step instructions for three different methods of creating secret messages, teaching readers how to make them.'
   },
 
@@ -683,7 +683,7 @@ const sampleQuestions = [
       'clean the materials in the pan',
       'find gemstones by their reflections'
     ],
-    correctAnswer: [0, 3],
+    correctAnswer: 0,
     explanation: 'Guide words show the first and last entries on a dictionary page. "Carrot" and "canal" fall alphabetically between "camera" and "cause." "Cabin" comes before "camera" and "cave" comes after "cause."'
   },
 
@@ -698,7 +698,7 @@ const sampleQuestions = [
       'The flowing water at the panning station is cool.',
       'The panning process can be time-consuming.',
     ],
-    correctAnswer: 3,
+    correctAnswer: 2,
     explanation: 'The title "A Hidden Treasure" suggests that characters will be looking for or searching for something that is hidden.'
   },
 
@@ -713,7 +713,7 @@ const sampleQuestions = [
       'prevent accidents or injuries',
       'show the way to the panning station',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'Paragraph 5 describes what Evan found on the map: "Grandma\'s house, a raindrop inside a square, two little triangles, and a dock" with an "X" marking the "Greatest Fishing Spot."'
   },
 
@@ -728,7 +728,7 @@ const sampleQuestions = [
       'water is running fast',
       'pan contains too much dirt',
     ],
-    correctAnswer: 3,
+    correctAnswer: 1,
     explanation: 'The text shows their excitement: Evan asks "Excitedly" if they can find the fishing spot, Mark says "Let\'s try," and "they thundered down the steps," showing they are eager to start their search.'
   },
 
@@ -743,7 +743,7 @@ const sampleQuestions = [
       'Is panning equipment available for purchase?',
       'Is there a time limit at the panning station?',
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
     explanation: 'The story begins with Grandma painting her kitchen, and ends with the boys rushing back "into the kitchen" with their question about the dock, then planning to get fishing poles.'
   },
 
@@ -788,7 +788,7 @@ const sampleQuestions = [
       'Pointing out rock formations and landmarks',
       'Sifting through buckets for gold or gems',
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'When the boys ask about the dock, Grandma explains: "That dock was torn down a long time ago."'
   },
 
@@ -803,7 +803,7 @@ const sampleQuestions = [
       'material may fall out of the pan',
       'material in the pan may be easier to see',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'Paragraph 4 directly states: "The young birds learn to peck the ground and eat plants by watching older ostriches."'
   },
 
@@ -818,7 +818,7 @@ const sampleQuestions = [
       'Will I find any big gemstones or gold nuggets?',
       'What should I do with the gemstones I find?',
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: 'Paragraph 6 states: "Their strong legs can deliver a kick that stops a lion!"'
   },
 
@@ -833,7 +833,7 @@ const sampleQuestions = [
       'collect, learn',
       'surface, underground',
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: 'The "Ostrich Facts" chart shows "Life span: 30-40 years," which answers how long ostriches live.'
   },
 
@@ -848,7 +848,7 @@ const sampleQuestions = [
       'polish',
       'scra[',
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: 'The text states: "The male and one of the females take turns guarding and sitting on the eggs."'
   },
 
@@ -863,7 +863,7 @@ const sampleQuestions = [
       'broke open as a result of being full',
       'rushed through suddenly and forcefully',
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'The passage explains: "Their new fluffy feathers trap air and keep the chicks warm at night."'
   },
 
@@ -878,7 +878,7 @@ const sampleQuestions = [
       'thinks he should have hung it up',
       'believes that he borrowed her glove',
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     explanation: 'The article states: "With such speed, ostriches outrun most predators" and that they can run 43 miles per hour, showing their speed helps them escape danger.'
   },
 
@@ -893,7 +893,7 @@ const sampleQuestions = [
       'thinks someone will take her place on the team',
       'wants to be home in time for cupcakes',
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     explanation: 'The title "The Search" indicates the poem will be about someone searching or looking for something.'
   },
 
@@ -908,7 +908,7 @@ const sampleQuestions = [
       'stepped out of the dugout',
       'quickly reached into the air',
     ],
-    correctAnswer: 3,
+    correctAnswer: 2,
     explanation: '"Pause" means to stop briefly or for a short time. The speaker stops in their tracks when Dad asks questions.'
   },
 
@@ -923,7 +923,7 @@ const sampleQuestions = [
       'Maddy realized that only one thing would banish the invisible cloud hovering over her.',
       'Ten minutes later Maddy eased the front door open.',
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: 'Lines 17-20 show disappointment and sadness: "It\'s surely gone missing / There\'s clearly no hope. / I have to give up / Find somewhere to mope." The speaker feels upset about losing the shoe.'
   },
 
@@ -938,7 +938,7 @@ const sampleQuestions = [
       'wants to eat cupcakes with her family',
       'feels guilty about causing the mess',
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: 'The first line of the poem states: "I\'ve emptied my sports bag," which shows this was the first place searched.'
   }
 ];

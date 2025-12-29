@@ -243,7 +243,7 @@ const sampleQuestions = [
       'how many hours the cleanup will take',
       'the feelings Tamara has about the project'
     ],
-    correctAnswer: 3,
+    correctAnswer: 0,
     explanation: 'The story is about both Danielle making cupcakes as a surprise for her siblings and her siblings making an apron as a surprise for her. Everyone in the story gives and receives gifts.'
   },
 
@@ -258,7 +258,7 @@ const sampleQuestions = [
       'believes Callie can solve her own problems',
       'knows that neighborhood gardens are useful'
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: 'The passage states that Danielle "had baked cupcakes early in the morning, while Martin and Madison were still asleep," which kept them secret.'
   },
 
@@ -273,7 +273,7 @@ const sampleQuestions = [
       'knows she will enjoy going to Fun World',
       'struggles with her promise to her neighbor'
     ],
-    correctAnswer: 4,
+    correctAnswer: 3,
     explanation: 'After receiving the apron and saying "Thank you. It\'s perfect," the passage says "As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table."'
   },
 
@@ -288,7 +288,7 @@ const sampleQuestions = [
       'The other children will not help because Fun World is opening.',
       'The city is asking people to clear the empty lots near their homes.'
     ],
-    correctAnswer: 3,
+    correctAnswer: 1,
     explanation: 'Madison says "We wanted to make a surprise for you because you\'re such a nice sister. You are always thinking of us." This shows her family\'s care and appreciation for her.'
   },
 
@@ -303,7 +303,7 @@ const sampleQuestions = [
       'A Swedish Hotel',
       'As Cold as Ice'
     ],
-    correctAnswer: 3,
+    correctAnswer: 1,
     explanation: 'At the end, Danielle says "I have a surprise for you too!" and leads them to the kitchen where she left cupcakes for them.'
   },
 
@@ -318,7 +318,7 @@ const sampleQuestions = [
       '3',
       '4'
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: 'All three characters make surprises for each other: Danielle bakes cupcakes for her siblings, and Martin and Madison make an apron for Danielle, showing they all think of others.'
   },
 
@@ -333,7 +333,7 @@ const sampleQuestions = [
       'tell who would enjoy the Ice Hotel',
       'show that new services are offered at the Ice Hotel'
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
     explanation: 'The root word in "discovered" is "cover." The prefix "dis-" means "not" and the suffix "-ed" shows past tense, so "discovered" means "uncovered" or "found."'
   },
 
@@ -348,7 +348,7 @@ const sampleQuestions = [
       'Artists change the appearance of the Ice Hotel.', 
       'Building the Ice Hotel is worth the hard work.'
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'The passage states that "In some parts of the world, especially near the ocean, people eat seaweed all by itself," suggesting people near oceans commonly eat foods from the sea.'
   },
 
@@ -363,7 +363,7 @@ const sampleQuestions = [
       'The inside of the hotel sparkles and shines.',
       'The walls are four feet thick.',
     ],
-    correctAnswer: 3,
+    correctAnswer: 2,
     explanation: 'The passage explains that "Without seaweed, ice cream and yogurt would not be as thick or creamy but would seem rather lumpy and watery," showing seaweed affects how they look and their texture.'
   },
 
@@ -378,7 +378,7 @@ const sampleQuestions = [
       'he wanted Jackie to help make the team better',
       'Jackie was planning to leave the Negro Leagues',
     ],
-    correctAnswer: 3,
+    correctAnswer: 2,
     explanation: 'The article mentions several goods that contain seaweed: toothpaste, shampoo, makeup, ice cream, and yogurt. It also states "Hundreds of everyday items have seaweed in them."'
   },
 
@@ -393,7 +393,7 @@ const sampleQuestions = [
       'describe how Jackie Robinson helped the Brooklyn Dodgers',
       'explain how Jackie Robinson became a member of the Brooklyn Dodgers',
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: 'The article provides factual information about seaweed, explaining what it is, where it grows, and how it is used in various everyday products.'
   },
 
@@ -438,7 +438,7 @@ const sampleQuestions = [
       'hunting for jewels',
       'playing in the moonlight',
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     explanation: 'The message only appears when steam covers the mirror. When the steam clears and goes away, the message would no longer be visible.'
   },
 
@@ -453,7 +453,7 @@ const sampleQuestions = [
       'Sitting on the grass',
       'Watching from inside',
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: 'In this context, "invisible" means the message cannot be seen or is hidden from view until the steam makes it appear.'
   },
 
@@ -468,7 +468,7 @@ const sampleQuestions = [
       'provide details about the area',
       'describe the many bodies of water',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'Both methods require adult assistance: "Lemony Letter" needs a grownup to cut the lemon in half, and "Mirror Message" needs a grownup to peel the potato.'
   },
 
@@ -498,7 +498,7 @@ const sampleQuestions = [
       'perfect',
       'total',
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: 'The flier provides step-by-step instructions for three different methods of creating secret messages, teaching readers how to make them.'
   },
 
@@ -528,7 +528,7 @@ const sampleQuestions = [
       'Set a Turnaround Time',
       'Hike Smart',
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: 'In the context of grocery stores charging "too much" for strawberries, "charge" means "to set as a price," which is definition 2.'
   },
 
@@ -543,7 +543,7 @@ const sampleQuestions = [
       'areas that present safety problems for visitors',
       'hiking trails that contribute to its popularity'
     ],
-    correctAnswer: [0, 3],
+    correctAnswer: 1,
     explanation: 'Guide words show the first and last entries on a dictionary page. "Carrot" and "canal" fall alphabetically between "camera" and "cause." "Cabin" comes before "camera" and "cave" comes after "cause."'
   },
 
@@ -558,7 +558,7 @@ const sampleQuestions = [
       'Visitors should dress warmly for hiking in the mountains of Thatcher National Wilderness Area.',
       'Hikers can fish and camp in certain areas around the lakes and streams of Thatcher National Wilderness Area.',
     ],
-    correctAnswer: 3,
+    correctAnswer: 0,
     explanation: 'The title "A Hidden Treasure" suggests that characters will be looking for or searching for something that is hidden.'
   },
 
@@ -573,7 +573,7 @@ const sampleQuestions = [
       'help the reader understand the time period of the story',
       'show that the house is beside a creek',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'Paragraph 5 describes what Evan found on the map: "Grandma\'s house, a raindrop inside a square, two little triangles, and a dock" with an "X" marking the "Greatest Fishing Spot."'
   },
 
@@ -603,7 +603,7 @@ const sampleQuestions = [
       'Benjamin waits for weeks to receive a letter because of the long distance.',
       'Benjamin hopes to receive a letter and is delighted once it arrives with good news.',
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: 'The story begins with Grandma painting her kitchen, and ends with the boys rushing back "into the kitchen" with their question about the dock, then planning to get fishing poles.'
   },
 
@@ -678,7 +678,7 @@ const sampleQuestions = [
       'honored that Mr. Peters is coming to visit him',
       'relieved that the wagon has many books',
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     explanation: 'Paragraph 6 states: "Their strong legs can deliver a kick that stops a lion!"'
   },
 
@@ -738,7 +738,7 @@ const sampleQuestions = [
       'were fearful of the hard life ahead of them',
       'knew supplies would be hard to find where they were going',
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: 'The article states: "With such speed, ostriches outrun most predators" and that they can run 43 miles per hour, showing their speed helps them escape danger.'
   },
 
@@ -753,7 +753,7 @@ const sampleQuestions = [
       'Hawley wanted people to know about the pioneers on the <i>Arabia</i>.',
       'Treasures from the <i>Arabia</i> are worth more today than they were a century ago.',
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
     explanation: 'The title "The Search" indicates the poem will be about someone searching or looking for something.'
   },
 
@@ -768,7 +768,7 @@ const sampleQuestions = [
       'The engines',
       'The pilot house',
     ],
-    correctAnswer: 3,
+    correctAnswer: 1,
     explanation: '"Pause" means to stop briefly or for a short time. The speaker stops in their tracks when Dad asks questions.'
   },
 
@@ -783,7 +783,7 @@ const sampleQuestions = [
       'natur<u>al</u>',
       'actu<u>al</u>',
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: 'Lines 17-20 show disappointment and sadness: "It\'s surely gone missing / There\'s clearly no hope. / I have to give up / Find somewhere to mope." The speaker feels upset about losing the shoe.'
   },
 
@@ -798,7 +798,7 @@ const sampleQuestions = [
       'where the people on the steamboat came from',
       'that there was enough food for everyone on the steamboat',
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
     explanation: 'The first line of the poem states: "I\'ve emptied my sports bag," which shows this was the first place searched.'
   },
 
@@ -813,7 +813,7 @@ const sampleQuestions = [
       'cargo on the boat was too heavy',
       'captain was unable to see under the water',
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
   },
 
@@ -828,7 +828,7 @@ const sampleQuestions = [
       'Recovering the steamboat was a massive task.',
       'Hawley’s brother, father, and friends worked with him.',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
   },
 
@@ -843,7 +843,7 @@ const sampleQuestions = [
       'tell about an early form of transportation',
       'describe a discovery from the past',
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
     explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
   },
 
@@ -858,7 +858,7 @@ const sampleQuestions = [
       'David Hawley enjoys hunting for lost treasures',
       'the <i>Arabia</i> was the first shipwreck to be dug out of river mud',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
   },
 ];

@@ -302,7 +302,7 @@ const sampleQuestions = [
       'The average life span of an osprey in the wild is around 18 years, but the oldest bird of this type lived to be 25 years old.',
       'The osprey typically migrates from Alaska to the Caribbean for the winter, so it has a long journey each fall and spring.',
     ],
-    correctAnswer: 4,
+    correctAnswer: 1,
     explanation: 'After receiving the apron and saying "Thank you. It\'s perfect," the passage says "As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table."'
   },
 
@@ -317,7 +317,7 @@ const sampleQuestions = [
       'experiencing different cultures can lead to personal growth',
       'celebrating traditions brings families together'
     ],
-    correctAnswer: 3,
+    correctAnswer: 2,
     explanation: 'Madison says "We wanted to make a surprise for you because you\'re such a nice sister. You are always thinking of us." This shows her family\'s care and appreciation for her.'
   },
 
@@ -332,7 +332,7 @@ const sampleQuestions = [
       'Brady followed Wen into his room, asking why everyone was wearing red- colored pajamas for the sleepover.',
       'When he went to bed that night, his stomach and his heart felt full.'
     ],
-    correctAnswer: 3,
+    correctAnswer: 1,
     explanation: 'At the end, Danielle says "I have a surprise for you too!" and leads them to the kitchen where she left cupcakes for them.'
   },
 
@@ -377,7 +377,7 @@ const sampleQuestions = [
       'listing', 
       'comparison/contrast'
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: 'The passage states that "In some parts of the world, especially near the ocean, people eat seaweed all by itself," suggesting people near oceans commonly eat foods from the sea.'
   },
 
@@ -407,7 +407,7 @@ const sampleQuestions = [
       'artists are limited by the materials available to them',
       'the sights of nature change with each season',
     ],
-    correctAnswer: 3,
+    correctAnswer: 0,
     explanation: 'The article mentions several goods that contain seaweed: toothpaste, shampoo, makeup, ice cream, and yogurt. It also states "Hundreds of everyday items have seaweed in them."'
   },
 
@@ -422,7 +422,7 @@ const sampleQuestions = [
       'a relaxed feeling of peace',
       'an improved mood',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'The article provides factual information about seaweed, explaining what it is, where it grows, and how it is used in various everyday products.'
   },
 
@@ -437,7 +437,7 @@ const sampleQuestions = [
       'enthusiasm',
       'admiration',
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
     explanation: 'The website "Discover Ocean Plants" would be most likely to have information about where red seaweed grows, as seaweed is a type of ocean plant.'
   },
 
@@ -467,7 +467,7 @@ const sampleQuestions = [
       'have discussed their food preferences with the cafeteria staff',
       'are lacking information about the reasons for the menu changes',
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: 'The message only appears when steam covers the mirror. When the steam clears and goes away, the message would no longer be visible.'
   },
 
@@ -512,7 +512,7 @@ const sampleQuestions = [
       'to emphasize how delicious the new tacos taste',
       'to highlight which students will eat the tacos',
     ],
-    correctAnswer: 3,
+    correctAnswer: 2,
     explanation: 'The instructions say to use a white crayon on white paper, making it "difficult to see the markings" because white crayon on white paper is nearly invisible.'
   },
 
@@ -527,7 +527,7 @@ const sampleQuestions = [
       'designed',
       'surveyed',
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: 'The flier provides step-by-step instructions for three different methods of creating secret messages, teaching readers how to make them.'
   },
 
@@ -542,7 +542,7 @@ const sampleQuestions = [
       'The new menu includes fresh ingredients that students have requested.',
       'The students have responded positively to dishes on the new menu.',
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'The numbers indicate the sequential order of steps that must be followed to successfully create each type of secret message.'
   },
 
@@ -557,7 +557,7 @@ const sampleQuestions = [
       'could understand the challenges of locating the ingredients for certain dishes',
       'learned that additional meal options would soon become available to students',
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'In the context of grocery stores charging "too much" for strawberries, "charge" means "to set as a price," which is definition 2.'
   },
 
@@ -572,7 +572,7 @@ const sampleQuestions = [
       'Staff should consult students when making menu decisions.',
       'Consistent improvements in the cafeteria will continue.'
     ],
-    correctAnswer: [0, 3],
+    correctAnswer: 3,
     explanation: 'Guide words show the first and last entries on a dictionary page. "Carrot" and "canal" fall alphabetically between "camera" and "cause." "Cabin" comes before "camera" and "cave" comes after "cause."'
   },
 
@@ -587,7 +587,7 @@ const sampleQuestions = [
       'Studying the rules of the U.S. Department of Agriculture',
       'Replacing macaroni and cheese with a new dish',
     ],
-    correctAnswer: 3,
+    correctAnswer: 0,
     explanation: 'The title "A Hidden Treasure" suggests that characters will be looking for or searching for something that is hidden.'
   },
 
@@ -602,7 +602,7 @@ const sampleQuestions = [
       'included sugary and fried foods',
       'provided few vegetarian dishes',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'Paragraph 5 describes what Evan found on the map: "Grandma\'s house, a raindrop inside a square, two little triangles, and a dock" with an "X" marking the "Greatest Fishing Spot."'
   },
 
@@ -617,7 +617,7 @@ const sampleQuestions = [
       'The chefs who designed the new menu definitely have the health of today’s young people in mind.',
       'The new menu may currently lack variety, but we are fortunate to now have dishes that focus on freshness and health.',
     ],
-    correctAnswer: 3,
+    correctAnswer: 1,
     explanation: 'The text shows their excitement: Evan asks "Excitedly" if they can find the fishing spot, Mark says "Let\'s try," and "they thundered down the steps," showing they are eager to start their search.'
   },
 
@@ -632,7 +632,7 @@ const sampleQuestions = [
       '5',
       '7',
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     explanation: 'The story begins with Grandma painting her kitchen, and ends with the boys rushing back "into the kitchen" with their question about the dock, then planning to get fishing poles.'
   },
 
@@ -647,7 +647,7 @@ const sampleQuestions = [
       'Traditional dishes should be added to the current menu.',
       'The cafeteria’s chefs are more concerned about nutrition than taste.',
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: 'Mark says "The square with the raindrop is behind Grandma\'s house" and they look for the water tower with the faded raindrop symbol first.'
   },
 
@@ -677,7 +677,7 @@ const sampleQuestions = [
       'happen carefully',
       'follow closely',
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'In alphabetical order: searched, shouted, smiled, spend, steps.'
   },
 
@@ -692,7 +692,7 @@ const sampleQuestions = [
       'intensify',
       'scatter',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'Paragraph 4 directly states: "The young birds learn to peck the ground and eat plants by watching older ostriches."'
   },
 
@@ -707,7 +707,7 @@ const sampleQuestions = [
       'To emphasize the effects of the speaker’s reaction',
       'To exaggerate the speaker’s feelings of impatience',
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
     explanation: 'Paragraph 6 states: "Their strong legs can deliver a kick that stops a lion!"'
   },
 
@@ -722,7 +722,7 @@ const sampleQuestions = [
       'the result of many arguments',
       'a normal reaction to the situation',
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
     explanation: 'The "Ostrich Facts" chart shows "Life span: 30-40 years," which answers how long ostriches live.'
   },
 
@@ -752,7 +752,7 @@ const sampleQuestions = [
       'Admitting the reason for our failures is the first step toward transformation.',
       'The harshest judgments we receive often come from ourselves.',
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: 'The passage explains: "Their new fluffy feathers trap air and keep the chicks warm at night."'
   },
 
@@ -782,7 +782,7 @@ const sampleQuestions = [
       'By standing up for their beliefs even when others do not agree',
       'By using a different approach than they have used in the past',
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: 'The title "The Search" indicates the poem will be about someone searching or looking for something.'
   },
 
@@ -797,7 +797,7 @@ const sampleQuestions = [
       'Respecting peers involves being honest with them.',
       'Remaining loyal to one another in difficult times is important.',
     ],
-    correctAnswer: 3,
+    correctAnswer: 1,
     explanation: '"Pause" means to stop briefly or for a short time. The speaker stops in their tracks when Dad asks questions.'
   }
 ];

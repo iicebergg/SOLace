@@ -296,7 +296,7 @@ const sampleQuestions = [
       'developing the conflict',
       'presenting information about the setting'
     ],
-    correctAnswer: 3,
+    correctAnswer: 2,
     explanation: 'The story is about both Danielle making cupcakes as a surprise for her siblings and her siblings making an apron as a surprise for her. Everyone in the story gives and receives gifts.'
   },
 
@@ -311,7 +311,7 @@ const sampleQuestions = [
       'of equal parts',
       'including two'
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: 'The passage states that Danielle "had baked cupcakes early in the morning, while Martin and Madison were still asleep," which kept them secret.'
   },
 
@@ -326,7 +326,7 @@ const sampleQuestions = [
       'Quinterro wishes for the more fascinating life of a city.',
       'Quinterro disagrees with Marta’s opinion of the mountains.'
     ],
-    correctAnswer: 4,
+    correctAnswer: 2,
     explanation: 'After receiving the apron and saying "Thank you. It\'s perfect," the passage says "As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table."'
   },
 
@@ -341,7 +341,7 @@ const sampleQuestions = [
       'Life is always changing.',
       'People should be generous to new friends.'
     ],
-    correctAnswer: 3,
+    correctAnswer: 1,
     explanation: 'Madison says "We wanted to make a surprise for you because you\'re such a nice sister. You are always thinking of us." This shows her family\'s care and appreciation for her.'
   },
 
@@ -356,7 +356,7 @@ const sampleQuestions = [
       'where volcanoes are formed on the planet',
       'who discovered the motion of the plates'
     ],
-    correctAnswer: 3,
+    correctAnswer: 0,
     explanation: 'At the end, Danielle says "I have a surprise for you too!" and leads them to the kitchen where she left cupcakes for them.'
   },
 
@@ -371,7 +371,7 @@ const sampleQuestions = [
       'is not involved in every volcanic eruption',
       'flows after ash, dirt, and rock erupt from the volcano'
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'All three characters make surprises for each other: Danielle bakes cupcakes for her siblings, and Martin and Madison make an apron for Danielle, showing they all think of others.'
   },
 
@@ -386,7 +386,7 @@ const sampleQuestions = [
       'Island chains, including Japan, New Zealand, and Hawaii, were formed by volcanoes.',
       'Mount Fuji, part of a national park, is an inactive volcano that helped to form parts of Japan.'
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: 'The root word in "discovered" is "cover." The prefix "dis-" means "not" and the suffix "-ed" shows past tense, so "discovered" means "uncovered" or "found."'
   },
 
@@ -401,7 +401,7 @@ const sampleQuestions = [
       'The Ring of Fire is constructive in other ways too.', 
       'Volcanic activity creates some of the most spectacular fireworks found in nature.'
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'The passage states that "In some parts of the world, especially near the ocean, people eat seaweed all by itself," suggesting people near oceans commonly eat foods from the sea.'
   },
 
@@ -416,7 +416,7 @@ const sampleQuestions = [
       'still requires further investigation',
       'occurs on a regular basis',
     ],
-    correctAnswer: 3,
+    correctAnswer: 0,
     explanation: 'The passage explains that "Without seaweed, ice cream and yogurt would not be as thick or creamy but would seem rather lumpy and watery," showing seaweed affects how they look and their texture.'
   },
 
@@ -431,7 +431,7 @@ const sampleQuestions = [
       'reveal how often Alice cleans her room',
       'tell how Alice feels as she enters her room',
     ],
-    correctAnswer: 3,
+    correctAnswer: 0,
     explanation: 'The article mentions several goods that contain seaweed: toothpaste, shampoo, makeup, ice cream, and yogurt. It also states "Hundreds of everyday items have seaweed in them."'
   },
 
@@ -446,7 +446,7 @@ const sampleQuestions = [
       'examine carefully',
       'arrange in a tidy manner',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'The article provides factual information about seaweed, explaining what it is, where it grows, and how it is used in various everyday products.'
   },
 
@@ -461,7 +461,7 @@ const sampleQuestions = [
       'reveal Mary’s regret for her actions',
       'explain Alice’s fondness for the stuffed rabbit'
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     explanation: 'The website "Discover Ocean Plants" would be most likely to have information about where red seaweed grows, as seaweed is a type of ocean plant.'
   },
 
@@ -476,7 +476,7 @@ const sampleQuestions = [
       'the regret she feels about her earlier reaction toward Mary',
       'why she enjoys spending time outdoors with Mary',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'The instructions state: "Have the person who receives your message hold the paper near a light bulb. The heat will make the secret message appear!"'
   },
 
@@ -491,7 +491,7 @@ const sampleQuestions = [
       'Mary is the younger sibling',
       'characters can describe the setting',
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     explanation: 'The message only appears when steam covers the mirror. When the steam clears and goes away, the message would no longer be visible.'
   },
 
@@ -506,7 +506,7 @@ const sampleQuestions = [
       'The speaker realizes that the family in Puerto Rico is still growing and changing.',
       'The visit to Puerto Rico means meeting new relatives and enjoying new experiences.',
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     explanation: 'In this context, "invisible" means the message cannot be seen or is hidden from view until the steam makes it appear.'
   },
 
@@ -521,7 +521,7 @@ const sampleQuestions = [
       'showing her the value of her life in Virginia',
       'helping her learn about Puerto Rico',
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: 'Both methods require adult assistance: "Lemony Letter" needs a grownup to cut the lemon in half, and "Mirror Message" needs a grownup to peel the potato.'
   },
 
@@ -551,7 +551,7 @@ const sampleQuestions = [
       'hidden',
       'inside',
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'The flier provides step-by-step instructions for three different methods of creating secret messages, teaching readers how to make them.'
   },
 
@@ -566,7 +566,7 @@ const sampleQuestions = [
       'distraction',
       'weariness',
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'The numbers indicate the sequential order of steps that must be followed to successfully create each type of secret message.'
   },
 
@@ -581,7 +581,7 @@ const sampleQuestions = [
       'chronological order to describe when flowers open and close their petals',
       'problem/solution to show that bees and flowers rely on sunlight for energy',
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: 'In the context of grocery stores charging "too much" for strawberries, "charge" means "to set as a price," which is definition 2.'
   },
 
@@ -596,7 +596,7 @@ const sampleQuestions = [
       'capture sunlight',
       'collect water'
     ],
-    correctAnswer: [0, 3],
+    correctAnswer: 2,
     explanation: 'Guide words show the first and last entries on a dictionary page. "Carrot" and "canal" fall alphabetically between "camera" and "cause." "Cabin" comes before "camera" and "cave" comes after "cause."'
   },
 
@@ -611,7 +611,7 @@ const sampleQuestions = [
       'amazement',
       'embarrassment',
     ],
-    correctAnswer: 3,
+    correctAnswer: 0,
     explanation: 'The title "A Hidden Treasure" suggests that characters will be looking for or searching for something that is hidden.'
   },
 
@@ -626,7 +626,7 @@ const sampleQuestions = [
       'demanded',
       'anxious',
     ],
-    correctAnswer: 0,
+    correctAnswer: 2,
     explanation: 'Paragraph 5 describes what Evan found on the map: "Grandma\'s house, a raindrop inside a square, two little triangles, and a dock" with an "X" marking the "Greatest Fishing Spot."'
   },
 
@@ -641,7 +641,7 @@ const sampleQuestions = [
       'realizes she has talents of her own',
       'is thinking about her new friendship',
     ],
-    correctAnswer: 3,
+    correctAnswer: 2,
     explanation: 'The text shows their excitement: Evan asks "Excitedly" if they can find the fishing spot, Mark says "Let\'s try," and "they thundered down the steps," showing they are eager to start their search.'
   },
 
@@ -656,7 +656,7 @@ const sampleQuestions = [
       'talks about the information on the handout',
       'has answered many questions in science class',
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     explanation: 'The story begins with Grandma painting her kitchen, and ends with the boys rushing back "into the kitchen" with their question about the dock, then planning to get fishing poles.'
   },
 
@@ -671,7 +671,7 @@ const sampleQuestions = [
       'he knows that the other students are already familiar with the subject',
       'he wants to have a conversation with his new science partner',
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: 'Mark says "The square with the raindrop is behind Grandma\'s house" and they look for the water tower with the faded raindrop symbol first.'
   },
 
@@ -701,7 +701,7 @@ const sampleQuestions = [
       'Acquaintances often make the best of friends.',
       'Important lessons can come from unlikely sources.',
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
     explanation: 'Paragraph 4 directly states: "The young birds learn to peck the ground and eat plants by watching older ostriches."'
   },
 
@@ -716,7 +716,7 @@ const sampleQuestions = [
       'gives Jada a chance to answer questions',
       'lets Jada talk about school',
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: 'Paragraph 4 directly states: "The young birds learn to peck the ground and eat plants by watching older ostriches."'
   }
 ];

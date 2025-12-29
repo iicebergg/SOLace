@@ -264,7 +264,7 @@ const sampleQuestions = [
       'difficulties and changes',
       'pleasure and seriousness'
     ],
-    correctAnswer: 3,
+    correctAnswer: 1,
     explanation: 'The story is about both Danielle making cupcakes as a surprise for her siblings and her siblings making an apron as a surprise for her. Everyone in the story gives and receives gifts.'
   },
 
@@ -279,7 +279,7 @@ const sampleQuestions = [
       'make timekeeping more accessible',
       'divide the day into specific hours'
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: 'The passage states that Danielle "had baked cupcakes early in the morning, while Martin and Madison were still asleep," which kept them secret.'
   },
 
@@ -294,7 +294,7 @@ const sampleQuestions = [
       'developed so that people could tell time without relying on the sun',
       'known as “water thieves” by the Egyptians and the Greeks',
     ],
-    correctAnswer: 4,
+    correctAnswer: 2,
     explanation: 'After receiving the apron and saying "Thank you. It\'s perfect," the passage says "As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table."'
   },
 
@@ -309,7 +309,7 @@ const sampleQuestions = [
       'timekeeping requires functioning mechanical parts',
       'timekeeping satisfies a human need for order'
     ],
-    correctAnswer: 3,
+    correctAnswer: 2,
     explanation: 'Madison says "We wanted to make a surprise for you because you\'re such a nice sister. You are always thinking of us." This shows her family\'s care and appreciation for her.'
   },
 
@@ -324,7 +324,7 @@ const sampleQuestions = [
       'Sundials are smaller versions of the obelisks used by an ancient civilization.',
       'By the end of the 16th century, mechanical clocks were used in many homes.'
     ],
-    correctAnswer: 3,
+    correctAnswer: 1,
     explanation: 'At the end, Danielle says "I have a surprise for you too!" and leads them to the kitchen where she left cupcakes for them.'
   },
 
@@ -339,7 +339,7 @@ const sampleQuestions = [
       'Depression',
       'Resignation'
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: 'All three characters make surprises for each other: Danielle bakes cupcakes for her siblings, and Martin and Madison make an apron for Danielle, showing they all think of others.'
   },
 
@@ -354,7 +354,7 @@ const sampleQuestions = [
       'Ruth felt unhappy before the war started',
       'Ruth did not want her husband to join the war'
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
     explanation: 'The root word in "discovered" is "cover." The prefix "dis-" means "not" and the suffix "-ed" shows past tense, so "discovered" means "uncovered" or "found."'
   },
 
@@ -369,7 +369,7 @@ const sampleQuestions = [
       'To develop a sense of intensifying suspense', 
       'To highlight the tragedies of a certain era'
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: 'The passage states that "In some parts of the world, especially near the ocean, people eat seaweed all by itself," suggesting people near oceans commonly eat foods from the sea.'
   },
 
@@ -399,7 +399,7 @@ const sampleQuestions = [
       'loner',
       'scapegoat',
     ],
-    correctAnswer: 3,
+    correctAnswer: 0,
     explanation: 'The article mentions several goods that contain seaweed: toothpaste, shampoo, makeup, ice cream, and yogurt. It also states "Hundreds of everyday items have seaweed in them."'
   },
 
@@ -414,7 +414,7 @@ const sampleQuestions = [
       'describe harsh conditions that exist in the desert',
       'clarify how plants and animals are able to survive in the desert',
     ],
-    correctAnswer: 0,
+    correctAnswer: 1,
     explanation: 'The article provides factual information about seaweed, explaining what it is, where it grows, and how it is used in various everyday products.'
   },
 
@@ -429,7 +429,7 @@ const sampleQuestions = [
       'integrates details to describe an event',
       'presents the events chronologically',
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     explanation: 'The title "The Search" indicates the poem will be about someone searching or looking for something.'
   },
 
@@ -444,7 +444,7 @@ const sampleQuestions = [
       'Rocks that adjusted the flow of water to the fields were found next to reservoirs.',
       'The Hohokam did not grow certain crops that required constant watering.',
     ],
-    correctAnswer: 3,
+    correctAnswer: 0,
     explanation: '"Pause" means to stop briefly or for a short time. The speaker stops in their tracks when Dad asks questions.'
   },
 
@@ -459,7 +459,7 @@ const sampleQuestions = [
       'reduced to nothing',
       'brought to mind',
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: 'Lines 17-20 show disappointment and sadness: "It\'s surely gone missing / There\'s clearly no hope. / I have to give up / Find somewhere to mope." The speaker feels upset about losing the shoe.'
   },
 
@@ -504,7 +504,7 @@ const sampleQuestions = [
       'has trouble relating all the details',
       'is relieved to tell her mother the truth',
     ],
-    correctAnswer: 0,
+    correctAnswer: 3,
     explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
   },
 
@@ -519,7 +519,7 @@ const sampleQuestions = [
       'Craftsmen began with a section of bone roughly eight inches long, carved a hole at each end, and strung leather straps through these holes.',
       'At this point in history, ice- skating seems to have shifted to a mainly recreational activity.',
     ],
-    correctAnswer: 1,
+    correctAnswer: 3,
     explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
   },
 
@@ -534,7 +534,7 @@ const sampleQuestions = [
       'bone skating is rising in popularity',
       'ancient bone skaters followed reindeer herds',
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
   },
 
@@ -564,7 +564,7 @@ const sampleQuestions = [
       'highlight the variety of plants growing in the alley',
       'establish a sad mood with an image of the plants',
     ],
-    correctAnswer: 1,
+    correctAnswer: 0,
     explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
   },
 
@@ -579,7 +579,7 @@ const sampleQuestions = [
       'is expressing personal feelings through a description of the trees',
       'is looking forward to spring, when the trees will again be green',
     ],
-    correctAnswer: 1,
+    correctAnswer: 2,
     explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
   },
 
