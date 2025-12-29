@@ -689,191 +689,376 @@ const sampleQuestions = [
   },
 ];
 
-// Reading panel management - Auto-opening, no toggle
+// Make questions available globally
+window.sampleQuestions = sampleQuestions;
+
+// ========================================
+// READING PANEL MANAGEMENT
+// ========================================
+
 let isReadingPanelOpen = false;
 let currentPassageId = null;
 
- function openReadingPanel() {
+// Track current passage state for tabs
+let currentPassageIds = [];
+let currentActivePassageIndex = 0;
+
+function openReadingPanel() {
   const panel = document.getElementById('reading-panel');
-  const testContainer = document.querySelector('.test-container'); // Outer container with class
+  const testContainer = document.querySelector('.test-container');
   
   if (panel) {
     panel.classList.add('open');
     isReadingPanelOpen = true;
-    console.log('Reading panel auto-opened');
   }
   
-  // Add class to outer test container (the one with class="test-container")
   if (testContainer) {
     testContainer.classList.add('panel-open');
-    console.log('Test container adjusted for left panel');
   }
 }
 
 function closeReadingPanel() {
   const panel = document.getElementById('reading-panel');
-  const testContainer = document.querySelector('.test-container'); // Outer container with class
+  const testContainer = document.querySelector('.test-container');
   
   if (panel) {
     panel.classList.remove('open');
     isReadingPanelOpen = false;
-    console.log('Reading panel closed');
   }
   
-  // Remove class from outer test container
   if (testContainer) {
     testContainer.classList.remove('panel-open');
-    console.log('Test container reset');
+  }
+  
+  // Hide tabs when closing panel
+  const tabsContainer = document.querySelector('.passage-tabs-container');
+  if (tabsContainer) {
+    tabsContainer.classList.remove('active');
   }
 }
 
-// Also update the loadPassage function to ensure proper class application
-function loadPassage(passageId) {
-  if (!passageId) {
-    console.log('No passageId provided, closing panel');
-    closeReadingPanel();
-    return;
-  }
+/**
+ * Initialize the passage tabs container in the reading panel
+ */
+function initPassageTabs() {
+  const readingPanel = document.querySelector('.reading-panel');
+  if (!readingPanel) return;
   
-  if (currentPassageId === passageId && isReadingPanelOpen) {
-    console.log('Passage already loaded and panel open:', passageId);
-    return; // Already loaded and open
-  }
+  // Check if tabs container already exists
+  let tabsContainer = document.querySelector('.passage-tabs-container');
+  if (tabsContainer) return;
   
-  const passage = readingPassages[passageId];
-  if (!passage) {
-    console.error('Passage not found:', passageId);
-    console.log('Available passages:', Object.keys(readingPassages));
-    closeReadingPanel();
-    return;
-  }
+  // Create tabs container
+  tabsContainer = document.createElement('div');
+  tabsContainer.className = 'passage-tabs-container';
+  tabsContainer.setAttribute('role', 'tablist');
+  tabsContainer.setAttribute('aria-label', 'Passage selection');
   
-  currentPassageId = passageId;
+  // Create the tabs wrapper
+  const tabsWrapper = document.createElement('div');
+  tabsWrapper.className = 'passage-tabs';
+  tabsContainer.appendChild(tabsWrapper);
   
-  const titleElement = document.getElementById('passage-title');
-  const contentElement = document.getElementById('passage-content');
+  // Insert after header, before content
+  const header = readingPanel.querySelector('.reading-panel-header');
+  const content = readingPanel.querySelector('.reading-panel-content');
   
-  if (titleElement) {
-    titleElement.textContent = passage.title;
-    console.log('Passage title set to:', passage.title);
+  if (header && content) {
+    header.after(tabsContainer);
   } else {
-    console.error('Passage title element not found');
+    readingPanel.insertBefore(tabsContainer, readingPanel.firstChild);
   }
   
-  if (contentElement) {
-    contentElement.innerHTML = passage.content;
-    console.log('Passage content loaded, length:', passage.content.length);
-  } else {
-    console.error('Passage content element not found');
+  console.log('Passage tabs container initialized');
+}
+
+/**
+ * Get passage IDs for a question
+ * Supports both single passageId (string or array) and passageIds array
+ */
+function getQuestionPassageIds(question) {
+  if (!question) return [];
+  
+  // Check for passageIds array first
+  if (Array.isArray(question.passageIds) && question.passageIds.length > 0) {
+    return question.passageIds;
   }
   
-  // Auto-open the panel and ensure test container gets proper class
-  openReadingPanel();
+  // Check if passageId is an array (some tests use this format)
+  if (Array.isArray(question.passageId) && question.passageId.length > 0) {
+    return question.passageId;
+  }
   
-  // Force reflow and ensure class is applied
-  setTimeout(() => {
-    const testContainer = document.querySelector('.test-container');
-    if (testContainer && !testContainer.classList.contains('panel-open')) {
-      console.log('Force applying panel-open class');
-      testContainer.classList.add('panel-open');
+  // Fall back to single passageId string
+  if (question.passageId && typeof question.passageId === 'string') {
+    return [question.passageId];
+  }
+  
+  return [];
+}
+
+/**
+ * Get passage data by ID from readingPassages
+ */
+function getPassageById(passageId) {
+  if (readingPassages && readingPassages[passageId]) {
+    return readingPassages[passageId];
+  }
+  return null;
+}
+
+/**
+ * Get display name for a passage
+ */
+function getPassageDisplayName(passageId, passageData, index) {
+  if (passageData && passageData.title) {
+    return passageData.title;
+  }
+  return `Passage ${index + 1}`;
+}
+
+/**
+ * Handle keyboard navigation in tabs
+ */
+function handleTabKeydown(e, currentIndex, totalTabs) {
+  const tabs = document.querySelectorAll('.passage-tab');
+  let newIndex = currentIndex;
+  
+  switch (e.key) {
+    case 'ArrowLeft':
+      e.preventDefault();
+      newIndex = currentIndex > 0 ? currentIndex - 1 : totalTabs - 1;
+      break;
+    case 'ArrowRight':
+      e.preventDefault();
+      newIndex = currentIndex < totalTabs - 1 ? currentIndex + 1 : 0;
+      break;
+    case 'Home':
+      e.preventDefault();
+      newIndex = 0;
+      break;
+    case 'End':
+      e.preventDefault();
+      newIndex = totalTabs - 1;
+      break;
+    default:
+      return;
+  }
+  
+  if (newIndex !== currentIndex) {
+    tabs[newIndex].focus();
+    switchToPassage(newIndex);
+  }
+}
+
+/**
+ * Switch to a specific passage by index
+ */
+function switchToPassage(index) {
+  if (index < 0 || index >= currentPassageIds.length) return;
+  
+  const tabs = document.querySelectorAll('.passage-tab');
+  const passageId = currentPassageIds[index];
+  
+  // Update tab states
+  tabs.forEach((tab, i) => {
+    if (i === index) {
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+    } else {
+      tab.classList.remove('active');
+      tab.setAttribute('aria-selected', 'false');
     }
-  }, 100);
+  });
   
-  console.log('Successfully loaded and opened passage:', passage.title);
+  currentActivePassageIndex = index;
+  
+  // Load the passage content
+  loadPassageContentById(passageId);
+  
+  console.log(`Switched to passage: ${passageId}`);
 }
 
-// Enhanced displayFeedback function with positioning fix
-function displayFeedback(isCorrect, explanation) {
-  const feedbackContainer = document.getElementById('feedback-container');
-  const feedbackMessage = document.getElementById('feedback-message');
-  const explanationElement = document.getElementById('explanation');
-
-  if (feedbackMessage) {
-    feedbackMessage.textContent = isCorrect ? 'Correct!' : 'Incorrect:';
-    feedbackMessage.className = isCorrect ? 'correct' : 'incorrect';
-  }
-
-  if (explanationElement) {
-    explanationElement.textContent = explanation;
-  }
-
-  if (feedbackContainer) {
-    feedbackContainer.style.display = 'block';
-    
-    // Force a reflow to ensure positioning is applied
-    feedbackContainer.offsetHeight;
-    
-    // Scroll feedback into view if needed
-    setTimeout(() => {
-      feedbackContainer.scrollIntoView({ 
-        behavior: 'smooth', 
-        block: 'nearest',
-        inline: 'nearest'
-      });
-    }, 100);
-  }
-}
-
-function loadPassage(passageId) {
-  if (!passageId) {
-    console.log('No passageId provided, closing panel');
-    closeReadingPanel();
-    return;
-  }
-  
-  if (currentPassageId === passageId && isReadingPanelOpen) {
-    console.log('Passage already loaded and panel open:', passageId);
-    return; // Already loaded and open
-  }
-  
-  const passage = readingPassages[passageId];
-  if (!passage) {
-    console.error('Passage not found:', passageId);
-    console.log('Available passages:', Object.keys(readingPassages));
-    closeReadingPanel();
-    return;
-  }
-  
-  currentPassageId = passageId;
-  
+/**
+ * Load passage content into the reading panel by ID
+ */
+function loadPassageContentById(passageId) {
+  const passageContent = document.getElementById('passage-content');
   const titleElement = document.getElementById('passage-title');
-  const contentElement = document.getElementById('passage-content');
+  if (!passageContent) return;
   
-  if (titleElement) {
-    titleElement.textContent = passage.title;
-    console.log('Passage title set to:', passage.title);
-  } else {
-    console.error('Passage title element not found');
+  const passageData = getPassageById(passageId);
+  
+  if (!passageData) {
+    passageContent.innerHTML = `<p><em>Passage "${passageId}" not found.</em></p>`;
+    return;
   }
   
-  if (contentElement) {
-    contentElement.innerHTML = passage.content;
-    console.log('Passage content loaded, length:', passage.content.length);
-  } else {
-    console.error('Passage content element not found');
+  // Update title
+  if (titleElement && passageData.title) {
+    titleElement.textContent = passageData.title;
   }
   
-  // Auto-open the panel
+  // Build passage HTML
+  let html = '';
+  
+  // Add content
+  if (passageData.content) {
+    html += passageData.content;
+  } else if (passageData.html) {
+    html += passageData.html;
+  } else if (typeof passageData === 'string') {
+    html += passageData;
+  }
+  
+  // Apply to passage content with animation
+  passageContent.style.opacity = '0';
+  passageContent.style.transform = 'translateY(5px)';
+  
+  setTimeout(() => {
+    passageContent.innerHTML = html;
+    passageContent.style.transition = 'opacity 0.2s ease, transform 0.2s ease';
+    passageContent.style.opacity = '1';
+    passageContent.style.transform = 'translateY(0)';
+    
+    // Scroll to top of passage
+    const panelContent = document.querySelector('.reading-panel-content');
+    if (panelContent) {
+      panelContent.scrollTop = 0;
+    }
+  }, 50);
+}
+
+/**
+ * Update passage tabs based on current question's passages
+ */
+function updatePassageTabs(passageIds) {
+  const tabsContainer = document.querySelector('.passage-tabs-container');
+  const tabsWrapper = document.querySelector('.passage-tabs');
+  
+  if (!tabsContainer || !tabsWrapper) {
+    console.log('Tabs container not found, initializing...');
+    initPassageTabs();
+    // Retry after initialization
+    setTimeout(() => updatePassageTabs(passageIds), 100);
+    return;
+  }
+  
+  currentPassageIds = passageIds;
+  
+  // Clear existing tabs
+  tabsWrapper.innerHTML = '';
+  
+  // If only one or no passages, hide tabs
+  if (passageIds.length <= 1) {
+    tabsContainer.classList.remove('active');
+    currentActivePassageIndex = 0;
+    return;
+  }
+  
+  // Multiple passages - show tabs
+  tabsContainer.classList.add('active');
+  
+  // Create tabs for each passage
+  passageIds.forEach((passageId, index) => {
+    const passageData = getPassageById(passageId);
+    const displayName = getPassageDisplayName(passageId, passageData, index);
+    
+    const tab = document.createElement('button');
+    tab.className = 'passage-tab';
+    tab.setAttribute('role', 'tab');
+    tab.setAttribute('aria-selected', index === 0 ? 'true' : 'false');
+    tab.setAttribute('aria-controls', 'passage-content');
+    tab.setAttribute('data-passage-id', passageId);
+    tab.setAttribute('data-passage-index', index);
+    tab.textContent = displayName;
+    
+    if (index === 0) {
+      tab.classList.add('active');
+    }
+    
+    // Tab click handler
+    tab.addEventListener('click', () => {
+      switchToPassage(index);
+    });
+    
+    // Keyboard navigation
+    tab.addEventListener('keydown', (e) => {
+      handleTabKeydown(e, index, passageIds.length);
+    });
+    
+    tabsWrapper.appendChild(tab);
+  });
+  
+  // Reset to first passage
+  currentActivePassageIndex = 0;
+  
+  console.log(`Created ${passageIds.length} passage tabs`);
+}
+
+/**
+ * Main function to load passage(s) for a question
+ * Handles both single and multiple passages
+ */
+function loadPassageForQuestion(question) {
+  if (!question) {
+    closeReadingPanel();
+    return;
+  }
+  
+  const passageIds = getQuestionPassageIds(question);
+  
+  if (passageIds.length === 0) {
+    // No passages for this question
+    closeReadingPanel();
+    currentPassageId = null;
+    return;
+  }
+  
+  // Initialize tabs if needed
+  initPassageTabs();
+  
+  // Update tabs (will hide if only one passage)
+  updatePassageTabs(passageIds);
+  
+  // Load the first passage
+  currentPassageId = passageIds[0];
+  loadPassageContentById(passageIds[0]);
+  
+  // Open the panel
   openReadingPanel();
   
-  console.log('Successfully loaded and opened passage:', passage.title);
+  console.log(`Loaded passage(s) for question: ${passageIds.join(', ')}`);
 }
 
-// AUTO-OPEN APPROACH: Watch for question changes and auto-load passages
+// Legacy function for compatibility
+function loadPassage(passageId) {
+  if (!passageId) {
+    closeReadingPanel();
+    return;
+  }
+  
+  // Convert to array format and use the new system
+  const passageIds = Array.isArray(passageId) ? passageId : [passageId];
+  
+  // Create a mock question object
+  const mockQuestion = { passageId: passageIds };
+  loadPassageForQuestion(mockQuestion);
+}
+
 document.addEventListener('DOMContentLoaded', function() {
-  console.log('Auto-opening left panel reading test initializing...');
+  console.log('Reading test initializing with passage tabs support...');
   
-  // Set questions for the test framework using the expected variable name
-  window.sampleQuestions = sampleQuestions;
-  
-  // Remove any toggle button functionality since we auto-open
+  // Hide toggle button if exists (we auto-open)
   const toggleBtn = document.getElementById('toggle-reading-panel');
   if (toggleBtn) {
     toggleBtn.style.display = 'none';
-    console.log('Toggle button hidden');
   }
   
-  // Watch for question changes and auto-load passages accordingly
+  // Initialize tabs container
+  initPassageTabs();
+  
+  // Watch for question changes
   let lastQuestionIndex = -1;
   
   function checkForQuestionChange() {
@@ -885,15 +1070,10 @@ document.addEventListener('DOMContentLoaded', function() {
         lastQuestionIndex = currentIndex;
         const question = sampleQuestions[currentIndex];
         
-        console.log('Question changed to:', currentIndex + 1, 'passageId:', question.passageId || 'none');
+        console.log('Question changed to:', currentIndex + 1);
         
-        // Auto-load passage if question has one, close panel if it doesn't
-        if (question.passageId) {
-          loadPassage(question.passageId);
-        } else {
-          closeReadingPanel();
-          currentPassageId = null;
-        }
+        // Load passage(s) for the question
+        loadPassageForQuestion(question);
       }
     }
   }
@@ -901,5 +1081,5 @@ document.addEventListener('DOMContentLoaded', function() {
   // Check for question changes every 500ms
   setInterval(checkForQuestionChange, 500);
   
-  console.log('Auto-opening left panel initialized with', sampleQuestions.length, 'questions');
+  console.log('Reading test initialized with', sampleQuestions.length, 'questions');
 });
