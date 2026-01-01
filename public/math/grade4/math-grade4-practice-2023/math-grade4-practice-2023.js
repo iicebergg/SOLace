@@ -40,11 +40,11 @@ const sampleQuestions = [
  },
  {
  id: '5',
- text: 'James needs <math><mfrac><mn>2</mn><mn>5</mn></mfrac></math> foot of string for each bracelet he makes. He will make 5 bracelets.<br><img src="images/5.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>What is the total length of string James needs to make 5 bracelets?',
+ text: 'James needs <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math> foot of string for each bracelet he makes. He will make 5 bracelets.<br><img src="images/5.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>What is the total length of string James needs to make 5 bracelets?',
  type: 'multiple-choice',
- options: ['<math><mfrac><mn>7</mn><mn>5</mn></mfrac></math> feet', '2 feet', '<math><mn>2</mn><mfrac><mn>2</mn><mn>5</mn></mfrac></math> feet', '10 feet'],
+ options: ['<math><mfrac><mn>2</mn><mn>5</mn></mfrac></math> feet', '<math><mn>2</mn><mfrac><mn>1</mn><mn>2</mn></mfrac></math> feet', '<math><mn>5</mn><mfrac><mn>1</mn><mn>2</mn></mfrac></math> feet', '10 feet'],
  correctAnswer: 1, 
- explanation: 'Multiply: ⅖ foot × 5 bracelets = 10/5 = 2 feet.'
+ explanation: 'Multiply: <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math> foot × 5 bracelets = <math><mn>2</mn><mfrac><mn>1</mn><mn>2</mn></mfrac></math> feet.'
  },
  {
  id: '6',
