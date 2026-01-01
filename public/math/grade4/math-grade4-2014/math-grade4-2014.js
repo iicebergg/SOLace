@@ -214,6 +214,14 @@ const sampleQuestions = [
  correctAnswer: 0, 
  explanation: 'A triangle has 3 angles, which is less than 4. All other figures have 4 angles.'
  },
+  {
+ id: '27',
+ text: 'Which estimate best describes the value of <math><mn>29</mn><mfrac><mn>1</mn><mn>3</mn></mfrac></math> − <math><mn>13</mn><mfrac><mn>2</mn><mn>3</mn></mfrac></math>?',
+ type: 'multiple-choice',
+ options: ['A little less than 10', 'A little less than 16', 'A little more than 16', 'A little more than 20'],
+ correctAnswer: 1,
+ explanation: '29⅓ is about 29 and 13⅔ is about 14, so 29 - 14 = 15, which is a little less than 16.'
+ },
  {
  id: '28',
  text: 'Identify two lines in the figure that appear to be parallel. <br><img src="images/question_28.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>',
@@ -347,6 +355,14 @@ const sampleQuestions = [
  options: ['4 x 7 = 26 + 2', '4 x 8 = 32 + 2', '7 x 6 = 59 - 7', '7 x 8 = 64 - 7'],
  correctAnswer: 0, 
  explanation: 'Check each equation: 4 × 7 = 28 and 26 + 2 = 28, so 4 × 7 = 26 + 2 is true.'
+ },
+ {
+ id: '41',
+ text: 'Lenny bought sunglasses for $3.35 and a beach towel for $8.71, including tax. He gave the clerk $15.00 to pay for these items. What is the amount of change Lenny should receive?',
+ type: 'multiple-choice',
+ options: ['$2.94', '$3.94', '$11.06', '$12.06'],
+ correctAnswer: 0, 
+ explanation: 'Total cost: $3.35 + $8.71 = $12.06. Change: $15.00 - $12.06 = $2.94.'
  },
  {
  id: '42',
