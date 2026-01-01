@@ -244,12 +244,12 @@ const sampleQuestions = [
       'the feelings Tamara has about the project'
     ],
     correctAnswer: 0,
-    explanation: 'The story is about both Danielle making cupcakes as a surprise for her siblings and her siblings making an apron as a surprise for her. Everyone in the story gives and receives gifts.'
+    explanation: 'These paragraphs reveal Callie\'s dilemma: Tamara invites her to Fun World on the same day she promised to help Mrs. Baker clean the lot.'
   },
 
   {
     id: '2', 
-    text: 'Paragraphs 11-14 show that Callie’s mother--',
+    text: 'Paragraphs 11-14 show that Callie\'s mother--',
     type: 'multiple-choice',
     passageId: 'callies_choice',
     options: [
@@ -259,7 +259,7 @@ const sampleQuestions = [
       'knows that neighborhood gardens are useful'
     ],
     correctAnswer: 2,
-    explanation: 'The passage states that Danielle "had baked cupcakes early in the morning, while Martin and Madison were still asleep," which kept them secret.'
+    explanation: 'Callie\'s mother says "You need to make your own decisions, but I know you will do what is best," showing she trusts Callie to handle the situation herself.'
   },
 
   {
@@ -274,12 +274,12 @@ const sampleQuestions = [
       'struggles with her promise to her neighbor'
     ],
     correctAnswer: 3,
-    explanation: 'After receiving the apron and saying "Thank you. It\'s perfect," the passage says "As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table."'
+    explanation: 'The paragraph describes Callie thinking about her decision all evening, wanting to go to Fun World but deciding her promise to Mrs. Baker was more important.'
   },
 
   {
     id: '4',
-    text: 'Why does Mrs. Baker need Callie’s help?',
+    text: 'Why does Mrs. Baker need Callie\'s help?',
     type: 'multiple-choice',
     passageId: 'callies_choice',
     options: [
@@ -289,7 +289,7 @@ const sampleQuestions = [
       'The city is asking people to clear the empty lots near their homes.'
     ],
     correctAnswer: 1,
-    explanation: 'Madison says "We wanted to make a surprise for you because you\'re such a nice sister. You are always thinking of us." This shows her family\'s care and appreciation for her.'
+    explanation: 'Paragraph 2 explains that the empty lot is "covered with trash" and "The city is letting us use the lot for a community garden."'
   },
 
   {
@@ -304,7 +304,7 @@ const sampleQuestions = [
       'As Cold as Ice'
     ],
     correctAnswer: 1,
-    explanation: 'At the end, Danielle says "I have a surprise for you too!" and leads them to the kitchen where she left cupcakes for them.'
+    explanation: 'Paragraph 2 explains how the Ice Hotel is different from regular hotels because it\'s made entirely of ice, yet still functions like a typical hotel.'
   },
 
   {
@@ -319,12 +319,12 @@ const sampleQuestions = [
       '4'
     ],
     correctAnswer: 1,
-    explanation: 'All three characters make surprises for each other: Danielle bakes cupcakes for her siblings, and Martin and Madison make an apron for Danielle, showing they all think of others.'
+    explanation: 'The text says "Ice pillars support the roof," meaning the pillars hold up the roof, which matches definition 2.'
   },
 
   {
     id: '7',
-    text: 'WThe author includes paragraphs 5 and 6 most likely to--',
+    text: 'The author includes paragraphs 5 and 6 most likely to--',
     type: 'multiple-choice',
     passageId: 'arctic',
     options: [
@@ -334,7 +334,7 @@ const sampleQuestions = [
       'show that new services are offered at the Ice Hotel'
     ],
     correctAnswer: 0,
-    explanation: 'The root word in "discovered" is "cover." The prefix "dis-" means "not" and the suffix "-ed" shows past tense, so "discovered" means "uncovered" or "found."'
+    explanation: 'These paragraphs explain how guests stay warm with sleeping bags and can use the sauna, showing how the hotel makes cold conditions comfortable.'
   },
 
   {
@@ -349,12 +349,12 @@ const sampleQuestions = [
       'Building the Ice Hotel is worth the hard work.'
     ],
     correctAnswer: 3,
-    explanation: 'The passage states that "In some parts of the world, especially near the ocean, people eat seaweed all by itself," suggesting people near oceans commonly eat foods from the sea.'
+    explanation: 'Saying something is "worth it" is an opinion because it expresses a personal judgment, while the other choices are facts that can be proven.'
   },
 
   {
     id: '9',
-    text: 'Which detail about the hotel most likely attracts visitors’ attention?',
+    text: 'Which detail about the hotel most likely attracts visitors\' attention?',
     type: 'multiple-choice',
     passageId: 'arctic',
     options: [
@@ -364,7 +364,7 @@ const sampleQuestions = [
       'The walls are four feet thick.',
     ],
     correctAnswer: 2,
-    explanation: 'The passage explains that "Without seaweed, ice cream and yogurt would not be as thick or creamy but would seem rather lumpy and watery," showing seaweed affects how they look and their texture.'
+    explanation: 'Paragraph 4 describes how "almost every inch sparkles like a diamond" and the hotel "gleams," which would be most eye-catching to visitors.'
   },
 
   {
@@ -379,10 +379,10 @@ const sampleQuestions = [
       'Jackie was planning to leave the Negro Leagues',
     ],
     correctAnswer: 2,
-    explanation: 'The article mentions several goods that contain seaweed: toothpaste, shampoo, makeup, ice cream, and yogurt. It also states "Hundreds of everyday items have seaweed in them."'
+    explanation: 'Paragraph 4 states "Branch knew that Jackie was talented enough to be part of this team," showing he wanted Jackie\'s talent to improve the Dodgers.'
   },
 
-    {
+  {
     id: '11',
     text: 'The author wrote this article most likely to--',
     type: 'multiple-choice',
@@ -394,7 +394,7 @@ const sampleQuestions = [
       'explain how Jackie Robinson became a member of the Brooklyn Dodgers',
     ],
     correctAnswer: 1,
-    explanation: 'The article provides factual information about seaweed, explaining what it is, where it grows, and how it is used in various everyday products.'
+    explanation: 'The article focuses on Jackie Robinson being the first African American in Major League Baseball and how this changed sports history.'
   },
 
   {
@@ -409,7 +409,7 @@ const sampleQuestions = [
       'The noise outside is making the thieves nervous.'
     ],
     correctAnswer: 2,
-    explanation: 'The website "Discover Ocean Plants" would be most likely to have information about where red seaweed grows, as seaweed is a type of ocean plant.'
+    explanation: 'Line 2 says "Their silver fur in silver light," showing the moonlight is shining on the animals\' fur.'
   },
 
   {
@@ -424,7 +424,7 @@ const sampleQuestions = [
       'why the thieves are out',
     ],
     correctAnswer: 0,
-    explanation: 'The instructions state: "Have the person who receives your message hold the paper near a light bulb. The heat will make the secret message appear!"'
+    explanation: 'These lines describe "a mask of black around her eyes" and "a mask and bushy tail," revealing the "thieves" are raccoons.'
   },
 
   {
@@ -439,7 +439,7 @@ const sampleQuestions = [
       'playing in the moonlight',
     ],
     correctAnswer: 1,
-    explanation: 'The message only appears when steam covers the mirror. When the steam clears and goes away, the message would no longer be visible.'
+    explanation: 'Lines 15-16 reveal they "come to snack on my dog\'s kibble-- / To satisfy a midnight nibble!"'
   },
 
   {
@@ -454,7 +454,7 @@ const sampleQuestions = [
       'Watching from inside',
     ],
     correctAnswer: 3,
-    explanation: 'In this context, "invisible" means the message cannot be seen or is hidden from view until the steam makes it appear.'
+    explanation: 'Line 10 says "I puzzled at them through the glass," showing the speaker is watching the raccoons through a window from inside.'
   },
 
   {
@@ -469,7 +469,7 @@ const sampleQuestions = [
       'describe the many bodies of water',
     ],
     correctAnswer: 2,
-    explanation: 'Both methods require adult assistance: "Lemony Letter" needs a grownup to cut the lemon in half, and "Mirror Message" needs a grownup to peel the potato.'
+    explanation: 'The first paragraph describes the size (500,000 acres), features (peaks, lakes, rivers), and activities available at Thatcher National Wilderness Area.'
   },
 
   {
@@ -484,12 +484,12 @@ const sampleQuestions = [
       'given a warning',
     ],
     correctAnswer: 3,
-    explanation: 'The instructions say to use a white crayon on white paper, making it "difficult to see the markings" because white crayon on white paper is nearly invisible.'
+    explanation: 'The paragraph warns visitors about dangers like unpredictable weather and difficult rescue, so "cautioned" means given a warning.'
   },
 
   {
     id: '18',
-    text: 'Read this thesaurus entry. <div class="passage-dicbox"><b>complete</b> <i>adj.</i> - entire, finished, perfect, total.</div> Which word best replaces <u>complete</u> in the “Hiking Essentials” section?',
+    text: 'Read this thesaurus entry. <div class="passage-dicbox"><b>complete</b> <i>adj.</i> - entire, finished, perfect, total.</div> Which word best replaces <u>complete</u> in the "Hiking Essentials" section?',
     type: 'multiple-choice',
     passageId: 'thatcher',
     options: [
@@ -499,12 +499,12 @@ const sampleQuestions = [
       'total',
     ],
     correctAnswer: 0,
-    explanation: 'The flier provides step-by-step instructions for three different methods of creating secret messages, teaching readers how to make them.'
+    explanation: 'The text refers to bringing a "complete first-aid kit," meaning one with all necessary items, so "entire" fits best.'
   },
 
   {
     id: '19',
-    text: 'Based on the information in the “Keep an Eye to the Sky” section, the reader can tell that the weather--',
+    text: 'Based on the information in the "Keep an Eye to the Sky" section, the reader can tell that the weather--',
     type: 'multiple-choice',
     passageId: 'thatcher',
     options: [
@@ -514,7 +514,7 @@ const sampleQuestions = [
       'can best be enjoyed during warmer months',
     ],
     correctAnswer: 1,
-    explanation: 'The numbers indicate the sequential order of steps that must be followed to successfully create each type of secret message.'
+    explanation: 'The section warns that weather "can change rapidly" and describes sudden thunderstorms in summer and unexpected snowstorms in fall.'
   },
 
   {
@@ -529,7 +529,7 @@ const sampleQuestions = [
       'Hike Smart',
     ],
     correctAnswer: 2,
-    explanation: 'In the context of grocery stores charging "too much" for strawberries, "charge" means "to set as a price," which is definition 2.'
+    explanation: '"Set a Turnaround Time" already discusses planning when to turn back and timing hikes, making it the logical place for when to hike.'
   },
 
   {
@@ -544,7 +544,7 @@ const sampleQuestions = [
       'hiking trails that contribute to its popularity'
     ],
     correctAnswer: 1,
-    explanation: 'Guide words show the first and last entries on a dictionary page. "Carrot" and "canal" fall alphabetically between "camera" and "cause." "Cabin" comes before "camera" and "cave" comes after "cause."'
+    explanation: 'The flier emphasizes visitor responsibility and self-reliance, never mentioning staff guides taking hikers up mountains.'
   },
 
   {
@@ -559,7 +559,7 @@ const sampleQuestions = [
       'Hikers can fish and camp in certain areas around the lakes and streams of Thatcher National Wilderness Area.',
     ],
     correctAnswer: 0,
-    explanation: 'The title "A Hidden Treasure" suggests that characters will be looking for or searching for something that is hidden.'
+    explanation: 'The flier emphasizes preparation and safety measures throughout, ending with "With preparation and a few safety measures, visitors will find that TNWA offers endless and rewarding experiences."'
   },
 
   {
@@ -574,7 +574,7 @@ const sampleQuestions = [
       'show that the house is beside a creek',
     ],
     correctAnswer: 2,
-    explanation: 'Paragraph 5 describes what Evan found on the map: "Grandma\'s house, a raindrop inside a square, two little triangles, and a dock" with an "X" marking the "Greatest Fishing Spot."'
+    explanation: 'The one-room schoolhouse and prairie setting help establish this as a historical story taking place in the past.'
   },
 
   {
@@ -584,12 +584,12 @@ const sampleQuestions = [
     passageId: 'benjamin',
     options: [
       'To show how Benjamin felt riding in a wagon',
-      'To show that Benjamin’s family took a long trip',
-      'To explain why Benjamin’s family moved',
+      'To show that Benjamin\'s family took a long trip',
+      'To explain why Benjamin\'s family moved',
       'To explain why Benjamin had few books',
     ],
     correctAnswer: 3,
-    explanation: 'The text shows their excitement: Evan asks "Excitedly" if they can find the fishing spot, Mark says "Let\'s try," and "they thundered down the steps," showing they are eager to start their search.'
+    explanation: 'The paragraph explains that the wagon had limited space for necessities, so Benjamin could only bring two books, explaining his book shortage.'
   },
 
   {
@@ -604,7 +604,7 @@ const sampleQuestions = [
       'Benjamin hopes to receive a letter and is delighted once it arrives with good news.',
     ],
     correctAnswer: 3,
-    explanation: 'The story begins with Grandma painting her kitchen, and ends with the boys rushing back "into the kitchen" with their question about the dock, then planning to get fishing poles.'
+    explanation: 'The paragraph describes Benjamin checking for mail over several weeks, then shouting with delight when Mr. Peters\' letter finally arrives saying the book wagon will come.'
   },
 
   {
@@ -619,7 +619,7 @@ const sampleQuestions = [
       'Papa will buy books when they arrive at their new home.',
     ],
     correctAnswer: 1,
-    explanation: 'Mark says "The square with the raindrop is behind Grandma\'s house" and they look for the water tower with the faded raindrop symbol first.'
+    explanation: 'Paragraph 4 explains "Most of the space in their horse-drawn wagon was taken up by necessities," leaving little room for books.'
   },
 
   {
@@ -634,7 +634,7 @@ const sampleQuestions = [
       'decides to write a letter asking about a book wagon',
     ],
     correctAnswer: 1,
-    explanation: 'When the boys ask about the dock, Grandma explains: "That dock was torn down a long time ago."'
+    explanation: 'Paragraph 3 describes how when reading King Arthur, "Benjamin was a brave king leading his loyal knights," showing he imagines himself in the story.'
   },
 
   {
@@ -649,7 +649,7 @@ const sampleQuestions = [
       'Miss Cotter does not own the book that Benjamin wants.',
     ],
     correctAnswer: 0,
-    explanation: 'In alphabetical order: searched, shouted, smiled, spend, steps.'
+    explanation: 'The main problem is that Benjamin wants books to read during summer but the library books must be returned and the nearest library is too far away.'
   },
 
   {
@@ -664,7 +664,7 @@ const sampleQuestions = [
       'She wants Benjamin to wait for him to arrive.',
     ],
     correctAnswer: 0,
-    explanation: 'Paragraph 4 directly states: "The young birds learn to peck the ground and eat plants by watching older ostriches."'
+    explanation: 'Miss Cotter mentions the book wagon because she has to return the library books Benjamin wants to borrow, offering the book wagon as an alternative.'
   },
 
   {
@@ -679,7 +679,7 @@ const sampleQuestions = [
       'relieved that the wagon has many books',
     ],
     correctAnswer: 1,
-    explanation: 'Paragraph 6 states: "Their strong legs can deliver a kick that stops a lion!"'
+    explanation: 'Benjamin "shouted with delight" when he read that Mr. Peters is bringing the book wagon, showing he\'s thrilled about this news.'
   },
 
   {
@@ -694,7 +694,7 @@ const sampleQuestions = [
       'explore',
     ],
     correctAnswer: 2,
-    explanation: 'The "Ostrich Facts" chart shows "Life span: 30-40 years," which answers how long ostriches live.'
+    explanation: 'The passengers "planned to settle in new frontier towns," meaning they planned to live there permanently.'
   },
 
   {
@@ -709,12 +709,12 @@ const sampleQuestions = [
       'certain danger',
     ],
     correctAnswer: 1,
-    explanation: 'The text states: "The male and one of the females take turns guarding and sitting on the eggs."'
+    explanation: 'The ship "shook with a tremendous jolt" when it hit the tree, indicating a sudden, jarring movement.'
   },
 
   {
     id: '33',
-    text: 'Which question is answered in the “Searching for a Buried Treasure” section of the article?',
+    text: 'Which question is answered in the "Searching for a Buried Treasure" section of the article?',
     type: 'multiple-choice',
     passageId: 'arabia',
     options: [
@@ -724,7 +724,7 @@ const sampleQuestions = [
       'What city did David Hawley travel to in order to gather information about the <i>Arabia</i>?',
     ],
     correctAnswer: 1,
-    explanation: 'The passage explains: "Their new fluffy feathers trap air and keep the chicks warm at night."'
+    explanation: 'Paragraph 5 explains that the Missouri River\'s path had changed over the years, so the Arabia was now in a farmer\'s field, not in the river.'
   },
 
   {
@@ -739,12 +739,12 @@ const sampleQuestions = [
       'knew supplies would be hard to find where they were going',
     ],
     correctAnswer: 3,
-    explanation: 'The article states: "With such speed, ostriches outrun most predators" and that they can run 43 miles per hour, showing their speed helps them escape danger.'
+    explanation: 'The paragraph lists many supplies the pioneers brought, from food to building materials, suggesting they knew these items wouldn\'t be available at their destination.'
   },
 
   {
     id: '35',
-    text: 'Which sentence best states the main idea of paragraph 14?-',
+    text: 'Which sentence best states the main idea of paragraph 14?',
     type: 'multiple-choice',
     passageId: 'arabia',
     options: [
@@ -754,7 +754,7 @@ const sampleQuestions = [
       'Treasures from the <i>Arabia</i> are worth more today than they were a century ago.',
     ],
     correctAnswer: 0,
-    explanation: 'The title "The Search" indicates the poem will be about someone searching or looking for something.'
+    explanation: 'The paragraph explains that Hawley chose to create a museum to share the Arabia with the world, preserving its history.'
   },
 
   {
@@ -769,7 +769,7 @@ const sampleQuestions = [
       'The pilot house',
     ],
     correctAnswer: 1,
-    explanation: '"Pause" means to stop briefly or for a short time. The speaker stops in their tracks when Dad asks questions.'
+    explanation: 'Paragraph 8 states "It was part of the Arabia\'s paddle wheel!" as the first piece of the ship they found.'
   },
 
   {
@@ -784,7 +784,7 @@ const sampleQuestions = [
       'actu<u>al</u>',
     ],
     correctAnswer: 2,
-    explanation: 'Lines 17-20 show disappointment and sadness: "It\'s surely gone missing / There\'s clearly no hope. / I have to give up / Find somewhere to mope." The speaker feels upset about losing the shoe.'
+    explanation: 'In "signal" and "natural," the suffix "-al" means "relating to" or "having the nature of."'
   },
 
   {
@@ -799,7 +799,7 @@ const sampleQuestions = [
       'that there was enough food for everyone on the steamboat',
     ],
     correctAnswer: 0,
-    explanation: 'The first line of the poem states: "I\'ve emptied my sports bag," which shows this was the first place searched.'
+    explanation: 'Paragraphs 9-11 explain how the recovered supplies "offered a rare history lesson" showing "how the pioneers lived."'
   },
 
   {
@@ -814,7 +814,7 @@ const sampleQuestions = [
       'captain was unable to see under the water',
     ],
     correctAnswer: 3,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+    explanation: 'Paragraph 2 says the ship hit "a fallen tree hidden beneath the river\'s surface," meaning they couldn\'t see it underwater.'
   },
 
   {
@@ -826,10 +826,10 @@ const sampleQuestions = [
       'He wondered whether it might be possible to find the ship.',
       'Curious, he went to libraries and gathered information.',
       'Recovering the steamboat was a massive task.',
-      'Hawley’s brother, father, and friends worked with him.',
+      'Hawley\'s brother, father, and friends worked with him.',
     ],
     correctAnswer: 2,
-    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+    explanation: 'Calling it a "massive task" that required hiring companies with heavy equipment suggests the project was large and expensive.'
   },
 
   {
@@ -844,7 +844,7 @@ const sampleQuestions = [
       'describe a discovery from the past',
     ],
     correctAnswer: 3,
-    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+    explanation: 'The article focuses on David Hawley\'s discovery and recovery of the Arabia steamboat and its historical treasures.'
   },
 
   {
@@ -859,7 +859,7 @@ const sampleQuestions = [
       'the <i>Arabia</i> was the first shipwreck to be dug out of river mud',
     ],
     correctAnswer: 2,
-    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+    explanation: 'The article describes Hawley as a "treasure hunter" who researched and pursued finding the Arabia, suggesting he enjoys this type of work.'
   },
 ];
 

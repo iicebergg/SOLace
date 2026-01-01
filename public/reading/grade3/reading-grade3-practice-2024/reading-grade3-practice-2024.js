@@ -175,12 +175,12 @@ const sampleQuestions = [
       'how cheetahs are different from other cats'
     ],
     correctAnswer: 3,
-    explanation: 'The story is about both Danielle making cupcakes as a surprise for her siblings and her siblings making an apron as a surprise for her. Everyone in the story gives and receives gifts.'
+    explanation: 'The passage explains that cheetahs have paws "more like a dog\'s paws" instead of regular cat paws, which shows how they are different from other cats.'
   },
 
   {
     id: '2', 
-    text: 'The cheetah’s coat is most useful because it —',
+    text: 'The cheetah\'s coat is most useful because it —',
     type: 'multiple-choice',
     passageId: 'speedy_and_spotty',
     options: [
@@ -189,8 +189,8 @@ const sampleQuestions = [
       'helps the cheetah hide in the grass',
       'protects the cheetah from the sun'
     ],
-    correctAnswer: 1,
-    explanation: 'The passage states that Danielle "had baked cupcakes early in the morning, while Martin and Madison were still asleep," which kept them secret.'
+    correctAnswer: 2,
+    explanation: 'Paragraph 3 states that the cheetah\'s tan coat with black spots "allows a cheetah to blend in with the tall, brown grass in Africa" so other animals don\'t see it hiding.'
   },
 
   {
@@ -204,8 +204,8 @@ const sampleQuestions = [
       'has a better bicycle than Marcus',
       'pays attention to the other riders',
     ],
-    correctAnswer: 4,
-    explanation: 'After receiving the apron and saying "Thank you. It\'s perfect," the passage says "As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table."'
+    correctAnswer: 0,
+    explanation: 'Kelly practiced on the Oak Park Trails before the race, while Marcus thought he didn\'t need to practice. This helped Kelly know the course and avoid getting lost like Marcus did.'
   },
 
   {
@@ -220,7 +220,7 @@ const sampleQuestions = [
       'Narrator'
     ],
     correctAnswer: 3,
-    explanation: 'Madison says "We wanted to make a surprise for you because you\'re such a nice sister. You are always thinking of us." This shows her family\'s care and appreciation for her.'
+    explanation: 'The story uses "he" and "she" to talk about the characters, not "I" or "me." This shows a narrator (someone outside the story) is telling what happened.'
   },
 
   {
@@ -235,7 +235,7 @@ const sampleQuestions = [
       'It is a good idea to prepare before doing something new.'
     ],
     correctAnswer: 3,
-    explanation: 'At the end, Danielle says "I have a surprise for you too!" and leads them to the kitchen where she left cupcakes for them.'
+    explanation: 'Marcus lost the race because he didn\'t practice the course beforehand. At the end, he admits he should have practiced with Kelly, showing that preparation is important.'
   },
 
   {
@@ -249,8 +249,8 @@ const sampleQuestions = [
       'Congress disagreed about which symbol to select.',
       'The symbol would remind people that they were a free country.'
     ],
-    correctAnswer: 0,
-    explanation: 'All three characters make surprises for each other: Danielle bakes cupcakes for her siblings, and Martin and Madison make an apron for Danielle, showing they all think of others.'
+    correctAnswer: 1,
+    explanation: 'The paragraph says "Americans wanted a symbol for their country\'s freedom" after winning the Revolutionary War, which is the main point of the paragraph.'
   },
 
   {
@@ -264,8 +264,8 @@ const sampleQuestions = [
       'Freedom for America',
       'The Founding Fathers'
     ],
-    correctAnswer: 2,
-    explanation: 'The root word in "discovered" is "cover." The prefix "dis-" means "not" and the suffix "-ed" shows past tense, so "discovered" means "uncovered" or "found."'
+    correctAnswer: 1,
+    explanation: 'Paragraph 2 discusses the debate between choosing the eagle or the turkey as the national symbol, with Benjamin Franklin preferring the turkey.'
   },
 
   {
@@ -280,7 +280,7 @@ const sampleQuestions = [
       'Why did Americans want a symbol for their country?'
     ],
     correctAnswer: 1,
-    explanation: 'The passage states that "In some parts of the world, especially near the ocean, people eat seaweed all by itself," suggesting people near oceans commonly eat foods from the sea.'
+    explanation: 'The paragraph explains that Franklin thought the turkey was better because the eagle was "lazy" and "took food from other animals."'
   },
 
   {
@@ -295,7 +295,7 @@ const sampleQuestions = [
       'separated',
     ],
     correctAnswer: 3,
-    explanation: 'The passage explains that "Without seaweed, ice cream and yogurt would not be as thick or creamy but would seem rather lumpy and watery," showing seaweed affects how they look and their texture.'
+    explanation: 'An antonym means the opposite. If states "joined" to form one country, then "separated" would mean the opposite - to break apart.'
   },
 
   {
@@ -309,8 +309,8 @@ const sampleQuestions = [
       'protect from harm',
       'break away',
     ],
-    correctAnswer: 3,
-    explanation: 'The article mentions several goods that contain seaweed: toothpaste, shampoo, makeup, ice cream, and yogurt. It also states "Hundreds of everyday items have seaweed in them."'
+    correctAnswer: 2,
+    explanation: 'The paragraph says the arrows show the United States is ready to "defend itself," which means to protect itself from harm or danger.'
   },
 
   {
@@ -324,8 +324,8 @@ const sampleQuestions = [
       'share a part of American history',
       'describe the bald eagle',
     ],
-    correctAnswer: 0,
-    explanation: 'The article provides factual information about seaweed, explaining what it is, where it grows, and how it is used in various everyday products.'
+    correctAnswer: 2,
+    explanation: 'The article tells the historical story of how the bald eagle became America\'s national symbol, including the debate and decision-making process.'
   },
 
   {
@@ -339,8 +339,8 @@ const sampleQuestions = [
       'Lines 9-12',
       'Lines 21-24',
     ],
-    correctAnswer: 2,
-    explanation: 'The title "The Search" indicates the poem will be about someone searching or looking for something.'
+    correctAnswer: 1,
+    explanation: 'Lines 5-8 show the problem: "But hunt as I may / I\'ve got only one shoe-- / And where its mate is / I haven\'t a clue."'
   },
 
   {
@@ -354,8 +354,8 @@ const sampleQuestions = [
       'hears Dad ask questions',
       'sits on the steps',
     ],
-    correctAnswer: 3,
-    explanation: '"Pause" means to stop briefly or for a short time. The speaker stops in their tracks when Dad asks questions.'
+    correctAnswer: 1,
+    explanation: 'When the speaker looks into the yard, they finally see that Otis the dog has the missing shoe as a chew toy, solving the mystery.'
   },
 
   {
@@ -369,8 +369,8 @@ const sampleQuestions = [
       'Lazy',
       'Worried',
     ],
-    correctAnswer: 1,
-    explanation: 'Lines 17-20 show disappointment and sadness: "It\'s surely gone missing / There\'s clearly no hope. / I have to give up / Find somewhere to mope." The speaker feels upset about losing the shoe.'
+    correctAnswer: 3,
+    explanation: 'The speaker searches everywhere frantically and says things like "There\'s clearly no hope," showing they are worried about the missing shoe.'
   },
 
   {
@@ -384,8 +384,8 @@ const sampleQuestions = [
       'When are sea otters fully grown?',
       'What do sea otters do when they hunt?',
     ],
-    correctAnswer: 2,
-    explanation: 'The first line of the poem states: "I\'ve emptied my sports bag," which shows this was the first place searched.'
+    correctAnswer: 3,
+    explanation: 'Paragraph 2 explains that when hunting, otters close their nostrils and ears to keep out water and can swim as deep as 200 feet to find food.'
   },
 
   {
@@ -399,8 +399,8 @@ const sampleQuestions = [
       'A sea otter has fur to keep it warm.',
       'A sea otter is a type of mammal.',
     ],
-    correctAnswer: 1,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+    correctAnswer: 2,
+    explanation: 'The paragraph explains that sea otters don\'t have blubber like other sea animals, so they use their thick two-layer fur to stay warm in cold ocean water.'
   },
 
   {
@@ -414,8 +414,8 @@ const sampleQuestions = [
       'sing',
       'seem',
     ],
-    correctAnswer: 0,
-    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+    correctAnswer: 1,
+    explanation: 'A homophone sounds the same but is spelled differently. "Scene" sounds exactly like "seen" but has different letters and meaning.'
   },
 
   {
@@ -429,8 +429,8 @@ const sampleQuestions = [
       'ocean is deep enough for the sea otter to float',
       'sea otter can easily find kelp in the ocean',
     ],
-    correctAnswer: 1,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+    correctAnswer: 0,
+    explanation: 'The article shows the ocean provides food (fish, crabs, clams), kelp for sleeping, and the right environment for the sea otter\'s lifestyle.'
   },
 
   {
@@ -444,8 +444,8 @@ const sampleQuestions = [
       'backs are flat',
       'paws are strong',
     ],
-    correctAnswer: 1,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+    correctAnswer: 0,
+    explanation: 'Paragraph 2 states "Webbed feet help it swim," explaining that the webbing between their toes helps them move through water.'
   },
 
   {
@@ -459,13 +459,13 @@ const sampleQuestions = [
       'underneath small rocks',
       'on the ocean floor',
     ],
-    correctAnswer: 1,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+    correctAnswer: 3,
+    explanation: 'Paragraph 3 says "a sea otter gathers food from the bottom of the ocean," which is the ocean floor.'
   },
 
   {
     id: '21',
-    text: 'One purpose of the sea otter’s chest is to help the animal —',
+    text: 'One purpose of the sea otter\'s chest is to help the animal —',
     type: 'multiple-choice',
     passageId: 'sea_otters',
     options: [
@@ -474,8 +474,8 @@ const sampleQuestions = [
       'break shells',
       'float',
     ],
-    correctAnswer: 1,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+    correctAnswer: 2,
+    explanation: 'Paragraph 3 explains that the sea otter uses "its chest as a table" and hits shellfish with rocks on its chest to break them open.'
   },
 
   {
@@ -490,7 +490,7 @@ const sampleQuestions = [
       'put information about sea otters in order',
     ],
     correctAnswer: 1,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+    explanation: 'The headings like "Time to Eat," "Thick Fur," and "Nap Time" tell readers what topic each section will explain about sea otters.'
   },
 
   {
@@ -505,7 +505,7 @@ const sampleQuestions = [
       'It may find another group.',
     ],
     correctAnswer: 1,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+    explanation: 'Paragraph 5 explains that sea otters wrap kelp around themselves to stop from "floating away" while sleeping, so without it they might drift.'
   },
 
   {
@@ -520,7 +520,7 @@ const sampleQuestions = [
       'set up a stand to sell drinks',
     ],
     correctAnswer: 1,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+    explanation: 'Bonnie yells "My lemonade\'s the best" and Steve responds "That\'s what you think!" showing they both believe their own drink is better.'
   },
 
   {
@@ -534,8 +534,8 @@ const sampleQuestions = [
       'More people are waiting in line at the other stand.',
       'Bonnie looks across the street.',
     ],
-    correctAnswer: 1,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+    correctAnswer: 0,
+    explanation: 'In lines 3-4, a boy walking past tells Bonnie "I just bought some cherry juice!" and tells her to "Go try a glass!"'
   },
 
   {
@@ -549,8 +549,8 @@ const sampleQuestions = [
       'Why do Steve and Bonnie decide to have drink stands?',
       'Why is selling drinks a good idea?',
     ],
-    correctAnswer: 1,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+    correctAnswer: 0,
+    explanation: 'The poem shows Bonnie suggesting "Let\'s mix our drinks together!" and they combine their lemonade and cherry juice to make cherry lemonade.'
   },
 
   {
@@ -564,8 +564,8 @@ const sampleQuestions = [
       '15',
       '16',
     ],
-    correctAnswer: 1,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+    correctAnswer: 2,
+    explanation: 'Line 15 says "Let\'s mix our drinks together!" which is when Bonnie suggests the solution to their competition problem.'
   },
 
   {
@@ -579,8 +579,8 @@ const sampleQuestions = [
       'She thinks of an idea.',
       'She is excited about working with someone.',
     ],
-    correctAnswer: 1,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+    correctAnswer: 2,
+    explanation: 'Bonnie is the one who comes up with the idea to combine their drinks and work together, while Steve just agrees with her plan.'
   },
 
   {
@@ -594,8 +594,8 @@ const sampleQuestions = [
       'become friends after spending time together',
       'want to sell to as many people as possible',
     ],
-    correctAnswer: 1,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+    correctAnswer: 3,
+    explanation: 'Bonnie says "There is a way to reach them all," showing they want to attract more customers by combining their drinks into something everyone will want.'
   },
 ];
 
