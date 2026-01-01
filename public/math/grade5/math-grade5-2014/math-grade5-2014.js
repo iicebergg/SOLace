@@ -121,7 +121,7 @@ const sampleQuestions = [
  },
  {
  id: '16',
- text: 'This chart shows the number of miles Tyra walked on each of three days. <br><img src="images/question_13.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> What is the total number of miles Tyra walked on these three days?',
+ text: 'This chart shows the number of miles Tyra walked on each of three days. <br><img src="images/question_16.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> What is the total number of miles Tyra walked on these three days?',
  type: 'multiple-choice',
  options: ['3<math><mfrac><mn>1</mn><mn>12</mn></mfrac></math> miles', '4<math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> miles', '4<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math> miles', '5<math><mfrac><mn>1</mn><mn>12</mn></mfrac></math> miles'],
  correctAnswer: 3, 
@@ -170,7 +170,7 @@ const sampleQuestions = [
  id: '22',
  text: 'Which is closest to the measure of ∠T? <br><img src="images/question_22.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>',
  type: 'multiple-choice',
- options: ['27°', '33°', '153°', '180°'],
+ options: ['27°', '33°', '153°', '167°'],
  correctAnswer: 2, 
  explanation: 'Angle T appears to be an obtuse angle (greater than 90°), so 153° is the best estimate.'
  },
