@@ -374,7 +374,7 @@ const sampleQuestions = [
  },
  {
  id: '45',
- text: 'Todd has the following folders in his backpack: <center><ul><li>2 blue</li><li>2 red</li><li>2 yellow</li><li>2 purple</li></ul></center> The folders are all the same size and shape, Todd reaches into his backpack and selects one folder without looking. What is the likelihood the folder will be green?',
+ text: 'Todd has the following folders in his backpack: <ul><li>2 blue</li><li>2 red</li><li>2 yellow</li><li>2 purple</li></ul> The folders are all the same size and shape, Todd reaches into his backpack and selects one folder without looking. What is the likelihood the folder will be green?',
  type: 'multiple-choice',
  options: ['Certain', 'Likely, but not certain', 'Unlikely, but not impossible', 'Impossible'],
  correctAnswer: 3, 
