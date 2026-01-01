@@ -1,6 +1,6 @@
 window.TEST_IDENTIFIER = 'math_grade5_practice_2023';
 
-const questions = [
+const sampleQuestions = [
  {
  id: '1',
  text: '4.221 ÷ 7 = ______ ?',
@@ -51,7 +51,7 @@ const questions = [
  },
  {
  id: '7',
- text: 'A trail is <math><mfrac><mn>3</mn><mn>4</mn></mfrac></math> mile long. Robert ran the length of the trail 2 times. A blank number line is provided.<br><img src="images/question_7.png" class="question-image" alt="Number line for the problem"></img><br>What is the total number of miles Robert ran?',
+ text: 'A trail is <math><mfrac><mn>3</mn><mn>4</mn></mfrac></math> mile long. Robert ran the length of the trail 2 times. A blank number line is provided.<br><img src="images/7.png" class="question-image" alt="Number line for the problem"></img><br>What is the total number of miles Robert ran?',
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>6</mn><mn>4</mn></mfrac></math>', '<math><mfrac><mn>5</mn><mn>4</mn></mfrac></math>', '<math><mfrac><mn>4</mn><mn>4</mn></mfrac></math>', '<math><mfrac><mn>3</mn><mn>8</mn></mfrac></math>'],
  correctAnswer: 0,
@@ -75,7 +75,7 @@ const questions = [
  },
  {
  id: '10',
- text: 'The measurements between four points on a map are shown. (Figure is not drawn to scale.)<br><img src="images/question_10.png" class="question-image" alt="Map showing points A, B, C, and D with distances"></img><br>What is the distance from point C to point D on the map?',
+ text: 'The measurements between four points on a map are shown. (Figure is not drawn to scale.)<br><img src="images/10.png" class="question-image" alt="Map showing points A, B, C, and D with distances"></img><br>What is the distance from point C to point D on the map?',
  type: 'multiple-choice',
  options: ['5.25 cm', '9.75 cm', '11.25 cm', '15.75 cm'],
  correctAnswer: 0,
@@ -83,7 +83,7 @@ const questions = [
  },
  {
  id: '11',
- text: 'A right triangle is shaded inside the rectangle shown.<br><img src="images/question_11.png" class="question-image" alt="Rectangle with shaded right triangle"></img><br>Which expression could be used to find the area, in square units, of the triangle?',
+ text: 'A right triangle is shaded inside the rectangle shown.<br><img src="images/11.png" class="question-image" alt="Rectangle with shaded right triangle"></img><br>Which expression could be used to find the area, in square units, of the triangle?',
  type: 'multiple-choice',
  options: ['3 × 4 × <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>', '3 × 4 × 5 × <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>', '3 + 4 + 5', '3 + 4 + 3 + 4'],
  correctAnswer: 0,
@@ -99,7 +99,7 @@ const questions = [
  },
  {
  id: '13',
- text: 'This figure represents a storage container.<br><img src="images/question_13.png" class="question-image" alt="Rectangular prism with dimensions"></img><br>What is the volume of this storage container?',
+ text: 'This figure represents a storage container.<br><img src="images/13.png" class="question-image" alt="Rectangular prism with dimensions"></img><br>What is the volume of this storage container?',
  type: 'multiple-choice',
  options: ['600 cubic meters', '195 cubic meters', '120 cubic meters', '115 cubic meters'],
  correctAnswer: 0,
@@ -107,7 +107,7 @@ const questions = [
  },
  {
  id: '14',
- text: 'Brady is using grid paper to design a garden. The shaded figure represents the garden.<br><img src="images/question_14.png" class="question-image" alt="Grid with shaded garden shape"></img><br>Which best describes the area and perimeter of the shaded figure on this grid?',
+ text: 'Brady is using grid paper to design a garden. The shaded figure represents the garden.<br><img src="images/14.png" class="question-image" alt="Grid with shaded garden shape"></img><br>Which best describes the area and perimeter of the shaded figure on this grid?',
  type: 'multiple-choice',
  options: ['Area of 24 square meters and perimeter of 24 meters', 'Area of 21 square meters and perimeter of 21 meters', 'Area of 24 square meters and perimeter of 21 meters', 'Area of 21 square meters and perimeter of 24 meters'],
  correctAnswer: 3,
@@ -115,7 +115,7 @@ const questions = [
  },
  {
  id: '15',
- text: 'Which angle is an obtuse angle?<br><img src="images/question_15.png" class="question-image" alt="Diagram showing 4 different angles"></img>',
+ text: 'Which angle is an obtuse angle?<br><img src="images/15.png" class="question-image" alt="Diagram showing 4 different angles"></img>',
  type: 'multiple-choice',
  options: ['Angle 1', 'Angle 2', 'Angle 3', 'Angle 4'],
  correctAnswer: 1,
@@ -123,9 +123,14 @@ const questions = [
  },
  {
  id: '16',
- text: 'Which figure appears to be an isosceles triangle?<br><img src="images/question_16.png" class="question-image" alt="Four triangles labeled F, G, H, and J"></img>',
+ text: 'Which figure appears to be an isosceles triangle?',
  type: 'multiple-choice',
- options: ['Figure F', 'Figure G', 'Figure H', 'Figure J'],
+ options: [
+    {url: '16a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: '16b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: '16c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: '16d.png', alt: 'Image failed to load. Please try again later.'}
+ ],
  correctAnswer: 2,
  explanation: 'An isosceles triangle has at least two equal sides. Figure H appears to be an isosceles triangle.'
  },
@@ -163,7 +168,7 @@ const questions = [
  },
  {
  id: '21',
- text: 'This line plot shows the number of envelopes Tammie received in the mail on each of ten days.<br><img src="images/question_21.png" class="question-image" alt="Line plot showing envelope distribution"></img><br>What is the total number of days on which Tammie received at least 6 envelopes in the mail?',
+ text: 'This line plot shows the number of envelopes Tammie received in the mail on each of ten days.<br><img src="images/21.png" class="question-image" alt="Line plot showing envelope distribution"></img><br>What is the total number of days on which Tammie received at least 6 envelopes in the mail?',
  type: 'multiple-choice',
  options: ['2', '3', '5', '7'],
  correctAnswer: 2,
