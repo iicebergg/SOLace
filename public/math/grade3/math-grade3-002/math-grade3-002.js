@@ -60,7 +60,7 @@ const sampleQuestions = [
  id: '8',
  text: 'Which of these is best represented by this number line? <br><img src="../math-grade3-2014/images/question_19.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
- options: ['24 + 4', '24 - 4', '6 × 4', '4 × 6'],
+ options: ['24 + 4', '24 - 4', '6 + 4', '4 × 6'],
  correctAnswer: 3, 
  explanation: 'Look at the pattern on the number line to determine which operation it represents.'
  },

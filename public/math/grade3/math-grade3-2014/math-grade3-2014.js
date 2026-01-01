@@ -155,7 +155,7 @@ const sampleQuestions = [
  id: '19',
  text: 'Which of these is best represented by this number line? <br><img src="images/question_19.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
- options: ['24 + 4', '24 - 4', '6 × 4', '4 × 6'],
+ options: ['24 + 4', '24 - 4', '6 + 4', '4 × 6'],
  correctAnswer: 3, 
  explanation: 'Look at the pattern on the number line to determine which operation it represents.'
  },
@@ -334,7 +334,7 @@ const sampleQuestions = [
  },
  {
  id: '38',
- text: 'Look at this pattern. <br>1, 3, 9, 27, 81.<br> Which describes the rule used in this pattern?',
+ text: 'Look at this pattern. <br><center>1, 3, 9, 27, 81.</center><br> Which describes the rule used in this pattern?',
  type: 'multiple-choice',
  options: ['Divide by 9', 'Multiply by 3', 'Subtract 2', 'Add 2'],
  correctAnswer: 1, 

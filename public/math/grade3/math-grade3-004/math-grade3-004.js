@@ -71,7 +71,7 @@ const sampleQuestions = [
  },
  {
  id: '7',
- text: 'Look at this pattern. <br>1, 3, 9, 27, 81.<br> Which describes the rule used in this pattern?',
+ text: 'Look at this pattern. <br><center>1, 3, 9, 27, 81.</center><br> Which describes the rule used in this pattern?',
  type: 'multiple-choice',
  options: ['Divide by 9', 'Multiply by 3', 'Subtract 2', 'Add 2'],
  correctAnswer: 1, 
