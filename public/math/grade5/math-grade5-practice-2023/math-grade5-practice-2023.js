@@ -126,10 +126,10 @@ const sampleQuestions = [
  text: 'Which figure appears to be an isosceles triangle?',
  type: 'multiple-choice',
  options: [
-    {url: '16a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: '16b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: '16c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: '16d.png', alt: 'Image failed to load. Please try again later.'}
+    {url: 'images/16a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/16b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/16c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/16d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 2,
  explanation: 'An isosceles triangle has at least two equal sides. Figure H appears to be an isosceles triangle.'
