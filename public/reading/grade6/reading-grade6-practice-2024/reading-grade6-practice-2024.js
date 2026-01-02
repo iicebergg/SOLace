@@ -287,7 +287,7 @@ const readingPassages = {
 const sampleQuestions = [
   {
     id: '1',
-    text: 'Quinterro’s thoughts in paragraphs 1 and 2 most contribute to the plot of the story by--',
+    text: 'Quinterro\'s thoughts in paragraphs 1 and 2 most contribute to the plot of the story by--',
     type: 'multiple-choice',
     passageId: 'view',
     options: [
@@ -297,7 +297,7 @@ const sampleQuestions = [
       'presenting information about the setting'
     ],
     correctAnswer: 2,
-    explanation: 'The story is about both Danielle making cupcakes as a surprise for her siblings and her siblings making an apron as a surprise for her. Everyone in the story gives and receives gifts.'
+    explanation: 'Quinterro\'s dissatisfaction with his mountain life and longing for the city establishes the central conflict of wanting what he doesn\'t have.'
   },
 
   {
@@ -312,7 +312,7 @@ const sampleQuestions = [
       'including two'
     ],
     correctAnswer: 0,
-    explanation: 'The passage states that Danielle "had baked cupcakes early in the morning, while Martin and Madison were still asleep," which kept them secret.'
+    explanation: 'Binoculars are devices for looking, and "ocular" relates to the eye, the organ used for seeing.'
   },
 
   {
@@ -324,10 +324,10 @@ const sampleQuestions = [
       'Marta thinks that the binoculars are damaged.',
       'Ireneo wants his brother to watch the llamas more closely.', 
       'Quinterro wishes for the more fascinating life of a city.',
-      'Quinterro disagrees with Marta’s opinion of the mountains.'
+      'Quinterro disagrees with Marta\'s opinion of the mountains.'
     ],
     correctAnswer: 2,
-    explanation: 'After receiving the apron and saying "Thank you. It\'s perfect," the passage says "As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table."'
+    explanation: 'Throughout the story, Quinterro longs to escape his boring mountain life for the exciting city, while Marta desires the opposite.'
   },
 
   {
@@ -342,22 +342,22 @@ const sampleQuestions = [
       'People should be generous to new friends.'
     ],
     correctAnswer: 1,
-    explanation: 'Madison says "We wanted to make a surprise for you because you\'re such a nice sister. You are always thinking of us." This shows her family\'s care and appreciation for her.'
+    explanation: 'Quinterro wants city life while Marta, who lives in the city, wants mountain life, showing people desire what they don\'t have.'
   },
 
   {
     id: '5',
-    text: 'The author’s purpose for including paragraph 2 is to explain--',
+    text: 'The author\'s purpose for including paragraph 2 is to explain--',
     type: 'multiple-choice', 
     passageId: 'fire',
     options: [
-      'how the surface of the planet effects volcano formation',
+      'how the surface of the planet affects volcano formation',
       'what causes plates to shift from one place to another',
       'where volcanoes are formed on the planet',
       'who discovered the motion of the plates'
     ],
     correctAnswer: 0,
-    explanation: 'At the end, Danielle says "I have a surprise for you too!" and leads them to the kitchen where she left cupcakes for them.'
+    explanation: 'The paragraph explains how Earth\'s plates drift and slide, and how this movement "can sometimes result in volcanic activity."'
   },
 
   {
@@ -372,7 +372,7 @@ const sampleQuestions = [
       'flows after ash, dirt, and rock erupt from the volcano'
     ],
     correctAnswer: 2,
-    explanation: 'All three characters make surprises for each other: Danielle bakes cupcakes for her siblings, and Martin and Madison make an apron for Danielle, showing they all think of others.'
+    explanation: 'The paragraph states Mount St. Helens "did not spew lava," showing not all eruptions involve lava.'
   },
 
   {
@@ -387,7 +387,7 @@ const sampleQuestions = [
       'Mount Fuji, part of a national park, is an inactive volcano that helped to form parts of Japan.'
     ],
     correctAnswer: 3,
-    explanation: 'The root word in "discovered" is "cover." The prefix "dis-" means "not" and the suffix "-ed" shows past tense, so "discovered" means "uncovered" or "found."'
+    explanation: 'This option captures all key points: Mount Fuji is in a national park, is dormant, and contributed to forming Japan.'
   },
 
   {
@@ -402,7 +402,7 @@ const sampleQuestions = [
       'Volcanic activity creates some of the most spectacular fireworks found in nature.'
     ],
     correctAnswer: 3,
-    explanation: 'The passage states that "In some parts of the world, especially near the ocean, people eat seaweed all by itself," suggesting people near oceans commonly eat foods from the sea.'
+    explanation: 'Calling volcanic activity "spectacular fireworks" is an opinion expressing a subjective view of their appearance.'
   },
 
   {
@@ -417,7 +417,7 @@ const sampleQuestions = [
       'occurs on a regular basis',
     ],
     correctAnswer: 0,
-    explanation: 'The passage explains that "Without seaweed, ice cream and yogurt would not be as thick or creamy but would seem rather lumpy and watery," showing seaweed affects how they look and their texture.'
+    explanation: 'The article emphasizes how volcanoes create islands, provide minerals, and enrich soil, showing their constructive aspects outweigh destruction.'
   },
 
   {
@@ -426,16 +426,16 @@ const sampleQuestions = [
     type: 'multiple-choice',
     passageId: 'patience',
     options: [
-      'describe the condition of Alice’s room',
-      'explain why Mary plays in Alice’s room',
+      'describe the condition of Alice\'s room',
+      'explain why Mary plays in Alice\'s room',
       'reveal how often Alice cleans her room',
       'tell how Alice feels as she enters her room',
     ],
     correctAnswer: 0,
-    explanation: 'The article mentions several goods that contain seaweed: toothpaste, shampoo, makeup, ice cream, and yogurt. It also states "Hundreds of everyday items have seaweed in them."'
+    explanation: 'Comparing the messy room to a whirlwind is an exaggeration that emphasizes how extremely messy Mary left it.'
   },
 
-    {
+  {
     id: '11',
     text: 'In paragraph 2, the word <i>appraise</i> means--',
     type: 'multiple-choice',
@@ -447,7 +447,7 @@ const sampleQuestions = [
       'arrange in a tidy manner',
     ],
     correctAnswer: 2,
-    explanation: 'The article provides factual information about seaweed, explaining what it is, where it grows, and how it is used in various everyday products.'
+    explanation: 'Mom "peeked through the doorway to appraise the damage," meaning she looked carefully to assess the mess.'
   },
 
   {
@@ -458,11 +458,11 @@ const sampleQuestions = [
     options: [
       'suggest that Alice will forgive Mary',
       'create sympathy for how Alice treated Mary',
-      'reveal Mary’s regret for her actions',
-      'explain Alice’s fondness for the stuffed rabbit'
+      'reveal Mary\'s regret for her actions',
+      'explain Alice\'s fondness for the stuffed rabbit'
     ],
     correctAnswer: 1,
-    explanation: 'The website "Discover Ocean Plants" would be most likely to have information about where red seaweed grows, as seaweed is a type of ocean plant.'
+    explanation: 'These paragraphs show Alice unable to concentrate because she feels bad about how she treated Mary, making readers sympathize with her guilt.'
   },
 
   {
@@ -477,7 +477,7 @@ const sampleQuestions = [
       'why she enjoys spending time outdoors with Mary',
     ],
     correctAnswer: 2,
-    explanation: 'The instructions state: "Have the person who receives your message hold the paper near a light bulb. The heat will make the secret message appear!"'
+    explanation: 'Seeing the empty swing makes Alice think of Mary\'s "big grin and twinkling eyes," making her realize she regrets pushing Mary away.'
   },
 
   {
@@ -492,7 +492,7 @@ const sampleQuestions = [
       'characters can describe the setting',
     ],
     correctAnswer: 1,
-    explanation: 'The message only appears when steam covers the mirror. When the steam clears and goes away, the message would no longer be visible.'
+    explanation: 'The third-person point of view allows the author to show both Alice\'s frustration and her internal guilt and realization.'
   },
 
   {
@@ -507,7 +507,7 @@ const sampleQuestions = [
       'The visit to Puerto Rico means meeting new relatives and enjoying new experiences.',
     ],
     correctAnswer: 1,
-    explanation: 'In this context, "invisible" means the message cannot be seen or is hidden from view until the steam makes it appear.'
+    explanation: 'The lines describe how grandparents, aunts, and uncles "wrap us in warm hugs" showing immediate loving welcome.'
   },
 
   {
@@ -522,12 +522,12 @@ const sampleQuestions = [
       'helping her learn about Puerto Rico',
     ],
     correctAnswer: 1,
-    explanation: 'Both methods require adult assistance: "Lemony Letter" needs a grownup to cut the lemon in half, and "Mirror Message" needs a grownup to peel the potato.'
+    explanation: 'Being in Puerto Rico makes the speaker think about being "from two places" and what each home means to her identity.'
   },
 
   {
     id: '17',
-    text: 'The reader knows that the speaker’s point of view has changed since her last visit to the island because she--',
+    text: 'The reader knows that the speaker\'s point of view has changed since her last visit to the island because she--',
     type: 'multiple-choice',
     passageId: 'home',
     options: [
@@ -537,12 +537,12 @@ const sampleQuestions = [
       'develops gratitude',
     ],
     correctAnswer: 3,
-    explanation: 'The instructions say to use a white crayon on white paper, making it "difficult to see the markings" because white crayon on white paper is nearly invisible.'
+    explanation: 'The speaker now appreciates being "from two places" and feels "lucky," showing gratitude she didn\'t have as a young child.'
   },
 
   {
     id: '18',
-    text: 'The Latin word <i>internalis</i> means “extending to the interior.” In paragraph 1 of the article, <i>internal</i> means--',
+    text: 'The Latin word <i>internalis</i> means "extending to the interior." In paragraph 1 of the article, <i>internal</i> means--',
     type: 'multiple-choice',
     passageId: 'clocks',
     options: [
@@ -552,7 +552,7 @@ const sampleQuestions = [
       'inside',
     ],
     correctAnswer: 3,
-    explanation: 'The flier provides step-by-step instructions for three different methods of creating secret messages, teaching readers how to make them.'
+    explanation: 'Internal clocks are inside our bodies, as opposed to external clocks like alarms, matching the meaning of "interior."'
   },
 
   {
@@ -567,7 +567,7 @@ const sampleQuestions = [
       'weariness',
     ],
     correctAnswer: 3,
-    explanation: 'The numbers indicate the sequential order of steps that must be followed to successfully create each type of secret message.'
+    explanation: 'The text says the body "turns its energy toward fighting fatigue," meaning tiredness or weariness from the day\'s activities.'
   },
 
   {
@@ -582,7 +582,7 @@ const sampleQuestions = [
       'problem/solution to show that bees and flowers rely on sunlight for energy',
     ],
     correctAnswer: 0,
-    explanation: 'In the context of grocery stores charging "too much" for strawberries, "charge" means "to set as a price," which is definition 2.'
+    explanation: 'The paragraph explains how flowers opening (cause) leads to bees arriving at the right time (effect) due to matching circadian rhythms.'
   },
 
   {
@@ -597,12 +597,12 @@ const sampleQuestions = [
       'collect water'
     ],
     correctAnswer: 2,
-    explanation: 'Guide words show the first and last entries on a dictionary page. "Carrot" and "canal" fall alphabetically between "camera" and "cause." "Cabin" comes before "camera" and "cave" comes after "cause."'
+    explanation: 'Paragraph 6 states plants unfold leaves "to capture sunlight and convert it to the sugars it needs to survive."'
   },
 
   {
     id: '22',
-    text: 'The author’s word choice in paragraph 1 introduces a tone of--',
+    text: 'The author\'s word choice in paragraph 1 introduces a tone of--',
     type: 'multiple-choice',
     passageId: 'shine',
     options: [
@@ -612,12 +612,12 @@ const sampleQuestions = [
       'embarrassment',
     ],
     correctAnswer: 0,
-    explanation: 'The title "A Hidden Treasure" suggests that characters will be looking for or searching for something that is hidden.'
+    explanation: 'Words like "nervously tugged" and "Where was Sydney?" with the bus leaving in five minutes create an alarmed, anxious tone.'
   },
 
   {
     id: '23',
-    text: 'Which word in paragraph 18 does the author use to influence the reader’s attitude about Sydney?',
+    text: 'Which word in paragraph 18 does the author use to influence the reader\'s attitude about Sydney?',
     type: 'multiple-choice',
     passageId: 'shine',
     options: [
@@ -627,7 +627,7 @@ const sampleQuestions = [
       'anxious',
     ],
     correctAnswer: 2,
-    explanation: 'Paragraph 5 describes what Evan found on the map: "Grandma\'s house, a raindrop inside a square, two little triangles, and a dock" with an "X" marking the "Greatest Fishing Spot."'
+    explanation: 'Sydney "demanded" rather than asked, showing her as pushy and controlling toward Jada.'
   },
 
   {
@@ -642,7 +642,7 @@ const sampleQuestions = [
       'is thinking about her new friendship',
     ],
     correctAnswer: 2,
-    explanation: 'The text shows their excitement: Evan asks "Excitedly" if they can find the fishing spot, Mark says "Let\'s try," and "they thundered down the steps," showing they are eager to start their search.'
+    explanation: 'Zach helps Jada realize she can "stand on your own" and "let her light shine," recognizing her own abilities.'
   },
 
   {
@@ -657,7 +657,7 @@ const sampleQuestions = [
       'has answered many questions in science class',
     ],
     correctAnswer: 3,
-    explanation: 'The story begins with Grandma painting her kitchen, and ends with the boys rushing back "into the kitchen" with their question about the dock, then planning to get fishing poles.'
+    explanation: 'Zach tells her "you always answer the questions in science," showing he\'s observed her knowledge and participation.'
   },
 
   {
@@ -672,7 +672,7 @@ const sampleQuestions = [
       'he wants to have a conversation with his new science partner',
     ],
     correctAnswer: 0,
-    explanation: 'Mark says "The square with the raindrop is behind Grandma\'s house" and they look for the water tower with the faded raindrop symbol first.'
+    explanation: 'Mr. Tao passes out a handout for partners to review about eclipses to help them understand what they\'ll see at the planetarium.'
   },
 
   {
@@ -687,7 +687,7 @@ const sampleQuestions = [
       'feels that he will be a good partner for Jada',
     ],
     correctAnswer: 1,
-    explanation: 'When the boys ask about the dock, Grandma explains: "That dock was torn down a long time ago."'
+    explanation: 'Zach\'s observations about Sydney doing "all the talking" and keeping Jada "in its shadow" show he\'s watched their interactions.'
   },
 
   {
@@ -702,12 +702,12 @@ const sampleQuestions = [
       'Important lessons can come from unlikely sources.',
     ],
     correctAnswer: 3,
-    explanation: 'Paragraph 4 directly states: "The young birds learn to peck the ground and eat plants by watching older ostriches."'
+    explanation: 'Jada learns an important lesson about self-confidence from Zach, whom she barely knew before the field trip.'
   },
 
   {
     id: '29',
-    text: 'Zach’s character is important to the story because he--',
+    text: 'Zach\'s character is important to the story because he--',
     type: 'multiple-choice',
     passageId: 'shine',
     options: [
@@ -717,7 +717,7 @@ const sampleQuestions = [
       'lets Jada talk about school',
     ],
     correctAnswer: 1,
-    explanation: 'Paragraph 4 directly states: "The young birds learn to peck the ground and eat plants by watching older ostriches."'
+    explanation: 'Zach encourages Jada to step out of Sydney\'s shadow and express herself, allowing her true personality to emerge.'
   }
 ];
 
