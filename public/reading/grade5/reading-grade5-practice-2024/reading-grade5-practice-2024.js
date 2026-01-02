@@ -379,12 +379,12 @@ const sampleQuestions = [
     passageId: 'monticello',
     options: [
       'give information about France and the United States',
-      'compare Jefferson’s and Adams’ achievements', 
+      'compare Jefferson\'s and Adams\' achievements', 
       'describe the mountains near Charlottesville',
-      'list Jefferson’s many successes'
+      'list Jefferson\'s many successes'
     ],
     correctAnswer: 3,
-    explanation: 'The story is about both Danielle making cupcakes as a surprise for her siblings and her siblings making an apron as a surprise for her. Everyone in the story gives and receives gifts.'
+    explanation: 'The paragraph lists Jefferson\'s roles as governor, representative, vice president, president, and designer of Monticello, showcasing his many accomplishments.'
   },
 
   {
@@ -399,7 +399,7 @@ const sampleQuestions = [
       '<b>valuable:</b> Having great worth.'
     ],
     correctAnswer: 1,
-    explanation: 'The passage states that Danielle "had baked cupcakes early in the morning, while Martin and Madison were still asleep," which kept them secret.'
+    explanation: 'The plants were brought from Italy and Mexico to America, making them "imported" - transported from other countries.'
   },
 
   {
@@ -414,7 +414,7 @@ const sampleQuestions = [
       'the last years of his life were spent with family'
     ],
     correctAnswer: 1,
-    explanation: 'After receiving the apron and saying "Thank you. It\'s perfect," the passage says "As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table."'
+    explanation: 'Paragraph 2 states "Today, the area is visited by thousands of people each year," showing Monticello still attracts visitors.'
   },
 
   {
@@ -429,7 +429,7 @@ const sampleQuestions = [
       'His family helped him care for the land.'
     ],
     correctAnswer: 0,
-    explanation: 'Madison says "We wanted to make a surprise for you because you\'re such a nice sister. You are always thinking of us." This shows her family\'s care and appreciation for her.'
+    explanation: 'Paragraph 3 states Jefferson "was one of the first Americans to practice a new method of farming" by rotating crops every seven years.'
   },
 
   {
@@ -444,7 +444,7 @@ const sampleQuestions = [
       'searching'
     ],
     correctAnswer: 3,
-    explanation: 'At the end, Danielle says "I have a surprise for you too!" and leads them to the kitchen where she left cupcakes for them.'
+    explanation: 'Leroy "turned to the cabinet and began rifling through its contents" looking for wild rice, so rifling means searching through something.'
   },
 
   {
@@ -459,7 +459,7 @@ const sampleQuestions = [
       'hears his father ask for a second helping of the soup'
     ],
     correctAnswer: 3,
-    explanation: 'All three characters make surprises for each other: Danielle bakes cupcakes for her siblings, and Martin and Madison make an apron for Danielle, showing they all think of others.'
+    explanation: 'When Leroy\'s father asks for seconds and Grandma Etta tells him they made it together, Leroy feels proud, resolving his earlier struggles with work.'
   },
 
   {
@@ -474,7 +474,7 @@ const sampleQuestions = [
       'forgets the difficulty of gathering the ingredients'
     ],
     correctAnswer: 1,
-    explanation: 'The root word in "discovered" is "cover." The prefix "dis-" means "not" and the suffix "-ed" shows past tense, so "discovered" means "uncovered" or "found."'
+    explanation: 'Paragraph 11 says he "thought about quitting, but he remembered that soup" and kept cleaning the canoe for three days, showing his determination.'
   },
 
   {
@@ -489,7 +489,7 @@ const sampleQuestions = [
       'They have to chop wood to make a fire.'
     ],
     correctAnswer: 1,
-    explanation: 'The passage states that "In some parts of the world, especially near the ocean, people eat seaweed all by itself," suggesting people near oceans commonly eat foods from the sea.'
+    explanation: 'Paragraph 12 states they had to "wash the rice and let it dry in the sun for several days" before they could use it.'
   },
 
   {
@@ -504,25 +504,23 @@ const sampleQuestions = [
       'stirring the pot and scooping out a portion for everyone',
     ],
     correctAnswer: 3,
-    explanation: 'The passage explains that "Without seaweed, ice cream and yogurt would not be as thick or creamy but would seem rather lumpy and watery," showing seaweed affects how they look and their texture.'
+    explanation: 'Paragraph 18 shows Grandma Etta stirring the pot and scooping soup for everyone, not Leroy.'
   },
-
   {
     id: '10',
-    text: 'If the story were told from Grandma Etta’s point of view, the reader would understand why--',
+    text: 'If the story were told from Grandma Etta\'s point of view, the reader would understand why--',
     type: 'multiple-choice',
     passageId: 'etta',
     options: [
       'Leroy is staying with Grandma Etta for the summer',
       'Grandma Etta allows Leroy to look in the cabinet for rice',
       'Grandma Etta decides to tempt Leroy into working',
-      'Leroy’s family visits Grandma Etta often',
+      'Leroy\'s family visits Grandma Etta often',
     ],
     correctAnswer: 2,
-    explanation: 'The article mentions several goods that contain seaweed: toothpaste, shampoo, makeup, ice cream, and yogurt. It also states "Hundreds of everyday items have seaweed in them."'
+    explanation: 'Grandma Etta purposely mentions the difficult soup knowing Leroy loves it, to motivate him to help with the work involved in making it.'
   },
-
-    {
+  {
     id: '11',
     text: 'The idea that ancient people had powerful imaginations is supported by the fact that they--',
     type: 'multiple-choice',
@@ -534,12 +532,11 @@ const sampleQuestions = [
       'gathered in groups to try to see unicorns',
     ],
     correctAnswer: 2,
-    explanation: 'The article provides factual information about seaweed, explaining what it is, where it grows, and how it is used in various everyday products.'
+    explanation: 'Paragraph 5 states "Narwhal tusks are depicted on ancient wall hangings as the horns of unicorns," showing they imagined narwhal tusks were unicorn horns.'
   },
-
   {
     id: '12',
-    text: 'The main idea of the article is that the one- horned deer —',
+    text: 'The main idea of the article is that the one-horned deer —',
     type: 'multiple-choice',
     passageId: 'reality',
     options: [
@@ -549,9 +546,8 @@ const sampleQuestions = [
       'is the kind of animal that may have led to the idea of unicorns'
     ],
     correctAnswer: 3,
-    explanation: 'The website "Discover Ocean Plants" would be most likely to have information about where red seaweed grows, as seaweed is a type of ocean plant.'
+    explanation: 'The article concludes that rare one-horned animals like this deer may have inspired the legends of unicorns throughout history.'
   },
-
   {
     id: '13',
     text: 'Which detail would best belong in a summary of the article?',
@@ -564,10 +560,9 @@ const sampleQuestions = [
       'Narwhals are found in the Arctic Ocean.',
     ],
     correctAnswer: 0,
-    explanation: 'The instructions state: "Have the person who receives your message hold the paper near a light bulb. The heat will make the secret message appear!"'
-  },
-
-  {
+    explanation: 'This detail supports the main idea that real but rare one-horned animals may have inspired unicorn legends, while the other options are minor details.'
+    },
+    {
     id: '14',
     text: 'Which of these is the best summary of the poem?',
     type: 'multiple-choice',
@@ -579,190 +574,177 @@ const sampleQuestions = [
       'Nellie Bly wanted to travel around the world and write about her journey, so she set out alone, and the public read about her adventures.',
     ],
     correctAnswer: 3,
-    explanation: 'The message only appears when steam covers the mirror. When the steam clears and goes away, the message would no longer be visible.'
-  },
-
-  {
+    explanation: 'This option captures the main elements: Nellie\'s desire to travel, her solo journey, her writing about it, and the public\'s interest in her story.'
+    },
+    {
     id: '15',
-    text: 'In “Born in the Desert,” the reader can tell that Rahim first becomes nervous when he--',
+    text: 'In "Born in the Desert," the reader can tell that Rahim first becomes nervous when he--',
     type: 'multiple-choice',
     passageId: ['desert', 'buddies'],
     options: [
-      'feels his palms become damp',
-      'wishes his classmates understood him',
-      'spends a long time writing his speech',
-      'forgets what to say next',
+    'feels his palms become damp',
+    'wishes his classmates understood him',
+    'spends a long time writing his speech',
+    'forgets what to say next',
     ],
     correctAnswer: 0,
-    explanation: 'In this context, "invisible" means the message cannot be seen or is hidden from view until the steam makes it appear.'
-  },
-
-  {
+    explanation: 'Paragraph 1 describes "His palms were damp and his heart was pounding," showing physical signs of nervousness.'
+    },
+    {
     id: '16',
-    text: 'Which sentence from “Born in the Desert” is the best example of a comparison?',
+    text: 'Which sentence from "Born in the Desert" is the best example of a comparison?',
     type: 'multiple-choice',
     passageId: ['desert', 'buddies'],
     options: [
-      'Rahim Makeba stood at the front of the classroom holding his notes.',
-      '“When I was little, I used to sit under the Camel Thorn tree in our village and wait for small animals and birds to visit.”',
-      'With a grateful look at Ms. Blum and Julie, Rahim continued his speech.',
-      '“In fact, the masks look similar to those that raccoons have.”',
+    'Rahim Makeba stood at the front of the classroom holding his notes.',
+    '"When I was little, I used to sit under the Camel Thorn tree in our village and wait for small animals and birds to visit."',
+    'With a grateful look at Ms. Blum and Julie, Rahim continued his speech.',
+    '"In fact, the masks look similar to those that raccoons have."',
     ],
     correctAnswer: 3,
-    explanation: 'Both methods require adult assistance: "Lemony Letter" needs a grownup to cut the lemon in half, and "Mirror Message" needs a grownup to peel the potato.'
-  },
-
-  {
+    explanation: 'Rahim compares meerkat faces to raccoon masks, using "similar to" to show the comparison.'
+    },
+    {
     id: '17',
-    text: 'Read this list. <img > According to “Buddies Make a Difference,” which activity belongs on the list?',
+    text: 'Read this list. <img > According to "Buddies Make a Difference," which activity belongs on the list?',
     type: 'multiple-choice',
     passageId: ['desert', 'buddies'],
     options: [
-      'Practice handwriting',
-      'Take part in a spelling contest',
-      'Measure objects found outside',
-      'Write in daily journals',
+    'Practice handwriting',
+    'Take part in a spelling contest',
+    'Measure objects found outside',
+    'Write in daily journals',
     ],
     correctAnswer: 2,
-    explanation: 'The instructions say to use a white crayon on white paper, making it "difficult to see the markings" because white crayon on white paper is nearly invisible.'
-  },
-
-  {
+    explanation: 'Paragraph 14 describes how "the buddy pairs used rulers and scales to measure the size and weight of the found objects" during their nature walk.'
+    },
+    {
     id: '18',
-    text: 'Fifth graders are buddies in “Buddies Make a Difference” because they--',
+    text: 'Fifth graders are buddies in "Buddies Make a Difference" because they--',
     type: 'multiple-choice',
     passageId: ['desert', 'buddies'],
     options: [
-      'have extra time to help kindergartners',
-      'know about taking care of young people',
-      'know how to spend the day together',
-      'have school experiences to share with younger students',
+    'have extra time to help kindergartners',
+    'know about taking care of young people',
+    'know how to spend the day together',
+    'have school experiences to share with younger students',
     ],
     correctAnswer: 3,
-    explanation: 'The flier provides step-by-step instructions for three different methods of creating secret messages, teaching readers how to make them.'
-  },
-
-  {
+    explanation: 'The fifth graders can show kindergartners what to expect in school, as Mrs. Hill says they\'ll "get a better idea of some of the wonderful activities you can look forward to."'
+    },
+    {
     id: '19',
-    text: 'Rahim from “Born in the Desert” and Tim from “Buddies Make a Difference” both--',
+    text: 'Rahim from "Born in the Desert" and Tim from "Buddies Make a Difference" both--',
     type: 'multiple-choice',
     passageId: ['desert', 'buddies'],
     options: [
-      'struggle with answering questions from other students',
-      'feel nervous about adjusting to a new place',
-      'need help finding their way around a new school',
-      'ask for assistance with completing a school project',
+    'struggle with answering questions from other students',
+    'feel nervous about adjusting to a new place',
+    'need help finding their way around a new school',
+    'ask for assistance with completing a school project',
     ],
     correctAnswer: 1,
-    explanation: 'The numbers indicate the sequential order of steps that must be followed to successfully create each type of secret message.'
-  },
-
-  {
+    explanation: 'Rahim is new to America and nervous about speaking, while Tim is anxious about starting kindergarten, making both nervous about new situations.'
+    },
+    {
     id: '20',
-    text: 'What is the main idea of the section titled “Prospecting: Then and Now”?',
+    text: 'What is the main idea of the section titled "Prospecting: Then and Now"?',
     type: 'multiple-choice',
     passageId: 'mine',
     options: [
-      'Centuries ago, prospectors searched for valuables by panning.',
-      'Visitors to the mine learn how prospecting methods and tools have changed over time.',
-      'Water and a pan were used by prospectors to sift through rocky materials.',
-      'Metals and fossils are considered valuable finds by prospectors.',
+    'Centuries ago, prospectors searched for valuables by panning.',
+    'Visitors to the mine learn how prospecting methods and tools have changed over time.',
+    'Water and a pan were used by prospectors to sift through rocky materials.',
+    'Metals and fossils are considered valuable finds by prospectors.',
     ],
     correctAnswer: 1,
-    explanation: 'In the context of grocery stores charging "too much" for strawberries, "charge" means "to set as a price," which is definition 2.'
-  },
-
-  {
+    explanation: 'The section contrasts 1800s prospecting methods with today\'s technology, showing how techniques have evolved over time.'
+    },
+    {
     id: '21',
-    text: 'According to step 3 of the “Panning Instructions” section, the main effect of swirling the pan in the water is to--',
+    text: 'According to step 3 of the "Panning Instructions" section, the main effect of swirling the pan in the water is to--',
     type: 'multiple-choice',
     passageId: 'mine',
     options: [
-      'separate the materials by weight',
-      'collect dirt in the pan',
-      'clean the materials in the pan',
-      'find gemstones by their reflections'
+    'separate the materials by weight',
+    'collect dirt in the pan',
+    'clean the materials in the pan',
+    'find gemstones by their reflections'
     ],
     correctAnswer: 0,
-    explanation: 'Guide words show the first and last entries on a dictionary page. "Carrot" and "canal" fall alphabetically between "camera" and "cause." "Cabin" comes before "camera" and "cave" comes after "cause."'
-  },
-
-  {
+    explanation: 'Step 3 states "lighter materials...will float away, and the larger, heavier items, like gold or gems, will sink to the bottom."'
+    },
+    {
     id: '22',
-    text: 'TWhich detail would be the least important to include in a summary of the section “Panning Instructions”?',
+    text: 'Which detail would be the least important to include in a summary of the section "Panning Instructions"?',
     type: 'multiple-choice',
     passageId: 'mine',
     options: [
-      'The pan should be held so rocks and dirt are visible.',
-      'The pan should be swirled at an angle.',
-      'The flowing water at the panning station is cool.',
-      'The panning process can be time-consuming.',
+    'The pan should be held so rocks and dirt are visible.',
+    'The pan should be swirled at an angle.',
+    'The flowing water at the panning station is cool.',
+    'The panning process can be time-consuming.',
     ],
     correctAnswer: 2,
-    explanation: 'The title "A Hidden Treasure" suggests that characters will be looking for or searching for something that is hidden.'
-  },
-
-  {
+    explanation: 'The water temperature is a minor detail that doesn\'t affect the panning process, unlike the other options which are important instructions.'
+    },
+    {
     id: '23',
     text: 'In addition to providing light to visitors, using electric power lines in the mine will--',
     type: 'multiple-choice',
     passageId: 'mine',
     options: [
-      'provide power for metal detectors',
-      'allow the staff to polish the gems',
-      'prevent accidents or injuries',
-      'show the way to the panning station',
+    'provide power for metal detectors',
+    'allow the staff to polish the gems',
+    'prevent accidents or injuries',
+    'show the way to the panning station',
     ],
     correctAnswer: 2,
-    explanation: 'Paragraph 5 describes what Evan found on the map: "Grandma\'s house, a raindrop inside a square, two little triangles, and a dock" with an "X" marking the "Greatest Fishing Spot."'
-  },
-
-  {
+    explanation: 'Light in the underground mine helps visitors see where they\'re going and what they\'re doing, preventing accidents in the dark.'
+    },
+    {
     id: '24',
-    text: 'Based on the “Panning Instructions” section, everything may fall out of the pan if the--',
+    text: 'Based on the "Panning Instructions" section, everything may fall out of the pan if the--',
     type: 'multiple-choice',
     passageId: 'mine',
     options: [
-      'pan is held at an angle',
-      'movement is too quick',
-      'water is running fast',
-      'pan contains too much dirt',
+    'pan is held at an angle',
+    'movement is too quick',
+    'water is running fast',
+    'pan contains too much dirt',
     ],
     correctAnswer: 1,
-    explanation: 'The text shows their excitement: Evan asks "Excitedly" if they can find the fishing spot, Mark says "Let\'s try," and "they thundered down the steps," showing they are eager to start their search.'
-  },
-
-  {
+    explanation: 'Step 2 warns that "swirling too quickly will make everything fall out of the pan."'
+    },
+    {
     id: '25',
-    text: 'If the author added additional questions about panning to the “Frequently Asked Questions” section, which would be least useful to the reader?',
+    text: 'If the author added additional questions about panning to the "Frequently Asked Questions" section, which would be least useful to the reader?',
     type: 'multiple-choice',
     passageId: 'mine',
     options: [
-      'What size are the panning bowls?',
-      'How many visitors can work at the panning station at one time?',
-      'Is panning equipment available for purchase?',
-      'Is there a time limit at the panning station?',
+    'What size are the panning bowls?',
+    'How many visitors can work at the panning station at one time?',
+    'Is panning equipment available for purchase?',
+    'Is there a time limit at the panning station?',
     ],
     correctAnswer: 0,
-    explanation: 'The story begins with Grandma painting her kitchen, and ends with the boys rushing back "into the kitchen" with their question about the dock, then planning to get fishing poles.'
-  },
-
-  {
+    explanation: 'The exact size of the bowls is less important than knowing about capacity, purchasing equipment, or time limits, which affect planning a visit.'
+    },
+    {
     id: '26',
-    text: 'What does the word <u>processing</u> mean in the section “How long should I plan to stay at the mine”?',
+    text: 'What does the word <u>processing</u> mean in the section "How long should I plan to stay at the mine"?',
     type: 'multiple-choice',
     passageId: 'mine',
     options: [
-      'purchasing',
-      'sorting',
-      'producing',
-      'waiting',
+    'purchasing',
+    'sorting',
+    'producing',
+    'waiting',
     ],
     correctAnswer: 1,
-    explanation: 'Mark says "The square with the raindrop is behind Grandma\'s house" and they look for the water tower with the faded raindrop symbol first.'
-  },
-
-  {
+    explanation: 'The text mentions "separating the rocks from the possible treasures" at the processing area, which means sorting through materials.'
+    },
+    {
     id: '27',
     text: 'Based on the brochure, which location is NOT a place prospectors mine for minerals?',
     type: 'multiple-choice',
@@ -774,9 +756,8 @@ const sampleQuestions = [
       'Creek beds',
     ],
     correctAnswer: 1,
-    explanation: 'When the boys ask about the dock, Grandma explains: "That dock was torn down a long time ago."'
+    explanation: 'The text mentions prospectors searched "creek beds, ridgelines, and hilltops" but meadows are only mentioned as part of the tour walk, not mining locations.'
   },
-
   {
     id: '28',
     text: 'According to the article, which activity is done by both visitors and staff?',
@@ -789,9 +770,8 @@ const sampleQuestions = [
       'Sifting through buckets for gold or gems',
     ],
     correctAnswer: 3,
-    explanation: 'When the boys ask about the dock, Grandma explains: "That dock was torn down a long time ago."'
+    explanation: 'The text states visitors pan for treasures and "The guides will help to identify your treasures and will even assist in the hunt."'
   },
-
   {
     id: '29',
     text: 'According to the brochure, visitors should swirl the pans slowly because the--',
@@ -804,9 +784,8 @@ const sampleQuestions = [
       'material in the pan may be easier to see',
     ],
     correctAnswer: 2,
-    explanation: 'Paragraph 4 directly states: "The young birds learn to peck the ground and eat plants by watching older ostriches."'
+    explanation: 'Step 2 of the instructions warns that "swirling too quickly will make everything fall out of the pan."'
   },
-
   {
     id: '30',
     text: 'In which part of the brochure would the author include the names of local jewelers who work with gemstones?',
@@ -819,9 +798,8 @@ const sampleQuestions = [
       'What should I do with the gemstones I find?',
     ],
     correctAnswer: 3,
-    explanation: 'Paragraph 6 states: "Their strong legs can deliver a kick that stops a lion!"'
+    explanation: 'This section discusses making gemstones into jewelry, making it the logical place to mention jewelers who could help with this.'
   },
-
   {
     id: '31',
     text: 'Which two words from the brochure are antonyms?',
@@ -834,9 +812,8 @@ const sampleQuestions = [
       'surface, underground',
     ],
     correctAnswer: 3,
-    explanation: 'The "Ostrich Facts" chart shows "Life span: 30-40 years," which answers how long ostriches live.'
+    explanation: 'Surface means on top while underground means below, making them opposite locations and therefore antonyms.'
   },
-
   {
     id: '32',
     text: 'Read this thesaurus entry. <div class="passage-dicbox"><b>scrub</b> <i>v.</i> - clean, erase, polish, scrap.</div> Which word best replaces <u>scrub</u> in paragraph 6?',
@@ -846,12 +823,11 @@ const sampleQuestions = [
       'clean',
       'erase',
       'polish',
-      'scra[',
+      'scrap',
     ],
     correctAnswer: 0,
-    explanation: 'The text states: "The male and one of the females take turns guarding and sitting on the eggs."'
+    explanation: 'Maddy doesn\'t want to miss her game by having to "scrub a rug," which means clean it after the juice spill.'
   },
-
   {
     id: '33',
     text: 'Read this sentence from paragraph 7. <div class="passage-innerbox">Then she breezed around the mess, <u>burst</u> out the front door, and escaped.</div> Which meaning of <u>burst</u> is used in this sentence?',
@@ -864,12 +840,11 @@ const sampleQuestions = [
       'rushed through suddenly and forcefully',
     ],
     correctAnswer: 3,
-    explanation: 'The passage explains: "Their new fluffy feathers trap air and keep the chicks warm at night."'
+    explanation: 'Maddy "burst out the front door," meaning she rushed through it quickly and forcefully to escape the situation.'
   },
-
   {
     id: '34',
-    text: 'Maddy tosses her brother’s backpack on the floor because she--',
+    text: 'Maddy tosses her brother\'s backpack on the floor because she--',
     type: 'multiple-choice',
     passageId: 'home_run',
     options: [
@@ -879,9 +854,8 @@ const sampleQuestions = [
       'believes that he borrowed her glove',
     ],
     correctAnswer: 1,
-    explanation: 'The article states: "With such speed, ostriches outrun most predators" and that they can run 43 miles per hour, showing their speed helps them escape danger.'
+    explanation: 'Paragraph 1 states she "frantically hunted through the hall closet" and was late, showing she tossed it aside in her rush to find her glove.'
   },
-
   {
     id: '35',
     text: 'Maddy goes to the game most likely because she--',
@@ -894,9 +868,8 @@ const sampleQuestions = [
       'wants to be home in time for cupcakes',
     ],
     correctAnswer: 1,
-    explanation: 'The title "The Search" indicates the poem will be about someone searching or looking for something.'
+    explanation: 'Paragraph 1 states "Her friends were playing a game in the park, and she was late," showing she had plans to meet them.'
   },
-
   {
     id: '36',
     text: 'Which phrase from the story tells the most about the setting?',
@@ -909,9 +882,8 @@ const sampleQuestions = [
       'quickly reached into the air',
     ],
     correctAnswer: 2,
-    explanation: '"Pause" means to stop briefly or for a short time. The speaker stops in their tracks when Dad asks questions.'
+    explanation: 'A dugout is a specific baseball field feature, clearly establishing the setting as a baseball game.'
   },
-
   {
     id: '37',
     text: 'Which sentence from the story contains an example of figurative language?',
@@ -924,14 +896,13 @@ const sampleQuestions = [
       'Ten minutes later Maddy eased the front door open.',
     ],
     correctAnswer: 2,
-    explanation: 'Lines 17-20 show disappointment and sadness: "It\'s surely gone missing / There\'s clearly no hope. / I have to give up / Find somewhere to mope." The speaker feels upset about losing the shoe.'
+    explanation: 'The "invisible cloud hovering over her" is a metaphor for Maddy\'s guilty feelings, not a literal cloud.'
   },
-
   {
     id: '38',
     text: 'The main conflict in the story is that Maddy--',
     type: 'multiple-choice',
-    passageId: 'home-run',
+    passageId: 'home_run',
     options: [
       'needs to find her glove for the game',
       'thinks she is disappointing her team',
@@ -939,8 +910,8 @@ const sampleQuestions = [
       'feels guilty about causing the mess',
     ],
     correctAnswer: 3,
-    explanation: 'The first line of the poem states: "I\'ve emptied my sports bag," which shows this was the first place searched.'
-  }
+    explanation: 'Maddy\'s guilt about not admitting she caused the spill affects her game performance and drives her to return home to confess.'
+    }
 ];
 
 // Make questions available globally
