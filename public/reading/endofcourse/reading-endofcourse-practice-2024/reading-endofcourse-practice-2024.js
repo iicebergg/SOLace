@@ -255,7 +255,7 @@ const readingPassages = {
 const sampleQuestions = [
   {
     id: '1',
-    text: 'In paragraph 1, the expression “rhythm of their lives” suggests that people’s lives were filled with--',
+    text: 'In paragraph 1, the expression "rhythm of their lives" suggests that people\'s lives were filled with--',
     type: 'multiple-choice',
     passageId: 'timekeeping',
     options: [
@@ -265,7 +265,7 @@ const sampleQuestions = [
       'pleasure and seriousness'
     ],
     correctAnswer: 1,
-    explanation: 'The story is about both Danielle making cupcakes as a surprise for her siblings and her siblings making an apron as a surprise for her. Everyone in the story gives and receives gifts.'
+    explanation: 'The text describes how people\'s lives followed the natural pattern of sunrise and sunset, creating regular routines in their daily activities.'
   },
 
   {
@@ -280,7 +280,7 @@ const sampleQuestions = [
       'divide the day into specific hours'
     ],
     correctAnswer: 2,
-    explanation: 'The passage states that Danielle "had baked cupcakes early in the morning, while Martin and Madison were still asleep," which kept them secret.'
+    explanation: 'Sundials were "usually portable" allowing people to know time "even if they were far from an obelisk," making timekeeping more accessible.'
   },
 
   {
@@ -292,10 +292,10 @@ const sampleQuestions = [
       'important technology of the ancient world',
       'first developed by Egyptians and then improved by Greeks', 
       'developed so that people could tell time without relying on the sun',
-      'known as “water thieves” by the Egyptians and the Greeks',
+      'known as "water thieves" by the Egyptians and the Greeks',
     ],
     correctAnswer: 2,
-    explanation: 'After receiving the apron and saying "Thank you. It\'s perfect," the passage says "As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table."'
+    explanation: 'The paragraph emphasizes water clocks were "the first timekeepers people used that did not depend upon the sun."'
   },
 
   {
@@ -310,12 +310,12 @@ const sampleQuestions = [
       'timekeeping satisfies a human need for order'
     ],
     correctAnswer: 2,
-    explanation: 'Madison says "We wanted to make a surprise for you because you\'re such a nice sister. You are always thinking of us." This shows her family\'s care and appreciation for her.'
+    explanation: 'Sundials and water clocks kept time without mechanical parts, so timekeeping doesn\'t always require them.'
   },
 
   {
     id: '5',
-    text: 'Based on information in the selection, which statement represents the author’s opinion?',
+    text: 'Based on information in the selection, which statement represents the author\'s opinion?',
     type: 'multiple-choice', 
     passageId: 'timekeeping',
     options: [
@@ -325,7 +325,7 @@ const sampleQuestions = [
       'By the end of the 16th century, mechanical clocks were used in many homes.'
     ],
     correctAnswer: 1,
-    explanation: 'At the end, Danielle says "I have a surprise for you too!" and leads them to the kitchen where she left cupcakes for them.'
+    explanation: 'Calling ancient life "simpler" is a subjective judgment, while the other statements are factual claims.'
   },
 
   {
@@ -340,22 +340,22 @@ const sampleQuestions = [
       'Resignation'
     ],
     correctAnswer: 1,
-    explanation: 'All three characters make surprises for each other: Danielle bakes cupcakes for her siblings, and Martin and Madison make an apron for Danielle, showing they all think of others.'
+    explanation: 'Words like "droned on incessantly," "groaned," and describing sleep as "a commodity in short supply" convey exhaustion.'
   },
 
   {
     id: '7',
-    text: 'Read this sentence from paragraph 3. <div class="passage-innerbox">That facade had evaporated when Jack enlisted, and, Ruth admitted, she liked herself more now than she had in the past.</div> The author’s word choice in this sentence highlights the idea that--',
+    text: 'Read this sentence from paragraph 3. <div class="passage-innerbox">That facade had evaporated when Jack enlisted, and, Ruth admitted, she liked herself more now than she had in the past.</div> The author\'s word choice in this sentence highlights the idea that--',
     type: 'multiple-choice',
     passageId: 'intersection',
     options: [
-      'Ruth’s life underwent a significant transition',
-      'Ruth’s life was defined by her relationships', 
+      'Ruth\'s life underwent a significant transition',
+      'Ruth\'s life was defined by her relationships', 
       'Ruth felt unhappy before the war started',
       'Ruth did not want her husband to join the war'
     ],
     correctAnswer: 0,
-    explanation: 'The root word in "discovered" is "cover." The prefix "dis-" means "not" and the suffix "-ed" shows past tense, so "discovered" means "uncovered" or "found."'
+    explanation: 'The word "evaporated" suggests Ruth\'s superficial concerns disappeared suddenly, marking a significant life transition.'
   },
 
   {
@@ -370,7 +370,7 @@ const sampleQuestions = [
       'To highlight the tragedies of a certain era'
     ],
     correctAnswer: 0,
-    explanation: 'The passage states that "In some parts of the world, especially near the ocean, people eat seaweed all by itself," suggesting people near oceans commonly eat foods from the sea.'
+    explanation: 'Louise\'s flashback shows how Pearl Harbor and the war changed her life path, as it did for many Americans.'
   },
 
   {
@@ -385,12 +385,12 @@ const sampleQuestions = [
       'highlighting the similarities of the three women',
     ],
     correctAnswer: 3,
-    explanation: 'The passage explains that "Without seaweed, ice cream and yogurt would not be as thick or creamy but would seem rather lumpy and watery," showing seaweed affects how they look and their texture.'
+    explanation: 'The women walking together and discussing similar concerns shows their shared experiences despite different backgrounds.'
   },
 
   {
     id: '10',
-    text: 'In this selection, Vera’s character is best described as a--',
+    text: 'In this selection, Vera\'s character is best described as a--',
     type: 'multiple-choice',
     passageId: 'intersection',
     options: [
@@ -400,7 +400,7 @@ const sampleQuestions = [
       'scapegoat',
     ],
     correctAnswer: 0,
-    explanation: 'The article mentions several goods that contain seaweed: toothpaste, shampoo, makeup, ice cream, and yogurt. It also states "Hundreds of everyday items have seaweed in them."'
+    explanation: 'Vera rebels against gender norms by pursuing a male-dominated profession and refusing to accept limitations.'
   },
 
   {
@@ -415,7 +415,7 @@ const sampleQuestions = [
       'clarify how plants and animals are able to survive in the desert',
     ],
     correctAnswer: 1,
-    explanation: 'The article provides factual information about seaweed, explaining what it is, where it grows, and how it is used in various everyday products.'
+    explanation: 'After describing plant and animal adaptations, the paragraph introduces the Hohokam\'s canal system as human adaptation.'
   },
 
   {
@@ -430,7 +430,7 @@ const sampleQuestions = [
       'presents the events chronologically',
     ],
     correctAnswer: 1,
-    explanation: 'The title "The Search" indicates the poem will be about someone searching or looking for something.'
+    explanation: 'The article presents factual information about ancient canals in a logical, organized manner typical of expository writing.'
   },
 
   {
@@ -445,7 +445,7 @@ const sampleQuestions = [
       'The Hohokam did not grow certain crops that required constant watering.',
     ],
     correctAnswer: 0,
-    explanation: '"Pause" means to stop briefly or for a short time. The speaker stops in their tracks when Dad asks questions.'
+    explanation: 'Paragraph 7 states "Plants like cattails...are absent from the canal sediments," indicating canals didn\'t carry water year-round.'
   },
 
   {
@@ -460,22 +460,22 @@ const sampleQuestions = [
       'brought to mind',
     ],
     correctAnswer: 2,
-    explanation: 'Lines 17-20 show disappointment and sadness: "It\'s surely gone missing / There\'s clearly no hope. / I have to give up / Find somewhere to mope." The speaker feels upset about losing the shoe.'
+    explanation: 'The pleasant smells in the ice wagon "effaced" (erased or eliminated) the unpleasant factory odors.'
   },
 
   {
     id: '15',
-    text: 'Read this sentence from paragraph 7. <div class="passage-innerbox">Then in fifth grade, Lydia saw a city map and realized her entire world was the smallest finger of Boston’s broad hand.</div> The figurative language in the sentence impacts readers by helping them--',
+    text: 'Read this sentence from paragraph 7. <div class="passage-innerbox">Then in fifth grade, Lydia saw a city map and realized her entire world was the smallest finger of Boston\'s broad hand.</div> The figurative language in the sentence impacts readers by helping them--',
     type: 'multiple-choice',
     passageId: 'd_street',
     options: [
       'understand her perspective of being in fifth grade',
       'recognize the usefulness of such complex maps',
-      'imagine the size of Lydia’s neighborhood by referring to their own hands',
-      'sense how overwhelming a crowded city can be for a girl Lydia’s age',
+      'imagine the size of Lydia\'s neighborhood by referring to their own hands',
+      'sense how overwhelming a crowded city can be for a girl Lydia\'s age',
     ],
     correctAnswer: 2,
-    explanation: 'The first line of the poem states: "I\'ve emptied my sports bag," which shows this was the first place searched.'
+    explanation: 'Comparing South Boston to a finger on a hand helps readers visualize how small her neighborhood was compared to the whole city.'
   },
 
   {
@@ -490,12 +490,12 @@ const sampleQuestions = [
       'was determined to improve her neighborhood in South Boston',
     ],
     correctAnswer: 1,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+    explanation: 'The text shows her deep, lifelong knowledge of South Boston\'s streets and her realization in fifth grade that she\'d never left.'
   },
 
   {
     id: '17',
-    text: 'The author’s use of a simile in paragraph 18 of “Stone Age Skating Experience” suggests that Greta--',
+    text: 'The author\'s use of a simile in paragraph 18 of "Stone Age Skating Experience" suggests that Greta--',
     type: 'multiple-choice',
     passageId: ['skating', 'ice'],
     options: [
@@ -505,22 +505,22 @@ const sampleQuestions = [
       'is relieved to tell her mother the truth',
     ],
     correctAnswer: 3,
-    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+    explanation: 'The story "spilled out of Greta\'s mouth like a rushing waterfall," suggesting relief at finally sharing the truth.'
   },
 
   {
     id: '18',
-    text: 'Which sentence from “History on Ice” is least supported by details and would benefit from clarification?',
+    text: 'Which sentence from "History on Ice" is least supported by details and would benefit from clarification?',
     type: 'multiple-choice',
     passageId: ['skating', 'ice'],
     options: [
       'Ice-skating, however, did not begin as a sport but as an important means of travel.',
       'To increase speed, Finnish hunters needed smooth, hard objects to strap to their feet to reduce friction.',
       'Craftsmen began with a section of bone roughly eight inches long, carved a hole at each end, and strung leather straps through these holes.',
-      'At this point in history, ice- skating seems to have shifted to a mainly recreational activity.',
+      'At this point in history, ice-skating seems to have shifted to a mainly recreational activity.',
     ],
     correctAnswer: 3,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+    explanation: 'This statement about the shift to recreation lacks supporting details about why or how this change occurred.'
   },
 
   {
@@ -535,7 +535,7 @@ const sampleQuestions = [
       'ancient bone skaters followed reindeer herds',
     ],
     correctAnswer: 0,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+    explanation: 'Greta takes two weeks to master bone skating; "History on Ice" implies difficulty with "slip and slide movement."'
   },
 
   {
@@ -545,17 +545,17 @@ const sampleQuestions = [
     passageId: 'garden',
     options: [
       'envision the types of trees that grow in the city',
-      'empathize with the trees’ exposure to cold weather',
+      'empathize with the trees\' exposure to cold weather',
       'appreciate the changing of the seasons',
-      'understand how nature enhances the city’s landscape',
+      'understand how nature enhances the city\'s landscape',
     ],
     correctAnswer: 1,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+    explanation: 'Trees that "stand shorn and nearly bare" and "shiver in their cloaks of dry leaves" evoke sympathy for their cold exposure.'
   },
 
   {
     id: '21',
-    text: 'In line 21, the speaker uses the word “lush” when describing the patch of grass to--',
+    text: 'In line 21, the speaker uses the word "lush" when describing the patch of grass to--',
     type: 'multiple-choice',
     passageId: 'garden',
     options: [
@@ -565,12 +565,12 @@ const sampleQuestions = [
       'establish a sad mood with an image of the plants',
     ],
     correctAnswer: 0,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+    explanation: '"Lush green" grass in a "dark alley" creates a striking contrast between life and the barren urban environment.'
   },
 
   {
     id: '22',
-    text: 'In lines 29-33 of the poem, the poet’s use of the rhetorical question suggests that the speaker--',
+    text: 'In lines 29-33 of the poem, the poet\'s use of the rhetorical question suggests that the speaker--',
     type: 'multiple-choice',
     passageId: 'garden',
     options: [
@@ -580,7 +580,7 @@ const sampleQuestions = [
       'is looking forward to spring, when the trees will again be green',
     ],
     correctAnswer: 2,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+    explanation: 'The speaker wonders if trees have a "pensive, inward look" from memory or anticipation, projecting personal feelings onto them.'
   },
 
   {
@@ -595,7 +595,7 @@ const sampleQuestions = [
       'show the reader that changes in nature are important',
     ],
     correctAnswer: 1,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+    explanation: 'Vivid sensory images of cold trees and unexpected green life help readers connect with the speaker\'s emotions about nature in the city.'
   },
 ];
 

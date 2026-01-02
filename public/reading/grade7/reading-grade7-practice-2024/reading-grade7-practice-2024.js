@@ -263,7 +263,7 @@ const readingPassages = {
 const sampleQuestions = [
   {
     id: '1',
-    text: 'The name “the osprey garden” in paragraph 4 gives the reader the impression of--',
+    text: 'The name "the osprey garden" in paragraph 4 gives the reader the impression of--',
     type: 'multiple-choice',
     passageId: 'divers',
     options: [
@@ -273,7 +273,7 @@ const sampleQuestions = [
       'ospreys living together as thickly as flowers'
     ],
     correctAnswer: 3,
-    explanation: 'The story is about both Danielle making cupcakes as a surprise for her siblings and her siblings making an apron as a surprise for her. Everyone in the story gives and receives gifts.'
+    explanation: 'The Chesapeake Bay has 2,000 pairs of ospreys, suggesting they are as numerous and densely populated as flowers in a garden.'
   },
 
   {
@@ -288,7 +288,7 @@ const sampleQuestions = [
       'In less than two months, these tiny birds will have grown enough to take their first flight.'
     ],
     correctAnswer: 1,
-    explanation: 'The passage states that Danielle "had baked cupcakes early in the morning, while Martin and Madison were still asleep," which kept them secret.'
+    explanation: 'The word "Like" creates a comparison between ospreys and other birds in their nesting preferences.'
   },
 
   {
@@ -303,7 +303,7 @@ const sampleQuestions = [
       'The osprey typically migrates from Alaska to the Caribbean for the winter, so it has a long journey each fall and spring.',
     ],
     correctAnswer: 1,
-    explanation: 'After receiving the apron and saying "Thank you. It\'s perfect," the passage says "As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table."'
+    explanation: 'Their fish-based diet and water-dependent lifestyle is central to understanding osprey behavior, unlike the other details which are interesting but not essential.'
   },
 
   {
@@ -318,7 +318,7 @@ const sampleQuestions = [
       'celebrating traditions brings families together'
     ],
     correctAnswer: 2,
-    explanation: 'Madison says "We wanted to make a surprise for you because you\'re such a nice sister. You are always thinking of us." This shows her family\'s care and appreciation for her.'
+    explanation: 'Brady says trying different things "can open new doors," showing how experiencing Chinese culture helped him grow personally.'
   },
 
   {
@@ -329,11 +329,11 @@ const sampleQuestions = [
     options: [
       'Wen elaborated on the traditional Chinese festival while Brady listened intently.',
       'Relatives and friends congratulated each other on finishing another year while welcoming in the new one.',
-      'Brady followed Wen into his room, asking why everyone was wearing red- colored pajamas for the sleepover.',
+      'Brady followed Wen into his room, asking why everyone was wearing red-colored pajamas for the sleepover.',
       'When he went to bed that night, his stomach and his heart felt full.'
     ],
     correctAnswer: 1,
-    explanation: 'At the end, Danielle says "I have a surprise for you too!" and leads them to the kitchen where she left cupcakes for them.'
+    explanation: 'The congratulating and welcoming of the new year directly expresses the celebratory nature of the festival.'
   },
 
   {
@@ -348,7 +348,7 @@ const sampleQuestions = [
       'was well known in the community'
     ],
     correctAnswer: 0,
-    explanation: 'All three characters make surprises for each other: Danielle bakes cupcakes for her siblings, and Martin and Madison make an apron for Danielle, showing they all think of others.'
+    explanation: 'A 14-year-old girl building furniture of professional quality was unusual for the time period, making her abilities noteworthy.'
   },
 
   {
@@ -363,7 +363,7 @@ const sampleQuestions = [
       'quickly or easily built'
     ],
     correctAnswer: 2,
-    explanation: 'The root word in "discovered" is "cover." The prefix "dis-" means "not" and the suffix "-ed" shows past tense, so "discovered" means "uncovered" or "found."'
+    explanation: 'The K Brick was innovative because it had a unique hollow design unlike other building materials, representing new methods.'
   },
 
   {
@@ -378,12 +378,12 @@ const sampleQuestions = [
       'comparison/contrast'
     ],
     correctAnswer: 2,
-    explanation: 'The passage states that "In some parts of the world, especially near the ocean, people eat seaweed all by itself," suggesting people near oceans commonly eat foods from the sea.'
+    explanation: 'The paragraph lists the various benefits of the K Brick: lighter, less expensive, could be filled with insulation, easier to manufacture, etc.'
   },
 
   {
     id: '9',
-    text: '“A Leader in Her Profession” would be the best heading for which paragraph?',
+    text: '"A Leader in Her Profession" would be the best heading for which paragraph?',
     type: 'multiple-choice',
     passageId: 'pioneer',
     options: [
@@ -393,7 +393,7 @@ const sampleQuestions = [
       '5',
     ],
     correctAnswer: 3,
-    explanation: 'The passage explains that "Without seaweed, ice cream and yogurt would not be as thick or creamy but would seem rather lumpy and watery," showing seaweed affects how they look and their texture.'
+    explanation: 'Paragraph 5 describes her most important invention and professional recognition from the American Ceramic Society, showing her leadership in the field.'
   },
 
   {
@@ -408,10 +408,10 @@ const sampleQuestions = [
       'the sights of nature change with each season',
     ],
     correctAnswer: 0,
-    explanation: 'The article mentions several goods that contain seaweed: toothpaste, shampoo, makeup, ice cream, and yogurt. It also states "Hundreds of everyday items have seaweed in them."'
+    explanation: 'The speaker says no painting can "compete with" or "duplicate" nature\'s autumn scene, meaning art cannot capture nature\'s true beauty.'
   },
 
-    {
+  {
     id: '11',
     text: 'In line 31, the word <u>comfort</u> has a connotation of —',
     type: 'multiple-choice',
@@ -423,12 +423,12 @@ const sampleQuestions = [
       'an improved mood',
     ],
     correctAnswer: 2,
-    explanation: 'The article provides factual information about seaweed, explaining what it is, where it grows, and how it is used in various everyday products.'
+    explanation: 'The "comfort in the wind" and "softly soothing good-night lullaby" suggest a peaceful, calming feeling as earth prepares for rest.'
   },
 
   {
     id: '12',
-    text: 'The speaker’s word choice in the poem conveys a tone of--',
+    text: 'The speaker\'s word choice in the poem conveys a tone of--',
     type: 'multiple-choice',
     passageId: 'gifts',
     options: [
@@ -438,12 +438,12 @@ const sampleQuestions = [
       'admiration',
     ],
     correctAnswer: 0,
-    explanation: 'The website "Discover Ocean Plants" would be most likely to have information about where red seaweed grows, as seaweed is a type of ocean plant.'
+    explanation: 'Words like "fragrant blossoms," "glorious show," and "ruby jewels" show the speaker appreciates the gifts each season brings.'
   },
 
   {
     id: '13',
-    text: 'At the top of the article, the words “Student Voices Column” are in boldface type and placed between horizontal lines in order to--',
+    text: 'At the top of the article, the words "Student Voices Column" are in boldface type and placed between horizontal lines in order to--',
     type: 'multiple-choice',
     passageId: 'mustang',
     options: [
@@ -453,7 +453,7 @@ const sampleQuestions = [
       'emphasize that the newspaper is published by middle school students',
     ],
     correctAnswer: 0,
-    explanation: 'The instructions state: "Have the person who receives your message hold the paper near a light bulb. The heat will make the secret message appear!"'
+    explanation: 'The formatting draws attention to this as a special column where student opinions are featured in the school newspaper.'
   },
 
   {
@@ -468,12 +468,12 @@ const sampleQuestions = [
       'are lacking information about the reasons for the menu changes',
     ],
     correctAnswer: 3,
-    explanation: 'The message only appears when steam covers the mirror. When the steam clears and goes away, the message would no longer be visible.'
+    explanation: 'The author asks "Why has the cafeteria been making these changes?" suggesting students don\'t understand the reasons behind menu changes.'
   },
 
   {
     id: '15',
-    text: 'In paragraph 3, the author puts “old-fashioned” in quotation marks to--',
+    text: 'In paragraph 3, the author puts "old-fashioned" in quotation marks to--',
     type: 'multiple-choice',
     passageId: 'mustang',
     options: [
@@ -483,12 +483,12 @@ const sampleQuestions = [
       'introduce an unfamiliar term',
     ],
     correctAnswer: 2,
-    explanation: 'In this context, "invisible" means the message cannot be seen or is hidden from view until the steam makes it appear.'
+    explanation: 'The quotation marks show this is the cafeteria\'s name for their healthier version of traditional macaroni and cheese.'
   },
 
   {
     id: '16',
-    text: 'Which detail from paragraphs 3 and 4 emphasizes the author’s positive viewpoint about menu items?',
+    text: 'Which detail from paragraphs 3 and 4 emphasizes the author\'s positive viewpoint about menu items?',
     type: 'multiple-choice',
     passageId: 'mustang',
     options: [
@@ -498,12 +498,12 @@ const sampleQuestions = [
       'made with grilled bell peppers, mushrooms, and onions',
     ],
     correctAnswer: 0,
-    explanation: 'Both methods require adult assistance: "Lemony Letter" needs a grownup to cut the lemon in half, and "Mirror Message" needs a grownup to peel the potato.'
+    explanation: 'Describing the faux fried chicken as "golden brown and crispy" uses appetizing language showing the author\'s positive view.'
   },
 
   {
     id: '17',
-    text: 'Read this sentence from paragraph 4. <div class="passage-innerbox">Eighth- grader Jasmine Firestone says, “The new tacos on Tuesdays are the best food in the world!”</div> Why does the author include this example of hyperbole?',
+    text: 'Read this sentence from paragraph 4. <div class="passage-innerbox">Eighth-grader Jasmine Firestone says, "The new tacos on Tuesdays are the best food in the world!"</div> Why does the author include this example of hyperbole?',
     type: 'multiple-choice',
     passageId: 'mustang',
     options: [
@@ -513,7 +513,7 @@ const sampleQuestions = [
       'to highlight which students will eat the tacos',
     ],
     correctAnswer: 2,
-    explanation: 'The instructions say to use a white crayon on white paper, making it "difficult to see the markings" because white crayon on white paper is nearly invisible.'
+    explanation: 'Calling them "the best food in the world" is an exaggeration that emphasizes how much students enjoy the new tacos.'
   },
 
   {
@@ -528,7 +528,7 @@ const sampleQuestions = [
       'surveyed',
     ],
     correctAnswer: 0,
-    explanation: 'The flier provides step-by-step instructions for three different methods of creating secret messages, teaching readers how to make them.'
+    explanation: 'Lucas says "I feel more alert," meaning he can think and respond more quickly after eating healthier food.'
   },
 
   {
@@ -543,7 +543,7 @@ const sampleQuestions = [
       'The students have responded positively to dishes on the new menu.',
     ],
     correctAnswer: 3,
-    explanation: 'The numbers indicate the sequential order of steps that must be followed to successfully create each type of secret message.'
+    explanation: 'The paragraph states "85% of students interviewed welcome this approach" and includes positive quotes, showing student approval.'
   },
 
   {
@@ -558,7 +558,7 @@ const sampleQuestions = [
       'learned that additional meal options would soon become available to students',
     ],
     correctAnswer: 3,
-    explanation: 'In the context of grocery stores charging "too much" for strawberries, "charge" means "to set as a price," which is definition 2.'
+    explanation: 'LaRough says "We have new and exciting healthy menu items coming to the campus very soon," informing about future options.'
   },
 
   {
@@ -573,7 +573,7 @@ const sampleQuestions = [
       'Consistent improvements in the cafeteria will continue.'
     ],
     correctAnswer: 3,
-    explanation: 'Guide words show the first and last entries on a dictionary page. "Carrot" and "canal" fall alphabetically between "camera" and "cause." "Cabin" comes before "camera" and "cave" comes after "cause."'
+    explanation: 'The author expresses confidence about future improvements, saying they "know" more dishes will come "in the near future."'
   },
 
   {
@@ -588,218 +588,192 @@ const sampleQuestions = [
       'Replacing macaroni and cheese with a new dish',
     ],
     correctAnswer: 0,
-    explanation: 'The title "A Hidden Treasure" suggests that characters will be looking for or searching for something that is hidden.'
+    explanation: 'The text mentions tacos are served "every Tuesday" except for "our beloved tacos," showing they kept this student favorite.'
   },
 
   {
     id: '23',
-    text: 'According to the article, cafeteria offerings were different before the 2012 rules in that they--',
-    type: 'multiple-choice',
-    passageId: 'mustang',
-    options: [
-      'featured familiar ingredients',
-      'contained fresh fruits and vegetables',
-      'included sugary and fried foods',
-      'provided few vegetarian dishes',
-    ],
-    correctAnswer: 2,
-    explanation: 'Paragraph 5 describes what Evan found on the map: "Grandma\'s house, a raindrop inside a square, two little triangles, and a dock" with an "X" marking the "Greatest Fishing Spot."'
-  },
-
-  {
-    id: '24',
-    text: 'Which sentence is NOT supported by relevant evidence?',
-    type: 'multiple-choice',
-    passageId: 'mustang',
-    options: [
-      'The cafeteria staff took the not-so-healthful meals and made them better for us.',
-      'The old tacos were made of seasoned and browned ground turkey topped with low-fat cheese and canned salsa.',
-      'The chefs who designed the new menu definitely have the health of today’s young people in mind.',
-      'The new menu may currently lack variety, but we are fortunate to now have dishes that focus on freshness and health.',
-    ],
-    correctAnswer: 1,
-    explanation: 'The text shows their excitement: Evan asks "Excitedly" if they can find the fishing spot, Mark says "Let\'s try," and "they thundered down the steps," showing they are eager to start their search.'
-  },
-
-  {
-    id: '25',
-    text: 'Which paragraph contains useful information for a presentation about how to make dishes healthier?',
-    type: 'multiple-choice',
-    passageId: 'mustang',
-    options: [
-      '2',
-      '3',
-      '5',
-      '7',
-    ],
-    correctAnswer: 1,
-    explanation: 'The story begins with Grandma painting her kitchen, and ends with the boys rushing back "into the kitchen" with their question about the dock, then planning to get fishing poles.'
-  },
-
-  {
-    id: '26',
-    text: 'Which statement best expresses the author’s viewpoint?',
-    type: 'multiple-choice',
-    passageId: 'mustang',
-    options: [
-      'The cafeteria’s healthful food options are delicious.',
-      'Some items on the current menu are more flavorful than others.',
-      'Traditional dishes should be added to the current menu.',
-      'The cafeteria’s chefs are more concerned about nutrition than taste.',
-    ],
-    correctAnswer: 0,
-    explanation: 'Mark says "The square with the raindrop is behind Grandma\'s house" and they look for the water tower with the faded raindrop symbol first.'
-  },
-
-  {
-    id: '27',
-    text: 'The phrase “My heart swelled” in paragraph 1 conveys that the narrator is--',
-    type: 'multiple-choice',
-    passageId: ['taste', 'no_regrets'],
-    options: [
-      'not feeling very well',
-      'proud of the dish he has created',
-      'nervous that his dish will not earn him a good grade',
-      'hoping that the teacher will make a decision quickly',
-    ],
-    correctAnswer: 1,
-    explanation: 'When the boys ask about the dock, Grandma explains: "That dock was torn down a long time ago."'
-  },
-
-  {
-    id: '28',
-    text: 'In paragraph 5, the word <u>consecutively</u> comes from a Latin root that means--',
-    type: 'multiple-choice',
-    passageId: ['taste', 'no_regrets'],
-    options: [
-      'finish early',
-      'empty rapidly',
-      'happen carefully',
-      'follow closely',
-    ],
-    correctAnswer: 3,
-    explanation: 'In alphabetical order: searched, shouted, smiled, spend, steps.'
-  },
-
-  {
-    id: '29',
-    text: 'Which word is a synonym for <u>enhance</u> in paragraph 19?',
-    type: 'multiple-choice',
-    passageId: ['taste', 'no_regrets'],
-    options: [
-      'circulate',
-      'discover',
-      'intensify',
-      'scatter',
-    ],
-    correctAnswer: 2,
-    explanation: 'Paragraph 4 directly states: "The young birds learn to peck the ground and eat plants by watching older ostriches."'
-  },
-
-  {
-    id: '30',
-    text: 'How is figurative language used in the first stanza of the poem?',
-    type: 'multiple-choice',
-    passageId: ['taste', 'no_regrets'],
-    options: [
-      'To show that the speaker’s experience was agonizing',
-      'To re-create sounds from the speaker’s past experiences',
-      'To emphasize the effects of the speaker’s reaction',
-      'To exaggerate the speaker’s feelings of impatience',
-    ],
-    correctAnswer: 0,
-    explanation: 'Paragraph 6 states: "Their strong legs can deliver a kick that stops a lion!"'
-  },
-
-  {
-    id: '31',
-    text: 'Lines 13-14 of the poem convey that the speaker’s anger is--',
-    type: 'multiple-choice',
-    passageId: ['taste', 'no_regrets'],
-    options: [
-      'difficult to control',
-      'part of the healing process',
-      'the result of many arguments',
-      'a normal reaction to the situation',
-    ],
-    correctAnswer: 0,
-    explanation: 'The "Ostrich Facts" chart shows "Life span: 30-40 years," which answers how long ostriches live.'
-  },
-
-  {
-    id: '32',
-    text: 'Lines 29-32 reveal that the speaker of the poem--',
-    type: 'multiple-choice',
-    passageId: ['taste', 'no_regrets'],
-    options: [
-      'is usually a sensible person',
-      'accepts responsibility for what she has done wrong',
-      'fails to understand her actions',
-      'is unable to forgive her friend for her betrayal',
-    ],
-    correctAnswer: 1,
-    explanation: 'The text states: "The male and one of the females take turns guarding and sitting on the eggs."'
-  },
-
-  {
-    id: '33',
-    text: 'Which idea is developed in both the story and the poem?',
-    type: 'multiple-choice',
-    passageId: ['taste', 'no_regrets'],
-    options: [
-      'The past is often the reason people are unable to move forward.',
-      'Having a disagreement will usually bring people closer in the end.',
-      'Admitting the reason for our failures is the first step toward transformation.',
-      'The harshest judgments we receive often come from ourselves.',
-    ],
-    correctAnswer: 2,
-    explanation: 'The passage explains: "Their new fluffy feathers trap air and keep the chicks warm at night."'
-  },
-
-  {
-    id: '34',
-    text: 'The endings of the story and the poem both convey a tone of--',
-    type: 'multiple-choice',
-    passageId: ['taste', 'no_regrets'],
-    options: [
-      'calmness',
-      'confusion',
-      'hopefulness',
-      'indecision',
-    ],
-    correctAnswer: 2,
-    explanation: 'The article states: "With such speed, ostriches outrun most predators" and that they can run 43 miles per hour, showing their speed helps them escape danger.'
-  },
-
-  {
-    id: '35',
-    text: 'How do the narrator of the story and the speaker of the poem resolve their conflicts?',
-    type: 'multiple-choice',
-    passageId: ['taste', 'no_regrets'],
-    options: [
-      'By seeking guidance from someone who offers wise advice',
-      'By sharing an idea with someone who may or may not respond',
-      'By standing up for their beliefs even when others do not agree',
-      'By using a different approach than they have used in the past',
-    ],
-    correctAnswer: 3,
-    explanation: 'The title "The Search" indicates the poem will be about someone searching or looking for something.'
-  },
-
-  {
-    id: '36',
-    text: 'Which major theme do the story and the poem have in common?',
-    type: 'multiple-choice',
-    passageId: ['taste', 'no_regrets'],
-    options: [
-      'Expressing feelings in a kind and patient way can be difficult.',
-      'Making changes in life requires taking the necessary steps.',
-      'Respecting peers involves being honest with them.',
-      'Remaining loyal to one another in difficult times is important.',
-    ],
-    correctAnswer: 1,
-    explanation: '"Pause" means to stop briefly or for a short time. The speaker stops in their tracks when Dad asks questions.'
-  }
+text: 'According to the article, cafeteria offerings were different before the 2012 rules in that they--',
+type: 'multiple-choice',
+passageId: 'mustang',
+options: [
+'featured familiar ingredients',
+'contained fresh fruits and vegetables',
+'included sugary and fried foods',
+'provided few vegetarian dishes',
+],
+correctAnswer: 2,
+explanation: 'Paragraph 3 states "Gone were the days of deep-fried foods and sugary desserts" after the 2012 rules.'
+},{
+id: '24',
+text: 'Which sentence is NOT supported by relevant evidence?',
+type: 'multiple-choice',
+passageId: 'mustang',
+options: [
+'The cafeteria staff took the not-so-healthful meals and made them better for us.',
+'The old tacos were made of seasoned and browned ground turkey topped with low-fat cheese and canned salsa.',
+'The chefs who designed the new menu definitely have the health of today\'s young people in mind.',
+'The new menu may currently lack variety, but we are fortunate to now have dishes that focus on freshness and health.',
+],
+correctAnswer: 1,
+explanation: 'This statement describes old tacos but provides no evidence that these ingredients were actually less healthy.'
+},{
+id: '25',
+text: 'Which paragraph contains useful information for a presentation about how to make dishes healthier?',
+type: 'multiple-choice',
+passageId: 'mustang',
+options: [
+'2',
+'3',
+'5',
+'7',
+],
+correctAnswer: 1,
+explanation: 'Paragraph 3 explains specific techniques like baking instead of frying and using nonfat dairy products to make dishes healthier.'
+},{
+id: '26',
+text: 'Which statement best expresses the author\'s viewpoint?',
+type: 'multiple-choice',
+passageId: 'mustang',
+options: [
+'The cafeteria\'s healthful food options are delicious.',
+'Some items on the current menu are more flavorful than others.',
+'Traditional dishes should be added to the current menu.',
+'The cafeteria\'s chefs are more concerned about nutrition than taste.',
+],
+correctAnswer: 0,
+explanation: 'The author consistently praises the food throughout, saying it\'s "satisfying and tasty" and makes them feel like they\'re "making an A+."'
+},{
+id: '27',
+text: 'The phrase "My heart swelled" in paragraph 1 conveys that the narrator is--',
+type: 'multiple-choice',
+passageId: ['taste', 'no_regrets'],
+options: [
+'not feeling very well',
+'proud of the dish he has created',
+'nervous that his dish will not earn him a good grade',
+'hoping that the teacher will make a decision quickly',
+],
+correctAnswer: 1,
+explanation: 'Phil\'s heart swells when Chef Thompson praises his curry and invites others to taste it, showing pride in his accomplishment.'
+},{
+id: '28',
+text: 'In paragraph 5, the word <u>consecutively</u> comes from a Latin root that means--',
+type: 'multiple-choice',
+passageId: ['taste', 'no_regrets'],
+options: [
+'finish early',
+'empty rapidly',
+'happen carefully',
+'follow closely',
+],
+correctAnswer: 3,
+explanation: 'Consecutively means one after another in sequence, which aligns with "follow closely" - things following each other in order.'
+},{
+id: '29',
+text: 'Which word is a synonym for <u>enhance</u> in paragraph 19?',
+type: 'multiple-choice',
+passageId: ['taste', 'no_regrets'],
+options: [
+'circulate',
+'discover',
+'intensify',
+'scatter',
+],
+correctAnswer: 2,
+explanation: 'Phil learns that salt enhances (intensifies) natural flavors, making them stronger or more noticeable.'
+},{
+id: '30',
+text: 'How is figurative language used in the first stanza of the poem?',
+type: 'multiple-choice',
+passageId: ['taste', 'no_regrets'],
+options: [
+'To show that the speaker\'s experience was agonizing',
+'To re-create sounds from the speaker\'s past experiences',
+'To emphasize the effects of the speaker\'s reaction',
+'To exaggerate the speaker\'s feelings of impatience',
+],
+correctAnswer: 0,
+explanation: 'The memory "burned like an ember" shows the pain of the regretful memory, comparing emotional pain to physical burning.'
+},{
+id: '31',
+text: 'Lines 13-14 of the poem convey that the speaker\'s anger is--',
+type: 'multiple-choice',
+passageId: ['taste', 'no_regrets'],
+options: [
+'difficult to control',
+'part of the healing process',
+'the result of many arguments',
+'a normal reaction to the situation',
+],
+correctAnswer: 0,
+explanation: 'She "unleashed a cyclone of words," comparing her anger to an uncontrollable storm, showing she couldn\'t control it.'
+},{
+id: '32',
+text: 'Lines 29-32 reveal that the speaker of the poem--',
+type: 'multiple-choice',
+passageId: ['taste', 'no_regrets'],
+options: [
+'is usually a sensible person',
+'accepts responsibility for what she has done wrong',
+'fails to understand her actions',
+'is unable to forgive her friend for her betrayal',
+],
+correctAnswer: 1,
+explanation: 'The speaker says "I was tired of feeling this blame," showing she accepts responsibility for her actions and their consequences.'
+},{
+id: '33',
+text: 'Which idea is developed in both the story and the poem?',
+type: 'multiple-choice',
+passageId: ['taste', 'no_regrets'],
+options: [
+'The past is often the reason people are unable to move forward.',
+'Having a disagreement will usually bring people closer in the end.',
+'Admitting the reason for our failures is the first step toward transformation.',
+'The harshest judgments we receive often come from ourselves.',
+],
+correctAnswer: 2,
+explanation: 'Phil admits his cooking problems and changes his approach; the speaker acknowledges her wrong and takes action to apologize.'
+},{
+id: '34',
+text: 'The endings of the story and the poem both convey a tone of--',
+type: 'multiple-choice',
+passageId: ['taste', 'no_regrets'],
+options: [
+'calmness',
+'confusion',
+'hopefulness',
+'indecision',
+],
+correctAnswer: 2,
+explanation: 'Phil succeeds with his new approach; the speaker reaches out to her friend, both endings suggesting positive possibilities ahead.'
+},{
+id: '35',
+text: 'How do the narrator of the story and the speaker of the poem resolve their conflicts?',
+type: 'multiple-choice',
+passageId: ['taste', 'no_regrets'],
+options: [
+'By seeking guidance from someone who offers wise advice',
+'By sharing an idea with someone who may or may not respond',
+'By standing up for their beliefs even when others do not agree',
+'By using a different approach than they have used in the past',
+],
+correctAnswer: 3,
+explanation: 'Phil changes from complex to simple cooking; the speaker changes from silence to reaching out—both try new approaches.'
+},{
+id: '36',
+text: 'Which major theme do the story and the poem have in common?',
+type: 'multiple-choice',
+passageId: ['taste', 'no_regrets'],
+options: [
+'Expressing feelings in a kind and patient way can be difficult.',
+'Making changes in life requires taking the necessary steps.',
+'Respecting peers involves being honest with them.',
+'Remaining loyal to one another in difficult times is important.',
+],
+correctAnswer: 1,
+explanation: 'Both characters must take action to change: Phil adjusts his cooking style, the speaker writes to her friend—showing change requires action.'
+}
 ];
 
 // Make questions available globally

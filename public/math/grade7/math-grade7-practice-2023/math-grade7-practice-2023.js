@@ -27,7 +27,7 @@ const sampleQuestions = [
  },
  {
  id: '4',
- text: 'The table shows the number of different-colored roses sold at a flower shop.<br><img src="images/question_4.png" class="question-image" alt="Roses Sold table showing Yellow, Red, Pink, and Orange roses with pictograph representation where each symbol = 20 roses"></img><br>The shop owner will create a circle graph to represent the data. What percent of the circle should be used to represent the number of pink roses sold?',
+ text: 'The table shows the number of different-colored roses sold at a flower shop.<br><img src="images/4.png" class="question-image" alt="Roses Sold table showing Yellow, Red, Pink, and Orange roses with pictograph representation where each symbol = 20 roses"></img><br>The shop owner will create a circle graph to represent the data. What percent of the circle should be used to represent the number of pink roses sold?',
  type: 'multiple-choice',
  options: ['15%', '20%', '25%', '30%'],
  correctAnswer: 3,
@@ -43,7 +43,7 @@ const sampleQuestions = [
  },
  {
  id: '6',
- text: 'The measurements of a rectangular prism are shown.<br><img src="images/question_6.png" class="question-image" alt="Rectangular prism with dimensions 5 in., 3 in., and 3 in."></img><br>If the height of this rectangular prism was multiplied by <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>, the surface area would —',
+ text: 'The measurements of a rectangular prism are shown.<br><img src="images/6.png" class="question-image" alt="Rectangular prism with dimensions 5 in., 3 in., and 3 in."></img><br>If the height of this rectangular prism was multiplied by <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>, the surface area would —',
  type: 'multiple-choice',
  options: ['be double the original surface area.', 'be half the original surface area.', 'decrease by 24.', 'decrease by <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>.'],
  correctAnswer: 2,
@@ -51,7 +51,7 @@ const sampleQuestions = [
  },
  {
  id: '7',
- text: 'Two similar triangles are shown.<br><img src="images/question_7.png" class="question-image" alt="Two similar triangles with various angle and side measurements"></img><br>Which statement is NOT true?',
+ text: 'Two similar triangles are shown.<br><img src="images/7.png" class="question-image" alt="Two similar triangles with various angle and side measurements"></img><br>Which statement is NOT true?',
  type: 'multiple-choice',
  options: [
     '<img src="images/question_7a.png" alt="Option A statement">',
