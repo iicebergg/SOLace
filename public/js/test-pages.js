@@ -175,6 +175,16 @@ function setupEventListeners() {
   if (saveSettingsBtn) {
     saveSettingsBtn.addEventListener('click', saveUserPreferences);
   }
+
+  window.addEventListener('beforeunload', function(e) {
+    if (testInitialized) {
+      // Cancel the event
+      e.preventDefault();
+      // Chrome and modern browsers require returnValue to be set to trigger the dialog
+      e.returnValue = 'You have a test in progress. Are you sure you want to leave?';
+      return e.returnValue;
+    }
+  });
 }
 
 // Navigate to a different page
