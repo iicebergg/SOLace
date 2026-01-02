@@ -3,7 +3,7 @@ window.TEST_IDENTIFIER = 'math_grade6_practice_2023';
 const sampleQuestions = [
  {
  id: '1',
- text: 'Which expression is best represented by this model? <br><img src="images/question_1.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Which expression is best represented by this model? <br><img src="images/1.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
  options: [
    '<math><mfrac><mn>1</mn><mn>7</mn></mfrac></math> • <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>',
@@ -42,7 +42,7 @@ const sampleQuestions = [
  },
  {
  id: '4',
- text: 'Which equation is represented by this model? <br><img src="images/question_4.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Which equation is represented by this model? <br><img src="images/4.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
  options: [
    '−3 • 6 = −18',
@@ -84,7 +84,7 @@ const sampleQuestions = [
  },
  {
  id: '8',
- text: 'Wayne and Dani both drew congruent circles and marked the center points as Q. They each drew a line segment inside their circle as shown. Which statement best describes the line segments in Wayne\'s and Dani\'s circles? <br><img src="images/question_8.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Wayne and Dani both drew congruent circles and marked the center points as Q. They each drew a line segment inside their circle as shown. Which statement best describes the line segments in Wayne\'s and Dani\'s circles? <br><img src="images/8.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
  options: [
    'Wayne\'s line segment shows a diameter, and Dani\'s line segment shows a radius.',
@@ -110,7 +110,7 @@ const sampleQuestions = [
  },
  {
  id: '10',
- text: 'The rectangle and shaded triangle have the same base and height, as shown in the diagram. The area, in square units, of the shaded triangle can be represented as — <br><img src="images/question_10.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'The rectangle and shaded triangle have the same base and height, as shown in the diagram. The area, in square units, of the shaded triangle can be represented as — <br><img src="images/10.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
  options: [
    '3 • 6',
@@ -123,7 +123,7 @@ const sampleQuestions = [
  },
  {
  id: '11',
- text: 'Which graphed point is best represented by (−7, 0)? <br><img src="images/question_11.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Which graphed point is best represented by (−7, 0)? <br><img src="images/11.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
  options: ['Point K', 'Point L', 'Point M', 'Point N'],
  correctAnswer: 2,
@@ -131,9 +131,14 @@ const sampleQuestions = [
  },
  {
  id: '12',
- text: 'Which figure represents a regular polygon? <br><img src="images/question_12.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Which figure represents a regular polygon?',
  type: 'multiple-choice',
- options: ['Figure F', 'Figure G', 'Figure H', 'Figure J'],
+ options: [
+    {url: 'images/12a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/12b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/12c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/12d.png', alt: 'Image failed to load. Please try again later.'}
+ ],
  correctAnswer: 2,
  explanation: 'A regular polygon has all sides equal and all angles equal. Figure H shows a regular polygon.'
  },
@@ -152,7 +157,7 @@ const sampleQuestions = [
  },
  {
  id: '14',
- text: 'Timothy ordered 150 sandwiches on Monday. This circle graph represents the number of each kind of sandwich he ordered. Which is closest to the total number of turkey sandwiches Timothy ordered? <br><img src="images/question_14.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Timothy ordered 150 sandwiches on Monday. This circle graph represents the number of each kind of sandwich he ordered. Which is closest to the total number of turkey sandwiches Timothy ordered? <br><img src="images/14.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
  options: ['25', '38', '50', '75'],
  correctAnswer: 3,
@@ -160,7 +165,7 @@ const sampleQuestions = [
  },
  {
  id: '15',
- text: 'Porter recorded the lengths of 8 earthworms. Each length is rounded to the nearest inch. The circle graph and the line plot represent this set of data. What information can be determined from both the circle graph and the line plot? <br><img src="images/question_15.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Porter recorded the lengths of 8 earthworms. Each length is rounded to the nearest inch. The circle graph and the line plot represent this set of data. What information can be determined from both the circle graph and the line plot? <br><img src="images/15.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
  options: [
    'The mode of the data set',
@@ -173,7 +178,7 @@ const sampleQuestions = [
  },
  {
  id: '16',
- text: 'This line plot shows the number of letters in the names of 7 students. What is the balance point for this set of data? <br><img src="images/question_16.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'This line plot shows the number of letters in the names of 7 students. What is the balance point for this set of data? <br><img src="images/16.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
  options: ['5 letters', '6 letters', '7 letters', '8 letters'],
  correctAnswer: 2,
@@ -202,20 +207,20 @@ const sampleQuestions = [
  },
  {
  id: '19',
- text: 'The points on the coordinate plane show the proportional relationship between the x- and y-values. Which table of values represents the same proportional relationship that is shown in the graph? <br><img src="images/question_19.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'The points on the coordinate plane show the proportional relationship between the x- and y-values. Which table of values represents the same proportional relationship that is shown in the graph? <br><img src="images/19.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
  options: [
-   '<table style="border-collapse: collapse; margin: 5px 0;"><tr><th style="border: 1px solid black; padding: 5px;">x</th><th style="border: 1px solid black; padding: 5px;">y</th></tr><tr><td style="border: 1px solid black; padding: 5px;">3</td><td style="border: 1px solid black; padding: 5px;">7.5</td></tr><tr><td style="border: 1px solid black; padding: 5px;">5</td><td style="border: 1px solid black; padding: 5px;">12.5</td></tr><tr><td style="border: 1px solid black; padding: 5px;">9</td><td style="border: 1px solid black; padding: 5px;">22.5</td></tr></table>',
-   '<table style="border-collapse: collapse; margin: 5px 0;"><tr><th style="border: 1px solid black; padding: 5px;">x</th><th style="border: 1px solid black; padding: 5px;">y</th></tr><tr><td style="border: 1px solid black; padding: 5px;">4</td><td style="border: 1px solid black; padding: 5px;">2</td></tr><tr><td style="border: 1px solid black; padding: 5px;">6</td><td style="border: 1px solid black; padding: 5px;">4</td></tr><tr><td style="border: 1px solid black; padding: 5px;">8</td><td style="border: 1px solid black; padding: 5px;">6</td></tr></table>',
-   '<table style="border-collapse: collapse; margin: 5px 0;"><tr><th style="border: 1px solid black; padding: 5px;">x</th><th style="border: 1px solid black; padding: 5px;">y</th></tr><tr><td style="border: 1px solid black; padding: 5px;">3</td><td style="border: 1px solid black; padding: 5px;">1.2</td></tr><tr><td style="border: 1px solid black; padding: 5px;">5</td><td style="border: 1px solid black; padding: 5px;">2.0</td></tr><tr><td style="border: 1px solid black; padding: 5px;">9</td><td style="border: 1px solid black; padding: 5px;">3.6</td></tr></table>',
-   '<table style="border-collapse: collapse; margin: 5px 0;"><tr><th style="border: 1px solid black; padding: 5px;">x</th><th style="border: 1px solid black; padding: 5px;">y</th></tr><tr><td style="border: 1px solid black; padding: 5px;">4</td><td style="border: 1px solid black; padding: 5px;">5</td></tr><tr><td style="border: 1px solid black; padding: 5px;">6</td><td style="border: 1px solid black; padding: 5px;">10</td></tr><tr><td style="border: 1px solid black; padding: 5px;">8</td><td style="border: 1px solid black; padding: 5px;">15</td></tr></table>'
+    {url: 'images/19a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/19b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/19c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/19d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 0,
  explanation: 'The graph shows a proportional relationship with a constant ratio of y/x = 2.5.'
  },
  {
  id: '20',
- text: 'Using the key shown, look at this equation mat. Which equation best represents the equation mat shown? <br><img src="images/question_20.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Using the key shown, look at this equation mat. Which equation best represents the equation mat shown? <br><img src="images/20.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
  options: [
    'y = 5 + 6',
@@ -241,15 +246,20 @@ const sampleQuestions = [
  },
  {
  id: '22',
- text: 'Mr. Hansen wrote and solved this equation on the board. He used the key shown and drew a model to confirm the solution. Which of these best represents a model Mr. Hansen could use to confirm his solution? <br><img src="images/question_22.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Mr. Hansen wrote and solved this equation on the board. He used the key shown and drew a model to confirm the solution. Which of these best represents a model Mr. Hansen could use to confirm his solution? <br><img src="images/22.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
- options: ['Model F', 'Model G', 'Model H', 'Model J'],
+ options: [
+    {url: 'images/22a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/22b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/22c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/22d.png', alt: 'Image failed to load. Please try again later.'}
+ ],
  correctAnswer: 1,
  explanation: 'Model G correctly represents the equation and its solution.'
  },
  {
  id: '23',
- text: 'Which statement is true? <br><img src="images/question_23.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Which statement is true? <br><img src="images/23.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
  options: ['Statement A', 'Statement B', 'Statement C', 'Statement D'],
  correctAnswer: 3,

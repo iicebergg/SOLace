@@ -108,11 +108,11 @@ const sampleQuestions = [
  },
  {
  id: '14',
- text: 'Valerie wrote the values of the powers of 3 that she knew. <br><center>3^1 = 3<br>3^2 = 9<br>3^3 = 27<br>3^4 = 61<br>3^5 = ?</center><br> What is the value of 3^5?',
+ text: 'Valerie wrote the values of the powers of 3 that she knew. <br><center>3¹ = 3<br>3² = 9<br>3³ = 27<br>3⁴ = 81<br>3⁵ = ?</center><br> What is the value of 3⁵?',
  type: 'multiple-choice',
  options: ['15', '84', '125', '243'],
  correctAnswer: 3, 
- explanation: 'Note: 3⁴ should be 81, not 61. Following the pattern: 3⁵ = 3⁴ × 3 = 81 × 3 = 243.'
+ explanation: 'Following the pattern: 3⁵ = 3⁴ × 3 = 81 × 3 = 243.'
  },
  {
  id: '15',
@@ -196,7 +196,7 @@ const sampleQuestions = [
  },
  {
  id: '25',
- text: 'Ava placed the point of her pencil on the origin of a regular coordinate plane. She marked a point after moving her pencil 4 units to the left and 7 units up. Which ordered pair identifies where Ava marked her point?Which number, when rounded to the nearest hundredth, is equal to 7.59?',
+ text: 'Ava placed the point of her pencil on the origin of a regular coordinate plane. She marked a point after moving her pencil 4 units to the left and 7 units up. Which ordered pair identifies where Ava marked her point?',
  type: 'multiple-choice',
  options: ['(4, 7)', '(-4, 7)', '(7, 4)', '(7, -4)'],
  correctAnswer: 1, 
@@ -226,9 +226,8 @@ const sampleQuestions = [
  {
  id: '28',
  text: 'The area of a rectangle is 56 square inches. Identify the two measurements from those shown that could be the length and width of this rectangle.',
- type: 'drag-drop',
+ type: 'multiple-select',
  options: ['4 inches', '6 inches', '7 inches', '8 inches', '20 inches', '50 inches'],
- dropZones: ['Length', 'Width'],
  correctAnswer: [2, 3],
  explanation: 'Find two numbers that multiply to 56: 7 × 8 = 56. So length = 7 inches, width = 8 inches.'
  },
@@ -242,7 +241,7 @@ const sampleQuestions = [
  },
  {
  id: '30',
- text: 'Which of these best describes the location of (O, 9) on a coordinate grid?',
+ text: 'Which of these best describes the location of (0, 9) on a coordinate grid?',
  type: 'multiple-choice',
  options: ['In Quadrant I', 'In Quadrant II', 'On the x-axis', 'On the y-axis'],
  correctAnswer: 3, 
@@ -250,7 +249,7 @@ const sampleQuestions = [
  },
  {
  id: '31',
- text: 'The radius of a circular swimming pool is 7 .8 meters. Which is closest to the circumference of this swimming pool?',
+ text: 'The radius of a circular swimming pool is 7.8 meters. Which is closest to the circumference of this swimming pool?',
  type: 'multiple-choice',
  options: ['24.49 m', '47.76 m', '48.98 m', '191.04 m'],
  correctAnswer: 2, 
@@ -365,13 +364,13 @@ const sampleQuestions = [
  id: '44',
  text: 'Which number sentence illustrates the multiplicative inverse property?',
  type: 'multiple-choice',
- options: ['4 * <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> = 4', '<math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> * 0 = 0', '1 * <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> = <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> * 0 = 0 * <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>'],
+ options: ['4 * <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> = 1', '<math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> * 0 = 0', '1 * <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> = <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> * 0 = 0 * <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>'],
  correctAnswer: 0, 
- explanation: 'The multiplicative inverse property states that a number times its reciprocal equals 1. Note: The given equation should equal 1, not 4.'
+ explanation: 'The multiplicative inverse property states that a number times its reciprocal equals 1.'
  },
  {
  id: '45',
- text: 'Cale used a certain rule to create this geometric pattern. <br><center>3, 12, 48, 192, 768</center><br> Which of these patterns follows the same rule as Cale\'s pattern?',
+ text: 'Cale used a certain rule to create this geometric pattern. <br><center>3, 12, 48, 192, 768</center><br>Which of these patterns follows the same rule as Cale\'s pattern?',
  type: 'multiple-choice',
  options: ['1, 4, 16, 64, 256', '4, 8, 12, 16, 20', '48, 44, 40, 36, 32', '88, 97, 106, 115, 124'],
  correctAnswer: 0, 
@@ -387,20 +386,15 @@ const sampleQuestions = [
  },
  {
  id: '47',
- text: 'An art club has 2 fourth-grade girls, 4 third-grade boys, 10 third-grade girls, and 8 fourth-grade boys. Which table correctly shows this information?',
+ text: 'Which word describes 5 in the number sentence shown?<br><center>5x - 12 = 18</center>',
  type: 'multiple-choice',
- options: [
-    {url: 'images/question_47a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_47b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_47c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_47d.png', alt: 'Image failed to load. Please try again later.'}
- ],
+ options: ['Term', 'Variable', 'Equation', 'Coefficient'],
  correctAnswer: 3, 
  explanation: 'Find the table that correctly organizes the data: 2 fourth-grade girls, 4 third-grade boys, 10 third-grade girls, 8 fourth-grade boys.'
  },
  {
  id: '48',
- text: 'Which number sentence can be used to represent all the values of 11 shown on this graph? <br><img src="images/question_48.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>',
+ text: 'Which number sentence can be used to represent all the values of n shown on this graph? <br><img src="images/question_48.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>',
  type: 'multiple-choice',
  options: ['n > 7', 'n ≥ 7', 'n < 7', 'n ≤ 7'],
  correctAnswer: 1, 
