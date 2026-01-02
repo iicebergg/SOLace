@@ -140,7 +140,7 @@ const sampleQuestions = [
     {url: 'images/12d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 2,
- explanation: 'A regular polygon has all sides equal and all angles equal. Figure H shows a regular polygon.'
+ explanation: 'A regular polygon has all sides equal and all angles equal. The triangle shows a regular polygon.'
  },
  {
  id: '13',
@@ -186,7 +186,7 @@ const sampleQuestions = [
  },
  {
  id: '17',
- text: 'The table shows the number of minutes 10 students each used completing homework one night.<br><br><strong>Minutes Completing Homework</strong><br>Student: Ava, Brady, Claire, Cole, Eli, Emily, Henry, Ian, Julia, Lily<br>Time (minutes): 65, 45, 50, 80, 45, 50, 65, 15, 85, 50<br><br>The teacher removes the outlier from the data and recalculates the measures of center and spread. When the outlier is removed from the data, the —',
+ text: 'The table shows the number of minutes 10 students each used completing homework one night.<br><br><img src="images/17-18.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>The teacher removes the outlier from the data and recalculates the measures of center and spread. When the outlier is removed from the data, the —',
  type: 'multiple-choice',
  options: [
    'median decreases',
@@ -199,7 +199,7 @@ const sampleQuestions = [
  },
  {
  id: '18',
- text: 'Cole used <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> of his time reading his notes and <math><mfrac><mn>3</mn><mn>10</mn></mfrac></math> of his time completing problems. He used the rest of his time reviewing his textbook. Cole reviewed his textbook for exactly —<br><br>(Note: Cole used 80 minutes total based on the previous question)',
+ text: '<br><img src="images/17-18.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>Cole used <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> of his time reading his notes and <math><mfrac><mn>3</mn><mn>10</mn></mfrac></math> of his time completing problems. He used the rest of his time reviewing his textbook. Cole reviewed his textbook for exactly —',
  type: 'multiple-choice',
  options: ['20 min', '36 min', '44 min', '53 min'],
  correctAnswer: 2,
@@ -233,7 +233,7 @@ const sampleQuestions = [
  },
  {
  id: '21',
- text: 'What is the value of m for this equation? 18 = <math><mfrac><mi>m</mi><mn>6</mn></mfrac></math>',
+ text: 'What is the value of m for this equation? <br><center>18 = <math><mfrac><mi>m</mi><mn>6</mn></mfrac></math></center>',
  type: 'multiple-choice',
  options: [
    '<math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>',
@@ -246,7 +246,7 @@ const sampleQuestions = [
  },
  {
  id: '22',
- text: 'Mr. Hansen wrote and solved this equation on the board. He used the key shown and drew a model to confirm the solution. Which of these best represents a model Mr. Hansen could use to confirm his solution? <br><img src="images/22.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Mr. Hansen wrote and solved this equation on the board. <br><center>r + 3 = 11<br>r + (3 - 3) = 11 - 3<br>r = 8</center><br> He used the key shown and drew a model to confirm the solution. Which of these best represents a model Mr. Hansen could use to confirm his solution? <br><img src="images/22.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
  options: [
     {url: 'images/22a.png', alt: 'Image failed to load. Please try again later.'},
@@ -255,13 +255,13 @@ const sampleQuestions = [
     {url: 'images/22d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 1,
- explanation: 'Model G correctly represents the equation and its solution.'
+ explanation: 'The second model correctly represents the equation and its solution.'
  },
  {
  id: '23',
- text: 'Which statement is true? <br><img src="images/23.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Which statement is true?',
  type: 'multiple-choice',
- options: ['Statement A', 'Statement B', 'Statement C', 'Statement D'],
+ options: ['-2 is a solution to x < -3 because -2 < 3', '-5 is a solution to x ≤ -10 because 5 < 10', '-10 is a solution to x > -10 because -10 = -10', '-12 is a solution to x ≥ -12 because -12 = -12'],
  correctAnswer: 3,
  explanation: 'Statement D correctly represents the mathematical relationship shown.'
  }
