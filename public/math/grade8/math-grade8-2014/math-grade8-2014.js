@@ -36,7 +36,7 @@ const sampleQuestions = [
  id: '5',
  text: 'Which number is an irrational number?',
  type: 'multiple-choice',
- options: ['5.499', '<math><msqrt><mi>17</mi></msqrt></math>', '-<math><msqrt>9</msqrt></math>', '-10'],
+ options: ['5.499', '<math><msqrt><mi>17</mi></msqrt></math>', '-<math><msqrt><mi>9</mi></msqrt></math>', '-10'],
  correctAnswer: 1, 
  explanation: 'Compare the fractions by looking at the numerators when denominators are the same.'
  },
@@ -82,9 +82,9 @@ const sampleQuestions = [
  },
  {
  id: '11',
- text: 'Kyle caught 9 insects for his science project in the first week. He caught 13 insects in the second week. What is the percent increase in the number of insects Kyle caught from the first week to the second week? Round your answer to the nearest whole number.',
+ text: 'Kyle caught 9 insects for his science project in the first week. He caught 13 insects in the second week. What is the percent increase in the number of insects Kyle caught from the first week to the second week? Round your answer to the nearest whole percent.',
  type: 'free-response',
- correctKeywords: ['44'],
+ correctKeywords: ['44', '44%'],
  explanation: 'Multiply 57 × 5 = 285 pieces of gum.'
  },
  {
@@ -334,7 +334,7 @@ const sampleQuestions = [
  },
  {
  id: '39',
- text: 'Whta is the solution to <math><mfrac><mn>n + 4</mn><mn>2</mn></mfrac><mi> - 3 = 13</mi></math>?',
+ text: 'What is the solution to <math><mfrac><mn>n + 4</mn><mn>2</mn></mfrac><mi>  - 3 = 13</mi></math>?',
  type: 'multiple-choice',
  options: ['<math><mi>n = 4</mi></math>', '<math><mi>n = 14</mi></math>', '<math><mi>n = 16</mi></math>', '<math><mi>n = 28</mi></math>'],
  correctAnswer: 3, 
@@ -387,7 +387,7 @@ const sampleQuestions = [
  },
  {
  id: '45',
- text: 'Which table contains only points that lie on the line represented by <math><mi>y = </mi><mfrac><mn>2</mn><mn>3</mn></mfrac><mi> - 6</mi></math>',
+ text: 'Which table contains only points that lie on the line represented by <math><mi>y = </mi><mfrac><mn>2x</mn><mn>3</mn></mfrac><mi> - 6</mi></math>',
  type: 'multiple-choice',
  options: [
     {url: 'images/question_45a.png', alt: 'Image failed to load. Please try again later.'},
