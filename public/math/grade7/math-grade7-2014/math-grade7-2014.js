@@ -147,7 +147,7 @@ const sampleQuestions = [
  },
  {
  id: '19',
- text: 'Quadrilateral KL1WN is rotated 180° clockwise about the origin. Which coordinates best represent the image of point K? <br><img src="images/question_19.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Quadrilateral KLMN is rotated 180° clockwise about the origin. Which coordinates best represent the image of point K? <br><img src="images/question_19.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
  options: ['(6, 8)', '(-4, 2)', '(8, -6)', '(4, -2)'],
  correctAnswer: 2, 
@@ -155,12 +155,11 @@ const sampleQuestions = [
  },
  {
  id: '20',
- text: 'Triangle STV and triangle ZXY are similar. Which pair of segments are corresponding sides of these triangles? <br><img src="images/question_20.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
- type: 'drag-drop',
- options: ['ST', 'TV', 'XY', 'ZX', 'ZY', 'SV'],
- dropZones: ['', ''],
- correctAnswer: [0, 3],
- explanation: 'To round 5,647: to nearest thousand (6,000), nearest hundred (5,600), nearest ten (5,650).'
+ text: 'A spinner has 8 equal-sized sections.<br>• 2 red<br>• 1 yellow<br>• 3 blue<br>• 2 green<br><br>A class spun the arrow on the spinner 20 times. The arrow landed on green 3 times. The class will spin the arrow on the spinner a total of 500 times. As the number of spins increases, the experimental probability of the arrow landing on green will most likely approach —',
+ type: 'multiple-choice',
+ options: ['0.15', '0.25', '0.3', '0.375'],
+ correctAnswer: 1,
+ explanation: 'Theoretical probability of green = 2/8 = 1/4 = 0.25. As the number of trials increases, experimental probability approaches theoretical probability.'
  },
  {
  id: '21',
@@ -179,7 +178,7 @@ const sampleQuestions = [
  id: '22',
  text: 'A rectangular prism has a height of 3 inches and a volume of 27 cubic inches. The height of this prism is changed to 6 inches, and the other dimensions stay the same. What is the volume of the prism with this change?',
  type: 'multiple-choice',
- options: ['30 cubic inches', '54 cubic inches', '81 cubic inches', '162 cubic'],
+ options: ['30 cubic inches', '54 cubic inches', '81 cubic inches', '162 cubic inches'],
  correctAnswer: 1, 
  explanation: 'The figures are three-dimensional, so they are rectangular prisms, not flat shapes.'
  },
@@ -201,7 +200,7 @@ const sampleQuestions = [
  },
  {
  id: '25',
- text: 'This table shows the dimensions of four rectangular prisms. <br><img src="images/question_26.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which rectangular prism has the greatest volume?',
+ text: 'This table shows the dimensions of four rectangular prisms. <br><img src="images/question_25.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which rectangular prism has the greatest volume?',
  type: 'multiple-choice',
  options: ['Rectangular Prism Q', 'Rectangular Prism R', 'Rectangular Prism S', 'Rectangular Prism T'],
  correctAnswer: 1, 
@@ -228,7 +227,7 @@ const sampleQuestions = [
  text: 'Figure LMNP will be reflected across the y-axis. Place the point on the graph that represents point N\'.',
  type: 'point-select',
  image: {url: 'images/question_28.png', alt: 'Image failed to load. Please try again later.'},
- correctAnswer: { x: 0.27, y: 0.8 }, 
+ correctAnswer: { x: 0.342, y: 0.716 }, 
  explanation: 'The probability of rolling a 2 is 1/6 ≈ 0.167. Place the point at approximately 1/6 on the number line.'
  },
  {
@@ -249,7 +248,7 @@ const sampleQuestions = [
  },
  {
  id: '31',
- text: 'The digits 1, 2, 3, and 4 are used to make a 3-digit number. Each digit can be repeated. What is the total number of 3-digit numbers that can be made using the.se digits?',
+ text: 'The digits 1, 2, 3, and 4 are used to make a 3-digit number. Each digit can be repeated. What is the total number of 3-digit numbers that can be made using these digits?',
  type: 'multiple-choice',
  options: ['12', '27', '64', '81'],
  correctAnswer: 2, 
@@ -273,7 +272,7 @@ const sampleQuestions = [
  },
  {
  id: '34',
- text: 'Ethan earns $12 per hour to walk 2 dogs, plus an additional $7 for brushing the 2 dogs after their walk. <center>Let x represent the hours Ethan works.<br>Let v represent the total he earns each day.</center> Which number sentence best represents this situation?',
+ text: 'Ethan earns $12 per hour to walk 2 dogs, plus an additional $7 for brushing the 2 dogs after their walk. <center>Let x represent the hours Ethan works.<br>Let y represent the total he earns each day.</center> Which number sentence best represents this situation?',
  type: 'multiple-choice',
  options: ['12x + 2 + 7 = y', '12x • 2 + 7 = y', '12x + 7 = y', '12x - 7 = y'],
  correctAnswer: 2, 
@@ -336,6 +335,14 @@ const sampleQuestions = [
  options: ['2d - 24', '24d - 2', '24 + 2d', '24 - 2d'],
  correctAnswer: 3, 
  explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
+ },
+ {
+ id: '41',
+ text: 'If n = 3, what is the value of (3 + <math><msup><mi>n</mi><mn>4</mn></msup></math>) ÷ 3?',
+ type: 'multiple-choice',
+ options: ['5', '16', '28', '30'],
+ correctAnswer: 2,
+ explanation: 'Substitute n = 3: (3 + 3⁴) ÷ 3 = (3 + 81) ÷ 3 = 84 ÷ 3 = 28'
  },
  {
  id: '42',

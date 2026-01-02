@@ -137,7 +137,7 @@ const sampleQuestions = [
  },
  {
  id: '14',
- text: 'The T-shirt supplier sells T-shirts only in packages of 24. Which table best shows the amount the club will earn after paying for the T-shirt packages and selling the T-shirts?',
+ text: 'A school club is selling T-shirts to raise money for a field trip. The club members —<br>• purchase a pack of 24 T-shirts for $348<br>• sell each T-shirt for $19.00<br><br>The T-shirt supplier sells T-shirts only in packages of 24. Which table best shows the amount the club will earn after paying for the T-shirt packages and selling the T-shirts?',
  type: 'multiple-choice',
  options: [
     {url: 'images/14a.png', alt: 'Image failed to load. Please try again later.'},
@@ -150,7 +150,7 @@ const sampleQuestions = [
  },
  {
  id: '15',
- text: 'The club members decide to increase the price of the T-shirts. They will charge 5% more than the original amount. Which dollar value represents 5% of the original price?',
+ text: 'A school club is selling T-shirts to raise money for a field trip. The club members —<br>• purchase a pack of 24 T-shirts for $348<br>• sell each T-shirt for $19.00<br><br>The club members decide to increase the price of the T-shirts. They will charge 5% more than the original amount. Which dollar value represents 5% of the original price?',
  type: 'multiple-choice',
  options: ['$0.05', '$0.95', '$3.80', '$5.00'],
  correctAnswer: 1,
