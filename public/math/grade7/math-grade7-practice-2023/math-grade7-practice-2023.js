@@ -54,17 +54,17 @@ const sampleQuestions = [
  text: 'Two similar triangles are shown.<br><img src="images/7.png" class="question-image" alt="Two similar triangles with various angle and side measurements"></img><br>Which statement is NOT true?',
  type: 'multiple-choice',
  options: [
-    '<img src="images/question_7a.png" alt="Option A statement">',
-    '<img src="images/question_7b.png" alt="Option B statement">',
-    '<img src="images/question_7c.png" alt="Option C statement">',
-    '<img src="images/question_7d.png" alt="Option D statement">'
+    'Segment GH corresponds to Segment KL',
+    '∠H corresponds to ∠L',
+    'Segment FH ≅ Segment JL',
+    '∠F ≅ ∠J'
  ],
  correctAnswer: 2,
  explanation: 'In similar triangles, corresponding angles are equal and corresponding sides are proportional. Check each statement to find which one is NOT true.'
  },
  {
  id: '8',
- text: 'Triangle STU is similar to triangle XYZ.<br><img src="images/question_8.png" class="question-image" alt="Two similar triangles with labeled sides: Triangle STU has sides 2, 4, 5 and Triangle XYZ has sides m, 9, 10"></img><br>Which proportion can be used to find m?',
+ text: 'Triangle STU is similar to triangle XYZ.<br><img src="images/8.png" class="question-image" alt="Two similar triangles with labeled sides: Triangle STU has sides 2, 4, 5 and Triangle XYZ has sides m, 9, 10"></img><br>Which proportion can be used to find m?',
  type: 'multiple-choice',
  options: [
     '<math><mfrac><mn>9</mn><mi>m</mi></mfrac></math> = <math><mfrac><mn>10</mn><mn>5</mn></mfrac></math>',
@@ -77,7 +77,7 @@ const sampleQuestions = [
  },
  {
  id: '9',
- text: 'Triangle PQR is dilated by a scale factor of 2 using the origin as the center of dilation. What appears to be the new coordinates of point R after this dilation?<br><img src="images/question_9.png" class="question-image" alt="Coordinate grid showing triangle PQR with point R at approximately (1, -3)"></img>',
+ text: 'Triangle PQR is dilated by a scale factor of 2 using the origin as the center of dilation. What appears to be the new coordinates of point R after this dilation?<br><img src="images/9.png" class="question-image" alt="Coordinate grid showing triangle PQR with point R at approximately (1, -3)"></img>',
  type: 'multiple-choice',
  options: ['(1, −6)', '(2, −6)', '(2, −3)', '(3, −1)'],
  correctAnswer: 1,
@@ -111,7 +111,7 @@ const sampleQuestions = [
  },
  {
  id: '12',
- text: 'The graph of a line is shown.<br><img src="images/question_12.png" class="question-image" alt="Coordinate grid showing a line with positive slope"></img><br>Which statement best describes the slope of this line?',
+ text: 'The graph of a line is shown.<br><img src="images/12.png" class="question-image" alt="Coordinate grid showing a line with positive slope"></img><br>Which statement best describes the slope of this line?',
  type: 'multiple-choice',
  options: [
     'It is negative because as the x-values decrease, the y-values increase.',
@@ -137,13 +137,13 @@ const sampleQuestions = [
  },
  {
  id: '14',
- text: 'The T-shirt supplier sells T-shirts only in packages of 24. Which table best shows the amount the club will earn after paying for the T-shirt packages and selling the T-shirts?<br><img src="images/question_14.png" class="question-image" alt="Four tables showing different Club Earnings calculations"></img>',
+ text: 'The T-shirt supplier sells T-shirts only in packages of 24. Which table best shows the amount the club will earn after paying for the T-shirt packages and selling the T-shirts?',
  type: 'multiple-choice',
  options: [
-    'Table F',
-    'Table G',
-    'Table H',
-    'Table J'
+    {url: 'images/14a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/14b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/14c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/14d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 1,
  explanation: 'Revenue - Cost = Profit. For 24 shirts: (24 × $19) - $348 = $456 - $348 = $108. For 48 shirts: (48 × $19) - $696 = $216. Table G shows correct profits.'
@@ -198,7 +198,7 @@ const sampleQuestions = [
  },
  {
  id: '21',
- text: 'A fair number cube has faces labeled 1, 2, 3, 4, 5, and 6. Wesley rolled this number cube 30 times. This table shows his results.<br><img src="images/question_21.png" class="question-image" alt="Table showing Wesley\'s Results with frequencies for each number"></img><br>Wesley compared the theoretical and experimental probabilities. Which statement correctly compares the theoretical and experimental probabilities that the number landing face-up is a multiple of 3?',
+ text: 'A fair number cube has faces labeled 1, 2, 3, 4, 5, and 6. Wesley rolled this number cube 30 times. This table shows his results.<br><img src="images/21.png" class="question-image" alt="Table showing Wesley\'s Results with frequencies for each number"></img><br>Wesley compared the theoretical and experimental probabilities. Which statement correctly compares the theoretical and experimental probabilities that the number landing face-up is a multiple of 3?',
  type: 'multiple-choice',
  options: [
     'The theoretical probability of <math><mfrac><mn>1</mn><mn>3</mn></mfrac></math> is less than the experimental probability.',
