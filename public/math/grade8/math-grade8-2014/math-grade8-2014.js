@@ -7,14 +7,14 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['64', '160', '256', '1,024'],
  correctAnswer: 2,
- explanation: 'Addition and subtraction are inverse operations, so 9 + 6 = 15 helps solve 15 - 9 = 6.'
+ explanation: 'Following order of operations: first parentheses (6 + 2 = 8), then exponent (8² = 64), then multiply (4 × 64 = 256).'
  },
  {
  id: '2',
  text: 'What is -<math><msqrt><mi>324</mi></msqrt></math>?',
  type: 'free-response',
  correctKeywords: ['-18'],
- explanation: 'Multiply 57 × 5 = 285 pieces of gum.'
+ explanation: 'The square root of 324 is 18 (since 18 × 18 = 324). The negative sign in front makes it -18.'
  },
  {
  id: '3',
@@ -22,7 +22,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['12', '4', '-72', '-144'],
  correctAnswer: 0, 
- explanation: 'Count the place value blocks: thousands, hundreds, tens, and ones to determine the number.'
+ explanation: 'Substitute values: (1/8)(2³ - 4)(4² + 8) = (1/8)(8 - 4)(16 + 8) = (1/8)(4)(24) = 96/8 = 12.'
  },
  {
  id: '4',
@@ -30,7 +30,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['10%', '12%', '70%', '90%'],
  correctAnswer: 0, 
- explanation: 'Count the place value blocks: thousands, hundreds, tens, and ones to determine the number.'
+ explanation: 'Decrease = 700 - 630 = 70 mg. Percent decrease = (70/700) × 100% = 10%.'
  },
  {
  id: '5',
@@ -38,7 +38,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['5.499', '<math><msqrt><mi>17</mi></msqrt></math>', '-<math><msqrt><mi>9</mi></msqrt></math>', '-10'],
  correctAnswer: 1, 
- explanation: 'Compare the fractions by looking at the numerators when denominators are the same.'
+ explanation: '√17 cannot be expressed as a simple fraction or terminating/repeating decimal. 5.499 is rational, -√9 = -3 is rational, -10 is rational.'
  },
  {
  id: '6',
@@ -46,7 +46,7 @@ const sampleQuestions = [
  type: 'multiple-select',
  options: ['1.8 × 10¹', '1<math><mfrac><mn>7</mn><mn>8</mn></mfrac></math>', '18.5', '<math><mfrac><mn>7</mn><mn>4</mn></mfrac></math>'],
  correctAnswer: [1, 3], 
- explanation: 'Compare the fractions by looking at the numerators when denominators are the same.'
+ explanation: '1.7 × 10⁰ = 1.7 and 195% = 1.95. Check each: 1.8 × 10¹ = 18 (too large), 1⅞ = 1.875 (between), 18.5 (too large), 7/4 = 1.75 (between).'
  },
  {
  id: '7',
@@ -54,7 +54,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['$26.40', '$16.50', '$9.90', '$6.60'],
  correctAnswer: 2, 
- explanation: 'Count the whole units and fractional parts shown in the model.'
+ explanation: 'Number of vanilla cupcakes = (3/8) × 48 = 18. Cost of vanilla cupcakes = 18 × $0.55 = $9.90.'
  },
  {
  id: '8',
@@ -62,7 +62,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['52%, 0.45, 3.1 × 10¹, <math><mfrac><mn>10</mn><mn>11</mn></mfrac></math>', '3.1 × 10¹, 52%, 0.45, <math><mfrac><mn>10</mn><mn>11</mn></mfrac></math>', '52%, 3.1 × 10¹, <math><mfrac><mn>10</mn><mn>11</mn></mfrac></math>, 0.45', '3.1 × 10¹, <math><mfrac><mn>10</mn><mn>11</mn></mfrac></math>, 52%, 0.45'],
  correctAnswer: 3, 
- explanation: 'Multiplication and division are inverse operations, so 3 × 2 = 6 helps solve 6 ÷ 3 = 2.'
+ explanation: 'Convert all: 3.1 × 10¹ = 31, 10/11 ≈ 0.91, 52% = 0.52, 0.45. From greatest to least: 31, 0.91, 0.52, 0.45.'
  },
  {
  id: '9',
@@ -70,7 +70,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['$42.71', '$44.71', '$46.71', '$56.71'],
  correctAnswer: 0, 
- explanation: 'Multiplication and division are inverse operations, so 3 × 2 = 6 helps solve 6 ÷ 3 = 2.'
+ explanation: 'Balance after down payment = $268.26 - $12.00 = $256.26. Monthly payment = $256.26 ÷ 6 = $42.71.'
  },
  {
  id: '10',
@@ -78,14 +78,14 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['<math><msqrt><mi>30</mi></msqrt></math> and <math><msqrt><mi>42</mi></msqrt></math>', '<math><msqrt><mi>36</mi></msqrt></math> and <math><msqrt><mi>49</mi></msqrt></math>', '<math><msqrt><mi>37</mi></msqrt></math> and <math><msqrt><mi>50</mi></msqrt></math>', '<math><msqrt><mi>42</mi></msqrt></math> and <math><msqrt><mi>48</mi></msqrt></math>'],
  correctAnswer: 3, 
- explanation: 'Count the total shapes and circles in each group to find where exactly <math><mfrac><mn>3</mn><mn>8</mn></mfrac></math> are circles.'
+ explanation: '6² = 36 and 7² = 49. We need square roots between 36 and 49. √42 ≈ 6.48 and √48 ≈ 6.93, both between 6 and 7.'
  },
  {
  id: '11',
  text: 'Kyle caught 9 insects for his science project in the first week. He caught 13 insects in the second week. What is the percent increase in the number of insects Kyle caught from the first week to the second week? Round your answer to the nearest whole percent.',
  type: 'free-response',
  correctKeywords: ['44', '44%'],
- explanation: 'Multiply 57 × 5 = 285 pieces of gum.'
+ explanation: 'Increase = 13 - 9 = 4 insects. Percent increase = (4/9) × 100% ≈ 44.4% ≈ 44%.'
  },
  {
  id: '12',
@@ -93,7 +93,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>12</mn><mn>4</mn></mfrac></math>', '-4²', '<math><msqrt><mi>25</mi></msqrt></math>', '-4.8'],
  correctAnswer: 3, 
- explanation: 'Count the total parts and the shaded parts to determine the fraction.'
+ explanation: 'Check each: 12/4 = 3 (integer), -4² = -16 (integer), √25 = 5 (integer), -4.8 (decimal, not an integer).'
  },
  {
  id: '13',
@@ -101,7 +101,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['Exactly 7', 'Exactly 25', 'Between 7 and 8', 'Between 24 and 26'],
  correctAnswer: 2, 
- explanation: 'Look at the arrangement to determine the multiplication sentence that represents the groups.'
+ explanation: 'Since 7² = 49 and 8² = 64, and 50 is between 49 and 64, √50 is between 7 and 8.'
  },
  {
  id: '14',
@@ -109,7 +109,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['4', '6', '9', '12'],
  correctAnswer: 2, 
- explanation: 'Start with 25, subtract 16 sold, then add 136 new plants: 25 - 16 + 136 = 145.'
+ explanation: 'Substitute n = 3/2: (8/3) × (3/2)³ = (8/3) × (27/8) = 216/24 = 9.'
  },
  {
  id: '15',
@@ -117,7 +117,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['<math><mi>(x + 5)² = 12²</mi></math>', '<math><mi>5² + x² = 12²</mi></math>', '<math><mi>5² + 12² = x²</mi></math>', '<math><mi>5 + 12 = x²</mi></math>'],
  correctAnswer: 1, 
- explanation: 'Count the total equal parts and the shaded parts to find the fraction.'
+ explanation: 'In a rectangle, the diagonal forms a right triangle with the sides. Using Pythagorean theorem: 5² + x² = 12².'
  },
  {
  id: '16',
@@ -125,7 +125,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['77 sq cm', '86 sq cm', '96 sq cm', '108 sq cm'],
  correctAnswer: 2, 
- explanation: 'Count the total equal parts and the shaded parts to find the fraction.'
+ explanation: 'Break the polygon into rectangles or triangles, calculate each area, and sum them to get 96 sq cm.'
  },
  {
  id: '17',
@@ -138,7 +138,7 @@ const sampleQuestions = [
     {url: 'images/question_17d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 1, 
- explanation: 'From 10:30 A.M. to 1:00 P.M. is 2 hours and 30 minutes = 150 minutes.'
+ explanation: 'A translation slides a figure without rotating or flipping it. The figure should have the same orientation, just moved to a different position.'
  },
  {
  id: '18',
@@ -146,7 +146,15 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['7° and 83°', '83° and 83°', '97° and 83°', '117° and 83°'],
  correctAnswer: 2, 
- explanation: '3,000 - 285 = 2,715.'
+ explanation: 'Supplementary angles add to 180°. Check: 97° + 83° = 180°.'
+ },
+ {
+ id: '19',
+ text: 'Which number has a value between <math><mo>−</mo><msqrt><mn>9</mn></msqrt></math> and π?',
+ type: 'multiple-choice',
+ options: ['<math><mfrac><mn>13</mn><mn>4</mn></mfrac></math>', '<math><mo>−</mo><mfrac><mn>18</mn><mn>6</mn></mfrac></math>', '3.1 × 10²', '3.2 × 10⁻²'],
+ correctAnswer: 3,
+ explanation: '−√9 = −3 and π ≈ 3.14. We need a value between −3 and 3.14. Option D: 3.2 × 10⁻² = 0.032, which is between −3 and 3.14.'
  },
  {
  id: '20',
@@ -154,7 +162,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['The volume is 10 times the volume of the first prism.', 'The volume is 30 times the volume of the first prism.', 'The volume is 100 times the volume of the first prism.', 'The volume is 1,000 times the volume of the first prism.'],
  correctAnswer: 0, 
- explanation: '3,000 - 285 = 2,715.'
+ explanation: 'Volume = length × width × height. If only length is multiplied by 10, the volume is also multiplied by 10.'
  },
  {
  id: '21',
@@ -162,7 +170,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['19 in.', '34 in.', '39 in.', '44 in.'],
  correctAnswer: 3, 
- explanation: '3,000 - 285 = 2,715.'
+ explanation: 'Add the lengths of all outer edges of the composite figure to find the perimeter of 44 inches.'
  },
  {
  id: '22',
@@ -170,7 +178,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['75 cu in.', '113 cu in.', '226 cu in.', '678 cu in.'],
  correctAnswer: 2, 
- explanation: 'The figures are three-dimensional, so they are rectangular prisms, not flat shapes.'
+ explanation: 'Volume of cone = (1/3)πr²h = (1/3) × 3.14 × 6² × 6 = (1/3) × 3.14 × 36 × 6 ≈ 226 cu in.'
  },
  {
  id: '23',
@@ -178,7 +186,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['Translation', 'Reflection', 'Rotation', 'Dilation'],
  correctAnswer: 0, 
- explanation: '6 feet is the most reasonable length for a bed. 6 inches and 6 centimeters are too short, 6 meters is too long.'
+ explanation: 'The pieces are identical and moved to different positions without rotation or flipping, indicating translation.'
  },
  {
  id: '24',
@@ -191,7 +199,7 @@ const sampleQuestions = [
     {url: 'images/question_24d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 0, 
- explanation: 'Read the hour and minute hands to determine the approximate time.'
+ explanation: 'Match the front, side, and top views to determine which 3D figure creates all three views shown.'
  },
  {
  id: '25',
@@ -199,7 +207,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['3.2 m', '5.0 m', '8.7 m', '11.2 m'],
  correctAnswer: 2, 
- explanation: 'Congruent figures have the same shape and size. Look for the tower that matches exactly.'
+ explanation: 'Use Pythagorean theorem: h² + base² = wire². Solve for h to get approximately 8.7 m.'
  },
  {
  id: '26',
@@ -207,7 +215,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['276 sq ft', '408 sq ft', '528 sq ft', '672 sq ft'],
  correctAnswer: 1, 
- explanation: 'Congruent figures have the same shape and size. Look for the tower that matches exactly.'
+ explanation: 'Surface area = base area + 4 triangular faces. Calculate each and sum to get 408 sq ft.'
  },
  {
  id: '27',
@@ -215,7 +223,7 @@ const sampleQuestions = [
  type: 'multiple-select',
  options: ['Angle 1', 'Angle 3', 'Angle 4', 'Angle 5'],
  correctAnswer: [0, 2], 
- explanation: 'Add 3 hours to the starting time shown on the clock.'
+ explanation: 'Adjacent angles share a common side and vertex. Angles 1 and 4 share sides with Angle 2.'
  },
  {
  id: '28',
@@ -230,7 +238,7 @@ const sampleQuestions = [
     {url: 'images/question_28f.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: [1, 5], 
- explanation: 'Add 3 hours to the starting time shown on the clock.'
+ explanation: 'Check each figure to see if its front, side, and top views match the given views.'
  },
  {
  id: '29',
@@ -238,7 +246,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>-3</mn><mn>2</mn></mfrac></math>', '-1', '1', '<math><mfrac><mn>3</mn><mn>2</mn></mfrac></math>'],
  correctAnswer: 0, 
- explanation: 'Count the value of all the coins and bills shown.'
+ explanation: 'Solve: x = 5x + 6. Subtract 5x: -4x = 6. Divide by -4: x = -6/4 = -3/2.'
  },
  {
  id: '30',
@@ -251,7 +259,7 @@ const sampleQuestions = [
     {url: 'images/question_30d.png', alt: 'Image failed to load. Please try again later.'},
  ],
  correctAnswer: 2, 
- explanation: 'Add 3 hours to the starting time shown on the clock.'
+ explanation: 'Plot the points from the table and identify which line passes through both points.'
  },
  {
  id: '31',
@@ -259,7 +267,7 @@ const sampleQuestions = [
  type: 'multiple-select',
  options: ['<math><mi>xy + 3 = yx + 3</mi></math>', '<math><mi>6(x + 7) = 6x + 42</mi></math>', '<math><mi>3x + (5x + 7x) = (3x + 5x) + 7x</mi></math>', '<math><mi>4(3) = 3(4)</mi></math>', '<math><mi>12 + (-3) = (-3) + 12</mi></math>'],
  correctAnswer: [0, 3], 
- explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
+ explanation: 'Commutative property of multiplication: ab = ba. Options A (xy = yx) and D (4×3 = 3×4) show this property.'
  },
  {
  id: '32',
@@ -267,7 +275,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['$11.75', '$9.36', '$9.00', '$8.56'],
  correctAnswer: 1, 
- explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
+ explanation: 'Calculate mean: sum all wages (frequency × wage for each bar) and divide by 25 employees to get $9.36.'
  },
  {
  id: '33',
@@ -275,7 +283,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['36', '17', '16', '9'],
  correctAnswer: 3, 
- explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
+ explanation: 'Combine like terms: 8x + 8 = 26 + 6x. Subtract 6x: 2x + 8 = 26. Subtract 8: 2x = 18. Divide by 2: x = 9.'
  },
  {
  id: '34',
@@ -288,7 +296,7 @@ const sampleQuestions = [
     {url: 'images/question_34d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 0, 
- explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
+ explanation: 'The line has slope -2 (steep downward) and y-intercept -1 (crosses y-axis at -1).'
  },
  {
  id: '35',
@@ -296,7 +304,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>1</mn><mn>8</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>'],
  correctAnswer: 1, 
- explanation: 'Look at the pattern in the table to determine the relationship between laps and minutes.'
+ explanation: 'P(tails on first coin) = 1/2, P(tails on second coin) = 1/2. P(both tails) = 1/2 × 1/2 = 1/4.'
  },
  {
  id: '36',
@@ -309,7 +317,7 @@ const sampleQuestions = [
     {url: 'images/question_36d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 3, 
- explanation: 'Look at the pattern in the table to determine the relationship between laps and minutes.'
+ explanation: 'Plot each ordered pair from the relation and identify which graph contains all the points.'
  },
  {
  id: '37',
@@ -322,7 +330,7 @@ const sampleQuestions = [
     {url: 'images/question_37d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 0, 
- explanation: 'The identity property of multiplication states that any number multiplied by 1 equals itself.'
+ explanation: 'Solve: 7/8 ≥ (1/4)x + 1/2. Subtract 1/2: 3/8 ≥ (1/4)x. Multiply by 4: 3/2 ≥ x, so x ≤ 3/2.'
  },
  {
  id: '38',
@@ -330,7 +338,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['Constant relationship', 'Negative relationship', 'Positive relationship', 'No relationship'],
  correctAnswer: 3, 
- explanation: 'Each number in the pattern is multiplied by 3 to get the next number: 1×3=3, 3×3=9, 9×3=27, 27×3=81.'
+ explanation: 'The points show no clear pattern or trend, indicating no relationship between the variables.'
  },
  {
  id: '39',
@@ -338,7 +346,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['<math><mi>n = 4</mi></math>', '<math><mi>n = 14</mi></math>', '<math><mi>n = 16</mi></math>', '<math><mi>n = 28</mi></math>'],
  correctAnswer: 3, 
- explanation: 'Add up all the points shown on the line plot by multiplying each score by the number of students who achieved it.'
+ explanation: 'Add 3: (n + 4)/2 = 16. Multiply by 2: n + 4 = 32. Subtract 4: n = 28.'
  },
  {
  id: '40',
@@ -346,7 +354,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['Between 8 and 9 years', 'Between 9 and 10 years', 'Between 10 and 11 years', 'Between 11 and 12 years'],
  correctAnswer: 2, 
- explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
+ explanation: 'Compare the vertical distance between consecutive points. The steepest increase is between ages 10 and 11.'
  },
  {
  id: '41',
@@ -359,7 +367,7 @@ const sampleQuestions = [
     {url: 'images/question_41d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 3, 
- explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
+ explanation: 'The line has slope 1 (goes up 1 for every 1 right) and y-intercept -1 (crosses y-axis at -1).'
  },
  {
  id: '42',
@@ -367,69 +375,77 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['{1, 2, 4, 6}', '{1, 2, 4, 5}', '{1, 2, 4, 5, 6}', '{0, 1, 2, 3, 4, 5, 6}'],
  correctAnswer: 1, 
- explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
+ explanation: 'The range is the set of all y-values in the relation. From the table: {1, 2, 4, 5}.'
  },
  {
  id: '43',
  text: 'What is the solution of this inequality? <center><math><mi>1.6 ≥ 0.8x + 4</math></mi>',
  type: 'multiple-choice',
- options: ['<math><mi>-3 ≥ x</mi></math>', '<math><mi>-3 ≤ x</mi></math>', '<math><mi>7 ≥ x</mi></math>', '<math><mi>7 ≤ x</mi></math>'],
- correctAnswer: 0, 
- explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
+ options: ['<math><mi>-3 ≥ x</mi></math>', '<math><mi>-≤ x</mi></math>', '<math><mi>7 ≥ x</mi></math>', '<math><mi>7 ≤ x</mi></math>'],
+ correctAnswer: 0,
+ explanation: 'Subtract 4: -2.4 ≥ 0.8x. Divide by 0.8: -3 ≥ x, which is the same as x ≤ -3.'
  },
- {
- id: '44',
- text: 'Which is the greatest value in the range of <math><mi>y = -5x + 3</mi></math> for the domain {-2, 0, 1, 3}?',
+{
+id: '44',
+text: 'Which is the greatest value in the range of <math><mi>y = -5x + 3</mi></math> for the domain {-2, 0, 1, 3}?',
+type: 'multiple-choice',
+options: ['3', '8', '13', '18'],
+correctAnswer: 2,
+explanation: 'Calculate y for each x: x = -2 gives y = 13, x = 0 gives y = 3, x = 1 gives y = -2, x = 3 gives y = -12. Greatest is 13.'
+},
+{
+id: '45',
+text: 'Which table contains only points that lie on the line represented by <math><mi>y = </mi><mfrac><mn>2x</mn><mn>3</mn></mfrac><mi> - 6</mi></math>',
+type: 'multiple-choice',
+options: [
+{url: 'images/question_45a.png', alt: 'Image failed to load. Please try again later.'},
+{url: 'images/question_45b.png', alt: 'Image failed to load. Please try again later.'},
+{url: 'images/question_45c.png', alt: 'Image failed to load. Please try again later.'},
+{url: 'images/question_45d.png', alt: 'Image failed to load. Please try again later.'}
+],
+correctAnswer: 2,
+explanation: 'Test each point in the tables using y = (2x/3) - 6. Option C has all points satisfying this equation.'
+},
+{
+id: '46',
+text: 'The graph shows the number of text messages two students sent each day for 4 days. <br><img src="images/question_46.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Based on the graph, which statement is true?',
+type: 'multiple-choice',
+options: ['On Day 2 and Day 3, the total number of text messages sent by Paul was 4 more than the total number of text messages sent by Kala.', 'The total number of text messages sent by Kala was the same as the total number sent by Paul for these four days.', 'The mean number of text messages Kala sent on Day 2 and Day 4 was exactly 4.5.', 'Kala sent fewer text messages than Paul on Day 3 and Day 4 combined.'],
+correctAnswer: 1,
+explanation: 'Add the totals for each student across all 4 days. Both students sent the same total number of messages.'
+},
+{
+id: '47',
+text: 'The scatterplot shows the relationship between Marvin\'s age and the time it took him to run a mile. <br><img src="images/question_47.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which statement best describes the relationship between Marvin\'s age and the time it takes him to run a mile?',
+type: 'multiple-choice',
+options: ['As Marvin\'s age increased, the time it took him to run a mile increased.', 'As Marvin\'s age increased, the time it took him to run a mile decreased.', 'As Marvin\'s age increased, the time it took him to run a mile remains constant.', 'There is no relationship between Marvin\'s age and the time it took him to run a mile.'],
+correctAnswer: 1,
+explanation: 'The scatterplot shows a downward trend - as age increases, time decreases (he gets faster).'
+},
+{
+id: '48',
+text: 'Which relation has a domain of {3, 5, 8}',
+type: 'multiple-choice',
+options: ['{(5, 1), (3, 4), (8, 2), (3, 3)}', '{(3, 2), (5, 1), (8, 3), (1, 4)}', '{(2, 8), (1, 3), (3, 5)}', '{(3, 8), (5, 3), (3, 5)}'],
+correctAnswer: 0,
+explanation: 'Domain is the set of all x-values. Option A has x-values: {5, 3, 8, 3} which includes {3, 5, 8}.'
+},
+{
+ id: '49',
+ text: 'What value of p makes this equation true?<br><math><mn>2</mn><mi>p</mi><mo>=</mo><mfrac><mrow><mo>−</mo><mn>3</mn><mo>(</mo><mi>p</mi><mo>+</mo><mn>2</mn><mo>)</mo></mrow><mn>4</mn></mfrac></math>',
  type: 'multiple-choice',
- options: ['3', '8', '13', '18'],
- correctAnswer: 2, 
- explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
- },
- {
- id: '45',
- text: 'Which table contains only points that lie on the line represented by <math><mi>y = </mi><mfrac><mn>2x</mn><mn>3</mn></mfrac><mi> - 6</mi></math>',
- type: 'multiple-choice',
- options: [
-    {url: 'images/question_45a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_45b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_45c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_45d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 2, 
- explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
- },
- {
- id: '46',
- text: 'The graph shows the number of text messages two students sent each day for 4 days. <br><img src="images/question_46.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Based on the graph, which statement is true?',
- type: 'multiple-choice',
- options: ['On Day 2 and Day 3, the total number of text messages sent by Paul was 4 more than the total number of text messages sent by Kala.', 'The total number of text messages sent by Kala was the same as the total number sent by Paul for these four days.', 'The mean number of text messages Kala sent on Day 2 and Day 4 was exactly 4.5.', 'Kala sent fewer text messages than Paul on Day 3 and Day 4 combined.'],
- correctAnswer: 1, 
- explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
- },
- {
- id: '47',
- text: 'The scatterplot shows the relationship between Marvin\'s age and the time it took him to run a mile. <br><img src="images/question_47.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which statement best describes the relationship between Marvin\'s age and the time it takes him to run a mile?',
- type: 'multiple-choice',
- options: ['As Marvin\'s age increased, the time it took him to run a mile increased.', 'As Marvin\'s age increased, the time it took him to run a mile decreased.', 'As Marvin\'s age increased, the time it took him to run a mile remains constant.', 'There is no relationship between Marvin\'s age and the time it took him to run a mile.'],
- correctAnswer: 1, 
- explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
- },
- {
- id: '48',
- text: 'Which relation has a domain of {3, 5, 8}',
- type: 'multiple-choice',
- options: ['{(5, 1), (3, 4), (8, 2), (3, 3)}', '{(3, 2), (5, 1), (8, 3), (1, 4)}', '{(2, 8), (1, 3), (3, 5)}', '{(3, 8), (5, 3), (3, 5)}'],
- correctAnswer: 0, 
- explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
- },
- {
- id: '50',
- text: 'A box contains 9 new light bulbs and 6 used light bulbs. Each light bulb is the same size and shape. Meredith will randomly select 2 light bulbs from the box without replacement. What is the probability Meredith will select a new light bulb and then a used light bulb?',
- type: 'multiple-choice',
- options: ['<math><mfrac><mn>1</mn><mn>54</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>15</mn></mfrac></math>', '<math><mfrac><mn>6</mn><mn>25</mn></mfrac></math>', '<math><mfrac><mn>9</mn><mn>35</mn></mfrac></math>'],
- correctAnswer: 3, 
- explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
- },
+ options: ['<math><mfrac><mn>6</mn><mn>5</mn></mfrac></math>', '<math><mfrac><mn>6</mn><mn>11</mn></mfrac></math>', '<math><mo>−</mo><mfrac><mn>6</mn><mn>11</mn></mfrac></math>', '<math><mo>−</mo><mfrac><mn>6</mn><mn>5</mn></mfrac></math>'],
+ correctAnswer: 2,
+ explanation: 'Multiply both sides by 4: 8p = −3(p + 2). Expand: 8p = −3p − 6. Add 3p: 11p = −6. Divide by 11: p = −6/11'
+},
+{
+id: '50',
+text: 'A box contains 9 new light bulbs and 6 used light bulbs. Each light bulb is the same size and shape. Meredith will randomly select 2 light bulbs from the box without replacement. What is the probability Meredith will select a new light bulb and then a used light bulb?',
+type: 'multiple-choice',
+options: ['<math><mfrac><mn>1</mn><mn>54</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>15</mn></mfrac></math>', '<math><mfrac><mn>6</mn><mn>25</mn></mfrac></math>', '<math><mfrac><mn>9</mn><mn>35</mn></mfrac></math>'],
+correctAnswer: 3,
+explanation: 'P(new then used) = (9/15) × (6/14) = 54/210 = 9/35.'
+},
 ];
 
 const scaledScoreMapping = {
