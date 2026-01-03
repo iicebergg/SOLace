@@ -7,7 +7,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['-10 + 14 = 4', '-14 ÷ 10 = 1.4', '10 - 14 = 4', '14 × (-10) = 140'],
  correctAnswer: 0,
- explanation: 'Addition and subtraction are inverse operations, so 9 + 6 = 15 helps solve 15 - 9 = 6.'
+ explanation: 'When adding -10 + 14, start at -10 and move 14 units right on the number line to get 4. The other options give incorrect results: -14 ÷ 10 = -1.4, 10 - 14 = -4, and 14 × (-10) = -140.'
  },
  {
  id: '2',
@@ -15,7 +15,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['400', '200', '40', '20'],
  correctAnswer: 3, 
- explanation: 'When comparing fractions with the same denominator, compare the numerators. Since 3 < 4, we have 3/11 < 4/11.'
+ explanation: 'A square root of 400 is a number that, when multiplied by itself, equals 400. Since 20 × 20 = 400, the answer is 20.'
  },
  {
  id: '3',
@@ -23,16 +23,16 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['1.2 × 10⁻⁵', '1.2 × 10⁻⁴', '1.2 × 10⁴', '1.2 × 10⁵'],
  correctAnswer: 0, 
- explanation: 'Count the place value blocks: thousands, hundreds, tens, and ones to determine the number.'
+ explanation: 'To write 0.000012 in scientific notation, move the decimal point 5 places to the right to get 1.2. Since we moved right, the exponent is negative: 1.2 × 10⁻⁵.'
  },
  {
  id: '4',
  text: 'Arrange the three numbers shown in order from least to greatest.',
  type: 'drag-drop',
  options: ['4.7 × 10⁵', '3.9 × 10⁸', '5.2 × 10⁵'],
- dropZones: ['Least', '↓', 'Greatest'],
+ dropZones: ['Least', '↔', 'Greatest'],
  correctAnswer: [0, 2, 1],
- explanation: 'To round 5,647: to nearest thousand (6,000), nearest hundred (5,600), nearest ten (5,650).'
+ explanation: 'First compare exponents: 10⁸ is much larger than 10⁵. For the two with 10⁵, compare 4.7 and 5.2. Order: 4.7 × 10⁵ (470,000), 5.2 × 10⁵ (520,000), 3.9 × 10⁸ (390,000,000).'
  },
  {
  id: '5',
@@ -40,14 +40,14 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['0.25, 17%, <math><mfrac><mn>2</mn><mn>9</mn></mfrac></math>', '0.25, <math><mfrac><mn>2</mn><mn>9</mn></mfrac></math>, 17%', '17%, 0.25, <math><mfrac><mn>2</mn><mn>9</mn></mfrac></math>', '17%, <math><mfrac><mn>2</mn><mn>9</mn></mfrac></math>, 0.25'],
  correctAnswer: 3, 
- explanation: 'Compare the fractions by looking at the numerators when denominators are the same.'
+ explanation: 'Convert all to decimals: 17% = 0.17, 2/9 ≈ 0.222, and 0.25 = 0.25. From least to greatest: 0.17, 0.222, 0.25, which is 17%, 2/9, 0.25.'
  },
  {
  id: '6',
  text: 'What is the value of (-15) - (-18) ÷ 3?',
  type: 'free-response',
  correctKeywords: ['-9'],
- explanation: 'Multiply 57 × 5 = 285 pieces of gum.'
+ explanation: 'Following order of operations, divide first: (-18) ÷ 3 = -6. Then subtract: (-15) - (-6) = -15 + 6 = -9.'
  },
  {
  id: '7',
@@ -55,7 +55,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>', '1', '2'],
  correctAnswer: 2, 
- explanation: 'Count the whole units and fractional parts shown in the model.'
+ explanation: 'A square root of 1 is a number that, when multiplied by itself, equals 1. Since 1 × 1 = 1, the answer is 1.'
  },
  {
  id: '8',
@@ -63,7 +63,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>n</mn><mn>12</mn></mfrac></math>', '12n', 'n + 22', 'n - 22'],
  correctAnswer: 2, 
- explanation: 'Multiplication and division are inverse operations, so 3 × 2 = 6 helps solve 6 ÷ 3 = 2.'
+ explanation: 'The pattern increases by 22 each time: 2 + 22 = 24, 24 + 22 = 46, 46 + 22 = 68. To find the next number, add 22 to n.'
  },
  {
  id: '9',
@@ -71,7 +71,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['-3 • 5 = 15', '-3 • 5 = -15', '-3 • (-5) = 15', '-3 • (-5) = -15'],
  correctAnswer: 1, 
- explanation: 'Multiplication and division are inverse operations, so 3 × 2 = 6 helps solve 6 ÷ 3 = 2.'
+ explanation: 'A negative number times a positive number equals a negative number. Since -3 × 5 = -15, the answer is -3 • 5 = -15.'
  },
  {
  id: '10',
@@ -79,7 +79,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['4 inches', '8 inches', '27 inches', '162 inches'],
  correctAnswer: 1, 
- explanation: 'Count the total shapes and circles in each group to find where exactly <math><mfrac><mn>3</mn><mn>8</mn></mfrac></math> are circles.'
+ explanation: 'Set up a proportion: 2 inches/9 feet = x inches/36 feet. Cross multiply: 9x = 72, so x = 8 inches.'
  },
  {
  id: '11',
@@ -87,7 +87,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>-1</mn><mn>10³</mn></mfrac></math> and -0.003', '<math><mfrac><mn>1</mn><mn>10³</mn></mfrac></math> and -0.003', '<math><mfrac><mn>-1</mn><mn>10³</mn></mfrac></math> and 0.001', '<math><mfrac><mn>1</mn><mn>10³</mn></mfrac></math> and 0.001'],
  correctAnswer: 3, 
- explanation: '63 ÷ 7 = 9, so the answer is 7.'
+ explanation: '10⁻³ = 1/10³ = 1/1000 = 0.001. A negative exponent means take the reciprocal, not make the number negative.'
  },
  {
  id: '12',
@@ -95,7 +95,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['8.2', '4.1', '-4.1', '-8.2'],
  correctAnswer: 0, 
- explanation: 'Count the total parts and the shaded parts to determine the fraction.'
+ explanation: 'Absolute value is the distance from zero on a number line. The absolute value of -8.2 is 8.2.'
  },
  {
  id: '13',
@@ -103,7 +103,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['The common ratio is 4.', 'The common ratio is 15.', 'The common difference is 4.', 'The common difference is 15.'],
  correctAnswer: 0, 
- explanation: 'Look at the arrangement to determine the multiplication sentence that represents the groups.'
+ explanation: 'Each term is multiplied by 4 to get the next term: 5 × 4 = 20, 20 × 4 = 80, 80 × 4 = 320. This is a geometric sequence with common ratio 4.'
  },
  {
  id: '14',
@@ -111,7 +111,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['$25', '$60', '$180', '$215'],
  correctAnswer: 1, 
- explanation: 'Start with 25, subtract 16 sold, then add 136 new plants: 25 - 16 + 136 = 145.'
+ explanation: 'To find 25% of $240, multiply: 0.25 × 240 = $60. This is the amount of the discount.'
  },
  {
  id: '15',
@@ -119,7 +119,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['-4 • 7 = 28', '-4 • 7 = -28', '4 • (-7) = 28', '4 • (-7) = -28'],
  correctAnswer: 1, 
- explanation: 'Count the total equal parts and the shaded parts to find the fraction.'
+ explanation: 'A negative number times a positive number equals a negative number. Since -4 × 7 = -28, the answer is -4 • 7 = -28.'
  },
  {
  id: '16',
@@ -127,7 +127,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>12</mn><mn>11</mn></mfrac></math>', '<math><mfrac><mn>11</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>-11</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>-12</mn><mn>11</mn></mfrac></math>'],
  correctAnswer: 1, 
- explanation: 'Count the total equal parts and the shaded parts to find the fraction.'
+ explanation: 'The absolute value of a number is its distance from zero, always positive. |-11/12| = 11/12.'
  },
  {
  id: '17',
@@ -135,7 +135,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['2 times the volume of Rectangular Prism A', '3 times the volume of Rectangular Prism A', '<math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> the volume of Rectangular Prism A', '<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math> the volume of Rectangular Prism A'],
  correctAnswer: 3, 
- explanation: 'When adding fractions with the same denominator, add the numerators: <math><mfrac><mn>3</mn><mn>4</mn></mfrac></math> + <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math> = <math><mfrac><mn>4</mn><mn>4</mn></mfrac></math> = 1.'
+ explanation: 'When scaling a 3D shape by factor 1/2, each dimension is halved. Volume changes by (1/2)³ = 1/8. But if only length is halved, volume is 1/2 the original.'
  },
  {
  id: '18',
@@ -143,7 +143,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['All squares are rectangles.', 'All squares are parallelograms.', 'All rhombuses are squares.', 'All rhombuses are parallelograms.'],
  correctAnswer: 2, 
- explanation: '3,000 - 285 = 2,715.'
+ explanation: 'Not all rhombuses are squares. A rhombus has all sides equal, but a square also needs all angles to be 90°. All squares are rhombuses, but not vice versa.'
  },
  {
  id: '19',
@@ -151,15 +151,15 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['(6, 8)', '(-4, 2)', '(8, -6)', '(4, -2)'],
  correctAnswer: 2, 
- explanation: 'Look at the pattern on the number line to determine which operation it represents.'
+ explanation: 'When rotating 180° about the origin, both coordinates change sign. If K is at (-8, 6), after rotation it becomes (8, -6).'
  },
  {
  id: '20',
- text: 'A spinner has 8 equal-sized sections.<br>• 2 red<br>• 1 yellow<br>• 3 blue<br>• 2 green<br><br>A class spun the arrow on the spinner 20 times. The arrow landed on green 3 times. The class will spin the arrow on the spinner a total of 500 times. As the number of spins increases, the experimental probability of the arrow landing on green will most likely approach —',
+ text: 'A spinner has 8 equal-sized sections.<br>• 2 red<br>• 1 yellow<br>• 3 blue<br>• 2 green<br><br>A class spun the arrow on the spinner 20 times. The arrow landed on green 3 times. The class will spin the arrow on the spinner a total of 500 times. As the number of spins increases, the experimental probability of the arrow landing on green will most likely approach –',
  type: 'multiple-choice',
  options: ['0.15', '0.25', '0.3', '0.375'],
  correctAnswer: 1,
- explanation: 'Theoretical probability of green = 2/8 = 1/4 = 0.25. As the number of trials increases, experimental probability approaches theoretical probability.'
+ explanation: 'Theoretical probability of green = 2/8 = 1/4 = 0.25. As trials increase, experimental probability approaches theoretical probability.'
  },
  {
  id: '21',
@@ -172,7 +172,7 @@ const sampleQuestions = [
     {url: 'images/question_21d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: [2, 3], 
- explanation: 'From 10:30 A.M. to 1:00 P.M. is 2 hours and 30 minutes = 150 minutes.'
+ explanation: 'Calculate volume for each prism (length × width × height). Select the prisms with volume = 30 cubic inches.'
  },
  {
  id: '22',
@@ -180,7 +180,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['30 cubic inches', '54 cubic inches', '81 cubic inches', '162 cubic inches'],
  correctAnswer: 1, 
- explanation: 'The figures are three-dimensional, so they are rectangular prisms, not flat shapes.'
+ explanation: 'Volume = base area × height. Original: 27 = base × 3, so base = 9 sq in. New volume = 9 × 6 = 54 cubic inches.'
  },
  {
  id: '23',
@@ -188,7 +188,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['parallelogram', 'trapezoid', 'rectangle', 'square'],
  correctAnswer: 0, 
- explanation: '6 feet is the most reasonable length for a bed. 6 inches and 6 centimeters are too short, 6 meters is too long.'
+ explanation: 'A rhombus has opposite sides parallel and all sides equal. This makes it a special type of parallelogram. Not all rhombuses are rectangles or squares.'
  },
  {
  id: '24',
@@ -196,7 +196,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['65°', '80°', '100°', '115°'],
  correctAnswer: 2, 
- explanation: 'Read the hour and minute hands to determine the approximate time.'
+ explanation: 'In similar figures, corresponding angles are equal. If angle N in PQMN is 100°, then the corresponding angle Z in WXYZ is also 100°.'
  },
  {
  id: '25',
@@ -204,7 +204,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['Rectangular Prism Q', 'Rectangular Prism R', 'Rectangular Prism S', 'Rectangular Prism T'],
  correctAnswer: 1, 
- explanation: 'Congruent figures have the same shape and size. Look for the tower that matches exactly.'
+ explanation: 'Calculate volume for each prism (length × width × height) and compare to find the greatest.'
  },
  {
  id: '26',
@@ -212,7 +212,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['Triangle 1', 'Triangle 2', 'Triangle 3', 'Triangle 4'],
  correctAnswer: 1, 
- explanation: 'Congruent figures have the same shape and size. Look for the tower that matches exactly.'
+ explanation: 'For 90° counterclockwise rotation about origin, point (x, y) becomes (-y, x). Check which triangle has vertices following this rule.'
  },
  {
  id: '27',
@@ -220,7 +220,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['π • 8² • 7', 'π • 16² • 7', '2π • 8² + 2π • 8 • 7', '2π • 16² + 2π • 16 • 7'],
  correctAnswer: 0, 
- explanation: 'Add 3 hours to the starting time shown on the clock.'
+ explanation: 'Volume of cylinder = πr²h. With diameter 16 in, radius = 8 in. Volume = π × 8² × 7.'
  },
  {
  id: '28',
@@ -228,7 +228,7 @@ const sampleQuestions = [
  type: 'point-select',
  image: {url: 'images/question_28.png', alt: 'Image failed to load. Please try again later.'},
  correctAnswer: { x: 0.342, y: 0.716 }, 
- explanation: 'The probability of rolling a 2 is 1/6 ≈ 0.167. Place the point at approximately 1/6 on the number line.'
+ explanation: 'When reflecting across the y-axis, the x-coordinate changes sign and y-coordinate stays the same. (x, y) becomes (-x, y).'
  },
  {
  id: '29',
@@ -236,7 +236,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>5</mn><mn>15</mn></mfrac></math> = <math><mfrac><mn>n</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>15</mn><mn>5</mn></mfrac></math> = <math><mfrac><mn>n</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>13</mn><mn>n</mn></mfrac></math> = <math><mfrac><mn>12</mn><mn>36</mn></mfrac></math>', '<math><mfrac><mn>13</mn><mn>n</mn></mfrac></math> = <math><mfrac><mn>36</mn><mn>12</mn></mfrac></math>'],
  correctAnswer: 2, 
- explanation: 'Count the value of all the coins and bills shown.'
+ explanation: 'For similar triangles, corresponding sides are proportional. Set up the proportion with matching sides from each triangle.'
  },
  {
  id: '30',
@@ -244,7 +244,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['On exactly 2 of these days, Shane drank 1 to 2 glasses of water.', 'On exactly 3 of these days, Shane drank 7 to 8 glasses of water.', 'On exactly 25% of these days, Shane drank 3 to 4 glasses of water.', 'On exactly 60% of these days, Shane drank 5 to 6 glasses of water.'],
  correctAnswer: 2, 
- explanation: 'Count the value of all the coins and bills shown.'
+ explanation: 'From the histogram, 3 days had 3-4 glasses. 3 out of 12 days = 3/12 = 25%.'
  },
  {
  id: '31',
@@ -252,7 +252,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['12', '27', '64', '81'],
  correctAnswer: 2, 
- explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
+ explanation: 'For each of 3 positions, we have 4 choices. Total = 4 × 4 × 4 = 64 different 3-digit numbers.'
  },
  {
  id: '32',
@@ -260,7 +260,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['6', '8', '22', '24'],
  correctAnswer: 3, 
- explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
+ explanation: 'Substitute k = 2: 2³ - (2 - 10) + 4(2) = 8 - (-8) + 8 = 8 + 8 + 8 = 24.'
  },
  {
  id: '33',
@@ -268,7 +268,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['The experimental probability is <math><mfrac><mn>1</mn><mn>5</mn></mfrac></math>, and the theoretical probability is <math><mfrac><mn>1</mn><mn>5</mn></mfrac></math>.', 'The experimental probability is <math><mfrac><mn>1</mn><mn>5</mn></mfrac></math>, and the theoretical probability is <math><mfrac><mn>4</mn><mn>15</mn></mfrac></math>.', 'The experimental probability is <math><mfrac><mn>4</mn><mn>15</mn></mfrac></math>, and the theoretical probability is <math><mfrac><mn>1</mn><mn>5</mn></mfrac></math>.', 'The experimental probability is <math><mfrac><mn>4</mn><mn>15</mn></mfrac></math>, and the theoretical probability is <math><mfrac><mn>4</mn><mn>15</mn></mfrac></math>.'],
  correctAnswer: 2, 
- explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
+ explanation: 'Experimental probability = 4/15 (actual results). Theoretical probability = 1/5 (one section out of five equal sections).'
  },
  {
  id: '34',
@@ -276,7 +276,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['12x + 2 + 7 = y', '12x • 2 + 7 = y', '12x + 7 = y', '12x - 7 = y'],
  correctAnswer: 2, 
- explanation: 'Multiply the length of one side by the number of sides to find the perimeter.'
+ explanation: 'Ethan earns $12 per hour (12x) plus a flat $7 for brushing. Total earnings: y = 12x + 7.'
  },
  {
  id: '35',
@@ -284,7 +284,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['2 years', '5 years', '10 years', '20 years'],
  correctAnswer: 3, 
- explanation: 'Look at the pattern in the table to determine the relationship between laps and minutes.'
+ explanation: 'Let M = Maggie\'s age. Aidan\'s age: M/2 - 6 = 4. Solve: M/2 = 10, so M = 20 years.'
  },
  {
  id: '36',
@@ -292,7 +292,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['x ≥ 6', 'x ≤ 6', 'x ≥ -6', 'x ≤ -6'],
  correctAnswer: 0, 
- explanation: 'Look at the pattern in the table to determine the relationship between laps and minutes.'
+ explanation: 'Divide both sides by -12. When dividing by a negative, flip the inequality sign: x ≥ 6.'
  },
  {
  id: '37',
@@ -300,7 +300,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['Associative Property of Addition', 'Associative Property of Multiplication', 'Commutative Property of Addition', 'Communative Property of Multiplication', 'Distributive Property', 'Multiplicative Identity Property'],
  correctAnswer: 2, 
- explanation: 'The identity property of multiplication states that any number multiplied by 1 equals itself.'
+ explanation: 'The commutative property of addition states that a + b = b + a. The order of addition doesn\'t change the result.'
  },
  {
  id: '38',
@@ -313,7 +313,7 @@ const sampleQuestions = [
     {url: 'images/question_38d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 2, 
- explanation: 'Each number in the pattern is multiplied by 3 to get the next number: 1×3=3, 3×3=9, 9×3=27, 27×3=81.'
+ explanation: 'Solve x + 5 < 7: x < 2. The graph should show an open circle at 2 with shading to the left.'
  },
  {
  id: '39',
@@ -326,7 +326,7 @@ const sampleQuestions = [
     {url: 'images/question_39d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 3, 
- explanation: 'Add up all the points shown on the line plot by multiplying each score by the number of students who achieved it.'
+ explanation: 'Count the values in each temperature range from the stem-and-leaf plot and match to the histogram bars.'
  },
  {
  id: '40',
@@ -334,7 +334,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['2d - 24', '24d - 2', '24 + 2d', '24 - 2d'],
  correctAnswer: 3, 
- explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
+ explanation: 'Start with 24 bottles. After d days, she drinks 2d bottles. Bottles remaining: 24 - 2d.'
  },
  {
  id: '41',
@@ -342,7 +342,7 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['5', '16', '28', '30'],
  correctAnswer: 2,
- explanation: 'Substitute n = 3: (3 + 3⁴) ÷ 3 = (3 + 81) ÷ 3 = 84 ÷ 3 = 28'
+ explanation: 'Substitute n = 3: (3 + 3⁴) ÷ 3 = (3 + 81) ÷ 3 = 84 ÷ 3 = 28.'
  },
  {
  id: '42',
@@ -350,77 +350,77 @@ const sampleQuestions = [
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>3</mn></mfrac></math>', '<math><mfrac><mn>3</mn><mn>4</mn></mfrac></math>'],
  correctAnswer: 3, 
- explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
+ explanation: 'Experimental probability = favorable outcomes/total trials = 45/60 = 3/4.'
  },
  {
  id: '43',
  text: 'What is the solution to <math><mfrac><mn>x</mn><mn>-4</mn></mfrac></math> = 10',
  type: 'multiple-choice',
  options: ['-40', '-6', '6', '40'],
- correctAnswer: 0, 
- explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
- },
- {
- id: '44',
- text: 'Which of the following is the algebraic form for the verbal statement shown? <center>"13 more than the product of 4 and a number, n"</center>',
- type: 'multiple-choice',
- options: ['<math><mfrac><mn>n</mn><mn>4</mn></mfrac></math> + 13', '4n + 13', '4(n + 13)', '13(n + 4)'],
- correctAnswer: 1, 
- explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
- },
- {
- id: '45',
- text: 'The table shows the results of 50 rolls of a fair number cube numbered 1 to 6. <br><img src="images/question_45.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> According to the data in the table, what was the experimental probability of rolling a 1?',
- type: 'multiple-choice',
- options: ['<math><mfrac><mn>4</mn><mn>25</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>6</mn></mfrac></math>', '<math><mfrac><mn>9</mn><mn>50</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>5</mn></mfrac></math>'],
- correctAnswer: 0, 
- explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
- },
- {
- id: '46',
- text: 'A spinner has sections labeled W, X, Y, and Z. The faces of a number cube are labeled 1, 2, 3, 4, 5, and 6. What is the total number of possible outcomes of 1 spin of the arrow on the spinner and 1 roll of the number cube?',
- type: 'multiple-choice',
- options: ['6', '10', '24', '48'],
- correctAnswer: 2, 
- explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
- },
- {
- id: '47',
- text: 'Which value of k makes -5 > k + 11 true?',
- type: 'multiple-choice',
- options: ['8', '-4', '-16', '-22'],
- correctAnswer: 3, 
- explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
- },
- {
- id: '48',
- text: 'Which table contains only the points that lie on the line represented by y = <math><mfrac><mn>5</mn><mn>4</mn></mfrac></math>x - 3?',
- type: 'multiple-choice',
- options: [
-    {url: 'images/question_48a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_48b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_48c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/question_48d.png', alt: 'Image failed to load. Please try again later.'}
- ],
- correctAnswer: 3, 
- explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
- },
- {
- id: '49',
- text: 'What is the value of n that makes the following true? <center>n + (-7) = -77</center>',
- type: 'multiple-choice',
- options: ['-84', '-70', '84', '70'],
- correctAnswer: 1, 
- explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
- },
- {
- id: '50',
- text: 'What is the solution to c - 14 < 16?',
- type: 'multiple-choice',
- options: ['c < 2', 'c > 2', 'c < 30', 'c > 30'],
- correctAnswer: 2, 
- explanation: '4 star cards and 4 heart cards will made the likelihood of choosing the same card equal.'
- },
+ correctAnswer: 0,
+ explanation: 'Multiply both sides by -4: x = 10 × (-4) = -40.'
+},
+{
+id: '44',
+text: 'Which of the following is the algebraic form for the verbal statement shown? <center>"13 more than the product of 4 and a number, n"</center>',
+type: 'multiple-choice',
+options: ['<math><mfrac><mn>n</mn><mn>4</mn></mfrac></math> + 13', '4n + 13', '4(n + 13)', '13(n + 4)'],
+correctAnswer: 1, 
+explanation: 'The product of 4 and n is 4n. Adding 13 more gives: 4n + 13.'
+},
+{
+id: '45',
+text: 'The table shows the results of 50 rolls of a fair number cube numbered 1 to 6. <br><img src="images/question_45.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> According to the data in the table, what was the experimental probability of rolling a 1?',
+type: 'multiple-choice',
+options: ['<math><mfrac><mn>4</mn><mn>25</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>6</mn></mfrac></math>', '<math><mfrac><mn>9</mn><mn>50</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>5</mn></mfrac></math>'],
+correctAnswer: 0,
+explanation: 'If 1 was rolled 8 times out of 50: 8/50 = 4/25. This is the experimental probability.'
+},
+{
+id: '46',
+text: 'A spinner has sections labeled W, X, Y, and Z. The faces of a number cube are labeled 1, 2, 3, 4, 5, and 6. What is the total number of possible outcomes of 1 spin of the arrow on the spinner and 1 roll of the number cube?',
+type: 'multiple-choice',
+options: ['6', '10', '24', '48'],
+correctAnswer: 2,
+explanation: 'Number of outcomes = 4 spinner sections × 6 cube faces = 24 possible outcomes.'
+},
+{
+id: '47',
+text: 'Which value of k makes -5 > k + 11 true?',
+type: 'multiple-choice',
+options: ['8', '-4', '-16', '-22'],
+correctAnswer: 3,
+explanation: 'Solve -5 > k + 11: k < -16. Only -22 is less than -16.'
+},
+{
+id: '48',
+text: 'Which table contains only the points that lie on the line represented by y = <math><mfrac><mn>5</mn><mn>4</mn></mfrac></math>x - 3?',
+type: 'multiple-choice',
+options: [
+{url: 'images/question_48a.png', alt: 'Image failed to load. Please try again later.'},
+{url: 'images/question_48b.png', alt: 'Image failed to load. Please try again later.'},
+{url: 'images/question_48c.png', alt: 'Image failed to load. Please try again later.'},
+{url: 'images/question_48d.png', alt: 'Image failed to load. Please try again later.'}
+],
+correctAnswer: 3,
+explanation: 'Test each point in the tables using y = (5/4)x - 3. The correct table has all points satisfying this equation.'
+},
+{
+id: '49',
+text: 'What is the value of n that makes the following true? <center>n + (-7) = -77</center>',
+type: 'multiple-choice',
+options: ['-84', '-70', '84', '70'],
+correctAnswer: 1,
+explanation: 'Solve n + (-7) = -77. Add 7 to both sides: n = -77 + 7 = -70.'
+},
+{
+id: '50',
+text: 'What is the solution to c - 14 < 16?',
+type: 'multiple-choice',
+options: ['c < 2', 'c > 2', 'c < 30', 'c > 30'],
+correctAnswer: 2,
+explanation: 'Add 14 to both sides: c < 16 + 14, so c < 30.'
+},
 ];
 
 const scaledScoreMapping = {
