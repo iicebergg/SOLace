@@ -120,7 +120,7 @@ const sampleQuestions = [
  },
  {
  id: '15',
- text: 'Which graph appears to contain all the ordered pairs in this table?<br>x: −5, 0, 3<br>y: −3, 2, 5<br><img src="images/15.png" class="question-image" alt="Four coordinate plane graphs labeled A, B, C, D">',
+ text: 'Which graph appears to contain all the ordered pairs in this table?<br><img src="images/15.png" class="question-image" alt="Four coordinate plane graphs labeled A, B, C, D">',
  type: 'multiple-choice',
  options: [
     {url: 'images/15a.png', alt: 'Image failed to load. Please try again later.'},
@@ -136,10 +136,10 @@ const sampleQuestions = [
  text: 'Aaron has 5 ounces of water in a container. He adds 2.6 ounces of water each minute. Which table of values represents the number of ounces of water in the container, y, after x minutes?',
  type: 'multiple-choice',
  options: [
-    'x: 2, 5 | y: 5.2, 13.0',
-    'x: 2, 5 | y: 10.2, 18.0',
-    'x: 2, 5 | y: 15.2, 38.0',
-    'x: 2, 5 | y: 18.2, 26.0'
+    {url: 'images/16a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/16b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/16c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/16d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 1,
  explanation: 'y = 5 + 2.6x. When x = 2: y = 5 + 5.2 = 10.2. When x = 5: y = 5 + 13 = 18.0'
