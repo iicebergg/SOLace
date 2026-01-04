@@ -404,8 +404,14 @@ const sampleQuestions = [
   {
     id: '35',
     text: 'The graph of the equation representing a direct variation passes through point A. Locate one additional point that is on the graph of this equation.<br><img src="images/question_35.png" class="question-image" alt="Coordinate grid with point A">',
-    type: 'point-select',
-    correctAnswer: 'Various points on line through origin and A',
+    type: 'multiple-choice',
+    options: [
+      '(0, 6)',
+      '(-3, -4)',
+      '(1, 0)',
+      '(4, 3)'
+    ],
+    correctAnswer: 1,
     explanation: 'Direct variation passes through the origin. Any point on the line through (0,0) and A is correct.'
   },
   {
@@ -462,9 +468,10 @@ const sampleQuestions = [
   },
   {
     id: '40',
-    text: 'Identify each of the x- and y-intercepts of the relation shown.<br><img src="images/question_40.png" class="question-image" alt="Parabola graph">',
+    text: 'Identify the y-intercept of the relation shown.',
     type: 'point-select',
-    correctAnswer: ['(-1, 0)', '(5, 0)', '(0, 5)'],
+    image: {url: 'images/question_40.png', alt: 'Image failed to load. Please try again later.'},
+    correctAnswer: { x: 0.494, y: 0.289 }, 
     explanation: 'The parabola crosses the x-axis at (-1, 0) and (5, 0), and the y-axis at (0, 5).'
   },
   {
