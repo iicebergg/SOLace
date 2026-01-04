@@ -3,7 +3,7 @@ window.TEST_IDENTIFIER = 'math_algebra1_practice_2023';
 const sampleQuestions = [
  {
  id: '1',
- text: 'What is the value of this expression when a = 8, b = 16, and c = −4?<br><center><math><mfrac><mn>5</mn><mn>3</mn></mfrac></math><math><msqrt><mi>a</mi><mo>−</mo><mi>c</mi></msqrt></math><math><msqrt><mi>b</mi></msqrt></math><mo>+</mo><mn>9</mn></center>',
+ text: 'What is the value of this expression when a = 8, b = 16, and c = −4?<br><center><math><mn>5</mn><mroot><mi>a</mi><mn>3</mn></mroot><mo>-</mo><mi>c</mi><msqrt><mi>b</mi></msqrt><mo>+</mo><mn>9</mn></math></center>',
  type: 'multiple-choice',
  options: ['30', '35', '50', '51'],
  correctAnswer: 1,
@@ -24,20 +24,20 @@ const sampleQuestions = [
  },
  {
  id: '3',
- text: 'Which represents this expression in simplest form?<br><img src="images/3.png" class="question-image" alt="Expression to simplify"></img>',
+ text: 'Which represents this expression in simplest form?<br><center><math><mfrac><mrow><mn>15</mn><mo>(</mo><msup><mi>x</mi><mrow><mo>-</mo><mn>2</mn></mrow></msup><msup><mo>)</mo><mn>3</mn></msup></mrow><mrow><mn>3</mn><mo>(</mo><msup><mi>x</mi><mrow><mo>-</mo><mn>4</mn></mrow></msup><msup><mo>)</mo><mrow><mo>-</mo><mn>3</mn></mrow></msup></mrow></mfrac></math></center>',
  type: 'multiple-choice',
  options: [
-    {url: 'images/3a.png', alt: 'Option A'},
-    {url: 'images/3b.png', alt: 'Option B'},
-    {url: 'images/3c.png', alt: 'Option C'},
-    {url: 'images/3d.png', alt: 'Option D'}
+   '<math><mfrac><mn>12</mn><mrow><msup><mi>x</mi><mn>6</mn></msup></mrow></mfrac></math>',
+   '<math><mn>12</mn><msup><mi>x</mi><mn>8</mn></msup></math>',
+   '<math><mfrac><mn>5</mn><mrow><msup><mi>x</mi><mn>6</mn></msup></mrow></mfrac></math>',
+   '<math><mfrac><mn>5</mn><mrow><msup><mi>x</mi><mn>18</mn></msup></mrow></mfrac></math>'
  ],
  correctAnswer: 3,
  explanation: 'Simplify the given expression by combining like terms and following the order of operations to arrive at option D.'
  },
  {
  id: '4',
- text: 'For which value of x does <img src="images/4_expression.png" alt="Expression" style="vertical-align: middle;"> simplify to <img src="images/4_result.png" alt="Result" style="vertical-align: middle;">?',
+ text: 'For which value of x does <math><mroot><mi>x</mi><mn>3</mn></mroot></math> simplify to <math><mn>5</mn><mroot><mn>7</mn><mn>3</mn></mroot></math>?',
  type: 'multiple-choice',
  options: ['35', '245', '875', '1715'],
  correctAnswer: 2,
@@ -45,13 +45,13 @@ const sampleQuestions = [
  },
  {
  id: '5',
- text: 'What is <img src="images/5.png" alt="Expression to simplify" style="vertical-align: middle;"> in simplest form?',
+ text: 'What is <math><mroot><mn>3,456</mn><mn>3</mn></mroot></math> in simplest form?',
  type: 'multiple-choice',
  options: [
-    {url: 'images/5a.png', alt: 'Option A'},
-    {url: 'images/5b.png', alt: 'Option B'},
-    {url: 'images/5c.png', alt: 'Option C'},
-    {url: 'images/5d.png', alt: 'Option D'}
+    '<math><mn>2</mn><mroot><mn>12</mn><mn>3</mn></mroot></math>',
+    '<math><mn>6</mn><mroot><mn>16</mn><mn>3</mn></mroot></math>',
+    '<math><mn>12</mn><mroot><mn>2</mn><mn>3</mn></mroot></math>',
+    '<math><mn>24</mn><mroot><mn>6</mn><mn>3</mn></mroot></math>'
  ],
  correctAnswer: 2,
  explanation: 'Simplify the expression by following algebraic rules for combining terms and simplifying radicals or fractions.'
@@ -61,10 +61,10 @@ const sampleQuestions = [
  text: 'Frank works at a convenience store.<br>• He earns $7.50 per hour when he works during the day.<br>• He earns $12.50 per hour when he works at night.<br>• He wants to earn at least $300 per week.<br><br>Which graph best represents this situation?',
  type: 'multiple-choice',
  options: [
-    {url: 'images/6a.png', alt: 'Graph F'},
-    {url: 'images/6b.png', alt: 'Graph G'},
-    {url: 'images/6c.png', alt: 'Graph H'},
-    {url: 'images/6d.png', alt: 'Graph J'}
+    {url: 'images/6a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/6b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/6c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/6d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 2,
  explanation: 'Set up the inequality: 7.50x + 12.50y ≥ 300, where x is day hours and y is night hours. The correct graph shows the region above the line 7.50x + 12.50y = 300, which is Graph H.'
@@ -113,13 +113,13 @@ const sampleQuestions = [
  },
  {
  id: '11',
- text: 'The graph of an exponential function in the form <img src="images/11_form.png" alt="Exponential form" style="vertical-align: middle;"> contains the points <img src="images/11_points.png" alt="Given points" style="vertical-align: middle;">. Which graph best represents the function?',
+ text: 'The graph of an exponential function in the form <math><mi>y</mi><mo>=</mo><mi>a</mi><msup><mi>b</mi><mi>x</mi></msup></math> contains the points (0, 2), (1, 1) (2, 1/2). Which graph best represents the function?',
  type: 'multiple-choice',
  options: [
-    {url: 'images/11a.png', alt: 'Graph A'},
-    {url: 'images/11b.png', alt: 'Graph B'},
-    {url: 'images/11c.png', alt: 'Graph C'},
-    {url: 'images/11d.png', alt: 'Graph D'}
+    {url: 'images/11a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/11b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/11c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/11d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 2,
  explanation: 'Use the given points to determine the exponential function parameters, then identify which graph matches the behavior of the function.'
@@ -129,17 +129,17 @@ const sampleQuestions = [
  text: 'Which table represents <math><mi>y</mi><mo>=</mo><msup><mrow><mo>(</mo><mi>x</mi><mo>+</mo><mn>5</mn><mo>)</mo></mrow><mn>2</mn></msup></math>?',
  type: 'multiple-choice',
  options: [
-   'x: 3, y: 28; x: 4, y: 29',
-   'x: 3, y: 14; x: 4, y: 21',
-   'x: 3, y: 64; x: 4, y: 81',
-   'x: 3, y: 34; x: 4, y: 41'
+    {url: 'images/12a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/12b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/12c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/12d.png', alt: 'Image failed to load. Please try again later.'}
  ],
  correctAnswer: 2,
  explanation: 'Calculate y = (x + 5)²: When x = 3, y = (3 + 5)² = 8² = 64. When x = 4, y = (4 + 5)² = 9² = 81. This matches option H.'
  },
  {
  id: '13',
- text: 'Each table represents values from four different functions.<br><br>Table 1: x: 1,2,3,4; y: 10,100,1000,10000<br>Table 2: x: 1,2,3,4; y: 100,400,900,1600<br>Table 3: x: 1,2,3,4; y: 2000,1500,1000,500<br>Table 4: x: 1,2,3,4; y: 5000,2500,1250,625<br><br>Which tables could represent an exponential function?',
+ text: 'Each table represents values from four different functions.<br><img src="images/13.png" class="question-image" alt="Graph showing points (0,50), (1,100), (2,200)"></img><br>Which tables could represent an exponential function?',
  type: 'multiple-choice',
  options: [
    'Table 1 and Table 2',
@@ -165,7 +165,7 @@ const sampleQuestions = [
  },
  {
  id: '15',
- text: 'The principal at Washington High School investigated the relationship between a student\'s cell phone use and the student\'s grade point average, GPA. The table shows a sample of the data collected.<br><img src="images/15_table.png" class="question-image" alt="Data table showing cell phone hours and GPA"></img><br><br>The correlation coefficient for the curve of best fit is <img src="images/15_coefficient.png" alt="correlation coefficient" style="vertical-align: middle;">. Based on the data, there appears to be —',
+ text: 'The principal at Washington High School investigated the relationship between a student\'s cell phone use and the student\'s grade point average, GPA. The table shows a sample of the data collected.<br><img src="images/15-16.png" class="question-image" alt="Data table showing cell phone hours and GPA"></img><br>The correlation coefficient for the curve of best fit is -0.9921. Based on the data, there appears to be —',
  type: 'multiple-choice',
  options: [
    'no relationship',
@@ -178,7 +178,7 @@ const sampleQuestions = [
  },
  {
  id: '16',
- text: 'Which conclusion about the relationship between student cell phone use and GPA is best supported by these data?',
+ text: '<img src="images/15-16.png" class="question-image" alt="Data table showing cell phone hours and GPA"></img><br>Which conclusion about the relationship between student cell phone use and GPA is best supported by these data?',
  type: 'multiple-choice',
  options: [
    'Increased cell phone use prevents students from getting good grades.',
@@ -204,7 +204,7 @@ const sampleQuestions = [
  },
  {
  id: '18',
- text: 'This table shows the number of months used and the approximate distances driven, in miles, for six buses in a school district.<br><br>Bus A: 6 months, 10,100 miles<br>Bus B: 10 months, 17,000 miles<br>Bus C: 12 months, 23,900 miles<br>Bus D: 15 months, 31,500 miles<br>Bus E: 20 months, 43,200 miles<br>Bus F: 27 months, 59,900 miles<br><br>Using the line of best fit for these data, which value is the best prediction of the distance driven, in miles, by a bus that has been used for 40 months?',
+ text: 'This table shows the number of months used and the approximate distances driven, in miles, for six buses in a school district.<br><img src="images/18.png" class="question-image" alt="Data table showing cell phone hours and GPA"></img><br>Using the line of best fit for these data, which value is the best prediction of the distance driven, in miles, by a bus that has been used for 40 months?',
  type: 'multiple-choice',
  options: ['68,000', '79,100', '86,400', '91,400'],
  correctAnswer: 3,
