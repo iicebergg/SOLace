@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algebra I Mathematics Practice Item Set (2023) | SOLace</title>
+  <link rel="stylesheet" href="../../../css/test-pages.css">
+  <link rel="stylesheet" href="../../../css/accessibility.css">
+  <link rel="icon" type="image/x-icon" href="../../../images/favicon.svg">
+</head>
+<body class="theme-black-on-white">
+  <header>
+    <a href="../../../index.html">
+    <img src="../../../images/SOLace-logo.svg" width="150px">
+    </a>
+    <br>
+    <nav>
+      <button id="home-btn" class="nav-btn active">Home</button>
+      <button id="test-btn" class="nav-btn">Take Test</button>
+      <button id="results-btn" class="nav-btn">My Results</button>
+      <button id="settings-btn" class="nav-btn">Settings</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="page active">
+      <h2>Algebra I Mathematics Practice Item Set (2023)</h2>
+      <p>To access a PDF version of this test, visit the <a href="https://www.doe.virginia.gov/home/showpublisheddocument/60933/638815212779200000">official VDOE site</a>.</p>
+      <p><b>All questions on this test are calculator-permitted.</b></p>
+      <div class="action-btns">
+        <button id="start-test" class="primary-btn">Start New Test</button>
+        <button id="view-results" class="secondary-btn">View Previous Results</button>
+      </div>
+      <b>Note:</b> SOLace is currently optimized for Google Chrome on laptops, desktops, and Chromebooks. The testing platform should be considered less stable on tablets or mobile devices.<br><br>
+      Adapted from <i>Virginia Standards of Learning Practice Item Set: Algebra I, 2023</i> © Commonwealth of Virginia Department of Education. All rights reserved. Reproduced by permission.</p>
+    </section>
+
+    <!-- Test Section -->
+    <section id="test" class="page">
+      <div id="test-container">
+        <div id="progress-bar">
+          <div id="progress-fill"></div>
+        </div>
+        <div id="question-counter">Question <span id="current-question">1</span> of <span id="total-questions">40</span></div>
+        <div id="question-container">
+          <!-- Question will be inserted here dynamically -->
+        </div>
+        <div id="controls">
+          <button id="submit-answer" class="primary-btn">Submit Answer</button>
+          <button id="next-question" class="primary-btn" style="display:none;">Next Question</button>
+        </div>
+      </div>
+      <div id="feedback-container" style="display:none;">
+        <div id="feedback-message"></div>
+        <div id="explanation"></div>
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="page">
+      <h2>Your Test Results</h2>
+      <div id="results-summary">
+        <!-- Summary will be inserted here dynamically -->
+      </div>
+      <div id="results-details">
+        <!-- Detailed results will be inserted here dynamically -->
+      </div>
+      <div class="action-btns">
+        <button id="retake-test" class="primary-btn" onclick="navigateTo('test'); startTest();">Take Another Test</button>
+        <button id="view-trends" class="secondary-btn" onclick="showPerformanceTrends();">View Performance Trends</button>
+      </div>
+    </section>
+
+    <!-- Settings Section -->
+    <section id="settings" class="page">
+      <h2>Accessibility Settings</h2>
+      <div class="settings-group">
+        <h3>Theme</h3>
+        <div class="theme-options">
+          <button class="theme-btn active" data-theme="black-on-white">Black on White (Default)</button>
+          <button class="theme-btn" data-theme="black-on-cream">Black on Cream</button>
+          <button class="theme-btn" data-theme="black-on-light-blue">Black on Light Blue</button>
+          <button class="theme-btn" data-theme="black-on-light-magenta">Black on Light Magenta</button>
+          <button class="theme-btn" data-theme="white-on-black">White on Black</button>
+          <button class="theme-btn" data-theme="yellow-on-blue">Yellow on Blue</button>
+          <button class="theme-btn" data-theme="gray-on-green">Gray on Green</button>
+          <p><i>***Note - these are the same color options used in TestNav that will be available during your assessment.</i></p>
+        </div>
+      </div>
+      <div class="settings-group">
+        <h3>Text Size</h3>
+        <div class="font-size-controls">
+          <button id="decrease-font" class="font-btn">A-</button>
+          <span id="font-size-value">Medium</span>
+          <button id="increase-font" class="font-btn">A+</button>
+        </div>
+      </div>
+      <div class="settings-group">
+        <h3>Reading Assistance Tools</h3>
+        <div class="accessibility-tool-option">
+          <label for="magnifier-toggle">
+            Screen Magnifier
+            <div class="tool-description">Draggable square magnifier that zooms content 2x where you place it</div>
+          </label>
+          <input type="checkbox" id="magnifier-toggle">
+        </div>
+        <div class="accessibility-tool-option">
+          <label for="line-reader-toggle">
+            Line Reader Mask
+            <div class="tool-description">Resizable reading guide that highlights one line at a time</div>
+          </label>
+          <input type="checkbox" id="line-reader-toggle">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Magnifier -->
+  <div id="magnifier" class="magnifier-container">
+    <div id="magnifier-content" class="magnifier-content"></div>
+    <div class="magnifier-crosshair"></div>
+  </div>
+
+  <!-- Line Reader Mask -->
+  <div id="line-reader" class="line-reader-container">
+    <!-- Mask segments will be created dynamically by JavaScript -->
+    <div class="line-reader-handle" id="line-reader-handle"></div>
+    <div class="line-reader-window" id="line-reader-window">
+      <div class="line-reader-window-handle" id="line-reader-window-handle"></div>
+    </div>
+  </div>
+
+  <!-- Desmos Calculator -->
+  <div id="calculator-container" class="calculator-container">
+    <div class="calculator-header" id="calculator-header">
+      <span>Calculator</span>
+      <button id="calculator-toggle" class="calculator-toggle" title="Minimize/Maximize Calculator">−</button>
+    </div>
+    <iframe id="calculator-iframe" class="calculator-iframe" 
+            src="https://www.desmos.com/testing/virginia/fourfunction" 
+            title="Desmos Four-Function Calculator">
+    </iframe>
+
+    <!-- Resize handles -->
+    <div class="resize-handle resize-handle-n" data-direction="n"></div>
+    <div class="resize-handle resize-handle-s" data-direction="s"></div>
+    <div class="resize-handle resize-handle-e" data-direction="e"></div>
+    <div class="resize-handle resize-handle-w" data-direction="w"></div>
+    <div class="resize-handle resize-handle-ne" data-direction="ne"></div>
+    <div class="resize-handle resize-handle-nw" data-direction="nw"></div>
+    <div class="resize-handle resize-handle-se" data-direction="se"></div>
+    <div class="resize-handle resize-handle-sw" data-direction="sw"></div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="../../../index.html" target="_blank">
+          <img src="../../../images/SOLace-logo.svg" alt="SOLace Logo" class="logo-img">
+          </a>
+          <p>The premiere platform for Virginia Standards of Learning test practice.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="../../../index.html" target="_blank">Testing Platform</a></li>
+            <li><a href="../../../index.html#categories" target="_blank">Test Categories</a></li>
+            <li><a href="../../../index.html#features" target="_blank">Features</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>About</h4>
+          <ul>
+            <li><a href="../../../about.html" target="_blank">About SOLace</a></li>
+            <li><a href="../../../privacy-policy.html" target="_blank">Privacy Policy</a></li>
+            <li><a href="../../../terms-of-service.html" target="_blank">Terms of Service</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="mailto:info@learnsolace.org" onclick="return confirmExit();" target="_blank">Contact</a></li>
+            <li><a href="../../../copyright.html" target="_blank">Copyright</a></li>
+            <li><a href="https://github.com/iicebergg/SOLace" onclick="return confirmExit();" target="_blank">Docs</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>SOLace &copy; 2026 by Vivien Berg is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" onclick="return confirmExit();" target="_blank" style="color:#bdc3c7">CC BY-NC-SA 4.0</a>
+          <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
+        <div class="footer-links">
+          <a href="https://donorbox.org/solace-787440" class="footer-link" target="_blank">Donate</a>
+          <a href="../../../privacy-policy.html" class="footer-link" target="_blank">Privacy Policy</a>
+          <a href="../../../terms-of-service.html" class="footer-link" target="_blank">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Templates for different question types -->
+  <template id="multiple-choice-template">
+    <div class="question multiple-choice">
+      <h3 class="question-text"></h3>
+       <div class="question-image-container"></div>
+      <div class="options-container">
+      </div>
+    </div>
+  </template>
+
+  <template id="multiple-select-template">
+    <div class="question multiple-select">
+      <h3 class="question-text"></h3>
+       <div class="question-image-container"></div>
+      <div class="options-container">
+      </div>
+    </div>
+  </template>
+
+  <template id="drag-drop-template">
+    <div class="question drag-drop">
+      <h3 class="question-text"></h3>
+       <div class="question-image-container"></div>
+      <div class="drag-items-container">
+      </div>
+      <div class="drop-zones-container">
+      </div>
+    </div>
+  </template>
+
+  <template id="free-response-template">
+    <div class="question free-response">
+      <h3 class="question-text"></h3>
+       <div class="question-image-container"></div>
+      <textarea class="response-input" rows="1" placeholder="Type your answer here..."></textarea>
+    </div>
+  </template>
+
+  <!-- Load Scripts in Order -->
+  <script src="math-algebra1-practice-2023.js"></script>
+  
+  <!-- Enhanced Results Manager -->
+  <script>
+    // Enhanced Results Storage System
+    const MAX_STORED_RESULTS = 50;
+    
+    class EnhancedResultsManager {
+      constructor() {
+        this.results = this.loadAllResults();
+        console.log('Enhanced Results Manager initialized with', this.results.length, 'stored results');
+      }
+      
+      loadAllResults() {
+        try {
+          const stored = localStorage.getItem(STORAGE_KEYS.TEST_RESULTS);
+          return stored ? JSON.parse(stored) : [];
+        } catch (error) {
+          console.error('Error loading results:', error);
+          return [];
+        }
+      }
+      
+      saveTestResult(resultData) {
+        try {
+          const result = {
+            id: 'result_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9),
+            timestamp: new Date().toISOString(),
+            date: new Date().toLocaleDateString(),
+            time: new Date().toLocaleTimeString(),
+            score: resultData.score,
+            totalQuestions: resultData.totalQuestions,
+            correctAnswers: resultData.correctAnswers,
+            timeSpent: resultData.timeSpent || 0,
+            answers: resultData.answers || []
+          };
+          
+          this.results.unshift(result);
+          
+          if (this.results.length > MAX_STORED_RESULTS) {
+            this.results = this.results.slice(0, MAX_STORED_RESULTS);
+          }
+          
+          localStorage.setItem(STORAGE_KEYS.TEST_RESULTS, JSON.stringify(this.results));
+          console.log('Test result saved successfully:', result.id);
+          return result;
+        } catch (error) {
+          console.error('Error saving test result:', error);
+          return null;
+        }
+      }
+      
+      getLatestResult() {
+        return this.results.length > 0 ? this.results[0] : null;
+      }
+      
+      getPerformanceStats() {
+        if (this.results.length === 0) {
+          return { totalTests: 0, averageScore: 0, bestScore: 0, recentAverage: 0, improvement: 0 };
+        }
+        
+        const scores = this.results.map(r => r.score);
+        const recentScores = scores.slice(0, Math.min(5, scores.length));
+        
+        return {
+          totalTests: this.results.length,
+          averageScore: Math.round(scores.reduce((a, b) => a + b, 0) / scores.length),
+          bestScore: Math.max(...scores),
+          recentAverage: Math.round(recentScores.reduce((a, b) => a + b, 0) / recentScores.length),
+          improvement: this.calculateImprovement()
+        };
+      }
+      
+      calculateImprovement() {
+        if (this.results.length < 2) return 0;
+        
+        const recent = this.results.slice(0, Math.min(3, this.results.length)).map(r => r.score);
+        const older = this.results.slice(-Math.min(3, this.results.length)).map(r => r.score);
+        
+        const recentAvg = recent.reduce((a, b) => a + b, 0) / recent.length;
+        const olderAvg = older.reduce((a, b) => a + b, 0) / older.length;
+        
+        return Math.round(recentAvg - olderAvg);
+      }
+      
+      displayResults() {
+        console.log('Displaying results...');
+        
+        const resultsSummary = document.getElementById('results-summary');
+        const resultsDetails = document.getElementById('results-details');
+        
+        if (!resultsSummary || !resultsDetails) {
+          console.error('Results page elements not found');
+          return;
+        }
+
+        const latestResult = this.getLatestResult();
+        const stats = this.getPerformanceStats();
+
+        if (!latestResult) {
+          resultsSummary.innerHTML = `
+            <div class="no-results">
+              <h3>No Test Results Yet</h3>
+              <p>Take your first test to see results here!</p>
+            </div>
+          `;
+          resultsDetails.innerHTML = '';
+          return;
+        }
+
+        // Display latest result summary
+        resultsSummary.innerHTML = `
+          <div class="score-circle">${latestResult.score}%</div>
+          <div class="result-summary-text">
+            <p><strong>Latest Test:</strong> ${latestResult.correctAnswers} out of ${latestResult.totalQuestions} questions correct</p>
+            <p><strong>Completed:</strong> ${latestResult.date} at ${latestResult.time}</p>
+            <p><strong>Total Tests Taken:</strong> ${stats.totalTests}</p>
+            <p><strong>Average Score:</strong> ${stats.averageScore}%</p>
+            <p><strong>Best Score:</strong> ${stats.bestScore}%</p>
+            ${latestResult.timeSpent ? `<p><strong>Time Spent:</strong> ${this.formatTimeSpent(latestResult.timeSpent)}</p>` : ''}
+          </div>
+        `;
+
+        // Display recent results history
+        this.displayResultsHistory();
+      }
+      
+      displayResultsHistory() {
+        const resultsDetails = document.getElementById('results-details');
+        if (!resultsDetails) return;
+
+        const recentResults = this.results.slice(0, 10);
+        
+        if (recentResults.length === 0) {
+          resultsDetails.innerHTML = '<p>No test history available.</p>';
+          return;
+        }
+
+        let historyHTML = `
+          <div class="results-header">
+            <h3>Recent Test History</h3>
+            <div class="results-controls">
+              <button id="clear-results" class="secondary-btn">Clear All Results</button>
+            </div>
+          </div>
+          <div class="results-list">
+        `;
+
+        recentResults.forEach((result, index) => {
+          const scoreClass = result.score >= 80 ? 'excellent' : result.score >= 60 ? 'good' : 'needs-improvement';
+          
+          historyHTML += `
+            <div class="result-item ${scoreClass}">
+              <div class="result-header">
+                <div class="result-score">${result.score}%</div>
+                <div class="result-info">
+                  <div class="result-date">${result.date} at ${result.time}</div>
+                  <div class="result-details">${result.correctAnswers}/${result.totalQuestions} correct${result.timeSpent ? ` • ${this.formatTimeSpent(result.timeSpent)}` : ''}</div>
+                </div>
+                <div class="result-actions">
+                  <button class="view-details-btn" data-result-id="${result.id}">View Details</button>
+                </div>
+              </div>
+              <div class="result-details-expanded" id="details-${result.id}" style="display: none;">
+                ${this.generateDetailedResultHTML(result)}
+              </div>
+            </div>
+          `;
+        });
+
+        historyHTML += '</div>';
+        resultsDetails.innerHTML = historyHTML;
+
+        // Add event listeners
+        this.attachResultEventListeners();
+      }
+      
+      generateDetailedResultHTML(result) {
+        if (!result.answers || result.answers.length === 0) {
+          return '<p>Detailed answers not available for this test.</p>';
+        }
+
+        let detailsHTML = '<div class="question-results">';
+        
+        result.answers.forEach((answer, index) => {
+          const statusClass = answer.correct ? 'correct' : 'incorrect';
+          const statusText = answer.correct ? '✓ Correct' : '✗ Incorrect';
+          
+          detailsHTML += `
+            <div class="question-result ${statusClass}">
+              <div class="question-number">Q${index + 1}</div>
+              <div class="question-status">${statusText}</div>
+            </div>
+          `;
+        });
+
+        detailsHTML += '</div>';
+        return detailsHTML;
+      }
+      
+      attachResultEventListeners() {
+        // View details buttons
+        document.querySelectorAll('.view-details-btn').forEach(btn => {
+          btn.addEventListener('click', (e) => {
+            const resultId = e.target.getAttribute('data-result-id');
+            const detailsElement = document.getElementById(`details-${resultId}`);
+            if (detailsElement) {
+              const isVisible = detailsElement.style.display !== 'none';
+              detailsElement.style.display = isVisible ? 'none' : 'block';
+              e.target.textContent = isVisible ? 'View Details' : 'Hide Details';
+            }
+          });
+        });
+
+        // Clear all results button
+        const clearBtn = document.getElementById('clear-results');
+        if (clearBtn) {
+          clearBtn.addEventListener('click', () => {
+            if (confirm('Are you sure you want to delete ALL test results? This cannot be undone.')) {
+              this.clearAllResults();
+              this.displayResults();
+            }
+          });
+        }
+      }
+      
+      clearAllResults() {
+        this.results = [];
+        localStorage.removeItem(STORAGE_KEYS.TEST_RESULTS);
+        console.log('All results cleared');
+      }
+      
+      formatTimeSpent(seconds) {
+        const minutes = Math.floor(seconds / 60);
+        const remainingSeconds = seconds % 60;
+        return `${minutes}m ${remainingSeconds}s`;
+      }
+    }
+    
+    // Initialize the enhanced results manager
+    window.resultsManager = new EnhancedResultsManager();
+  </script>
+  
+  <script src="../../../js/test-pages.js"></script>
+  <script src="../../../js/accessibility.js"></script>
+  
+  <script>
+    // Integration and initialization
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('Page loaded, initializing results integration...');
+      
+      // Ensure results display when navigating to results tab
+      const resultsBtn = document.getElementById('results-btn');
+      if (resultsBtn) {
+        resultsBtn.addEventListener('click', function() {
+          console.log('Results button clicked');
+          setTimeout(() => {
+            if (window.resultsManager) {
+              window.resultsManager.displayResults();
+            }
+          }, 100);
+        });
+      }
+      
+      // Ensure results display when using view results button
+      const viewResultsBtn = document.getElementById('view-results');
+      if (viewResultsBtn) {
+        viewResultsBtn.addEventListener('click', function() {
+          console.log('View results button clicked');
+          setTimeout(() => {
+            if (window.resultsManager) {
+              window.resultsManager.displayResults();
+            }
+          }, 100);
+        });
+      }
+    });
+  </script>
+
+  <script>
+    class CalculatorManager {
+      constructor() {
+        this.calculatorContainer = document.getElementById('calculator-container');
+        this.calculatorHeader = document.getElementById('calculator-header');
+        this.calculatorToggle = document.getElementById('calculator-toggle');
+        this.calculatorNote = document.getElementById('calculator-note');
+        this.isMinimized = false;
+        this.isCalculatorSection = false;
+        this.isTestActive = false; // NEW: Track if test is actively running
+        
+        // Drag properties
+        this.isDragging = false;
+        this.dragOffset = { x: 0, y: 0 };
+        
+        // Resize properties
+        this.isResizing = false;
+        this.resizeDirection = null;
+        this.resizeStartBounds = null;
+        this.resizeStartMouse = null;
+        
+        // Size constraints
+        this.minWidth = 250;
+        this.minHeight = 200;
+        this.maxWidth = 800;
+        this.maxHeight = 600;
+        
+        // Store last dimensions for minimize/maximize
+        this.lastDimensions = {
+          width: 320,
+          height: 400
+        };
+        
+        this.initializeCalculator();
+        this.initializeDrag();
+        this.initializeResize();
+      }
+
+      // NEW: Method to set test active state
+      setTestActive(isActive) {
+        this.isTestActive = isActive;
+        console.log('Calculator: Test active state set to', isActive);
+        
+        // Hide calculator immediately if test becomes inactive
+        if (!isActive) {
+          this.hideCalculator();
+        }
+      }
+
+      // NEW: Method to handle test completion
+      onTestCompleted() {
+        console.log('Calculator: Test completed, hiding calculator');
+        this.isTestActive = false;
+        this.isCalculatorSection = false;
+        this.hideCalculator();
+      }
+
+      // NEW: Method to handle navigation away from test (temporarily)
+      onNavigateAwayFromTest() {
+        console.log('Calculator: Temporarily navigating away from test, hiding calculator');
+        // Don't set isTestActive to false - just hide temporarily
+        this.hideCalculator();
+      }
+
+      // NEW: Method to handle returning to test page
+      onReturnToTest() {
+        console.log('Calculator: Returning to test page');
+        // Check if test is still in progress
+        if (this.isTestInProgress()) {
+          console.log('Calculator: Test still in progress, reactivating calculator');
+          this.isTestActive = true;
+          // Check current question and show calculator if appropriate
+          if (window.currentQuestionIndex !== undefined) {
+            this.checkQuestionForCalculator(window.currentQuestionIndex);
+          }
+        }
+      }
+
+      // NEW: Helper method to check if test is actually in progress
+      isTestInProgress() {
+        return window.testInitialized && 
+               window.questions && 
+               window.questions.length > 0 &&
+               window.currentQuestionIndex !== undefined &&
+               window.currentQuestionIndex < window.questions.length;
+      }
+
+      showCalculator() {
+        // NEW: Only show if test is active AND in calculator section
+        if (!this.isTestActive || !this.isCalculatorSection) {
+          console.log('Calculator not shown: test active:', this.isTestActive, 'calculator section:', this.isCalculatorSection);
+          return;
+        }
+        
+        console.log('Showing calculator...');
+        this.calculatorContainer.style.display = 'flex';
+        
+        if (this.calculatorNote) {
+          this.calculatorNote.classList.remove('hidden');
+        }
+        
+        // Apply last known dimensions if not minimized
+        if (!this.isMinimized) {
+          this.calculatorContainer.style.width = this.lastDimensions.width + 'px';
+          this.calculatorContainer.style.height = this.lastDimensions.height + 'px';
+        }
+        
+        // Reset position for mobile
+        if (window.innerWidth <= 768) {
+          this.resetToMobilePosition();
+        }
+        
+        console.log('Calculator shown for question', this.getCurrentQuestionNumber());
+      }
+      
+      hideCalculator() {
+        this.calculatorContainer.style.display = 'none';
+        if (this.calculatorNote) {
+          this.calculatorNote.classList.add('hidden');
+        }
+        this.isMinimized = false;
+        this.calculatorContainer.classList.remove('minimized');
+        this.calculatorToggle.textContent = '−';
+        console.log('Calculator hidden');
+      }
+      
+      checkQuestionForCalculator(questionIndex) {
+        const questionNumber = questionIndex + 1;
+        this.isCalculatorSection = questionNumber >= 0;
+        
+        // NEW: Only show/hide if test is active
+        if (this.isTestActive) {
+          if (this.isCalculatorSection) {
+            this.showCalculator();
+          } else {
+            this.hideCalculator();
+          }
+        } else {
+          // Always hide if test is not active
+          this.hideCalculator();
+        }
+        
+        console.log(`Question ${questionNumber}: Calculator ${this.isCalculatorSection ? 'allowed' : 'not allowed'}, Test active: ${this.isTestActive}`);
+      }
+
+      getCurrentQuestionNumber() {
+        // Helper method to get current question number
+        return (window.currentQuestionIndex || 0) + 1;
+      }
+
+      resetToMobilePosition() {
+        // Reset mobile positioning
+        if (window.innerWidth <= 768) {
+          this.calculatorContainer.classList.add('mobile-bottom');
+          this.calculatorContainer.style.left = '';
+          this.calculatorContainer.style.top = '';
+          this.calculatorContainer.style.right = '';
+          this.calculatorContainer.style.bottom = '';
+        }
+      }
+
+      initializeDrag() {
+        // Mouse events
+        this.calculatorHeader.addEventListener('mousedown', (e) => this.startDrag(e));
+        document.addEventListener('mousemove', (e) => this.drag(e));
+        document.addEventListener('mouseup', () => this.endDrag());
+        
+        // Touch events for mobile
+        this.calculatorHeader.addEventListener('touchstart', (e) => this.startDrag(e), { passive: false });
+        document.addEventListener('touchmove', (e) => this.drag(e), { passive: false });
+        document.addEventListener('touchend', () => this.endDrag());
+        
+        // Prevent default drag behavior
+        this.calculatorContainer.addEventListener('dragstart', (e) => e.preventDefault());
+      }
+
+      startDrag(e) {
+        // Don't start drag if clicking the toggle button or resize handles
+        if (e.target.closest('.calculator-toggle') || e.target.closest('.resize-handle')) {
+          return;
+        }
+        
+        this.isDragging = true;
+        this.calculatorContainer.classList.add('dragging');
+        
+        const rect = this.calculatorContainer.getBoundingClientRect();
+        const clientX = e.clientX || (e.touches && e.touches[0].clientX);
+        const clientY = e.clientY || (e.touches && e.touches[0].clientY);
+        
+        this.dragOffset = {
+          x: clientX - rect.left,
+          y: clientY - rect.top
+        };
+        
+        // Prevent text selection during drag
+        document.body.style.userSelect = 'none';
+        e.preventDefault();
+      }
+
+      drag(e) {
+        if (!this.isDragging) return;
+        
+        const clientX = e.clientX || (e.touches && e.touches[0].clientX);
+        const clientY = e.clientY || (e.touches && e.touches[0].clientY);
+        
+        if (!clientX || !clientY) return;
+        
+        let newX = clientX - this.dragOffset.x;
+        let newY = clientY - this.dragOffset.y;
+        
+        // Get viewport dimensions
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+        const calcWidth = this.calculatorContainer.offsetWidth;
+        const calcHeight = this.calculatorContainer.offsetHeight;
+        
+        // Constrain to viewport bounds
+        newX = Math.max(0, Math.min(newX, viewportWidth - calcWidth));
+        newY = Math.max(0, Math.min(newY, viewportHeight - calcHeight));
+        
+        // Apply position
+        this.calculatorContainer.style.left = newX + 'px';
+        this.calculatorContainer.style.top = newY + 'px';
+        this.calculatorContainer.style.right = 'auto';
+        this.calculatorContainer.style.bottom = 'auto';
+        
+        e.preventDefault();
+      }
+
+      endDrag() {
+        if (!this.isDragging) return;
+        
+        this.isDragging = false;
+        this.calculatorContainer.classList.remove('dragging');
+        document.body.style.userSelect = '';
+        
+        // Snap to edges if close enough
+        this.snapToEdges();
+      }
+
+      snapToEdges() {
+        const rect = this.calculatorContainer.getBoundingClientRect();
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+        const snapThreshold = 50;
+        
+        let newX = rect.left;
+        let newY = rect.top;
+        let snapped = false;
+        
+        // Snap to edges
+        if (rect.left < snapThreshold) {
+          newX = 20;
+          snapped = true;
+        } else if (rect.right > viewportWidth - snapThreshold) {
+          newX = viewportWidth - rect.width - 20;
+          snapped = true;
+        }
+        
+        if (rect.top < snapThreshold) {
+          newY = 20;
+          snapped = true;
+        } else if (rect.bottom > viewportHeight - snapThreshold) {
+          newY = viewportHeight - rect.height - 20;
+          snapped = true;
+        }
+        
+        if (snapped) {
+          this.calculatorContainer.style.left = newX + 'px';
+          this.calculatorContainer.style.top = newY + 'px';
+          
+          // Add animation for the snap
+          this.calculatorContainer.style.transition = 'left 0.2s ease, top 0.2s ease';
+          setTimeout(() => {
+            this.calculatorContainer.style.transition = '';
+          }, 200);
+        }
+      }
+
+      initializeResize() {
+        const resizeHandles = this.calculatorContainer.querySelectorAll('.resize-handle');
+        
+        resizeHandles.forEach(handle => {
+          // Mouse events
+          handle.addEventListener('mousedown', (e) => this.startResize(e));
+          
+          // Touch events
+          handle.addEventListener('touchstart', (e) => this.startResize(e), { passive: false });
+        });
+        
+        // Global resize events
+        document.addEventListener('mousemove', (e) => this.resize(e));
+        document.addEventListener('mouseup', () => this.endResize());
+        document.addEventListener('touchmove', (e) => this.resize(e), { passive: false });
+        document.addEventListener('touchend', () => this.endResize());
+        
+        console.log('Resize functionality initialized');
+      }
+
+      startResize(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        this.isResizing = true;
+        this.resizeDirection = e.target.getAttribute('data-direction');
+        this.calculatorContainer.classList.add('resizing');
+        
+        const rect = this.calculatorContainer.getBoundingClientRect();
+        const clientX = e.clientX || (e.touches && e.touches[0].clientX);
+        const clientY = e.clientY || (e.touches && e.touches[0].clientY);
+        
+        this.resizeStartBounds = {
+          left: rect.left,
+          top: rect.top,
+          width: rect.width,
+          height: rect.height
+        };
+        
+        this.resizeStartMouse = {
+          x: clientX,
+          y: clientY
+        };
+        
+        // Prevent text selection
+        document.body.style.userSelect = 'none';
+        
+        console.log('Started resizing:', this.resizeDirection);
+      }
+
+      resize(e) {
+        if (!this.isResizing) return;
+        
+        const clientX = e.clientX || (e.touches && e.touches[0].clientX);
+        const clientY = e.clientY || (e.touches && e.touches[0].clientY);
+        
+        if (!clientX || !clientY) return;
+        
+        const deltaX = clientX - this.resizeStartMouse.x;
+        const deltaY = clientY - this.resizeStartMouse.y;
+        
+        let newWidth = this.resizeStartBounds.width;
+        let newHeight = this.resizeStartBounds.height;
+        let newLeft = this.resizeStartBounds.left;
+        let newTop = this.resizeStartBounds.top;
+        
+        // Apply resize based on direction
+        if (this.resizeDirection.includes('e')) {
+          newWidth = this.resizeStartBounds.width + deltaX;
+        }
+        if (this.resizeDirection.includes('w')) {
+          newWidth = this.resizeStartBounds.width - deltaX;
+          newLeft = this.resizeStartBounds.left + deltaX;
+        }
+        if (this.resizeDirection.includes('s')) {
+          newHeight = this.resizeStartBounds.height + deltaY;
+        }
+        if (this.resizeDirection.includes('n')) {
+          newHeight = this.resizeStartBounds.height - deltaY;
+          newTop = this.resizeStartBounds.top + deltaY;
+        }
+        
+        // Apply size constraints
+        newWidth = Math.max(this.minWidth, Math.min(this.maxWidth, newWidth));
+        newHeight = Math.max(this.minHeight, Math.min(this.maxHeight, newHeight));
+        
+        // Adjust position if we hit size constraints
+        if (this.resizeDirection.includes('w') && newWidth === this.minWidth) {
+          newLeft = this.resizeStartBounds.left + this.resizeStartBounds.width - this.minWidth;
+        }
+        if (this.resizeDirection.includes('n') && newHeight === this.minHeight) {
+          newTop = this.resizeStartBounds.top + this.resizeStartBounds.height - this.minHeight;
+        }
+        
+        // Apply viewport constraints
+        const viewportWidth = window.innerWidth;
+        const viewportHeight = window.innerHeight;
+        
+        // Ensure calculator stays within viewport
+        if (newLeft < 0) {
+          newWidth += newLeft;
+          newLeft = 0;
+        }
+        if (newTop < 0) {
+          newHeight += newTop;
+          newTop = 0;
+        }
+        if (newLeft + newWidth > viewportWidth) {
+          newWidth = viewportWidth - newLeft;
+        }
+        if (newTop + newHeight > viewportHeight) {
+          newHeight = viewportHeight - newTop;
+        }
+        
+        // Apply the new dimensions and position
+        this.calculatorContainer.style.width = newWidth + 'px';
+        this.calculatorContainer.style.height = newHeight + 'px';
+        this.calculatorContainer.style.left = newLeft + 'px';
+        this.calculatorContainer.style.top = newTop + 'px';
+        this.calculatorContainer.style.right = 'auto';
+        this.calculatorContainer.style.bottom = 'auto';
+      }
+
+      endResize() {
+        if (!this.isResizing) return;
+        
+        this.isResizing = false;
+        this.resizeDirection = null;
+        this.calculatorContainer.classList.remove('resizing');
+        document.body.style.userSelect = '';
+        
+        // Save the new dimensions as the last known size
+        const computedStyle = window.getComputedStyle(this.calculatorContainer);
+        this.lastDimensions = {
+          width: parseInt(computedStyle.width),
+          height: parseInt(computedStyle.height)
+        };
+        
+        console.log('Finished resizing, saved new dimensions:', this.lastDimensions);
+      }
+          
+      initializeCalculator() {
+        // Set up toggle button functionality
+        this.calculatorToggle.addEventListener('click', (e) => {
+          e.stopPropagation();
+          this.toggleCalculator();
+        });
+            
+        // Handle escape key to hide calculator
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && this.calculatorContainer.style.display === 'flex') {
+            this.hideCalculator();
+          }
+        });
+        
+        console.log('Calculator manager initialized');
+      }
+      
+      toggleCalculator() {
+        this.isMinimized = !this.isMinimized;
+        
+        if (this.isMinimized) {
+          // Save current dimensions before minimizing
+          const computedStyle = window.getComputedStyle(this.calculatorContainer);
+          this.lastDimensions = {
+            width: parseInt(computedStyle.width),
+            height: parseInt(computedStyle.height)
+          };
+          
+          // Apply minimized state
+          this.calculatorContainer.classList.add('minimized');
+          this.calculatorContainer.style.height = '40px';
+          this.calculatorContainer.style.width = this.lastDimensions.width + 'px'; // Keep width
+          
+          this.calculatorToggle.textContent = '+';
+          this.calculatorToggle.title = 'Maximize Calculator';
+          
+          console.log('Calculator minimized, saved dimensions:', this.lastDimensions);
+        } else {
+          // Restore to last dimensions
+          this.calculatorContainer.classList.remove('minimized');
+          this.calculatorContainer.style.height = this.lastDimensions.height + 'px';
+          this.calculatorContainer.style.width = this.lastDimensions.width + 'px';
+          
+          this.calculatorToggle.textContent = '−';
+          this.calculatorToggle.title = 'Minimize Calculator';
+          
+          console.log('Calculator maximized, restored dimensions:', this.lastDimensions);
+        }
+      }
+    }
+    
+    // Calculator Integration - Enhanced with Test State Management
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log('Initializing enhanced calculator with test state management...');
+      
+      // Initialize calculator manager with the enhanced class
+      window.calculatorManager = new CalculatorManager();
+      
+      // Store references to original functions that we need to enhance
+      const originalStartTest = window.startTest;
+      const originalFinishTest = window.finishTest;
+      const originalLoadQuestion = window.loadQuestion;
+      const originalNavigateTo = window.navigateTo;
+      
+      // Enhanced startTest function
+      if (originalStartTest) {
+        window.startTest = function() {
+          console.log('Enhanced startTest: Setting calculator test active state');
+          
+          // Set calculator test active state
+          if (window.calculatorManager) {
+            window.calculatorManager.setTestActive(true);
+          }
+          
+          // Call the original startTest function
+          return originalStartTest.call(this);
+        };
+      }
+      
+      // Enhanced finishTest function
+      if (originalFinishTest) {
+        window.finishTest = function() {
+          console.log('Enhanced finishTest: Notifying calculator of test completion');
+          
+          // Notify calculator that test is completed
+          if (window.calculatorManager) {
+            window.calculatorManager.onTestCompleted();
+          }
+          
+          // Call the original finishTest function
+          return originalFinishTest.call(this);
+        };
+      }
+      
+      // Enhanced loadQuestion function
+      if (originalLoadQuestion) {
+        window.loadQuestion = function(index) {
+          // Call the original function first
+          const result = originalLoadQuestion.call(this, index);
+          
+          // Add enhanced calculator logic
+          if (window.calculatorManager) {
+            window.calculatorManager.checkQuestionForCalculator(index);
+          }
+          
+          return result;
+        };
+      }
+      
+      // Enhanced navigateTo function
+      if (originalNavigateTo) {
+        window.navigateTo = function(page) {
+          console.log('Enhanced navigateTo: Current page:', window.currentPage, 'Target page:', page);
+          
+          // If navigating away from test page, temporarily hide calculator
+          if (window.currentPage === 'test' && page !== 'test' && window.calculatorManager) {
+            window.calculatorManager.onNavigateAwayFromTest();
+          }
+          
+          // Call the original navigateTo function
+          const result = originalNavigateTo.call(this, page);
+          
+          // If navigating TO test page, check if we should restore calculator
+          if (page === 'test' && window.calculatorManager) {
+            window.calculatorManager.onReturnToTest();
+          }
+          
+          return result;
+        };
+      }
+      
+      // Additional event listeners for navigation buttons to handle calculator state
+      const navButtons = document.querySelectorAll('.nav-btn');
+      navButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          const targetPage = button.id.split('-')[0];
+          
+          // If clicking away from test, temporarily hide calculator (don't deactivate)
+          if (window.currentPage === 'test' && targetPage !== 'test' && window.calculatorManager) {
+            window.calculatorManager.onNavigateAwayFromTest();
+          }
+          
+          // If clicking TO test page, try to restore calculator
+          if (targetPage === 'test' && window.calculatorManager) {
+            // Small delay to ensure navigation completes first
+            setTimeout(() => {
+              window.calculatorManager.onReturnToTest();
+            }, 100);
+          }
+        });
+      });
+      
+      // Handle the "Start New Test" button specifically
+      const startTestBtn = document.getElementById('start-test');
+      if (startTestBtn) {
+        startTestBtn.addEventListener('click', function() {
+          console.log('Start test button clicked - will activate calculator');
+          // The enhanced startTest function will handle setting calculator active state
+        });
+      }
+      
+      // Handle retake test button
+      const retakeTestBtn = document.getElementById('retake-test');
+      if (retakeTestBtn) {
+        retakeTestBtn.addEventListener('click', function() {
+          console.log('Retake test button clicked - will activate calculator');
+          // This will trigger navigateTo('test') and startTest(), which will activate calculator
+        });
+      }
+      
+      console.log('Enhanced calculator integration complete');
+    });
+  </script>
+  
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
