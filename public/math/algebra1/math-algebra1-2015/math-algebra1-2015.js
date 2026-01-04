@@ -187,12 +187,18 @@ const sampleQuestions = [
     explanation: 'Solving by substitution or elimination gives x = 1, y = 5.'
   },
   {
-    id: '16',
-    text: 'The graph of <math><mi>y</mi><mo>=</mo><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>8</mn></math> is shown. On the grid, identify each of the solutions to <math><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>8</mn><mo>=</mo><mn>0</mn></math>.',
-    type: 'point-select',
-    correctAnswer: [[-4, 0], [2, 0]],
-    explanation: 'The x-intercepts of the parabola are at x = -4 and x = 2.'
-  },
+   id: '16',
+   text: 'What is <math><mroot><mn>3,456</mn><mn>3</mn></mroot></math> in simplest form?',
+   type: 'multiple-choice',
+   options: [
+    '<math><mn>2</mn><mroot><mn>12</mn><mn>3</mn></mroot></math>',
+    '<math><mn>6</mn><mroot><mn>16</mn><mn>3</mn></mroot></math>',
+    '<math><mn>12</mn><mroot><mn>2</mn><mn>3</mn></mroot></math>',
+    '<math><mn>24</mn><mroot><mn>6</mn><mn>3</mn></mroot></math>'
+   ],
+   correctAnswer: 2,
+   explanation: 'Simplify the expression by following algebraic rules for combining terms and simplifying radicals or fractions.'
+ },
   {
     id: '17',
     text: 'What value of <math><mi>x</mi></math> makes this equation true?<br><br><math><mn>3</mn><mi>x</mi><mo>-</mo><mn>20</mn><mo>=</mo><mo>-</mo><mn>2</mn><mi>x</mi></math>',
@@ -288,10 +294,16 @@ const sampleQuestions = [
   },
   {
     id: '27',
-    text: 'Point A is an element of a direct variation. Plot two points, other than A, that are elements of this direct variation. The coordinates of the points must be integers.<br><img src="images/question_27.png" class="question-image" alt="Coordinate grid with point A">',
-    type: 'grid-plot',
-    correctAnswer: 'Various points on line through origin and A',
-    explanation: 'Direct variation passes through the origin. Any points on the line y = kx where k is determined by point A.'
+    text: 'What is the quotient of <math><mo>(</mo><mn>15</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>8</mn><mi>x</mi><mo>−</mo><mn>12</mn><mo>)</mo></math> and <math><mo>(</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mo>)</mo></math>? Assume the denominator does not equal zero.',
+    type: 'multiple-choice',
+    options: [
+      '<math><mn>45</mn><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>52</mn><mi>x</mi><mo>−</mo><mn>24</mn></math>',
+      '<math><mn>15</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>5</mn><mi>x</mi><mo>−</mo><mn>10</mn></math>',
+      '<math><mn>5</mn><mi>x</mi><mo>+</mo><mn>6</mn></math>',
+      '<math><mn>5</mn><mi>x</mi><mo>−</mo><mn>6</mn></math>'
+    ],
+    correctAnswer: 3,
+    explanation: 'Using polynomial long division or factoring: (15x² - 8x - 12) ÷ (3x + 2). First multiply: 5x(3x + 2) = 15x² + 10x, subtract to get -18x - 12. Then -6(3x + 2) = -18x - 12. The quotient is 5x - 6.'
   },
   {
     id: '28',
