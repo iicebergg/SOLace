@@ -254,7 +254,7 @@ const sampleQuestions = [
     id: '23',
     text: 'Based on the transitive property, complete this statement.<br><br>If <math><mn>2</mn><mo>(</mo><mi>y</mi><mo>-</mo><mn>3</mn><mo>)</mo><mo>≥</mo><mn>3</mn><mi>x</mi><mo>-</mo><mn>4</mn></math> and <math><mn>3</mn><mi>x</mi><mo>-</mo><mn>4</mn><mo>≥</mo><mn>6</mn><mo>-</mo><mi>y</mi></math>, then <math><mn>2</mn><mo>(</mo><mi>y</mi><mo>-</mo><mn>3</mn><mo>)</mo><mo>≥</mo></math> __?__',
     type: 'free-response',
-    correctKeywords: ['6-y'],
+    correctKeywords: ['6-y', '6 - y', '-y + 6', '-y+6'],
     explanation: 'By the transitive property, if a ≥ b and b ≥ c, then a ≥ c. So 2(y - 3) ≥ 6 - y.'
   },
   {
@@ -362,7 +362,9 @@ const sampleQuestions = [
     id: '33',
     text: 'Each of these data sets has a mean of 20.<br><br>Set 1: {18, 19, 20, 21, 22}<br>Set 2: {20, 20, 20, 20, 20}<br>Set 3: {16, 18, 20, 21, 25}<br><br>Order the sets from greatest standard deviation to least standard deviation.',
     type: 'drag-drop',
-    correctAnswer: ['Set 3', 'Set 1', 'Set 2'],
+    options: ['Set 1', 'Set 2', 'Set 3'],
+    dropZones: ['Greatest', '↓', 'Least'],
+    correctAnswer: [2, 0, 1],
     explanation: 'Set 3 has the most spread, Set 1 has moderate spread, Set 2 has no spread (SD = 0).'
   },
   {
@@ -422,6 +424,64 @@ const sampleQuestions = [
     text: 'Which number is a zero of the function <math><mi>h</mi></math>?<br><br><math><mi>h</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><mi>x</mi><mo>-</mo><mn>18</mn></math>',
     type: 'multiple-choice',
     options: ['-6', '-3', '0', '6'],
+    correctAnswer: 0,
+    explanation: 'Factoring: x² + 3x - 18 = (x + 6)(x - 3). The zeros are x = -6 and x = 3.'
+  },
+  {
+    id: '39',
+    text: 'Which of the following graphs appears to be a function?',
+    type: 'multiple-choice',
+    options: [
+      {url: 'images/question_39a.png', alt: 'Table A'},
+      {url: 'images/question_39b.png', alt: 'Table B'},
+      {url: 'images/question_39c.png', alt: 'Table C'},
+      {url: 'images/question_39d.png', alt: 'Table D'}
+    ],
+    correctAnswer: 1,
+    explanation: 'Only B passes the vertical line test, indicating it is a function.'
+  },
+  {
+    id: '40',
+    text: 'If f(x) = (x - 3)² + 1, what is f(6)?',
+    type: 'multiple-choice',
+    options: ['-2', '7', '10', '16'],
+    correctAnswer: 2,
+    explanation: 'Plugging in x = 6: f(6) = (6 - 3)² + 1 = 9 + 1 = 10.'
+  },
+  {
+    id: '41',
+    text: 'Which number is NOT an element in the domain of this relation?<br><br><center>{(-2, 3), (0, 4), (1, 1), (6, 0)}</center>',
+    type: 'multiple-choice',
+    options: ['4', '1', '0', '-2'],
+    correctAnswer: 0,
+    explanation: 'The domain consists of the first elements of each ordered pair: {-2, 0, 1, 6}. The number 4 is not in the domain.'
+  },
+  {
+    id: '42',
+    text: '<center>{(-5, 9), (2, 31), (9, 143), (11, 151), (0, 42), (5, 97)}</center><br><br>Using the equation line of best fit, which number is the best prediction of the output when the input is 13?',
+    type: 'multiple-choice',
+    options: ['127', '159', '170', '178'],
+    correctAnswer: 2,
+    explanation: 'Using linear regression, the line of best fit predicts approximately 170 when x = 13.'
+  },
+  {
+    id: '43',
+    text: 'A data set has a mean of 720 and a standard deviation of 6. Which is closest to the z-score for an element of this data set with a value of 709?',
+    type: 'multiple-choice',
+    options: ['11.00', '1.83', '-11.00', '-1.83'],
+    correctAnswer: 3,
+    explanation: 'z = (X - μ) / σ = (709 - 720) / 6 = -11 / 6 ≈ -1.83.'
+  },
+  {
+    id: '44',
+    text: 'Ramon drew box-and-whisker plots to summarize the number of pages in each chapter of two books. The values of the interquartile ranges for these box-and-whisker plots are the same. Which box-and-whisker plots could represent these data?',
+    type: 'multiple-choice',
+    options: [
+      {url: 'images/question_44a.png', alt: 'Image failed to load. Please try again later.'},
+      {url: 'images/question_44b.png', alt: 'Image failed to load. Please try again later.'},
+      {url: 'images/question_44c.png', alt: 'Image failed to load. Please try again later.'},
+      {url: 'images/question_44d.png', alt: 'Image failed to load. Please try again later.'}
+    ],
     correctAnswer: 0,
     explanation: 'Factoring: x² + 3x - 18 = (x + 6)(x - 3). The zeros are x = -6 and x = 3.'
   }
