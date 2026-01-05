@@ -96,7 +96,7 @@ const sampleQuestions = [
  },
  {
  id: '12',
- text: 'A carpenter will build a shed with four walls and a roof. The shape of the shed will consist of a triangular prism and a rectangular prism as shown in the model.<br><img src="images/10-12.png" class="question-image" alt="Aerial and front view of shed"></img><br>If w = 6, which equation correctly models a calculation of the volume of the shed?',
+ text: 'A carpenter will build a shed with four walls and a roof. The shape of the shed will consist of a triangular prism and a rectangular prism as shown in the model.<br><img src="images/10-12.png" class="question-image" alt="Aerial and front view of shed"></img><br>If w = 12, which equation correctly models a calculation of the volume of the shed?',
  type: 'multiple-choice',
  options: [
     'V = 9 × 6 × 18',
@@ -117,16 +117,16 @@ const sampleQuestions = [
  },
  {
  id: '14',
- text: 'The height of a rectangular prism is decreased by a factor of <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>. The other dimensions are unchanged. Which statement is true?',
+ text: 'The height of a rectangular prism is decreased by a factor of <math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>. The other dimensions are unchanged. Which statement is true?',
  type: 'multiple-choice',
  options: [
-    'The volume is decreased by a factor of <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>',
-    'The volume is decreased by a factor of <math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>',
-    'The volume is decreased by a factor of <math><mfrac><mn>1</mn><mn>8</mn></mfrac></math>',
-    'The volume is decreased by a factor of 2'
+    'The volume is decreased by a factor of <math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>',
+    'The volume is decreased by a factor of <math><mfrac><mn>1</mn><mn>6</mn></mfrac></math>',
+    'The volume is decreased by a factor of <math><mfrac><mn>1</mn><mn>9</mn></mfrac></math>',
+    'The volume is decreased by a factor of <math><mfrac><mn>1</mn><mn>27</mn></mfrac></math>'
  ],
  correctAnswer: 0,
- explanation: 'Volume is directly proportional to height. If height is halved, volume is also halved (decreased by factor of ½).'
+ explanation: 'Volume is directly proportional to height. If height is decreased by a factor of 1/3, volume is also decreased by a factor of 1/3.'
  },
  {
  id: '15',
@@ -143,7 +143,7 @@ const sampleQuestions = [
  options: [
     'The length of each diagonal is <math><msqrt><msup><mi>r</mi><mn>2</mn></msup><mo>+</mo><msup><mi>m</mi><mn>2</mn></msup></msqrt></math>',
     'The common midpoint of the diagonals is <math><mo>(</mo><mfrac><mi>r</mi><mn>2</mn></mfrac><mo>,</mo><mfrac><mi>m</mi><mn>2</mn></mfrac><mo>)</mo></math>',
-    'The slope of AC is <math><mfrac><mi>m</mi><mi>r</mi></mfrac></math> and the slope of BD is <math><mo>−</mo><mfrac><mi>r</mi><mi>m</mi></mfrac></math>',
+    'The slope of AC is <math><mfrac><mi>m</mi><mi>r</mi></mfrac></math> and the slope of BD is <math><mo>-</mo><mfrac><mi>m</mi><mi>r</mi></mfrac></math>',
     'The length of both AB and DC is r and the length of both BC and AD is m'
  ],
  correctAnswer: 0,
@@ -167,7 +167,7 @@ const sampleQuestions = [
  },
  {
  id: '19',
- text: 'In circle P, m∠HJK = 60° and m⏜JK = 2 • m⏜HJ.<br><img src="images/19.png" class="question-image" alt="Circle P with points H, J, K marked"></img><br>What is m⏜HJ?',
+ text: 'In circle P, m∠HJK = 60° and the measure of arc JK = 2 • (the measure of arc HJ).<br><img src="images/19.png" class="question-image" alt="Circle P with points H, J, K marked"></img><br>What is the measure of arc HJ?',
  type: 'multiple-choice',
  options: ['80°', '120°', '150°', '160°'],
  correctAnswer: 0,
@@ -196,7 +196,7 @@ const sampleQuestions = [
  },
  {
  id: '22',
- text: 'Given: Three concentric circles with the center O<br><img src="images/22.png" class="question-image" alt="Three concentric circles with radii 7, 11, and 14 inches"></img><br>Which is closest to the area of the shaded region?',
+ text: 'Given: Three concentric circles with the center O; KL is congruent to LN is congruent to NO; KP = 42 inches <br><img src="images/22.png" class="question-image" alt="Three concentric circles with radii 7, 11, and 14 inches"></img><br>Which is closest to the area of the shaded region?',
  type: 'multiple-choice',
  options: ['231 sq in.', '308 sq in.', '539 sq in.', '616 sq in.'],
  correctAnswer: 3,
@@ -204,13 +204,13 @@ const sampleQuestions = [
  },
  {
  id: '23',
- text: 'Given: Circle T with radius 9<br><img src="images/23.png" class="question-image" alt="Circle T with shaded sector"></img><br>Which best represents the area of the shaded sector?',
+ text: 'Given: Circle T with WP = 36 centimeters<br><img src="images/23.png" class="question-image" alt="Circle T with shaded sector"></img><br>Which best represents the area of the shaded sector?',
  type: 'multiple-choice',
  options: [
-    '<math><mfrac><mrow><mn>81</mn><mi>π</mi></mrow><mn>4</mn></mfrac></math>',
-    '<math><mfrac><mrow><mn>81</mn><mi>π</mi></mrow><mn>2</mn></mfrac></math>',
-    '<math><mfrac><mrow><mn>9</mn><mi>π</mi></mrow><mn>4</mn></mfrac></math>',
-    '<math><mfrac><mrow><mn>9</mn><mi>π</mi></mrow><mn>2</mn></mfrac></math>'
+    '117π cm²',
+    '180π cm²',
+    '234π cm²',
+    '468π cm²'
  ],
  correctAnswer: 0,
  explanation: 'For a 90° sector with radius 9: Area = (90/360) × π × 9² = (1/4) × 81π = 81π/4.'

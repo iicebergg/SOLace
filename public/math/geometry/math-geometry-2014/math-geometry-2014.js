@@ -49,12 +49,13 @@ const sampleQuestions = [
     explanation: 'The construction shows the bisection of angle D.'
   },
   {
-    id: '5',
-    text: 'This Venn diagram represents students who play instruments in the orchestra.<br><br><img src="images/question_5.png" class="question-image" alt="Venn diagram with Clarinet, Oboe, Bassoon, and Flute circles"><br><br>Identify each region of the Venn diagram that represents students who play only the flute and the oboe.',
-    type: 'point-select',
-    correctAnswer: 'The intersection of Flute and Oboe circles only',
-    explanation: 'Select the region that is common to both the Oboe and Flute circles, but not part of any other circle.'
-  },
+ id: '5',
+ text: 'Which value for x is a counterexample to the following statement?<br><center>For all positive values of x, <math><msup><mi>x</mi><mn>3</mn></msup></math> ≥ x.</center>',
+ type: 'multiple-choice',
+ options: ['−1.0', '−0.1', '0.1', '1.0'],
+ correctAnswer: 2,
+ explanation: 'For small positive values between 0 and 1, cubing the number makes it smaller. For example, 0.1³ = 0.001, which is less than 0.1. This serves as a counterexample to the statement.'
+ },
   {
     id: '6',
     text: 'An angle congruent to angle A is being constructed.<br><br><img src="images/question_6.png" class="question-image" alt="Angle construction diagram"><br><br>Which ray could be drawn to construct an angle congruent to ∠A?',
@@ -116,12 +117,13 @@ const sampleQuestions = [
     explanation: 'Using the distance formula: d = √[(7-(-1))² + (-9-8)²] = √[64 + 289] = √353'
   },
   {
-    id: '11',
-    text: 'Line l contains the points (-8, 5) and (8, -3). Plot a point other than point P with integral coordinates that is on a line parallel to l and passes through point P.<br><br><img src="images/question_11.png" class="question-image" alt="Coordinate grid with line l and point P(4, -6)">',
-    type: 'point-select',
-    correctAnswer: 'Any point with slope -1/2 passing through P(4, -6)',
-    explanation: 'The slope of line l is -1/2. A parallel line through P(4, -6) has the same slope. Examples: (2, -5), (6, -7), (0, -4), etc.'
-  },
+ id: '6',
+ text: 'The perimeter of △JKL is 200 centimeters.<br>• JK = 68 centimeters<br>• KL = 62 centimeters<br><br>Which statement is true about the interior angles of △JKL?',
+ type: 'multiple-choice',
+ options: ['m∠L is the greatest of the interior angles', 'm∠L is the least of the interior angles', 'm∠K is the greatest of the interior angles', 'm∠K is the least of the interior angles'],
+ correctAnswer: 2,
+ explanation: 'JL = 200 - 68 - 62 = 70 cm. Since JL is the longest side, the angle opposite to it (∠K) is the greatest angle in the triangle.'
+ },
   {
     id: '12',
     text: 'Which best describes the construction in the diagram shown?<br><br><img src="images/question_12.png" class="question-image" alt="Construction showing perpendicular lines">',
