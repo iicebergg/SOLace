@@ -77,7 +77,7 @@ const sampleQuestions = [
  id: '8',
  text: 'Which is the converse of the following statement?<br><br>If <math><mfrac><mi>a</mi><mi>b</mi></mfrac></math> = c, then a = bc.',
  type: 'multiple-choice',
- options: ['If <math><mfrac><mi>a</mi><mi>b</mi></mfrac></math> ≠ c, then a ≠ bc.', 'If a = bc, then <math><mfrac><mi>a</mi><mi>b</mi></mfrac></math> = c.', 'If a ≠ bc, then <math><mfrac><mi>a</mi><mi>b</mi></mfrac></math> ≠ c.', 'If <math><mfrac><mi>a</mi><mi>b</mi></mfrac></math> = c, then a = bc.'],
+ options: ['If <math><mfrac><mi>a</mi><mi>b</mi></mfrac></math> ≠ c, then a ≠ bc.', 'If a = bc, then <math><mfrac><mi>a</mi><mi>b</mi></mfrac></math> = c.', 'If a ≠ bc, then <math><mfrac><mi>a</mi><mi>b</mi></mfrac></math> ≠ c.', 'If <math><mfrac><mi>a</mi><mi>b</mi></mfrac></math> = c, then a ≠ bc.'],
  correctAnswer: 1,
  explanation: 'The converse switches the hypothesis and conclusion: If q, then p becomes If p, then q.'
  },
@@ -215,7 +215,7 @@ const sampleQuestions = [
  text: 'Select the measures that could be the three side lengths of a right triangle.',
  type: 'drag-drop',
  options: ['17 cm', '20 cm', '21 cm', '29 cm'],
- dropZones: ['Side 1', 'Side 2', 'Hypotenuse'],
+ dropZones: ['Side 1 (Shorter)', 'Side 2 (Longer)', 'Hypotenuse'],
  correctAnswer: [1, 2, 3],
  explanation: 'Check if the sides satisfy the Pythagorean theorem: a² + b² = c².'
  },
@@ -320,7 +320,7 @@ const sampleQuestions = [
  text: 'A circle has a center at (4, −7) and a radius of 4 units. Create the equation of this circle.',
  type: 'drag-drop',
  options: ['(x − 4)', '(x + 4)', '(x − 4)²', '(x + 4)²', '(y − 7)', '(y + 7)', '(y − 7)²', '(y + 7)²', '+', '−', '2²', '4²'],
- dropZones: ['Term 1', 'Operator', 'Term 2', 'Equals', 'Result'],
+ dropZones: ['Term 1 (x-values)', 'Operator', 'Term 2 (y-values)', 'Result'],
  correctAnswer: [2, 8, 7, 11],
  explanation: 'The standard form of a circle equation is (x − h)² + (y − k)² = r².'
  },
@@ -358,7 +358,7 @@ const sampleQuestions = [
  },
  {
  id: '42',
- text: 'Which point lies on the circle represented by the equation (x − 1)² + (y − 3)² = 72?',
+ text: 'Which point lies on the circle represented by the equation (x − 1)² + (y − 3)² = 7²?',
  type: 'multiple-choice',
  options: ['(−1, 4)', '(0, 7)', '(1, 3)', '(8, 3)'],
  correctAnswer: 3,
@@ -366,7 +366,7 @@ const sampleQuestions = [
  },
  {
  id: '43',
- text: 'Select each property that is valid about the diagonals of a square.',
+ text: 'Select each property that is valid about the diagonals of a square. The diagonals of a square --',
  type: 'multiple-select',
  options: ['are perpendicular', 'bisect each other', 'are congruent', 'are not perpendicular', 'do not bisect each other', 'are not congruent'],
  correctAnswer: [0, 1, 2],

@@ -227,7 +227,9 @@ const sampleQuestions = [
     id: '21',
     text: 'The lengths of two sides of a triangle are 24 inches and 43 inches. What is the range of possible lengths, in inches, for the third side, x, of this triangle?<br><br>___ < x < ___',
     type: 'drag-drop',
-    correctAnswer: '19 < x < 67',
+    options: ['9', '19', '20', '24', '30', '33.5', '67', '101.5'],
+    dropZones: ['Minimum', 'Maximum'],
+    correctAnswer: [1, 6],
     explanation: 'Triangle inequality theorem: The sum of any two sides must be greater than the third side. So 43 - 24 < x < 43 + 24, which gives 19 < x < 67.'
   },
   {
@@ -297,9 +299,11 @@ const sampleQuestions = [
   },
   {
     id: '27',
-    text: 'Complete the proof of △ABC ≅ △CDA by selecting the reasons for the last two statements.<br><br><img src="images/question_27.png" class="question-image" alt="Proof table for quadrilateral ABCD"><br><br>Given: Figure ABCD with diagonal AC<br>AB ≅ DC; BC ≅ AD',
+    text: 'Given: Figure ABCD with diagonal AC<br>AB ≅ DC; BC ≅ AD<br><br>Complete the proof of △ABC ≅ △CDA by selecting reasons for the two statements.<br><br><img src="images/question_27.png" class="question-image" alt="Image failed to load. Please try again later."><br><br>',
     type: 'drag-drop',
-    correctAnswer: 'Row 2: Reflexive property; Row 3: Side-Side-Side (SSS) Theorem',
+    options: ['Definition of congruent angles', 'Reflexive property', 'Side-Angle-Side (SAS) Theorem', 'Side-Side-Side (SSS) Theorem', 'Hypotenuse-Leg (HL) Theorem', 'Given'],
+    dropZones: ['AC ≅ AC', '△ABC ≅ △CDA'],
+    correctAnswer: [1, 3],
     explanation: 'AC ≅ AC by reflexive property, then all three sides are congruent, so SSS theorem applies.'
   },
   {
@@ -503,8 +507,14 @@ const sampleQuestions = [
   {
     id: '46',
     text: 'The ratio of the lengths of the radii of two spheres is 3:5. What is the ratio of the volumes of these two spheres?',
-    type: 'drag-drop',
-    correctAnswer: '27:125',
+    type: 'multiple-choice',
+    options: [
+      '3:5',
+      '6:10',
+      '9:25',
+      '27:125'
+    ],
+    correctAnswer: 3,
     explanation: 'Volume ratio = (radius ratio)³ = 3³:5³ = 27:125'
   },
   {
@@ -517,9 +527,10 @@ const sampleQuestions = [
   },
   {
     id: '48',
-    text: 'Plot the center of the circle defined by the equation <math><msup><mrow><mo>(</mo><mi>x</mi><mo>+</mo><mn>4</mn><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><mi>y</mi><mo>-</mo><mn>5</mn><mo>)</mo></mrow><mn>2</mn></msup><mo>=</mo><msup><mn>3</mn><mn>2</mn></msup></math>.<br><br><img src="images/question_48.png" class="question-image" alt="Coordinate grid">',
+    text: 'Plot the center of the circle defined by the equation <math><msup><mrow><mo>(</mo><mi>x</mi><mo>+</mo><mn>4</mn><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><mi>y</mi><mo>-</mo><mn>5</mn><mo>)</mo></mrow><mn>2</mn></msup><mo>=</mo><msup><mn>3</mn><mn>2</mn></msup></math>.',
     type: 'point-select',
-    correctAnswer: 'Point at (-4, 5)',
+    image: {url: 'images/question_48.png', alt: 'Image failed to load. Please try again later.'},
+    correctAnswer: { x: 0.285, y: 0.303 },
     explanation: 'From equation (x + 4)² + (y - 5)² = 9, the center is at (-4, 5).'
   },
   {
