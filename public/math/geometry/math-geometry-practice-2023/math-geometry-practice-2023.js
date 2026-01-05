@@ -11,7 +11,7 @@ const sampleQuestions = [
  },
  {
  id: '2',
- text: 'The Venn diagram represents the combination of lunches that athletes selected.<br><img src="images/question_2.png" class="question-image" alt="Venn diagram showing Soup, Sandwich, and Salad selections"></img><br>• A total of 310 athletes selected a sandwich.<br>• A total of 125 athletes selected both a sandwich and a salad.<br>• A total of 180 athletes selected both a sandwich and a soup.<br><br>How many athletes selected a sandwich, a soup, and a salad?',
+ text: 'The Venn diagram represents the combination of lunches that athletes selected.<br><img src="images/2.png" class="question-image" alt="Venn diagram showing Soup, Sandwich, and Salad selections"></img><br>• A total of 310 athletes selected a sandwich.<br>• A total of 125 athletes selected both a sandwich and a salad.<br>• A total of 180 athletes selected both a sandwich and a soup.<br><br>How many athletes selected a sandwich, a soup, and a salad?',
  type: 'multiple-choice',
  options: ['5', '55', '65', '110'],
  correctAnswer: 2,
@@ -19,7 +19,7 @@ const sampleQuestions = [
  },
  {
  id: '3',
- text: 'Given the Venn diagram:<br><img src="images/question_3.png" class="question-image" alt="Venn diagram showing Triangles with overlapping Acute Triangles and Isosceles Triangles"></img><br>Which statement is valid?',
+ text: 'Given the Venn diagram:<br><img src="images/3.png" class="question-image" alt="Venn diagram showing Triangles with overlapping Acute Triangles and Isosceles Triangles"></img><br>Which statement is valid?',
  type: 'multiple-choice',
  options: ['All triangles are acute and isosceles.', 'All triangles are either acute or isosceles.', 'No triangles are both acute and isosceles.', 'Some triangles are both acute and isosceles.'],
  correctAnswer: 3,
@@ -27,7 +27,7 @@ const sampleQuestions = [
  },
  {
  id: '4',
- text: 'Lines a and b intersect lines c and d.<br><img src="images/question_4.png" class="question-image" alt="Lines a and b intersecting lines c and d with angles labeled 1-6"></img><br>Which of the following statements could be used to prove that a ∥ b and c ∥ d?',
+ text: 'Lines a and b intersect lines c and d.<br><img src="images/4.png" class="question-image" alt="Lines a and b intersecting lines c and d with angles labeled 1-6"></img><br>Which of the following statements could be used to prove that a ∥ b and c ∥ d?',
  type: 'multiple-choice',
  options: ['∠1 ≅ ∠6, ∠3 ≅ ∠5', '∠1 ≅ ∠6, ∠4 and ∠5 are supplementary', '∠1 ≅ ∠4, ∠1 and ∠2 are supplementary', '∠1 and ∠3 are supplementary, ∠1 and ∠6 are supplementary'],
  correctAnswer: 1,
@@ -35,7 +35,7 @@ const sampleQuestions = [
  },
  {
  id: '5',
- text: 'Lines j and k are cut by transversals m and n. (Figure is not drawn to scale.)<br><img src="images/question_5.png" class="question-image" alt="Lines j and k cut by transversals m and n with angles labeled"></img><br>Which relationship is sufficient to prove j ∥ k?',
+ text: 'Lines j and k are cut by transversals m and n. (Figure is not drawn to scale.)<br><img src="images/5.png" class="question-image" alt="Lines j and k cut by transversals m and n with angles labeled"></img><br>Which relationship is sufficient to prove j ∥ k?',
  type: 'multiple-choice',
  options: ['x = 60', 'y = 30', 'y = x − 30', 'y = 150 − 2x'],
  correctAnswer: 3,
@@ -51,7 +51,7 @@ const sampleQuestions = [
  },
  {
  id: '7',
- text: 'Triangle STW and △XYZ are shown.<br><img src="images/question_7.png" class="question-image" alt="Two triangles with labeled angles and sides"></img><br>Which value of x makes △STW ≅ △XYZ?',
+ text: 'Triangle STW and △XYZ are shown.<br><img src="images/7.png" class="question-image" alt="Two triangles with labeled angles and sides"></img><br>Which value of x makes △STW ≅ △XYZ?',
  type: 'multiple-choice',
  options: ['2', '3', '4', '6'],
  correctAnswer: 2,
@@ -59,20 +59,20 @@ const sampleQuestions = [
  },
  {
  id: '8',
- text: 'Evelyn is constructing a triangle congruent to △ABC using SAS.<br><img src="images/question_8.png" class="question-image" alt="Triangle ABC and construction options"></img><br>Which triangle should Evelyn construct that will be congruent to △ABC?',
+ text: 'Evelyn is constructing a triangle congruent to △ABC using ray MN.<br><img src="images/8.png" class="question-image" alt="Triangle ABC and construction options"></img><br>Which triangle should Evelyn construct that will be congruent to △ABC?',
  type: 'multiple-choice',
  options: [
-    {url: 'images/question_8a.png', alt: 'Triangle option F'},
-    {url: 'images/question_8b.png', alt: 'Triangle option G'},
-    {url: 'images/question_8c.png', alt: 'Triangle option H'},
-    {url: 'images/question_8d.png', alt: 'Triangle option J'}
+    '△MSP',
+    '△MSR',
+    '△MTP',
+    '△MTR'
  ],
  correctAnswer: 2,
  explanation: 'Using SAS (Side-Angle-Side) congruence, Evelyn needs two sides and the included angle to match the original triangle.'
  },
  {
  id: '9',
- text: 'The figure shown is a regular hexagon.<br><img src="images/question_9.png" class="question-image" alt="Regular hexagon ABCDEF with side length 4 in"></img><br>Which measure is the length of the diagonal AC?',
+ text: 'The figure shown is a regular hexagon.<br><img src="images/9.png" class="question-image" alt="Regular hexagon ABCDEF with side length 4 in"></img><br>Which measure is the length of the diagonal AC?',
  type: 'multiple-choice',
  options: ['<math><mn>4</mn><msqrt><mn>3</mn></msqrt></math> in.', '8 in.', '12 in.', '<math><mn>8</mn><msqrt><mn>3</mn></msqrt></math> in.'],
  correctAnswer: 0,
@@ -80,7 +80,7 @@ const sampleQuestions = [
  },
  {
  id: '10',
- text: 'A carpenter will build a shed with four walls and a roof. The shape of the shed will consist of a triangular prism and a rectangular prism as shown in the model.<br><img src="images/question_10.png" class="question-image" alt="Aerial and front view of shed"></img><br>A vertical plane intersects the model. The plane is parallel to the front face of the model. What is the shape of this cross section?',
+ text: 'A carpenter will build a shed with four walls and a roof. The shape of the shed will consist of a triangular prism and a rectangular prism as shown in the model.<br><img src="images/10-12.png" class="question-image" alt="Aerial and front view of shed"></img><br>A vertical plane intersects the model. The plane is parallel to the front face of the model. What is the shape of this cross section?',
  type: 'multiple-choice',
  options: ['Triangle', 'Pentagon', 'Rectangle', 'Trapezoid'],
  correctAnswer: 1,
@@ -88,7 +88,7 @@ const sampleQuestions = [
  },
  {
  id: '11',
- text: 'A carpenter will build a shed with four walls and a roof. The shape of the shed will consist of a triangular prism and a rectangular prism as shown in the model.<br><img src="images/question_11.png" class="question-image" alt="Aerial and front view of shed"></img><br>If w = 12 and h = 6, the surface area of the exterior walls and doors is exactly —',
+ text: 'A carpenter will build a shed with four walls and a roof. The shape of the shed will consist of a triangular prism and a rectangular prism as shown in the model.<br><img src="images/10-12.png" class="question-image" alt="Aerial and front view of shed"></img><br>If w = 12 and h = 6, the surface area of the exterior walls and doors is exactly —',
  type: 'multiple-choice',
  options: ['360 square feet', '414 square feet', '468 square feet', '630 square feet'],
  correctAnswer: 1,
@@ -96,7 +96,7 @@ const sampleQuestions = [
  },
  {
  id: '12',
- text: 'A carpenter will build a shed with four walls and a roof. The shape of the shed will consist of a triangular prism and a rectangular prism as shown in the model.<br><img src="images/question_12.png" class="question-image" alt="Aerial and front view of shed"></img><br>If w = 6, which equation correctly models a calculation of the volume of the shed?',
+ text: 'A carpenter will build a shed with four walls and a roof. The shape of the shed will consist of a triangular prism and a rectangular prism as shown in the model.<br><img src="images/10-12.png" class="question-image" alt="Aerial and front view of shed"></img><br>If w = 6, which equation correctly models a calculation of the volume of the shed?',
  type: 'multiple-choice',
  options: [
     'V = 9 × 6 × 18',
@@ -138,7 +138,7 @@ const sampleQuestions = [
  },
  {
  id: '16',
- text: 'Given: Quadrilateral ABCD<br><img src="images/question_16.png" class="question-image" alt="Quadrilateral ABCD with vertices labeled"></img><br>Which expression proves that ABCD is a rectangle?',
+ text: 'Given: Quadrilateral ABCD<br><img src="images/16.png" class="question-image" alt="Quadrilateral ABCD with vertices labeled"></img><br>Which expression proves that ABCD is a rectangle?',
  type: 'multiple-choice',
  options: [
     'The length of each diagonal is <math><msqrt><msup><mi>r</mi><mn>2</mn></msup><mo>+</mo><msup><mi>m</mi><mn>2</mn></msup></msqrt></math>',
@@ -151,7 +151,7 @@ const sampleQuestions = [
  },
  {
  id: '17',
- text: 'The figure shown is composed of a regular pentagon and a rectangle.<br><img src="images/question_17.png" class="question-image" alt="Regular pentagon attached to rectangle with angles x marked"></img><br>What is the measure of each of the angles identified as x?',
+ text: 'The figure shown is composed of a regular pentagon and a rectangle.<br><img src="images/17.png" class="question-image" alt="Regular pentagon attached to rectangle with angles x marked"></img><br>What is the measure of each of the angles identified as x?',
  type: 'multiple-choice',
  options: ['36°', '54°', '72°', '108°'],
  correctAnswer: 0,
@@ -159,7 +159,7 @@ const sampleQuestions = [
  },
  {
  id: '18',
- text: 'Points Q, R, and S lie on circle P.<br><img src="images/question_18.png" class="question-image" alt="Circle P with points Q, R, S and angles marked"></img><br>What is the value of x?',
+ text: 'Points Q, R, and S lie on circle P.<br><img src="images/18.png" class="question-image" alt="Circle P with points Q, R, S and angles marked"></img><br>What is the value of x?',
  type: 'multiple-choice',
  options: ['5', '12', '25', '65'],
  correctAnswer: 2,
@@ -167,7 +167,7 @@ const sampleQuestions = [
  },
  {
  id: '19',
- text: 'In circle P, m∠HJK = 60° and m⏜JK = 2 • m⏜HJ.<br><img src="images/question_19.png" class="question-image" alt="Circle P with points H, J, K marked"></img><br>What is m⏜HJ?',
+ text: 'In circle P, m∠HJK = 60° and m⏜JK = 2 • m⏜HJ.<br><img src="images/19.png" class="question-image" alt="Circle P with points H, J, K marked"></img><br>What is m⏜HJ?',
  type: 'multiple-choice',
  options: ['80°', '120°', '150°', '160°'],
  correctAnswer: 0,
@@ -188,7 +188,7 @@ const sampleQuestions = [
  },
  {
  id: '21',
- text: 'The design for the arc-shaped stand of the hammock shown was based on a 144° arc, ⏜ST, of a circle with a radius of 2.3 meters. (Figure is not drawn to scale.)<br><img src="images/question_21.png" class="question-image" alt="Arc ST of hammock stand"></img><br>The length of ⏜ST is closest to —',
+ text: 'The design for the arc-shaped stand of the hammock shown was based on a 144° arc, ⏜ST, of a circle with a radius of 2.3 meters. (Figure is not drawn to scale.)<br><img src="images/21.png" class="question-image" alt="Arc ST of hammock stand"></img><br>The length of ⏜ST is closest to —',
  type: 'multiple-choice',
  options: ['2.89 m', '3.68 m', '5.78 m', '7.23 m'],
  correctAnswer: 2,
@@ -196,7 +196,7 @@ const sampleQuestions = [
  },
  {
  id: '22',
- text: 'Given: Three concentric circles with the center O<br><img src="images/question_22.png" class="question-image" alt="Three concentric circles with radii 7, 11, and 14 inches"></img><br>Which is closest to the area of the shaded region?',
+ text: 'Given: Three concentric circles with the center O<br><img src="images/22.png" class="question-image" alt="Three concentric circles with radii 7, 11, and 14 inches"></img><br>Which is closest to the area of the shaded region?',
  type: 'multiple-choice',
  options: ['231 sq in.', '308 sq in.', '539 sq in.', '616 sq in.'],
  correctAnswer: 3,
@@ -204,7 +204,7 @@ const sampleQuestions = [
  },
  {
  id: '23',
- text: 'Given: Circle T with radius 9<br><img src="images/question_23.png" class="question-image" alt="Circle T with shaded sector"></img><br>Which best represents the area of the shaded sector?',
+ text: 'Given: Circle T with radius 9<br><img src="images/23.png" class="question-image" alt="Circle T with shaded sector"></img><br>Which best represents the area of the shaded sector?',
  type: 'multiple-choice',
  options: [
     '<math><mfrac><mrow><mn>81</mn><mi>π</mi></mrow><mn>4</mn></mfrac></math>',
@@ -214,19 +214,6 @@ const sampleQuestions = [
  ],
  correctAnswer: 0,
  explanation: 'For a 90° sector with radius 9: Area = (90/360) × π × 9² = (1/4) × 81π = 81π/4.'
- },
- {
- id: '24',
- text: 'Given: Circle W<br><img src="images/question_24.png" class="question-image" alt="Circle W with center and points"></img><br>Which point lies on circle W?',
- type: 'multiple-choice',
- options: [
-    '(−3, 1)',
-    '(1, −3)',
-    '(3, 1)',
-    '(3, −1)'
- ],
- correctAnswer: 2,
- explanation: 'Calculate the distance from the center to each point. The point (3, −1) is at the correct distance to lie on circle W.'
  }
 ];
 
