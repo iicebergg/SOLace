@@ -200,8 +200,9 @@ const sampleQuestions = [
  {
  id: '25',
  text: 'Point A lies on the graph of <math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>x</mi><mo>+</mo><mn>2</mn></math>. Locate the image of Point A that lies on the graph of <math><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>(</mo><mi>x</mi><mo>)</mo></math>.',
- type: 'free-response',
- correctKeywords: ['(1, -2)'],
+ type: 'point-select',
+ image: {url: 'images/question_25.png', alt: 'Image failed to load. Please try again later.'},
+ correctAnswer: { x: 0.544, y: 0.636 }, 
  explanation: 'The inverse function is f^(-1)(x) = 2x - 4. If Point A is on f(x), its image on f^(-1)(x) is found by swapping coordinates.'
  },
  {
