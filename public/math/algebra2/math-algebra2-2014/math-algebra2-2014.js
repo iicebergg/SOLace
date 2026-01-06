@@ -94,13 +94,15 @@ const sampleQuestions = [
   },
   {
     id: 8,
-    text: '<img src="images/question_8.png" alt="Drag and drop question" /><br>Simplify completely: <math><mroot><mrow><mn>162</mn><msup><mi>x</mi><mn>6</mn></msup><msup><mi>y</mi><mn>7</mn></msup></mrow><mn>3</mn></mroot></math>',
-    type: 'drag-drop',
-    dragOptions: ["2", "3", "6", "9", "x", "x²", "x³", "x⁴", "y", "y²", "y³", "y⁴"],
-    correctAnswer: {
-      left: ["3", "x²", "y²"],
-      right: ["6", "y"]
-    },
+    text: 'Simplify completely: <math><mroot><mrow><mn>162</mn><msup><mi>x</mi><mn>6</mn></msup><msup><mi>y</mi><mn>7</mn></msup></mrow><mn>3</mn></mroot></math>',
+    type: 'multiple-choice',
+    options: [
+      "<math><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><msup><mi>y</mi><mn>2</mn></msup></math>",
+      "<math><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><msup><mi>y</mi><mn>2</mn></msup></math>",
+      "<math><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><msup><mi>y</mi><mn>2</mn></msup></math>",
+      "<math><mn>9</mn><msup><mi>x</mi><mfrac><mn>6</mn><mn>3</mn></mfrac></msup><msup><mi>y</mi><mfrac><mn>7</mn><mn>3</mn></mfrac></msup></math>"
+    ],
+    correctAnswer: 2,
     explanation: "Factor out perfect cubes: 162 = 27 × 6 = 3³ × 6, x⁶ = (x²)³, y⁷ = y⁶ × y = (y²)³ × y"
   },
   {
@@ -118,10 +120,10 @@ const sampleQuestions = [
   },
   {
     id: 10,
-    text: '<img src="images/question_10.png" alt="Factor polynomial drag and drop" /><br>Factor the following polynomial: <math><mn>8</mn><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>18</mn><mi>x</mi><mi>y</mi><mo>-</mo><mn>5</mn><msup><mi>y</mi><mn>2</mn></msup></math>',
-    type: 'drag-drop',
-    dragOptions: ["(x + 5y)", "(2x - 5y)", "(2x - y)", "(4x + y)", "(4x + 5y)", "(8x - y)"],
-    correctAnswer: ["(2x - 5y)", "(4x + y)"],
+    text: 'Identify the factors of the following polynomial: <math><mn>8</mn><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>18</mn><mi>x</mi><mi>y</mi><mo>-</mo><mn>5</mn><msup><mi>y</mi><mn>2</mn></msup></math>',
+    type: 'multiple-select',
+    options: ["(x + 5y)", "(2x - 5y)", "(2x - y)", "(4x + y)", "(4x + 5y)", "(8x - y)"],
+    correctAnswer: [1, 3],
     explanation: "Factor by grouping or use the AC method to get (2x - 5y)(4x + y)"
   },
   {
@@ -139,8 +141,8 @@ const sampleQuestions = [
   },
   {
     id: 12,
-    text: '<img src="images/question_12.png" alt="Select expressions equal to i" /><br>Identify each expression that is equivalent to (i).',
-    type: 'multi-select',
+    text: 'Identify each expression that is equivalent to (i).',
+    type: 'multiple-select',
     options: [
       "<math><msup><mi>i</mi><mn>47</mn></msup></math>",
       "<math><msup><mi>i</mi><mn>33</mn></msup></math>",
@@ -152,7 +154,7 @@ const sampleQuestions = [
   },
   {
     id: 13,
-    text: "Given: <math><mfrac><mrow><mi>n</mi><mo>-</mo><mn>15</mn></mrow><mfrac><mrow><mn>9</mn><mi>n</mi></mrow><mfrac><mrow><mn>15</mn><mo>-</mo><mi>n</mi></mrow><mrow><mn>3</mn><msup><mi>n</mi><mn>5</mn></msup></mrow></mfrac></mfrac></mfrac></math>. Assuming no denominator equals zero, which expression is equivalent to the given expression?",
+    text: "Given: <math><mfrac><mfrac><mrow><mi>n</mi><mo>-</mo><mn>15</mn></mrow><mrow><mn>9</mn><mi>n</mi></mrow></mfrac><mfrac><mrow><mn>15</mn><mo>-</mo><mi>n</mi></mrow><mrow><mn>3</mn><msup><mi>n</mi><mn>5</mn></msup></mrow></mfrac></mfrac></math>. Assuming no denominator equals zero, which expression is equivalent to the given expression?",
     type: 'multiple-choice',
     options: [
       "<math><mfrac><mrow><mo>-</mo><msup><mi>n</mi><mn>4</mn></msup></mrow><mn>3</mn></mfrac></math>",
@@ -178,20 +180,20 @@ const sampleQuestions = [
   },
   {
     id: 15,
-    text: '<img src="images/question_15.png" alt="Absolute value inequality graphs" /><br>Which graph best represents the solution for <math><mi>y</mi><mo>≥</mo><mo>|</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo>|</mo><mo>-</mo><mn>3</mn></math>?',
+    text: 'Which graph best represents the solution for <math><mi>y</mi><mo>≥</mo><mo>|</mo><mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn><mo>|</mo><mo>-</mo><mn>3</mn></math>?',
     type: 'multiple-choice',
     options: [
-      "Graph A",
-      "Graph B",
-      "Graph C",
-      "Graph D"
-    ],
+    {url: 'images/question_15a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_15b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_15c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_15d.png', alt: 'Image failed to load. Please try again later.'}
+ ],
     correctAnswer: 0,
     explanation: "The graph shows the region above the V-shaped curve y = |2x + 1| - 3"
   },
   {
     id: 16,
-    text: '<img src="images/question_16.png" alt="Select solution set" /><br>What is the solution set to <math><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>16</mn><mo>-</mo><mn>4</mn><mi>x</mi></math>?',
+    text: 'What is the solution set to <math><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>16</mn><mo>-</mo><mn>4</mn><mi>x</mi></math>?',
     type: 'multiple-choice',
     options: [
       "<math><mo>{</mo><mo>±</mo><mn>4</mn><mo>}</mo></math>",
@@ -205,7 +207,7 @@ const sampleQuestions = [
   },
   {
     id: 17,
-    text: "What is the solution set for <math><mroot><mfrac><mi>x</mi><mn>4</mn></mfrac><mn>3</mn></mroot><mo>+</mo><mn>3</mn><mo>=</mo><mn>2</mn></math>?",
+    text: "What is the solution set for <math><mroot><mfrac><mi>1</mi><mn>4</mn></mfrac><mn>x</mn><mo>+</mo><mn>3</mn></msqrt><mo>=</mo><mn>2</mn></math>?",
     type: 'multiple-choice',
     options: [
       "<math><mo>{</mo><mfrac><mn>5</mn><mn>4</mn></mfrac><mo>}</mo></math>",
@@ -231,7 +233,7 @@ const sampleQuestions = [
   },
   {
     id: 19,
-    text: '<img src="images/question_19.png" alt="Graph of g(x)" /><br>The graph of g(x) is shown. Which appears to be a solution of g(x) = 0?',
+    text: '<img src="images/question_19.png" class="question-image" alt="Graph of g(x)" /><br>The graph of g(x) is shown. Which appears to be a solution of g(x) = 0?',
     type: 'multiple-choice',
     options: ["-3", "-1", "0", "3"],
     correctAnswer: 0,
@@ -239,7 +241,7 @@ const sampleQuestions = [
   },
   {
     id: 20,
-    text: "Given: <math><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mn>10</mn><mo>=</mo><mn>0</mn></math><br><math><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>y</mi><mo>-</mo><mn>2</mn><mo>=</mo><mn>0</mn></math><br>What are the x-values for the solutions to the given system of equations?",
+    text: "Given: <br><math><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mn>10</mn><mo>=</mo><mn>0</mn></math><br><math><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>y</mi><mo>-</mo><mn>2</mn><mo>=</mo><mn>0</mn></math><br>What are the x-values for the solutions to the given system of equations?",
     type: 'multiple-choice',
     options: [
       "<math><mi>x</mi><mo>=</mo><mo>-</mo><mn>3</mn><mo>,</mo><mo>-</mo><mn>7</mn></math>",
@@ -299,8 +301,8 @@ const sampleQuestions = [
   {
     id: 25,
     text: "If <math><mi>x</mi><mo>≠</mo><mn>0</mn></math>, what is the solution to the following equation?<br><math><mfrac><mrow><mn>1</mn><mo>-</mo><mi>x</mi></mrow><mi>x</mi></mfrac><mo>+</mo><mn>2</mn><mo>=</mo><mfrac><mn>7</mn><mi>x</mi></mfrac></math>",
-    type: 'text-input',
-    correctAnswer: '6',
+    type: 'free-response',
+    correctKeywords: ['6'],
     explanation: "Multiply through by x: (1 - x) + 2x = 7, which gives 1 + x = 7, so x = 6"
   },
   {
@@ -332,13 +334,13 @@ const sampleQuestions = [
   {
     id: 28,
     text: "What is the sum of this infinite series?<br><math><mn>100</mn><mo>+</mo><mn>60</mn><mo>+</mo><mn>36</mn><mo>+</mo><mfrac><mn>108</mn><mn>5</mn></mfrac><mo>+</mo><mo>...</mo></math>",
-    type: 'text-input',
-    correctAnswer: '250',
+    type: 'free-response',
+    correctKeywords: ['250'],
     explanation: "This is a geometric series with first term a = 100 and common ratio r = 0.6. Sum = a/(1-r) = 100/0.4 = 250"
   },
   {
     id: 29,
-    text: '<img src="images/question_29.png" alt="Parent function graph" /><br>The graph of a parent function is shown. Which function belongs to this same family?',
+    text: '<img src="images/question_29.png" class="question-image" alt="Parent function graph" /><br>The graph of a parent function is shown. Which function belongs to this same family?',
     type: 'multiple-choice',
     options: [
       "<math><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mo>-</mo><mo>log</mo><mo>(</mo><mi>x</mi><mo>-</mo><mn>1</mn><mo>)</mo></math>",
@@ -377,7 +379,7 @@ const sampleQuestions = [
   },
   {
     id: 32,
-    text: '<img src="images/question_32.png" alt="Exponential graph" /><br>Which function best represents this graph?',
+    text: '<img src="images/question_32.png" class="question-image" alt="Exponential graph" /><br>Which function best represents this graph?',
     type: 'multiple-choice',
     options: [
       "<math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mn>2</mn><mrow><mo>(</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo>)</mo></mrow></msup></math>",
@@ -403,7 +405,7 @@ const sampleQuestions = [
   },
   {
     id: 34,
-    text: "Throughout which of the following intervals is <math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mo>(</mo><mi>x</mi><mo>-</mo><mn>1</mn><mo>)</mo><msup><mo>(</mo><mi>x</mi><mo>-</mo><mn>4</mn><mo>)</mo><mn>2</mn></msup></math> only decreasing?",
+    text: "Throughout which of the following intervals is <math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mo>(</mo><mi>x</mi><mo>-</mo><mn>1</mn><mo>)</mo><msup><mi>( x - 4 )</mi><mn>2</mn></msup></math> only decreasing?",
     type: 'multiple-choice',
     options: [
       "<math><mo>-</mo><mo>∞</mo><mo><</mo><mi>x</mi><mo><</mo><mn>0</mn></math>",
@@ -429,7 +431,7 @@ const sampleQuestions = [
   },
   {
     id: 36,
-    text: '<img src="images/question_36.png" alt="Step function graph" /><br>What appears to be the range of this function?',
+    text: '<img src="images/question_36.png" class="question-image" alt="Step function graph" /><br>What appears to be the range of this function?',
     type: 'multiple-choice',
     options: [
       "<math><mo>{</mo><mi>y</mi><mo>|</mo><mi>y</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo>}</mo></math>",
@@ -471,21 +473,21 @@ const sampleQuestions = [
   },
   {
     id: 40,
-    text: '<img src="images/question_40.png" alt="Function g and its inverse" /><br>The graph of the function g is shown on the following grid. Which graph best represents the inverse of g?',
+    text: '<img src="images/question_40.png" class="question-image" alt="Function g and its inverse" /><br>The graph of the function g is shown on the following grid. Which graph best represents the inverse of g?',
     type: 'multiple-choice',
     options: [
-      '<img src="images/question_40a.png" alt="Graph A" />',
-      '<img src="images/question_40b.png" alt="Graph B" />',
-      '<img src="images/question_40c.png" alt="Graph C" />',
-      '<img src="images/question_40d.png" alt="Graph D" />'
-    ],
+    {url: 'images/question_40a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_40b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_40c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_40d.png', alt: 'Image failed to load. Please try again later.'}
+ ],
     correctAnswer: 2,
     explanation: "The inverse function is the reflection of the original function across the line y = x"
   },
   {
     id: 41,
-    text: '<img src="images/question_41.png" alt="Select intercepts" /><br>Identify each of the x- and y-intercepts of the function <math><mi>h</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>4</mn><mi>x</mi><mo>-</mo><mn>12</mn></math>.',
-    type: 'multi-select',
+    text: 'Identify each of the x- and y-intercepts of the function <math><mi>h</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>4</mn><mi>x</mi><mo>-</mo><mn>12</mn></math>.',
+    type: 'multiple-select',
     options: [
       "(-3, 0)",
       "(0, -2)",
@@ -553,7 +555,7 @@ const sampleQuestions = [
   },
   {
     id: 46,
-    text: '<img src="images/question_46.png" alt="Table of savings account values" /><br>Madison deposited $1,000 into a savings account that compounds interest yearly. Using the exponential curve of best fit, which is closest to the expected amount in the savings account 30 years after the time Madison deposited the initial $1,000?',
+    text: '<img src="images/question_46.png" class="question-image" alt="Table of savings account values" /><br>Madison deposited $1,000 into a savings account that compounds interest yearly. Using the exponential curve of best fit, which is closest to the expected amount in the savings account 30 years after the time Madison deposited the initial $1,000?',
     type: 'multiple-choice',
     options: ["$2,854", "$3,291", "$5,743", "$16,854"],
     correctAnswer: 2,
@@ -561,14 +563,14 @@ const sampleQuestions = [
   },
   {
     id: 47,
-    text: '<img src="images/question_47.png" alt="Four graphs" /><br>Which graph best represents a function with zeros of -2, -1, and 2?',
+    text: 'Which graph best represents a function with zeros of -2, -1, and 2?',
     type: 'multiple-choice',
     options: [
-      "Graph A",
-      "Graph B",
-      "Graph C",
-      "Graph D"
-    ],
+    {url: 'images/question_47a.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_47b.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_47c.png', alt: 'Image failed to load. Please try again later.'},
+    {url: 'images/question_47d.png', alt: 'Image failed to load. Please try again later.'}
+ ],
     correctAnswer: 3,
     explanation: "Look for the graph that crosses the x-axis at x = -2, -1, and 2"
   },
@@ -590,7 +592,7 @@ const sampleQuestions = [
   },
   {
     id: 50,
-    text: "Which of the following describes the root(s) of the equation <math><mn>9</mn><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>6</mn><mi>x</mi><mo>-</mo><mn>1</mn></math>?",
+    text: "Which of the following describes the root(s) of the equation <math><mn>9</mn><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>6</mn><mi>x</mi><mo>-</mo><mn>1</mn></math>?",
     type: 'multiple-choice',
     options: [
       "Exactly one real root",
