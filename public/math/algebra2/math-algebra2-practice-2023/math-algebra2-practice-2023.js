@@ -16,65 +16,65 @@ const sampleQuestions = [
  },
  {
  id: '2',
- text: 'Which expression is equivalent to the one shown if no denominators equal zero?<br><img src="images/2.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Which expression is equivalent to the one shown if no denominators equal zero?<br><math><mfrac><mfrac><mrow><mo>-</mo><mn>13</mn><mo>+</mo><mi>d</mi></mrow><mrow><mn>42</mn><msup><mi>d</mi><mn>3</mn></msup></mrow></mfrac><mfrac><mrow><mn>13</mn><mo>-</mo><mi>d</mi></mrow><mrow><mn>6</mn><msup><mi>d</mi><mn>9</mn></msup></mrow></mfrac></mfrac></math>',
  type: 'multiple-choice',
  options: [
-    {url: 'images/2a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/2b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/2c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/2d.png', alt: 'Image failed to load. Please try again later.'}
+    '<math><mo>-</mo><mfrac><mn>7</mn><mrow><msup><mi>d</mi><mn>3</mn></msup></mrow></mfrac></math>',
+    '<math><mo>-</mo><mfrac><mrow><msup><mi>d</mi><mn>3</mn></msup></mrow><mn>7</mn></mfrac></math>',
+    '<math><mfrac><mn>7</mn><mrow><msup><mi>d</mi><mn>6</mn></msup></mrow></mfrac></math>',
+    '<math><mo>-</mo><mfrac><mrow><msup><mi>d</mi><mn>6</mn></msup></mrow><mn>7</mn></mfrac></math>'
  ],
  correctAnswer: 3,
  explanation: 'Simplify the complex rational expression by finding common denominators and applying division rules for fractions.'
  },
  {
  id: '3',
- text: 'Which expression is equivalent to <img src="images/3.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Which expression is equivalent to <math><mroot><mrow><mn>576</mn><msup><mi>n</mi><mn>8</mn></msup><msup><mi>p</mi><mn>27</mn></msup></mrow><mn>3</mn></mroot></math>?',
  type: 'multiple-choice',
  options: [
-    {url: 'images/3a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/3b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/3c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/3d.png', alt: 'Image failed to load. Please try again later.'}
+    '<math><mn>4</mn><msup><mi>n</mi><mn>2</mn></msup><msup><mi>p</mi><mn>9</mn></msup><mroot><mrow><mn>9</mn><msup><mi>n</mi><mn>2</mn></msup></mrow><mn>3</mn></mroot></math>',
+    '<math><mn>4</mn><msup><mi>n</mi><mn>2</mn></msup><msup><mi>p</mi><mn>3</mn></msup><mroot><mn>9</mn><mn>3</mn></mroot></math>',
+    '<math><mn>24</mn><msup><mi>n</mi><mn>4</mn></msup><msup><mi>p</mi><mn>13</mn></msup><mroot><mi>p</mi><mn>3</mn></mroot></math>',
+    '<math><mn>192</mn><msup><mi>n</mi><mn>2</mn></msup><msup><mi>p</mi><mn>9</mn></msup><mroot><mrow><msup><mi>n</mi><mn>2</mn></msup></mrow><mn>3</mn></mroot></math>'
  ],
  correctAnswer: 0,
  explanation: 'Apply rules of exponents and radicals to simplify the expression to its equivalent form.'
  },
  {
  id: '4',
- text: 'Which is the factored form of <img src="images/4.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Which is the factored form of <math><mn>125</mn><msup><mi>m</mi><mn>3</mn></msup><mo>-</mo><mn>343</mn></math>',
  type: 'multiple-choice',
  options: [
-    {url: 'images/4a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/4b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/4c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/4d.png', alt: 'Image failed to load. Please try again later.'}
+    '<math><mo>(</mo><mn>5</mn><mi>m</mi><mo>-</mo><mn>7</mn><msup><mo>)</mo><mn>3</mn></msup></math>',
+    '<math><mo>(</mo><mn>5</mn><mi>m</mi><mo>-</mo><mn>7</mn><mo>)</mo><mo>(</mo><mn>25</mn><msup><mi>m</mi><mn>2</mn></msup><mo>+</mo><mn>35</mn><mi>m</mi><mo>+</mo><mn>49</mn><mo>)</mo></math>',
+    '<math><mo>(</mo><mn>5</mn><mi>m</mi><mo>-</mo><mn>7</mn><mo>)</mo><mo>(</mo><mn>25</mn><msup><mi>m</mi><mn>2</mn></msup><mo>+</mo><mn>70</mn><mi>m</mi><mo>+</mo><mn>49</mn><mo>)</mo></math>',
+    '<math><mo>(</mo><mn>5</mn><mi>m</mi><mo>-</mo><mn>7</mn><mo>)</mo><mo>(</mo><mn>25</mn><msup><mi>m</mi><mn>2</mn></msup><mo>-</mo><mn>35</mn><mi>m</mi><mo>-</mo><mn>49</mn><mo>)</mo></math>'
  ],
  correctAnswer: 1,
  explanation: 'Factor the polynomial expression completely by finding common factors and applying factoring techniques.'
  },
  {
  id: '5',
- text: 'What are the y-coordinates for the solutions to this system of equations?<br><img src="images/5.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'What are the y-coordinates for the solutions to this system of equations?<br><math><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>+</mo><mn>6</mn><mo>=</mo><mn>0</mn></math><br><math><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mn>20</mn><mo>=</mo><mn>0</mn></math>',
  type: 'multiple-choice',
  options: [
-    {url: 'images/5a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/5b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/5c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/5d.png', alt: 'Image failed to load. Please try again later.'}
+    'y = -9 and y = 6',
+    'y = -20 and y = -2',
+    'y = -26 and y = -11',
+    'y = -27 and y = -18'
  ],
  correctAnswer: 2,
  explanation: 'Solve the system of equations by substitution or elimination to find the y-coordinates of the intersection points.'
  },
  {
  id: '6',
- text: 'What is the real solution set of <img src="images/6.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'What is the real solution set of --<br><math><mfrac><mi>x</mi><mrow><mi>x</mi><mo>-</mo><mn>4</mn></mrow></mfrac><mo>-</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mo>=</mo><mfrac><mn>4</mn><mrow><mi>x</mi><mo>-</mo><mn>4</mn></mrow></mfrac></math>',
  type: 'multiple-choice',
  options: [
-    {url: 'images/6a.png', alt: 'Image failed to load. Please try again later.'},
-    '{4}',
-    '{28}',
-    {url: 'images/6d.png', alt: 'Image failed to load. Please try again later.'}
+    '-4',
+    '4',
+    '28',
+    '<math><mi>&#x2205;</mi></math>'
  ],
  correctAnswer: 3,
  explanation: 'Solve the equation by isolating the variable and checking for extraneous solutions.'
@@ -136,17 +136,17 @@ const sampleQuestions = [
  text: 'A relation is shown in this table.<br><img src="images/11.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>Which statement about this relation is true?',
  type: 'multiple-choice',
  options: [
-    {url: 'images/11a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/11b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/11c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/11d.png', alt: 'Image failed to load. Please try again later.'}
+    'It is a direct variation because y = -2.5x + 12.5',
+    'It is an inverse variation because y = -2.5x + 12.5',
+    'It is a direct variation because 10 = xy',
+    'It is an inverse variation because 10 = xy'
  ],
  correctAnswer: 3,
  explanation: 'Check if xy = constant (inverse variation) or y/x = constant (direct variation) to determine the relationship type.'
  },
  {
  id: '12',
- text: 'The graph of <img src="images/12.png" class="question-image" alt="Image failed to load. Please try again later."></img> has —',
+ text: 'The graph of <math><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mi>x</mi><mo>+</mo><mn>1</mn></mrow><mi>x</mi></mfrac></math> has —',
  type: 'multiple-choice',
  options: [
     'two x-intercepts and no y-intercept',
@@ -198,7 +198,7 @@ const sampleQuestions = [
  },
  {
  id: '16',
- text: 'Which of the following describes the end behavior of <math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>9</mn><msub><mi>log</mi><mn>5</mn></msub><mo>(</mo><mfrac><mi>x</mi><mn>2</mn></mfrac><mo>)</mo><mo>+</mo><mn>5</mn></math> as x approaches 0?',
+ text: 'Which of the following describes the end behavior of <math><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>9</mn><mi>log</mi><mo>(</mo><mfrac><mi>2x</mi><mn>5</mn></mfrac><mo>)</mo><mo>+</mo><mn>5</mn></math> as x approaches 0?',
  type: 'multiple-choice',
  options: [
     'f(x) approaches −∞',
@@ -224,7 +224,7 @@ const sampleQuestions = [
  },
  {
  id: '18',
- text: 'The test scores of all students on the State 10th Grade English Assessment were collected and displayed in the histogram shown. The data appear normally distributed with a mean test score of 550 and a standard deviation of 82.<br><img src="images/18.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>The principal of a high school in the state wants to compare the data from her school\'s students with the data in the histogram on the same test. To collect the most appropriate data, the principal should —',
+ text: 'The test scores of all students on the State 10th Grade English Assessment were collected and displayed in the histogram shown. The data appear normally distributed with a mean test score of 550 and a standard deviation of 82.<br><img src="images/18-19.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>The principal of a high school in the state wants to compare the data from her school\'s students with the data in the histogram on the same test. To collect the most appropriate data, the principal should —',
  type: 'multiple-choice',
  options: [
     'randomly poll 10th graders in her school asking them what test score they received on the State 10th Grade English assessment',
@@ -237,7 +237,7 @@ const sampleQuestions = [
  },
  {
  id: '19',
- text: 'The data set containing the test scores on the State 10th Grade English Assessment for Mr. Carter\'s English classes has a median test score lower than the median for all students. Which graph best represents the data for Mr. Carter\'s English classes?',
+ text: 'The test scores of all students on the State 10th Grade English Assessment were collected and displayed in the histogram shown. The data appear normally distributed with a mean test score of 550 and a standard deviation of 82.<br><img src="images/18-19.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>The data set containing the test scores on the State 10th Grade English Assessment for Mr. Carter\'s English classes has a median test score lower than the median for all students. Which graph best represents the data for Mr. Carter\'s English classes?',
  type: 'multiple-choice',
  options: [
     {url: 'images/19a.png', alt: 'Image failed to load. Please try again later.'},
@@ -279,10 +279,10 @@ const sampleQuestions = [
  text: 'The amount of lost revenue from tickets not sold for a concert is shown in the table.<br><img src="images/22.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>Which equation best models the relationship between y, the amount of lost revenue, and x, the price per ticket?',
  type: 'multiple-choice',
  options: [
-    {url: 'images/22a.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/22b.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/22c.png', alt: 'Image failed to load. Please try again later.'},
-    {url: 'images/22d.png', alt: 'Image failed to load. Please try again later.'}
+    '<math><mi>y</mi><mo>=</mo><mn>1,218</mn><mo>(</mo><mn>1.01</mn><msup><mo>)</mo><mi>x</mi></msup></math>',
+    '<math><mi>y</mi><mo>=</mo><mn>997</mn><mo>(</mo><mn>1.03</mn><msup><mo>)</mo><mi>x</mi></msup></math>',
+    '<math><mi>y</mi><mo>=</mo><mn>400</mn><mi>x</mi><mo>-</mo><mn>11,570</mn></math>',
+    '<math><mi>y</mi><mo>=</mo><mn>156</mn><mi>x</mi><mo>-</mo><mn>10,000</mn></math>'
  ],
  correctAnswer: 1,
  explanation: 'Analyze the relationship between price and lost revenue. The pattern suggests an exponential or power function relationship.'
