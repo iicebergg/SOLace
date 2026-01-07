@@ -93,18 +93,18 @@ const sampleQuestions = [
     explanation: "Use FOIL: (6)(5) + (6)(√7) + (√7)(5) + (√7)(√7) = 30 + 6√7 + 5√7 + 7 = 37 + 11√7"
   },
   {
-    id: 8,
-    text: 'Simplify completely: <math><mroot><mrow><mn>162</mn><msup><mi>x</mi><mn>6</mn></msup><msup><mi>y</mi><mn>7</mn></msup></mrow><mn>3</mn></mroot></math>',
-    type: 'multiple-choice',
-    options: [
-      "<math><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><msup><mi>y</mi><mn>2</mn></msup></math>",
-      "<math><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><msup><mi>y</mi><mn>2</mn></msup></math>",
-      "<math><mn>6</mn><msup><mi>x</mi><mn>2</mn></msup><msup><mi>y</mi><mn>2</mn></msup></math>",
-      "<math><mn>9</mn><msup><mi>x</mi><mfrac><mn>6</mn><mn>3</mn></mfrac></msup><msup><mi>y</mi><mfrac><mn>7</mn><mn>3</mn></mfrac></msup></math>"
-    ],
-    correctAnswer: 2,
-    explanation: "Factor out perfect cubes: 162 = 27 × 6 = 3³ × 6, x⁶ = (x²)³, y⁷ = y⁶ × y = (y²)³ × y"
-  },
+ id: '8',
+ text: 'What are the y-coordinates for the solutions to this system of equations?<br><math><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>3</mn><mi>y</mi><mo>+</mo><mn>6</mn><mo>=</mo><mn>0</mn></math><br><math><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mn>20</mn><mo>=</mo><mn>0</mn></math>',
+ type: 'multiple-choice',
+ options: [
+    'y = -9 and y = 6',
+    'y = -20 and y = -2',
+    'y = -26 and y = -11',
+    'y = -27 and y = -18'
+ ],
+ correctAnswer: 2,
+ explanation: 'Solve the system of equations by substitution or elimination to find the y-coordinates of the intersection points.'
+ },
   {
     id: 9,
     text: "Which expression is equivalent to <math><msup><mi>x</mi><mfrac><mn>3</mn><mn>7</mn></mfrac></msup><msup><mi>y</mi><mfrac><mn>36</mn><mn>7</mn></mfrac></msup></math>?",
@@ -266,12 +266,18 @@ const sampleQuestions = [
     explanation: "Isolate the radical: ⁴√(w - 4) = 3, raise to the 4th power: w - 4 = 81, so w = 85"
   },
   {
-    id: 22,
-    text: '<img src="images/question_22.png" alt="Graph showing system of equations" /><br>The graph of a system of two equations is shown on the grid. Identify only the apparent solutions to this system of equations.',
-    type: 'coordinate-plot',
-    correctAnswer: [[-2, -3], [2, 5]],
-    explanation: "The two curves intersect at the points (-2, -3) and (2, 5)"
-  },
+ id: '22',
+ text: 'What is the real solution set of --<br><math><mfrac><mi>x</mi><mrow><mi>x</mi><mo>-</mo><mn>4</mn></mrow></mfrac><mo>-</mo><mfrac><mn>4</mn><mn>3</mn></mfrac><mo>=</mo><mfrac><mn>4</mn><mrow><mi>x</mi><mo>-</mo><mn>4</mn></mrow></mfrac></math>',
+ type: 'multiple-choice',
+ options: [
+    '-4',
+    '4',
+    '28',
+    '<math><mi>&#x2205;</mi></math>'
+ ],
+ correctAnswer: 3,
+ explanation: 'Solve the equation by isolating the variable and checking for extraneous solutions.'
+ },
   {
     id: 23,
     text: "Which is a solution to <math><mfrac><mrow><mn>4</mn><mi>n</mi><mo>-</mo><mn>37</mn></mrow><mn>3</mn></mfrac><mo>=</mo><mfrac><mn>10</mn><mi>n</mi></mfrac></math>, if <math><mi>n</mi><mo>≠</mo><mn>0</mn></math>?",
