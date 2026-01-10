@@ -12,7 +12,7 @@ const readingPassages = {
 
       <li>The kinkajou's long, slender tongue allows the animal to pollinate. Since its tongue ranges from five to seven inches in length, the kinkajou can easily collect nectar from flowers. In the process of doing so, pollen often gets on its face. This pollen is then transferred to other flowers. It also uses its tongue to gather honey from deep within beehives.</li>
 
-      <li><img src="images/question_4" alt="Kinkajou hanging upside down from a tree branch" style="float: right; margin: 10px; max-width: 300px;">Another characteristic that separates the kinkajou from other members of the raccoon family is its long tail, which can grow up to 15 to 22 inches in length. The tail functions much like a hand, allowing the kinkajou to grab and grasp. This feature is helpful to the animal for climbing or hanging in trees and for maintaining balance. In addition to using its tail for climbing, this little creature can turn its back feet backward! This enables the animal to run easily in either direction on tree branches.</li>
+      <li><img src="images/raccoons-of-the-rainforest.png" alt="Image failed to load. Please try again later." style="margin: 10px; max-width: 170px;">Another characteristic that separates the kinkajou from other members of the raccoon family is its long tail, which can grow up to 15 to 22 inches in length. The tail functions much like a hand, allowing the kinkajou to grab and grasp. This feature is helpful to the animal for climbing or hanging in trees and for maintaining balance. In addition to using its tail for climbing, this little creature can turn its back feet backward! This enables the animal to run easily in either direction on tree branches.</li>
 
       <li>The kinkajou lives most of its life in trees and is also nocturnal, which means it is most active during the night. Unlike many nocturnal creatures, however, the kinkajou has poor eyesight and cannot detect differences in color. It therefore relies heavily upon the senses of touch, smell, and hearing. Scent glands located on its face and stomach are for marking travel routes and territory. With a wide range of vocal sounds, the kinkajou is able to communicate quite effectively with other kinkajous and does so throughout the night. Vocalizations include a chitter, which sounds much like the chattering of teeth; a bark, which is similar to that of a dog; a kissing sound, which the kinkajou makes when happy; and a loud scream or screeching sound, which it will use if it becomes startled.</li>
 
@@ -108,7 +108,7 @@ const readingPassages = {
 
       <li>We finally passed through the Strait of Magellan, just above Cape Horn. The storm had subsided, and we sailed smoothly up the western side of South America. I traded books with some other passengers, and I made charcoal drawings of seagulls and sailors. I also composed portraits of Mrs. Slate, the captain, and the cook, who were each very happy to sit for me while I worked. They said I have a talent for capturing a likeness.</li>
 
-      <li><img src="images/question_37" alt="Drawing of a seagull in flight" style="float: right; margin: 10px; max-width: 200px;">Finally, we reached San Francisco. Mother and I said farewell to Mr. and Mrs. Slate. Father embraced Mother and me and remarked that he could hardly believe I was the quiet little girl he knew in England. Mother told him that I had become an accomplished young lady: a fine nurse, a gifted artist, and, according to our captain, a born sailor. I could not keep from blushing. San Francisco is a curious town, but I am happy to be with Father again! He knows so many interesting people—shopkeepers and miners from practically every country on Earth. Mother and I have much work to do before we are settled, but I will write again soon, Alice. Mother and Father say "hello" to you and your family. We're on opposite sides of the world now, but I do hope we write regularly.</li>
+      <li><img src="images/a-born-sailor.png" alt="Image failed to load. Please try again later." style="float: right; margin: 10px; max-width: 200px;">Finally, we reached San Francisco. Mother and I said farewell to Mr. and Mrs. Slate. Father embraced Mother and me and remarked that he could hardly believe I was the quiet little girl he knew in England. Mother told him that I had become an accomplished young lady: a fine nurse, a gifted artist, and, according to our captain, a born sailor. I could not keep from blushing. San Francisco is a curious town, but I am happy to be with Father again! He knows so many interesting people—shopkeepers and miners from practically every country on Earth. Mother and I have much work to do before we are settled, but I will write again soon, Alice. Mother and Father say "hello" to you and your family. We're on opposite sides of the world now, but I do hope we write regularly.</li>
     </ol>
     <div style="margin-top: 20px;">Yours,</div>
     <div style="margin-top: 10px; font-style: italic;">Annie Shepard</div>
@@ -130,7 +130,7 @@ const readingPassages = {
     <p>Sign up and receive your reading log at the Circulation Desk. Record books you read over the summer and have a parent or guardian sign next to each title. The top five readers will receive prizes such as gift cards, magazine subscriptions, and movie tickets.</p>
 
     <h4>Cast Your Vote</h4>
-    <p><img src="images/question_26" alt="Cartoon character reading" style="float: right; margin: 10px; max-width: 150px;">We have enjoyed receiving so many positive comments about last year's Best Book of the Summer Contest. After assessing the level of interest, we have decided to make the contest an annual event.</p>
+    <p>We have enjoyed receiving so many positive comments about last year's Best Book of the Summer Contest. After assessing the level of interest, we have decided to make the contest an annual event.</p>
 
     <p>Now is the time to cast a vote for your favorite book! You will find the nominated novels on the display shelf in the Teen Zone corner. Pick a few of the books for your summer reading, and then cast a vote for one of the titles. At the end of the summer, the votes will be counted, and the winner will be discussed at the first Teen Book Club meeting in September.</p>
 
@@ -253,8 +253,7 @@ const sampleQuestions = [
     type: 'multiple-select',
     text: `In this excerpt from paragraph 5, which three words are examples of onomatopoeia?
 
-    <div style="border: 1px solid #000; padding: 15px; margin: 20px 0; background-color: #f5f5f5;">
-      Vocalizations include a <span style="color: blue;">chitter</span>, which <span style="color: blue;">sounds</span> much like the <span style="color: blue;">chattering</span> of <span style="color: blue;">teeth</span>; a <span style="color: blue;">bark</span>, which is similar to that of a dog . . .
+    <div class="passage-innerbox">Vocalizations include a chitter, which sounds much like the chattering of teeth; a bark, which is similar to that of a dog . . .
     </div>`,
     options: [
       'Vocalizations',
@@ -440,7 +439,7 @@ Skilled is to expert as —`,
     type: 'multiple-choice',
     text: `Read this sentence from paragraph 6.
 
-    <div style="border: 1px solid #000; padding: 15px; margin: 20px 0; background-color: #f5f5f5;">
+    <div class="passage-innerbox">
       Wikipedia is making an effort to improve its accuracy by hiring an army of individuals to hunt down faulty information on its site.
     </div>
 
@@ -462,7 +461,7 @@ Skilled is to expert as —`,
     type: 'multiple-choice',
     text: `Read this part of an outline based on the article.
 
-    <div style="border: 1px solid #000; padding: 15px; margin: 20px 0; background-color: #f5f5f5;">
+    <div class="passage-innerbox">
       <strong>I. The first encyclopedias</strong><br>
       &nbsp;&nbsp;&nbsp;&nbsp;A. read from beginning to end<br>
       &nbsp;&nbsp;&nbsp;&nbsp;B. prepared by a single author<br>
@@ -549,8 +548,8 @@ Skilled is to expert as —`,
     type: 'multiple-choice',
     text: `Read this dictionary entry.
 
-    <div style="border: 1px solid #000; padding: 15px; margin: 20px 0; background-color: #f5f5f5;">
-      <strong>cor·rode</strong> (kə-rōd´) v. <strong>1.</strong> Destroy or damage metal, stone, or other materials slowly by chemical action. <strong>2.</strong> Be destroyed or damaged in this way. <strong>3.</strong> Destroy or weaken gradually.<br>
+    <div class="passage-innerbox">
+      <b>cor·rode</b> (kə-rōd´) v. <b>1.</b> Destroy or damage metal, stone, or other materials slowly by chemical action. <b>2.</b> Be destroyed or damaged in this way. <b>3.</b> Destroy or weaken gradually.<br>
       [Latin <i>cor-</i> (expressing intensive force) + <i>rodere</i> 'gnaw.']
     </div>
 
@@ -634,30 +633,10 @@ Skilled is to expert as —`,
     id: 24,
     passageId: 'a_born_sailor',
     type: 'drag-drop',
-    text: `Which two characters influenced Annie's comfort during the voyage?
-
-    <div style="display: flex; justify-content: space-around; margin: 20px 0;">
-      <div style="text-align: center;">
-        <strong>Most Influence</strong>
-        <div style="border: 2px solid #ccc; width: 150px; height: 60px; margin: 10px auto;" id="most-influence"></div>
-      </div>
-      <div style="text-align: center;">
-        <strong>Least Influence</strong>
-        <div style="border: 2px solid #ccc; width: 150px; height: 60px; margin: 10px auto;" id="least-influence"></div>
-      </div>
-    </div>
-
-    <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px;">
-      <div style="border: 1px solid #999; padding: 10px 20px; background: #f0f0f0;">The cook</div>
-      <div style="border: 1px solid #999; padding: 10px 20px; background: #f0f0f0;">Mrs. Slate</div>
-      <div style="border: 1px solid #999; padding: 10px 20px; background: #f0f0f0;">Mother</div>
-      <div style="border: 1px solid #999; padding: 10px 20px; background: #f0f0f0;">Alice</div>
-      <div style="border: 1px solid #999; padding: 10px 20px; background: #f0f0f0;">The captain</div>
-    </div>`,
-    correctAnswer: {
-      'most-influence': 'Mrs. Slate',
-      'least-influence': 'Alice'
-    },
+    text: `Which two characters influenced Annie's comfort during the voyage?`,
+    dropZones: ['Most Influence', 'Least Influence'],
+    options: ['The cook', 'Mrs. Slate', 'Mother', 'Alice', 'The captain'],
+    correctAnswer: [1, 3],
     explanation: 'Mrs. Slate helped Annie throughout the voyage, while Alice was only mentioned in the letter.'
   },
 
@@ -861,7 +840,7 @@ Skilled is to expert as —`,
     type: 'multiple-choice',
     text: `Read this sentence from paragraph 7.
 
-    <div style="border: 1px solid #000; padding: 15px; margin: 20px 0; background-color: #f5f5f5;">
+    <div class="passage-innerbox">
       Then, suddenly, a blurry patch of dense black crosses the trail some distance ahead of me.
     </div>
 
@@ -899,7 +878,7 @@ Skilled is to expert as —`,
     type: 'multiple-choice',
     text: `Read this sentence from paragraph 11.
 
-    <div style="border: 1px solid #000; padding: 15px; margin: 20px 0; background-color: #f5f5f5;">
+    <div class="passage-innerbox">
       The sun is just starting to burn the dew from the grass, and each green blade, coated with tiny, reflective droplets, is a glittering emerald.
     </div>
 
