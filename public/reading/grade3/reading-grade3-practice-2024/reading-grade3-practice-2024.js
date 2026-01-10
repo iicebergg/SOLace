@@ -6,6 +6,7 @@ const readingPassages = {
     title: 'Speedy and Spotty',
     content: `
      <ol class="paragraph-numbers">
+     <img src="images/cheetah.png" alt="Image failed to load. Please try again later." style="width: 250px; margin: 10px;">
       <li>Imagine you are in Africa. Suddenly, a group of spots streaks past you. What was it? It may have been a cheetah, the fastest animal on land. It can run up to 70 miles per hour, which is faster than most cars travel on the highway!</li>
 
       <p><b>A Fast Cat</b></p>
@@ -63,6 +64,8 @@ const readingPassages = {
 
       <li>Early in American history, each state had its own form of money. The bald eagle first appeared as a symbol of America on a Massachusetts copper coin in 1776. Later, as the government began using one form of money, the eagle was used on coins and paper bills. Today, the eagle is printed on the back of the one dollar bill.</li>
 
+      <img src="images/bald-eagle.png" alt="Image failed to load. Please try again later." style="width: 250px; margin: 10px;">
+
       <li>The bald eagle is a central part of the Great Seal designed in 1782 by Charles Thomson. The Great Seal shows a bald eagle spreading its wings and holding a banner in its beak. The words on the banner mean “Out of many, one,” to remind people that many states joined to form one country. The eagle carries an olive branch in one claw and arrows in the other claw. The olive branch means peace, and the arrows show that the United States is ready to defend itself. The Great Seal is printed on important government documents 2,000 to 3,000 times a year. It can be seen on flags, uniforms, and buildings.</li>
 
       <li>The American bald eagle is used as a symbol in a variety of ways. It appears on the President’s flag and military symbols. Today Americans think of their country when they see a bald eagle. It reminds them that their country is strong and free.</li>
@@ -74,7 +77,7 @@ const readingPassages = {
     title: 'Sea Otters',
     content: `
     <ol class="paragraph-numbers">
-    <img src="images/otter.png" alt="Sea otters" style="float: right; height: 250px; margin-left: 10px;">
+    <img src="images/otter.png" alt="Image failed to load. Please try again later." style="width: 250px; margin-left: 10px;">
       <li>The sea otter is an animal that spends most of its life in the water. This animal eats, sleeps, and hunts in the ocean. In fact, it spends much of the day floating on its back or swimming in the shallow parts of the ocean.</li>
 
       <p><b>For for the Sea</b></p>
@@ -405,7 +408,7 @@ const sampleQuestions = [
 
   {
     id: '17',
-    text: 'Read this sentence from paragraph 5. <div class="question-innerbox">Whole groups of sea otters may be <u>seen</u> floating together.</div>Which word is a homophone for <u>seen</u>?',
+    text: 'Read this sentence from paragraph 5. <div class="passage-innerbox">Whole groups of sea otters may be <u>seen</u> floating together.</div>Which word is a homophone for <u>seen</u>?',
     type: 'multiple-choice',
     passageId: 'sea_otters',
     options: [
