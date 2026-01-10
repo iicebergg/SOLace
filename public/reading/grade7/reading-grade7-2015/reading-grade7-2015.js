@@ -79,7 +79,7 @@ const readingPassages = {
     <ol class="paragraph-numbers">
       <li>One day between late summer and first snow,</li>
       <li>I harshly through an oak and pine did blow.</li>
-      <li>Oak branches spoke in loud, unhappy heaves,<li>
+      <li>Oak branches spoke in loud, unhappy heaves,</li>
       <li>Crackling a scolding through the falling leaves.</li>
 
       <li>"Dreary old pine! I tire of evergreen,</li>
@@ -122,7 +122,7 @@ const readingPassages = {
 
       <li>Van Gogh's paintings are amazing representations of his view of the world. The colors leap off the canvas, not only because of their boldness but also because of the brush strokes. Van Gogh avoided light, feathery strokes, which would portray typical subjects. Instead, he used his brush and oils to make layers that built the painting until it was almost three-dimensional. This quality makes people want to reach out and touch the painting to feel the thick, coarse brush strokes. In fact, van Gogh's paintings are usually barricaded from the public to avoid this situation; the natural oil on human skin would damage the paintings.</li>
 
-      <li>Perhaps one of the most memorable examples of van Gogh's use of color and brush style is his painting <i>The Starry Night</i>. The sky swirls across the canvas, while the stars glow with unearthly brightness. Each distinct brush stroke creates the illusion of movement and radiance. Under the sky rests a village painted with smaller strokes and finer detail, giving the impression of peace and prosperity. A large tree in the foreground suggests that the view is enjoyed from the top of a hill, which offers a glimpse of the awesome majesty of the night sky. <i>The Starry Night</i> displays the genius of van Gogh's ability to create a powerful image with simple subjects.<br><img src="images/van-gogh.png" alt="The Starry Night painting" style="width:120px;margin-left:10px;"/></li>
+      <li>Perhaps one of the most memorable examples of van Gogh's use of color and brush style is his painting <i>The Starry Night</i>. The sky swirls across the canvas, while the stars glow with unearthly brightness. Each distinct brush stroke creates the illusion of movement and radiance. Under the sky rests a village painted with smaller strokes and finer detail, giving the impression of peace and prosperity. A large tree in the foreground suggests that the view is enjoyed from the top of a hill, which offers a glimpse of the awesome majesty of the night sky. <i>The Starry Night</i> displays the genius of van Gogh's ability to create a powerful image with simple subjects.<br><img src="images/van-gogh.png" alt="The Starry Night painting" style="width:200px;margin-left:10px;"/></li>
 
       <li>Van Gogh spent only the last ten years of his life painting. He is believed to have sold only one of the 900 paintings he created during those years. Yet van Gogh today is considered one of the greatest artists of all time. His influence is evident; many painters mimic his style and use of color and texture. His artwork can be found in museums all over the world and is valued in the millions of dollars, a testament to Vincent van Gogh's talent.</li>
 </ol>
@@ -142,32 +142,31 @@ const readingPassages = {
       <h4>Which bag do you need?</h4>
       <table>
         <tr>
-          <td><img src="images/backpack.png" alt="Backpack"/><br>Backpack</td>
+          <td><img src="images/backpack.png" alt="Backpack" style="width:75px;"/><br><b>Backpack ($20)</b></td>
           <td>
             • Made with durable materials and zippers<br>
             • Comfortable, padded shoulder straps<br>
             • Two large compartments for books and notebooks<br>
             • Small zippered pouch for pens, pencils, calculators and more
           </td>
-          <td>$20</td>
+          <br>
+          <br>
         </tr>
         <tr>
-          <td><img src="images/duffle-bag.png" alt="Duffle bag"/><br>Duffle bag</td>
+          <td><img src="images/duffle-bag.png" alt="Duffle bag" style="width:75px;"/><br><b>Duffle bag ($15)</b></td>
           <td>
             • Perfect for holding gym clothes, shoes, and towels<br>
             • Large enough to hold up to three basketballs<br>
             • Comes with removable shoulder straps and short handles
           </td>
-          <td>$15</td>
         </tr>
         <tr>
-          <td><img src="images/totebag.png" alt="Tote bag"/><br>Tote bag</td>
+          <td><img src="images/tote-bag.png" alt="Tote bag" style="width:75px;"/><br><b>Tote bag ($10)</b></td>
           <td>
             • Ideal for light loads<br>
             • Use it to carry a sweater and snacks for a field trip<br>
             • Take it to the library to carry books and research materials
           </td>
-          <td>$10</td>
         </tr>
       </table>
 
