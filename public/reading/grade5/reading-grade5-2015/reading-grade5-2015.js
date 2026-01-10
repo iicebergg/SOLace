@@ -856,11 +856,11 @@ const sampleQuestions = [
 
   {
     id: '27',
-    text: 'What does the illustration help the reader understand?',
+    text: 'What would an illustration of the outside of the space hotel best help the reader understand?',
     type: 'multiple-choice',
     passageId: '5',
     options: [
-      'The outside appearanceo 0f a space hotel',
+      'The appearance of a space hotel',
       'The size of the living area provided in a space hotel',
       'The equipment needed for a spacecraft to dock with a space hotel',
       'The distance to the space hotel',
