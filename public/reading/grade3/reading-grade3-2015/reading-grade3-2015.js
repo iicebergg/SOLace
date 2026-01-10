@@ -187,7 +187,7 @@ const readingPassages = {
     title: 'The Ostrich: One Odd Bird',
     content: `
     <ol class="paragraph-numbers">
-    <img src="images/ostrich.png" alt="Ostrich" style="margin: 10px;">
+    <img src="images/ostrich.png" alt="Ostrich" style="height: 250px; margin: 10px;">
       <li>Ostriches hold the record as the largest birds in the world. A male can grow to nine feet tall. That is about three feet taller than most men. How do these giants spend their days?</li>
 
       <p><b>Life in a Bird Herd</b></p>
