@@ -8,7 +8,7 @@ const readingPassages = {
      <ol class="paragraph-numbers">
       <li>Clocks are everywhere in today’s world. People wear wristwatches and carry mobile phones that show them the exact time of day. Without these timekeepers, our modern world would be chaotic, causing people to show up late for movies, meetings, and appointments. People, however, have not always lived lives that are regimented by hours and minutes. In fact, humans lived for tens of thousands of years without needing any device to organize time. The rhythm of their lives was basically determined by the rising and setting of the sun. When the sun was in the sky, they could work; when the sun had set, they rested. For the past 5,000 years, however, humans have spent a great deal of energy working to organize time more accurately and in smaller increments. As humans have created more accurate clocks, our lives have become increasingly separated from the traditional rhythms of nature and instead are more dependent on these devices.</li>
 
-      <img src="images/timekeeping.png" alt="Image failed to load. Please try again later." style="float: right; height: 250px; margin-left: 10px;">
+      <img src="images/timekeeping.png" alt="Image failed to load. Please try again later." style="height: 250px; margin: 10px;">
 
       <li>The first timekeepers used the natural positions of the sun to divide the day into parts. Around 3500 B.C. the Egyptians built obelisks (ŏb′ə-lĭsks), tall, slender, four- sided monuments that came to a point on the top. In the morning, as the sun rose in the east, an obelisk would cast a long shadow on the ground. As the day passed, the shadow grew shorter until it was the shortest shadow at noon when the sun was exactly overhead. The shadow cast by the obelisk would then continue to grow again as the sun repositioned westward and eventually set.</li>
 
@@ -18,7 +18,7 @@ const readingPassages = {
 
       <li>Although sundials allowed people to measure time with a fair amount of accuracy when the sun was shining, these instruments did not give people the ability to measure time at night or on cloudy days. Water clocks, the first timekeepers people used that did not depend upon the sun, appeared in Egypt as early as 2000 B.C. These were used by the Egyptians and then later by the Greeks, who called them <i>clepsydras</i> (klĕp′sĭ- drəs), or “water thieves.”</li>
 
-      <img src="images/timekeeping2.png" alt="Image failed to load. Please try again later." style="float: right; height: 250px; margin-left: 10px;">
+      <img src="images/timekeeping2.png" alt="Image failed to load. Please try again later." style="width: 250px; margin: 10px;">
 
       <li>Clepsydras were simple stone containers that came in different types, two of which were outflow clocks and inflow clocks. Outflow clocks had sloping sides and a small hole in the bottom. Water would drip through the hole in the bottom of the container at a constant rate. As the water drained out, markings on the side of the clepsydra would be revealed, telling the observer how much time had passed. Inflow water clocks worked by dripping water into a container that was marked with time increments on the inside. As water filled the container and reached the marks on the inside of it, the observer could tell how much time had elapsed.</li>
 
@@ -107,7 +107,7 @@ const readingPassages = {
 
       <li>On D Street there was no need for alarm clocks: the drays,1 ever punctual, were an army storming the gates of sleep. The wooden wagons were heavy and low- riding with loud rattling wheels, their broad planks too battered and begrimed to recall distant origins as trees. Each dray was pulled by horses— two, four, or sometimes six per wagon— pounding down nearby Third Street. Windows rattled and floors shook; the sound was a giant hand shaking Lydia Kilkenny’s sleeping shoulders. Each morning she did not awaken to the sound, but inside it. In winter the drays came when the sky was still dark, their pounding hooves sharp reports against the frozen cobblestones. In summer, perhaps because the sky was already pale with light, the sound of the horses seemed kinder.</li>
 
-      <img src="images/southie.png" alt="Image failed to load. Please try again later." style="float: right; height: 250px; margin-left: 10px;">
+      <img src="images/southie.png" alt="Image failed to load. Please try again later." style="width: 250px; margin: 10px;">
 
       <li>She knew the clattering wagons were bound for Boston proper, but the vague tangle of streets across the Broadway bridge surfaced in her mind with the sound of the horses and resubmerged with its diminishment. As the flow of drays subsided—-the wagons no longer traveling two by two but single file—pounding hooves gave way to the creak of floorboards and the muffled voices of neighbors. Factory whistles blew. Church bells rang. The vegetable man made his way down D Street shouting, “Fresh tomatoes,” even if there were no tomatoes, because those words distinguished him from the other vegetable men who plied their carts through Southie.</li>
 
@@ -162,7 +162,7 @@ const readingPassages = {
 
       <li>Inside the rumpled bag were two bones, each with slots drilled into them, one in the front and one in the rear. “I used the sander to flatten the sides that go against your boots,” Mr. Ranta said, walking up to Greta. “You’ll use these straps of leather and the buckles to hold the skates on.”</li>
 
-      <img src="images/skates.png" alt="Image failed to load. Please try again later." style="float: right; height: 250px; margin-left: 10px;">
+      <img src="images/skates.png" alt="Image failed to load. Please try again later." style="width: 250px; margin: 10px;">
 
       <li>After listening intently to details, Greta raced to the lake and put on the skates the way Mr. Ranta had explained. As soon as she stepped onto the ice, her feet flew out from under her. She stood up again and one of her ankles buckled as a bone skate squeezed its way out from under her boot. Once she could actually stand up and move on the ice, she realized that bone skating bore little resemblance to the smooth skating technique she knew. She would have to adopt a slip and slide movement to master skating on bones. Greta hadn’t felt this shaky on the ice since she was five.</li>
 
@@ -215,12 +215,14 @@ const readingPassages = {
         <li>the sidewalks, will stand</li>
         <li>shorn and nearly bare</li>
         <li>and shiver in their cloaks of dry leaves</li>
+        <li>as if startled from a reverie</li>
         <li>by the din</li>
         <li>of trucks rumbling past.</li><br>
 
         <li>Once, in a dark alley on a brittle day</li>
         <li>in the infancy of the new year,</li>
         <li>I found a patch of grass growing</li>
+        <li>in the hot breath of a laundromat's clothes dryer.</li>
         <li>I kneeled on the ground</li>
         <li>and pulled the gloves from my hands.</li>
         <li>There, amid the lush green plot, was a tiny tree.</li>
