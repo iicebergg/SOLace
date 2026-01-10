@@ -10,7 +10,7 @@ const readingPassages = {
 
       <li>Ospreys, also known as fish hawks or fishing eagles, have short, hooked beaks and wings that taper to rounded tips. Their coloring ranges from white to dark brown. The white feathers on ospreys’ heads look like little caps, and their wings include a mixture of white and dark brown feathers. Their chests, bellies, and chins are white, and their tails are marked with several white bands, or stripes. Ospreys in flight are easy to identify, thanks to their distinctive plumage, or feathers. Not surprisingly, these birds are related to eagles, hawks, and even vultures. They can live a long time; the average life span in the wild is 18 years. The oldest known osprey lived to be 25 years old.</li>
 
-      <img src="images/osprey.png" alt="Image failed to load. Please try again later." style="float: right; height: 120px; margin-left: 10px;">
+      <img src="images/osprey.png" alt="Image failed to load. Please try again later." style="width: 150px; margin: 10px;">
 
       <li>Ospreys fly fast and dive at amazing speeds. Soaring one hundred feet above the water, their sharp eyes watch the surface carefully for any tell- tale signs of fish. Ospreys hover over the water and wait for some indication of activity. Once prey is spotted, the birds fold their wings to their sides and begin a steep dive, plunging nearly straight down at blazing speeds. Usually, ospreys hit the water feet first, plunging completely underwater to catch their food. Water sprays in all directions as the birds reach underwater to grab a fish. They have been seen diving as much as three feet underwater to capture their prey! Once a fish has been snagged in its sharp claws, an osprey soars back up into the sky, pausing in flight just long enough to shake the water from its feathers before flying away to enjoy its meal. To help ospreys hold on to their catch, each of their feet has a unique reversible front toe.</li>
 
@@ -77,7 +77,7 @@ const readingPassages = {
   'pioneer': {
     title: 'Pioneer Architect',
     content: `
-    <img src="images/keichline.png" alt="Image failed to load. Please try again later." style="float: right; height: 120px; margin-left: 10px;">
+    <img src="images/anna.png" alt="Image failed to load. Please try again later." style="width: 150px; margin: 10px;">
     <ol class="paragraph-numbers">
       <li>Anna Wagner Keichline (Keek-leen), the pride of Bellefonte, Pennsylvania, was the first licensed female architect in the state. Her career included designing many buildings, some of which are still standing in Pennsylvania, Ohio, and Washington, D.C., and her inventions and designs helped revolutionize architecture.</li>
 
@@ -87,7 +87,7 @@ const readingPassages = {
 
       <li>Keichline believed education was important. After graduating from high school in 1906, she began studying mechanical engineering at Pennsylvania State College, even though she was one of only a few women in the classes. However, her focus quickly shifted from engineering to architecture, and after her first year, Keichline transferred to Cornell University. It took courage to enter a mostly male profession like architecture, but Keichline was ready for the challenge.</li>
 
-      <img src="images/k_brick.png" alt="Image failed to load. Please try again later." style="float: right; height: 120px; margin-left: 10px;">
+      <img src="images/k-brick.png" alt="Image failed to load. Please try again later." style="width: 150px; margin: 10px;">
 
       <li>The most valuable and important of Keichline's inventions was the “K Brick,” patented in 1927. The design of the K Brick was unique in that it was a hollow brick that was lighter and less expensive than other building materials that were commonly used for interior walls. This design allowed for the brick to be filled with insulation or soundproof material. The K Brick was also believed to be more efficient to manufacture, requiring less clay and taking less time to fire and harden. Even shipping and labor were thought to be easier because of the K Brick’s lightweight design. In 1931 the American Ceramic Society recognized the contribution that the K Brick represented by honoring Keichline for her design.</li>
 

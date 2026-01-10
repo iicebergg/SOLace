@@ -813,7 +813,7 @@ const sampleQuestions = [
   // Question 37 - School Spirit Bags
   {
     passageId: 'school_spirit_bags',
-    text: `Read this chart a student made about the bags.<br><br><img src="images/question_37.png" alt="Chart showing SCHOOL SPIRIT TO GO Bags features"/><br><br>Which of these shows that the student misunderstood information about the bags?`,
+    text: `Read this chart a student made about the bags.<br><br><img src="images/question_37.png" alt="Image failed to load. Please try again later." class="question-image"/><br><br>Which of these shows that the student misunderstood information about the bags?`,
     type: 'multiple-choice',
     options: [
       'Come in different sizes and shapes',
