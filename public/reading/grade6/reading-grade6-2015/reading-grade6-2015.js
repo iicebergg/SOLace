@@ -311,7 +311,7 @@ pencil, and enter your name in a drawing to win a T-shirt.</p>
     `
   },
 
-   '4': {
+   '5': {
     title: 'A Canine Reading Buddy',
     content: `
     <ol class="paragraph-numbers">
@@ -370,7 +370,7 @@ certainly be a reader's best friend too!</li>
     `
   },
 
-     '5': {
+     '6': {
     title: 'Anthony Races Time',
     content: `
     <ol class="paragraph-numbers">
@@ -574,7 +574,7 @@ const sampleQuestions = [
     passageId: '1', 
     options: [
       'She agrees to take the advice of her father.',
-      'She conducts herself respectfully during the meeting',
+      'She conducts herself respectfully during the meeting.',
       'Mrs. Thompson thinks Julia made a mistake.', 
       'Mr. Malone convinces Mrs. Thompson that Julia should attend.'
     ],
