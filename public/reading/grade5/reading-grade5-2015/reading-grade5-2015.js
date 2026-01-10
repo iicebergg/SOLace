@@ -115,7 +115,7 @@ fact they are made for floating.</li>
       <li>Other creatures such
 as lobsters and crabs
 live near the seabed
-as well, but I ivi ng so
+as well, but living so
 close to them turns
 out to be dangerous
 for the blobfish.
@@ -124,6 +124,8 @@ have scooped up many
 blobfish in nets along
 with the sea creatures
 they are seeking.</li>
+
+<img src="images/blobfish.png" alt="Image failed to load. Please try again later." style="width: 250px; margin: 10px;">
 
       <li>Wildlife supporters may have an important reason to be concerned
 about the blobfish: it is in danger of becoming extinct. The more
@@ -146,6 +148,7 @@ worth protecting.</li>
   '3': {
     title: 'Time Flies',
     content: `
+    <ol class="paragraph-numbers">
       <li>"Bunk beds--cool!" Mona said, turning to Rachel when they arrived.
 "It looks like we are sharing a room!" Then she raced to check out
 the rest of the cabin.</li>
@@ -236,7 +239,7 @@ family and anxious for the other campers to arrive.</li>
       <p>Restaurants are olten famous for serving breakfast foods or
 desserts with yummy syrups on top. You don't have to visit a
 restaurant to enjoy these tasty toppings! You can make fruit
-syrups yourself</p>
+syrups yourself.</p>
       
       <h2>Delicious Drizzle</h2>
         <p><b><u>Gather Your Supplies</u></b></p>

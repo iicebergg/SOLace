@@ -6,7 +6,7 @@ const readingPassages = {
     title: 'Monticello: A Mountaintop Treasure',
     content: `
      <ol class="paragraph-numbers">
-     <img src="images/monticello.png" alt="Monticello" style="float: right; height: 250px; margin-left: 10px;">
+     <img src="images/monticello.png" alt="Image failed to load. Please try again later." style="width: 250px; margin: 10px;">
       <li>Thomas Jefferson was a man of many achievements. He served as governor of Virginia, representative of America's government to France, vice president to President John Adams, and the third President of the United States. One of his greatest achievements, however, was designing and building his farm and plantation home, Monticello, located on a mountaintop near Charlottesville, Virginia.</li>
 
       <li>Although Thomas Jefferson was an accomplished man, many people do not know that he was a talented gardener who devoted much of his time to caring for the land around his plantation home. It was here that Jefferson kept a diary to record his advancements in growing flowers, plants, fruits, and vegetables. His daughters and granddaughters even took part in this special hobby that was so dear to him. Today, the area is visited by thousands of people each year, but to truly appreciate the beauty of the stunning gardens and thriving trees, one must go back in history to learn about how this land gained the color and richness it boasts today.</li>
@@ -26,7 +26,7 @@ const readingPassages = {
     title: 'Grandma Etta\'s Wild Rice Soup',
     content: `
     <ol class="paragraph-numbers">
-    <img src="images/etta.png" alt="Grandma Etta" style="float: right; height: 120px; margin-left: 10px;">
+    <img src="images/etta.png" alt="Image failed to load. Please try again later." style="width: 250px; margin: 10px;">
       <li>In 1888, the year that Leroy turned 10, he was told that he would be spendingthe summer with his Grandma Etta on her farm in central Texas. Before he leftfor his grandmother’s house, his mother had a few words to say to him: “Now Leroy, you are not going to stay with Grandma just to let her cook for you all summer. You need to help her out too.”</li>
 
       <li>Leroy had to admit that the first week he was at Grandma Etta’s, he did just what his mother feared. He defended his actions by telling himself that Grandma seemed to love cooking for him. In fact, she did not seem to mind at all. When his parents visited, however, he heard his mother’s voice from the kitchen.</li>
@@ -80,7 +80,7 @@ const readingPassages = {
 
       <li>According to scientists, there are two possible explanations for why Unicorn lacks a second horn. One possibility is that, early in life, the deer could have suffered an injury that prevented the second horn from growing. The second explanation is that the horn is a mutation. Mutations happen when there are changes in an animal’s genes. Genes are the units that give all living creatures their physical traits, such as eye color or height. Sometimes, though, a gene is altered, and that may cause a mutation. The result can be an unusual trait, like a deer having a single horn instead of two.</li>
 
-      <img src="images/roe_deer.png" alt="Roe Deer" style="float: right; height: 250px; margin-left: 10px;">
+      <img src="images/roe-deer.png" alt="Image failed to load. Please try again later." style="width: 250px; margin: 10px;">
 
       <li>No matter the cause of his unique appearance, Unicorn has made many scientists rethink how stories of unicorns began. Throughout history, such stories may have originated from sightings of real-—but rare—-deer or other animals with mutations much like Unicorn’s. One real- life mammal that possibly contributed to the myth of the unicorn is the narwhal. This pale- colored whale that makes its home in the frigid Arctic Ocean is identified by the spike extending from its head. However, this spike is not a horn. The narwhal has two teeth, and the larger of the two grows into a long spiral tusk that may reach up to nine feet. Narwhal tusks are depicted on ancient wall hangings as the horns of unicorns.</li>
 
@@ -92,7 +92,7 @@ const readingPassages = {
   },
 
      '72_days': {
-    title: 'The Search',
+    title: 'Around the World in 72 Days',
     content: `
       <ol class="Around the World in 72 Days">
         <li>If you had read the paper</li>
@@ -171,6 +171,8 @@ const readingPassages = {
 
       <li>Then, he remembered the photographs he had brought. He knew they would help answer Brian’s questions. He began distributing his photographs showing the landscape and some of the animals. As he passed one to a girl seated behind Brian, she smiled at him and raised her hand.</li>
 
+      <li>Ms. Blum said, “Yes, Julie?”</li>
+
       <li>“There are many living things in the desert,” she said. “I know, because I was born in a desert too.”</li>
 
       <li>All the students turned to look at her. Rahim looked at her in surprise.</li>
@@ -196,7 +198,7 @@ const readingPassages = {
     title: 'Buddies Make a Difference',
     content: `
     <ol class="paragraph-numbers">
-      <li>As Mrs. Hill walked from desk to desk in the fifth- grade classroom, she returned her students’ journals—-except for one.</li>
+      <li>As Mrs. Hill walked from desk to desk in the fifth-grade classroom, she returned her students’ journals—-except for one.</li>
 
       <li>“I finished reading about your new kindergarten buddies,” Mrs. Hill began. “My students have always enjoyed participating in the buddy program with the new kindergarten students. Based on what I read in all your journals,” said Mrs. Hill as she stopped at Joe’s desk, “I can tell that you are going to help make your buddies feel very welcome at Pearl Elementary.”</li>
 
@@ -274,22 +276,22 @@ const readingPassages = {
       <p>Are you curious about how panning works? Read the instructions on panning before your visit. You’ll be a panning expert when you arrive at Shiny Hills Gemstone Mine, and you may be able to help your fellow miners at the panning station.</p>
 
       <p>A gold pan bowl with a drain at the side and bottom is provided for each visitor at the panning station.</p>
-      <img src="images/gold_pan.png" alt="Image failed to load. Please try again later." style="float: right; height: 120px; margin-left: 10px;">
+      <img src="images/mine0.png" alt="Image failed to load. Please try again later." style="width: 250px; margin: 10px;">
 
       <p><b>Panning Instructions</b></p>
       <p>1. Scoop about 4 shovelfuls of dirt from the bucket into the gold pan.</p>
-      <img src="images/step1.png" alt="Image failed to load. Please try again later." style="float: right; height: 120px; margin-left: 10px;">
+      <img src="images/mine1.png" alt="Image failed to load. Please try again later." style="width: 250px; margin: 10px;">
 
       <p>2. Hold the gold pan just under the surface of the cool running water at the panning station so you can see the rocks and dirt. Begin to slowly swirl the pan around in a circular motion. Holding the pan too low in the water or swirling too quickly will make everything fall out of the pan.</p>
-      <img src="images/step2.png" alt="Image failed to load. Please try again later." style="float: right; height: 120px; margin-left: 10px;">
+      <img src="images/mine2.png" alt="Image failed to load. Please try again later." style="width: 250px; margin: 10px;">
 
       <p>3. As you swirl the pan, the lighter materials, such as dirt, will float away, and the larger, heavier items, like gold or gems, will sink to the bottom.</p>
 
       <p>4. Pull the pan out of the water and, while holding it at a slight angle toward the drain side, begin swirling it around in the air. The water will drain from the pan. Repeat this step until nearly all the material from the pan is gone.</p>
-      <img src="images/step4.png" alt="Image failed to load. Please try again later." style="float: right; height: 120px; margin-left: 10px;">
+      <img src="images/mine4.png" alt="Image failed to load. Please try again later." style="width: 250px; margin: 10px;">
 
       <p>5. Search the material that remains in the bottom of the pan to separate any gold or gems from dirt and sand. Don’t forget to ask a staff member if you need help identifying the materials in your pan.</p>
-      <img src="images/step5.png" alt="Image failed to load. Please try again later." style="float: right; height: 120px; margin-left: 10px;">
+      <img src="images/mine5.png" alt="Image failed to load. Please try again later." style="width: 250px; margin: 10px;">
 
       <p>6. Continue the process with the remaining material in your bucket. If you don’t find anything right away, don’t worry. Panning takes patience, practice, and time!</p> 
 
@@ -315,8 +317,8 @@ const readingPassages = {
 
       <center><p><b>Shiny Hills Gemstone Mine</b><br>
       10999 Highway 88 South<br>
-      Shiny Hills Town, VA 20151<br><br>
-      1-800-290-5992<br><br>
+      Shiny Hills Town, VA 20151<br>
+      1-800-290-5992<br>
       service@shiny#hills_mine.com</b></p></center>
 </ol>
     `
@@ -606,7 +608,7 @@ const sampleQuestions = [
     },
     {
     id: '17',
-    text: 'Read this list. <img > According to "Buddies Make a Difference," which activity belongs on the list?',
+    text: 'Read this list. <br><img src="images/17.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> According to "Buddies Make a Difference," which activity belongs on the list?',
     type: 'multiple-choice',
     passageId: ['desert', 'buddies'],
     options: [
