@@ -234,6 +234,8 @@ One of the great masters
 of manga is
 Osamu Tezuka.</li>
 
+<img src="images/tezuka.png" alt="Image failed to load. Please try again later." style="width: 250px; margin: 10px;">
+
       <li>Tezuka was born in 1928, the oldest of three children. Tezuka's
 father collected manga and animated films before marrying and
 becoming an engineer. Manga had not yet achieved widespread
@@ -399,7 +401,7 @@ the street lamps reflected off the snow. Everything around us was
 still and quiet.</li>
 
 <hr>
-¹mah-jong - a Chinese game played with rectangular tiles bearing various designs
+¹mah-jong - a Chinese game played with rectangular tiles bearing various designs <br><br>
 
 Copyright © 2005 by Judy Bates from <u>Midnight at the Dragon Café: A Novel</u>. Reprinted by permission of Counterpoint.
 
@@ -617,6 +619,7 @@ audience to the piece that so chagrined Saint-Saëns.</li>
     title: 'Computers in Contact Lenses',
     content: `
     <ol class="paragraph-numbers">
+    <img src="images/contacts.png" alt="Image failed to load. Please try again later." style="width: 250px; margin: 10px;">
       <li>Imagine peering at a view of mountaintops and wondering about the
 name of each peak. Suddenly, above each pinnacle, a name appears
 superimposed on the sky. The words are not written in smoke by
@@ -707,7 +710,7 @@ const sampleQuestions = [
 
   {
     id: '3',
-    text: 'Read this sentence from paragraph 4. <div class="passage-innerbox">The passage says "As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table.</div> The sentence contains an example of--',
+    text: 'Read this sentence from paragraph 4. <div class="passage-innerbox">He swung wide around an anonymous heap of metal being swallowed by a greedy mound of blackberry brambles and came to an abrupt halt.</div> The sentence contains an example of--',
     type: 'multiple-choice',
     passageId: 'all_this_junk',
     options: [
@@ -744,7 +747,7 @@ const sampleQuestions = [
     type: 'multiple-choice', 
     passageId: 'all_this_junk',
     options: [
-      'Benjamin is able to discern an artist\'s noise over all of the other noises he hears',
+      'Benjamin is able to discern an artist\'s noise over all of the other noises he hears.',
       'The artist initially appears hostile to Benjamin but warms to his presence.',
       'The artist is amused by Benjamin and invites him to return the next day to observe the progress on her work.',
       'Benjamin thinks of his neighborhood as quiet only to learn that an artist is noisily constructing a piece of art nearby.'
