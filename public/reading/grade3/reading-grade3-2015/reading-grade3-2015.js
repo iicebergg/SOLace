@@ -187,7 +187,7 @@ const readingPassages = {
     title: 'The Ostrich: One Odd Bird',
     content: `
     <ol class="paragraph-numbers">
-    <img src="images/ostrich.png" alt="Ostrich" style="float: right; height: 250px; margin-left: 10px;">
+    <img src="images/ostrich.png" alt="Ostrich" style="margin: 10px;">
       <li>Ostriches hold the record as the largest birds in the world. A male can grow to nine feet tall. That is about three feet taller than most men. How do these giants spend their days?</li>
 
       <p><b>Life in a Bird Herd</b></p>
@@ -288,7 +288,7 @@ const sampleQuestions = [
 
   {
     id: '3',
-    text: 'Complete this flow chart. <br><img src="images/question_3.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+    text: 'Complete this flow chart with the most appropriate answer for the empty box. <br><img src="images/question_3.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
     type: 'multiple-choice',
     passageId: 'the_cooks_surprise',
     options: [
@@ -589,7 +589,7 @@ const sampleQuestions = [
 
   {
     id: '23',
-    text: 'Paragraph 5 is important to the story because it-',
+    text: 'Paragraph 5 is important to the story because it--',
     type: 'multiple-choice',
     passageId: 'hidden_treasure',
     options: [
