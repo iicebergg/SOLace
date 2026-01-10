@@ -137,7 +137,7 @@ const readingPassages = {
 
       <li>Though jazz originated in New Orleans, its irresistible sound had made its way to New York’s Harlem. Jazz could be heard everywhere, from street corners to nightclubs. It was in these clubs that the most accomplished jazz musicians got their start. Louis Armstrong, Cab Calloway, and many others became legends. Soulful jazz singers like Billie Holiday and Bessie Smith were instant celebrities. Harlem’s finest musicians soon helped make jazz an international sensation.</li>
 
-      <img src="images/armstrong.png" alt="Image failed to load. Please try again later." style="float: right; height: 120px; margin-left: 10px;">
+      <img src="images/armstrong.png" alt="Image failed to load. Please try again later." style="width: 150px; margin: 10px;">
 
       <p><b>Literature and Art Abound</b></p>
       <li>Despite the powerful influence of jazz, the foundation of the Harlem Renaissance was not made from music alone. African American writers such as Ralph Ellison and Zora Neale Hurston provided their own observations of African American life. They challenged others to examine prejudice and its damage to society and individuals. The words of gifted poets Langston Hughes and Countee Cullen revealed the complex and contradictory world of the African American experience, with all its joys and injustices.</li>
@@ -157,7 +157,7 @@ const readingPassages = {
   'habitats': {
     title: 'Delicate Habitats of the Ocean',
     content: `
-    <img src="images/habitats.png" alt="Image failed to load. Please try again later." style="float: right; height: 120px; margin-left: 10px;">
+    <img src="images/habitats.png" alt="Image failed to load. Please try again later." style="height: 150px; margin: 10px;">
      <ol class="paragraph-numbers">
       <li>Coral reefs and the ocean communities that surround them are some of the most beautiful and diverse ecosystems in the world. From Australia’s Great Barrier Reef to Virginia’s Chesapeake Bay, coral reefs are large and complex ocean systems. They provide food and shelter for thousands of fish and other ocean creatures. These coral reefs, while they are massive marine structures, actually depend on tiny ocean organisms and specific water conditions to survive and flourish.</li>
 
@@ -564,7 +564,7 @@ const sampleQuestions = [
   {
     id: '21',
     text: 'Which information from the article explains the cooperative relationship between algae and reef-dwelling coral?',
-    type: 'multiple-select',
+    type: 'multiple-choice',
     passageId: 'habitats',
     options: [
       'Coral and algae share the coral reef with other marine animals.',
