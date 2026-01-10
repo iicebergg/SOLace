@@ -226,12 +226,8 @@ manage the store and are ready to serve you. Shop at the Lion's Den and
 support the school choir. Money raised from sales will help purchase new
 music, costumes, and sound equipment for the choir. There's no better
 way to show your Lakeway school spirit than to shop at the Lion's Den.</p>
-      
-      <div class="passage-innerbox"><b>Location:</b> Room #255B, next to the chorus hall<br><b>Hours:</b>Monday-Friday; 7:30-8:00 A.M., 11:30 A.M.-1:30 P.M., and 3:30-4:15 P.M</div>
-      
-      <table>
-    <tr>
-    <td>
+
+      <div class="passage-innerbox"><b>Location:</b> Room #255B, next to the chorus hall<br><b>Hours:</b> Monday-Friday; 7:30-8:00 A.M., 11:30 A.M.-1:30 P.M., and 3:30-4:15 P.M</div>
       <b>School Supplies</b>
       <ul>
       <li>Wooden pencils</li>
@@ -243,8 +239,7 @@ way to show your Lakeway school spirit than to shop at the Lion's Den.</p>
       <li>Folders</li>
       <li>Binders</li>
       </ul>
-    </td>
-    <td>
+
       <b>Math Supplies</b>
       <ul>
       <li>Rulers</li>
@@ -253,8 +248,7 @@ way to show your Lakeway school spirit than to shop at the Lion's Den.</p>
       <li>Calculators</li>
       <li>Graph paper</li>
       </ul>
-    </td>
-    <td>
+
       <b>Lakeway Lions Spirit Wear and Gifts</b>
       <ul>
       <li>Short-sleeve T-shirts</li>
@@ -266,18 +260,14 @@ way to show your Lakeway school spirit than to shop at the Lion's Den.</p>
       <li>Pompons</li>
       <li>Game ribbons</li>
       </ul>
-    </td>
-    </tr>
-    <tr>
-    <td>
+
       <b>Computer Supplies</b>
       <ul>
       <li>CDs</li>
       <li>CD storage cases</li>
       <li>Flash drives</li>
       </ul>
-    </td>
-    <td>
+
       <b>Used Books</b>
       <ul>
       <li>Fiction</li>
@@ -285,16 +275,12 @@ way to show your Lakeway school spirit than to shop at the Lion's Den.</p>
       <li>Word puzzles</li>
       <li>Much more!</li>
       </ul>
-    </td>
-    <td>
+
       <b>Lakeway Lions Gym Uniforms</b>
       <ul>
       <li>T-shirts</li>
       <li>Shorts</li>
       </ul>
-    </td>
-    </tr>
-      </table>
       
       <p><b>Used Book Donations</b></p>
       <p>Donations of used books are welcome and rewarded. Drop off your used
@@ -307,7 +293,7 @@ next purchase at the Lion's Den.</p>
 Den. You can save 20% off your first purchase, receive a free pen or
 pencil, and enter your name in a drawing to win a T-shirt.</p>
 
-(image)
+<img src="images/den.png" alt="Image failed to load. Please try again later." style="width: 250px; margin: 10px;">
     `
   },
 
@@ -883,7 +869,7 @@ const sampleQuestions = [
 
   {
     id: '29',
-    text: 'Complete these notes.',
+    text: 'What is the purpose of the Lion\'s Den?',
     type: 'multiple-choice',
     passageId: '4',
     options: [
@@ -899,7 +885,7 @@ const sampleQuestions = [
   {
     id: '30',
     text: 'Complete these notes. <br>Ways the Lion\'s Den tries to persuade students to visit the school store:',
-    type: 'drag-drop',
+    type: 'multiple-select',
     passageId: '4',
     options: [
       'Providing coupons',
@@ -908,7 +894,6 @@ const sampleQuestions = [
       'Telling who works at the store',
       'Telling who is in charge of the store'
     ],
-    dropZones: [' ', ' ', ' '],
     correctAnswer: [0, 1, 2],
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
   },
@@ -937,7 +922,7 @@ const sampleQuestions = [
       'The Lion\'s Den offers gym uniforms anyone would be happy to own.',
       'The Lion\'s Den is open during hours that will meet students\' schedules.',
       'Choir students are extremely eager to work at the store.',
-      'Buying school supplies is a great way to participate in a school club .',
+      'Buying school supplies is a great way to participate in a school club.',
     ],
     correctAnswer: 1,
     explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
@@ -945,7 +930,7 @@ const sampleQuestions = [
 
   {
     id: '33',
-    text: 'Paragraph 1 indicates that therapy dogs can work with children who -',
+    text: 'Paragraph 1 indicates that therapy dogs can work with children who--',
     type: 'multiple-choice',
     passageId: '5',
     options: [
@@ -1052,7 +1037,7 @@ const sampleQuestions = [
     id: '40',
     text: 'Read this thesaurus entry. <div class="passage-dicbox"><b>slumped</b> <i>v.</i> -- Slid, sank, tumbled, crashed.</div> Which word best replaces <u>slumped</u> in paragraph 5?',
     type: 'multiple-choice',
-    passageId: '5',
+    passageId: '6',
     options: [
       'slid',
       'sank',
@@ -1067,7 +1052,7 @@ const sampleQuestions = [
     id: '41',
     text: 'Which sentence is the best summary of paragraph 10?',
     type: 'multiple-choice',
-    passageId: '5',
+    passageId: '6',
     options: [
       'Anthony\'s dad offers to stay home.',
       'Anthony\'s mom prepares to go shopping.',
@@ -1082,7 +1067,7 @@ const sampleQuestions = [
     id: '42',
     text: 'Use paragraphs 13 and 14 to complete this web. (image)',
     type: 'multiple-select',
-    passageId: '5',
+    passageId: '6',
     options: [
       'Buy a special treat',
       'Unload the car',
@@ -1097,7 +1082,7 @@ const sampleQuestions = [
     id: '43',
     text: 'What could be the cause of the effect shown? <br><b>Effect:</b><div class="passage-innerbox">Anthony suddenly remembers Field Day.</div>',
     type: 'multiple-choice',
-    passageId: '5',
+    passageId: '6',
     options: [
       'Anthony looks at the list of chores.',
       'Anthony thinks about cinnamon gum.',
@@ -1113,7 +1098,7 @@ const sampleQuestions = [
     id: '44',
     text: 'Which sentence from the story best shows that Anthony can be responsible?',
     type: 'multiple-choice',
-    passageId: '5',
+    passageId: '6',
     options: [
       '"Can I go to the grocery store with you, Mom?"',
       '"Today is Field Day at the recreation center!"',
@@ -1128,7 +1113,7 @@ const sampleQuestions = [
     id: '45',
     text: 'What does the title mean?',
     type: 'multiple-choice',
-    passageId: '5',
+    passageId: '6',
     options: [
       'Anthony must overcome the challenge of time.',
       'Anthony must find a way to improve his time when running.',
