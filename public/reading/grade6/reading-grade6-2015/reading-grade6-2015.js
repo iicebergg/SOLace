@@ -1065,7 +1065,7 @@ const sampleQuestions = [
 
   {
     id: '42',
-    text: 'Use paragraphs 13 and 14 to complete this web. (image)',
+    text: 'Use paragraphs 13 and 14 to complete this web. <br><img src="images/42.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
     type: 'multiple-select',
     passageId: '6',
     options: [

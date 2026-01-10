@@ -59,7 +59,7 @@ const readingPassages = {
 
       <li>Along the Pacific coast of South America, one part of the planet’s surface gradually drifts toward another. Although difficult to believe, the rocky outer crust of Earth is not solid; rather, it is broken up into gigantic pieces called plates. Up to 250 miles thick, the plates, which float on top of a softer layer of hot rock, move at a pace of 0.39 to 3.94 inches per year. As the plates slide past one another, the action can sometimes result in volcanic activity.</li>
 
-    <img src="images/ring_of_fire.png" alt="Image failed to load. Please try again later." style="float: right; height: 120px; margin-left: 10px;">
+    <img src="images/ring.png" alt="Image failed to load. Please try again later." style="width: 120px; margin: 10px;">
 
       <li>These dramatic events take place thousands of miles apart, yet they are connected. Surrounding the Pacific Ocean is a circle of volcanoes that includes more than half of the world’s active volcanoes. While many are sleeping giants, others spew lava and toss ash and rock into the air. This region is called the Ring of Fire.</li>
 
@@ -95,6 +95,8 @@ const readingPassages = {
       <li>Alice’s mom, who happened to be walking by, peeked through the doorway to appraise the damage that Alice’s younger sister had left behind. “I’ve talked to Mary about it,” Mom said with a sigh, “but she can’t seem to stay out of here. Your room is too irresistible. Maybe you should talk to her.”</li>
 
       <li>“Right,” Alice mumbled as she began to put away the stuffed animals and trinkets scattered everywhere. She was picking up the last of her belongings from the floor when she noticed her four-year-old sister at the door. “What do you want?” Alice snapped, tired from having to complete an unexpected chore.</li>
+
+      <li>“Nothing. I was just watching,” Mary said. “Do you want to go play on the swings?”</li>
 
       <li>“I can’t because I have to finish cleaning my room,” Alice growled, “and then I have to do my homework.”</li>
 
@@ -149,7 +151,6 @@ const readingPassages = {
         <li>a young lady.</li>
         <li>But the island of Puerto Rico</li>
         <li>is my family home.</li>
-        <li>I pause in my tracks--</li>
         <li>It is here in these lush, green tropics</li>
         <li>where so much of <i>mi familia</i> resides.</li><br>
 
@@ -302,7 +303,7 @@ const sampleQuestions = [
 
   {
     id: '2', 
-    text: 'The word <u>binoculars</u> in paragraph 17 comes from the Latin word ocular, which means--',
+    text: 'The word <u>binoculars</u> in paragraph 17 comes from the Latin word <i>ocular</i>, which means--',
     type: 'multiple-choice',
     passageId: 'view',
     options: [
@@ -437,7 +438,7 @@ const sampleQuestions = [
 
   {
     id: '11',
-    text: 'In paragraph 2, the word <i>appraise</i> means--',
+    text: 'In paragraph 2, the word <u>appraise</u> means--',
     type: 'multiple-choice',
     passageId: 'patience',
     options: [
@@ -542,7 +543,7 @@ const sampleQuestions = [
 
   {
     id: '18',
-    text: 'The Latin word <i>internalis</i> means "extending to the interior." In paragraph 1 of the article, <i>internal</i> means--',
+    text: 'The Latin word <i>internalis</i> means "extending to the interior." In paragraph 1 of the article, <u>internal</u> means--',
     type: 'multiple-choice',
     passageId: 'clocks',
     options: [
