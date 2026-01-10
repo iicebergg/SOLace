@@ -72,7 +72,7 @@ const readingPassages = {
     title: 'Jackie Robinson',
     content: `
     <ol class="paragraph-numbers">
-    <img src="images/robinson.png" alt="Jackie Robinson" style="float: right; height: 250px; margin-left: 10px;">
+    <img src="images/robinson.png" alt="Image failed to load. Please try again later." style="width: 250px; margin: 10px;">
       <li>Throughout history, many brilliant and brave people have changed the world through their actions. These notable figures include scientists, inventors, authors, and athletes. Jackie Robinson was an athlete who helped change the way people were treated in society. He was the first African American to play Major League Baseball in the history of modern baseball.</li>
 
       <li>Jackie Robinson was born in Georgia in 1919. Like many children today, Jackie loved to play sports. He was a member of the track, football, basketball, and baseball teams in high school and college. In 1938 he received an award for being a great athlete. Many who enjoyed watching sports knew that Jackie had unbelievable talent.</li>
@@ -133,6 +133,7 @@ const readingPassages = {
       <li><b>Rain Gear and Warm Clothes.</b> All visitors should be ready for changes in weather. Trail conditions may change, and hikes may take longer than originally planned.</li>
       <li><b>Keep Eyes and Ears Alert.</b> Paying attention to the surroundings will help avoid accidents and harmful situations.</li>
       </ul>
+      </div>
 
       <p><b>Set a Turnaround Time</b></p>
       <p>Hikers need to know when to turn back. It is more important to return safely to the vehicle at the end of the day than it is to reach the top of Thatcher Peak. It usually takes 8-10 hours to make it to the peak and back. Setting a time to turn around is good practice. This guarantees that hikers are back to the parking lot before dark. After all, Thatcher Peak will be there for another attempt!</p>
@@ -190,17 +191,17 @@ const readingPassages = {
   },
 
   'arabia': {
-    title: 'Buried Treasure: Finding the <i>Arabia</i>',
+    title: 'Buried Treasure: Finding the Arabia',
     content: `
     <ol class="paragraph-numbers">
-    <img src="images/arabia.png" alt="The Arabia steamboat" style="float: right; height: 250px; margin-left: 10px;">
+    <img src="images/arabia.png" alt="Image failed to load. Please try again later." style="width: 250px; margin: 10px;">
       <li>On September 5, 1856, the steamboat Arabia chugged up the muddy Missouri River. Eager passengers who were traveling west filled the ship. These pioneers planned to settle in new frontier towns. In addition to passengers, the ship carried more than 200 tons of food and supplies stored in its cargo hold.</li>
 
       <li>All at once, the ship shook with a tremendous jolt. It had struck a fallen tree hidden beneath the river’s surface. The tree’s thick trunk stabbed the hull, or main body, of the ship. Within seconds water started to stream through the hole. Quickly, the crew began to ferry the frightened passengers to shore with a rowboat. People living near the river also rushed to the rescue. Everyone survived, but there was no time to save the cargo.</li>
 
       <li>The next day one passenger wrote, “All that could be seen of our boat was the top of the pilot house. That sank out of sight in a short time.”</li>
 
-      <img src="images/arabia_diagram.png" alt="Steamboat diagram" style="float: right; height: 250px; margin-left: 10px;">
+      <img src="images/diagram.png" alt="Image failed to load. Please try again later." style="width: 250px; margin: 10px;">
 
       <p><b>Searching for a Buried Treasure</b></p>
       <li>Many years later, treasure hunter David Hawley heard the story of the Arabia and its lost cargo. He wondered whether it might be possible to find the ship. Curious, he went to libraries and gathered information. Old newspaper articles listed the places where the boat was traveling. Old maps marked the site of the shipwreck.</li>
