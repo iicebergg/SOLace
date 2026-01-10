@@ -112,6 +112,8 @@ because small windows
 would not allow much heat
 to come inside.</li>
       
+<img src="images/mud-house.png" alt="Image failed to load. Please try again later." style="width: 250px; margin: 10px;">
+
       <li>People spent a great deal of time on the flat rooftops of their
 houses. Roofs provided extra storage space and also a great place
 for family gatherings. During the summertime, it was common to
@@ -133,6 +135,8 @@ special events, they wore wigs. The wigs
 also protected people's heads from the
 harsh sun.</li>
 
+<img src="images/clothing-and-hair.png" alt="Image failed to load. Please try again later." style="width: 250px; margin: 10px;">
+
       <p><b>Egyptian Diet</b></p>
       <li>Different types of foods, such as grains, fruits, and vegetables, grew
 well in the hot climate. Grains were used in making breads, cakes,
@@ -149,6 +153,8 @@ Egyptians. They adapted very
 well to the environment, and
 their culture became one of
 the greatest in history.</li>
+
+<img src="images/egyptian-diet.png" alt="Image failed to load. Please try again later." style="width: 250px; margin: 10px;">
 </ol>
     `
   },
@@ -162,6 +168,7 @@ trips each year. Help make these exciting experiences possible by
 taking part in these school fundraisers.</p>
       
 <div class="passage-innerbox">
+<img src="images/hunger-busters.png" alt="Image failed to load. Please try again later." style="float: right; height: 100px; margin-left: 10px;">
       <p><b>Share a Harrison Hunger-Buster</b></p>
       <p>What is your favorite food? Maybe it's your mother's
 chocolate chip cookies or your uncle's famous
@@ -177,8 +184,10 @@ announce the beginning of the sale when the cookbooks
 arrive. Your family will surely enjoy giving these delicious
 dishes a try.</li>
       </ul></p>
+      </div>
       
 <div class="passage-innerbox">
+<img src="images/raffle.png" alt="Image failed to load. Please try again later." style="float: right; height: 100px; margin-left: 10px;">
       <p><b>Try Your Luck in a Raffle</b></p>
       <p>Mark your calendars for the spring raffle! Teddy
 bears, posters, games, stickers, and pencils are
@@ -189,8 +198,10 @@ for $1.00.</li>
       <li>The winners will be announced at the end of the
 day on March 21. Good luck!</li>
       </ul></p>
+      </div>
 
 <div class="passage-innerbox">
+<img src="images/dunk.png" alt="Image failed to load. Please try again later." style="float: right; height: 100px; margin-left: 10px;">
       <p><b>Celebrate at the School Fair</b></p>
       <p>Saturday, May 2<br>10:00 A.M. - 3:30 P.M.</p>
       <p>Join family and friends on the field behind
@@ -562,7 +573,7 @@ const sampleQuestions = [
 
   {
     id: '14',
-    text: 'A student makes these notes about the article. (image) Which of these belongs on the blank line?',
+    text: 'A student makes these notes about the article. <br><img src="images/14.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which of these belongs on the blank line?',
     type: 'multiple-choice',
     passageId: 'ancient_egypt',
     options: [
@@ -607,7 +618,7 @@ const sampleQuestions = [
 
   {
     id: '17',
-    text: 'Complete this list of school fair activities. (image)',
+    text: 'Complete this list of school fair activities. <br><img src="images/17.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>',
     type: 'multiple-choice',
     passageId: 'fundraisers',
     options: [
@@ -741,7 +752,7 @@ const sampleQuestions = [
 
   {
     id: '26',
-    text: 'Read these sentences from paragraph 18. <div class="passage-innerbox">"No, no," argued Alligator. "I was just yawning "</div> The author includes this information to show that Alligator is--',
+    text: 'Read these sentences from paragraph 18. <div class="passage-innerbox">"No, no," argued Alligator. "I was just yawning."</div> The author includes this information to show that Alligator is--',
     type: 'multiple-choice',
     passageId: 'friend',
     options: [
@@ -771,7 +782,7 @@ const sampleQuestions = [
 
   {
     id: '28',
-    text: 'Complete this web. (image)',
+    text: 'Complete this web with the most appropriate option for the blank circle. <br><img src="images/28.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>',
     type: 'multiple-choice',
     passageId: 'friend',
     options: [
@@ -892,7 +903,7 @@ const sampleQuestions = [
 
   {
     id: '36',
-    text: 'Which choice best completes this cause-and-effect chart? (image)',
+    text: 'Which choice best completes this cause-and-effect chart? <br><img src="images/36.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
     type: 'multiple-choice',
     passageId: 'popcorn',
     options: [
@@ -923,7 +934,7 @@ const sampleQuestions = [
 
   {
     id: '38',
-    text: 'Complete these notes. (image)',
+    text: 'Complete these notes. <br><img src="images/38.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
     type: 'multiple-choice',
     passageId: 'popcorn',
     options: [
