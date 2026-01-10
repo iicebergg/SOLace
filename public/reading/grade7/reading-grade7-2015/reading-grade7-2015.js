@@ -49,19 +49,21 @@ const readingPassages = {
     <ol class="paragraph-numbers">
       <li>Her ears perk up as she waits patiently for her owner to place the decorative dish filled with a delicious feast in front of her. After eating, she peacefully licks her whiskers, puts her nose and tail into the air, and casually walks into the shade of a nearby tree. Purring loudly, the feline sits majestically, taking in her surroundings as if they were her own private kingdom.</li>
 
-      <li class="section-heading">Ancient Egypt</li>
+      <p><b>Ancient Egypt</b></p>
       <li>Cats first appeared in recorded history approximately 5,000 years ago in ancient Egypt. Related to small wildcats, felines were probably first domesticated for pest control. Snakes and rodents were a common problem in ancient Egypt. Being natural hunters, cats were welcomed near people's homes. By about 1500 B.C., they were a part of the household.</li>
 
-      <li>As a result, cats became more than household exterminators. There are pictures in tombs that show cats as a part of families. Cats were trained for catching fish or fetching downed prey for their owners. Household items and jewelry were often decorated with images of cats. It became common for children, both boys and girls, to be given a version of the word "cat" as a name. Entire families would mourn the deaths of their cats.<br><img src="images/question_8.jpg" alt="Egyptian cat statue" style="float:right;margin-left:10px;"/></li>
+      <li>As a result, cats became more than household exterminators. There are pictures in tombs that show cats as a part of families. Cats were trained for catching fish or fetching downed prey for their owners. Household items and jewelry were often decorated with images of cats. It became common for children, both boys and girls, to be given a version of the word "cat" as a name. Entire families would mourn the deaths of their cats.
+
+      <img src="images/the-royal-cat.png" alt="Image failed to load. Please try again later." style="width: 250px; margin: 10px;">
 
       <li>Soon people gave the cats so much reverence that they were worshipped as gods. Temples were dedicated to them, and there were people whose only job was to care for and serve the temple cats. These cats were given the high honor of being mummified and placed in their own tombs, complete with milk and rodents. There is even one legend that the Egyptian army refused to fight when their enemy released hundreds of cats onto the battlefield. The Egyptians did not wish to harm the animals.</li>
 
-      <li class="section-heading">Egyptian Maus</li>
+      <p><b>Egyptian Maus</b></p>
       <li>Today the Egyptian Mau ("mau" is the Egyptian word for cat and rhymes with "cow") is believed to be a direct descendant of cats from ancient Egypt. Maus are medium-sized, weighing 8–12 pounds. Their short hair is usually one of five colors: smoke, silver, bronze, black, or blue. Purebred Egyptian Maus are known for their spotted coats; these naturally occurring spots make them unique among domestic cats.</li>
 
       <li>Maus are considered friendly, playful cats. They are loyal to and protective of both their feline and human families. When happy, they sing a chuckling, snorting sound and wiggle their tails quickly. Their eyes are a distinct gooseberry green, which is a light lime green. Many people are attracted by the slightly worried look of the adult Maus.</li>
 
-      <li class="section-heading">Maus Today</li>
+      <p><b>Maus Today</b></p>
       <li>In the United States and parts of Europe, Maus are a popular breed because of their personality and their beauty. Many websites are devoted to breeding and showing this magnificent breed in contests. There are organizations dedicated to the preservation and health of this particular breed. Unfortunately, this is not necessarily the case in Egypt. There, Maus have become so numerous that they are considered a nuisance.</li>
 
       <li>It is ironic that the very people whose ancestors worked to domesticate this animal no longer see its value, but there are other people dedicated to changing this situation. The Egyptian Mau Rescue Organization (EMRO) works to assure the continued existence of the Mau through pet adoptions, both local and overseas. The EMRO also works to create awareness for the historic value of this animal and hopes that one day Maus will again be an Egyptian treasure.</li>
@@ -74,37 +76,36 @@ const readingPassages = {
   'the_wind_oak_pine': {
     title: 'The Wind, the Oak, and the Pine',
     content: `
-    <div class="poem">
-      <p>One day between late summer and first snow,<br>
-      I harshly through an oak and pine did blow.<br>
-      Oak branches spoke in loud, unhappy heaves,<br>
-      Crackling a scolding through the falling leaves.</p>
+    <ol class="paragraph-numbers">
+      <li>One day between late summer and first snow,</li>
+      <li>I harshly through an oak and pine did blow.</li>
+      <li>Oak branches spoke in loud, unhappy heaves,<li>
+      <li>Crackling a scolding through the falling leaves.</li>
 
-      <p class="line-number">5</p>
-      <p>"Dreary old pine! I tire of evergreen,<br>
-      Superior are oak boughs, both strong and clean."<br>
-      Pine bristled, "Be ashamed, arrogant oak.<br>
-      Colorless, bare, you wear no winter cloak."</p>
+      <li>"Dreary old pine! I tire of evergreen,</li>
+      <li>Superior are oak boughs, both strong and clean."</li>
+      <li>Pine bristled, "Be ashamed, arrogant oak.</li>
+      <li>Colorless, bare, you wear no winter cloak."</li>
 
-      <p>It saddened me to think the trees would part<br>
-      <span class="line-number">10</span> With unkind words. I lifted up my heart<br>
-      And blew my gentler breezes through the oak.<br>
-      With soothing murmurs, softly now oak spoke:</p>
+      <li>It saddened me to think the trees would part</li>
+      <li>With unkind words. I lifted up my heart</li>
+      <li>And blew my gentler breezes through the oak.</li>
+      <li>With soothing murmurs, softly now oak spoke:</li>
 
-      <p>"Peace, my green-needled friend. It's good you stay<br>
-      To cheer our city's children at their play.<br>
-      <span class="line-number">15</span> Shelter the birds that linger; keep them warm<br>
-      And safe through every blustery winter storm."</p>
+      <li>"Peace, my green-needled friend. It's good you stay</li>
+      <li>To cheer our city's children at their play.</li>
+      <li>Shelter the birds that linger; keep them warm</li>
+      <li>And safe through every blustery winter storm."</li>
 
-      <p>"Your gold leaves drop in beauty to the ground,"<br>
-      Whispered the pine. "I wish you slumber sound.<br>
-      May snow like a soft, white woolen blanket bring<br>
-      <span class="line-number">20</span> You winter's rest until we meet in spring."</p>
+      <li>"Your gold leaves drop in beauty to the ground,"</li>
+      <li>Whispered the pine. "I wish you slumber sound."</li>
+      <li>May snow like a soft, white woolen blanket bring</li>
+      <li>You winter's rest until we meet in spring."</li>
 
-      <p>I rustled through a breezy fond farewell<br>
-      To better friends, as far as I can tell.<br>
-      They'll go their ways 'til days again grow long<br>
-      And flocks return to wake this town with song.</p>
+      <li>I rustled through a breezy fond farewell</li>
+      <li>To better friends, as far as I can tell.</li>
+      <li>They'll go their ways 'til days again grow long</li>
+      <li>And flocks return to wake this town with song.</li>
     </div>
     `
   },
@@ -121,7 +122,7 @@ const readingPassages = {
 
       <li>Van Gogh's paintings are amazing representations of his view of the world. The colors leap off the canvas, not only because of their boldness but also because of the brush strokes. Van Gogh avoided light, feathery strokes, which would portray typical subjects. Instead, he used his brush and oils to make layers that built the painting until it was almost three-dimensional. This quality makes people want to reach out and touch the painting to feel the thick, coarse brush strokes. In fact, van Gogh's paintings are usually barricaded from the public to avoid this situation; the natural oil on human skin would damage the paintings.</li>
 
-      <li>Perhaps one of the most memorable examples of van Gogh's use of color and brush style is his painting <i>The Starry Night</i>. The sky swirls across the canvas, while the stars glow with unearthly brightness. Each distinct brush stroke creates the illusion of movement and radiance. Under the sky rests a village painted with smaller strokes and finer detail, giving the impression of peace and prosperity. A large tree in the foreground suggests that the view is enjoyed from the top of a hill, which offers a glimpse of the awesome majesty of the night sky. <i>The Starry Night</i> displays the genius of van Gogh's ability to create a powerful image with simple subjects.<br><img src="images/question_25.jpg" alt="The Starry Night painting" style="float:right;margin-left:10px;"/></li>
+      <li>Perhaps one of the most memorable examples of van Gogh's use of color and brush style is his painting <i>The Starry Night</i>. The sky swirls across the canvas, while the stars glow with unearthly brightness. Each distinct brush stroke creates the illusion of movement and radiance. Under the sky rests a village painted with smaller strokes and finer detail, giving the impression of peace and prosperity. A large tree in the foreground suggests that the view is enjoyed from the top of a hill, which offers a glimpse of the awesome majesty of the night sky. <i>The Starry Night</i> displays the genius of van Gogh's ability to create a powerful image with simple subjects.<br><img src="images/van-gogh.png" alt="The Starry Night painting" style="width:120px;margin-left:10px;"/></li>
 
       <li>Van Gogh spent only the last ten years of his life painting. He is believed to have sold only one of the 900 paintings he created during those years. Yet van Gogh today is considered one of the greatest artists of all time. His influence is evident; many painters mimic his style and use of color and texture. His artwork can be found in museums all over the world and is valued in the millions of dollars, a testament to Vincent van Gogh's talent.</li>
 </ol>
@@ -141,7 +142,7 @@ const readingPassages = {
       <h4>Which bag do you need?</h4>
       <table>
         <tr>
-          <td><img src="images/backpack.jpg" alt="Backpack"/><br>Backpack</td>
+          <td><img src="images/backpack.png" alt="Backpack"/><br>Backpack</td>
           <td>
             • Made with durable materials and zippers<br>
             • Comfortable, padded shoulder straps<br>
@@ -151,7 +152,7 @@ const readingPassages = {
           <td>$20</td>
         </tr>
         <tr>
-          <td><img src="images/dufflebag.jpg" alt="Duffle bag"/><br>Duffle bag</td>
+          <td><img src="images/duffle-bag.png" alt="Duffle bag"/><br>Duffle bag</td>
           <td>
             • Perfect for holding gym clothes, shoes, and towels<br>
             • Large enough to hold up to three basketballs<br>
@@ -160,7 +161,7 @@ const readingPassages = {
           <td>$15</td>
         </tr>
         <tr>
-          <td><img src="images/totebag.jpg" alt="Tote bag"/><br>Tote bag</td>
+          <td><img src="images/totebag.png" alt="Tote bag"/><br>Tote bag</td>
           <td>
             • Ideal for light loads<br>
             • Use it to carry a sweater and snacks for a field trip<br>
@@ -286,7 +287,7 @@ const sampleQuestions = [
   // Question 2 - All in the Stars
   {
     passageId: 'all_in_the_stars',
-    text: `Read this sentence from paragraph 7.<br><br><b>"They're fiction<u>al</u>, of course, but I want to name them after real places that nobody knows much about."</b><br><br>In which word does the suffix -<u>al</u> have the same meaning as it does in fiction<u>al</u>?`,
+    text: `Read this sentence from paragraph 7.<div class="passage-innerbox">"They're fiction<u>al</u>, of course, but I want to name them after real places that nobody knows much about."</div>In which word does the suffix -<u>al</u> have the same meaning as it does in fiction<u>al</u>?`,
     type: 'multiple-choice',
     options: [
       'casu<u>al</u>',
@@ -316,7 +317,7 @@ const sampleQuestions = [
   // Question 4 - All in the Stars (TEI - Web Diagram)
   {
     passageId: 'all_in_the_stars',
-    text: `Complete this web.<br><br><img src="images/question_4.jpg" alt="Web diagram with central oval and three connected ovals showing: Jared daydreams in science class, Jared has drafted a story but not finished it, Jared daydreams while Astrid lectures. Four gray ovals below show options."/>`,
+    text: `Complete this web.<br><br><img src="images/question_4.png" alt="Web diagram with central oval and three connected ovals showing: Jared daydreams in science class, Jared has drafted a story but not finished it, Jared daydreams while Astrid lectures. Four gray ovals below show options."/>`,
     type: 'multiple-choice',
     options: [
       "Jared's friendship with Sam helps them become better science students.",
@@ -331,7 +332,7 @@ const sampleQuestions = [
   // Question 5 - All in the Stars (TEI - Multiple Choice)
   {
     passageId: 'all_in_the_stars',
-    text: `In this story, Jared's main conflict can be described as —<br><br><img src="images/question_5.jpg" alt="Five options showing different types of conflict"/>`,
+    text: `In this story, Jared's main conflict can be described as —`,
     type: 'multiple-choice',
     options: [
       'individual vs. self',
@@ -347,7 +348,7 @@ const sampleQuestions = [
   // Question 6 - All in the Stars (TEI)
   {
     passageId: 'all_in_the_stars',
-    text: `In a summary of this story, the most important detail to include is how Jared —<br><br><img src="images/question_6.jpg" alt="Five options for story summary"/>`,
+    text: `In a summary of this story, the most important detail to include is how Jared —`,
     type: 'multiple-choice',
     options: [
       'takes his permission slip to the front of the classroom',
@@ -423,7 +424,7 @@ const sampleQuestions = [
   // Question 11 - The Royal Cat
   {
     passageId: 'the_royal_cat',
-    text: `Read this sentence from paragraph 4.<br><br><b>The Egyptians did not wish to harm the animals.</b><br><br>Why does the author include this detail in the article?`,
+    text: `Read this sentence from paragraph 4.<div class="passage-innerbox">The Egyptians did not wish to harm the animals.</div>Why does the author include this detail in the article?`,
     type: 'multiple-choice',
     options: [
       'To show that Egyptians are kind',
@@ -617,7 +618,7 @@ const sampleQuestions = [
 
   // Question 24 (TEI) - Sympathy question
   {
-    text: `The word <i>sympathy</i> comes from Greek roots that mean "similar emotion." Based on the Greek roots, which is the best example of <i>sympathy</i>?<br><br><img src="images/question_24.jpg" alt="Four options about sympathy"/>`,
+    text: `The word <i>sympathy</i> comes from Greek roots that mean "similar emotion." Based on the Greek roots, which is the best example of <i>sympathy</i>?`,
     type: 'multiple-choice',
     options: [
       'Thinking about a distant loved one',
@@ -647,7 +648,7 @@ const sampleQuestions = [
   // Question 26 - Vincent van Gogh
   {
     passageId: 'vincent_van_gogh',
-    text: `Read this sentence from paragraph 6.<br><br><b>His influence is evident; many painters mimic his style and use of color and texture.</b><br><br>Which word is a synonym for <i>mimic</i>?`,
+    text: `Read this sentence from paragraph 6.<div class="passage-innerbox">His influence is evident; many painters mimic his style and use of color and texture.</div>Which word is a synonym for <i>mimic</i>?`,
     type: 'multiple-choice',
     options: [
       'copy',
@@ -813,7 +814,7 @@ const sampleQuestions = [
   // Question 37 - School Spirit Bags
   {
     passageId: 'school_spirit_bags',
-    text: `Read this chart a student made about the bags.<br><br><img src="images/question_37.jpg" alt="Chart showing SCHOOL SPIRIT TO GO Bags features"/><br><br>Which of these shows that the student misunderstood information about the bags?`,
+    text: `Read this chart a student made about the bags.<br><br><img src="images/question_37.png" alt="Chart showing SCHOOL SPIRIT TO GO Bags features"/><br><br>Which of these shows that the student misunderstood information about the bags?`,
     type: 'multiple-choice',
     options: [
       'Come in different sizes and shapes',
@@ -888,7 +889,7 @@ const sampleQuestions = [
   // Question 42 - The Cover Photo
   {
     passageId: 'the_cover_photo',
-    text: `Read this sentence from paragraph 11.<br><br><b>The students scrambled to take pictures and stared in amazement.</b><br><br>The word "scrambled" suggests that the students were —`,
+    text: `Read this sentence from paragraph 11.<div class="passage-innerbox">The students scrambled to take pictures and stared in amazement.</div>The word "scrambled" suggests that the students were —`,
     type: 'multiple-choice',
     options: [
       'ready to quit',
