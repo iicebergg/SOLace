@@ -10,7 +10,7 @@ const readingPassages = {
 
       <li>Ospreys, also known as fish hawks or fishing eagles, have short, hooked beaks and wings that taper to rounded tips. Their coloring ranges from white to dark brown. The white feathers on ospreys’ heads look like little caps, and their wings include a mixture of white and dark brown feathers. Their chests, bellies, and chins are white, and their tails are marked with several white bands, or stripes. Ospreys in flight are easy to identify, thanks to their distinctive plumage, or feathers. Not surprisingly, these birds are related to eagles, hawks, and even vultures. They can live a long time; the average life span in the wild is 18 years. The oldest known osprey lived to be 25 years old.</li>
 
-      <img src="images/osprey.png" alt="Image failed to load. Please try again later." style="width: 150px; margin: 10px;">
+      <img src="images/osprey.png" alt="Image failed to load. Please try again later." style="height: 120px; margin: 10px;">
 
       <li>Ospreys fly fast and dive at amazing speeds. Soaring one hundred feet above the water, their sharp eyes watch the surface carefully for any tell- tale signs of fish. Ospreys hover over the water and wait for some indication of activity. Once prey is spotted, the birds fold their wings to their sides and begin a steep dive, plunging nearly straight down at blazing speeds. Usually, ospreys hit the water feet first, plunging completely underwater to catch their food. Water sprays in all directions as the birds reach underwater to grab a fish. They have been seen diving as much as three feet underwater to capture their prey! Once a fish has been snagged in its sharp claws, an osprey soars back up into the sky, pausing in flight just long enough to shake the water from its feathers before flying away to enjoy its meal. To help ospreys hold on to their catch, each of their feet has a unique reversible front toe.</li>
 
@@ -87,7 +87,9 @@ const readingPassages = {
 
       <li>Keichline believed education was important. After graduating from high school in 1906, she began studying mechanical engineering at Pennsylvania State College, even though she was one of only a few women in the classes. However, her focus quickly shifted from engineering to architecture, and after her first year, Keichline transferred to Cornell University. It took courage to enter a mostly male profession like architecture, but Keichline was ready for the challenge.</li>
 
-      <img src="images/k-brick.png" alt="Image failed to load. Please try again later." style="width: 150px; margin: 10px;">
+      <li>Only a year after graduating from Cornell, Keichline received her first patent for an innovative sink and washtub design. Her new creation saved space and was much more comfortable to operate. Another of her patents was for a convenient and efficient kitchen design. Her plan stressed comfort and space-saving ideas that were ahead of their time. One of the special features was sloped countertops to make cleaning easier. Keichline was also one of the first designers to use glass for cabinet doors so that the contents were visible while the doors were closed. People living in apartments benefited from her design for a bed that folded into the wall when not in use. Keichline also received patents for her innovative designs of air systems and portable partitions which functioned as mobile walls.</li>
+
+      <img src="images/k-brick.png" alt="Image failed to load. Please try again later." style="width: 200px; margin: 10px;">
 
       <li>The most valuable and important of Keichline's inventions was the “K Brick,” patented in 1927. The design of the K Brick was unique in that it was a hollow brick that was lighter and less expensive than other building materials that were commonly used for interior walls. This design allowed for the brick to be filled with insulation or soundproof material. The K Brick was also believed to be more efficient to manufacture, requiring less clay and taking less time to fire and harden. Even shipping and labor were thought to be easier because of the K Brick’s lightweight design. In 1931 the American Ceramic Society recognized the contribution that the K Brick represented by honoring Keichline for her design.</li>
 
@@ -142,7 +144,7 @@ const readingPassages = {
   'mustang': {
     title: 'SCHOOL LUNCH: QUESTIONS ANSWERED',
     content: `
-    <img src="images/mustang.png" alt="Image failed to load. Please try again later." style="float: right; height: 120px; margin-left: 10px;">
+    <img src="images/mustang.png" alt="Image failed to load. Please try again later." style=" height: 140px; margin-left: 10px;">
     <center><p><b>SCHOOL LUNCH: QUESTIONS ANSWERED</b></p>
     <p><i>by Amelia Cores</i></p></center>
     <ol class="paragraph-numbers">
@@ -243,6 +245,11 @@ const readingPassages = {
 
         <li>One fine morning, with time running out,</li>
         <li>I finally knew what to say.</li>
+        <li>With my heart bursting, I ran to her house</li>
+        <li>Just to see the moving van drive away.</li><br>
+
+        <li>The lost change taught me a lesson</li>
+        <li>That words have the power to wound.</li>
         <li>I had missed my chance at redemption,</li>
         <li>And I lived with this bitter truth.</li><br>
 
@@ -518,7 +525,7 @@ const sampleQuestions = [
 
   {
     id: '18',
-    text: 'Read these glossary entries for words that appear in paragraph 5. <div class="passage-dicbox><b>alert:</b> Able to think and respond quickly.<br> <b>approach:</b> Move closer to a person or object.<br> <b>designed:</b> Created a drawing or sketch.<br> <b>surveyed:</b> Carefully examined something to determine its value.</div> Which entry gives the meaning of the word as it is used in paragraph 5?',
+    text: 'Read these glossary entries for words that appear in paragraph 5. <div class="passage-dicbox"><b>alert:</b> Able to think and respond quickly.<br> <b>approach:</b> Move closer to a person or object.<br> <b>designed:</b> Created a drawing or sketch.<br> <b>surveyed:</b> Carefully examined something to determine its value.</div> Which entry gives the meaning of the word as it is used in paragraph 5?',
     type: 'multiple-choice',
     passageId: 'mustang',
     options: [
