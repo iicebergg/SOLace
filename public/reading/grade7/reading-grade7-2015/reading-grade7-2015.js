@@ -317,7 +317,7 @@ const sampleQuestions = [
   // Question 4 - All in the Stars (TEI - Web Diagram)
   {
     passageId: 'all_in_the_stars',
-    text: `Complete this web.<br><br><img src="images/question_4.png" alt="Web diagram with central oval and three connected ovals showing: Jared daydreams in science class, Jared has drafted a story but not finished it, Jared daydreams while Astrid lectures. Four gray ovals below show options."/>`,
+    text: `Complete this web.<br><br><img src="images/question_4.png" class="question-image" alt="Image failed to load. Please try again later."/>`,
     type: 'multiple-choice',
     options: [
       "Jared's friendship with Sam helps them become better science students.",
