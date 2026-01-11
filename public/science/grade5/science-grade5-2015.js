@@ -40,7 +40,7 @@ const sampleQuestions = [
  text: 'What is the mass of the rock shown?',
  type: 'free-response',
  image: {url:'images/question_5.png', alt: 'Image failed to load. Please try again later.'},
- correctKeywords: ['37'],
+ correctKeywords: ['37', '37 g', '37g', '37 grams'],
  explanation: 'Read the balance scale to determine the mass. The rock balances at 37 grams.'
  },
  {
@@ -48,7 +48,7 @@ const sampleQuestions = [
  text: 'During pollination, pollen is transferred from a stamen to a--',
  type: 'multiple-choice',
  image: {url:'images/question_6.png', alt: 'Image failed to load. Please try again later.'},
- options: ['petal', 'stem', 'stepal', 'stigma'],
+ options: ['petal', 'stem', 'sepal', 'stigma'],
  correctAnswer: 3, 
  explanation: 'In pollination, pollen grains move from the stamen (male part) to the stigma (female part) of a flower.'
  },
@@ -152,11 +152,10 @@ const sampleQuestions = [
  },
  {
  id: '18',
- text: 'Identify the data shown for the unknown substanc as either quantitative or qualitative.',
- type: 'drag-drop',
+ text: 'Identify the quantitative data shown.',
+ type: 'multiple-select',
  options: ['Gold color', 'Weighs 20.5 g', 'Greenish black streak', 'About 4 cubic cm', 'Sinks in water', 'Hardness of 6-6.5'],
- dropZones: ['Quantitative', 'Quantitative', 'Quantitative', 'Qualitative', 'Qualitative', 'Qualitative'],
- correctAnswer: [],
+ correctAnswer: [1, 3, 5],
  explanation: 'Quantitative data involves numbers/measurements (weight, volume, hardness). Qualitative data describes qualities (color, streak, behavior in water).'
  },
  {
@@ -189,7 +188,6 @@ const sampleQuestions = [
  id: '22',
  text: 'The greater the frequency of a sound wave, the--',
  type: 'multiple-choice',
- image: {url: 'images/question_22.png', alt: 'Image failed to load. Please try again later.'},
  options: ['lower the pitch', 'higher the pitch', 'softer the sound', 'louder the sound'],
  correctAnswer: 1, 
  explanation: 'Frequency and pitch are directly related. Higher frequency sound waves produce higher pitch sounds.'
