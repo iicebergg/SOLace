@@ -408,7 +408,7 @@ const sampleQuestions = [
  options: ['Build a compost pile', 'Carpool with several people', 'Burn leaves in the fall', 'Use a gas-powered lawn mower'],
  correctAnswer: 1, 
  explanation: 'Carpooling reduces the number of vehicles on the road, which decreases vehicle emissions and improves air quality. The other options either don\'t affect air quality or worsen it.'
- },
+ }
 ];
 
 // Test-specific storage key for this test
