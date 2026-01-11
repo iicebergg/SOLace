@@ -1,3 +1,5 @@
+dow.TEST_IDENTIFIER = 'science_grade8_2015';
+
 const sampleQuestions = [
  {
  id: '1',
