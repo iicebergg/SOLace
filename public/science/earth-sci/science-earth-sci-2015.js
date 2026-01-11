@@ -63,7 +63,7 @@ const sampleQuestions = [
  text: 'Which type of rock is formed by each process?',
  type: 'drag-drop',
  options: ['Intrusive Igneous', 'Extrusive Igneous', 'Chemical Sedimentary', 'Organic Sedimentary', 'Metamorphic'],
- dropZones: ['<img src="images/question_8a.png" class="question-image"><br>Evaporation of Ocean', '<img src="images/question_8b.png" class="question-image"><br>Compression of Crust', '<img src="images/question_8c.png" class="question-image"><br>Sinking of Plankton', '<img src="images/question_8d.png" class="question-image"><br>Formation of Granite Underground'],
+ dropZones: ['<img src="images/question_8a.png" class="question-image" style="width:100px"><br>Evaporation of Ocean', '<img src="images/question_8b.png" class="question-image" style="width:100px"><br>Compression of Crust', '<img src="images/question_8c.png" class="question-image" style="width:100px"><br>Sinking of Plankton', '<img src="images/question_8d.png" class="question-image" style="width:100px"><br>Formation of Granite Underground'],
  correctAnswer: [2, 4, 3, 0],
  explanation: 'Evaporation of ocean water leaves behind dissolved minerals that form chemical sedimentary rock. Compression of crust creates metamorphic rock through heat and pressure. Sinking plankton accumulate to form organic sedimentary rock. Granite forming underground from slow-cooling magma creates intrusive igneous rock.'
  },
@@ -332,7 +332,7 @@ const sampleQuestions = [
  },
  {
  id: '41',
- text: 'Well logs are used by oil companies to correlate geologic formations. Based on the formations in Well A, which geologic formations are missing in Well B?<br><br><img src="images/question_31.png" class="question-image">',
+ text: 'Well logs are used by oil companies to correlate geologic formations. Based on the formations in Well A, which geologic formations are missing in Well B?<br><br><img src="images/question_41.png" class="question-image">',
  type: 'drag-drop',
  options: ['Sand 1', 'Shale 2', 'Sand 3', 'Shale 4', 'Limestone 5', 'Shale 6', 'Sand 7', 'Shale 8'],
  dropZones: ['Missing formation 1', 'Missing formation 2', 'Missing formation 3'],
