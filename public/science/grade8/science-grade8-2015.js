@@ -1,4 +1,4 @@
-dow.TEST_IDENTIFIER = 'science_grade8_2015';
+window.TEST_IDENTIFIER = 'science_grade8_2015';
 
 const sampleQuestions = [
  {
