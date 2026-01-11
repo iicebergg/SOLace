@@ -459,7 +459,7 @@ const sampleQuestions = [
       'Mr. Malone sometimes forgives Julia\'s delays.'
     ],
     correctAnswer: 3,
-    explanation: 'The passage states that "migrate means they travel to warmer places."'
+    explanation: 'The phrase "let another tardy slide by" implies that Mr. Malone has allowed or forgiven her tardiness in the past.'
   },
 
   {
@@ -474,7 +474,7 @@ const sampleQuestions = [
       'has a strong interest in music'
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions that bears, groundhogs, and some frogs hibernate.'
+    explanation: 'Julia protests, exclaiming about the city orchestra and going "behind the scenes," which shows she is very passionate and interested in the music event.'
   },
 
   {
@@ -489,7 +489,7 @@ const sampleQuestions = [
       'Julia\'s ability to make friends'
     ],
     correctAnswer: 2,
-    explanation: 'Animals eat lots of food before hibernating to store fat in their bodies.'
+    explanation: 'Mrs. Thompson immediately asks Julia why she cleans the tables alone, suggesting the adults had already discussed the reason for her tardiness (helping clean).'
   },
 
   {
@@ -504,7 +504,7 @@ const sampleQuestions = [
       'acting out of concern'
     ],
     correctAnswer: 0,
-    explanation: 'Emma thought the garden was magical because the vegetables were the biggest she had ever seen.'
+    explanation: 'Mrs. Thompson states a fact ("you got yourself in trouble"), and Julia nods, admitting or accepting the truth of that statement.'
   },
 
   {
@@ -519,7 +519,7 @@ const sampleQuestions = [
       'considered'
     ],
     correctAnswer: 0,
-    explanation: 'Grandma said the secret is in the water from the pond with special minerals.'
+    explanation: '"Normally" indicates what usually happens in general cases, signaling a generalization before stating the specific exception for Julia.'
   },
 
   {
@@ -535,7 +535,7 @@ const sampleQuestions = [
       'Julia must clean the science tables.'
     ],
     correctAnswer: 1,
-    explanation: 'Grandma said the secret is in the water from the pond with special minerals.'
+    explanation: 'At the end of the story, Mrs. Thompson assigns the consequence: "You\'ll have a one-day detention for each tardy."'
   },
 
   {
@@ -550,7 +550,7 @@ const sampleQuestions = [
       'He feels Julia has the ability to do well in school.'
     ],
     correctAnswer: 0,
-    explanation: 'The passage states that people invented telescopes to see farther into space.'
+    explanation: 'Her dad asks, "Do you have any ideas for a punishment?" showing he believes she should face consequences to learn responsibility.'
   },
 
   {
@@ -565,7 +565,7 @@ const sampleQuestions = [
       'Mr. Malone convinces Mrs. Thompson that Julia should attend.'
     ],
     correctAnswer: 3,
-    explanation: 'The passage states that Yuri Gagarin from Russia was the first person to travel to space in 1961.'
+    explanation: 'Mrs. Thompson says, "Mr. Malone has explained to me how excited you are... I have considered the motives... and will allow you to attend."'
   },
 
   {
@@ -580,7 +580,7 @@ const sampleQuestions = [
       'knowing her father spoke with the teachers',
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'While she gets to go on the trip, the resolution comes from the adults understanding her "motives"—that she was trying to help others, not just being irresponsible.'
   },
 
   {
@@ -595,7 +595,7 @@ const sampleQuestions = [
       'Native plants around the lake',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'This section discusses water levels rising and falling due to rainfall and drought; information about weather patterns relates directly to these causes.'
   },
 
     {
@@ -610,7 +610,7 @@ const sampleQuestions = [
       'encourage people to spend time in nature',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Paragraph 4 states the Conservancy "functions mostly to manage and protect the land, water, and natural resources in the area."'
   },
 
   {
@@ -625,7 +625,7 @@ const sampleQuestions = [
       'An Outdoor Classroom'
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Paragraph 5 discusses the Biological Station as a "teaching location" and a "perfect spot for... study," which describes an outdoor classroom.'
   },
 
   {
@@ -640,7 +640,7 @@ const sampleQuestions = [
       'telling about the hotel\'s development',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The paragraph traces the history from the 1850s stagecoach lodge to the 1930s sandstone structure to the present day, showing its development over time.'
   },
 
   {
@@ -655,7 +655,7 @@ const sampleQuestions = [
       'disturbing',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The cause involved a natural hole at the bottom that fills with sediment and leaks underground—an unusual geological feature that took years to discover.'
   },
 
   {
@@ -670,7 +670,7 @@ const sampleQuestions = [
       'many hosted events',
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The paragraph mentions the first hotel was built there in the 1850s, making the location historically significant over a long period.'
   },
 
   {
@@ -685,7 +685,7 @@ const sampleQuestions = [
       'escape the noise of city life',
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Paragraph 6 lists many activities guests enjoy: "hiking, fishing, swimming, mountain bike riding, and boat riding."'
   },
 
   {
@@ -700,7 +700,7 @@ const sampleQuestions = [
       'Whether for study or rest, countless people frequent this fascinating place.',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Describing the place as "fascinating" is an opinion or judgment, unlike the other sentences which state verifiable facts about animals, ownership, or buildings.'
   },
 
   {
@@ -715,7 +715,7 @@ const sampleQuestions = [
       'researched',
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: '"Researching" is the verb form indicating the continuous action of studying closely.'
   },
 
   {
@@ -730,7 +730,7 @@ const sampleQuestions = [
       'is thrown from the sled into the air',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The poem says "We hurtle down... at lightning speed." "Flying" metaphorically describes this sensation of high speed.'
   },
 
   {
@@ -745,7 +745,7 @@ const sampleQuestions = [
       'learning to increase the speed of the sled',
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Leaning into turns shows the rider is actively steering and controlling the sled to navigate the hill effectively.'
   },
 
   {
@@ -761,7 +761,7 @@ const sampleQuestions = [
       'leap'
     ],
     correctAnswer: [1, 3],
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'To "lumber" means to move heavily or clumsily. "Stumble" and "trudge" both convey this heavy, awkward movement through the snow.'
   },
 
   {
@@ -776,7 +776,7 @@ const sampleQuestions = [
       'Near the top it grows steep...',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Saying "This time, surely, we\'ll make it" implies that there were previous times when they did *not* make it, suggesting past attempts.'
   },
 
   {
@@ -791,7 +791,7 @@ const sampleQuestions = [
       'Continue to sled on the hill',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The poem ends with: "We have a brand new chance to fly," indicating the speaker is ready to go down the hill again.'
   },
 
   {
@@ -805,7 +805,7 @@ const sampleQuestions = [
       'an interesting concept',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'A "vice" refers to a bad habit or fault. The sentence describes the "habit of not explaining his ideas" as something negative to improve.'
   },
 
   {
@@ -819,7 +819,7 @@ const sampleQuestions = [
       'construction',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: '"Experiment" comes from the Latin root *experiri*, which means "to try" or "to test."'
   },
 
   {
@@ -834,7 +834,7 @@ const sampleQuestions = [
       'How much money is the school hoping to raise?',
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The first paragraph states: "Stop by the Lion\'s Den before or after school or during lunch..." answering when they can shop.'
   },
 
   {
@@ -849,7 +849,7 @@ const sampleQuestions = [
       'The number of times a student can be chosen in the drawing',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'This section discusses entering a drawing to win. Knowing rules like how many times you can win would be relevant information for that specific contest.'
   },
 
   {
@@ -864,7 +864,7 @@ const sampleQuestions = [
       'judg<u>ment</u>',
     ],
     correctAnswer: 3,
-    explanation: 'To round 5,647: to nearest thousand (6,000), nearest hundred (5,600), nearest ten (5,650).'
+    explanation: 'The suffix "-ment" turns a verb into a noun indicating an action, process, or result. "Judgment" (the act of judging) works the same way as "announcement" (the act of announcing).'
   },
 
   {
@@ -879,7 +879,7 @@ const sampleQuestions = [
       'To support new clubs at the school',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The text states: "Money raised from sales will help purchase new music, costumes, and sound equipment for the choir."'
   },
 
   {
@@ -895,7 +895,7 @@ const sampleQuestions = [
       'Telling who is in charge of the store'
     ],
     correctAnswer: [0, 1, 2],
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The flier mentions coupons (20% off), gifts (free pen/pencil, drawing for T-shirt), and lists a "wide variety of merchandise" to attract students.'
   },
 
   {
@@ -910,7 +910,7 @@ const sampleQuestions = [
       'like to make donations',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'By selling pencils, paper, and other "School Supplies," the store directly helps students who might have forgotten or run out of these items.'
   },
 
   {
@@ -925,7 +925,7 @@ const sampleQuestions = [
       'Buying school supplies is a great way to participate in a school club.',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'This statement is supported by the specific hours listed ("before or after school or during lunch"), which are factual times available to students.'
   },
 
   {
@@ -940,7 +940,7 @@ const sampleQuestions = [
       'struggle to cooperate with other people',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Paragraph 1 states: "They are there to help children become better readers," implying the children need practice or help with reading.'
   },
 
   {
@@ -955,7 +955,7 @@ const sampleQuestions = [
       'What traits must therapy dogs have?',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Paragraph 2 lists the traits: "Therapy dogs need to be calm, gentle, and friendly. Of course, they must enjoy being around people."'
   },
 
   {
@@ -970,7 +970,7 @@ const sampleQuestions = [
       'ways',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The text describes specific cases (allergies, fear, culture) where a dog isn\'t suitable; "situations" is the best synonym for these cases.'
   },
 
   {
@@ -985,7 +985,7 @@ const sampleQuestions = [
       '5',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Paragraph 3 describes what the handler does: "stays nearby but generally lets the dog perform its job without interfering" and may ask questions.'
   },
 
   {
@@ -1000,7 +1000,7 @@ const sampleQuestions = [
       'Work with other children in reading therapy sessions',
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Paragraph 5 mentions that readers gain confidence and "learning that reading aloud can be a relaxing experience," which helps overcome nervousness reading in front of others.'
   },
 
   {
@@ -1015,7 +1015,7 @@ const sampleQuestions = [
       'Children like them more than other animals.',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Paragraph 4 lists alternatives like cats, rabbits, and guinea pigs, and mentions "in one program, an African gray parrot," suggesting birds are rare exceptions.'
   },
 
   {
@@ -1030,7 +1030,7 @@ const sampleQuestions = [
       'How often do children work with therapy dogs?',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The article explains reasons for not using dogs (allergies), handler requirements (class/test), and the difference from pets (trained to help), but does not specify a frequency (e.g., "once a week").'
   },
 
   {
@@ -1045,7 +1045,7 @@ const sampleQuestions = [
       'crashed',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Anthony is disappointed and sitting in a chair; "sank" describes the action of dropping down in the chair due to sadness, which fits "slumped."'
   },
 
   {
@@ -1060,7 +1060,7 @@ const sampleQuestions = [
       'Anthony and his family assign the duties.',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Paragraph 10 describes how they split the work: Anthony decides to stay, the children divide chores, and Mom takes the grocery list. "Assign the duties" covers this.'
   },
 
   {
@@ -1075,7 +1075,7 @@ const sampleQuestions = [
       'Wash the dishes',
     ],
     correctAnswer: [1, 2],
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The web asks for "Anthony\'s Chores." Paragraph 13 says "Anthony and Kate made the beds" and paragraph 14 says "everyone helped unload the car."'
   },
 
   {
@@ -1091,7 +1091,7 @@ const sampleQuestions = [
       'Anthony wonders what his family will eat for dinner.',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Paragraph 3 says: "Anthony thought about... cinnamon gum that his friend Caleb loved to chew. When he thought of Caleb, suddenly Anthony jumped up..."'
   },
 
   {
@@ -1106,7 +1106,7 @@ const sampleQuestions = [
       '"I need to call Caleb so he can find a new partner."',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Realizing he might miss the event, Anthony\'s first thought is to call his friend so Caleb isn\'t let down. This shows he cares about his obligation to his friend.'
   },
 
   {
@@ -1121,7 +1121,7 @@ const sampleQuestions = [
       'Anthony must learn to take his time when doing chores.',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: '"Anthony Races Time" refers to the rush to finish all the chores before noon ("time") so he can attend Field Day. He is literally racing against the clock.'
   }
 ];
 

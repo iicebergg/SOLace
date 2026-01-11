@@ -388,7 +388,7 @@ const sampleQuestions = [
       'Where do Ben and Eli go to school?'
     ],
     correctAnswer: 1,
-    explanation: 'The passage states that "migrate means they travel to warmer places."'
+    explanation: 'Paragraph 5 states that "Eli was at his cousin\'s house," answering where he went after school ended.'
   },
 
   {
@@ -403,7 +403,7 @@ const sampleQuestions = [
       'caring'
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions that bears, groundhogs, and some frogs hibernate.'
+    explanation: 'Ben\'s mother notices that he is sulking and unhappy, so she suggests an activity to help him feel better. This shows she cares about his feelings.'
   },
 
   {
@@ -418,7 +418,7 @@ const sampleQuestions = [
       '12'
     ],
     correctAnswer: 2,
-    explanation: 'Animals eat lots of food before hibernating to store fat in their bodies.'
+    explanation: 'Paragraph 9 explicitly states that Ben "decided that fishing would be a good activity to try first."'
   },
 
   {
@@ -433,7 +433,7 @@ const sampleQuestions = [
       'asking Mark and Ben to join him when he visits his cousin'
     ],
     correctAnswer: 0,
-    explanation: 'Emma thought the garden was magical because the vegetables were the biggest she had ever seen.'
+    explanation: 'At the end of the story, Eli suggests they go to the lake and says, "we can invite Mark to go along," showing he wants to include Ben\'s new friend.'
   },
 
   {
@@ -448,7 +448,7 @@ const sampleQuestions = [
       'thinks he will enjoy being outdoors'
     ],
     correctAnswer: 3,
-    explanation: 'Grandma said the secret is in the water from the pond with special minerals.'
+    explanation: 'In paragraph 7, the text says, "Being outside did sound like a good idea," which convinces Ben to give the camp a try.'
   },
 
   {
@@ -463,7 +463,7 @@ const sampleQuestions = [
       'He mentions the length of time left in the school year.'
     ],
     correctAnswer: 3,
-    explanation: 'Grandma said the secret is in the water from the pond with special minerals.'
+    explanation: 'In paragraph 2, Ben yells, "One more week until summer vacation!" counting down the time shows his excitement.'
   },
 
   {
@@ -478,7 +478,7 @@ const sampleQuestions = [
       'make more friends at their school'
     ],
     correctAnswer: 2,
-    explanation: 'The passage states that people invented telescopes to see farther into space.'
+    explanation: 'Since the story mentions Mark attends the same school as Ben, and all three are now friends, they will likely continue to play together when school starts.'
   },
 
   {
@@ -493,7 +493,7 @@ const sampleQuestions = [
       'rising'
     ],
     correctAnswer: 3,
-    explanation: 'The passage states that Yuri Gagarin from Russia was the first person to travel to space in 1961.'
+    explanation: 'In the context of temperature, "soaring" means going up very high, or rising.'
   },
 
   {
@@ -508,7 +508,7 @@ const sampleQuestions = [
       'What type of tunic was worn during special Egyptian celebrations?',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Paragraph 5 explains that both men and women kept their hair very short or shaved their heads to stay cool.'
   },
 
   {
@@ -523,7 +523,7 @@ const sampleQuestions = [
       'Fruits and vegetables were a favorite food for people in Egypt.',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Paragraph 6 lists various items in the Egyptian diet, including grains, fruits, vegetables, and fish, supporting the idea that they ate many types of food.'
   },
 
     {
@@ -538,7 +538,7 @@ const sampleQuestions = [
       'It was made from expensive materials.',
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Paragraph 3 states that people spent time on roofs for storage, family gatherings, and sleeping, meaning it had multiple purposes.'
   },
 
   {
@@ -553,7 +553,7 @@ const sampleQuestions = [
       'gentle'
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The Egyptians found smart ways to build cool houses, dress for the heat, and use available food, showing they were clever at adapting to their environment.'
   },
 
   {
@@ -568,7 +568,7 @@ const sampleQuestions = [
       'The Egyptians developed the greatest culture in history.',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The text specifically lists beans and cucumbers as foods they ate. This is a verifiable fact from the reading.'
   },
 
   {
@@ -583,7 +583,7 @@ const sampleQuestions = [
       'Built small windows in houses',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Under the "Mud Houses" section, the text notes that small windows were used to keep heat out, which fits the chart about adapting to the environment.'
   },
 
   {
@@ -598,7 +598,7 @@ const sampleQuestions = [
       'They liked food from distant countries.',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The text describes a diet consisting of grains, fruits, vegetables, and fish, which are all healthy, natural foods.'
   },
 
   {
@@ -613,7 +613,7 @@ const sampleQuestions = [
       'coz<u>y</u>',
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: '"Lucky" means "having luck." Similarly, "thirsty" means "having thirst." In both cases, the suffix -y turns a noun into an adjective.'
   },
 
   {
@@ -628,7 +628,7 @@ const sampleQuestions = [
       'Run in the field',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The section "Celebrate at the School Fair" lists three main activities: the slide, the dunking booth, and "exciting games."'
   },
 
   {
@@ -643,7 +643,7 @@ const sampleQuestions = [
       'food at the school fair',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The first paragraph states, "Help make these exciting experiences possible," referring to the spring field trips mentioned in the previous sentence.'
   },
 
   {
@@ -658,7 +658,7 @@ const sampleQuestions = [
       'make students laugh',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The dunking booth is a fundraiser activity. By sitting in the booth, the principal encourages students to buy tickets for a chance to dunk him.'
   },
 
   {
@@ -673,7 +673,7 @@ const sampleQuestions = [
       'To tell students about future school events',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The flier lists upcoming fundraisers (cookbook, raffle, and fair) to inform students and encourage them to participate.'
   },
 
   {
@@ -689,7 +689,7 @@ const sampleQuestions = [
       'The raffle tickets will be sold at the front office.'
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Stating that families will "surely enjoy" the recipes is a prediction or feeling, not a proven fact like the prices, dates, or locations.'
   },
 
   {
@@ -703,7 +703,7 @@ const sampleQuestions = [
       'build',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'To "manufacture" means to make or build something, usually in large amounts in a factory.'
   },
 
   {
@@ -717,7 +717,7 @@ const sampleQuestions = [
       'This is the <u>main</u> street in our town.',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: '"Main" means the most important. The other options use incorrect homophones: "for" should be "four," "creek" should be "creak" (sound), and "waste" should be "waist" (body).'
   },
 
   {
@@ -732,7 +732,7 @@ const sampleQuestions = [
       'Funny'
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'When describing food like chocolate cake, "rich" means having a strong, full, and heavy flavor.'
   },
 
   {
@@ -747,7 +747,7 @@ const sampleQuestions = [
       'Max beats Sidney in a somersault contest.',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Sidney is sad because he lost the contest; paragraph 6 says Sidney tumbled three times, but Max did four somersaults.'
   },
 
   {
@@ -762,7 +762,7 @@ const sampleQuestions = [
       'lying',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The alligator had just tried to snap her jaws to eat Sidney, so saying she was "yawning" is a lie to trick them.'
   },
 
   {
@@ -777,7 +777,7 @@ const sampleQuestions = [
       'Max speaks quietly to Sidney after winning many contests.',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'In paragraph 10, Max looks at the skinny branch and the alligator\'s teeth and refuses to do the trick because it is "too dangerous."'
   },
 
   {
@@ -793,7 +793,7 @@ const sampleQuestions = [
       'Bouncing off the branches'
     ],
     correctAnswer: 1,
-    explanation: 'To round 5,647: to nearest thousand (6,000), nearest hundred (5,600), nearest ten (5,650).'
+    explanation: 'The web lists "Alligator\'s Tricks." The alligator asked them to do somersaults, cartwheels, and walk across a skinny branch.'
   },
 
   {
@@ -808,7 +808,7 @@ const sampleQuestions = [
       'Being friendly means saying kind words.',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'After Max saves Sidney, Sidney realizes he was so busy trying to win he wasn\'t careful. He ends up glad to have a friend like Max, realizing friendship matters more than being first.'
   },
 
   {
@@ -823,7 +823,7 @@ const sampleQuestions = [
       'The force of the wind can be very strong.',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The branch hanging over the river is the most important setting detail because it places the monkeys directly above the dangerous alligator.'
   },
 
   {
@@ -838,7 +838,7 @@ const sampleQuestions = [
       'The noise outside is making the thieves nervous.',
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The poem says their "silver fur in silver light" winked at the moon, which implies the moonlight is shining on them.'
   },
 
   {
@@ -853,7 +853,7 @@ const sampleQuestions = [
       'give reasons the young are behind the leader',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'By mentioning the "young" trailing behind and their "bushy tails," the author reveals that these "thieves" are actually animals (raccoons).'
   },
 
   {
@@ -868,7 +868,7 @@ const sampleQuestions = [
       'Some jewels to steal',
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The last stanza states they came "to snack on my dog\'s kibble," meaning they were looking for food.'
   },
 
   {
@@ -883,7 +883,7 @@ const sampleQuestions = [
       'Watching from inside',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The speaker says "I puzzled at them through the glass," meaning they are inside looking out a window.'
   },
 
   {
@@ -898,7 +898,7 @@ const sampleQuestions = [
       'shook',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The text says they "crushed the popcorn into a type of flour." To make flour, you must grind something into powder, so "crushed" means ground.'
   },
 
   {
@@ -914,7 +914,7 @@ const sampleQuestions = [
       'The steam becomes hotter.'
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The chart describes the process of popping corn. After the pressure builds up inside the sealed kernel, the final effect is that the kernel explodes.'
   },
 
   {
@@ -929,7 +929,7 @@ const sampleQuestions = [
       'Popcorn continues to be sold at movie theaters.',
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Saying something is "easy" is a personal judgment or opinion. The other statements are facts about history or science.'
   },
 
   {
@@ -945,7 +945,7 @@ const sampleQuestions = [
       'People bake bread made from popcorn flour.'
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The notes likely list ways popcorn is made or sold. The article mentions that after microwave ovens were invented, popcorn became easy to make at home.'
   },
 
   {
@@ -960,7 +960,7 @@ const sampleQuestions = [
       'tell readers about the history of popcorn',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The article explains the history of popcorn, from ancient times and American Indians to movie theaters and modern microwaves.'
   },
 
   {
@@ -975,7 +975,7 @@ const sampleQuestions = [
       'still, again',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: '"Delicious" and "tasty" are synonyms because they both describe food that has a very good flavor.'
   },
 ];
 

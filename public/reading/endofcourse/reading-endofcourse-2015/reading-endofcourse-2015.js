@@ -690,7 +690,7 @@ const sampleQuestions = [
       'frustration'
     ],
     correctAnswer: 2,
-    explanation: 'The story is about both Danielle making cupcakes as a surprise for her siblings and her siblings making an apron as a surprise for her. Everyone in the story gives and receives gifts.'
+    explanation: 'The author uses these active verbs to describe the traffic, lawn mowers, and children playing, creating a vivid sense of the busy energy and movement in the neighborhood.'
   },
 
   {
@@ -705,7 +705,7 @@ const sampleQuestions = [
       'respectful and obedient'
     ],
     correctAnswer: 1,
-    explanation: 'The passage states that Danielle "had baked cupcakes early in the morning, while Martin and Madison were still asleep," which kept them secret.'
+    explanation: 'Benjamin notices the specific details of the sound ("metallic whang," "slightly different note") and immediately decides to investigate its source, demonstrating that he pays attention to his surroundings and is inquisitive.'
   },
 
   {
@@ -720,7 +720,7 @@ const sampleQuestions = [
       'personification'
     ],
     correctAnswer: 3,
-    explanation: 'After receiving the apron and saying "Thank you. It\'s perfect," the passage says "As she put on the apron, Danielle suddenly remembered the cupcakes she left on the table."'
+    explanation: 'The author attributes human characteristics to the blackberry brambles by describing them as "greedy" and saying they are "swallowing" the metal, which is the definition of personification.'
   },
 
   {
@@ -738,7 +738,7 @@ const sampleQuestions = [
       'apologized'
     ],
     correctAnswer: [3, 6],
-    explanation: 'Madison says "We wanted to make a surprise for you because you\'re such a nice sister. You are always thinking of us." This shows her family\'s care and appreciation for her.'
+    explanation: 'The words "politely" and "apologized" show that Benjamin is being respectful and trying to make amends for his clumsy entrance, hoping to smooth things over with the artist.'
   },
 
   {
@@ -753,7 +753,7 @@ const sampleQuestions = [
       'Benjamin thinks of his neighborhood as quiet only to learn that an artist is noisily constructing a piece of art nearby.'
     ],
     correctAnswer: 3,
-    explanation: 'At the end, Danielle says "I have a surprise for you too!" and leads them to the kitchen where she left cupcakes for them.'
+    explanation: 'Irony involves a contrast between expectation and reality. Benjamin complains about his "tranquil" neighborhood having nothing to do, only to discover someone creating loud, complex industrial art right down the street.'
   },
 
   {
@@ -768,7 +768,7 @@ const sampleQuestions = [
       'have hotel rooms available'
     ],
     correctAnswer: 0,
-    explanation: 'All three characters make surprises for each other: Danielle bakes cupcakes for her siblings, and Martin and Madison make an apron for Danielle, showing they all think of others.'
+    explanation: 'Paragraph 3 explains that while Super Stadiums hold a similar number of people as regular stadiums, they offer "additional accommodations, such as restaurants, luxury lounges—even land bridges to neighboring hotels."'
   },
 
   {
@@ -783,7 +783,7 @@ const sampleQuestions = [
       'Cautionary'
     ],
     correctAnswer: 3,
-    explanation: 'The root word in "discovered" is "cover." The prefix "dis-" means "not" and the suffix "-ed" shows past tense, so "discovered" means "uncovered" or "found."'
+    explanation: 'The author warns that the costs are "astronomical" and quotes a source suggesting the goal is to "raise ticket prices," indicating a cautionary attitude regarding the financial impact on fans.'
   },
 
   {
@@ -798,7 +798,7 @@ const sampleQuestions = [
       'pay higher ticket prices'
     ],
     correctAnswer: 3,
-    explanation: 'The passage states that "In some parts of the world, especially near the ocean, people eat seaweed all by itself," suggesting people near oceans commonly eat foods from the sea.'
+    explanation: 'The paragraph explicitly quotes Tom Van Riper, who states that the formula for these stadiums ends with the owners turning around and "rais[ing] ticket prices."'
   },
 
   {
@@ -813,7 +813,7 @@ const sampleQuestions = [
       'Futuristic Super Stadiums dedicated to soccer and rugby are opening in Lyon, France, and Dublin, Ireland.',
     ],
     correctAnswer: 1,
-    explanation: 'The passage explains that "Without seaweed, ice cream and yogurt would not be as thick or creamy but would seem rather lumpy and watery," showing seaweed affects how they look and their texture.'
+    explanation: 'Statements about what architects have "always welcomed" throughout all of "history" are subjective generalizations that are difficult to prove, unlike specific facts about weather, building features, or locations.'
   },
 
   {
@@ -828,7 +828,7 @@ const sampleQuestions = [
       'are responsible for yielding more attractive buildings',
     ],
     correctAnswer: 0,
-    explanation: 'The article mentions several goods that contain seaweed: toothpaste, shampoo, makeup, ice cream, and yogurt. It also states "Hundreds of everyday items have seaweed in them."'
+    explanation: 'Paragraph 5 mentions that stadiums use "energy-saving materials," such as a skin designed to reflect the sun and keep the inside cool, showing a focus on conservation.'
   },
 
     {
@@ -843,7 +843,7 @@ const sampleQuestions = [
       'Sports team owners hope Super Stadiums will bring in more revenue, which can be used to improve team performance.',
     ],
     correctAnswer: 1,
-    explanation: 'The article provides factual information about seaweed, explaining what it is, where it grows, and how it is used in various everyday products.'
+    explanation: 'The fact that stadiums are built to hold massive crowds of 20,000 to 50,000 people (or more) provides concrete evidence of how popular these sports are.'
   },
 
   {
@@ -858,7 +858,7 @@ const sampleQuestions = [
       'describe a popular trend in stadium construction',
     ],
     correctAnswer: 3,
-    explanation: 'The website "Discover Ocean Plants" would be most likely to have information about where red seaweed grows, as seaweed is a type of ocean plant.'
+    explanation: 'The entire article focuses on defining "Super Stadiums," detailing their features and costs, and providing examples of this new trend in construction from around the world.'
   },
 
   {
@@ -873,7 +873,7 @@ const sampleQuestions = [
       'show how Osamu Tezuka\'s manga differs from older manga',
     ],
     correctAnswer: 0,
-    explanation: 'The instructions state: "Have the person who receives your message hold the paper near a light bulb. The heat will make the secret message appear!"'
+    explanation: 'The paragraph uses vivid imagery (a camera looking down, a canoe flipping) to describe a specific action scene found in a manga by Tezuka, illustrating his cinematic style.'
   },
 
   {
@@ -888,7 +888,7 @@ const sampleQuestions = [
       'How many siblings did Osamu Tezuka have?',
     ],
     correctAnswer: 3,
-    explanation: 'The message only appears when steam covers the mirror. When the steam clears and goes away, the message would no longer be visible.'
+    explanation: 'The first sentence of paragraph 3 explicitly states: "Tezuka was born in 1928, the oldest of three children," which answers the question about his siblings.'
   },
 
   {
@@ -903,7 +903,7 @@ const sampleQuestions = [
       'deeply regretted taking his mother\'s advice about becoming a doctor',
     ],
     correctAnswer: 1,
-    explanation: 'In this context, "invisible" means the message cannot be seen or is hidden from view until the steam makes it appear.'
+    explanation: 'The text explains that he was a medical student "torn between manga and medicine" and had to consult his mother before finally deciding to devote himself to manga.'
   },
 
   {
@@ -918,7 +918,7 @@ const sampleQuestions = [
       'argue that comic book superheroes are based on Shakespeare\'s plays',
     ],
     correctAnswer: 2,
-    explanation: 'Both methods require adult assistance: "Lemony Letter" needs a grownup to cut the lemon in half, and "Mirror Message" needs a grownup to peel the potato.'
+    explanation: 'By comparing Tezuka to Shakespeare (high art) and traditional comics to soap operas, the author highlights the superior depth, complexity, and artistic value of Tezuka’s work.'
   },
 
   {
@@ -933,7 +933,7 @@ const sampleQuestions = [
       'stating an opinion of manga and supporting it with examples and quotations',
     ],
     correctAnswer: 0,
-    explanation: 'The instructions say to use a white crayon on white paper, making it "difficult to see the markings" because white crayon on white paper is nearly invisible.'
+    explanation: 'The passage follows Tezuka\'s life from childhood to death, covering his background, his decision to become an artist, his specific stylistic innovations, and his lasting influence on the medium.'
   },
 
   {
@@ -948,7 +948,7 @@ const sampleQuestions = [
       'Manga currently has its own section in many Japanese newspapers.',
     ],
     correctAnswer: 3,
-    explanation: 'The flier provides step-by-step instructions for three different methods of creating secret messages, teaching readers how to make them.'
+    explanation: 'Paragraph 6 mentions that manga evolved from small strips in the corner of papers to eventually "earning its own section in many Japanese newspapers," demonstrating its growth in popularity.'
   },
 
   {
@@ -963,7 +963,7 @@ const sampleQuestions = [
       'add some humor to a serious situation',
     ],
     correctAnswer: 3,
-    explanation: 'The numbers indicate the sequential order of steps that must be followed to successfully create each type of secret message.'
+    explanation: 'During a sad farewell, the mother makes a lighthearted comment about visiting because the aunt has the mah-jong set. This causes them both to laugh, momentarily lightening the serious mood.'
   },
 
   {
@@ -978,7 +978,7 @@ const sampleQuestions = [
       'disapproval',
     ],
     correctAnswer: 0,
-    explanation: 'In the context of grocery stores charging "too much" for strawberries, "charge" means "to set as a price," which is definition 2.'
+    explanation: 'Su-Jen is thinking about meeting a father she does not actually know and has only seen in a picture, which creates a sense of the unknown and uncertainty.'
   },
 
   {
@@ -993,7 +993,7 @@ const sampleQuestions = [
       'contemplative',
     ],
     correctAnswer: 3,
-    explanation: 'Guide words show the first and last entries on a dictionary page. "Carrot" and "canal" fall alphabetically between "camera" and "cause." "Cabin" comes before "camera" and "cave" comes after "cause."'
+    explanation: 'The text describes the mother as "absorbed in her own world" and barely speaking, which aligns with the definition of being contemplative or deep in thought.'
   },
 
   {
@@ -1008,7 +1008,7 @@ const sampleQuestions = [
       'irony',
     ],
     correctAnswer: 2,
-    explanation: 'The title "A Hidden Treasure" suggests that characters will be looking for or searching for something that is hidden.'
+    explanation: 'The word "huffing" phonetically mimics the sound of the heavy breathing it describes, which is the definition of onomatopoeia.'
   },
 
   {
@@ -1023,7 +1023,7 @@ const sampleQuestions = [
       'thoughts',
     ],
     correctAnswer: 3,
-    explanation: 'Paragraph 5 describes what Evan found on the map: "Grandma\'s house, a raindrop inside a square, two little triangles, and a dock" with an "X" marking the "Greatest Fishing Spot."'
+    explanation: 'The story is told in the first person ("I"), and the reader understands Su-Jen primarily through her internal narration, observations of her mother, and her memories.'
   },
 
   {
@@ -1038,7 +1038,7 @@ const sampleQuestions = [
       'affectionate',
     ],
     correctAnswer: 3,
-    explanation: 'The text shows their excitement: Evan asks "Excitedly" if they can find the fishing spot, Mark says "Let\'s try," and "they thundered down the steps," showing they are eager to start their search.'
+    explanation: 'Upon meeting Su-Jen, the father gently lifts her, presses her face to his shoulder, and holds her close, demonstrating physical warmth and affection.'
   },
 
   {
@@ -1053,7 +1053,7 @@ const sampleQuestions = [
       'the construction of a new restaurant',
     ],
     correctAnswer: 0,
-    explanation: 'The story begins with Grandma painting her kitchen, and ends with the boys rushing back "into the kitchen" with their question about the dock, then planning to get fishing poles.'
+    explanation: 'The excerpt concludes with the family arriving in the dark, snowy town of Irvine to start their life together; the natural continuation would be Su-Jen adapting to this new environment.'
   },
 
   {
@@ -1068,7 +1068,7 @@ const sampleQuestions = [
       'accomplished',
     ],
     correctAnswer: 3,
-    explanation: 'Mark says "The square with the raindrop is behind Grandma\'s house" and they look for the water tower with the faded raindrop symbol first.'
+    explanation: 'While "fraternizing" means associating with others, it is often used in a negative context to imply wasting time or associating with the wrong crowd, contrasting with positive words like "accomplished."'
   },
 
   {
@@ -1082,7 +1082,7 @@ const sampleQuestions = [
       'exceptionally rational and reasonable',
     ],
     correctAnswer: 1,
-    explanation: 'When the boys ask about the dock, Grandma explains: "That dock was torn down a long time ago."'
+    explanation: 'Because Ryan\'s papers "never contained mistakes" and received high grades for grammar, "meticulous" must mean he was extremely thorough and careful with details.'
   },
 
   {
@@ -1096,7 +1096,7 @@ const sampleQuestions = [
       'In 1921 Faulkner accepted a job as postmaster at the University of Mississippi post office.',
     ],
     correctAnswer: 2,
-    explanation: 'In alphabetical order: searched, shouted, smiled, spend, steps.'
+    explanation: 'Winning a poetry prize is directly related to Faulkner\'s development and success as a writer ("literary career"), whereas the other options concern his childhood behavior or non-writing jobs.'
   },
 
   {
@@ -1110,7 +1110,7 @@ const sampleQuestions = [
       'waited a long time to learn the results of the tryouts',
     ],
     correctAnswer: 1,
-    explanation: 'Paragraph 4 directly states: "The young birds learn to peck the ground and eat plants by watching older ostriches."'
+    explanation: 'A roller coaster has steep ups and downs. This metaphor describes Ian\'s fluctuating emotions: feeling "up" (hopeful) and then "down" (worried).'
   },
 
   {
@@ -1126,7 +1126,7 @@ const sampleQuestions = [
       'receive nutrition from crystals',
     ],
     correctAnswer: 0,
-    explanation: 'Paragraph 6 states: "Their strong legs can deliver a kick that stops a lion!"'
+    explanation: 'Paragraph 2 explains that while freezing temperatures should theoretically make the water uninhabitable, many fish live there, setting up the explanation of how they biologically adapt to the cold.'
   },
 
   {
@@ -1141,7 +1141,7 @@ const sampleQuestions = [
       'is dissatisfied that people wrongly see Antarctica as a lifeless place',
     ],
     correctAnswer: 1,
-    explanation: 'The "Ostrich Facts" chart shows "Life span: 30-40 years," which answers how long ostriches live.'
+    explanation: 'By acknowledging the "adverse" (harsh) environment and highlighting the specific fish that manage to live there, the author expresses admiration or appreciation for these resilient life forms.'
   },
 
   {
@@ -1156,7 +1156,7 @@ const sampleQuestions = [
       'protection',
     ],
     correctAnswer: 0,
-    explanation: 'The text states: "The male and one of the females take turns guarding and sitting on the eggs."'
+    explanation: 'The fish hunts krill (small crustaceans) in order to eat them, so "sustenance" refers to the food or nourishment the fish needs to survive.'
   },
 
   {
@@ -1171,7 +1171,7 @@ const sampleQuestions = [
       'Many types of fish thrive in the water around Antarctica.',
     ],
     correctAnswer: 3,
-    explanation: 'The passage explains: "Their new fluffy feathers trap air and keep the chicks warm at night."'
+    explanation: 'The paragraph states that Antarctica boasts "more than 120 species" of fish that flourish there, and then provides specific examples (threadfin, bald notothen) to illustrate this variety.'
   },
 
   {
@@ -1186,7 +1186,7 @@ const sampleQuestions = [
       'invisible',
     ],
     correctAnswer: 2,
-    explanation: 'The article states: "With such speed, ostriches outrun most predators" and that they can run 43 miles per hour, showing their speed helps them escape danger.'
+    explanation: 'The text explains that this protein targets ice crystals and prevents the fish from freezing to death. Since it saves the fish\'s life, the protein is "beneficial."'
   },
 
   {
@@ -1201,7 +1201,7 @@ const sampleQuestions = [
       'chronological order',
     ],
     correctAnswer: 0,
-    explanation: 'The title "The Search" indicates the poem will be about someone searching or looking for something.'
+    explanation: 'Paragraph 6 introduces the specific term "AFGP," explains what the acronym stands for, and details exactly what it is and how it functions, which is the structure of a definition.'
   },
 
   {
@@ -1216,7 +1216,7 @@ const sampleQuestions = [
       'Human Applications',
     ],
     correctAnswer: 3,
-    explanation: '"Pause" means to stop briefly or for a short time. The speaker stops in their tracks when Dad asks questions.'
+    explanation: 'The section titled "Human Applications" explicitly discusses how the protein could be used for organ transplants, deicing, and preserving frozen foods.'
   },
 
   {
@@ -1231,7 +1231,7 @@ const sampleQuestions = [
       'It focuses on fish rather than humans.',
     ],
     correctAnswer: 1,
-    explanation: 'Lines 17-20 show disappointment and sadness: "It\'s surely gone missing / There\'s clearly no hope. / I have to give up / Find somewhere to mope." The speaker feels upset about losing the shoe.'
+    explanation: 'The text provides specific, factual information about water temperatures, fish species, biological mechanisms (proteins), and scientific research, which is characteristic of expository writing.'
   },
 
   {
@@ -1246,7 +1246,7 @@ const sampleQuestions = [
       'To highlight a certain fish that lives in the waters around Antarctica',
     ],
     correctAnswer: 0,
-    explanation: 'The first line of the poem states: "I\'ve emptied my sports bag," which shows this was the first place searched.'
+    explanation: 'The central question of the passage is how fish survive in water that should freeze them, and the text answers this by explaining the specific antifreeze protein they possess.'
   },
 
   {
@@ -1262,7 +1262,7 @@ const sampleQuestions = [
       'reputation'
     ],
     correctAnswer: 3,
-    explanation: 'Dad asks "When was your last game?" which suggests the shoe was worn during a sports game, and the speaker empties a sports bag looking for it.'
+    explanation: 'In this context, "polishing" means refining or perfecting something. The narrator is working to improve his writing skills ("craft") through experience.'
   },
 
   {
@@ -1277,7 +1277,7 @@ const sampleQuestions = [
       'Jake is busy reviewing his day\'s work when he learns he will also have to review a KidsPop concert that will take place the following afternoon. He feels that he does not know much about classical music.',
     ],
     correctAnswer: 2,
-    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+    explanation: 'This summary captures the main plot points: the unexpected assignment to cover for a coworker, Jake\'s initial excitement about a "real" reporting job, and his subsequent disappointment upon realizing it is a children\'s concert.'
   },
 
   {
@@ -1292,7 +1292,7 @@ const sampleQuestions = [
       'priced to be affordable',
     ],
     correctAnswer: 1,
-    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+    explanation: 'An "overt" attempt is one that is open and obvious rather than hidden. The symphony is clearly and obviously trying to get children interested in music.'
   },
 
   {
@@ -1308,7 +1308,7 @@ const sampleQuestions = [
       'invent'
     ],
     correctAnswer: 3,
-    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+    explanation: 'The word uses the root "prehend" (related to grasping or understanding). Combined with the negative prefix "in-", "incomprehensible" means impossible to understand.'
   },
 
   {
@@ -1323,7 +1323,7 @@ const sampleQuestions = [
       'suggest that the concert will soon be ending',
     ],
     correctAnswer: 2,
-    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+    explanation: 'The narrator describes the music using vivid physical movements of animals (lumbering, trudging), showing how the sounds allow him to visualize the animals in his imagination.'
   },
 
   {
@@ -1340,7 +1340,7 @@ const sampleQuestions = [
       'Onomatopoeia'
     ],
     correctAnswer: 1,
-    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+    explanation: 'The repetition of the initial "f" sound in the words "fanfare," "flourishes," "finale," and "farewell" is an example of alliteration.'
   },
 
   {
@@ -1355,7 +1355,7 @@ const sampleQuestions = [
       'creating the conflict'
     ],
     correctAnswer: 3,
-    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+    explanation: 'The central tension in the story drives from Jake\'s internal conflict: he wants to be a serious reporter but is stuck reviewing what he considers a childish event.'
   },
 
   {
@@ -1370,7 +1370,7 @@ const sampleQuestions = [
       'playfulness'
     ],
     correctAnswer: 3,
-    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+    explanation: 'Descriptions of cackling hens, hopping kangaroos, and dancing elephants highlight the humorous, whimsical, and playful nature of the musical composition.'
   },
 
   {
@@ -1385,7 +1385,7 @@ const sampleQuestions = [
       'He imagines the animals as the music portrays them.'
     ],
     correctAnswer: 2,
-    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+    explanation: 'Despite his hesitation about the content of the concert, the fact that he arrives with his notepad and pen ready shows his professional dedication to performing his task well.'
   },
 
   {
@@ -1400,7 +1400,7 @@ const sampleQuestions = [
       'reaction to the concert'
     ],
     correctAnswer: 3,
-    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+    explanation: 'The first-person perspective allows the reader to experience Jake\'s internal shift from skepticism to appreciation as he reacts to the music and the audience around him.'
   },
 
   {
@@ -1415,7 +1415,7 @@ const sampleQuestions = [
       'entertain the reader with a cartoon'
     ],
     correctAnswer: 2,
-    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+    explanation: 'The article discusses a complex technological concept involving microcircuitry on a lens. The illustration helps the reader visualize what this futuristic technology looks like.'
   },
 
   {
@@ -1430,7 +1430,7 @@ const sampleQuestions = [
       'question the value of new technology'
     ],
     correctAnswer: 0,
-    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+    explanation: 'The paragraph explains the difficulty of shrinking computers while keeping the display visible to the human eye, introducing a specific obstacle developers must overcome.'
   },
 
   {
@@ -1445,7 +1445,7 @@ const sampleQuestions = [
       'summarize how the device functions'
     ],
     correctAnswer: 3,
-    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+    explanation: 'The quote from researcher Babak Parviz ("you would see what the display is generating superimposed on the world") provides a simple summary of how the user experiences the technology.'
   },
 
   {
@@ -1460,7 +1460,7 @@ const sampleQuestions = [
       'prefer to prepare for weather changes'
     ],
     correctAnswer: 2,
-    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+    explanation: 'The text mentions applications such as labeling mountain peaks, identifying landmarks, and finding directions, which are tools specifically useful for people traveling in unfamiliar places.'
   },
 
   {
@@ -1475,7 +1475,7 @@ const sampleQuestions = [
       'can only be worn for short periods of time'
     ],
     correctAnswer: 0,
-    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+    explanation: 'Paragraph 8 explicitly states the researcher\'s hope that the technology will eventually progress to be imprinted on "corrective or prescribed lenses," which are used to fix vision problems.'
   },
 
   {
@@ -1490,7 +1490,7 @@ const sampleQuestions = [
       'describe the process of manufacturing computerized contact lenses'
     ],
     correctAnswer: 1,
-    explanation: 'The poem reveals that Otis the dog has a "new chew / With laces and treads" which turns out to be the missing shoe.'
+    explanation: 'The article is an informational text designed to explain a new technology, detailing who is developing it, how it works, and its potential applications for the future.'
   },
 ];
 

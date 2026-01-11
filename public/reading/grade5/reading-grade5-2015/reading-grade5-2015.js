@@ -477,7 +477,7 @@ const sampleQuestions = [
       'created'
     ],
     correctAnswer: 3,
-    explanation: 'The passage states that "migrate means they travel to warmer places."'
+    explanation: 'The context mentions Mrs. Barnes had "devised the plan," and she asks "What do you mean?" implying she originated or created the idea.'
   },
 
   {
@@ -492,7 +492,7 @@ const sampleQuestions = [
       'He wants it to contain music.'
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions that bears, groundhogs, and some frogs hibernate.'
+    explanation: 'In paragraph 1, Charlie says, "Our show seems to be missing something... we should end our news and daily announcements on a cheerful note."'
   },
 
   {
@@ -507,7 +507,7 @@ const sampleQuestions = [
       'likes to find different ways of completing a task'
     ],
     correctAnswer: 3,
-    explanation: 'Animals eat lots of food before hibernating to store fat in their bodies.'
+    explanation: 'Paragraph 5 states, "Charlie was what his mother called an \'experimenter.\' He was always trying to find a new way of doing something."'
   },
 
   {
@@ -522,7 +522,7 @@ const sampleQuestions = [
       'His friends decide to play a joke on their teacher.'
     ],
     correctAnswer: 2,
-    explanation: 'Emma thought the garden was magical because the vegetables were the biggest she had ever seen.'
+    explanation: 'Paragraph 6 describes how Charlie starts humming, and then his friends Sara and Joshua join in until "more voices chimed in singing."'
   },
 
   {
@@ -537,7 +537,7 @@ const sampleQuestions = [
       'He wants to be sure she is the only one to hear his plan.'
     ],
     correctAnswer: 1,
-    explanation: 'Grandma said the secret is in the water from the pond with special minerals.'
+    explanation: 'Paragraph 9 states, "Before Charlie could tell Mrs. Barnes about his new idea, the bell rang."'
   },
 
   {
@@ -552,7 +552,7 @@ const sampleQuestions = [
       'Remind the school about pizza day'
     ],
     correctAnswer: 2,
-    explanation: 'Grandma said the secret is in the water from the pond with special minerals.'
+    explanation: 'In paragraph 10, Charlie explains his plan: "We can play it at the end of each morning\'s program so students can sing along."'
   },
 
   {
@@ -567,7 +567,7 @@ const sampleQuestions = [
       'Made Like No Other Fish'
     ],
     correctAnswer: 3,
-    explanation: 'The passage states that people invented telescopes to see farther into space.'
+    explanation: 'Paragraph 2 describes the physical characteristics of the blobfish ("fleshy face," "moves freely like gelatin," "no muscles"), emphasizing its unique body structure.'
   },
 
   {
@@ -582,7 +582,7 @@ const sampleQuestions = [
       'Comparison/contrast'
     ],
     correctAnswer: 1,
-    explanation: 'The passage states that Yuri Gagarin from Russia was the first person to travel to space in 1961.'
+    explanation: 'Paragraph 5 presents the problem (blobfish is in danger of extinction due to nets), and paragraph 6 presents the solution (limiting fishing, stricter rules).'
   },
 
   {
@@ -597,7 +597,7 @@ const sampleQuestions = [
       'Blobfish are known for bobbing rather than swimming.',
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The fact that they live at "depths of around 2,600 feet" (Paragraph 1) explains why humans rarely encounter them.'
   },
 
   {
@@ -612,7 +612,7 @@ const sampleQuestions = [
       'Saving the blobfish from the fishing industry is an important cause.',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The author concludes by saying the blobfish is "a remarkable sea creature that is worth protecting" (Paragraph 6).'
   },
 
     {
@@ -627,7 +627,7 @@ const sampleQuestions = [
       'Deep-sea fishermen have scooped up many blobfish in nets along with the sea creatures they are seeking.',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Stating that the fish is "one of the most interesting" is a subjective judgment by the author, not a verifiable fact.'
   },
 
   {
@@ -642,7 +642,7 @@ const sampleQuestions = [
       'discussions'
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: '"Chatter" refers to the act of talking quickly or incessantly; in this context, it refers to the family\'s conversations or discussions about the trip.'
   },
 
   {
@@ -657,7 +657,7 @@ const sampleQuestions = [
       'need work in order to be ready for the campers',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Rachel sees a pool that "needed vacuuming," a "faded" sign, and a baseball field "overgrown with grass," indicating work is needed.'
   },
 
   {
@@ -672,7 +672,7 @@ const sampleQuestions = [
       'her parents',
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Rachel struggles internally with her own attitude; she wants to be home reading, but eventually finds herself enjoying the camp activities.'
   },
 
   {
@@ -687,7 +687,7 @@ const sampleQuestions = [
       'Riding the bicycle',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'After helping Lyla clean the pool and seeing Sarah in the craft shack, Rachel feels involved and decides the summer "might not be so bad after all."'
   },
 
   {
@@ -702,7 +702,7 @@ const sampleQuestions = [
       'does not want to leave her friends from school',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Paragraph 3 states, "Rachel had hoped they could spend the summer relaxing at home in Arlington."'
   },
 
   {
@@ -717,7 +717,7 @@ const sampleQuestions = [
       'Sense of humor',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Both Lyla (who says "You\'re welcome to come and help anytime") and Sarah (who welcomes her to the craft shack) are welcoming and friendly to Rachel.'
   },
 
   {
@@ -732,7 +732,7 @@ const sampleQuestions = [
       'share it with others',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The section "Try Your Syrup On..." lists foods like pancakes, ice cream, and oatmeal, implying the syrup is used to add flavor to them.'
   },
 
   {
@@ -747,7 +747,7 @@ const sampleQuestions = [
       'Sugar and fruit mixtures may produce foam when they are boiled.',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Step 7 of the recipe states as a fact: "Foam may form while you boil the sugar and fruit mixture."'
   },
 
   {
@@ -762,7 +762,7 @@ const sampleQuestions = [
       'Try Your Syrup On...',
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The "Follow These Helpful Cooking Hints" section provides tips and variations, making it the logical place for a substitution suggestion.'
   },
 
   {
@@ -778,7 +778,7 @@ const sampleQuestions = [
       'Add sugar into the mixture and return it to the pan.'
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The "Helpful Cooking Hints" section specifically says: "Add a half-tablespoon of fresh lemon juice... during Step 4."'
   },
 
   {
@@ -793,7 +793,7 @@ const sampleQuestions = [
       'trading post: a place where the exchange of goods takes place'
     ],
     correctAnswer: [0, 2],
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'A "colony" and a "settlement" both refer to a group of people establishing a community in a new place.'
   },
 
   {
@@ -807,7 +807,7 @@ const sampleQuestions = [
       'As we looked up at the sky from our camp, the moon greeted us.',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The phrase "the moon greeted us" is personification, giving a human action (greeting) to an inanimate object (the moon).'
   },
 
   {
@@ -821,7 +821,7 @@ const sampleQuestions = [
       'They are building a home on a <u>prime</u> piece of land.',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'In this context, "prime piece of land" means land of the finest quality (definition 2).'
   },
 
   {
@@ -836,7 +836,7 @@ const sampleQuestions = [
       'mane',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: '"Mane" (hair on a lion/horse) sounds exactly like "main" but has a different spelling and meaning.'
   },
 
   {
@@ -851,7 +851,7 @@ const sampleQuestions = [
       'view from the space hotel',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'These paragraphs discuss living units, velcro suits for sleeping, viewing windows, exercise activities, and meals—all services or amenities for guests.'
   },
 
   {
@@ -866,7 +866,7 @@ const sampleQuestions = [
       'The distance to the space hotel',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'An illustration of the exterior primarily provides a visual representation of what the structure looks like.'
   },
 
   {
@@ -881,7 +881,7 @@ const sampleQuestions = [
       '2',
     ],
     correctAnswer: 2,
-    explanation: 'To round 5,647: to nearest thousand (6,000), nearest hundred (5,600), nearest ten (5,650).'
+    explanation: 'Paragraph 4 states: "The hotel will be able to house four guests and two astronaut pilots for a three-night stay."'
   },
 
   {
@@ -896,7 +896,7 @@ const sampleQuestions = [
       'move from the spacecraft to the hotel',
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Paragraph 6 explains: "The Velcro suits will help keep the guests in place," because otherwise they would float due to weightlessness.'
   },
 
   {
@@ -911,7 +911,7 @@ const sampleQuestions = [
       'A Russian spacecraft will transport guests to the space hotel.',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The summary should capture the main idea; the plan to open the first space hotel is the central topic, while the others are supporting details.'
   },
 
   {
@@ -927,7 +927,7 @@ const sampleQuestions = [
       'Astronauts train on a tropical island',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Paragraph 3 states: "Four companies have formed Galactic Suite Limited. They have plans to become the world\'s largest chain of space resorts."'
   },
 
   {
@@ -943,7 +943,7 @@ const sampleQuestions = [
       'Space Trips Already Available',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The points listed (training, experiencing conditions, traveling) are all steps in preparing for the space vacation described in the article.'
   },
 
   {
@@ -958,7 +958,7 @@ const sampleQuestions = [
       'will allow people to view Earth',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Paragraph 1 introduces the main idea: "providing ordinary people with the opportunity to vacation in space is becoming a reality."'
   },
 
   {
@@ -973,7 +973,7 @@ const sampleQuestions = [
       'weightless',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The root word is "weight." "Less" is a suffix, and "ness" is another suffix added to "weightless."'
   },
 
   {
@@ -988,7 +988,7 @@ const sampleQuestions = [
       'prepare the reader for a history lesson',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'The lines "If you had read the paper / back in 1889" set the time period (setting) for the story being told.'
   },
 
   {
@@ -1003,7 +1003,7 @@ const sampleQuestions = [
       'teach the public about other countries',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Stanza 3 says: "to help her paper with its sales / she would write about her feat."'
   },
 
   {
@@ -1018,7 +1018,7 @@ const sampleQuestions = [
       'are not adventurous',
     ],
     correctAnswer: 2,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Stanza 4 quotes the boss: "Ladies shouldn\'t stray / so far from home-all by themselves!" indicating his belief about women traveling alone.'
   },
 
   {
@@ -1033,7 +1033,7 @@ const sampleQuestions = [
       'Who will she hire to perform her job while she is away?',
     ],
     correctAnswer: 0,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'Stanza 8 describes the various modes of transport she had to use (ship, burro, train, rickshaw) because "there was no plane," highlighting the travel challenge.'
   },
 
   {
@@ -1048,7 +1048,7 @@ const sampleQuestions = [
       'Nellie Bly wanted to travel around the world and write about her journey, so she set out alone, and the public read about her adventures.',
     ],
     correctAnswer: 3,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: 'This option covers the main points: her desire to travel/write, setting out alone (despite the boss\'s doubt), and the public following her story.'
   },
 
   {
@@ -1063,7 +1063,7 @@ const sampleQuestions = [
       'celebrate',
     ],
     correctAnswer: 1,
-    explanation: 'The passage mentions the first person in space, moon landing, space station, and Mars robots, but not people living on Mars or traveling to other galaxies.'
+    explanation: '"Unsupportive" has the root "support," the prefix "un-," and the suffix "-ive."'
   },
 ];
 
