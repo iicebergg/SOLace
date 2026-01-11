@@ -230,7 +230,7 @@ const sampleQuestions = [
  id: '27',
  text: 'The volume of water in the pot decreases during this investigation. Water droplets form on the mirror when positioned over the pot. In this setup, water--',
  type: 'multiple-choice',
- image: {url: 'images/question_28.png', alt: 'Image failed to load. Please try again later.'},
+ image: {url: 'images/question_27.png', alt: 'Image failed to load. Please try again later.'},
  options: ['vaporizes and then freezes', 'vaporizes and then condenses', 'condenses and then vaporizes', 'freezes and then vaporizes'], 
  correctAnswer: 1,
  explanation: 'Water vaporizes (evaporates) from the pot, then condenses on the cool mirror surface, forming water droplets. This demonstrates the water cycle.'
@@ -271,6 +271,7 @@ const sampleQuestions = [
  id: '32',
  text: 'White-footed mice having thicker fur than cactus mice is probably influenced most by the differences in the--',
  type: 'multiple-choice',
+ image: {url: 'images/question_32.png', alt: 'Image failed to load. Please try again later.'},
  options: ['food that they eat', 'time of day they are active', 'environmental climates where they live', 'amount of predators they encounter'],
  correctAnswer: 2, 
  explanation: 'Fur thickness is an adaptation to climate. White-footed mice likely live in colder environments requiring thicker fur for insulation.'
