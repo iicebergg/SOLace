@@ -228,7 +228,8 @@ function animateCounters() {
 // Format numbers for display
 function formatNumber(num) {
   if (num >= 1000) {
-    return (num / 1000).toFixed(0) + 'K+';
+    const result = num / 1000;
+    return (result % 1 === 0 ? result.toFixed(0) : result.toFixed(1)) + 'K+';
   }
   return num + (num === 98 ? '%' : '+');
 }
