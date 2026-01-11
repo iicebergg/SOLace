@@ -11,9 +11,9 @@ const sampleQuestions = [
  },
  {
  id: '2',
- text: '<img src="images/question_2.png" class="question-image"><br><br>Place the phases of mitosis in the correct sequence.',
+ text: 'Place the phases of mitosis in the correct sequence.',
  type: 'drag-drop',
- options: ['<img src="images/question_2a.png" class="question-image">', '<img src="images/question_2b.png" class="question-image">', '<img src="images/question_2c.png" class="question-image">', '<img src="images/question_2d.png" class="question-image">'],
+ options: ['<img src="images/question_2a.png" class="question-image" style="width:70px">', '<img src="images/question_2b.png" class="question-image" style="width:70px">', '<img src="images/question_2c.png" class="question-image" style="width:70px">', '<img src="images/question_2d.png" class="question-image" style="width:70px">'],
  dropZones: ['Phase 1', 'Phase 2', 'Phase 3', 'Phase 4'],
  correctAnswer: [1, 0, 2, 3],
  explanation: 'The correct sequence of mitosis is: Prophase (chromosomes condense, nuclear envelope breaks down), Metaphase (chromosomes align at cell equator), Anaphase (sister chromatids separate and move to opposite poles), and Telophase (nuclear envelopes reform, cytokinesis begins).'
@@ -141,11 +141,10 @@ const sampleQuestions = [
  },
  {
  id: '18',
- text: 'Classify the organisms by their metabolic strategies.',
- type: 'drag-drop',
+ text: 'Select the autotrophs.',
+ type: 'multiple-select',
  options: ['Fern', 'Euglena', 'Grass', 'Paramecium', 'Yeast'],
- dropZones: ['Autotroph', 'Autotroph', 'Both', 'Heterotroph', 'Heterotroph'],
- correctAnswer: [0, 2, 1, 3, 4],
+ correctAnswer: [0, 2],
  explanation: 'Fern and Grass are autotrophs (they photosynthesize). Paramecium and Yeast are heterotrophs (they consume other organisms). Euglena is unique in being both—it can photosynthesize in light or consume food in dark.'
  },
  {
@@ -318,11 +317,11 @@ const sampleQuestions = [
  },
  {
  id: '40',
- text: '<img src="images/question_40.png" class="question-image"><br><br>This table was found in a journal of student research. What are the components found in these experimental data?',
+ text: '<img src="images/question_40.png" class="question-image"><br><br>This table was found in a journal of student research. What are the independent and dependent variables in this investigation?',
  type: 'drag-drop',
  options: ['Water (mL)', 'Starch Solution (mL)', 'Enzyme: Amylase (mL)', 'Incubation Temperature (°C)', 'Fractional Activity (%)'],
- dropZones: ['Independent Variable', 'Dependent Variable', 'Constant 1', 'Constant 2', 'Constant 3'],
- correctAnswer: [3, 4, 0, 1, 2],
+ dropZones: ['Independent Variable', 'Dependent Variable'],
+ correctAnswer: [3, 4],
  explanation: 'The independent variable is Incubation Temperature (what the researcher changes). The dependent variable is Fractional Activity (what is measured). The constants are Water, Starch Solution, and Enzyme amounts (kept the same across test groups).'
  },
  {
