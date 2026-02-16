@@ -226,8 +226,23 @@ function toggleMagnifier(enabled) {
     magnifier.style.left = magnifierState.currentX + 'px';
     magnifier.style.top = magnifierState.currentY + 'px';
     updateMagnifierContent();
+
+    // Start observing DOM changes to keep magnifier content current
+    if (magnifier._contentObserver) {
+      magnifier._contentObserver.observe(document.body, {
+        childList: true,
+        subtree: true,
+        attributes: true,
+        characterData: true
+      });
+    }
   } else {
     magnifier.classList.remove('active');
+
+    // Stop observing DOM changes when magnifier is inactive
+    if (magnifier._contentObserver) {
+      magnifier._contentObserver.disconnect();
+    }
   }
 }
 
@@ -288,7 +303,7 @@ function updateLineReaderAvailability() {
     // Update description to show why it's unavailable
     const description = container?.querySelector('.tool-description');
     if (description) {
-      description.textContent = `Requires screen size of at least ${ACCESSIBILITY_CONFIG.lineReader.minWidth}×${ACCESSIBILITY_CONFIG.lineReader.minHeight}px`;
+      description.textContent = `Requires screen size of at least ${ACCESSIBILITY_CONFIG.lineReader.minWidth}\u00D7${ACCESSIBILITY_CONFIG.lineReader.minHeight}px`;
     }
   }
 }
@@ -387,6 +402,21 @@ function setupMagnifier() {
   document.addEventListener('mouseup', handleEnd);
   document.addEventListener('touchend', handleEnd);
   document.addEventListener('touchcancel', handleEnd);
+
+  // FIX 4: MutationObserver to detect page content changes under the magnifier
+  let mutationUpdatePending = false;
+  const magnifierObserver = new MutationObserver(() => {
+    if (!magnifier || !magnifier.classList.contains('active')) return;
+    if (mutationUpdatePending) return;
+    mutationUpdatePending = true;
+    requestAnimationFrame(() => {
+      updateMagnifierContent();
+      mutationUpdatePending = false;
+    });
+  });
+
+  // Store observer on the magnifier element for access in toggleMagnifier
+  magnifier._contentObserver = magnifierObserver;
 }
 
 function updateMagnifierContent() {
@@ -421,6 +451,7 @@ function updateMagnifierContent() {
   bodyClone.style.position = 'absolute';
   bodyClone.style.top = '0';
   bodyClone.style.left = '0';
+  // FIX 2: Use full document dimensions so scrolled-down content exists in the clone
   bodyClone.style.width = document.documentElement.scrollWidth + 'px';
   bodyClone.style.height = document.documentElement.scrollHeight + 'px';
   bodyClone.style.transform = 'scale(2)';
@@ -428,11 +459,11 @@ function updateMagnifierContent() {
   bodyClone.style.pointerEvents = 'none';
   bodyClone.style.overflow = 'hidden';
   
-  // Calculate the offset to center the magnified content on the cursor position
+  // FIX 1: Account for page scroll so content displays correctly when scrolled
   const scrollX = window.scrollX || window.pageXOffset;
   const scrollY = window.scrollY || window.pageYOffset;
-  const offsetX = -((centerX + scrollX) * 2 - 100);
-  const offsetY = -((centerY + scrollY) * 2 - 100);
+  const offsetX = -((centerX + scrollX) * 2 - 100); // 100 is half the magnifier width
+  const offsetY = -((centerY + scrollY) * 2 - 100); // 100 is half the magnifier height
   
   bodyClone.style.marginLeft = offsetX + 'px';
   bodyClone.style.marginTop = offsetY + 'px';
@@ -940,12 +971,6 @@ window.addEventListener('resize', () => {
     magnifier.style.top = magnifierState.currentY + 'px';
     updateMagnifierContent();
   }
-
-  window.addEventListener('scroll', () => {
-  if (magnifier && magnifier.classList.contains('active')) {
-    updateMagnifierContent();
-  }
-  }, { passive: true });
   
   if (lineReader && lineReader.classList.contains('active')) {
     const maxLeft = window.innerWidth - lineReaderState.width;
@@ -955,3 +980,9 @@ window.addEventListener('resize', () => {
     updateLineReaderPosition();
   }
 });
+
+window.addEventListener('scroll', () => {
+  if (magnifier && magnifier.classList.contains('active')) {
+    updateMagnifierContent();
+  }
+}, { passive: true });
