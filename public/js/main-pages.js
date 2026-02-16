@@ -193,7 +193,7 @@ function setupScrollAnimation() {
   }, observerOptions);
 
   // Observe elements for animation
-  const animatedElements = document.querySelectorAll('.feature-card, .category-card, .stat-card');
+  const animatedElements = document.querySelectorAll('.feature-card, .category-card, .stat-card, .testimonial-slide');
   
   animatedElements.forEach(el => {
     el.style.opacity = '0';
@@ -379,6 +379,135 @@ function setupPerformanceMonitoring() {
   });
 }
 
+// =============================================
+// Testimonials Carousel
+// =============================================
+
+const testimonials = [
+  {
+    text: "SOLace made studying for my math SOL so much easier. I felt really prepared on test day.",
+    author: "Grade 7 Student, Fairfax County"
+  },
+  {
+    text: "As a parent, I love that my kids can practice without needing an account or worrying about their data being collected.",
+    author: "Parent of Two, Loudoun County"
+  },
+  {
+    text: "I recommend SOLace to all of my students. It mirrors the real test environment and the questions are spot on.",
+    author: "5th Grade Teacher, Virginia Beach"
+  },
+  {
+    text: "The reading tests helped me build confidence before the real thing. I actually look forward to practice now!",
+    author: "Grade 4 Student, Richmond"
+  },
+  {
+    text: "Finally a free resource that focuses on Virginia standards specifically. This fills a real gap for our school.",
+    author: "Curriculum Specialist, Arlington"
+  }
+];
+
+function setupTestimonialsCarousel() {
+  var slide = document.querySelector('.testimonial-slide');
+  var textEl = document.querySelector('.testimonial-text');
+  var authorEl = document.querySelector('.testimonial-author');
+  var prevBtn = document.querySelector('.testimonial-prev');
+  var nextBtn = document.querySelector('.testimonial-next');
+  var dotsContainer = document.querySelector('.testimonial-dots');
+
+  if (!slide || !textEl || !authorEl || !prevBtn || !nextBtn || !dotsContainer) return;
+
+  var current = 0;
+  var autoInterval = null;
+  var userHasNavigated = false;
+  var isTransitioning = false;
+  var ADVANCE_MS = 8000;
+  var FADE_MS = 500;
+
+  // Build dot indicators
+  for (var i = 0; i < testimonials.length; i++) {
+    var dot = document.createElement('button');
+    dot.className = 'testimonial-dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', 'Go to testimonial ' + (i + 1));
+    dot.setAttribute('data-index', i);
+    dot.addEventListener('click', function() {
+      var idx = parseInt(this.getAttribute('data-index'));
+      userHasNavigated = true;
+      stopAuto();
+      goTo(idx);
+    });
+    dotsContainer.appendChild(dot);
+  }
+
+  var dots = dotsContainer.querySelectorAll('.testimonial-dot');
+
+  function render(index) {
+    textEl.textContent = testimonials[index].text;
+    authorEl.textContent = '— ' + testimonials[index].author;
+    for (var d = 0; d < dots.length; d++) {
+      if (d === index) {
+        dots[d].classList.add('active');
+      } else {
+        dots[d].classList.remove('active');
+      }
+    }
+  }
+
+  function goTo(index) {
+    if (index === current || isTransitioning) return;
+    isTransitioning = true;
+    slide.classList.add('fade-out');
+
+    setTimeout(function() {
+      current = index;
+      render(current);
+      slide.classList.remove('fade-out');
+      isTransitioning = false;
+    }, FADE_MS);
+  }
+
+  function next() {
+    goTo((current + 1) % testimonials.length);
+  }
+
+  function prev() {
+    goTo((current - 1 + testimonials.length) % testimonials.length);
+  }
+
+  function startAuto() {
+    if (userHasNavigated) return;
+    autoInterval = setInterval(next, ADVANCE_MS);
+  }
+
+  function stopAuto() {
+    clearInterval(autoInterval);
+    autoInterval = null;
+  }
+
+  prevBtn.addEventListener('click', function() {
+    userHasNavigated = true;
+    stopAuto();
+    prev();
+  });
+
+  nextBtn.addEventListener('click', function() {
+    userHasNavigated = true;
+    stopAuto();
+    next();
+  });
+
+  // Keyboard support for arrows
+  prevBtn.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); prevBtn.click(); }
+  });
+  nextBtn.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); nextBtn.click(); }
+  });
+
+  // Initial render and start auto-advance
+  render(current);
+  startAuto();
+}
+
 // Initialize everything when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
   initHomePage();
@@ -388,6 +517,7 @@ document.addEventListener('DOMContentLoaded', () => {
   setupAccessibility();
   setupErrorHandling();
   setupPerformanceMonitoring();
+  setupTestimonialsCarousel();
   handleURLParameters();
 });
 

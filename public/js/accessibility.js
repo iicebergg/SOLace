@@ -216,6 +216,7 @@ function saveAccessibilityPreference(key, value) {
 }
 
 // Magnifier functionality
+// FIX 5: Start/stop content polling when magnifier is toggled
 function toggleMagnifier(enabled) {
   console.log('Toggling magnifier:', enabled);
   if (!magnifier) return;
@@ -226,9 +227,46 @@ function toggleMagnifier(enabled) {
     magnifier.style.left = magnifierState.currentX + 'px';
     magnifier.style.top = magnifierState.currentY + 'px';
     updateMagnifierContent();
+
+    // Start polling for content changes so the magnifier updates
+    // immediately when the page changes (question advance, feedback, etc.)
+    if (magnifier._pollInterval) clearInterval(magnifier._pollInterval);
+    magnifier._lastContentFingerprint = getContentFingerprint();
+    magnifier._pollInterval = setInterval(() => {
+      if (!magnifier || !magnifier.classList.contains('active')) return;
+      const currentFingerprint = getContentFingerprint();
+      if (currentFingerprint !== magnifier._lastContentFingerprint) {
+        magnifier._lastContentFingerprint = currentFingerprint;
+        updateMagnifierContent();
+      }
+    }, 200);
   } else {
     magnifier.classList.remove('active');
+
+    // Stop polling when magnifier is inactive
+    if (magnifier._pollInterval) {
+      clearInterval(magnifier._pollInterval);
+      magnifier._pollInterval = null;
+    }
   }
+}
+
+// Lightweight fingerprint of key page elements.
+// Checks element counts, text lengths, visibility states, and active page
+// so that any meaningful content change is detected without cloning the DOM.
+function getContentFingerprint() {
+  const questionContainer = document.getElementById('question-container');
+  const feedbackContainer = document.getElementById('feedback-container');
+  const activePage = document.querySelector('.page.active');
+  const progressFill = document.getElementById('progress-fill');
+
+  return [
+    activePage ? activePage.id : '',
+    questionContainer ? questionContainer.childElementCount + ':' + questionContainer.textContent.length : '',
+    feedbackContainer ? feedbackContainer.style.display + ':' + feedbackContainer.textContent.length : '',
+    progressFill ? progressFill.style.width : '',
+    document.body.className
+  ].join('|');
 }
 
 // Configuration for accessibility tools screen size requirements
@@ -288,7 +326,7 @@ function updateLineReaderAvailability() {
     // Update description to show why it's unavailable
     const description = container?.querySelector('.tool-description');
     if (description) {
-      description.textContent = `Requires screen size of at least ${ACCESSIBILITY_CONFIG.lineReader.minWidth}×${ACCESSIBILITY_CONFIG.lineReader.minHeight}px`;
+      description.textContent = `Requires screen size of at least ${ACCESSIBILITY_CONFIG.lineReader.minWidth}\u00D7${ACCESSIBILITY_CONFIG.lineReader.minHeight}px`;
     }
   }
 }
@@ -387,6 +425,9 @@ function setupMagnifier() {
   document.addEventListener('mouseup', handleEnd);
   document.addEventListener('touchend', handleEnd);
   document.addEventListener('touchcancel', handleEnd);
+
+  magnifier._lastContentFingerprint = '';
+  magnifier._pollInterval = null;
 }
 
 function updateMagnifierContent() {
@@ -421,16 +462,19 @@ function updateMagnifierContent() {
   bodyClone.style.position = 'absolute';
   bodyClone.style.top = '0';
   bodyClone.style.left = '0';
-  bodyClone.style.width = '100vw';
-  bodyClone.style.height = '100vh';
+  // FIX 2: Use full document dimensions so scrolled-down content exists in the clone
+  bodyClone.style.width = document.documentElement.scrollWidth + 'px';
+  bodyClone.style.height = document.documentElement.scrollHeight + 'px';
   bodyClone.style.transform = 'scale(2)';
   bodyClone.style.transformOrigin = '0 0';
   bodyClone.style.pointerEvents = 'none';
   bodyClone.style.overflow = 'hidden';
   
-  // Calculate the offset to center the magnified content on the cursor position
-  const offsetX = -(centerX * 2 - 100); // 100 is half the magnifier width
-  const offsetY = -(centerY * 2 - 100); // 100 is half the magnifier height
+  // FIX 1: Account for page scroll so content displays correctly when scrolled
+  const scrollX = window.scrollX || window.pageXOffset;
+  const scrollY = window.scrollY || window.pageYOffset;
+  const offsetX = -((centerX + scrollX) * 2 - 100); // 100 is half the magnifier width
+  const offsetY = -((centerY + scrollY) * 2 - 100); // 100 is half the magnifier height
   
   bodyClone.style.marginLeft = offsetX + 'px';
   bodyClone.style.marginTop = offsetY + 'px';
@@ -947,3 +991,9 @@ window.addEventListener('resize', () => {
     updateLineReaderPosition();
   }
 });
+
+window.addEventListener('scroll', () => {
+  if (magnifier && magnifier.classList.contains('active')) {
+    updateMagnifierContent();
+  }
+}, { passive: true });
