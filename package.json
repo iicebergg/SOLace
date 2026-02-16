@@ -9,13 +9,5 @@
   "keywords": [],
   "author": "Vivien Berg",
   "license": "ISC",
-  "type": "commonjs",
-  "devDependencies": {
-    "nodemon": "^3.1.10"
-  },
-  "dependencies": {
-    "@vercel/blob": "^2.0.1",
-    "dotenv": "^16.5.0",
-    "uuid": "^11.1.0"
+  "type": "commonjs"
   }
-}
