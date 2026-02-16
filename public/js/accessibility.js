@@ -421,16 +421,18 @@ function updateMagnifierContent() {
   bodyClone.style.position = 'absolute';
   bodyClone.style.top = '0';
   bodyClone.style.left = '0';
-  bodyClone.style.width = '100vw';
-  bodyClone.style.height = '100vh';
+  bodyClone.style.width = document.documentElement.scrollWidth + 'px';
+  bodyClone.style.height = document.documentElement.scrollHeight + 'px';
   bodyClone.style.transform = 'scale(2)';
   bodyClone.style.transformOrigin = '0 0';
   bodyClone.style.pointerEvents = 'none';
   bodyClone.style.overflow = 'hidden';
   
   // Calculate the offset to center the magnified content on the cursor position
-  const offsetX = -(centerX * 2 - 100); // 100 is half the magnifier width
-  const offsetY = -(centerY * 2 - 100); // 100 is half the magnifier height
+  const scrollX = window.scrollX || window.pageXOffset;
+  const scrollY = window.scrollY || window.pageYOffset;
+  const offsetX = -((centerX + scrollX) * 2 - 100);
+  const offsetY = -((centerY + scrollY) * 2 - 100);
   
   bodyClone.style.marginLeft = offsetX + 'px';
   bodyClone.style.marginTop = offsetY + 'px';
@@ -938,6 +940,12 @@ window.addEventListener('resize', () => {
     magnifier.style.top = magnifierState.currentY + 'px';
     updateMagnifierContent();
   }
+
+  window.addEventListener('scroll', () => {
+  if (magnifier && magnifier.classList.contains('active')) {
+    updateMagnifierContent();
+  }
+  }, { passive: true });
   
   if (lineReader && lineReader.classList.contains('active')) {
     const maxLeft = window.innerWidth - lineReaderState.width;
