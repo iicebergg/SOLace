@@ -175,16 +175,6 @@ function setupEventListeners() {
   if (saveSettingsBtn) {
     saveSettingsBtn.addEventListener('click', saveUserPreferences);
   }
-
-  window.addEventListener('beforeunload', function(e) {
-    if (testInitialized) {
-      // Cancel the event
-      e.preventDefault();
-      // Chrome and modern browsers require returnValue to be set to trigger the dialog
-      e.returnValue = 'You have a test in progress. Are you sure you want to leave?';
-      return e.returnValue;
-    }
-  });
 }
 
 // Navigate to a different page
@@ -2327,3 +2317,45 @@ function disableTestNavButton() {
 
 // Initialize the app when the page loads
 document.addEventListener('DOMContentLoaded', initApp);
+
+// Navigation guard - registered independently of initApp so it always activates.
+// Covers tab close, refresh, browser back/forward, and in-page link clicks.
+(function() {
+  // beforeunload: catches tab close, refresh, browser back/forward, address bar navigation
+  window.addEventListener('beforeunload', function(e) {
+    if (testInitialized) {
+      e.preventDefault();
+      e.returnValue = '';
+      return e.returnValue;
+    }
+  });
+
+  // Click interception: catches in-page anchor clicks that navigate away.
+  // More reliable than beforeunload for links within the document itself,
+  // since some browsers throttle or suppress beforeunload on link clicks.
+  document.addEventListener('click', function(e) {
+    if (!testInitialized) return;
+
+    const anchor = e.target.closest('a');
+    if (!anchor) return;
+
+    const href = anchor.getAttribute('href');
+    if (!href) return;
+
+    // Ignore links that open in new tabs
+    if (anchor.target === '_blank') return;
+
+    // Ignore in-page hash-only links
+    if (href.startsWith('#')) return;
+
+    // Ignore javascript: links
+    if (href.startsWith('javascript:')) return;
+
+    // This link would navigate away from the test page
+    e.preventDefault();
+    if (confirm('You have a test in progress. Are you sure you want to leave this page? Your progress will be lost.')) {
+      testInitialized = false;
+      window.location.href = anchor.href;
+    }
+  }, true); // Use capture phase so this fires before other click handlers
+})();
