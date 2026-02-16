@@ -216,6 +216,7 @@ function saveAccessibilityPreference(key, value) {
 }
 
 // Magnifier functionality
+// FIX 5: Start/stop content polling when magnifier is toggled
 function toggleMagnifier(enabled) {
   console.log('Toggling magnifier:', enabled);
   if (!magnifier) return;
@@ -227,23 +228,45 @@ function toggleMagnifier(enabled) {
     magnifier.style.top = magnifierState.currentY + 'px';
     updateMagnifierContent();
 
-    // Start observing DOM changes to keep magnifier content current
-    if (magnifier._contentObserver) {
-      magnifier._contentObserver.observe(document.body, {
-        childList: true,
-        subtree: true,
-        attributes: true,
-        characterData: true
-      });
-    }
+    // Start polling for content changes so the magnifier updates
+    // immediately when the page changes (question advance, feedback, etc.)
+    if (magnifier._pollInterval) clearInterval(magnifier._pollInterval);
+    magnifier._lastContentFingerprint = getContentFingerprint();
+    magnifier._pollInterval = setInterval(() => {
+      if (!magnifier || !magnifier.classList.contains('active')) return;
+      const currentFingerprint = getContentFingerprint();
+      if (currentFingerprint !== magnifier._lastContentFingerprint) {
+        magnifier._lastContentFingerprint = currentFingerprint;
+        updateMagnifierContent();
+      }
+    }, 200);
   } else {
     magnifier.classList.remove('active');
 
-    // Stop observing DOM changes when magnifier is inactive
-    if (magnifier._contentObserver) {
-      magnifier._contentObserver.disconnect();
+    // Stop polling when magnifier is inactive
+    if (magnifier._pollInterval) {
+      clearInterval(magnifier._pollInterval);
+      magnifier._pollInterval = null;
     }
   }
+}
+
+// Lightweight fingerprint of key page elements.
+// Checks element counts, text lengths, visibility states, and active page
+// so that any meaningful content change is detected without cloning the DOM.
+function getContentFingerprint() {
+  const questionContainer = document.getElementById('question-container');
+  const feedbackContainer = document.getElementById('feedback-container');
+  const activePage = document.querySelector('.page.active');
+  const progressFill = document.getElementById('progress-fill');
+
+  return [
+    activePage ? activePage.id : '',
+    questionContainer ? questionContainer.childElementCount + ':' + questionContainer.textContent.length : '',
+    feedbackContainer ? feedbackContainer.style.display + ':' + feedbackContainer.textContent.length : '',
+    progressFill ? progressFill.style.width : '',
+    document.body.className
+  ].join('|');
 }
 
 // Configuration for accessibility tools screen size requirements
@@ -403,20 +426,8 @@ function setupMagnifier() {
   document.addEventListener('touchend', handleEnd);
   document.addEventListener('touchcancel', handleEnd);
 
-  // FIX 4: MutationObserver to detect page content changes under the magnifier
-  let mutationUpdatePending = false;
-  const magnifierObserver = new MutationObserver(() => {
-    if (!magnifier || !magnifier.classList.contains('active')) return;
-    if (mutationUpdatePending) return;
-    mutationUpdatePending = true;
-    requestAnimationFrame(() => {
-      updateMagnifierContent();
-      mutationUpdatePending = false;
-    });
-  });
-
-  // Store observer on the magnifier element for access in toggleMagnifier
-  magnifier._contentObserver = magnifierObserver;
+  magnifier._lastContentFingerprint = '';
+  magnifier._pollInterval = null;
 }
 
 function updateMagnifierContent() {
