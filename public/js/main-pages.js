@@ -393,8 +393,8 @@ const testimonials = [
     author: "Parent of Two, Loudoun County"
   },
   {
-    text: "I recommend SOLace to all of my students. It mirrors the real test environment and the questions are spot on.",
-    author: "5th Grade Teacher, Virginia Beach"
+    text: "I love this website. I use it with tutoring students both in reading and math. I like that it is released SOLs from years past and that it is in a more test like environment. When we print them it isn’t the same for kids who may struggle with testing anxiety. Therefore having it in this format is so helpful. Very impressed this is made by a current FCPS student as well.",
+    author: "Molly Sullivan, teacher in Fairfax County"
   },
   {
     text: "The reading tests helped me build confidence before the real thing. I actually look forward to practice now!",
