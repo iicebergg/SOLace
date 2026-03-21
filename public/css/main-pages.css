@@ -622,6 +622,32 @@ header {
   transform: translateY(-2px);
 }
 
+/* News Section*/
+.news-img {
+  height: 150px;
+}
+
+.news-img-div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.news-img-div:hover::before {
+  transform: scaleX(1);
+}
+
+.news-img-div:hover {
+  transform: translateY(-5px);
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.15));
+  transition: all 0.3s ease;
+}
+
 /* Testimonials Section */
 .testimonials-section {
   height: 480px;
