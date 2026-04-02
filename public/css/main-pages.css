@@ -623,8 +623,20 @@ header {
 }
 
 /* News Section*/
+.stats-grid:has(.news-img-div) {
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
 .news-img {
-  height: 150px;
+  height: 100px;
+}
+
+.news-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .news-img-div::before {
@@ -644,8 +656,7 @@ header {
 
 .news-img-div:hover {
   transform: translateY(-5px);
-  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.15));
-  transition: all 0.3s ease;
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.15))
 }
 
 /* Testimonials Section */
