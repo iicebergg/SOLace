@@ -15,6 +15,12 @@ function confirmExit() {
 // Get test-specific identifier (each test file can define this)
 const TEST_IDENTIFIER = window.TEST_IDENTIFIER || 'default';
 
+// Test metadata used for anonymous analytics (each test page sets these)
+// TEST_SUBJECT examples: 'Algebra I', 'Grade 5 Reading', 'Geometry'
+// TEST_GRADE_BAND examples: '3-5', '6-8', '9-12'
+const TEST_SUBJECT = window.TEST_SUBJECT || 'unknown';
+const TEST_GRADE_BAND = window.TEST_GRADE_BAND || 'unknown';
+
 // Modified storage keys to be test-specific
 const STORAGE_KEYS = {
   TEST_RESULTS: `solace_test_results_${TEST_IDENTIFIER}`,
@@ -83,6 +89,12 @@ let questions = [];
 let currentTestAnswers = [];
 let testStartTime = null; // Add time tracking
 let testInitialized = false; // Track if test has been properly initialized
+
+// Anonymous analytics state (resets each test, never persisted to storage)
+let currentAttemptId = null;         // UUID generated client-side at test start
+let currentQuestionStartTime = null; // Timestamp when current question was displayed
+let answerChangeCounter = 0;         // Tracks option changes within a single question
+
 let currentUser = {
   accessibilityPreferences: {
     theme: 'black-on-white',
@@ -99,6 +111,7 @@ function initApp() {
   // Set up event listeners
   setupNavigation();
   setupEventListeners();
+  setupAnswerChangeTracking();
 
   // Initially disable the test navigation button
   disableTestNavButton();
@@ -233,6 +246,14 @@ function startTest() {
   testStartTime = new Date();
   console.log('Test timer started at:', testStartTime);
 
+  // Generate an anonymous attempt identifier for this test session.
+  // The UUID lives only in memory and dies when the tab closes.
+  // crypto.randomUUID is supported by all modern browsers (Chrome 92+, Safari 15.4+, Firefox 95+).
+  currentAttemptId = (typeof crypto !== 'undefined' && crypto.randomUUID)
+    ? crypto.randomUUID()
+    : `fallback-${Date.now()}-${Math.random().toString(36).slice(2)}`;
+  console.log('Attempt ID generated for this session');
+
   // Reset UI elements
   const progressFill = document.getElementById('progress-fill');
   const currentQuestionSpan = document.getElementById('current-question');
@@ -274,6 +295,10 @@ function loadQuestion(index) {
 
   // Clear previous question
   questionContainer.innerHTML = '';
+
+  // Reset per-question analytics tracking
+  currentQuestionStartTime = new Date();
+  answerChangeCounter = 0;
 
   // Hide feedback container
   const feedbackContainer = document.getElementById('feedback-container');
@@ -820,11 +845,18 @@ function submitAnswer() {
   break;
   }
 
-  // Store the answer
+  // Store the answer with analytics metadata for the research database
+  const questionTimeSeconds = currentQuestionStartTime
+    ? Math.round((new Date() - currentQuestionStartTime) / 1000)
+    : 0;
+
   currentTestAnswers.push({
     questionId: question.id,
+    questionNumber: currentQuestionIndex + 1,
     userAnswer: userAnswer,
-    correct: isCorrect
+    correct: isCorrect,
+    timeSeconds: questionTimeSeconds,
+    answerChanges: answerChangeCounter
   });
 
   // Show feedback
@@ -960,6 +992,21 @@ function finishTest() {
     localStorage.setItem('testResults', JSON.stringify(savedResults));
   }
 
+  // Send anonymous analytics to the research database.
+  // This is fire-and-forget: failures are logged but never surfaced to the student.
+  submitAttemptToDatabase({
+    attemptId: currentAttemptId,
+    subject: TEST_SUBJECT,
+    testId: TEST_IDENTIFIER,
+    gradeBand: TEST_GRADE_BAND,
+    startedAt: testStartTime,
+    completedAt: new Date(),
+    totalTimeSeconds: timeSpent,
+    scoreCorrect: correctAnswers,
+    scoreTotal: questions.length,
+    responses: currentTestAnswers
+  });
+
   // Navigate to results page
   navigateTo('results');
 
@@ -974,6 +1021,65 @@ function calculateTimeSpent() {
   if (!testStartTime) return 0;
   const endTime = new Date();
   return Math.round((endTime - testStartTime) / 1000); // Return seconds
+}
+
+// Submit anonymous test attempt to the research database.
+// Payload contains no persistent user identifier: attemptId is generated per-test
+// and discarded when the tab closes. COPPA-compliant by design.
+async function submitAttemptToDatabase(payload) {
+  try {
+    const body = {
+      attempt_id: payload.attemptId,
+      subject: payload.subject,
+      test_id: payload.testId,
+      grade_band: payload.gradeBand,
+      started_at: payload.startedAt.toISOString(),
+      completed_at: payload.completedAt.toISOString(),
+      total_time_seconds: payload.totalTimeSeconds,
+      score_correct: payload.scoreCorrect,
+      score_total: payload.scoreTotal,
+      responses: payload.responses.map(r => ({
+        question_number: r.questionNumber,
+        question_id: r.questionId,
+        was_correct: r.correct,
+        time_seconds: r.timeSeconds,
+        answer_changes: r.answerChanges
+      }))
+    };
+
+    const response = await fetch('/api/submit-attempt', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body)
+    });
+
+    if (!response.ok) {
+      console.warn('Analytics submission returned non-OK status:', response.status);
+    } else {
+      console.log('Anonymous attempt data submitted successfully');
+    }
+  } catch (err) {
+    // Swallow errors so analytics failures never affect the student's experience
+    console.warn('Analytics submission failed (non-blocking):', err);
+  }
+}
+
+// Track answer changes within the current question using event delegation.
+// One listener on the question container catches all option interactions
+// across question types, which avoids editing every render function.
+function setupAnswerChangeTracking() {
+  const questionContainer = document.getElementById('question-container');
+  if (!questionContainer) {
+    console.warn('Question container not found for change tracking');
+    return;
+  }
+
+  questionContainer.addEventListener('click', (e) => {
+    if (!testInitialized) return;
+    if (e.target.closest('.option, .drop-zone, .point-select-overlay, .drag-item')) {
+      answerChangeCounter++;
+    }
+  });
 }
 
 // Format time for display
