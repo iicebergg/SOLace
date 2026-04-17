@@ -69,11 +69,11 @@ const sampleQuestions = [
  },
  {
  id: '8',
- text: 'Which of these best represents this set of cherries? <img src="images/8.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+ text: 'Which of these is best represented by this number line? <img src="images/8.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
  options: ['6 + 2', '6 × 2', '3 + 2', '3 × 2'],
  correctAnswer: 3, 
- explanation: 'If there are 3 groups with 2 cherries in each group, use multiplication: 3 × 2 = 6 total cherries.'
+ explanation: 'If there are 2 hops of 3 each, use multiplication: 3 × 2.'
  },
  {
  id: '9',
