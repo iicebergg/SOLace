@@ -6,6 +6,7 @@
 [![HTML](https://img.shields.io/badge/HTML-%23E34F26.svg?logo=html5&logoColor=white)](https://github.com/search?q=repo%3Aiicebergg%2FSOLace++language%3AHTML&type=code)
 [![CSS](https://img.shields.io/badge/CSS-639?logo=css&logoColor=fff)](https://github.com/search?q=repo%3Aiicebergg%2FSOLace++language%3ACSS&type=code)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)](https://github.com/search?q=repo%3Aiicebergg%2FSOLace++language%3AJavaScript&type=code)
+[![Neon](https://img.shields.io/badge/Postgres-%23316192.svg?logo=postgresql&logoColor=white)](https://neon.com/)
 [![Vercel](https://img.shields.io/badge/Vercel-%23000000.svg?logo=vercel&logoColor=white)](https://vercel.com/home)
 [![Donate](https://img.shields.io/badge/%E2%99%A1_Donate-white?style=flat&color=%23496ca3)](https://donorbox.org/solace-787440)
 
