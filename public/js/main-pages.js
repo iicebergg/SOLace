@@ -203,53 +203,68 @@ function setupScrollAnimation() {
   });
 }
 
-// Counter animation for statistics
-function animateCounters() {
-  const counters = document.querySelectorAll('.stat-number');
-  
-  counters.forEach(counter => {
-    const target = parseInt(counter.textContent.replace(/[^0-9]/g, ''));
-    const increment = target / 100;
-    let current = 0;
-    
-    const timer = setInterval(() => {
-      current += increment;
-      
-      if (current >= target) {
-        counter.textContent = formatNumber(target);
-        clearInterval(timer);
-      } else {
-        counter.textContent = formatNumber(Math.floor(current));
-      }
-    }, 20);
-  });
+// Animate a single .stat-number element from 0 up to its stored target.
+// Uses 100 steps at 20ms (~2s total) so increments align cleanly with the
+// kilo-formatted display (e.g., 100K target advances 1K per frame).
+function animateCounter(el) {
+  // Cancel any in-flight animation on this element so re-entries restart cleanly.
+  if (el._counterTimer) {
+    clearInterval(el._counterTimer);
+    el._counterTimer = null;
+  }
+
+  const target = parseInt(el.dataset.target, 10) || 0;
+  const increment = target / 100;
+  let current = 0;
+
+  el._counterTimer = setInterval(() => {
+    current += increment;
+    if (current >= target) {
+      el.textContent = formatNumber(target);
+      clearInterval(el._counterTimer);
+      el._counterTimer = null;
+    } else {
+      el.textContent = formatNumber(Math.floor(current));
+    }
+  }, 20);
 }
 
-// Format numbers for display
+// Format numbers for display in condensed form (e.g., 100000 -> 100K+, 1500 -> 1.5K+).
 function formatNumber(num) {
   if (num >= 1000) {
     const result = num / 1000;
-    return (result % 1 === 0 ? result.toFixed(0) : result.toFixed(1)) + 'K+';
+    const formatted = result % 1 === 0 ? result.toFixed(0) : result.toFixed(1);
+    return formatted + 'K+';
   }
-  return num + (num === 98 ? '%' : '+');
+  return num + '+';
 }
 
-// Intersection Observer for counter animation
+// Intersection Observer for counter animation.
+// Observes each .stat-number element individually so hero stats and the stats grid
+// both get covered, captures targets from the original HTML once, and animates each
+// counter exactly once per page load (unobserved after first intersection).
 function setupCounterAnimation() {
-  const statsSection = document.querySelector('.stats-section');
-  
-  if (statsSection) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          animateCounters();
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.5 });
-    
-    observer.observe(statsSection);
-  }
+  const counters = document.querySelectorAll('.stat-number');
+  if (counters.length === 0) return;
+
+  // Capture target values from the initial HTML and seed displayed value at 0.
+  counters.forEach(counter => {
+    const original = counter.textContent.trim();
+    const target = parseInt(original.replace(/[^0-9]/g, ''), 10) || 0;
+    counter.dataset.target = target;
+    counter.textContent = formatNumber(0);
+  });
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  counters.forEach(counter => observer.observe(counter));
 }
 
 // Handle URL parameters for category selection
@@ -534,5 +549,5 @@ document.addEventListener('visibilitychange', () => {
 window.SOLaceHome = {
   scrollToSection,
   initHomePage,
-  animateCounters
+  animateCounter
 };
