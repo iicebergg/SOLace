@@ -15,7 +15,7 @@ const sampleQuestions = [
  type: 'drag-drop',
  options: ['<img src="images/question_2a.png" class="question-image" style="width:70px">', '<img src="images/question_2b.png" class="question-image" style="width:70px">', '<img src="images/question_2c.png" class="question-image" style="width:70px">', '<img src="images/question_2d.png" class="question-image" style="width:70px">'],
  dropZones: ['Phase 1', 'Phase 2', 'Phase 3', 'Phase 4'],
- correctAnswer: [1, 0, 2, 3],
+ correctAnswer: [0, 2, 1, 3],
  explanation: 'The correct sequence of mitosis is: Prophase (chromosomes condense, nuclear envelope breaks down), Metaphase (chromosomes align at cell equator), Anaphase (sister chromatids separate and move to opposite poles), and Telophase (nuclear envelopes reform, cytokinesis begins).'
  },
  {
