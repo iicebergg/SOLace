@@ -230,7 +230,7 @@ const readingPassages = {
 const sampleQuestions = [
   // Question 1 - Based on "Raccoons of the Rainforest" passage
   {
-    id: 1,
+    id: '1',
     passageId: 'raccoons_of_the_rainforest',
     type: 'multiple-choice',
     text: `In paragraph 2, the author's use of the words "distinguish" and "like" indicates that the information is organized by —`,
@@ -248,7 +248,7 @@ const sampleQuestions = [
 
   // Question 2 - Based on "Raccoons of the Rainforest" passage
   {
-    id: 2,
+    id: '2',
     passageId: 'raccoons_of_the_rainforest',
     type: 'multiple-select',
     text: `In this excerpt from paragraph 5, which three words are examples of onomatopoeia?
@@ -270,7 +270,7 @@ const sampleQuestions = [
 
   // Question 3 - Based on "Raccoons of the Rainforest" passage
   {
-    id: 3,
+    id: '3',
     passageId: 'raccoons_of_the_rainforest',
     type: 'multiple-choice',
     text: `Based on paragraph 8, the reader may best infer that the kinkajou —`,
@@ -286,7 +286,7 @@ const sampleQuestions = [
 
   // Question 4 - Based on "Raccoons of the Rainforest" passage
   {
-    id: 4,
+    id: '4',
     passageId: 'raccoons_of_the_rainforest',
     type: 'multiple-choice',
     text: `According to the article, which sense best helps a kinkajou locate another kinkajou's territory?`,
@@ -302,7 +302,7 @@ const sampleQuestions = [
 
   // Question 5 - Based on "Raccoons of the Rainforest" passage
   {
-    id: 5,
+    id: '5',
     passageId: 'raccoons_of_the_rainforest',
     type: 'multiple-choice',
     text: `According to the article, the kinkajou resembles a monkey because of its —`,
@@ -320,7 +320,7 @@ const sampleQuestions = [
 
   // Question 6 - Based on "Riding Day" passage
   {
-    id: 6,
+    id: '6',
     passageId: 'riding_day',
     type: 'multiple-choice',
     text: `After their first meeting, the narrator and the horse learn about each other when they —`,
@@ -336,7 +336,7 @@ const sampleQuestions = [
 
   // Question 7 - Based on "Riding Day" passage
   {
-    id: 7,
+    id: '7',
     passageId: 'riding_day',
     type: 'multiple-choice',
     text: `Who is the narrator of this story?`,
@@ -352,7 +352,7 @@ const sampleQuestions = [
 
   // Question 8 - Based on "Riding Day" passage
   {
-    id: 8,
+    id: '8',
     passageId: 'riding_day',
     type: 'multiple-choice',
     text: `Complete this analogy.
@@ -370,7 +370,7 @@ Skilled is to expert as —`,
 
   // Question 9 - Based on "Circle of Knowledge" passage
   {
-    id: 9,
+    id: '9',
     passageId: 'circle_of_knowledge',
     type: 'multiple-choice',
     text: `In paragraph 1, the author suggests that before the Internet, researching a given topic was —`,
@@ -386,7 +386,7 @@ Skilled is to expert as —`,
 
   // Question 10 - Based on "Circle of Knowledge" passage
   {
-    id: 10,
+    id: '10',
     passageId: 'circle_of_knowledge',
     type: 'multiple-choice',
     text: `Which meaning best fits the word <i>daunting</i> in paragraph 2?`,
@@ -402,7 +402,7 @@ Skilled is to expert as —`,
 
   // Question 11 - Based on "Circle of Knowledge" passage
   {
-    id: 11,
+    id: '11',
     passageId: 'circle_of_knowledge',
     type: 'multiple-choice',
     text: `The implied main idea of paragraph 2 is that reference books —`,
@@ -418,7 +418,7 @@ Skilled is to expert as —`,
 
   // Question 12 - Based on "Circle of Knowledge" passage
   {
-    id: 12,
+    id: '12',
     passageId: 'circle_of_knowledge',
     type: 'multiple-choice',
     text: `According to paragraph 2, what major change occurred in the organization of early encyclopedias?`,
@@ -434,7 +434,7 @@ Skilled is to expert as —`,
 
   // Question 13 - Based on "Circle of Knowledge" passage
   {
-    id: 13,
+    id: '13',
     passageId: 'circle_of_knowledge',
     type: 'multiple-choice',
     text: `Read this sentence from paragraph 6.
@@ -456,7 +456,7 @@ Skilled is to expert as —`,
 
   // Question 14 - Based on "Circle of Knowledge" passage
   {
-    id: 14,
+    id: '14',
     passageId: 'circle_of_knowledge',
     type: 'multiple-choice',
     text: `Read this part of an outline based on the article.
@@ -481,7 +481,7 @@ Skilled is to expert as —`,
 
   // Question 15 - Based on "Circle of Knowledge" passage
   {
-    id: 15,
+    id: '15',
     passageId: 'circle_of_knowledge',
     type: 'multiple-choice',
     text: `Companies are adapting to the rapidly changing encyclopedia industry by —`,
@@ -497,7 +497,7 @@ Skilled is to expert as —`,
 
   // Question 16 - Based on "Circle of Knowledge" passage
   {
-    id: 16,
+    id: '16',
     passageId: 'circle_of_knowledge',
     type: 'multiple-choice',
     text: `What has <i>Encyclopaedia Britannica</i> done to improve the quality of its entries?`,
@@ -513,7 +513,7 @@ Skilled is to expert as —`,
 
   // Question 17 - Based on "Circle of Knowledge" passage
   {
-    id: 17,
+    id: '17',
     passageId: 'circle_of_knowledge',
     type: 'multiple-choice',
     text: `The main idea of the article is that people should —`,
@@ -529,7 +529,7 @@ Skilled is to expert as —`,
 
   // Question 18 - Standalone vocabulary question
   {
-    id: 18,
+    id: '18',
     type: 'multiple-choice',
     text: `Which is a negative connotation of the word <i>prescribe</i>?`,
     options: [
@@ -544,7 +544,7 @@ Skilled is to expert as —`,
 
   // Question 19 - Standalone vocabulary question
   {
-    id: 19,
+    id: '19',
     type: 'multiple-choice',
     text: `Read this dictionary entry.
 
@@ -566,7 +566,7 @@ Skilled is to expert as —`,
 
   // Question 20 - Based on "A Born Sailor" passage
   {
-    id: 20,
+    id: '20',
     passageId: 'a_born_sailor',
     type: 'multiple-choice',
     text: `Which information should be included in a summary of paragraph 2?`,
@@ -582,7 +582,7 @@ Skilled is to expert as —`,
 
   // Question 21 - Based on "A Born Sailor" passage
   {
-    id: 21,
+    id: '21',
     passageId: 'a_born_sailor',
     type: 'multiple-choice',
     text: `What is the main idea of paragraph 3?`,
@@ -598,7 +598,7 @@ Skilled is to expert as —`,
 
   // Question 22 - Based on "A Born Sailor" passage
   {
-    id: 22,
+    id: '22',
     passageId: 'a_born_sailor',
     type: 'multiple-choice',
     text: `Which event most effectively changes Annie's mind about leaving England?`,
@@ -614,7 +614,7 @@ Skilled is to expert as —`,
 
   // Question 23 - Based on "A Born Sailor" passage
   {
-    id: 23,
+    id: '23',
     passageId: 'a_born_sailor',
     type: 'multiple-choice',
     text: `What makes Annie aware that other passengers are feeling ill?`,
@@ -630,7 +630,7 @@ Skilled is to expert as —`,
 
   // Question 24 - Based on "A Born Sailor" passage
   {
-    id: 24,
+    id: '24',
     passageId: 'a_born_sailor',
     type: 'drag-drop',
     text: `Which two characters influenced Annie's comfort during the voyage?`,
@@ -642,7 +642,7 @@ Skilled is to expert as —`,
 
   // Question 25 - Based on "A Born Sailor" passage
   {
-    id: 25,
+    id: '25',
     passageId: 'a_born_sailor',
     type: 'multiple-choice',
     text: `Which event is presented as the climax of the trip?`,
@@ -658,7 +658,7 @@ Skilled is to expert as —`,
 
   // Question 26 - Based on "Teen Zone Flier" passage
   {
-    id: 26,
+    id: '26',
     passageId: 'teen_zone_flier',
     type: 'multiple-choice',
     text: `Based on the "Register for a Summer of Stories" and "Cast Your Vote" sections, an important goal for the library is —`,
@@ -674,7 +674,7 @@ Skilled is to expert as —`,
 
   // Question 27 - Based on "Teen Zone Flier" passage
   {
-    id: 27,
+    id: '27',
     passageId: 'teen_zone_flier',
     type: 'multiple-choice',
     text: `Which information should be included in a summary of the "Cast Your Vote" section?`,
@@ -690,7 +690,7 @@ Skilled is to expert as —`,
 
   // Question 28 - Based on "Teen Zone Flier" passage
   {
-    id: 28,
+    id: '28',
     passageId: 'teen_zone_flier',
     type: 'multiple-choice',
     text: `According to the flier, what must a teen do to receive prizes?`,
@@ -706,7 +706,7 @@ Skilled is to expert as —`,
 
   // Question 29 - Based on "Teen Zone Flier" passage
   {
-    id: 29,
+    id: '29',
     passageId: 'teen_zone_flier',
     type: 'multiple-choice',
     text: `Which is the most likely reason poets are asked to register for the Poetry Session?`,
@@ -722,7 +722,7 @@ Skilled is to expert as —`,
 
   // Question 30 - Based on "Teen Zone Flier" passage
   {
-    id: 30,
+    id: '30',
     passageId: 'teen_zone_flier',
     type: 'multiple-choice',
     text: `Which part of the flier would be most useful for students doing research for a paper?`,
@@ -738,7 +738,7 @@ Skilled is to expert as —`,
 
   // Question 31 - Based on "Teen Zone Flier" passage
   {
-    id: 31,
+    id: '31',
     passageId: 'teen_zone_flier',
     type: 'multiple-select',
     text: `Which three are rules or requirements for using the computers?`,
@@ -755,7 +755,7 @@ Skilled is to expert as —`,
 
   // Question 32 - Based on "Teen Zone Flier" passage
   {
-    id: 32,
+    id: '32',
     passageId: 'teen_zone_flier',
     type: 'multiple-choice',
     text: `The author structured the flier to suggest that the library —`,
@@ -771,7 +771,7 @@ Skilled is to expert as —`,
 
   // Question 33 - Based on "Teen Zone Flier" passage
   {
-    id: 33,
+    id: '33',
     passageId: 'teen_zone_flier',
     type: 'multiple-choice',
     text: `Readers who want to become professional writers would be most interested in knowing that the library —`,
@@ -787,7 +787,7 @@ Skilled is to expert as —`,
 
   // Question 34 - Based on "The Trail Blazer" passage
   {
-    id: 34,
+    id: '34',
     passageId: 'the_trail_blazer',
     type: 'multiple-choice',
     text: `What does <i>humility</i> mean in paragraph 2?`,
@@ -803,7 +803,7 @@ Skilled is to expert as —`,
 
   // Question 35 - Based on "The Trail Blazer" passage
   {
-    id: 35,
+    id: '35',
     passageId: 'the_trail_blazer',
     type: 'multiple-choice',
     text: `Cody's description of himself in paragraph 2 suggests that he is —`,
@@ -819,7 +819,7 @@ Skilled is to expert as —`,
 
   // Question 36 - Based on "The Trail Blazer" passage
   {
-    id: 36,
+    id: '36',
     passageId: 'the_trail_blazer',
     type: 'multiple-choice',
     text: `What does <i>tranquil</i> mean in paragraph 4?`,
@@ -835,7 +835,7 @@ Skilled is to expert as —`,
 
   // Question 37 - Based on "The Trail Blazer" passage
   {
-    id: 37,
+    id: '37',
     passageId: 'the_trail_blazer',
     type: 'multiple-choice',
     text: `Read this sentence from paragraph 7.
@@ -857,7 +857,7 @@ Skilled is to expert as —`,
 
   // Question 38 - Based on "The Trail Blazer" passage
   {
-    id: 38,
+    id: '38',
     passageId: 'the_trail_blazer',
     type: 'multiple-choice',
     text: `The author establishes the setting in paragraph 7 through the use of —`,
@@ -873,7 +873,7 @@ Skilled is to expert as —`,
 
   // Question 39 - Based on "The Trail Blazer" passage
   {
-    id: 39,
+    id: '39',
     passageId: 'the_trail_blazer',
     type: 'multiple-choice',
     text: `Read this sentence from paragraph 11.
@@ -895,7 +895,7 @@ Skilled is to expert as —`,
 
   // Question 40 - Based on "The Trail Blazer" passage
   {
-    id: 40,
+    id: '40',
     passageId: 'the_trail_blazer',
     type: 'multiple-choice',
     text: `Cody decides to find his way back out of the park by —`,
@@ -911,7 +911,7 @@ Skilled is to expert as —`,
 
   // Question 41 - Based on "The Trail Blazer" passage
   {
-    id: 41,
+    id: '41',
     passageId: 'the_trail_blazer',
     type: 'multiple-choice',
     text: `Which sentence best describes the theme of the story?`,

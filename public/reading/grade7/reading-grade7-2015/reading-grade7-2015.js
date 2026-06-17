@@ -270,6 +270,7 @@ const readingPassages = {
 const sampleQuestions = [
   // Question 1 - All in the Stars
   {
+    id: '1',
     passageId: 'all_in_the_stars',
     text: `In paragraph 4, the author includes the detail of Mrs. Parker sounding "a little too patient" to suggest that —`,
     type: 'multiple-choice',
@@ -285,6 +286,7 @@ const sampleQuestions = [
 
   // Question 2 - All in the Stars
   {
+    id: '2',
     passageId: 'all_in_the_stars',
     text: `Read this sentence from paragraph 7.<div class="passage-innerbox">"They're fiction<u>al</u>, of course, but I want to name them after real places that nobody knows much about."</div>In which word does the suffix -<u>al</u> have the same meaning as it does in fiction<u>al</u>?`,
     type: 'multiple-choice',
@@ -300,6 +302,7 @@ const sampleQuestions = [
 
   // Question 3 - All in the Stars
   {
+    id: '3',
     passageId: 'all_in_the_stars',
     text: `Which word in paragraph 17 conveys Jared's embarrassment?`,
     type: 'multiple-choice',
@@ -315,6 +318,7 @@ const sampleQuestions = [
 
   // Question 4 - All in the Stars (TEI - Web Diagram)
   {
+    id: '4',
     passageId: 'all_in_the_stars',
     text: `Complete this web.<br><br><img src="images/question_4.png" class="question-image" alt="Image failed to load. Please try again later."/>`,
     type: 'multiple-choice',
@@ -330,6 +334,7 @@ const sampleQuestions = [
 
   // Question 5 - All in the Stars (TEI - Multiple Choice)
   {
+    id: '5',
     passageId: 'all_in_the_stars',
     text: `In this story, Jared's main conflict can be described as —`,
     type: 'multiple-choice',
@@ -346,6 +351,7 @@ const sampleQuestions = [
 
   // Question 6 - All in the Stars (TEI)
   {
+    id: '6',
     passageId: 'all_in_the_stars',
     text: `In a summary of this story, the most important detail to include is how Jared —`,
     type: 'multiple-choice',
@@ -362,6 +368,7 @@ const sampleQuestions = [
 
   // Question 7 - All in the Stars
   {
+    id: '7',
     passageId: 'all_in_the_stars',
     text: `By the end of the story, readers can best predict that Jared will —`,
     type: 'multiple-choice',
@@ -377,6 +384,7 @@ const sampleQuestions = [
 
   // Question 8 - The Royal Cat
   {
+    id: '8',
     passageId: 'the_royal_cat',
     text: `Why does the author include paragraph 1?`,
     type: 'multiple-choice',
@@ -392,6 +400,7 @@ const sampleQuestions = [
 
   // Question 9 - The Royal Cat
   {
+    id: '9',
     passageId: 'the_royal_cat',
     text: `What does <u>domesticated</u> mean in paragraph 2?`,
     type: 'multiple-choice',
@@ -407,6 +416,7 @@ const sampleQuestions = [
 
   // Question 10 - The Royal Cat
   {
+    id: '10',
     passageId: 'the_royal_cat',
     text: `In paragraph 4, <u>reverence</u> means —`,
     type: 'multiple-choice',
@@ -422,6 +432,7 @@ const sampleQuestions = [
 
   // Question 11 - The Royal Cat
   {
+    id: '11',
     passageId: 'the_royal_cat',
     text: `Read this sentence from paragraph 4.<div class="passage-innerbox">The Egyptians did not wish to harm the animals.</div>Why does the author include this detail in the article?`,
     type: 'multiple-choice',
@@ -437,6 +448,7 @@ const sampleQuestions = [
 
   // Question 12 - The Royal Cat
   {
+    id: '12',
     passageId: 'the_royal_cat',
     text: `Which statement best summarizes paragraph 5?`,
     type: 'multiple-choice',
@@ -452,6 +464,7 @@ const sampleQuestions = [
 
   // Question 13 - The Royal Cat
   {
+    id: '13',
     passageId: 'the_royal_cat',
     text: `Which word from paragraph 7 best shows how Maus are viewed in Egypt today?`,
     type: 'multiple-choice',
@@ -467,6 +480,7 @@ const sampleQuestions = [
 
   // Question 14 - The Royal Cat
   {
+    id: '14',
     passageId: 'the_royal_cat',
     text: `According to the article, cats started gaining acceptance in Egypt when —`,
     type: 'multiple-choice',
@@ -482,6 +496,7 @@ const sampleQuestions = [
 
   // Question 15 - The Royal Cat
   {
+    id: '15',
     passageId: 'the_royal_cat',
     text: `What problem do Maus currently experience in Egypt?`,
     type: 'multiple-choice',
@@ -497,6 +512,7 @@ const sampleQuestions = [
 
   // Question 16 - The Royal Cat
   {
+    id: '16',
     passageId: 'the_royal_cat',
     text: `Which paragraph from the article offers the most useful information for a report about how groups help animals?`,
     type: 'multiple-choice',
@@ -512,6 +528,7 @@ const sampleQuestions = [
 
   // Question 17 - The Royal Cat
   {
+    id: '17',
     passageId: 'the_royal_cat',
     text: `Which idea from the article offers the best support for a presentation about the effect pets can have on owners?`,
     type: 'multiple-choice',
@@ -527,6 +544,7 @@ const sampleQuestions = [
 
   // Question 18 - The Wind, the Oak, and the Pine
   {
+    id: '18',
     passageId: 'the_wind_oak_pine',
     text: `The pine thinks the oak should be ashamed because the oak —`,
     type: 'multiple-choice',
@@ -542,6 +560,7 @@ const sampleQuestions = [
 
   // Question 19 - The Wind, the Oak, and the Pine
   {
+    id: '19',
     passageId: 'the_wind_oak_pine',
     text: `Based on the details in this poem, the oak tree and pine tree are most likely located —`,
     type: 'multiple-choice',
@@ -557,6 +576,7 @@ const sampleQuestions = [
 
   // Question 20 - The Wind, the Oak, and the Pine
   {
+    id: '20',
     passageId: 'the_wind_oak_pine',
     text: `Who is the narrator in this poem?`,
     type: 'multiple-choice',
@@ -572,6 +592,7 @@ const sampleQuestions = [
 
   // Question 21 - The Wind, the Oak, and the Pine
   {
+    id: '21',
     passageId: 'the_wind_oak_pine',
     text: `Based on the end of the poem, what will most likely happen in the future?`,
     type: 'multiple-choice',
@@ -587,6 +608,7 @@ const sampleQuestions = [
 
   // Question 22 - The Wind, the Oak, and the Pine
   {
+    id: '22',
     passageId: 'the_wind_oak_pine',
     text: `The trees speaking to each other is an example of —`,
     type: 'multiple-choice',
@@ -602,6 +624,7 @@ const sampleQuestions = [
 
   // Question 23 - The Wind, the Oak, and the Pine
   {
+    id: '23',
     passageId: 'the_wind_oak_pine',
     text: `Which of these is a theme of this poem?`,
     type: 'multiple-choice',
@@ -617,6 +640,7 @@ const sampleQuestions = [
 
   // Question 24 (TEI) - Sympathy question
   {
+    id: '24',
     text: `The word <i>sympathy</i> comes from Greek roots that mean "similar emotion." Based on the Greek roots, which is the best example of <i>sympathy</i>?`,
     type: 'multiple-choice',
     options: [
@@ -631,6 +655,7 @@ const sampleQuestions = [
 
   // Question 25 - Vincent van Gogh
   {
+    id: '25',
     passageId: 'vincent_van_gogh',
     text: `The author organizes the information in paragraph 3 by —`,
     type: 'multiple-choice',
@@ -646,6 +671,7 @@ const sampleQuestions = [
 
   // Question 26 - Vincent van Gogh
   {
+    id: '26',
     passageId: 'vincent_van_gogh',
     text: `Read this sentence from paragraph 6.<div class="passage-innerbox">His influence is evident; many painters mimic his style and use of color and texture.</div>Which word is a synonym for <i>mimic</i>?`,
     type: 'multiple-choice',
@@ -661,6 +687,7 @@ const sampleQuestions = [
 
   // Question 27 - Vincent van Gogh
   {
+    id: '27',
     passageId: 'vincent_van_gogh',
     text: `Which of these does the author seem to admire most about van Gogh's paintings?`,
     type: 'multiple-choice',
@@ -676,6 +703,7 @@ const sampleQuestions = [
 
   // Question 28 - Vincent van Gogh
   {
+    id: '28',
     passageId: 'vincent_van_gogh',
     text: `Based on the article, van Gogh learned how to paint by —`,
     type: 'multiple-choice',
@@ -691,6 +719,7 @@ const sampleQuestions = [
 
   // Question 29 - Vincent van Gogh
   {
+    id: '29',
     passageId: 'vincent_van_gogh',
     text: `The author includes a photograph of <i>The Starry Night</i> in order to —`,
     type: 'multiple-choice',
@@ -706,6 +735,7 @@ const sampleQuestions = [
 
   // Question 30 - Vincent van Gogh (TEI)
   {
+    id: '30',
     passageId: 'vincent_van_gogh',
     text: `Which word does the author use to show a contrast?<br><br><u>Yet</u> van Gogh <u>today</u> is <u>considered</u> one of the greatest <u>artists</u> of all <u>time</u>.`,
     type: 'multiple-choice',
@@ -722,6 +752,7 @@ const sampleQuestions = [
 
   // Question 31 - Vincent van Gogh
   {
+    id: '31',
     passageId: 'vincent_van_gogh',
     text: `Which paragraph would be most useful for writing a report titled "A Detailed Look at van Gogh's Most Famous Works"?`,
     type: 'multiple-choice',
@@ -737,6 +768,7 @@ const sampleQuestions = [
 
   // Question 32 - School Spirit Bags
   {
+    id: '32',
     passageId: 'school_spirit_bags',
     text: `The author's word choice in the section "What's in your bag?" is best described as —`,
     type: 'multiple-choice',
@@ -752,6 +784,7 @@ const sampleQuestions = [
 
   // Question 33 - School Spirit Bags
   {
+    id: '33',
     passageId: 'school_spirit_bags',
     text: `Which organizational pattern is used in the section "Satisfaction guaranteed"?`,
     type: 'multiple-choice',
@@ -767,6 +800,7 @@ const sampleQuestions = [
 
   // Question 34 - School Spirit Bags
   {
+    id: '34',
     passageId: 'school_spirit_bags',
     text: `In which section of the flier will students learn when to pay for their purchase?`,
     type: 'multiple-choice',
@@ -782,6 +816,7 @@ const sampleQuestions = [
 
   // Question 35 - School Spirit Bags
   {
+    id: '35',
     passageId: 'school_spirit_bags',
     text: `The author best explains the features of the merchandise by —`,
     type: 'multiple-choice',
@@ -797,6 +832,7 @@ const sampleQuestions = [
 
   // Question 36 - School Spirit Bags
   {
+    id: '36',
     passageId: 'school_spirit_bags',
     text: `Students who want to order more than one bag would most likely —`,
     type: 'multiple-choice',
@@ -812,6 +848,7 @@ const sampleQuestions = [
 
   // Question 37 - School Spirit Bags
   {
+    id: '37',
     passageId: 'school_spirit_bags',
     text: `Read this chart a student made about the bags.<br><br><img src="images/question_37.png" alt="Image failed to load. Please try again later." class="question-image"/><br><br>Which of these shows that the student misunderstood information about the bags?`,
     type: 'multiple-choice',
@@ -827,6 +864,7 @@ const sampleQuestions = [
 
   // Question 38 - The Cover Photo
   {
+    id: '38',
     passageId: 'the_cover_photo',
     text: `In paragraph 1, what does the word <u>localities</u> mean?`,
     type: 'multiple-choice',
@@ -842,6 +880,7 @@ const sampleQuestions = [
 
   // Question 39 - The Cover Photo
   {
+    id: '39',
     passageId: 'the_cover_photo',
     text: `Which word is a synonym for <u>provision</u> in paragraph 4?`,
     type: 'multiple-choice',
@@ -857,6 +896,7 @@ const sampleQuestions = [
 
   // Question 40 - The Cover Photo
   {
+    id: '40',
     passageId: 'the_cover_photo',
     text: `In paragraph 8, the description of the students as a "small group of budding photographers" suggests they are —`,
     type: 'multiple-choice',
@@ -872,6 +912,7 @@ const sampleQuestions = [
 
   // Question 41 - The Cover Photo
   {
+    id: '41',
     passageId: 'the_cover_photo',
     text: `In paragraph 8, the other students in Mr. James' classroom are confused because they —`,
     type: 'multiple-choice',
@@ -887,6 +928,7 @@ const sampleQuestions = [
 
   // Question 42 - The Cover Photo
   {
+    id: '42',
     passageId: 'the_cover_photo',
     text: `Read this sentence from paragraph 11.<div class="passage-innerbox">The students scrambled to take pictures and stared in amazement.</div>The word "scrambled" suggests that the students were —`,
     type: 'multiple-choice',
@@ -902,6 +944,7 @@ const sampleQuestions = [
 
   // Question 43 - The Cover Photo
   {
+    id: '43',
     passageId: 'the_cover_photo',
     text: `Based on Helen's actions, which of these will most likely occur in the future?`,
     type: 'multiple-choice',
@@ -917,6 +960,7 @@ const sampleQuestions = [
 
   // Question 44 - The Cover Photo
   {
+    id: '44',
     passageId: 'the_cover_photo',
     text: `Helen is pleased that the club will go on a camping trip because the experience will —`,
     type: 'multiple-choice',
@@ -932,6 +976,7 @@ const sampleQuestions = [
 
   // Question 45 - The Cover Photo
   {
+    id: '45',
     passageId: 'the_cover_photo',
     text: `Which detail about the bats should be included in a summary of the story?`,
     type: 'multiple-choice',
