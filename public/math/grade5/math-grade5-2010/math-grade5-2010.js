@@ -3,317 +3,262 @@ window.TEST_IDENTIFIER = 'math_grade5_2010';
 const sampleQuestions = [
  {
   id: '1',
-  text: 'Rosa placed 20 pencils in groups of 4. Which of the following shows how Rosa placed the pencils?',
+  text: '6 <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math> − 4 <math><mfrac><mn>1</mn><mn>3</mn></mfrac></math> = ___?',
   type: 'multiple-choice',
-  options: [
-   {url: 'images/1a.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/1b.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/1c.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/1d.png', alt: 'Image failed to load. Please try again later.'}
-  ],
+  options: ['2 <math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>', '2', '2 <math><mfrac><mn>1</mn><mn>6</mn></mfrac></math>', '<math><mfrac><mn>11</mn><mn>6</mn></mfrac></math>'],
   correctAnswer: 2,
-  explanation: '20 pencils divided into groups of 4 means 5 groups of 4 pencils each (20 ÷ 4 = 5).'
+  explanation: '6 <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math> = 6 <math><mfrac><mn>3</mn><mn>6</mn></mfrac></math> and 4 <math><mfrac><mn>1</mn><mn>3</mn></mfrac></math> = 4 <math><mfrac><mn>2</mn><mn>6</mn></mfrac></math>. Subtracting gives 2 <math><mfrac><mn>1</mn><mn>6</mn></mfrac></math>.'
  },
  {
   id: '2',
-  text: 'The model below is shaded to represent the number 1. <br><img src="images/2a.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which of the following shows 0.7 shaded?',
+  text: '4.155 ÷ 3 = ___?',
   type: 'multiple-choice',
-  options: [
-   {url: 'images/2a.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/2b.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/2c.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/2d.png', alt: 'Image failed to load. Please try again later.'}
-  ],
+  options: ['1.385', '1.455', '13.85', '14.55'],
   correctAnswer: 0,
-  explanation: '0.7 means 7 out of 10 equal parts. The correct model shows 7 of 10 equal sections shaded.'
+  explanation: '4.155 ÷ 3 = 1.385.'
  },
  {
   id: '3',
-  text: 'Which number sentence can be completed by using the basic fact sentence <math><mn>17</mn><mo>&#8722;</mo><mn>8</mn><mo>=</mo><mn>9</mn></math>?',
+  text: '<math><mfrac><mn>7</mn><mn>9</mn></mfrac></math> + <math><mfrac><mn>4</mn><mn>9</mn></mfrac></math> = ___?',
   type: 'multiple-choice',
-  options: [
-   '<math><mn>17</mn><mo>+</mo><mn>8</mn><mo>=</mo></math>__',
-   '<math><mn>17</mn><mo>+</mo><mn>9</mn><mo>=</mo></math>__',
-   '<math><mn>9</mn><mo>+</mo><mn>8</mn><mo>=</mo></math>__',
-   '<math><mn>9</mn><mo>&#8722;</mo><mn>8</mn><mo>=</mo></math>__'
-  ],
+  options: ['1 <math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>3</mn></mfrac></math>', '1 <math><mfrac><mn>2</mn><mn>9</mn></mfrac></math>', '<math><mfrac><mn>3</mn><mn>9</mn></mfrac></math>'],
   correctAnswer: 2,
-  explanation: 'Addition and subtraction are inverse operations. Since 17 − 8 = 9, the related addition fact is 9 + 8 = 17.'
+  explanation: 'With like denominators, add the numerators: <math><mfrac><mn>7</mn><mn>9</mn></mfrac></math> + <math><mfrac><mn>4</mn><mn>9</mn></mfrac></math> = <math><mfrac><mn>11</mn><mn>9</mn></mfrac></math> = 1 <math><mfrac><mn>2</mn><mn>9</mn></mfrac></math>.'
  },
  {
   id: '4',
-  text: 'Look at this set of shapes. <br><img src="images/4.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> What fraction of this set is shaded?',
+  text: '488 ÷ 23 = ___?',
   type: 'multiple-choice',
-  options: [
-   '<math><mfrac><mn>4</mn><mn>10</mn></mfrac></math>',
-   '<math><mfrac><mn>4</mn><mn>6</mn></mfrac></math>',
-   '<math><mfrac><mn>6</mn><mn>10</mn></mfrac></math>',
-   '<math><mfrac><mn>6</mn><mn>4</mn></mfrac></math>'
-  ],
-  correctAnswer: 2,
-  explanation: 'There are 10 total shapes and 6 are shaded, so the fraction shaded is 6/10.'
+  options: ['24 R 8', '21 R 5', '20 R 8', '20 R 5'],
+  correctAnswer: 1,
+  explanation: '21 × 23 = 483, and 488 − 483 = 5, so 488 ÷ 23 = 21 R 5.'
  },
  {
   id: '5',
-  text: "Fred's Nature Store sold 2,046 pounds of birdseed last month. What is 2,046 rounded to the nearest hundred?",
+  text: '36.21 × 1.2 = ___?',
   type: 'multiple-choice',
-  options: ['2,000', '2,040', '2,100', '3,000'],
+  options: ['43.452', '42.452', '10.863', '9.863'],
   correctAnswer: 0,
-  explanation: '2,046 rounded to the nearest hundred: the tens digit is 4, which is less than 5, so round down to 2,000.'
+  explanation: '36.21 × 1.2 = 43.452.'
  },
  {
   id: '6',
-  text: 'In which group are EXACTLY <math><mfrac><mn>3</mn><mn>8</mn></mfrac></math> of the cabinet doors open?',
+  text: 'Mrs. Campano purchased 3 cases of pencils. Each case contained 96 pencils. What was the total number of pencils purchased?',
   type: 'multiple-choice',
-  options: [
-   {url: 'images/6a.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/6b.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/6c.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/6d.png', alt: 'Image failed to load. Please try again later.'}
-  ],
-  correctAnswer: 2,
-  explanation: '3/8 means 3 out of 8 doors are open. The correct image shows exactly 3 open doors out of 8 total.'
+  options: ['32', '99', '278', '288'],
+  correctAnswer: 3,
+  explanation: '96 × 3 = 288.'
  },
  {
   id: '7',
-  text: 'Which is true?',
+  text: 'What is the quotient? <br>12.95 ÷ 5 = ___?',
   type: 'multiple-choice',
-  options: [
-   '4,589 > 4,708',
-   '4,389 > 4,708',
-   '4,709 > 4,708',
-   '4,609 > 4,708'
-  ],
+  options: ['2.23', '2.58', '2.59', '2.63'],
   correctAnswer: 2,
-  explanation: 'Compare thousands then hundreds: 4,709 and 4,708 share the same thousands and hundreds digits. In the tens place, 0 = 0, and in the ones place 9 > 8, so 4,709 > 4,708.'
+  explanation: '12.95 ÷ 5 = 2.59.'
  },
  {
   id: '8',
-  text: 'Jeffrey used the math fact <math><mn>6</mn><mo>&#215;</mo><mn>4</mn><mo>=</mo><mn>24</mn></math> to help solve a related problem. Which of these could be the related problem Jeffrey was trying to solve?',
+  text: '<math><mfrac><mn>5</mn><mn>9</mn></mfrac></math> − <math><mfrac><mn>1</mn><mn>3</mn></mfrac></math> = ___?',
   type: 'multiple-choice',
-  options: [
-   '<math><mn>4</mn><mo>+</mo><mn>4</mn><mo>=</mo><mn>6</mn></math>',
-   '<math><mn>4</mn><mo>&#8722;</mo><mn>4</mn><mo>=</mo><mn>6</mn></math>',
-   '<math><mn>4</mn><mo>&#215;</mo><mn>4</mn><mo>=</mo><mn>6</mn></math>',
-   '<math><mn>4</mn><mo>&#247;</mo><mn>4</mn><mo>=</mo><mn>6</mn></math>'
-  ],
-  correctAnswer: 0,
-  explanation: 'Multiplication and division are inverse operations. 6 × 4 = 24 is related to 24 ÷ 4 = 6 or 24 ÷ 6 = 4. Among the options, 4 + 6 is not related, but the PDF answer key shows F (first option). The related fact from 6 × 4 = 24 is 24 ÷ 4 = 6.'
+  options: ['<math><mfrac><mn>4</mn><mn>9</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>3</mn></mfrac></math>', '<math><mfrac><mn>8</mn><mn>9</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>9</mn></mfrac></math>'],
+  correctAnswer: 3,
+  explanation: '<math><mfrac><mn>1</mn><mn>3</mn></mfrac></math> = <math><mfrac><mn>3</mn><mn>9</mn></mfrac></math>, so <math><mfrac><mn>5</mn><mn>9</mn></mfrac></math> − <math><mfrac><mn>3</mn><mn>9</mn></mfrac></math> = <math><mfrac><mn>2</mn><mn>9</mn></mfrac></math>.'
  },
  {
   id: '9',
-  text: 'Which of the following shows "one hundred thirty thousand, sixty-nine" in standard form?',
+  text: 'This table shows the number of miles Mrs. Warren drove in the first three months of the year. <br><img src="images/9.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>What was the total number of miles Mrs. Warren drove in these three months?',
   type: 'multiple-choice',
-  options: ['100,369', '130,069', '130,690', '1,003,069'],
+  options: ['3,772', '3,782', '11,565', '12,665'],
   correctAnswer: 1,
-  explanation: 'One hundred thirty thousand = 130,000. Sixty-nine = 69. Combined: 130,069.'
+  explanation: '1,193 + 987 + 1,602 = 3,782.'
  },
  {
   id: '10',
-  text: 'A video store has 1,328 movies that can be rented. What is 1,328 rounded to the nearest ten?',
+  text: '30.5 − 16.9 = ___?',
   type: 'multiple-choice',
-  options: ['1,300', '1,310', '1,320', '1,330'],
-  correctAnswer: 3,
-  explanation: '1,328 rounded to the nearest ten: the ones digit is 8, which is ≥ 5, so round up to 1,330.'
+  options: ['13.6', '14.6', '24.4', '26.4'],
+  correctAnswer: 0,
+  explanation: '30.5 − 16.9 = 13.6.'
  },
  {
   id: '11',
-  text: 'The picture below shows how much milk was poured into two measuring cups. <br><img src="images/11.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which statement is true?',
+  text: '4,083 ÷ 40 = ___?',
   type: 'multiple-choice',
-  options: [
-   '<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math> < <math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>',
-   '<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math> = <math><mfrac><mn>2</mn><mn>3</mn></mfrac></math>',
-   '<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math> > <math><mfrac><mn>2</mn><mn>3</mn></mfrac></math>',
-   '<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math> < <math><mfrac><mn>2</mn><mn>3</mn></mfrac></math>'
-  ],
-  correctAnswer: 0,
-  explanation: 'Convert to common denominators: 1/2 = 3/6 and 2/3 = 4/6. Since 3/6 < 4/6, we have 1/2 < 2/3. The PDF answer key shows A, which corresponds to 1/2 < 1/3, but based on the image context the correct comparison shown is 1/2 < 2/3.'
+  options: ['12', '12 R3', '100', '102 R3'],
+  correctAnswer: 3,
+  explanation: '102 × 40 = 4,080, and 4,083 − 4,080 = 3, so 4,083 ÷ 40 = 102 R3.'
  },
  {
   id: '12',
-  text: 'Kelsey shaded 0.67 of her grid. Which of the following shows 0.67 of the 10×10 grid shaded?',
+  text: 'A total of 355 chairs are needed for a school performance. There are 227 chairs already in place. How many more chairs are needed?',
   type: 'multiple-choice',
-  options: [
-   {url: 'images/12a.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/12b.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/12c.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/12d.png', alt: 'Image failed to load. Please try again later.'}
-  ],
-  correctAnswer: 3,
-  explanation: '0.67 means 67 out of 100 squares. The correct grid shows exactly 67 squares shaded out of 100 total.'
+  options: ['128', '132', '572', '582'],
+  correctAnswer: 0,
+  explanation: '355 − 227 = 128.'
  },
  {
   id: '13',
-  text: 'Jane is standing in line to buy tickets for a play. Laura is first in line, as shown. <br><img src="images/13.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> What is Jane\'s position in this line?',
+  text: 'Which decimal is equal to <math><mfrac><mn>4</mn><mn>5</mn></mfrac></math>?',
   type: 'multiple-choice',
-  options: ['12th', '10th', '9th', '8th'],
-  correctAnswer: 2,
-  explanation: 'Count from Laura (1st) to Jane in the image. Jane is in the 9th position.'
+  options: ['0.8', '0.45', '0.08', '0.045'],
+  correctAnswer: 0,
+  explanation: '<math><mfrac><mn>4</mn><mn>5</mn></mfrac></math> = <math><mfrac><mn>8</mn><mn>10</mn></mfrac></math> = 0.8.'
  },
  {
   id: '14',
-  text: '<math><mn>2.6</mn><mo>&#8722;</mo><mn>1.8</mn><mo>=</mo></math> ___?',
+  text: 'Which list of fractions is ordered from least to greatest?',
   type: 'multiple-choice',
-  options: ['4.4', '1.2', '0.8', '0.2'],
-  correctAnswer: 2,
-  explanation: '2.6 − 1.8 = 0.8.'
+  options: ['<math><mfrac><mn>3</mn><mn>10</mn></mfrac></math>, <math><mfrac><mn>3</mn><mn>5</mn></mfrac></math>, <math><mfrac><mn>2</mn><mn>5</mn></mfrac></math>, <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>', '<math><mfrac><mn>3</mn><mn>5</mn></mfrac></math>, <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>, <math><mfrac><mn>2</mn><mn>5</mn></mfrac></math>, <math><mfrac><mn>3</mn><mn>10</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>, <math><mfrac><mn>2</mn><mn>5</mn></mfrac></math>, <math><mfrac><mn>3</mn><mn>5</mn></mfrac></math>, <math><mfrac><mn>3</mn><mn>10</mn></mfrac></math>', '<math><mfrac><mn>3</mn><mn>10</mn></mfrac></math>, <math><mfrac><mn>2</mn><mn>5</mn></mfrac></math>, <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>, <math><mfrac><mn>3</mn><mn>5</mn></mfrac></math>'],
+  correctAnswer: 3,
+  explanation: 'As decimals: <math><mfrac><mn>3</mn><mn>10</mn></mfrac></math> = 0.3, <math><mfrac><mn>2</mn><mn>5</mn></mfrac></math> = 0.4, <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math> = 0.5, <math><mfrac><mn>3</mn><mn>5</mn></mfrac></math> = 0.6, so least to greatest is <math><mfrac><mn>3</mn><mn>10</mn></mfrac></math>, <math><mfrac><mn>2</mn><mn>5</mn></mfrac></math>, <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>, <math><mfrac><mn>3</mn><mn>5</mn></mfrac></math>.'
  },
  {
   id: '15',
-  text: 'Myra made 84 cupcakes for a bake sale. She put 3 chocolate candies on top of each cupcake. What was the total number of chocolate candies she used for the tops of the cupcakes?',
+  text: 'What is the value of the 1 in 3.619?',
   type: 'multiple-choice',
-  options: ['252', '261', '272', '2,412'],
-  correctAnswer: 0,
-  explanation: '84 × 3 = 252 chocolate candies.'
+  options: ['One thousandth', 'One', 'One hundredth', 'One tenth'],
+  correctAnswer: 2,
+  explanation: 'In 3.619, the digit 1 is in the hundredths place, so its value is one hundredth.'
  },
  {
   id: '16',
-  text: '<math><mn>28</mn><mo>&#247;</mo><mn>7</mn><mo>=</mo></math> ___?',
+  text: 'Which statement below is true?',
   type: 'multiple-choice',
-  options: ['3', '4', '6', '8'],
-  correctAnswer: 1,
-  explanation: '28 ÷ 7 = 4.'
+  options: ['25.32 < 25.302', '25.32 < 25.309', '25.32 < 25.319', '25.32 < 25.331'],
+  correctAnswer: 3,
+  explanation: '25.320 is less than 25.331, so 25.32 < 25.331 is true. The other comparisons use values smaller than 25.32.'
  },
  {
   id: '17',
-  text: 'Devon used these models to add two fractions. <br><img src="images/17.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> What is <math><mfrac><mn>3</mn><mn>6</mn></mfrac><mo>+</mo><mfrac><mn>2</mn><mn>6</mn></mfrac></math>?',
+  text: 'What is 36.357 rounded to the nearest tenth?',
   type: 'multiple-choice',
-  options: [
-   '<math><mfrac><mn>5</mn><mn>6</mn></mfrac></math>',
-   '<math><mfrac><mn>7</mn><mn>12</mn></mfrac></math>',
-   '<math><mfrac><mn>5</mn><mn>12</mn></mfrac></math>',
-   '<math><mfrac><mn>1</mn><mn>6</mn></mfrac></math>'
-  ],
-  correctAnswer: 3,
-  explanation: 'When adding fractions with the same denominator, add the numerators: 3/6 + 2/6 = 5/6. The PDF answer key lists D for question 17.'
+  options: ['40.0', '36.4', '36.3', '30.0'],
+  correctAnswer: 1,
+  explanation: 'The hundredths digit is 5, so 36.357 rounds up to 36.4.'
  },
  {
   id: '18',
-  text: 'Which is a related fact to this number sentence? <math><mn>5</mn><mo>+</mo><mo>&#9633;</mo><mo>=</mo><mn>12</mn></math>',
+  text: 'Which of the following is the correct way to read 45.863?',
   type: 'multiple-choice',
-  options: [
-   '<math><mn>5</mn><mo>+</mo><mn>12</mn><mo>=</mo></math>',
-   '<math><mn>12</mn><mo>&#8722;</mo><mn>5</mn><mo>=</mo></math>',
-   '<math><mn>12</mn><mo>+</mo><mn>7</mn><mo>=</mo></math>',
-   '<math><mn>5</mn><mo>+</mo><mn>7</mn><mo>=</mo></math>'
-  ],
-  correctAnswer: 3,
-  explanation: 'If 5 + □ = 12, then □ = 7. A related fact is 12 − 5 = 7. The PDF answer key shows J (4th option): 5 + 7 = .'
+  options: ['Forty-five and eight hundred sixty-three thousandths', 'Forty-five and eight hundred sixty-three thousands', 'Forty-five and eight hundred sixty-three hundredths', 'Forty-five and eight hundred sixty-three hundreds'],
+  correctAnswer: 0,
+  explanation: 'The digits after the decimal point end in the thousandths place, so 45.863 is read as forty-five and eight hundred sixty-three thousandths.'
  },
  {
   id: '19',
-  text: 'Which picture of students best models the fact <math><mn>3</mn><mo>&#215;</mo><mn>5</mn></math>?',
+  text: 'Which decimal is equivalent to <math><mfrac><mn>7</mn><mn>10</mn></mfrac></math>?',
   type: 'multiple-choice',
-  options: [
-   {url: 'images/19a.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/19b.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/19c.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/19d.png', alt: 'Image failed to load. Please try again later.'}
-  ],
-  correctAnswer: 2,
-  explanation: '3 × 5 means 3 groups of 5, totaling 15. The correct image shows 3 rows (or groups) of 5 students each.'
+  options: ['7.10', '0.7', '0.07', '0.007'],
+  correctAnswer: 1,
+  explanation: '<math><mfrac><mn>7</mn><mn>10</mn></mfrac></math> = 0.7.'
  },
  {
   id: '20',
-  text: 'This model represents one whole. <br><img src="images/20.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> What is <math><mn>0.6</mn><mo>&#8722;</mo><mn>0.3</mn></math>?',
+  text: 'What is 516.823 rounded to the nearest hundredth?',
   type: 'multiple-choice',
-  options: ['0.3', '0.9', '1.1', '6.3'],
-  correctAnswer: 0,
-  explanation: '0.6 − 0.3 = 0.3.'
+  options: ['500', '517', '516.83', '516.82'],
+  correctAnswer: 3,
+  explanation: 'The thousandths digit is 3, so 516.823 rounds down to 516.82.'
  },
  {
   id: '21',
-  text: '<math><mn>8</mn><mo>&#215;</mo><mn>6</mn><mo>=</mo></math> ___?',
+  text: 'Which angle is closest to 110 degrees?',
   type: 'multiple-choice',
-  options: ['14', '40', '48', '56'],
-  correctAnswer: 2,
-  explanation: '8 × 6 = 48.'
+  options: [
+   {url: 'images/21a.png', alt: 'Image failed to load. Please try again later.'},
+   {url: 'images/21b.png', alt: 'Image failed to load. Please try again later.'},
+   {url: 'images/21c.png', alt: 'Image failed to load. Please try again later.'},
+   {url: 'images/21d.png', alt: 'Image failed to load. Please try again later.'}
+  ],
+  correctAnswer: 1,
+  explanation: 'A 110-degree angle is obtuse, opening slightly wider than a right angle.'
  },
  {
   id: '22',
-  text: '<math><mn>7,469</mn><mo>&#8722;</mo><mn>238</mn><mo>=</mo></math> ___?',
+  text: 'Which two of these solid geometric figures have fewer than five faces each? <br><img src="images/22.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>',
   type: 'multiple-choice',
-  options: ['5,089', '5,129', '7,131', '7,231'],
+  options: ['1 and 2', '1 and 3', '2 and 4', '3 and 4'],
   correctAnswer: 3,
-  explanation: '7,469 − 238 = 7,231.'
+  explanation: 'Figures 3 and 4 each have fewer than five faces.'
  },
  {
   id: '23',
-  text: 'The level of paper in an office copy machine decreased from the morning to the afternoon during one day. <br><img src="images/23.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> What is <math><mfrac><mn>9</mn><mn>10</mn></mfrac><mo>&#8722;</mo><mfrac><mn>3</mn><mn>10</mn></mfrac></math>?',
+  text: 'Which of the following shows a translation (slide) of the shape across the dotted line?',
   type: 'multiple-choice',
   options: [
-   '<math><mfrac><mn>12</mn><mn>20</mn></mfrac></math>',
-   '<math><mfrac><mn>6</mn><mn>10</mn></mfrac></math>',
-   '<math><mfrac><mn>6</mn><mn>0</mn></mfrac></math>',
-   '<math><mfrac><mn>12</mn><mn>10</mn></mfrac></math>'
+   {url: 'images/23a.png', alt: 'Image failed to load. Please try again later.'},
+   {url: 'images/23b.png', alt: 'Image failed to load. Please try again later.'},
+   {url: 'images/23c.png', alt: 'Image failed to load. Please try again later.'},
+   {url: 'images/23d.png', alt: 'Image failed to load. Please try again later.'}
   ],
-  correctAnswer: 1,
-  explanation: 'When subtracting fractions with the same denominator, subtract the numerators: 9/10 − 3/10 = 6/10.'
+  correctAnswer: 0,
+  explanation: 'A translation slides a shape to a new position without flipping or turning it.'
  },
  {
   id: '24',
-  text: 'The table shows the number of pounds of recycled paper collected at two elementary schools. <br><img src="images/24.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> What was the total weight of recycled paper collected at these two schools?',
+  text: 'Marissa needs to measure the distance between two cities on a small map. Which tool is best to use to measure this distance?',
   type: 'multiple-choice',
-  options: ['421 pounds', '619 pounds', '1,030 pounds', '1,040 pounds'],
+  options: ['Thermometer', 'Balance Scale', 'Compass', 'Ruler'],
   correctAnswer: 3,
-  explanation: '421 + 619 = 1,040 pounds.'
+  explanation: 'A ruler measures length, the appropriate tool for measuring distance on a map.'
  },
  {
   id: '25',
-  text: 'The diagram shows 9 houses in a neighborhood. <br><img src="images/25.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which 3 houses can be connected by one line segment?',
+  text: 'Which picture shows a line that is not a line of symmetry?',
   type: 'multiple-choice',
-  options: ['7, 6, 9', '7, 6, 8', '1, 5, 7', '1, 2, 3'],
-  correctAnswer: 1,
-  explanation: 'Three points are collinear (can be connected by a single line segment) when they lie on the same straight line. Houses 1, 2, and 3 lie along the same row in the grid.'
+  options: [
+   {url: 'images/25a.png', alt: 'Image failed to load. Please try again later.'},
+   {url: 'images/25b.png', alt: 'Image failed to load. Please try again later.'},
+   {url: 'images/25c.png', alt: 'Image failed to load. Please try again later.'},
+   {url: 'images/25d.png', alt: 'Image failed to load. Please try again later.'}
+  ],
+  correctAnswer: 3,
+  explanation: 'A line of symmetry divides a figure into two mirror-image halves; the correct choice shows a line that does not.'
  },
  {
   id: '26',
-  text: 'Mr. Franklin bought a bottle of cooking oil like the one shown in the picture. <br><img src="images/26.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which is CLOSEST to the amount of cooking oil Mr. Franklin bought?',
+  text: 'Brad began working on a project at 10:15 A.M. He finished the project at 3:26 P.M. How long did it take Brad to complete the project?',
   type: 'multiple-choice',
-  options: ['1 cup', '50 cups', '1 gallon', '10 gallons'],
+  options: ['4 hours 11 minutes', '4 hours 41 minutes', '5 hours 11 minutes', '5 hours 41 minutes'],
   correctAnswer: 2,
-  explanation: 'A standard cooking oil bottle holds approximately 1 gallon. 1 cup is too small; 50 or 10 gallons are far too large.'
+  explanation: '10:15 A.M. to 3:15 P.M. is 5 hours, and 3:15 to 3:26 adds 11 minutes, for 5 hours 11 minutes.'
  },
  {
   id: '27',
-  text: 'Mara chose a card that showed 2 congruent shapes. Which of the following could be the card she chose?',
+  text: 'Which two figures are similar but not congruent? <br><img src="images/27.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>',
   type: 'multiple-choice',
-  options: [
-   {url: 'images/27a.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/27b.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/27c.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/27d.png', alt: 'Image failed to load. Please try again later.'}
-  ],
-  correctAnswer: 2,
-  explanation: 'Congruent shapes have the same size and shape. The correct card shows two shapes that are identical in both size and shape.'
+  options: ['1 and 2', '1 and 3', '2 and 3', '2 and 4'],
+  correctAnswer: 3,
+  explanation: 'Similar figures have the same shape but different sizes; figures 2 and 4 are similar but not congruent.'
  },
  {
   id: '28',
-  text: 'About how many inches long is this newborn baby\'s foot? <br><img src="images/28.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+  text: 'Ms. Perry placed a border around the bulletin board. <br><img src="images/28.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>The length of the border is an example of —',
   type: 'multiple-choice',
-  options: ['3 inches', '4 inches', '5 inches', '8 inches'],
-  correctAnswer: 0,
-  explanation: 'A newborn baby\'s foot is approximately 3 inches long. The ruler shown in the image confirms this measurement.'
+  options: ['area', 'volume', 'perimeter', 'circumference'],
+  correctAnswer: 2,
+  explanation: 'The distance around the edge of a rectangular board is its perimeter.'
  },
  {
   id: '29',
-  text: 'Jackson colored small squares on grid paper to make this design. <br><img src="images/29.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> If <img src="images/29_unit.png" class="question-image" alt="one square unit" style="display:inline;height:1em;"> is equal to 1 square unit, what is the area of Jackson\'s design?',
+  text: 'Which of the following are the dimensions of a rectangle with a perimeter of 26 inches and an area of 42 square inches?',
   type: 'multiple-choice',
-  options: ['13 square units', '14 square units', '16 square units', '20 square units'],
-  correctAnswer: 0,
-  explanation: 'Count all the colored squares in the design. The total comes to 13 square units.'
+  options: ['Length — 1 inch; width — 26 inches', 'Length — 2 inches; width — 13 inches', 'Length — 2 inches; width — 21 inches', 'Length — 6 inches; width — 7 inches'],
+  correctAnswer: 3,
+  explanation: 'A 6-by-7 rectangle has area 6 × 7 = 42 square inches and perimeter 2 × (6 + 7) = 26 inches.'
  },
  {
   id: '30',
-  text: 'Which means twenty-eight cents?',
+  text: 'Point B is the center of the circle shown. <br><img src="images/30.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>Which of the following best describes BD?',
   type: 'multiple-choice',
-  options: ['$28.00', '$2.80', '$2.08', '$0.28'],
-  correctAnswer: 3,
-  explanation: 'Twenty-eight cents is written as $0.28 — less than one dollar, so it goes to the right of the decimal point.'
+  options: ['Chord', 'Radius', 'Diameter', 'Circumference'],
+  correctAnswer: 1,
+  explanation: 'A segment from the center (B) to a point on the circle (D) is a radius.'
  },
  {
   id: '31',
-  text: 'Which thermometer shows a temperature closest to 9°C? <br><img src="images/31.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+  text: 'Which of these is an obtuse triangle?',
   type: 'multiple-choice',
   options: [
    {url: 'images/31a.png', alt: 'Image failed to load. Please try again later.'},
@@ -321,120 +266,115 @@ const sampleQuestions = [
    {url: 'images/31c.png', alt: 'Image failed to load. Please try again later.'},
    {url: 'images/31d.png', alt: 'Image failed to load. Please try again later.'}
   ],
-  correctAnswer: 1,
-  explanation: '9°C falls between 0° and 10° on the Celsius scale, closer to 10°. The correct thermometer shows mercury just below the 10°C mark.'
+  correctAnswer: 2,
+  explanation: 'An obtuse triangle has one angle greater than 90 degrees.'
  },
  {
   id: '32',
-  text: 'Mr. Garrett lived in Fredericksburg for exactly 1 year. Which is closest to the total number of days Mr. Garrett lived in Fredericksburg?',
+  text: 'Which measurement is closest to the amount of milk in one drinking glass?',
   type: 'multiple-choice',
-  options: ['7', '12', '30', '365'],
-  correctAnswer: 3,
-  explanation: 'One year = 365 days.'
+  options: ['2 cups', '2 liters', '2 quarts', '2 gallons'],
+  correctAnswer: 0,
+  explanation: 'A drinking glass holds about 2 cups; liters, quarts, and gallons are far too large.'
  },
  {
   id: '33',
-  text: 'Which solid figure could be formed by the faces shown below? <br><img src="images/33.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+  text: 'What is the mean (average) for the following set of data? <br><center>7, 4, 24, 20, 35</center>',
   type: 'multiple-choice',
-  options: [
-   {url: 'images/33a.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/33b.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/33c.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/33d.png', alt: 'Image failed to load. Please try again later.'}
-  ],
+  options: ['18', '20', '24', '31'],
   correctAnswer: 0,
-  explanation: 'Identify the shapes of the faces shown and determine which 3D solid has those faces. The correct answer is a rectangular prism (or cube) based on the rectangular/square faces shown.'
+  explanation: 'The sum is 7 + 4 + 24 + 20 + 35 = 90, and 90 ÷ 5 = 18.'
  },
  {
   id: '34',
-  text: 'This scale shows the weight, in pounds, of some apples. <br><img src="images/34.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> According to the scale, which is closest to the total weight of these apples?',
+  text: 'Greg needs an outfit for school. He must choose 1 shirt, 1 pair of pants, and 1 pair of shoes. <br><img src="images/34.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>Based on the information in the chart, which tree diagram shows all of Greg\'s possible combinations?',
   type: 'multiple-choice',
-  options: ['4 pounds', '5 pounds', '6 pounds', '7 pounds'],
+  options: [
+   {url: 'images/34a.png', alt: 'Image failed to load. Please try again later.'},
+   {url: 'images/34b.png', alt: 'Image failed to load. Please try again later.'},
+   {url: 'images/34c.png', alt: 'Image failed to load. Please try again later.'},
+   {url: 'images/34d.png', alt: 'Image failed to load. Please try again later.'}
+  ],
   correctAnswer: 1,
-  explanation: 'Read the pointer on the scale. It points closest to 5 pounds.'
+  explanation: 'With 1 shirt, 2 pants colors, and 2 shoe types, there are 1 × 2 × 2 = 4 combinations; the correct tree branches the green shirt to tan and red pants, each to boots and sneakers.'
  },
  {
   id: '35',
-  text: 'This watch shows the time Liam\'s school bus arrived. <br><img src="images/35.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which is closest to the time Liam\'s school bus arrived?',
+  text: 'A box contains 5 red, 4 yellow, and 3 green tiles of equal size. Which question could be answered using probability?',
   type: 'multiple-choice',
-  options: ['8:04', '8:10', '8:20', '8:40'],
-  correctAnswer: 2,
-  explanation: 'Read the hour and minute hands on the analog watch. The hands indicate approximately 8:20.'
+  options: ['If Liz selects one tile from the box without looking, which color of tile is she most likely to select?', 'If Liz selects one tile from the box without looking, how many tiles will be left?', 'How many more red tiles are there than green tiles?', 'What is the total number of tiles in the box?'],
+  correctAnswer: 0,
+  explanation: 'Probability describes the likelihood of an outcome, so the question about which color is most likely to be selected uses probability.'
  },
  {
   id: '36',
-  text: 'Which shape appears to have 4 square corners?',
+  text: 'The spinner shown is divided into equal sections. <br><img src="images/36.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>What is the probability that the arrow will point to a green section in one spin?',
   type: 'multiple-choice',
-  options: [
-   {url: 'images/36a.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/36b.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/36c.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/36d.png', alt: 'Image failed to load. Please try again later.'}
-  ],
-  correctAnswer: 3,
-  explanation: 'A shape with 4 square (right-angle) corners is a rectangle or square. The correct option shows a quadrilateral with all four corners forming right angles.'
+  options: ['<math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>2</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>4</mn></mfrac></math>', '<math><mfrac><mn>4</mn><mn>4</mn></mfrac></math>'],
+  correctAnswer: 2,
+  explanation: 'The spinner has 4 equal sections, 2 of which are green, so the probability is <math><mfrac><mn>2</mn><mn>4</mn></mfrac></math>.'
  },
  {
   id: '37',
-  text: 'This graph shows the number of boxes of popcorn sold at a theater during a 4-day period. <br><img src="images/37.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Based on the data in the graph, what was the total number of boxes of popcorn sold on Friday and Saturday?',
+  text: 'Julian made the following list of all his math quiz scores. <br><center>77, 85, 86, 88, 88, 89, 89, 91, 93, 94, 97, 99, 99</center><br>Which stem-and-leaf plot correctly shows Julian\'s quiz scores?',
   type: 'multiple-choice',
-  options: ['50', '45', '40', '35'],
-  correctAnswer: 0,
-  explanation: 'Each symbol = 5 boxes. Count the symbols for Friday and Saturday and multiply by 5, then add the two totals together to get 50.'
+  options: [
+   {url: 'images/37a.png', alt: 'Image failed to load. Please try again later.'},
+   {url: 'images/37b.png', alt: 'Image failed to load. Please try again later.'},
+   {url: 'images/37c.png', alt: 'Image failed to load. Please try again later.'},
+   {url: 'images/37d.png', alt: 'Image failed to load. Please try again later.'}
+  ],
+  correctAnswer: 3,
+  explanation: 'The correct plot lists stem 7 with leaf 7; stem 8 with 5, 6, 8, 8, 9, 9; and stem 9 with 1, 3, 4, 7, 9, 9.'
  },
  {
   id: '38',
-  text: 'Which section of the spinner is the arrow MOST likely to land on for the next spin? <br><img src="images/38.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
+  text: 'Leland is playing a game with these spinners. <br><img src="images/38.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>Leland will spin the arrow on each spinner 1 time. Which tree diagram shows all of the possible outcomes?',
   type: 'multiple-choice',
-  options: ['1', '2', '3', '4'],
-  correctAnswer: 1,
-  explanation: 'The section that takes up the most area on the spinner is the most likely outcome. Section 2 covers the largest portion of the spinner.'
+  options: [
+   {url: 'images/38a.png', alt: 'Image failed to load. Please try again later.'},
+   {url: 'images/38b.png', alt: 'Image failed to load. Please try again later.'},
+   {url: 'images/38c.png', alt: 'Image failed to load. Please try again later.'},
+   {url: 'images/38d.png', alt: 'Image failed to load. Please try again later.'}
+  ],
+  correctAnswer: 2,
+  explanation: 'Each of the 3 colors (Y, B, G) pairs with each of the 3 numbers (1, 2, 3), giving 9 outcomes; the correct tree shows every color branching to 1, 2, and 3.'
  },
  {
   id: '39',
-  text: 'A group of third-grade students went on a nature hike. This line plot shows the number of types of birds seen during the hike. <br><img src="images/39.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> How many students saw EXACTLY 5 types of birds?',
+  text: 'Look at the graph. <br><img src="images/39.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>Based on the trend shown by the data in the graph, which is the best prediction of the number of DVDs that will be sold during week 6?',
   type: 'multiple-choice',
-  options: ['13', '6', '5', '3'],
-  correctAnswer: 3,
-  explanation: 'Count the X marks above the number 5 on the line plot. There are 3 X marks, meaning 3 students saw exactly 5 types of birds.'
+  options: ['600', '700', '800', '1,000'],
+  correctAnswer: 2,
+  explanation: 'Following the upward trend in the graph, the best prediction for week 6 is about 800 DVDs.'
  },
  {
   id: '40',
-  text: 'The chart shows the shapes and colors of Sandra\'s tiles. <br><img src="images/40.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which of the following shows ALL the different combinations of 1 shape and 1 color of tile that Sandra can make?',
+  text: 'What is the mode for the following set of numbers? <br><center>6, 10, 8, 7, 9, 8, 9, 7, 7</center>',
   type: 'multiple-choice',
-  options: [
-   {url: 'images/40a.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/40b.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/40c.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/40d.png', alt: 'Image failed to load. Please try again later.'}
-  ],
-  correctAnswer: 2,
-  explanation: 'Count shapes × colors to find total combinations. The correct option lists all possible pairings of each shape with each color, with none missing or repeated.'
+  options: ['6', '7', '8', '9'],
+  correctAnswer: 1,
+  explanation: 'The number 7 appears three times, more than any other value, so the mode is 7.'
  },
  {
   id: '41',
-  text: 'Each student in Mr. Drew\'s class owns one pet. This table shows the number of students who own different pets: Dog = 9, Cat = 2, Fish = 6. Which bar graph correctly represents these data?',
+  text: 'Which of these could be solved by using the open sentence 9 − 3 = p?',
   type: 'multiple-choice',
-  options: [
-   {url: 'images/41a.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/41b.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/41c.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/41d.png', alt: 'Image failed to load. Please try again later.'}
-  ],
-  correctAnswer: 2,
-  explanation: 'The correct bar graph shows Dog at 9, Cat at 2, and Fish at 6. Match each bar height to the data in the table.'
+  options: ['Alexa had 9 parakeets. She gave 3 to Gabby. How many parakeets did Alexa have left?', 'Alexa had 9 parakeets. She gave each of them 3 treats. How many treats did Alexa give them in all?', 'Alexa had 9 parakeets. She got 3 more from Gabby. How many parakeets does she have now?', 'Alexa had 9 parakeets. She kept them in 3 big cages. Each cage had the same number of parakeets. How many parakeets were in each cage?'],
+  correctAnswer: 0,
+  explanation: 'Giving away 3 from 9 is subtraction, which matches 9 − 3 = p.'
  },
  {
   id: '42',
-  text: 'Emily placed eight counters, like the ones shown, in a bag: Blue, Gold, Gold, Pink, Red, Blue, Red, Blue. She selected one counter from the bag without looking. Which color counter is she LEAST likely to select?',
+  text: 'Which is the variable in the expression 5 + 2n?',
   type: 'multiple-choice',
-  options: ['Red', 'Blue', 'Gold', 'Pink'],
-  correctAnswer: 3,
-  explanation: 'Count each color: Blue = 3, Red = 2, Gold = 2, Pink = 1. Pink appears only once, making it the least likely color to be selected.'
+  options: ['5', 'n', '+', '2'],
+  correctAnswer: 1,
+  explanation: 'A variable is a letter that stands for an unknown value; in 5 + 2n, the variable is n.'
  },
  {
   id: '43',
-  text: 'These pictures represent the 15 animals on Aunt Bev\'s farm. <br><img src="images/43.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which bar graph best represents the numbers of each kind of animal on the farm?',
+  text: 'What should be the 4th figure in the pattern? <br><img src="images/43.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>',
   type: 'multiple-choice',
   options: [
    {url: 'images/43a.png', alt: 'Image failed to load. Please try again later.'},
@@ -442,79 +382,64 @@ const sampleQuestions = [
    {url: 'images/43c.png', alt: 'Image failed to load. Please try again later.'},
    {url: 'images/43d.png', alt: 'Image failed to load. Please try again later.'}
   ],
-  correctAnswer: 1,
-  explanation: 'Count each type of animal in the picture and match those counts to the bar graph that correctly shows all 15 animals distributed across the animal types.'
+  correctAnswer: 2,
+  explanation: 'Continuing the repeating pattern, the 4th figure is the one shown in option C.'
  },
  {
   id: '44',
-  text: 'Harper wrote this number pattern: 143, 139, 135, 131, 127, ___, ___, ___. If the pattern continues to decrease following the same rule, what will be the next 3 numbers in Harper\'s pattern?',
+  text: 'There are a total of y students in Mr. Smith\'s classroom. Which of the following represents the number of students in the classroom when 3 students are absent?',
   type: 'multiple-choice',
-  options: ['121, 115, 109', '122, 117, 112', '123, 118, 112', '123, 119, 115'],
-  correctAnswer: 0,
-  explanation: 'The pattern decreases by 4 each time: 143, 139, 135, 131, 127. Continuing: 127 − 4 = 123, 123 − 4 = 119, 119 − 4 = 115. The PDF answer key shows F: 121, 115, 109 — subtract 6 each step: 127 − 6 = 121, 121 − 6 = 115, 115 − 6 = 109.'
+  options: ['y ÷ 3', 'y − 3', 'y × 3', 'y + 3'],
+  correctAnswer: 1,
+  explanation: 'Removing the 3 absent students from y total students is subtraction: y − 3.'
  },
  {
   id: '45',
-  text: 'Felicia grouped 10 counters 2 different ways to represent a basic fact. <br><img src="images/45.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> Which number sentence represents these related facts?',
+  text: 'Mr. Tanner bought 4 books of stamps. Each book contained the same number of stamps. If s represents the number of stamps in each book, which of the following could be used to determine the total number of stamps Mr. Tanner bought?',
   type: 'multiple-choice',
-  options: [
-   '<math><mn>2</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>5</mn><mo>+</mo><mn>2</mn></math>',
-   '<math><mn>2</mn><mo>+</mo><mn>5</mn><mo>=</mo><mn>5</mn><mo>&#215;</mo><mn>2</mn></math>',
-   '<math><mn>5</mn><mo>&#215;</mo><mn>2</mn><mo>=</mo><mn>5</mn><mo>&#215;</mo><mn>5</mn></math>',
-   '<math><mn>5</mn><mo>&#215;</mo><mn>2</mn><mo>=</mo><mn>2</mn><mo>&#215;</mo><mn>5</mn></math>'
-  ],
+  options: ['s × 4 = ?', 's + 4 = ?', 's − 4 = ?', 's ÷ 4 = ?'],
   correctAnswer: 0,
-  explanation: 'Felicia grouped 10 counters as 2 groups of 5 and 5 groups of 2, both equaling 10. This demonstrates the commutative property of multiplication: 5 × 2 = 2 × 5.'
+  explanation: 'Four books with s stamps each gives a total of s × 4 stamps.'
  },
  {
   id: '46',
-  text: 'Look at this repeating pattern of four figures. <br><img src="images/46.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> The pattern will continue in the same way. What will be the next two figures in the pattern?',
+  text: 'Bill wants to give away 1,152 trading cards. He divides the cards equally among 8 friends and writes the equation 1,152 ÷ 8 = x. What does the x represent in the equation?',
   type: 'multiple-choice',
-  options: [
-   {url: 'images/46a.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/46b.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/46c.png', alt: 'Image failed to load. Please try again later.'},
-   {url: 'images/46d.png', alt: 'Image failed to load. Please try again later.'}
-  ],
-  correctAnswer: 2,
-  explanation: 'Identify the repeating unit of 4 figures, then determine which two figures come next in the sequence based on that repeating unit.'
+  options: ['The number of cards each person will receive', 'The number of cards remaining', 'The number of Bill\'s friends', 'The number of cards Bill has'],
+  correctAnswer: 0,
+  explanation: 'Dividing 1,152 cards equally among 8 friends, x is the number of cards each friend receives.'
  },
  {
   id: '47',
-  text: 'Look at this table. Each toolbox has the same price. <br><img src="images/47.png" class="question-image" alt="Image failed to load. Please try again later."></img><br> If the pattern continues, what will be the total price of 6 toolboxes?',
+  text: 'Darius has 25 marbles that will be separated into g equal groups. Which expression represents the number of marbles in each group?',
   type: 'multiple-choice',
-  options: ['$151', '$180', '$190', '$210'],
-  correctAnswer: 1,
-  explanation: 'The table shows: 1 toolbox = $30, 2 = $60, 3 = $90, 4 = $120, 5 = $150. Each toolbox costs $30. 6 × $30 = $180.'
+  options: ['25 ÷ g', 'g + 25', 'g × 25', '25 − g'],
+  correctAnswer: 0,
+  explanation: 'Splitting 25 marbles into g equal groups is division: 25 ÷ g.'
  },
  {
   id: '48',
-  text: 'This number sentence models a multiplication property: <math><mn>2</mn><mo>&#215;</mo><mn>3</mn><mo>=</mo><mn>3</mn><mo>&#215;</mo><mn>2</mn></math>. Which of the following number sentences models the same property?',
+  text: 'Which problem could be solved using the open sentence 2x = 6?',
   type: 'multiple-choice',
-  options: [
-   '<math><mn>5</mn><mo>&#215;</mo><mn>8</mn><mo>=</mo><mn>10</mn><mo>&#215;</mo><mn>4</mn></math>',
-   '<math><mn>5</mn><mo>&#215;</mo><mn>8</mn><mo>=</mo><mn>2</mn><mo>&#215;</mo><mn>20</mn></math>',
-   '<math><mn>5</mn><mo>&#215;</mo><mn>8</mn><mo>=</mo><mn>40</mn></math>',
-   '<math><mn>5</mn><mo>&#215;</mo><mn>8</mn><mo>=</mo><mn>8</mn><mo>&#215;</mo><mn>5</mn></math>'
-  ],
-  correctAnswer: 3,
-  explanation: '2 × 3 = 3 × 2 demonstrates the commutative property of multiplication (changing the order of factors does not change the product). 5 × 8 = 8 × 5 models the same property.'
+  options: ['Gabe washed 6 loads of laundry each day for 2 days. How many loads of laundry did he wash all together?', 'After Gabe washed 2 loads of laundry, he had 6 more loads to wash. How many loads of laundry did he start with?', 'Gabe washed the same number of loads of laundry each day for 2 days. He washed a total of 6 loads of laundry. How many loads did he wash each day?', 'Gabe washed 2 loads of laundry on Monday. On Tuesday he washed some more loads. All together he washed 6 loads. How many loads of laundry did Gabe wash on Tuesday?'],
+  correctAnswer: 2,
+  explanation: 'Washing the same number x each day for 2 days totaling 6 loads gives 2x = 6.'
  },
  {
   id: '49',
-  text: 'Look at this pattern of numbers: 3, 7, 11, 15, 19, ___. If this pattern continues following the same rule, what should be the next number?',
+  text: 'Raymond has three times as many trading cards as his friend David. David has 34 trading cards. Which number sentence could be used to find r, the number of trading cards that Raymond has?',
   type: 'multiple-choice',
-  options: ['20', '22', '23', '24'],
+  options: ['r = 34 − 3', 'r = 3 ÷ 34', 'r = 3 × 34', 'r = 3 + 34'],
   correctAnswer: 2,
-  explanation: 'The pattern increases by 4 each time: 3, 7, 11, 15, 19. Next: 19 + 4 = 23.'
+  explanation: 'Three times David\'s 34 cards is multiplication: r = 3 × 34.'
  },
  {
   id: '50',
-  text: 'What number goes in the empty box to make the number sentence below true? <br><math><mn>13</mn><mo>&#8722;</mo><mo>&#9633;</mo><mo>=</mo><mn>7</mn></math>',
+  text: 'This table shows how much money Tiffany has in her savings at the end of each month. <br><img src="images/50.png" class="question-image" alt="Image failed to load. Please try again later."></img><br>If the pattern continues, what is the total amount of money that Tiffany will have in her savings at the end of 9 months?',
   type: 'multiple-choice',
-  options: ['4', '6', '14', '20'],
-  correctAnswer: 1,
-  explanation: '13 − □ = 7, so □ = 13 − 7 = 6.'
+  options: ['$49', '$56', '$63', '$70'],
+  correctAnswer: 2,
+  explanation: 'Savings increase by $7 each month, so at the end of 9 months Tiffany has 9 × $7 = $63.'
  }
 ];
 
@@ -522,55 +447,55 @@ const sampleQuestions = [
 // Maps raw scores (number correct out of 50) to scaled scores
 const scaledScoreMapping = {
   0: 0,
-  1: 82,
-  2: 127,
-  3: 154,
-  4: 174,
-  5: 190,
-  6: 203,
-  7: 215,
-  8: 225,
-  9: 235,
-  10: 244,
-  11: 252,
-  12: 259,
-  13: 266,
-  14: 273,
-  15: 280,
-  16: 286,
-  17: 293,
-  18: 299,
-  19: 304,
-  20: 310,
-  21: 316,
-  22: 321,
-  23: 327,
+  1: 18,
+  2: 74,
+  3: 108,
+  4: 133,
+  5: 153,
+  6: 170,
+  7: 185,
+  8: 198,
+  9: 209,
+  10: 220,
+  11: 230,
+  12: 240,
+  13: 249,
+  14: 258,
+  15: 266,
+  16: 274,
+  17: 282,
+  18: 289,
+  19: 297,
+  20: 304,
+  21: 311,
+  22: 319,
+  23: 326,
   24: 333,
-  25: 338,
-  26: 344,
-  27: 349,
-  28: 355,
-  29: 360,
-  30: 366,
-  31: 372,
-  32: 378,
-  33: 384,
-  34: 390,
-  35: 396,
-  36: 403,
-  37: 410,
-  38: 417,
-  39: 424,
-  40: 432,
-  41: 441,
-  42: 450,
-  43: 461,
-  44: 472,
-  45: 486,
-  46: 502,
-  47: 521,
-  48: 549,
-  49: 594,
+  25: 340,
+  26: 347,
+  27: 354,
+  28: 361,
+  29: 368,
+  30: 376,
+  31: 383,
+  32: 391,
+  33: 399,
+  34: 407,
+  35: 415,
+  36: 424,
+  37: 433,
+  38: 442,
+  39: 452,
+  40: 463,
+  41: 475,
+  42: 487,
+  43: 501,
+  44: 517,
+  45: 535,
+  46: 556,
+  47: 582,
+  48: 600,
+  49: 600,
   50: 600
 };
 
