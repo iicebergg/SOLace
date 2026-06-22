@@ -5,7 +5,7 @@ const sampleQuestions = [
   id: '1',
   text: '6 <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math> − 4 <math><mfrac><mn>1</mn><mn>3</mn></mfrac></math> = ___?',
   type: 'multiple-choice',
-  options: ['2 <math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>', '2', '2 <math><mfrac><mn>1</mn><mn>6</mn></mfrac></math>', '<math><mfrac><mn>11</mn><mn>6</mn></mfrac></math>'],
+  options: ['1 <math><mfrac><mn>1</mn><mn>6</mn></mfrac></math>', '2', '2 <math><mfrac><mn>1</mn><mn>6</mn></mfrac></math>', '2 <math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>'],
   correctAnswer: 2,
   explanation: '6 <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math> = 6 <math><mfrac><mn>3</mn><mn>6</mn></mfrac></math> and 4 <math><mfrac><mn>1</mn><mn>3</mn></mfrac></math> = 4 <math><mfrac><mn>2</mn><mn>6</mn></mfrac></math>. Subtracting gives 2 <math><mfrac><mn>1</mn><mn>6</mn></mfrac></math>.'
  },
@@ -21,7 +21,7 @@ const sampleQuestions = [
   id: '3',
   text: '<math><mfrac><mn>7</mn><mn>9</mn></mfrac></math> + <math><mfrac><mn>4</mn><mn>9</mn></mfrac></math> = ___?',
   type: 'multiple-choice',
-  options: ['1 <math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>3</mn></mfrac></math>', '1 <math><mfrac><mn>2</mn><mn>9</mn></mfrac></math>', '<math><mfrac><mn>3</mn><mn>9</mn></mfrac></math>'],
+  options: ['<math><mfrac><mn>3</mn><mn>9</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>3</mn></mfrac></math>', '1 <math><mfrac><mn>2</mn><mn>9</mn></mfrac></math>', '1 <math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>'],
   correctAnswer: 2,
   explanation: 'With like denominators, add the numerators: <math><mfrac><mn>7</mn><mn>9</mn></mfrac></math> + <math><mfrac><mn>4</mn><mn>9</mn></mfrac></math> = <math><mfrac><mn>11</mn><mn>9</mn></mfrac></math> = 1 <math><mfrac><mn>2</mn><mn>9</mn></mfrac></math>.'
  },
@@ -61,7 +61,7 @@ const sampleQuestions = [
   id: '8',
   text: '<math><mfrac><mn>5</mn><mn>9</mn></mfrac></math> − <math><mfrac><mn>1</mn><mn>3</mn></mfrac></math> = ___?',
   type: 'multiple-choice',
-  options: ['<math><mfrac><mn>4</mn><mn>9</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>3</mn></mfrac></math>', '<math><mfrac><mn>8</mn><mn>9</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>9</mn></mfrac></math>'],
+  options: ['<math><mfrac><mn>8</mn><mn>9</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>3</mn></mfrac></math>', '<math><mfrac><mn>4</mn><mn>9</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>9</mn></mfrac></math>'],
   correctAnswer: 3,
   explanation: '<math><mfrac><mn>1</mn><mn>3</mn></mfrac></math> = <math><mfrac><mn>3</mn><mn>9</mn></mfrac></math>, so <math><mfrac><mn>5</mn><mn>9</mn></mfrac></math> − <math><mfrac><mn>3</mn><mn>9</mn></mfrac></math> = <math><mfrac><mn>2</mn><mn>9</mn></mfrac></math>.'
  },
