@@ -214,7 +214,7 @@ const sampleQuestions = [
  },
  {
  id: '25',
- text: 'Which of the.se i.s most likely the result of weasels and foxes depending on the same food source?',
+ text: 'Which of these is most likely the result of weasels and foxes depending on the same food source?',
  type: 'multiple-choice',
  options: ['The populations will compete with each other.', 'One of the populations will become herbivores.', 'Birthrates for both populations will increase.', 'New species of prey will evolve in the area.'],
  correctAnswer: 0, 

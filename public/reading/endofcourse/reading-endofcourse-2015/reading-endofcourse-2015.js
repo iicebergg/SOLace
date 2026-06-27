@@ -1004,7 +1004,7 @@ const sampleQuestions = [
     options: [
       'a simile',
       'a metaphor',
-      'onamatopoeia',
+      'onomatopoeia',
       'irony',
     ],
     correctAnswer: 2,
