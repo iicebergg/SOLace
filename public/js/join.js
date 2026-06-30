@@ -11,6 +11,7 @@ const KEY_SEAT_LABEL  = 'solace_seat_label';
 // ── State ─────────────────────────────────────────────────────────────────────
 
 let currentClassId   = null;
+let currentClassName = null;
 let currentSeats     = [];
 
 // ── Boot ──────────────────────────────────────────────────────────────────────
@@ -25,6 +26,14 @@ let currentSeats     = [];
   }
 
   document.getElementById('join-form')?.addEventListener('submit', handleJoinSubmit);
+  document.getElementById('back-to-code-btn')?.addEventListener('click', goBackToCode);
+  document.getElementById('switch-seat-btn')?.addEventListener('click', switchSeat);
+
+  // Delegated: seat buttons are rendered dynamically into #seat-list.
+  document.getElementById('seat-list')?.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-seat-id]');
+    if (btn) selectSeat(btn.dataset.seatId, btn.dataset.seatLabel);
+  });
 
   // Check if already joined
   const storedSeatId    = localStorage.getItem(KEY_SEAT_ID);
@@ -74,6 +83,7 @@ async function handleJoinSubmit(e) {
 // ── Step 2: Show seat picker ──────────────────────────────────────────────────
 
 function showSeatPicker(className, seats) {
+  currentClassName = className;
   document.getElementById('class-name-display').textContent = className;
 
   const list = document.getElementById('seat-list');
@@ -82,7 +92,7 @@ function showSeatPicker(className, seats) {
   } else {
     list.innerHTML = seats.map(seat => `
       <button class="btn btn-secondary" style="justify-content:flex-start; text-align:left; padding:0.85rem 1.25rem; font-size:1rem;"
-              onclick="selectSeat('${esc(seat.id)}', '${esc(seat.seat_label)}', '${esc(className)}')"
+              data-seat-id="${esc(seat.id)}" data-seat-label="${esc(seat.seat_label)}"
               aria-label="Select ${esc(seat.seat_label)}">
         ${esc(seat.seat_label)}
       </button>`).join('');
@@ -94,7 +104,8 @@ function showSeatPicker(className, seats) {
 
 // ── Select a seat ─────────────────────────────────────────────────────────────
 
-function selectSeat(seatId, seatLabel, className) {
+function selectSeat(seatId, seatLabel) {
+  const className = currentClassName || localStorage.getItem(KEY_CLASS_NAME) || '';
   localStorage.setItem(KEY_CLASS_ID,   currentClassId);
   localStorage.setItem(KEY_SEAT_ID,    seatId);
   localStorage.setItem(KEY_CLASS_NAME, className);

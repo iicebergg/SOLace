@@ -25,6 +25,7 @@ function saveRosterMap(map) {
 
 (async function boot() {
   if (!CLASS_ID) { window.location.href = '/teacher/dashboard.html'; return; }
+  wireUpClassPage();
   await requireAuth();
   await loadClassData();
   await loadSeats();
@@ -32,6 +33,48 @@ function saveRosterMap(map) {
   document.getElementById('loading-state').style.display = 'none';
   document.getElementById('main-content').style.display  = 'block';
 })();
+
+// Attach all event handlers (CSP-safe: no inline onclick/onchange attributes).
+function wireUpClassPage() {
+  document.getElementById('signout-btn')?.addEventListener('click', signOut);
+
+  // Tabs
+  document.querySelectorAll('[data-class-tab]').forEach(btn => {
+    btn.addEventListener('click', () => switchClassTab(btn.dataset.classTab));
+  });
+
+  // Roster actions
+  document.getElementById('add-seats-open-btn')?.addEventListener('click', openAddSeatsModal);
+  document.getElementById('typed-roster-open-btn')?.addEventListener('click', openTypedRosterModal);
+  document.getElementById('kiosk-open-btn')?.addEventListener('click', openKioskMode);
+  document.getElementById('export-roster-btn')?.addEventListener('click', exportRoster);
+  document.getElementById('import-roster-btn')?.addEventListener('click', importRosterFile);
+  document.getElementById('print-seat-btn')?.addEventListener('click', printSeatSheet);
+  document.getElementById('import-file-input')?.addEventListener('change', handleImportFile);
+
+  // Progress
+  document.getElementById('sort-select')?.addEventListener('change', renderProgress);
+  document.getElementById('refresh-progress-btn')?.addEventListener('click', loadProgress);
+
+  // Settings
+  document.getElementById('copy-code-btn')?.addEventListener('click', copyJoinCode);
+  document.getElementById('regen-code-btn')?.addEventListener('click', confirmRegenCode);
+  document.getElementById('archive-btn')?.addEventListener('click', toggleArchive);
+
+  // Kiosk exit
+  document.getElementById('kiosk-exit-btn')?.addEventListener('click', closeKioskMode);
+
+  // Close-modal buttons carry the target modal id in data-close-modal.
+  document.querySelectorAll('[data-close-modal]').forEach(btn => {
+    btn.addEventListener('click', () => closeModal(btn.dataset.closeModal));
+  });
+
+  // Delegated: per-seat "Edit" buttons are rendered dynamically into the tbody.
+  document.getElementById('roster-tbody')?.addEventListener('click', (e) => {
+    const btn = e.target.closest('[data-edit-seat]');
+    if (btn) editSeatName(btn.dataset.editSeat, btn.dataset.seatLabel);
+  });
+}
 
 // ── Data fetching ─────────────────────────────────────────────────────────────
 
@@ -91,7 +134,7 @@ function renderRoster() {
         <td><strong>${esc(seat.seat_label)}</strong></td>
         <td>${displayName}</td>
         <td>
-          <button class="btn-icon btn-sm" onclick="editSeatName('${esc(seat.id)}','${esc(seat.seat_label)}')"
+          <button class="btn-icon btn-sm" data-edit-seat="${esc(seat.id)}" data-seat-label="${esc(seat.seat_label)}"
                   aria-label="Edit name for ${esc(seat.seat_label)}">Edit</button>
         </td>
       </tr>`;

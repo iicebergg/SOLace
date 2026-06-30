@@ -6,9 +6,31 @@ let classes = [];
 // ── Boot ──────────────────────────────────────────────────────────────────────
 
 (async function boot() {
+  wireUpDashboard();
   await requireAuth();
   await loadClasses();
 })();
+
+// Attach all event handlers (CSP-safe: no inline onclick attributes).
+function wireUpDashboard() {
+  document.getElementById('signout-btn')?.addEventListener('click', signOut);
+  document.getElementById('new-class-btn')?.addEventListener('click', openCreateModal);
+  document.getElementById('empty-create-btn')?.addEventListener('click', openCreateModal);
+  document.getElementById('create-modal-close')?.addEventListener('click', closeCreateModal);
+  document.getElementById('create-cancel-btn')?.addEventListener('click', closeCreateModal);
+
+  // Delegated handlers for dynamically rendered class cards.
+  const grid = document.getElementById('classes-grid');
+  grid.addEventListener('click', (e) => {
+    const card = e.target.closest('.class-card');
+    if (card?.dataset.classId) openClass(card.dataset.classId);
+  });
+  grid.addEventListener('keydown', (e) => {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    const card = e.target.closest('.class-card');
+    if (card?.dataset.classId) { e.preventDefault(); openClass(card.dataset.classId); }
+  });
+}
 
 // ── Load classes ──────────────────────────────────────────────────────────────
 
@@ -40,9 +62,8 @@ function renderClasses() {
   const grid = document.getElementById('classes-grid');
   grid.innerHTML = classes.map(cls => `
     <div class="class-card ${cls.active ? '' : 'archived'}"
-         onclick="openClass('${cls.id}')"
-         role="button" tabindex="0"
-         onkeydown="if(event.key==='Enter'||event.key===' ')openClass('${cls.id}')">
+         data-class-id="${esc(cls.id)}"
+         role="button" tabindex="0">
       <div class="class-card-header">
         <span class="class-name">${esc(cls.name)}</span>
         <span class="badge ${cls.active ? 'badge-active' : 'badge-archived'}">

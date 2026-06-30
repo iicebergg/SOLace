@@ -21,7 +21,7 @@
         <div class="nav-links">
           <a href="../index.html" class="nav-link">Student Platform</a>
           <span id="nav-email" class="nav-link" style="opacity:0.7; cursor:default;"></span>
-          <button class="btn btn-primary btn-sm" onclick="signOut()" style="background:rgba(255,255,255,0.2); border:1px solid rgba(255,255,255,0.4);">
+          <button class="btn btn-primary btn-sm" id="signout-btn" style="background:rgba(255,255,255,0.2); border:1px solid rgba(255,255,255,0.4);">
             Sign Out
           </button>
         </div>
@@ -37,7 +37,7 @@
           <h1>My Classes</h1>
           <p>Create classes, manage rosters, and track student progress.</p>
         </div>
-        <button class="btn btn-primary" onclick="openCreateModal()">
+        <button class="btn btn-primary" id="new-class-btn">
           + New Class
         </button>
       </div>
@@ -54,7 +54,7 @@
         <div class="empty-icon" aria-hidden="true">&#128218;</div>
         <h3>No classes yet</h3>
         <p>Create your first class to get started.</p>
-        <button class="btn btn-primary" style="margin-top:1rem;" onclick="openCreateModal()">
+        <button class="btn btn-primary" style="margin-top:1rem;" id="empty-create-btn">
           Create a Class
         </button>
       </div>
@@ -70,7 +70,7 @@
     <div class="modal">
       <div class="modal-header">
         <h3 id="create-modal-title">New Class</h3>
-        <button class="modal-close" onclick="closeCreateModal()" aria-label="Close">&times;</button>
+        <button class="modal-close" id="create-modal-close" aria-label="Close">&times;</button>
       </div>
       <div id="create-error" class="alert alert-error" style="display:none;"></div>
       <form id="create-form" novalidate>
@@ -89,7 +89,7 @@
           <input type="text" id="class-subject" maxlength="100" placeholder="e.g. Math, Reading, Science">
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" onclick="closeCreateModal()">Cancel</button>
+          <button type="button" class="btn btn-secondary" id="create-cancel-btn">Cancel</button>
           <button type="submit" class="btn btn-primary" id="create-btn">Create Class</button>
         </div>
       </form>
