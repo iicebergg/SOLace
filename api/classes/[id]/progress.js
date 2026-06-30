@@ -1,11 +1,9 @@
-'use strict';
-
-const {
+import {
   requireTeacher, requireClassOwner, withTeacherCtx,
   handleCors, sendError,
-} = require('../../_middleware');
+} from '../../_middleware.js';
 
-module.exports = async function handler(req, res) {
+export default async function handler(req, res) {
   if (handleCors(req, res)) return;
 
   if (req.method !== 'GET') {
@@ -26,9 +24,8 @@ module.exports = async function handler(req, res) {
         LIMIT 1
       `;
 
-      // Per-seat aggregates: attempt count, average score, and per-test breakdown.
-      // Seat tokens only — no names, ever. The teacher's browser joins against
-      // localStorage to render readable names.
+      // Per-seat aggregates — seat tokens only, no names ever.
+      // The teacher's browser joins against localStorage to render readable names.
       const seats = await tx`
         SELECT
           st.id           AS seat_token_id,
@@ -59,7 +56,6 @@ module.exports = async function handler(req, res) {
         ORDER BY st.seat_label
       `;
 
-      // Class-wide totals.
       const totals = await tx`
         SELECT
           COUNT(DISTINCT cal.attempt_id)::int                         AS attempt_count,
@@ -86,4 +82,4 @@ module.exports = async function handler(req, res) {
   } catch (err) {
     return sendError(res, err);
   }
-};
+}

@@ -1,20 +1,17 @@
 /**
  * RLS isolation tests.
  *
- * These tests verify that Postgres row-level security prevents teacher A
- * from reading teacher B's classes, seat tokens, or attempt links —
- * even when bypassing the application layer and hitting the DB directly.
- *
- * Prerequisite: Run migrations 001 and 002 against your test database.
- * Set DATABASE_URL to point at the test/preview database.
+ * Verifies that Postgres row-level security prevents teacher A from reading
+ * teacher B's classes, seat tokens, or attempt links — even when bypassing
+ * the application layer and hitting the DB directly.
  *
  * Run: node --test tests/rls-isolation.test.js
+ * Requires: DATABASE_URL pointing at a migrated preview database.
  */
-'use strict';
 
-const { test, before, after }  = require('node:test');
-const assert = require('node:assert/strict');
-const { neon } = require('@neondatabase/serverless');
+import { test, before, after } from 'node:test';
+import assert from 'node:assert/strict';
+import { neon } from '@neondatabase/serverless';
 
 if (!process.env.DATABASE_URL) {
   console.error('DATABASE_URL not set — skipping RLS tests');
@@ -23,42 +20,35 @@ if (!process.env.DATABASE_URL) {
 
 const sql = neon(process.env.DATABASE_URL);
 
-// We use two fake teacher IDs (these would normally be real Better Auth user IDs).
-// In the test, we insert classes directly with these IDs and verify RLS blocks cross-reads.
 const TEACHER_A = 'test-teacher-a-' + Date.now();
 const TEACHER_B = 'test-teacher-b-' + Date.now();
 let classA_id, classB_id, seatA_id;
 
 before(async () => {
-  // Insert fake user rows (Better Auth 'user' table must exist)
   await sql`
     INSERT INTO "user" (id, email, "emailVerified", "createdAt", "updatedAt", name)
     VALUES
       (${TEACHER_A}, ${TEACHER_A + '@test.invalid'}, false, NOW(), NOW(), 'Test Teacher A'),
       (${TEACHER_B}, ${TEACHER_B + '@test.invalid'}, false, NOW(), NOW(), 'Test Teacher B')
   `;
-  // Create a class for teacher A
   const [rowA] = await sql`
     INSERT INTO classes (teacher_id, name, join_code)
     VALUES (${TEACHER_A}, 'Class A', 'TESTA1')
     RETURNING id
   `;
   classA_id = rowA.id;
-  // Create a class for teacher B
   const [rowB] = await sql`
     INSERT INTO classes (teacher_id, name, join_code)
     VALUES (${TEACHER_B}, 'Class B', 'TESTB1')
     RETURNING id
   `;
   classB_id = rowB.id;
-  // Create a seat in class A
   const [seatA] = await sql`
     INSERT INTO seat_tokens (class_id, seat_label)
     VALUES (${classA_id}, 'Seat 1')
     RETURNING id
   `;
   seatA_id = seatA.id;
-  // Insert a link
   await sql`
     INSERT INTO class_attempt_links (attempt_id, class_id, seat_token_id)
     VALUES ('rls-test-attempt-a', ${classA_id}, ${seatA_id})
@@ -66,7 +56,6 @@ before(async () => {
 });
 
 after(async () => {
-  // Cleanup test data
   await sql`DELETE FROM class_attempt_links WHERE attempt_id = 'rls-test-attempt-a'`;
   await sql`DELETE FROM seat_tokens WHERE class_id IN (${classA_id}, ${classB_id})`;
   await sql`DELETE FROM classes WHERE id IN (${classA_id}, ${classB_id})`;

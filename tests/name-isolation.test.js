@@ -9,11 +9,10 @@
  * Run: node --test tests/name-isolation.test.js
  * Requires DATABASE_URL and a running server at TEST_BASE_URL.
  */
-'use strict';
 
-const { test } = require('node:test');
-const assert   = require('node:assert/strict');
-const { neon } = require('@neondatabase/serverless');
+import { test } from 'node:test';
+import assert   from 'node:assert/strict';
+import { neon } from '@neondatabase/serverless';
 
 const BASE_URL = process.env.TEST_BASE_URL || 'http://localhost:3000';
 
@@ -41,7 +40,6 @@ if (process.env.DATABASE_URL) {
 }
 
 // ── API payload checks ────────────────────────────────────────────────────────
-// These tests send name fields to endpoints and assert 400 rejection.
 
 const NAME_PAYLOADS = [
   { first_name: 'Alice', last_name: 'Smith' },
@@ -60,10 +58,6 @@ for (const payload of NAME_PAYLOADS) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(body),
     });
-    // .strict() on the zod schema means extra keys get rejected as well.
-    // We accept 400 (bad code + strict schema) or a specific name rejection.
-    // The important thing is it didn't succeed with a name in it.
-    const data = await res.json();
     assert.ok(
       res.status === 400 || res.status === 422,
       `Expected 400/422 when sending ${fieldName} to join endpoint, got ${res.status}`
@@ -78,7 +72,7 @@ for (const payload of NAME_PAYLOADS) {
       responses: [],
       ...payload,
     };
-    const res = await fetch(`${BASE_URL}/api/submit-attempt`, {
+    const res  = await fetch(`${BASE_URL}/api/submit-attempt`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(body),

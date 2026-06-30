@@ -1,10 +1,8 @@
-'use strict';
-
-const { z } = require('zod');
-const {
+import { z } from 'zod';
+import {
   requireTeacher, withTeacherCtx, uniqueCode,
   rejectNameFields, handleCors, sendError, sql,
-} = require('./_middleware');
+} from './_middleware.js';
 
 const createSchema = z.object({
   name:    z.string().min(1).max(200),
@@ -12,7 +10,7 @@ const createSchema = z.object({
   subject: z.string().max(100).optional(),
 });
 
-module.exports = async function handler(req, res) {
+export default async function handler(req, res) {
   if (handleCors(req, res)) return;
 
   try {
@@ -52,4 +50,4 @@ module.exports = async function handler(req, res) {
   } catch (err) {
     return sendError(res, err);
   }
-};
+}

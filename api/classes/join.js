@@ -1,17 +1,12 @@
-'use strict';
-
-const { z }          = require('zod');
-const { neon }       = require('@neondatabase/serverless');
-const { auth }       = require('../_auth');
-const { handleCors } = require('../_middleware');
+import { z }          from 'zod';
+import { neon }       from '@neondatabase/serverless';
+import { handleCors } from '../_middleware.js';
 
 const sql = neon(process.env.DATABASE_URL);
 
 // Simple in-process rate limiter for the public join endpoint.
-// Because the database-backed rate limiter lives in Better Auth (which uses
-// its own table), we use a lightweight approach here: track IP → {count, reset}.
-// This is best-effort on a single Lambda instance; the DB-backed rate_limit
-// table is the authoritative limiter. Both run in parallel.
+// Best-effort on a single Lambda instance; the DB-backed rate_limit table
+// in Better Auth is the authoritative limiter. Both run in parallel.
 const joinRateMap = new Map();
 
 function joinRateCheck(ip) {
@@ -20,14 +15,14 @@ function joinRateCheck(ip) {
   if (now > entry.reset) { entry.count = 0; entry.reset = now + 60_000; }
   entry.count++;
   joinRateMap.set(ip, entry);
-  return entry.count <= 5;  // 5 requests per 60 seconds per IP
+  return entry.count <= 5;
 }
 
 const joinSchema = z.object({
   code: z.string().min(1).max(20),
-}).strict();  // .strict() rejects any extra keys (including name-like fields)
+}).strict();
 
-module.exports = async function handler(req, res) {
+export default async function handler(req, res) {
   if (handleCors(req, res)) return;
 
   if (req.method !== 'POST') {
@@ -44,14 +39,12 @@ module.exports = async function handler(req, res) {
 
   const parsed = joinSchema.safeParse(req.body || {});
   if (!parsed.success) {
-    // Generic error — don't hint at what was wrong to prevent enumeration.
     return res.status(400).json({ error: 'invalid_or_expired_code' });
   }
 
   const { code } = parsed.data;
 
   try {
-    // Look up the class by join code (case-insensitive).
     const classes = await sql`
       SELECT id, name
       FROM classes
@@ -62,13 +55,10 @@ module.exports = async function handler(req, res) {
     `;
 
     if (!classes.length) {
-      // Constant-time-ish response to prevent timing-based enumeration.
       return res.status(400).json({ error: 'invalid_or_expired_code' });
     }
 
-    const cls = classes[0];
-
-    // Fetch seat labels — never expose teacher_id or any other internals.
+    const cls   = classes[0];
     const seats = await sql`
       SELECT id, seat_label
       FROM seat_tokens
@@ -79,10 +69,10 @@ module.exports = async function handler(req, res) {
     return res.status(200).json({
       class_id:   cls.id,
       class_name: cls.name,
-      seats,         // [{ id, seat_label }] — no names, no teacher info
+      seats,
     });
   } catch (err) {
     console.error('join error:', err.message);
     return res.status(500).json({ error: 'internal_error' });
   }
-};
+}

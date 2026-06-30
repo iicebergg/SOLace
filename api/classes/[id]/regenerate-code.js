@@ -1,16 +1,14 @@
-'use strict';
-
-const { z } = require('zod');
-const {
+import { z } from 'zod';
+import {
   requireTeacher, requireClassOwner, withTeacherCtx,
   uniqueCode, rejectNameFields, handleCors, sendError,
-} = require('../../_middleware');
+} from '../../_middleware.js';
 
 const regenSchema = z.object({
   expires_at: z.string().datetime().optional(),
 }).strict();
 
-module.exports = async function handler(req, res) {
+export default async function handler(req, res) {
   if (handleCors(req, res)) return;
 
   if (req.method !== 'POST') {
@@ -31,8 +29,8 @@ module.exports = async function handler(req, res) {
       return res.status(400).json({ error: 'validation_error', issues: parsed.error.issues });
     }
 
-    const newCode     = await uniqueCode();
-    const expiresAt   = parsed.data.expires_at || null;
+    const newCode   = await uniqueCode();
+    const expiresAt = parsed.data.expires_at || null;
 
     const rows = await withTeacherCtx(teacherId, (tx) => tx`
       UPDATE classes
@@ -45,4 +43,4 @@ module.exports = async function handler(req, res) {
   } catch (err) {
     return sendError(res, err);
   }
-};
+}

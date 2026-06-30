@@ -1,29 +1,25 @@
 /**
  * Backward compatibility tests for the existing anonymous attempt pipeline.
  *
- * Verifies that:
- * - Anonymous attempts (no class_id) still write to test_attempts and question_responses
- * - No class_attempt_links row is created for anonymous attempts
- * - The response is still { ok: true, responses_written: N }
- * - All previously required fields still work
+ * Verifies that anonymous attempts still work exactly as before the class
+ * feature was added, and that no class_attempt_links row is created.
  *
- * Requires DATABASE_URL and TEST_BASE_URL.
  * Run: node --test tests/attempt-backward-compat.test.js
+ * Requires DATABASE_URL and TEST_BASE_URL.
  */
-'use strict';
 
-const { test, after } = require('node:test');
-const assert   = require('node:assert/strict');
-const { neon } = require('@neondatabase/serverless');
-const crypto   = require('crypto');
+import { test, after } from 'node:test';
+import assert   from 'node:assert/strict';
+import { neon } from '@neondatabase/serverless';
+import { randomUUID } from 'node:crypto';
 
 if (!process.env.DATABASE_URL) {
   console.error('DATABASE_URL not set — skipping backward-compat tests');
   process.exit(0);
 }
 
-const BASE_URL = process.env.TEST_BASE_URL || 'http://localhost:3000';
-const sql      = neon(process.env.DATABASE_URL);
+const BASE_URL   = process.env.TEST_BASE_URL || 'http://localhost:3000';
+const sql        = neon(process.env.DATABASE_URL);
 const createdIds = [];
 
 after(async () => {
@@ -34,7 +30,7 @@ after(async () => {
 });
 
 test('anonymous attempt without class fields succeeds and writes test_attempts', async () => {
-  const attemptId = 'bc-' + crypto.randomUUID();
+  const attemptId = 'bc-' + randomUUID();
   createdIds.push(attemptId);
 
   const res = await fetch(`${BASE_URL}/api/submit-attempt`, {
@@ -57,13 +53,12 @@ test('anonymous attempt without class fields succeeds and writes test_attempts',
     }),
   });
 
-  assert.equal(res.status, 200, 'Should return 200');
+  assert.equal(res.status, 200);
   const data = await res.json();
   assert.equal(data.ok, true);
   assert.equal(data.responses_written, 2);
 
-  // Verify DB writes
-  const attempts = await sql`SELECT attempt_id FROM test_attempts WHERE attempt_id = ${attemptId}`;
+  const attempts  = await sql`SELECT attempt_id FROM test_attempts WHERE attempt_id = ${attemptId}`;
   assert.equal(attempts.length, 1, 'test_attempts row must exist');
 
   const responses = await sql`SELECT * FROM question_responses WHERE attempt_id = ${attemptId}`;
@@ -77,10 +72,7 @@ test('missing required fields returns 400 (existing behavior unchanged)', async 
   const res = await fetch(`${BASE_URL}/api/submit-attempt`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      subject: 'Grade 5 Math',
-      // Missing attempt_id, test_id, grade_band, started_at
-    }),
+    body: JSON.stringify({ subject: 'Grade 5 Math' }),
   });
   assert.equal(res.status, 400);
   const data = await res.json();

@@ -1,12 +1,10 @@
-'use strict';
-
-const { auth }      = require('../_auth');
-const { toNodeHandler } = require('better-auth/node');
-const { handleCors }    = require('../_middleware');
+import { auth }          from '../_auth.js';
+import { toNodeHandler } from 'better-auth/node';
+import { handleCors }    from '../_middleware.js';
 
 const handler = toNodeHandler(auth);
 
-module.exports = async function authHandler(req, res) {
+export default async function authHandler(req, res) {
   if (handleCors(req, res)) return;
   return handler(req, res);
-};
+}

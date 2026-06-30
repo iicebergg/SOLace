@@ -1,21 +1,15 @@
 /**
  * Join flow tests.
  *
- * Covers:
- * - Valid code → returns class_id + seats
- * - Bad code → generic error (no enumeration hint)
- * - Expired code → generic error
- * - Valid join + attempt submission → class_attempt_links row created
- * - Anonymous attempt (no class_id) → no linking row, 200 OK
+ * Covers valid/bad/expired codes, attempt linking, and anonymous path.
  *
- * Requires DATABASE_URL and TEST_BASE_URL.
  * Run: node --test tests/join-flow.test.js
+ * Requires DATABASE_URL and TEST_BASE_URL.
  */
-'use strict';
 
-const { test, before, after } = require('node:test');
-const assert  = require('node:assert/strict');
-const { neon } = require('@neondatabase/serverless');
+import { test, before, after } from 'node:test';
+import assert  from 'node:assert/strict';
+import { neon } from '@neondatabase/serverless';
 
 if (!process.env.DATABASE_URL) {
   console.error('DATABASE_URL not set — skipping join flow tests');
@@ -27,7 +21,6 @@ const sql      = neon(process.env.DATABASE_URL);
 
 const TEST_TEACHER_ID = 'flow-test-teacher-' + Date.now();
 let testClassId, testSeatId;
-const TEST_CODE = 'FLOWTST';  // 7 chars for test — adjust to your alphabet
 
 before(async () => {
   await sql`
@@ -77,12 +70,11 @@ test('bad join code returns generic error', async () => {
     body: JSON.stringify({ code: 'XXXXXX' }),
   });
   const data = await res.json();
-  assert.equal(res.status, 400, `Expected 400 for bad code`);
-  assert.equal(data.error, 'invalid_or_expired_code', 'Generic error message (no enumeration hint)');
+  assert.equal(res.status, 400);
+  assert.equal(data.error, 'invalid_or_expired_code');
 });
 
 test('expired code returns generic error', async () => {
-  // Insert a code with expiry in the past
   await sql`
     INSERT INTO classes (teacher_id, name, join_code, active, code_expires_at)
     VALUES (${TEST_TEACHER_ID}, 'Expired', 'EXPIR1', true, NOW() - INTERVAL '1 hour')
@@ -104,32 +96,27 @@ test('attempt with valid class_id + seat_token_id creates class_attempt_links ro
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      attempt_id:          attemptId,
-      subject:             'Test Subject',
-      test_id:             'test_001',
-      grade_band:          '3-5',
-      started_at:          new Date().toISOString(),
-      completed_at:        new Date().toISOString(),
-      total_time_seconds:  60,
-      score_correct:       3,
-      score_total:         5,
-      responses:           [],
-      class_id:            testClassId,
-      seat_token_id:       testSeatId,
+      attempt_id:         attemptId,
+      subject:            'Test Subject',
+      test_id:            'test_001',
+      grade_band:         '3-5',
+      started_at:         new Date().toISOString(),
+      completed_at:       new Date().toISOString(),
+      total_time_seconds: 60,
+      score_correct:      3,
+      score_total:        5,
+      responses:          [],
+      class_id:           testClassId,
+      seat_token_id:      testSeatId,
     }),
   });
-  assert.equal(res.status, 200, 'Attempt should succeed');
+  assert.equal(res.status, 200);
   const data = await res.json();
   assert.equal(data.ok, true);
 
-  // Verify the link was created in the database
-  const links = await sql`
-    SELECT attempt_id FROM class_attempt_links WHERE attempt_id = ${attemptId}
-  `;
+  const links = await sql`SELECT attempt_id FROM class_attempt_links WHERE attempt_id = ${attemptId}`;
   assert.equal(links.length, 1, 'class_attempt_links row must exist');
-  assert.equal(links[0].attempt_id, attemptId);
 
-  // Cleanup
   await sql`DELETE FROM class_attempt_links WHERE attempt_id = ${attemptId}`;
   await sql`DELETE FROM test_attempts WHERE attempt_id = ${attemptId}`;
 });
@@ -140,28 +127,24 @@ test('anonymous attempt (no class_id) does not create class_attempt_links row', 
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      attempt_id:          attemptId,
-      subject:             'Grade 5 Reading',
-      test_id:             'reading_grade5_anon',
-      grade_band:          '3-5',
-      started_at:          new Date().toISOString(),
-      completed_at:        new Date().toISOString(),
-      total_time_seconds:  90,
-      score_correct:       4,
-      score_total:         5,
-      responses:           [],
-      // No class_id or seat_token_id
+      attempt_id:         attemptId,
+      subject:            'Grade 5 Reading',
+      test_id:            'reading_grade5_anon',
+      grade_band:         '3-5',
+      started_at:         new Date().toISOString(),
+      completed_at:       new Date().toISOString(),
+      total_time_seconds: 90,
+      score_correct:      4,
+      score_total:        5,
+      responses:          [],
     }),
   });
   assert.equal(res.status, 200);
   const data = await res.json();
   assert.equal(data.ok, true);
 
-  const links = await sql`
-    SELECT attempt_id FROM class_attempt_links WHERE attempt_id = ${attemptId}
-  `;
+  const links = await sql`SELECT attempt_id FROM class_attempt_links WHERE attempt_id = ${attemptId}`;
   assert.equal(links.length, 0, 'No class_attempt_links row for anonymous attempt');
 
-  // Cleanup
   await sql`DELETE FROM test_attempts WHERE attempt_id = ${attemptId}`;
 });

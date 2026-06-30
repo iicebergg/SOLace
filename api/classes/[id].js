@@ -1,10 +1,8 @@
-'use strict';
-
-const { z } = require('zod');
-const {
+import { z } from 'zod';
+import {
   requireTeacher, requireClassOwner, withTeacherCtx,
   rejectNameFields, handleCors, sendError,
-} = require('../_middleware');
+} from '../_middleware.js';
 
 const updateSchema = z.object({
   name:    z.string().min(1).max(200).optional(),
@@ -13,7 +11,7 @@ const updateSchema = z.object({
   active:  z.boolean().optional(),
 }).strict();
 
-module.exports = async function handler(req, res) {
+export default async function handler(req, res) {
   if (handleCors(req, res)) return;
 
   if (req.method !== 'PATCH') {
@@ -39,7 +37,6 @@ module.exports = async function handler(req, res) {
       return res.status(400).json({ error: 'no_fields_to_update' });
     }
 
-    // Build the SET clause dynamically but safely — only allowed fields.
     const rows = await withTeacherCtx(teacherId, async (tx) => {
       if (data.name    !== undefined) await tx`UPDATE classes SET name    = ${data.name}    WHERE id = ${classId} AND teacher_id = ${teacherId}`;
       if (data.grade   !== undefined) await tx`UPDATE classes SET grade   = ${data.grade}   WHERE id = ${classId} AND teacher_id = ${teacherId}`;
@@ -57,4 +54,4 @@ module.exports = async function handler(req, res) {
   } catch (err) {
     return sendError(res, err);
   }
-};
+}

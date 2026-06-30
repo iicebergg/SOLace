@@ -4,16 +4,12 @@
  * Verifies that the database-backed rate limiter correctly throttles
  * sign-in attempts and returns 429 after exceeding the threshold.
  *
- * Note: These tests require the Better Auth rate_limit table to exist
- * and DATABASE_URL to be set. The rate limiter must use 'database' storage
- * for these tests to be meaningful across serverless invocations.
- *
  * Run: node --test tests/rate-limit.test.js
+ * Requires TEST_BASE_URL pointing at a running preview server.
  */
-'use strict';
 
-const { test } = require('node:test');
-const assert   = require('node:assert/strict');
+import { test } from 'node:test';
+import assert   from 'node:assert/strict';
 
 const BASE_URL = process.env.TEST_BASE_URL || 'http://localhost:3000';
 
@@ -28,13 +24,11 @@ async function attemptSignIn(email, password) {
 
 test('sign-in rate limit: 429 after exceeding threshold (3 in 10s)', async () => {
   const email = `ratelimit-test-${Date.now()}@test.invalid`;
-  const password = 'wrong-password-test';
   let status;
   let hit429 = false;
 
-  // Make up to 10 rapid sign-in attempts. We should hit 429 within the first few.
   for (let i = 0; i < 10; i++) {
-    status = await attemptSignIn(email, password);
+    status = await attemptSignIn(email, 'wrong-password-test');
     if (status === 429) { hit429 = true; break; }
   }
 

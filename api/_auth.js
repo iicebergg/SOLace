@@ -1,35 +1,28 @@
-'use strict';
+import { betterAuth } from 'better-auth';
+import { twoFactor }  from 'better-auth/plugins';
+import { Pool, neonConfig } from '@neondatabase/serverless';
+import argon2  from '@node-rs/argon2';
+import sgMail  from '@sendgrid/mail';
+import { createHash } from 'node:crypto';
 
-const { betterAuth }       = require('better-auth');
-const { twoFactor }        = require('better-auth/plugins');
-const { Pool, neonConfig } = require('@neondatabase/serverless');
-const argon2               = require('@node-rs/argon2');
-const sgMail               = require('@sendgrid/mail');
-const crypto               = require('crypto');
-
-// Node.js 22+ ships a global WebSocket. Tell the Neon serverless driver to use
-// it when running outside an edge runtime (Better Auth CLI, local dev server).
-// In Vercel edge/serverless the global is already present; this is a no-op there.
+// Node.js 22+ ships a global WebSocket; tell the Neon serverless driver to use
+// it when running outside an edge runtime (Better Auth CLI, Vercel Node.js 22).
 if (typeof WebSocket !== 'undefined') {
   neonConfig.webSocketConstructor = WebSocket;
 }
-
-// Set the SendGrid API key lazily so importing this module during the Better
-// Auth CLI migration (when SENDGRID_API_KEY is not in the local env) does not
-// throw. The key is only required at the moment an email is actually sent.
 
 // k-anonymity range check against HaveIBeenPwned.
 // Throws if the password appears in a known breach, or if HIBP is unreachable
 // (fail closed — prevents sign-up when we cannot verify breach status).
 async function checkPwnedPassword(password) {
-  const sha1   = crypto.createHash('sha1').update(password).digest('hex').toUpperCase();
+  const sha1   = createHash('sha1').update(password).digest('hex').toUpperCase();
   const prefix = sha1.slice(0, 5);
   const suffix = sha1.slice(5);
-  const res  = await fetch(`https://api.pwnedpasswords.com/range/${prefix}`, {
+  const res = await fetch(`https://api.pwnedpasswords.com/range/${prefix}`, {
     headers: { 'Add-Padding': 'true' },
   });
   if (!res.ok) throw new Error('breach_check_unavailable');
-  const text = await res.text();
+  const text  = await res.text();
   const found = text.split('\r\n').some(line => line.split(':')[0].trim() === suffix);
   if (found) {
     throw new Error(
@@ -40,7 +33,7 @@ async function checkPwnedPassword(password) {
 
 const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 
-const auth = betterAuth({
+export const auth = betterAuth({
   database: pool,
 
   emailAndPassword: {
@@ -52,10 +45,7 @@ const auth = betterAuth({
     // No forced symbol/number/case composition rules.
     password: {
       hash: async (password) => {
-        // Never log the raw password — not here, not anywhere.
         await checkPwnedPassword(password);
-        // argon2id: OWASP's top recommendation (memory-hard, side-channel resistant).
-        // memoryCost 65536 = 64 MB. Tune timeCost up if hashing is under 200 ms on Lambda.
         return argon2.hash(password, {
           algorithm:   argon2.Algorithm.Argon2id,
           memoryCost:  65536,
@@ -71,6 +61,8 @@ const auth = betterAuth({
     sendOnSignUp: true,
     autoSignInAfterVerification: true,
     sendVerificationEmail: async ({ user, url }) => {
+      // Set the API key here, not at module load, so importing this file
+      // during the Better Auth CLI migration doesn't throw when the key is absent.
       sgMail.setApiKey(process.env.SENDGRID_API_KEY);
       await sgMail.send({
         to:      user.email,
@@ -101,8 +93,7 @@ const auth = betterAuth({
 
   rateLimit: {
     enabled: true,
-    storage: 'database',  // Neon table — survives across stateless Vercel functions.
-    // In-memory rate limiting silently does nothing in serverless environments.
+    storage: 'database',
     customRules: {
       '/sign-in/email':            { window: 10, max: 3 },
       '/sign-up/email':            { window: 60, max: 5 },
@@ -116,21 +107,14 @@ const auth = betterAuth({
 
   session: {
     cookieCache: { enabled: true, maxAge: 300 },
-    expiresIn:        60 * 60 * 24 * 7,  // 7 days
-    updateAge:        60 * 60 * 24,       // refresh if older than 1 day
+    expiresIn:   60 * 60 * 24 * 7,
+    updateAge:   60 * 60 * 24,
   },
 
   advanced: {
-    // httpOnly + Secure + SameSite cookies in production.
-    // Never place auth tokens in localStorage.
     useSecureCookies: process.env.NODE_ENV === 'production',
-    // Vercel's trusted IP headers (real client IP, not spoofable X-Forwarded-For chain).
     ipHeaders: ['x-real-ip', 'x-forwarded-for'],
-    // Keep CSRF and origin checks at defaults (enabled).
-    // Keep email enumeration protection at default (enabled).
   },
 
   trustedOrigins: process.env.ALLOWED_ORIGIN ? [process.env.ALLOWED_ORIGIN] : [],
 });
-
-module.exports = { auth };
