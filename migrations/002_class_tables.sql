@@ -44,7 +44,7 @@ CREATE TABLE seat_tokens (
 --   If your test_attempts.attempt_id column is UUID type, change TEXT → UUID.
 -- ────────────────────────────────────────────────────────────
 CREATE TABLE class_attempt_links (
-  attempt_id    TEXT  NOT NULL PRIMARY KEY,
+  attempt_id    UUID  NOT NULL PRIMARY KEY,
   class_id      UUID  NOT NULL REFERENCES classes(id) ON DELETE CASCADE,
   seat_token_id UUID  REFERENCES seat_tokens(id) ON DELETE SET NULL,
   created_at    TIMESTAMPTZ NOT NULL DEFAULT NOW()

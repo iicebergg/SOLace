@@ -1,13 +1,22 @@
 'use strict';
 
-const { betterAuth } = require('better-auth');
-const { twoFactor }  = require('better-auth/plugins');
-const { Pool }       = require('@neondatabase/serverless');
-const argon2         = require('@node-rs/argon2');
-const sgMail         = require('@sendgrid/mail');
-const crypto         = require('crypto');
+const { betterAuth }       = require('better-auth');
+const { twoFactor }        = require('better-auth/plugins');
+const { Pool, neonConfig } = require('@neondatabase/serverless');
+const argon2               = require('@node-rs/argon2');
+const sgMail               = require('@sendgrid/mail');
+const crypto               = require('crypto');
 
-sgMail.setApiKey(process.env.SENDGRID_API_KEY || '');
+// Node.js 22+ ships a global WebSocket. Tell the Neon serverless driver to use
+// it when running outside an edge runtime (Better Auth CLI, local dev server).
+// In Vercel edge/serverless the global is already present; this is a no-op there.
+if (typeof WebSocket !== 'undefined') {
+  neonConfig.webSocketConstructor = WebSocket;
+}
+
+// Set the SendGrid API key lazily so importing this module during the Better
+// Auth CLI migration (when SENDGRID_API_KEY is not in the local env) does not
+// throw. The key is only required at the moment an email is actually sent.
 
 // k-anonymity range check against HaveIBeenPwned.
 // Throws if the password appears in a known breach, or if HIBP is unreachable
@@ -62,6 +71,7 @@ const auth = betterAuth({
     sendOnSignUp: true,
     autoSignInAfterVerification: true,
     sendVerificationEmail: async ({ user, url }) => {
+      sgMail.setApiKey(process.env.SENDGRID_API_KEY);
       await sgMail.send({
         to:      user.email,
         from:    process.env.FROM_EMAIL || 'noreply@learnsolace.org',
