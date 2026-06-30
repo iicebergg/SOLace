@@ -37,19 +37,25 @@ export default async function handler(req, res) {
       return res.status(400).json({ error: 'no_fields_to_update' });
     }
 
-    const rows = await withTeacherCtx(teacherId, async (tx) => {
-      if (data.name    !== undefined) await tx`UPDATE classes SET name    = ${data.name}    WHERE id = ${classId} AND teacher_id = ${teacherId}`;
-      if (data.grade   !== undefined) await tx`UPDATE classes SET grade   = ${data.grade}   WHERE id = ${classId} AND teacher_id = ${teacherId}`;
-      if (data.subject !== undefined) await tx`UPDATE classes SET subject = ${data.subject} WHERE id = ${classId} AND teacher_id = ${teacherId}`;
-      if (data.active  !== undefined) await tx`UPDATE classes SET active  = ${data.active}  WHERE id = ${classId} AND teacher_id = ${teacherId}`;
-      return tx`
+    // Build the query array dynamically: each requested column gets its own
+    // UPDATE, and a trailing SELECT returns the final row. updated_at is
+    // refreshed in the same statements. The SELECT is always last.
+    const results = await withTeacherCtx(teacherId, (tx) => {
+      const queries = [];
+      if (data.name    !== undefined) queries.push(tx`UPDATE classes SET name    = ${data.name},    updated_at = NOW() WHERE id = ${classId} AND teacher_id = ${teacherId}`);
+      if (data.grade   !== undefined) queries.push(tx`UPDATE classes SET grade   = ${data.grade},   updated_at = NOW() WHERE id = ${classId} AND teacher_id = ${teacherId}`);
+      if (data.subject !== undefined) queries.push(tx`UPDATE classes SET subject = ${data.subject}, updated_at = NOW() WHERE id = ${classId} AND teacher_id = ${teacherId}`);
+      if (data.active  !== undefined) queries.push(tx`UPDATE classes SET active  = ${data.active},  updated_at = NOW() WHERE id = ${classId} AND teacher_id = ${teacherId}`);
+      queries.push(tx`
         SELECT id, name, grade, subject, join_code, code_expires_at, active, updated_at
         FROM classes
         WHERE id = ${classId} AND teacher_id = ${teacherId}
         LIMIT 1
-      `;
+      `);
+      return queries;
     });
 
+    const rows = results.at(-1);
     return res.status(200).json(rows[0] || {});
   } catch (err) {
     return sendError(res, err);

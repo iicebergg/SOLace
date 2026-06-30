@@ -17,12 +17,12 @@ export default async function handler(req, res) {
     const teacherId = await requireTeacher(req);
 
     if (req.method === 'GET') {
-      const rows = await withTeacherCtx(teacherId, (tx) => tx`
+      const [rows] = await withTeacherCtx(teacherId, (tx) => [tx`
         SELECT id, name, grade, subject, join_code, code_expires_at, active, created_at
         FROM classes
         WHERE teacher_id = ${teacherId}
         ORDER BY created_at DESC
-      `);
+      `]);
       return res.status(200).json(rows);
     }
 
@@ -38,11 +38,11 @@ export default async function handler(req, res) {
       const { name, grade = null, subject = null } = parsed.data;
       const joinCode = await uniqueCode();
 
-      const rows = await withTeacherCtx(teacherId, (tx) => tx`
+      const [rows] = await withTeacherCtx(teacherId, (tx) => [tx`
         INSERT INTO classes (teacher_id, name, grade, subject, join_code)
         VALUES (${teacherId}, ${name}, ${grade}, ${subject}, ${joinCode})
         RETURNING id, name, grade, subject, join_code, active, created_at
-      `);
+      `]);
       return res.status(201).json(rows[0]);
     }
 

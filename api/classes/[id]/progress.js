@@ -16,17 +16,17 @@ export default async function handler(req, res) {
     const teacherId = await requireTeacher(req);
     await requireClassOwner(classId, teacherId);
 
-    const [classInfo, seatProgress, classTotals] = await withTeacherCtx(teacherId, async (tx) => {
-      const cls = await tx`
+    const [classInfo, seatProgress, classTotals] = await withTeacherCtx(teacherId, (tx) => [
+      tx`
         SELECT id, name, grade, subject
         FROM classes
         WHERE id = ${classId} AND teacher_id = ${teacherId}
         LIMIT 1
-      `;
+      `,
 
       // Per-seat aggregates — seat tokens only, no names ever.
       // The teacher's browser joins against localStorage to render readable names.
-      const seats = await tx`
+      tx`
         SELECT
           st.id           AS seat_token_id,
           st.seat_label,
@@ -54,9 +54,9 @@ export default async function handler(req, res) {
         WHERE st.class_id = ${classId}
         GROUP BY st.id, st.seat_label
         ORDER BY st.seat_label
-      `;
+      `,
 
-      const totals = await tx`
+      tx`
         SELECT
           COUNT(DISTINCT cal.attempt_id)::int                         AS attempt_count,
           ROUND(
@@ -65,10 +65,8 @@ export default async function handler(req, res) {
         FROM class_attempt_links cal
         JOIN test_attempts ta ON ta.attempt_id = cal.attempt_id
         WHERE cal.class_id = ${classId}
-      `;
-
-      return [cls, seats, totals];
-    });
+      `,
+    ]);
 
     if (!classInfo.length) {
       return res.status(404).json({ error: 'not_found' });

@@ -34,17 +34,20 @@ export default async function handler(req, res) {
       ? Array.from({ length: parsed.data.count }, (_, i) => `Seat ${i + 1}`)
       : parsed.data.labels;
 
-    await withTeacherCtx(teacherId, (tx) => tx`
-      INSERT INTO seat_tokens (class_id, seat_label)
-      SELECT ${classId}::uuid, unnest(${labels}::text[])
-      ON CONFLICT (class_id, seat_label) DO NOTHING
-    `);
-
-    const all = await withTeacherCtx(teacherId, (tx) => tx`
-      SELECT id, seat_label FROM seat_tokens
-      WHERE class_id = ${classId}
-      ORDER BY seat_label
-    `);
+    // Insert then re-read in a single transaction so the SELECT sees the
+    // freshly inserted seats. The leading element is the INSERT result.
+    const [, all] = await withTeacherCtx(teacherId, (tx) => [
+      tx`
+        INSERT INTO seat_tokens (class_id, seat_label)
+        SELECT ${classId}::uuid, unnest(${labels}::text[])
+        ON CONFLICT (class_id, seat_label) DO NOTHING
+      `,
+      tx`
+        SELECT id, seat_label FROM seat_tokens
+        WHERE class_id = ${classId}
+        ORDER BY seat_label
+      `,
+    ]);
 
     return res.status(200).json(all);
   } catch (err) {

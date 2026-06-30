@@ -27,12 +27,22 @@ export async function requireClassOwner(classId, teacherId) {
 }
 
 // ─── RLS transaction wrapper ─────────────────────────────────
-
-export async function withTeacherCtx(teacherId, fn) {
-  return sql.transaction(async (tx) => {
-    await tx`SELECT set_config('app.current_teacher_id', ${teacherId}, true)`;
-    return fn(tx);
-  });
+//
+// The Neon HTTP driver's transaction() is NON-interactive: it takes a
+// function that returns an ARRAY of queries (built with the passed `tx`,
+// never awaited), and runs them as one transaction. We prepend the RLS
+// set_config so `app.current_teacher_id` is set on the same connection as
+// the caller's queries (transaction-scoped, third arg `true`), then drop
+// that first result and hand back the rest.
+//
+//   queriesFn(tx) must return an array of queries.
+//   Returns an array of result sets, one per query, in order.
+export async function withTeacherCtx(teacherId, queriesFn) {
+  const results = await sql.transaction((tx) => [
+    tx`SELECT set_config('app.current_teacher_id', ${teacherId}, true)`,
+    ...queriesFn(tx),
+  ]);
+  return results.slice(1);
 }
 
 // ─── Join code generation ────────────────────────────────────

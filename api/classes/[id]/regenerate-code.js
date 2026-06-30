@@ -32,12 +32,12 @@ export default async function handler(req, res) {
     const newCode   = await uniqueCode();
     const expiresAt = parsed.data.expires_at || null;
 
-    const rows = await withTeacherCtx(teacherId, (tx) => tx`
+    const [rows] = await withTeacherCtx(teacherId, (tx) => [tx`
       UPDATE classes
-      SET join_code = ${newCode}, code_expires_at = ${expiresAt}
+      SET join_code = ${newCode}, code_expires_at = ${expiresAt}, updated_at = NOW()
       WHERE id = ${classId} AND teacher_id = ${teacherId}
       RETURNING join_code, code_expires_at
-    `);
+    `]);
 
     return res.status(200).json(rows[0] || { join_code: newCode });
   } catch (err) {
