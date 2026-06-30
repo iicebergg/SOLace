@@ -233,6 +233,19 @@ async function handleForgotPassword(e) {
   if (totpForm)   totpForm.addEventListener('submit', handleTotpVerify);
   if (pwInput)    pwInput.addEventListener('input', () => updatePwStrength(pwInput.value));
 
+  // Tab buttons (data-tab attribute replaces inline onclick handlers)
+  document.querySelectorAll('[data-tab]').forEach(btn => {
+    btn.addEventListener('click', () => switchTab(btn.dataset.tab));
+  });
+
+  // Forgot-password link and back button
+  document.getElementById('forgot-link')?.addEventListener('click', showForgotPassword);
+  document.getElementById('forgot-back-btn')?.addEventListener('click', () => switchTab('signin'));
+
+  // Google OAuth buttons
+  document.getElementById('google-signin-btn')?.addEventListener('click', signInWithGoogle);
+  document.getElementById('google-signup-btn')?.addEventListener('click', signInWithGoogle);
+
   // Show Google OAuth buttons if env supports it
   // We detect this by trying to fetch session config — simpler: check a meta tag
   const metaGoogle = document.querySelector('meta[name="google-auth-enabled"]');
