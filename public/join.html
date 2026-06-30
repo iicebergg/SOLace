@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join a Class — SOLace</title>
+  <meta name="description" content="Enter your class join code to link your practice tests to your teacher's class.">
+  <link rel="stylesheet" href="css/main-pages.css">
+  <link rel="stylesheet" href="css/teacher.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+</head>
+<body class="theme-default">
+
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand brand-logo">
+          <a href="index.html">
+            <img src="images/SOLace-logo.svg" alt="SOLace Logo" class="logo-img">
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Practice Tests</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="teacher-page">
+    <div class="auth-wrapper">
+      <div class="auth-card" style="max-width:500px;">
+
+        <!-- Step 1: Enter join code -->
+        <div id="step-code">
+          <h2>Join a Class</h2>
+          <p class="auth-subtitle">Enter the 6-character code your teacher gave you.</p>
+
+          <div id="join-alert" class="alert" style="display:none;" role="alert"></div>
+
+          <form id="join-form" novalidate>
+            <div class="form-group">
+              <label for="join-code-input">Class Code</label>
+              <input type="text" id="join-code-input"
+                     maxlength="6"
+                     inputmode="text"
+                     autocomplete="off"
+                     autocorrect="off"
+                     autocapitalize="characters"
+                     spellcheck="false"
+                     placeholder="e.g. AB3K7P"
+                     style="font-size:1.5rem; letter-spacing:0.2em; text-align:center; text-transform:uppercase;">
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="join-btn">
+              Find My Class
+            </button>
+          </form>
+
+          <p style="margin-top:1.5rem; font-size:0.85rem; color:#6c757d; text-align:center;">
+            No code? You can still
+            <a href="index.html">use SOLace without joining a class</a>.
+          </p>
+        </div>
+
+        <!-- Step 2: Pick a seat -->
+        <div id="step-seat" style="display:none;">
+          <h2 id="class-name-display"></h2>
+          <p class="auth-subtitle">Your teacher has assigned you a seat. Pick yours from the list below.</p>
+          <p style="font-size:0.85rem; color:#6c757d; margin-bottom:1.25rem;">
+            Your teacher will tell you which seat number is yours.
+          </p>
+
+          <div id="seat-alert" class="alert" style="display:none;" role="alert"></div>
+
+          <div id="seat-list" style="display:flex; flex-direction:column; gap:0.5rem; max-height:50vh; overflow-y:auto;"></div>
+
+          <button class="btn btn-secondary btn-sm" style="margin-top:1.25rem; width:100%;"
+                  onclick="goBackToCode()">
+            Wrong class? Enter a different code
+          </button>
+        </div>
+
+        <!-- Step 3: Confirmed -->
+        <div id="step-confirmed" style="display:none;">
+          <div class="alert alert-success" role="status">
+            <strong>You are all set!</strong><br>
+            <span id="confirmed-seat-text"></span>
+          </div>
+          <p style="color:#6c757d; font-size:0.9rem; margin-bottom:1.5rem;">
+            Your seat is saved on this device. Your practice tests will be linked to your class.
+          </p>
+          <a href="index.html" class="btn btn-primary btn-block">Go to Practice Tests</a>
+          <button class="btn btn-secondary btn-sm" style="margin-top:0.75rem; width:100%;"
+                  onclick="switchSeat()">
+            Not you? Switch to a different seat
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-bottom">
+        <p>SOLace &copy; 2026 by Vivien Berg &mdash;
+          <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/join.js"></script>
+</body>
+</html>

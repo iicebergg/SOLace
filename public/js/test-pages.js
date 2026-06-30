@@ -1047,6 +1047,15 @@ async function submitAttemptToDatabase(payload) {
       }))
     };
 
+    // Optionally link this attempt to a class + seat (when the student has joined a class).
+    // Both values come from localStorage — set by join.js when the student picks their seat.
+    // If absent, the attempt is recorded anonymously as before.
+    // NEVER include any name fields here; names must never reach the server.
+    const classId     = localStorage.getItem('solace_class_id');
+    const seatTokenId = localStorage.getItem('solace_seat_token_id');
+    if (classId)     body.class_id      = classId;
+    if (seatTokenId) body.seat_token_id = seatTokenId;
+
     const response = await fetch('/api/submit-attempt', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -2464,4 +2473,71 @@ document.addEventListener('DOMContentLoaded', initApp);
       window.location.href = anchor.href;
     }
   }, true); // Use capture phase so this fires before other click handlers
+})();
+
+// ── Class status banner ───────────────────────────────────────────────────────
+// Shows a small, unobtrusive banner when the student is enrolled in a class,
+// with controls to switch seat or join a different class.
+// Renders non-intrusively into a <div id="class-status-banner"> if it exists
+// in the test page HTML, or injects one just after the <header>.
+
+(function initClassBanner() {
+  document.addEventListener('DOMContentLoaded', function() {
+    const classId    = localStorage.getItem('solace_class_id');
+    const seatLabel  = localStorage.getItem('solace_seat_label');
+    const className  = localStorage.getItem('solace_class_name');
+    if (!classId || !seatLabel) return;  // Anonymous mode — no banner
+
+    let banner = document.getElementById('class-status-banner');
+    if (!banner) {
+      banner = document.createElement('div');
+      banner.id = 'class-status-banner';
+      const header = document.querySelector('header');
+      if (header && header.nextSibling) {
+        header.parentNode.insertBefore(banner, header.nextSibling);
+      } else {
+        document.body.prepend(banner);
+      }
+    }
+
+    banner.style.cssText =
+      'background:#f0f5fa;border-bottom:1px solid #dde5f0;padding:0.5rem 1.5rem;' +
+      'display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;' +
+      'gap:0.5rem;font-size:0.875rem;color:#4a6fa5;position:sticky;top:70px;z-index:500;';
+
+    const info   = document.createElement('span');
+    info.textContent = `Class: ${className || ''} — ${seatLabel}`;
+
+    const btns   = document.createElement('span');
+    btns.style.cssText = 'display:flex;gap:0.75rem;';
+
+    const switchBtn = document.createElement('button');
+    switchBtn.textContent = 'Not you? Switch seat';
+    switchBtn.style.cssText =
+      'background:none;border:1px solid #4a6fa5;border-radius:6px;color:#4a6fa5;' +
+      'cursor:pointer;font-size:0.8rem;padding:0.25rem 0.6rem;';
+    switchBtn.addEventListener('click', function() {
+      if (testInitialized && !confirm('Switch seat? Your test in progress will be lost.')) return;
+      localStorage.removeItem('solace_seat_token_id');
+      localStorage.removeItem('solace_seat_label');
+      window.location.href = '/join.html';
+    });
+
+    const leaveBtn = document.createElement('button');
+    leaveBtn.textContent = 'Join different class';
+    leaveBtn.style.cssText =
+      'background:none;border:1px solid #4a6fa5;border-radius:6px;color:#4a6fa5;' +
+      'cursor:pointer;font-size:0.8rem;padding:0.25rem 0.6rem;';
+    leaveBtn.addEventListener('click', function() {
+      if (testInitialized && !confirm('Leave class? Your test in progress will be lost.')) return;
+      ['solace_class_id','solace_seat_token_id','solace_class_name','solace_seat_label']
+        .forEach(k => localStorage.removeItem(k));
+      window.location.href = '/join.html';
+    });
+
+    btns.appendChild(switchBtn);
+    btns.appendChild(leaveBtn);
+    banner.appendChild(info);
+    banner.appendChild(btns);
+  });
 })();

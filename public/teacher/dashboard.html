@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Dashboard — SOLace</title>
+  <link rel="stylesheet" href="../css/main-pages.css">
+  <link rel="stylesheet" href="../css/teacher.css">
+  <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
+</head>
+<body class="theme-default">
+
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand brand-logo">
+          <a href="../index.html">
+            <img src="../images/SOLace-logo.svg" alt="SOLace Logo" class="logo-img">
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="../index.html" class="nav-link">Student Platform</a>
+          <span id="nav-email" class="nav-link" style="opacity:0.7; cursor:default;"></span>
+          <button class="btn btn-primary btn-sm" onclick="signOut()" style="background:rgba(255,255,255,0.2); border:1px solid rgba(255,255,255,0.4);">
+            Sign Out
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="teacher-page">
+    <div class="teacher-container">
+
+      <div class="page-header">
+        <div>
+          <h1>My Classes</h1>
+          <p>Create classes, manage rosters, and track student progress.</p>
+        </div>
+        <button class="btn btn-primary" onclick="openCreateModal()">
+          + New Class
+        </button>
+      </div>
+
+      <div id="alert-area"></div>
+
+      <!-- Loading state -->
+      <div id="loading-state">
+        <div class="spinner" aria-label="Loading classes"></div>
+      </div>
+
+      <!-- Empty state (shown when no classes) -->
+      <div id="empty-state" class="empty-state" style="display:none;">
+        <div class="empty-icon" aria-hidden="true">&#128218;</div>
+        <h3>No classes yet</h3>
+        <p>Create your first class to get started.</p>
+        <button class="btn btn-primary" style="margin-top:1rem;" onclick="openCreateModal()">
+          Create a Class
+        </button>
+      </div>
+
+      <!-- Classes grid -->
+      <div class="classes-grid" id="classes-grid" style="display:none;"></div>
+
+    </div>
+  </div>
+
+  <!-- Create class modal -->
+  <div class="modal-backdrop" id="create-modal" role="dialog" aria-modal="true" aria-labelledby="create-modal-title">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 id="create-modal-title">New Class</h3>
+        <button class="modal-close" onclick="closeCreateModal()" aria-label="Close">&times;</button>
+      </div>
+      <div id="create-error" class="alert alert-error" style="display:none;"></div>
+      <form id="create-form" novalidate>
+        <div class="form-group">
+          <label for="class-name">Class Name <span aria-hidden="true" style="color:#dc3545;">*</span></label>
+          <input type="text" id="class-name" required maxlength="200"
+                 placeholder="e.g. Period 3 Grade 5 Math">
+          <p class="form-hint">Name your class however you recognize it — students won't see this.</p>
+        </div>
+        <div class="form-group">
+          <label for="class-grade">Grade (optional)</label>
+          <input type="text" id="class-grade" maxlength="50" placeholder="e.g. 5, 8, Algebra I">
+        </div>
+        <div class="form-group">
+          <label for="class-subject">Subject (optional)</label>
+          <input type="text" id="class-subject" maxlength="100" placeholder="e.g. Math, Reading, Science">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="closeCreateModal()">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="create-btn">Create Class</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-bottom">
+        <p>SOLace &copy; 2026 by Vivien Berg &mdash;
+          <a href="../privacy-policy.html" class="footer-link">Privacy Policy</a> &middot;
+          <a href="../terms-of-service.html" class="footer-link">Terms of Service</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/teacher-auth.js"></script>
+  <script src="../js/teacher-dashboard.js"></script>
+</body>
+</html>

@@ -35,7 +35,7 @@
 <div class="general-container" style="line-height:1.5">
 <h1 class="page-title">Privacy Policy</h1>
 
-        <p class="last-updated">Last updated: April 17, 2026</p>
+        <p class="last-updated">Last updated: June 29, 2026</p>
 
         <h3>1. Introduction</h3>
         <p>SOLace ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how SOLace collects, uses, and discloses information when you use our educational testing platform. SOLace complies with the Children's Online Privacy Protection Act (COPPA), including the amended COPPA Rule that took effect April 22, 2026.</p>
@@ -137,6 +137,44 @@
 
         <h3>8. International Data Transfers</h3>
         <p>Your information may be transferred to and maintained on servers located outside of your jurisdiction where privacy laws may differ. By using our Service, you consent to such transfers. Because no personally identifying information is collected or transferred, the privacy implications of any such transfer are minimal.</p>
+
+        <h3>9. Teacher Class Feature</h3>
+        <p>SOLace offers an optional class management feature that allows teachers to organize their students into named classes and track aggregate test performance by seat. This section describes the privacy model that governs the class feature.</p>
+
+        <h4>9.1 Seat-Token Model — No Student Names on Our Servers</h4>
+        <p>SOLace servers store no student names at any point. Within the class feature, each student is represented by an opaque seat token (for example, "Seat 14") — a neutral label that carries no personally identifying information. The mapping between a seat token and a student's real name exists only in the teacher's own browser, stored in that browser's local storage. This name-to-token map is never transmitted to SOLace in any form.</p>
+        <p>Concretely:</p>
+        <ul>
+          <li>The SOLace database contains no column for student first name, last name, or any other student name field in any table</li>
+          <li>No SOLace network request ever carries a student name in its body, query string, or headers</li>
+          <li>A student who joins a class and submits tests is represented to our servers only as a seat token identifier and the anonymous performance data described in Section 2.3</li>
+          <li>If a teacher enters student names on their device to associate names with seats, those names are stored only in that teacher's browser local storage, under the teacher's own control</li>
+        </ul>
+
+        <h4>9.2 Teacher Authentication</h4>
+        <p>Teachers who use the class management feature create a password-protected account using their email address. Teacher accounts are subject to the following practices:</p>
+        <ul>
+          <li>Passwords are hashed using the argon2id algorithm with parameters exceeding OWASP recommendations; the raw password is never stored</li>
+          <li>Email addresses are used only to authenticate the teacher and send account-related notices (email verification, password reset). Teacher email addresses are not shared with students or used for marketing</li>
+          <li>Session tokens ride in httpOnly, Secure cookies and are never stored in browser local storage</li>
+          <li>Teachers may optionally enable two-factor authentication (TOTP) for additional account security</li>
+        </ul>
+        <p>Students do not create accounts and do not authenticate. A student joins a class by entering a join code provided by their teacher and selecting their seat from a list of seat labels. No student credentials of any kind are created or stored.</p>
+
+        <h4>9.3 Local Roster File — Teacher Responsibility</h4>
+        <p>If a teacher chooses to associate student names with seat tokens, those names exist only in the teacher's browser local storage and in any roster file the teacher exports to their device. SOLace has no access to, and no copy of, that local name data. The security and confidentiality of local roster information is entirely the teacher's responsibility. Teachers are encouraged to handle exported roster files with the same care as any document containing student names, and to delete them when they are no longer needed.</p>
+
+        <h4>9.4 Class Data Retention</h4>
+        <p>Anonymous performance data linked to a class seat token is retained for 365 days after the associated class is archived or deleted, after which it is automatically removed. This retention period gives teachers a reasonable window to review historical performance data before it is purged. Anonymous test attempts that are not linked to any class (the standard anonymous path) are retained for up to 24 months as described in Section 5.</p>
+        <p>Because SOLace stores no student names, there is no name data to delete. The underlying seat-token performance records contain no information from which a student's identity could be recovered.</p>
+
+        <h3>10. Local Storage and the Class Feature</h3>
+        <p>The class feature uses browser local storage on the teacher's device to maintain the seat-to-name roster map and on the student's device to remember which class and seat the student has joined. The following local storage keys may be present:</p>
+        <ul>
+          <li><strong>Teacher device:</strong> A roster map keyed by class ID, containing seat token IDs mapped to first and last names as entered by the teacher. This data never leaves the teacher's browser.</li>
+          <li><strong>Student device:</strong> The class ID, seat token ID, class name, and seat label for the class the student most recently joined. This data contains no student name. A student can clear it at any time by clicking "Join different class" on any test page, or by clearing browser storage.</li>
+        </ul>
+        <p>Neither of these local storage entries is transmitted to SOLace servers. They exist solely to provide continuity across page loads on the respective device.</p>
 
         <h3>11. Changes to This Privacy Policy</h3>
         <p>We may update this Privacy Policy from time to time. We notify users of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date at the top. You are advised to review this Privacy Policy periodically for any changes. Material changes to our data collection practices take effect only after the updated policy is posted.</p>
