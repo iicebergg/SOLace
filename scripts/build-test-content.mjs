@@ -7,7 +7,7 @@
 // Re-run whenever a test's sampleQuestions array changes.
 
 import { readFileSync, writeFileSync, readdirSync, statSync } from 'node:fs';
-import { join, dirname } from 'node:path';
+import { join, dirname, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import vm from 'node:vm';
 
@@ -15,6 +15,81 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const PUBLIC_DIR = join(__dirname, '..', 'public');
 const OUT_FILE   = join(__dirname, '..', 'api', '_data', 'test-content.json');
 const SUBJECT_DIRS = ['math', 'reading', 'science'];
+
+function escapeRe(str) {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+// Question text/options/explanations reference images with a path that is
+// relative to the test's own directory (e.g. "images/question_13.png"), and
+// that directory layout itself varies: math/reading tests each live in their
+// own nested folder, while science tests share one flat folder per subject.
+// Filenames also aren't always consistent with what's actually on disk —
+// some legacy tests reference "31.png" when the real asset is split into
+// "31a.png"/"31b.png"/... or "20-1.png"/"20-2.png". Resolve the real file(s)
+// against the directory listing so the same markup renders correctly no
+// matter which page (including the teacher insights modal) embeds it.
+function resolveImageFiles(imgDir, filename) {
+  let entries;
+  try {
+    entries = readdirSync(imgDir);
+  } catch {
+    return { type: 'missing' };
+  }
+
+  if (entries.includes(filename)) return { type: 'single', files: [filename] };
+
+  const lowerMap = new Map(entries.map((e) => [e.toLowerCase(), e]));
+  const exactLower = lowerMap.get(filename.toLowerCase());
+  if (exactLower) return { type: 'single', files: [exactLower] };
+
+  const dot  = filename.lastIndexOf('.');
+  const base = dot === -1 ? filename : filename.slice(0, dot);
+  const ext  = dot === -1 ? '' : filename.slice(dot);
+
+  // Lettered sub-parts of one scanned image: base + a/b/c/... + ext
+  const lettered = entries
+    .filter((e) => new RegExp(`^${escapeRe(base)}[a-z]${escapeRe(ext)}$`, 'i').test(e))
+    .sort();
+  if (lettered.length) return { type: 'multi', files: lettered };
+
+  // Hyphen-numbered parts: base + "-" + N + ext
+  const hyphenated = entries
+    .filter((e) => new RegExp(`^${escapeRe(base)}-\\d+${escapeRe(ext)}$`, 'i').test(e))
+    .sort((a, b) => {
+      const na = Number(/-(\d+)/.exec(a)[1]);
+      const nb = Number(/-(\d+)/.exec(b)[1]);
+      return na - nb;
+    });
+  if (hyphenated.length) return { type: 'multi', files: hyphenated };
+
+  // Same base name, different extension.
+  const sameBase = entries.filter((e) => e.toLowerCase().startsWith(`${base.toLowerCase()}.`));
+  if (sameBase.length === 1) return { type: 'single', files: [sameBase[0]] };
+
+  return { type: 'missing' };
+}
+
+// Rewrites every `<img src="images/...">` in an HTML string to an absolute,
+// site-rooted path (resolved against the real files on disk), so it loads
+// correctly regardless of which page renders the markup. Images that can't
+// be located at all are swapped for a small text fallback instead of a
+// broken-image icon.
+function rewriteImages(html, imgDir, imgUrlBase) {
+  if (typeof html !== 'string' || !html.includes('<img')) return html;
+  return html.replace(/<img\b[^>]*>/gi, (tag) => {
+    const srcMatch = /src\s*=\s*["']images\/([^"']+)["']/i.exec(tag);
+    if (!srcMatch) return tag;
+
+    const resolved = resolveImageFiles(imgDir, srcMatch[1]);
+    if (resolved.type === 'missing') {
+      return `<span class="missing-image-note">[Image unavailable: ${srcMatch[1]}]</span>`;
+    }
+    return resolved.files
+      .map((file) => tag.replace(srcMatch[0], `src="${imgUrlBase}/${file}"`))
+      .join('');
+  });
+}
 
 function findTestFiles(dir) {
   const out = [];
@@ -127,17 +202,22 @@ function buildManifest() {
         continue;
       }
 
+      const testDir    = dirname(file);
+      const imgDir      = join(testDir, 'images');
+      const imgUrlBase  = `/${relative(PUBLIC_DIR, testDir).split('\\').join('/')}/images`;
+      const fixImages   = (val) => rewriteImages(val, imgDir, imgUrlBase);
+
       const byId = {};
       for (const q of questions) {
         if (!q || q.id == null) continue;
         byId[String(q.id)] = {
-          text:            q.text ?? null,
+          text:            fixImages(q.text ?? null),
           type:            q.type ?? null,
-          options:         q.options ?? null,
+          options:         Array.isArray(q.options) ? q.options.map(fixImages) : (q.options ?? null),
           correctAnswer:   q.correctAnswer ?? null,
           dropZones:       q.dropZones ?? null,
           correctKeywords: q.correctKeywords ?? null,
-          explanation:     q.explanation ?? null,
+          explanation:     fixImages(q.explanation ?? null),
         };
       }
       manifest[testId] = byId;

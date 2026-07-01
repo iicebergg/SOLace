@@ -573,6 +573,18 @@
   font-style: italic;
 }
 
+.missing-image-note {
+  color: #6c757d;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.question-detail-text img,
+.question-options img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* ── Class detail — three-tab layout ────────────────────────────────────── */
 
 .class-detail-header {
