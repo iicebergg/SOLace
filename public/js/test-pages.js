@@ -2503,7 +2503,7 @@ document.addEventListener('DOMContentLoaded', initApp);
     banner.style.cssText =
       'background:#f0f5fa;border-bottom:1px solid #dde5f0;padding:0.5rem 1.5rem;' +
       'display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;' +
-      'gap:0.5rem;font-size:0.875rem;color:#4a6fa5;position:fixed;top:70px;z-index:500;';
+      'gap:0.5rem;font-size:0.875rem;color:#4a6fa5;width:100%;top:70px;z-index:500;';
 
     const info   = document.createElement('span');
     info.textContent = `Class: ${className || ''} — ${seatLabel}`;
