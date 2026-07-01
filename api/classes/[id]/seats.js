@@ -12,7 +12,7 @@ const seatsSchema = z.union([
 export default async function handler(req, res) {
   if (handleCors(req, res)) return;
 
-  if (req.method !== 'POST') {
+  if (req.method !== 'GET' && req.method !== 'POST') {
     return res.status(405).json({ error: 'method_not_allowed' });
   }
 
@@ -21,6 +21,17 @@ export default async function handler(req, res) {
   try {
     const teacherId = await requireTeacher(req);
     await requireClassOwner(classId, teacherId);
+
+    if (req.method === 'GET') {
+      const [seats] = await withTeacherCtx(teacherId, (tx) => [
+        tx`
+          SELECT id, seat_label FROM seat_tokens
+          WHERE class_id = ${classId}
+          ORDER BY seat_label
+        `,
+      ]);
+      return res.status(200).json(seats);
+    }
 
     const body = req.body || {};
     rejectNameFields(body);
