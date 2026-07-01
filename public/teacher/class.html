@@ -132,10 +132,12 @@
               <th scope="col">Student <span style="font-weight:400; color:#6c757d;">(local name)</span></th>
               <th scope="col">Attempts</th>
               <th scope="col" class="score-bar-cell">Avg Score</th>
+              <th scope="col"></th>
             </tr>
           </thead>
           <tbody id="progress-tbody"></tbody>
         </table>
+        <p class="form-hint" style="margin-top:0.75rem;">Click a row to see that student's test-by-test and question-by-question breakdown.</p>
       </div>
 
       <!-- ── Settings Tab ──────────────────────────────────── -->
@@ -273,6 +275,17 @@
     <button class="btn btn-secondary btn-sm" id="kiosk-exit-btn" style="margin-top:2rem;">
       Exit Kiosk Mode
     </button>
+  </div>
+
+  <!-- Student Insights modal -->
+  <div class="modal-backdrop" id="insights-modal" role="dialog" aria-modal="true" aria-labelledby="insights-title">
+    <div class="modal modal-lg">
+      <div class="modal-header">
+        <h3 id="insights-title">Student Insights</h3>
+        <button class="modal-close" data-close-modal="insights-modal" aria-label="Close">&times;</button>
+      </div>
+      <div id="insights-body"></div>
+    </div>
   </div>
 
   <!-- Print area (hidden on screen, shown on print) -->

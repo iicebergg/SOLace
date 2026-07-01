@@ -464,6 +464,115 @@
   margin-top: 1.5rem;
 }
 
+.modal-lg {
+  max-width: 820px;
+}
+
+/* ── Student insights modal ──────────────────────────────────────────────── */
+
+.insights-seat-header {
+  margin-bottom: 1.25rem;
+}
+
+.insights-seat-header h4 {
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+.insights-seat-header p {
+  color: #6c757d;
+  font-size: 0.9rem;
+}
+
+.attempt-card {
+  background: #fafcff;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.attempt-card-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.attempt-card-header h5 {
+  font-size: 1rem;
+  color: #2c3e50;
+}
+
+.attempt-card-meta {
+  color: #6c757d;
+  font-size: 0.85rem;
+}
+
+.attempt-card-score {
+  font-weight: 700;
+  color: #4a6fa5;
+  font-size: 1.1rem;
+}
+
+.question-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.question-chip {
+  align-items: center;
+  border-radius: 6px;
+  color: white;
+  cursor: default;
+  display: flex;
+  font-size: 0.8rem;
+  font-weight: 600;
+  height: 2rem;
+  justify-content: center;
+  width: 2rem;
+}
+
+.question-chip.correct   { background: #28a745; cursor: pointer; }
+.question-chip.incorrect { background: #dc3545; cursor: pointer; }
+
+.question-detail {
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  margin-top: 0.75rem;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+.question-detail-text {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.question-options {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
+.question-options li {
+  color: #333;
+  padding: 0.25rem 0;
+}
+
+.question-options li.option-correct {
+  color: #155724;
+  font-weight: 600;
+}
+
+.question-explanation {
+  color: #6c757d;
+  font-style: italic;
+}
+
 /* ── Class detail — three-tab layout ────────────────────────────────────── */
 
 .class-detail-header {

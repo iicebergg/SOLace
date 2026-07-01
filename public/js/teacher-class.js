@@ -74,6 +74,12 @@ function wireUpClassPage() {
     const btn = e.target.closest('[data-edit-seat]');
     if (btn) editSeatName(btn.dataset.editSeat, btn.dataset.seatLabel);
   });
+
+  // Delegated: per-seat progress rows open the student insights modal.
+  document.getElementById('progress-tbody')?.addEventListener('click', (e) => {
+    const row = e.target.closest('[data-seat-token-id]');
+    if (row) openStudentInsights(row.dataset.seatTokenId, row.dataset.seatLabel);
+  });
 }
 
 // ── Data fetching ─────────────────────────────────────────────────────────────
@@ -229,7 +235,7 @@ function renderProgress() {
     const pct     = seat.avg_score_pct != null ? Math.round(seat.avg_score_pct * 100) : null;
     const barFill = pct != null ? `<div class="score-bar"><div class="score-bar-fill" style="width:${pct}%"></div></div>` : '';
     return `
-      <tr>
+      <tr data-seat-token-id="${esc(seat.seat_token_id)}" data-seat-label="${esc(seat.seat_label)}" style="cursor:pointer;">
         <td><strong>${esc(seat.seat_label)}</strong></td>
         <td>${seat.localName || '<span style="color:#aaa;font-style:italic;">No name</span>'}</td>
         <td>${seat.attempt_count}</td>
@@ -237,6 +243,7 @@ function renderProgress() {
           <span class="score-pct">${pct != null ? pct + '%' : '—'}</span>
           ${barFill}
         </td>
+        <td><button class="btn-icon btn-sm" data-seat-token-id="${esc(seat.seat_token_id)}" data-seat-label="${esc(seat.seat_label)}" aria-label="View insights for ${esc(seat.seat_label)}">Details</button></td>
       </tr>`;
   }).join('');
 }
@@ -244,6 +251,138 @@ function renderProgress() {
 function formatName(entry) {
   if (!entry) return '';
   return `${entry.firstName || ''} ${entry.lastName || ''}`.trim();
+}
+
+// ── Student insights modal ────────────────────────────────────────────────────
+// Per-attempt, per-question breakdown for a single seat. Server data is seat
+// tokens and question numbers only; the local name is joined in at render time.
+// Question text/options/correct answers are cross-referenced server-side
+// against a static content manifest (see scripts/build-test-content.mjs) —
+// the student's chosen answer is never stored, only correctness.
+
+let currentInsightsAttempts = [];  // cached response from the insights fetch, for chip click lookups
+
+async function openStudentInsights(seatTokenId, seatLabel) {
+  const body = document.getElementById('insights-body');
+  document.getElementById('insights-title').textContent = `${seatLabel} — Insights`;
+  body.innerHTML = '<div class="spinner" aria-label="Loading insights"></div>';
+  openModal('insights-modal');
+
+  try {
+    const res = await fetch(`/api/classes/${CLASS_ID}/seats/${seatTokenId}`, { credentials: 'include' });
+    if (!res.ok) throw new Error('failed');
+    const data = await res.json();
+    currentInsightsAttempts = data.attempts;
+    renderInsights(data, seatLabel);
+  } catch {
+    body.innerHTML = '<div class="alert alert-error" role="alert">Could not load insights. Please try again.</div>';
+  }
+}
+
+function renderInsights(data, seatLabel) {
+  const body = document.getElementById('insights-body');
+  const entry = getRosterMap()[data.seat.id];
+  const name  = formatName(entry);
+
+  const header = `
+    <div class="insights-seat-header">
+      <h4>${esc(seatLabel)}${name ? ` — ${esc(name)}` : ''}</h4>
+      <p>${data.attempts.length} test${data.attempts.length === 1 ? '' : 's'} completed</p>
+    </div>`;
+
+  if (!data.attempts.length) {
+    body.innerHTML = header + '<p style="color:#6c757d;">This student hasn\'t completed any tests yet.</p>';
+    return;
+  }
+
+  const cards = data.attempts.map(attempt => {
+    const pct = attempt.score_total
+      ? Math.round((attempt.score_correct / attempt.score_total) * 100)
+      : null;
+    const date = attempt.completed_at
+      ? new Date(attempt.completed_at).toLocaleDateString()
+      : '';
+    const chips = attempt.responses.map(r => `
+      <div class="question-chip ${r.was_correct ? 'correct' : 'incorrect'}"
+           data-attempt-id="${esc(attempt.attempt_id)}" data-question-number="${esc(r.question_number)}"
+           title="Question ${r.question_number}: ${r.was_correct ? 'Correct' : 'Incorrect'} — click for details">
+        ${r.question_number}
+      </div>`).join('');
+    return `
+      <div class="attempt-card">
+        <div class="attempt-card-header">
+          <div>
+            <h5>${esc(attempt.test_id)}</h5>
+            <span class="attempt-card-meta">${esc(attempt.subject)} &middot; ${esc(attempt.grade_band)} &middot; ${esc(date)}</span>
+          </div>
+          <span class="attempt-card-score">${pct != null ? pct + '%' : '—'} (${attempt.score_correct}/${attempt.score_total})</span>
+        </div>
+        <div class="question-grid">${chips}</div>
+        <div class="question-detail" id="qd-${esc(attempt.attempt_id)}" style="display:none;"></div>
+      </div>`;
+  }).join('');
+
+  body.innerHTML = header + cards;
+}
+
+// Delegated: clicking a question chip toggles that question's detail panel
+// (text, options with the correct one marked, and explanation).
+document.getElementById('insights-body')?.addEventListener('click', (e) => {
+  const chip = e.target.closest('.question-chip');
+  if (!chip) return;
+  const attemptId = chip.dataset.attemptId;
+  const qNumber   = Number(chip.dataset.questionNumber);
+  const panel     = document.getElementById(`qd-${attemptId}`);
+  if (!panel) return;
+
+  if (panel.dataset.openFor === String(qNumber) && panel.style.display !== 'none') {
+    panel.style.display = 'none';
+    panel.dataset.openFor = '';
+    return;
+  }
+
+  const attempt  = currentInsightsAttempts.find(a => a.attempt_id === attemptId);
+  const response = attempt?.responses.find(r => r.question_number === qNumber);
+  if (!response) return;
+
+  panel.innerHTML = renderQuestionDetail(response);
+  panel.style.display = 'block';
+  panel.dataset.openFor = String(qNumber);
+});
+
+function renderQuestionDetail(response) {
+  const q = response.question;
+  const resultLine = `
+    <p><strong>${response.was_correct ? 'Correct' : 'Incorrect'}</strong>
+      &middot; ${response.time_seconds ?? 0}s
+      &middot; ${response.answer_changes ?? 0} answer change${response.answer_changes === 1 ? '' : 's'}</p>`;
+
+  if (!q) {
+    return `${resultLine}<p style="color:#6c757d;">Question content unavailable for this test.</p>`;
+  }
+
+  let answerHtml = '';
+  if (q.type === 'multiple-choice' || q.type === 'multiple-select') {
+    const correctSet = new Set(Array.isArray(q.correctAnswer) ? q.correctAnswer : [q.correctAnswer]);
+    answerHtml = `<ul class="question-options">${(q.options || []).map((opt, i) => `
+      <li class="${correctSet.has(i) ? 'option-correct' : ''}">${correctSet.has(i) ? '&#10003; ' : ''}${opt}</li>
+    `).join('')}</ul>`;
+  } else if (q.type === 'drag-drop' && q.dropZones) {
+    answerHtml = `<ul class="question-options">${q.dropZones.map((zone, i) => `
+      <li>${esc(zone)}: ${q.options?.[q.correctAnswer?.[i]] ?? '—'}</li>
+    `).join('')}</ul>`;
+  } else if (q.type === 'point-select' && q.correctAnswer) {
+    answerHtml = `<p>Correct point: (${q.correctAnswer.x}, ${q.correctAnswer.y})</p>`;
+  } else if (q.type === 'free-response' && q.correctKeywords) {
+    answerHtml = `<p>Expected keywords: ${q.correctKeywords.map(esc).join(', ')}</p>`;
+  }
+
+  return `
+    ${resultLine}
+    <p class="question-detail-text">${q.text || ''}</p>
+    ${answerHtml}
+    ${q.explanation ? `<p class="question-explanation">${q.explanation}</p>` : ''}
+  `;
 }
 
 // ── Add seats modal ───────────────────────────────────────────────────────────
