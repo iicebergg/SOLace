@@ -104,7 +104,14 @@ async function loadClassData() {
 
 async function loadSeats() {
   const res = await fetch(`/api/classes/${CLASS_ID}/seats`, { credentials: 'include' });
-  if (res.ok) serverSeats = await res.json();
+  if (res.ok) serverSeats = sortSeats(await res.json());
+}
+
+// Seat labels are sorted lexicographically in SQL ("Seat 1", "Seat 10", "Seat 2", ...),
+// so re-sort naturally on the client (matches the Progress tab's "Sort by Seat" behavior).
+function sortSeats(seats) {
+  return [...seats].sort((a, b) =>
+    a.seat_label.localeCompare(b.seat_label, undefined, { numeric: true, sensitivity: 'base' }));
 }
 
 // ── Roster rendering ──────────────────────────────────────────────────────────
@@ -264,7 +271,7 @@ document.getElementById('add-seats-form')?.addEventListener('submit', async func
       body: JSON.stringify({ count }),
     });
     if (!res.ok) throw new Error('failed');
-    serverSeats = await res.json();
+    serverSeats = sortSeats(await res.json());
     closeModal('add-seats-modal');
     renderRoster();
   } catch {
@@ -305,7 +312,7 @@ document.getElementById('typed-roster-form')?.addEventListener('submit', async f
       body: JSON.stringify({ count: names.length }),
     });
     if (!res.ok) throw new Error('seat creation failed');
-    serverSeats = await res.json();
+    serverSeats = sortSeats(await res.json());
     // Step 2: Map names to seat tokens client-side, store in localStorage.
     const roster = getRosterMap();
     names.forEach((name, i) => {
@@ -368,7 +375,7 @@ document.getElementById('kiosk-form')?.addEventListener('submit', async function
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ count: serverSeats.length + 1 }),
     });
-    if (res.ok) serverSeats = await res.json();
+    if (res.ok) serverSeats = sortSeats(await res.json());
   }
   const seat = serverSeats.find(s => !assigned.has(s.id));
   if (!seat) return;
