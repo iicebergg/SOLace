@@ -71,7 +71,7 @@ SOLace has several accessibility features that make the site easier to use for s
 * A draggable screen magnifier
 * A line reader mask
 
-## Teacher Class Feature
+<!-- ## Teacher Class Feature
 
 SOLace offers an optional class management feature for teachers. Teachers create a password-protected account, set up a class, and students join with a six-character code. The feature provides aggregate progress tracking per seat.
 
@@ -134,7 +134,7 @@ See `.env.example` for required variables. At minimum: `DATABASE_URL`, `BETTER_A
 
 ### Data Retention
 
-Class-tagged `class_attempt_links` rows are deleted 365 days after the associated class is archived or deleted. Anonymous attempts (no class) are retained up to 24 months. The deletion schedule is documented in the privacy policy and is a planned post-MVP automation task.
+Class-tagged `class_attempt_links` rows are deleted 365 days after the associated class is archived or deleted. Anonymous attempts (no class) are retained up to 24 months. The deletion schedule is documented in the privacy policy and is a planned post-MVP automation task. -->
 
 ## Copyright Notice
 SOLace's source code is licensed under the CC BY-NC-SA 4.0 license. It contains adapted content that is copyrighted by the Virginia Department of Education. **All source code is licensed under CC BY-NC-SA 4.0, but the material of the questions themselves is not.** Official VDOE questions are credited with the following acknowledgement:
