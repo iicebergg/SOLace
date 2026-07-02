@@ -580,9 +580,16 @@
 }
 
 .question-detail-text img,
-.question-options img {
+.question-options img,
+.question-option-image {
   max-width: 100%;
   height: auto;
+}
+
+.question-option-image {
+  display: block;
+  margin-top: 0.25rem;
+  max-height: 150px;
 }
 
 /* ── Class detail — three-tab layout ────────────────────────────────────── */

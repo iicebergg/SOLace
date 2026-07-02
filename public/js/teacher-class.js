@@ -365,11 +365,11 @@ function renderQuestionDetail(response) {
   if (q.type === 'multiple-choice' || q.type === 'multiple-select') {
     const correctSet = new Set(Array.isArray(q.correctAnswer) ? q.correctAnswer : [q.correctAnswer]);
     answerHtml = `<ul class="question-options">${(q.options || []).map((opt, i) => `
-      <li class="${correctSet.has(i) ? 'option-correct' : ''}">${correctSet.has(i) ? '&#10003; ' : ''}${opt}</li>
+      <li class="${correctSet.has(i) ? 'option-correct' : ''}">${correctSet.has(i) ? '&#10003; ' : ''}${formatOption(opt)}</li>
     `).join('')}</ul>`;
   } else if (q.type === 'drag-drop' && q.dropZones) {
     answerHtml = `<ul class="question-options">${q.dropZones.map((zone, i) => `
-      <li>${esc(zone)}: ${q.options?.[q.correctAnswer?.[i]] ?? '—'}</li>
+      <li>${esc(zone)}: ${formatOption(q.options?.[q.correctAnswer?.[i]]) || '—'}</li>
     `).join('')}</ul>`;
   } else if (q.type === 'point-select' && q.correctAnswer) {
     answerHtml = `<p>Correct point: (${q.correctAnswer.x}, ${q.correctAnswer.y})</p>`;
@@ -380,9 +380,24 @@ function renderQuestionDetail(response) {
   return `
     ${resultLine}
     <p class="question-detail-text">${q.text || ''}</p>
+    ${formatOption(q.image)}
     ${answerHtml}
     ${q.explanation ? `<p class="question-explanation">${q.explanation}</p>` : ''}
   `;
+}
+
+// Question/option images arrive either as an HTML string (with an embedded
+// <img>, already handled by the manifest build step) or as a {url, alt}
+// image object — render the object form as an actual <img> instead of
+// letting template interpolation stringify it to "[object Object]".
+function formatOption(opt) {
+  if (opt && typeof opt === 'object') {
+    if (opt.missing || !opt.url) {
+      return '<span class="missing-image-note">[Image unavailable]</span>';
+    }
+    return `<img src="${esc(opt.url)}" alt="${esc(opt.alt || '')}" class="question-option-image">`;
+  }
+  return opt ?? '';
 }
 
 // ── Add seats modal ───────────────────────────────────────────────────────────

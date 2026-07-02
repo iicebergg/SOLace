@@ -70,6 +70,21 @@ function resolveImageFiles(imgDir, filename) {
   return { type: 'missing' };
 }
 
+// Some questions/options carry an image as a {url, alt} object instead of
+// an embedded <img> tag (e.g. image-based multiple-choice options, or a
+// question's standalone `image` field). Resolve and rewrite `url` the same
+// way as embedded <img src> references.
+function fixImageObject(obj, imgDir, imgUrlBase) {
+  if (!obj || typeof obj.url !== 'string' || !obj.url.startsWith('images/')) return obj;
+  const filename = obj.url.slice('images/'.length);
+  const resolved = resolveImageFiles(imgDir, filename);
+  if (resolved.type === 'missing') {
+    return { ...obj, url: null, missing: true };
+  }
+  // {url, alt} only has room for one image; multi-part files fall back to the first part.
+  return { ...obj, url: `${imgUrlBase}/${resolved.files[0]}` };
+}
+
 // Rewrites every `<img src="images/...">` in an HTML string to an absolute,
 // site-rooted path (resolved against the real files on disk), so it loads
 // correctly regardless of which page renders the markup. Images that can't
@@ -206,6 +221,10 @@ function buildManifest() {
       const imgDir      = join(testDir, 'images');
       const imgUrlBase  = `/${relative(PUBLIC_DIR, testDir).split('\\').join('/')}/images`;
       const fixImages   = (val) => rewriteImages(val, imgDir, imgUrlBase);
+      // Options are either an HTML string (possibly with an embedded <img>)
+      // or an {url, alt} image object — resolve each shape accordingly.
+      const fixOption   = (opt) =>
+        (opt && typeof opt === 'object') ? fixImageObject(opt, imgDir, imgUrlBase) : fixImages(opt);
 
       const byId = {};
       for (const q of questions) {
@@ -213,7 +232,8 @@ function buildManifest() {
         byId[String(q.id)] = {
           text:            fixImages(q.text ?? null),
           type:            q.type ?? null,
-          options:         Array.isArray(q.options) ? q.options.map(fixImages) : (q.options ?? null),
+          image:           fixImageObject(q.image ?? null, imgDir, imgUrlBase),
+          options:         Array.isArray(q.options) ? q.options.map(fixOption) : (q.options ?? null),
           correctAnswer:   q.correctAnswer ?? null,
           dropZones:       q.dropZones ?? null,
           correctKeywords: q.correctKeywords ?? null,
