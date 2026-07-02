@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Dashboard | SOLace</title>
+  <link rel="stylesheet" href="../css/main-pages.css">
+  <link rel="stylesheet" href="../css/teacher.css">
+  <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
+</head>
+<body class="theme-default">
+
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand brand-logo">
+          <a href="../index.html">
+            <img src="../images/SOLace-logo.svg" alt="SOLace Logo" class="logo-img">
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="../index.html" class="nav-link">Student Platform</a>
+          <span id="nav-email" class="nav-link" style="opacity:0.7; cursor:default;"></span>
+          <button class="btn btn-primary btn-sm" id="signout-btn" style="background:rgba(255,255,255,0.2); border:1px solid rgba(255,255,255,0.4);">
+            Sign Out
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="teacher-page">
+    <div class="teacher-container">
+
+      <div class="page-header">
+        <div>
+          <h1>My Classes</h1>
+          <p>Create classes, manage rosters, and track student progress.</p>
+        </div>
+        <button class="btn btn-primary" id="new-class-btn">
+          + New Class
+        </button>
+      </div>
+
+      <div id="alert-area"></div>
+
+      <!-- Loading state -->
+      <div id="loading-state">
+        <div class="spinner" aria-label="Loading classes"></div>
+      </div>
+
+      <!-- Empty state (shown when no classes) -->
+      <div id="empty-state" class="empty-state" style="display:none;">
+        <div class="category-icon">
+              <img src="../images/class-icon.svg" alt="No classes" class="category-img">
+        </div>
+        <h3>No classes yet</h3>
+        <p>Create your first class to get started.</p>
+        <button class="btn btn-primary" style="margin-top:1rem;" id="empty-create-btn">
+          Create a Class
+        </button>
+      </div>
+
+      <!-- Classes grid -->
+      <div class="classes-grid" id="classes-grid" style="display:none;"></div>
+
+    </div>
+  </div>
+
+  <!-- Create class modal -->
+  <div class="modal-backdrop" id="create-modal" role="dialog" aria-modal="true" aria-labelledby="create-modal-title">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 id="create-modal-title">New Class</h3>
+        <button class="modal-close" id="create-modal-close" aria-label="Close">&times;</button>
+      </div>
+      <div id="create-error" class="alert alert-error" style="display:none;"></div>
+      <form id="create-form" novalidate>
+        <div class="form-group">
+          <label for="class-name">Class Name <span aria-hidden="true" style="color:#dc3545;">*</span></label>
+          <input type="text" id="class-name" required maxlength="200"
+                 placeholder="e.g. Period 3 Grade 5 Math">
+          <p class="form-hint">Name your class however you recognize it — students won't see this.</p>
+        </div>
+        <div class="form-group">
+          <label for="class-grade">Grade (optional)</label>
+          <input type="text" id="class-grade" maxlength="50" placeholder="e.g. 5, 8, Algebra I">
+        </div>
+        <div class="form-group">
+          <label for="class-subject">Subject (optional)</label>
+          <input type="text" id="class-subject" maxlength="100" placeholder="e.g. Math, Reading, Science">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" id="create-cancel-btn">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="create-btn">Create Class</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="../index.html" target="_blank">
+          <img src="../images/SOLace-logo.svg" alt="SOLace Logo" class="logo-img">
+          </a>
+          <p>The premiere platform for Virginia Standards of Learning test practice.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="../index.html#categories" target="_blank">Test Categories</a></li>
+            <li><a href="../index.html#features" target="_blank">Features</a></li>
+            <li><a href="login.html">Teacher Portal</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>About</h4>
+          <ul>
+            <li><a href="../about.html" target="_blank">About SOLace</a></li>
+            <li><a href="../privacy-policy.html" target="_blank">Privacy Policy</a></li>
+            <li><a href="../terms-of-service.html" target="_blank">Terms of Service</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="mailto:info@learnsolace.org" onclick="return confirmExit();" target="_blank">Contact</a></li>
+            <li><a href="../copyright.html" target="_blank">Copyright</a></li>
+            <li><a href="https://github.com/iicebergg/SOLace" onclick="return confirmExit();" target="_blank">Docs</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>SOLace &copy; 2026 by Vivien Berg is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" onclick="return confirmExit();" target="_blank" style="color:#bdc3c7">CC BY-NC-SA 4.0</a>
+          <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
+        <div class="footer-links">
+          <a href="https://donorbox.org/solace-787440" class="footer-link" target="_blank">Donate</a>
+          <a href="../privacy-policy.html" class="footer-link">Privacy Policy</a>
+          <a href="../terms-of-service.html" class="footer-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/teacher-auth.js"></script>
+  <script src="../js/teacher-dashboard.js"></script>
+</body>
+</html>

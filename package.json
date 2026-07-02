@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "<div align=\"center\">",
   "main": "index.js",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --test tests/*.test.js",
+    "build:test-content": "node scripts/build-test-content.mjs"
   },
   "repository": {
     "type": "git",
@@ -13,12 +17,16 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/iicebergg/SOLace/issues"
   },
   "homepage": "https://github.com/iicebergg/SOLace#readme",
   "dependencies": {
-    "@neondatabase/serverless": "^1.1.0"
+    "@neondatabase/serverless": "^1.1.0",
+    "@node-rs/argon2": "^2.0.2",
+    "@sendgrid/mail": "^8.1.6",
+    "better-auth": "^1.6.23",
+    "zod": "^4.4.3"
   }
 }

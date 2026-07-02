@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class | SOLace</title>
+  <link rel="stylesheet" href="../css/main-pages.css">
+  <link rel="stylesheet" href="../css/teacher.css">
+  <link rel="icon" type="image/x-icon" href="../images/favicon.svg">
+</head>
+<body class="theme-default">
+
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-brand brand-logo">
+          <a href="../index.html">
+            <img src="../images/SOLace-logo.svg" alt="SOLace Logo" class="logo-img">
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="dashboard.html" class="nav-link">&larr; My Classes</a>
+          <button class="btn btn-primary btn-sm" id="signout-btn" style="background:rgba(255,255,255,0.2); border:1px solid rgba(255,255,255,0.4);">
+            Sign Out
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="teacher-page">
+    <!-- Loading -->
+    <div id="loading-state" class="teacher-container">
+      <div class="spinner" aria-label="Loading class"></div>
+    </div>
+
+    <!-- Main content (shown after load) -->
+    <div id="main-content" style="display:none;">
+
+      <!-- Sticky header with tabs -->
+      <div class="class-detail-header">
+        <div class="class-detail-title">
+          <h1 id="class-name-heading"></h1>
+          <span id="class-badge" class="badge"></span>
+        </div>
+        <div class="class-tabs" role="tablist">
+          <button class="class-tab-btn active" role="tab" id="tab-roster"
+                  aria-controls="panel-roster" aria-selected="true"
+                  data-class-tab="roster">Roster</button>
+          <button class="class-tab-btn" role="tab" id="tab-progress"
+                  aria-controls="panel-progress" aria-selected="false"
+                  data-class-tab="progress">Progress</button>
+          <button class="class-tab-btn" role="tab" id="tab-settings"
+                  aria-controls="panel-settings" aria-selected="false"
+                  data-class-tab="settings">Settings</button>
+        </div>
+      </div>
+
+      <!-- ── Roster Tab ────────────────────────────────────── -->
+      <div class="tab-panel active class-tab-content" id="panel-roster" role="tabpanel">
+
+        <div id="roster-alert"></div>
+
+        <div class="alert alert-info" style="margin-bottom:1.5rem;">
+          <strong>Privacy reminder:</strong> Seat labels are stored on SOLace. Student names are stored
+          <strong>only on your device</strong> (in your browser). Names are never sent to SOLace servers.
+          <a href="../privacy-policy.html" target="_blank" style="color:#0c5460;"><u>Learn more</u></a>
+        </div>
+
+        <div class="roster-actions">
+          <button class="btn btn-primary btn-sm" id="add-seats-open-btn">+ Add Seats</button>
+          <button class="btn btn-secondary btn-sm" id="typed-roster-open-btn">Typed Roster</button>
+          <button class="btn btn-secondary btn-sm" id="kiosk-open-btn">Kiosk / Station Mode</button>
+          <button class="btn btn-secondary btn-sm" id="export-roster-btn">Export Roster</button>
+          <button class="btn btn-secondary btn-sm" id="import-roster-btn">Import Roster</button>
+          <button class="btn btn-secondary btn-sm" id="print-seat-btn">Print Seat Sheet</button>
+          <input type="file" id="import-file-input" accept=".json" style="display:none;">
+        </div>
+
+        <!-- Seat table — server data joined with local name map at render time -->
+        <div id="roster-empty" class="empty-state" style="display:none;">
+          <div class="category-icon">
+              <img src="../images/person-icon.svg" alt="No seats" class="category-img">
+          </div>
+          <h3>No seats yet</h3>
+          <p>Add seats to start building your roster.</p>
+        </div>
+
+        <table class="seat-table" id="roster-table" style="display:none;" aria-label="Class roster">
+          <thead>
+            <tr>
+              <th scope="col">Seat</th>
+              <th scope="col">Student Name <span style="font-weight:400; color:#6c757d;">(local only)</span></th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody id="roster-tbody"></tbody>
+        </table>
+      </div>
+
+      <!-- ── Progress Tab ──────────────────────────────────── -->
+      <div class="tab-panel class-tab-content" id="panel-progress" role="tabpanel">
+
+        <div id="progress-alert"></div>
+
+        <div class="progress-controls">
+          <select class="sort-select" id="sort-select"
+                  aria-label="Sort by">
+            <option value="name">Sort by Name</option>
+            <option value="seat">Sort by Seat</option>
+            <option value="score">Sort by Score</option>
+            <option value="attempts">Sort by Attempts</option>
+          </select>
+          <button class="btn btn-secondary btn-sm" id="refresh-progress-btn">Refresh</button>
+        </div>
+
+        <!-- Class summary cards -->
+        <div id="class-summary" style="display:flex; gap:1rem; flex-wrap:wrap; margin-bottom:1.5rem;"></div>
+
+        <div id="progress-empty" class="empty-state" style="display:none;">
+          <div class="category-icon">
+              <img src="../images/chart-icon.svg" alt="No progress data" class="category-img">
+          </div>
+          <h3>No progress data yet</h3>
+          <p>Students need to join this class and complete tests for data to appear here.</p>
+        </div>
+
+        <table class="seat-table" id="progress-table" style="display:none;" aria-label="Student progress">
+          <thead>
+            <tr>
+              <th scope="col">Seat</th>
+              <th scope="col">Student <span style="font-weight:400; color:#6c757d;">(local name)</span></th>
+              <th scope="col">Attempts</th>
+              <th scope="col" class="score-bar-cell">Avg Score</th>
+              <th scope="col"></th>
+            </tr>
+          </thead>
+          <tbody id="progress-tbody"></tbody>
+        </table>
+        <p class="form-hint" style="margin-top:0.75rem;">Click a row to see that student's test-by-test and question-by-question breakdown.</p>
+      </div>
+
+      <!-- ── Settings Tab ──────────────────────────────────── -->
+      <div class="tab-panel class-tab-content" id="panel-settings" role="tabpanel">
+
+        <div id="settings-alert"></div>
+
+        <!-- Join code -->
+        <div class="settings-section">
+          <h3>Join Code</h3>
+          <div class="code-display-row">
+            <span class="code-big" id="settings-join-code"></span>
+            <button class="btn btn-secondary btn-sm" id="copy-code-btn">Copy</button>
+            <button class="btn btn-secondary btn-sm" id="regen-code-btn">Regenerate</button>
+          </div>
+          <p class="form-hint" style="margin-top:0.75rem;" id="settings-code-expiry"></p>
+        </div>
+
+        <!-- Class details -->
+        <div class="settings-section">
+          <h3>Class Details</h3>
+          <form id="settings-form" novalidate>
+            <div class="form-group">
+              <label for="settings-name">Class Name</label>
+              <input type="text" id="settings-name" maxlength="200" required>
+            </div>
+            <div class="form-group">
+              <label for="settings-grade">Grade</label>
+              <input type="text" id="settings-grade" maxlength="50">
+            </div>
+            <div class="form-group">
+              <label for="settings-subject">Subject</label>
+              <input type="text" id="settings-subject" maxlength="100">
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm">Save Changes</button>
+          </form>
+        </div>
+
+        <!-- Archive -->
+        <div class="settings-section">
+          <h3>Archive Class</h3>
+          <p style="color:#6c757d; font-size:0.9rem; margin-bottom:1rem;">
+            Archiving hides the class from the active list and invalidates the join code.
+            Student progress data is retained for 365 days per the privacy policy.
+          </p>
+          <button class="btn btn-danger btn-sm" id="archive-btn">
+            Archive Class
+          </button>
+        </div>
+
+      </div>
+    </div><!-- /main-content -->
+  </div>
+
+  <!-- Add Seats modal -->
+  <div class="modal-backdrop" id="add-seats-modal" role="dialog" aria-modal="true" aria-labelledby="add-seats-title">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 id="add-seats-title">Add Seats</h3>
+        <button class="modal-close" data-close-modal="add-seats-modal" aria-label="Close">&times;</button>
+      </div>
+      <div id="add-seats-error" class="alert alert-error" style="display:none;"></div>
+      <form id="add-seats-form" novalidate>
+        <div class="form-group">
+          <label for="seat-count">Number of seats to add</label>
+          <input type="number" id="seat-count" min="1" max="200" value="30"
+                 inputmode="numeric">
+          <p class="form-hint">Seats will be labeled Seat 1, Seat 2, … automatically.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-close-modal="add-seats-modal">Cancel</button>
+          <button type="submit" class="btn btn-primary">Add Seats</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Typed Roster modal -->
+  <div class="modal-backdrop" id="typed-roster-modal" role="dialog" aria-modal="true" aria-labelledby="typed-roster-title">
+    <div class="modal">
+      <div class="modal-header">
+        <h3 id="typed-roster-title">Typed Roster</h3>
+        <button class="modal-close" data-close-modal="typed-roster-modal" aria-label="Close">&times;</button>
+      </div>
+      <div class="alert alert-info" style="margin-bottom:1rem;">
+        Names are stored <strong>only on this device</strong>. They are never sent to SOLace.
+      </div>
+      <div id="typed-roster-error" class="alert alert-error" style="display:none;"></div>
+      <form id="typed-roster-form" novalidate>
+        <div class="form-group">
+          <label for="roster-names">Student names (one per line)</label>
+          <textarea id="roster-names" rows="10"
+                    placeholder="Emma Johnson&#10;Liam Patel&#10;Sophia Chen"></textarea>
+          <p class="form-hint">
+            Paste or type your class list. Each line becomes one student.
+            Seat tokens will be created on SOLace; names stay on this device.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-close-modal="typed-roster-modal">Cancel</button>
+          <button type="submit" class="btn btn-primary" id="typed-roster-btn">Create Roster</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Kiosk mode overlay -->
+  <div class="kiosk-overlay" id="kiosk-overlay" role="dialog" aria-modal="true" aria-labelledby="kiosk-title">
+    <h2 id="kiosk-title">Station / Kiosk Mode</h2>
+    <p>Each student enters their name on this screen, then carries their seat number to their own device.
+       Names stay on this teacher device only.</p>
+
+    <div class="kiosk-result" id="kiosk-result" role="status"></div>
+
+    <form id="kiosk-form" novalidate style="width:100%; max-width:400px;">
+      <div class="form-group">
+        <label for="kiosk-first" style="text-align:left; display:block;">First Name</label>
+        <input type="text" id="kiosk-first" autocomplete="off" autocorrect="off"
+               spellcheck="false" style="font-size:1.25rem; padding:0.9rem 1rem;"
+               required placeholder="First name">
+      </div>
+      <div class="form-group">
+        <label for="kiosk-last" style="text-align:left; display:block;">Last Name</label>
+        <input type="text" id="kiosk-last" autocomplete="off" autocorrect="off"
+               spellcheck="false" style="font-size:1.25rem; padding:0.9rem 1rem;"
+               required placeholder="Last name">
+      </div>
+      <div style="display:flex; gap:0.75rem; margin-top:1rem;">
+        <button type="submit" class="btn btn-primary" style="flex:1; font-size:1.1rem; padding:1rem;">
+          Assign My Seat
+        </button>
+      </div>
+    </form>
+
+    <button class="btn btn-secondary btn-sm" id="kiosk-exit-btn" style="margin-top:2rem;">
+      Exit Kiosk Mode
+    </button>
+  </div>
+
+  <!-- Student Insights modal -->
+  <div class="modal-backdrop" id="insights-modal" role="dialog" aria-modal="true" aria-labelledby="insights-title">
+    <div class="modal modal-lg">
+      <div class="modal-header">
+        <h3 id="insights-title">Student Insights</h3>
+        <button class="modal-close" data-close-modal="insights-modal" aria-label="Close">&times;</button>
+      </div>
+      <div id="insights-body"></div>
+    </div>
+  </div>
+
+  <!-- Print area (hidden on screen, shown on print) -->
+  <div class="print-area" id="print-area"></div>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="../index.html" target="_blank">
+          <img src="../images/SOLace-logo.svg" alt="SOLace Logo" class="logo-img">
+          </a>
+          <p>The premiere platform for Virginia Standards of Learning test practice.</p>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="../index.html#categories" target="_blank">Test Categories</a></li>
+            <li><a href="../index.html#features" target="_blank">Features</a></li>
+            <li><a href="login.html">Teacher Portal</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>About</h4>
+          <ul>
+            <li><a href="../about.html" target="_blank">About SOLace</a></li>
+            <li><a href="../privacy-policy.html" target="_blank">Privacy Policy</a></li>
+            <li><a href="../terms-of-service.html" target="_blank">Terms of Service</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="mailto:info@learnsolace.org" onclick="return confirmExit();" target="_blank">Contact</a></li>
+            <li><a href="../copyright.html" target="_blank">Copyright</a></li>
+            <li><a href="https://github.com/iicebergg/SOLace" onclick="return confirmExit();" target="_blank">Docs</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>SOLace &copy; 2026 by Vivien Berg is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" onclick="return confirmExit();" target="_blank" style="color:#bdc3c7">CC BY-NC-SA 4.0</a>
+          <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
+          <img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
+        <div class="footer-links">
+          <a href="https://donorbox.org/solace-787440" class="footer-link" target="_blank">Donate</a>
+          <a href="../privacy-policy.html" class="footer-link">Privacy Policy</a>
+          <a href="../terms-of-service.html" class="footer-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/teacher-auth.js"></script>
+  <script src="../js/teacher-class.js"></script>
+</body>
+</html>

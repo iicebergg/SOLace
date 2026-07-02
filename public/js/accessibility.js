@@ -19,7 +19,7 @@ const fontSizes = {
 
 let currentFontSizeIndex = 1; // medium
 
-// Magnifier state
+// Magnifier state 
 let magnifierState = {
   isDragging: false,
   startX: 0,
