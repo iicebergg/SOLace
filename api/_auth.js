@@ -2,7 +2,7 @@ import { betterAuth } from 'better-auth';
 import { twoFactor }  from 'better-auth/plugins';
 import { Pool, neonConfig } from '@neondatabase/serverless';
 import argon2  from '@node-rs/argon2';
-import sgMail  from '@sendgrid/mail';
+import { sendEmail } from './_email.js';
 import { createHash } from 'node:crypto';
 
 // Node.js 22+ ships a global WebSocket; tell the Neon serverless driver to use
@@ -61,12 +61,8 @@ export const auth = betterAuth({
     sendOnSignUp: true,
     autoSignInAfterVerification: true,
     sendVerificationEmail: async ({ user, url }) => {
-      // Set the API key here, not at module load, so importing this file
-      // during the Better Auth CLI migration doesn't throw when the key is absent.
-      sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-      await sgMail.send({
+      await sendEmail({
         to:      user.email,
-        from:    process.env.FROM_EMAIL || 'noreply@learnsolace.org',
         subject: 'Verify your SOLace teacher account',
         html: `
           <p>Welcome to SOLace!</p>
