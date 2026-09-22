@@ -1,34 +1,13 @@
 import { betterAuth } from 'better-auth';
-import { twoFactor }  from 'better-auth/plugins';
+import { twoFactor, haveIBeenPwned } from 'better-auth/plugins';
 import { Pool, neonConfig } from '@neondatabase/serverless';
 import argon2  from '@node-rs/argon2';
 import { sendEmail } from './_email.js';
-import { createHash } from 'node:crypto';
 
 // Node.js 22+ ships a global WebSocket; tell the Neon serverless driver to use
 // it when running outside an edge runtime (Better Auth CLI, Vercel Node.js 22).
 if (typeof WebSocket !== 'undefined') {
   neonConfig.webSocketConstructor = WebSocket;
-}
-
-// k-anonymity range check against HaveIBeenPwned.
-// Throws if the password appears in a known breach, or if HIBP is unreachable
-// (fail closed — prevents sign-up when we cannot verify breach status).
-async function checkPwnedPassword(password) {
-  const sha1   = createHash('sha1').update(password).digest('hex').toUpperCase();
-  const prefix = sha1.slice(0, 5);
-  const suffix = sha1.slice(5);
-  const res = await fetch(`https://api.pwnedpasswords.com/range/${prefix}`, {
-    headers: { 'Add-Padding': 'true' },
-  });
-  if (!res.ok) throw new Error('breach_check_unavailable');
-  const text  = await res.text();
-  const found = text.split('\r\n').some(line => line.split(':')[0].trim() === suffix);
-  if (found) {
-    throw new Error(
-      'This password has appeared in a known data breach. Please choose a different password.'
-    );
-  }
 }
 
 const pool = new Pool({ connectionString: process.env.DATABASE_URL });
@@ -44,15 +23,12 @@ export const auth = betterAuth({
     // NIST SP 800-63B: length over complexity.
     // No forced symbol/number/case composition rules.
     password: {
-      hash: async (password) => {
-        await checkPwnedPassword(password);
-        return argon2.hash(password, {
-          algorithm:   argon2.Algorithm.Argon2id,
-          memoryCost:  65536,
-          timeCost:    3,
-          parallelism: 1,
-        });
-      },
+      hash: (password) => argon2.hash(password, {
+        algorithm:   argon2.Algorithm.Argon2id,
+        memoryCost:  65536,
+        timeCost:    3,
+        parallelism: 1,
+      }),
       verify: ({ hash, password }) => argon2.verify(hash, password),
     },
   },
@@ -85,6 +61,16 @@ export const auth = betterAuth({
 
   plugins: [
     twoFactor({ issuer: 'SOLace' }),
+    // k-anonymity range check against HaveIBeenPwned. Rejects breached
+    // passwords with a 400 the login page can display, and fails closed
+    // (sign-up is refused) if HIBP is unreachable. It only runs on endpoints
+    // that set a new password, not sign-in: sign-in hashes the submitted
+    // password for unknown emails to equalize timing, and checking there
+    // would reveal which emails are registered.
+    haveIBeenPwned({
+      customPasswordCompromisedMessage:
+        'This password has appeared in a known data breach. Please choose a different password.',
+    }),
   ],
 
   rateLimit: {
