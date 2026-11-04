@@ -2463,8 +2463,13 @@ document.addEventListener('DOMContentLoaded', initApp);
     // Ignore in-page hash-only links
     if (href.startsWith('#')) return;
 
-    // Ignore javascript: links
-    if (href.startsWith('javascript:')) return;
+    // Ignore executable URL schemes
+    const normalizedHref = href.trim().toLowerCase();
+    if (
+      normalizedHref.startsWith('javascript:') ||
+      normalizedHref.startsWith('data:') ||
+      normalizedHref.startsWith('vbscript:')
+    ) return;
 
     // This link would navigate away from the test page
     e.preventDefault();
