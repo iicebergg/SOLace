@@ -319,7 +319,7 @@ function setupAccessibility() {
       if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
         const category = card.getAttribute('data-category');
-        window.location.href = `index.html?category=${category}`;
+        window.location.href = `index.html?category=${encodeURIComponent(category || '')}`;
       }
     });
   });
