@@ -244,14 +244,6 @@ const sampleQuestions = [
  },
  {
  id: '28',
- text: 'Which is CLOSEST to the length of the spider pictured? <br><img src="images/28.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
- type: 'multiple-choice',
- options: ['1 centimeter', '1.5 centimeters', '2 centimeters', '2.5 centimeters'],
- correctAnswer: 0, 
- explanation: 'Use a centimeter ruler to measure the line segment below the spider.'
- },
- {
- id: '29',
  text: 'Which figure has EXACTLY three corners and three sides?',
  type: 'multiple-choice',
  options: [
@@ -264,7 +256,7 @@ const sampleQuestions = [
  explanation: 'A triangle has exactly three corners and three sides.'
  },
  {
- id: '30',
+ id: '29',
  text: 'Which thermometer pictured shows a temperature closest to 57°F?',
  type: 'multiple-choice',
  options: [
@@ -277,7 +269,7 @@ const sampleQuestions = [
  explanation: '57°F is a little below 60°F. Find the thermometer whose reading is between 55° and 60°, closest to 57°.'
  },
  {
- id: '31',
+ id: '30',
  text: 'Miss Jensen ordered a sweater on May 6. The sweater arrived exactly 10 days later. <br><img src="images/31.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>On what date did the sweater arrive?',
  type: 'multiple-choice',
  options: ['May 4', 'May 10', 'May 15', 'May 16'],
@@ -285,7 +277,7 @@ const sampleQuestions = [
  explanation: 'Count 10 days after May 6: 6 + 10 = 16. The sweater arrived on May 16.'
  },
  {
- id: '32',
+ id: '31',
  text: 'This is 1 block. <br><img src="images/32-1.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>How many of these blocks are needed to make the stack shown here? <br><img src="images/32-2.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
  options: ['16', '20', '24', '25'],
@@ -293,7 +285,7 @@ const sampleQuestions = [
  explanation: 'The stack has 4 rows with 4 blocks in each row: 4 × 4 = 16 blocks.'
  },
  {
- id: '33',
+ id: '32',
  text: 'Which is CLOSEST to the time shown on the clock? <br><img src="images/33.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
  options: ['4:05', '4:25', '5:20', '5:40'],
@@ -301,7 +293,7 @@ const sampleQuestions = [
  explanation: 'The hour hand is between 4 and 5, and the minute hand is near the 5, which means about 25 minutes. The time is about 4:25.'
  },
  {
- id: '34',
+ id: '33',
  text: 'The picture shows how Jim used baseballs to measure the length of his bat. <br><img src="images/34.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>Which is CLOSEST to the length of the bat?',
  type: 'multiple-choice',
  options: ['9 baseballs', '10 baseballs', '11 baseballs', '13 baseballs'],
@@ -309,7 +301,7 @@ const sampleQuestions = [
  explanation: 'Count the baseballs lined up from one end of the bat to the other.'
  },
  {
- id: '35',
+ id: '34',
  text: 'Which figure shows a line of symmetry?',
  type: 'multiple-choice',
  options: [
@@ -322,7 +314,7 @@ const sampleQuestions = [
  explanation: 'A line of symmetry divides a figure into two matching halves that would fold exactly onto each other.'
  },
  {
- id: '36',
+ id: '35',
  text: 'Which shape appears to be a square?',
  type: 'multiple-choice',
  options: [
@@ -335,7 +327,7 @@ const sampleQuestions = [
  explanation: 'A square has 4 equal sides and 4 square corners.'
  },
  {
- id: '37',
+ id: '36',
  text: 'This list shows the ages of the 12 students in the school science club. <br>7, 7, 8, 10, 6, 6, 8, 11, 8, 9, 6, 11 <br>Which line plot shows the number of students at each age?',
  type: 'multiple-choice',
  options: [
@@ -348,7 +340,7 @@ const sampleQuestions = [
  explanation: 'Count each age: 6 appears 3 times, 7 appears 2 times, 8 appears 3 times, 9 appears 1 time, 10 appears 1 time, and 11 appears 2 times.'
  },
  {
- id: '38',
+ id: '37',
  text: 'Each student in Mrs. Cook’s class recorded one tally to show the type of drink each student had with lunch. SOME of the results are shown. <br><img src="images/38.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>There are 23 students in Mrs. Cook’s class. Which correctly shows the number of students who had water with lunch?',
  type: 'multiple-choice',
  options: [
@@ -361,7 +353,7 @@ const sampleQuestions = [
  explanation: 'The table shows 6 + 8 + 4 = 18 students. 23 − 18 = 5 students had water, which is shown by one tally group of 5.'
  },
  {
- id: '39',
+ id: '38',
  text: 'The graph shows the number of different colored shirts in Cassie’s closet. <br><img src="images/39.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>According to the graph, how many shirts are there in Cassie’s closet?',
  type: 'multiple-choice',
  options: ['18', '13', '9', '7'],
@@ -369,7 +361,7 @@ const sampleQuestions = [
  explanation: 'Add the bars: 7 + 6 + 3 + 2 = 18 shirts.'
  },
  {
- id: '40',
+ id: '39',
  text: 'The table shows the number of each color of counters in a box. Each counter is the same size and shape. <br><img src="images/40.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>If Tim closes his eyes and pulls 1 counter from the box, which BEST describes the chance the counter will be yellow?',
  type: 'multiple-choice',
  options: ['Certain', 'Likely, but not certain', 'Unlikely, but not impossible', 'Impossible'],
@@ -377,7 +369,7 @@ const sampleQuestions = [
  explanation: 'There are no yellow counters in the box, so pulling a yellow counter is impossible.'
  },
  {
- id: '41',
+ id: '40',
  text: 'The pictograph below shows the number of each color of button Elsa used to decorate a box. <br><img src="images/41.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>Based on the data in the graph, what was the total number of blue buttons Elsa used?',
  type: 'multiple-choice',
  options: ['4', '13', '20', '65'],
@@ -385,7 +377,7 @@ const sampleQuestions = [
  explanation: 'There are 4 symbols for blue, and each symbol represents 5 buttons: 4 × 5 = 20 buttons.'
  },
  {
- id: '42',
+ id: '41',
  text: 'The table shows the number of students enrolled in each dance class. <br><img src="images/42.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>Which graph shows the same information as the table?',
  type: 'multiple-choice',
  options: [
@@ -398,7 +390,7 @@ const sampleQuestions = [
  explanation: 'The bars must show Ballet 18, Modern 12, Jazz 10, and Tap 14.'
  },
  {
- id: '43',
+ id: '42',
  text: 'This table shows the numbers of pencils with different designs that Brandon’s teacher has in a prize bag. <br><img src="images/43.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>If Brandon picks one pencil from the prize bag without looking, which design will the pencil MOST likely have on it?',
  type: 'multiple-choice',
  options: ['Frog', 'Star', 'Airplane', 'Basketball'],
@@ -406,7 +398,7 @@ const sampleQuestions = [
  explanation: 'There are more airplane pencils (200) than any other design, so an airplane pencil is most likely.'
  },
  {
- id: '44',
+ id: '43',
  text: 'Which number sentence is true?',
  type: 'multiple-choice',
  options: ['7 + 4 = 8 + 3', '7 + 4 = 11 + 3', '8 · 3 = 8 + 3', '8 · 3 = 3 · 7'],
@@ -414,7 +406,7 @@ const sampleQuestions = [
  explanation: '7 + 4 = 11 and 8 + 3 = 11, so both sides are equal.'
  },
  {
- id: '45',
+ id: '44',
  text: 'What number belongs in the box to make this number sentence true? <br>15 − ☐ = 7',
  type: 'multiple-choice',
  options: ['23', '22', '8', '7'],
@@ -422,7 +414,7 @@ const sampleQuestions = [
  explanation: '15 − 8 = 7, so the missing number is 8.'
  },
  {
- id: '46',
+ id: '45',
  text: 'Janet made this pattern by repeating the first five shapes in the same order as shown. <br><img src="images/46.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>The pattern continues in the same way. What will be the next shape in Janet’s pattern?',
  type: 'multiple-choice',
  options: [
@@ -435,7 +427,7 @@ const sampleQuestions = [
  explanation: 'The pattern repeats heart, diamond, square, square, triangle. The last shape shown is the first square, so the next shape is a square.'
  },
  {
- id: '47',
+ id: '46',
  text: 'Mrs. Parker wrote the following number pattern on the chalkboard. <br><img src="images/47.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>If this pattern continues in the same way, what number should go in the empty box?',
  type: 'multiple-choice',
  options: ['28', '31', '32', '37'],
@@ -443,7 +435,7 @@ const sampleQuestions = [
  explanation: 'The rule is add 5: 27 + 5 = 32.'
  },
  {
- id: '48',
+ id: '47',
  text: 'The table shows the costs for stickers. <br><img src="images/48.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>The cost of stickers continues to increase in the same way. What is the greatest number of stickers that can be bought with $5.00?',
  type: 'multiple-choice',
  options: ['16', '18', '20', '22'],
@@ -451,7 +443,7 @@ const sampleQuestions = [
  explanation: 'Each $1.00 buys 4 more stickers, so $5.00 buys 16 + 4 = 20 stickers.'
  },
  {
- id: '49',
+ id: '48',
  text: 'Marta showed a basic fact by grouping 8 cubes in 2 different ways. <br><img src="images/49.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>Which number sentence represents Marta’s two basic facts?',
  type: 'multiple-choice',
  options: ['4 × 2 = 2 × 4', '4 × 2 = 2 + 4', '2 + 4 = 4 × 4', '2 + 4 = 4 + 4'],
@@ -459,7 +451,7 @@ const sampleQuestions = [
  explanation: 'The cubes are grouped as 4 groups of 2 and 2 groups of 4, so 4 × 2 = 2 × 4.'
  },
  {
- id: '50',
+ id: '49',
  text: 'Jake’s baseball team has bats made of wood and bats made of metal. Of the 14 total bats, 8 are made of wood and the rest are made of metal. <br>8 + ☐ = 14 <br>How many bats are made of metal?',
  type: 'multiple-choice',
  options: ['8', '7', '6', '5'],
@@ -528,7 +520,10 @@ const scaledScoreMapping = {
 const TEST_STORAGE_KEY = `solace_test_results_${window.TEST_IDENTIFIER}`;
 
 function getScaledScore(rawScore) {
-  const clampedScore = Math.max(0, Math.min(50, rawScore));
+  // Question 28 of the released test required measuring with a physical ruler and was removed.
+  // Scale the raw score back to the released test's 50 questions before converting.
+  const adjustedScore = Math.round(rawScore * 50 / sampleQuestions.length);
+  const clampedScore = Math.max(0, Math.min(50, adjustedScore));
   return scaledScoreMapping[clampedScore] || 0;
 }
 
@@ -585,7 +580,7 @@ function getPerformanceLevel(scaledScore) {
         testType: 'Grade 3 Mathematics (2009)'
       };
       
-      console.log(`Saving Grade 3 Math result: ${rawScore}/50 → ${scaledScore} (${performanceLevel})`);
+      console.log(`Saving Grade 3 Math result: ${rawScore}/${sampleQuestions.length} → ${scaledScore} (${performanceLevel})`);
       
       // Store for immediate use
       window.tempEnhancedResult = enhancedResultData;
@@ -672,7 +667,7 @@ function getPerformanceLevel(scaledScore) {
         result.rawScore = result.correctAnswers;
         result.testType = 'Grade 3 Mathematics (2009)';
         updated = true;
-        console.log(`Enhanced Grade 3 Math result ${index + 1}: ${result.rawScore}/50 → ${result.scaledScore} (${result.performanceLevel})`);
+        console.log(`Enhanced Grade 3 Math result ${index + 1}: ${result.rawScore}/${sampleQuestions.length} → ${result.scaledScore} (${result.performanceLevel})`);
       }
     });
     
@@ -892,7 +887,7 @@ function getPerformanceLevel(scaledScore) {
           // Get current test data
           const correctAnswers = window.currentTestAnswers ? 
             window.currentTestAnswers.filter(answer => answer.correct).length : 0;
-          const totalQuestions = window.questions ? window.questions.length : 50;
+          const totalQuestions = window.questions ? window.questions.length : sampleQuestions.length;
           const score = Math.round((correctAnswers / totalQuestions) * 100);
           
           // Calculate scaled score data

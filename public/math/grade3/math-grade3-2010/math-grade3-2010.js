@@ -249,14 +249,6 @@ const sampleQuestions = [
  },
  {
  id: '28',
- text: 'About how many inches long is this newborn baby’s foot? <br><img src="images/28.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
- type: 'multiple-choice',
- options: ['3 inches', '4 inches', '5 inches', '8 inches'],
- correctAnswer: 0, 
- explanation: 'A newborn baby’s foot is about 3 inches long.'
- },
- {
- id: '29',
  text: 'Jackson colored small squares on grid paper to make this design. <br><img src="images/29.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>If ☐ is equal to 1 square unit, what is the area of Jackson’s design?',
  type: 'multiple-choice',
  options: ['13 square units', '14 square units', '16 square units', '20 square units'],
@@ -264,7 +256,7 @@ const sampleQuestions = [
  explanation: 'Count the shaded squares in the design. There are 13 shaded squares, so the area is 13 square units.'
  },
  {
- id: '30',
+ id: '29',
  text: 'Which means twenty-eight cents?',
  type: 'multiple-choice',
  options: ['$28.00', '$2.80', '$2.08', '$0.28'],
@@ -272,7 +264,7 @@ const sampleQuestions = [
  explanation: 'Twenty-eight cents is 28 hundredths of a dollar, written $0.28.'
  },
  {
- id: '31',
+ id: '30',
  text: 'Which thermometer shows a temperature closest to 9°C?',
  type: 'multiple-choice',
  options: [
@@ -285,7 +277,7 @@ const sampleQuestions = [
  explanation: '9°C is just below 10°C. Find the thermometer that reads just under the 10° mark.'
  },
  {
- id: '32',
+ id: '31',
  text: 'Mr. Garrett lived in Fredericksburg for exactly 1 year. Which is closest to the total number of days Mr. Garrett lived in Fredericksburg?',
  type: 'multiple-choice',
  options: ['7', '12', '30', '365'],
@@ -293,7 +285,7 @@ const sampleQuestions = [
  explanation: 'There are 365 days in 1 year.'
  },
  {
- id: '33',
+ id: '32',
  text: 'Which solid figure could be formed by the faces shown below? <br><img src="images/33.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
  options: [
@@ -306,7 +298,7 @@ const sampleQuestions = [
  explanation: 'Match the number and shape of the faces shown to the faces of each solid figure.'
  },
  {
- id: '34',
+ id: '33',
  text: 'This scale shows the weight, in pounds, of some apples. <br><img src="images/34.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>According to the scale, which is closest to the total weight of these apples?',
  type: 'multiple-choice',
  options: ['4 pounds', '5 pounds', '6 pounds', '7 pounds'],
@@ -314,7 +306,7 @@ const sampleQuestions = [
  explanation: 'Read the number on the scale where the pointer is.'
  },
  {
- id: '35',
+ id: '34',
  text: 'This watch shows the time Liam’s school bus arrived. <br><img src="images/35.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>Which is closest to the time Liam’s school bus arrived?',
  type: 'multiple-choice',
  options: ['8:04', '8:10', '8:20', '8:40'],
@@ -322,7 +314,7 @@ const sampleQuestions = [
  explanation: 'The hour hand is just past 8 and the minute hand points to the 4, which means 20 minutes. The time is 8:20.'
  },
  {
- id: '36',
+ id: '35',
  text: 'Which shape appears to have 4 square corners?',
  type: 'multiple-choice',
  options: [
@@ -335,7 +327,7 @@ const sampleQuestions = [
  explanation: 'A square corner is a right angle. Find the shape with 4 right angles.'
  },
  {
- id: '37',
+ id: '36',
  text: 'This graph shows the number of boxes of popcorn sold at a theater during a 4-day period. <br><img src="images/37.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>Based on the data in the graph, what was the total number of boxes of popcorn sold on Friday and Saturday?',
  type: 'multiple-choice',
  options: ['50', '45', '40', '35'],
@@ -343,7 +335,7 @@ const sampleQuestions = [
  explanation: 'Each symbol stands for 5 boxes. Count the symbols for Friday and Saturday, then multiply by 5.'
  },
  {
- id: '38',
+ id: '37',
  text: 'Which section of the spinner is the arrow MOST likely to land on for the next spin? <br><img src="images/38.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
  options: ['1', '2', '3', '4'],
@@ -351,7 +343,7 @@ const sampleQuestions = [
  explanation: 'The arrow is most likely to land on the largest section of the spinner.'
  },
  {
- id: '39',
+ id: '38',
  text: 'A group of third-grade students went on a nature hike. This line plot shows the number of types of birds seen during the hike. <br><img src="images/39.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>How many students saw EXACTLY 5 types of birds?',
  type: 'multiple-choice',
  options: ['13', '6', '5', '3'],
@@ -359,7 +351,7 @@ const sampleQuestions = [
  explanation: 'Each X represents 1 student. There are 3 Xs above the 5, so 3 students saw exactly 5 types of birds.'
  },
  {
- id: '40',
+ id: '39',
  text: 'The chart shows the shapes and colors of Sandra’s tiles. <br><img src="images/40.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>Which of the following shows ALL the different combinations of 1 shape and 1 color of tile that Sandra can make?',
  type: 'multiple-choice',
  options: [
@@ -372,7 +364,7 @@ const sampleQuestions = [
  explanation: 'Each shape must be paired with each color, red (R) and yellow (Y).'
  },
  {
- id: '41',
+ id: '40',
  text: 'Each student in Mr. Drew’s class owns one pet. This table shows the number of students who own different pets. <br><img src="images/41.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>Which bar graph correctly represents these data?',
  type: 'multiple-choice',
  options: [
@@ -385,7 +377,7 @@ const sampleQuestions = [
  explanation: 'The bars must show 9 students for Dog, 2 for Cat, and 6 for Fish.'
  },
  {
- id: '42',
+ id: '41',
  text: 'Emily placed eight counters, like the ones shown, in a bag. <br><img src="images/42.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>She selected one counter from the bag without looking. Which color counter is she LEAST likely to select?',
  type: 'multiple-choice',
  options: [
@@ -398,7 +390,7 @@ const sampleQuestions = [
  explanation: 'There are 2 red, 3 blue, 2 gold, and 1 pink counter. Pink has the fewest counters, so it is least likely to be selected.'
  },
  {
- id: '43',
+ id: '42',
  text: 'These pictures represent the 15 animals on Aunt Bev’s farm. <br><img src="images/43.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>Which bar graph <i>best</i> represents the numbers of each kind of animal on the farm?',
  type: 'multiple-choice',
  options: [
@@ -411,7 +403,7 @@ const sampleQuestions = [
  explanation: 'Count each kind of animal in the pictures, then find the graph with bars that match those counts.'
  },
  {
- id: '44',
+ id: '43',
  text: 'Harper wrote this number pattern. <br>143, 139, 135, 131, 127, ___, ___, ___ <br>If the pattern continues to decrease following the same rule, what will be the next 3 numbers in Harper’s pattern?',
  type: 'multiple-choice',
  options: ['123, 119, 115', '123, 118, 112', '122, 117, 112', '121, 115, 109'],
@@ -419,7 +411,7 @@ const sampleQuestions = [
  explanation: 'The rule is subtract 4: 127 − 4 = 123, 123 − 4 = 119, 119 − 4 = 115.'
  },
  {
- id: '45',
+ id: '44',
  text: 'Felicia grouped 10 counters 2 different ways to represent a basic fact. <br><img src="images/45.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>Which number sentence represents these related facts?',
  type: 'multiple-choice',
  options: ['5 × 2 = 2 × 5', '5 × 2 = 5 × 5', '2 + 5 = 5 × 2', '2 + 5 = 5 + 2'],
@@ -427,7 +419,7 @@ const sampleQuestions = [
  explanation: 'The counters are grouped as 5 groups of 2 and as 2 groups of 5, so 5 × 2 = 2 × 5.'
  },
  {
- id: '46',
+ id: '45',
  text: 'Look at this repeating pattern of four figures. <br><img src="images/46.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>The pattern will continue in the same way. What will be the next two figures in the pattern?',
  type: 'multiple-choice',
  options: [
@@ -440,7 +432,7 @@ const sampleQuestions = [
  explanation: 'The four figures repeat in the same order, so the next two figures are the first two figures of the pattern.'
  },
  {
- id: '47',
+ id: '46',
  text: 'Look at this table. Each toolbox has the same price. <br><img src="images/47.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>If the pattern continues, what will be the total price of 6 toolboxes?',
  type: 'multiple-choice',
  options: ['$151', '$180', '$190', '$210'],
@@ -448,7 +440,7 @@ const sampleQuestions = [
  explanation: 'Each toolbox costs $30, so 6 toolboxes cost 6 × $30 = $180.'
  },
  {
- id: '48',
+ id: '47',
  text: 'This number sentence models a multiplication property. <br>2 × 3 = 3 × 2 <br>Which of the following number sentences models the same property?',
  type: 'multiple-choice',
  options: ['5 × 8 = 8 × 5', '5 × 8 = 40', '5 × 8 = 2 × 20', '5 × 8 = 10 × 4'],
@@ -456,7 +448,7 @@ const sampleQuestions = [
  explanation: 'The commutative property says the order of the factors does not change the product: 5 × 8 = 8 × 5.'
  },
  {
- id: '49',
+ id: '48',
  text: 'Look at this pattern of numbers. <br>3, 7, 11, 15, 19, ___ <br>If this pattern continues following the same rule, what should be the next number?',
  type: 'multiple-choice',
  options: ['20', '22', '23', '24'],
@@ -464,7 +456,7 @@ const sampleQuestions = [
  explanation: 'The rule is add 4: 19 + 4 = 23.'
  },
  {
- id: '50',
+ id: '49',
  text: 'What number goes in the empty box to make the number sentence below true? <br>13 − ☐ = 7',
  type: 'multiple-choice',
  options: ['4', '6', '14', '20'],
@@ -533,7 +525,10 @@ const scaledScoreMapping = {
 const TEST_STORAGE_KEY = `solace_test_results_${window.TEST_IDENTIFIER}`;
 
 function getScaledScore(rawScore) {
-  const clampedScore = Math.max(0, Math.min(50, rawScore));
+  // Question 28 of the released test required measuring with a physical ruler and was removed.
+  // Scale the raw score back to the released test's 50 questions before converting.
+  const adjustedScore = Math.round(rawScore * 50 / sampleQuestions.length);
+  const clampedScore = Math.max(0, Math.min(50, adjustedScore));
   return scaledScoreMapping[clampedScore] || 0;
 }
 
@@ -590,7 +585,7 @@ function getPerformanceLevel(scaledScore) {
         testType: 'Grade 3 Mathematics (2010)'
       };
       
-      console.log(`Saving Grade 3 Math result: ${rawScore}/50 → ${scaledScore} (${performanceLevel})`);
+      console.log(`Saving Grade 3 Math result: ${rawScore}/${sampleQuestions.length} → ${scaledScore} (${performanceLevel})`);
       
       // Store for immediate use
       window.tempEnhancedResult = enhancedResultData;
@@ -677,7 +672,7 @@ function getPerformanceLevel(scaledScore) {
         result.rawScore = result.correctAnswers;
         result.testType = 'Grade 3 Mathematics (2010)';
         updated = true;
-        console.log(`Enhanced Grade 3 Math result ${index + 1}: ${result.rawScore}/50 → ${result.scaledScore} (${result.performanceLevel})`);
+        console.log(`Enhanced Grade 3 Math result ${index + 1}: ${result.rawScore}/${sampleQuestions.length} → ${result.scaledScore} (${result.performanceLevel})`);
       }
     });
     
@@ -897,7 +892,7 @@ function getPerformanceLevel(scaledScore) {
           // Get current test data
           const correctAnswers = window.currentTestAnswers ? 
             window.currentTestAnswers.filter(answer => answer.correct).length : 0;
-          const totalQuestions = window.questions ? window.questions.length : 50;
+          const totalQuestions = window.questions ? window.questions.length : sampleQuestions.length;
           const score = Math.round((correctAnswers / totalQuestions) * 100);
           
           // Calculate scaled score data

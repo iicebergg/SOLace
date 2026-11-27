@@ -221,14 +221,6 @@ const sampleQuestions = [
  },
  {
  id: '27',
- text: 'Use your centimeter (cm) ruler to answer this question. <br><img src="images/27.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>Which is closest to the perimeter of the figure shown?',
- type: 'multiple-choice',
- options: ['21 cm', '18 cm', '12 cm', '9 cm'],
- correctAnswer: 0, 
- explanation: 'Measure each side with a centimeter ruler and add the three lengths together.'
- },
- {
- id: '28',
  text: '<br><img src="images/28.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>What is the <i>maximum</i> number of line segments shown in this drawing?',
  type: 'multiple-choice',
  options: ['4', '5', '10', '11'],
@@ -236,15 +228,7 @@ const sampleQuestions = [
  explanation: 'Count every segment between two labeled points, including the longer segments made up of shorter ones.'
  },
  {
- id: '29',
- text: 'Use your inch ruler to help you answer this question. <br><img src="images/29.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>Which is closest to the length of this notepad?',
- type: 'multiple-choice',
- options: ['4 inches', '4 <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math> inches', '5 inches', '5 <math><mfrac><mn>1</mn><mn>2</mn></mfrac></math> inches'],
- correctAnswer: 1, 
- explanation: 'Line up the end of the ruler with one end of the notepad and read the measurement at the other end.'
- },
- {
- id: '30',
+ id: '28',
  text: '<br><img src="images/30.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>Which two shapes appear to be congruent?',
  type: 'multiple-choice',
  options: ['1 and 2', '2 and 3', '3 and 4', '4 and 1'],
@@ -252,7 +236,7 @@ const sampleQuestions = [
  explanation: 'Congruent shapes have exactly the same size and shape.'
  },
  {
- id: '31',
+ id: '29',
  text: 'Kenny measured the mass of a candle on a balance scale. <br><img src="images/31.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>Which appears to be the mass of the candle pictured?',
  type: 'multiple-choice',
  options: ['500 g', '550 g', '600 g', '650 g'],
@@ -260,7 +244,7 @@ const sampleQuestions = [
  explanation: 'When the scale is balanced, the mass of the candle equals the total of the masses on the other side.'
  },
  {
- id: '32',
+ id: '30',
  text: 'Which ordered pair would have to represent point D in order to complete rectangle ABCD? <br><img src="images/32.png" class="question-image" alt="Image failed to load. Please try again later."></img>',
  type: 'multiple-choice',
  options: ['(2, 4)', '(2, 5)', '(4, 2)', '(5, 2)'],
@@ -268,7 +252,7 @@ const sampleQuestions = [
  explanation: 'Point D must line up with point A vertically and with point C horizontally to form a rectangle.'
  },
  {
- id: '33',
+ id: '31',
  text: 'Gary filled his 10,000-gallon swimming pool with water from a garden hose. He started filling the pool at 10:00 A.M. <br><img src="images/33.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>Gary continues to add water to the pool at this same rate. Which is closest to the number of gallons of water that will be in the pool at 2:00 P.M. on the same day?',
  type: 'multiple-choice',
  options: ['300 gallons', '1,200 gallons', '1,500 gallons', '1,600 gallons'],
@@ -276,7 +260,7 @@ const sampleQuestions = [
  explanation: 'Find how many gallons are added each hour from the graph, then continue the pattern to 2:00 P.M.'
  },
  {
- id: '34',
+ id: '32',
  text: 'A pouch contains 5 blue marbles, 2 red marbles, 1 green marble, and 4 pink marbles. <br><img src="images/34.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>What is the probability that Jorge will select, without looking, a red marble on the first try?',
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>10</mn><mn>12</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>10</mn></mfrac></math>', '<math><mfrac><mn>2</mn><mn>12</mn></mfrac></math>'],
@@ -284,7 +268,7 @@ const sampleQuestions = [
  explanation: 'There are 5 + 2 + 1 + 4 = 12 marbles, and 2 are red. The probability is <math><mfrac><mn>2</mn><mn>12</mn></mfrac></math>.'
  },
  {
- id: '35',
+ id: '33',
  text: 'This bar graph shows the number of letters written by students in four third-grade classrooms. <br><img src="images/35.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>Which question <i>cannot</i> be answered using the information in this bar graph?',
  type: 'multiple-choice',
  options: ['Which two classrooms combined wrote 35 letters?', 'Which classroom wrote the least number of letters?', 'Which classroom wrote the greatest number of letters?', 'Which month did Mr. Williams’ class write the most letters?'],
@@ -292,7 +276,7 @@ const sampleQuestions = [
  explanation: 'The graph does not show months, so it cannot tell which month a class wrote the most letters.'
  },
  {
- id: '36',
+ id: '34',
  text: 'The table shows the number of cans of different-colored paint in Mr. Eggan’s garage. Each can is the same size. <br><img src="images/36.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>Mr. Eggan chooses one paint can without looking. What is the probability the first can chosen will be a can of white paint?',
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>3</mn><mn>7</mn></mfrac></math>', '<math><mfrac><mn>4</mn><mn>7</mn></mfrac></math>', '<math><mfrac><mn>3</mn><mn>4</mn></mfrac></math>', '<math><mfrac><mn>4</mn><mn>3</mn></mfrac></math>'],
@@ -300,7 +284,7 @@ const sampleQuestions = [
  explanation: 'There are 3 + 4 = 7 cans, and 4 are white. The probability is <math><mfrac><mn>4</mn><mn>7</mn></mfrac></math>.'
  },
  {
- id: '37',
+ id: '35',
  text: 'Margaret bought a box of 12 doughnuts. It is impossible for the doughnut picked from the box to be glazed. Which of the following is the number of glazed doughnuts in the box?',
  type: 'multiple-choice',
  options: ['0', '1', '2', '3'],
@@ -308,7 +292,7 @@ const sampleQuestions = [
  explanation: 'An event is impossible when there is no way for it to happen, so there are 0 glazed doughnuts.'
  },
  {
- id: '38',
+ id: '36',
  text: 'This table shows the number of people in Lou’s Restaurant at different times during the same day. <br><img src="images/38.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>Which line graph correctly shows this information?',
  type: 'multiple-choice',
  options: [
@@ -321,7 +305,7 @@ const sampleQuestions = [
  explanation: 'The graph must show 35 people at 12:00, 10 at 3:00, 50 at 6:00, and 45 at 9:00.'
  },
  {
- id: '39',
+ id: '37',
  text: 'A box contains 45 bags of cheese popcorn and 5 bags of caramel popcorn. Which of the following <i>best</i> describes the chances that the first bag of popcorn taken from the box will be caramel popcorn?',
  type: 'multiple-choice',
  options: ['Impossible', 'Unlikely, but not impossible', 'Likely, but not certain', 'Certain'],
@@ -329,7 +313,7 @@ const sampleQuestions = [
  explanation: 'Only 5 of the 50 bags are caramel, so it is unlikely, but not impossible.'
  },
  {
- id: '40',
+ id: '38',
  text: 'Taylor put the following fruit stickers of the same size and shape in a bag: <br>• 2 apple stickers <br>• 3 orange stickers <br>• 1 pear sticker <br>• 2 plum stickers <br>Taylor will pick one fruit sticker from the bag without looking. What is the probability the sticker will be a pear sticker?',
  type: 'multiple-choice',
  options: ['<math><mfrac><mn>1</mn><mn>8</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>7</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>4</mn></mfrac></math>', '<math><mfrac><mn>1</mn><mn>3</mn></mfrac></math>'],
@@ -337,7 +321,7 @@ const sampleQuestions = [
  explanation: 'There are 2 + 3 + 1 + 2 = 8 stickers, and 1 is a pear. The probability is <math><mfrac><mn>1</mn><mn>8</mn></mfrac></math>.'
  },
  {
- id: '41',
+ id: '39',
  text: 'Which number correctly completes this number sentence? <br>45 + (14 + 17) = (14 + 45) + ___',
  type: 'multiple-choice',
  options: ['59', '45', '17', '14'],
@@ -345,7 +329,7 @@ const sampleQuestions = [
  explanation: 'The associative and commutative properties show the same three numbers are added on each side, so the missing number is 17.'
  },
  {
- id: '42',
+ id: '40',
  text: 'When four members of a basketball team stand in a certain order as shown, the numbers on their uniforms make a pattern. <br><img src="images/42.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>Which rule describes this pattern?',
  type: 'multiple-choice',
  options: ['Add 8', 'Multiply by 9', 'Divide by 6', 'Subtract 12'],
@@ -353,7 +337,7 @@ const sampleQuestions = [
  explanation: '54 − 12 = 42, 42 − 12 = 30, and 30 − 12 = 18. The rule is subtract 12.'
  },
  {
- id: '43',
+ id: '41',
  text: 'Which number sentence is true?',
  type: 'multiple-choice',
  options: ['21 − (7 + 6) = 7 + (21 + 6)', '33 + (18 + 2) = 18 + (33 + 2)', '15 + (19 + 24) = 19 + (24 − 15)', '29 + (16 − 3) = 16 + (29 + 3)'],
@@ -361,7 +345,7 @@ const sampleQuestions = [
  explanation: '33 + (18 + 2) = 53 and 18 + (33 + 2) = 53, so both sides are equal.'
  },
  {
- id: '44',
+ id: '42',
  text: 'This table shows the number of minutes Lee practiced tennis during 4 weeks. <br><img src="images/44.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>If the pattern shown in the table continues in the same way, how many minutes will Lee practice during the 6th week?',
  type: 'multiple-choice',
  options: ['365', '345', '300', '255'],
@@ -369,7 +353,7 @@ const sampleQuestions = [
  explanation: 'The minutes increase by 45 each week: week 5 is 255 and week 6 is 300.'
  },
  {
- id: '45',
+ id: '43',
  text: 'Which number sentence is <i>not</i> true?',
  type: 'multiple-choice',
  options: ['(6 + 5) + 3 = 6 + (5 + 3)', '(5 × 2) × 1 = 5 × (2 × 4)', '(5 + 5) + 2 = 5 + (5 + 2)', '8 × (2 × 3) = (8 × 2) × 3'],
@@ -377,7 +361,7 @@ const sampleQuestions = [
  explanation: '(5 × 2) × 1 = 10, but 5 × (2 × 4) = 40, so that number sentence is not true.'
  },
  {
- id: '46',
+ id: '44',
  text: 'The numbers on these mailboxes form a pattern. <br><img src="images/46.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>This pattern continues in the same way. Which number will be on the next mailbox?',
  type: 'multiple-choice',
  options: ['202', '200', '199', '197'],
@@ -385,7 +369,7 @@ const sampleQuestions = [
  explanation: 'The numbers decrease by 4 each time: 203 − 4 = 199.'
  },
  {
- id: '47',
+ id: '45',
  text: 'Harry saw these columns being built for a highway overpass. Each of the columns has 2 more blocks than the column before it. <br><img src="images/47.png" class="question-image" alt="Image failed to load. Please try again later."></img> <br>If this pattern continues, how many blocks should the 5th column have?',
  type: 'multiple-choice',
  options: ['8', '10', '12', '14'],
@@ -393,7 +377,7 @@ const sampleQuestions = [
  explanation: 'Add 2 blocks to the 4th column to find the number of blocks in the 5th column.'
  },
  {
- id: '48',
+ id: '46',
  text: 'Which statement is true?',
  type: 'multiple-choice',
  options: ['2 × 9 = 3 × 8', '2 × 9 = 4 × 6', '3 × 6 = 2 × 12', '3 × 8 = 4 × 6'],
@@ -401,7 +385,7 @@ const sampleQuestions = [
  explanation: '3 × 8 = 24 and 4 × 6 = 24, so they are equal.'
  },
  {
- id: '49',
+ id: '47',
  text: 'Look at the pattern of numbers. <br>2, 10, 18, ___, 34, 42 <br>What is the missing number in this pattern?',
  type: 'multiple-choice',
  options: ['20', '26', '28', '30'],
@@ -409,7 +393,7 @@ const sampleQuestions = [
  explanation: 'The numbers increase by 8 each time: 18 + 8 = 26.'
  },
  {
- id: '50',
+ id: '48',
  text: 'What number makes this number sentence true? <br>7 + (13 + 4) = (7 + ___) + 4',
  type: 'multiple-choice',
  options: ['4', '7', '11', '13'],
@@ -478,7 +462,11 @@ const scaledScoreMapping = {
 const TEST_STORAGE_KEY = `solace_test_results_${window.TEST_IDENTIFIER}`;
 
 function getScaledScore(rawScore) {
-  const clampedScore = Math.max(0, Math.min(50, rawScore));
+  // Question 27 of the released test required measuring with a physical ruler and was removed.
+  // Question 29 of the released test required measuring with a physical ruler and was removed.
+  // Scale the raw score back to the released test's 50 questions before converting.
+  const adjustedScore = Math.round(rawScore * 50 / sampleQuestions.length);
+  const clampedScore = Math.max(0, Math.min(50, adjustedScore));
   return scaledScoreMapping[clampedScore] || 0;
 }
 
@@ -535,7 +523,7 @@ function getPerformanceLevel(scaledScore) {
         testType: 'Grade 4 Mathematics (2010)'
       };
       
-      console.log(`Saving Grade 4 Math result: ${rawScore}/50 → ${scaledScore} (${performanceLevel})`);
+      console.log(`Saving Grade 4 Math result: ${rawScore}/${sampleQuestions.length} → ${scaledScore} (${performanceLevel})`);
       
       // Store for immediate use
       window.tempEnhancedResult = enhancedResultData;
@@ -622,7 +610,7 @@ function getPerformanceLevel(scaledScore) {
         result.rawScore = result.correctAnswers;
         result.testType = 'Grade 4 Mathematics (2010)';
         updated = true;
-        console.log(`Enhanced Grade 4 Math result ${index + 1}: ${result.rawScore}/50 → ${result.scaledScore} (${result.performanceLevel})`);
+        console.log(`Enhanced Grade 4 Math result ${index + 1}: ${result.rawScore}/${sampleQuestions.length} → ${result.scaledScore} (${result.performanceLevel})`);
       }
     });
     
@@ -842,7 +830,7 @@ function getPerformanceLevel(scaledScore) {
           // Get current test data
           const correctAnswers = window.currentTestAnswers ? 
             window.currentTestAnswers.filter(answer => answer.correct).length : 0;
-          const totalQuestions = window.questions ? window.questions.length : 50;
+          const totalQuestions = window.questions ? window.questions.length : sampleQuestions.length;
           const score = Math.round((correctAnswers / totalQuestions) * 100);
           
           // Calculate scaled score data
