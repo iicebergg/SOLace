@@ -526,7 +526,7 @@ const TEST_STORAGE_KEY = `solace_test_results_${window.TEST_IDENTIFIER}`;
 
 function getScaledScore(rawScore) {
   // Question 28 of the released test required measuring with a physical ruler and was removed.
-  // Scale the raw score back to the released test's 50 questions before converting.
+  // Scale the raw score to the 50 questions of the score table before converting.
   const adjustedScore = Math.round(rawScore * 50 / sampleQuestions.length);
   const clampedScore = Math.max(0, Math.min(50, adjustedScore));
   return scaledScoreMapping[clampedScore] || 0;

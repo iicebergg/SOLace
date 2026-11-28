@@ -550,7 +550,7 @@ function getPerformanceLevel(scaledScore) {
         testType: 'Grade 6 Mathematics (2009)'
       };
       
-      console.log(`Saving Grade 6 Math result: ${rawScore}/50 → ${scaledScore} (${performanceLevel})`);
+      console.log(`Saving Grade 6 Math result: ${rawScore}/${sampleQuestions.length} → ${scaledScore} (${performanceLevel})`);
       
       // Store for immediate use
       window.tempEnhancedResult = enhancedResultData;
@@ -637,7 +637,7 @@ function getPerformanceLevel(scaledScore) {
         result.rawScore = result.correctAnswers;
         result.testType = 'Grade 6 Mathematics (2009)';
         updated = true;
-        console.log(`Enhanced Grade 6 Math result ${index + 1}: ${result.rawScore}/50 → ${result.scaledScore} (${result.performanceLevel})`);
+        console.log(`Enhanced Grade 6 Math result ${index + 1}: ${result.rawScore}/${sampleQuestions.length} → ${result.scaledScore} (${result.performanceLevel})`);
       }
     });
     
@@ -857,7 +857,7 @@ function getPerformanceLevel(scaledScore) {
           // Get current test data
           const correctAnswers = window.currentTestAnswers ? 
             window.currentTestAnswers.filter(answer => answer.correct).length : 0;
-          const totalQuestions = window.questions ? window.questions.length : 50;
+          const totalQuestions = window.questions ? window.questions.length : sampleQuestions.length;
           const score = Math.round((correctAnswers / totalQuestions) * 100);
           
           // Calculate scaled score data

@@ -484,7 +484,9 @@ const scaledScoreMapping = {
 const TEST_STORAGE_KEY = `solace_test_results_${window.TEST_IDENTIFIER}`;
 
 function getScaledScore(rawScore) {
-  const clampedScore = Math.max(0, Math.min(50, rawScore));
+  // Scale the raw score to the 50 questions of the score table before converting.
+  const adjustedScore = Math.round(rawScore * 50 / sampleQuestions.length);
+  const clampedScore = Math.max(0, Math.min(50, adjustedScore));
   return scaledScoreMapping[clampedScore] || 0;
 }
 
